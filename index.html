@@ -273,12 +273,12 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
     <button class="chip" id="flt-btn" aria-expanded="false" aria-controls="filters"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 5h18M6 12h12M10 19h4"/></svg>Filters<span class="fcount" id="flt-count" hidden></span></button>
   </div>
   <div class="filters" id="settings" hidden>
-    <div class="fg"><h4>Claude API key</h4>
-      <p class="hidden-note" style="margin:0 0 8px">Optional and paid: only needed for Explain, Analyse and "Fill in with Claude". Everything else on this site is free. Your key is stored only in this browser and sent only to Anthropic. Create a key at <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">console.anthropic.com</a>; each explanation costs a few cents.</p>
-      <div class="frow"><input type="password" id="api-key" placeholder="sk-ant-…" autocomplete="off" spellcheck="false"><button class="tag" id="api-save">Save</button><button class="tag" id="api-clear">Remove</button></div>
+    <div class="fg"><h4>AI key (optional)</h4>
+      <p class="hidden-note" style="margin:0 0 8px">Turns on the ✦ in-depth explanations and analyses. Paste a <b>free Google Gemini key</b> from <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">aistudio.google.com</a>, or a paid Anthropic key. The key is saved only in this browser and sent only to Google or Anthropic, never to this website. Everything else works without a key.</p>
+      <div class="frow"><input type="password" id="api-key" placeholder="AIza… (Gemini) or sk-ant-… (Anthropic)" autocomplete="off" spellcheck="false"><button class="tag" id="api-save">Save</button><button class="tag" id="api-clear">Remove</button></div>
       <p class="hidden-note" id="api-msg" aria-live="polite"></p>
     </div>
-    <div class="fg"><h4>Model</h4><div class="frow"><select id="api-model" aria-label="Claude model"></select></div></div>
+    <div class="fg"><h4>Claude model <span style="text-transform:none;letter-spacing:0;color:var(--faint);font-family:var(--body);font-weight:400">(Anthropic keys only)</span></h4><div class="frow"><select id="api-model" aria-label="Claude model"></select></div></div>
   </div>
   <div class="filters" id="filters" hidden>
     <div class="fg"><h4>Relationship types</h4>
@@ -1373,9 +1373,82 @@ const hashStr = s => { let h = 0; for (let i=0; i<s.length; i++) h = (h*31 + s.c
 let sdkPromise = null;
 const loadSDK = () => sdkPromise || (sdkPromise = import(SDK_URL).then(m => m.default || m.Anthropic).catch(e => { sdkPromise = null; throw e; }));
 const currentModel = () => MODELS[lsGet('faultlines-model')] ? lsGet('faultlines-model') : 'claude-opus-5';
+/* Google Gemini (free tier) straight from the browser with the viewer's own key */
+const GEM = 'https://generativelanguage.googleapis.com/v1beta';
+let geminiModelPromise = null;
+function pickGeminiModel(models){
+  const ok = models.filter(m => (m.supportedGenerationMethods || []).includes('generateContent'))
+    .map(m => m.name.split('/').pop())
+    .filter(n => n.includes('flash') && !/(lite|image|tts|audio|live|8b)/.test(n))
+    .map(n => ({n, stable: !/(preview|exp)/.test(n), v: parseFloat((n.match(/\d+(?:\.\d+)?/) || ['0'])[0])}));
+  ok.sort((a, b) => (b.stable - a.stable) || (b.v - a.v));
+  return ok.length ? ok[0].n : 'gemini-2.5-flash';
+}
+const geminiModel = key => geminiModelPromise || (geminiModelPromise =
+  fetch(`${GEM}/models?pageSize=200`, {headers:{'x-goog-api-key': key}})
+    .then(r => r.ok ? r.json() : {models: []}).then(d => pickGeminiModel(d.models || []))
+    .catch(() => 'gemini-2.5-flash'));
+function withJson(sample){
+  sample.json = async (prompt, opts = {}) => {
+    const {text} = await sample(prompt, {...opts, json: true});
+    const fence = text.match(/```(?:json)?\s*([\s\S]*?)```/);
+    const body = fence ? fence[1] : text.slice(Math.max(0, text.search(/[\[{]/)), Math.max(text.lastIndexOf('}'), text.lastIndexOf(']')) + 1);
+    try { return JSON.parse(body); } catch(e){ throw {code:'invalid_json', text}; }
+  };
+  return sample;
+}
+async function geminiSample(key){
+  const model = await geminiModel(key);
+  async function sample(prompt, opts = {}){
+    const ttl = (opts.cache && opts.cache.gcTime) || 0;
+    const ck = 'faultlines-ai:' + hashStr(model + '|' + (opts.json ? 'j' : 't') + '|' + prompt);
+    if (ttl){
+      try { const c = JSON.parse(lsGet(ck) || 'null'); if (c && Date.now()-c.t < ttl){ if (opts.onText) opts.onText({text:c.text, delta:c.text}); return {text:c.text, truncated:false}; } } catch(e){}
+    }
+    const body = {contents:[{role:'user', parts:[{text: prompt}]}], generationConfig:{temperature: 0.4, maxOutputTokens: 8192}};
+    if (opts.json) body.generationConfig.responseMimeType = 'application/json';
+    let text = '', finish = '';
+    const fail = (code, message) => ({code: opts.signal && opts.signal.aborted ? 'cancelled' : code, message, text});
+    let r;
+    try {
+      r = await fetch(`${GEM}/models/${model}:streamGenerateContent?alt=sse`, {method:'POST', signal: opts.signal,
+        headers:{'x-goog-api-key': key, 'Content-Type': 'application/json'}, body: JSON.stringify(body)});
+    } catch(e){ throw fail('upstream_error', e && e.message); }
+    if (!r.ok){
+      const msg = await r.text().catch(() => '');
+      throw fail(r.status === 429 ? 'rate_limited' : (r.status === 401 || r.status === 403 || /API_KEY_INVALID|API key not valid/.test(msg)) ? 'bad_key' : r.status === 400 ? 'invalid_request' : 'upstream_error', msg);
+    }
+    try {
+      const reader = r.body.getReader(), dec = new TextDecoder();
+      let buf = '';
+      for (;;){
+        const {done, value} = await reader.read();
+        if (done) break;
+        buf += dec.decode(value, {stream: true});
+        let i;
+        while ((i = buf.indexOf('\n')) >= 0){
+          const line = buf.slice(0, i).trim(); buf = buf.slice(i + 1);
+          if (!line.startsWith('data:')) continue;
+          let ev; try { ev = JSON.parse(line.slice(5)); } catch(e){ continue; }
+          if (ev.promptFeedback && ev.promptFeedback.blockReason) throw {code:'refused'};
+          const c = (ev.candidates || [])[0]; if (!c) continue;
+          const d = ((c.content || {}).parts || []).map(p => p.text || '').join('');
+          if (d){ text += d; if (opts.onText) opts.onText({text, delta: d}); }
+          if (c.finishReason) finish = c.finishReason;
+        }
+      }
+    } catch(e){ throw e && e.code ? {...e, text} : fail('upstream_error', e && e.message); }
+    if (finish === 'SAFETY' || finish === 'PROHIBITED_CONTENT') throw {code:'refused'};
+    if (!text.trim()) throw {code:'empty_completion'};
+    if (ttl) lsSet(ck, JSON.stringify({t:Date.now(), text}));
+    return {text, truncated: finish === 'MAX_TOKENS'};
+  }
+  return withJson(sample);
+}
 async function getSample(){
   const key = lsGet('faultlines-api-key');
   if (!key) return null;
+  if (key.startsWith('AIza')) return geminiSample(key);
   let Anthropic;
   try { Anthropic = await loadSDK(); } catch(e){ return null; }
   const model = currentModel();
@@ -1410,13 +1483,7 @@ async function getSample(){
       throw {code, message: e && e.message, text};
     }
   }
-  sample.json = async (prompt, opts = {}) => {
-    const {text} = await sample(prompt, opts);
-    const fence = text.match(/```(?:json)?\s*([\s\S]*?)```/);
-    const body = fence ? fence[1] : text.slice(Math.max(0, text.search(/[\[{]/)), Math.max(text.lastIndexOf('}'), text.lastIndexOf(']')) + 1);
-    try { return JSON.parse(body); } catch(e){ throw {code:'invalid_json', text}; }
-  };
-  return sample;
+  return withJson(sample);
 }
 const TODAY = new Date().toISOString().slice(0,10);
 const RULES = `You are the analyst behind "Faultlines", an interactive globe of international relations. Today is ${TODAY}. Write for a curious, intelligent reader: clear, neutral, factual, no preamble, no sign-off. Use short "### " headings and "- " bullets as asked. The page data below is the page's latest recorded state (it is refreshed daily from the news), so stay consistent with it; if you are unsure about very recent events, say so briefly instead of guessing.
@@ -1577,7 +1644,7 @@ async function runAI(btn){
   const wrap = btn.closest('.ai-wrap'), out = wrap.querySelector('.ai');
   if (btn.dataset.running){ aiCtl && aiCtl.abort(); return; }
   const sample = await getSample();
-  if (!sample){ out.hidden=false; out.innerHTML = '<p class="muted">Add your Anthropic API key in ⚙ Settings (top left) to use Claude explanations.</p>'; openSettings(); return; }
+  if (!sample){ out.hidden=false; out.innerHTML = '<p class="muted">Add a free Gemini key in ⚙ Settings (top left) to use in-depth explanations.</p>'; openSettings(); return; }
   const prompt = buildPrompt(btn.dataset.ai); if (!prompt) return;
   const ctl = new AbortController(); aiCtl = ctl;
   btn.dataset.running = '1'; btn.textContent = '■ Stop';
@@ -1585,7 +1652,7 @@ async function runAI(btn){
   try {
     const tier = btn.dataset.ai==='group' ? 'complex' : 'default';
     const {text, truncated} = await sample(prompt, {signal:ctl.signal, modelTier:tier, cache:{gcTime:86400000}, onText:({text})=>{ out.innerHTML = md(text); }});
-    out.innerHTML = md(text) + (truncated ? '<p class="faint">Cut short.</p>' : '') + '<p class="faint">Written by Claude from the page\'s data and its own knowledge; check recent events against the news.</p>';
+    out.innerHTML = md(text) + (truncated ? '<p class="faint">Cut short.</p>' : '') + '<p class="faint">Written by AI from the page\'s data and its own knowledge; check recent events against the news.</p>';
     btn.hidden = true;
   } catch(e){
     out.innerHTML = e && e.text ? md(e.text) : '';
@@ -1707,7 +1774,7 @@ function facetBody(ids){
   const missing = hasAI && f.rows.some(r=>r.ai) && ids.some(i=>needsAI(f.k,i));
   return `<div class="mx-wrap"><table class="ft"><thead><tr><th></th>${ids.map(i=>`<th title="${esc(ENT[i].name)}">${esc(name(i))}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div>
     <div class="ffoot">
-      ${missing ? `<div class="actions"><button class="btn" data-ffill>✦ Fill in the ≈ rows with Claude</button></div>` : ''}
+      ${missing ? `<div class="actions"><button class="btn" data-ffill>✦ Fill in the ≈ rows with AI</button></div>` : ''}
       <p class="fmsg hidden-note" aria-live="polite"></p>
       <p class="hidden-note">Plain figures: World Bank, latest year shown${ids.length>1?'; gold = highest (or lowest where lower is better)':''}. ≈ = Claude's estimate from its own knowledge, with year and source; check before relying on it.${f.k==='politics' ? ' ✓ = from Wikidata (refreshed daily; links to the source).' : ''}</p>
     </div>`;
@@ -1746,7 +1813,7 @@ Reply with only JSON, one entry per ISO3 code, every field present:
 async function fillFacet(fk, ids, sec){
   const btn = sec.querySelector('[data-ffill]'), msg = sec.querySelector('.fmsg');
   const sample = await getSample();
-  if (!sample){ msg.textContent = 'Add your Anthropic API key in ⚙ Settings (top left) to fill in the ≈ rows.'; openSettings(); return; }
+  if (!sample){ msg.textContent = 'Add a free Gemini key in ⚙ Settings (top left) to fill in the ≈ rows.'; openSettings(); return; }
   const f = FACETS.find(x=>x.k===fk), rows = f.rows.filter(r=>r.ai);
   const need = ids.filter(i=>ENT[i] && needsAI(fk,i));
   if (!need.length) return;
@@ -1756,7 +1823,7 @@ async function fillFacet(fk, ids, sec){
     need.forEach(i=>{ const d = data && (data[i] || data[ENT[i].name]); aiSet(fk, i, d && typeof d==='object' ? d : {}); });
     if (facetTab===fk && sec.isConnected) refreshFacet(sec);
   } catch(e){
-    btn.disabled = false; btn.classList.remove('thinking'); btn.textContent = '✦ Fill in the ≈ rows with Claude';
+    btn.disabled = false; btn.classList.remove('thinking'); btn.textContent = '✦ Fill in the ≈ rows with AI';
     const code = e && e.code;
     if (AI_OFF.includes(code)){ msg.textContent = 'Claude estimates aren\'t available in this view.'; btn.hidden = true; }
     else if (code!=='cancelled') msg.textContent = code==='invalid_json' ? 'The answer came back in the wrong format. Try again.' : (AI_MSG[code] || 'Something went wrong. Try again.');
@@ -2226,13 +2293,13 @@ const apiKey = document.getElementById('api-key'), apiMsg = document.getElementB
 apiModel.innerHTML = Object.entries(MODELS).map(([k, v]) => `<option value="${k}">${esc(v)}</option>`).join('');
 apiModel.value = currentModel();
 apiModel.onchange = () => lsSet('faultlines-model', apiModel.value);
-function showKeyState(){ const k = lsGet('faultlines-api-key'); apiMsg.textContent = k ? `Key saved (ends in …${k.slice(-4)}).` : 'No key saved yet.'; apiKey.value = ''; }
+function showKeyState(){ const k = lsGet('faultlines-api-key'); apiMsg.textContent = k ? `${k.startsWith('AIza') ? 'Gemini' : 'Anthropic'} key saved (ends in …${k.slice(-4)}).` : 'No key saved yet.'; apiKey.value = ''; }
 function openSettings(){ setPanel.hidden = false; setBtn.setAttribute('aria-expanded', 'true'); showKeyState(); }
 setBtn.onclick = () => { if (setPanel.hidden) openSettings(); else { setPanel.hidden = true; setBtn.setAttribute('aria-expanded', 'false'); } };
 document.getElementById('api-save').onclick = () => {
   const v = apiKey.value.trim();
   if (!v){ apiMsg.textContent = 'Paste a key first.'; return; }
-  if (!v.startsWith('sk-ant-')){ apiMsg.textContent = 'That doesn\'t look like an Anthropic key (they start with sk-ant-).'; return; }
+  if (!v.startsWith('sk-ant-') && !v.startsWith('AIza')){ apiMsg.textContent = 'That doesn\'t look like a Gemini key (starts with AIza) or an Anthropic key (starts with sk-ant-).'; return; }
   lsSet('faultlines-api-key', v); showKeyState(); applyAIVisibility();
 };
 document.getElementById('api-clear').onclick = () => { lsSet('faultlines-api-key', null); showKeyState(); applyAIVisibility(); };
