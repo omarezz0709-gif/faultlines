@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-09-23T20:30:00Z",
+  "lastRun": "2026-09-23T23:42:09Z",
   "log": [
    {
     "date": "2026-09-23",
@@ -59,6 +59,36 @@
       "change": "State Duma election Sept 18-20 2026: United Russia wins landslide supermajority",
       "label": "Russia",
       "source": "https://www.aljazeera.com/news/2026/9/21/pro-putin-party-wins-supermajority-amid-ramped-up-ukrainian-attacks"
+     },
+     {
+      "label": "BEL–RWA",
+      "change": "None → Normal: diplomatic ties restored after 18-month rupture",
+      "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRFU3OWliN2pTdDVLUXcyN05kQ3BmaVNCc1BSWWZsclNTTzJ6NENaRnZ1aFZ3VTlZN2UzNTYtYXJyY3FZNzVMajd3WDBXaDhTcWJCZFlOcHlFZmxRSmRSWUVaamlHNDRweFNDZjhnRTNnZ0lSSUlsS19zTWJzOFpLMTN6YVpfMjJwenB5eUEtbWdpcjdud3VVOFlkdXhRaXlNbmJueWln?oc=5"
+     },
+     {
+      "label": "IRQ–TUR",
+      "change": "Normal: Ankara agrees to hand over northern Iraq military base",
+      "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRE1SX0IwWHRSTERscHk1cjUyTTg0RXpSRXZIb0RHdmNudldKUzR4dG5EUHVmVEp0MEdYek5JbW9EQW01enYwNlR6SmM5aTE2SktIT1NadTZiSTg4LXg0OEF2bmIxQW0tZWRIbkc0V1V4OHFaUGpSZ0lSWnFBRVhNNU9LY29IQ2tkLXN4cWE0ZEVLcjBycUVzazdOQUNrckZjblZpNnl1OUF1a3VqWTR5WFVlR2Jyb0I3SktOV2dR?oc=5"
+     },
+     {
+      "label": "USA–VEN",
+      "change": "Hostile: Rodriguez and Trump discuss debt overhaul and resuming ties",
+      "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORTY3d0w0RXVMcmJNc2hqYTd6aXA4ZDFrR2ZfZmtwVGRyeXE1V0Z5T0lLcFJ2eUd1bzYxendoMlZQMUJKVHVsYUdmZzIyd3FjNFFya1ZyYmlZOEwyRHgzMjhWSjZ2alZseDZJYWdtX0VHRHl6R1Nsa0UyQUJRSUxGM01YUENFZnlKZ2VNNmJmalJMRGhkUXdiU1BzN0MwbURkM3JjSTU2Q1FIanVSZElLS09tOENmRFhT?oc=5"
+     },
+     {
+      "label": "Strait of Hormuz",
+      "change": "Updated with fatal missile attack on commercial vessel MV Cape Dao",
+      "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMFRjejVIbUVST0RZaDVOY201TmlvREJ4bjl4dnhsaXpjQ1lndFpPWTlkOUFodkZNRDFuZ0RJSlNVNXdVa0FZYTRZMDFnZ1JUbmkwUkUzX3hTSTBnd3NQajBRR3NqNW4yYVJnZzNYQnBjVDNsdkxmWk5EdUVPbjdhM0VueFNHREFFRnhhMw?oc=5"
+     },
+     {
+      "label": "MAR",
+      "change": "Parliamentary elections held in September 2026",
+      "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNa0YzcUZhMEE5MjNQLUZ0YTI0WWlfYVhMOUJob01wNHZET1h6WTJGN2RIT2o3eVRnZUo5dnYzQmViMVhLNnhkdkFOLWxSaXBDcEJDVm5ETEdVajU0bWh3NE1tcFFoSGNfbGtPYUtlUjYxdXNSeE5Ja0Q2Vng0TG9Kc0paY0ZvQU1uRVIyZnNlVHNHZ0UzdGhYUjAzTmJOTWRRUmtrUi1SNGxOSkhUNXFkSUZvQ0hDendlYk9YZnp2bnNLeko4aFZPZGdR?oc=5"
+     },
+     {
+      "label": "BGR",
+      "change": "Presidential election set for 25 October 2026",
+      "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWDh2YVFnb3VwZDNPdjB4NnZmT0t4X1Z3M085YTljU3pBXzVwcm9EN0R1NkNmWGxfOGp5WFZFaHZ1c0RyTzdNSktEVG8zRE9QZ1JEdm1Rd1FQRVpoWUh0M0VNdUhyc2tJeGNzMEx4RFJRRDZQcERIcnZlMlBIZ1JDZDF2Wm5CMWtqZUE2UnI1a0dfNGJfRE5KUWhVaTNKTVRIM1VqSEluTU9YREl1c3c?oc=5"
      }
     ]
    },
@@ -72,7 +102,7 @@
     ]
    }
   ],
-  "summary": "Follow-up check: added the Sept 22 US-Denmark Arctic basing deal in Greenland and backfilled China/Russia politics; the Gulf war picture logged earlier today still stands."
+  "summary": "Belgium and Rwanda restore diplomatic relations after an 18-month rupture, Türkiye agrees to transfer a military base to Iraq, and Morocco conducts parliamentary elections."
  },
  "relations": {
   "DNK-USA": {
@@ -114,6 +144,30 @@
    "s": "W",
    "source": "https://www.aljazeera.com/news/2026/9/8/saudi-houthi-fighting-in-yemen-escalates-what-happened-and-whats-next",
    "updated": "2026-09-23"
+  },
+  "BEL-RWA": {
+   "a": "BEL",
+   "b": "RWA",
+   "s": "N",
+   "note": "Diplomatic ties are restored after an 18-month rupture over the conflict in the Democratic Republic of the Congo (DRC).",
+   "updated": "2026-09-23",
+   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRFU3OWliN2pTdDVLUXcyN05kQ3BmaVNCc1BSWWZsclNTTzJ6NENaRnZ1aFZ3VTlZN2UzNTYtYXJyY3FZNzVMajd3WDBXaDhTcWJCZFlOcHlFZmxRSmRSWUVaamlHNDRweFNDZjhnRTNnZ0lSSUlsS19zTWJzOFpLMTN6YVpfMjJwenB5eUEtbWdpcjdud3VVOFlkdXhRaXlNbmJueWln?oc=5"
+  },
+  "IRQ-TUR": {
+   "a": "IRQ",
+   "b": "TUR",
+   "s": "N",
+   "note": "Ankara and Baghdad agree on the handover of the Bashiqa military base to Iraqi forces amid security cooperation in Sinjar.",
+   "updated": "2026-09-23",
+   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRE1SX0IwWHRSTERscHk1cjUyTTg0RXpSRXZIb0RHdmNudldKUzR4dG5EUHVmVEp0MEdYek5JbW9EQW01enYwNlR6SmM5aTE2SktIT1NadTZiSTg4LXg0OEF2bmIxQW0tZWRIbkc0V1V4OHFaUGpSZ0lSWnFBRVhNNU9LY29IQ2tkLXN4cWE0ZEVLcjBycUVzazdOQUNrckZjblZpNnl1OUF1a3VqWTR5WFVlR2Jyb0I3SktOV2dR?oc=5"
+  },
+  "USA-VEN": {
+   "a": "USA",
+   "b": "VEN",
+   "s": "H",
+   "note": "Deep confrontation persists, though acting leader Delcy Rodriguez and Donald Trump hold talks on debt restructuring and ties.",
+   "updated": "2026-09-23",
+   "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORTY3d0w0RXVMcmJNc2hqYTd6aXA4ZDFrR2ZfZmtwVGRyeXE1V0Z5T0lLcFJ2eUd1bzYxendoMlZQMUJKVHVsYUdmZzIyd3FjNFFya1ZyYmlZOEwyRHgzMjhWSjZ2alZseDZJYWdtX0VHRHl6R1Nsa0UyQUJRSUxGM01YUENFZnlKZ2VNNmJmalJMRGhkUXdiU1BzN0MwbURkM3JjSTU2Q1FIanVSZElLS09tOENmRFhT?oc=5"
   }
  },
  "threads": {
@@ -159,11 +213,19 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "The only sea exit from the Persian Gulf. Iran attacked shipping after the July 2026 truce collapsed; the US blockades Iranian ports and says it keeps the strait open to other traffic.",
+   "d": "The only sea exit from the Persian Gulf. Commercial vessels face missile attacks amid the conflict, including a fatal strike off Oman in September 2026.",
    "n": "Strait of Hormuz",
-   "s": "US blockade of Iran since July 2026 · ~75 ship incidents in the war",
-   "source": "https://www.aljazeera.com/news/2026/9/16/us-military-claims-strait-of-hormuz-remains-open-amid-ongoing-blockade",
-   "updated": "2026-09-23"
+   "s": "US blockade of Iran · fatal MV Cape Dao strike Sept 2026",
+   "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMFRjejVIbUVST0RZaDVOY201TmlvREJ4bjl4dnhsaXpjQ1lndFpPWTlkOUFodkZNRDFuZ0RJSlNVNXdVa0FZYTRZMDFnZ1JUbmkwUkUzX3hTSTBnd3NQajBRR3NqNW4yYVJnZzNYQnBjVDNsdkxmWk5EdUVPbjdhM0VueFNHREFFRnhhMw?oc=5",
+   "updated": "2026-09-23",
+   "t": "strait",
+   "lat": 26.57,
+   "lng": 56.25,
+   "p": [
+    "IRN",
+    "OMN",
+    "ARE"
+   ]
   }
  },
  "politics": {
@@ -266,6 +328,16 @@
    "source": "https://www.cnn.com/2026/09/22/world/live-news/un-general-assembly-trump",
    "system": "Federal presidential republic",
    "updated": "2026-09-23"
+  },
+  "MAR": {
+   "lastelec": "parliamentary, September 2026",
+   "updated": "2026-09-23",
+   "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNa0YzcUZhMEE5MjNQLUZ0YTI0WWlfYVhMOUJob01wNHZET1h6WTJGN2RIT2o3eVRnZUo5dnYzQmViMVhLNnhkdkFOLWxSaXBDcEJDVm5ETEdVajU0bWh3NE1tcFFoSGNfbGtPYUtlUjYxdXNSeE5Ja0Q2Vng0TG9Kc0paY0ZvQU1uRVIyZnNlVHNHZ0UzdGhYUjAzTmJOTWRRUmtrUi1SNGxOSkhUNXFkSUZvQ0hDendlYk9YZnp2bnNLeko4aFZPZGdR?oc=5"
+  },
+  "BGR": {
+   "nextelec": "presidential, 25 October 2026",
+   "updated": "2026-09-23",
+   "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWDh2YVFnb3VwZDNPdjB4NnZmT0t4X1Z3M085YTljU3pBXzVwcm9EN0R1NkNmWGxfOGp5WFZFaHZ1c0RyTzdNSktEVG8zRE9QZ1JEdm1Rd1FQRVpoWUh0M0VNdUhyc2tJeGNzMEx4RFJRRDZQcERIcnZlMlBIZ1JDZDF2Wm5CMWtqZUE2UnI1a0dfNGJfRE5KUWhVaTNKTVRIM1VqSEluTU9YREl1c3c?oc=5"
   }
  }
 }
