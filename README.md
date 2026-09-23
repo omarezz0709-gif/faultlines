@@ -12,8 +12,9 @@ An interactive 3D globe of international relations, indirect links (militant net
 | "Headlines to watch": headlines naming 2+ countries with words like war, sanctions, ceasefire, coup | derived from the headlines | 3× a day |
 | Heads of state and government, their party, system of government | Wikidata | daily |
 | Economy, society, military and environment figures | World Bank API | daily |
+| Relationship statuses, indirect links, locations, election dates (each citing a headline) | Google Gemini free tier reading the collected headlines (`scripts/ai_refresh.py`) | 3× a day, when the `GEMINI_API_KEY` secret is set |
 
-Relationship statuses (Ally, Tense, Hostile…), indirect links and strategic locations are an editorial baseline inside `index.html`, plus any manual changes in `data/live.json`. They don't change on their own; the "Headlines to watch" list shows when one might need updating.
+Relationship statuses (Ally, Tense, Hostile…), indirect links and strategic locations start from an editorial baseline inside `index.html`; changes go into `data/live.json` (you can also edit it by hand). Every AI change must cite one of the collected headlines, and changes without a real source are dropped. Without the Gemini secret, everything else still refreshes.
 
 ## Files
 
