@@ -202,6 +202,18 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
 .aitag{font:600 10px var(--mono);color:var(--gold);margin-left:3px}
 .ffoot{display:flex;flex-direction:column;gap:6px;margin-top:8px}
 .ffoot .hidden-note{margin:0}
+.news{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.news li{display:flex;flex-direction:column;gap:2px;font-size:13px;line-height:1.35}
+.news a,.alerts a{color:var(--text);text-decoration:none}
+.news a:hover,.alerts a:hover{color:var(--gold-hi);text-decoration:underline}
+.nmeta{font:11px var(--mono);color:var(--faint)}
+.tension{display:flex;flex-direction:column;gap:5px;margin-bottom:10px}
+.tbar{height:6px;background:var(--raise2);border-radius:3px;overflow:hidden}
+.tbar i{display:block;height:100%}
+.tension span{font-size:12px;color:var(--muted)}
+.alerts{list-style:none;margin:0 0 8px;padding:0;display:flex;flex-direction:column;gap:9px;font-size:13px;line-height:1.4}
+.alerts li + li{border-top:1px solid var(--line);padding-top:9px}
+.kw{font:600 10px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--on-gold);background:var(--gold);border-radius:3px;padding:2px 5px;margin-left:4px;vertical-align:1px}
 .hint{border:1px dashed var(--line2);border-radius:6px;padding:12px;color:var(--muted);font-size:13px;margin:0}
 
 .rel .sw{align-self:center}
@@ -261,7 +273,7 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
   </div>
   <div class="filters" id="settings" hidden>
     <div class="fg"><h4>Claude API key</h4>
-      <p class="hidden-note" style="margin:0 0 8px">Needed for Explain, Analyse and "Fill in with Claude". It is stored only in this browser and sent only to Anthropic. Create a key at <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">console.anthropic.com</a>; each explanation costs a few cents.</p>
+      <p class="hidden-note" style="margin:0 0 8px">Optional and paid: only needed for Explain, Analyse and "Fill in with Claude". Everything else on this site is free. Your key is stored only in this browser and sent only to Anthropic. Create a key at <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">console.anthropic.com</a>; each explanation costs a few cents.</p>
       <div class="frow"><input type="password" id="api-key" placeholder="sk-ant-…" autocomplete="off" spellcheck="false"><button class="tag" id="api-save">Save</button><button class="tag" id="api-clear">Remove</button></div>
       <p class="hidden-note" id="api-msg" aria-live="polite"></p>
     </div>
@@ -1240,6 +1252,7 @@ function head(eyebrow, title, glyph){
 function wirePanel(){
   panel.classList.remove('min'); panelMode = '';
   const all = document.getElementById('all-upd'); if (all) all.onclick = renderChanges;
+  panel.querySelectorAll('[data-allnews]').forEach(b => b.onclick = renderChanges);
   const c = document.getElementById('close'); if (c) c.onclick = clearSelection;
   const m = document.getElementById('collapse'); if (m) m.onclick = ()=>{ panel.classList.toggle('min'); m.textContent = panel.classList.contains('min') ? '▴' : '▾'; };
   wireInside(panel);
@@ -1318,6 +1331,7 @@ function explainHTML(a,b){
       ${f.pois.length ? `<dt>Shared hotspots</dt><dd>${f.pois.map(([p,i])=>`<button class="tag" data-p="${i}"><i class="g g-${p.t}"></i> ${esc(p.n)}</button>`).join(' ')}</dd>` : ''}
       ${r.updated ? `<dt>Updated</dt><dd>${esc(fmtDate(r.updated))}${src?` · <a href="${esc(src)}" target="_blank" rel="noopener">${esc(host(src))}</a>`:''}</dd>` : ''}
     </dl>
+    ${pairNewsHTML(a,b)}
     ${f.threads.length ? `<div class="threads"><div class="th-title">Indirect links <em>how each affects the other beyond formal ties</em></div>${f.threads.map(t=>threadHTML(t,[a,b])).join('')}</div>` : ''}
     <div class="ai-wrap">
       <div class="actions">
@@ -1691,7 +1705,7 @@ function facetBody(ids){
     <div class="ffoot">
       ${missing ? `<div class="actions"><button class="btn" data-ffill>✦ Fill in the ≈ rows with Claude</button></div>` : ''}
       <p class="fmsg hidden-note" aria-live="polite"></p>
-      <p class="hidden-note">Plain figures: World Bank, latest year shown${ids.length>1?'; gold = highest (or lowest where lower is better)':''}. ≈ = Claude's estimate from its own knowledge, with year and source; check before relying on it.${f.k==='politics' ? ' ✓ = checked against the news by the daily update.' : ''}</p>
+      <p class="hidden-note">Plain figures: World Bank, latest year shown${ids.length>1?'; gold = highest (or lowest where lower is better)':''}. ≈ = Claude's estimate from its own knowledge, with year and source; check before relying on it.${f.k==='politics' ? ' ✓ = from Wikidata (refreshed daily; links to the source).' : ''}</p>
     </div>`;
 }
 function facetSection(ids, title){
@@ -1778,6 +1792,7 @@ function renderCompare(){
       <div class="legend">${SUMMARY_ORDER.map(s=>`<span><i class="sw" style="background:${STATUS[s].color}"></i>${STATUS[s].label} <b>${counts[s]}</b></span>`).join('')}</div>
     </section>
     <p class="hidden-note" style="margin-top:-8px"><sup class="ind">+n</sup> marks pairs with indirect links (militant networks, smuggling, migration, proxies, resources).</p>
+    ${togetherHTML(ids)}
     ${groupThreads.length ? `<section><h3>Hidden connections <em>${groupThreads.length}</em></h3>
       <div class="threads">${groupThreads.map(x=>threadHTML(x.t, ids)).join('')}</div></section>` : ''}
     <section><h3>Every pair <em>${pairs.length}</em></h3>
@@ -1813,6 +1828,7 @@ function renderCountry(id){
       <button class="tag" data-cmp="${id}">⇄ Compare with others</button>
     </div><div class="ai" hidden></div></div>
     <p class="note faint" style="margin:-6px 0 0;font-size:12px">Click any relationship below for an explanation.</p>
+    ${newsSection(id)}
     <section>
       <h3>Alignment <em>${all.length} links</em></h3>
       <div class="bar">${SUMMARY_ORDER.filter(s=>counts[s]).map(s=>`<div style="flex:${counts[s]};background:${STATUS[s].color}" title="${STATUS[s].label}: ${counts[s]}"></div>`).join('')}</div>
@@ -1874,6 +1890,7 @@ function renderIntro(){
     <button class="iconbtn collapse" id="collapse" aria-label="Collapse panel">▾</button></div>
     <div class="p-body">
     <p class="lede">Click any country to colour the world by its relationships, with arcs to its neighbours and key partners or rivals. Click a relationship to see why it has that status, or ask Claude to explain it in depth. Use <b>Compare countries</b> to pick 2–12 countries and see how they all relate, and <b>Filters</b> to narrow what's shown.</p>
+    ${alertsSection(5)}
     ${changesSection(1)}
     <section><h3>Relationship key</h3><div class="legend">${SUMMARY_ORDER.map(s=>`<span><i class="sw" style="background:${STATUS[s].color}"></i>${STATUS[s].label}</span>`).join('')}</div></section>
     <section><h3>Try a country</h3><div class="quick">${picks.map(c=>`<button class="tag" data-c="${c}">${esc(ENT[c].name)}</button>`).join('')}</div></section>
@@ -1882,7 +1899,7 @@ function renderIntro(){
       <li>${ALL_IDS.length} countries and territories, including ${MICRO.length} small states shown as dots</li>
       <li>${POIS.length} strategic locations across five categories</li>
       <li>${REL.size} annotated bilateral relationships, plus alliances and blocs</li></ul></section>
-    <p class="foot">Baseline snapshot as of mid-2026, updated daily from the news. Relations are editorial shorthand, not a substitute for analysis.</p>
+    <p class="foot">Headlines, leaders and figures refresh automatically; relationship statuses are an editorial baseline. Relations are editorial shorthand, not a substitute for analysis.</p>
     </div>`;
   wirePanel(); panelMode = 'intro';
 }
@@ -2059,8 +2076,10 @@ function changesSection(n){
 }
 function renderChanges(){
   const log = (meta && Array.isArray(meta.log)) ? meta.log : [];
-  panel.innerHTML = head('Daily news check','Update log') + `<div class="p-body">
-    ${meta && meta.lastRun ? `<p class="note">Last checked ${esc(fmtDate(meta.lastRun))}. Claude scans the news each day and records only significant, sourced changes.</p>` : '<p class="note">No updates yet.</p>'}
+  panel.innerHTML = head('News & updates','Headlines to watch') + `<div class="p-body">
+    ${NEWS && NEWS.generated ? `<p class="note">Headlines last refreshed ${esc(fmtDateTime(NEWS.generated))}; the site refreshes at 00:00, 12:00 and 18:00 Berlin time.</p>` : ''}
+    ${alertsSection(200)}
+    ${log.length ? '<h3 style="margin:4px 0 -8px;font:600 13px var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)">Recorded relationship changes</h3>' : ''}
     ${log.map(e=>`<section><h3>${esc(fmtDate(e.date)||e.date||'')}</h3><ul class="changes">${changeItems(e) || '<li class="muted">No significant changes.</li>'}</ul></section>`).join('')}
     <p class="foot">Automated summaries can be wrong; check the linked sources.</p></div>`;
   wirePanel(); panelMode = 'changes';
@@ -2074,7 +2093,7 @@ function clearSelectionQuiet(){
   refreshPolys(); globe.pointColor(globe.pointColor()); globe.arcsData([]); globe.ringsData([]);
 }
 function onMeta(){
-  if (meta && meta.lastRun){ badge.hidden = false; badge.textContent = 'Updated ' + fmtDate(meta.lastRun); }
+  if (meta && meta.lastRun && !(NEWS && NEWS.generated)){ badge.hidden = false; badge.textContent = 'Updated ' + fmtDate(meta.lastRun); }
   if (panelMode==='intro') renderIntro();
   else if (panelMode==='changes') renderChanges();
 }
@@ -2090,12 +2109,103 @@ async function loadLive(){
     livePois = Object.values(d.pois || {});
     liveThreads = Object.entries(d.threads || {}).map(([id, t]) => ({id, ...t}));
     applyLive();
-    const pol = {}; Object.entries(d.politics || {}).forEach(([k, v]) => { if (ENT[k]) pol[k] = v; });
-    const ps = JSON.stringify(pol);
-    if (ps !== polSig){ polSig = ps; POL = pol; document.querySelectorAll('.facets').forEach(refreshFacet); }
+    LIVEPOL = d.politics || {};
+    rebuildPOL();
     const m = d.meta || null;
     if (JSON.stringify(m) !== JSON.stringify(meta)){ meta = m; onMeta(); }
   } catch(e){}
+}
+/* politics: Wikidata (refreshed daily) on top of any manually recorded entries */
+let LIVEPOL = {}, WIKI = {}, WIKI_AT = null;
+function rebuildPOL(){
+  const pol = {};
+  new Set([...Object.keys(LIVEPOL), ...Object.keys(WIKI)]).forEach(k => {
+    if (!ENT[k]) return;
+    const w = WIKI[k], l = LIVEPOL[k];
+    pol[k] = w ? {...(l || {}), ...w, updated: WIKI_AT, source: w.source} : l;
+  });
+  const ps = JSON.stringify(pol);
+  if (ps !== polSig){ polSig = ps; POL = pol; document.querySelectorAll('.facets').forEach(refreshFacet); }
+}
+async function loadPolitics(){
+  try {
+    const r = await fetch('data/politics.json?t=' + Math.floor(Date.now()/36e5), {cache:'no-store'});
+    if (!r.ok) return;
+    const d = await r.json();
+    WIKI = d.countries || {}; WIKI_AT = d.generated || null;
+    rebuildPOL();
+  } catch(e){}
+}
+
+/* ---------- headlines (Google News, refreshed 3x a day by GitHub Actions) ---------- */
+let NEWS = null;
+async function loadNews(){
+  try {
+    const r = await fetch('data/news.json?t=' + Date.now(), {cache:'no-store'});
+    if (!r.ok) return;
+    const d = await r.json();
+    if (NEWS && d.generated === NEWS.generated) return;
+    NEWS = d; onNews();
+  } catch(e){}
+}
+const newsItems = idx => (idx || []).map(j => NEWS && NEWS.items && NEWS.items[j]).filter(Boolean);
+function fmtDateTime(d){ const t = new Date(d); return isNaN(t) ? '' : t.toLocaleString(undefined, {day:'numeric', month:'short', hour:'2-digit', minute:'2-digit'}); }
+function ago(d){
+  const m = (Date.now() - new Date(d)) / 6e4;
+  if (!isFinite(m)) return '';
+  if (m < 60) return Math.max(1, Math.round(m)) + ' min ago';
+  if (m < 1440) return Math.round(m/60) + ' h ago';
+  return Math.round(m/1440) + ' d ago';
+}
+function newsLi(it){
+  const u = safeUrl(it.u);
+  return `<li>${u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(it.t)}</a>` : esc(it.t)}<span class="nmeta">${esc(it.s || '')}${it.s ? ' · ' : ''}${esc(ago(it.d))}</span></li>`;
+}
+function tensionHTML(p){
+  if (p == null) return '';
+  const [lvl, col] = p >= 40 ? ['High', 'var(--s-H)'] : p >= 20 ? ['Elevated', 'var(--s-T)'] : ['Low', 'var(--s-F)'];
+  return `<div class="tension"><div class="tbar"><i style="width:${Math.min(100, p)}%;background:${col}"></i></div>
+    <span><b style="color:${col}">${lvl} tension</b> · ${p}% of recent headlines mention conflict terms</span></div>`;
+}
+function newsSection(id){
+  const c = NEWS && NEWS.countries && NEWS.countries[id];
+  if (!c) return '';
+  const items = newsItems(c.i);
+  return `<section class="newsbox"><h3>In the news <em>${c.n || 0} headlines · last 2 days</em></h3>
+    ${tensionHTML(c.tension)}
+    ${items.length ? `<ul class="news">${items.map(newsLi).join('')}</ul>` : '<p class="note muted">No recent headlines found.</p>'}
+    <p class="hidden-note">Google News, refreshed at 00:00, 12:00 and 18:00 Berlin time · last ${esc(fmtDateTime(NEWS.generated))}.</p></section>`;
+}
+function pairNewsHTML(a, b){
+  const its = newsItems(NEWS && NEWS.pairs && NEWS.pairs[key(a, b)]);
+  return its.length ? `<div class="threads"><div class="th-title">In the news together</div><ul class="news">${its.map(newsLi).join('')}</ul></div>` : '';
+}
+function togetherHTML(ids){
+  const rows = [];
+  ids.forEach((a, i) => ids.slice(i+1).forEach(b => {
+    const its = newsItems(NEWS && NEWS.pairs && NEWS.pairs[key(a, b)]);
+    if (its.length) rows.push(`<li><b>${esc(ENT[a].name)} ↔ ${esc(ENT[b].name)}</b><ul class="news">${its.map(newsLi).join('')}</ul></li>`);
+  }));
+  return rows.length ? `<section><h3>In the news together <em>${rows.length} pair${rows.length > 1 ? 's' : ''}</em></h3><ul class="links">${rows.join('')}</ul></section>` : '';
+}
+function alertLi(a){
+  const names = (a.c || []).map(c => ENT[c] ? ENT[c].name : c).join(' – ');
+  const u = safeUrl(a.u);
+  return `<li><b>${esc(names)}</b> <span class="kw">${esc(a.kw)}</span><br>${u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(a.t)}</a>` : esc(a.t)} <span class="nmeta">${esc(a.s || '')} · ${esc(ago(a.d))}</span></li>`;
+}
+function alertsSection(n){
+  const al = (NEWS && NEWS.alerts) || [];
+  if (!al.length) return '';
+  return `<section><h3>Headlines to watch <em>flagged automatically</em></h3><ul class="alerts">${al.slice(0, n).map(alertLi).join('')}</ul>
+    ${n < al.length ? `<button class="tag" data-allnews>All ${al.length} headlines to watch</button>` : ''}
+    <p class="hidden-note">Headlines naming two or more countries with words like war, sanctions, ceasefire or coup, from the last 7 days. Keyword matching only: read the article before drawing conclusions.</p></section>`;
+}
+function onNews(){
+  if (NEWS && NEWS.generated){ badge.hidden = false; badge.textContent = 'Updated ' + fmtDateTime(NEWS.generated); }
+  if (panelMode === 'intro') renderIntro();
+  else if (panelMode === 'changes') renderChanges();
+  else if (sel.type === 'country') renderCountry(sel.id);
+  else if (sel.type === 'compare') renderCompare();
 }
 async function loadWB(){
   try {
@@ -2103,8 +2213,8 @@ async function loadWB(){
     if (r.ok){ WB = await r.json(); document.querySelectorAll('.facets').forEach(refreshFacet); }
   } catch(e){}
 }
-loadWB(); loadLive();
-setInterval(loadLive, 10*60*1000);
+loadWB(); loadLive(); loadNews(); loadPolitics();
+setInterval(() => { loadLive(); loadNews(); }, 10*60*1000);
 
 /* ---------- settings drawer: API key + model ---------- */
 const setBtn = document.getElementById('set-btn'), setPanel = document.getElementById('settings');

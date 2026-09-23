@@ -1,7 +1,8 @@
-name: Refresh from the news
+name: Refresh data
 
 # 00:00, 12:00 and 18:00 Berlin time. GitHub cron is UTC, so each slot has a
-# summer and a winter trigger; refresh.py skips whichever one is off-slot.
+# summer and a winter trigger; the scripts skip whichever one is off-slot.
+# Everything here is free: Google News RSS, Wikidata and the World Bank API.
 on:
   schedule:
     - cron: "0 22,23 * * *"   # 00:00 Berlin
@@ -30,19 +31,20 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: pip
 
       - run: pip install -r requirements.txt
 
-      - name: World Bank figures
+      - name: Headlines (Google News)
+        continue-on-error: true
+        run: python scripts/news.py
+
+      - name: Leaders and parties (Wikidata, midnight only)
+        continue-on-error: true
+        run: python scripts/wikidata.py
+
+      - name: Figures (World Bank, midnight only)
         continue-on-error: true
         run: python scripts/worldbank.py
-
-      - name: News refresh with Claude
-        run: python scripts/refresh.py
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          FAULTLINES_MODEL: ${{ vars.FAULTLINES_MODEL }}
 
       - name: Commit updated data
         id: commit

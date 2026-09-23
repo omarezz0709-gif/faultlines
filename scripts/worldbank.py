@@ -5,17 +5,13 @@ file if the API is down, so a failed fetch never blanks the page's numbers.
 """
 from __future__ import annotations
 
-import datetime as dt
 import json
 import os
-import sys
 import urllib.request
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from refresh import BERLIN, SLOT_WINDOW_MIN  # noqa: E402
+from common import DATA, in_slot, now_utc, scheduled
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(ROOT, "data", "wb.json")
+OUT = os.path.join(DATA, "wb.json")
 
 INDICATORS = {
     "gdp": "NY.GDP.MKTP.CD", "gdppc": "NY.GDP.PCAP.CD", "gnippp": "NY.GNP.PCAP.PP.CD",
@@ -28,10 +24,7 @@ INDICATORS = {
 
 
 def due() -> bool:
-    if os.environ.get("GITHUB_EVENT_NAME") != "schedule":
-        return True
-    now = dt.datetime.now(BERLIN)
-    return now.hour == 0 or (now.hour == 1 and now.minute < SLOT_WINDOW_MIN - 60)
+    return not scheduled() or in_slot(now_utc(), hours=(0,))
 
 
 def fetch(code: str) -> list:
