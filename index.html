@@ -1,0 +1,2131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Interactive globe of international relations, chokepoints and flashpoints, refreshed from the news three times a day.">
+<title>Faultlines Globe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  color-scheme: dark;
+  --bg:#070707; --panel:rgba(13,13,13,.93); --panel-solid:#111111;
+  --raise:#191919; --raise2:#222222; --hover:#1f1f1f;
+  --line:#262626; --line2:#3a3a3a;
+  --text:#ededed; --soft:#c9c9c9; --muted:#9b9b9b; --faint:#666666;
+  --gold:#d4af37; --gold-hi:#ecd27f; --gold-dim:rgba(212,175,55,.38); --on-gold:#141004;
+  --sel:var(--gold);
+  --s-A:#4ea8ff; --s-F:#4fc9a6; --s-N:#a8a8a8; --s-T:#f2a541; --s-H:#ef5b4c; --s-W:#e0337a;
+  --p-strait:#d4af37; --p-land:#cfcfcf; --p-flash:#e0604f; --p-base:#8f8f8f; --p-resource:#f1e2a6;
+  --display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+html,body{height:100%}
+body{margin:0;background:radial-gradient(120% 90% at 40% 45%,#1c1c1c 0%,var(--bg) 62%,#000 100%);background-color:var(--bg);color:var(--text);font:14px/1.5 var(--body);overflow:hidden}
+#globe{position:fixed;inset:0}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--sel);outline-offset:2px}
+
+/* ---------- top bar ---------- */
+.top{position:fixed;left:16px;top:calc(16px + env(safe-area-inset-top,0px));width:min(360px,calc(100vw - 32px));display:flex;flex-direction:column;gap:10px;z-index:5;pointer-events:none}
+.top > *{pointer-events:auto}
+.brand{display:flex;align-items:baseline;gap:10px}
+.brand h1{margin:0;font:700 30px/1 var(--display);letter-spacing:.08em;text-transform:uppercase}
+.brand span{font:500 12px/1.2 var(--mono);color:var(--muted);letter-spacing:.02em}
+.search{position:relative}
+.search input{width:100%;box-sizing:border-box;background:var(--panel);border:1px solid var(--line2);border-radius:6px;color:var(--text);font:15px var(--body);padding:10px 12px 10px 34px;backdrop-filter:blur(8px)}
+.search input::placeholder{color:var(--faint)}
+[hidden]{display:none!important}
+.search svg{position:absolute;z-index:1;pointer-events:none;left:11px;top:21px;transform:translateY(-50%);width:15px;height:15px;stroke:var(--muted)}
+.sugg{position:relative;margin:4px 0 0;padding:4px;list-style:none;background:var(--panel-solid);border:1px solid var(--line2);border-radius:6px;max-height:320px;overflow:auto}
+.sugg li button{display:flex;justify-content:space-between;gap:8px;width:100%;text-align:left;background:none;border:0;padding:7px 9px;border-radius:4px;cursor:pointer}
+.sugg li button:hover,.sugg li button.on{background:var(--raise2)}
+.sugg small{color:var(--faint);font:11px var(--mono);text-transform:uppercase;letter-spacing:.06em}
+.layers{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:7px;background:var(--panel);border:1px solid var(--line2);border-radius:999px;padding:5px 11px 5px 9px;font:500 12.5px/1.2 var(--body);cursor:pointer;color:var(--muted);backdrop-filter:blur(8px);white-space:nowrap}
+.chip[aria-pressed="true"]{color:var(--text);border-color:var(--gold-dim);background:var(--raise)}
+.chip[aria-pressed="false"] .g{opacity:.3}
+.g{display:inline-block;width:10px;height:10px;flex:none}
+.g-strait{background:var(--p-strait);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+.g-land{background:var(--p-land);clip-path:polygon(50% 5%,100% 95%,0 95%)}
+.g-flash{background:var(--p-flash);border-radius:50%;box-shadow:0 0 0 2px rgba(224,96,79,.3)}
+.g-base{background:var(--p-base);width:9px;height:9px}
+.g-resource{background:var(--p-resource);clip-path:polygon(25% 5%,75% 5%,100% 50%,75% 95%,25% 95%,0 50%)}
+.g-arcs{border-top:2px dashed var(--gold);height:0;width:14px;border-radius:0}
+
+/* ---------- POI markers ---------- */
+.poi{position:relative;width:18px;height:18px;padding:0;border:0;background:none;cursor:pointer;display:grid;place-items:center;transition:opacity .25s}
+.poi i{display:block;width:11px;height:11px;box-shadow:0 0 0 1px rgba(0,0,0,.4)}
+.poi-strait i{background:var(--p-strait);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);width:12px;height:12px}
+.poi-land i{background:var(--p-land);clip-path:polygon(50% 5%,100% 95%,0 95%)}
+.poi-flash i{background:var(--p-flash);border-radius:50%;width:9px;height:9px;box-shadow:0 0 0 3px rgba(224,96,79,.28)}
+.poi-base i{background:var(--p-base);width:8px;height:8px}
+.poi-resource i{background:var(--p-resource);clip-path:polygon(25% 5%,75% 5%,100% 50%,75% 95%,25% 95%,0 50%)}
+.poi span{position:absolute;left:17px;top:50%;transform:translateY(-50%);white-space:nowrap;font:600 13px/1 var(--display);letter-spacing:.05em;text-transform:uppercase;color:var(--text);background:rgba(8,8,8,.9);padding:3px 6px;border-radius:3px;opacity:0;pointer-events:none;transition:opacity .15s}
+.poi:hover span,.poi:focus-visible span,.poi.on span{opacity:1}
+.poi.on i{outline:2px solid var(--sel);outline-offset:3px}
+
+/* ---------- side panel ---------- */
+.panel{position:fixed;right:16px;top:calc(16px + env(safe-area-inset-top,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));width:380px;z-index:6;background:var(--panel);border:1px solid var(--line2);border-radius:8px;backdrop-filter:blur(12px);display:flex;flex-direction:column;overflow:hidden}
+.p-head{padding:16px 18px 12px;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:flex-start}
+.p-head .t{flex:1;min-width:0}
+.eyebrow{font:500 11px/1.2 var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--muted);display:flex;align-items:center;gap:7px}
+.p-head h2{margin:4px 0 0;font:700 32px/1 var(--display);letter-spacing:.02em;text-wrap:balance}
+.iconbtn{flex:none;width:30px;height:30px;border-radius:5px;border:1px solid var(--line2);background:transparent;color:var(--muted);cursor:pointer;display:grid;place-items:center;font-size:16px;line-height:1}
+.iconbtn:hover{color:var(--text);border-color:var(--gold-dim)}
+.collapse{display:none}
+.p-body{padding:14px 18px 20px;overflow:auto;display:flex;flex-direction:column;gap:18px}
+.p-body h3{margin:0 0 8px;font:600 13px/1.2 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:flex;justify-content:space-between}
+.p-body h3 em{font:400 11px var(--mono);letter-spacing:0;text-transform:none;font-style:normal;color:var(--faint)}
+.note{margin:0;color:var(--soft);font-size:13.5px}
+.lede{margin:0;color:var(--soft);font-size:14px;max-width:62ch}
+.bar{display:flex;height:8px;border-radius:2px;overflow:hidden;background:var(--raise2);gap:1px}
+.bar div{height:100%}
+.legend{display:grid;grid-template-columns:repeat(3,1fr);gap:6px 10px;margin-top:10px}
+.legend span{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);white-space:nowrap}
+.legend b{font:500 12px var(--mono);color:var(--text);font-variant-numeric:tabular-nums}
+.sw{width:9px;height:9px;border-radius:2px;flex:none}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font:500 12px/1 var(--body);padding:5px 8px;border-radius:4px;background:var(--raise);border:1px solid var(--line);color:var(--soft)}
+.tag.al{border-color:var(--gold-dim);color:var(--gold-hi)}
+button.tag{cursor:pointer}
+button.tag:hover{border-color:var(--gold-dim);color:var(--text)}
+.rel{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.rel li + li{border-top:1px solid var(--line)}
+.rel .rb{display:grid;grid-template-columns:auto 1fr auto;gap:2px 10px;align-items:baseline;width:100%;text-align:left;background:none;border:0;padding:8px 4px;cursor:pointer;border-radius:4px}
+.rel .rb:hover,.rel .rb[aria-expanded="true"]{background:var(--hover)}
+.rel .rb::after{content:"▸";grid-column:3;grid-row:2;justify-self:end;color:var(--faint);font-size:11px;transition:transform .15s}
+.rel .rb[aria-expanded="true"]::after{transform:rotate(90deg)}
+.xp{margin:2px 0 10px 19px;padding:12px 12px 10px;border-left:2px solid var(--gold);background:rgba(255,255,255,.03);border-radius:0 5px 5px 0;display:flex;flex-direction:column;gap:9px;font-size:13px}
+.xp p{margin:0;color:var(--soft)}
+.xp-status{display:flex;gap:8px;align-items:baseline}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:5px 12px;margin:0;font-size:12.5px}
+.facts dt{font:500 10.5px/1.6 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--faint)}
+.facts dd{margin:0;color:var(--soft)}
+.facts a,.ai a{color:var(--gold-hi)}
+.actions{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:6px;background:var(--gold);color:var(--on-gold);border:0;border-radius:5px;padding:6px 11px;font:600 12.5px/1.2 var(--body);cursor:pointer}
+.btn:hover{background:var(--gold-hi)}
+.btn[data-running]{background:var(--raise2);color:var(--text)}
+.ai{font-size:13.5px;color:var(--text);line-height:1.55;display:flex;flex-direction:column;gap:6px;padding-top:4px}
+.ai h4{margin:6px 0 0;font:600 13px/1.2 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--sel)}
+.ai ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:3px}
+.ai p{margin:0}
+.ai .faint{font-size:11.5px}
+.thinking{animation:pulse 1.4s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.45}}
+.mx-wrap{overflow-x:auto}
+.mx{border-collapse:separate;border-spacing:2px;font:500 11.5px var(--mono)}
+.mx th{color:var(--muted);font-weight:500;padding:3px 5px;text-align:left;white-space:nowrap}
+.mx thead th{text-align:center}
+.mx td{min-width:44px;height:26px;text-align:center;border-radius:3px;font:600 11px var(--display);letter-spacing:.08em;text-transform:uppercase}
+.mx td.self{color:var(--faint);background:var(--raise)}
+.mx td.none{color:var(--faint);background:var(--raise)}
+.mem{display:inline-flex;align-items:center;gap:6px;padding-right:4px}
+.mem button{background:none;border:0;color:var(--muted);cursor:pointer;font-size:14px;line-height:1;padding:0 3px}
+.mem button:hover{color:var(--text)}
+.modes{display:flex;gap:6px}
+.chip.mode[aria-pressed="true"]{background:var(--gold);color:var(--on-gold);border-color:var(--gold)}
+.chip svg{flex:none}
+.fcount{background:var(--gold);color:var(--on-gold);border-radius:999px;font:600 10.5px/1 var(--mono);padding:2px 6px;margin-left:2px}
+#flt-btn[aria-expanded="true"]{border-color:var(--gold);color:var(--text)}
+.filters{background:var(--panel);border:1px solid var(--line2);border-top:2px solid var(--gold);border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:14px;max-height:calc(100vh - 230px);overflow:auto;backdrop-filter:blur(12px)}
+.fg h4{margin:0 0 8px;font:600 12px/1.2 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.fchips{display:flex;flex-wrap:wrap;gap:6px}
+.fchips .chip{background:var(--raise)}
+.fchips .chip[aria-pressed="false"]{opacity:.55}
+.fchips .chip[aria-pressed="false"] .sw{background:transparent!important;outline:1px solid var(--faint)}
+.fquick{display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:8px}
+.link{background:none;border:0;padding:0;color:var(--gold-hi);font:500 12px var(--body);cursor:pointer;text-decoration:underline;text-decoration-color:var(--gold-dim);text-underline-offset:3px}
+.link:hover{color:var(--text)}
+.reset{align-self:flex-start;color:var(--muted)}
+.sw-row{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--soft);cursor:pointer;padding:3px 0}
+.sw-row input{accent-color:var(--gold);width:15px;height:15px;margin:0}
+.frow{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.frow input{flex:1;min-width:0;background:var(--raise);color:var(--text);border:1px solid var(--line2);border-radius:5px;padding:6px 8px;font:13px var(--mono)}
+.filters a{color:var(--gold-hi)}
+.frow select{flex:1;min-width:0;background:var(--raise);color:var(--text);border:1px solid var(--line2);border-radius:5px;padding:6px 8px;font:13px var(--body)}
+.tag:disabled{opacity:.4;cursor:default}
+.hidden-note{font-size:12px;color:var(--faint);margin:6px 0 0}
+.threads{display:flex;flex-direction:column;gap:8px}
+.th-title{font:600 12px/1.2 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.th-title em{font:400 11.5px var(--body);letter-spacing:0;text-transform:none;font-style:normal;color:var(--faint);margin-left:6px}
+.thread,.thread-d{background:var(--raise);border:1px solid var(--line);border-radius:5px;padding:9px 10px;display:flex;flex-direction:column;gap:6px}
+.thread p,.thread-d p{margin:0;font-size:12.5px;color:var(--soft);line-height:1.45}
+.th-head,.thread-d summary{display:flex;flex-direction:column;gap:2px}
+.thread-d summary{cursor:pointer;list-style:none}
+.thread-d summary::-webkit-details-marker{display:none}
+.thread-d summary b::after{content:" ▸";color:var(--faint);font-size:11px}
+.thread-d[open] summary b::after{content:" ▾"}
+.thread-d[open]{gap:8px}
+.th-head b,.thread-d summary b{font-size:13px;font-weight:600}
+.th-type{font:500 10px/1.2 var(--mono);text-transform:uppercase;letter-spacing:.08em}
+.th-route{display:flex;flex-wrap:wrap;gap:3px 5px;font:500 11px var(--mono);color:var(--faint);align-items:center}
+.th-route .on{color:var(--gold-hi)}
+.th-route i{font-style:normal;color:var(--line2)}
+.thread-d .tag{align-self:flex-start}
+sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-align:4px}
+.locs{display:flex;flex-direction:column;gap:8px}
+.loc{background:var(--raise);border:1px solid var(--line);border-left:2px solid var(--gold);border-radius:5px;padding:9px 10px;display:flex;flex-direction:column;gap:5px}
+.loc b{font:700 17px/1.1 var(--display);letter-spacing:.03em}
+.loc-stat{font:500 11.5px var(--mono);color:var(--gold-hi)}
+.loc p{margin:0;font-size:12.5px;color:var(--soft);line-height:1.45}
+.links{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px;font-size:13px}
+.links > li{border-top:1px solid var(--line);padding-top:8px}
+.links ul{margin:4px 0 2px;padding-left:18px;color:var(--soft);font-size:12.5px;display:flex;flex-direction:column;gap:2px}
+.links .faint{font:11px var(--mono)}
+.mx.inv td{min-width:34px}
+.mx.inv td.yes{background:rgba(212,175,55,.18);color:var(--gold-hi)}
+.mx.inv th .g{vertical-align:-1px}
+.abbr{color:var(--muted);font-size:.92em;font-weight:400}
+.ftabs{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:8px}
+.ftabs button{background:var(--raise);border:1px solid var(--line);color:var(--muted);border-radius:4px;padding:5px 9px;font:500 12px var(--body);cursor:pointer}
+.ftabs button:hover{color:var(--text);border-color:var(--gold-dim)}
+.ftabs button[aria-selected="true"]{color:var(--on-gold);background:var(--gold);border-color:var(--gold)}
+.ft{border-collapse:separate;border-spacing:0;font-size:12.5px;min-width:100%}
+.ft th,.ft td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.ft thead th{font:600 11px var(--mono);color:var(--muted);white-space:nowrap;letter-spacing:.03em}
+.ft tbody th{font-weight:500;color:var(--soft);position:sticky;left:0;background:var(--panel-solid);min-width:118px;max-width:150px;z-index:1}
+.ft thead th:first-child{position:sticky;left:0;background:var(--panel-solid);z-index:1}
+.ft td{min-width:96px;max-width:220px;color:var(--text)}
+.ft .v{display:block;font-variant-numeric:tabular-nums;line-height:1.35}
+.ft .yr{display:block;font:10.5px/1.3 var(--mono);color:var(--faint);margin-top:2px}
+.ft .yr a{color:var(--gold-hi)}
+.ft td.ai .v{color:var(--soft)}
+.ft td.ok .v{color:var(--text)}
+.ft td.top .v{color:var(--gold-hi);font-weight:600}
+.ft td.na{color:var(--faint);font-size:12px}
+.ft .info{font-style:normal;color:var(--faint);cursor:help;font-size:10px;border:1px solid var(--line2);border-radius:50%;padding:0 4px;margin-left:3px}
+.aitag{font:600 10px var(--mono);color:var(--gold);margin-left:3px}
+.ffoot{display:flex;flex-direction:column;gap:6px;margin-top:8px}
+.ffoot .hidden-note{margin:0}
+.hint{border:1px dashed var(--line2);border-radius:6px;padding:12px;color:var(--muted);font-size:13px;margin:0}
+
+.rel .sw{align-self:center}
+.rel .n{font-weight:600}
+.rel .n small{font:400 10.5px var(--mono);color:var(--faint);text-transform:uppercase;letter-spacing:.06em;margin-left:6px}
+.rel .d{grid-column:2 / 4;color:var(--muted);font-size:12.5px;line-height:1.4}
+.pill{font:600 11px/1 var(--display);letter-spacing:.1em;text-transform:uppercase;padding:3px 6px 2px;border-radius:3px;white-space:nowrap}
+.muted{color:var(--muted)}
+.faint{color:var(--faint)}
+.stat{font:500 13px/1.4 var(--mono);color:var(--text);background:var(--raise);border:1px solid var(--line);border-radius:5px;padding:9px 11px}
+.coords{font:400 12px var(--mono);color:var(--faint)}
+.foot{margin-top:auto;padding-top:6px;font-size:11.5px;color:var(--faint);line-height:1.45}
+.quick{display:flex;flex-wrap:wrap;gap:6px}
+.brand{flex-wrap:wrap}
+.badge{margin-left:auto;background:rgba(212,175,55,.12);border:1px solid var(--gold-dim);color:var(--gold-hi);border-radius:999px;padding:3px 9px;font:500 11px/1.2 var(--mono);cursor:pointer;white-space:nowrap}
+.badge::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--gold);margin-right:6px;vertical-align:1px}
+.upd,.rel .n small.upd{font:500 10.5px var(--mono);color:var(--gold-hi);margin-left:6px;text-transform:none;letter-spacing:0}
+.changes{margin:0 0 8px;padding-left:16px;display:flex;flex-direction:column;gap:6px;font-size:13px}
+.changes a{color:var(--gold-hi);font:12px var(--mono)}
+.intro-list{margin:0;padding-left:18px;color:var(--soft);display:flex;flex-direction:column;gap:4px}
+
+/* tooltip from globe.gl */
+.float-tooltip-kap{background:rgba(10,10,10,.95)!important;border:1px solid var(--line2);border-radius:5px!important;padding:7px 10px!important;font:13px var(--body)!important;color:var(--text)!important}
+.tip{display:flex;flex-direction:column;gap:5px}
+.tip b{font:700 16px/1 var(--display);letter-spacing:.04em;text-transform:uppercase}
+.tip em{font-style:normal;color:var(--muted);font-weight:400;text-transform:none}
+.tip .pill{align-self:flex-start}
+.tip .muted{font-size:12px}
+
+@media (max-width:760px){
+  .top{width:calc(100vw - 32px);gap:8px}
+  .brand h1{font-size:24px}
+  .filters{max-height:42vh}
+  .panel{left:8px;right:8px;width:auto;top:auto;bottom:calc(8px + env(safe-area-inset-bottom,0px));max-height:46%}
+  .panel.min .p-body{display:none}
+  .collapse{display:grid}
+  .p-head h2{font-size:26px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+</head>
+<body>
+<div id="globe" aria-label="Interactive globe"></div>
+
+<header class="top">
+  <div class="brand"><h1>Faultlines</h1><span>relations · chokepoints · flashpoints</span><button class="badge" id="upd-badge" hidden>Updated</button></div>
+  <div class="search">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="Search a country or strait…" autocomplete="off" aria-label="Search countries and locations">
+    <ul class="sugg" id="sugg" hidden></ul>
+  </div>
+  <div class="modes">
+    <button class="chip mode" id="cmp-btn" aria-pressed="false">⇄ Compare countries</button>
+    <button class="chip" id="set-btn" aria-expanded="false" aria-controls="settings">⚙ Settings</button>
+    <button class="chip" id="flt-btn" aria-expanded="false" aria-controls="filters"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 5h18M6 12h12M10 19h4"/></svg>Filters<span class="fcount" id="flt-count" hidden></span></button>
+  </div>
+  <div class="filters" id="settings" hidden>
+    <div class="fg"><h4>Claude API key</h4>
+      <p class="hidden-note" style="margin:0 0 8px">Needed for Explain, Analyse and "Fill in with Claude". It is stored only in this browser and sent only to Anthropic. Create a key at <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">console.anthropic.com</a>; each explanation costs a few cents.</p>
+      <div class="frow"><input type="password" id="api-key" placeholder="sk-ant-…" autocomplete="off" spellcheck="false"><button class="tag" id="api-save">Save</button><button class="tag" id="api-clear">Remove</button></div>
+      <p class="hidden-note" id="api-msg" aria-live="polite"></p>
+    </div>
+    <div class="fg"><h4>Model</h4><div class="frow"><select id="api-model" aria-label="Claude model"></select></div></div>
+  </div>
+  <div class="filters" id="filters" hidden>
+    <div class="fg"><h4>Relationship types</h4>
+      <div class="fchips" id="f-status" role="group" aria-label="Relationship types"></div>
+      <div class="fquick"><button class="link" data-fq="all">All</button><button class="link" data-fq="friends">Friends only</button><button class="link" data-fq="rivals">Rivals only</button><button class="link" data-fq="conflict">Hostile &amp; war</button></div>
+    </div>
+    <div class="fg"><h4>Ties</h4>
+      <label class="sw-row"><input type="checkbox" id="f-bloc-ties" checked><span>Include ties inferred from shared blocs</span></label>
+      <label class="sw-row"><input type="checkbox" id="f-nei"><span>Neighbours only</span></label>
+    </div>
+    <div class="fg"><h4>Highlight a bloc</h4>
+      <div class="frow"><select id="f-bloc" aria-label="Highlight a bloc"><option value="">None</option></select><button class="tag" id="f-bloc-cmp" disabled>⇄ Compare members</button></div>
+    </div>
+    <div class="fg"><h4>Quick comparisons</h4><div class="fchips" id="f-presets"></div></div>
+    <div class="fg"><h4>Map markers</h4><div class="layers" id="layers" role="group" aria-label="Map layers"></div></div>
+    <button class="link reset" id="f-reset">Reset all filters</button>
+  </div>
+</header>
+
+<aside class="panel" id="panel" aria-live="polite">
+  <div class="p-head"><div class="t"><div class="eyebrow">Loading</div><h2>Faultlines</h2></div></div>
+  <div class="p-body"><p class="lede">Building the globe…</p></div>
+</aside>
+
+<script src="https://cdn.jsdelivr.net/npm/globe.gl@2.46.2/dist/globe.gl.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datamaps/0.5.9/datamaps.world.min.js"></script>
+<script>
+/* ================================================================
+   DATA — simplified editorial snapshot, mid-2026
+   ================================================================ */
+const STATUS = {
+  A:{label:'Ally',          color:'#4ea8ff'},
+  F:{label:'Partner',       color:'#4fc9a6'},
+  N:{label:'Normal / mixed',color:'#9fb0bd'},
+  T:{label:'Tense',         color:'#f2a541'},
+  H:{label:'Hostile',       color:'#ef5b4c'},
+  W:{label:'Armed conflict',color:'#e0337a'}
+};
+const STATUS_DESC = {
+  A:'A formal or de facto alliance: mutual defence commitments, deep military integration or a treaty-level partnership.',
+  F:'Cooperative ties: close trade, diplomatic alignment or security cooperation, without a binding alliance.',
+  N:'Ordinary relations: normal diplomacy and trade with no major dispute, or a mix of cooperation and friction.',
+  T:'Significant friction: active disputes, sanctions, downgraded ties or periodic clashes, short of open hostility.',
+  H:'Adversarial: broken or no diplomatic relations, sustained confrontation or recent armed clashes.',
+  W:'Ongoing armed conflict between the two, or one occupying the other\'s territory.'
+};
+const SHORT = {A:'Ally',F:'Partner',N:'Normal',T:'Tense',H:'Hostile',W:'War'};
+const ORDER = ['W','H','T','A','F','N'];     // attention first
+const SUMMARY_ORDER = ['A','F','N','T','H','W'];
+
+const NAME_FIX = {
+  NCY:'Northern Cyprus', XKX:'Kosovo', SOL:'Somaliland', MKD:'North Macedonia', SWZ:'Eswatini',
+  TZA:'Tanzania', SRB:'Serbia', PSE:'Palestine', GNB:'Guinea-Bissau', BHS:'Bahamas', TLS:'Timor-Leste',
+  CZE:'Czechia', CIV:"Côte d'Ivoire", USA:'United States', COD:'DR Congo', COG:'Congo (Brazzaville)',
+  TUR:'Türkiye', CAF:'Central African Rep.'
+};
+const OWNER = { GAZ:'PSE', GRL:'DNK', GUF:'FRA', NCL:'FRA', ATF:'FRA', FLK:'GBR', PRI:'USA' };
+const TERRITORY_NOTE = { GAZ:'Part of Palestine',
+  GRL:'Autonomous territory of Denmark', GUF:'Overseas region of France', NCL:'French territory; independence votes 2018–21',
+  ATF:'French Southern Lands', FLK:'British Overseas Territory; claimed by Argentina', PRI:'US territory'
+};
+const SPECIAL = {
+  TWN:{kind:'Self-governing island', note:'Governs itself as the Republic of China; claimed by the PRC. Recognised by 12 states, but has deep unofficial ties with the US, Japan and Europe.'},
+  PSE:{kind:'Partially recognised state', note:'Recognised by about 157 UN members after a 2025 wave (UK, France, Canada, Australia and others). Made up of the West Bank (including East Jerusalem) and the Gaza Strip, both shown on the map as Palestine.'},
+  XKX:{kind:'Partially recognised state', note:'Declared independence from Serbia in 2008; recognised by around 100 states but not by Serbia, Russia, China or five EU members.'},
+  NCY:{kind:'Breakaway state', note:'Declared in 1983 after the 1974 Turkish invasion; recognised only by Türkiye.'},
+  SOL:{kind:'Self-declared state', note:'Broke from Somalia in 1991 and runs its own government, army and currency, while seeking international recognition.'},
+  ESH:{kind:'Disputed territory', note:'Non-self-governing territory. Morocco controls about 80% behind a fortified berm; the Algeria-backed Polisario Front claims it as the SADR. In 2025 the UN Security Council endorsed Morocco\'s autonomy plan as a basis for talks.'},
+};
+const MICRO = [
+  ['SGP','Singapore',1.35,103.82],['BHR','Bahrain',26.07,50.55],['MLT','Malta',35.9,14.45],['MDV','Maldives',3.2,73.22],
+  ['MUS','Mauritius',-20.3,57.58],['SYC','Seychelles',-4.68,55.49],['CPV','Cabo Verde',16.0,-24.0],['COM','Comoros',-11.7,43.3],
+  ['STP','São Tomé and Príncipe',0.3,6.6],['BRB','Barbados',13.19,-59.54],['ATG','Antigua and Barbuda',17.1,-61.8],
+  ['DMA','Dominica',15.41,-61.37],['GRD','Grenada',12.12,-61.68],['KNA','Saint Kitts and Nevis',17.3,-62.7],
+  ['LCA','Saint Lucia',13.9,-60.98],['VCT','Saint Vincent and the Grenadines',13.25,-61.2],['AND','Andorra',42.5,1.52],
+  ['MCO','Monaco',43.74,7.42],['LIE','Liechtenstein',47.16,9.55],['SMR','San Marino',43.94,12.46],['VAT','Vatican City',41.9,12.45],
+  ['WSM','Samoa',-13.76,-172.1],['TON','Tonga',-21.18,-175.2],['KIR','Kiribati',1.45,173.0],['FSM','Micronesia',6.92,158.16],
+  ['PLW','Palau',7.5,134.6],['MHL','Marshall Islands',7.1,171.4],['NRU','Nauru',-0.53,166.93],['TUV','Tuvalu',-8.52,179.2]
+].map(([id,name,lat,lng])=>({id,name,lat,lng}));
+
+const CENTER_FIX = {
+  USA:[39.5,-98.5], RUS:[61,97], CAN:[57,-101], CHN:[35,103], FRA:[46.6,2.4], NOR:[61.5,9], IDN:[-2.5,118],
+  CHL:[-35,-71.5], NZL:[-41.5,173], JPN:[36.5,138.5], GBR:[53.5,-2], FJI:[-17.8,178], DNK:[56,9.5],
+  MYS:[3.8,102.3], PHL:[12.5,122], GRC:[39.3,22], ITA:[42.8,12.5], HRV:[45.3,16], ARE:[24,54], KIR:[1.45,173]
+};
+
+const BLOCS = {
+  NATO:{name:'NATO', kind:'alliance', m:'USA CAN GBR FRA DEU ITA ESP PRT NLD BEL LUX DNK NOR ISL TUR GRC POL CZE SVK HUN ROU BGR SVN HRV ALB MNE MKD EST LVA LTU FIN SWE'},
+  CSTO:{name:'CSTO', kind:'alliance', m:'RUS BLR KAZ KGZ TJK'},
+  AUKUS:{name:'AUKUS', kind:'alliance', m:'AUS GBR USA'},
+  FVEY:{name:'Five Eyes', kind:'alliance', m:'USA GBR CAN AUS NZL'},
+  AES:{name:'Alliance of Sahel States', kind:'alliance', m:'MLI BFA NER'},
+  USPAC:{name:'US Pacific treaty ally', kind:'hub', hub:'USA', m:'JPN KOR PHL THA AUS'},
+  EU:{name:'EU', kind:'partner', m:'AUT BEL BGR HRV CYP CZE DNK EST FIN FRA DEU GRC HUN IRL ITA LVA LTU LUX MLT NLD POL PRT ROU SVK SVN ESP SWE'},
+  ASEAN:{name:'ASEAN', kind:'partner', m:'BRN KHM IDN LAO MYS MMR PHL SGP THA VNM TLS'},
+  GCC:{name:'GCC', kind:'partner', m:'SAU ARE QAT KWT OMN BHR'},
+  MERCOSUR:{name:'Mercosur', kind:'partner', m:'ARG BRA PRY URY BOL'},
+  USMCA:{name:'USMCA', kind:'partner', m:'USA CAN MEX'},
+  ECOWAS:{name:'ECOWAS', kind:'partner', m:'BEN CPV CIV GMB GHA GIN GNB LBR NGA SEN SLE TGO'},
+  EAC:{name:'East African Community', kind:'partner', m:'KEN TZA UGA RWA BDI SSD COD SOM'},
+  EAEU:{name:'Eurasian Economic Union', kind:'partner', m:'RUS BLR KAZ KGZ ARM'},
+  QUAD:{name:'Quad', kind:'partner', m:'USA IND JPN AUS'},
+  G7:{name:'G7', kind:'display', m:'USA CAN GBR FRA DEU ITA JPN'},
+  SCO:{name:'SCO', kind:'display', m:'CHN RUS IND PAK KAZ KGZ TJK UZB IRN BLR'},
+  BRICS:{name:'BRICS', kind:'display', m:'BRA RUS IND CHN ZAF EGY ETH IRN ARE IDN'},
+  OPEC:{name:'OPEC', kind:'display', m:'DZA COG GNQ GAB IRN IRQ KWT LBY NGA SAU ARE VEN'},
+  ARAB:{name:'Arab League', kind:'display', m:'DZA BHR COM DJI EGY IRQ JOR KWT LBN LBY MRT MAR OMN PSE QAT SAU SOM SDN SYR TUN ARE YEM'},
+  SADC:{name:'SADC', kind:'display', m:'AGO BWA COM COD SWZ LSO MDG MWI MUS MOZ NAM SYC ZAF TZA ZMB ZWE'},
+  CARICOM:{name:'CARICOM', kind:'display', m:'ATG BHS BRB BLZ DMA GRD GUY HTI JAM KNA LCA VCT SUR TTO'},
+  AU:{name:'African Union', kind:'display', m:'DZA AGO BEN BWA BFA BDI CPV CMR CAF TCD COM COD COG CIV DJI EGY GNQ ERI SWZ ETH GAB GMB GHA GIN GNB KEN LSO LBR LBY MDG MWI MLI MRT MUS MAR MOZ NAM NER NGA RWA ESH STP SEN SYC SLE SOM ZAF SSD SDN TZA TGO TUN UGA ZMB ZWE'}
+};
+for (const b of Object.values(BLOCS)) b.set = new Set(b.m.split(' '));
+
+/* Explicit bilateral relations: A B status note */
+const REL_RAW = `
+USA GBR A Special relationship: NATO, Five Eyes, AUKUS and nuclear cooperation
+USA CAN A NATO, NORAD and USMCA partners; strained since 2025 by tariffs and "51st state" talk
+USA MEX F Deeply integrated economies under USMCA; friction over tariffs, migration and cartels
+USA JPN A 1960 security treaty; about 54,000 US troops based in Japan
+USA KOR A 1953 Mutual Defense Treaty; about 28,500 US troops on the peninsula
+USA AUS A ANZUS, AUKUS and Five Eyes; US Marines rotate through Darwin
+USA NZL A Five Eyes partner; ANZUS obligations suspended since the 1986 nuclear-ship dispute
+USA PHL A 1951 Mutual Defense Treaty; expanded US base access under EDCA
+USA THA A Oldest US treaty ally in Asia (1954); major non-NATO ally
+USA TWN F No formal ties; the Taiwan Relations Act underpins arms sales and "strategic ambiguity"
+USA ISR A Closest Middle East partner; about $3.8bn a year in military aid; joint strikes on Iran in 2025
+USA SAU F Security-for-oil partnership; largest buyer of US arms
+USA ARE F Major security partner; hosts US forces at Al Dhafra
+USA QAT F Hosts Al Udeid, the largest US base in the Middle East; major non-NATO ally
+USA EGY F Major non-NATO ally; about $1.3bn a year in military aid since Camp David
+USA JOR F Close security partner and major aid recipient
+USA IND F Quad partners with growing defence ties; strained by steep 2025 US tariffs
+USA CHN T Strategic rivalry: tariffs, chip export controls, Taiwan and the South China Sea
+USA RUS H Adversaries since 2014/2022; sweeping sanctions; on-off talks over Ukraine
+USA IRN H No diplomatic ties since 1980; US struck Iranian nuclear sites in June 2025
+USA PRK H No diplomatic relations; 1953 armistice, never a peace treaty
+USA CUB H Embargo since 1962; listed as a state sponsor of terrorism
+USA VEN H Deep confrontation; 2025–26 US military campaign in the Caribbean and against Venezuela
+USA UKR F Largest military donor since 2022; minerals partnership signed in 2025
+USA PAK N Transactional ties that warmed in 2025
+USA AFG H Does not recognise the Taliban government
+USA SYR N Most sanctions lifted in 2025 after the fall of Assad
+USA TUR A NATO allies; friction over Russian S-400s and Syria
+USA DNK A NATO allies; friction over US ambitions for Greenland
+USA POL A Frontline NATO ally; about 10,000 US troops rotate through Poland
+USA DEU A NATO; largest US troop presence in Europe (Ramstein)
+USA FRA A America's oldest ally (1778); NATO
+USA BRA N Strained by 2025 tariffs and sanctions tied to the Bolsonaro trial
+USA ZAF T Tensions over the ICJ case against Israel, land reform and the G20
+USA VNM F Comprehensive strategic partnership since 2023
+USA PAN N 1977 treaties guarantee canal neutrality; 2025 pressure over Chinese-linked ports
+USA NIC T Sanctions on the Ortega–Murillo government
+USA COL N Long-time security partner; sharp clashes with the Petro government in 2025
+USA ARG F Close alignment under Milei; 2025 US financial backstop
+USA IRQ F Security partner; US-led coalition mission winding down 2025–26
+USA KWT F Major non-NATO ally since the 1991 liberation
+USA ARM F Brokered the 2025 Armenia–Azerbaijan framework
+USA AZE F Brokered the 2025 peace framework and transit route
+USA GEO N Ties cooled over Georgian Dream's crackdown
+USA IDN F Comprehensive strategic partnership
+USA MNG F "Third neighbour" partner between Russia and China
+CHN RUS F "No-limits" partnership; China is Russia's top trade partner and oil buyer
+CHN PRK A 1961 treaty of mutual aid, China's only formal alliance
+CHN PAK A "All-weather" strategic partner; CPEC; supplies most of Pakistan's arms
+CHN IND T Himalayan border standoff after the 2020 Galwan clash; partial thaw since late 2024
+CHN JPN T Senkaku dispute and wartime history; sharp row in late 2025 over Taiwan remarks
+CHN TWN H Beijing claims Taiwan and stages large drills around it; no official contact
+CHN PHL T Repeated South China Sea confrontations at Scarborough and Second Thomas Shoal
+CHN VNM N Party ties and heavy trade; rival Paracel and Spratly claims
+CHN KOR N Largest trading partner; strained by THAAD and US alignment
+CHN AUS N Stabilised since 2023 after years of trade sanctions
+CHN IRN F 25-year cooperation pact; buys most of Iran's oil exports
+CHN SAU F Largest oil customer; brokered the 2023 Saudi–Iran détente
+CHN KHM F Closest Southeast Asian partner; Chinese-funded Ream naval base
+CHN LAO F Belt and Road railway; heavy debt to China
+CHN MMR F Backs the military government; pipelines to the Bay of Bengal
+CHN BTN N No diplomatic relations; negotiating a disputed border
+CHN NPL F Belt and Road partner balancing India
+CHN MNG N Dominant trade partner
+CHN KAZ F Key Belt and Road land route
+CHN LKA F Major creditor; 99-year lease of Hambantota port
+CHN DJI F Host of China's first overseas military base (2017)
+CHN SRB F "Ironclad friendship"; major investor
+CHN HUN F Gateway for Chinese EV and battery investment in the EU
+CHN BRA F Largest trade partner; BRICS co-founders
+CHN ZAF F BRICS partners; largest trade partner
+CHN LTU T Ties downgraded after Vilnius allowed a "Taiwanese" representative office
+CHN CAN T Trade and interference disputes; tariffs on canola and EVs
+CHN GBR N Economic engagement amid security concerns
+CHN DEU N China is among Germany's top trading partners; "de-risking" debate
+CHN FRA N Engagement with trade frictions over EVs and cognac
+CHN ETH F Major lender and infrastructure builder
+CHN AFG N Pragmatic engagement with the Taliban; mining interests
+CHN NRU F Nauru switched recognition from Taiwan in 2024
+CHN SLB F 2022 security pact alarmed Canberra and Washington
+CHN MDV F Major creditor
+CHN SGP F Deep economic ties
+RUS UKR W Full-scale invasion since February 2022; Russia occupies about a fifth of Ukraine
+RUS BLR A Union State; Russian tactical nuclear weapons deployed in Belarus
+RUS KAZ F CSTO and EAEU partners; Astana keeps a cautious multi-vector line
+RUS GEO H 2008 war; occupies Abkhazia and South Ossetia; no diplomatic ties
+RUS ARM T Armenia froze its CSTO participation in 2024 and is turning West
+RUS AZE T Crisis since the 2024 downing of an Azerbaijan Airlines jet
+RUS MDA H Russian troops remain in breakaway Transnistria; Moldova is an EU candidate
+RUS FIN H Finland joined NATO in 2023; all border crossings closed
+RUS EST H Border and Baltic Sea incidents; cable-cutting suspicions
+RUS LVA H Frontline NATO state; sanctions and airspace incidents
+RUS LTU H Kaliningrad transit disputes and the Suwałki Gap
+RUS POL H Poland is Ukraine's main logistics hub; Russian drone incursions in 2025
+RUS NOR T Arctic neighbours; Svalbard and Barents Sea frictions
+RUS JPN T No WWII peace treaty; Kuril Islands dispute; Japan sanctions Russia
+RUS PRK A 2024 treaty with a mutual-defence clause; North Korean troops fought in Kursk
+RUS IRN F 2025 strategic partnership treaty; drone and arms cooperation
+RUS IND F "Special and privileged" partnership; India buys Russian oil and arms
+RUS TUR N Competitive cooperation: TurkStream and S-400s, but opposite sides in several wars
+RUS SYR N Assad's patron until his fall in Dec 2024; future of Russian bases uncertain
+RUS GBR H Sanctions, espionage and poisoning cases; UK a leading Ukraine backer
+RUS DEU H Energy break after Nord Stream; Germany is Ukraine's second-largest donor
+RUS FRA H Rupture over Ukraine and competition in Africa
+RUS SRB F Historic Slavic and Orthodox ties; Serbia refuses to sanction Russia
+RUS HUN N Hungary keeps energy and political channels open
+RUS MLI F Russia's Africa Corps backs the junta
+RUS BFA F Security partner of the junta
+RUS NER F Military cooperation after the 2023 coup
+RUS CAF F Russian paramilitaries protect the government
+RUS VEN F Arms, oil and diplomatic backing
+RUS CUB F Long-standing ally
+RUS NIC F Close political partner
+RUS TJK A CSTO; Russia's 201st military base
+RUS KGZ A CSTO; Kant air base
+RUS MNG F Transit route for Russian gas plans
+GBR FRA A Entente cordiale; Lancaster House defence treaties; nuclear coordination (2025)
+GBR IRL F Good Friday Agreement; Common Travel Area
+GBR ARG T Falklands sovereignty dispute; 1982 war
+GBR ESP N Gibraltar; 2025 post-Brexit border deal
+GBR MUS N 2025 treaty hands the Chagos Islands to Mauritius while leasing back Diego Garcia
+GBR UKR F Major military donor; 100-year partnership (2025)
+GBR NOR A Close NATO and North Sea partners
+GBR IRN H Detentions, sanctions and embassy tensions
+FRA DEU A Engine of the EU; 2019 Aachen Treaty
+FRA DZA T Colonial memory and Western Sahara stance; 2025 diplomatic crisis
+FRA MLI H French troops expelled in 2022
+FRA NER H Troops and ambassador expelled after the 2023 coup
+FRA BFA H French forces expelled in 2023
+FRA MAR F France backed Morocco's Western Sahara autonomy plan (2024)
+FRA TCD N Chad ended the defence pact; French troops left in 2025
+FRA SEN N French bases handed back in 2025
+FRA CIV F Close ties; French base handed over in 2025
+FRA IND F Strategic partners; Rafale jets and submarines
+FRA AZE T Baku accused of stoking New Caledonia unrest; France backs Armenia
+FRA ARM F Supplies arms and diplomatic support
+FRA UKR F Major military backer
+DEU POL A NATO and EU neighbours; wartime history still sensitive
+DEU ISR F Special responsibility after the Holocaust; arms supplier
+DEU UKR F Second-largest military donor
+POL UKR F Key backer and logistics hub; frictions over grain and history
+POL BLR H Migrant-pushing border crisis; border fortified
+LTU BLR H Border closures and smuggling-balloon incursions
+LVA BLR T Border fortification amid migrant pressure
+GRC TUR T Aegean airspace and maritime disputes, despite being NATO allies
+CYP TUR H Türkiye does not recognise Cyprus and has kept troops in the north since 1974
+TUR NCY A Only country recognising Northern Cyprus
+CYP NCY H Divided island; UN buffer zone since 1974
+GRC CYP A Close Greek-speaking partners
+GRC MKD N 2018 Prespa Agreement ended the name dispute
+SRB XKX H Serbia rejects Kosovo's 2008 independence; periodic flare-ups in the north
+SRB HRV T 1990s war legacy; arms-race rhetoric
+SRB BIH N Ties to Republika Srpska strain Bosnia's cohesion
+SRB MNE N Contested church and identity politics
+ALB XKX A Close ethnic and political ties
+HUN UKR T Minority-rights dispute; Budapest blocks EU aid and accession steps
+HUN SVK F Like-minded governments (Orbán and Fico)
+ESP MAR F Warm since Spain backed Morocco's Sahara plan (2022); Ceuta and Melilla
+ROU MDA A Shared language and history; Romania is Moldova's EU sponsor
+UKR BLR H Belarus served as a launchpad for Russia's 2022 invasion
+UKR MDA F Neighbours under Russian pressure; EU candidates together
+UKR ROU F Supply routes and the Danube grain corridor
+UKR SVK N Bratislava under Fico cut state arms aid
+UKR TUR F Mediator; Bayraktar drones; Black Sea grain deal
+UKR GEO N Cooled as Tbilisi moved closer to Moscow
+ARM AZE T Decades of conflict; Azerbaijan retook Karabakh in 2023; peace deal initialled Aug 2025
+AZE TUR A "One nation, two states"; 2021 Shusha alliance declaration
+ARM TUR T No diplomatic relations; border closed since 1993; normalisation talks ongoing
+ARM IRN F Iran is Armenia's lifeline to the south
+AZE ISR F Oil for Israeli weapons
+AZE IRN T Suspicion over the Azeri minority in Iran and Baku's ties with Israel
+ARM GEO F Stable neighbours
+ISR PSE W Gaza war since Oct 2023; fragile ceasefire since Oct 2025; West Bank occupation
+ISR IRN H Shadow war turned open: missile exchanges in 2024 and a 12-day war in June 2025
+ISR LBN H 2024 war with Hezbollah; Nov 2024 ceasefire, Israeli strikes continue
+ISR SYR T Israel holds a buffer zone since Assad's fall; US-mediated security talks
+ISR EGY N "Cold peace" since 1979; Gaza border tensions
+ISR JOR N 1994 peace treaty, chilled by the Gaza war
+ISR ARE F Abraham Accords (2020)
+ISR BHR F Abraham Accords (2020)
+ISR MAR F Abraham Accords; US recognition of Morocco's Sahara claim in return
+ISR SAU N Normalisation talks frozen by the Gaza war
+ISR TUR H Ties collapsed over Gaza; Türkiye halted trade in 2024
+ISR QAT T Gaza mediator; Israeli strike on Hamas leaders in Doha (Sept 2025)
+ISR YEM W Houthi missile attacks and Israeli strikes on Yemen
+ISR IRQ H Iraq bars recognition; militias fired drones at Israel
+IRN SAU N Ties restored in 2023 through Chinese mediation
+IRN IRQ F Deep influence through Shia parties and militias
+IRN SYR T Lost its key ally with Assad's fall
+IRN LBN F Patron of Hezbollah
+IRN YEM F Backs the Houthis who control Sanaa
+IRN ARE N Dispute over Abu Musa and the Tunbs; Dubai is a major trade hub for Iran
+IRN AFG T Helmand water dispute; mass deportations of Afghans
+IRN PAK N Tit-for-tat strikes in Jan 2024, later mended
+IRN TUR N Rivals in Syria and the Caucasus; trade partners
+IRN QAT F Share the world's largest gas field
+IRN OMN F Oman is the go-to channel between Iran and the West
+IRN BHR T Bahrain accuses Iran of backing unrest
+SAU YEM T Saudi-led war against the Houthis since 2015; truce since 2022
+SAU ARE F Close allies and economic rivals; diverge over Yemen and Sudan
+SAU QAT F 2017–21 blockade ended with the AlUla declaration
+SAU EGY F Major financial backer
+SAU PAK A Strategic Mutual Defence Agreement signed Sept 2025
+SAU TUR N Reconciled after the Khashoggi crisis
+SAU JOR F Aid and security partner
+SAU BHR A Saudi-led forces deployed to Bahrain in 2011
+ARE SDN H Sudan cut ties in 2025, accusing the UAE of arming the RSF
+ARE EGY F Largest investor in Egypt
+ARE IND F Comprehensive strategic partnership; big trade corridor
+TUR SYR F Backed the rebels who took power; key ally of the new government
+TUR IRQ N Operations against the PKK; water disputes
+TUR EGY N Reconciled in 2024 after a decade of rupture
+TUR LBY F Backs the Tripoli government; maritime deal
+TUR SOM A Defence and maritime pact; Türkiye's largest overseas base is in Mogadishu
+TUR PAK F Close defence partners
+TUR QAT A Turkish troops based in Doha
+EGY ETH T Nile dispute over the Grand Ethiopian Renaissance Dam
+EGY SDN F Backs Sudan's army
+EGY LBY N Backs eastern commander Haftar
+EGY PSE N Controls the Rafah crossing; key Gaza mediator
+IRQ KWT N 1990 invasion legacy; border and waterway disputes
+IND PAK H Kashmir; four wars; May 2025 missile and drone clashes; Indus Waters Treaty suspended
+IND BGD T Cooled sharply after Sheikh Hasina fled to India in 2024
+IND NPL N Open border; map and constitution disputes
+IND LKA F Security partner competing with China
+IND BTN A 2007 friendship treaty; India backs Bhutan's defence
+IND MMR N Engages the junta and armed groups along the border
+IND MDV N Recovered after the 2023 "India Out" campaign
+IND AFG N Engages the Taliban; upgraded its Kabul mission in 2025
+IND JPN F Special strategic and global partnership; Quad
+IND AUS F Comprehensive strategic partnership; Quad
+IND ISR F Arms and technology partner
+IND IRN F Chabahar port to reach Afghanistan and Central Asia
+PAK AFG H Border fighting in Oct 2025; Pakistan accuses Kabul of sheltering the TTP
+PAK BGD F Rapprochement since 2024
+AFG TJK T Tajikistan is hostile to the Taliban
+JPN KOR F Trilateral security with the US; history and Dokdo/Takeshima disputes
+JPN PRK H Missiles over Japan; unresolved abductions
+JPN TWN F Close unofficial ties
+JPN AUS F Reciprocal Access Agreement; a "quasi-alliance"
+JPN PHL F 2024 Reciprocal Access Agreement
+JPN GBR F GCAP fighter programme; Reciprocal Access Agreement
+KOR PRK H Technically still at war; Pyongyang declared the South its "principal enemy" in 2024
+VNM KHM N Historical ties, border sensitivities
+VNM LAO A "Special relationship" between fraternal parties
+VNM PHL F Shared South China Sea concerns
+THA KHM T Deadly border clashes in 2025 around disputed temples; fragile ceasefires
+THA MMR N Refugee and scam-centre border issues
+MMR BGD T Rohingya refugee crisis; about 1 million refugees in Bangladesh
+MYS SGP F Water, trade and the Johor–Singapore links
+IDN AUS F 2024 defence cooperation agreement
+IDN SGP F Close neighbours
+PHL MYS N Dormant Philippine claim to Sabah
+AUS NZL A ANZAC partners and closest allies
+AUS PNG A 2025 Pukpuk mutual defence treaty
+AUS SLB N Solomons' security pact with China strains ties
+AUS TLS F Timor Sea boundary settled in 2018
+AUS TUV A 2024 Falepili Union with a security guarantee
+AUS NRU F 2024 security treaty
+KGZ TJK N Deadly border wars in 2021–22; border treaty signed 2025
+UZB KGZ F Border demarcation settled in 2022
+CAN MEX F USMCA partners
+VEN GUY H Venezuela claims two-thirds of Guyana (Essequibo)
+VEN COL N Border reopened 2022; migration and armed groups
+VEN BRA N Brazil keeps its distance after the disputed 2024 election
+VEN CUB A Oil-for-doctors alliance
+ARG BRA F Largest Mercosur partners; ideological distance under Milei and Lula
+ARG CHL F Beagle Channel dispute settled in 1984
+BOL CHL T No full diplomatic relations since 1978; Bolivia seeks sea access
+PER CHL N Maritime border settled at the ICJ in 2014
+PER ECU N 1998 peace ended border wars
+GTM BLZ N Guatemala's territorial claim is before the ICJ
+NIC CRI T Border disputes; political refugees
+HTI DOM T Migration crackdowns and a border wall
+MEX GTM N Migration and cartel spillover
+MAR DZA H Relations cut in 2021; border closed since 1994; rival Western Sahara positions
+MAR ESH H Morocco controls about 80% of the territory behind a 2,700 km sand berm
+DZA ESH A Hosts and backs the Polisario Front
+DZA MLI H Algeria shot down a Malian drone in 2025; ambassadors recalled
+DZA NER T Ambassadors recalled in 2025
+DZA TUN F Close neighbours
+SDN SSD T Oil pipeline dependency; Abyei dispute
+SDN TCD T Accusations of RSF supply lines through Chad
+SDN ETH T Al-Fashaga border dispute
+ETH ERI T Fears of war over Ethiopia's push for Red Sea access
+ETH SOM N Reconciled through the 2024 Ankara Declaration
+ETH SOL F 2024 memorandum offering Ethiopia sea access
+SOM SOL H Somalia rejects Somaliland's independence
+ETH KEN F Stable partners
+ETH DJI F More than 90% of Ethiopia's trade runs through Djibouti
+KEN SOM N Al-Shabaab threat; ICJ maritime ruling in 2021
+COD RWA H Rwanda-backed M23 seized Goma and Bukavu in 2025; US-brokered deal fragile
+COD UGA N Joint operations against ADF rebels
+COD BDI F Burundian troops fight alongside the Congolese army
+RWA BDI T Border closed since 2024
+RWA MOZ F Rwandan troops fight insurgents in Cabo Delgado
+MLI BFA A Alliance of Sahel States confederation (2024)
+MLI NER A Alliance of Sahel States confederation
+BFA NER A Alliance of Sahel States confederation
+NGA NER T Frictions after the 2023 coup and exit from ECOWAS
+BEN NER T Border closure and oil pipeline dispute
+CIV BFA T Mutual accusations of destabilisation
+ZAF ISR T South Africa brought the genocide case at the ICJ
+ZAF RWA T South African troops killed in eastern Congo in 2025
+ZAF RUS F BRICS partners; non-aligned on Ukraine
+SGP USA F Major security cooperation partner
+BHR USA A Hosts the US Fifth Fleet; major non-NATO ally
+PLW USA A Compact of Free Association
+MHL USA A Compact of Free Association
+FSM USA A Compact of Free Association
+PRY TWN F Recognises Taiwan
+GTM TWN F Recognises Taiwan
+BLZ TWN F Recognises Taiwan
+HTI TWN F Recognises Taiwan
+KNA TWN F Recognises Taiwan
+LCA TWN F Recognises Taiwan
+VCT TWN F Recognises Taiwan
+MHL TWN F Recognises Taiwan
+PLW TWN F Recognises Taiwan
+TUV TWN F Recognises Taiwan
+SWZ TWN F Recognises Taiwan — its last ally in Africa
+VAT TWN F The Holy See recognises Taiwan
+TWN PHL F Close neighbours across the Luzon Strait
+`;
+
+/* Sea neighbours and micro-state neighbours */
+const EXTRA_NEI = `GBR FRA|GBR NLD|GBR BEL|GBR NOR|JPN CHN|JPN KOR|JPN RUS|JPN PRK|JPN TWN|CHN TWN|TWN PHL|PHL MYS|PHL IDN|PHL VNM|AUS IDN|AUS PNG|AUS TLS|AUS NZL|CUB USA|CUB HTI|CUB JAM|CUB BHS|USA BHS|USA RUS|ITA TUN|ITA LBY|ITA ALB|ITA HRV|GRC LBY|GRC EGY|CYP TUR|CYP SYR|CYP LBN|CYP ISR|CYP EGY|ESP MAR|SAU EGY|SAU SDN|SAU ERI|YEM DJI|YEM ERI|YEM SOM|OMN IRN|ARE IRN|QAT IRN|KWT IRN|BHR SAU|BHR QAT|SGP MYS|SGP IDN|LKA IND|MDV IND|DNK SWE|DNK NOR|FIN EST|SWE EST|SWE LVA|SWE LTU|SWE POL|DNK POL|DEU SWE|KOR CHN|MOZ MDG|VEN TTO|MLT ITA|AND ESP|AND FRA|MCO FRA|LIE CHE|LIE AUT|SMR ITA|VAT ITA|IRN SAU|MYS VNM|MYS THA|TUR ROU|TUR BGR|UKR TUR|RUS TUR|GEO TUR|EGY JOR|ISL GBR|ISL NOR|CAN DNK|KEN TZA`;
+
+/* Strategic locations: n name, t type, lat, lng, p parties, s key stat, d description */
+const POIS = [
+ {n:'Strait of Hormuz',t:'strait',lat:26.57,lng:56.25,p:['IRN','OMN','ARE'],s:'≈20% of world oil consumption · ~1/5 of global LNG',d:'The only sea exit from the Persian Gulf. Shipping lanes are just 3 km wide in each direction. Iran has repeatedly threatened closure; Saudi and Emirati pipelines can bypass only part of the flow.'},
+ {n:'Strait of Malacca',t:'strait',lat:2.6,lng:101.2,p:['MYS','IDN','SGP'],s:'~23 million barrels of oil a day · about a quarter of seaborne trade',d:'Shortest route between the Indian Ocean and the Pacific, narrowing to about 2.7 km off Singapore. Most of China\'s imported oil passes here, Beijing\'s so-called "Malacca dilemma".'},
+ {n:'Bab-el-Mandeb',t:'strait',lat:12.6,lng:43.3,p:['YEM','DJI','ERI'],s:'~29 km wide · southern gate to the Suez route',d:'Links the Red Sea to the Gulf of Aden. Houthi missile and drone attacks from late 2023 forced most container lines to reroute around Africa. Key subsea internet cables run beneath it.'},
+ {n:'Suez Canal',t:'strait',lat:30.6,lng:32.33,p:['EGY'],s:'193 km · ~12% of world trade before 2024',d:'Egypt\'s canal between the Mediterranean and Red Sea. Revenue fell by more than half after the Red Sea attacks diverted ships. The 2021 Ever Given grounding blocked it for six days.'},
+ {n:'Panama Canal',t:'strait',lat:9.08,lng:-79.68,p:['PAN','USA'],s:'82 km · ~5% of world seaborne trade',d:'Links the Atlantic and Pacific. The 2023–24 drought cut transits sharply; since 2025 Washington has pressed Panama over Chinese-linked port operators at both ends.'},
+ {n:'Turkish Straits',t:'strait',lat:41.12,lng:29.07,p:['TUR','RUS','UKR'],s:'Bosporus ~700 m at its narrowest',d:'The Bosporus and Dardanelles are the Black Sea\'s only link to the oceans. The 1936 Montreux Convention lets Türkiye restrict warships in wartime, which it did in 2022.'},
+ {n:'Strait of Gibraltar',t:'strait',lat:35.95,lng:-5.6,p:['ESP','MAR','GBR'],s:'~14 km wide · ~300 ships a day',d:'The Mediterranean\'s Atlantic gate. Britain holds Gibraltar on the north shore; Spain holds Ceuta on the African side.'},
+ {n:'Danish Straits',t:'strait',lat:55.7,lng:12.7,p:['DNK','SWE','DEU','RUS'],s:'The Baltic Sea\'s only outlet',d:'The Øresund and the Great and Little Belts. Russia\'s Baltic oil exports, much of it on an ageing "shadow fleet", must pass through NATO waters here.'},
+ {n:'Strait of Dover',t:'strait',lat:51.0,lng:1.45,p:['GBR','FRA'],s:'~33 km · 500+ ships a day, the world\'s busiest lane',d:'Links the North Sea to the English Channel. Also the main small-boat migration route to the UK.'},
+ {n:'Taiwan Strait',t:'strait',lat:24.2,lng:119.5,p:['CHN','TWN'],s:'~130 km wide · about half the world\'s container fleet transits yearly',d:'The most closely watched flashpoint in Asia. Large PLA drills around Taiwan and US and allied transits keep it tense.'},
+ {n:'Luzon Strait',t:'strait',lat:20.5,lng:121.0,p:['TWN','PHL'],s:'Bashi Channel · dense subsea cable corridor',d:'Main deep-water gap between the South China Sea and the Pacific, vital for submarines and for internet cables linking East Asia.'},
+ {n:'Lombok Strait',t:'strait',lat:-8.6,lng:115.7,p:['IDN'],s:'Deep-water alternative to Malacca',d:'Used by the largest tankers too deep for Malacca, especially Australian iron ore and Gulf crude bound for China.'},
+ {n:'Sunda Strait',t:'strait',lat:-6.0,lng:105.8,p:['IDN'],s:'Shallow; limited to smaller ships',d:'Between Java and Sumatra; a secondary bypass of Malacca.'},
+ {n:'Korea Strait',t:'strait',lat:34.5,lng:129.0,p:['KOR','JPN'],s:'Split by Tsushima into two channels',d:'Main link between the Sea of Japan and the East China Sea, and a watched route for Chinese and Russian naval patrols.'},
+ {n:'Tsugaru Strait',t:'strait',lat:41.5,lng:140.5,p:['JPN'],s:'Japan claims only 3 nm of territorial sea here',d:'Between Honshu and Hokkaido. Japan leaves a high-seas corridor so foreign warships, including nuclear-armed US ships, can pass.'},
+ {n:'La Pérouse Strait',t:'strait',lat:45.7,lng:142.0,p:['JPN','RUS'],s:'~40 km · Russian Pacific Fleet route',d:'Separates Hokkaido from Russian-held Sakhalin.'},
+ {n:'Bering Strait',t:'strait',lat:65.8,lng:-168.9,p:['USA','RUS'],s:'82 km · the Diomede Islands sit 3.8 km apart',d:'The Pacific\'s only gateway to the Arctic; traffic is rising as the sea ice retreats.'},
+ {n:'GIUK Gap',t:'strait',lat:63.5,lng:-15.0,p:['ISL','GBR','DNK','NOR'],s:'Greenland–Iceland–UK line',d:'The barrier NATO watches to track Russian Northern Fleet submarines heading into the Atlantic.'},
+ {n:'Cape of Good Hope',t:'strait',lat:-34.36,lng:18.47,p:['ZAF'],s:'Adds ~10–14 days Asia–Europe vs Suez',d:'Traffic surged after the Red Sea diversions; South African ports struggled with the extra calls.'},
+ {n:'Drake Passage',t:'strait',lat:-57.5,lng:-65.0,p:['CHL','ARG'],s:'~800 km wide · roughest seas on Earth',d:'The ocean route around Cape Horn, an alternative when Panama is constrained and the gateway to Antarctica.'},
+ {n:'Strait of Magellan',t:'strait',lat:-53.5,lng:-70.9,p:['CHL'],s:'Sheltered inland route',d:'Chilean-controlled passage between the Atlantic and Pacific.'},
+ {n:'Mozambique Channel',t:'strait',lat:-18.0,lng:41.0,p:['MOZ','MDG','FRA'],s:'Key route for tankers rounding the Cape',d:'Also home to giant offshore gas fields, near the Cabo Delgado insurgency.'},
+ {n:'Kerch Strait',t:'strait',lat:45.3,lng:36.5,p:['RUS','UKR'],s:'Only link between the Black Sea and the Sea of Azov',d:'Spanned by Russia\'s 19 km Crimean Bridge (2018), struck repeatedly by Ukraine.'},
+ {n:'Strait of Tiran',t:'strait',lat:27.97,lng:34.46,p:['EGY','SAU','ISR','JOR'],s:'Gateway to the Gulf of Aqaba',d:'Access for Israel\'s Eilat and Jordan\'s only port, Aqaba. Its 1967 closure helped trigger the Six-Day War; the islands passed from Egypt to Saudi Arabia in 2017.'},
+ {n:'Florida Straits',t:'strait',lat:24.2,lng:-81.0,p:['USA','CUB','BHS'],s:'~150 km between Key West and Cuba',d:'Gulf of Mexico exit for US energy exports and a historic migration route.'},
+ {n:'Windward Passage',t:'strait',lat:20.0,lng:-73.8,p:['CUB','HTI','USA'],s:'Overlooked by Guantánamo Bay',d:'Direct route from the US East Coast to the Panama Canal.'},
+ {n:'Yucatán Channel',t:'strait',lat:21.6,lng:-85.8,p:['MEX','CUB'],s:'~200 km wide',d:'Links the Caribbean with the Gulf of Mexico.'},
+ {n:'Strait of Otranto',t:'strait',lat:40.3,lng:19.0,p:['ITA','ALB'],s:'~72 km wide',d:'Gate of the Adriatic.'},
+ {n:'Strait of Sicily',t:'strait',lat:37.2,lng:11.2,p:['ITA','TUN','MLT'],s:'~145 km · central Mediterranean crossing',d:'Splits the Mediterranean in two; the busiest migration route from North Africa to Europe.'},
+ {n:'Kiel Canal',t:'strait',lat:54.2,lng:9.4,p:['DEU'],s:'Busiest artificial waterway by ship count',d:'Shortcut between the North Sea and the Baltic that avoids Denmark.'},
+ {n:'Northern Sea Route',t:'strait',lat:76,lng:110,p:['RUS'],s:'Up to ~40% shorter Asia–Europe than via Suez',d:'Arctic lane along Russia\'s coast. Moscow requires permission and icebreaker escort; used mainly for Russian LNG and oil.'},
+ {n:'Northwest Passage',t:'strait',lat:74.5,lng:-95,p:['CAN','USA'],s:'Canada: internal waters · US: international strait',d:'Arctic route through the Canadian archipelago, opening as ice thins.'},
+
+ {n:'Suwałki Gap',t:'land',lat:54.2,lng:23.5,p:['POL','LTU','BLR','RUS'],s:'~65 km of border between Belarus and Kaliningrad',d:'NATO\'s most vulnerable seam: seizing it would cut the Baltic states off from the rest of the alliance by land.'},
+ {n:'Siliguri Corridor',t:'land',lat:26.7,lng:88.4,p:['IND','NPL','BGD','BTN','CHN'],s:'~22 km wide at its narrowest',d:'The "Chicken\'s Neck" linking India\'s northeast to the rest of the country, close to the Doklam plateau.'},
+ {n:'Wakhan Corridor',t:'land',lat:37.0,lng:72.5,p:['AFG','CHN','TJK','PAK'],s:'350 km panhandle · 74 km border with China',d:'Afghanistan\'s thin strip to China, created as a buffer between the Russian and British empires.'},
+ {n:'Khyber Pass',t:'land',lat:34.08,lng:71.1,p:['AFG','PAK'],s:'Main road link between Kabul and Peshawar',d:'Historic invasion and trade route; frequently closed during Afghan–Pakistani border clashes.'},
+ {n:'Khunjerab Pass',t:'land',lat:36.85,lng:75.43,p:['PAK','CHN'],s:'4,693 m · highest paved border crossing',d:'Karakoram Highway gateway and the start of the China–Pakistan Economic Corridor.'},
+ {n:'Syunik / TRIPP route',t:'land',lat:39.2,lng:46.0,p:['ARM','AZE','TUR','IRN'],s:'~40 km across southern Armenia',d:'Would link mainland Azerbaijan to its Nakhchivan exclave. The Aug 2025 White House deal gives a US-backed transit route under Armenian law.'},
+ {n:'Darién Gap',t:'land',lat:8.2,lng:-77.4,p:['PAN','COL'],s:'Roadless jungle · 500,000+ migrant crossings in 2023',d:'The only break in the Pan-American Highway. Crossings collapsed in 2025 as US policy tightened.'},
+ {n:'Fergana Valley',t:'land',lat:40.7,lng:71.8,p:['UZB','KGZ','TJK'],s:'Central Asia\'s most populous valley',d:'Soviet-era borders left enclaves and water disputes; a 2025 treaty settled the Kyrgyz–Tajik frontier.'},
+
+ {n:'Crimea',t:'flash',lat:45.0,lng:34.1,p:['UKR','RUS'],s:'Annexed by Russia in 2014',d:'Home of Russia\'s Black Sea Fleet at Sevastopol, much of it forced east by Ukrainian drone and missile strikes.'},
+ {n:'Donbas front line',t:'flash',lat:48.3,lng:37.8,p:['UKR','RUS'],s:'~1,000 km active front',d:'The main theatre of the war, where Russia has pushed slowly at very high cost since 2022.'},
+ {n:'Zaporizhzhia NPP',t:'flash',lat:47.51,lng:34.59,p:['UKR','RUS'],s:'Europe\'s largest nuclear plant · 6 reactors',d:'Occupied by Russia since March 2022; IAEA inspectors on site warn of repeated power-line losses.'},
+ {n:'Transnistria',t:'flash',lat:47.2,lng:29.4,p:['MDA','RUS','UKR'],s:'~1,500 Russian troops',d:'Breakaway strip of Moldova since 1992, in economic crisis after Russian gas transit via Ukraine ended in 2025.'},
+ {n:'Abkhazia & South Ossetia',t:'flash',lat:42.6,lng:42.6,p:['GEO','RUS'],s:'~20% of Georgia\'s territory',d:'Russian-backed breakaway regions recognised by Moscow after the 2008 war.'},
+ {n:'Golan Heights',t:'flash',lat:33.0,lng:35.8,p:['ISR','SYR'],s:'Captured 1967 · annexed by Israel 1981',d:'Israel pushed into the UN buffer zone after Assad fell in Dec 2024.'},
+ {n:'Gaza Strip',t:'flash',lat:31.4,lng:34.4,p:['ISR','PSE','EGY'],s:'~2.1 million people in 365 km²',d:'Devastated by the war since Oct 2023; an Oct 2025 ceasefire and US plan left disarmament and governance unresolved.'},
+ {n:'Korean DMZ',t:'flash',lat:38.0,lng:127.0,p:['KOR','PRK','USA'],s:'250 km long · 4 km wide',d:'One of the world\'s most heavily armed borders, holding since the 1953 armistice.'},
+ {n:'Kashmir Line of Control',t:'flash',lat:34.4,lng:74.8,p:['IND','PAK','CHN'],s:'740 km ceasefire line',d:'Divided between India, Pakistan and China. The April 2025 Pahalgam attack led to four days of missile and drone strikes in May.'},
+ {n:'Aksai Chin & Ladakh',t:'flash',lat:35.0,lng:79.0,p:['CHN','IND'],s:'Line of Actual Control ~3,488 km',d:'China holds Aksai Chin, and India claims it. The 2020 Galwan clash killed 20 Indian and at least 4 Chinese soldiers. China also claims India\'s Arunachal Pradesh.'},
+ {n:'Doklam Plateau',t:'flash',lat:27.3,lng:89.0,p:['BTN','CHN','IND'],s:'Scene of a 73-day 2017 standoff',d:'Overlooks India\'s Siliguri Corridor; Chinese villages built in land Bhutan claims.'},
+ {n:'Senkaku / Diaoyu Islands',t:'flash',lat:25.75,lng:123.5,p:['JPN','CHN','TWN'],s:'Administered by Japan · claimed by China and Taiwan',d:'Chinese coast guard ships patrol nearly every day; covered by the US–Japan security treaty.'},
+ {n:'Kuril Islands',t:'flash',lat:44.5,lng:146.5,p:['RUS','JPN'],s:'Seized by the USSR in 1945',d:'Japan calls the southern four its "Northern Territories"; the dispute has blocked a WWII peace treaty.'},
+ {n:'Dokdo / Takeshima',t:'flash',lat:37.24,lng:131.87,p:['KOR','JPN'],s:'Held by South Korea since 1954',d:'Rocky islets that remain an emotional irritant between two US allies.'},
+ {n:'Spratly Islands',t:'flash',lat:10.0,lng:114.0,p:['CHN','VNM','PHL','MYS','BRN','TWN'],s:'Claimed by 6 governments',d:'China built seven artificial islands with runways and missile sites; Vietnam has since expanded its own reclamation.'},
+ {n:'Paracel Islands',t:'flash',lat:16.5,lng:112.0,p:['CHN','VNM','TWN'],s:'Seized by China from South Vietnam in 1974',d:'Woody Island hosts a Chinese airbase and administrative centre.'},
+ {n:'Scarborough Shoal',t:'flash',lat:15.15,lng:117.76,p:['CHN','PHL'],s:'~220 km off Luzon',d:'China took control in 2012; a 2016 tribunal ruled for the Philippines. Water-cannon clashes recur.'},
+ {n:'Second Thomas Shoal',t:'flash',lat:9.75,lng:115.87,p:['PHL','CHN'],s:'Grounded warship outpost since 1999',d:'Philippine marines live on the rusting BRP Sierra Madre; resupply runs have met Chinese blockades.'},
+ {n:'Kinmen',t:'flash',lat:24.45,lng:118.35,p:['TWN','CHN'],s:'Taiwanese island ~10 km from Xiamen',d:'Shelled by the PRC in 1958; a symbol of how close the two sides sit.'},
+ {n:'Falkland Islands',t:'flash',lat:-51.7,lng:-59.0,p:['GBR','ARG'],s:'1982 war · 99.8% voted to stay British in 2013',d:'Argentina maintains its claim to the Malvinas.'},
+ {n:'Essequibo',t:'flash',lat:6.5,lng:-59.5,p:['GUY','VEN'],s:'Two-thirds of Guyana\'s territory',d:'Venezuela\'s claim revived after huge offshore oil finds; the case is before the ICJ.'},
+ {n:'Eastern DR Congo',t:'flash',lat:-1.68,lng:29.22,p:['COD','RWA','UGA','BDI'],s:'7 million+ displaced',d:'Rwanda-backed M23 rebels took Goma and Bukavu in early 2025. The region holds vast tin, tantalum and gold deposits.'},
+ {n:'Darfur / El Fasher',t:'flash',lat:13.63,lng:25.35,p:['SDN','TCD','ARE'],s:'Sudan: world\'s largest displacement crisis',d:'The Sudanese army and RSF have been at war since April 2023; El Fasher fell to the RSF in Oct 2025 amid reports of mass killings.'},
+ {n:'Abyei',t:'flash',lat:9.6,lng:28.4,p:['SDN','SSD'],s:'Contested since 2011',d:'Oil-rich area claimed by both Sudans, under UN peacekeepers.'},
+ {n:'Halaib Triangle',t:'flash',lat:22.5,lng:35.5,p:['EGY','SDN'],s:'~20,000 km²',d:'Administered by Egypt, claimed by Sudan.'},
+ {n:'Liptako-Gourma',t:'flash',lat:14.5,lng:0.5,p:['MLI','BFA','NER'],s:'Epicentre of Sahel jihadism',d:'Tri-border area where al-Qaeda and Islamic State affiliates control wide territory; the world\'s deadliest terrorism zone.'},
+ {n:'Cyprus Green Line',t:'flash',lat:35.17,lng:33.36,p:['CYP','NCY','TUR'],s:'180 km UN buffer zone',d:'Has split Nicosia and the island since 1974.'},
+ {n:'North Kosovo',t:'flash',lat:42.89,lng:20.87,p:['XKX','SRB'],s:'Serb-majority north · NATO KFOR mission',d:'Site of the 2023 Banjska attack and recurring standoffs.'},
+ {n:'Abu Musa & the Tunbs',t:'flash',lat:25.87,lng:55.03,p:['IRN','ARE'],s:'Held by Iran since 1971',d:'Three islands at the mouth of the Gulf, claimed by the UAE.'},
+ {n:'Svalbard',t:'flash',lat:78.2,lng:15.6,p:['NOR','RUS'],s:'1920 Svalbard Treaty',d:'Norwegian archipelago where Russian mining towns remain; a sensitive Arctic outpost.'},
+
+ {n:'Diego Garcia',t:'base',lat:-7.32,lng:72.42,p:['GBR','USA','MUS'],s:'US–UK bomber and naval base',d:'Leased back for 99 years under the 2025 Chagos treaty with Mauritius.'},
+ {n:'Djibouti bases',t:'base',lat:11.55,lng:43.15,p:['DJI','USA','CHN','FRA','JPN'],s:'Hosts US, Chinese, French, Japanese and Italian bases',d:'Camp Lemonnier sits a few kilometres from China\'s first overseas naval base; all watch Bab-el-Mandeb.'},
+ {n:'Guam',t:'base',lat:13.44,lng:144.79,p:['USA'],s:'Andersen AFB · Naval Base Guam',d:'US territory and the hub of American power projection in the western Pacific.'},
+ {n:'Okinawa',t:'base',lat:26.35,lng:127.77,p:['JPN','USA'],s:'~70% of US base area in Japan',d:'Kadena Air Base and Marine units sit ~600 km from Taiwan.'},
+ {n:'Ream Naval Base',t:'base',lat:10.5,lng:103.6,p:['KHM','CHN'],s:'Chinese-funded expansion',d:'Cambodian base on the Gulf of Thailand where Chinese warships have docked since 2023.'},
+ {n:'Gwadar Port',t:'base',lat:25.12,lng:62.32,p:['PAK','CHN'],s:'CPEC terminus',d:'Chinese-built deep-water port near the mouth of the Gulf, in restive Balochistan.'},
+ {n:'Hambantota Port',t:'base',lat:6.12,lng:81.12,p:['LKA','CHN'],s:'Leased to China for 99 years (2017)',d:'Became the textbook example of "debt-trap" concerns.'},
+ {n:'Chabahar Port',t:'base',lat:25.29,lng:60.64,p:['IRN','IND'],s:'India-operated terminal',d:'India\'s route to Afghanistan and Central Asia that avoids Pakistan.'},
+ {n:'Tartus',t:'base',lat:34.9,lng:35.87,p:['SYR','RUS'],s:'Russia\'s only Mediterranean naval base',d:'Future in doubt since the fall of Assad.'},
+ {n:'Al Udeid Air Base',t:'base',lat:25.12,lng:51.31,p:['QAT','USA'],s:'~10,000 US personnel',d:'Forward HQ of US Central Command; targeted by Iranian missiles in June 2025.'},
+ {n:'NSA Bahrain',t:'base',lat:26.21,lng:50.61,p:['BHR','USA'],s:'US Fifth Fleet headquarters',d:'Command centre for US naval forces in the Gulf, Red Sea and Arabian Sea.'},
+ {n:'Ramstein Air Base',t:'base',lat:49.44,lng:7.6,p:['DEU','USA'],s:'Largest US air base in Europe',d:'Logistics hub for US operations and venue of the Ukraine Defense Contact Group.'},
+ {n:'Incirlik Air Base',t:'base',lat:37.0,lng:35.43,p:['TUR','USA'],s:'Hosts US nuclear weapons',d:'NATO\'s southeastern anchor, near Syria.'},
+ {n:'Pine Gap',t:'base',lat:-23.8,lng:133.74,p:['AUS','USA'],s:'Joint signals-intelligence station',d:'Key node for US satellite surveillance and missile warning.'},
+ {n:'Pituffik Space Base',t:'base',lat:76.53,lng:-68.7,p:['DNK','USA'],s:'Northernmost US base',d:'Missile-warning radar in Greenland, central to US interest in the island.'},
+ {n:'Kaliningrad',t:'base',lat:54.7,lng:20.5,p:['RUS','POL','LTU'],s:'Russian exclave · Baltic Fleet HQ',d:'Nuclear-capable Iskander missiles based between two NATO states.'},
+ {n:'Piraeus',t:'base',lat:37.94,lng:23.63,p:['GRC','CHN'],s:'67% owned by China\'s COSCO',d:'One of the Mediterranean\'s busiest container ports and China\'s gateway to Europe.'},
+
+ {n:'Abqaiq & Ghawar',t:'resource',lat:25.93,lng:49.68,p:['SAU'],s:'World\'s largest oil processing plant',d:'Handles most Saudi crude. A 2019 drone and missile attack briefly knocked out about 5% of world oil supply.'},
+ {n:'Kharg Island',t:'resource',lat:29.23,lng:50.32,p:['IRN'],s:'~90% of Iran\'s crude exports',d:'Iran\'s main oil terminal, a recurring target in war planning.'},
+ {n:'Ras Laffan',t:'resource',lat:25.9,lng:51.55,p:['QAT'],s:'~20% of global LNG exports',d:'Processes gas from the North Field, shared with Iran\'s South Pars.'},
+ {n:'Grand Ethiopian Renaissance Dam',t:'resource',lat:11.21,lng:35.09,p:['ETH','EGY','SDN'],s:'Africa\'s largest hydro dam · inaugurated Sept 2025',d:'Egypt, which depends on the Nile for ~97% of its water, calls it an existential threat.'},
+ {n:'Lithium Triangle',t:'resource',lat:-23.5,lng:-67.5,p:['CHL','ARG','BOL'],s:'About half of known lithium resources',d:'Salt flats central to the battery supply chain.'},
+ {n:'Katanga Copperbelt',t:'resource',lat:-10.7,lng:25.5,p:['COD','ZMB'],s:'~70% of world cobalt',d:'Dominated by Chinese-owned mines; a focus of US minerals diplomacy.'},
+ {n:'Hsinchu Science Park',t:'resource',lat:24.78,lng:121.0,p:['TWN'],s:'~90% of the most advanced chips',d:'TSMC\'s home base, the "silicon shield" at the heart of the Taiwan question.'},
+ {n:'Bayan Obo',t:'resource',lat:41.8,lng:109.97,p:['CHN'],s:'World\'s largest rare-earth mine',d:'China mines ~70% and refines ~90% of rare earths, and tightened export controls in 2025.'},
+ {n:'Nord Stream',t:'resource',lat:55.5,lng:15.5,p:['RUS','DEU','DNK','SWE'],s:'Sabotaged Sept 2022',d:'Undersea pipelines that once carried Russian gas to Germany, blown up off Bornholm.'},
+ {n:'Yamal LNG',t:'resource',lat:71.3,lng:72.1,p:['RUS','CHN'],s:'~20 million tonnes a year',d:'Arctic gas shipped along the Northern Sea Route to Asia and Europe.'}
+];
+/* Indirect / transnational connections: how countries affect each other without (or beyond) formal ties.
+   id, t type, n name, c countries involved (route order where it is a route), d how it works */
+const THREAD_TYPES = {
+  security:{label:'Militancy & security', color:'#ef5b4c'},
+  trafficking:{label:'Smuggling & trafficking', color:'#e0a040'},
+  migration:{label:'Migration & refugees', color:'#9fb4c8'},
+  proxy:{label:'Proxy wars & rival camps', color:'#c586e0'},
+  resource:{label:'Water, food & energy', color:'#4fc9a6'},
+  economy:{label:'Money & people', color:'#d4af37'}
+};
+const THREADS = [
+ {id:'sahel-jihad',t:'security',n:'Sahel jihadist insurgency',c:['MLI','BFA','NER','BEN','TGO','CIV','GHA','MRT','DZA','NGA'],d:'Al-Qaeda\'s JNIM and Islamic State Sahel hold wide rural areas of Mali, Burkina Faso and Niger and have pushed south into Benin and Togo. Coastal states and Algeria fortify borders against spillover.'},
+ {id:'sahel-libya-corridor',t:'security',n:'Sahel–Libya militant and arms corridor',c:['MLI','BFA','NER','TCD','SDN','LBY','EGY','DZA','TUN'],d:'Fighters, weapons, fuel and cash move between the Sahel and Libya\'s lawless south. Militants trained or armed in these camps have struck Egypt (Cairo bombed camps in Derna after the 2017 Minya attack), so Egypt treats Sahel and Libyan instability as a threat to its 1,100 km western desert border.'},
+ {id:'sinai',t:'security',n:'Sinai insurgency',c:['EGY','ISR','PSE'],d:'Islamic State\'s Sinai branch fought Egypt\'s army for a decade; largely suppressed by 2023 with quiet Egypt–Israel security coordination, but Gaza smuggling tunnels keep the border sensitive.'},
+ {id:'lake-chad',t:'security',n:'Lake Chad jihadism (Boko Haram, ISWAP)',c:['NGA','NER','TCD','CMR'],d:'Boko Haram and Islamic State West Africa Province raid across the lake basin; a joint regional task force has been weakened by Niger and Chad pulling back.'},
+ {id:'al-shabaab',t:'security',n:'Al-Shabaab and the Horn of Africa',c:['SOM','KEN','ETH','DJI','UGA','BDI','EGY','TUR','ARE'],d:'Al-Qaeda\'s Somali affiliate strikes Somalia and Kenya. Ethiopia, Kenya, Uganda, Burundi and Djibouti field troops; Egypt joined the AU force in 2025, partly to counter Ethiopia; Türkiye and the UAE train rival Somali units.'},
+ {id:'iscap',t:'security',n:'Islamic State in Central & Southern Africa',c:['MOZ','COD','UGA','RWA','TZA','ZAF'],d:'IS-linked ADF rebels in eastern Congo and Uganda, and the Cabo Delgado insurgency in Mozambique near huge LNG projects, guarded by Rwandan troops.'},
+ {id:'afpak-jihad',t:'security',n:'Taliban-era jihadist networks (TTP, IS-Khorasan)',c:['AFG','PAK','TJK','UZB','IRN','RUS','TUR','CHN'],d:'The Pakistani Taliban use Afghan sanctuary to attack Pakistan. IS-Khorasan, recruiting heavily among Central Asians, struck Kerman in Iran and Moscow\'s Crocus hall in 2024. China worries about Uyghur militants.'},
+ {id:'is-levant',t:'security',n:'Islamic State remnants in Syria & Iraq',c:['SYR','IRQ','TUR','JOR','USA','TUN','FRA','BEL','DEU','RUS','TJK','KAZ'],d:'Detention camps in northeast Syria such as al-Hol hold tens of thousands of IS-linked people, including foreign nationals many home countries refuse to repatriate; cells stay active in the desert.'},
+ {id:'houthi-red-sea',t:'security',n:'Houthi Red Sea campaign',c:['YEM','IRN','SAU','ISR','EGY','USA','GBR','ERI','DJI'],d:'Iran-armed Houthi attacks on shipping since late 2023 drained Suez Canal revenue, costing Egypt billions, and drew US, UK and Israeli strikes on Yemen.'},
+ {id:'axis-resistance',t:'proxy',n:'Iran\'s "Axis of Resistance"',c:['IRN','IRQ','SYR','LBN','YEM','PSE','ISR','USA'],d:'Tehran\'s network of allied militias (Hezbollah, Iraqi militias, the Houthis, Hamas); badly weakened by 2024–25 losses and Assad\'s fall.'},
+ {id:'brotherhood',t:'proxy',n:'Political Islam fault line',c:['EGY','ARE','SAU','TUR','QAT','LBY','SDN','TUN','JOR'],d:'Egypt, the UAE and Saudi Arabia treat the Muslim Brotherhood as a security threat. Türkiye and Qatar backed Brotherhood-linked movements after 2011, producing rival camps in Libya, Sudan and elsewhere.'},
+ {id:'libya-war',t:'proxy',n:'Libya\'s divided state and its backers',c:['LBY','EGY','ARE','RUS','TUR','QAT','DZA','TUN','TCD','NER','SDN'],d:'Egypt, the UAE and Russia back Khalifa Haftar in the east; Türkiye backs Tripoli. Russian forces in eastern Libya supply the Sahel, and Egypt sees Libya as its strategic backyard.'},
+ {id:'sudan-war',t:'proxy',n:'Sudan\'s war and its outside backers',c:['SDN','ARE','EGY','TCD','LBY','SSD','ETH','ERI','SAU','TUR','RUS'],d:'Egypt, Türkiye and Eritrea back Sudan\'s army; the UAE is widely accused of arming the RSF via Chad and eastern Libya. Over 1.5 million Sudanese refugees have fled to Egypt.'},
+ {id:'africa-corps',t:'proxy',n:'Russia\'s security footprint in Africa',c:['RUS','MLI','BFA','NER','CAF','LBY','SDN','FRA'],d:'The former Wagner network (now Africa Corps) guards Sahel juntas and the Central African Republic, paid partly in gold and mining rights, displacing France.'},
+ {id:'sahel-gold',t:'economy',n:'Sahel & Sudan gold flows',c:['MLI','BFA','NER','SDN','TCD','ARE','RUS','CHE'],d:'Much artisanal and conflict gold is flown to Dubai, funding juntas, armed groups and, reportedly, Russian operations.'},
+ {id:'central-med',t:'migration',n:'Central Mediterranean migration route',c:['GIN','CIV','MLI','NER','SDN','ERI','EGY','LBY','TUN','ITA','MLT'],d:'Migrants cross the Sahara via Niger and Sudan to Libya and Tunisia, then by boat to Italy and Malta. Egyptians increasingly leave from eastern Libya; smuggling networks overlap with armed groups.'},
+ {id:'atlantic-route',t:'migration',n:'Atlantic route to the Canary Islands',c:['SEN','GMB','MRT','MLI','MAR','ESP'],d:'Boats from Senegal and Mauritania, many carrying people fleeing Mali\'s war, head for Spain\'s Canaries; the EU funds border control in Mauritania.'},
+ {id:'balkan-route',t:'migration',n:'Eastern Mediterranean & Balkan route',c:['AFG','SYR','IRQ','IRN','TUR','GRC','BGR','SRB','HUN','AUT','DEU'],d:'Via Türkiye into Greece and Bulgaria, then up the Balkans. Türkiye hosts the world\'s largest refugee population under a 2016 deal with the EU.'},
+ {id:'syria-refugees',t:'migration',n:'Syrian displacement',c:['SYR','TUR','LBN','JOR','DEU','IRQ','EGY'],d:'About 6 million Syrians live abroad; returns began after Assad fell in 2024 but remain slow.'},
+ {id:'americas-migration',t:'migration',n:'Americas migration corridor',c:['VEN','HTI','COL','ECU','PAN','CRI','NIC','HND','GTM','MEX','USA','CUB'],d:'Venezuelans, Haitians and others moved north through the Darién Gap and Mexico; crossings collapsed in 2025 under US restrictions and deportation deals.'},
+ {id:'cocaine-americas',t:'trafficking',n:'Andean cocaine to North America',c:['COL','PER','BOL','ECU','PAN','HND','GTM','MEX','USA','CAN','VEN'],d:'Record Colombian coca output flows via Central America and Mexican cartels; fentanyl precursors from China add a Pacific link. Ecuador\'s ports became a hub, fuelling gang violence.'},
+ {id:'cocaine-europe',t:'trafficking',n:'Cocaine via West Africa & the Sahel to Europe',c:['COL','ECU','BRA','GNB','SEN','MLI','NER','LBY','MAR','ESP','NLD','BEL'],d:'South American cocaine lands in Guinea-Bissau and the West African coast, crosses the Sahel, where armed groups tax it, and reaches Europe via North Africa and the ports of Antwerp and Rotterdam.'},
+ {id:'captagon',t:'trafficking',n:'Captagon trade',c:['SYR','LBN','JOR','IRQ','SAU','ARE'],d:'An amphetamine made industrially under Assad and smuggled to Gulf markets; Jordan fought smugglers on its border. The new Syrian government has seized factories.'},
+ {id:'golden-triangle',t:'trafficking',n:'Golden Triangle drugs & scam centres',c:['MMR','LAO','THA','KHM','CHN'],d:'Militia-run zones produce methamphetamine and host online-scam compounds staffed by trafficked workers, drawing Chinese pressure on Myanmar\'s armed groups.'},
+ {id:'afghan-drugs',t:'trafficking',n:'Afghan drug routes',c:['AFG','IRN','PAK','TUR','TJK','RUS'],d:'The Taliban cut opium sharply in 2022, but methamphetamine and stockpiles still move west through Iran and north through Central Asia.'},
+ {id:'nile',t:'resource',n:'Nile waters',c:['EGY','SDN','ETH','SSD','UGA'],d:'Egypt gets ~97% of its water from the Nile. Ethiopia\'s GERD, inaugurated in 2025, lets Addis control flows. Cairo counters by courting Sudan, Eritrea and Somalia.'},
+ {id:'black-sea-wheat',t:'resource',n:'Black Sea wheat dependence',c:['RUS','UKR','EGY','TUR','DZA','LBN','LBY','TUN','YEM','BGD'],d:'Egypt is the world\'s largest wheat importer, mostly from Russia and Ukraine, so the war directly drives bread prices and stability in Cairo and much of the Arab world.'},
+ {id:'east-med-gas',t:'resource',n:'Eastern Mediterranean gas',c:['ISR','EGY','CYP','GRC','TUR','LBN','LBY'],d:'Israeli gas feeds Egyptian power and LNG export plants; rival maritime claims pit Türkiye and Libya\'s Tripoli government against Greece, Cyprus and Egypt.'},
+ {id:'mekong',t:'resource',n:'Mekong dams',c:['CHN','LAO','THA','KHM','VNM','MMR'],d:'Chinese and Laotian dams upstream reshape fisheries and rice farming downstream in Cambodia and Vietnam\'s delta.'},
+ {id:'indus',t:'resource',n:'Indus waters',c:['IND','PAK','CHN','AFG'],d:'India suspended the 1960 Indus Waters Treaty in 2025. Pakistan, whose farming depends on the Indus, calls any diversion an act of war.'},
+ {id:'tigris-euphrates',t:'resource',n:'Tigris–Euphrates water',c:['TUR','SYR','IRQ','IRN'],d:'Turkish and Iranian dams cut flows to Iraq and Syria, deepening drought and farmland loss.'},
+ {id:'central-asia-water',t:'resource',n:'Amu Darya & Central Asian water',c:['AFG','TKM','UZB','TJK','KGZ','KAZ'],d:'The Taliban\'s Qosh Tepa canal will divert Amu Darya water that Uzbek and Turkmen cotton farming relies on; upstream dams in Kyrgyzstan and Tajikistan are a constant bargaining chip.'},
+ {id:'shadow-fleet',t:'resource',n:'Russia\'s "shadow fleet" oil trade',c:['RUS','IND','CHN','TUR','ARE','GRC','DNK','EST','FIN'],d:'Aging, poorly insured tankers carry sanctioned Russian crude to India, China and Türkiye through Baltic and Danish waters, raising spill and sabotage fears.'},
+ {id:'gulf-labour',t:'economy',n:'Gulf labour & remittances',c:['EGY','IND','PAK','BGD','NPL','PHL','LKA','SAU','ARE','QAT','KWT','OMN','JOR'],d:'Millions of workers from Egypt and South Asia keep Gulf economies running; their remittances are a lifeline at home, giving Gulf states leverage.'},
+ {id:'critical-minerals',t:'economy',n:'Critical minerals race',c:['COD','RWA','ZMB','CHN','USA','ZAF','AUS','IDN','CHL'],d:'Cobalt, copper, nickel and lithium supply chains dominated by Chinese refining; the US uses minerals-for-security deals, including in the Congo–Rwanda peace push.'},
+ {id:'niger-uranium',t:'resource',n:'Niger\'s uranium',c:['NER','FRA','RUS','CHN','KAZ'],d:'After the 2023 coup Niger seized French firm Orano\'s mine and courted Russian and other buyers, shifting a key source of European nuclear fuel.'},
+ {id:'kurdish',t:'security',n:'The Kurdish question',c:['TUR','SYR','IRQ','IRN'],d:'Kurdish movements straddle four states. The PKK announced its dissolution in 2025, while Syria\'s Kurdish-led SDF negotiates its place in the new state.'},
+ {id:'baloch',t:'security',n:'Baloch insurgency',c:['PAK','IRN','AFG','CHN'],d:'Separatists attack Chinese projects and Pakistani forces around Gwadar; Iran and Pakistan traded strikes on each other\'s Baloch militants in 2024.'}
+];
+const BASE_THREADS = THREADS.map(t=>({...t}));
+
+/* Abbreviations, spelled out in brackets the first time they appear in a panel */
+const ABBR = {
+  'JNIM':'Jama\'at Nusrat al-Islam wal-Muslimin, al-Qaeda\'s Sahel branch', 'ISWAP':'Islamic State West Africa Province',
+  'IS-Khorasan':'Islamic State Khorasan Province', 'ISKP':'Islamic State Khorasan Province', 'IS':'Islamic State',
+  'TTP':'Tehrik-i-Taliban Pakistan, the Pakistani Taliban', 'RSF':'Rapid Support Forces, Sudanese paramilitary',
+  'SDF':'Syrian Democratic Forces, Kurdish-led', 'PKK':'Kurdistan Workers\' Party', 'ADF':'Allied Democratic Forces, IS-linked rebels',
+  'M23':'March 23 Movement, Rwanda-backed rebels', 'GERD':'Grand Ethiopian Renaissance Dam', 'CPEC':'China–Pakistan Economic Corridor',
+  'AES':'Alliance of Sahel States', 'ECOWAS':'Economic Community of West African States', 'CSTO':'Collective Security Treaty Organization, Russia-led',
+  'EAEU':'Eurasian Economic Union', 'SCO':'Shanghai Cooperation Organisation', 'NATO':'North Atlantic Treaty Organization',
+  'AUKUS':'Australia–UK–US security pact', 'ASEAN':'Association of Southeast Asian Nations', 'GCC':'Gulf Cooperation Council',
+  'EU':'European Union', 'AU':'African Union', 'USMCA':'United States–Mexico–Canada Agreement', 'NORAD':'North American Aerospace Defense Command',
+  'EDCA':'Enhanced Defense Cooperation Agreement', 'THAAD':'Terminal High Altitude Area Defense, a US missile-defence system',
+  'ICJ':'International Court of Justice', 'IAEA':'International Atomic Energy Agency', 'KFOR':'Kosovo Force, NATO peacekeepers',
+  'LNG':'liquefied natural gas', 'PLA':'People\'s Liberation Army', 'NPP':'nuclear power plant', 'SADR':'Sahrawi Arab Democratic Republic',
+  'EAC':'East African Community', 'SADC':'Southern African Development Community', 'OPEC':'Organization of the Petroleum Exporting Countries',
+  'CARICOM':'Caribbean Community', 'AFB':'Air Force Base', 'COSCO':'China Ocean Shipping Company', 'TSMC':'Taiwan Semiconductor Manufacturing Company',
+  'EVs':'electric vehicles', 'EV':'electric vehicle', 'DMZ':'Demilitarized Zone', 'TRIPP':'Trump Route for International Peace and Prosperity',
+  'GCAP':'Global Combat Air Programme', 'ANZUS':'Australia–New Zealand–US security treaty', 'BRICS':'Brazil, Russia, India, China, South Africa and newer members',
+  'G7':'Group of Seven leading industrial democracies', 'G20':'Group of Twenty major economies', 'UAE':'United Arab Emirates',
+  'CENTCOM':'US Central Command', 'PPP':'purchasing power parity', 'SDG':'Sustainable Development Goals', 'PISA':'Programme for International Student Assessment',
+  'Quad':'Quadrilateral Security Dialogue: US, India, Japan, Australia', 'AMISOM':'African Union Mission in Somalia', 'UNIFIL':'UN Interim Force in Lebanon'
+};
+const ABBR_RE = new RegExp('(^|[^A-Za-z0-9-])(' + Object.keys(ABBR).sort((a,b)=>b.length-a.length).map(k=>k.replace(/[-]/g,'\\-')).join('|') + ')(?![A-Za-z0-9])', 'g');
+let glossSeen = new Set();
+
+/* World Bank WDI latest values: {ISO3: {key: [value, year]}} */
+let WB = {};
+
+/* Facets for the comparison table. wb = built-in World Bank figure; ai = Claude fills it in on request */
+const FACETS = [
+  {k:'economy', label:'Economy', rows:[
+    {k:'gdp', label:'GDP', wb:'gdp', fmt:'usdBig'},
+    {k:'gdppc', label:'GDP per person', wb:'gdppc', fmt:'usd'},
+    {k:'gnippp', label:'Income per person (PPP)', wb:'gnippp', fmt:'usd', tip:'Gross national income per person, adjusted for local prices (PPP, purchasing power parity)'},
+    {k:'median', label:'Median income', ai:'median disposable income per person per year in US$ (say if it is household income instead)'},
+    {k:'infl', label:'Inflation', wb:'infl', fmt:'pct', low:true},
+    {k:'unemp', label:'Unemployment', wb:'unemp', fmt:'pct', low:true},
+    {k:'housing', label:'Housing prices', ai:'typical price per square metre to buy an apartment in the capital city, in US$'},
+    {k:'fuel', label:'Petrol price', ai:'current retail price of one litre of petrol (gasoline), in US$'}
+  ]},
+  {k:'society', label:'Society', rows:[
+    {k:'fert', label:'Fertility rate', wb:'fert', fmt:'num', unit:' births per woman'},
+    {k:'cbr', label:'Birth rate', wb:'cbr', fmt:'num', unit:' per 1,000 people'},
+    {k:'life', label:'Life expectancy', wb:'life', fmt:'num', unit:' years'},
+    {k:'pisa', label:'PISA scores', ai:'PISA (Programme for International Student Assessment) 2022 mean scores written as "maths / reading / science", or "did not take part"', tip:'OECD school test of 15-year-olds; OECD average ≈ 472 / 476 / 485'},
+    {k:'happy', label:'Happiness', ai:'World Happiness Report score (0–10) and world rank, latest edition'},
+    {k:'spcov', label:'Social protection coverage', wb:'spcov', fmt:'pct', tip:'Share of the population covered by social protection and labour programmes'},
+    {k:'mobility', label:'Social mobility', ai:'World Economic Forum Global Social Mobility Index score and rank (2020), or the best available measure'},
+    {k:'gini', label:'Inequality (Gini)', wb:'gini', fmt:'num', low:true, tip:'0 = everyone has the same income, 100 = one person has everything'}
+  ]},
+  {k:'military', label:'Military & security', rows:[
+    {k:'milusd', label:'Military spending', wb:'milusd', fmt:'usdBig'},
+    {k:'milgdp', label:'Military spending (% of GDP)', wb:'milgdp', fmt:'pct'},
+    {k:'milpers', label:'Armed forces personnel', wb:'milpers', fmt:'int'},
+    {k:'milabuse', label:'Abuse & assault in the military', ai:'reported sexual assault, hazing or abuse cases inside the armed forces: latest official figure or documented pattern, with source; "no public data" if none'},
+    {k:'torture', label:'Torture', ai:'documented use of torture or ill-treatment by state forces: scale and pattern, from sources such as the UN Committee against Torture, Amnesty International or Human Rights Watch'},
+    {k:'intel', label:'Intelligence agencies', ai:'main intelligence and security agencies, each as abbreviation followed by its full name in parentheses'}
+  ]},
+  {k:'environment', label:'Environment', rows:[
+    {k:'sdg', label:'SDG Index', ai:'Sustainable Development Report (SDSN) SDG (Sustainable Development Goals) Index score out of 100 and world rank, latest edition'},
+    {k:'forest', label:'Forest cover', wb:'forest', fmt:'pct', unit:' of land'},
+    {k:'protect', label:'Protected areas', wb:'protect', fmt:'pct', tip:'Share of land and sea under legal protection'},
+    {k:'green', label:'Urban green space', ai:'green space in cities, e.g. m² of public green space per urban resident or % green area of the capital, with source'},
+    {k:'co2pc', label:'CO₂ per person', wb:'co2pc', fmt:'num', unit:' t', low:true},
+    {k:'renew', label:'Renewable energy', wb:'renew', fmt:'pct', unit:' of energy use'}
+  ]},
+  {k:'politics', label:'Politics', rows:[
+    {k:'system', label:'System of government', ai:'system of government in a few words (e.g. "parliamentary republic", "absolute monarchy", "military junta")'},
+    {k:'hos', label:'Head of state', ai:'name and title of the current head of state'},
+    {k:'hog', label:'Head of government', ai:'name and title of the current head of government'},
+    {k:'ruling', label:'Ruling party / coalition', ai:'party or coalition in power, full name with abbreviation in parentheses; for juntas or monarchies say who holds power'},
+    {k:'lastelec', label:'Last national election', ai:'type of election, month and year, and who won'},
+    {k:'nextelec', label:'Next national election', ai:'type of election and its scheduled or expected date, or "none scheduled"'}
+  ]}
+];
+const threadsFor = id => THREADS.filter(t=>t.c.includes(id));
+const threadsBetween = (a,b) => THREADS.filter(t=>t.c.includes(a) && t.c.includes(b));
+
+const POI_TYPES = {
+  strait:{label:'Straits & canals', eyebrow:'Maritime chokepoint'},
+  land:{label:'Land corridors', eyebrow:'Land corridor'},
+  flash:{label:'Flashpoints', eyebrow:'Flashpoint / disputed area'},
+  base:{label:'Bases & ports', eyebrow:'Strategic base or port'},
+  resource:{label:'Resources', eyebrow:'Strategic resource'}
+};
+const ALIAS = {uk:'GBR',britain:'GBR','great britain':'GBR',england:'GBR',us:'USA',usa:'USA',america:'USA',turkey:'TUR',czech:'CZE',
+  burma:'MMR',holland:'NLD','ivory coast':'CIV','north korea':'PRK','south korea':'KOR',korea:'KOR',drc:'COD',congo:'COD',uae:'ARE',
+  emirates:'ARE',swaziland:'SWZ',macedonia:'MKD','east timor':'TLS','cape verde':'CPV',greenland:'DNK',vatican:'VAT',russia:'RUS'};
+
+/* ================================================================
+   BUILD MODEL
+   ================================================================ */
+const key = (a,b) => a<b ? a+'|'+b : b+'|'+a;
+const REL = new Map();
+REL_RAW.trim().split('\n').forEach(line=>{
+  const [a,b,s,...rest] = line.trim().split(' ');
+  REL.set(key(a,b), {s, note:rest.join(' '), src:'explicit'});
+});
+const BASE_REL = new Map(REL);
+const BASE_POIS = POIS.map(p=>({...p}));
+
+const topo = Datamap.prototype.worldTopo;
+const geoms = topo.objects.world.geometries;
+const FIX99 = {'Northern Cyprus':'NCY','Kosovo':'XKX','Somaliland':'SOL'};
+geoms.forEach(g=>{ if (g.id==='-99') g.id = FIX99[g.properties.name] || ('X'+g.properties.name); });
+const features = topojson.feature(topo, topo.objects.world).features;
+/* The base map folds Gaza into Israel's outline. Add the Gaza Strip as part of Palestine, drawn above Israel. */
+features.push({type:'Feature', id:'GAZ', properties:{name:'Gaza Strip'}, geometry:{type:'Polygon', coordinates:[[
+  [34.490,31.596],[34.567,31.588],[34.566,31.545],[34.500,31.470],[34.400,31.370],[34.284,31.228],[34.219,31.320],[34.300,31.410],[34.400,31.500],[34.490,31.596]
+]]}});
+const eff = id => OWNER[id] || id;
+
+function ringCenter(f){
+  const geom = f.geometry; if (!geom) return [0,0];
+  const polys = geom.type==='Polygon' ? [geom.coordinates] : geom.coordinates;
+  let best = polys[0][0];
+  polys.forEach(p=>{ if (p[0].length > best.length) best = p[0]; });
+  let sx=0, sy=0, ref=best[0][0];
+  best.forEach(([x,y])=>{ let dx=x; while(dx-ref>180) dx-=360; while(dx-ref<-180) dx+=360; sx+=dx; sy+=y; });
+  let lng = sx/best.length; if (lng>180) lng-=360; if (lng<-180) lng+=360;
+  return [sy/best.length, lng];
+}
+
+const ENT = {};
+features.forEach(f=>{
+  const id = f.id;
+  if (OWNER[id]) return;
+  const c = CENTER_FIX[id] || ringCenter(f);
+  const sp = SPECIAL[id];
+  ENT[id] = {id, name: NAME_FIX[id] || f.properties.name, kind: id==='ATA' ? 'Continent' : (sp ? sp.kind : 'Country'), note: sp && sp.note, lat:c[0], lng:c[1]};
+});
+MICRO.forEach(m=>{ ENT[m.id] = {id:m.id, name:m.name, kind:'Small state', lat:m.lat, lng:m.lng, micro:true}; });
+const ALL_IDS = Object.keys(ENT).filter(id=>id!=='ATA');
+
+/* neighbours: land (shared topology arcs) + sea (curated) */
+const NEI = new Map(); ALL_IDS.forEach(id=>NEI.set(id,new Map()));
+const addNei = (a,b,kind) => { if (a===b || !NEI.has(a) || !NEI.has(b)) return; if (!NEI.get(a).has(b) || kind==='land'){ NEI.get(a).set(b,kind); NEI.get(b).set(a,kind);} };
+topojson.neighbors(geoms).forEach((list,i)=>list.forEach(j=>addNei(eff(features[i].id), eff(features[j].id), 'land')));
+EXTRA_NEI.split('|').forEach(p=>{ const [a,b]=p.split(' '); addNei(a,b,'sea'); });
+addNei('PSE','EGY','land');   // Gaza–Egypt border at Rafah
+
+function blocsOf(id){ return Object.entries(BLOCS).filter(([,b])=> b.kind==='hub' ? b.set.has(id) : b.set.has(id)).map(([k,b])=>({k, ...b})); }
+function inferRel(a,c){
+  const al=[], pa=[];
+  for (const bl of Object.values(BLOCS)){
+    if (bl.kind==='display') continue;
+    if (bl.kind==='hub'){ if ((a===bl.hub && bl.set.has(c)) || (c===bl.hub && bl.set.has(a))) al.push(bl.name); continue; }
+    if (bl.set.has(a) && bl.set.has(c)) (bl.kind==='alliance' ? al : pa).push(bl.name);
+  }
+  if (al.length) return {s:'A', note:'Allies through '+al.join(', '), src:'bloc', via:al[0]};
+  if (pa.length) return {s:'F', note:'Both in '+pa.join(', '), src:'bloc', via:pa[0]};
+  return null;
+}
+function relation(a,c){
+  if (a===c) return null;
+  return REL.get(key(a,c)) || inferRel(a,c) || (NEI.get(a) && NEI.get(a).has(c) ? {s:'N', note:'Neighbours; no major dispute or special tie noted here', src:'neighbor'} : null);
+}
+const relCache = new Map();
+function relationsFor(id){
+  if (relCache.has(id)) return relCache.get(id);
+  const m = new Map();
+  ALL_IDS.forEach(o=>{ const r = relation(id,o); if (r) m.set(o,r); });
+  relCache.set(id,m); return m;
+}
+
+/* ================================================================
+   GLOBE
+   ================================================================ */
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const LAND = 'rgba(56,56,56,0.96)', LAND_DIM='rgba(34,34,34,0.92)', LAND_HOVER='rgba(92,92,92,0.97)', GOLD='#d4af37';
+let sel = {type:'none'};
+let relMap = new Map();
+let hoverId = null;
+const layers = {strait:true, land:true, flash:true, base:true, resource:true, arcs:true};
+const mob = () => window.innerWidth <= 760;
+const CMP_MAX = 12;
+
+/* ---------- filters (per-viewer; remembered in this browser) ---------- */
+const FILTER_DEFAULT = {status:{A:true,F:true,N:true,T:true,H:true,W:true}, blocTies:true, neiOnly:false, bloc:''};
+let filters = JSON.parse(JSON.stringify(FILTER_DEFAULT));
+try { const s = JSON.parse(localStorage.getItem('faultlines-filters')||'null'); if (s && s.status) filters = {...filters, ...s, status:{...filters.status, ...s.status}}; } catch(e){}
+if (filters.bloc && !BLOCS[filters.bloc]) filters.bloc = '';
+function saveFilters(){ try { localStorage.setItem('faultlines-filters', JSON.stringify(filters)); } catch(e){} }
+function passesPair(a, b, r){
+  if (!r || !filters.status[r.s]) return false;
+  if (!filters.blocTies && r.src==='bloc') return false;
+  if (filters.neiOnly && !(NEI.get(a) && NEI.get(a).has(b))) return false;
+  return true;
+}
+const inBloc = id => !!(filters.bloc && BLOCS[filters.bloc].set.has(id));
+function strokeColor(f){ return inBloc(eff(f.id)) ? 'rgba(240,214,120,1)' : 'rgba(212,175,55,0.42)'; }
+
+const hexA = (hex,a) => { const n=parseInt(hex.slice(1),16); return `rgba(${n>>16&255},${n>>8&255},${n&255},${a})`; };
+
+function capColor(f){
+  const id = eff(f.id);
+  if (f.id==='ATA') return 'rgba(70,70,70,0.5)';
+  if (sel.type==='compare'){
+    if (sel.ids.includes(id)) return 'rgba(212,175,55,0.96)';
+    if (cmpPois().some(p=>p.p.includes(id))) return id===hoverId ? 'rgba(212,175,55,0.5)' : 'rgba(212,175,55,0.28)';
+    return id===hoverId ? LAND_HOVER : LAND_DIM;
+  }
+  if (sel.type==='country'){
+    if (id===sel.id) return 'rgba(212,175,55,0.96)';
+    const r = relMap.get(id);
+    if (passesPair(sel.id, id, r)) return hexA(STATUS[r.s].color, id===hoverId ? 0.95 : 0.78);
+    return id===hoverId ? LAND_HOVER : LAND_DIM;
+  }
+  if (sel.type==='poi' && sel.poi.p.includes(id)) return id===hoverId ? 'rgba(212,175,55,0.96)' : 'rgba(212,175,55,0.62)';
+  if (inBloc(id)) return id===hoverId ? 'rgba(212,175,55,0.75)' : 'rgba(212,175,55,0.45)';
+  return id===hoverId ? LAND_HOVER : LAND;
+}
+const visibleRel = id => sel.type==='country' && passesPair(sel.id, id, relMap.get(id));
+const ISR_F = features.find(x=>x.id==='ISR');
+function altitude(f){
+  // Gaza must always sit above Israel's outline, which also covers it in the base map
+  if (f.id==='GAZ') return Math.max(altBase(f), ISR_F ? altBase(ISR_F) : 0) + 0.006;
+  return altBase(f);
+}
+function altBase(f){
+  const id = eff(f.id);
+  if (sel.type==='country' && id===sel.id) return 0.035;
+  if (sel.type==='compare' && sel.ids.includes(id)) return 0.03;
+  if (sel.type==='poi' && sel.poi.p.includes(id)) return 0.02;
+  if (id===hoverId) return 0.02;
+  if (visibleRel(id) || (sel.type==='none' && inBloc(id))) return 0.012;
+  return 0.006;
+}
+function tip(title, sub){ return `<div class="tip"><b>${title}</b>${sub||''}</div>`; }
+function pillHTML(s){ return `<span class="pill" style="background:${hexA(STATUS[s].color,.18)};color:${STATUS[s].color}">${STATUS[s].label}</span>`; }
+function polyLabel(f){
+  if (f.id==='ATA') return tip('Antarctica','<span class="muted">Antarctic Treaty area</span>');
+  const id = eff(f.id), e = ENT[id];
+  const title = f.id!==id ? `${f.properties.name} <em>· ${e.name}</em>` : e.name;
+  let sub = '';
+  if (sel.type==='compare') sub = `<span class="muted">${sel.ids.includes(id) ? 'Click to remove from comparison' : (sel.ids.length>=CMP_MAX ? `Comparison is full (${CMP_MAX})` : 'Click to add to comparison')}</span>`;
+  else if (sel.type==='country' && sel.id!==id){
+    const r = relMap.get(id);
+    sub = !r ? '<span class="muted">No notable link recorded</span>' : pillHTML(r.s) + (passesPair(sel.id,id,r) ? '' : '<span class="muted">Hidden by filters</span>');
+  }
+  return tip(title, sub);
+}
+
+const globeEl = document.getElementById('globe');
+const globe = new Globe(globeEl, {animateIn:true})
+  .width(window.innerWidth).height(window.innerHeight)
+  .backgroundColor('rgba(0,0,0,0)')
+  .showAtmosphere(true).atmosphereColor('#b8952c').atmosphereAltitude(0.13)
+  .showGraticules(false)
+  .polygonsData(features)
+  .polygonCapColor(capColor)
+  .polygonSideColor(()=> 'rgba(12,12,12,0.85)')
+  .polygonStrokeColor(f=> strokeColor(f))
+  .polygonAltitude(altitude)
+  .polygonsTransitionDuration(260)
+  .polygonLabel(polyLabel)
+  .onPolygonHover(f=>{ hoverId = f ? eff(f.id) : null; globeEl.style.cursor = f ? 'pointer' : 'grab'; refreshPolys(); })
+  .onPolygonClick(f=>{ if (f.id==='ATA') return sel.type==='compare' ? null : showAntarctica(); pickCountry(eff(f.id)); })
+  .pointsData(MICRO).pointLat('lat').pointLng('lng').pointAltitude(0.02).pointRadius(0.42)
+  .pointColor(p=>{
+    if (sel.type==='compare') return sel.ids.includes(p.id) ? GOLD : '#5a5a5a';
+    if (sel.type==='country'){ if (p.id===sel.id) return GOLD; const r=relMap.get(p.id); return passesPair(sel.id,p.id,r) ? STATUS[r.s].color : '#5a5a5a'; }
+    return inBloc(p.id) ? GOLD : '#bdbdbd';
+  })
+  .pointLabel(p=>{ if (sel.type==='compare') return tip(p.name, `<span class="muted">${sel.ids.includes(p.id)?'Click to remove':'Click to add to comparison'}</span>`); const r = sel.type==='country' && sel.id!==p.id ? relMap.get(p.id) : null; return tip(p.name, r ? pillHTML(r.s) : '<span class="muted">Small state</span>'); })
+  .onPointClick(p=>pickCountry(p.id))
+  .arcsData([]).arcColor('color').arcStroke(0.55).arcAltitudeAutoScale(0.38)
+  .arcDashLength(0.45).arcDashGap(0.18).arcDashAnimateTime(reduceMotion ? 0 : 2400)
+  .ringsData([]).ringColor(()=>t=>`rgba(212,175,55,${1-t})`).ringMaxRadius(3.5).ringPropagationSpeed(2.2).ringRepeatPeriod(1100)
+  .htmlElementsData(POIS).htmlLat('lat').htmlLng('lng').htmlAltitude(0.013).htmlElement(makeMarker)
+  .onGlobeClick(()=>{ if (sel.type!=='compare') clearSelection(); });
+globe.htmlElementVisibilityModifier((el,v)=>{ el.style.opacity = v ? 1 : 0; el.style.pointerEvents = v ? 'auto' : 'none'; });
+
+const mat = globe.globeMaterial();
+mat.color.set('#0b0b0b'); if (mat.emissive) mat.emissive.set('#050505'); mat.shininess = 4;
+const ctr = globe.controls();
+ctr.autoRotate = !reduceMotion; ctr.autoRotateSpeed = 0.35;
+globeEl.addEventListener('pointerdown', ()=>{ ctr.autoRotate = false; });
+window.addEventListener('resize', ()=> globe.width(window.innerWidth).height(window.innerHeight));
+
+/* gold graticule: every 15°, equator and prime meridian a touch brighter */
+const GRAT = [];
+for (let lat=-75; lat<=75; lat+=15){ const pts=[]; for (let lng=-180; lng<=180; lng+=4) pts.push([lat,lng]); pts.main = lat===0; GRAT.push(pts); }
+for (let lng=-180; lng<180; lng+=15){ const pts=[]; for (let lat=-84; lat<=84; lat+=4) pts.push([lat,lng]); pts.main = lng===0; GRAT.push(pts); }
+globe.pathsData(GRAT).pathPoints(d=>d).pathPointLat(p=>p[0]).pathPointLng(p=>p[1]).pathPointAlt(0.0015)
+  .pathColor(d=> d.main ? 'rgba(212,175,55,0.42)' : 'rgba(212,175,55,0.15)').pathStroke(null).pathTransitionDuration(0);
+
+function refreshPolys(){ globe.polygonCapColor(capColor).polygonAltitude(altitude); }
+
+function makeMarker(p){
+  const el = document.createElement('button');
+  el.type='button'; el.className='poi poi-'+p.t; el.setAttribute('aria-label', p.n);
+  el.innerHTML = `<i></i><span>${p.n}</span>`;
+  el.addEventListener('click', e=>{ e.stopPropagation(); pickPoi(p); });
+  p._el = el;
+  if ((sel.type==='poi' && sel.poi===p) || (sel.type==='compare' && sel.pn && sel.pn.includes(p.n))) el.classList.add('on');
+  return el;
+}
+function refreshMarkers(){ globe.htmlElementsData(POIS.filter(p=>layers[p.t])); }
+
+/* ================================================================
+   SELECTION + PANELS
+   ================================================================ */
+const panel = document.getElementById('panel');
+function fly(lat,lng,alt){ ctr.autoRotate=false; globe.pointOfView({lat: mob()? lat-8 : lat, lng: mob()? lng : lng+ (window.innerWidth>1100? 12 : 18), altitude: alt || (mob()? 2.6 : 2.0)}, 1100); }
+
+function selectCountry(id){
+  const e = ENT[id]; if (!e) return;
+  sel = {type:'country', id}; setCmp(false);
+  relMap = relationsFor(id);
+  POIS.forEach(p=>p._el && p._el.classList.remove('on'));
+  refreshPolys(); globe.pointColor(globe.pointColor());
+  drawArcs(); globe.ringsData([]);
+  renderCountry(id);
+  fly(e.lat, e.lng);
+}
+function selectPoi(p){
+  sel = {type:'poi', poi:p}; relMap = new Map(); setCmp(false);
+  POIS.forEach(q=>q._el && q._el.classList.toggle('on', q===p));
+  refreshPolys(); globe.pointColor(globe.pointColor());
+  globe.arcsData([]); globe.ringsData([p]);
+  renderPoi(p);
+  fly(p.lat, p.lng, mob()? 2.2 : 1.6);
+}
+function clearSelection(){
+  if (sel.type==='none') return;
+  sel = {type:'none'}; relMap = new Map(); setCmp(false);
+  POIS.forEach(p=>p._el && p._el.classList.remove('on'));
+  refreshPolys(); globe.pointColor(globe.pointColor());
+  globe.arcsData([]); globe.ringsData([]);
+  renderIntro();
+}
+function drawArcs(){
+  if (sel.type==='compare' && layers.arcs){
+    const arcs=[];
+    sel.ids.forEach((a,i)=>sel.ids.slice(i+1).forEach(b=>{
+      const r = relation(a,b); if (!passesPair(a,b,r)) return;
+      const A=ENT[a], B=ENT[b], c=STATUS[r.s].color;
+      arcs.push({startLat:A.lat,startLng:A.lng,endLat:B.lat,endLng:B.lng,color:[hexA(c,.95),hexA(c,.95)]});
+    }));
+    const pl = cmpPois();
+    pl.forEach((p,i)=>pl.slice(i+1).forEach(q=>arcs.push({startLat:p.lat,startLng:p.lng,endLat:q.lat,endLng:q.lng,color:['rgba(212,175,55,0.9)','rgba(236,210,127,0.9)']})));
+    globe.arcsData(arcs); return;
+  }
+  if (sel.type!=='country' || !layers.arcs){ globe.arcsData([]); return; }
+  const a = ENT[sel.id], nei = NEI.get(sel.id) || new Map(), arcs=[];
+  relMap.forEach((r,o)=>{
+    if (r.src==='bloc' && !nei.has(o)) return;   // bloc-only ties are shown by colour, not arcs
+    if (!passesPair(sel.id,o,r)) return;
+    const b = ENT[o]; if (!b) return;
+    const c = STATUS[r.s].color;
+    arcs.push({startLat:a.lat,startLng:a.lng,endLat:b.lat,endLng:b.lng,color:[hexA(c,.95),hexA(c,.55)]});
+  });
+  globe.arcsData(arcs);
+}
+
+const esc = s => String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+/* escape + spell out abbreviations in brackets on their first appearance in the current panel */
+function gx(s){
+  return esc(s).replace(ABBR_RE, (m, pre, ab) => {
+    if (glossSeen.has(ab)) return m;
+    glossSeen.add(ab);
+    return `${pre}${ab} <span class="abbr">(${esc(ABBR[ab])})</span>`;
+  });
+}
+function head(eyebrow, title, glyph){
+  glossSeen = new Set();
+  return `<div class="p-head"><div class="t"><div class="eyebrow">${glyph||''}${esc(eyebrow)}</div><h2>${esc(title)}</h2></div>
+    <button class="iconbtn collapse" id="collapse" aria-label="Collapse panel" title="Collapse">▾</button>
+    <button class="iconbtn" id="close" aria-label="Close" title="Close">✕</button></div>`;
+}
+function wirePanel(){
+  panel.classList.remove('min'); panelMode = '';
+  const all = document.getElementById('all-upd'); if (all) all.onclick = renderChanges;
+  const c = document.getElementById('close'); if (c) c.onclick = clearSelection;
+  const m = document.getElementById('collapse'); if (m) m.onclick = ()=>{ panel.classList.toggle('min'); m.textContent = panel.classList.contains('min') ? '▴' : '▾'; };
+  wireInside(panel);
+  panel.querySelector('.p-body').scrollTop = 0;
+}
+function wireInside(root){
+  root.querySelectorAll('[data-c]').forEach(b=>b.onclick=()=>selectCountry(b.dataset.c));
+  root.querySelectorAll('[data-p]').forEach(b=>b.onclick=()=>selectPoi(POIS[+b.dataset.p]));
+  root.querySelectorAll('[data-cmp]').forEach(b=>b.onclick=()=>startCompare(b.dataset.cmp.split('|')));
+  root.querySelectorAll('[data-rm]').forEach(b=>b.onclick=()=>toggleCompare(b.dataset.rm));
+  root.querySelectorAll('[data-rmp],[data-addp]').forEach(b=>b.onclick=()=>{ const p = POIS.find(x=>x.n===(b.dataset.rmp||b.dataset.addp)); if (p) togglePoiCompare(p); });
+  root.querySelectorAll('[data-cmpp]').forEach(b=>b.onclick=()=>startCompare([], [b.dataset.cmpp]));
+  root.querySelectorAll('[data-ai]').forEach(b=>b.onclick=()=>runAI(b));
+  root.querySelectorAll('[data-freset]').forEach(b=>b.onclick=()=>resetFilters());
+  wireFacets(root);
+  root.querySelectorAll('[data-x]').forEach(b=>b.onclick=()=>{
+    const xp = b.nextElementSibling, open = xp.hidden;
+    xp.hidden = !open; b.setAttribute('aria-expanded', open);
+    if (open && !xp.dataset.ready){ const [a,c] = b.dataset.x.split('|'); xp.innerHTML = explainHTML(a,c); xp.dataset.ready = '1'; wireInside(xp); }
+  });
+}
+/* one expandable relationship row: a = the "from" country, o = the other; label overrides the name */
+function relRow(a, o, r, tag, label){
+  const e = ENT[o];
+  const upd = r.updated ? `<small class="upd">updated ${fmtDate(r.updated)}</small>` : '';
+  const nT = threadsBetween(a,o).length;
+  tag = [tag, nT ? `${nT} indirect link${nT>1?'s':''}` : ''].filter(Boolean).join(' · ');
+  return `<li><button class="rb" data-x="${a}|${o}" aria-expanded="false"><span class="sw" style="background:${STATUS[r.s].color}"></span>
+    <span class="n">${label || esc(e.name)}${tag?`<small>${tag}</small>`:''}${upd}</span>${pillHTML(r.s)}
+    <span class="d">${gx(r.note)}</span></button><div class="xp" hidden></div></li>`;
+}
+
+/* ---------- explanations ---------- */
+function kmBetween(a,b){
+  const R=6371, rad=Math.PI/180, dLat=(b.lat-a.lat)*rad, dLng=(b.lng-a.lng)*rad;
+  const h=Math.sin(dLat/2)**2+Math.cos(a.lat*rad)*Math.cos(b.lat*rad)*Math.sin(dLng/2)**2;
+  return Math.round(2*R*Math.asin(Math.sqrt(h))/100)*100;
+}
+function pairFacts(a,b){
+  const r = relation(a,b) || {s:'N', note:'No special relationship is recorded between them; ties are limited or unremarkable.', src:'none'};
+  const A=ENT[a].name, B=ENT[b].name, nk = NEI.get(a) && NEI.get(a).get(b);
+  const geo = nk==='land' ? `Share a land border.` : nk==='sea' ? `Neighbours across the sea.` : `Not neighbours; about ${kmBetween(ENT[a],ENT[b]).toLocaleString()} km apart.`;
+  const ba = blocsOf(a), bb = blocsOf(b);
+  const shared = ba.filter(x=>x.kind!=='hub' && bb.some(y=>y.k===x.k)).map(x=>x.name);
+  const opposed = (BLOCS.NATO.set.has(a)&&BLOCS.CSTO.set.has(b)) || (BLOCS.CSTO.set.has(a)&&BLOCS.NATO.set.has(b)) ? 'On opposite sides: NATO vs the Russia-led CSTO.' : '';
+  let basis = r.src==='explicit' ? 'Curated assessment of this specific relationship.'
+    : r.src==='bloc' ? `Inferred from shared membership (${r.via}); no specific note recorded.`
+    : r.src==='neighbor' ? 'Default for neighbours with no special tie or dispute recorded.'
+    : 'Nothing specific recorded; shown as ordinary relations.';
+  const pois = POIS.map((p,i)=>[p,i]).filter(([p])=>p.p.includes(a) && p.p.includes(b));
+  const threads = threadsBetween(a,b);
+  if (threads.length && r.src==='none') basis = 'No major direct relationship on record; the connection runs through the indirect links below.';
+  let rr = r;
+  if (threads.length && (r.src==='none' || r.src==='neighbor'))
+    rr = {...r, note:`${r.src==='neighbor' ? 'Neighbours with no special tie noted' : 'Few direct ties'}, but linked indirectly through ${threads.slice(0,3).map(t=>t.n).join('; ')}.`};
+  return {r:rr, A, B, geo, shared, opposed, basis, pois, threads};
+}
+function threadHTML(t, focus){
+  const tt = THREAD_TYPES[t.t];
+  return `<div class="thread"><div class="th-head"><span class="th-type" style="color:${tt.color}">${esc(tt.label)}</span><b>${gx(t.n)}</b></div>
+    <p>${gx(t.d)}</p>
+    <div class="th-route">${t.c.filter(c=>ENT[c]).map(c=>`<span class="${focus && focus.includes(c) ? 'on' : ''}">${esc(ENT[c].name)}</span>`).join('<i>·</i>')}</div></div>`;
+}
+function explainHTML(a,b){
+  glossSeen = new Set();
+  const f = pairFacts(a,b), r = f.r, src = safeUrl(r.source);
+  const open = [a,b].filter(x=>!(sel.type==='country' && sel.id===x));
+  return `<p class="xp-status">${pillHTML(r.s)}</p>
+    <p>${esc(STATUS_DESC[r.s])}</p>
+    <p><b>${esc(f.A)} – ${esc(f.B)}:</b> ${gx(r.note)}</p>
+    <dl class="facts">
+      <dt>Why</dt><dd>${gx(f.basis)}</dd>
+      <dt>Geography</dt><dd>${esc(f.geo)}</dd>
+      ${f.shared.length ? `<dt>Shared blocs</dt><dd>${esc(f.shared.join(', '))}</dd>` : ''}
+      ${f.opposed ? `<dt>Alliances</dt><dd>${esc(f.opposed)}</dd>` : ''}
+      ${f.pois.length ? `<dt>Shared hotspots</dt><dd>${f.pois.map(([p,i])=>`<button class="tag" data-p="${i}"><i class="g g-${p.t}"></i> ${esc(p.n)}</button>`).join(' ')}</dd>` : ''}
+      ${r.updated ? `<dt>Updated</dt><dd>${esc(fmtDate(r.updated))}${src?` · <a href="${esc(src)}" target="_blank" rel="noopener">${esc(host(src))}</a>`:''}</dd>` : ''}
+    </dl>
+    ${f.threads.length ? `<div class="threads"><div class="th-title">Indirect links <em>how each affects the other beyond formal ties</em></div>${f.threads.map(t=>threadHTML(t,[a,b])).join('')}</div>` : ''}
+    <div class="ai-wrap">
+      <div class="actions">
+        <button class="btn" data-ai="pair|${a}|${b}" data-label="✦ Explain in depth">✦ Explain in depth</button>
+        ${open.map(x=>`<button class="tag" data-c="${x}">Open ${esc(ENT[x].name)}</button>`).join('')}
+        ${sel.type!=='compare' ? `<button class="tag" data-cmp="${a}|${b}">⇄ Compare</button>` : ''}
+      </div>
+      <div class="ai" hidden></div>
+    </div>`;
+}
+function aiBlock(kind, label){
+  return `<div class="ai-wrap"><div class="actions"><button class="btn" data-ai="${kind}" data-label="${esc(label)}">${esc(label)}</button></div><div class="ai" hidden></div></div>`;
+}
+
+/* tiny markdown: ### headings, - bullets, **bold**, paragraphs */
+function md(text){
+  const lines = esc(text).split('\n'); let html='', list=false, para=[];
+  const inline = s => s.replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/(^|[^*])\*(?!\s)(.+?)\*/g,'$1<i>$2</i>');
+  const flushP = () => { if (para.length){ html += `<p>${inline(para.join(' '))}</p>`; para=[]; } };
+  const flushL = () => { if (list){ html += '</ul>'; list=false; } };
+  lines.forEach(l=>{
+    const t = l.trim();
+    if (/^#{1,6}\s/.test(t)){ flushP(); flushL(); html += `<h4>${inline(t.replace(/^#+\s*/,''))}</h4>`; }
+    else if (/^[-*•]\s/.test(t)){ flushP(); if (!list){ html+='<ul>'; list=true; } html += `<li>${inline(t.replace(/^[-*•]\s+/,''))}</li>`; }
+    else if (!t){ flushP(); flushL(); }
+    else { flushL(); para.push(t); }
+  });
+  flushP(); flushL(); return html;
+}
+
+/* ---------- Claude from the browser, with the viewer's own API key ---------- */
+const SDK_URL = 'https://cdn.jsdelivr.net/npm/@anthropic-ai/sdk@0.128.0/+esm';
+const MODELS = {'claude-opus-5':'Claude Opus 5 (best)', 'claude-sonnet-5':'Claude Sonnet 5 (cheaper)', 'claude-haiku-4-5':'Claude Haiku 4.5 (cheapest)'};
+const EFFORT = {complex:'high', default:'medium', quick:'low'};
+const lsGet = k => { try { return localStorage.getItem(k); } catch(e){ return null; } };
+const lsSet = (k, v) => { try { if (v==null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch(e){} };
+const hashStr = s => { let h = 0; for (let i=0; i<s.length; i++) h = (h*31 + s.charCodeAt(i))|0; return (h>>>0).toString(36) + s.length; };
+let sdkPromise = null;
+const loadSDK = () => sdkPromise || (sdkPromise = import(SDK_URL).then(m => m.default || m.Anthropic).catch(e => { sdkPromise = null; throw e; }));
+const currentModel = () => MODELS[lsGet('faultlines-model')] ? lsGet('faultlines-model') : 'claude-opus-5';
+async function getSample(){
+  const key = lsGet('faultlines-api-key');
+  if (!key) return null;
+  let Anthropic;
+  try { Anthropic = await loadSDK(); } catch(e){ return null; }
+  const model = currentModel();
+  const client = new Anthropic({apiKey:key, dangerouslyAllowBrowser:true});
+  async function sample(prompt, opts = {}){
+    const tier = opts.modelTier || 'default';
+    const ttl = (opts.cache && opts.cache.gcTime) || 0;
+    const ck = 'faultlines-ai:' + hashStr(model + '|' + tier + '|' + prompt);
+    if (ttl){
+      try { const c = JSON.parse(lsGet(ck) || 'null'); if (c && Date.now()-c.t < ttl){ if (opts.onText) opts.onText({text:c.text, delta:c.text}); return {text:c.text, truncated:false}; } } catch(e){}
+    }
+    const params = {model, max_tokens:16000, messages:[{role:'user', content:prompt}]};
+    if (model !== 'claude-haiku-4-5') params.output_config = {effort: EFFORT[tier] || 'medium'};
+    if (model === 'claude-opus-5'){ params.betas = ['server-side-fallback-2026-07-01']; params.fallbacks = 'default'; }
+    let text = '';
+    try {
+      const stream = client.beta.messages.stream(params, {signal: opts.signal});
+      stream.on('text', d => { text += d; if (opts.onText) opts.onText({text, delta:d}); });
+      const msg = await stream.finalMessage();
+      if (msg.stop_reason === 'refusal') throw {code:'refused'};
+      text = msg.content.filter(b => b.type==='text').map(b => b.text).join('');
+      if (!text.trim()) throw {code:'empty_completion'};
+      if (ttl) lsSet(ck, JSON.stringify({t:Date.now(), text}));
+      return {text, truncated: msg.stop_reason==='max_tokens'};
+    } catch(e){
+      if (e && e.code && !(e instanceof Error)) throw {...e, text: e.code==='refused' ? undefined : text};
+      let code = 'upstream_error';
+      if (opts.signal && opts.signal.aborted) code = 'cancelled';
+      else if (e instanceof Anthropic.AuthenticationError || e instanceof Anthropic.PermissionDeniedError) code = 'bad_key';
+      else if (e instanceof Anthropic.RateLimitError) code = 'rate_limited';
+      else if (e instanceof Anthropic.BadRequestError) code = 'invalid_request';
+      throw {code, message: e && e.message, text};
+    }
+  }
+  sample.json = async (prompt, opts = {}) => {
+    const {text} = await sample(prompt, opts);
+    const fence = text.match(/```(?:json)?\s*([\s\S]*?)```/);
+    const body = fence ? fence[1] : text.slice(Math.max(0, text.search(/[\[{]/)), Math.max(text.lastIndexOf('}'), text.lastIndexOf(']')) + 1);
+    try { return JSON.parse(body); } catch(e){ throw {code:'invalid_json', text}; }
+  };
+  return sample;
+}
+const TODAY = new Date().toISOString().slice(0,10);
+const RULES = `You are the analyst behind "Faultlines", an interactive globe of international relations. Today is ${TODAY}. Write for a curious, intelligent reader: clear, neutral, factual, no preamble, no sign-off. Use short "### " headings and "- " bullets as asked. The page data below is the page's latest recorded state (it is refreshed daily from the news), so stay consistent with it; if you are unsure about very recent events, say so briefly instead of guessing.
+
+Go beyond formal diplomacy. Real relationships also run through second-order channels, and these often matter most when two countries have few direct ties:
+- security spillover: militant and jihadist networks, where fighters train, transit and strike; arms and fuel smuggling; insurgent sanctuaries
+- trafficking and migration routes, and who is a source, transit or destination country
+- proxy wars and rival camps, and who backs whom in third countries
+- great-power competition playing out on their territory (Russia, China, the US, the Gulf states, Türkiye)
+- water, food and energy dependence (rivers, wheat, gas, oil routes, chokepoints)
+- money and people: gold flows, remittances, diaspora, labour migration, debt
+Spell out the mechanism as a chain ("X happens in A → passes through C → hits B, which is why B watches A"), name the groups, routes or places involved, and say what each government is worried about or wants. Never dismiss a pair as having "no relationship"; if the link is indirect, explain it.
+Spell out every abbreviation or acronym in parentheses the first time you use it, e.g. "JNIM (Jama'at Nusrat al-Islam wal-Muslimin, al-Qaeda's Sahel branch)", "RSF (Rapid Support Forces)", "CSTO (Collective Security Treaty Organization)".`;
+const threadLines = list => list.length ? list.map(t=>`- ${t.n} [${THREAD_TYPES[t.t].label}] (${t.c.filter(c=>ENT[c]).map(c=>ENT[c].name).join(' · ')}): ${t.d}`).join('\n') : '- none recorded (use your own knowledge)';
+function relLines(a, max){
+  return [...relationsFor(a).entries()].filter(([,r])=>r.src==='explicit').sort(bySeverity).slice(0,max)
+    .map(([o,r])=>`- ${ENT[o].name}: ${STATUS[r.s].label} — ${r.note}`).join('\n');
+}
+function pairPrompt(a,b){
+  const f = pairFacts(a,b);
+  return `${RULES}
+
+Explain the relationship between ${f.A} and ${f.B} in about 280–380 words.
+Page data:
+- Status: ${STATUS[f.r.s].label} (${STATUS_DESC[f.r.s]})
+- Note: ${f.r.note}
+- Geography: ${f.geo}
+- Shared blocs: ${f.shared.join(', ') || 'none'}${f.opposed ? '\n- ' + f.opposed : ''}
+- Shared strategic locations: ${f.pois.map(([p])=>p.n).join(', ') || 'none'}
+- Indirect links recorded on the page:
+${threadLines(f.threads)}
+
+Structure:
+### Background
+### Where it stands now
+### Direct ties
+(3–4 bullets: diplomacy, trade, security cooperation or disputes)
+### Indirect links
+(3–5 bullets, each a mechanism chain: militant or smuggling routes, migration, proxies, third-party powers, water/food/energy, money and people; include links the page data misses)
+### What each side is watching`;
+}
+function countryPrompt(id){
+  const e = ENT[id];
+  return `${RULES}
+
+Explain ${e.name}'s place in the world and its foreign policy in about 300–400 words.
+Page data:
+- Blocs: ${blocsOf(id).map(b=>b.name).join(', ') || 'none'}
+- Key recorded relationships:
+${relLines(id, 30)}
+- Transnational issues it is part of:
+${threadLines(threadsFor(id))}
+
+Structure:
+### Strategic position
+### Friends and alliances
+### Rivals and disputes
+### Threats and dependencies from further away
+(bullets: militant networks, smuggling and migration routes, proxy conflicts, water/food/energy and money flows that tie it to countries it doesn't border, as mechanism chains)
+### What to watch`;
+}
+function groupPrompt(ids, pl){
+  pl = pl || [];
+  const names = ids.map(i=>ENT[i].name);
+  const pairs = [];
+  ids.forEach((a,i)=>ids.slice(i+1).forEach(b=>{ const f=pairFacts(a,b); pairs.push(`- ${f.A} – ${f.B}: ${STATUS[f.r.s].label} — ${f.r.note}`); }));
+  const gt = THREADS.filter(t=>ids.filter(i=>t.c.includes(i)).length>=2);
+  const cn = c => ENT[c] ? ENT[c].name : c;
+  const locLines = pl.map(p=>`- ${p.n} [${POI_TYPES[p.t].eyebrow}] — involved: ${p.p.map(cn).join(', ')}. ${p.s}. ${p.d}`).join('\n');
+  const linkLines = [];
+  pl.forEach((p,i)=>pl.slice(i+1).forEach(q=>{ const L = poiLinks(p,q); linkLines.push(`- ${p.n} ↔ ${q.n}: ${L.text.join('; ') || 'no direct link recorded'}`); }));
+  const who = ids.length && pl.length ? ids.map(c=>`- ${cn(c)}: ${pl.filter(p=>p.p.includes(c)).map(p=>p.n).join(', ') || 'not directly involved in these locations'}`).join('\n') : '';
+  const locThreads = THREADS.filter(t=>pl.some(p=>p.p.filter(c=>t.c.includes(c)).length>=2));
+  const subject = [names.length ? `the countries ${names.join(', ')}` : '', pl.length ? `the strategic locations ${pl.map(p=>p.n).join(', ')}` : ''].filter(Boolean).join(' and ');
+
+  const countryStruct = `### Alignments and fault lines
+(bullets: who sides with whom, the sharpest divides, and who backs whom in third countries)
+### Hidden connections
+(the most important part: bullets, each a mechanism chain linking members that look unconnected on paper, e.g. militants trained in one state transiting a third country to strike another; smuggling, migration, proxy, water/food/energy and money channels. Cover every member that looks isolated from the others.)
+### Who is watching whom, and why
+(one bullet per country: its main concern about the others)`;
+  const locStruct = `### How these locations connect
+(bullets, as chains: shared shipping or supply routes, bypasses and substitutes, and cascading effects — if one is closed or attacked, where traffic, prices and military pressure shift next)
+### Who controls them and who depends on them
+(bullets: controllers, contesters, and the economies most exposed; name navies, bases, militias or insurgents operating there)
+### Hidden connections
+(bullets: militant groups, proxies, great-power competition, insurance and shipping markets, energy and food prices that tie these places together)`;
+  return `${RULES}
+
+Analyse, in depth, ${subject}, and how they relate to each other. About 450–700 words.
+${pairs.length ? `Page data (pairwise, formal status):\n${pairs.join('\n')}\nBlocs: ${ids.map(i=>`${ENT[i].name}: ${blocsOf(i).map(b=>b.name).join(', ')||'none'}`).join('; ')}\nIndirect links touching 2+ of the countries:\n${threadLines(gt)}\n` : ''}${pl.length ? `Locations:\n${locLines}\n${linkLines.length ? `Recorded links between locations:\n${linkLines.join('\n')}\n` : ''}${locThreads.length ? `Transnational issues around these locations:\n${threadLines(locThreads)}\n` : ''}` : ''}${who ? `Which selected countries are involved where:\n${who}\n` : ''}
+Structure:
+### The big picture
+${ids.length>=2 ? countryStruct + '\n' : ''}${pl.length ? locStruct + '\n' : ''}${ids.length && pl.length ? `### The countries and these locations
+(bullets: what each selected country controls, contests, depends on or threatens at these locations)
+` : ''}### What to watch`;
+}
+
+/* shipping chains and bypasses used to explain how locations connect */
+const SEA_ROUTES = [
+  {n:'Asia–Europe via Suez', chain:['Strait of Malacca','Bab-el-Mandeb','Suez Canal','Strait of Gibraltar','Strait of Dover']},
+  {n:'Gulf oil & LNG to Europe', chain:['Strait of Hormuz','Bab-el-Mandeb','Suez Canal','Strait of Gibraltar']},
+  {n:'Gulf oil & LNG to East Asia', chain:['Strait of Hormuz','Strait of Malacca','Luzon Strait','Taiwan Strait','Korea Strait']},
+  {n:'Black Sea exports', chain:['Kerch Strait','Turkish Straits','Suez Canal','Strait of Gibraltar']},
+  {n:'Baltic exports', chain:['Danish Straits','Kiel Canal','Strait of Dover','GIUK Gap']},
+  {n:'US East Coast to Asia', chain:['Windward Passage','Panama Canal']},
+  {n:'Gulf of Mexico exports', chain:['Florida Straits','Yucatán Channel','Panama Canal']},
+  {n:'Russian Arctic energy to Asia', chain:['Yamal LNG','Northern Sea Route','Bering Strait']},
+  {n:'Australian ore & LNG to East Asia', chain:['Lombok Strait','Luzon Strait']},
+  {n:'Qatari & Saudi energy exports', chain:['Ras Laffan','Abqaiq & Ghawar','Kharg Island','Strait of Hormuz']}
+];
+const BYPASS = [
+  ['Suez Canal','Cape of Good Hope','Ships divert around Africa when Suez or the Red Sea is disrupted, adding 10–14 days.'],
+  ['Bab-el-Mandeb','Cape of Good Hope','Red Sea attacks pushed most container lines around the Cape.'],
+  ['Strait of Malacca','Lombok Strait','The largest tankers, or a Malacca closure, shift traffic to Lombok.'],
+  ['Strait of Malacca','Sunda Strait','Sunda is a shorter but shallow bypass of Malacca.'],
+  ['Panama Canal','Drake Passage','When Panama is constrained, some ships round Cape Horn.'],
+  ['Panama Canal','Strait of Magellan','A sheltered alternative around South America.'],
+  ['Panama Canal','Northwest Passage','A future Arctic shortcut as the ice retreats.'],
+  ['Suez Canal','Northern Sea Route','Russia pitches the Arctic route as a Suez alternative.'],
+  ['Strait of Hormuz','Abqaiq & Ghawar','Saudi Arabia\'s East–West pipeline can move part of its crude to the Red Sea, bypassing Hormuz.'],
+  ['Turkish Straits','Danish Straits','Russia\'s two European sea exits for oil exports and naval forces, both through NATO-controlled waters.'],
+  ['Taiwan Strait','Luzon Strait','Ships avoiding the Taiwan Strait pass east of Taiwan via the Luzon Strait.']
+];
+function poiLinks(p,q){
+  const text = [];
+  SEA_ROUTES.filter(r=>r.chain.includes(p.n) && r.chain.includes(q.n)).forEach(r=>text.push(`same chain: ${r.n}`));
+  BYPASS.filter(b=>(b[0]===p.n && b[1]===q.n) || (b[0]===q.n && b[1]===p.n)).forEach(b=>text.push(`alternative: ${b[2]}`));
+  const shared = p.p.filter(c=>q.p.includes(c) && ENT[c]).map(c=>ENT[c].name);
+  if (shared.length) text.push(`both involve ${shared.join(', ')}`);
+  return {text, km: kmBetween(p,q)};
+}
+function poiPrompt(p){
+  return `${RULES}
+
+Explain why ${p.n} matters strategically, in about 200–250 words.
+Page data: type: ${POI_TYPES[p.t].eyebrow}; countries involved: ${p.p.map(c=>ENT[c]?ENT[c].name:c).join(', ')}; key fact: ${p.s}; summary: ${p.d}
+
+Structure:
+### Why it matters
+### Who controls or contests it
+### Recent developments
+### What to watch`;
+}
+function buildPrompt(kind){
+  const [t, x, y] = kind.split('|');
+  if (t==='pair') return pairPrompt(x,y);
+  if (t==='country') return countryPrompt(x);
+  if (t==='poi') return poiPrompt(POIS[+x]);
+  if (t==='group') return groupPrompt(sel.ids || [], cmpPois());
+  return null;
+}
+const AI_OFF = ['not_granted','sampling_disabled','not_declared','capability_disabled','capability_removed'];
+const AI_MSG = {bad_key:'Your API key was rejected. Check it in ⚙ Settings.', invalid_request:'The request was rejected. Try another model in ⚙ Settings.', rate_limited:'Too many requests right now. Try again in a minute.', session_expired:'Sign in again to use explanations.',
+  refused:'Claude declined this one.', empty_completion:'No answer came back. Try again.', prompt_too_large:'Too much to explain at once. Try fewer countries.'};
+let aiCtl = null;
+async function runAI(btn){
+  const wrap = btn.closest('.ai-wrap'), out = wrap.querySelector('.ai');
+  if (btn.dataset.running){ aiCtl && aiCtl.abort(); return; }
+  const sample = await getSample();
+  if (!sample){ out.hidden=false; out.innerHTML = '<p class="muted">Add your Anthropic API key in ⚙ Settings (top left) to use Claude explanations.</p>'; openSettings(); return; }
+  const prompt = buildPrompt(btn.dataset.ai); if (!prompt) return;
+  const ctl = new AbortController(); aiCtl = ctl;
+  btn.dataset.running = '1'; btn.textContent = '■ Stop';
+  out.hidden = false; out.innerHTML = '<p class="muted thinking">Thinking…</p>';
+  try {
+    const tier = btn.dataset.ai==='group' ? 'complex' : 'default';
+    const {text, truncated} = await sample(prompt, {signal:ctl.signal, modelTier:tier, cache:{gcTime:86400000}, onText:({text})=>{ out.innerHTML = md(text); }});
+    out.innerHTML = md(text) + (truncated ? '<p class="faint">Cut short.</p>' : '') + '<p class="faint">Written by Claude from the page\'s data and its own knowledge; check recent events against the news.</p>';
+    btn.hidden = true;
+  } catch(e){
+    out.innerHTML = e && e.text ? md(e.text) : '';
+    if (AI_OFF.includes(e && e.code)){ out.innerHTML += '<p class="muted">In-depth explanations aren\'t available in this view.</p>'; btn.hidden = true; }
+    else if (!(e && e.code==='cancelled')) out.innerHTML += `<p class="muted">${esc(AI_MSG[e && e.code] || 'Something went wrong. Try again.')}</p>`;
+    if (!out.innerHTML) out.hidden = true;
+  } finally {
+    delete btn.dataset.running;
+    if (!btn.hidden) btn.textContent = btn.dataset.label;
+  }
+}
+
+/* ---------- compare mode ---------- */
+const cmpBtn = document.getElementById('cmp-btn');
+function setCmp(on){ cmpBtn.setAttribute('aria-pressed', on ? 'true' : 'false'); }
+cmpBtn.onclick = ()=>{ if (sel.type==='compare') exitCompare(); else startCompare(sel.type==='country' ? [sel.id] : []); };
+function pickCountry(id){ if (sel.type==='compare') toggleCompare(id); else selectCountry(id); }
+const CMP_POI_MAX = 8;
+const cmpPois = () => (sel.type==='compare' && sel.pn ? sel.pn : []).map(n=>POIS.find(p=>p.n===n)).filter(Boolean);
+function pickPoi(p){ if (sel.type==='compare') togglePoiCompare(p); else selectPoi(p); }
+function startCompare(ids, pnames){
+  sel = {type:'compare', ids:[...new Set(ids||[])].filter(i=>ENT[i]).slice(0,CMP_MAX),
+         pn:[...new Set(pnames||[])].filter(n=>POIS.some(p=>p.n===n)).slice(0,CMP_POI_MAX)};
+  relMap = new Map(); setCmp(true);
+  updateCompare();
+  const pts = [...sel.ids.map(i=>ENT[i]), ...cmpPois()];
+  if (pts.length) fly(pts.reduce((s,x)=>s+x.lat,0)/pts.length, pts[0].lng, mob()?2.8:2.3);
+}
+function toggleCompare(id){
+  if (!ENT[id] || sel.type!=='compare') return;
+  const i = sel.ids.indexOf(id);
+  if (i>=0) sel.ids.splice(i,1); else if (sel.ids.length<CMP_MAX) sel.ids.push(id);
+  updateCompare();
+}
+function togglePoiCompare(p){
+  if (sel.type!=='compare') return;
+  const i = sel.pn.indexOf(p.n);
+  if (i>=0) sel.pn.splice(i,1); else if (sel.pn.length<CMP_POI_MAX) sel.pn.push(p.n);
+  updateCompare();
+}
+function markCmpPois(){
+  const on = sel.type==='compare' ? sel.pn : [];
+  POIS.forEach(p=>p._el && p._el.classList.toggle('on', on.includes(p.n)));
+  globe.ringsData(cmpPois());
+}
+function updateCompare(){ refreshPolys(); globe.pointColor(globe.pointColor()); drawArcs(); markCmpPois(); renderCompare(); }
+function exitCompare(){
+  const first = sel.ids && sel.ids[0], fp = cmpPois()[0];
+  if (first) selectCountry(first); else if (fp) selectPoi(fp); else { sel={type:'compare'}; clearSelection(); }
+}
+function renderLocations(ids, pl){
+  if (!pl.length) return '';
+  const cn = c => ENT[c] ? ENT[c].name : c;
+  const cards = pl.map(p=>`<div class="loc"><div class="eyebrow"><i class="g g-${p.t}"></i>${esc(POI_TYPES[p.t].eyebrow)}</div>
+      <b>${esc(p.n)}</b><div class="loc-stat">${gx(p.s)}</div><p>${gx(p.d)}</p>
+      <div class="th-route">${p.p.filter(c=>ENT[c]).map(c=>`<span class="${ids.includes(c)?'on':''}">${esc(cn(c))}</span>`).join('<i>·</i>')}</div></div>`).join('');
+  const links = [];
+  pl.forEach((p,i)=>pl.slice(i+1).forEach(q=>{ const L = poiLinks(p,q); links.push({p,q,L}); }));
+  links.sort((a,b)=>b.L.text.length-a.L.text.length);
+  const matrix = ids.length ? `<section><h3>Who's involved where</h3><div class="mx-wrap"><table class="mx inv"><thead><tr><th></th>${pl.map((p,i)=>`<th title="${esc(p.n)}"><i class="g g-${p.t}"></i> ${i+1}</th>`).join('')}</tr></thead>
+      <tbody>${ids.map(c=>`<tr><th>${esc(cn(c))}</th>${pl.map(p=>p.p.includes(c) ? `<td class="yes" title="${esc(cn(c))} is involved in ${esc(p.n)}">●</td>` : '<td class="none">·</td>').join('')}</tr>`).join('')}</tbody></table></div>
+      <p class="hidden-note">${pl.map((p,i)=>`${i+1} = ${esc(p.n)}`).join(' · ')}</p></section>` : '';
+  return `<section><h3>Locations <em>${pl.length}</em></h3><div class="locs">${cards}</div></section>
+    ${links.length ? `<section><h3>How they connect</h3><ul class="links">${links.map(({p,q,L})=>`<li><b>${esc(p.n)} ↔ ${esc(q.n)}</b>
+      ${L.text.length ? `<ul>${L.text.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>` : '<span class="muted"> No shared route or countries recorded.</span>'}
+      <span class="faint"> ~${L.km.toLocaleString()} km apart</span></li>`).join('')}</ul></section>` : ''}
+    ${matrix}`;
+}
+/* ---------- facets: economy, society, military, environment, politics ---------- */
+let facetTab = 'economy';
+try { const t = localStorage.getItem('faultlines-facet-tab'); if (t && FACETS.some(f=>f.k===t)) facetTab = t; } catch(e){}
+let AIF = {};                 // Claude estimates, cached per viewer: {facet: {iso: {d, t}}}
+try { AIF = JSON.parse(localStorage.getItem('faultlines-facets-v1') || '{}') || {}; } catch(e){ AIF = {}; }
+let POL = {};                 // politics verified by the daily news task (shared db)
+const AI_TTL = {politics: 2*864e5};
+function aiGet(fk, iso){ const e = AIF[fk] && AIF[fk][iso]; if (!e || Date.now()-e.t > (AI_TTL[fk] || 14*864e5)) return null; return e.d; }
+function aiSet(fk, iso, d){ (AIF[fk] = AIF[fk] || {})[iso] = {d, t:Date.now()}; try { localStorage.setItem('faultlines-facets-v1', JSON.stringify(AIF)); } catch(e){} }
+function fmtVal(row, v){
+  if (v==null || isNaN(v)) return '—';
+  const u = row.unit || '';
+  if (row.fmt==='usdBig') return v>=1e12 ? `$${(v/1e12).toFixed(2)} tn` : v>=1e9 ? `$${(v/1e9).toFixed(1)} bn` : v>=1e6 ? `$${Math.round(v/1e6)} m` : `$${Math.round(v).toLocaleString()}`;
+  if (row.fmt==='usd') return `$${Math.round(v).toLocaleString()}`;
+  if (row.fmt==='pct') return `${(+v).toFixed(1)}%${u}`;
+  if (row.fmt==='int') return Math.round(v).toLocaleString() + u;
+  return (+v).toFixed(Math.abs(v)<10 ? 2 : 1) + u;
+}
+const needsAI = (fk, iso) => !aiGet(fk, iso) && !(fk==='politics' && POL[iso]);
+function facetCell(f, row, iso, top){
+  if (row.wb){
+    const d = WB[iso] && WB[iso][row.wb];
+    if (!d) return '<td class="na">no data</td>';
+    return `<td class="${top===iso?'top':''}"><span class="v">${fmtVal(row, d[0])}</span><span class="yr">${d[1]}</span></td>`;
+  }
+  if (f.k==='politics' && POL[iso] && POL[iso][row.k]){
+    const src = safeUrl(POL[iso].source);
+    return `<td class="ok"><span class="v">${gx(POL[iso][row.k])}</span><span class="yr">✓ ${esc(fmtDate(POL[iso].updated))}${src?` · <a href="${esc(src)}" target="_blank" rel="noopener">${esc(host(src))}</a>`:''}</span></td>`;
+  }
+  const a = aiGet(f.k, iso), x = a && a[row.k];
+  if (!x) return `<td class="na">${a ? 'n/a' : '—'}</td>`;
+  const v = typeof x==='object' ? x.v : x;
+  if (v==null || v==='' || v==='n/a') return '<td class="na">n/a</td>';
+  const meta = typeof x==='object' ? [x.y, x.s].filter(Boolean).join(' · ') : '';
+  return `<td class="ai"><span class="v">≈ ${gx(String(v))}</span>${meta?`<span class="yr">${esc(meta)}</span>`:''}</td>`;
+}
+function facetBody(ids){
+  const f = FACETS.find(x=>x.k===facetTab) || FACETS[0];
+  const name = id => ENT[id].name.length<=12 ? ENT[id].name : id;
+  const rows = f.rows.map(row=>{
+    let top = null;
+    if (row.wb && ids.length>1){
+      const vals = ids.map(i=>[i, WB[i] && WB[i][row.wb] ? WB[i][row.wb][0] : null]).filter(v=>v[1]!=null);
+      if (vals.length>1) top = vals.sort((a,b)=> row.low ? a[1]-b[1] : b[1]-a[1])[0][0];
+    }
+    return `<tr><th>${esc(row.label)}${row.tip?` <i class="info" title="${esc(row.tip)}">?</i>`:''}${row.ai?' <span class="aitag">≈</span>':''}</th>${ids.map(i=>facetCell(f,row,i,top)).join('')}</tr>`;
+  }).join('');
+  const missing = f.rows.some(r=>r.ai) && ids.some(i=>needsAI(f.k,i));
+  return `<div class="mx-wrap"><table class="ft"><thead><tr><th></th>${ids.map(i=>`<th title="${esc(ENT[i].name)}">${esc(name(i))}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div>
+    <div class="ffoot">
+      ${missing ? `<div class="actions"><button class="btn" data-ffill>✦ Fill in the ≈ rows with Claude</button></div>` : ''}
+      <p class="fmsg hidden-note" aria-live="polite"></p>
+      <p class="hidden-note">Plain figures: World Bank, latest year shown${ids.length>1?'; gold = highest (or lowest where lower is better)':''}. ≈ = Claude's estimate from its own knowledge, with year and source; check before relying on it.${f.k==='politics' ? ' ✓ = checked against the news by the daily update.' : ''}</p>
+    </div>`;
+}
+function facetSection(ids, title){
+  return `<section class="facets" data-ids="${ids.join('|')}"><h3>${esc(title)} <em>economy · society · military · environment · politics</em></h3>
+    <div class="ftabs" role="tablist">${FACETS.map(f=>`<button role="tab" data-ft="${f.k}" aria-selected="${f.k===facetTab}">${esc(f.label)}</button>`).join('')}</div>
+    <div class="fbody">${facetBody(ids)}</div></section>`;
+}
+function refreshFacet(sec){
+  const ids = sec.dataset.ids.split('|').filter(i=>ENT[i]);
+  sec.querySelectorAll('[data-ft]').forEach(b=>b.setAttribute('aria-selected', b.dataset.ft===facetTab));
+  glossSeen = new Set();
+  sec.querySelector('.fbody').innerHTML = facetBody(ids);
+  const fill = sec.querySelector('[data-ffill]'); if (fill) fill.onclick = ()=>fillFacet(facetTab, ids, sec);
+}
+function wireFacets(root){
+  root.querySelectorAll('.facets').forEach(sec=>{
+    sec.querySelectorAll('[data-ft]').forEach(b=>b.onclick=()=>{ facetTab = b.dataset.ft; try { localStorage.setItem('faultlines-facet-tab', facetTab); } catch(e){} refreshFacet(sec); });
+    const fill = sec.querySelector('[data-ffill]'); if (fill) fill.onclick = ()=>fillFacet(facetTab, sec.dataset.ids.split('|'), sec);
+  });
+}
+function facetPrompt(f, rows, need){
+  return `You are filling a data table on "Faultlines", an interactive globe of countries. Today is ${TODAY}.
+For each country, give the most recent reliable value you know for each field. Prefer the named source. Be accurate and conservative: if you don't know, or no public data exists, use "n/a" rather than guessing. Keep each value under 20 words. Spell out any abbreviation in parentheses the first time it appears in a value, e.g. "FSB (Federal Security Service)".
+${f.k==='politics' ? 'Politics changes fast: give the situation as of your latest knowledge and put the date it applies to in "y".\n' : ''}
+Fields:
+${rows.map(r=>`- "${r.k}": ${r.ai}`).join('\n')}
+
+Countries (ISO3 code: name):
+${need.map(i=>`- ${i}: ${ENT[i].name}`).join('\n')}
+
+Reply with only JSON, one entry per ISO3 code, every field present:
+{"${need[0]}": {"${rows[0].k}": {"v": "value", "y": "year or date of the data", "s": "source"}}}`;
+}
+async function fillFacet(fk, ids, sec){
+  const btn = sec.querySelector('[data-ffill]'), msg = sec.querySelector('.fmsg');
+  const sample = await getSample();
+  if (!sample){ msg.textContent = 'Add your Anthropic API key in ⚙ Settings (top left) to fill in the ≈ rows.'; openSettings(); return; }
+  const f = FACETS.find(x=>x.k===fk), rows = f.rows.filter(r=>r.ai);
+  const need = ids.filter(i=>ENT[i] && needsAI(fk,i));
+  if (!need.length) return;
+  btn.disabled = true; btn.textContent = 'Filling in… (up to a minute)'; btn.classList.add('thinking'); msg.textContent = '';
+  try {
+    const data = await sample.json(facetPrompt(f, rows, need), {modelTier:'default', cache:{gcTime:86400000}});
+    need.forEach(i=>{ const d = data && (data[i] || data[ENT[i].name]); aiSet(fk, i, d && typeof d==='object' ? d : {}); });
+    if (facetTab===fk && sec.isConnected) refreshFacet(sec);
+  } catch(e){
+    btn.disabled = false; btn.classList.remove('thinking'); btn.textContent = '✦ Fill in the ≈ rows with Claude';
+    const code = e && e.code;
+    if (AI_OFF.includes(code)){ msg.textContent = 'Claude estimates aren\'t available in this view.'; btn.hidden = true; }
+    else if (code!=='cancelled') msg.textContent = code==='invalid_json' ? 'The answer came back in the wrong format. Try again.' : (AI_MSG[code] || 'Something went wrong. Try again.');
+  }
+}
+
+function renderCompare(){
+  const ids = sel.ids, n = ids.length;
+  const pairs = [];
+  ids.forEach((a,i)=>ids.slice(i+1).forEach(b=>{ const r = pairFacts(a,b).r; if (passesPair(a,b,r)) pairs.push([a,b,r]); }));
+  pairs.sort((x,y)=>ORDER.indexOf(x[2].s)-ORDER.indexOf(y[2].s));
+  const hidden = n*(n-1)/2 - pairs.length;
+  const counts = {}; SUMMARY_ORDER.forEach(s=>counts[s]=0); pairs.forEach(p=>counts[p[2].s]++);
+  const blocSets = Object.values(BLOCS).filter(b=>b.kind!=='hub').map(b=>({name:b.name, in:ids.filter(i=>b.set.has(i))})).filter(b=>b.in.length>=2);
+  const allIn = blocSets.filter(b=>b.in.length===n), some = blocSets.filter(b=>b.in.length<n);
+  const pois = POIS.map((p,i)=>[p,i]).filter(([p])=>ids.filter(c=>p.p.includes(c)).length>=2);
+  const code = id => ENT[id].name.length<=9 ? ENT[id].name : id;
+  const cell = (a,b) => { if (a===b) return '<td class="self">—</td>'; const r = pairFacts(a,b).r, c = STATUS[r.s].color;
+    if (!passesPair(a,b,r)) return `<td class="none" title="Hidden by filters">·</td>`;
+    const th = threadsBetween(a,b);
+    return `<td style="background:${hexA(c,.2)};color:${c}" title="${esc(ENT[a].name)} – ${esc(ENT[b].name)}: ${STATUS[r.s].label}${th.length ? '\nIndirect: ' + esc(th.map(t=>t.n).join('; ')) : ''}">${SHORT[r.s]}${th.length ? `<sup class="ind">+${th.length}</sup>` : ''}</td>`; };
+  const groupThreads = THREADS.map(t=>({t, in:ids.filter(i=>t.c.includes(i))})).filter(x=>x.in.length>=2).sort((x,y)=>y.in.length-x.in.length);
+
+  const pl = cmpPois(), m = pl.length;
+  const title = [n ? `${n} ${n===1?'country':'countries'}` : '', m ? `${m} location${m===1?'':'s'}` : ''].filter(Boolean).join(' · ') || 'Pick what to compare';
+  panel.innerHTML = head('Compare', title) + `<div class="p-body">
+    ${n+m ? `<div class="chips">${ids.map(id=>`<span class="tag mem">${esc(ENT[id].name)}<button data-rm="${id}" aria-label="Remove ${esc(ENT[id].name)}">×</button></span>`).join('')}${pl.map(p=>`<span class="tag mem"><i class="g g-${p.t}"></i>${esc(p.n)}<button data-rmp="${esc(p.n)}" aria-label="Remove ${esc(p.n)}">×</button></span>`).join('')}</div>` : ''}
+    ${n+m<2 ? `<p class="hint">Click countries or location markers (chokepoints, corridors, flashpoints, bases, resources) on the globe, or search, to add them: up to ${CMP_MAX} countries and ${CMP_POI_MAX} locations. Or pick a quick comparison under Filters. You'll get how they relate, how the locations connect, and a written analysis.</p>` : `
+    <section><h3>Analysis</h3>${aiBlock('group','✦ Analyse this comparison in depth')}</section>`}
+    ${n ? facetSection(ids, n>1 ? 'Compare facts & figures' : 'Facts & figures') : ''}
+    ${renderLocations(ids, pl)}
+    ${n<2 ? '' : `
+    <section><h3>Relationship grid</h3>
+      <div class="mx-wrap"><table class="mx"><thead><tr><th></th>${ids.map(id=>`<th title="${esc(ENT[id].name)}">${id}</th>`).join('')}</tr></thead>
+      <tbody>${ids.map(a=>`<tr><th>${esc(code(a))}</th>${ids.map(b=>cell(a,b)).join('')}</tr>`).join('')}</tbody></table></div>
+      <div class="bar" style="margin-top:10px">${SUMMARY_ORDER.filter(s=>counts[s]).map(s=>`<div style="flex:${counts[s]};background:${STATUS[s].color}"></div>`).join('')}</div>
+      <div class="legend">${SUMMARY_ORDER.map(s=>`<span><i class="sw" style="background:${STATUS[s].color}"></i>${STATUS[s].label} <b>${counts[s]}</b></span>`).join('')}</div>
+    </section>
+    <p class="hidden-note" style="margin-top:-8px"><sup class="ind">+n</sup> marks pairs with indirect links (militant networks, smuggling, migration, proxies, resources).</p>
+    ${groupThreads.length ? `<section><h3>Hidden connections <em>${groupThreads.length}</em></h3>
+      <div class="threads">${groupThreads.map(x=>threadHTML(x.t, ids)).join('')}</div></section>` : ''}
+    <section><h3>Every pair <em>${pairs.length}</em></h3>
+      ${hidden ? `<p class="hidden-note" style="margin:0 0 6px">${hidden} pair${hidden>1?'s':''} hidden by filters · <button class="link" data-freset>Show all</button></p>` : ''}
+      <ul class="rel">${pairs.map(([a,b,r])=>relRow(a,b,r,'',`${esc(ENT[a].name)} ↔ ${esc(ENT[b].name)}`)).join('')}</ul></section>
+    <section><h3>Blocs</h3>
+      ${allIn.length ? `<p class="note"><b>All in:</b> ${esc(allIn.map(b=>b.name).join(', '))}</p>` : '<p class="note muted">No bloc includes all of them.</p>'}
+      ${some.length ? `<p class="note" style="margin-top:6px"><b>Partly shared:</b> ${some.map(b=>`${esc(b.name)} (${b.in.map(i=>esc(ENT[i].name)).join(', ')})`).join(' · ')}</p>` : ''}
+    </section>
+    ${pois.length ? `<section><h3>Hotspots involving 2+ of them</h3><div class="chips">${pois.map(([p,i])=>`<button class="tag" data-addp="${esc(p.n)}"><i class="g g-${p.t}"></i> ${esc(p.n)}${sel.pn.includes(p.n)?' ✓':' +'}</button>`).join('')}</div><p class="hidden-note">Click to add a location to this comparison.</p></section>` : ''}`}
+  </div>`;
+  wirePanel();
+}
+const bySeverity = (x,y) => ORDER.indexOf(x[1].s)-ORDER.indexOf(y[1].s) || ENT[x[0]].name.localeCompare(ENT[y[0]].name);
+
+function renderCountry(id){
+  const e = ENT[id], nei = NEI.get(id) || new Map();
+  const allRaw = [...relMap.entries()];
+  const all = allRaw.filter(([o,r])=>passesPair(id,o,r)), hidden = allRaw.length - all.length;
+  const neighbours = all.filter(([o])=>nei.has(o)).sort(bySeverity);
+  const key = all.filter(([o,r])=>!nei.has(o) && r.src==='explicit').sort(bySeverity);
+  const blocOnly = all.filter(([o,r])=>!nei.has(o) && r.src==='bloc');
+  const counts = {}; SUMMARY_ORDER.forEach(s=>counts[s]=0); all.forEach(([,r])=>counts[r.s]++);
+  const total = all.length || 1;
+  const viaCount = {}; blocOnly.forEach(([,r])=>viaCount[r.via]=(viaCount[r.via]||0)+1);
+  const blocs = blocsOf(id);
+  const pois = POIS.map((p,i)=>[p,i]).filter(([p])=>p.p.includes(id));
+
+  panel.innerHTML = head(e.kind, e.name) + `<div class="p-body">
+    ${e.note ? `<p class="note">${gx(e.note)}</p>` : ''}
+    <div class="ai-wrap"><div class="actions">
+      <button class="btn" data-ai="country|${id}" data-label="✦ Explain ${esc(e.name)}'s foreign policy">✦ Explain ${esc(e.name)}'s foreign policy</button>
+      <button class="tag" data-cmp="${id}">⇄ Compare with others</button>
+    </div><div class="ai" hidden></div></div>
+    <p class="note faint" style="margin:-6px 0 0;font-size:12px">Click any relationship below for an explanation.</p>
+    <section>
+      <h3>Alignment <em>${all.length} links</em></h3>
+      <div class="bar">${SUMMARY_ORDER.filter(s=>counts[s]).map(s=>`<div style="flex:${counts[s]};background:${STATUS[s].color}" title="${STATUS[s].label}: ${counts[s]}"></div>`).join('')}</div>
+      <div class="legend">${SUMMARY_ORDER.map(s=>`<span><i class="sw" style="background:${STATUS[s].color}"></i>${STATUS[s].label} <b>${counts[s]}</b></span>`).join('')}</div>
+      ${hidden ? `<p class="hidden-note">${hidden} more hidden by filters · <button class="link" data-freset>Show all</button></p>` : ''}
+    </section>
+    ${blocs.length ? `<section><h3>Blocs & alliances</h3><div class="chips">${blocs.map(b=>`<span class="tag ${b.kind==='alliance'||b.kind==='hub'?'al':''}" title="${esc(ABBR[b.name]||b.name)}">${esc(b.name)}${ABBR[b.name] ? ` <span class="abbr">(${esc(ABBR[b.name])})</span>` : ''}</span>`).join('')}</div></section>` : ''}
+    ${id==='ATA' ? '' : facetSection([id], 'Facts & figures')}
+    <section><h3>Neighbours <em>${neighbours.length}</em></h3>
+      ${neighbours.length ? `<ul class="rel">${neighbours.map(([o,r])=>relRow(id,o,r,nei.get(o)==='sea'?'by sea':'')).join('')}</ul>` : '<p class="note muted">No land or close sea neighbours recorded.</p>'}
+    </section>
+    ${key.length ? `<section><h3>Key relationships <em>${key.length}</em></h3><ul class="rel">${key.map(([o,r])=>relRow(id,o,r,'')).join('')}</ul></section>` : ''}
+    ${threadsFor(id).length ? `<section><h3>Transnational issues <em>${threadsFor(id).length}</em></h3>
+      <div class="threads">${threadsFor(id).map(t=>`<details class="thread-d"><summary><span class="th-type" style="color:${THREAD_TYPES[t.t].color}">${esc(THREAD_TYPES[t.t].label)}</span><b>${gx(t.n)}</b></summary>
+        <p>${gx(t.d)}</p>
+        <div class="th-route">${t.c.filter(c=>ENT[c]).map(c=>`<span class="${c===id?'on':''}">${esc(ENT[c].name)}</span>`).join('<i>·</i>')}</div>
+        <button class="tag" data-cmp="${t.c.filter(c=>ENT[c]).slice(0,CMP_MAX).join('|')}">⇄ Compare these countries</button></details>`).join('')}</div></section>` : ''}
+    ${blocOnly.length ? `<section><h3>Also aligned through blocs</h3><p class="note">${Object.entries(viaCount).map(([v,n])=>`${n} via ${esc(v)}`).join(' · ')}. Shown in colour on the globe.</p></section>` : ''}
+    ${pois.length ? `<section><h3>Strategic locations <em>${pois.length}</em></h3><div class="chips">${pois.map(([p,i])=>`<button class="tag" data-p="${i}"><i class="g g-${p.t}"></i> ${esc(p.n)}</button>`).join('')}</div></section>` : ''}
+    <p class="foot">Simplified snapshot as of mid-2026. Statuses are editorial shorthand for complex relationships; unlisted neighbours default to "normal".</p>
+  </div>`;
+  wirePanel();
+}
+
+function fmtCoord(lat,lng){ return `${Math.abs(lat).toFixed(2)}°${lat>=0?'N':'S'} ${Math.abs(lng).toFixed(2)}°${lng>=0?'E':'W'}`; }
+function renderPoi(p){
+  const i = POIS.indexOf(p);
+  const near = POIS.map((q,j)=>[q,j]).filter(([q])=>q!==p && q.p.some(c=>p.p.includes(c)))
+    .sort((a,b)=>dist(p,a[0])-dist(p,b[0])).slice(0,5);
+  panel.innerHTML = head(POI_TYPES[p.t].eyebrow, p.n, `<i class="g g-${p.t}"></i>`) + `<div class="p-body">
+    <div class="coords">${fmtCoord(p.lat,p.lng)}${p.updated ? ` · <span class="upd">updated ${fmtDate(p.updated)}</span>` : ''}</div>
+    <div class="stat">${gx(p.s)}</div>
+    <p class="lede">${gx(p.d)}</p>
+    ${aiBlock('poi|'+i, '✦ Explain in depth')}
+    <div class="actions"><button class="tag" data-cmpp="${esc(p.n)}">⇄ Compare with other locations or countries</button></div>
+    <section><h3>Countries involved</h3><div class="chips">${p.p.map(c=>ENT[c]?`<button class="tag" data-c="${c}">${esc(ENT[c].name)}</button>`:'').join('')}</div></section>
+    ${near.length ? `<section><h3>Related locations</h3><div class="chips">${near.map(([q,j])=>`<button class="tag" data-p="${j}"><i class="g g-${q.t}"></i> ${esc(q.n)}</button>`).join('')}</div></section>` : ''}
+    <p class="foot">Figures are approximate and rounded; snapshot as of mid-2026.</p>
+  </div>`;
+  wirePanel();
+}
+function dist(a,b){ const dl=(a.lat-b.lat), dg=((a.lng-b.lng+540)%360)-180; return dl*dl+dg*dg; }
+
+function showAntarctica(){
+  sel = {type:'poi', poi:{p:['ATA'],lat:-80,lng:0}}; relMap=new Map(); refreshPolys(); globe.arcsData([]); globe.ringsData([]);
+  POIS.forEach(p=>p._el && p._el.classList.remove('on'));
+  panel.innerHTML = head('Continent','Antarctica') + `<div class="p-body">
+    <div class="stat">Antarctic Treaty (1959) · 58 parties</div>
+    <p class="lede">Set aside for peace and science. Seven states (Argentina, Australia, Chile, France, New Zealand, Norway, UK) hold territorial claims that are frozen by the treaty; Argentina's, Chile's and Britain's overlap. Mining is banned under the 1991 Madrid Protocol.</p>
+    <section><h3>Claimant states</h3><div class="chips">${['ARG','AUS','CHL','FRA','NZL','NOR','GBR'].map(c=>`<button class="tag" data-c="${c}">${esc(ENT[c].name)}</button>`).join('')}</div></section>
+  </div>`;
+  wirePanel(); fly(-72,0,2.2);
+}
+
+function renderIntro(){
+  const picks = ['TUR','TWN','UKR','IRN','IND','EGY','USA','CHN'];
+  const hot = ['Strait of Hormuz','Strait of Malacca','Bab-el-Mandeb','Taiwan Strait','Suwałki Gap','Panama Canal'];
+  panel.innerHTML = `<div class="p-head"><div class="t"><div class="eyebrow">How to read it</div><h2>A world of faultlines</h2></div>
+    <button class="iconbtn collapse" id="collapse" aria-label="Collapse panel">▾</button></div>
+    <div class="p-body">
+    <p class="lede">Click any country to colour the world by its relationships, with arcs to its neighbours and key partners or rivals. Click a relationship to see why it has that status, or ask Claude to explain it in depth. Use <b>Compare countries</b> to pick 2–12 countries and see how they all relate, and <b>Filters</b> to narrow what's shown.</p>
+    ${changesSection(1)}
+    <section><h3>Relationship key</h3><div class="legend">${SUMMARY_ORDER.map(s=>`<span><i class="sw" style="background:${STATUS[s].color}"></i>${STATUS[s].label}</span>`).join('')}</div></section>
+    <section><h3>Try a country</h3><div class="quick">${picks.map(c=>`<button class="tag" data-c="${c}">${esc(ENT[c].name)}</button>`).join('')}</div></section>
+    <section><h3>Critical chokepoints</h3><div class="quick">${hot.map(n=>{const j=POIS.findIndex(p=>p.n===n); return `<button class="tag" data-p="${j}"><i class="g g-${POIS[j].t}"></i> ${esc(n)}</button>`;}).join('')}</div></section>
+    <section><h3>On the map</h3><ul class="intro-list">
+      <li>${ALL_IDS.length} countries and territories, including ${MICRO.length} small states shown as dots</li>
+      <li>${POIS.length} strategic locations across five categories</li>
+      <li>${REL.size} annotated bilateral relationships, plus alliances and blocs</li></ul></section>
+    <p class="foot">Baseline snapshot as of mid-2026, updated daily from the news. Relations are editorial shorthand, not a substitute for analysis.</p>
+    </div>`;
+  wirePanel(); panelMode = 'intro';
+}
+
+/* ================================================================
+   LAYERS + SEARCH
+   ================================================================ */
+const layersEl = document.getElementById('layers');
+const LAYER_DEFS = [['arcs','Relation arcs'], ...Object.entries(POI_TYPES).map(([k,v])=>[k,v.label])];
+layersEl.innerHTML = LAYER_DEFS.map(([k,l])=>`<button class="chip" id="layer-${k}" data-l="${k}" aria-pressed="true"><i class="g g-${k}"></i>${l}</button>`).join('');
+layersEl.querySelectorAll('[data-l]').forEach(b=>b.onclick=()=>{
+  const k=b.dataset.l; layers[k]=!layers[k]; b.setAttribute('aria-pressed', layers[k]);
+  if (k==='arcs') drawArcs(); else refreshMarkers();
+  updateFilterCount();
+});
+
+/* ---------- filter drawer ---------- */
+const fltBtn = document.getElementById('flt-btn'), fltPanel = document.getElementById('filters'), fltCount = document.getElementById('flt-count');
+const fStatus = document.getElementById('f-status'), fBlocTies = document.getElementById('f-bloc-ties'), fNei = document.getElementById('f-nei');
+const fBloc = document.getElementById('f-bloc'), fBlocCmp = document.getElementById('f-bloc-cmp');
+const PRESETS = [
+  ['G7','USA CAN GBR FRA DEU ITA JPN'], ['Quad','USA IND JPN AUS'], ['AUKUS','AUS GBR USA'],
+  ['BRICS','BRA RUS IND CHN ZAF EGY ETH IRN ARE IDN'], ['Nuclear-armed states','USA RUS CHN GBR FRA IND PAK ISR PRK'],
+  ['Gulf & Iran','SAU ARE QAT KWT OMN BHR IRN'], ['Middle East','ISR IRN SAU TUR EGY SYR LBN JOR'],
+  ['Taiwan Strait','CHN TWN USA JPN PHL'], ['Korean Peninsula','KOR PRK CHN JPN USA RUS'],
+  ['South China Sea','CHN VNM PHL MYS BRN IDN TWN'], ['South Asia','IND PAK CHN AFG BGD NPL LKA'],
+  ['Baltic & Nordic','EST LVA LTU POL FIN SWE RUS BLR'], ['Black Sea','UKR RUS TUR ROU BGR GEO MDA'],
+  ['Caucasus','ARM AZE GEO TUR IRN RUS'], ['Horn of Africa','ETH ERI SOM SOL DJI SDN EGY'],
+  ['Sahel','MLI BFA NER DZA NGA TCD'], ['Great Lakes','COD RWA UGA BDI TZA'],
+  ['Americas','USA CAN MEX BRA ARG VEN COL CUB'],
+  ['⚓ Oil & gas chokepoints','','Strait of Hormuz|Strait of Malacca|Bab-el-Mandeb|Suez Canal|Turkish Straits|Danish Straits|Panama Canal'],
+  ['⚓ Asia–Europe sea route','','Strait of Malacca|Bab-el-Mandeb|Suez Canal|Strait of Gibraltar|Cape of Good Hope'],
+  ['⚓ Red Sea crisis','YEM EGY SAU IRN ISR','Bab-el-Mandeb|Suez Canal|Cape of Good Hope|Djibouti bases'],
+  ['⚓ Taiwan & South China Sea','CHN TWN PHL USA JPN','Taiwan Strait|Luzon Strait|Spratly Islands|Scarborough Shoal|Hsinchu Science Park'],
+  ['⚓ Arctic routes','RUS USA CAN NOR DNK','Northern Sea Route|Northwest Passage|Bering Strait|GIUK Gap|Svalbard'],
+  ['⚓ Russia\'s sea exits','RUS UKR TUR DNK','Turkish Straits|Kerch Strait|Danish Straits|Kaliningrad|Northern Sea Route']
+];
+const QUICK = {all:'AFNTHW', friends:'AF', rivals:'THW', conflict:'HW'};
+
+fBloc.innerHTML += Object.entries(BLOCS).filter(([,b])=>b.kind!=='hub').sort((a,b)=>a[1].name.localeCompare(b[1].name))
+  .map(([k,b])=>`<option value="${k}">${esc(b.name)} (${b.set.size})</option>`).join('');
+document.getElementById('f-presets').innerHTML = PRESETS.map(([n],i)=>`<button class="chip" data-preset="${i}">${esc(n)}</button>`).join('');
+document.querySelectorAll('[data-preset]').forEach(b=>b.onclick=()=>{ const P = PRESETS[+b.dataset.preset]; startCompare(P[1] ? P[1].split(' ') : [], P[2] ? P[2].split('|') : []); if (mob()) toggleDrawer(false); });
+document.querySelectorAll('[data-fq]').forEach(b=>b.onclick=()=>{ SUMMARY_ORDER.forEach(s=>filters.status[s]=QUICK[b.dataset.fq].includes(s)); applyFilters(); });
+fBlocTies.onchange = ()=>{ filters.blocTies = fBlocTies.checked; applyFilters(); };
+fNei.onchange = ()=>{ filters.neiOnly = fNei.checked; applyFilters(); };
+fBloc.onchange = ()=>{ filters.bloc = fBloc.value; applyFilters(); };
+fBlocCmp.onclick = ()=>{ if (filters.bloc){ startCompare([...BLOCS[filters.bloc].set].filter(i=>ENT[i])); if (mob()) toggleDrawer(false); } };
+document.getElementById('f-reset').onclick = ()=>resetFilters();
+function toggleDrawer(open){ fltPanel.hidden = !open; fltBtn.setAttribute('aria-expanded', open); }
+fltBtn.onclick = ()=> toggleDrawer(fltPanel.hidden);
+document.addEventListener('keydown', e=>{ if (e.key==='Escape' && !fltPanel.hidden) toggleDrawer(false); });
+
+function updateFilterCount(){
+  const n = (SUMMARY_ORDER.some(s=>!filters.status[s])?1:0) + (!filters.blocTies?1:0) + (filters.neiOnly?1:0) + (filters.bloc?1:0) + (Object.values(layers).some(v=>!v)?1:0);
+  fltCount.hidden = !n; fltCount.textContent = n;
+}
+function renderFilterUI(){
+  fStatus.innerHTML = SUMMARY_ORDER.map(s=>`<button class="chip" data-fs="${s}" aria-pressed="${filters.status[s]}"><i class="sw" style="background:${STATUS[s].color}"></i>${STATUS[s].label}</button>`).join('');
+  fStatus.querySelectorAll('[data-fs]').forEach(b=>b.onclick=()=>{ filters.status[b.dataset.fs] = !filters.status[b.dataset.fs]; applyFilters(); });
+  fBlocTies.checked = filters.blocTies; fNei.checked = filters.neiOnly; fBloc.value = filters.bloc;
+  fBlocCmp.disabled = !filters.bloc;
+  fBlocCmp.textContent = filters.bloc && BLOCS[filters.bloc].set.size > CMP_MAX ? `⇄ Compare first ${CMP_MAX}` : '⇄ Compare members';
+  updateFilterCount();
+}
+function applyFilters(){
+  saveFilters(); renderFilterUI();
+  refreshPolys(); globe.polygonStrokeColor(strokeColor); globe.pointColor(globe.pointColor()); drawArcs();
+  if (sel.type==='country') renderCountry(sel.id); else if (sel.type==='compare') renderCompare();
+}
+function resetFilters(){
+  filters = JSON.parse(JSON.stringify(FILTER_DEFAULT));
+  Object.keys(layers).forEach(k=>{ layers[k]=true; const b=document.getElementById('layer-'+k); if (b) b.setAttribute('aria-pressed','true'); });
+  refreshMarkers(); applyFilters();
+}
+renderFilterUI();
+
+const q = document.getElementById('q'), sugg = document.getElementById('sugg');
+let INDEX = [];
+function buildIndex(){ INDEX = [
+  ...ALL_IDS.map(id=>({label:ENT[id].name, sub:ENT[id].kind, go:()=>pickCountry(id), k:ENT[id].name.toLowerCase()})),
+  ...Object.keys(OWNER).map(t=>{ const f=features.find(x=>x.id===t); return f && {label:f.properties.name, sub:TERRITORY_NOTE[t], go:()=>pickCountry(OWNER[t]), k:f.properties.name.toLowerCase()}; }).filter(Boolean),
+  ...POIS.map(p=>({label:p.n, sub:POI_TYPES[p.t].label, go:()=>pickPoi(p), k:p.n.toLowerCase()})),
+  {label:'Antarctica', sub:'Continent', go:showAntarctica, k:'antarctica'}
+]; }
+buildIndex();
+let hits=[], active=0;
+function renderSugg(){
+  const v = q.value.trim().toLowerCase();
+  if (!v){ sugg.hidden=true; return; }
+  const alias = ALIAS[v] && ENT[ALIAS[v]] ? [{label:ENT[ALIAS[v]].name, sub:ENT[ALIAS[v]].kind, go:()=>pickCountry(ALIAS[v]), k:v}] : [];
+  const starts = INDEX.filter(x=>x.k.startsWith(v)), inc = INDEX.filter(x=>!x.k.startsWith(v) && x.k.includes(v));
+  hits = [...alias, ...starts, ...inc].filter((x,i,arr)=>arr.findIndex(y=>y.label===x.label)===i).slice(0,8);
+  active = 0;
+  sugg.innerHTML = hits.length ? hits.map((h,i)=>`<li><button type="button" data-i="${i}" class="${i===0?'on':''}"><span>${esc(h.label)}</span><small>${esc(h.sub)}</small></button></li>`).join('')
+    : `<li class="faint" style="padding:8px 10px">No match. Try a country or strait name.</li>`;
+  sugg.hidden=false;
+  sugg.querySelectorAll('[data-i]').forEach(b=>b.onmousedown=e=>{ e.preventDefault(); pick(+b.dataset.i); });
+}
+function pick(i){ const h=hits[i]; if (!h) return; h.go(); q.value=''; sugg.hidden=true; q.blur(); }
+q.addEventListener('input', renderSugg);
+q.addEventListener('keydown', e=>{
+  if (e.key==='Enter'){ e.preventDefault(); pick(active); }
+  else if (e.key==='ArrowDown' || e.key==='ArrowUp'){ e.preventDefault(); if(!hits.length) return;
+    active = (active + (e.key==='ArrowDown'?1:-1) + hits.length) % hits.length;
+    sugg.querySelectorAll('[data-i]').forEach((b,i)=>b.classList.toggle('on', i===active)); }
+  else if (e.key==='Escape'){ sugg.hidden=true; q.blur(); }
+});
+q.addEventListener('blur', ()=>setTimeout(()=>sugg.hidden=true, 120));
+
+/* ================================================================
+   LIVE NEWS UPDATES (shared db, written by a daily Claude task)
+   relations/<A-B>  {a,b,s,note,updated,source}   s:'none' removes a baked-in pair
+   pois/<slug>      {n,t,lat,lng,p,s,d,updated,source,remove?}
+   meta/status      {lastRun, summary, log:[{date, items:[{label,change,source}]}]}
+   ================================================================ */
+let liveRel = [], livePois = [], liveThreads = [], meta = null, lastSig = '';
+function fmtDate(d){ const t = new Date(d); return isNaN(t) ? '' : t.toLocaleDateString(undefined,{day:'numeric',month:'short'}); }
+const safeUrl = u => typeof u==='string' && /^https:\/\//i.test(u) ? u : null;
+const host = u => { try { return new URL(u).hostname.replace(/^www\./,''); } catch(e){ return 'source'; } };
+
+function applyLive(){
+  const sig = JSON.stringify([liveRel, livePois, liveThreads]);
+  if (sig===lastSig) return; lastSig = sig;
+  REL.clear(); BASE_REL.forEach((v,k)=>REL.set(k,v));
+  liveRel.forEach(r=>{
+    if (!r || !ENT[r.a] || !ENT[r.b] || r.a===r.b) return;
+    if (r.s==='none'){ REL.delete(key(r.a,r.b)); return; }
+    if (!STATUS[r.s]) return;
+    REL.set(key(r.a,r.b), {s:r.s, note:String(r.note||''), src:'explicit', updated:r.updated, source:safeUrl(r.source)});
+  });
+  POIS.length = 0; BASE_POIS.forEach(p=>POIS.push({...p}));
+  livePois.forEach(d=>{
+    if (!d || !d.n) return;
+    const ex = POIS.find(p=>p.n.toLowerCase()===String(d.n).toLowerCase());
+    if (d.remove){ if (ex) POIS.splice(POIS.indexOf(ex),1); return; }
+    const c = {};
+    ['n','s','d','updated'].forEach(k=>{ if (d[k]!=null) c[k]=String(d[k]); });
+    if (POI_TYPES[d.t]) c.t = d.t;
+    if (Number.isFinite(+d.lat) && Number.isFinite(+d.lng) && d.lat!=null && d.lng!=null){ c.lat=+d.lat; c.lng=+d.lng; }
+    if (Array.isArray(d.p)) c.p = d.p.filter(x=>ENT[x]);
+    if (ex) Object.assign(ex,c); else if (c.t && c.lat!=null && c.p) POIS.push({s:'',d:'',...c});
+  });
+  THREADS.length = 0; BASE_THREADS.forEach(t=>THREADS.push({...t}));
+  liveThreads.forEach(d=>{
+    if (!d || !d.id) return;
+    const ex = THREADS.find(t=>t.id===d.id);
+    if (d.remove){ if (ex) THREADS.splice(THREADS.indexOf(ex),1); return; }
+    const c = {};
+    ['n','d','updated'].forEach(k=>{ if (d[k]!=null) c[k]=String(d[k]); });
+    if (THREAD_TYPES[d.t]) c.t = d.t;
+    if (Array.isArray(d.c)) c.c = d.c.filter(x=>ENT[x]);
+    if (ex) Object.assign(ex,c); else if (c.n && c.t && c.c && c.c.length>=2) THREADS.push({id:String(d.id), d:'', ...c});
+  });
+  relCache.clear(); buildIndex(); refreshMarkers();
+  if (sel.type==='country'){ relMap = relationsFor(sel.id); refreshPolys(); globe.pointColor(globe.pointColor()); drawArcs(); renderCountry(sel.id); }
+  else if (sel.type==='compare'){ drawArcs(); markCmpPois(); renderCompare(); }
+  else if (sel.type==='poi' && sel.poi.n){ const p = POIS.find(x=>x.n===sel.poi.n); if (p){ sel.poi=p; p._el && p._el.classList.add('on'); renderPoi(p); } }
+}
+
+function changeItems(entry){
+  return (entry.items||[]).map(it=>{
+    const u = safeUrl(it.source);
+    return `<li><b>${esc(it.label||'')}</b> <span class="muted">${gx(it.change||'')}</span>${u?` <a href="${esc(u)}" target="_blank" rel="noopener">${esc(host(u))}</a>`:''}</li>`;
+  }).join('');
+}
+function changesSection(n){
+  if (!meta || !Array.isArray(meta.log)) return '';
+  const entries = meta.log.slice(0,n);
+  return `<section><h3>Latest news updates <em>checked ${esc(fmtDate(meta.lastRun))}</em></h3>
+    ${meta.summary?`<p class="note">${esc(meta.summary)}</p>`:''}
+    ${entries.map(e=>`<ul class="changes">${changeItems(e) || '<li class="muted">No significant changes.</li>'}</ul>`).join('')}
+    ${meta.log.length ? `<button class="tag" id="all-upd">All updates</button>` : ''}</section>`;
+}
+function renderChanges(){
+  const log = (meta && Array.isArray(meta.log)) ? meta.log : [];
+  panel.innerHTML = head('Daily news check','Update log') + `<div class="p-body">
+    ${meta && meta.lastRun ? `<p class="note">Last checked ${esc(fmtDate(meta.lastRun))}. Claude scans the news each day and records only significant, sourced changes.</p>` : '<p class="note">No updates yet.</p>'}
+    ${log.map(e=>`<section><h3>${esc(fmtDate(e.date)||e.date||'')}</h3><ul class="changes">${changeItems(e) || '<li class="muted">No significant changes.</li>'}</ul></section>`).join('')}
+    <p class="foot">Automated summaries can be wrong; check the linked sources.</p></div>`;
+  wirePanel(); panelMode = 'changes';
+}
+let panelMode = '';
+const badge = document.getElementById('upd-badge');
+badge.onclick = ()=>{ clearSelectionQuiet(); renderChanges(); };
+function clearSelectionQuiet(){
+  sel = {type:'none'}; relMap = new Map(); setCmp(false);
+  POIS.forEach(p=>p._el && p._el.classList.remove('on'));
+  refreshPolys(); globe.pointColor(globe.pointColor()); globe.arcsData([]); globe.ringsData([]);
+}
+function onMeta(){
+  if (meta && meta.lastRun){ badge.hidden = false; badge.textContent = 'Updated ' + fmtDate(meta.lastRun); }
+  if (panelMode==='intro') renderIntro();
+  else if (panelMode==='changes') renderChanges();
+}
+
+/* live overrides written by the GitHub Actions updater (data/live.json) */
+let polSig = '';
+async function loadLive(){
+  try {
+    const r = await fetch('data/live.json?t=' + Date.now(), {cache:'no-store'});
+    if (!r.ok) return;
+    const d = await r.json();
+    liveRel = Object.values(d.relations || {});
+    livePois = Object.values(d.pois || {});
+    liveThreads = Object.entries(d.threads || {}).map(([id, t]) => ({id, ...t}));
+    applyLive();
+    const pol = {}; Object.entries(d.politics || {}).forEach(([k, v]) => { if (ENT[k]) pol[k] = v; });
+    const ps = JSON.stringify(pol);
+    if (ps !== polSig){ polSig = ps; POL = pol; document.querySelectorAll('.facets').forEach(refreshFacet); }
+    const m = d.meta || null;
+    if (JSON.stringify(m) !== JSON.stringify(meta)){ meta = m; onMeta(); }
+  } catch(e){}
+}
+async function loadWB(){
+  try {
+    const r = await fetch('data/wb.json?t=' + Math.floor(Date.now()/36e5), {cache:'no-store'});
+    if (r.ok){ WB = await r.json(); document.querySelectorAll('.facets').forEach(refreshFacet); }
+  } catch(e){}
+}
+loadWB(); loadLive();
+setInterval(loadLive, 10*60*1000);
+
+/* ---------- settings drawer: API key + model ---------- */
+const setBtn = document.getElementById('set-btn'), setPanel = document.getElementById('settings');
+const apiKey = document.getElementById('api-key'), apiMsg = document.getElementById('api-msg'), apiModel = document.getElementById('api-model');
+apiModel.innerHTML = Object.entries(MODELS).map(([k, v]) => `<option value="${k}">${esc(v)}</option>`).join('');
+apiModel.value = currentModel();
+apiModel.onchange = () => lsSet('faultlines-model', apiModel.value);
+function showKeyState(){ const k = lsGet('faultlines-api-key'); apiMsg.textContent = k ? `Key saved (ends in …${k.slice(-4)}).` : 'No key saved yet.'; apiKey.value = ''; }
+function openSettings(){ setPanel.hidden = false; setBtn.setAttribute('aria-expanded', 'true'); showKeyState(); }
+setBtn.onclick = () => { if (setPanel.hidden) openSettings(); else { setPanel.hidden = true; setBtn.setAttribute('aria-expanded', 'false'); } };
+document.getElementById('api-save').onclick = () => {
+  const v = apiKey.value.trim();
+  if (!v){ apiMsg.textContent = 'Paste a key first.'; return; }
+  if (!v.startsWith('sk-ant-')){ apiMsg.textContent = 'That doesn\'t look like an Anthropic key (they start with sk-ant-).'; return; }
+  lsSet('faultlines-api-key', v); showKeyState();
+};
+document.getElementById('api-clear').onclick = () => { lsSet('faultlines-api-key', null); showKeyState(); };
+
+/* start in a working state */
+renderIntro();
+setTimeout(()=>selectCountry('TUR'), 900);
+</script>
+</body>
+</html>

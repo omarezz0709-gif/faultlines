@@ -1,0 +1,271 @@
+{
+ "meta": {
+  "lastRun": "2026-09-23T20:30:00Z",
+  "log": [
+   {
+    "date": "2026-09-23",
+    "items": [
+     {
+      "change": "Hostile → War: war since Feb 2026; US blockade; ceasefire talks at UNGA",
+      "label": "Iran–United States",
+      "source": "https://www.thenationalnews.com/news/mena/2026/09/23/iran-us-meeting-new-york/"
+     },
+     {
+      "change": "Hostile → War: open war since Feb 2026; June truce collapsed in July",
+      "label": "Iran–Israel",
+      "source": "https://www.britannica.com/event/2026-Iran-war"
+     },
+     {
+      "change": "Normal → War: Iranian strikes on Saudi territory and Saudi counter-strikes",
+      "label": "Iran–Saudi Arabia",
+      "source": "https://www.thenationalnews.com/news/mena/2026/09/23/iran-us-meeting-new-york/"
+     },
+     {
+      "change": "Tense → War: Houthis end truce, strike Riyadh and Yanbu",
+      "label": "Saudi Arabia–Yemen",
+      "source": "https://www.aljazeera.com/news/2026/9/8/saudi-houthi-fighting-in-yemen-escalates-what-happened-and-whats-next"
+     },
+     {
+      "change": "Houthis seize Mocha, Perim and Hanish Islands; Saudi ships banned",
+      "label": "Bab-el-Mandeb",
+      "source": "https://www.euronews.com/2026/09/12/houthis-seize-yemeni-island-in-bab-el-mandeb-taking-control-of-the-strait"
+     },
+     {
+      "change": "US blockade of Iran since July; Iranian attacks on shipping",
+      "label": "Strait of Hormuz",
+      "source": "https://www.aljazeera.com/news/2026/9/16/us-military-claims-strait-of-hormuz-remains-open-amid-ongoing-blockade"
+     },
+     {
+      "change": "Now aimed at Saudi Arabia and its rerouted Red Sea oil exports",
+      "label": "Houthi Red Sea campaign",
+      "source": "https://www.aljazeera.com/news/2026/9/18/as-houthis-grab-bab-al-mandeb-us-appears-willing-to-watch-from-sidelines"
+     },
+     {
+      "change": "Politics: Andy Burnham is Prime Minister since 20 July 2026",
+      "label": "United Kingdom",
+      "source": "https://www.npr.org/2026/07/19/nx-s1-5895993/andy-burnham-prime-minister-keir-starmer"
+     },
+     {
+      "change": "Politics: Mojtaba Khamenei Supreme Leader since March 2026",
+      "label": "Iran",
+      "source": "https://www.aljazeera.com/news/2026/3/8/iran-names-khameneis-son-as-new-supreme-leader-after-fathers-killing-2"
+     },
+     {
+      "change": "NATO allies sign Arctic basing deal: new US sites at Narsarsuaq and Mestersvig, Greenland",
+      "label": "Denmark–United States",
+      "source": "https://www.aljazeera.com/news/2026/9/22/us-signs-tremendous-arctic-security-deal-with-denmark-greenland"
+     },
+     {
+      "change": "State Duma election Sept 18-20 2026: United Russia wins landslide supermajority",
+      "label": "Russia",
+      "source": "https://www.aljazeera.com/news/2026/9/21/pro-putin-party-wins-supermajority-amid-ramped-up-ukrainian-attacks"
+     }
+    ]
+   },
+   {
+    "date": "2026-09-22",
+    "items": [
+     {
+      "change": "About 300 bilateral relations and 97 strategic locations, as of mid-2026.",
+      "label": "Baseline"
+     }
+    ]
+   }
+  ],
+  "summary": "Follow-up check: added the Sept 22 US-Denmark Arctic basing deal in Greenland and backfilled China/Russia politics; the Gulf war picture logged earlier today still stands."
+ },
+ "relations": {
+  "DNK-USA": {
+   "a": "DNK",
+   "b": "USA",
+   "note": "NATO allies; a Sept 22, 2026 deal grants the US new Arctic bases and broad access in Greenland, easing friction over earlier US annexation talk.",
+   "s": "A",
+   "source": "https://www.aljazeera.com/news/2026/9/22/us-signs-tremendous-arctic-security-deal-with-denmark-greenland",
+   "updated": "2026-09-23"
+  },
+  "IRN-ISR": {
+   "a": "IRN",
+   "b": "ISR",
+   "note": "Open war since Feb 2026 strikes that killed Ali Khamenei; June truce collapsed in July",
+   "s": "W",
+   "source": "https://www.britannica.com/event/2026-Iran-war",
+   "updated": "2026-09-23"
+  },
+  "IRN-SAU": {
+   "a": "IRN",
+   "b": "SAU",
+   "note": "Iranian missiles hit Saudi cities and refineries since Feb 2026; Riyadh struck back; Iran now offers a halt",
+   "s": "W",
+   "source": "https://www.thenationalnews.com/news/mena/2026/09/23/iran-us-meeting-new-york/",
+   "updated": "2026-09-23"
+  },
+  "IRN-USA": {
+   "a": "IRN",
+   "b": "USA",
+   "note": "At war since Feb 2026 US-Israeli strikes; US naval blockade of Iran; talks at UNGA on a 60-day regional ceasefire",
+   "s": "W",
+   "source": "https://www.thenationalnews.com/news/mena/2026/09/23/iran-us-meeting-new-york/",
+   "updated": "2026-09-23"
+  },
+  "SAU-YEM": {
+   "a": "SAU",
+   "b": "YEM",
+   "note": "2022 truce is over: Houthis strike Riyadh and Yanbu, seize the Red Sea coast and ban Saudi ships",
+   "s": "W",
+   "source": "https://www.aljazeera.com/news/2026/9/8/saudi-houthi-fighting-in-yemen-escalates-what-happened-and-whats-next",
+   "updated": "2026-09-23"
+  }
+ },
+ "threads": {
+  "houthi-red-sea": {
+   "c": [
+    "IRN",
+    "YEM",
+    "SAU",
+    "ERI",
+    "DJI",
+    "EGY",
+    "ISR",
+    "USA",
+    "GBR"
+   ],
+   "d": "Iran-armed Houthis, who hit Red Sea shipping from 2023, reopened war on Saudi Arabia in 2026 and in September seized Yemen's side of Bab-el-Mandeb. With Hormuz disrupted, Saudi oil exports rerouted to the Red Sea are now the target; Egypt's Suez revenue suffers while the US stays out and the UK sends limited help to Riyadh.",
+   "n": "Houthi Red Sea campaign",
+   "source": "https://www.aljazeera.com/news/2026/9/18/as-houthis-grab-bab-al-mandeb-us-appears-willing-to-watch-from-sidelines",
+   "t": "security",
+   "updated": "2026-09-23"
+  }
+ },
+ "pois": {
+  "bab-el-mandeb": {
+   "d": "Links the Red Sea to the Gulf of Aden. In Sept 2026 the Houthis took Mocha, Perim (Mayyun) and the Hanish Islands, controlling Yemen's side of the strait just as Saudi exports shifted to the Red Sea.",
+   "n": "Bab-el-Mandeb",
+   "s": "Houthi-held since Sept 2026 · Saudi ships banned",
+   "source": "https://www.euronews.com/2026/09/12/houthis-seize-yemeni-island-in-bab-el-mandeb-taking-control-of-the-strait",
+   "updated": "2026-09-23"
+  },
+  "pituffik-space-base": {
+   "d": "Missile-warning radar in Greenland. A Sept 22, 2026 US-Denmark agreement added two further US sites, at Narsarsuaq and Mestersvig, with broad air and undersea access, easing friction from Trump's earlier annexation talk.",
+   "lat": 76.53,
+   "lng": -68.7,
+   "n": "Pituffik Space Base",
+   "p": [
+    "DNK",
+    "USA"
+   ],
+   "s": "Northernmost US base; 2 more Greenland sites added Sept 2026",
+   "source": "https://www.aljazeera.com/news/2026/9/22/us-signs-tremendous-arctic-security-deal-with-denmark-greenland",
+   "t": "base",
+   "updated": "2026-09-23"
+  },
+  "strait-of-hormuz": {
+   "d": "The only sea exit from the Persian Gulf. Iran attacked shipping after the July 2026 truce collapsed; the US blockades Iranian ports and says it keeps the strait open to other traffic.",
+   "n": "Strait of Hormuz",
+   "s": "US blockade of Iran since July 2026 · ~75 ship incidents in the war",
+   "source": "https://www.aljazeera.com/news/2026/9/16/us-military-claims-strait-of-hormuz-remains-open-amid-ongoing-blockade",
+   "updated": "2026-09-23"
+  }
+ },
+ "politics": {
+  "BRA": {
+   "hog": "Luiz Inácio Lula da Silva, President",
+   "hos": "Luiz Inácio Lula da Silva, President",
+   "lastelec": "General election, October 2022, won by Lula (PT)",
+   "nextelec": "General election, 4 October 2026 (runoff 25 October)",
+   "ruling": "Workers' Party (PT)-led broad coalition",
+   "source": "https://www.as-coa.org/articles/brazils-2026-elections-timeline-and-fast-facts",
+   "system": "Federal presidential republic",
+   "updated": "2026-09-23"
+  },
+  "CAN": {
+   "hog": "Mark Carney, Prime Minister",
+   "hos": "King Charles III",
+   "lastelec": "Federal election, April 2025, won by the Liberals",
+   "nextelec": "Federal election due by October 2029",
+   "ruling": "Liberal Party of Canada (LPC), majority since April 2026",
+   "source": "https://www.abc.net.au/news/2026-04-15/mark-carney-secures-majority-government-in-canada/106565296",
+   "system": "Federal parliamentary constitutional monarchy",
+   "updated": "2026-09-23"
+  },
+  "CHN": {
+   "hog": "Li Qiang, Premier of the State Council",
+   "hos": "Xi Jinping, President of the People's Republic of China (also CCP General Secretary and CMC Chairman)",
+   "lastelec": "14th National People's Congress, March 2023, confirmed Xi Jinping for a third presidential term",
+   "nextelec": "21st CCP National Congress expected autumn 2027; 15th NPC session expected March 2028",
+   "ruling": "Chinese Communist Party (CCP)",
+   "source": "https://en.wikipedia.org/wiki/Li_Qiang",
+   "system": "Unitary one-party socialist republic under Communist Party rule",
+   "updated": "2026-09-23"
+  },
+  "DEU": {
+   "hog": "Friedrich Merz, Chancellor",
+   "hos": "Frank-Walter Steinmeier, Federal President",
+   "lastelec": "Federal election, February 2025, won by CDU/CSU",
+   "nextelec": "Federal election due by 2029",
+   "ruling": "CDU/CSU (Union) and Social Democratic Party (SPD) coalition",
+   "source": "https://www.france24.com/en/europe/20260921-germany-merz-vows-to-keep-ruling-coalition-together-after-election-defeats",
+   "system": "Federal parliamentary republic",
+   "updated": "2026-09-23"
+  },
+  "FRA": {
+   "hog": "Sébastien Lecornu, Prime Minister",
+   "hos": "Emmanuel Macron, President",
+   "lastelec": "Snap legislative election, June–July 2024, hung parliament (left NFP largest bloc)",
+   "nextelec": "Presidential election, April 2027",
+   "ruling": "Minority government led by Macron's centrist bloc (Ensemble) with centre-right support",
+   "source": "https://en.wikipedia.org/wiki/S%C3%A9bastien_Lecornu",
+   "system": "Semi-presidential republic",
+   "updated": "2026-09-23"
+  },
+  "GBR": {
+   "hog": "Andy Burnham, Prime Minister (since 20 July 2026)",
+   "hos": "King Charles III",
+   "lastelec": "General election, July 2024, won by Labour",
+   "nextelec": "General election due by August 2029",
+   "ruling": "Labour Party (Lab)",
+   "source": "https://www.npr.org/2026/07/19/nx-s1-5895993/andy-burnham-prime-minister-keir-starmer",
+   "system": "Parliamentary constitutional monarchy",
+   "updated": "2026-09-23"
+  },
+  "IRN": {
+   "hog": "Masoud Pezeshkian, President",
+   "hos": "Mojtaba Khamenei, Supreme Leader (since March 2026)",
+   "lastelec": "Snap presidential election, June–July 2024, won by Masoud Pezeshkian",
+   "nextelec": "Presidential election due 2028",
+   "ruling": "No formal ruling party; clerical establishment and IRGC, with a reformist-backed president",
+   "source": "https://www.aljazeera.com/news/2026/3/8/iran-names-khameneis-son-as-new-supreme-leader-after-fathers-killing-2",
+   "system": "Theocratic Islamic republic",
+   "updated": "2026-09-23"
+  },
+  "JPN": {
+   "hog": "Sanae Takaichi, Prime Minister",
+   "hos": "Emperor Naruhito",
+   "lastelec": "House of Representatives, February 2026, LDP landslide (316 seats)",
+   "nextelec": "House of Councillors election due 2028",
+   "ruling": "Liberal Democratic Party (LDP) and Japan Innovation Party (JIP) coalition",
+   "source": "https://www.npr.org/2026/02/09/nx-s1-5706602/japan-takaichi-conservative-agenda-election-landslide",
+   "system": "Parliamentary constitutional monarchy",
+   "updated": "2026-09-23"
+  },
+  "RUS": {
+   "hog": "Mikhail Mishustin, Chairman of the Government (Prime Minister)",
+   "hos": "Vladimir Putin, President of the Russian Federation",
+   "lastelec": "State Duma election, September 18-20 2026, won by United Russia in a landslide",
+   "nextelec": "Presidential election, 2030; next State Duma election due 2031",
+   "ruling": "United Russia (UR)",
+   "source": "https://www.aljazeera.com/news/2026/9/21/pro-putin-party-wins-supermajority-amid-ramped-up-ukrainian-attacks",
+   "system": "Federal semi-presidential republic",
+   "updated": "2026-09-23"
+  },
+  "USA": {
+   "hog": "Donald Trump, President",
+   "hos": "Donald Trump, President",
+   "lastelec": "Presidential and congressional, November 2024, won by Donald Trump (Republican)",
+   "nextelec": "Midterm congressional elections, 3 November 2026",
+   "ruling": "Republican Party (GOP)",
+   "source": "https://www.cnn.com/2026/09/22/world/live-news/un-general-assembly-trump",
+   "system": "Federal presidential republic",
+   "updated": "2026-09-23"
+  }
+ }
+}
