@@ -38,6 +38,13 @@ jobs:
         continue-on-error: true
         run: python scripts/news.py
 
+      - name: AI update from the headlines (Gemini free tier)
+        continue-on-error: true
+        run: python scripts/ai_refresh.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+
       - name: Leaders and parties (Wikidata, midnight only)
         continue-on-error: true
         run: python scripts/wikidata.py
