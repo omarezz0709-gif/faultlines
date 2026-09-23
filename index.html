@@ -2134,7 +2134,8 @@ function applyLive(){
 function changeItems(entry){
   return (entry.items||[]).map(it=>{
     const u = safeUrl(it.source);
-    return `<li><b>${esc(it.label||'')}</b> <span class="muted">${gx(it.change||'')}</span>${u?` <a href="${esc(u)}" target="_blank" rel="noopener">${esc(host(u))}</a>`:''}</li>`;
+    const label = String(it.label||'').replace(/\b[A-Z]{3}\b/g, c => ENT[c] ? ENT[c].name : c);   // ISO codes -> names
+    return `<li><b>${esc(label)}</b> <span class="muted">${gx(it.change||'')}</span>${u?` <a href="${esc(u)}" target="_blank" rel="noopener">${esc(host(u))}</a>`:''}</li>`;
   }).join('');
 }
 function changesSection(n){

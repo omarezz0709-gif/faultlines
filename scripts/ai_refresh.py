@@ -145,7 +145,7 @@ Reply with ONLY this JSON object (use empty lists when nothing changed):
   "threads": [{"id": "kebab-id", "t": "security", "n": "Name", "c": ["ISO", "ISO"], "d": "...", "src": "h3"}],
   "pois": [{"n": "Name", "t": "strait", "lat": 0.0, "lng": 0.0, "p": ["ISO"], "s": "key stat", "d": "...", "src": "h7"}],
   "politics": [{"iso": "DEU", "lastelec": "type, month year, winner", "nextelec": "type and date", "src": "h9"}],
-  "log": [{"label": "Country A–Country B, thread, location or country", "change": "e.g. Tense → Hostile: short reason", "src": "h12"}]
+  "log": [{"label": "full country names, e.g. Belgium–Rwanda, or the thread, location or country name", "change": "e.g. Tense → Hostile: short reason", "src": "h12"}]
 }"""
 
 
