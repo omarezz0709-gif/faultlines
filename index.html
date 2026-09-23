@@ -275,7 +275,7 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
   <div class="filters" id="settings" hidden>
     <div class="fg"><h4>AI key (optional)</h4>
       <p class="hidden-note" style="margin:0 0 8px">Turns on the ✦ in-depth explanations and analyses. Paste a <b>free Google Gemini key</b> from <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">aistudio.google.com</a>, or a paid Anthropic key. The key is saved only in this browser and sent only to Google or Anthropic, never to this website. Everything else works without a key.</p>
-      <div class="frow"><input type="password" id="api-key" placeholder="AIza… (Gemini) or sk-ant-… (Anthropic)" autocomplete="off" spellcheck="false"><button class="tag" id="api-save">Save</button><button class="tag" id="api-clear">Remove</button></div>
+      <div class="frow"><input type="password" id="api-key" placeholder="Paste your Gemini key (or an Anthropic sk-ant-… key)" autocomplete="off" spellcheck="false"><button class="tag" id="api-save">Save</button><button class="tag" id="api-clear">Remove</button></div>
       <p class="hidden-note" id="api-msg" aria-live="polite"></p>
     </div>
     <div class="fg"><h4>Claude model <span style="text-transform:none;letter-spacing:0;color:var(--faint);font-family:var(--body);font-weight:400">(Anthropic keys only)</span></h4><div class="frow"><select id="api-model" aria-label="Claude model"></select></div></div>
@@ -1448,7 +1448,7 @@ async function geminiSample(key){
 async function getSample(){
   const key = lsGet('faultlines-api-key');
   if (!key) return null;
-  if (key.startsWith('AIza')) return geminiSample(key);
+  if (!key.startsWith('sk-ant-')) return geminiSample(key);   // Gemini keys: AIza… (old) or AQ.… (new)
   let Anthropic;
   try { Anthropic = await loadSDK(); } catch(e){ return null; }
   const model = currentModel();
@@ -2293,13 +2293,13 @@ const apiKey = document.getElementById('api-key'), apiMsg = document.getElementB
 apiModel.innerHTML = Object.entries(MODELS).map(([k, v]) => `<option value="${k}">${esc(v)}</option>`).join('');
 apiModel.value = currentModel();
 apiModel.onchange = () => lsSet('faultlines-model', apiModel.value);
-function showKeyState(){ const k = lsGet('faultlines-api-key'); apiMsg.textContent = k ? `${k.startsWith('AIza') ? 'Gemini' : 'Anthropic'} key saved (ends in …${k.slice(-4)}).` : 'No key saved yet.'; apiKey.value = ''; }
+function showKeyState(){ const k = lsGet('faultlines-api-key'); apiMsg.textContent = k ? `${k.startsWith('sk-ant-') ? 'Anthropic' : 'Gemini'} key saved (ends in …${k.slice(-4)}).` : 'No key saved yet.'; apiKey.value = ''; }
 function openSettings(){ setPanel.hidden = false; setBtn.setAttribute('aria-expanded', 'true'); showKeyState(); }
 setBtn.onclick = () => { if (setPanel.hidden) openSettings(); else { setPanel.hidden = true; setBtn.setAttribute('aria-expanded', 'false'); } };
 document.getElementById('api-save').onclick = () => {
   const v = apiKey.value.trim();
   if (!v){ apiMsg.textContent = 'Paste a key first.'; return; }
-  if (!v.startsWith('sk-ant-') && !v.startsWith('AIza')){ apiMsg.textContent = 'That doesn\'t look like a Gemini key (starts with AIza) or an Anthropic key (starts with sk-ant-).'; return; }
+  if (v.length < 20 || /\s/.test(v)){ apiMsg.textContent = 'That doesn\'t look like a complete key. Copy it again from AI Studio.'; return; }
   lsSet('faultlines-api-key', v); showKeyState(); applyAIVisibility();
 };
 document.getElementById('api-clear').onclick = () => { lsSet('faultlines-api-key', null); showKeyState(); applyAIVisibility(); };
