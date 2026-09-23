@@ -214,6 +214,7 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
 .alerts{list-style:none;margin:0 0 8px;padding:0;display:flex;flex-direction:column;gap:9px;font-size:13px;line-height:1.4}
 .alerts li + li{border-top:1px solid var(--line);padding-top:9px}
 .kw{font:600 10px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--on-gold);background:var(--gold);border-radius:3px;padding:2px 5px;margin-left:4px;vertical-align:1px}
+.no-ai [data-ai],.no-ai .ai-only{display:none!important}
 .hint{border:1px dashed var(--line2);border-radius:6px;padding:12px;color:var(--muted);font-size:13px;margin:0}
 
 .rel .sw{align-self:center}
@@ -1692,15 +1693,18 @@ function facetCell(f, row, iso, top){
 function facetBody(ids){
   const f = FACETS.find(x=>x.k===facetTab) || FACETS[0];
   const name = id => ENT[id].name.length<=12 ? ENT[id].name : id;
-  const rows = f.rows.map(row=>{
+  // without an AI key, only show rows that have real data (World Bank / Wikidata)
+  const hasAI = !!lsGet('faultlines-api-key');
+  const shown = f.rows.filter(r => !r.ai || hasAI || (f.k==='politics' && ids.some(i => POL[i] && POL[i][r.k])));
+  const rows = shown.map(row=>{
     let top = null;
     if (row.wb && ids.length>1){
       const vals = ids.map(i=>[i, WB[i] && WB[i][row.wb] ? WB[i][row.wb][0] : null]).filter(v=>v[1]!=null);
       if (vals.length>1) top = vals.sort((a,b)=> row.low ? a[1]-b[1] : b[1]-a[1])[0][0];
     }
-    return `<tr><th>${esc(row.label)}${row.tip?` <i class="info" title="${esc(row.tip)}">?</i>`:''}${row.ai?' <span class="aitag">≈</span>':''}</th>${ids.map(i=>facetCell(f,row,i,top)).join('')}</tr>`;
+    return `<tr><th>${esc(row.label)}${row.tip?` <i class="info" title="${esc(row.tip)}">?</i>`:''}${row.ai && hasAI ?' <span class="aitag">≈</span>':''}</th>${ids.map(i=>facetCell(f,row,i,top)).join('')}</tr>`;
   }).join('');
-  const missing = f.rows.some(r=>r.ai) && ids.some(i=>needsAI(f.k,i));
+  const missing = hasAI && f.rows.some(r=>r.ai) && ids.some(i=>needsAI(f.k,i));
   return `<div class="mx-wrap"><table class="ft"><thead><tr><th></th>${ids.map(i=>`<th title="${esc(ENT[i].name)}">${esc(name(i))}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div>
     <div class="ffoot">
       ${missing ? `<div class="actions"><button class="btn" data-ffill>✦ Fill in the ≈ rows with Claude</button></div>` : ''}
@@ -1781,7 +1785,7 @@ function renderCompare(){
   panel.innerHTML = head('Compare', title) + `<div class="p-body">
     ${n+m ? `<div class="chips">${ids.map(id=>`<span class="tag mem">${esc(ENT[id].name)}<button data-rm="${id}" aria-label="Remove ${esc(ENT[id].name)}">×</button></span>`).join('')}${pl.map(p=>`<span class="tag mem"><i class="g g-${p.t}"></i>${esc(p.n)}<button data-rmp="${esc(p.n)}" aria-label="Remove ${esc(p.n)}">×</button></span>`).join('')}</div>` : ''}
     ${n+m<2 ? `<p class="hint">Click countries or location markers (chokepoints, corridors, flashpoints, bases, resources) on the globe, or search, to add them: up to ${CMP_MAX} countries and ${CMP_POI_MAX} locations. Or pick a quick comparison under Filters. You'll get how they relate, how the locations connect, and a written analysis.</p>` : `
-    <section><h3>Analysis</h3>${aiBlock('group','✦ Analyse this comparison in depth')}</section>`}
+    <section class="ai-only"><h3>Analysis</h3>${aiBlock('group','✦ Analyse this comparison in depth')}</section>`}
     ${n ? facetSection(ids, n>1 ? 'Compare facts & figures' : 'Facts & figures') : ''}
     ${renderLocations(ids, pl)}
     ${n<2 ? '' : `
@@ -2229,9 +2233,15 @@ document.getElementById('api-save').onclick = () => {
   const v = apiKey.value.trim();
   if (!v){ apiMsg.textContent = 'Paste a key first.'; return; }
   if (!v.startsWith('sk-ant-')){ apiMsg.textContent = 'That doesn\'t look like an Anthropic key (they start with sk-ant-).'; return; }
-  lsSet('faultlines-api-key', v); showKeyState();
+  lsSet('faultlines-api-key', v); showKeyState(); applyAIVisibility();
 };
-document.getElementById('api-clear').onclick = () => { lsSet('faultlines-api-key', null); showKeyState(); };
+document.getElementById('api-clear').onclick = () => { lsSet('faultlines-api-key', null); showKeyState(); applyAIVisibility(); };
+/* AI buttons and estimate rows only appear when a key is saved; the site never asks for one */
+function applyAIVisibility(){
+  document.body.classList.toggle('no-ai', !lsGet('faultlines-api-key'));
+  document.querySelectorAll('.facets').forEach(refreshFacet);
+}
+applyAIVisibility();
 
 /* start in a working state */
 renderIntro();
