@@ -1559,8 +1559,11 @@ function aiBlock(kind, label){
 }
 
 /* tiny markdown: ### headings, - bullets, **bold**, paragraphs */
+// models sometimes write arrows and symbols as LaTeX ($\rightarrow$); show the real characters
+const LATEX = {rightarrow: '→', to: '→', leftarrow: '←', leftrightarrow: '↔', Rightarrow: '⇒', uparrow: '↑', downarrow: '↓', approx: '≈', times: '×', sim: '~', geq: '≥', leq: '≤', pm: '±', cdot: '·', ge: '≥', le: '≤', neq: '≠', longrightarrow: '→'};
+const unLatex = s => s.replace(/\$?\s*\\(rightarrow|leftrightarrow|leftarrow|Rightarrow|longrightarrow|uparrow|downarrow|approx|times|sim|geq|leq|neq|pm|cdot|to|ge|le)\b\s*\$?/g, (m, k) => ' ' + LATEX[k] + ' ').replace(/\$(\d[\d.,]*\s*%?)\$/g, '$1').replace(/ {2,}/g, ' ');
 function md(text){
-  const lines = esc(text).split('\n'); let html='', list=false, para=[];
+  const lines = esc(unLatex(text)).split('\n'); let html='', list=false, para=[];
   const inline = s => s.replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/(^|[^*])\*(?!\s)(.+?)\*/g,'$1<i>$2</i>');
   const flushP = () => { if (para.length){ html += `<p>${inline(para.join(' '))}</p>`; para=[]; } };
   const flushL = () => { if (list){ html += '</ul>'; list=false; } };
