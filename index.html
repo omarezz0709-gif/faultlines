@@ -196,7 +196,7 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
 .ft .yr a{color:var(--gold-hi)}
 .ft td.ai .v{color:var(--soft)}
 .ft td.ok .v{color:var(--text)}
-.ft td.top .v{color:var(--gold-hi);font-weight:600}
+.ft td.best .v{color:var(--gold-hi);font-weight:600}
 .ft td.na{color:var(--faint);font-size:12px}
 .ft .info{font-style:normal;color:var(--faint);cursor:help;font-size:10px;border:1px solid var(--line2);border-radius:50%;padding:0 4px;margin-left:3px}
 .aitag{font:600 10px var(--mono);color:var(--gold);margin-left:3px}
@@ -215,6 +215,19 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
 .alerts li + li{border-top:1px solid var(--line);padding-top:9px}
 .kw{font:600 10px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--on-gold);background:var(--gold);border-radius:3px;padding:2px 5px;margin-left:4px;vertical-align:1px}
 .no-ai [data-ai],.no-ai .ai-only{display:none!important}
+.chip.icon{padding:5px 10px;font-size:14px}
+.admin-form{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.admin-form input{flex:1;min-width:0;background:var(--raise);color:var(--text);border:1px solid var(--line2);border-radius:5px;padding:8px 10px;font:16px var(--mono);letter-spacing:.3em}
+.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.tile{background:var(--raise);border:1px solid var(--line);border-radius:6px;padding:9px 10px;display:flex;flex-direction:column;gap:2px}
+.tile b{font:700 22px/1.1 var(--display);color:var(--text);font-variant-numeric:tabular-nums}
+.tile span{font-size:11.5px;color:var(--muted)}
+.atable{width:100%;border-collapse:collapse;font-size:12.5px}
+.atable td,.atable th{padding:5px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.atable th{font:500 10.5px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--faint)}
+.atable td.n{text-align:right;font-variant-numeric:tabular-nums;color:var(--gold-hi)}
+.st{font:600 10px/1 var(--mono);padding:2px 5px;border-radius:3px;white-space:nowrap}
+.st.ok{background:rgba(79,201,166,.15);color:var(--s-F)} .st.mem{background:rgba(212,175,55,.15);color:var(--gold-hi)} .st.err{background:rgba(239,91,76,.15);color:var(--s-H)}
 .hint{border:1px dashed var(--line2);border-radius:6px;padding:12px;color:var(--muted);font-size:13px;margin:0}
 
 .rel .sw{align-self:center}
@@ -245,10 +258,24 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
 .tip .muted{font-size:12px}
 
 @media (max-width:760px){
-  .top{width:calc(100vw - 32px);gap:8px}
-  .brand h1{font-size:24px}
+  .top{left:10px;top:calc(10px + env(safe-area-inset-top,0px));width:calc(100vw - 20px);gap:7px}
+  .brand{gap:8px;align-items:center}
+  .brand h1{font-size:21px}
+  .brand > span{display:none}
+  .badge{margin-left:auto;font-size:10.5px;padding:3px 8px}
+  .search input{padding:8px 10px 8px 32px}
+  .search svg{top:19px}
+  .chip{padding:5px 10px;font-size:12px}
+  .modes{flex-wrap:wrap}
+  .panel .p-head{padding:10px 12px 8px;cursor:pointer}
+  .p-head h2{font-size:21px}
+  .p-body{padding:10px 12px 16px;gap:14px}
+  .panel{left:6px;right:6px;bottom:calc(6px + env(safe-area-inset-bottom,0px));border-radius:10px}
+  .panel.min{max-height:none}
+  .ft td{min-width:84px}
+  .ft tbody th{min-width:104px}
   .filters{max-height:42vh}
-  .panel{left:8px;right:8px;width:auto;top:auto;bottom:calc(8px + env(safe-area-inset-bottom,0px));max-height:46%}
+  .panel{width:auto;top:auto;max-height:55%}
   .panel.min .p-body{display:none}
   .collapse{display:grid}
   .p-head h2{font-size:26px}
@@ -270,6 +297,7 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
   <div class="modes">
     <button class="chip mode" id="cmp-btn" aria-pressed="false">⇄ Compare countries</button>
     <button class="chip" id="flt-btn" aria-expanded="false" aria-controls="filters"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 5h18M6 12h12M10 19h4"/></svg>Filters<span class="fcount" id="flt-count" hidden></span></button>
+    <button class="chip icon" id="admin-btn" aria-label="Admin" title="Admin">⚙</button>
   </div>
   <div class="filters" id="filters" hidden>
     <div class="fg"><h4>Relationship types</h4>
@@ -1245,12 +1273,14 @@ function head(eyebrow, title, glyph){
     <button class="iconbtn collapse" id="collapse" aria-label="Collapse panel" title="Collapse">▾</button>
     <button class="iconbtn" id="close" aria-label="Close" title="Close">✕</button></div>`;
 }
+function toggleMin(){ panel.classList.toggle('min'); const m = document.getElementById('collapse'); if (m) m.textContent = panel.classList.contains('min') ? '▴' : '▾'; }
 function wirePanel(){
   panel.classList.remove('min'); panelMode = '';
+  const ph = panel.querySelector('.p-head'); if (ph) ph.onclick = e => { if (mob() && !e.target.closest('button')) toggleMin(); };
   const all = document.getElementById('all-upd'); if (all) all.onclick = renderChanges;
   panel.querySelectorAll('[data-allnews]').forEach(b => b.onclick = renderChanges);
   const c = document.getElementById('close'); if (c) c.onclick = clearSelection;
-  const m = document.getElementById('collapse'); if (m) m.onclick = ()=>{ panel.classList.toggle('min'); m.textContent = panel.classList.contains('min') ? '▴' : '▾'; };
+  const m = document.getElementById('collapse'); if (m) m.onclick = e => { e.stopPropagation(); toggleMin(); };
   wireInside(panel);
   panel.querySelector('.p-body').scrollTop = 0;
 }
@@ -1418,14 +1448,15 @@ async function geminiSample(key){
       if (i === Math.min(6, models.length)) await new Promise(res => setTimeout(res, 4000));
       try {
         r = await fetch(key ? `${GEM}/models/${model}:streamGenerateContent?alt=sse` : `${AI_PROXY}/models/${model}:streamGenerateContent`, {method:'POST', signal: opts.signal,
-          headers: key ? {'x-goog-api-key': key, 'Content-Type': 'application/json'} : {'Content-Type': 'application/json'}, body: JSON.stringify(body)});
+          headers: key ? {'x-goog-api-key': key, 'Content-Type': 'application/json'} : {'Content-Type': 'application/json', 'X-Faultlines-Kind': opts.kind || 'ai'}, body: JSON.stringify(body)});
       } catch(e){ throw fail('upstream_error', e && e.message); }
       if (r.ok){ lsSet('faultlines-gemini-model', model); const at = models.indexOf(model); if (at > 0){ models.splice(at, 1); models.unshift(model); } break; }
       msg = await r.text().catch(() => '');
+      if (r.status === 429 && r.headers.get('X-Faultlines-Limit')) break;   // the site's fair-use limit: other models won't help
       if (![404, 429, 500, 503].includes(r.status)) break;
     }
     if (!r.ok){
-      throw fail(r.status === 503 || r.status === 500 ? 'busy' : r.status === 429 ? 'rate_limited' : (r.status === 401 || r.status === 403 || /API_KEY_INVALID|API key not valid/.test(msg)) ? 'bad_key' : r.status === 400 ? 'invalid_request' : 'upstream_error', msg);
+      throw fail(r.status === 429 && r.headers.get('X-Faultlines-Limit') ? 'visitor_limit' : r.status === 503 || r.status === 500 ? 'busy' : r.status === 429 ? 'rate_limited' : (r.status === 401 || r.status === 403 || /API_KEY_INVALID|API key not valid/.test(msg)) ? 'bad_key' : r.status === 400 ? 'invalid_request' : 'upstream_error', msg);
     }
     try {
       const reader = r.body.getReader(), dec = new TextDecoder();
@@ -1655,7 +1686,7 @@ function buildPrompt(kind){
   return null;
 }
 const AI_OFF = ['not_granted','sampling_disabled','not_declared','capability_disabled','capability_removed'];
-const AI_MSG = {busy:'Google\'s free AI is overloaded right now. Try again in a minute.', bad_key:'The AI service is misconfigured right now. Try again later.', invalid_request:'The AI couldn\'t handle this request. Try again.', rate_limited:'Too many requests right now. Try again in a minute.', session_expired:'Sign in again to use explanations.',
+const AI_MSG = {visitor_limit:'You\'ve asked a lot in the last few minutes. Wait a moment, then try again.', busy:'Google\'s free AI is overloaded right now. Try again in a minute.', bad_key:'The AI service is misconfigured right now. Try again later.', invalid_request:'The AI couldn\'t handle this request. Try again.', rate_limited:'The free AI quota is used up for the moment. Try again in a few minutes (answers already asked today still load instantly).', session_expired:'Sign in again to use explanations.',
   refused:'Claude declined this one.', empty_completion:'No answer came back. Try again.', prompt_too_large:'Too much to explain at once. Try fewer countries.'};
 let aiCtl = null;
 async function runAI(btn){
@@ -1669,7 +1700,7 @@ async function runAI(btn){
   out.hidden = false; out.innerHTML = '<p class="muted thinking">Thinking…</p>';
   try {
     const tier = btn.dataset.ai==='group' ? 'complex' : 'default';
-    const {text, truncated} = await sample(prompt, {signal:ctl.signal, modelTier:tier, cache:{gcTime:86400000}, onText:({text})=>{ out.innerHTML = md(text); }});
+    const {text, truncated} = await sample(prompt, {signal:ctl.signal, modelTier:tier, kind: btn.dataset.ai.split('|')[0], cache:{gcTime:86400000}, onText:({text})=>{ out.innerHTML = md(text); }});
     out.innerHTML = md(text) + (truncated ? '<p class="faint">Cut short.</p>' : '') + '<p class="faint">Written by AI from the page\'s data and its own knowledge; check recent events against the news.</p>';
     btn.hidden = true;
   } catch(e){
@@ -1761,8 +1792,8 @@ const needsAI = (fk, iso) => !aiGet(fk, iso) && !(fk==='politics' && POL[iso]);
 function facetCell(f, row, iso, top){
   if (row.wb){
     const d = WB[iso] && WB[iso][row.wb];
-    if (!d) return '<td class="na">no data</td>';
-    return `<td class="${top===iso?'top':''}"><span class="v">${fmtVal(row, d[0])}</span><span class="yr">${d[1]}</span></td>`;
+    if (!d || (row.k==='milpers' && !d[0])) return '<td class="na">no data</td>';   // a 0 here means missing, not no army
+    return `<td class="${top===iso?'best':''}"><span class="v">${fmtVal(row, d[0])}</span><span class="yr">${d[1]}</span></td>`;
   }
   if (f.k==='politics' && POL[iso] && POL[iso][row.k]){
     const src = safeUrl(POL[iso].source);
@@ -1837,7 +1868,7 @@ async function fillFacet(fk, ids, sec){
   if (!need.length) return;
   btn.disabled = true; btn.textContent = 'Filling in… (up to a minute)'; btn.classList.add('thinking'); msg.textContent = '';
   try {
-    const data = await sample.json(facetPrompt(f, rows, need), {modelTier:'default', cache:{gcTime:86400000}});
+    const data = await sample.json(facetPrompt(f, rows, need), {modelTier:'default', kind: 'facts-' + fk, cache:{gcTime:86400000}});
     need.forEach(i=>{ const d = data && (data[i] || data[ENT[i].name]); aiSet(fk, i, d && typeof d==='object' ? d : {}); });
     if (facetTab===fk && sec.isConnected) refreshFacet(sec);
   } catch(e){
@@ -1990,7 +2021,10 @@ function renderIntro(){
       <li>${REL.size} annotated bilateral relationships, plus alliances and blocs</li></ul></section>
     <p class="foot">Headlines, leaders and figures refresh automatically; relationship statuses are an editorial baseline. Relations are editorial shorthand, not a substitute for analysis.</p>
     </div>`;
+  const wasMin = panel.classList.contains('min');
   wirePanel(); panelMode = 'intro';
+  if (mob() && (!introShown || wasMin)) toggleMin();   // on phones, start with the globe visible (and stay minimised on redraws)
+  introShown = true;
 }
 
 /* ================================================================
@@ -2315,6 +2349,83 @@ function applyAIVisibility(){
   document.querySelectorAll('.facets').forEach(refreshFacet);
 }
 applyAIVisibility();
+
+/* ---------- admin (usage log from the AI Worker; the code is checked by the Worker) ---------- */
+let introShown = false;
+const regionName = (() => { try { const d = new Intl.DisplayNames(['en'], {type: 'region'}); return c => { try { return c ? d.of(c) : ''; } catch(e){ return c; } }; } catch(e){ return c => c; } })();
+function adminCode(){ try { return sessionStorage.getItem('fl-admin') || ''; } catch(e){ return ''; } }
+function renderAdminLogin(msg){
+  clearSelectionQuiet();
+  panel.innerHTML = head('Admin', 'Usage & logs') + `<div class="p-body">
+    <p class="note">Enter the admin code to see who is using the AI, from where, and how the automatic updates are running.</p>
+    <form class="admin-form" id="admin-form"><input id="admin-code" type="password" inputmode="numeric" autocomplete="off" placeholder="Code" aria-label="Admin code"><button class="btn" type="submit">Open</button></form>
+    ${msg ? `<p class="note" style="color:var(--s-H)">${esc(msg)}</p>` : ''}</div>`;
+  wirePanel(); panelMode = 'admin';
+  const form = document.getElementById('admin-form');
+  form.onsubmit = e => { e.preventDefault(); openAdmin(document.getElementById('admin-code').value.trim()); };
+  setTimeout(() => { const i = document.getElementById('admin-code'); if (i && !mob()) i.focus(); }, 50);
+}
+async function openAdmin(code){
+  if (!code) return renderAdminLogin();
+  panel.querySelector('.p-body').insertAdjacentHTML('beforeend', '<p class="note muted thinking" id="admin-wait">Loading…</p>');
+  let data;
+  try {
+    const r = await fetch(`${AI_PROXY}/admin/logs`, {headers: {'X-Admin-Code': code}});
+    data = await r.json().catch(() => ({}));
+    if (!r.ok) return renderAdminLogin((data.error && data.error.message) || `Error ${r.status}`);
+  } catch(e){ return renderAdminLogin('Could not reach the AI Worker.'); }
+  try { sessionStorage.setItem('fl-admin', code); } catch(e){}
+  renderAdmin(data);
+}
+function countBy(list, fn){ const m = new Map(); list.forEach(x => { const k = fn(x); if (k) m.set(k, (m.get(k) || 0) + 1); }); return [...m.entries()].sort((a, b) => b[1] - a[1]); }
+function rowsTable(entries, label, max = 8){
+  if (!entries.length) return '<p class="note muted">Nothing yet.</p>';
+  return `<table class="atable"><thead><tr><th>${esc(label)}</th><th style="text-align:right">Count</th></tr></thead><tbody>${entries.slice(0, max).map(([k, n]) => `<tr><td>${esc(k)}</td><td class="n">${n}</td></tr>`).join('')}</tbody></table>`;
+}
+function renderAdmin(data){
+  const logs = (data.logs || []).slice().sort((a, b) => b.t - a.t), now = Date.now();
+  const within = h => logs.filter(x => now - x.t < h * 36e5);
+  const ai = list => list.filter(x => x.k !== 'visit');
+  const d1 = within(24), d7 = within(168);
+  const ai1 = ai(d1), ai7 = ai(d7);
+  const mem = ai7.filter(x => x.c).length, errs1 = ai1.filter(x => x.s >= 400);
+  const place = x => [x.ci, regionName(x.co)].filter(Boolean).join(', ') || 'Unknown';
+  const kindName = k => ({pair: 'Explain relationship', country: 'Explain country', poi: 'Explain location', group: 'Analyse comparison', visit: 'Page visit'})[k] || (k.startsWith('facts-') ? 'Fill in ' + k.slice(6) : k);
+  const status = x => x.s >= 400 ? `<span class="st err">${x.s === 429 ? 'limit 429' : x.s === 503 ? 'busy 503' : 'error ' + x.s}</span>` : x.c ? '<span class="st mem">memory</span>' : '<span class="st ok">OK</span>';
+  panel.innerHTML = head('Admin', 'Usage & logs') + `<div class="p-body">
+    ${data.note ? `<p class="note" style="color:var(--s-T)">${esc(data.note)}</p>` : ''}
+    <div class="tiles">
+      <div class="tile"><b>${ai1.length}</b><span>AI requests, last 24 h</span></div>
+      <div class="tile"><b>${ai7.length}</b><span>AI requests, last 7 days</span></div>
+      <div class="tile"><b>${ai7.length ? Math.round(100 * mem / ai7.length) : 0}%</b><span>answered from memory (7 days, free)</span></div>
+      <div class="tile"><b>${errs1.length}</b><span>errors, last 24 h${errs1.length ? ` (${countBy(errs1, x => String(x.s)).map(([s, n]) => n + '× ' + s).join(', ')})` : ''}</span></div>
+      <div class="tile"><b>${d1.filter(x => x.k === 'visit').length}</b><span>visits, last 24 h</span></div>
+      <div class="tile"><b>${new Set(d1.map(x => x.v)).size}</b><span>different visitors, last 24 h</span></div>
+    </div>
+    <section><h3>Where from <em>last 7 days</em></h3>${rowsTable(countBy(d7, place), 'Place')}</section>
+    <section><h3>Devices <em>last 7 days</em></h3>${rowsTable(countBy(d7, x => x.d), 'Device', 6)}</section>
+    <section><h3>What was asked <em>last 7 days</em></h3>${rowsTable(countBy(ai7, x => kindName(x.k)), 'Kind', 8)}</section>
+    <section><h3>Latest activity <em>${logs.length} logged in 30 days</em></h3>
+      <div class="mx-wrap"><table class="atable"><thead><tr><th>When</th><th>Where</th><th>Device</th><th>What</th><th></th></tr></thead><tbody>
+      ${logs.slice(0, 80).map(x => `<tr><td style="white-space:nowrap">${esc(fmtDateTime(x.t))}</td><td>${esc(place(x))}</td><td>${esc(x.d || '')}</td><td>${esc(kindName(x.k))}${x.m ? `<br><span class="faint">${esc(x.m)}</span>` : ''}</td><td>${x.k === 'visit' ? '' : status(x)}</td></tr>`).join('') || '<tr><td colspan="5" class="muted">Nothing logged yet.</td></tr>'}
+      </tbody></table></div></section>
+    <section><h3>Automatic updates <em>GitHub</em></h3><div id="admin-runs"><p class="note muted thinking">Loading…</p></div></section>
+    <div class="actions"><button class="tag" id="admin-refresh">↻ Refresh</button><button class="tag" id="admin-out">Log out</button></div>
+    <p class="foot">Visitor ids are anonymous and change daily; locations come from Cloudflare (city level) and full IP addresses are never stored. Logs are kept 30 days.</p>
+  </div>`;
+  wirePanel(); panelMode = 'admin';
+  document.getElementById('admin-refresh').onclick = () => openAdmin(adminCode());
+  document.getElementById('admin-out').onclick = () => { try { sessionStorage.removeItem('fl-admin'); } catch(e){} clearSelectionQuiet(); renderIntro(); };
+  fetch('https://api.github.com/repos/omarezz0709-gif/faultlines/actions/runs?per_page=10').then(r => r.json()).then(d => {
+    const el = document.getElementById('admin-runs'); if (!el) return;
+    const runs = d.workflow_runs || [];
+    el.innerHTML = runs.length ? `<table class="atable"><tbody>${runs.map(r => `<tr><td style="white-space:nowrap">${esc(fmtDateTime(r.run_started_at))}</td><td>${esc(r.name)}<br><span class="faint">${esc(r.event === 'schedule' ? 'automatic' : r.event === 'push' ? 'site change' : 'manual')}</span></td><td>${r.status !== 'completed' ? '<span class="st mem">running</span>' : r.conclusion === 'success' ? '<span class="st ok">OK</span>' : `<a class="st err" href="${esc(r.html_url)}" target="_blank" rel="noopener">${esc(r.conclusion)}</a>`}</td></tr>`).join('')}</tbody></table>` : '<p class="note muted">No runs found.</p>';
+  }).catch(() => { const el = document.getElementById('admin-runs'); if (el) el.innerHTML = '<p class="note muted">Could not load GitHub runs.</p>'; });
+}
+document.getElementById('admin-btn').onclick = () => adminCode() ? (renderAdminLogin(), openAdmin(adminCode())) : renderAdminLogin();
+
+/* count one visit per browser session (for the admin page) */
+try { if (AI_PROXY && !sessionStorage.getItem('fl-visit')){ sessionStorage.setItem('fl-visit', '1'); fetch(`${AI_PROXY}/hit`, {method: 'POST'}).catch(() => {}); } } catch(e){}
 
 /* start in a working state */
 renderIntro();
