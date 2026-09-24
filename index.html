@@ -1136,7 +1136,7 @@ const globe = new Globe(globeEl, {animateIn:true})
   .polygonsTransitionDuration(260)
   .polygonLabel(polyLabel)
   .onPolygonHover(f=>{ hoverId = f ? eff(f.id) : null; globeEl.style.cursor = f ? 'pointer' : 'grab'; refreshPolys(); })
-  .onPolygonClick(f=>{ if (f.id==='ATA') return sel.type==='compare' ? null : showAntarctica(); pickCountry(eff(f.id)); })
+  .onPolygonClick(f=>{ if (justClickedMarker()) return; if (f.id==='ATA') return sel.type==='compare' ? null : showAntarctica(); pickCountry(eff(f.id)); })
   .pointsData(MICRO).pointLat('lat').pointLng('lng').pointAltitude(0.02).pointRadius(0.42)
   .pointColor(p=>{
     if (sel.type==='compare') return sel.ids.includes(p.id) ? GOLD : '#5a5a5a';
@@ -1144,12 +1144,12 @@ const globe = new Globe(globeEl, {animateIn:true})
     return inBloc(p.id) ? GOLD : '#bdbdbd';
   })
   .pointLabel(p=>{ if (sel.type==='compare') return tip(p.name, `<span class="muted">${sel.ids.includes(p.id)?'Click to remove':'Click to add to comparison'}</span>`); const r = sel.type==='country' && sel.id!==p.id ? relMap.get(p.id) : null; return tip(p.name, r ? pillHTML(r.s) : '<span class="muted">Small state</span>'); })
-  .onPointClick(p=>pickCountry(p.id))
+  .onPointClick(p=>{ if (!justClickedMarker()) pickCountry(p.id); })
   .arcsData([]).arcColor('color').arcStroke(0.55).arcAltitudeAutoScale(0.38)
   .arcDashLength(0.45).arcDashGap(0.18).arcDashAnimateTime(reduceMotion ? 0 : 2400)
   .ringsData([]).ringColor(()=>t=>`rgba(212,175,55,${1-t})`).ringMaxRadius(3.5).ringPropagationSpeed(2.2).ringRepeatPeriod(1100)
   .htmlElementsData(POIS).htmlLat('lat').htmlLng('lng').htmlAltitude(0.013).htmlElement(makeMarker)
-  .onGlobeClick(()=>{ if (sel.type!=='compare') clearSelection(); });
+  .onGlobeClick(()=>{ if (sel.type!=='compare' && !justClickedMarker()) clearSelection(); });
 globe.htmlElementVisibilityModifier((el,v)=>{ el.style.opacity = v ? 1 : 0; el.style.pointerEvents = v ? 'auto' : 'none'; });
 
 const mat = globe.globeMaterial();
@@ -1168,11 +1168,15 @@ globe.pathsData(GRAT).pathPoints(d=>d).pathPointLat(p=>p[0]).pathPointLng(p=>p[1
 
 function refreshPolys(){ globe.polygonCapColor(capColor).polygonAltitude(altitude); }
 
+let markerClickAt = 0;
+const justClickedMarker = () => Date.now() - markerClickAt < 500;
 function makeMarker(p){
   const el = document.createElement('button');
   el.type='button'; el.className='poi poi-'+p.t; el.setAttribute('aria-label', p.n);
   el.innerHTML = `<i></i><span>${p.n}</span>`;
-  el.addEventListener('click', e=>{ e.stopPropagation(); pickPoi(p); });
+  el.addEventListener('click', e=>{ e.stopPropagation(); markerClickAt = Date.now(); pickPoi(p); });
+  // keep the press from also reaching the globe underneath (it would count as a click on the ocean or a country)
+  ['pointerdown', 'pointerup', 'mousedown', 'mouseup', 'touchstart', 'touchend'].forEach(t => el.addEventListener(t, e => { e.stopPropagation(); markerClickAt = Date.now(); }));
   p._el = el;
   if ((sel.type==='poi' && sel.poi===p) || (sel.type==='compare' && sel.pn && sel.pn.includes(p.n))) el.classList.add('on');
   return el;
