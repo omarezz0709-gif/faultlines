@@ -1383,12 +1383,13 @@ function pickGeminiModel(models){
   const ok = models.filter(m => (m.supportedGenerationMethods || []).includes('generateContent'))
     .map(m => m.name.split('/').pop())
     .filter(n => n.includes('flash') && !/(lite|image|tts|audio|live|8b|omni)/.test(n))
-    .map(n => ({n, stable: !/(preview|exp)/.test(n), v: parseFloat((n.match(/\d+(?:\.\d+)?/) || ['0'])[0])}));
+    .map(n => ({n, stable: !/(preview|exp)/.test(n), v: parseFloat((n.match(/\d+(?:\.\d+)?/) || ['0'])[0])}))
+    .filter(x => x.v >= 3);   // 2.x models are retired for new users
   ok.sort((a, b) => (b.stable - a.stable) || (b.v - a.v));
-  // newest stable first; "flash-latest" and 3.6 as dependable fallbacks when newer ones are busy
-  return [...new Set([...ok.map(x => x.n), ...GEMINI_FALLBACK])];
+  // the model that last worked first, then Google's recommended one, then the newest stable models
+  return [...new Set([lsGet('faultlines-gemini-model'), ...GEMINI_FALLBACK, ...ok.map(x => x.n)].filter(Boolean))];
 }
-const GEMINI_FALLBACK = ['gemini-flash-latest', 'gemini-3.6-flash'];
+const GEMINI_FALLBACK = ['gemini-3.6-flash', 'gemini-flash-latest'];
 const geminiModel = key => geminiModelPromise || (geminiModelPromise =
   fetch(key ? `${GEM}/models?pageSize=200` : `${AI_PROXY}/models`, {headers: key ? {'x-goog-api-key': key} : {}})
     .then(r => r.ok ? r.json() : {models: []}).then(d => pickGeminiModel(d.models || []))
@@ -1415,19 +1416,21 @@ async function geminiSample(key){
     let text = '', finish = '';
     const fail = (code, message) => ({code: opts.signal && opts.signal.aborted ? 'cancelled' : code, message, text});
     let r, msg = '';
-    const tryList = models.slice(0, 5);
-    for (let i = 0; i < tryList.length; i++){   // busy (503), retired (404) or out of quota (429): move to the next model
+    // busy (503), retired (404) or out of quota (429): move to the next model; if all are busy, wait and go round once more
+    const tryList = [...models.slice(0, 6), ...models.slice(0, 2)];
+    for (let i = 0; i < tryList.length; i++){
       const model = tryList[i];
+      if (i === Math.min(6, models.length)) await new Promise(res => setTimeout(res, 4000));
       try {
         r = await fetch(key ? `${GEM}/models/${model}:streamGenerateContent?alt=sse` : `${AI_PROXY}/models/${model}:streamGenerateContent`, {method:'POST', signal: opts.signal,
           headers: key ? {'x-goog-api-key': key, 'Content-Type': 'application/json'} : {'Content-Type': 'application/json'}, body: JSON.stringify(body)});
       } catch(e){ throw fail('upstream_error', e && e.message); }
-      if (r.ok){ if (i > 0){ models.splice(models.indexOf(model), 1); models.unshift(model); } break; }
+      if (r.ok){ lsSet('faultlines-gemini-model', model); const at = models.indexOf(model); if (at > 0){ models.splice(at, 1); models.unshift(model); } break; }
       msg = await r.text().catch(() => '');
-      if (![404, 429, 500, 503].includes(r.status) || i === tryList.length - 1) break;
+      if (![404, 429, 500, 503].includes(r.status)) break;
     }
     if (!r.ok){
-      throw fail(r.status === 429 ? 'rate_limited' : (r.status === 401 || r.status === 403 || /API_KEY_INVALID|API key not valid/.test(msg)) ? 'bad_key' : r.status === 400 ? 'invalid_request' : 'upstream_error', msg);
+      throw fail(r.status === 503 || r.status === 500 ? 'busy' : r.status === 429 ? 'rate_limited' : (r.status === 401 || r.status === 403 || /API_KEY_INVALID|API key not valid/.test(msg)) ? 'bad_key' : r.status === 400 ? 'invalid_request' : 'upstream_error', msg);
     }
     try {
       const reader = r.body.getReader(), dec = new TextDecoder();
@@ -1657,7 +1660,7 @@ function buildPrompt(kind){
   return null;
 }
 const AI_OFF = ['not_granted','sampling_disabled','not_declared','capability_disabled','capability_removed'];
-const AI_MSG = {bad_key:'Your API key was rejected. Check it in ⚙ Settings.', invalid_request:'The request was rejected. Try another model in ⚙ Settings.', rate_limited:'Too many requests right now. Try again in a minute.', session_expired:'Sign in again to use explanations.',
+const AI_MSG = {busy:'Google\'s free AI is overloaded right now. Try again in a minute.', bad_key:'Your API key was rejected. Check it in ⚙ Settings.', invalid_request:'The request was rejected. Try another model in ⚙ Settings.', rate_limited:'Too many requests right now. Try again in a minute.', session_expired:'Sign in again to use explanations.',
   refused:'Claude declined this one.', empty_completion:'No answer came back. Try again.', prompt_too_large:'Too much to explain at once. Try fewer countries.'};
 let aiCtl = null;
 async function runAI(btn){
@@ -2333,7 +2336,6 @@ applyAIVisibility();
 
 /* start in a working state */
 renderIntro();
-setTimeout(()=>selectCountry('TUR'), 900);
 </script>
 </body>
 </html>

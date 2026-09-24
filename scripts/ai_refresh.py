@@ -41,7 +41,7 @@ def _version(name: str) -> tuple:
     return tuple(float(n) for n in nums[:1]) or (0.0,)
 
 
-FALLBACK_MODELS = ["gemini-flash-latest", "gemini-3.6-flash"]
+FALLBACK_MODELS = ["gemini-3.6-flash", "gemini-flash-latest"]   # Google's recommended model first
 
 
 def pick_models(models: list[dict]) -> list[str]:
@@ -55,8 +55,9 @@ def pick_models(models: list[dict]) -> list[str]:
         if "flash" not in low or any(x in low for x in ("lite", "image", "tts", "audio", "live", "thinking-exp", "8b", "omni")):
             continue
         ok.append((_version(name), "preview" not in low and "exp" not in low, name.split("/")[-1]))
+    ok = [t for t in ok if t[0] >= (3.0,)]              # 2.x models are retired for new users
     ok.sort(key=lambda t: (t[1], t[0]), reverse=True)   # stable first, then newest
-    return list(dict.fromkeys([t[2] for t in ok] + FALLBACK_MODELS))
+    return list(dict.fromkeys(FALLBACK_MODELS + [t[2] for t in ok]))
 
 
 def pick_model(models: list[dict]) -> str:
