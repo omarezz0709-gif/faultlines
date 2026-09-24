@@ -2437,7 +2437,7 @@ function renderAdmin(data){
     <section><h3>What was asked <em>last 7 days</em></h3>${rowsTable(countBy(ai7, x => kindName(x.k)), 'Kind', 8)}</section>
     <section><h3>Latest activity <em>${logs.length} logged in 30 days</em></h3>
       <div class="mx-wrap"><table class="atable"><thead><tr><th>When</th><th>Where</th><th>Device</th><th>What</th><th></th></tr></thead><tbody>
-      ${logs.slice(0, 80).map(x => `<tr><td style="white-space:nowrap">${esc(fmtDateTime(x.t))}</td><td>${esc(place(x))}${x.pc || x.isp ? `<br><span class="faint">${esc([x.pc, x.isp].filter(Boolean).join(' · '))}</span>` : ''}</td><td>${esc(x.d || '')}</td><td>${esc(kindName(x.k))}${x.m ? `<br><span class="faint">${esc(x.m)}</span>` : ''}</td><td>${x.k === 'visit' ? '' : status(x)}</td></tr>`).join('') || '<tr><td colspan="5" class="muted">Nothing logged yet.</td></tr>'}
+      ${logs.slice(0, 80).map(x => `<tr><td style="white-space:nowrap">${esc(fmtDateTime(x.t))}</td><td>${esc(place(x))}${x.isp ? `<br><span class="faint">${esc(x.isp)}</span>` : ''}</td><td>${esc(x.d || '')}</td><td>${esc(kindName(x.k))}${x.m ? `<br><span class="faint">${esc(x.m)}</span>` : ''}</td><td>${x.k === 'visit' ? '' : status(x)}</td></tr>`).join('') || '<tr><td colspan="5" class="muted">Nothing logged yet.</td></tr>'}
       </tbody></table></div></section>
     <section><h3>Automatic updates <em>GitHub</em></h3><div id="admin-runs"><p class="note muted thinking">Loading…</p></div></section>
     <div class="actions"><button class="tag" id="admin-refresh">↻ Refresh</button><button class="tag" id="admin-out">Log out</button></div>
