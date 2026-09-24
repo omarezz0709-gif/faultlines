@@ -1459,7 +1459,16 @@ async function geminiSample(key){
 async function getSample(){
   const key = lsGet('faultlines-api-key');
   if (!key) return AI_PROXY ? geminiSample(null) : null;   // shared Worker for visitors without their own key
-  if (!key.startsWith('sk-ant-')) return geminiSample(key);   // Gemini keys: AIza… (old) or AQ.… (new)
+  if (!key.startsWith('sk-ant-')){   // Gemini keys: AIza… (old) or AQ.… (new)
+    const own = await geminiSample(key);
+    if (!AI_PROXY) return own;
+    // a saved key that was deleted or mistyped: forget it and use the shared Worker instead
+    const shared = await geminiSample(null);
+    return withJson(async (prompt, opts = {}) => {
+      try { return await own(prompt, opts); }
+      catch(e){ if (e && e.code === 'bad_key'){ lsSet('faultlines-api-key', null); return shared(prompt, opts); } throw e; }
+    });
+  }
   let Anthropic;
   try { Anthropic = await loadSDK(); } catch(e){ return null; }
   const model = currentModel();
