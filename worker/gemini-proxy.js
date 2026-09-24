@@ -9,8 +9,13 @@
  * - Logs usage (time, country/city, device, kind, cache hit, status) to a KV namespace bound as LOGS,
  *   readable only with the admin code (Worker secret ADMIN_CODE).
  *
+ * - POST models/auto:streamGenerateContent tries, in order: every Gemini model with every Gemini key,
+ *   then Groq, then Cloudflare Workers AI, and answers from the first that has quota left.
+ *
  * Setup: secrets GEMINI_API_KEY and ADMIN_CODE; KV namespace bound as LOGS (optional: without it,
  * everything works except the admin log).
+ * Optional extra capacity: secrets GEMINI_API_KEY_2 ... GEMINI_API_KEY_5 (keys from other Google projects),
+ * secret GROQ_API_KEY (free at console.groq.com), and a Workers AI binding named AI.
  */
 const ALLOWED_ORIGIN = "https://omarezz0709-gif.github.io";
 const GOOGLE = "https://generativelanguage.googleapis.com/v1beta";
@@ -85,6 +90,147 @@ async function readLogs(env, max = 3000) {
   return out;
 }
 
+/* ------------------------------------------------------------------ automatic fallback chain
+   Google's free tier allows ~20 requests a day per model, so one question may need several models.
+   Order: every usable Gemini model -> Groq (secret GROQ_API_KEY, free) -> Cloudflare Workers AI (binding AI, free).
+   Models that just said "quota used up" are skipped for a while so later questions go straight to one that works. */
+const exhausted = new Map();   // model -> time until which it is skipped
+const skip = (model, ms) => exhausted.set(model, Date.now() + ms);
+const usable = model => (exhausted.get(model) || 0) < Date.now();
+const GROQ_MODELS = ["openai/gpt-oss-120b", "llama-3.3-70b-versatile", "openai/gpt-oss-20b", "llama-3.1-8b-instant"];
+const CF_MODELS = ["@cf/meta/llama-3.3-70b-instruct-fp8-fast", "@cf/openai/gpt-oss-120b", "@cf/meta/llama-3.1-8b-instruct-fast"];
+
+async function geminiOrder(env, ctx) {
+  const cache = caches.default;
+  const ck = new Request("https://faultlines-cache/models");
+  let data;
+  const hit = await cache.match(ck);
+  if (hit) data = await hit.json();
+  else {
+    const r = await fetch(`${GOOGLE}/models?pageSize=200`, { headers: { "x-goog-api-key": env.GEMINI_API_KEY } });
+    if (!r.ok) return ["gemini-3.6-flash", "gemini-3.5-flash-lite"];
+    const text = await r.text();
+    ctx.waitUntil(cache.put(ck, new Response(text, { headers: { "Cache-Control": "max-age=3600" } })));
+    data = JSON.parse(text);
+  }
+  const names = (data.models || []).filter(m => (m.supportedGenerationMethods || []).includes("generateContent")).map(m => m.name.split("/").pop());
+  const ver = n => parseFloat((n.match(/\d+(?:\.\d+)?/) || ["0"])[0]);
+  const stable = n => !/(preview|exp)/.test(n);
+  const bad = /(image|tts|audio|live|8b|omni|embed)/;
+  const newest = (a, b) => (stable(b) - stable(a)) || (ver(b) - ver(a));
+  const flash = names.filter(n => n.startsWith("gemini-") && n.includes("flash") && !n.includes("lite") && !bad.test(n) && ver(n) >= 3).sort(newest);
+  const lite = names.filter(n => n.startsWith("gemini-") && n.includes("flash-lite") && !bad.test(n) && (ver(n) >= 3 || n.includes("latest"))).sort(newest);
+  const gemma = names.filter(n => n.startsWith("gemma-") && !bad.test(n)).sort((a, b) => (ver(b) - ver(a)) || (b.includes("31b") - a.includes("31b")));
+  return [...new Set(["gemini-3.6-flash", ...flash, ...gemma.slice(0, 1), ...lite, ...gemma.slice(1)])].filter(n => names.includes(n) || !names.length);
+}
+
+// one SSE event in Gemini's shape, so the website reads every provider the same way
+const asSSE = text => `data: ${JSON.stringify({ candidates: [{ content: { role: "model", parts: [{ text }] }, finishReason: "STOP", index: 0 }] })}\n\n`;
+
+function plainPrompt(body) {
+  const sys = ((body.systemInstruction || {}).parts || []).map(p => p.text || "").join("\n");
+  const user = (body.contents || []).map(c => (c.parts || []).map(p => p.text || "").join("\n")).join("\n\n");
+  return (sys ? sys + "\n\n" : "") + user;
+}
+
+async function answerAuto(request, env, ctx, ip, kind) {
+  const raw = await request.text();
+  if (raw.length > MAX_BODY_BYTES) return deny(413, "Request too large.");
+  let body;
+  try { body = JSON.parse(raw); } catch { return deny(400, "Invalid JSON."); }
+  body.generationConfig = { ...(body.generationConfig || {}) };
+  body.generationConfig.maxOutputTokens = Math.min(body.generationConfig.maxOutputTokens || MAX_OUTPUT_TOKENS, MAX_OUTPUT_TOKENS);
+  delete body.tools; delete body.cachedContent;
+  const wantsJson = body.generationConfig.responseMimeType === "application/json";
+  const started = Date.now();
+  const log = (status, model, cached) => ctx.waitUntil(logEvent(env, request, { kind, status, model, cached, ms: Date.now() - started }));
+
+  // 1. answered in the last 24 h: from memory
+  const cache = caches.default;
+  const ck = new Request(`https://faultlines-cache/auto/${await sha256(JSON.stringify(body))}`);
+  const cached = await cache.match(ck);
+  if (cached) { log(200, "memory", true); return new Response(cached.body, { status: 200, headers: cors({ "Content-Type": "text/event-stream", "X-Faultlines-Cache": "hit" }) }); }
+
+  // 2. fair use per visitor
+  if (limited(`ai:${ip}`, VISITOR_LIMIT)) {
+    log(429, "visitor-limit");
+    return deny(429, "You've asked a lot in the last few minutes. Please wait a moment.", { "X-Faultlines-Limit": "visitor" });
+  }
+  const remember = text => ctx.waitUntil(cache.put(ck, new Response(text, { headers: { "Content-Type": "text/event-stream", "Cache-Control": `max-age=${CACHE_SECONDS}` } })));
+
+  // 3. Gemini models, streamed; every extra key (GEMINI_API_KEY_2 ... _5, each from its own Google project)
+  //    has its own daily allowance, so each model is tried with each key
+  const keys = [env.GEMINI_API_KEY, env.GEMINI_API_KEY_2, env.GEMINI_API_KEY_3, env.GEMINI_API_KEY_4, env.GEMINI_API_KEY_5].filter(Boolean);
+  const order = keys.length ? await geminiOrder(env, ctx) : [];
+  for (const [ki, key] of keys.entries()) {
+    for (const model of order) {
+      const slot = `k${ki}:${model}`;
+      if (!usable(slot)) continue;
+      const b = JSON.parse(JSON.stringify(body));
+      if (model.startsWith("gemma")) {   // Gemma: no system instruction or JSON mode
+        b.contents = [{ role: "user", parts: [{ text: plainPrompt(body) }] }];
+        delete b.systemInstruction; delete b.generationConfig.responseMimeType;
+      }
+      let r;
+      try {
+        r = await fetch(`${GOOGLE}/models/${model}:streamGenerateContent?alt=sse`, {
+          method: "POST", headers: { "x-goog-api-key": key, "Content-Type": "application/json" }, body: JSON.stringify(b),
+        });
+      } catch { continue; }
+      if (r.ok && r.body) {
+        log(200, keys.length > 1 ? `${model} #${ki + 1}` : model);
+        const [toClient, toCache] = r.body.tee();
+        ctx.waitUntil(new Response(toCache).text().then(t => { if (t.length > 20) remember(t); }));
+        return new Response(toClient, { status: 200, headers: cors({ "Content-Type": "text/event-stream", "X-Faultlines-Cache": "miss", "X-Faultlines-Provider": model }) });
+      }
+      if (r.status === 400 || r.status === 401 || r.status === 403) { if (!model.startsWith("gemma")) break; }   // bad key: next key
+      skip(slot, r.status === 429 ? 30 * 60_000 : r.status === 503 ? 60_000 : 6 * 3600_000);   // quota / busy / unsupported
+    }
+  }
+
+  const prompt = plainPrompt(body);
+  const maxTokens = Math.min(body.generationConfig.maxOutputTokens, 8192);
+
+  // 4. Groq (free account; OpenAI-compatible API)
+  if (env.GROQ_API_KEY) {
+    for (const model of GROQ_MODELS.filter(m => usable("groq:" + m))) {
+      try {
+        const r = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+          method: "POST",
+          headers: { Authorization: `Bearer ${env.GROQ_API_KEY}`, "Content-Type": "application/json" },
+          body: JSON.stringify({ model, messages: [{ role: "user", content: prompt }], max_tokens: maxTokens, temperature: 0.4,
+                                 ...(wantsJson ? { response_format: { type: "json_object" } } : {}) }),
+        });
+        if (!r.ok) { skip("groq:" + model, r.status === 429 ? 15 * 60_000 : 6 * 3600_000); continue; }
+        const d = await r.json();
+        const text = (((d.choices || [])[0] || {}).message || {}).content || "";
+        if (!text.trim()) continue;
+        log(200, "groq:" + model);
+        const sse = asSSE(text); remember(sse);
+        return new Response(sse, { status: 200, headers: cors({ "Content-Type": "text/event-stream", "X-Faultlines-Provider": "groq:" + model }) });
+      } catch { continue; }
+    }
+  }
+
+  // 5. Cloudflare Workers AI (binding AI; free daily allowance)
+  if (env.AI) {
+    for (const model of CF_MODELS.filter(m => usable("cf:" + m))) {
+      try {
+        const res = await env.AI.run(model, { messages: [{ role: "user", content: prompt }], max_tokens: Math.min(maxTokens, 4096) });
+        const text = typeof res === "string" ? res : typeof res.response === "string" ? res.response
+          : ((((res.choices || [])[0] || {}).message || {}).content || "");
+        if (!text || !String(text).trim()) continue;
+        log(200, "cf:" + model.split("/").pop());
+        const sse = asSSE(String(text)); remember(sse);
+        return new Response(sse, { status: 200, headers: cors({ "Content-Type": "text/event-stream", "X-Faultlines-Provider": "cf:" + model }) });
+      } catch { skip("cf:" + model, 15 * 60_000); continue; }
+    }
+  }
+
+  log(429, "all-used-up");
+  return deny(429, "All free AI providers are used up for the moment. Please try again later.");
+}
+
 export default {
   async fetch(request, env, ctx) {
     const origin = request.headers.get("Origin") || "";
@@ -112,6 +258,11 @@ export default {
       if (code !== env.ADMIN_CODE) { fails.push(Date.now()); hits.set(wrongKey, fails); return deny(401, "Wrong code."); }
       if (!env.LOGS) return json(200, { logs: [], note: "No KV namespace bound as LOGS, so nothing is being logged yet." });
       return json(200, { logs: await readLogs(env), generated: new Date().toISOString() }, { "Cache-Control": "no-store" });
+    }
+
+    // --- generate with automatic fallback: Gemini keys/models -> Groq -> Cloudflare Workers AI ---
+    if (request.method === "POST" && path === "models/auto:streamGenerateContent") {
+      return answerAuto(request, env, ctx, ip, kind);
     }
 
     if (!env.GEMINI_API_KEY) return deny(500, "The GEMINI_API_KEY secret is not set on this Worker.");

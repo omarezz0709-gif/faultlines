@@ -1434,6 +1434,7 @@ function withJson(sample){
   };
   return sample;
 }
+let autoMissing = false;
 async function geminiSample(key){
   const models = await geminiModel(key);
   async function sample(prompt, opts = {}){
@@ -1449,10 +1450,21 @@ async function geminiSample(key){
     let r, msg = '';
     // busy (503), retired (404) or out of quota (429): move to the next model; if all are busy, wait and go round once more
     const first = Math.min(12, models.length);
-    const tryList = [...models.slice(0, first), ...models.slice(0, 2)];
+    // shared Worker: 'auto' lets it run the whole chain (all Gemini keys/models, then Groq, then Cloudflare AI);
+    // an older Worker without 'auto' answers 404 and the site goes through the models itself
+    const tryList = [...(key || autoMissing ? [] : ['auto']), ...models.slice(0, first), ...models.slice(0, 2)];
     for (let i = 0; i < tryList.length; i++){
       const model = tryList[i];
-      if (i === first) await new Promise(res => setTimeout(res, 4000));
+      if (model === 'auto'){
+        try { r = await fetch(`${AI_PROXY}/models/auto:streamGenerateContent`, {method:'POST', signal: opts.signal,
+          headers: {'Content-Type': 'application/json', 'X-Faultlines-Kind': opts.kind || 'ai'}, body: JSON.stringify(body)}); }
+        catch(e){ throw fail('upstream_error', e && e.message); }
+        if (r.ok) break;
+        msg = await r.text().catch(() => '');
+        if (r.status === 404){ autoMissing = true; continue; }
+        break;   // 429 here means every provider is used up (or the visitor limit): trying single models won't help
+      }
+      if (i === first + (tryList[0] === 'auto' ? 1 : 0)) await new Promise(res => setTimeout(res, 4000));
       const b = JSON.parse(JSON.stringify(body));
       if (model.startsWith('gemma')) delete b.generationConfig.responseMimeType;   // Gemma has no JSON mode; the prompt asks for JSON anyway
       try {
