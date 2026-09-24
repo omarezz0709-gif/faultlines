@@ -43,6 +43,7 @@ jobs:
         run: python scripts/ai_refresh.py
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
 
       - name: Leaders and parties (Wikidata, midnight only)

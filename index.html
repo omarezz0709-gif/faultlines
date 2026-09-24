@@ -523,6 +523,7 @@ RUS PRK A 2024 treaty with a mutual-defence clause; North Korean troops fought i
 RUS IRN F 2025 strategic partnership treaty; drone and arms cooperation
 RUS IND F "Special and privileged" partnership; India buys Russian oil and arms
 RUS TUR N Competitive cooperation: TurkStream and S-400s, but opposite sides in several wars
+RUS EGY F Strategic partnership (2018): Rosatom builds the El Dabaa nuclear plant, Russia is Egypt's main wheat supplier, and both back Haftar in eastern Libya
 RUS SYR N Assad's patron until his fall in Dec 2024; future of Russian bases uncertain
 RUS GBR H Sanctions, espionage and poisoning cases; UK a leading Ukraine backer
 RUS DEU H Energy break after Nord Stream; Germany is Ukraine's second-largest donor
@@ -1730,7 +1731,7 @@ function buildPrompt(kind){
 }
 const AI_OFF = ['not_granted','sampling_disabled','not_declared','capability_disabled','capability_removed'];
 const AI_MSG = {visitor_limit:'You\'ve asked a lot in the last few minutes. Wait a moment, then try again.', busy:'Google\'s free AI is overloaded right now. Try again in a minute.', bad_key:'The AI service is misconfigured right now. Try again later.', invalid_request:'The AI couldn\'t handle this request. Try again.', rate_limited:'The free AI quota is used up for the moment. Try again in a few minutes (answers already asked today still load instantly).', session_expired:'Sign in again to use explanations.',
-  refused:'Claude declined this one.', empty_completion:'No answer came back. Try again.', prompt_too_large:'Too much to explain at once. Try fewer countries.'};
+  refused:'The AI declined this one.', empty_completion:'No answer came back. Try again.', prompt_too_large:'Too much to explain at once. Try fewer countries.'};
 let aiCtl = null;
 async function runAI(btn){
   const wrap = btn.closest('.ai-wrap'), out = wrap.querySelector('.ai');
@@ -1868,7 +1869,7 @@ function facetBody(ids){
     <div class="ffoot">
       ${missing ? `<div class="actions"><button class="btn" data-ffill>✦ Fill in the ≈ rows with AI</button></div>` : ''}
       <p class="fmsg hidden-note" aria-live="polite"></p>
-      <p class="hidden-note">Plain figures: World Bank, latest year shown${ids.length>1?'; gold = highest (or lowest where lower is better)':''}. ≈ = Claude's estimate from its own knowledge, with year and source; check before relying on it.${f.k==='politics' ? ' ✓ = from Wikidata (refreshed daily; links to the source).' : ''}</p>
+      <p class="hidden-note">Plain figures: World Bank, latest year shown${ids.length>1?'; gold = highest (or lowest where lower is better)':''}. ≈ = AI estimate from the model's own knowledge, with year and source; check before relying on it.${f.k==='politics' ? ' ✓ = from Wikidata (refreshed daily; links to the source).' : ''}</p>
     </div>`;
 }
 function facetSection(ids, title){
@@ -1917,7 +1918,7 @@ async function fillFacet(fk, ids, sec){
   } catch(e){
     btn.disabled = false; btn.classList.remove('thinking'); btn.textContent = '✦ Fill in the ≈ rows with AI';
     const code = e && e.code;
-    if (AI_OFF.includes(code)){ msg.textContent = 'Claude estimates aren\'t available in this view.'; btn.hidden = true; }
+    if (AI_OFF.includes(code)){ msg.textContent = 'AI estimates aren\'t available in this view.'; btn.hidden = true; }
     else if (code!=='cancelled') msg.textContent = code==='invalid_json' ? 'The answer came back in the wrong format. Try again.' : (AI_MSG[code] || 'Something went wrong. Try again.');
   }
 }
@@ -2046,14 +2047,14 @@ function showAntarctica(){
   wirePanel(); fly(-72,0,2.2);
 }
 
-function renderIntro(){
+function renderIntro(redraw = false){
   const picks = ['TUR','TWN','UKR','IRN','IND','EGY','USA','CHN'];
   const hot = ['Strait of Hormuz','Strait of Malacca','Bab-el-Mandeb','Taiwan Strait','Suwałki Gap','Panama Canal'];
   panel.innerHTML = `<div class="p-head"><div class="t"><div class="eyebrow">How to read it</div><h2>A world of faultlines</h2></div>
     <button class="iconbtn collapse" id="collapse" aria-label="Collapse panel">▾</button>
 </div>
     <div class="p-body">
-    <p class="lede">Click any country to colour the world by its relationships, with arcs to its neighbours and key partners or rivals. Click a relationship to see why it has that status, or ask Claude to explain it in depth. Use <b>Compare countries</b> to pick 2–12 countries and see how they all relate, and <b>Filters</b> to narrow what's shown.</p>
+    <p class="lede">Click any country to colour the world by its relationships, with arcs to its neighbours and key partners or rivals. Click a relationship to see why it has that status, or ask the AI to explain it in depth. Use <b>Compare countries</b> to pick 2–12 countries and see how they all relate, and <b>Filters</b> to narrow what's shown.</p>
     ${alertsSection(5)}
     ${changesSection(1)}
     <section><h3>Relationship key</h3><div class="legend">${SUMMARY_ORDER.map(s=>`<span><i class="sw" style="background:${STATUS[s].color}"></i>${STATUS[s].label}</span>`).join('')}</div></section>
@@ -2067,8 +2068,8 @@ function renderIntro(){
     </div>`;
   const wasMin = panel.classList.contains('min');
   wirePanel(); panelMode = 'intro';
-  if (mob() && (!introShown || wasMin)) toggleMin();   // on phones, start with the globe visible (and stay minimised on redraws)
-  introShown = true;
+  // redraw (new data): keep the panel as the viewer left it; otherwise phones get it folded so the globe stays visible
+  if (redraw ? wasMin : ((mob() && window.innerWidth > 0) || wasMin)) setMin(true);   // width 0 = page loaded hidden, not a phone
 }
 
 /* ================================================================
@@ -2262,8 +2263,8 @@ function clearSelectionQuiet(){
 }
 function onMeta(){
   if (meta && meta.lastRun && !(NEWS && NEWS.generated)){ badge.hidden = false; badge.textContent = 'Updated ' + fmtDate(meta.lastRun); }
-  if (panelMode==='intro') renderIntro();
-  else if (panelMode==='changes') renderChanges();
+  if (panelMode==='intro') renderIntro(true);
+  else if (panelMode==='changes'){ const wasMin = panel.classList.contains('min'); renderChanges(); if (wasMin) setMin(true); }
 }
 
 /* live overrides written by the GitHub Actions updater (data/live.json) */
@@ -2370,8 +2371,8 @@ function alertsSection(n){
 }
 function onNews(){
   if (NEWS && NEWS.generated){ badge.hidden = false; badge.textContent = 'Updated ' + fmtDateTime(NEWS.generated); }
-  if (panelMode === 'intro') renderIntro();
-  else if (panelMode === 'changes') renderChanges();
+  if (panelMode === 'intro') renderIntro(true);
+  else if (panelMode === 'changes'){ const wasMin = panel.classList.contains('min'); renderChanges(); if (wasMin) setMin(true); }
   else if (sel.type === 'country') renderCountry(sel.id);
   else if (sel.type === 'compare') renderCompare();
 }
@@ -2395,7 +2396,6 @@ function applyAIVisibility(){
 applyAIVisibility();
 
 /* ---------- admin (usage log from the AI Worker; the code is checked by the Worker) ---------- */
-let introShown = false;
 const regionName = (() => { try { const d = new Intl.DisplayNames(['en'], {type: 'region'}); return c => { try { return c ? d.of(c) : ''; } catch(e){ return c; } }; } catch(e){ return c => c; } })();
 function adminCode(){ try { return sessionStorage.getItem('fl-admin') || ''; } catch(e){ return ''; } }
 function renderAdminLogin(msg){

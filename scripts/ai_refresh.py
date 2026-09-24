@@ -295,8 +295,9 @@ def merge(live: dict, upd: dict, lookup: dict, t_utc: dt.datetime) -> int:
 
 # ---------------------------------------------------------------- main
 def main() -> None:
-    key = os.environ.get("GEMINI_API_KEY", "").strip()
-    if not key:
+    # the site's visitors share the first key's daily allowance, so a second key (other Google project) is a fallback
+    keys = [k for k in (os.environ.get("GEMINI_API_KEY", "").strip(), os.environ.get("GEMINI_API_KEY_2", "").strip()) if k]
+    if not keys:
         print("No GEMINI_API_KEY secret set; skipping the AI update.")
         return
     t0 = now_utc()
@@ -314,7 +315,15 @@ def main() -> None:
     table, lookup = headline_table(news)
     if not lookup:
         sys.exit("No headlines available; run news.py first.")
-    text = call_gemini(key, SYSTEM, build_prompt(live, baseline, table, t0))
+    prompt = build_prompt(live, baseline, table, t0)
+    for i, key in enumerate(keys):
+        try:
+            text = call_gemini(key, SYSTEM, prompt)
+            break
+        except SystemExit as e:
+            if i == len(keys) - 1:
+                raise
+            print(f"Key {i + 1} failed ({str(e)[:160]}); trying key {i + 2}.")
     try:
         upd = parse_json(text)
     except (ValueError, json.JSONDecodeError) as e:
