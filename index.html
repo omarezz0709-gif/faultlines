@@ -269,16 +269,7 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
   </div>
   <div class="modes">
     <button class="chip mode" id="cmp-btn" aria-pressed="false">⇄ Compare countries</button>
-    <button class="chip" id="set-btn" aria-expanded="false" aria-controls="settings">⚙ Settings</button>
     <button class="chip" id="flt-btn" aria-expanded="false" aria-controls="filters"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 5h18M6 12h12M10 19h4"/></svg>Filters<span class="fcount" id="flt-count" hidden></span></button>
-  </div>
-  <div class="filters" id="settings" hidden>
-    <div class="fg"><h4>AI key (optional)</h4>
-      <p class="hidden-note" style="margin:0 0 8px">Turns on the ✦ in-depth explanations and analyses. Paste a <b>free Google Gemini key</b> from <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">aistudio.google.com</a>, or a paid Anthropic key. The key is saved only in this browser and sent only to Google or Anthropic, never to this website. Everything else works without a key.</p>
-      <div class="frow"><input type="password" id="api-key" placeholder="Paste your Gemini key (or an Anthropic sk-ant-… key)" autocomplete="off" spellcheck="false"><button class="tag" id="api-save">Save</button><button class="tag" id="api-clear">Remove</button></div>
-      <p class="hidden-note" id="api-msg" aria-live="polite"></p>
-    </div>
-    <div class="fg"><h4>Claude model <span style="text-transform:none;letter-spacing:0;color:var(--faint);font-family:var(--body);font-weight:400">(Anthropic keys only)</span></h4><div class="frow"><select id="api-model" aria-label="Claude model"></select></div></div>
   </div>
   <div class="filters" id="filters" hidden>
     <div class="fg"><h4>Relationship types</h4>
@@ -1664,14 +1655,14 @@ function buildPrompt(kind){
   return null;
 }
 const AI_OFF = ['not_granted','sampling_disabled','not_declared','capability_disabled','capability_removed'];
-const AI_MSG = {busy:'Google\'s free AI is overloaded right now. Try again in a minute.', bad_key:'Your API key was rejected. Check it in ⚙ Settings.', invalid_request:'The request was rejected. Try another model in ⚙ Settings.', rate_limited:'Too many requests right now. Try again in a minute.', session_expired:'Sign in again to use explanations.',
+const AI_MSG = {busy:'Google\'s free AI is overloaded right now. Try again in a minute.', bad_key:'The AI service is misconfigured right now. Try again later.', invalid_request:'The AI couldn\'t handle this request. Try again.', rate_limited:'Too many requests right now. Try again in a minute.', session_expired:'Sign in again to use explanations.',
   refused:'Claude declined this one.', empty_completion:'No answer came back. Try again.', prompt_too_large:'Too much to explain at once. Try fewer countries.'};
 let aiCtl = null;
 async function runAI(btn){
   const wrap = btn.closest('.ai-wrap'), out = wrap.querySelector('.ai');
   if (btn.dataset.running){ aiCtl && aiCtl.abort(); return; }
   const sample = await getSample();
-  if (!sample){ out.hidden=false; out.innerHTML = '<p class="muted">Add a free Gemini key in ⚙ Settings (top left) to use in-depth explanations.</p>'; openSettings(); return; }
+  if (!sample){ out.hidden=false; out.innerHTML = '<p class="muted">In-depth explanations are unavailable right now. Try again later.</p>'; openSettings(); return; }
   const prompt = buildPrompt(btn.dataset.ai); if (!prompt) return;
   const ctl = new AbortController(); aiCtl = ctl;
   btn.dataset.running = '1'; btn.textContent = '■ Stop';
@@ -1840,7 +1831,7 @@ Reply with only JSON, one entry per ISO3 code, every field present:
 async function fillFacet(fk, ids, sec){
   const btn = sec.querySelector('[data-ffill]'), msg = sec.querySelector('.fmsg');
   const sample = await getSample();
-  if (!sample){ msg.textContent = 'Add a free Gemini key in ⚙ Settings (top left) to fill in the ≈ rows.'; openSettings(); return; }
+  if (!sample){ msg.textContent = 'AI estimates are unavailable right now. Try again later.'; openSettings(); return; }
   const f = FACETS.find(x=>x.k===fk), rows = f.rows.filter(r=>r.ai);
   const need = ids.filter(i=>ENT[i] && needsAI(fk,i));
   if (!need.length) return;
@@ -2315,22 +2306,9 @@ async function loadWB(){
 loadWB(); loadLive(); loadNews(); loadPolitics();
 setInterval(() => { loadLive(); loadNews(); }, 10*60*1000);
 
-/* ---------- settings drawer: API key + model ---------- */
-const setBtn = document.getElementById('set-btn'), setPanel = document.getElementById('settings');
-const apiKey = document.getElementById('api-key'), apiMsg = document.getElementById('api-msg'), apiModel = document.getElementById('api-model');
-apiModel.innerHTML = Object.entries(MODELS).map(([k, v]) => `<option value="${k}">${esc(v)}</option>`).join('');
-apiModel.value = currentModel();
-apiModel.onchange = () => lsSet('faultlines-model', apiModel.value);
-function showKeyState(){ const k = lsGet('faultlines-api-key'); apiMsg.textContent = k ? `${k.startsWith('sk-ant-') ? 'Anthropic' : 'Gemini'} key saved (ends in …${k.slice(-4)}).` : 'No key saved yet.'; apiKey.value = ''; }
-function openSettings(){ setPanel.hidden = false; setBtn.setAttribute('aria-expanded', 'true'); showKeyState(); }
-setBtn.onclick = () => { if (setPanel.hidden) openSettings(); else { setPanel.hidden = true; setBtn.setAttribute('aria-expanded', 'false'); } };
-document.getElementById('api-save').onclick = () => {
-  const v = apiKey.value.trim();
-  if (!v){ apiMsg.textContent = 'Paste a key first.'; return; }
-  if (v.length < 20 || /\s/.test(v)){ apiMsg.textContent = 'That doesn\'t look like a complete key. Copy it again from AI Studio.'; return; }
-  lsSet('faultlines-api-key', v); showKeyState(); applyAIVisibility();
-};
-document.getElementById('api-clear').onclick = () => { lsSet('faultlines-api-key', null); showKeyState(); applyAIVisibility(); };
+/* AI runs through the shared Worker for everyone; keys saved by older versions of the site are forgotten */
+lsSet('faultlines-api-key', null);
+function openSettings(){}
 /* AI buttons and estimate rows only appear when a key is saved; the site never asks for one */
 function applyAIVisibility(){
   document.body.classList.toggle('no-ai', !aiAvailable());
