@@ -1183,7 +1183,8 @@ const globe = new Globe(globeEl, {animateIn:true})
   .htmlElementsData(POIS).htmlLat('lat').htmlLng('lng').htmlAltitude(0.013).htmlElement(makeMarker)
   // admin map: purple dot per place pings came from (filled only while the admin page is open)
   .labelsData([]).labelLat('lat').labelLng('lng').labelText(() => '').labelSize(0).labelAltitude(0.016)
-  .labelDotRadius(d => 0.7 + Math.min(1.3, Math.sqrt(d.n) * 0.22)).labelColor(() => '#b36bff').labelResolution(3)
+  .labelDotRadius(d => (0.7 + Math.min(1.3, Math.sqrt(d.n) * 0.22)) * (d.k || 1))   // k shrinks dots when zoomed in
+  .labelColor(() => '#b36bff').labelResolution(3)
   .labelLabel(d => tip(esc(d.where), `<span class="muted">${d.n} ping${d.n === 1 ? '' : 's'} · last ${esc(fmtDateTime(d.last))}</span>`))
   .onGlobeClick(()=>{ if (sel.type!=='compare' && !justClickedMarker()) clearSelection(); });
 globe.htmlElementVisibilityModifier((el,v)=>{ el.style.opacity = v ? 1 : 0; el.style.pointerEvents = v ? 'auto' : 'none'; });
@@ -2410,22 +2411,48 @@ function adminCode(){ try { return sessionStorage.getItem('fl-admin') || ''; } c
 const adminBtn = document.getElementById('admin-btn');
 /* purple dots on the globe: one per place pings came from (Cloudflare's city coordinates; older entries without
    coordinates fall back to the middle of their country), bigger dots = more pings */
-var adminPts = [];   // var: wirePanel may run before this line
+var adminPts = [], adminPlaces = [], adminScale = 0;   // var: wirePanel may run before this line
 function showAdminMap(logs){
   const byName = new Map(ALL_IDS.map(id => [ENT[id].name, ENT[id]]));
-  const groups = new Map();
+  const groups = new Map();   // one entry per place (city, or country for old entries)
   logs.forEach(x => {
-    let lat = x.la, lng = x.lo, where = [x.ci, regionName(x.co)].filter(Boolean).join(', ');
+    let lat = x.la, lng = x.lo, where = x.ci || regionName(x.co);
     if (lat == null || lng == null){ const e = byName.get(regionName(x.co)); if (!e) return; lat = e.lat; lng = e.lng; where = regionName(x.co) + ' (country)'; }
-    const k = lat.toFixed(1) + ',' + lng.toFixed(1);
-    const g = groups.get(k) || {lat, lng, where, n: 0, last: 0}; g.n++; g.last = Math.max(g.last, x.t); groups.set(k, g);
+    const k = lat.toFixed(2) + ',' + lng.toFixed(2);
+    const g = groups.get(k) || {lat, lng, where, co: regionName(x.co), n: 0, last: 0}; g.n++; g.last = Math.max(g.last, x.t); groups.set(k, g);
   });
-  adminPts = [...groups.values()];
-  globe.labelsData(adminPts);
-  const top = adminPts.slice().sort((a, b) => b.n - a.n)[0];
-  if (top) fly(top.lat, top.lng, mob() ? 2.4 : 2.0);
+  adminPlaces = [...groups.values()].sort((a, b) => b.n - a.n);
+  const top = adminPlaces[0], alt = mob() ? 2.4 : 2.0;
+  adminScale = 0; clusterAdminMap(top ? alt : globe.pointOfView().altitude);   // group for the view we fly to
+  if (top) fly(top.lat, top.lng, alt);
 }
-function hideAdminMap(){ if (adminPts && adminPts.length){ adminPts = []; globe.labelsData([]); } }
+/* zoomed out: nearby places merge into one dot; zooming in splits them into the separate cities */
+function clusterAdminMap(alt){
+  if (!adminPlaces.length) return;
+  const deg = Math.max(0.03, 3.5 * Math.pow(alt, 1.6));   // merge distance in degrees: ~10° at the default view, ~0.1° (10 km) close up
+  const scale = Math.round(Math.log2(deg) * 2);   // only recluster when the zoom changed noticeably
+  if (scale === adminScale) return; adminScale = scale;
+  const clusters = [];
+  adminPlaces.forEach(p => {
+    const c = clusters.find(c => Math.hypot(c.lat - p.lat, (c.lng - p.lng) * Math.cos(c.lat * Math.PI / 180)) < deg);
+    if (!c){ clusters.push({lat: p.lat, lng: p.lng, n: p.n, last: p.last, places: [p]}); return; }
+    c.lat = (c.lat * c.n + p.lat * p.n) / (c.n + p.n); c.lng = (c.lng * c.n + p.lng * p.n) / (c.n + p.n);   // weighted centre
+    c.n += p.n; c.last = Math.max(c.last, p.last); c.places.push(p);
+  });
+  const k = Math.min(1, Math.max(0.12, alt / 2));
+  clusters.forEach(c => { c.k = k; c.where = c.places.length === 1 ? [c.places[0].where, c.places[0].co].filter((v, i, a) => v && a.indexOf(v) === i).join(', ')
+    : c.places.slice(0, 4).map(p => p.where).join(', ') + (c.places.length > 4 ? ` +${c.places.length - 4} more` : ''); });
+  adminPts = clusters;
+  globe.labelsData(adminPts);
+}
+var microK = 1;
+globe.onZoom(pov => {
+  if (adminPts.length) clusterAdminMap(pov.altitude);
+  // small-country dots (Liechtenstein, Malta…) shrink when zoomed in, so they don't cover whole regions
+  const k = Math.round(Math.min(1, Math.max(0.1, pov.altitude / 1.5)) * 20) / 20;
+  if (k !== microK){ microK = k; globe.pointRadius(0.42 * k); }
+});
+function hideAdminMap(){ if (adminPts && adminPts.length){ adminPts = []; adminPlaces = []; globe.labelsData([]); } }
 function renderAdminLogin(msg){
   clearSelectionQuiet();
   panel.innerHTML = head('Admin', 'Usage & logs') + `<div class="p-body">
