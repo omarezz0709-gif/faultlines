@@ -74,6 +74,7 @@ async function logEvent(env, request, rec) {
     co: cf.country || "", ci: (cf.city || "").slice(0, 40), re: (cf.region || "").slice(0, 40),
     d: device(request.headers.get("User-Agent") || ""), v: (await sha256(ip + day)).slice(0, 8),   // visitor id, rotates daily
     ms: rec.ms || 0,
+    pc: (cf.postalCode || "").slice(0, 10), isp: (cf.asOrganization || "").slice(0, 40),   // IP-based, so approximate
   };
   const key = `l:${String(9999999999999 - meta.t).padStart(13, "0")}:${Math.random().toString(36).slice(2, 7)}`;
   try { await env.LOGS.put(key, "", { metadata: meta, expirationTtl: LOG_DAYS * 86400 }); } catch (e) { /* free KV write limit reached */ }
