@@ -67,6 +67,37 @@ button{font:inherit;color:inherit}
 .poi span{position:absolute;left:17px;top:50%;transform:translateY(-50%);white-space:nowrap;font:600 13px/1 var(--display);letter-spacing:.05em;text-transform:uppercase;color:var(--text);background:rgba(8,8,8,.9);padding:3px 6px;border-radius:3px;opacity:0;pointer-events:none;transition:opacity .15s}
 .poi:hover span,.poi:focus-visible span,.poi.on span{opacity:1}
 .poi.on i{outline:2px solid var(--sel);outline-offset:3px}
+/* language menu, question box, live ticker */
+.chip.lang{appearance:none;-webkit-appearance:none;padding:5px 10px;font:600 12px var(--mono);cursor:pointer;background:var(--panel)}
+.chip.lang option{background:#111;color:var(--text)}
+.ask{display:flex;align-items:center;gap:6px;background:var(--panel);border:1px solid var(--line2);border-radius:6px;padding:4px 4px 4px 10px;backdrop-filter:blur(10px)}
+.ask:focus-within{border-color:var(--gold-dim)}
+.ask-i{color:var(--gold);font-size:13px}
+.ask input{flex:1;min-width:0;background:none;border:0;color:var(--text);font:14px var(--body);padding:6px 0;outline:none}
+.ask-go{border:0;background:var(--gold);color:var(--on-gold);border-radius:4px;width:30px;height:28px;cursor:pointer;font-weight:700}
+.ticker{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:5;display:flex;align-items:stretch;width:min(560px,calc(100vw - 440px));background:var(--panel);border:1px solid var(--line2);border-radius:6px;overflow:hidden;backdrop-filter:blur(10px)}
+.ticker[hidden]{display:none}
+.tk-live{border:0;border-right:1px solid var(--line2);background:var(--raise);color:var(--gold-hi);font:600 11px var(--mono);letter-spacing:.1em;padding:0 11px;cursor:pointer;display:flex;align-items:center;gap:7px;white-space:nowrap}
+.live-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#e0604f;margin-right:5px;animation:pulse 1.6s infinite}
+.tk-live .live-dot{margin:0}
+@keyframes pulse{50%{opacity:.3}}
+.tk-item{border:0;background:none;color:var(--text);font:13px/1.3 var(--body);text-align:start;padding:9px 12px;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;flex:1;transition:opacity .3s}
+.tk-item b{color:var(--gold-hi);font-weight:600;margin-inline-end:6px}
+.tk-item small{color:var(--faint);font:11px var(--mono);margin-inline-start:6px}
+.tk-item.fade{opacity:0}
+.feed li{padding:9px 0;border-bottom:1px solid var(--line)}
+.feed .fc{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px}
+.feed .fc .tag{font-size:11px;padding:2px 7px}
+.feed .imp b.kwb{color:var(--s-H);font:600 10px var(--mono);text-transform:uppercase;letter-spacing:.06em;margin-inline-end:6px}
+.q-asked{font:500 17px/1.4 var(--body);color:var(--text);margin:0}
+.mob-only{display:none}
+[dir="rtl"] .p-body, [dir="rtl"] .p-head, [dir="rtl"] .top, [dir="rtl"] .ticker{text-align:right}
+@media (max-width:760px){
+  .mob-only{display:inline-flex;align-items:center}
+  .ask{display:none}
+  .ask.open{display:flex}
+  .ticker{display:none!important}
+}
 /* city names when zoomed in: small dot + name, grey; capitals gold */
 .city{position:relative;width:0;height:0;pointer-events:none;transition:opacity .25s}
 .city i{position:absolute;left:-1.5px;top:-1.5px;width:3px;height:3px;border-radius:50%;background:#aaa}
@@ -315,7 +346,15 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
     <button class="chip mode" id="cmp-btn" aria-pressed="false">⇄ Compare countries</button>
     <button class="chip" id="flt-btn" aria-expanded="false" aria-controls="filters"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 5h18M6 12h12M10 19h4"/></svg>Filters<span class="fcount" id="flt-count" hidden></span></button>
     <button class="chip icon" id="admin-btn" aria-label="Admin" title="Admin">⚙</button>
+    <select class="chip lang" id="lang-sel" aria-label="Language" title="Language"><option value="en">EN</option><option value="fr">FR</option><option value="es">ES</option><option value="ar">عربي</option></select>
+    <button class="chip mob-only" id="ask-btn" aria-expanded="false">✦ Ask</button>
+    <button class="chip mob-only" id="live-btn"><i class="live-dot"></i>Live</button>
   </div>
+  <form class="ask" id="ask-form" autocomplete="off">
+    <span class="ask-i" aria-hidden="true">✦</span>
+    <input id="ask-q" type="text" maxlength="300" placeholder="Ask anything about world affairs…" aria-label="Ask a question">
+    <button class="ask-go" type="submit" aria-label="Ask">→</button>
+  </form>
   <div class="filters" id="filters" hidden>
     <div class="fg"><h4>Relationship types</h4>
       <div class="fchips" id="f-status" role="group" aria-label="Relationship types"></div>
@@ -333,6 +372,11 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
     <button class="link reset" id="f-reset">Reset all filters</button>
   </div>
 </header>
+
+<div class="ticker" id="ticker" hidden>
+  <button class="tk-live" id="tk-open" title="Open the live feed"><i class="live-dot"></i>LIVE</button>
+  <button class="tk-item" id="tk-item"></button>
+</div>
 
 <aside class="panel" id="panel" aria-live="polite">
   <div class="p-head"><div class="t"><div class="eyebrow">Loading</div><h2>Faultlines</h2></div></div>
@@ -1417,6 +1461,7 @@ function toggleMin(){ setMin(!panel.classList.contains('min')); }
 function wirePanel(){
   setMin(false); panelMode = '';
   hideAdminMap(); document.getElementById('admin-btn').setAttribute('aria-pressed', 'false');   // leaving the admin page
+  document.getElementById('live-btn').setAttribute('aria-pressed', 'false');
   const ph = panel.querySelector('.p-head'); if (ph) ph.onclick = e => { if (mob() && !e.target.closest('button')) toggleMin(); };
   const all = document.getElementById('all-upd'); if (all) all.onclick = renderChanges;
   panel.querySelectorAll('[data-allnews]').forEach(b => b.onclick = renderChanges);
@@ -1579,6 +1624,7 @@ let autoMissing = false;
 async function geminiSample(key){
   const models = await geminiModel(key);
   async function sample(prompt, opts = {}){
+    prompt += aiLangNote(opts.json);   // answer in the chosen language
     const ttl = (opts.cache && opts.cache.gcTime) || 0;
     const ck = 'faultlines-ai:' + hashStr('gemini2|' + (opts.json ? 'j' : 't') + '|' + prompt);
     if (ttl){
@@ -2270,12 +2316,15 @@ function buildIndex(){ INDEX = [
   ...ALL_IDS.map(id=>({label:ENT[id].name, sub:ENT[id].kind, go:()=>pickCountry(id), k:ENT[id].name.toLowerCase()})),
   ...Object.keys(OWNER).map(t=>{ const f=features.find(x=>x.id===t); return f && {label:f.properties.name, sub:TERRITORY_NOTE[t], go:()=>pickCountry(OWNER[t]), k:f.properties.name.toLowerCase()}; }).filter(Boolean),
   ...POIS.map(p=>({label:p.n, sub:POI_TYPES[p.t].label, go:()=>pickPoi(p), k:p.n.toLowerCase()})),
-  {label:'Antarctica', sub:'Continent', go:showAntarctica, k:'antarctica'}
-]; }
+  {label:'Antarctica', sub:'Continent', go:showAntarctica, k:'antarctica'},
+  // countries also findable by their French, Spanish and Arabic names
+  ...(() => { try { return ALL_IDS.flatMap(id=>allNames(id).slice(1).map(nm=>({label:ENT[id].name, sub:ENT[id].kind, go:()=>pickCountry(id), k:nm.toLowerCase()}))); } catch(e){ return []; } })()   // rebuilt once the language data below exists
+].map(x=>Object.assign(x, {k: normKey(x.k)})); }
+function normKey(s){ return s.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[’']/g, "'"); }   // accents don't matter when searching
 buildIndex();
 let hits=[], active=0;
 function renderSugg(){
-  const v = q.value.trim().toLowerCase();
+  const v = normKey(q.value.trim().toLowerCase());
   if (!v){ sugg.hidden=true; return; }
   const alias = ALIAS[v] && ENT[ALIAS[v]] ? [{label:ENT[ALIAS[v]].name, sub:ENT[ALIAS[v]].kind, go:()=>pickCountry(ALIAS[v]), k:v}] : [];
   const starts = INDEX.filter(x=>x.k.startsWith(v)), inc = INDEX.filter(x=>!x.k.startsWith(v) && x.k.includes(v));
@@ -2304,7 +2353,8 @@ q.addEventListener('blur', ()=>setTimeout(()=>sugg.hidden=true, 120));
    meta/status      {lastRun, summary, log:[{date, items:[{label,change,source}]}]}
    ================================================================ */
 let liveRel = [], livePois = [], liveThreads = [], meta = null, lastSig = '';
-function fmtDate(d){ const t = new Date(d); return isNaN(t) ? '' : t.toLocaleDateString(undefined,{day:'numeric',month:'short'}); }
+const uiLocale = () => typeof LANG !== 'undefined' && LANG !== 'en' ? LANG : undefined;
+function fmtDate(d){ const t = new Date(d); return isNaN(t) ? '' : t.toLocaleDateString(uiLocale(),{day:'numeric',month:'short'}); }
 const safeUrl = u => typeof u==='string' && /^https:\/\//i.test(u) ? u : null;
 const host = u => { try { return new URL(u).hostname.replace(/^www\./,''); } catch(e){ return 'source'; } };
 
@@ -2437,7 +2487,7 @@ async function loadNews(){
   } catch(e){}
 }
 const newsItems = idx => (idx || []).map(j => NEWS && NEWS.items && NEWS.items[j]).filter(Boolean);
-function fmtDateTime(d){ const t = new Date(d); return isNaN(t) ? '' : t.toLocaleString(undefined, {day:'numeric', month:'short', hour:'2-digit', minute:'2-digit'}); }
+function fmtDateTime(d){ const t = new Date(d); return isNaN(t) ? '' : t.toLocaleString(uiLocale(), {day:'numeric', month:'short', hour:'2-digit', minute:'2-digit'}); }
 function ago(d){
   const m = (Date.now() - new Date(d)) / 6e4;
   if (!isFinite(m)) return '';
@@ -2447,7 +2497,7 @@ function ago(d){
 }
 function newsLi(it){
   const u = safeUrl(it.u);
-  return `<li>${u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(it.t)}</a>` : esc(it.t)}<span class="nmeta">${esc(it.s || '')}${it.s ? ' · ' : ''}${esc(ago(it.d))}</span></li>`;
+  return `<li dir="auto">${u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(it.t)}</a>` : esc(it.t)}<span class="nmeta">${esc(it.s || '')}${it.s ? ' · ' : ''}${esc(ago(it.d))}</span></li>`;
 }
 function tensionHTML(p){
   if (p == null) return '';
@@ -2479,7 +2529,7 @@ function togetherHTML(ids){
 function alertLi(a){
   const names = (a.c || []).map(c => ENT[c] ? ENT[c].name : c).join(' – ');
   const u = safeUrl(a.u);
-  return `<li><b>${esc(names)}</b> <span class="kw">${esc(a.kw)}</span><br>${u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(a.t)}</a>` : esc(a.t)} <span class="nmeta">${esc(a.s || '')} · ${esc(ago(a.d))}</span></li>`;
+  return `<li><b>${esc(names)}</b> <span class="kw">${esc(a.kw)}</span><br><span dir="auto">${u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(a.t)}</a>` : esc(a.t)}</span> <span class="nmeta">${esc(a.s || '')} · ${esc(ago(a.d))}</span></li>`;
 }
 function alertsSection(n){
   const al = (NEWS && NEWS.alerts) || [];
@@ -2604,7 +2654,7 @@ function renderAdmin(data){
   const ai1 = ai(d1), ai7 = ai(d7);
   const mem = ai7.filter(x => x.c).length, errs1 = ai1.filter(x => x.s >= 400);
   const place = x => [x.ci, regionName(x.co)].filter(Boolean).join(', ') || 'Unknown';
-  const kindName = k => ({pair: 'Explain relationship', country: 'Explain country', poi: 'Explain location', group: 'Analyse comparison', visit: 'Page visit'})[k] || (k.startsWith('facts-') ? 'Fill in ' + k.slice(6) : k);
+  const kindName = k => ({pair: 'Explain relationship', country: 'Explain country', poi: 'Explain location', group: 'Analyse comparison', ask: 'Question box', visit: 'Page visit'})[k] || (k.startsWith('facts-') ? 'Fill in ' + k.slice(6) : k);
   const status = x => x.s >= 400 ? `<span class="st err">${x.s === 429 ? 'limit 429' : x.s === 503 ? 'busy 503' : 'error ' + x.s}</span>` : x.c ? '<span class="st mem">memory</span>' : '<span class="st ok">OK</span>';
   panel.innerHTML = head('Admin', 'Usage & logs') + `<div class="p-body">
     ${data.note ? `<p class="note" style="color:var(--s-T)">${esc(data.note)}</p>` : ''}
@@ -2645,8 +2695,362 @@ adminBtn.onclick = () => panelMode === 'admin' ? renderIntro() : adminCode() ? (
 /* count one visit per browser session (for the admin page) */
 try { if (AI_PROXY && !sessionStorage.getItem('fl-visit')){ sessionStorage.setItem('fl-visit', '1'); fetch(`${AI_PROXY}/hit`, {method: 'POST'}).catch(() => {}); } } catch(e){}
 
+/* ================================================================
+   LANGUAGES (English, French, Spanish, Arabic)
+   The interface is translated by swapping known English phrases wherever they appear on the page (panels,
+   buttons, tooltips), so every panel is covered without touching its code. Country names come from the
+   browser's own translations; AI answers are written in the chosen language. Relationship notes and
+   headlines stay in their original language.
+   ================================================================ */
+var LANG = 'en';
+const LANG_NAME = {en: 'English', fr: 'French', es: 'Spanish', ar: 'Arabic'};
+// English -> [French, Spanish, Arabic]
+const TR = {
+  'relations · chokepoints · flashpoints': ['relations · détroits · points chauds', 'relaciones · pasos estratégicos · puntos calientes', 'العلاقات · الممرات الاستراتيجية · بؤر التوتر'],
+  '⇄ Compare countries': ['⇄ Comparer des pays', '⇄ Comparar países', '⇄ قارن الدول'],
+  'Compare countries': ['Comparer des pays', 'Comparar países', 'قارن الدول'],
+  'Filters': ['Filtres', 'Filtros', 'التصفية'],
+  '✦ Ask': ['✦ Question', '✦ Preguntar', '✦ اسأل'],
+  'Live': ['En direct', 'En vivo', 'مباشر'],
+  'LIVE': ['DIRECT', 'EN VIVO', 'مباشر'],
+  'Ask anything about world affairs…': ['Posez une question sur l’actualité mondiale…', 'Pregunta lo que quieras sobre el mundo…', 'اسأل أي سؤال عن الشؤون الدولية…'],
+  'Ask a question': ['Poser une question', 'Hacer una pregunta', 'اطرح سؤالًا'],
+  'Ask': ['Demander', 'Preguntar', 'اسأل'],
+  'Language': ['Langue', 'Idioma', 'اللغة'],
+  'Open the live feed': ['Ouvrir le fil en direct', 'Abrir las noticias en vivo', 'افتح البث المباشر'],
+  'Relationship types': ['Types de relations', 'Tipos de relación', 'أنواع العلاقات'],
+  'Ally': ['Allié', 'Aliado', 'حليف'], 'Partner': ['Partenaire', 'Socio', 'شريك'],
+  'Normal / mixed': ['Normale / mitigée', 'Normal / mixta', 'عادية / متباينة'], 'Tense': ['Tendue', 'Tensa', 'متوترة'],
+  'Hostile': ['Hostile', 'Hostil', 'عدائية'], 'Armed conflict': ['Conflit armé', 'Conflicto armado', 'نزاع مسلح'],
+  'All': ['Tout', 'Todo', 'الكل'], 'Friends only': ['Amis seulement', 'Solo amigos', 'الأصدقاء فقط'],
+  'Rivals only': ['Rivaux seulement', 'Solo rivales', 'الخصوم فقط'], 'Hostile & war': ['Hostilité & guerre', 'Hostilidad y guerra', 'العداء والحرب'],
+  'Ties': ['Liens', 'Vínculos', 'الروابط'],
+  'Include ties inferred from shared blocs': ['Inclure les liens déduits des blocs communs', 'Incluir vínculos deducidos de bloques comunes', 'تضمين الروابط المستنتجة من التكتلات المشتركة'],
+  'Neighbours only': ['Voisins seulement', 'Solo vecinos', 'الجيران فقط'],
+  'Highlight a bloc': ['Mettre en avant un bloc', 'Resaltar un bloque', 'إبراز تكتل'], 'None': ['Aucun', 'Ninguno', 'لا شيء'],
+  '⇄ Compare members': ['⇄ Comparer les membres', '⇄ Comparar miembros', '⇄ قارن الأعضاء'],
+  'Quick comparisons': ['Comparaisons rapides', 'Comparaciones rápidas', 'مقارنات سريعة'],
+  'Map markers': ['Repères sur la carte', 'Marcadores del mapa', 'علامات الخريطة'], 'Map layers': ['Calques', 'Capas del mapa', 'طبقات الخريطة'],
+  'Relation arcs': ['Arcs de relations', 'Arcos de relaciones', 'أقواس العلاقات'],
+  'Straits & canals': ['Détroits & canaux', 'Estrechos y canales', 'المضائق والقنوات'], 'Land corridors': ['Corridors terrestres', 'Corredores terrestres', 'الممرات البرية'],
+  'Flashpoints': ['Points chauds', 'Puntos calientes', 'بؤر التوتر'], 'Bases & ports': ['Bases & ports', 'Bases y puertos', 'القواعد والموانئ'],
+  'Resources': ['Ressources', 'Recursos', 'الموارد'], 'Reset all filters': ['Réinitialiser les filtres', 'Restablecer filtros', 'إعادة ضبط التصفية'],
+  'Search a country or strait…': ['Rechercher un pays ou un détroit…', 'Buscar un país o estrecho…', 'ابحث عن دولة أو مضيق…'],
+  'Search countries and locations': ['Rechercher pays et lieux', 'Buscar países y lugares', 'ابحث عن الدول والمواقع'],
+  'How to read it': ['Mode d’emploi', 'Cómo leerlo', 'كيف تقرأ الخريطة'],
+  'A world of faultlines': ['Un monde de lignes de fracture', 'Un mundo de fracturas', 'عالم من خطوط الصدع'],
+  'Click any country to colour the world by its relationships, with arcs to its neighbours and key partners or rivals. Click a relationship to see why it has that status, or ask the AI to explain it in depth. Use': [
+    'Cliquez sur un pays pour colorer le monde selon ses relations, avec des arcs vers ses voisins et ses principaux partenaires ou rivaux. Cliquez sur une relation pour comprendre son statut, ou demandez à l’IA de l’expliquer en détail. Utilisez',
+    'Haz clic en un país para colorear el mundo según sus relaciones, con arcos hacia sus vecinos y sus principales socios o rivales. Haz clic en una relación para ver por qué tiene ese estado, o pide a la IA que la explique a fondo. Usa',
+    'انقر على أي دولة لتلوين العالم حسب علاقاتها، مع أقواس نحو جيرانها وأهم شركائها أو خصومها. انقر على علاقة لمعرفة سبب وضعها، أو اطلب من الذكاء الاصطناعي شرحها بالتفصيل. استخدم'],
+  'to pick 2–12 countries and see how they all relate, and': ['pour choisir 2 à 12 pays et voir leurs relations, et', 'para elegir de 2 a 12 países y ver cómo se relacionan, y', 'لاختيار من 2 إلى 12 دولة ورؤية علاقاتها ببعضها، و'],
+  'to narrow what\'s shown.': ['pour affiner l’affichage.', 'para acotar lo que se muestra.', 'لتضييق ما يُعرض.'],
+  'Headlines to watch': ['Titres à surveiller', 'Titulares a seguir', 'عناوين تستحق المتابعة'],
+  'flagged automatically': ['repérés automatiquement', 'detectados automáticamente', 'مرصودة تلقائيًا'],
+  'Latest news updates': ['Dernières mises à jour', 'Últimas actualizaciones', 'آخر التحديثات'], 'All updates': ['Toutes les mises à jour', 'Todas las actualizaciones', 'كل التحديثات'],
+  'Relationship key': ['Légende des relations', 'Leyenda de relaciones', 'دليل العلاقات'], 'Try a country': ['Essayez un pays', 'Prueba un país', 'جرّب دولة'],
+  'Critical chokepoints': ['Passages critiques', 'Pasos estratégicos críticos', 'الممرات الحيوية'], 'On the map': ['Sur la carte', 'En el mapa', 'على الخريطة'],
+  'Country': ['Pays', 'País', 'دولة'], '⇄ Compare with others': ['⇄ Comparer avec d’autres', '⇄ Comparar con otros', '⇄ قارن مع غيرها'],
+  'Click any relationship below for an explanation.': ['Cliquez sur une relation ci-dessous pour une explication.', 'Haz clic en una relación para ver la explicación.', 'انقر على أي علاقة أدناه للاطلاع على الشرح.'],
+  'In the news': ['Dans l’actualité', 'En las noticias', 'في الأخبار'], 'In the news together': ['Ensemble dans l’actualité', 'Juntos en las noticias', 'معًا في الأخبار'],
+  'Low tension': ['Tension faible', 'Tensión baja', 'توتر منخفض'], 'Elevated tension': ['Tension élevée', 'Tensión elevada', 'توتر مرتفع'], 'High tension': ['Forte tension', 'Tensión alta', 'توتر شديد'],
+  'Alignment': ['Alignements', 'Alineamiento', 'الاصطفافات'], 'Blocs & alliances': ['Blocs & alliances', 'Bloques y alianzas', 'التكتلات والتحالفات'],
+  'Facts & figures': ['Faits & chiffres', 'Datos y cifras', 'حقائق وأرقام'],
+  'economy · society · military · environment · politics': ['économie · société · armée · environnement · politique', 'economía · sociedad · ejército · medio ambiente · política', 'الاقتصاد · المجتمع · الجيش · البيئة · السياسة'],
+  'Economy': ['Économie', 'Economía', 'الاقتصاد'], 'Society': ['Société', 'Sociedad', 'المجتمع'], 'Military & security': ['Armée & sécurité', 'Ejército y seguridad', 'الجيش والأمن'],
+  'Environment': ['Environnement', 'Medio ambiente', 'البيئة'], 'Politics': ['Politique', 'Política', 'السياسة'],
+  'GDP': ['PIB', 'PIB', 'الناتج المحلي الإجمالي'], 'GDP per person': ['PIB par habitant', 'PIB per cápita', 'نصيب الفرد من الناتج'],
+  'Income per person (PPP)': ['Revenu par habitant (PPA)', 'Ingreso per cápita (PPA)', 'دخل الفرد (تعادل القوة الشرائية)'], 'Median income': ['Revenu médian', 'Ingreso mediano', 'الدخل الوسيط'],
+  'Inflation': ['Inflation', 'Inflación', 'التضخم'], 'Unemployment': ['Chômage', 'Desempleo', 'البطالة'], 'Housing prices': ['Prix du logement', 'Precio de la vivienda', 'أسعار السكن'],
+  'Petrol price': ['Prix de l’essence', 'Precio de la gasolina', 'سعر البنزين'], 'Fertility rate': ['Taux de fécondité', 'Tasa de fecundidad', 'معدل الخصوبة'],
+  'Birth rate': ['Taux de natalité', 'Tasa de natalidad', 'معدل المواليد'], 'Life expectancy': ['Espérance de vie', 'Esperanza de vida', 'متوسط العمر المتوقع'],
+  'PISA scores': ['Scores PISA', 'Resultados PISA', 'نتائج PISA'], 'Happiness': ['Bonheur', 'Felicidad', 'السعادة'],
+  'Social protection coverage': ['Couverture de protection sociale', 'Cobertura de protección social', 'تغطية الحماية الاجتماعية'], 'Social mobility': ['Mobilité sociale', 'Movilidad social', 'الحراك الاجتماعي'],
+  'Inequality (Gini)': ['Inégalités (Gini)', 'Desigualdad (Gini)', 'عدم المساواة (جيني)'], 'Military spending': ['Dépenses militaires', 'Gasto militar', 'الإنفاق العسكري'],
+  'Military spending (% of GDP)': ['Dépenses militaires (% du PIB)', 'Gasto militar (% del PIB)', 'الإنفاق العسكري (% من الناتج)'], 'Armed forces personnel': ['Effectifs militaires', 'Personal de las fuerzas armadas', 'أفراد القوات المسلحة'],
+  'Abuse & assault in the military': ['Abus & agressions dans l’armée', 'Abusos y agresiones en el ejército', 'الانتهاكات والاعتداءات في الجيش'], 'Torture': ['Torture', 'Tortura', 'التعذيب'],
+  'Intelligence agencies': ['Services de renseignement', 'Servicios de inteligencia', 'أجهزة الاستخبارات'], 'SDG Index': ['Indice ODD', 'Índice ODS', 'مؤشر أهداف التنمية المستدامة'],
+  'Forest cover': ['Couverture forestière', 'Cobertura forestal', 'الغطاء الحرجي'], 'Protected areas': ['Aires protégées', 'Áreas protegidas', 'المناطق المحمية'],
+  'Urban green space': ['Espaces verts urbains', 'Zonas verdes urbanas', 'المساحات الخضراء الحضرية'], 'CO₂ per person': ['CO₂ par habitant', 'CO₂ per cápita', 'ثاني أكسيد الكربون للفرد'],
+  'Renewable energy': ['Énergies renouvelables', 'Energías renovables', 'الطاقة المتجددة'], 'System of government': ['Régime politique', 'Sistema de gobierno', 'نظام الحكم'],
+  'Head of state': ['Chef de l’État', 'Jefe de Estado', 'رئيس الدولة'], 'Head of government': ['Chef du gouvernement', 'Jefe de Gobierno', 'رئيس الحكومة'],
+  'Ruling party / coalition': ['Parti / coalition au pouvoir', 'Partido / coalición gobernante', 'الحزب / الائتلاف الحاكم'],
+  'Last national election': ['Dernière élection nationale', 'Última elección nacional', 'آخر انتخابات وطنية'], 'Next national election': ['Prochaine élection nationale', 'Próxima elección nacional', 'الانتخابات الوطنية المقبلة'],
+  '✦ Fill in the ≈ rows with AI': ['✦ Compléter les lignes ≈ avec l’IA', '✦ Completar las filas ≈ con IA', '✦ املأ صفوف ≈ بالذكاء الاصطناعي'],
+  'Neighbours': ['Voisins', 'Vecinos', 'الجيران'], 'by sea': ['par mer', 'por mar', 'بحرًا'], 'Key relationships': ['Relations clés', 'Relaciones clave', 'العلاقات الرئيسية'],
+  'Transnational issues': ['Enjeux transnationaux', 'Asuntos transnacionales', 'قضايا عابرة للحدود'],
+  'Militancy & security': ['Militantisme & sécurité', 'Militancia y seguridad', 'التشدد والأمن'], 'Smuggling & trafficking': ['Contrebande & trafics', 'Contrabando y tráfico', 'التهريب والاتجار'],
+  'Migration & refugees': ['Migrations & réfugiés', 'Migración y refugiados', 'الهجرة واللاجئون'], 'Proxy wars & rival camps': ['Guerres par procuration & camps rivaux', 'Guerras subsidiarias y bandos rivales', 'حروب بالوكالة ومعسكرات متنافسة'],
+  'Water, food & energy': ['Eau, alimentation & énergie', 'Agua, alimentos y energía', 'المياه والغذاء والطاقة'], 'Money & people': ['Argent & populations', 'Dinero y personas', 'المال والناس'],
+  '⇄ Compare these countries': ['⇄ Comparer ces pays', '⇄ Comparar estos países', '⇄ قارن هذه الدول'],
+  'Strategic locations': ['Lieux stratégiques', 'Lugares estratégicos', 'مواقع استراتيجية'], 'Also aligned through blocs': ['Aussi alignés via des blocs', 'También alineados por bloques', 'مصطفّون أيضًا عبر التكتلات'],
+  'Simplified snapshot as of mid-2026. Statuses are editorial shorthand for complex relationships; unlisted neighbours default to "normal".': [
+    'Instantané simplifié à la mi-2026. Les statuts résument des relations complexes ; les voisins non listés sont « normaux » par défaut.',
+    'Resumen simplificado a mediados de 2026. Los estados resumen relaciones complejas; los vecinos no listados son «normales» por defecto.',
+    'لمحة مبسطة حتى منتصف 2026. التصنيفات اختصار لعلاقات معقدة، والجيران غير المدرجين يُعدّون «عاديين» افتراضيًا.'],
+  'Maritime chokepoint': ['Point de passage maritime', 'Paso marítimo estratégico', 'ممر بحري استراتيجي'], 'Land corridor': ['Corridor terrestre', 'Corredor terrestre', 'ممر بري'],
+  'Flashpoint / disputed area': ['Point chaud / zone disputée', 'Punto caliente / zona disputada', 'بؤرة توتر / منطقة متنازع عليها'],
+  'Strategic base or port': ['Base ou port stratégique', 'Base o puerto estratégico', 'قاعدة أو ميناء استراتيجي'], 'Strategic resource': ['Ressource stratégique', 'Recurso estratégico', 'مورد استراتيجي'],
+  '✦ Explain in depth': ['✦ Expliquer en détail', '✦ Explicar a fondo', '✦ اشرح بالتفصيل'],
+  '⇄ Compare with other locations or countries': ['⇄ Comparer avec d’autres lieux ou pays', '⇄ Comparar con otros lugares o países', '⇄ قارن مع مواقع أو دول أخرى'],
+  'Countries involved': ['Pays concernés', 'Países implicados', 'الدول المعنية'], 'Related locations': ['Lieux liés', 'Lugares relacionados', 'مواقع مرتبطة'],
+  'Figures are approximate and rounded; snapshot as of mid-2026.': ['Chiffres approximatifs et arrondis ; état à la mi-2026.', 'Cifras aproximadas y redondeadas; datos de mediados de 2026.', 'الأرقام تقريبية ومقرّبة؛ حتى منتصف 2026.'],
+  'Compare': ['Comparer', 'Comparar', 'مقارنة'], 'Pick what to compare': ['Choisissez quoi comparer', 'Elige qué comparar', 'اختر ما تريد مقارنته'],
+  'Analysis': ['Analyse', 'Análisis', 'التحليل'], '✦ Analyse this comparison in depth': ['✦ Analyser cette comparaison en détail', '✦ Analizar esta comparación a fondo', '✦ حلّل هذه المقارنة بالتفصيل'],
+  'Compare facts & figures': ['Comparer faits & chiffres', 'Comparar datos y cifras', 'قارن الحقائق والأرقام'], 'Relationship grid': ['Grille des relations', 'Cuadrícula de relaciones', 'شبكة العلاقات'],
+  'Hidden connections': ['Liens cachés', 'Conexiones ocultas', 'روابط خفية'], 'Every pair': ['Toutes les paires', 'Todos los pares', 'كل الأزواج'],
+  'Blocs': ['Blocs', 'Bloques', 'التكتلات'], 'All in:': ['Tous dans :', 'Todos en:', 'جميعها في:'],
+  'News & updates': ['Actualités & mises à jour', 'Noticias y actualizaciones', 'الأخبار والتحديثات'],
+  'Recorded relationship changes': ['Changements de relations enregistrés', 'Cambios de relaciones registrados', 'تغيّرات العلاقات المسجلة'],
+  'Automated summaries can be wrong; check the linked sources.': ['Les résumés automatiques peuvent se tromper ; vérifiez les sources.', 'Los resúmenes automáticos pueden fallar; revisa las fuentes.', 'قد تخطئ الملخصات الآلية؛ تحقق من المصادر المرفقة.'],
+  'Thinking…': ['Réflexion…', 'Pensando…', 'جارٍ التفكير…'], '■ Stop': ['■ Arrêter', '■ Detener', '■ إيقاف'], 'Cut short.': ['Réponse tronquée.', 'Respuesta cortada.', 'انقطع الرد.'],
+  'Written by AI from the page\'s data and its own knowledge; check recent events against the news.': [
+    'Rédigé par l’IA à partir des données de la page et de ses connaissances ; vérifiez les faits récents dans l’actualité.',
+    'Redactado por IA con los datos de la página y su propio conocimiento; contrasta los hechos recientes con las noticias.',
+    'كتبه الذكاء الاصطناعي من بيانات الصفحة ومعرفته الخاصة؛ تحقّق من الأحداث الأخيرة في الأخبار.'],
+  'Something went wrong. Try again.': ['Une erreur s’est produite. Réessayez.', 'Algo salió mal. Inténtalo de nuevo.', 'حدث خطأ ما. حاول مرة أخرى.'],
+  'You\'ve asked a lot in the last few minutes. Wait a moment, then try again.': ['Vous avez posé beaucoup de questions ces dernières minutes. Patientez un instant.', 'Has preguntado mucho en los últimos minutos. Espera un momento.', 'لقد طرحت أسئلة كثيرة في الدقائق الأخيرة. انتظر قليلًا ثم حاول مجددًا.'],
+  'The free AI quota is used up for the moment. Try again in a few minutes (answers already asked today still load instantly).': [
+    'Le quota gratuit d’IA est épuisé pour le moment. Réessayez dans quelques minutes.', 'La cuota gratuita de IA se ha agotado por ahora. Inténtalo en unos minutos.', 'نفدت حصة الذكاء الاصطناعي المجانية مؤقتًا. حاول بعد بضع دقائق.'],
+  'No answer came back. Try again.': ['Aucune réponse. Réessayez.', 'No llegó respuesta. Inténtalo de nuevo.', 'لم يصل أي رد. حاول مرة أخرى.'],
+  'Click to add to comparison': ['Cliquez pour ajouter à la comparaison', 'Haz clic para añadir a la comparación', 'انقر للإضافة إلى المقارنة'],
+  'Click to remove from comparison': ['Cliquez pour retirer de la comparaison', 'Haz clic para quitar de la comparación', 'انقر للإزالة من المقارنة'],
+  'No notable link recorded': ['Aucun lien notable enregistré', 'Sin vínculo notable registrado', 'لا توجد صلة بارزة مسجلة'],
+  'Hidden by filters': ['Masqué par les filtres', 'Oculto por los filtros', 'مخفي بسبب التصفية'], 'Small state': ['Petit État', 'Estado pequeño', 'دولة صغيرة'],
+  'Your question': ['Votre question', 'Tu pregunta', 'سؤالك'], 'Question': ['Question', 'Pregunta', 'سؤال'],
+  'Mentioned on the map': ['Mentionnés sur la carte', 'Mencionados en el mapa', 'مذكورة على الخريطة'],
+  'Live feed': ['Fil en direct', 'Noticias en vivo', 'البث المباشر'], 'World news': ['Actualité mondiale', 'Noticias del mundo', 'أخبار العالم'],
+  'Latest headlines': ['Derniers titres', 'Últimos titulares', 'آخر العناوين'],
+  'Google News world headlines, checked every few minutes. Headlines that name a country and words like war, strike or sanctions are marked.': [
+    'Titres internationaux de Google News, vérifiés toutes les quelques minutes. Les titres citant un pays et des mots comme guerre, frappe ou sanctions sont signalés.',
+    'Titulares internacionales de Google News, revisados cada pocos minutos. Se marcan los que nombran un país y palabras como guerra, ataque o sanciones.',
+    'عناوين أخبار العالم من Google News، تُحدَّث كل بضع دقائق. تُميَّز العناوين التي تذكر دولة وكلمات مثل حرب أو غارة أو عقوبات.'],
+  'No live headlines right now.': ['Aucun titre en direct pour le moment.', 'No hay titulares en vivo ahora.', 'لا توجد عناوين مباشرة الآن.'],
+  'Gaza Strip': ['Bande de Gaza', 'Franja de Gaza', 'قطاع غزة'], 'Antarctica': ['Antarctique', 'Antártida', 'القارة القطبية الجنوبية'],
+  'Close': ['Fermer', 'Cerrar', 'إغلاق'], 'Territory': ['Territoire', 'Territorio', 'إقليم'], 'Continent': ['Continent', 'Continente', 'قارة'],
+  'No match. Try a country or strait name.': ['Aucun résultat. Essayez un pays ou un détroit.', 'Sin resultados. Prueba un país o estrecho.', 'لا نتائج. جرّب اسم دولة أو مضيق.'], 'Open panel': ['Ouvrir le panneau', 'Abrir panel', 'افتح اللوحة'], 'Push panel down': ['Réduire le panneau', 'Bajar el panel', 'اخفض اللوحة'],
+};
+// phrases with numbers or dates
+const TR_RE = [
+  [/^Updated (.+)$/, ['Mis à jour $1', 'Actualizado $1', 'آخر تحديث $1']],
+  [/^checked (.+)$/, ['vérifié $1', 'revisado $1', 'تم التحقق $1']],
+  [/^(by sea · )?1 indirect link$/, ['$11 lien indirect', '$11 vínculo indirecto', '$1رابط غير مباشر واحد']],
+  [/^(by sea · )?(\d+) indirect links$/, ['$1$2 liens indirects', '$1$2 vínculos indirectos', '$1$2 روابط غير مباشرة']],
+  [/^(\d+) headlines · last 2 days$/, ['$1 titres · 2 derniers jours', '$1 titulares · últimos 2 días', '$1 عنوانًا · آخر يومين']],
+  [/^(\d+) links$/, ['$1 liens', '$1 vínculos', '$1 روابط']],
+  [/^(\d+) countries$/, ['$1 pays', '$1 países', '$1 دول']],
+  [/^All (\d+) headlines to watch$/, ['Les $1 titres à surveiller', 'Los $1 titulares a seguir', 'كل العناوين ($1)']],
+  [/^· (\d+)% of recent headlines mention conflict terms$/, ['· $1 % des titres récents évoquent un conflit', '· $1 % de los titulares recientes mencionan conflicto', '· $1٪ من العناوين الأخيرة تذكر مفردات نزاع']],
+  [/^(\d+) countries and territories, including (\d+) small states shown as dots$/, ['$1 pays et territoires, dont $2 petits États représentés par des points', '$1 países y territorios, incluidos $2 estados pequeños como puntos', '$1 دولة وإقليمًا، منها $2 دولة صغيرة معروضة كنقاط']],
+  [/^(\d+) strategic locations across five categories$/, ['$1 lieux stratégiques en cinq catégories', '$1 lugares estratégicos en cinco categorías', '$1 موقعًا استراتيجيًا في خمس فئات']],
+  [/^(\d+) annotated bilateral relationships, plus alliances and blocs$/, ['$1 relations bilatérales annotées, plus alliances et blocs', '$1 relaciones bilaterales comentadas, más alianzas y bloques', '$1 علاقة ثنائية موثقة، إضافة إلى التحالفات والتكتلات']],
+];
+// phrases with a country name inside (the name gets translated too)
+const tn = n => (trMap && trMap.get(n)) || n;
+TR_RE.push(
+  [/^✦ Explain (.+)'s foreign policy$/, (m, n) => ['✦ Expliquer la politique étrangère : ' + tn(n), '✦ Explicar la política exterior de ' + tn(n), '✦ اشرح السياسة الخارجية لـ' + tn(n)]],
+  [/^Google News, refreshed at 00:00, 12:00 and 18:00 Berlin time · last (.+)\.$/, (m, d) => ['Google News, mis à jour à 0 h, 12 h et 18 h (heure de Berlin) · dernier : ' + d + '.', 'Google News, actualizado a las 00:00, 12:00 y 18:00 (hora de Berlín) · último: ' + d + '.', 'Google News، يُحدَّث في 00:00 و12:00 و18:00 بتوقيت برلين · آخر تحديث ' + d + '.']],
+  [/^Headlines last refreshed (.+); the site refreshes at 00:00, 12:00 and 18:00 Berlin time\.$/, (m, d) => ['Titres mis à jour ' + d + ' ; le site se met à jour à 0 h, 12 h et 18 h (heure de Berlin).', 'Titulares actualizados ' + d + '; el sitio se actualiza a las 00:00, 12:00 y 18:00 (hora de Berlín).', 'آخر تحديث للعناوين ' + d + '؛ يُحدَّث الموقع في 00:00 و12:00 و18:00 بتوقيت برلين.']],
+  [/^Headlines naming two or more countries with words like war, sanctions, ceasefire or coup, from the last 7 days\. Keyword matching only: read the article before drawing conclusions\.$/, () => [
+    'Titres citant au moins deux pays avec des mots comme guerre, sanctions, cessez-le-feu ou coup d’État, sur 7 jours. Simple repérage par mots-clés : lisez l’article avant de conclure.',
+    'Titulares que nombran dos o más países con palabras como guerra, sanciones, alto el fuego o golpe, de los últimos 7 días. Solo coincidencia de palabras: lee el artículo antes de sacar conclusiones.',
+    'عناوين تذكر دولتين أو أكثر مع كلمات مثل حرب أو عقوبات أو وقف إطلاق النار أو انقلاب، خلال آخر 7 أيام. مطابقة كلمات فقط: اقرأ المقال قبل الاستنتاج.']]
+);
+// "20 min ago" etc. inside longer text (source · time)
+const TR_AGO = [[/(\d+) min ago/, ['il y a $1 min', 'hace $1 min', 'منذ $1 دقيقة']], [/(\d+) h ago/, ['il y a $1 h', 'hace $1 h', 'منذ $1 ساعة']], [/(\d+) d ago/, ['il y a $1 j', 'hace $1 d', 'منذ $1 يوم']]];
+const LI = {fr: 0, es: 1, ar: 2};
+// country names: ISO3 -> ISO2 for the browser's translations; a few set by hand
+const ISO2 = Object.fromEntries('AFGAF AGOAO ALBAL AREAE ARGAR ARMAM AUSAU AUTAT AZEAZ BDIBI BELBE BENBJ BFABF BGDBD BGRBG BHSBS BIHBA BLRBY BLZBZ BOLBO BRABR BRNBN BTNBT BWABW CAFCF CANCA CHECH CHLCL CHNCN CIVCI CMRCM CODCD COGCG COLCO CRICR CUBCU CYPCY CZECZ DEUDE DJIDJ DNKDK DOMDO DZADZ ECUEC EGYEG ERIER ESPES ESTEE ETHET FINFI FJIFJ FRAFR GABGA GBRGB GEOGE GHAGH GINGN GMBGM GNBGW GNQGQ GRCGR GTMGT GUYGY HNDHN HRVHR HTIHT HUNHU IDNID INDIN IRLIE IRNIR IRQIQ ISLIS ISRIL ITAIT JAMJM JORJO JPNJP KAZKZ KENKE KGZKG KHMKH KORKR XKXXK KWTKW LAOLA LBNLB LBRLR LBYLY LKALK LSOLS LTULT LUXLU LVALV MARMA MDAMD MDGMG MEXMX MKDMK MLIML MMRMM MNEME MNGMN MOZMZ MRTMR MWIMW MYSMY NAMNA NERNE NGANG NICNI NLDNL NORNO NPLNP NZLNZ OMNOM PAKPK PANPA PERPE PHLPH PNGPG POLPL PRKKP PRTPT PRYPY QATQA ROURO RUSRU RWARW ESHEH SAUSA SDNSD SSDSS SENSN SLBSB SLESL SLVSV SOMSO SRBRS SURSR SVKSK SVNSI SWESE SWZSZ SYRSY TCDTD TGOTG THATH TJKTJ TKMTM TLSTL TTOTT TUNTN TURTR TWNTW TZATZ UGAUG UKRUA URYUY USAUS UZBUZ VENVE VNMVN VUTVU YEMYE ZAFZA ZMBZM ZWEZW SGPSG BHRBH MLTMT MDVMV MUSMU SYCSC CPVCV COMKM STPST BRBBB ATGAG DMADM GRDGD KNAKN LCALC VCTVC ANDAD MCOMC LIELI SMRSM VATVA WSMWS TONTO KIRKI FSMFM PLWPW MHLMH TUVTV NRUNR'.split(' ').map(s => [s.slice(0, 3), s.slice(3)]));
+const NAME_LOC = {PSE: ['Palestine', 'Palestina', 'فلسطين'], NCY: ['Chypre du Nord', 'Chipre del Norte', 'شمال قبرص'], SOL: ['Somaliland', 'Somalilandia', 'أرض الصومال']};
+let trMap = null, nameRe = null, localNames = {};
+function buildTr(){
+  trMap = new Map(); localNames = {};
+  if (LANG === 'en') return;
+  const li = LI[LANG];
+  Object.entries(TR).forEach(([en, t]) => trMap.set(en, t[li]));
+  let dn = null; try { dn = new Intl.DisplayNames([LANG], {type: 'region'}); } catch(e){}
+  ALL_IDS.forEach(id => {
+    const en = ENT[id].name; let loc = NAME_LOC[id] ? NAME_LOC[id][li] : null;
+    if (!loc && dn && ISO2[id]){ try { loc = dn.of(ISO2[id]); } catch(e){} }
+    if (loc && loc !== ISO2[id]){ localNames[id] = loc; if (!trMap.has(en)) trMap.set(en, loc); }
+  });
+  const names = ALL_IDS.map(id => ENT[id].name).filter(n => trMap.has(n)).sort((a, b) => b.length - a.length);
+  nameRe = new RegExp('(^|[^\\p{L}])(' + names.map(n => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')(?![\\p{L}])', 'gu');
+}
+function trText(s){
+  const core = s.trim(); if (!core) return s;
+  let out = trMap.get(core);
+  if (out == null){
+    const li = LI[LANG];
+    for (const [re, t] of TR_RE){ if (re.test(core)){ out = typeof t === 'function' ? t(...core.match(re))[li] : core.replace(re, t[li]); break; } }
+  }
+  if (out == null) return null;
+  return s.replace(core, out);
+}
+const NAME_HOSTS = 'b, h2, h3, th, .tag, .tip b, option, .th-title, .kw, .fc';
+function translateNode(n){
+  if (n.nodeType === 3){
+    // skip AI answers (already in the chosen language), headlines and the reader's own question
+    if (!n.nodeValue.trim() || n.parentElement && n.parentElement.closest('script, style, .city, input, textarea, .ai h3, .ai h4, .ai li, .ai p:not(.muted):not(.faint), .alerts a, .news a, .feed a, .q-asked')) return;
+    if (n.__en === undefined || (n.nodeValue !== n.__tr)) n.__en = n.nodeValue;   // remember the English original
+    let v = trText(n.__en);
+    if (v == null && n.parentElement && n.parentElement.closest(NAME_HOSTS) && nameRe) v = n.__en.replace(nameRe, (m, pre, nm) => pre + trMap.get(nm));
+    if (v == null && /ago/.test(n.__en)){ const li = LI[LANG]; v = TR_AGO.reduce((s, [re, t]) => s.replace(re, t[li]), n.__en); }
+    if (v != null && v !== n.nodeValue){ n.__tr = v; n.nodeValue = v; }
+    return;
+  }
+  if (n.nodeType !== 1 || n.matches('script, style, .city')) return;
+  ['placeholder', 'title', 'aria-label'].forEach(a => {
+    const cur = n.getAttribute(a); if (!cur) return;
+    const key = 'en' + a; if (n[key] === undefined || cur !== n['tr' + a]) n[key] = cur;
+    const v = trText(n[key]); if (v != null && v !== cur){ n['tr' + a] = v; n.setAttribute(a, v); }
+  });
+  n.childNodes.forEach(translateNode);
+}
+let trBusy = false;
+const trObserver = new MutationObserver(ms => {
+  if (trBusy || LANG === 'en') return; trBusy = true;
+  try { ms.forEach(m => { if (m.type === 'characterData') translateNode(m.target); else m.addedNodes.forEach(translateNode); }); } finally { trBusy = false; }
+});
+function restoreEnglish(n){
+  if (n.nodeType === 3){ if (n.__en !== undefined && n.nodeValue === n.__tr) n.nodeValue = n.__en; return; }
+  if (n.nodeType !== 1) return;
+  ['placeholder', 'title', 'aria-label'].forEach(a => { if (n['en' + a] !== undefined && n.getAttribute(a) === n['tr' + a]) n.setAttribute(a, n['en' + a]); });
+  n.childNodes.forEach(restoreEnglish);
+}
+function setLang(l, redraw = true){
+  const prev = LANG; LANG = LANG_NAME[l] ? l : 'en';
+  try { localStorage.setItem('fl-lang', LANG); } catch(e){}
+  document.documentElement.lang = LANG; document.documentElement.dir = LANG === 'ar' ? 'rtl' : 'ltr';
+  document.getElementById('lang-sel').value = LANG;
+  trObserver.disconnect();
+  if (prev !== 'en') restoreEnglish(document.body);
+  buildTr();
+  if (LANG !== 'en'){ trBusy = true; try { translateNode(document.body); } finally { trBusy = false; } trObserver.observe(document.body, {subtree: true, childList: true, characterData: true}); }
+  if (redraw && prev !== LANG){ loadFeed(); onNews(); }   // redraw the open panel (dates, badge) in the new language
+}
+document.getElementById('lang-sel').onchange = e => setLang(e.target.value);
+// AI answers in the chosen language
+const aiLangNote = json => LANG === 'en' ? '' : `\n\nWrite ${json ? 'all text values' : 'the whole answer'} in ${LANG_NAME[LANG]}${json ? ' (keep the JSON keys in English)' : ''}. Keep names of people, groups and places recognisable.`;
+
+/* ================================================================
+   ASK: free questions, answered by the AI with the globe's data as context
+   ================================================================ */
+const askForm = document.getElementById('ask-form'), askQ = document.getElementById('ask-q'), askBtn = document.getElementById('ask-btn');
+askBtn.onclick = () => { const on = !askForm.classList.contains('open'); askForm.classList.toggle('open', on); askBtn.setAttribute('aria-expanded', on); if (on) askQ.focus(); };
+askForm.onsubmit = e => { e.preventDefault(); const q = askQ.value.trim(); if (q.length < 3) return; askQ.blur(); renderAsk(q); };
+function mentioned(q){
+  const low = ' ' + q.toLowerCase() + ' ';
+  const hit = (name) => { const n = name.toLowerCase(); const i = low.indexOf(n); return i > 0 && !/\p{L}/u.test(low[i - 1]) && !/\p{L}/u.test(low[i + n.length] || ' '); };
+  const DEMONYM = {USA: ['american', 'us ', 'u.s.', 'washington'], GBR: ['british', 'uk ', 'britain', 'london'], RUS: ['russian', 'kremlin', 'moscow'], CHN: ['chinese', 'beijing'], UKR: ['ukrainian', 'kyiv'], ISR: ['israeli'], IRN: ['iranian', 'tehran'], TUR: ['turkish', 'turkey', 'ankara'], SAU: ['saudi', 'riyadh'], FRA: ['french'], DEU: ['german'], IND: ['indian'], PAK: ['pakistani'], EGY: ['egyptian', 'cairo'], JPN: ['japanese'], KOR: ['south korea', 'korean'], PRK: ['north korea', 'pyongyang'], PSE: ['palestinian', 'gaza', 'west bank'], SYR: ['syrian'], ARE: ['uae', 'emirati'], TWN: ['taiwanese']};
+  const ids = ALL_IDS.filter(id => allNames(id).some(hit) || (DEMONYM[id] || []).some(d => low.includes(' ' + d)));
+  const pois = POIS.filter(p => hit(p.n) || hit(p.n.replace(/^(Strait|Straits|Gulf|Port) of /, '')));
+  return {ids: ids.slice(0, 6), pois: pois.slice(0, 4)};
+}
+// every country's name in English, French, Spanish and Arabic, so questions in any language find their countries
+let NAMES_ALL = null;
+function allNames(id){
+  if (!NAMES_ALL){
+    NAMES_ALL = {};
+    const dns = ['fr', 'es', 'ar'].map(l => { try { return new Intl.DisplayNames([l], {type: 'region'}); } catch(e){ return null; } });
+    ALL_IDS.forEach(i => {
+      const list = [ENT[i].name];
+      dns.forEach((dn, k) => { const v = NAME_LOC[i] ? NAME_LOC[i][k] : (dn && ISO2[i] ? (() => { try { return dn.of(ISO2[i]); } catch(e){ return null; } })() : null); if (v && v !== ISO2[i]) list.push(v); });
+      NAMES_ALL[i] = [...new Set(list)];
+    });
+  }
+  return NAMES_ALL[id] || [];
+}
+function askPrompt(q, ids, pois){
+  const news = ids.flatMap(id => { const c = NEWS && NEWS.countries && NEWS.countries[id]; return c ? newsItems(c.i).slice(0, 4).map(it => `- ${it.t} (${it.s || 'news'}, ${ago(it.d)})`) : []; });
+  const th = THREADS.filter(t => ids.some(i => t.c.includes(i))).slice(0, 8);
+  const pairs = []; ids.forEach((a, i) => ids.slice(i + 1).forEach(b => { const f = pairFacts(a, b); pairs.push(`- ${f.A} – ${f.B}: ${STATUS[f.r.s].label} — ${f.r.note}`); }));
+  return `${RULES}
+
+A reader of the globe asks: "${q.replace(/"/g, "'")}"
+Answer it directly in the first one or two sentences, then add short "### " sections with bullets only where they help. About 150–400 words, shorter if the question is simple. If the question is not about international affairs, geopolitics, geography or the countries and places on this globe, say in one sentence that this assistant only covers world affairs.
+${ids.length ? `Page data for the countries mentioned:\n${ids.map(id => `${ENT[id].name} (blocs: ${blocsOf(id).map(b => b.name).join(', ') || 'none'}):\n${relLines(id, 10)}`).join('\n')}\n` : ''}${pairs.length ? `Between them:\n${pairs.join('\n')}\n` : ''}${th.length ? `Transnational issues:\n${threadLines(th)}\n` : ''}${pois.length ? `Places mentioned:\n${pois.map(p => `- ${p.n}: ${p.s}. ${p.d}`).join('\n')}\n` : ''}${news.length ? `Recent headlines:\n${news.slice(0, 12).join('\n')}\n` : ''}`;
+}
+async function renderAsk(q){
+  const {ids, pois} = mentioned(q);
+  clearSelectionQuiet();
+  panel.innerHTML = head('Your question', 'Question') + `<div class="p-body">
+    <p class="q-asked">${esc(q)}</p>
+    ${ids.length || pois.length ? `<section><h3>Mentioned on the map</h3><div class="chips">${ids.map(c => `<button class="tag" data-c="${c}">${esc(ENT[c].name)}</button>`).join('')}${pois.map(p => `<button class="tag" data-p="${POIS.indexOf(p)}"><i class="g g-${p.t}"></i> ${esc(p.n)}</button>`).join('')}${ids.length >= 2 ? `<button class="tag" data-cmp="${ids.join('|')}">⇄ Compare these countries</button>` : ''}</div></section>` : ''}
+    <div class="ai"><p class="muted thinking">Thinking…</p></div></div>`;
+  wirePanel(); panelMode = 'ask';
+  if (ids.length){ const e = ENT[ids[0]]; fly(e.lat, e.lng); }
+  const out = panel.querySelector('.ai');
+  const sample = await getSample();
+  if (!sample){ out.innerHTML = `<p class="muted">${esc(AI_MSG.rate_limited)}</p>`; return; }
+  try {
+    const {text, truncated} = await sample(askPrompt(q, ids, pois), {kind: 'ask', cache: {gcTime: 86400000}, onText: ({text}) => { out.innerHTML = md(text); }});
+    out.innerHTML = md(text) + (truncated ? '<p class="faint">Cut short.</p>' : '') + '<p class="faint">Written by AI from the page\'s data and its own knowledge; check recent events against the news.</p>';
+  } catch(e){
+    out.innerHTML = (e && e.text ? md(e.text) : '') + `<p class="muted">${esc(AI_MSG[e && e.code] || 'Something went wrong. Try again.')}</p>`;
+  }
+}
+
+/* ================================================================
+   LIVE FEED: latest world headlines (Worker /live, every few minutes), ticker at the bottom left
+   ================================================================ */
+let FEED = [], feedAt = null, tkIdx = 0;
+const FEED_KW = /\b(war|attacks?|strikes?|missiles?|drones?|ceasefire|truce|sanctions?|coup|invasion|invades?|clashes|killed|troops|nuclear|blockade|hostages?|bomb\w*|shelling|offensive|guerre|attaque|frappe|cessez-le-feu|guerra|ataque|misil|bombardeo|alto el fuego)\b|حرب|هجوم|غارة|صاروخ|عقوبات|قصف|اشتباكات/i;
+function tagFeed(it){
+  if (it.c) return it;
+  const {ids} = mentioned(it.t);
+  const m = it.t.match(FEED_KW);
+  return Object.assign(it, {c: ids.slice(0, 3), kw: m ? m[0] : '', imp: !!m && ids.length > 0});
+}
+async function loadFeed(){
+  let items = [];
+  try {
+    const r = await fetch(`${AI_PROXY}/live?lang=${LANG}`);
+    if (r.ok){ const d = await r.json(); items = d.items || []; feedAt = d.generated; }
+  } catch(e){}
+  if (!items.length){   // older Worker without /live: use the flagged headlines the site already has
+    items = ((NEWS && NEWS.alerts) || []).map(a => ({t: a.t, u: a.u, s: a.s, d: a.d, c: a.c, kw: a.kw, imp: true}));
+    feedAt = NEWS && NEWS.generated;
+  }
+  FEED = items.map(tagFeed);
+  // important ones first in the ticker, then newest
+  tkIdx = 0; showTicker();
+  if (panelMode === 'feed') renderFeed();
+}
+function tickerList(){ const imp = FEED.filter(f => f.imp); return (imp.length >= 5 ? imp : FEED).slice(0, 15); }
+function showTicker(){
+  const tk = document.getElementById('ticker'), el = document.getElementById('tk-item'), list = tickerList();
+  if (!list.length){ tk.hidden = true; return; }
+  tk.hidden = false;
+  const it = list[tkIdx % list.length];
+  el.innerHTML = `${it.c && it.c.length ? `<b>${esc(it.c.map(c => ENT[c].name).join(' – '))}</b>` : ''}<span dir="auto">${esc(it.t)}</span><small>${esc(ago(it.d))}</small>`;
+  el.title = it.t; el.dataset.i = FEED.indexOf(it);
+  el.dir = /[֐-ࣿ]/.test(it.t) ? 'rtl' : 'ltr';   // cut off at the end of the headline, whatever the page direction
+}
+setInterval(() => { const el = document.getElementById('tk-item'); if (!FEED.length || document.hidden) return; el.classList.add('fade'); setTimeout(() => { tkIdx++; showTicker(); el.classList.remove('fade'); }, 320); }, 7000);
+document.getElementById('tk-open').onclick = () => panelMode === 'feed' ? renderIntro() : renderFeed();
+document.getElementById('live-btn').onclick = () => panelMode === 'feed' ? renderIntro() : renderFeed();
+document.getElementById('tk-item').onclick = e => { const it = FEED[+e.currentTarget.dataset.i]; if (!it) return renderFeed(); if (it.c && it.c.length >= 2) startCompare(it.c); else if (it.c && it.c.length) selectCountry(it.c[0]); else renderFeed(); };
+function renderFeed(){
+  clearSelectionQuiet();
+  const li = it => `<li class="${it.imp ? 'imp' : ''}">${it.imp && it.kw ? `<b class="kwb">${esc(it.kw)}</b>` : ''}<span dir="auto">${safeUrl(it.u) ? `<a href="${esc(safeUrl(it.u))}" target="_blank" rel="noopener">${esc(it.t)}</a>` : esc(it.t)}</span>
+    <span class="nmeta">${esc(it.s || '')}${it.s ? ' · ' : ''}${esc(ago(it.d))}</span>
+    ${it.c && it.c.length ? `<div class="fc">${it.c.map(c => `<button class="tag" data-c="${c}">${esc(ENT[c].name)}</button>`).join('')}${it.c.length >= 2 ? `<button class="tag" data-cmp="${it.c.join('|')}">⇄</button>` : ''}</div>` : ''}</li>`;
+  panel.innerHTML = head('World news', 'Live feed') + `<div class="p-body">
+    <section><h3>Latest headlines <em>${feedAt ? esc(fmtDateTime(feedAt)) : ''}</em></h3>
+    ${FEED.length ? `<ul class="feed news">${FEED.slice(0, 50).map(li).join('')}</ul>` : '<p class="note muted">No live headlines right now.</p>'}</section>
+    <p class="hidden-note">Google News world headlines, checked every few minutes. Headlines that name a country and words like war, strike or sanctions are marked.</p></div>`;
+  wirePanel(); panelMode = 'feed';
+  document.getElementById('live-btn').setAttribute('aria-pressed', 'true');
+}
+setInterval(() => { if (!document.hidden) loadFeed(); }, 5 * 60 * 1000);
+
 /* start in a working state */
+let startLang = 'en'; try { startLang = localStorage.getItem('fl-lang') || ((navigator.language || 'en').slice(0, 2)); } catch(e){}
+setLang(LANG_NAME[startLang] ? startLang : 'en', false);
+buildIndex();   // now with the French, Spanish and Arabic country names
 renderIntro();
+setTimeout(loadFeed, 1500);
 </script>
 </body>
 </html>

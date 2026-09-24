@@ -234,6 +234,46 @@ async function answerAuto(request, env, ctx, ip, kind) {
   return deny(429, "All free AI providers are used up for the moment. Please try again later.");
 }
 
+/* ------------------------------------------------------------------ live feed (Google News RSS, free) */
+const NEWS_LANG = {
+  en: "hl=en-US&gl=US&ceid=US:en", fr: "hl=fr&gl=FR&ceid=FR:fr", es: "hl=es&gl=ES&ceid=ES:es", ar: "hl=ar&gl=EG&ceid=EG:ar",
+};
+const NEWS_QUERIES = {
+  en: ["war OR attack OR missile OR drone OR strike", "sanctions OR ceasefire OR coup OR talks OR summit"],
+  fr: ["guerre OR attaque OR missile OR frappe", "sanctions OR cessez-le-feu OR coup OR sommet"],
+  es: ["guerra OR ataque OR misil OR bombardeo", "sanciones OR alto el fuego OR golpe OR cumbre"],
+  ar: ["حرب OR هجوم OR صاروخ OR غارة", "عقوبات OR وقف إطلاق النار OR انقلاب OR قمة"],
+};
+const unxml = s => s.replace(/<!\[CDATA\[|\]\]>/g, "").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">")
+  .replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&#(\d+);/g, (_, n) => String.fromCharCode(+n)).trim();
+function parseRss(xml){
+  const out = [];
+  for (const m of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)){
+    const b = m[1], g = tag => { const r = b.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`)); return r ? unxml(r[1]) : ""; };
+    let t = g("title"); const s = g("source");
+    if (s && t.endsWith(" - " + s)) t = t.slice(0, -(s.length + 3));
+    const d = new Date(g("pubDate"));
+    if (t) out.push({ t: t.slice(0, 300), u: g("link").slice(0, 2000), s: s.slice(0, 80), d: isNaN(d) ? null : d.toISOString() });
+  }
+  return out;
+}
+async function liveFeed(lang, ctx){
+  if (!NEWS_LANG[lang]) lang = "en";
+  const cache = caches.default, ck = new Request(`https://faultlines-cache/live/${lang}`);
+  const hit = await cache.match(ck);
+  if (hit) return new Response(hit.body, { status: 200, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "hit" }) });
+  const base = "https://news.google.com/rss", p = NEWS_LANG[lang];
+  const urls = [`${base}/headlines/section/topic/WORLD?${p}`, ...NEWS_QUERIES[lang].map(q => `${base}/search?q=${encodeURIComponent(q + " when:1d")}&${p}`)];
+  const lists = await Promise.all(urls.map(u => fetch(u, { headers: { "User-Agent": "Mozilla/5.0 (Faultlines live feed)" } })
+    .then(r => r.ok ? r.text() : "").then(parseRss).catch(() => [])));
+  const seen = new Set(), items = [];
+  for (const it of lists.flat()){ const k = it.t.toLowerCase().slice(0, 80); if (!seen.has(k)){ seen.add(k); items.push(it); } }
+  items.sort((a, b) => (b.d || "").localeCompare(a.d || ""));
+  const body = JSON.stringify({ lang, generated: new Date().toISOString(), items: items.slice(0, 80) });
+  if (items.length) ctx.waitUntil(cache.put(ck, new Response(body, { headers: { "Content-Type": "application/json", "Cache-Control": "max-age=600" } })));
+  return new Response(body, { status: items.length ? 200 : 502, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "miss" }) });
+}
+
 export default {
   async fetch(request, env, ctx) {
     const origin = request.headers.get("Origin") || "";
@@ -250,6 +290,9 @@ export default {
       ctx.waitUntil(logEvent(env, request, { kind: "visit", status: 200 }));
       return new Response(null, { status: 204, headers: cors() });
     }
+
+    // --- live feed: latest world headlines from Google News, cached 10 minutes per language ---
+    if (path === "live") return liveFeed(url.searchParams.get("lang") || "en", ctx);
 
     // --- admin: usage log ---
     if (path === "admin/logs") {
