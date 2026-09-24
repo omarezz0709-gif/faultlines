@@ -41,23 +41,32 @@ def _version(name: str) -> tuple:
     return tuple(float(n) for n in nums[:1]) or (0.0,)
 
 
-FALLBACK_MODELS = ["gemini-3.6-flash", "gemini-flash-latest"]   # Google's recommended model first
+FALLBACK_MODELS = ["gemini-3.6-flash"]   # Google's recommended model first
+LAST_RESORT = ["gemini-3.8-flash", "gemma-4-31b-it", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite"]
+BAD = ("image", "tts", "audio", "live", "thinking-exp", "8b", "omni", "embed")
 
 
 def pick_models(models: list[dict]) -> list[str]:
-    """Flash models that can generate text, newest stable first, never lite/image/audio; then safe fallbacks."""
-    ok = []
+    """The free tier allows ~20 requests a day per model, so return a spread: best Flash models (newest stable first),
+    then the largest Gemma model, then the Lite models, then other Gemma models."""
+    flash, lite, gemma = [], [], []
     for m in models:
-        name = m.get("name", "")
+        name = m.get("name", "").split("/")[-1]
         low = name.lower()
-        if "generateContent" not in (m.get("supportedGenerationMethods") or []):
+        if "generateContent" not in (m.get("supportedGenerationMethods") or []) or any(x in low for x in BAD):
             continue
-        if "flash" not in low or any(x in low for x in ("lite", "image", "tts", "audio", "live", "thinking-exp", "8b", "omni")):
-            continue
-        ok.append((_version(name), "preview" not in low and "exp" not in low, name.split("/")[-1]))
-    ok = [t for t in ok if t[0] >= (3.0,)]              # 2.x models are retired for new users
-    ok.sort(key=lambda t: (t[1], t[0]), reverse=True)   # stable first, then newest
-    return list(dict.fromkeys(FALLBACK_MODELS + [t[2] for t in ok]))
+        key = (_version(name), "preview" not in low and "exp" not in low, name)
+        if low.startswith("gemma-"):
+            gemma.append(key)
+        elif low.startswith("gemini-") and "flash-lite" in low and (key[0] >= (3.0,) or "latest" in low):
+            lite.append(key)
+        elif low.startswith("gemini-") and "flash" in low and "lite" not in low and key[0] >= (3.0,):
+            flash.append(key)
+    for lst in (flash, lite):
+        lst.sort(key=lambda t: (t[1], t[0]), reverse=True)   # stable first, then newest
+    gemma.sort(key=lambda t: (t[0], "31b" in t[2]), reverse=True)
+    order = FALLBACK_MODELS + [t[2] for t in flash] + [t[2] for t in gemma[:1]] + [t[2] for t in lite] + [t[2] for t in gemma[1:]]
+    return list(dict.fromkeys(order)) if len(order) > 1 else FALLBACK_MODELS + LAST_RESORT
 
 
 def pick_model(models: list[dict]) -> str:
@@ -73,18 +82,22 @@ def call_gemini(key: str, system: str, prompt: str) -> str:
             candidates = pick_models(_req("GET", f"{API}/models?pageSize=200", key).get("models", []))
         except Exception as e:
             print(f"model list failed ({e}); using fallbacks")
-            candidates = list(FALLBACK_MODELS)
-    body = {
-        "systemInstruction": {"parts": [{"text": system}]},
-        "contents": [{"role": "user", "parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.2, "responseMimeType": "application/json", "maxOutputTokens": 16384},
-    }
-    # try models in order: a busy (503), retired (404) or rate-limited (429) model falls through to the next
-    tries = [m for m in dict.fromkeys(candidates)][:5]
+            candidates = FALLBACK_MODELS + LAST_RESORT
+
+    def body_for(model: str) -> dict:
+        if model.startswith("gemma"):   # Gemma: no system instruction or JSON mode; the prompt asks for JSON
+            return {"contents": [{"role": "user", "parts": [{"text": system + "\n\n" + prompt}]}],
+                    "generationConfig": {"temperature": 0.2, "maxOutputTokens": 16384}}
+        return {"systemInstruction": {"parts": [{"text": system}]},
+                "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+                "generationConfig": {"temperature": 0.2, "responseMimeType": "application/json", "maxOutputTokens": 16384}}
+
+    # try models in order: a busy (503), retired (404), rate-limited (429) or unsupported (400 on Gemma) model falls through
+    tries = [m for m in dict.fromkeys(candidates)][:10]
     for attempt, model in enumerate(tries):
         print(f"Using {model}", flush=True)
         try:
-            res = _req("POST", f"{API}/models/{model}:generateContent", key, body)
+            res = _req("POST", f"{API}/models/{model}:generateContent", key, body_for(model))
             cands = res.get("candidates") or []
             if not cands:
                 raise SystemExit(f"Gemini returned no answer: {json.dumps(res.get('promptFeedback', {}))[:300]}")
@@ -94,7 +107,7 @@ def call_gemini(key: str, system: str, prompt: str) -> str:
             return "".join(p.get("text", "") for p in parts)
         except urllib.error.HTTPError as e:
             msg = e.read().decode(errors="replace")[:300]
-            if e.code in (404, 429, 500, 503) and attempt < len(tries) - 1:
+            if (e.code in (404, 429, 500, 503) or (e.code == 400 and model.startswith("gemma"))) and attempt < len(tries) - 1:
                 print(f"{model}: HTTP {e.code}, trying the next model: {msg}")
                 time.sleep(10)
                 continue

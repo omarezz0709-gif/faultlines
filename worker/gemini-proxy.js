@@ -129,7 +129,7 @@ export default {
     }
 
     // --- generate: models/<flash model>:streamGenerateContent or :generateContent ---
-    const m = path.match(/^models\/(gemini-[a-z0-9.\-]*flash[a-z0-9.\-]*):(streamGenerateContent|generateContent)$/);
+    const m = path.match(/^models\/(gemini-[a-z0-9.\-]*flash[a-z0-9.\-]*|gemma-[a-z0-9.\-]+):(streamGenerateContent|generateContent)$/);
     if (request.method !== "POST" || !m) return deny(404, "Unsupported request.");
     const raw = await request.text();
     if (raw.length > MAX_BODY_BYTES) return deny(413, "Request too large.");
