@@ -252,8 +252,10 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
 .panel.min .collapse{display:grid}
 @media (min-width:761px){
   /* panel open: centre the globe in the space left of it; pushed down: title bar at the bottom, globe back in the middle */
-  #globe{left:-400px;transition:left .45s ease}   /* canvas is 400px wider than the window (globeW) */
-  body.pmin #globe{left:-200px}
+  /* the canvas is 400px wider than the window (globeW); the box must be exactly as wide, or clicks land off-target.
+     open: globe 100px left of centre; pushed down: centred */
+  #globe{left:-300px;right:-100px;transition:left .45s ease,right .45s ease}
+  body.pmin #globe{left:-200px;right:-200px}
   .collapse{display:grid}
   .panel.min{top:auto}
 }
@@ -1179,6 +1181,10 @@ const globe = new Globe(globeEl, {animateIn:true})
   .arcDashLength(0.45).arcDashGap(0.18).arcDashAnimateTime(reduceMotion ? 0 : 2400)
   .ringsData([]).ringColor(()=>t=>`rgba(212,175,55,${1-t})`).ringMaxRadius(3.5).ringPropagationSpeed(2.2).ringRepeatPeriod(1100)
   .htmlElementsData(POIS).htmlLat('lat').htmlLng('lng').htmlAltitude(0.013).htmlElement(makeMarker)
+  // admin map: purple dot per place pings came from (filled only while the admin page is open)
+  .labelsData([]).labelLat('lat').labelLng('lng').labelText(() => '').labelSize(0).labelAltitude(0.016)
+  .labelDotRadius(d => 0.7 + Math.min(1.3, Math.sqrt(d.n) * 0.22)).labelColor(() => '#b36bff').labelResolution(3)
+  .labelLabel(d => tip(esc(d.where), `<span class="muted">${d.n} ping${d.n === 1 ? '' : 's'} · last ${esc(fmtDateTime(d.last))}</span>`))
   .onGlobeClick(()=>{ if (sel.type!=='compare' && !justClickedMarker()) clearSelection(); });
 globe.htmlElementVisibilityModifier((el,v)=>{ el.style.opacity = v ? 1 : 0; el.style.pointerEvents = v ? 'auto' : 'none'; });
 
@@ -1190,6 +1196,8 @@ globeEl.addEventListener('pointerdown', ()=>{ ctr.autoRotate = false; });
 window.addEventListener('resize', ()=> globe.width(globeW()).height(window.innerHeight));
 // after the globe slides beside/behind the panel, let globe.gl re-measure where it is, or clicks miss
 globeEl.addEventListener('transitionend', e => { if (e.target === globeEl) window.dispatchEvent(new Event('resize')); });
+// same once the page has settled (fonts, layout), so the very first clicks land on the right country
+window.addEventListener('load', () => setTimeout(() => window.dispatchEvent(new Event('resize')), 300));
 
 /* gold graticule: every 15°, equator and prime meridian a touch brighter */
 const GRAT = [];
@@ -1298,6 +1306,7 @@ function setMin(on){
 function toggleMin(){ setMin(!panel.classList.contains('min')); }
 function wirePanel(){
   setMin(false); panelMode = '';
+  hideAdminMap(); document.getElementById('admin-btn').setAttribute('aria-pressed', 'false');   // leaving the admin page
   const ph = panel.querySelector('.p-head'); if (ph) ph.onclick = e => { if (mob() && !e.target.closest('button')) toggleMin(); };
   const all = document.getElementById('all-upd'); if (all) all.onclick = renderChanges;
   panel.querySelectorAll('[data-allnews]').forEach(b => b.onclick = renderChanges);
@@ -2398,13 +2407,32 @@ applyAIVisibility();
 /* ---------- admin (usage log from the AI Worker; the code is checked by the Worker) ---------- */
 const regionName = (() => { try { const d = new Intl.DisplayNames(['en'], {type: 'region'}); return c => { try { return c ? d.of(c) : ''; } catch(e){ return c; } }; } catch(e){ return c => c; } })();
 function adminCode(){ try { return sessionStorage.getItem('fl-admin') || ''; } catch(e){ return ''; } }
+const adminBtn = document.getElementById('admin-btn');
+/* purple dots on the globe: one per place pings came from (Cloudflare's city coordinates; older entries without
+   coordinates fall back to the middle of their country), bigger dots = more pings */
+var adminPts = [];   // var: wirePanel may run before this line
+function showAdminMap(logs){
+  const byName = new Map(ALL_IDS.map(id => [ENT[id].name, ENT[id]]));
+  const groups = new Map();
+  logs.forEach(x => {
+    let lat = x.la, lng = x.lo, where = [x.ci, regionName(x.co)].filter(Boolean).join(', ');
+    if (lat == null || lng == null){ const e = byName.get(regionName(x.co)); if (!e) return; lat = e.lat; lng = e.lng; where = regionName(x.co) + ' (country)'; }
+    const k = lat.toFixed(1) + ',' + lng.toFixed(1);
+    const g = groups.get(k) || {lat, lng, where, n: 0, last: 0}; g.n++; g.last = Math.max(g.last, x.t); groups.set(k, g);
+  });
+  adminPts = [...groups.values()];
+  globe.labelsData(adminPts);
+  const top = adminPts.slice().sort((a, b) => b.n - a.n)[0];
+  if (top) fly(top.lat, top.lng, mob() ? 2.4 : 2.0);
+}
+function hideAdminMap(){ if (adminPts && adminPts.length){ adminPts = []; globe.labelsData([]); } }
 function renderAdminLogin(msg){
   clearSelectionQuiet();
   panel.innerHTML = head('Admin', 'Usage & logs') + `<div class="p-body">
     <p class="note">Enter the admin code to see who is using the AI, from where, and how the automatic updates are running.</p>
     <form class="admin-form" id="admin-form"><input id="admin-code" type="password" inputmode="numeric" autocomplete="off" placeholder="Code" aria-label="Admin code"><button class="btn" type="submit">Open</button></form>
     ${msg ? `<p class="note" style="color:var(--s-H)">${esc(msg)}</p>` : ''}</div>`;
-  wirePanel(); panelMode = 'admin';
+  wirePanel(); panelMode = 'admin'; adminBtn.setAttribute('aria-pressed', 'true');
   const form = document.getElementById('admin-form');
   form.onsubmit = e => { e.preventDefault(); openAdmin(document.getElementById('admin-code').value.trim()); };
   setTimeout(() => { const i = document.getElementById('admin-code'); if (i && !mob()) i.focus(); }, 50);
@@ -2447,6 +2475,7 @@ function renderAdmin(data){
       <div class="tile"><b>${new Set(d1.map(x => x.v)).size}</b><span>different visitors, last 24 h</span></div>
     </div>
     <section><h3>Where from <em>last 7 days · approximate</em></h3>${rowsTable(countBy(d7, place), 'Place')}
+      <p class="note"><span style="color:#b36bff">●</span> Purple dots on the globe mark where pings came from (last 30 days); bigger = more. Hover a dot for details.</p>
       <p class="note faint">Places come from the visitor's IP address. Internet providers often register addresses at a regional hub, so a city can be off by 100–200 km (e.g. Mannheim showing as Freiburg), especially on mobile data.</p></section>
     <section><h3>Devices <em>last 7 days</em></h3>${rowsTable(countBy(d7, x => x.d), 'Device', 6)}</section>
     <section><h3>What was asked <em>last 7 days</em></h3>${rowsTable(countBy(ai7, x => kindName(x.k)), 'Kind', 8)}</section>
@@ -2458,7 +2487,8 @@ function renderAdmin(data){
     <div class="actions"><button class="tag" id="admin-refresh">↻ Refresh</button><button class="tag" id="admin-out">Log out</button></div>
     <p class="foot">Visitor ids are anonymous and change daily; locations come from Cloudflare (city level) and full IP addresses are never stored. Logs are kept 30 days.</p>
   </div>`;
-  wirePanel(); panelMode = 'admin';
+  wirePanel(); panelMode = 'admin'; adminBtn.setAttribute('aria-pressed', 'true');
+  showAdminMap(logs);
   document.getElementById('admin-refresh').onclick = () => openAdmin(adminCode());
   document.getElementById('admin-out').onclick = () => { try { sessionStorage.removeItem('fl-admin'); } catch(e){} clearSelectionQuiet(); renderIntro(); };
   fetch('https://api.github.com/repos/omarezz0709-gif/faultlines/actions/runs?per_page=10').then(r => r.json()).then(d => {
@@ -2467,7 +2497,8 @@ function renderAdmin(data){
     el.innerHTML = runs.length ? `<table class="atable"><tbody>${runs.map(r => `<tr><td style="white-space:nowrap">${esc(fmtDateTime(r.run_started_at))}</td><td>${esc(r.name)}<br><span class="faint">${esc(r.event === 'schedule' ? 'automatic' : r.event === 'push' ? 'site change' : 'manual')}</span></td><td>${r.status !== 'completed' ? '<span class="st mem">running</span>' : r.conclusion === 'success' ? '<span class="st ok">OK</span>' : `<a class="st err" href="${esc(r.html_url)}" target="_blank" rel="noopener">${esc(r.conclusion)}</a>`}</td></tr>`).join('')}</tbody></table>` : '<p class="note muted">No runs found.</p>';
   }).catch(() => { const el = document.getElementById('admin-runs'); if (el) el.innerHTML = '<p class="note muted">Could not load GitHub runs.</p>'; });
 }
-document.getElementById('admin-btn').onclick = () => adminCode() ? (renderAdminLogin(), openAdmin(adminCode())) : renderAdminLogin();
+// ⚙ toggles: a second click closes the admin page again
+adminBtn.onclick = () => panelMode === 'admin' ? renderIntro() : adminCode() ? (renderAdminLogin(), openAdmin(adminCode())) : renderAdminLogin();
 
 /* count one visit per browser session (for the admin page) */
 try { if (AI_PROXY && !sessionStorage.getItem('fl-visit')){ sessionStorage.setItem('fl-visit', '1'); fetch(`${AI_PROXY}/hit`, {method: 'POST'}).catch(() => {}); } } catch(e){}
