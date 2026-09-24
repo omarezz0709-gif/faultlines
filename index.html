@@ -1376,21 +1376,23 @@ const currentModel = () => MODELS[lsGet('faultlines-model')] ? lsGet('faultlines
 /* Google Gemini (free tier) straight from the browser with the viewer's own key */
 const GEM = 'https://generativelanguage.googleapis.com/v1beta';
 /* Shared AI for every visitor: address of the Cloudflare Worker that holds the Gemini key (worker/gemini-proxy.js). Empty = off. */
-const AI_PROXY = '';
+const AI_PROXY = 'https://faultlines-ai.omarezz0709.workers.dev';
 const aiAvailable = () => !!(lsGet('faultlines-api-key') || AI_PROXY);
 let geminiModelPromise = null;
 function pickGeminiModel(models){
   const ok = models.filter(m => (m.supportedGenerationMethods || []).includes('generateContent'))
     .map(m => m.name.split('/').pop())
-    .filter(n => n.includes('flash') && !/(lite|image|tts|audio|live|8b)/.test(n))
+    .filter(n => n.includes('flash') && !/(lite|image|tts|audio|live|8b|omni)/.test(n))
     .map(n => ({n, stable: !/(preview|exp)/.test(n), v: parseFloat((n.match(/\d+(?:\.\d+)?/) || ['0'])[0])}));
   ok.sort((a, b) => (b.stable - a.stable) || (b.v - a.v));
-  return ok.length ? ok[0].n : 'gemini-2.5-flash';
+  // newest stable first; "flash-latest" and 3.6 as dependable fallbacks when newer ones are busy
+  return [...new Set([...ok.map(x => x.n), ...GEMINI_FALLBACK])];
 }
+const GEMINI_FALLBACK = ['gemini-flash-latest', 'gemini-3.6-flash'];
 const geminiModel = key => geminiModelPromise || (geminiModelPromise =
   fetch(key ? `${GEM}/models?pageSize=200` : `${AI_PROXY}/models`, {headers: key ? {'x-goog-api-key': key} : {}})
     .then(r => r.ok ? r.json() : {models: []}).then(d => pickGeminiModel(d.models || []))
-    .catch(() => 'gemini-2.5-flash'));
+    .catch(() => GEMINI_FALLBACK));
 function withJson(sample){
   sample.json = async (prompt, opts = {}) => {
     const {text} = await sample(prompt, {...opts, json: true});
@@ -1401,10 +1403,10 @@ function withJson(sample){
   return sample;
 }
 async function geminiSample(key){
-  const model = await geminiModel(key);
+  const models = await geminiModel(key);
   async function sample(prompt, opts = {}){
     const ttl = (opts.cache && opts.cache.gcTime) || 0;
-    const ck = 'faultlines-ai:' + hashStr(model + '|' + (opts.json ? 'j' : 't') + '|' + prompt);
+    const ck = 'faultlines-ai:' + hashStr('gemini|' + (opts.json ? 'j' : 't') + '|' + prompt);
     if (ttl){
       try { const c = JSON.parse(lsGet(ck) || 'null'); if (c && Date.now()-c.t < ttl){ if (opts.onText) opts.onText({text:c.text, delta:c.text}); return {text:c.text, truncated:false}; } } catch(e){}
     }
@@ -1412,13 +1414,19 @@ async function geminiSample(key){
     if (opts.json) body.generationConfig.responseMimeType = 'application/json';
     let text = '', finish = '';
     const fail = (code, message) => ({code: opts.signal && opts.signal.aborted ? 'cancelled' : code, message, text});
-    let r;
-    try {
-      r = await fetch(key ? `${GEM}/models/${model}:streamGenerateContent?alt=sse` : `${AI_PROXY}/models/${model}:streamGenerateContent`, {method:'POST', signal: opts.signal,
-        headers: key ? {'x-goog-api-key': key, 'Content-Type': 'application/json'} : {'Content-Type': 'application/json'}, body: JSON.stringify(body)});
-    } catch(e){ throw fail('upstream_error', e && e.message); }
+    let r, msg = '';
+    const tryList = models.slice(0, 5);
+    for (let i = 0; i < tryList.length; i++){   // busy (503), retired (404) or out of quota (429): move to the next model
+      const model = tryList[i];
+      try {
+        r = await fetch(key ? `${GEM}/models/${model}:streamGenerateContent?alt=sse` : `${AI_PROXY}/models/${model}:streamGenerateContent`, {method:'POST', signal: opts.signal,
+          headers: key ? {'x-goog-api-key': key, 'Content-Type': 'application/json'} : {'Content-Type': 'application/json'}, body: JSON.stringify(body)});
+      } catch(e){ throw fail('upstream_error', e && e.message); }
+      if (r.ok){ if (i > 0){ models.splice(models.indexOf(model), 1); models.unshift(model); } break; }
+      msg = await r.text().catch(() => '');
+      if (![404, 429, 500, 503].includes(r.status) || i === tryList.length - 1) break;
+    }
     if (!r.ok){
-      const msg = await r.text().catch(() => '');
       throw fail(r.status === 429 ? 'rate_limited' : (r.status === 401 || r.status === 403 || /API_KEY_INVALID|API key not valid/.test(msg)) ? 'bad_key' : r.status === 400 ? 'invalid_request' : 'upstream_error', msg);
     }
     try {

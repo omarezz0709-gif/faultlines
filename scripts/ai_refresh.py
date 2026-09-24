@@ -41,38 +41,47 @@ def _version(name: str) -> tuple:
     return tuple(float(n) for n in nums[:1]) or (0.0,)
 
 
-def pick_model(models: list[dict]) -> str:
-    """Newest Flash model that can generate text; stable before preview, never lite/image/audio."""
+FALLBACK_MODELS = ["gemini-flash-latest", "gemini-3.6-flash"]
+
+
+def pick_models(models: list[dict]) -> list[str]:
+    """Flash models that can generate text, newest stable first, never lite/image/audio; then safe fallbacks."""
     ok = []
     for m in models:
         name = m.get("name", "")
         low = name.lower()
         if "generateContent" not in (m.get("supportedGenerationMethods") or []):
             continue
-        if "flash" not in low or any(x in low for x in ("lite", "image", "tts", "audio", "live", "thinking-exp", "8b")):
+        if "flash" not in low or any(x in low for x in ("lite", "image", "tts", "audio", "live", "thinking-exp", "8b", "omni")):
             continue
         ok.append((_version(name), "preview" not in low and "exp" not in low, name.split("/")[-1]))
-    if not ok:
-        return "gemini-2.5-flash"
     ok.sort(key=lambda t: (t[1], t[0]), reverse=True)   # stable first, then newest
-    return ok[0][2]
+    return list(dict.fromkeys([t[2] for t in ok] + FALLBACK_MODELS))
+
+
+def pick_model(models: list[dict]) -> str:
+    return pick_models(models)[0]
 
 
 def call_gemini(key: str, system: str, prompt: str) -> str:
-    model = os.environ.get("GEMINI_MODEL")
-    if not model:
+    pinned = os.environ.get("GEMINI_MODEL")
+    if pinned:
+        candidates = [pinned] + FALLBACK_MODELS
+    else:
         try:
-            model = pick_model(_req("GET", f"{API}/models?pageSize=200", key).get("models", []))
+            candidates = pick_models(_req("GET", f"{API}/models?pageSize=200", key).get("models", []))
         except Exception as e:
-            print(f"model list failed ({e}); using gemini-2.5-flash")
-            model = "gemini-2.5-flash"
-    print(f"Using {model}", flush=True)
+            print(f"model list failed ({e}); using fallbacks")
+            candidates = list(FALLBACK_MODELS)
     body = {
         "systemInstruction": {"parts": [{"text": system}]},
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
         "generationConfig": {"temperature": 0.2, "responseMimeType": "application/json", "maxOutputTokens": 16384},
     }
-    for attempt in range(4):
+    # try models in order: a busy (503), retired (404) or rate-limited (429) model falls through to the next
+    tries = [m for m in dict.fromkeys(candidates)][:5]
+    for attempt, model in enumerate(tries):
+        print(f"Using {model}", flush=True)
         try:
             res = _req("POST", f"{API}/models/{model}:generateContent", key, body)
             cands = res.get("candidates") or []
@@ -84,9 +93,9 @@ def call_gemini(key: str, system: str, prompt: str) -> str:
             return "".join(p.get("text", "") for p in parts)
         except urllib.error.HTTPError as e:
             msg = e.read().decode(errors="replace")[:300]
-            if e.code in (429, 500, 503) and attempt < 3:
-                print(f"HTTP {e.code}, retrying in 60 s: {msg}")
-                time.sleep(60)
+            if e.code in (404, 429, 500, 503) and attempt < len(tries) - 1:
+                print(f"{model}: HTTP {e.code}, trying the next model: {msg}")
+                time.sleep(10)
                 continue
             if e.code in (400, 401, 403):
                 raise SystemExit(f"Gemini rejected the request (HTTP {e.code}). Check the GEMINI_API_KEY secret. {msg}")
