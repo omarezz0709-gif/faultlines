@@ -104,7 +104,7 @@ def call_gemini(key: str, system: str, prompt: str) -> str:
             parts = (cands[0].get("content") or {}).get("parts") or []
             u = res.get("usageMetadata", {})
             print(f"finish={cands[0].get('finishReason')} in={u.get('promptTokenCount')} out={u.get('candidatesTokenCount')}")
-            return "".join(p.get("text", "") for p in parts)
+            return "".join(p.get("text", "") for p in parts if not p.get("thought"))   # skip Gemma's private notes
         except urllib.error.HTTPError as e:
             msg = e.read().decode(errors="replace")[:300]
             if (e.code in (404, 429, 500, 503) or (e.code == 400 and model.startswith("gemma"))) and attempt < len(tries) - 1:

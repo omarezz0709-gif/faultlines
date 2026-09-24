@@ -1446,7 +1446,7 @@ async function geminiSample(key){
   const models = await geminiModel(key);
   async function sample(prompt, opts = {}){
     const ttl = (opts.cache && opts.cache.gcTime) || 0;
-    const ck = 'faultlines-ai:' + hashStr('gemini|' + (opts.json ? 'j' : 't') + '|' + prompt);
+    const ck = 'faultlines-ai:' + hashStr('gemini2|' + (opts.json ? 'j' : 't') + '|' + prompt);
     if (ttl){
       try { const c = JSON.parse(lsGet(ck) || 'null'); if (c && Date.now()-c.t < ttl){ if (opts.onText) opts.onText({text:c.text, delta:c.text}); return {text:c.text, truncated:false}; } } catch(e){}
     }
@@ -1501,7 +1501,7 @@ async function geminiSample(key){
           let ev; try { ev = JSON.parse(line.slice(5)); } catch(e){ continue; }
           if (ev.promptFeedback && ev.promptFeedback.blockReason) throw {code:'refused'};
           const c = (ev.candidates || [])[0]; if (!c) continue;
-          const d = ((c.content || {}).parts || []).map(p => p.text || '').join('');
+          const d = ((c.content || {}).parts || []).filter(p => !p.thought).map(p => p.text || '').join('');   // skip the model's private notes (Gemma "thought" parts)
           if (d){ text += d; if (opts.onText) opts.onText({text, delta: d}); }
           if (c.finishReason) finish = c.finishReason;
         }
