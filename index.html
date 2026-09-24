@@ -249,8 +249,14 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
 .changes a{color:var(--gold-hi);font:12px var(--mono)}
 .intro-list{margin:0;padding-left:18px;color:var(--soft);display:flex;flex-direction:column;gap:4px}
 .panel.min .p-body{display:none}
-@media (min-width:761px){ .panel.min{bottom:auto} }
 .panel.min .collapse{display:grid}
+@media (min-width:761px){
+  /* panel open: centre the globe in the space left of it; pushed down: title bar at the bottom, globe back in the middle */
+  #globe{left:-400px;transition:left .45s ease}   /* canvas is 400px wider than the window (globeW) */
+  body.pmin #globe{left:-200px}
+  .collapse{display:grid}
+  .panel.min{top:auto}
+}
 
 /* tooltip from globe.gl */
 .float-tooltip-kap{background:rgba(10,10,10,.95)!important;border:1px solid var(--line2);border-radius:5px!important;padding:7px 10px!important;font:13px var(--body)!important;color:var(--text)!important}
@@ -1145,8 +1151,9 @@ function polyLabel(f){
 }
 
 const globeEl = document.getElementById('globe');
+const globeW = () => window.innerWidth + (window.innerWidth > 760 ? 400 : 0);   // wider on desktop so it can slide beside the panel
 const globe = new Globe(globeEl, {animateIn:true})
-  .width(window.innerWidth).height(window.innerHeight)
+  .width(globeW()).height(window.innerHeight)
   .backgroundColor('rgba(0,0,0,0)')
   .showAtmosphere(true).atmosphereColor('#b8952c').atmosphereAltitude(0.13)
   .showGraticules(false)
@@ -1179,7 +1186,9 @@ mat.color.set('#0b0b0b'); if (mat.emissive) mat.emissive.set('#050505'); mat.shi
 const ctr = globe.controls();
 ctr.autoRotate = !reduceMotion; ctr.autoRotateSpeed = 0.35;
 globeEl.addEventListener('pointerdown', ()=>{ ctr.autoRotate = false; });
-window.addEventListener('resize', ()=> globe.width(window.innerWidth).height(window.innerHeight));
+window.addEventListener('resize', ()=> globe.width(globeW()).height(window.innerHeight));
+// after the globe slides beside/behind the panel, let globe.gl re-measure where it is, or clicks miss
+globeEl.addEventListener('transitionend', e => { if (e.target === globeEl) window.dispatchEvent(new Event('resize')); });
 
 /* gold graticule: every 15°, equator and prime meridian a touch brighter */
 const GRAT = [];
@@ -1231,7 +1240,7 @@ function selectPoi(p){
 }
 function clearSelection(){
   if (sel.type==='none'){   // admin, all-updates or intro page: go back to the intro, or fold the intro away
-    if (panelMode==='intro'){ if (!panel.classList.contains('min')) toggleMin(); }
+    if (panelMode==='intro') setMin(true);
     else renderIntro();
     return;
   }
@@ -1280,9 +1289,14 @@ function head(eyebrow, title, glyph){
     <button class="iconbtn collapse" id="collapse" aria-label="Collapse panel" title="Collapse">▾</button>
     <button class="iconbtn" id="close" aria-label="Close" title="Close">✕</button></div>`;
 }
-function toggleMin(){ panel.classList.toggle('min'); const m = document.getElementById('collapse'); if (m) m.textContent = panel.classList.contains('min') ? '▴' : '▾'; }
+/* push the panel down to its title bar; on wide screens the globe then slides into the freed space */
+function setMin(on){
+  panel.classList.toggle('min', on); document.body.classList.toggle('pmin', on);
+  const m = document.getElementById('collapse'); if (m){ m.textContent = on ? '▴' : '▾'; m.title = on ? 'Open panel' : 'Push panel down'; }
+}
+function toggleMin(){ setMin(!panel.classList.contains('min')); }
 function wirePanel(){
-  panel.classList.remove('min'); panelMode = '';
+  setMin(false); panelMode = '';
   const ph = panel.querySelector('.p-head'); if (ph) ph.onclick = e => { if (mob() && !e.target.closest('button')) toggleMin(); };
   const all = document.getElementById('all-upd'); if (all) all.onclick = renderChanges;
   panel.querySelectorAll('[data-allnews]').forEach(b => b.onclick = renderChanges);
@@ -2036,7 +2050,8 @@ function renderIntro(){
   const picks = ['TUR','TWN','UKR','IRN','IND','EGY','USA','CHN'];
   const hot = ['Strait of Hormuz','Strait of Malacca','Bab-el-Mandeb','Taiwan Strait','Suwałki Gap','Panama Canal'];
   panel.innerHTML = `<div class="p-head"><div class="t"><div class="eyebrow">How to read it</div><h2>A world of faultlines</h2></div>
-    <button class="iconbtn collapse" id="collapse" aria-label="Collapse panel">▾</button></div>
+    <button class="iconbtn collapse" id="collapse" aria-label="Collapse panel">▾</button>
+</div>
     <div class="p-body">
     <p class="lede">Click any country to colour the world by its relationships, with arcs to its neighbours and key partners or rivals. Click a relationship to see why it has that status, or ask Claude to explain it in depth. Use <b>Compare countries</b> to pick 2–12 countries and see how they all relate, and <b>Filters</b> to narrow what's shown.</p>
     ${alertsSection(5)}
