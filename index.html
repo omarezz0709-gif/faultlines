@@ -75,7 +75,7 @@ button{font:inherit;color:inherit}
 .ask-i{color:var(--gold);font-size:13px}
 .ask input{flex:1;min-width:0;background:none;border:0;color:var(--text);font:14px var(--body);padding:6px 0;outline:none}
 .ask-go{border:0;background:var(--gold);color:var(--on-gold);border-radius:4px;width:30px;height:28px;cursor:pointer;font-weight:700}
-.ticker{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:5;display:flex;align-items:stretch;width:min(560px,calc(100vw - 440px));background:var(--panel);border:1px solid var(--line2);border-radius:6px;overflow:hidden;backdrop-filter:blur(10px)}
+.ticker{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:5;display:flex;align-items:stretch;width:360px;background:var(--panel);border:1px solid var(--line2);border-radius:6px;overflow:hidden;backdrop-filter:blur(10px)}
 .ticker[hidden]{display:none}
 .tk-live{border:0;border-right:1px solid var(--line2);background:var(--raise);color:var(--gold-hi);font:600 11px var(--mono);letter-spacing:.1em;padding:0 11px;cursor:pointer;display:flex;align-items:center;gap:7px;white-space:nowrap}
 .live-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#e0604f;margin-right:5px;animation:pulse 1.6s infinite}
@@ -315,8 +315,10 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
   /* panel open: centre the globe in the space left of it; pushed down: title bar at the bottom, globe back in the middle */
   /* the canvas is 400px wider than the window (globeW); the box must be exactly as wide, or clicks land off-target.
      open: globe 100px left of centre; pushed down: centred */
-  #globe{left:-300px;right:-100px;transition:left .45s ease,right .45s ease}
-  body.pmin #globe{left:-200px;right:-200px}
+  /* centred in the free space between the left column (~400px) and the panel (~420px); pushed down, the panel
+     frees the right side and the globe moves right. The canvas is 400px wider than the window (globeW). */
+  #globe{left:-200px;right:-200px;transition:left .45s ease,right .45s ease}
+  body.pmin #globe{left:0;right:-400px}
   .collapse{display:grid}
   .panel.min{top:auto}
 }
@@ -1280,7 +1282,7 @@ mat.color.set('#0b0b0b'); if (mat.emissive) mat.emissive.set('#050505'); mat.shi
 const ctr = globe.controls();
 ctr.autoRotate = !reduceMotion; ctr.autoRotateSpeed = 0.35;
 globeEl.addEventListener('pointerdown', ()=>{ ctr.autoRotate = false; });
-window.addEventListener('resize', ()=> globe.width(globeW()).height(window.innerHeight));
+window.addEventListener('resize', ()=> { globe.width(globeW()).height(window.innerHeight); if (typeof fitView === 'function') fitView(); });
 // after the globe slides beside/behind the panel, let globe.gl re-measure where it is, or clicks miss
 globeEl.addEventListener('transitionend', e => { if (e.target === globeEl) window.dispatchEvent(new Event('resize')); });
 // same once the page has settled (fonts, layout), so the very first clicks land on the right country
@@ -1411,7 +1413,20 @@ function makeCity(c){
    SELECTION + PANELS
    ================================================================ */
 const panel = document.getElementById('panel');
-function fly(lat,lng,alt){ ctr.autoRotate=false; globe.pointOfView({lat: mob()? lat-8 : lat, lng: mob()? lng : lng+ (window.innerWidth>1100? 12 : 18), altitude: alt || (mob()? 2.6 : 2.0)}, 1100); }
+// the globe is centred in the free space, so a selected place is simply centred (phones: a bit higher, above the panel)
+function fly(lat,lng,alt){ ctr.autoRotate=false; globe.pointOfView({lat: mob()? lat-8 : lat, lng, altitude: alt || (mob()? 2.6 : Math.max(2.0, fitAlt() * 0.8))}, 1100); }
+/* the altitude at which the whole globe fits the free space (between the left column and the panel) */
+function fitAlt(){
+  const W = window.innerWidth, H = window.innerHeight;
+  if (!W || !H || mob()) return 2.5;
+  const freeW = W - 400 - (document.body.classList.contains('pmin') ? 0 : 420);
+  const r = Math.max(160, Math.min(freeW, H - 40) * 0.47);   // globe radius in px, with a margin
+  const fov = (globe.camera().fov || 50) * Math.PI / 180;
+  const theta = Math.atan(r * Math.tan(fov / 2) / (H / 2));
+  return Math.min(6, Math.max(1.6, 1 / Math.sin(theta) - 1));
+}
+// at the overview zoom, keep the whole globe in view when the window or panel changes
+function fitView(ms = 600){ if (curAlt >= 1.9 || ms === 0) globe.pointOfView({altitude: fitAlt()}, ms); }
 
 function selectCountry(id){
   const e = ENT[id]; if (!e) return;
@@ -3132,14 +3147,16 @@ function tvShow(){
   const prog = document.getElementById('tv-prog'); prog.classList.remove('run'); void prog.offsetWidth; prog.classList.add('run');
   clearTimeout(tvTimer); tvTimer = setTimeout(tvNext, TV_MS);
 }
-function tvNext(step = 1){
+function tvNext(step = 1, manual = false){
   if (!tv.stories.length) return;
-  if (tvEl.matches(':hover')){ clearTimeout(tvTimer); tvTimer = setTimeout(tvNext, 1500); return; }   // hovering pauses
+  // hovering pauses the automatic rotation (the arrows always work)
+  if (!manual && tvEl.matches(':hover')){ clearTimeout(tvTimer); tvTimer = setTimeout(tvNext, 1500); return; }
+  clearTimeout(tvTimer);
   tvEl.classList.add('fade');
   setTimeout(() => { tv.i = (tv.i + step + tv.stories.length) % tv.stories.length; tvShow(); tvEl.classList.remove('fade'); }, 300);
 }
-document.getElementById('tv-next').onclick = () => tvNext(1);
-document.getElementById('tv-prev').onclick = () => tvNext(-1);
+document.getElementById('tv-next').onclick = () => tvNext(1, true);
+document.getElementById('tv-prev').onclick = () => tvNext(-1, true);
 document.documentElement.style.setProperty('--tv-ms', TV_MS + 'ms');
 setInterval(() => tvRefresh(false), 600);                              // follow the selection
 setInterval(() => { tvCache.clear(); tvRefresh(true); }, 10 * 60e3);    // and refresh every 10 minutes
@@ -3149,6 +3166,7 @@ let startLang = 'en'; try { startLang = localStorage.getItem('fl-lang') || ((nav
 setLang(LANG_NAME[startLang] ? startLang : 'en', false);
 buildIndex();   // now with the French, Spanish and Arabic country names
 renderIntro();
+fitView(0);   // start with the whole globe in the free space
 setTimeout(loadFeed, 1500);
 </script>
 </body>
