@@ -50,3 +50,10 @@ Relationship statuses (Ally, Tense, Hostile…), indirect links and strategic lo
 - GitHub's scheduler can start runs 5–30 minutes late; the scripts accept runs up to 90 minutes after each slot and skip duplicates.
 - GitHub pauses scheduled workflows after 60 days without repository activity; the updater's own commits count as activity.
 - The news tension meter is a simple keyword measure (share of recent headlines mentioning conflict terms), not an expert assessment.
+
+## AI and news Worker (Cloudflare)
+
+`worker/gemini-proxy.js` runs on Cloudflare as the Worker **faultlines-ai** (AI answers, top stories, videos, live feed, admin log).
+It is deployed automatically by `.github/workflows/worker.yml` whenever something in `worker/` changes.
+That needs one GitHub secret, `CLOUDFLARE_API_TOKEN` (Cloudflare → My Profile → API Tokens → template "Edit Cloudflare Workers").
+The Worker's own secrets (Gemini keys, admin code) live only in Cloudflare and are never part of the repository.

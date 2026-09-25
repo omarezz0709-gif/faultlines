@@ -1,0 +1,25 @@
+# The AI/news Worker (faultlines-ai). Deployed automatically by .github/workflows/worker.yml
+# whenever something in worker/ changes, so there is no more copy-pasting into the Cloudflare editor.
+# Secrets (GEMINI_API_KEY, GEMINI_API_KEY_2, ADMIN_CODE, GROQ_API_KEY) stay in Cloudflare and are never touched by a deploy.
+name = "faultlines-ai"
+main = "gemini-proxy.js"
+account_id = "f389b8913c8364fd9b2a47e31ac02f23"
+compatibility_date = "2025-06-01"
+workers_dev = true
+keep_vars = true   # keep plain variables set in the dashboard
+
+# Cloudflare Workers AI (last fallback for answers)
+[ai]
+binding = "AI"
+
+# usage log + daily archive
+[[kv_namespaces]]
+binding = "LOGS"
+id = "__KV_LOGS_ID__"   # filled in by the workflow, looked up by the namespace's name "faultlines-logs"
+
+# nightly log backup at 00:10 Berlin (22:10 UTC in summer, 23:10 UTC in winter; the Worker skips the wrong one)
+[triggers]
+crons = ["10 22,23 * * *"]
+
+[observability]
+enabled = true
