@@ -1,7 +1,32 @@
 {
  "meta": {
-  "lastRun": "2026-09-24T22:09:16Z",
+  "lastRun": "2026-09-25T10:18:16Z",
   "log": [
+   {
+    "date": "2026-09-25",
+    "items": [
+     {
+      "label": "Colombia–Iran",
+      "change": "Normal → Hostile: Colombia severs diplomatic ties over security concerns",
+      "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNYnZvU2R2enJKMTdfamVRV3ltSnJvZ2FfbnFYUldjbS1TcVRmLWVaNldic3dhenc5S1FoMV9qM0M3cW1sSVpMSDllRXFpRzdta2p0a3dhaVE4M1dPcFkzaXpQS3ZzUGpuTVIzaEk5MkFoTkNnX2s0RzVrMXI4RWlkNWVObzdUR2VfRjF0aW8tWWhLVmxBZ0hHT252UzRQZGVjU0NDSU5WOFhSenN1cWJodU91SlA?oc=5"
+     },
+     {
+      "label": "Canada–Vietnam",
+      "change": "Normal → Partner: countries establish Strategic Partnership",
+      "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUjhOWllpQVhCNVRHVTFpSUh6SUdyMlh4dUJXbmFmbnRyTWtaWGZrUHFWQndlX0xweS1DeXRjZUtDRmNvcHVHNXdYMWUtX0lIUVRLbVNoODdwMmMtZS02TmwwbW41aGxHeFh3OFVDdzZFUWZOQW4xNHRZVFlMbzJXb0V4dE5uMFpPd09udHkxRFg0YnV0RmhnbDQ1Yw?oc=5"
+     },
+     {
+      "label": "Russia",
+      "change": "Election result added: parliamentary election September 2026",
+      "source": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNNHZvUHZBak1rRWZheVZuelV2d2N2ZG1kblQ4ak1VcUphRlZJenY5XzRLSUhHcWFSOTh2SkZQYlFzT2xZc2ZkSlVaeWo5bzB2ZzZPTi13X0pqRVpkTTVYMTVIWVZRWVMyYWpLMmdyaU5xaXo5T2F4T2g3SVBMVEFrc2tiX0ZFNTlMSE5lMDMtaHZTQnZLb2dMTjhRT2trV0JSRU93Q3VOSnU5UnpmaGJZVjVSak5ZNi1BMjBvaW9MWWZ2ZThIc2tfazRqcEF1ZFRtRlVtOGxSaFBkTE1JVDhrUzhXUXNGd0lZQXpwZmtB?oc=5"
+     },
+     {
+      "label": "Morocco",
+      "change": "Election result added: parliamentary election September 2026",
+      "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVHd6aWZhdHZQbnhOVkRoZlFHcEFXakZ4WmNob251TTNtVWducUhUeHZOYUlzeFJMWUZET2ZscG1oUl92ZW12MXZvaE5OZTVFUFc3dEJMMWRkeklJN0JTMGlqMlY4LUZtVGpJWGJTRi14T2Qxa0JKTTA4OFZpWnh3QzR6RThIOHM1eXNPQnNnLUZrY0hZX0tkclZNRGdQT1ZTUmNDZ2JqNFZTTkhrRTVMWjNB?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-09-24",
     "items": []
@@ -106,7 +131,7 @@
     ]
    }
   ],
-  "summary": "Saudi Arabia intercepts Houthi missile and drone attacks on its facilities while the US-Iran war and Red Sea shipping disruptions continue."
+  "summary": "Colombia severs diplomatic ties with Iran and Canada establishes a strategic partnership with Vietnam, alongside parliamentary election results in Russia and Morocco."
  },
  "relations": {
   "DNK-USA": {
@@ -172,6 +197,22 @@
    "note": "Deep confrontation persists, though acting leader Delcy Rodriguez and Donald Trump hold talks on debt restructuring and ties.",
    "updated": "2026-09-23",
    "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORTY3d0w0RXVMcmJNc2hqYTd6aXA4ZDFrR2ZfZmtwVGRyeXE1V0Z5T0lLcFJ2eUd1bzYxendoMlZQMUJKVHVsYUdmZzIyd3FjNFFya1ZyYmlZOEwyRHgzMjhWSjZ2alZseDZJYWdtX0VHRHl6R1Nsa0UyQUJRSUxGM01YUENFZnlKZ2VNNmJmalJMRGhkUXdiU1BzN0MwbURkM3JjSTU2Q1FIanVSZElLS09tOENmRFhT?oc=5"
+  },
+  "COL-IRN": {
+   "a": "COL",
+   "b": "IRN",
+   "s": "H",
+   "note": "Colombia severs diplomatic ties with Iran and designates the IRGC (Islamic Revolutionary Guard Corps) as a terrorist organization.",
+   "updated": "2026-09-25",
+   "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNYnZvU2R2enJKMTdfamVRV3ltSnJvZ2FfbnFYUldjbS1TcVRmLWVaNldic3dhenc5S1FoMV9qM0M3cW1sSVpMSDllRXFpRzdta2p0a3dhaVE4M1dPcFkzaXpQS3ZzUGpuTVIzaEk5MkFoTkNnX2s0RzVrMXI4RWlkNWVObzdUR2VfRjF0aW8tWWhLVmxBZ0hHT252UzRQZGVjU0NDSU5WOFhSenN1cWJodU91SlA?oc=5"
+  },
+  "CAN-VNM": {
+   "a": "CAN",
+   "b": "VNM",
+   "s": "F",
+   "note": "Canada and Vietnam establish a formal Strategic Partnership to elevate bilateral economic and security cooperation.",
+   "updated": "2026-09-25",
+   "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUjhOWllpQVhCNVRHVTFpSUh6SUdyMlh4dUJXbmFmbnRyTWtaWGZrUHFWQndlX0xweS1DeXRjZUtDRmNvcHVHNXdYMWUtX0lIUVRLbVNoODdwMmMtZS02TmwwbW41aGxHeFh3OFVDdzZFUWZOQW4xNHRZVFlMbzJXb0V4dE5uMFpPd09udHkxRFg0YnV0RmhnbDQ1Yw?oc=5"
   }
  },
  "threads": {
@@ -316,12 +357,12 @@
   "RUS": {
    "hog": "Mikhail Mishustin, Chairman of the Government (Prime Minister)",
    "hos": "Vladimir Putin, President of the Russian Federation",
-   "lastelec": "State Duma election, September 18-20 2026, won by United Russia in a landslide",
+   "lastelec": "parliamentary, September 2026, United Russia",
    "nextelec": "Presidential election, 2030; next State Duma election due 2031",
    "ruling": "United Russia (UR)",
-   "source": "https://www.aljazeera.com/news/2026/9/21/pro-putin-party-wins-supermajority-amid-ramped-up-ukrainian-attacks",
+   "source": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNNHZvUHZBak1rRWZheVZuelV2d2N2ZG1kblQ4ak1VcUphRlZJenY5XzRLSUhHcWFSOTh2SkZQYlFzT2xZc2ZkSlVaeWo5bzB2ZzZPTi13X0pqRVpkTTVYMTVIWVZRWVMyYWpLMmdyaU5xaXo5T2F4T2g3SVBMVEFrc2tiX0ZFNTlMSE5lMDMtaHZTQnZLb2dMTjhRT2trV0JSRU93Q3VOSnU5UnpmaGJZVjVSak5ZNi1BMjBvaW9MWWZ2ZThIc2tfazRqcEF1ZFRtRlVtOGxSaFBkTE1JVDhrUzhXUXNGd0lZQXpwZmtB?oc=5",
    "system": "Federal semi-presidential republic",
-   "updated": "2026-09-23"
+   "updated": "2026-09-25"
   },
   "USA": {
    "hog": "Donald Trump, President",
@@ -334,9 +375,9 @@
    "updated": "2026-09-23"
   },
   "MAR": {
-   "lastelec": "parliamentary, September 2026",
-   "updated": "2026-09-23",
-   "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNa0YzcUZhMEE5MjNQLUZ0YTI0WWlfYVhMOUJob01wNHZET1h6WTJGN2RIT2o3eVRnZUo5dnYzQmViMVhLNnhkdkFOLWxSaXBDcEJDVm5ETEdVajU0bWh3NE1tcFFoSGNfbGtPYUtlUjYxdXNSeE5Ja0Q2Vng0TG9Kc0paY0ZvQU1uRVIyZnNlVHNHZ0UzdGhYUjAzTmJOTWRRUmtrUi1SNGxOSkhUNXFkSUZvQ0hDendlYk9YZnp2bnNLeko4aFZPZGdR?oc=5"
+   "lastelec": "parliamentary, September 2026, Authenticity and Modernity Party",
+   "updated": "2026-09-25",
+   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVHd6aWZhdHZQbnhOVkRoZlFHcEFXakZ4WmNob251TTNtVWducUhUeHZOYUlzeFJMWUZET2ZscG1oUl92ZW12MXZvaE5OZTVFUFc3dEJMMWRkeklJN0JTMGlqMlY4LUZtVGpJWGJTRi14T2Qxa0JKTTA4OFZpWnh3QzR6RThIOHM1eXNPQnNnLUZrY0hZX0tkclZNRGdQT1ZTUmNDZ2JqNFZTTkhrRTVMWjNB?oc=5"
   },
   "BGR": {
    "nextelec": "presidential, 25 October 2026",
