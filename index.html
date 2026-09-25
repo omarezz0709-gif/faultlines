@@ -117,14 +117,36 @@ button{font:inherit;color:inherit}
 @keyframes tvprog{to{width:100%}}
 .tv-btn{border:0;background:none;color:var(--muted);font-size:18px;line-height:1;width:24px;height:22px;cursor:pointer;border-radius:3px}
 .tv-btn:hover{color:var(--gold-hi);background:var(--raise)}
+/* news video player under the top story */
+.vid{background:rgba(10,10,10,.94);border:1px solid var(--line2);border-radius:6px;overflow:hidden;backdrop-filter:blur(10px)}
+.vid[hidden]{display:none}
+.vid-tag{font:700 10.5px var(--mono);letter-spacing:.12em;color:var(--on-gold);background:var(--gold);padding:3px 7px;border-radius:3px;white-space:nowrap}
+.vid-live{border:1px solid var(--line2);background:none;color:var(--muted);font:600 10px var(--mono);letter-spacing:.08em;padding:3px 7px;border-radius:3px;cursor:pointer;display:flex;align-items:center;gap:5px;white-space:nowrap}
+.vid-live .live-dot{margin:0;width:6px;height:6px}
+.vid-live[aria-pressed="true"]{background:#b3261e;border-color:#b3261e;color:#fff}
+.vid-live[aria-pressed="true"] .live-dot{background:#fff}
+.vid-frame{position:relative;aspect-ratio:16/9;background:#000}
+.vid-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vid-thumb{position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;cursor:pointer;background:#000 center/cover no-repeat}
+.vid-thumb::after{content:"";position:absolute;left:50%;top:50%;width:54px;height:38px;margin:-19px 0 0 -27px;border-radius:9px;background:rgba(179,38,30,.92) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 7l8 5-8 5z' fill='white'/%3E%3C/svg%3E") center/26px no-repeat;box-shadow:0 2px 10px rgba(0,0,0,.5)}
+.vid-thumb:hover::after{background-color:#d93025}
+.vid-golive{background:radial-gradient(circle at 50% 45%,rgba(212,175,55,.16),#050505 70%)}
+.vid-golive span{position:absolute;left:0;right:0;top:calc(50% + 28px);font:600 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--gold-hi)}
+.vid-cap{padding:8px 12px 2px;font:600 13px/1.35 var(--body);color:var(--text)}
+.vid-meta{flex:1;min-width:0;font:11px/1.4 var(--mono);color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.vid-meta b{color:var(--gold-hi);font-weight:600}
+.vid.min .vid-box{display:none}
+/* the left column scrolls if it gets taller than the screen */
+@media (min-width:761px){ .top{max-height:calc(100vh - 90px);overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;scrollbar-color:var(--line2) transparent;padding-bottom:2px} }
 .mob-only{display:none}
 [dir="rtl"] .p-body, [dir="rtl"] .p-head, [dir="rtl"] .top, [dir="rtl"] .ticker{text-align:right}
 @media (max-width:760px){
   .mob-only{display:inline-flex;align-items:center}
   .ask{display:none}
   .ask.open{display:flex}
-  .tv{display:none!important}
-  .top.asking .tv:not([hidden]){display:block!important}   /* on phones the top story shows with the question box */
+  .tv,.vid{display:none!important}
+  .top.asking .tv:not([hidden]),.top.asking .vid:not([hidden]){display:block!important}   /* on phones: shown with the question box */
+  .top.asking{max-height:calc(100vh - 110px);overflow-y:auto}
   .tv-head{font-size:14px}
   .ticker{display:none!important}
 }
@@ -395,6 +417,16 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
     </div>
     <div class="tv-meta" id="tv-meta"></div>
     <div class="tv-foot"><div class="tv-prog"><i id="tv-prog"></i></div><button class="tv-btn" id="tv-prev" aria-label="Previous story">‹</button><button class="tv-btn" id="tv-next" aria-label="Next story">›</button></div>
+  </section>
+  <section class="vid" id="vid" hidden>
+    <div class="tv-top"><span class="vid-tag">▶ VIDEO</span><span class="tv-where" id="vid-where">World</span><span class="tv-n" id="vid-n"></span>
+      <button class="vid-live" id="vid-live" aria-pressed="false" title="24/7 live news channel"><i class="live-dot"></i>LIVE TV</button>
+      <button class="tv-btn" id="vid-min" aria-label="Hide video" title="Hide video">▾</button></div>
+    <div class="vid-box" id="vid-box">
+      <div class="vid-frame" id="vid-frame"></div>
+      <div class="vid-cap" id="vid-cap" dir="auto"></div>
+      <div class="tv-foot"><div class="vid-meta" id="vid-meta"></div><button class="tv-btn" id="vid-prev" aria-label="Previous video">‹</button><button class="tv-btn" id="vid-next" aria-label="Next video">›</button></div>
+    </div>
   </section>
   <div class="filters" id="filters" hidden>
     <div class="fg"><h4>Relationship types</h4>
@@ -2885,7 +2917,9 @@ const TR = {
   'No live headlines right now.': ['Aucun titre en direct pour le moment.', 'No hay titulares en vivo ahora.', 'لا توجد عناوين مباشرة الآن.'],
   'Gaza Strip': ['Bande de Gaza', 'Franja de Gaza', 'قطاع غزة'], 'Antarctica': ['Antarctique', 'Antártida', 'القارة القطبية الجنوبية'],
   'Close': ['Fermer', 'Cerrar', 'إغلاق'], 'TOP STORY': ['À LA UNE', 'PORTADA', 'أبرز خبر'], 'World': ['Monde', 'Mundo', 'العالم'],
-  'Previous story': ['Sujet précédent', 'Noticia anterior', 'الخبر السابق'], 'Next story': ['Sujet suivant', 'Noticia siguiente', 'الخبر التالي'], 'Territory': ['Territoire', 'Territorio', 'إقليم'], 'Continent': ['Continent', 'Continente', 'قارة'],
+  'Previous story': ['Sujet précédent', 'Noticia anterior', 'الخبر السابق'], '▶ VIDEO': ['▶ VIDÉO', '▶ VÍDEO', '▶ فيديو'],
+  'LIVE TV': ['TV EN DIRECT', 'TV EN VIVO', 'بث مباشر'], 'Live TV': ['TV en direct', 'TV en vivo', 'بث مباشر'], 'Hide video': ['Masquer la vidéo', 'Ocultar vídeo', 'إخفاء الفيديو'],
+  'Play video': ['Lire la vidéo', 'Reproducir vídeo', 'تشغيل الفيديو'], 'Watch live news': ['Regarder l’info en direct', 'Ver noticias en directo', 'شاهد الأخبار مباشرة'], '24/7 live news channel': ['Chaîne d’info en continu', 'Canal de noticias 24/7', 'قناة أخبار مباشرة'], 'Next story': ['Sujet suivant', 'Noticia siguiente', 'الخبر التالي'], 'Territory': ['Territoire', 'Territorio', 'إقليم'], 'Continent': ['Continent', 'Continente', 'قارة'],
   'No match. Try a country or strait name.': ['Aucun résultat. Essayez un pays ou un détroit.', 'Sin resultados. Prueba un país o estrecho.', 'لا نتائج. جرّب اسم دولة أو مضيق.'], 'Open panel': ['Ouvrir le panneau', 'Abrir panel', 'افتح اللوحة'], 'Push panel down': ['Réduire le panneau', 'Bajar el panel', 'اخفض اللوحة'],
 };
 // phrases with numbers or dates
@@ -2949,7 +2983,7 @@ const NAME_HOSTS = 'b, h2, h3, th, .tag, .tip b, option, .th-title, .kw, .fc';
 function translateNode(n){
   if (n.nodeType === 3){
     // skip AI answers (already in the chosen language), headlines and the reader's own question
-    if (!n.nodeValue.trim() || n.parentElement && n.parentElement.closest('script, style, .city, input, textarea, .ai h3, .ai h4, .ai li, .ai p:not(.muted):not(.faint), .alerts a, .news a, .feed a, .q-asked, .tv-head, .tv-meta')) return;
+    if (!n.nodeValue.trim() || n.parentElement && n.parentElement.closest('script, style, .city, input, textarea, .ai h3, .ai h4, .ai li, .ai p:not(.muted):not(.faint), .alerts a, .news a, .feed a, .q-asked, .tv-head, .tv-meta, .vid-cap, .vid-meta')) return;
     if (n.__en === undefined || (n.nodeValue !== n.__tr)) n.__en = n.nodeValue;   // remember the English original
     let v = trText(n.__en);
     if (v == null && n.parentElement && n.parentElement.closest(NAME_HOSTS) && nameRe) v = n.__en.replace(nameRe, (m, pre, nm) => pre + trMap.get(nm));
@@ -3182,6 +3216,78 @@ document.getElementById('tv-prev').onclick = () => tvNext(-1, true);
 document.documentElement.style.setProperty('--tv-ms', TV_MS + 'ms');
 setInterval(() => tvRefresh(false), 600);                              // follow the selection
 setInterval(() => { tvCache.clear(); tvRefresh(true); }, 10 * 60e3);    // and refresh every 10 minutes
+
+/* ================================================================
+   NEWS VIDEO under the top story: the day's top 5 stories as videos from trusted news channels (YouTube,
+   privacy-enhanced embeds); follows the selection like the top story. "LIVE TV" plays a 24/7 news channel.
+   Videos only start when clicked; after that, switching country or story keeps playing.
+   ================================================================ */
+const vidEl = document.getElementById('vid'), vidFrame = document.getElementById('vid-frame');
+const VID_LIVE = {en: 'UCNye-wNBqNL5ZzHSJj3l8Bg', fr: 'UCCCPCZNChQdGa9EkATeye4g', es: 'UCUdOoVWuWmgo1wByzcsyKDQ', ar: 'UCfiwzLy-8yKzIbsmZTzxDgw'};
+let vid = {key: null, videos: [], i: 0, label: '', live: false, engaged: false};
+const vidCache = new Map();
+try { if (localStorage.getItem('fl-vid-min') === '1') vidEl.classList.add('min'); } catch(e){}
+async function loadVideos(t){
+  const ck = LANG + '|' + t.key, c = vidCache.get(ck);
+  if (c && Date.now() - c.at < 10 * 60e3) return c.videos;
+  let videos = [];
+  try { const r = await fetch(`${AI_PROXY}/videos?lang=${LANG}&q=${encodeURIComponent(t.q)}&en=${encodeURIComponent(t.en)}`); if (r.ok) videos = (await r.json()).videos || []; } catch(e){}
+  videos = videos.filter(v => /^[\w-]{11}$/.test(v.id || ''));
+  if (videos.length) vidCache.set(ck, {at: Date.now(), videos});
+  return videos;
+}
+async function vidRefresh(force){
+  const t = tvTarget(), key = LANG + '|' + t.key;
+  if (!force && key === vid.key) return;
+  vid.key = key;
+  let videos = await loadVideos(t), label = t.label;
+  if (vid.key !== key) return;
+  if (!videos.length && t.key !== 'world'){ videos = await loadVideos({key: 'world', q: '', en: ''}); label = 'World'; }   // nothing on this country: the world's
+  vid.videos = videos; vid.label = label; vid.i = 0;
+  vidEl.hidden = false;   // LIVE TV is always there, even without story videos
+  if (!vid.live) vidShow();
+}
+function embed(src){ vidFrame.innerHTML = `<iframe src="${src}" title="News video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`; }
+function vidShow(){
+  const n = vid.videos.length, cap = document.getElementById('vid-cap'), meta = document.getElementById('vid-meta');
+  document.getElementById('vid-where').textContent = vid.live ? 'Live TV' : vid.label;
+  document.getElementById('vid-live').setAttribute('aria-pressed', vid.live);
+  if (vidEl.classList.contains('min')) return;   // hidden: nothing plays
+  if (vid.live){
+    document.getElementById('vid-n').textContent = '';
+    embed(`https://www.youtube.com/embed/live_stream?channel=${VID_LIVE[LANG] || VID_LIVE.en}&autoplay=1&mute=1&playsinline=1`);
+    cap.textContent = ''; meta.innerHTML = ''; return;
+  }
+  document.getElementById('vid-prev').hidden = document.getElementById('vid-next').hidden = n < 2;
+  if (!n){   // no story videos right now: offer the 24/7 live channel instead of an empty box
+    vidFrame.innerHTML = `<button class="vid-thumb vid-golive" aria-label="Watch live news"><span>Watch live news</span></button>`;
+    vidFrame.querySelector('button').onclick = () => { vid.live = true; vidShow(); };
+    cap.textContent = ''; meta.textContent = ''; document.getElementById('vid-n').textContent = ''; return;
+  }
+  const v = vid.videos[vid.i % n];
+  document.getElementById('vid-n').textContent = `${vid.i % n + 1}/${n}`;
+  if (vid.engaged) embed(`https://www.youtube-nocookie.com/embed/${v.id}?autoplay=1&rel=0&playsinline=1`);
+  else {   // a thumbnail until the viewer presses play (no autoplay, nothing loaded from YouTube but the picture)
+    vidFrame.innerHTML = `<button class="vid-thumb" aria-label="Play video" style="background-image:url('https://i.ytimg.com/vi/${v.id}/hqdefault.jpg')"></button>`;
+    vidFrame.querySelector('button').onclick = () => { vid.engaged = true; vidShow(); };
+  }
+  cap.textContent = v.t;
+  const w = TVW[LANG] || TVW.en;
+  meta.innerHTML = `<b>${esc(v.s)}</b> · ${esc(ago(v.d))}${v.n > 1 ? ` · ${w[0]} ${v.n}` : ''}`;
+}
+function vidStep(k){ if (vid.live || !vid.videos.length) return; vid.i = (vid.i + k + vid.videos.length) % vid.videos.length; vidShow(); }
+document.getElementById('vid-next').onclick = () => vidStep(1);
+document.getElementById('vid-prev').onclick = () => vidStep(-1);
+document.getElementById('vid-live').onclick = () => { vid.live = !vid.live; if (!vid.live) vidFrame.innerHTML = ''; vidShow(); };
+document.getElementById('vid-min').onclick = () => {
+  const on = !vidEl.classList.contains('min'); vidEl.classList.toggle('min', on);
+  if (on) vidFrame.innerHTML = ''; else vidShow();   // hiding stops the video
+  document.getElementById('vid-min').textContent = on ? '▴' : '▾';
+  try { localStorage.setItem('fl-vid-min', on ? '1' : '0'); } catch(e){}
+};
+if (vidEl.classList.contains('min')) document.getElementById('vid-min').textContent = '▴';
+setInterval(() => vidRefresh(false), 700);
+setInterval(() => { vidCache.clear(); if (!vid.engaged) vidRefresh(true); }, 10 * 60e3);
 
 /* start in a working state */
 let startLang = 'en'; try { startLang = localStorage.getItem('fl-lang') || ((navigator.language || 'en').slice(0, 2)); } catch(e){}

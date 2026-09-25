@@ -325,7 +325,7 @@ const TRUSTED = ["reuters", "associated press", "ap news", "afp", "agence france
   "the times", "the telegraph", "the independent", "euronews", "le monde", "le figaro", "libération", "el país", "el pais", "el mundo",
   "la vanguardia", "bbc mundo", "bbc arabic", "al arabiya", "العربية", "الجزيرة", "sky news arabia", "سكاي نيوز", "asharq al-awsat",
   "الشرق الأوسط", "cnn arabic", "nikkei", "south china morning post", "the hindu", "haaretz", "times of israel", "kyiv independent",
-  "the moscow times", "der spiegel", "spiegel", "zeit", "süddeutsche", "faz", "frankfurter allgemeine", "tagesschau", "orf", "swissinfo", "cbc", "abc.net.au"];
+  "the moscow times", "der spiegel", "spiegel", "zeit", "süddeutsche", "faz", "frankfurter allgemeine", "tagesschau", "orf", "swissinfo", "cbc", "abc.net.au", "cna", "channel newsasia"];
 const trusted = s => { const l = (s || "").toLowerCase(); return TRUSTED.some(t => l === t || l.includes(t)); };
 const POLITICAL = [
   [/\b(war|invasion|offensive|front ?line|missiles?|drones?|air ?strikes?|strikes?|shelling|troops|military|army|attacks?|killed|nuclear|guerre|frappes?|armée|militaire|guerra|ataques?|misil(es)?|ejército|militar)\b|حرب|هجوم|غارة|صاروخ|قصف|جيش|عسكري/i, 3],
@@ -409,6 +409,71 @@ async function topStories(lang, q, en, ctx){
   return new Response(body, { status: stories.length ? 200 : 502, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "miss" }) });
 }
 
+/* ------------------------------------------------------------------ news videos
+   Trusted news channels' public YouTube feeds (latest ~15 videos each, no key needed). Videos are grouped into
+   stories and ranked like the top stories; world videos that match today's biggest stories get a boost. */
+const CHANNELS = {
+  en: [["Al Jazeera English", "UCNye-wNBqNL5ZzHSJj3l8Bg"], ["Sky News", "UCoMdktPbSTixAyNGwb-UYkQ"], ["DW News", "UCknLrEdhRCp1aegoMqRaCZg"],
+       ["France 24 English", "UCQfwfsi5VrQ8yKZ-UWmAEFg"], ["BBC News", "UC16niRr50-MSBwiO3YDb3RA"], ["Reuters", "UChqUTb7kYRX8-EiaN3XFrSQ"],
+       ["Associated Press", "UC52X5wxOL_s5yw0dQk7NtgA"], ["CNA", "UC83jt4dlz1Gjl58fzQrrKZg"]],
+  fr: [["France 24", "UCCCPCZNChQdGa9EkATeye4g"], ["Euronews", "UCW2QcKZiU8aUGg4yxCIditg"], ["DW News", "UCknLrEdhRCp1aegoMqRaCZg"]],
+  es: [["France 24 Español", "UCUdOoVWuWmgo1wByzcsyKDQ"], ["DW Español", "UCT4Jg8h03dD0iN3Pb5L0PMA"]],
+  ar: [["Al Jazeera Arabic", "UCfiwzLy-8yKzIbsmZTzxDgw"], ["Sky News Arabia", "UCIJXOvggjKtCagMfxvcCzAA"], ["France 24 Arabic", "UCdTyuXgmJkG_O8_75eqej-w"],
+       ["DW Arabic", "UC30ditU5JI16o5NbFsHde_Q"], ["BBC News Arabic", "UCelk6aHijZq-GJBBB9YpReA"]],
+};
+// 24/7 live news streams per language (the "LIVE TV" button)
+const LIVE_TV = { en: "UCNye-wNBqNL5ZzHSJj3l8Bg", fr: "UCCCPCZNChQdGa9EkATeye4g", es: "UCUdOoVWuWmgo1wByzcsyKDQ", ar: "UCfiwzLy-8yKzIbsmZTzxDgw" };
+function parseYouTube(xml, channel){
+  const out = [];
+  for (const m of xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)){
+    const b = m[1], g = tag => { const r = b.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`)); return r ? unxml(r[1]) : ""; };
+    const id = g("yt:videoId"), t = g("title"), d = new Date(g("published"));
+    if (!id || !t || /#shorts?\b/i.test(t)) continue;
+    out.push({ t: t.slice(0, 300), d: isNaN(d) ? null : d.toISOString(),
+      members: [{ u: `https://www.youtube.com/watch?v=${id}`, t: t.slice(0, 300), s: channel, id, d: isNaN(d) ? null : d.toISOString(), img: `https://i.ytimg.com/vi/${id}/hqdefault.jpg`, x: g("media:description").slice(0, 400) }] });
+  }
+  return out;
+}
+async function videoPool(lang, ctx){
+  const cache = caches.default, ck = new Request(`https://faultlines-cache/vpool/${lang}`);
+  const hit = await cache.match(ck);
+  if (hit) return hit.json();
+  const lists = await Promise.all(CHANNELS[lang].map(([name, id]) => fetch(`https://www.youtube.com/feeds/videos.xml?channel_id=${id}`, { cf: { cacheTtl: 300 } })
+    .then(r => r.ok ? r.text() : "").then(x => parseYouTube(x, name)).catch(() => [])));
+  const pool = { items: lists.flat(), at: Date.now() };
+  if (pool.items.length) ctx.waitUntil(cache.put(ck, new Response(JSON.stringify(pool), { headers: { "Content-Type": "application/json", "Cache-Control": "max-age=600" } })));
+  return pool;
+}
+async function topVideos(lang, q, en, ctx){
+  if (!CHANNELS[lang]) lang = "en";
+  const key = `https://faultlines-cache/videos/${lang}/${encodeURIComponent(q.toLowerCase())}`;
+  const cache = caches.default, hit = await cache.match(key);
+  if (hit) return new Response(hit.body, { status: 200, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "hit" }) });
+  const pool = await videoPool(lang, ctx);
+  const nm = [q, en].filter(Boolean).map(x => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+  const focus = nm.length ? new RegExp(nm.join("|"), "i") : null;
+  const recent = it => !it.d || Date.now() - Date.parse(it.d) < (focus ? 7 : 2) * 864e5;
+  let items = pool.items.filter(it => recent(it) && (!focus || focus.test(it.t + " " + it.members[0].x)));
+  // world: favour videos about today's biggest stories (the same ranking as the top-story segment)
+  let topWords = [];
+  if (!focus){
+    const news = await newsPool(lang, ctx);
+    topWords = scoreStories(news.items.filter(it => !it.d || Date.now() - Date.parse(it.d) < 2 * 864e5), null).slice(0, 8).map(st => st.nm);
+  }
+  const stories = scoreStories(items, focus).map(st => {
+    const tw = words(st.t + " " + st.members.map(m => m.t).join(" "));
+    const hot = topWords.reduce((a, nms) => { let k = 0; nms.forEach(x => tw.has(x) && k++); return Math.max(a, k); }, 0);
+    const format = /\b(replay|highlights|podcast|full episode|compilation)\b/i.test(st.t) ? 6 : 0;   // prefer news reports over recordings
+    return Object.assign(st, { score: st.score + Math.min(hot, 3) * 4 - format });
+  }).sort((a, b) => b.score - a.score).slice(0, 5).map(st => {
+    const lead = st.members.slice().sort((a, b) => (b.d || "").localeCompare(a.d || ""))[0];   // newest video on the story
+    return { id: lead.id, t: lead.t, s: lead.s, d: lead.d || st.d, n: st.n, also: st.srcs.filter(x => x !== lead.s).slice(0, 4) };
+  });
+  const body = JSON.stringify({ lang, q, live: LIVE_TV[lang], generated: new Date().toISOString(), videos: stories });
+  if (stories.length) ctx.waitUntil(cache.put(key, new Response(body, { headers: { "Content-Type": "application/json", "Cache-Control": "max-age=600" } })));
+  return new Response(body, { status: 200, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "miss" }) });
+}
+
 export default {
   async fetch(request, env, ctx) {
     const origin = request.headers.get("Origin") || "";
@@ -428,6 +493,10 @@ export default {
 
     // --- live feed: latest world headlines from Google News, cached 10 minutes per language ---
     if (path === "live") return liveFeed(url.searchParams.get("lang") || "en", ctx);
+
+    // --- news videos: the top stories as videos from trusted news channels (world, or one country) ---
+    if (path === "videos") return topVideos(url.searchParams.get("lang") || "en", (url.searchParams.get("q") || "").slice(0, 60),
+                                            (url.searchParams.get("en") || "").slice(0, 60), ctx);
 
     // --- top stories: the biggest stories right now (world, or one country), ranked by how widely they're covered ---
     if (path === "top") return topStories(url.searchParams.get("lang") || "en", (url.searchParams.get("q") || "").slice(0, 60),
