@@ -131,18 +131,19 @@ def read_baseline(html: str) -> dict:
 
 
 def headline_table(news: dict) -> tuple[str, dict]:
-    """Numbered headline list for the prompt, and id -> headline lookup."""
-    items = list(news.get("items") or [])
+    """Numbered headline list for the prompt, and id -> headline lookup.
+    Only stories confirmed by at least two independent outlets can justify a change."""
+    items = [x for x in (news.get("items") or []) if x.get("k", 0) >= 2]
     urls = {x["u"] for x in items}
     for a in news.get("alerts") or []:
-        if a.get("u") not in urls:
-            items.append({k: a[k] for k in ("t", "s", "u", "d") if k in a})
+        if a.get("u") not in urls and a.get("k", 0) >= 2:
+            items.append({k: a[k] for k in ("t", "s", "u", "d", "k") if k in a})
             urls.add(a.get("u"))
     lookup, lines = {}, []
     for i, x in enumerate(sorted(items, key=lambda x: x.get("d", ""), reverse=True)):
         hid = f"h{i}"
         lookup[hid] = x
-        lines.append(f"{hid} | {x.get('d', '')[:10]} | {x.get('s', '')} | {x.get('t', '')}")
+        lines.append(f"{hid} | {x.get('d', '')[:10]} | {x.get('s', '')} (+{x.get('k', 1) - 1} more outlets) | {x.get('t', '')}")
     return "\n".join(lines), lookup
 
 

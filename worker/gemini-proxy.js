@@ -305,11 +305,12 @@ async function newsPool(lang, ctx){
 async function liveFeed(lang, ctx){
   if (!NEWS_LANG[lang]) lang = "en";
   const pool = await newsPool(lang, ctx);
-  const seen = new Set(), items = [];
-  for (const it of pool.items){
-    const m = it.members[0], k = it.t.toLowerCase().slice(0, 80);
-    if (!seen.has(k)){ seen.add(k); items.push({ t: it.t, u: m.u, s: m.s, d: it.d }); }
-  }
+  // confirmed stories only (2+ independent outlets), newest first
+  const recent = pool.items.filter(it => !it.d || Date.now() - Date.parse(it.d) < 2 * 864e5);
+  const items = scoreStories(recent, null).map(st => {
+    const lead = st.members.find(m => trusted(m.s)) || st.lead;
+    return { t: lead.t || st.t, u: lead.u, s: lead.s, d: st.d, n: st.n, also: st.srcs.filter(x => x !== lead.s).slice(0, 4) };
+  });
   items.sort((a, b) => (b.d || "").localeCompare(a.d || ""));
   const body = JSON.stringify({ lang, generated: new Date(pool.at).toISOString(), items: items.slice(0, 80) });
   return new Response(body, { status: items.length ? 200 : 502, headers: cors({ "Content-Type": "application/json" }) });
@@ -327,6 +328,11 @@ const TRUSTED = ["reuters", "associated press", "ap news", "afp", "agence france
   "الشرق الأوسط", "cnn arabic", "nikkei", "south china morning post", "the hindu", "haaretz", "times of israel", "kyiv independent",
   "the moscow times", "der spiegel", "spiegel", "zeit", "süddeutsche", "faz", "frankfurter allgemeine", "tagesschau", "orf", "swissinfo", "cbc", "abc.net.au", "cna", "channel newsasia"];
 const trusted = s => { const l = (s || "").toLowerCase(); return TRUSTED.some(t => l === t || l.includes(t)); };
+// state-controlled propaganda outlets: never shown, never counted as a confirming source
+const STATE_MEDIA = /^(rt|rt news|rt\.com|russia today\b.*|sputnik\b.*|tass|tass\.com|ria novosti\b.*|ria\.ru|press ?tv\b.*|presstv\.ir|tasnim\b.*|fars news\b.*|farsnews\b.*|mehr news\b.*|irna\b.*|global ?times|globaltimes\.cn|cgtn\b.*|china daily\b.*|xinhua\b.*|people'?s daily\b.*|kcna|kcna\.kp|telesur\b.*|al mayadeen\b.*|sana|syrian arab news agency|belta\b.*|granma|pravda\b.*|izvestia|belarus\.by|azertac\b.*|سانا|وكالة سانا|روسيا اليوم|آر تي|سبوتنيك|برس تي في|تسنيم|وكالة تسنيم|فارس|وكالة فارس|مهر|الميادين|شينخوا|وكالة شينخوا|ارنا|إرنا)$/i;
+// republishers copy other outlets, so they don't count as an independent confirmation
+const AGGREGATOR = /(yahoo|msn|newsbreak|ground ?news|flipboard|head ?topics|newsnow|inkl|devdiscourse|latestly)/i;
+const MIN_SOURCES = 2;   // a story is only shown when at least two independent outlets report it
 const POLITICAL = [
   [/\b(war|invasion|offensive|front ?line|missiles?|drones?|air ?strikes?|strikes?|shelling|troops|military|army|attacks?|killed|nuclear|guerre|frappes?|armée|militaire|guerra|ataques?|misil(es)?|ejército|militar)\b|حرب|هجوم|غارة|صاروخ|قصف|جيش|عسكري/i, 3],
   [/\b(sanctions?|ceasefire|truce|peace talks?|talks|negotiations?|summit|treaty|deal|diplomat\w*|embassy|ambassador|foreign minister|un security council|nato|sanctions|cessez-le-feu|négociations?|sommet|accord|diplomat\w*|sanciones|alto el fuego|negociaciones|cumbre|acuerdo)\b|عقوبات|وقف إطلاق النار|مفاوضات|قمة|اتفاق|دبلوماسي/i, 2],
@@ -357,24 +363,28 @@ const STOP = new Set("the a an and or of to in on for with at by from as is are 
 const words = t => new Set(t.toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, " ").split(/\s+/).filter(w => w.length > 3 && !STOP.has(w)));
 // names in a headline (capitalised words after the first): outlets word the same story differently but name the same actors
 const names = t => new Set((t.match(/(?<!^)\b\p{Lu}[\p{L}'’-]{2,}/gu) || []).map(x => x.toLowerCase().replace(/[’']s$/, "")).filter(x => !STOP.has(x)));
-function scoreStories(items, focus){
+function scoreStories(items, focus, minSources = MIN_SOURCES){
   // merge items that share enough title words, or enough of the same names, into one story
   const stories = [];
-  for (const it of items){
+  for (let it of items){
+    const members = it.members.filter(m => !STATE_MEDIA.test((m.s || "").trim()));
+    if (!members.length) continue;
+    it = { ...it, members };
     const w = words(it.t), nm = names(it.t);
     let best = null, bestSim = 0;
     for (const st of stories){
       let inter = 0; w.forEach(x => st.w.has(x) && inter++);
       let ni = 0; nm.forEach(x => st.nm.has(x) && ni++);
-      const sim = Math.max(inter / Math.max(1, Math.min(w.size, st.w.size)), ni >= 2 ? ni / Math.max(2, Math.min(nm.size, st.nm.size)) * 0.9 : 0);
+      const sim = Math.max(inter >= 2 ? inter / Math.max(1, Math.min(w.size, st.w.size)) : 0, ni >= 2 ? ni / Math.max(2, Math.min(nm.size, st.nm.size)) * 0.9 : 0);
       if (sim > bestSim){ bestSim = sim; best = st; }
     }
-    if (best && bestSim >= 0.45){ best.members.push(...it.members); w.forEach(x => best.w.add(x)); nm.forEach(x => best.nm.add(x)); if (it.d && (!best.d || it.d > best.d)) best.d = it.d; }
+    // join a story without widening its words, so stories can't chain into unrelated ones
+    if (best && bestSim >= 0.45){ best.members.push(...it.members); if (it.d && (!best.d || it.d > best.d)) best.d = it.d; }
     else stories.push({ t: it.t, d: it.d, w, nm, members: [...it.members] });
   }
   const now = Date.now();
   for (const st of stories){
-    const srcs = [...new Set(st.members.map(x => x.s).filter(Boolean))];
+    const srcs = [...new Set(st.members.map(x => x.s).filter(s => s && !AGGREGATOR.test(s)))];   // independent outlets only
     const trustedSrcs = srcs.filter(trusted);
     const text = st.t + " " + st.members.map(x => x.t).join(" ");
     const pol = POLITICAL.reduce((a, [re, w]) => a + (re.test(text) ? w : 0), 0);
@@ -386,7 +396,8 @@ function scoreStories(items, focus){
         - Math.min(hours, 72) / 8 - (SPORT.test(text) ? 20 : 0)
         + (focus && !focus.test(text) ? -15 : 0) });
   }
-  return stories.filter(st => st.trustedN > 0 || st.n >= 3).sort((a, b) => b.score - a.score);
+  // confirmed stories only: several independent outlets, at least one of them trusted
+  return stories.filter(st => st.n >= minSources && st.trustedN >= 1).sort((a, b) => b.score - a.score);
 }
 async function topStories(lang, q, en, ctx){
   if (!NEWS_LANG[lang]) lang = "en";
@@ -454,15 +465,19 @@ async function topVideos(lang, q, en, ctx){
   const focus = nm.length ? new RegExp(nm.join("|"), "i") : null;
   const recent = it => !it.d || Date.now() - Date.parse(it.d) < (focus ? 7 : 2) * 864e5;
   let items = pool.items.filter(it => recent(it) && (!focus || focus.test(it.t + " " + it.members[0].x)));
-  // world: favour videos about today's biggest stories (the same ranking as the top-story segment)
-  let topWords = [];
-  if (!focus){
-    const news = await newsPool(lang, ctx);
-    topWords = scoreStories(news.items.filter(it => !it.d || Date.now() - Date.parse(it.d) < 2 * 864e5), null).slice(0, 8).map(st => st.nm);
-  }
-  const stories = scoreStories(items, focus).map(st => {
+  // stories that 2+ independent news outlets confirm (world, or naming this country): a video must be about one of them,
+  // or be carried by 2+ channels itself
+  const news = await newsPool(lang, ctx);
+  const confirmed = scoreStories(news.items.filter(it => (!it.d || Date.now() - Date.parse(it.d) < (focus ? 5 : 2) * 864e5)
+    && (!focus || focus.test(it.t + " " + it.members.map(m => m.t + " " + (m.x || "")).join(" ")))), focus);
+  const topWords = confirmed.slice(0, 8).map(st => st.nm);
+  const matches = (tw, st) => { let names = 0, ws = 0; st.nm.forEach(x => tw.has(x) && names++); st.w.forEach(x => tw.has(x) && ws++); return names >= 2 || ws >= 3; };
+  const stories = scoreStories(items, focus, 1).filter(st => {
     const tw = words(st.t + " " + st.members.map(m => m.t).join(" "));
-    const hot = topWords.reduce((a, nms) => { let k = 0; nms.forEach(x => tw.has(x) && k++); return Math.max(a, k); }, 0);
+    return st.n >= MIN_SOURCES || confirmed.some(c => matches(tw, c));
+  }).map(st => {
+    const tw = words(st.t + " " + st.members.map(m => m.t).join(" "));
+    const hot = focus ? 0 : topWords.reduce((a, nms) => { let k = 0; nms.forEach(x => tw.has(x) && k++); return Math.max(a, k); }, 0);
     const format = /\b(replay|highlights|podcast|full episode|compilation)\b/i.test(st.t) ? 6 : 0;   // prefer news reports over recordings
     return Object.assign(st, { score: st.score + Math.min(hot, 3) * 4 - format });
   }).sort((a, b) => b.score - a.score).slice(0, 5).map(st => {

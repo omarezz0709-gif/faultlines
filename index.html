@@ -89,6 +89,7 @@ button{font:inherit;color:inherit}
 .feed .fc{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px}
 .feed .fc .tag{font-size:11px;padding:2px 7px}
 .feed .imp b.kwb{color:var(--s-H);font:600 10px var(--mono);text-transform:uppercase;letter-spacing:.06em;margin-inline-end:6px}
+.conf{color:var(--s-F);white-space:nowrap}
 .q-asked{font:500 17px/1.4 var(--body);color:var(--text);margin:0}
 /* top story "TV" segment under the question box */
 .tv{background:linear-gradient(180deg,rgba(24,20,10,.94),rgba(10,10,10,.94));border:1px solid var(--gold-dim);border-radius:6px;overflow:hidden;backdrop-filter:blur(10px)}
@@ -2589,7 +2590,9 @@ async function loadNews(){
     NEWS = d; onNews();
   } catch(e){}
 }
-const newsItems = idx => (idx || []).map(j => NEWS && NEWS.items && NEWS.items[j]).filter(Boolean);
+// confirmed headlines only: at least two independent outlets report the story (k, set by the updater)
+const confirmedNews = x => x && (x.k || 0) >= 2;
+const newsItems = idx => (idx || []).map(j => NEWS && NEWS.items && NEWS.items[j]).filter(confirmedNews);
 function fmtDateTime(d){ const t = new Date(d); return isNaN(t) ? '' : t.toLocaleString(uiLocale(), {day:'numeric', month:'short', hour:'2-digit', minute:'2-digit'}); }
 function ago(d){
   const m = (Date.now() - new Date(d)) / 6e4;
@@ -2598,9 +2601,11 @@ function ago(d){
   if (m < 1440) return Math.round(m/60) + ' h ago';
   return Math.round(m/1440) + ' d ago';
 }
+// "✓ 3 outlets": how many independent outlets report the story (only stories with 2+ are shown)
+const confTag = (k, also) => k > 1 ? ` · <span class="conf" title="${esc([...(also || [])].join(', '))}">✓ ${k} outlets</span>` : '';
 function newsLi(it){
   const u = safeUrl(it.u);
-  return `<li dir="auto">${u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(it.t)}</a>` : esc(it.t)}<span class="nmeta">${esc(it.s || '')}${it.s ? ' · ' : ''}${esc(ago(it.d))}</span></li>`;
+  return `<li dir="auto">${u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(it.t)}</a>` : esc(it.t)}<span class="nmeta">${esc(it.s || '')}${it.s ? ' · ' : ''}${esc(ago(it.d))}${confTag(it.k, it.o)}</span></li>`;
 }
 function tensionHTML(p){
   if (p == null) return '';
@@ -2615,7 +2620,8 @@ function newsSection(id){
   return `<section class="newsbox"><h3>In the news <em>${c.n || 0} headlines · last 2 days</em></h3>
     ${tensionHTML(c.tension)}
     ${items.length ? `<ul class="news">${items.map(newsLi).join('')}</ul>` : '<p class="note muted">No recent headlines found.</p>'}
-    <p class="hidden-note">Google News, refreshed at 00:00, 07:00, 12:00 and 18:00 Berlin time · last ${esc(fmtDateTime(NEWS.generated))}.</p></section>`;
+    <p class="hidden-note">Google News, refreshed at 00:00, 07:00, 12:00 and 18:00 Berlin time · last ${esc(fmtDateTime(NEWS.generated))}.</p>
+    <p class="hidden-note">Only stories reported by at least two independent outlets are shown; state propaganda outlets (RT, Sputnik, TASS, Press TV, Global Times, CGTN and others) are left out.</p></section>`;
 }
 function pairNewsHTML(a, b){
   const its = newsItems(NEWS && NEWS.pairs && NEWS.pairs[key(a, b)]);
@@ -2632,10 +2638,10 @@ function togetherHTML(ids){
 function alertLi(a){
   const names = (a.c || []).map(c => ENT[c] ? ENT[c].name : c).join(' – ');
   const u = safeUrl(a.u);
-  return `<li><b>${esc(names)}</b> <span class="kw">${esc(a.kw)}</span><br><span dir="auto">${u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(a.t)}</a>` : esc(a.t)}</span> <span class="nmeta">${esc(a.s || '')} · ${esc(ago(a.d))}</span></li>`;
+  return `<li><b>${esc(names)}</b> <span class="kw">${esc(a.kw)}</span><br><span dir="auto">${u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(a.t)}</a>` : esc(a.t)}</span> <span class="nmeta">${esc(a.s || '')} · ${esc(ago(a.d))}${confTag(a.k, a.o)}</span></li>`;
 }
 function alertsSection(n){
-  const al = (NEWS && NEWS.alerts) || [];
+  const al = ((NEWS && NEWS.alerts) || []).filter(confirmedNews);
   if (!al.length) return '';
   return `<section><h3>Headlines to watch <em>flagged automatically</em></h3><ul class="alerts">${al.slice(0, n).map(alertLi).join('')}</ul>
     ${n < al.length ? `<button class="tag" data-allnews>All ${al.length} headlines to watch</button>` : ''}
@@ -2933,6 +2939,10 @@ const TR = {
   'Close': ['Fermer', 'Cerrar', 'إغلاق'], 'TOP STORY': ['À LA UNE', 'PORTADA', 'أبرز خبر'], 'World': ['Monde', 'Mundo', 'العالم'],
   'Previous story': ['Sujet précédent', 'Noticia anterior', 'الخبر السابق'], '▶ VIDEO': ['▶ VIDÉO', '▶ VÍDEO', '▶ فيديو'],
   'LIVE TV': ['TV EN DIRECT', 'TV EN VIVO', 'بث مباشر'], 'Live TV': ['TV en direct', 'TV en vivo', 'بث مباشر'], 'Hide video': ['Masquer la vidéo', 'Ocultar vídeo', 'إخفاء الفيديو'],
+  'Only stories reported by at least two independent outlets are shown; state propaganda outlets (RT, Sputnik, TASS, Press TV, Global Times, CGTN and others) are left out.': [
+    'Seules les informations rapportées par au moins deux médias indépendants sont affichées ; les médias de propagande d’État (RT, Sputnik, TASS, Press TV, Global Times, CGTN…) sont exclus.',
+    'Solo se muestran noticias publicadas por al menos dos medios independientes; se excluyen los medios de propaganda estatal (RT, Sputnik, TASS, Press TV, Global Times, CGTN…).',
+    'تُعرض فقط الأخبار التي تنقلها وسيلتا إعلام مستقلتان على الأقل؛ وتُستبعد وسائل الدعاية الحكومية (RT وسبوتنيك وتاس وبرس تي في وغلوبال تايمز وCGTN وغيرها).'],
   'Play video': ['Lire la vidéo', 'Reproducir vídeo', 'تشغيل الفيديو'], 'Watch live news': ['Regarder l’info en direct', 'Ver noticias en directo', 'شاهد الأخبار مباشرة'], '24/7 live news channel': ['Chaîne d’info en continu', 'Canal de noticias 24/7', 'قناة أخبار مباشرة'], 'Next story': ['Sujet suivant', 'Noticia siguiente', 'الخبر التالي'], 'Territory': ['Territoire', 'Territorio', 'إقليم'], 'Continent': ['Continent', 'Continente', 'قارة'],
   'No match. Try a country or strait name.': ['Aucun résultat. Essayez un pays ou un détroit.', 'Sin resultados. Prueba un país o estrecho.', 'لا نتائج. جرّب اسم دولة أو مضيق.'], 'Open panel': ['Ouvrir le panneau', 'Abrir panel', 'افتح اللوحة'], 'Push panel down': ['Réduire le panneau', 'Bajar el panel', 'اخفض اللوحة'],
 };
@@ -2963,6 +2973,7 @@ TR_RE.push(
     'عناوين تذكر دولتين أو أكثر مع كلمات مثل حرب أو عقوبات أو وقف إطلاق النار أو انقلاب، خلال آخر 7 أيام. مطابقة كلمات فقط: اقرأ المقال قبل الاستنتاج.']]
 );
 // "20 min ago" etc. inside longer text (source · time)
+TR_RE.push([/^✓ (\d+) outlets$/, ['✓ $1 médias', '✓ $1 medios', '✓ $1 وسائل إعلام']]);
 const TR_AGO = [[/(\d+) min ago/, ['il y a $1 min', 'hace $1 min', 'منذ $1 دقيقة']], [/(\d+) h ago/, ['il y a $1 h', 'hace $1 h', 'منذ $1 ساعة']], [/(\d+) d ago/, ['il y a $1 j', 'hace $1 d', 'منذ $1 يوم']]];
 const LI = {fr: 0, es: 1, ar: 2};
 // country names: ISO3 -> ISO2 for the browser's translations; a few set by hand
@@ -3115,7 +3126,7 @@ async function loadFeed(){
     if (r.ok){ const d = await r.json(); items = d.items || []; feedAt = d.generated; }
   } catch(e){}
   if (!items.length){   // older Worker without /live: use the flagged headlines the site already has
-    items = ((NEWS && NEWS.alerts) || []).map(a => ({t: a.t, u: a.u, s: a.s, d: a.d, c: a.c, kw: a.kw, imp: true}));
+    items = ((NEWS && NEWS.alerts) || []).filter(confirmedNews).map(a => ({t: a.t, u: a.u, s: a.s, d: a.d, c: a.c, kw: a.kw, imp: true, k: a.k, o: a.o}));
     feedAt = NEWS && NEWS.generated;
   }
   FEED = items.map(tagFeed);
@@ -3141,12 +3152,13 @@ document.getElementById('tk-item').onclick = e => { const it = FEED[+e.currentTa
 function renderFeed(){
   clearSelectionQuiet();
   const li = it => `<li class="${it.imp ? 'imp' : ''}">${it.imp && it.kw ? `<b class="kwb">${esc(it.kw)}</b>` : ''}<span dir="auto">${safeUrl(it.u) ? `<a href="${esc(safeUrl(it.u))}" target="_blank" rel="noopener">${esc(it.t)}</a>` : esc(it.t)}</span>
-    <span class="nmeta">${esc(it.s || '')}${it.s ? ' · ' : ''}${esc(ago(it.d))}</span>
+    <span class="nmeta">${esc(it.s || '')}${it.s ? ' · ' : ''}${esc(ago(it.d))}${confTag(it.n || it.k, it.also || it.o)}</span>
     ${it.c && it.c.length ? `<div class="fc">${it.c.map(c => `<button class="tag" data-c="${c}">${esc(ENT[c].name)}</button>`).join('')}${it.c.length >= 2 ? `<button class="tag" data-cmp="${it.c.join('|')}">⇄</button>` : ''}</div>` : ''}</li>`;
   panel.innerHTML = head('World news', 'Live feed') + `<div class="p-body">
     <section><h3>Latest headlines <em>${feedAt ? esc(fmtDateTime(feedAt)) : ''}</em></h3>
     ${FEED.length ? `<ul class="feed news">${FEED.slice(0, 50).map(li).join('')}</ul>` : '<p class="note muted">No live headlines right now.</p>'}</section>
-    <p class="hidden-note">Google News world headlines, checked every few minutes. Headlines that name a country and words like war, strike or sanctions are marked.</p></div>`;
+    <p class="hidden-note">Google News world headlines, checked every few minutes. Headlines that name a country and words like war, strike or sanctions are marked.</p>
+    <p class="hidden-note">Only stories reported by at least two independent outlets are shown; state propaganda outlets (RT, Sputnik, TASS, Press TV, Global Times, CGTN and others) are left out.</p></div>`;
   wirePanel(); panelMode = 'feed';
   document.getElementById('live-btn').setAttribute('aria-pressed', 'true');
 }
