@@ -1344,7 +1344,9 @@ function refreshPolys(){ globe.polygonCapColor(capColor).polygonAltitude(altitud
    Zoomed out: just the countries. Zooming in adds rivers and city names, more the closer you get.
    Each river point, lake and city belongs to a country and sits on that country's current height. */
 var curAlt = 3, geoCities = [], geoRivers = [], geoLakes = [], geoHosts = new Set(), geoState = '';
-function zoomedIn(){ return curAlt < 1.9; }
+// zoom relative to the fitted overview (which sits closer on big screens): 2.5 = whole globe, smaller = zoomed in
+function effAlt(){ return typeof fitAlt === 'function' ? curAlt / fitAlt() * 2.5 : curAlt; }
+function zoomedIn(){ return effAlt() < 1.9; }
 const FEAT_BB = new Map();
 function bboxOf(f){
   let b = FEAT_BB.get(f); if (b) return b;
@@ -1399,11 +1401,11 @@ async function loadGeo(){
 window.addEventListener('load', () => setTimeout(loadGeo, 600));
 function refreshGeo(force){
   if (!geoCities.length) return;
-  const pov = globe.pointOfView(), alt = curAlt;
-  // what to show depends on zoom level, where the view is centred and how high each country currently sits
+  const pov = globe.pointOfView(), alt = effAlt(), realAlt = curAlt;
+  // what to show depends on zoom level (relative to the overview), where the view is centred and how high each country sits
   const rank = alt > 1.9 ? 0 : alt > 1.1 ? 3 : alt > 0.6 ? 5 : 9;
   const minPop = alt > 1.9 ? Infinity : alt > 1.3 ? 5e6 : alt > 0.9 ? 1.5e6 : alt > 0.55 ? 5e5 : alt > 0.3 ? 2e5 : 75000;
-  const view = Math.min(90, alt * 32 + 1.5), zoomKey = Math.round(Math.log2(alt) * 4);
+  const view = Math.min(90, realAlt * 32 + 1.5), zoomKey = Math.round(Math.log2(alt) * 4);
   const cLat = Math.round(pov.lat / (view / 3)), cLng = Math.round(pov.lng / (view / 3));
   let heights = ''; if (zoomedIn()) geoHosts.forEach(f => { const a = altitude(f); if (a > 0.006) heights += f.id + a; });
   const state = [rank, minPop, zoomKey, cLat, cLng, heights].join('|');
@@ -1414,7 +1416,7 @@ function refreshGeo(force){
   // city names near the centre of the view: capitals first, then by size
   const near = c => { const dl = (c.lng - pov.lng + 540) % 360 - 180; return Math.abs(c.lat - pov.lat) < view && Math.abs(dl) * Math.cos(c.lat * Math.PI / 180) < view; };
   // skip a city whose name would overlap one already placed (capitals and bigger cities come first)
-  const gap = alt * 2.2, placed = [];
+  const gap = realAlt * 2.2, placed = [];   // spacing in degrees follows the real camera height
   if (alt <= 1.9) for (const c of geoCities){
     if (placed.length >= 110) break;
     if (!(c.cap || c.pop >= minPop) || !near(c)) continue;
@@ -1467,7 +1469,7 @@ function fitAlt(){
   return Math.min(6, Math.max(1.6, 1 / Math.sin(theta) - 1));
 }
 // at the overview zoom, keep the whole globe in view when the window or panel changes
-function fitView(ms = 600){ if (curAlt >= 1.9 || ms === 0) globe.pointOfView({altitude: fitAlt()}, ms); }
+function fitView(ms = 600){ if (!zoomedIn() || ms === 0) globe.pointOfView({altitude: fitAlt()}, ms); }
 
 function selectCountry(id){
   const e = ENT[id]; if (!e) return;
