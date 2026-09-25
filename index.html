@@ -2504,7 +2504,7 @@ function changesSection(n){
 function renderChanges(){
   const log = (meta && Array.isArray(meta.log)) ? meta.log : [];
   panel.innerHTML = head('News & updates','Headlines to watch') + `<div class="p-body">
-    ${NEWS && NEWS.generated ? `<p class="note">Headlines last refreshed ${esc(fmtDateTime(NEWS.generated))}; the site refreshes at 00:00, 12:00 and 18:00 Berlin time.</p>` : ''}
+    ${NEWS && NEWS.generated ? `<p class="note">Headlines last refreshed ${esc(fmtDateTime(NEWS.generated))}; the site refreshes at 00:00, 07:00, 12:00 and 18:00 Berlin time.</p>` : ''}
     ${alertsSection(200)}
     ${log.length ? '<h3 style="margin:4px 0 -8px;font:600 13px var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)">Recorded relationship changes</h3>' : ''}
     ${log.map(e=>`<section><h3>${esc(fmtDate(e.date)||e.date||'')}</h3><ul class="changes">${changeItems(e) || '<li class="muted">No significant changes.</li>'}</ul></section>`).join('')}
@@ -2601,7 +2601,7 @@ function newsSection(id){
   return `<section class="newsbox"><h3>In the news <em>${c.n || 0} headlines · last 2 days</em></h3>
     ${tensionHTML(c.tension)}
     ${items.length ? `<ul class="news">${items.map(newsLi).join('')}</ul>` : '<p class="note muted">No recent headlines found.</p>'}
-    <p class="hidden-note">Google News, refreshed at 00:00, 12:00 and 18:00 Berlin time · last ${esc(fmtDateTime(NEWS.generated))}.</p></section>`;
+    <p class="hidden-note">Google News, refreshed at 00:00, 07:00, 12:00 and 18:00 Berlin time · last ${esc(fmtDateTime(NEWS.generated))}.</p></section>`;
 }
 function pairNewsHTML(a, b){
   const its = newsItems(NEWS && NEWS.pairs && NEWS.pairs[key(a, b)]);
@@ -2941,8 +2941,8 @@ const TR_RE = [
 const tn = n => (trMap && trMap.get(n)) || n;
 TR_RE.push(
   [/^✦ Explain (.+)'s foreign policy$/, (m, n) => ['✦ Expliquer la politique étrangère : ' + tn(n), '✦ Explicar la política exterior de ' + tn(n), '✦ اشرح السياسة الخارجية لـ' + tn(n)]],
-  [/^Google News, refreshed at 00:00, 12:00 and 18:00 Berlin time · last (.+)\.$/, (m, d) => ['Google News, mis à jour à 0 h, 12 h et 18 h (heure de Berlin) · dernier : ' + d + '.', 'Google News, actualizado a las 00:00, 12:00 y 18:00 (hora de Berlín) · último: ' + d + '.', 'Google News، يُحدَّث في 00:00 و12:00 و18:00 بتوقيت برلين · آخر تحديث ' + d + '.']],
-  [/^Headlines last refreshed (.+); the site refreshes at 00:00, 12:00 and 18:00 Berlin time\.$/, (m, d) => ['Titres mis à jour ' + d + ' ; le site se met à jour à 0 h, 12 h et 18 h (heure de Berlin).', 'Titulares actualizados ' + d + '; el sitio se actualiza a las 00:00, 12:00 y 18:00 (hora de Berlín).', 'آخر تحديث للعناوين ' + d + '؛ يُحدَّث الموقع في 00:00 و12:00 و18:00 بتوقيت برلين.']],
+  [/^Google News, refreshed at 00:00, 07:00, 12:00 and 18:00 Berlin time · last (.+)\.$/, (m, d) => ['Google News, mis à jour à 0 h, 7 h, 12 h et 18 h (heure de Berlin) · dernier : ' + d + '.', 'Google News, actualizado a las 00:00, 07:00, 12:00 y 18:00 (hora de Berlín) · último: ' + d + '.', 'Google News، يُحدَّث في 00:00 و07:00 و12:00 و18:00 بتوقيت برلين · آخر تحديث ' + d + '.']],
+  [/^Headlines last refreshed (.+); the site refreshes at 00:00, 07:00, 12:00 and 18:00 Berlin time\.$/, (m, d) => ['Titres mis à jour ' + d + ' ; le site se met à jour à 0 h, 7 h, 12 h et 18 h (heure de Berlin).', 'Titulares actualizados ' + d + '; el sitio se actualiza a las 00:00, 07:00, 12:00 y 18:00 (hora de Berlín).', 'آخر تحديث للعناوين ' + d + '؛ يُحدَّث الموقع في 00:00 و07:00 و12:00 و18:00 بتوقيت برلين.']],
   [/^Headlines naming two or more countries with words like war, sanctions, ceasefire or coup, from the last 7 days\. Keyword matching only: read the article before drawing conclusions\.$/, () => [
     'Titres citant au moins deux pays avec des mots comme guerre, sanctions, cessez-le-feu ou coup d’État, sur 7 jours. Simple repérage par mots-clés : lisez l’article avant de conclure.',
     'Titulares que nombran dos o más países con palabras como guerra, sanciones, alto el fuego o golpe, de los últimos 7 días. Solo coincidencia de palabras: lee el artículo antes de sacar conclusiones.',

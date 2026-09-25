@@ -6,7 +6,7 @@ Writes data/news.json:
   countries   {ISO3: {i: [item index], n, tension}}          newest headlines + a conflict-term share
   pairs       {"AAA|BBB": [item index]}                      headlines naming both countries
   alerts      [{c: [ISO3...], kw, t, s, u, d}]               "headlines to watch", kept for 7 days
-Runs at 00:00, 12:00 and 18:00 Berlin time (plus manual runs).
+Runs at 00:00, 07:00, 12:00 and 18:00 Berlin time (plus manual runs).
 """
 from __future__ import annotations
 

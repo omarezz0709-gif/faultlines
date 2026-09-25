@@ -11,7 +11,7 @@ from zoneinfo import ZoneInfo
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 BERLIN = ZoneInfo("Europe/Berlin")
-SLOTS = (0, 12, 18)          # Berlin hours
+SLOTS = (0, 7, 12, 18)          # Berlin hours
 SLOT_WINDOW_MIN = 90         # GitHub's scheduler can start runs late
 UA = "faultlines-globe/1.0 (free news globe; GitHub Actions data refresh)"
 

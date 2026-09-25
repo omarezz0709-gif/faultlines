@@ -2,7 +2,7 @@
 
 An interactive 3D globe of international relations, indirect links (militant networks, smuggling and migration routes, proxy wars, resources), chokepoints and flashpoints, with live headlines, current leaders and country figures.
 
-**Completely free.** GitHub hosts the site (GitHub Pages) and refreshes the data at **00:00, 12:00 and 18:00 Berlin time** (GitHub Actions). No API keys, no costs, nothing running on your computer.
+**Completely free.** GitHub hosts the site (GitHub Pages) and refreshes the data at **00:00, 07:00, 12:00 and 18:00 Berlin time** (GitHub Actions). No API keys, no costs, nothing running on your computer.
 
 ## What refreshes automatically
 

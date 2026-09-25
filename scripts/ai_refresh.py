@@ -2,7 +2,7 @@
 and updates relationship statuses, indirect links, locations and election info in data/live.json.
 
 Every change must cite one of the collected headlines (by id), so sources are always real links.
-Runs right after news.py at 00:00, 12:00 and 18:00 Berlin time. Needs the GitHub secret
+Runs right after news.py at 00:00, 07:00, 12:00 and 18:00 Berlin time. Needs the GitHub secret
 GEMINI_API_KEY; without it the step is skipped and the rest of the site keeps working.
 Optional: GEMINI_MODEL to pin a model (otherwise the newest available Flash model is used).
 """
