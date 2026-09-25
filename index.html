@@ -75,7 +75,9 @@ button{font:inherit;color:inherit}
 .poi-strait i{background:var(--p-strait);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);width:12px;height:12px}
 .poi-land i{background:var(--p-land);clip-path:polygon(50% 5%,100% 95%,0 95%)}
 .poi-flash i{background:var(--p-flash);border-radius:50%;width:9px;height:9px;box-shadow:0 0 0 3px rgba(224,96,79,.28)}
-.poi-base i{background:var(--p-base);width:8px;height:8px}
+.poi-base i{background:var(--p-base);width:6px;height:6px;border-radius:1px;box-shadow:0 0 0 1.5px rgba(0,0,0,.35)}
+[data-theme="light"] .poi-base i{background:#1f3a63;box-shadow:0 0 0 1.5px rgba(255,255,255,.7)}
+[data-theme="light"] .poi-land i{background:#3b4b63}
 .poi-resource i{background:var(--p-resource);clip-path:polygon(25% 5%,75% 5%,100% 50%,75% 95%,25% 95%,0 50%)}
 .poi span{position:absolute;left:17px;top:50%;transform:translateY(-50%);white-space:nowrap;font:600 13px/1 var(--display);letter-spacing:.05em;text-transform:uppercase;color:var(--text);background:rgba(8,8,8,.9);padding:3px 6px;border-radius:3px;opacity:0;pointer-events:none;transition:opacity .15s}
 .poi:hover span,.poi:focus-visible span,.poi.on span{opacity:1}
@@ -1346,7 +1348,7 @@ const globe = new Globe(globeEl, {animateIn:true})
   .polygonLabel(polyLabel)
   .onPolygonHover(f=>{ if (f && f.lake) f = f.host; hoverId = f ? eff(f.id) : null; globeEl.style.cursor = f ? 'pointer' : 'grab'; refreshPolys(); })
   .onPolygonClick(f=>{ if (justClickedMarker()) return; if (f.lake){ if (f.host) pickCountry(eff(f.host.id)); return; } if (f.id==='ATA') return sel.type==='compare' ? null : showAntarctica(); pickCountry(eff(f.id)); })
-  .pointsData(MICRO).pointLat('lat').pointLng('lng').pointAltitude(0.02).pointRadius(0.42)
+  .pointsData(MICRO).pointLat('lat').pointLng('lng').pointAltitude(0.004).pointRadius(0.42)   // small states: flat dots, not pillars
   .pointColor(p=>{
     if (sel.type==='compare') return sel.ids.includes(p.id) ? GOLD : '#5a5a5a';
     if (sel.type==='country'){ if (p.id===sel.id) return GOLD; const r=relMap.get(p.id); return passesPair(sel.id,p.id,r) ? STATUS[r.s].color : '#5a5a5a'; }
@@ -2765,7 +2767,7 @@ function onView(pov){
   if (adminPts.length) clusterAdminMap(pov.altitude);
   // small-country dots (Liechtenstein, Malta…) shrink when zoomed in, so they don't cover whole regions
   const k = Math.round(Math.min(1, Math.max(0.1, pov.altitude / 1.5)) * 20) / 20;
-  if (k !== microK){ microK = k; globe.pointRadius(0.42 * k).pointAltitude(0.02 * k); }
+  if (k !== microK){ microK = k; globe.pointRadius(0.42 * k).pointAltitude(0.004 * k); }
 }
 function hideAdminMap(){ if (adminPts && adminPts.length){ adminPts = []; adminPlaces = []; setLabels(); } }
 function renderAdminLogin(msg){
