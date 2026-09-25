@@ -36,6 +36,7 @@
   --s-N:#8a8578; --p-land:#6f6a60; --p-base:#6f6a60; --p-resource:#b8952c;
 }
 html,body{height:100%}
+html{touch-action:manipulation}   /* phones: no accidental double-tap zoom (pinching still works) */
 body{margin:0;background:radial-gradient(120% 90% at 40% 45%,#1c1c1c 0%,var(--bg) 62%,#000 100%);background-color:var(--bg);color:var(--text);font:14px/1.5 var(--body);overflow:hidden}
 [data-theme="light"] body{background:radial-gradient(120% 90% at 40% 45%,#fdfbf5 0%,var(--bg) 62%,#ddd4c2 100%)}
 #globe{position:fixed;inset:0}
@@ -488,6 +489,7 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
     <button class="chip icon" id="admin-btn" aria-label="Admin" title="Admin">⚙</button>
     <button class="chip icon" id="legend-btn" aria-label="Legend" title="Legend: what the symbols mean" aria-pressed="false">?</button>
     <button class="chip icon" id="theme-btn" aria-label="Light or dark mode" title="Light or dark mode">☀</button>
+    <button class="chip icon" id="reset-btn" aria-label="Reset zoom" title="Reset zoom: whole globe, normal page size">⟲</button>
     <select class="chip lang" id="lang-sel" aria-label="Language" title="Language"><option value="en">EN</option><option value="fr">FR</option><option value="es">ES</option><option value="ar">عربي</option></select>
     <button class="chip mob-only" id="ask-btn" aria-expanded="false">✦ Ask</button>
     <button class="chip mob-only" id="news-btn" aria-pressed="false">▶ News</button>
@@ -2694,7 +2696,7 @@ function renderChanges(){
 }
 let panelMode = '';
 const badge = document.getElementById('upd-badge');
-badge.onclick = ()=>{ clearSelectionQuiet(); renderChanges(); };
+badge.onclick = ()=>{ if (panelMode === 'changes') return renderIntro(); clearSelectionQuiet(); renderChanges(); };   // a second click closes it again
 function clearSelectionQuiet(){
   sel = {type:'none'}; relMap = new Map(); setCmp(false);
   POIS.forEach(p=>p._el && p._el.classList.remove('on'));
@@ -3171,7 +3173,8 @@ const TR = {
   'Show the large video': ['Afficher la grande vidéo', 'Mostrar el vídeo grande', 'عرض الفيديو الكبير'],
   'Open story large': ['Agrandir l’article', 'Ampliar la noticia', 'تكبير الخبر'], 'Read the article ↗': ['Lire l’article ↗', 'Leer el artículo ↗', 'اقرأ المقال ↗'],
   'All top stories': ['Tous les grands titres', 'Todas las noticias principales', 'كل الأخبار الرئيسية'],
-  'Close': ['Fermer', 'Cerrar', 'إغلاق'], 'Light or dark mode': ['Mode clair ou sombre', 'Modo claro u oscuro', 'الوضع الفاتح أو الداكن'], 'TOP STORY': ['À LA UNE', 'PORTADA', 'أبرز خبر'], 'World': ['Monde', 'Mundo', 'العالم'],
+  'Close': ['Fermer', 'Cerrar', 'إغلاق'], 'Light or dark mode': ['Mode clair ou sombre', 'Modo claro u oscuro', 'الوضع الفاتح أو الداكن'],
+  'Reset zoom': ['Réinitialiser le zoom', 'Restablecer zoom', 'إعادة ضبط التكبير'], 'Reset zoom: whole globe, normal page size': ['Réinitialiser le zoom : globe entier, taille normale', 'Restablecer zoom: globo completo, tamaño normal', 'إعادة ضبط التكبير: الكرة كاملة والحجم العادي'], 'TOP STORY': ['À LA UNE', 'PORTADA', 'أبرز خبر'], 'World': ['Monde', 'Mundo', 'العالم'],
   'Previous story': ['Sujet précédent', 'Noticia anterior', 'الخبر السابق'], '▶ VIDEO': ['▶ VIDÉO', '▶ VÍDEO', '▶ فيديو'],
   'LIVE TV': ['TV EN DIRECT', 'TV EN VIVO', 'بث مباشر'], 'Live TV': ['TV en direct', 'TV en vivo', 'بث مباشر'], 'Hide video': ['Masquer la vidéo', 'Ocultar vídeo', 'إخفاء الفيديو'],
   'Only stories reported by at least two independent outlets are shown; state propaganda outlets (RT, Sputnik, TASS, Press TV, Global Times, CGTN and others) are left out.': [
@@ -3687,6 +3690,7 @@ function embed(src){
 }
 function vidPop(on){
   vid.popped = on;
+  if (on && !vid.live && !vid.videos.length) vid.live = true;   // no story videos right now: the live channel, large
   document.getElementById('vmodal').hidden = !on;
   if (on) vid.engaged = true; else document.getElementById('vmodal-frame').innerHTML = '';   // closing stops the large player
   vidShow();
@@ -3804,6 +3808,17 @@ async function buildRelief(){
 }
 // countries: solid without relief, partly see-through with it (relationship colours stay on top)
 function setLandColours(){ LAND = reliefOn ? GT.landR : GT.land; LAND_DIM = reliefOn ? GT.dimR : GT.dim; LAND_HOVER = reliefOn ? GT.hoverR : GT.hover; }
+
+/* ⟲ RESET ZOOM: the whole globe back in view and, on phones, the page back to its normal size after an accidental pinch
+   (a page can't set the zoom directly, but briefly capping it at 100% makes the phone snap back) */
+document.getElementById('reset-btn').onclick = () => {
+  globe.pointOfView({altitude: fitAlt()}, 800);
+  const vp = document.querySelector('meta[name="viewport"]'), orig = vp.content;
+  if (window.visualViewport && visualViewport.scale > 1.01 && !orig.includes('maximum-scale')){
+    vp.content = orig + ', maximum-scale=1';
+    setTimeout(() => { vp.content = orig; }, 400);   // pinching works again afterwards
+  }
+};
 
 document.getElementById('theme-btn').onclick = () => applyTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light', true);
 try { matchMedia('(prefers-color-scheme: light)').addEventListener('change', e => { let saved = null; try { saved = localStorage.getItem('fl-theme'); } catch(err){} if (!saved) applyTheme(e.matches ? 'light' : 'dark'); }); } catch(e){}
