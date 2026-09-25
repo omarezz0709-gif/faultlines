@@ -98,6 +98,12 @@ button{font:inherit;color:inherit}
 .tv-tag .live-dot{background:#fff;margin:0;width:6px;height:6px}
 .tv-where{font:700 13px var(--display);letter-spacing:.06em;text-transform:uppercase;color:var(--gold-hi);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .tv-n{margin-inline-start:auto;font:500 11px var(--mono);color:var(--faint)}
+.tv-body{display:flex;align-items:flex-start;gap:4px}
+.tv-body .tv-head{flex:1;min-width:0}
+.tv-pic{flex:none;margin:10px 10px 0 0;line-height:0}
+.tv-pic img{width:92px;height:62px;object-fit:cover;border-radius:4px;border:1px solid var(--line2);filter:saturate(.85);transition:opacity .3s}
+.tv.fade .tv-pic img{opacity:0}
+[dir="rtl"] .tv-pic{margin:10px 0 0 10px}
 .tv-head{display:block;padding:10px 12px 4px;color:var(--text);font:600 15px/1.35 var(--body);text-decoration:none;transition:opacity .3s;min-height:42px}
 .tv-head:hover{color:var(--gold-hi)}
 .tv-meta{padding:0 12px 9px;font:11.5px/1.4 var(--mono);color:var(--muted);transition:opacity .3s}
@@ -383,7 +389,10 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
   </form>
   <section class="tv" id="tv" hidden aria-live="polite">
     <div class="tv-top"><span class="tv-tag"><i class="live-dot"></i>TOP STORY</span><span class="tv-where" id="tv-where">World</span><span class="tv-n" id="tv-n"></span></div>
-    <a class="tv-head" id="tv-head" target="_blank" rel="noopener" dir="auto"></a>
+    <div class="tv-body">
+      <a class="tv-head" id="tv-head" target="_blank" rel="noopener" dir="auto"></a>
+      <a class="tv-pic" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img id="tv-img" alt="" hidden loading="lazy" referrerpolicy="no-referrer" onerror="this.hidden=true"></a>
+    </div>
     <div class="tv-meta" id="tv-meta"></div>
     <div class="tv-foot"><div class="tv-prog"><i id="tv-prog"></i></div><button class="tv-btn" id="tv-prev" aria-label="Previous story">‹</button><button class="tv-btn" id="tv-next" aria-label="Next story">›</button></div>
   </section>
@@ -3118,12 +3127,23 @@ async function loadTop(t){
     const r = await fetch(`${AI_PROXY}/top?lang=${LANG}&q=${encodeURIComponent(t.q)}&en=${encodeURIComponent(t.en)}`);
     if (r.ok) stories = (await r.json()).stories || [];
   } catch(e){}
-  if (!stories.length){   // Worker without /top yet: the site's own headlines
-    if (t.id){ const cn = NEWS && NEWS.countries && NEWS.countries[t.id]; stories = cn ? newsItems(cn.i).slice(0, 5).map(it => ({t: it.t, u: it.u, s: it.s, d: it.d})) : []; }
+  if (!stories.length){   // nothing from the outlets right now (or an older Worker): the site's own headlines
+    if (t.id){ const cn = NEWS && NEWS.countries && NEWS.countries[t.id]; stories = cn ? rankLocal(newsItems(cn.i), t.id).slice(0, 5).map(it => ({t: it.t, u: it.u, s: it.s, d: it.d})) : []; }
     else stories = (FEED.filter(f => f.imp).length ? FEED.filter(f => f.imp) : FEED).slice(0, 5).map(f => ({t: f.t, u: f.u, s: f.s, d: f.d}));
   }
   if (stories.length) tvCache.set(ck, {at: Date.now(), stories});
   return stories;
+}
+// rank a country's own headlines like the Worker does: war and diplomacy first, more foreign actors = more foreign-policy
+const TV_POL = [[/\b(war|invasion|offensive|missiles?|drones?|strikes?|shelling|troops|military|army|attacks?|killed|nuclear|militants?)\b/i, 3],
+  [/\b(sanctions?|ceasefire|truce|talks|negotiations?|summit|treaty|deal|diplomat\w*|embassy|ambassador|foreign minister|security council|nato|border)\b/i, 2],
+  [/\b(president|prime minister|government|parliament|election|opposition|protests?|coup|minister)\b/i, 1]];
+const TV_SOFT = /\b(football|soccer|league|match|tennis|olympic|celebrity|actor|singer|film|movie|recipe|weather|drugs?|smuggl\w*|crime|arrested|court)\b/i;
+function rankLocal(items, id){
+  const score = it => { const others = mentioned(it.t).ids.filter(x => x !== id).length;
+    return TV_POL.reduce((a, [re, w]) => a + (re.test(it.t) ? w : 0), 0) * 2 + Math.min(others, 3) * 2.5 - (TV_SOFT.test(it.t) ? 6 : 0)
+      - Math.min(48, (Date.now() - new Date(it.d)) / 36e5 || 48) / 8; };
+  return items.map(it => [score(it), it]).sort((a, b) => b[0] - a[0]).map(x => x[1]);
 }
 async function tvRefresh(force){
   const t = tvTarget(), key = LANG + '|' + t.key;
@@ -3143,6 +3163,8 @@ function tvShow(){
   document.getElementById('tv-where').textContent = tv.label;
   document.getElementById('tv-n').textContent = `${tv.i % tv.stories.length + 1}/${tv.stories.length}`;
   const head = document.getElementById('tv-head'); head.textContent = s.t; if (u) head.href = u; else head.removeAttribute('href');
+  const img = document.getElementById('tv-img'), src = s.img && /^https:\/\//.test(s.img) ? s.img : '';
+  img.hidden = !src; if (src){ img.src = src; if (u) img.parentElement.href = u; } else img.removeAttribute('src');
   document.getElementById('tv-meta').innerHTML = `<b>${esc(s.s || '')}</b>${s.s ? ' · ' : ''}${esc(ago(s.d))}${s.n > 1 ? ` · ${w[0]} ${s.n} ${w[1]}` : ''}${s.also && s.also.length ? ` ${w[2]} ${esc(s.also.slice(0, 3).join(', '))}` : ''}`;
   const prog = document.getElementById('tv-prog'); prog.classList.remove('run'); void prog.offsetWidth; prog.classList.add('run');
   clearTimeout(tvTimer); tvTimer = setTimeout(tvNext, TV_MS);

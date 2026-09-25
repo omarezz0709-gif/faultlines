@@ -257,21 +257,62 @@ function parseRss(xml){
   }
   return out;
 }
+/* Trusted outlets' own world-news feeds. Google News blocks requests from Cloudflare, these don't; Google is still
+   tried as a bonus. The combined pool is cached for 10 minutes per language and shared by /live and /top. */
+const OUTLETS = {
+  en: [["BBC", "https://feeds.bbci.co.uk/news/world/rss.xml"], ["Al Jazeera", "https://www.aljazeera.com/xml/rss/all.xml"],
+       ["Sky News", "https://feeds.skynews.com/feeds/rss/world.xml"], ["The Guardian", "https://www.theguardian.com/world/rss"],
+       ["DW", "https://rss.dw.com/rdf/rss-en-world"], ["France 24", "https://www.france24.com/en/rss"], ["NPR", "https://feeds.npr.org/1004/rss.xml"],
+       ["New York Times", "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"], ["Euronews", "https://www.euronews.com/rss?level=theme&name=news"],
+       ["CBS News", "https://www.cbsnews.com/latest/rss/world"], ["ABC News", "https://abcnews.go.com/abcnews/internationalheadlines"],
+       ["Washington Post", "https://feeds.washingtonpost.com/rss/world"]],
+  fr: [["France 24", "https://www.france24.com/fr/rss"], ["Le Monde", "https://www.lemonde.fr/international/rss_full.xml"], ["RFI", "https://www.rfi.fr/fr/rss"],
+       ["Euronews", "https://fr.euronews.com/rss"]],
+  es: [["El País", "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/internacional/portada"], ["BBC Mundo", "https://feeds.bbci.co.uk/mundo/rss.xml"],
+       ["France 24", "https://www.france24.com/es/rss"], ["DW", "https://rss.dw.com/rdf/rss-sp-all"], ["Euronews", "https://es.euronews.com/rss"]],
+  ar: [["BBC Arabic", "https://feeds.bbci.co.uk/arabic/rss.xml"], ["France 24", "https://www.france24.com/ar/rss"], ["DW", "https://rss.dw.com/rdf/rss-ar-all"],
+       ["Sky News Arabia", "https://www.skynewsarabia.com/web/rss"], ["Al Jazeera", "https://www.aljazeera.net/aljazeerarss/a7c186be-1baa-4bd4-9d80-a84db769f779/73d0e1b4-532f-45ef-b135-bfdff8b8cab9"],
+       ["Euronews", "https://arabic.euronews.com/rss"]],
+};
+const stripTags = s => unxml(s).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+function parseFeed(xml, source){
+  const out = [];
+  for (const m of xml.matchAll(/<(item|entry)[\s>]([\s\S]*?)<\/\1>/g)){
+    const b = m[2], g = tag => { const r = b.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`)); return r ? r[1] : ""; };
+    const t = stripTags(g("title")); if (!t) continue;
+    const link = stripTags(g("link")) || ((b.match(/<link[^>]+href="([^"]+)"/) || [])[1] || "");
+    const d = new Date(stripTags(g("pubDate") || g("dc:date") || g("published") || g("updated")));
+    const img = (b.match(/<media:(?:content|thumbnail)[^>]+url="([^"]+)"/) || b.match(/<enclosure[^>]+url="([^"]+\.(?:jpe?g|png|webp)[^"]*)"/i) || [])[1] || "";
+    out.push({ t: t.slice(0, 300), d: isNaN(d) ? null : d.toISOString(),
+      members: [{ u: link.slice(0, 2000), t: t.slice(0, 300), s: source, img: unxml(img).slice(0, 1000), x: stripTags(g("description") || g("summary")).slice(0, 400) }] });
+    if (out.length >= 40) break;
+  }
+  return out;
+}
+async function newsPool(lang, ctx){
+  const cache = caches.default, ck = new Request(`https://faultlines-cache/pool/${lang}`);
+  const hit = await cache.match(ck);
+  if (hit) return hit.json();
+  const get = (u, h = {}) => fetch(u, { headers: { "User-Agent": "Mozilla/5.0 (compatible; Faultlines news reader)", ...h }, cf: { cacheTtl: 300 } })
+    .then(r => r.ok ? r.text() : "").catch(() => "");
+  const outlets = await Promise.all(OUTLETS[lang].map(([name, u]) => get(u).then(x => parseFeed(x, name))));
+  const base = "https://news.google.com/rss", p = NEWS_LANG[lang];
+  const google = await get(`${base}/headlines/section/topic/WORLD?${p}`).then(parseRssClusters).catch(() => []);
+  const pool = { items: [...outlets.flat(), ...google], at: Date.now() };
+  if (pool.items.length) ctx.waitUntil(cache.put(ck, new Response(JSON.stringify(pool), { headers: { "Content-Type": "application/json", "Cache-Control": "max-age=600" } })));
+  return pool;
+}
 async function liveFeed(lang, ctx){
   if (!NEWS_LANG[lang]) lang = "en";
-  const cache = caches.default, ck = new Request(`https://faultlines-cache/live/${lang}`);
-  const hit = await cache.match(ck);
-  if (hit) return new Response(hit.body, { status: 200, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "hit" }) });
-  const base = "https://news.google.com/rss", p = NEWS_LANG[lang];
-  const urls = [`${base}/headlines/section/topic/WORLD?${p}`, ...NEWS_QUERIES[lang].map(q => `${base}/search?q=${encodeURIComponent(q + " when:1d")}&${p}`)];
-  const lists = await Promise.all(urls.map(u => fetch(u, { headers: { "User-Agent": "Mozilla/5.0 (Faultlines live feed)" } })
-    .then(r => r.ok ? r.text() : "").then(parseRss).catch(() => [])));
+  const pool = await newsPool(lang, ctx);
   const seen = new Set(), items = [];
-  for (const it of lists.flat()){ const k = it.t.toLowerCase().slice(0, 80); if (!seen.has(k)){ seen.add(k); items.push(it); } }
+  for (const it of pool.items){
+    const m = it.members[0], k = it.t.toLowerCase().slice(0, 80);
+    if (!seen.has(k)){ seen.add(k); items.push({ t: it.t, u: m.u, s: m.s, d: it.d }); }
+  }
   items.sort((a, b) => (b.d || "").localeCompare(a.d || ""));
-  const body = JSON.stringify({ lang, generated: new Date().toISOString(), items: items.slice(0, 80) });
-  if (items.length) ctx.waitUntil(cache.put(ck, new Response(body, { headers: { "Content-Type": "application/json", "Cache-Control": "max-age=600" } })));
-  return new Response(body, { status: items.length ? 200 : 502, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "miss" }) });
+  const body = JSON.stringify({ lang, generated: new Date(pool.at).toISOString(), items: items.slice(0, 80) });
+  return new Response(body, { status: items.length ? 200 : 502, headers: cors({ "Content-Type": "application/json" }) });
 }
 
 /* ------------------------------------------------------------------ top stories
@@ -314,19 +355,22 @@ function parseRssClusters(xml){
 }
 const STOP = new Set("the a an and or of to in on for with at by from as is are was were be been after over into says said amid new more than its his her their this that will would could about against between under what how why who latest live update updates news report reports les des une pour dans sur avec par est son ses qui que del los las por para con una sobre".split(" "));
 const words = t => new Set(t.toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, " ").split(/\s+/).filter(w => w.length > 3 && !STOP.has(w)));
+// names in a headline (capitalised words after the first): outlets word the same story differently but name the same actors
+const names = t => new Set((t.match(/(?<!^)\b\p{Lu}[\p{L}'’-]{2,}/gu) || []).map(x => x.toLowerCase().replace(/[’']s$/, "")).filter(x => !STOP.has(x)));
 function scoreStories(items, focus){
-  // merge items whose titles share enough words into one story
+  // merge items that share enough title words, or enough of the same names, into one story
   const stories = [];
   for (const it of items){
-    const w = words(it.t);
+    const w = words(it.t), nm = names(it.t);
     let best = null, bestSim = 0;
     for (const st of stories){
       let inter = 0; w.forEach(x => st.w.has(x) && inter++);
-      const sim = inter / Math.max(1, Math.min(w.size, st.w.size));
+      let ni = 0; nm.forEach(x => st.nm.has(x) && ni++);
+      const sim = Math.max(inter / Math.max(1, Math.min(w.size, st.w.size)), ni >= 2 ? ni / Math.max(2, Math.min(nm.size, st.nm.size)) * 0.9 : 0);
       if (sim > bestSim){ bestSim = sim; best = st; }
     }
-    if (best && bestSim >= 0.45){ best.members.push(...it.members); w.forEach(x => best.w.add(x)); if (it.d && (!best.d || it.d > best.d)) best.d = it.d; }
-    else stories.push({ t: it.t, d: it.d, w, members: [...it.members] });
+    if (best && bestSim >= 0.45){ best.members.push(...it.members); w.forEach(x => best.w.add(x)); nm.forEach(x => best.nm.add(x)); if (it.d && (!best.d || it.d > best.d)) best.d = it.d; }
+    else stories.push({ t: it.t, d: it.d, w, nm, members: [...it.members] });
   }
   const now = Date.now();
   for (const st of stories){
@@ -349,21 +393,17 @@ async function topStories(lang, q, en, ctx){
   const key = `https://faultlines-cache/top/${lang}/${encodeURIComponent(q.toLowerCase())}`;
   const cache = caches.default, hit = await cache.match(key);
   if (hit) return new Response(hit.body, { status: 200, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "hit" }) });
-  const base = "https://news.google.com/rss", p = NEWS_LANG[lang];
-  const pol = { en: "war OR military OR sanctions OR talks OR president OR minister OR election OR attack OR ceasefire",
-    fr: "guerre OR armée OR sanctions OR négociations OR président OR ministre OR élection OR attaque",
-    es: "guerra OR ejército OR sanciones OR negociaciones OR presidente OR ministro OR elecciones OR ataque",
-    ar: "حرب OR جيش OR عقوبات OR مفاوضات OR رئيس OR وزير OR انتخابات OR هجوم" }[lang];
-  const urls = q
-    ? [`${base}/search?q=${encodeURIComponent(`"${q}" (${pol}) when:3d`)}&${p}`, `${base}/search?q=${encodeURIComponent(`"${q}" when:2d`)}&${p}`]
-    : [`${base}/headlines/section/topic/WORLD?${p}`, `${base}/headlines/section/topic/NATION?${p}`, `${base}/search?q=${encodeURIComponent(`(${pol}) when:1d`)}&${p}`];
-  const lists = await Promise.all(urls.map(u => fetch(u, { headers: { "User-Agent": "Mozilla/5.0 (Faultlines top stories)" } })
-    .then(r => r.ok ? r.text() : "").then(parseRssClusters).catch(() => [])));
-  const focus = q ? new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i") : null;
-  const stories = scoreStories(lists.flat(), focus).slice(0, 6).map(st => ({
-    t: st.lead.t || st.t, u: st.lead.u, s: st.lead.s, d: st.d, n: st.n,
-    also: st.srcs.filter(x => x !== st.lead.s).slice(0, 6),
-  }));
+  const pool = await newsPool(lang, ctx);
+  // a country or place: only stories that name it (in the page language or in English)
+  const names = [q, en].filter(Boolean).map(x => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+  const focus = names.length ? new RegExp(names.join("|"), "i") : null;
+  const recent = it => !it.d || Date.now() - Date.parse(it.d) < (focus ? 5 : 2) * 864e5;
+  const items = pool.items.filter(it => recent(it) && (!focus || focus.test(it.t + " " + it.members.map(m => m.t + " " + (m.x || "")).join(" "))));
+  const stories = scoreStories(items, focus).slice(0, 6).map(st => {
+    const lead = st.members.find(m => trusted(m.s) && m.img) || st.lead;   // prefer a trusted outlet with a photo
+    return { t: lead.t || st.t, u: lead.u, s: lead.s, d: st.d, n: st.n, img: (st.members.find(m => m.img) || {}).img || "",
+             also: st.srcs.filter(x => x !== lead.s).slice(0, 6) };
+  });
   const body = JSON.stringify({ lang, q, generated: new Date().toISOString(), stories });
   if (stories.length) ctx.waitUntil(cache.put(key, new Response(body, { headers: { "Content-Type": "application/json", "Cache-Control": "max-age=600" } })));
   return new Response(body, { status: stories.length ? 200 : 502, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "miss" }) });
