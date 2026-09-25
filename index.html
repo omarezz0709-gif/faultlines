@@ -68,6 +68,39 @@ button{font:inherit;color:inherit}
 .g-base{background:var(--p-base);width:9px;height:9px}
 .g-resource{background:var(--p-resource);clip-path:polygon(25% 5%,75% 5%,100% 50%,75% 95%,25% 95%,0 50%)}
 .g-arcs{border-top:2px dashed var(--gold);height:0;width:14px;border-radius:0}
+/* legend-only symbols */
+.g-micro{background:#bdbdbd;border-radius:50%;width:8px;height:8px}
+.g-city{background:#bdbdbd;border-radius:50%;width:5px;height:5px;margin:0 2px}
+.g-cap{background:var(--gold-hi);border-radius:50%;width:6px;height:6px;margin:0 2px}
+.g-river{width:14px;height:9px;border-radius:2px;background:linear-gradient(160deg,transparent 40%,#050505 42%,#050505 58%,transparent 60%),#3c3c3c}   /* a river line on a bit of land */
+.g-lake{background:#0b0b0b;border-radius:45% 55% 50% 50%;width:12px;height:8px;box-shadow:0 0 0 1px rgba(140,140,140,.5)}
+.g-ping{background:#b36bff;border-radius:50%}
+[data-theme="light"] .g-micro{background:#1f3a63} [data-theme="light"] .g-city{background:#6b6457}
+[data-theme="light"] .g-river{background:linear-gradient(160deg,transparent 40%,#1d2b40 42%,#1d2b40 58%,transparent 60%),#ded4be} [data-theme="light"] .g-lake{background:#1d2b40}
+[data-theme="light"] .g-base{background:#1f3a63} [data-theme="light"] .g-land{background:#3b4b63}
+/* legend pop-up (right of the left column; bottom sheet on phones) */
+.pop{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));left:392px;width:340px;max-height:calc(100vh - 32px);z-index:20;display:flex;flex-direction:column;
+  background:var(--panel-solid);border:1px solid var(--gold-dim);border-radius:8px;box-shadow:0 10px 40px rgba(0,0,0,.45)}
+.pop[hidden]{display:none}
+.pop-head{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;border-bottom:1px solid var(--line2);font:700 16px var(--display);letter-spacing:.06em;text-transform:uppercase}
+.pop-body{padding:10px 14px 14px;overflow:auto}
+.pop-body h4{margin:12px 0 6px;font:600 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.pop-body h4:first-child{margin-top:2px}
+/* video pop-up: large, centred over a dimmed page */
+.vmodal{position:fixed;inset:0;z-index:30;background:rgba(0,0,0,.72);display:grid;place-items:center;padding:16px}
+.vmodal[hidden]{display:none}
+.vmodal-box{width:min(1100px,100%);background:var(--panel-solid);border:1px solid var(--gold-dim);border-radius:8px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.vmodal-head{display:flex;align-items:center;gap:10px;padding:8px 10px;border-bottom:1px solid var(--line2)}
+.vmodal-title{flex:1;min-width:0;font:600 14px var(--body);color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vmodal-frame{position:relative;aspect-ratio:16/9;background:#000;max-height:calc(100vh - 160px);margin:0 auto}
+.vmodal-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vmodal-meta{padding:8px 12px;font:12px var(--mono);color:var(--muted)}
+.vmodal-meta b{color:var(--gold-hi)}
+.vid-popped{position:absolute;inset:0;display:grid;place-items:center;color:var(--gold-hi);font:600 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;background:radial-gradient(circle,rgba(212,175,55,.12),#050505 70%);border:0;cursor:pointer;width:100%}
+@media (max-width:760px){ .pop{left:8px;right:8px;width:auto;top:auto;bottom:calc(8px + env(safe-area-inset-bottom,0px));max-height:70vh} }
+.maplegend{display:grid;grid-template-columns:1fr 1fr;gap:7px 14px;font-size:12.5px;color:var(--soft)}
+.maplegend span{display:flex;align-items:center;gap:8px;line-height:1.25}
+.maplegend .g{justify-self:center}
 
 /* ---------- POI markers ---------- */
 .poi{position:relative;width:18px;height:18px;padding:0;border:0;background:none;cursor:pointer;display:grid;place-items:center;transition:opacity .25s}
@@ -253,7 +286,7 @@ button.tag:hover{border-color:var(--gold-dim);color:var(--text)}
 .mem{display:inline-flex;align-items:center;gap:6px;padding-right:4px}
 .mem button{background:none;border:0;color:var(--muted);cursor:pointer;font-size:14px;line-height:1;padding:0 3px}
 .mem button:hover{color:var(--text)}
-.modes{display:flex;gap:6px}
+.modes{display:flex;gap:6px;flex-wrap:wrap}
 .chip.mode[aria-pressed="true"]{background:var(--gold);color:var(--on-gold);border-color:var(--gold)}
 .chip svg{flex:none}
 .fcount{background:var(--gold);color:var(--on-gold);border-radius:999px;font:600 10.5px/1 var(--mono);padding:2px 6px;margin-left:2px}
@@ -437,6 +470,7 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
     <button class="chip mode" id="cmp-btn" aria-pressed="false">⇄ Compare countries</button>
     <button class="chip" id="flt-btn" aria-expanded="false" aria-controls="filters"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 5h18M6 12h12M10 19h4"/></svg>Filters<span class="fcount" id="flt-count" hidden></span></button>
     <button class="chip icon" id="admin-btn" aria-label="Admin" title="Admin">⚙</button>
+    <button class="chip icon" id="legend-btn" aria-label="Legend" title="Legend: what the symbols mean" aria-pressed="false">?</button>
     <button class="chip icon" id="theme-btn" aria-label="Light or dark mode" title="Light or dark mode">☀</button>
     <select class="chip lang" id="lang-sel" aria-label="Language" title="Language"><option value="en">EN</option><option value="fr">FR</option><option value="es">ES</option><option value="ar">عربي</option></select>
     <button class="chip mob-only" id="ask-btn" aria-expanded="false">✦ Ask</button>
@@ -459,6 +493,7 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
   <section class="vid" id="vid" hidden>
     <div class="tv-top"><span class="vid-tag">▶ VIDEO</span><span class="tv-where" id="vid-where">World</span><span class="tv-n" id="vid-n"></span>
       <button class="vid-live" id="vid-live" aria-pressed="false" title="24/7 live news channel"><i class="live-dot"></i>LIVE TV</button>
+      <button class="tv-btn" id="vid-pop" aria-label="Open video large" title="Open video large">⤢</button>
       <button class="tv-btn" id="vid-min" aria-label="Hide video" title="Hide video">▾</button></div>
     <div class="vid-box" id="vid-box">
       <div class="vid-stage">
@@ -487,6 +522,22 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
     <button class="link reset" id="f-reset">Reset all filters</button>
   </div>
 </header>
+
+<div class="pop" id="legend-pop" hidden role="dialog" aria-label="Legend">
+  <div class="pop-head"><b>Legend</b><button class="iconbtn" id="legend-close" aria-label="Close">✕</button></div>
+  <div class="pop-body" id="legend-body"></div>
+</div>
+
+<div class="vmodal" id="vmodal" hidden role="dialog" aria-label="Video">
+  <div class="vmodal-box">
+    <div class="vmodal-head"><span class="vid-tag">▶ VIDEO</span><span class="vmodal-title" id="vmodal-title" dir="auto"></span><span class="tv-n" id="vmodal-n"></span>
+      <button class="iconbtn" id="vmodal-close" aria-label="Close">✕</button></div>
+    <div class="vid-stage"><div class="vmodal-frame" id="vmodal-frame"></div>
+      <button class="vid-arrow prev" id="vmodal-prev" aria-label="Previous video">‹</button>
+      <button class="vid-arrow next" id="vmodal-next" aria-label="Next video">›</button></div>
+    <div class="vmodal-meta" id="vmodal-meta"></div>
+  </div>
+</div>
 
 <div class="ticker" id="ticker" hidden>
   <button class="tk-live" id="tk-open" title="Open the live feed"><i class="live-dot"></i>LIVE</button>
@@ -2359,6 +2410,31 @@ function showAntarctica(){
   wirePanel(); fly(-72,0,2.2);
 }
 
+/* legend: every symbol on the globe (also opened with the "?" button) */
+function mapLegend(){
+  const item = (g, label) => `<span><i class="g g-${g}"></i>${esc(label)}</span>`;
+  return `<div class="maplegend">
+    ${Object.entries(POI_TYPES).map(([k, t]) => item(k, t.label)).join('')}
+    ${item('micro', 'Small states (too small to draw)')}
+    ${item('arcs', 'Relationship line')}
+    ${item('cap', 'Capital (zoom in)')}
+    ${item('city', 'City (zoom in)')}
+    ${item('river', 'River (zoom in)')}
+    ${item('lake', 'Lake')}
+  </div>`;
+}
+// the legend as a pop-up over the globe ("?" button; ✕, Esc or "?" again closes it)
+function toggleLegend(on){
+  const pop = document.getElementById('legend-pop'), btn = document.getElementById('legend-btn');
+  on = on === undefined ? pop.hidden : on;
+  if (on) document.getElementById('legend-body').innerHTML = `
+    <h4>Country colours</h4><p class="note">Click a country: it turns gold and every other country is coloured by its relationship with it.</p>
+    <div class="legend">${SUMMARY_ORDER.map(s => `<span><i class="sw" style="background:${STATUS[s].color}"></i>${STATUS[s].label}</span>`).join('')}</div>
+    <h4>Map symbols</h4>${mapLegend()}
+    <h4>Tips</h4><ul class="intro-list"><li>Hover any symbol or country to see its name; click it to open it.</li>
+      <li>Zoom in to see cities and rivers.</li><li>Filters → Map markers switches symbol types on and off.</li></ul>`;
+  pop.hidden = !on; btn.setAttribute('aria-pressed', on);
+}
 function renderIntro(redraw = false){
   const picks = ['TUR','TWN','UKR','IRN','IND','EGY','USA','CHN'];
   const hot = ['Strait of Hormuz','Strait of Malacca','Bab-el-Mandeb','Taiwan Strait','Suwałki Gap','Panama Canal'];
@@ -2370,6 +2446,7 @@ function renderIntro(redraw = false){
     ${alertsSection(5)}
     ${changesSection(1)}
     <section><h3>Relationship key</h3><div class="legend">${SUMMARY_ORDER.map(s=>`<span><i class="sw" style="background:${STATUS[s].color}"></i>${STATUS[s].label}</span>`).join('')}</div></section>
+    <section><h3>Map symbols</h3>${mapLegend()}</section>
     <section><h3>Try a country</h3><div class="quick">${picks.map(c=>`<button class="tag" data-c="${c}">${esc(ENT[c].name)}</button>`).join('')}</div></section>
     <section><h3>Critical chokepoints</h3><div class="quick">${hot.map(n=>{const j=POIS.findIndex(p=>p.n===n); return `<button class="tag" data-p="${j}"><i class="g g-${POIS[j].t}"></i> ${esc(n)}</button>`;}).join('')}</div></section>
     <section><h3>On the map</h3><ul class="intro-list">
@@ -3019,6 +3096,21 @@ const TR = {
     'عناوين أخبار العالم من Google News، تُحدَّث كل بضع دقائق. تُميَّز العناوين التي تذكر دولة وكلمات مثل حرب أو غارة أو عقوبات.'],
   'No live headlines right now.': ['Aucun titre en direct pour le moment.', 'No hay titulares en vivo ahora.', 'لا توجد عناوين مباشرة الآن.'],
   'Gaza Strip': ['Bande de Gaza', 'Franja de Gaza', 'قطاع غزة'], 'Antarctica': ['Antarctique', 'Antártida', 'القارة القطبية الجنوبية'],
+  'Legend': ['Légende', 'Leyenda', 'دليل الرموز'], 'Legend: what the symbols mean': ['Légende : signification des symboles', 'Leyenda: qué significan los símbolos', 'دليل الرموز: ماذا تعني'],
+  'Map symbols': ['Symboles de la carte', 'Símbolos del mapa', 'رموز الخريطة'], 'Country colours': ['Couleurs des pays', 'Colores de los países', 'ألوان الدول'],
+  'Click a country: it turns gold and every other country is coloured by its relationship with it.': [
+    'Cliquez sur un pays : il devient doré et les autres pays sont colorés selon leur relation avec lui.',
+    'Haz clic en un país: se vuelve dorado y los demás se colorean según su relación con él.',
+    'انقر على دولة: تتحول إلى اللون الذهبي وتُلوَّن باقي الدول حسب علاقتها بها.'],
+  'Small states (too small to draw)': ['Petits États (trop petits pour être dessinés)', 'Estados pequeños (demasiado pequeños para dibujar)', 'دول صغيرة (أصغر من أن تُرسم)'],
+  'Relationship line': ['Ligne de relation', 'Línea de relación', 'خط العلاقة'], 'Capital (zoom in)': ['Capitale (zoomer)', 'Capital (acercar)', 'عاصمة (عند التكبير)'],
+  'City (zoom in)': ['Ville (zoomer)', 'Ciudad (acercar)', 'مدينة (عند التكبير)'], 'River (zoom in)': ['Fleuve (zoomer)', 'Río (acercar)', 'نهر (عند التكبير)'],
+  'Lake': ['Lac', 'Lago', 'بحيرة'], 'Tips': ['Astuces', 'Consejos', 'نصائح'],
+  'Hover any symbol or country to see its name; click it to open it.': ['Survolez un symbole ou un pays pour voir son nom ; cliquez pour l’ouvrir.', 'Pasa el ratón por un símbolo o país para ver su nombre; haz clic para abrirlo.', 'مرّر المؤشر فوق رمز أو دولة لرؤية اسمها؛ وانقر لفتحها.'],
+  'Zoom in to see cities and rivers.': ['Zoomez pour voir les villes et les fleuves.', 'Acerca el mapa para ver ciudades y ríos.', 'كبّر الخريطة لرؤية المدن والأنهار.'],
+  'Filters → Map markers switches symbol types on and off.': ['Filtres → Repères sur la carte active ou désactive les symboles.', 'Filtros → Marcadores del mapa activa o desactiva los símbolos.', 'التصفية ← علامات الخريطة لإظهار الرموز أو إخفائها.'],
+  'Open video large': ['Agrandir la vidéo', 'Ampliar el vídeo', 'تكبير الفيديو'], '▶ Playing in the large window': ['▶ Lecture dans la grande fenêtre', '▶ Reproduciendo en la ventana grande', '▶ يُعرض في النافذة الكبيرة'],
+  'Show the large video': ['Afficher la grande vidéo', 'Mostrar el vídeo grande', 'عرض الفيديو الكبير'],
   'Close': ['Fermer', 'Cerrar', 'إغلاق'], 'Light or dark mode': ['Mode clair ou sombre', 'Modo claro u oscuro', 'الوضع الفاتح أو الداكن'], 'TOP STORY': ['À LA UNE', 'PORTADA', 'أبرز خبر'], 'World': ['Monde', 'Mundo', 'العالم'],
   'Previous story': ['Sujet précédent', 'Noticia anterior', 'الخبر السابق'], '▶ VIDEO': ['▶ VIDÉO', '▶ VÍDEO', '▶ فيديو'],
   'LIVE TV': ['TV EN DIRECT', 'TV EN VIVO', 'بث مباشر'], 'Live TV': ['TV en direct', 'TV en vivo', 'بث مباشر'], 'Hide video': ['Masquer la vidéo', 'Ocultar vídeo', 'إخفاء الفيديو'],
@@ -3391,13 +3483,36 @@ async function vidRefresh(force){
   vidEl.hidden = false;   // LIVE TV is always there, even without story videos
   if (!vid.live) vidShow();
 }
-function embed(src){ vidFrame.innerHTML = `<iframe src="${src}" title="News video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`; }
+const iframeHTML = src => `<iframe src="${src}" title="News video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
+// plays in the small box, or, while the large pop-up is open, in the pop-up (the small box then just points to it)
+function embed(src){
+  if (vid.popped){
+    const f = document.getElementById('vmodal-frame');
+    if (!f.querySelector(`iframe[src="${src}"]`)) f.innerHTML = iframeHTML(src);
+    vidFrame.innerHTML = `<button class="vid-popped" aria-label="Show the large video">▶ Playing in the large window</button>`;
+    vidFrame.querySelector('button').onclick = () => vidPop(true);
+  } else vidFrame.innerHTML = iframeHTML(src);
+}
+function vidPop(on){
+  vid.popped = on;
+  document.getElementById('vmodal').hidden = !on;
+  if (on) vid.engaged = true; else document.getElementById('vmodal-frame').innerHTML = '';   // closing stops the large player
+  vidShow();
+}
+function vidModalText(title, n, metaHTML, arrows){
+  document.getElementById('vmodal-title').textContent = title;
+  document.getElementById('vmodal-n').textContent = n;
+  document.getElementById('vmodal-meta').innerHTML = metaHTML;
+  document.getElementById('vmodal-prev').hidden = document.getElementById('vmodal-next').hidden = !arrows;
+}
 function vidShow(){
   const n = vid.videos.length, cap = document.getElementById('vid-cap'), meta = document.getElementById('vid-meta');
   document.getElementById('vid-where').textContent = vid.live ? 'Live TV' : vid.label;
   document.getElementById('vid-live').setAttribute('aria-pressed', vid.live);
-  if (vidEl.classList.contains('min')) return;   // hidden: nothing plays
+  if (vidEl.classList.contains('min') && !vid.popped) return;   // hidden: nothing plays
+  if (vid.popped && !vid.live && !n){ vidPop(false); return; }   // nothing to show large
   if (vid.live){
+    if (vid.popped) vidModalText('Live TV', '', '', false);
     ['vid-prev', 'vid-next', 'vid-prev2', 'vid-next2'].forEach(id => document.getElementById(id).hidden = true);
     document.getElementById('vid-n').textContent = '';
     embed(`https://www.youtube.com/embed/live_stream?channel=${VID_LIVE[LANG] || VID_LIVE.en}&autoplay=1&mute=1&playsinline=1`);
@@ -3419,6 +3534,7 @@ function vidShow(){
   cap.textContent = v.t;
   const w = TVW[LANG] || TVW.en;
   meta.innerHTML = (vid.none ? `<span class="vid-none">${esc(noVideoText(vid.none))}</span> · ` : '') + `<b>${esc(v.s)}</b> · ${esc(ago(v.d))}${v.n > 1 ? ` · ✓ ${v.n}` : ''}`;
+  if (vid.popped) vidModalText(v.t, `${vid.i % n + 1}/${n}`, meta.innerHTML, n > 1);
 }
 const noVideoText = place => {
   const n = (trMap && trMap.get(place)) || place;
@@ -3428,6 +3544,16 @@ function vidStep(k){ if (vid.live || !vid.videos.length) return; vid.i = (vid.i 
 document.getElementById('vid-next').onclick = document.getElementById('vid-next2').onclick = () => vidStep(1);
 document.getElementById('vid-prev').onclick = document.getElementById('vid-prev2').onclick = () => vidStep(-1);
 document.getElementById('vid-live').onclick = () => { vid.live = !vid.live; if (!vid.live) vidFrame.innerHTML = ''; vidShow(); };
+// large video pop-up: ⤢ opens it; ✕, Esc or a click on the dark background closes it; ‹ › switch videos
+document.getElementById('vid-pop').onclick = () => vidPop(true);
+document.getElementById('vmodal-close').onclick = () => vidPop(false);
+document.getElementById('vmodal').addEventListener('click', e => { if (e.target.id === 'vmodal') vidPop(false); });
+document.getElementById('vmodal-next').onclick = () => vidStep(1);
+document.getElementById('vmodal-prev').onclick = () => vidStep(-1);
+// legend pop-up
+document.getElementById('legend-btn').onclick = () => toggleLegend();
+document.getElementById('legend-close').onclick = () => toggleLegend(false);
+document.addEventListener('keydown', e => { if (e.key !== 'Escape') return; if (vid.popped) vidPop(false); else if (!document.getElementById('legend-pop').hidden) toggleLegend(false); });
 document.getElementById('vid-min').onclick = () => {
   const on = !vidEl.classList.contains('min'); vidEl.classList.toggle('min', on);
   if (on) vidFrame.innerHTML = ''; else vidShow();   // hiding stops the video
