@@ -2770,13 +2770,24 @@ const isBotLog = x => !!x.b || ADMIN_DC.test(x.isp || '');
 const ADMIN_VPN = /oculus networks|code200|stat telecommunication|packethub|cdn77|datacamp|zscaler|nordvpn|nord security|expressvpn|express vpn|private internet access|mullvad|proton|surfshark|cyberghost|hide\.me|windscribe|ipvanish|tunnelbear|kape|tzulo|performive|clouvider|g-core|gcore|quadranet|psychz|servers\.com|hostroyale|iomart|cogent/i;
 const isVpnLog = x => !isBotLog(x) && ADMIN_VPN.test(x.isp || '');
 var showBots = false;   // bots are hidden in the activity list unless asked for
+// the log covers today only: it resets every night at 00:00 Berlin time
+const berlinWall = ts => {   // milliseconds since Berlin midnight, by the wall clock
+  const p = Object.fromEntries(new Intl.DateTimeFormat('en-GB', {timeZone: 'Europe/Berlin', hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23'})
+    .formatToParts(new Date(ts)).map(x => [x.type, x.value]));
+  return ((+p.hour * 60 + +p.minute) * 60 + +p.second) * 1000 + (ts % 1000);
+};
+function berlinMidnightBefore(ts){
+  let g = ts - berlinWall(ts);
+  const w = berlinWall(g);                              // on clock-change days the first guess is an hour off
+  return w === 0 ? g : w > 12 * 3600e3 ? g + (24 * 3600e3 - w) : g - w;
+}
 function renderAdmin(data){
-  const all = (data.logs || []).slice().sort((a, b) => b.t - a.t), now = Date.now();
+  const now = Date.now(), since = berlinMidnightBefore(now);
+  const all = (data.logs || []).filter(x => x.t >= since).sort((a, b) => b.t - a.t);   // older entries (from before the reset rule) are ignored
   const logs = all.filter(x => !isBotLog(x)), bots = all.filter(isBotLog);   // numbers, places and the map count people only
-  const within = h => logs.filter(x => now - x.t < h * 36e5);
   const ai = list => list.filter(x => x.k !== 'visit');
-  const d1 = within(24), d7 = within(168);
-  const ai1 = ai(d1), ai7 = ai(d7);
+  const d1 = logs, d7 = logs;
+  const ai1 = ai(d1), ai7 = ai1;
   const mem = ai7.filter(x => x.c).length, errs1 = ai1.filter(x => x.s >= 400);
   const place = x => [x.ci, regionName(x.co)].filter(Boolean).join(', ') || 'Unknown';
   const kindName = k => ({pair: 'Explain relationship', country: 'Explain country', poi: 'Explain location', group: 'Analyse comparison', ask: 'Question box', visit: 'Page visit'})[k] || (k.startsWith('facts-') ? 'Fill in ' + k.slice(6) : k);
@@ -2784,27 +2795,26 @@ function renderAdmin(data){
   panel.innerHTML = head('Admin', 'Usage & logs') + `<div class="p-body">
     ${data.note ? `<p class="note" style="color:var(--s-T)">${esc(data.note)}</p>` : ''}
     <div class="tiles">
-      <div class="tile"><b>${ai1.length}</b><span>AI requests, last 24 h</span></div>
-      <div class="tile"><b>${ai7.length}</b><span>AI requests, last 7 days</span></div>
-      <div class="tile"><b>${ai7.length ? Math.round(100 * mem / ai7.length) : 0}%</b><span>answered from memory (7 days, free)</span></div>
-      <div class="tile"><b>${errs1.length}</b><span>errors, last 24 h${errs1.length ? ` (${countBy(errs1, x => String(x.s)).map(([s, n]) => n + '× ' + s).join(', ')})` : ''}</span></div>
-      <div class="tile"><b>${d1.filter(x => x.k === 'visit').length}</b><span>visits, last 24 h</span></div>
-      <div class="tile"><b>${new Set(d1.map(x => x.v)).size}</b><span>different visitors, last 24 h</span></div>
-      <div class="tile"><b>${bots.filter(x => now - x.t < 168 * 36e5).length}</b><span>🤖 bots & crawlers, last 7 days (not counted above)</span></div>
+      <div class="tile"><b>${d1.filter(x => x.k === 'visit').length}</b><span>visits today</span></div>
+      <div class="tile"><b>${new Set(d1.map(x => x.v)).size}</b><span>different visitors today</span></div>
+      <div class="tile"><b>${ai1.length}</b><span>AI requests today</span></div>
+      <div class="tile"><b>${ai7.length ? Math.round(100 * mem / ai7.length) : 0}%</b><span>answered from memory today (free)</span></div>
+      <div class="tile"><b>${errs1.length}</b><span>errors today${errs1.length ? ` (${countBy(errs1, x => String(x.s)).map(([s, n]) => n + '× ' + s).join(', ')})` : ''}</span></div>
+      <div class="tile"><b>${bots.length}</b><span>🤖 bots & crawlers today (not counted above)</span></div>
     </div>
-    <section><h3>Where from <em>last 7 days · approximate</em></h3>${rowsTable(countBy(d7, place), 'Place')}
-      <p class="note"><span style="color:#b36bff">●</span> Purple dots on the globe mark where pings came from (last 30 days); bigger = more. Hover a dot for details.</p>
+    <section><h3>Where from <em>today · approximate</em></h3>${rowsTable(countBy(d7, place), 'Place')}
+      <p class="note"><span style="color:#b36bff">●</span> Purple dots on the globe mark where today's visits came from; bigger = more. Hover a dot for details.</p>
       <p class="note faint">Places come from the visitor's IP address. Internet providers often register addresses at a regional hub, so a city can be off by 100–200 km (e.g. Mannheim showing as Freiburg), especially on mobile data.</p></section>
-    <section><h3>Devices <em>last 7 days</em></h3>${rowsTable(countBy(d7, x => x.d), 'Device', 6)}</section>
-    <section><h3>What was asked <em>last 7 days</em></h3>${rowsTable(countBy(ai7, x => kindName(x.k)), 'Kind', 8)}</section>
-    <section><h3>Latest activity <em>${showBots ? all.length : logs.length} logged in 30 days${showBots ? ' · 🤖 = bot / crawler / link preview' : ''} · 🛡 = VPN or proxy (a person or a scanner)</em></h3>
+    <section><h3>Devices <em>today</em></h3>${rowsTable(countBy(d7, x => x.d), 'Device', 6)}</section>
+    <section><h3>What was asked <em>today</em></h3>${rowsTable(countBy(ai7, x => kindName(x.k)), 'Kind', 8)}</section>
+    <section><h3>Latest activity <em>${showBots ? all.length : logs.length} today${showBots ? ' · 🤖 = bot / crawler / link preview' : ''} · 🛡 = VPN or proxy (a person or a scanner)</em></h3>
       ${bots.length ? `<p class="note"><button class="tag" id="admin-bots">${showBots ? 'Hide bots' : `Show bots (${bots.length})`}</button> <span class="faint">Bots are still recorded (they can use AI quota), just hidden here.</span></p>` : ''}
       <div class="mx-wrap"><table class="atable"><thead><tr><th>When</th><th>Where</th><th>Device</th><th>What</th><th></th></tr></thead><tbody>
-      ${(showBots ? all : logs).slice(0, 80).map(x => `<tr${isBotLog(x) ? ' class="botrow"' : ''}><td style="white-space:nowrap">${isBotLog(x) ? '🤖 ' : isVpnLog(x) ? '🛡 ' : ''}${esc(fmtDateTime(x.t))}${x.o ? `<br><span class="faint">${esc(x.o.includes('pages.dev') ? 'pages.dev' : 'github.io')}</span>` : ''}</td><td>${esc(place(x))}${x.pc || x.isp ? `<br><span class="faint">${esc([x.pc, x.isp].filter(Boolean).join(' · '))}</span>` : ''}</td><td>${esc(x.d || '')}</td><td>${esc(kindName(x.k))}${x.m ? `<br><span class="faint">${esc(x.m)}</span>` : ''}</td><td>${x.k === 'visit' ? '' : status(x)}</td></tr>`).join('') || '<tr><td colspan="5" class="muted">Nothing logged yet.</td></tr>'}
+      ${(showBots ? all : logs).slice(0, 80).map(x => `<tr${isBotLog(x) ? ' class="botrow"' : ''}><td style="white-space:nowrap">${isBotLog(x) ? '🤖 ' : isVpnLog(x) ? '🛡 ' : ''}${esc(fmtDateTime(x.t))}${x.o ? `<br><span class="faint">${esc(x.o.includes('pages.dev') ? 'pages.dev' : 'github.io')}</span>` : ''}</td><td>${esc(place(x))}${x.pc || x.isp ? `<br><span class="faint">${esc([x.pc, x.isp].filter(Boolean).join(' · '))}</span>` : ''}</td><td>${esc(x.d || '')}</td><td>${esc(kindName(x.k))}${x.m ? `<br><span class="faint">${esc(x.m)}</span>` : ''}</td><td>${x.k === 'visit' ? '' : status(x)}</td></tr>`).join('') || '<tr><td colspan="5" class="muted">Nothing logged today yet.</td></tr>'}
       </tbody></table></div></section>
     <section><h3>Automatic updates <em>GitHub</em></h3><div id="admin-runs"><p class="note muted thinking">Loading…</p></div></section>
     <div class="actions"><button class="tag" id="admin-refresh">↻ Refresh</button><button class="tag" id="admin-out">Log out</button></div>
-    <p class="foot">Visitor ids are anonymous and change daily; locations come from Cloudflare (city level) and full IP addresses are never stored. Logs are kept 30 days.</p>
+    <p class="foot">Visitor ids are anonymous and change daily; locations come from Cloudflare (city level) and full IP addresses are never stored. The log resets every night at 00:00 Berlin time.</p>
   </div>`;
   wirePanel(); panelMode = 'admin'; adminBtn.setAttribute('aria-pressed', 'true');
   showAdminMap(logs);

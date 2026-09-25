@@ -22,7 +22,6 @@ const GOOGLE = "https://generativelanguage.googleapis.com/v1beta";
 const MAX_OUTPUT_TOKENS = 8192;
 const MAX_BODY_BYTES = 200_000;
 const CACHE_SECONDS = 24 * 3600;
-const LOG_DAYS = 30;
 const VISITOR_LIMIT = { max: 12, windowMs: 5 * 60_000 };      // AI requests per visitor per 5 minutes
 const ADMIN_LIMIT = { max: 5, windowMs: 15 * 60_000 };        // wrong admin codes per visitor per 15 minutes
 
@@ -72,6 +71,20 @@ function isBot(request){
   return BOT_UA.test(ua) || DATACENTER.test(isp) || !ua;
 }
 
+// the log resets every night at 00:00 Berlin time: each entry expires at the next Berlin midnight
+const berlinWall = ts => {   // milliseconds since Berlin midnight, by the wall clock
+  const p = Object.fromEntries(new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Berlin", hour: "2-digit", minute: "2-digit", second: "2-digit", hourCycle: "h23" })
+    .formatToParts(new Date(ts)).map(x => [x.type, x.value]));
+  return ((+p.hour * 60 + +p.minute) * 60 + +p.second) * 1000 + (ts % 1000);
+};
+function berlinMidnightBefore(ts){
+  let g = ts - berlinWall(ts);
+  const w = berlinWall(g);                              // on clock-change days the first guess is an hour off
+  return w === 0 ? g : w > 12 * 3600e3 ? g + (24 * 3600e3 - w) : g - w;
+}
+// +26 h always lands on the next Berlin day (also on 23/25-hour daylight-saving days)
+const nextBerlinMidnight = ts => berlinMidnightBefore(berlinMidnightBefore(ts) + 26 * 3600e3);
+
 async function logEvent(env, request, rec) {
   if (!env.LOGS) return;
   const cf = request.cf || {};
@@ -89,7 +102,9 @@ async function logEvent(env, request, rec) {
     o: (request.headers.get("Origin") || "").replace(/^https:\/\//, "").slice(0, 40),       // which site address (GitHub or Cloudflare Pages)
   };
   const key = `l:${String(9999999999999 - meta.t).padStart(13, "0")}:${Math.random().toString(36).slice(2, 7)}`;
-  try { await env.LOGS.put(key, "", { metadata: meta, expirationTtl: LOG_DAYS * 86400 }); } catch (e) { /* free KV write limit reached */ }
+  // expires at the next 00:00 Berlin (KV needs at least 60 s ahead)
+  const expiration = Math.max(Math.floor(nextBerlinMidnight(meta.t) / 1000), Math.floor(meta.t / 1000) + 60);
+  try { await env.LOGS.put(key, "", { metadata: meta, expiration }); } catch (e) { /* free KV write limit reached */ }
 }
 
 async function readLogs(env, max = 3000) {
