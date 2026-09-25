@@ -209,6 +209,7 @@ button{font:inherit;color:inherit}
 .vid-meta{flex:1;min-width:0;font:11px/1.4 var(--mono);color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .vid-meta b{color:var(--gold-hi);font-weight:600}
 .vid.min .vid-box{display:none}
+.tv.min .tv-body,.tv.min .tv-meta,.tv.min .tv-foot{display:none}
 .vid-none{color:var(--s-T)}
 /* loading a new country's story/video: dim the old content so the switch is visible */
 .tv.loading .tv-head,.tv.loading .tv-meta,.tv.loading .tv-pic,.vid.loading .vid-stage,.vid.loading .vid-cap,.vid.loading .vid-meta{opacity:.25;transition:opacity .2s}
@@ -497,7 +498,8 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
     <button class="ask-go" type="submit" aria-label="Ask">→</button>
   </form>
   <section class="tv" id="tv" hidden aria-live="polite">
-    <div class="tv-top"><span class="tv-tag"><i class="live-dot"></i>TOP STORY</span><span class="tv-where" id="tv-where">World</span><span class="tv-n" id="tv-n"></span></div>
+    <div class="tv-top"><span class="tv-tag"><i class="live-dot"></i>TOP STORY</span><span class="tv-where" id="tv-where">World</span><span class="tv-n" id="tv-n"></span>
+      <button class="tv-btn" id="tv-min" aria-label="Hide top story" title="Hide top story">▾</button></div>
     <div class="tv-body">
       <a class="tv-head" id="tv-head" target="_blank" rel="noopener" dir="auto"></a>
       <a class="tv-pic" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img id="tv-img" alt="" hidden loading="lazy" referrerpolicy="no-referrer" onerror="this.hidden=true"></a>
@@ -1331,11 +1333,13 @@ const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').match
 const GLOBE_THEME = {
   dark:  {land: 'rgba(56,56,56,0.96)', dim: 'rgba(34,34,34,0.92)', hover: 'rgba(92,92,92,0.97)', gold: '#d4af37', sea: '#0b0b0b', glow: '#050505',
           side: 'rgba(12,12,12,0.85)', micro: '#bdbdbd', river: 'rgba(8,8,8,0.9)', grat: 'rgba(212,175,55,0.15)', gratMain: 'rgba(212,175,55,0.42)',
-          stroke: 'rgba(212,175,55,0.42)', strokeHi: 'rgba(240,214,120,1)', atmo: '#b8952c', ata: 'rgba(70,70,70,0.5)', lake: '#0b0b0b'},
+          stroke: 'rgba(212,175,55,0.42)', strokeHi: 'rgba(240,214,120,1)', atmo: '#b8952c', ata: 'rgba(70,70,70,0.5)', lake: '#0b0b0b',
+          reliefLand: '#3a3a3a', landR: 'rgba(56,56,56,0.35)', dimR: 'rgba(20,20,20,0.55)', hoverR: 'rgba(120,120,120,0.45)'},
   // light mode: light grey-blue sea, parchment land; navy blue for borders, rivers and lakes
   light: {land: 'rgba(222,212,190,0.98)', dim: 'rgba(196,186,164,0.96)', hover: 'rgba(238,230,210,1)', gold: '#9a7a1f', sea: '#a3b3c0', glow: '#4d5b68',
           side: 'rgba(40,58,86,0.9)', micro: '#1f3a63', river: 'rgba(24,48,86,0.95)', grat: 'rgba(31,58,99,0.18)', gratMain: 'rgba(31,58,99,0.45)',
-          stroke: 'rgba(24,48,86,0.85)', strokeHi: 'rgba(12,34,72,1)', atmo: '#7f96b5', ata: 'rgba(226,228,232,0.9)', lake: '#1f3a63'},
+          stroke: 'rgba(24,48,86,0.85)', strokeHi: 'rgba(12,34,72,1)', atmo: '#7f96b5', ata: 'rgba(226,228,232,0.9)', lake: '#1f3a63',
+          reliefLand: '#ded4be', landR: 'rgba(222,212,190,0.3)', dimR: 'rgba(170,160,138,0.45)', hoverR: 'rgba(255,250,236,0.5)'},
 };
 let GT = GLOBE_THEME[document.documentElement.dataset.theme === 'light' ? 'light' : 'dark'];
 let LAND = GT.land, LAND_DIM = GT.dim, LAND_HOVER = GT.hover, GOLD = GT.gold;
@@ -3503,6 +3507,13 @@ function storyPop(on){
   if (on) storyShow(); else tvShow();   // closing restarts the rotation
 }
 document.getElementById('tv-pop').onclick = () => storyPop(true);
+// fold the top story down to its header bar (and back); remembered like the video's
+{
+  const tvEl = document.getElementById('tv'), b = document.getElementById('tv-min');
+  const set = on => { tvEl.classList.toggle('min', on); b.textContent = on ? '▴' : '▾'; b.title = on ? 'Show top story' : 'Hide top story'; };
+  try { if (localStorage.getItem('fl-tv-min') === '1') set(true); } catch(e){}
+  b.onclick = () => { const on = !tvEl.classList.contains('min'); set(on); try { localStorage.setItem('fl-tv-min', on ? '1' : '0'); } catch(e){} };
+}
 document.getElementById('smodal-close').onclick = () => storyPop(false);
 document.getElementById('smodal').addEventListener('click', e => { if (e.target.id === 'smodal') storyPop(false); });
 document.getElementById('smodal-next').onclick = () => tvNext(1, true);
@@ -3634,13 +3645,50 @@ function applyTheme(t, save){
   t = t === 'light' ? 'light' : 'dark';
   document.documentElement.dataset.theme = t;
   if (save) try { localStorage.setItem('fl-theme', t); } catch(e){}
-  GT = GLOBE_THEME[t]; LAND = GT.land; LAND_DIM = GT.dim; LAND_HOVER = GT.hover; GOLD = GT.gold;
-  mat.color.set(GT.sea); if (mat.emissive) mat.emissive.set(GT.glow);
+  GT = GLOBE_THEME[t]; GOLD = GT.gold; setLandColours();
+  if (!reliefOn){ mat.color.set(GT.sea); if (mat.emissive) mat.emissive.set(GT.glow); }
+  buildRelief();   // repaint the relief in this theme's colours
   globe.atmosphereColor(GT.atmo).polygonSideColor(() => GT.side).polygonStrokeColor(strokeColor).pointColor(globe.pointColor())
     .pathColor(d => d.river ? GT.river : d.main ? GT.gratMain : GT.grat);
   refreshPolys();
   const b = document.getElementById('theme-btn'); b.textContent = t === 'light' ? '☾' : '☀';
 }
+/* TERRAIN RELIEF: an elevation map turned into atlas-style hill shading in the theme's colours, drawn on the globe
+   and shown through slightly see-through countries. If the maps can't load, the globe simply stays plain. */
+const RELIEF_SRC = 'https://cdn.jsdelivr.net/npm/three-globe@2/example/img/';
+let reliefImgs = null, reliefOn = false, reliefJob = 0;
+const loadImg = u => new Promise((res, rej) => { const i = new Image(); i.crossOrigin = 'anonymous'; i.onload = () => res(i); i.onerror = rej; i.src = u; });
+const rgbOf = c => { const m = String(c).match(/\d+(\.\d+)?/g); if (m && !c.startsWith('#')) return m.slice(0, 3).map(Number); const n = parseInt(c.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; };
+async function buildRelief(){
+  const job = ++reliefJob;
+  try {
+    if (!reliefImgs) reliefImgs = await Promise.all([loadImg(RELIEF_SRC + 'earth-topology.png'), loadImg(RELIEF_SRC + 'earth-water.png')]);
+    if (job !== reliefJob) return;   // the theme changed meanwhile; the newer run takes over
+    const W = 2048, H = 1024, px = img => { const c = document.createElement('canvas'); c.width = W; c.height = H; const x = c.getContext('2d'); x.drawImage(img, 0, 0, W, H); return x.getImageData(0, 0, W, H).data; };
+    const elev = px(reliefImgs[0]), water = px(reliefImgs[1]);
+    const out = document.createElement('canvas'); out.width = W; out.height = H;
+    const ctx2 = out.getContext('2d'), img = ctx2.createImageData(W, H), d = img.data;
+    const sea = rgbOf(GT.sea), land = rgbOf(GT.reliefLand), light = document.documentElement.dataset.theme === 'light';
+    const E = (x, y) => elev[(((y + H) % H) * W + ((x + W) % W)) * 4];
+    for (let y = 0; y < H; y++) for (let x = 0; x < W; x++){
+      const i = (y * W + x) * 4;
+      if (water[i] > 128){ d[i] = sea[0]; d[i + 1] = sea[1]; d[i + 2] = sea[2]; d[i + 3] = 255; continue; }   // water: plain sea colour
+      // hill shading: slope towards the light from the north-west, plus a touch of height
+      const dx = E(x + 1, y) - E(x - 1, y), dy = E(x, y + 1) - E(x, y - 1);
+      const shade = Math.max(-1, Math.min(1, (-dx - dy) / 60)), h = E(x, y) / 255;
+      const k = 1 + shade * (light ? 0.22 : 0.45) + h * (light ? -0.12 : 0.35);
+      d[i] = Math.min(255, land[0] * k); d[i + 1] = Math.min(255, land[1] * k); d[i + 2] = Math.min(255, land[2] * k); d[i + 3] = 255;
+    }
+    ctx2.putImageData(img, 0, 0);
+    if (job !== reliefJob) return;
+    globe.globeImageUrl(out.toDataURL('image/jpeg', 0.9));
+    mat.color.set('#ffffff'); if (mat.emissive) mat.emissive.set('#000000');   // let the texture show its own colours
+    reliefOn = true; setLandColours(); refreshPolys();
+  } catch(e){ /* no relief: plain globe */ }
+}
+// countries: solid without relief, partly see-through with it (relationship colours stay on top)
+function setLandColours(){ LAND = reliefOn ? GT.landR : GT.land; LAND_DIM = reliefOn ? GT.dimR : GT.dim; LAND_HOVER = reliefOn ? GT.hoverR : GT.hover; }
+
 document.getElementById('theme-btn').onclick = () => applyTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light', true);
 try { matchMedia('(prefers-color-scheme: light)').addEventListener('change', e => { let saved = null; try { saved = localStorage.getItem('fl-theme'); } catch(err){} if (!saved) applyTheme(e.matches ? 'light' : 'dark'); }); } catch(e){}
 applyTheme(document.documentElement.dataset.theme);
