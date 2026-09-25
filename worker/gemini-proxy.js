@@ -293,12 +293,12 @@ async function newsPool(lang, ctx){
   const cache = caches.default, ck = new Request(`https://faultlines-cache/pool/${lang}`);
   const hit = await cache.match(ck);
   if (hit) return hit.json();
-  const get = (u, h = {}) => fetch(u, { headers: { "User-Agent": "Mozilla/5.0 (compatible; Faultlines news reader)", ...h }, cf: { cacheTtl: 300 } })
-    .then(r => r.ok ? r.text() : "").catch(() => "");
+  // each feed gets 5 seconds; a slow outlet is skipped rather than holding everything up
+  // (Google News is not used here: it blocks requests from Cloudflare and only made the first load slow)
+  const get = (u, h = {}) => fetch(u, { headers: { "User-Agent": "Mozilla/5.0 (compatible; Faultlines news reader)", ...h }, cf: { cacheTtl: 300 },
+    signal: AbortSignal.timeout(5000) }).then(r => r.ok ? r.text() : "").catch(() => "");
   const outlets = await Promise.all(OUTLETS[lang].map(([name, u]) => get(u).then(x => parseFeed(x, name))));
-  const base = "https://news.google.com/rss", p = NEWS_LANG[lang];
-  const google = await get(`${base}/headlines/section/topic/WORLD?${p}`).then(parseRssClusters).catch(() => []);
-  const pool = { items: [...outlets.flat(), ...google], at: Date.now() };
+  const pool = { items: outlets.flat(), at: Date.now() };
   if (pool.items.length) ctx.waitUntil(cache.put(ck, new Response(JSON.stringify(pool), { headers: { "Content-Type": "application/json", "Cache-Control": "max-age=600" } })));
   return pool;
 }
@@ -313,7 +313,7 @@ async function liveFeed(lang, ctx){
   });
   items.sort((a, b) => (b.d || "").localeCompare(a.d || ""));
   const body = JSON.stringify({ lang, generated: new Date(pool.at).toISOString(), items: items.slice(0, 80) });
-  return new Response(body, { status: items.length ? 200 : 502, headers: cors({ "Content-Type": "application/json" }) });
+  return new Response(body, { status: 200, headers: cors({ "Content-Type": "application/json" }) });   // an empty list is a normal answer
 }
 
 /* ------------------------------------------------------------------ top stories
@@ -419,7 +419,7 @@ async function topStories(lang, q, en, ctx){
   });
   const body = JSON.stringify({ lang, q, generated: new Date().toISOString(), stories });
   if (stories.length) ctx.waitUntil(cache.put(key, new Response(body, { headers: { "Content-Type": "application/json", "Cache-Control": "max-age=600" } })));
-  return new Response(body, { status: stories.length ? 200 : 502, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "miss" }) });
+  return new Response(body, { status: 200, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "miss" }) });   // an empty list is a normal answer
 }
 
 /* ------------------------------------------------------------------ news videos
@@ -451,7 +451,7 @@ async function videoPool(lang, ctx){
   const cache = caches.default, ck = new Request(`https://faultlines-cache/vpool/${lang}`);
   const hit = await cache.match(ck);
   if (hit) return hit.json();
-  const lists = await Promise.all(CHANNELS[lang].map(([name, id]) => fetch(`https://www.youtube.com/feeds/videos.xml?channel_id=${id}`, { cf: { cacheTtl: 300 } })
+  const lists = await Promise.all(CHANNELS[lang].map(([name, id]) => fetch(`https://www.youtube.com/feeds/videos.xml?channel_id=${id}`, { cf: { cacheTtl: 300 }, signal: AbortSignal.timeout(5000) })
     .then(r => r.ok ? r.text() : "").then(x => parseYouTube(x, name)).catch(() => [])));
   const pool = { items: lists.flat(), at: Date.now() };
   if (pool.items.length) ctx.waitUntil(cache.put(ck, new Response(JSON.stringify(pool), { headers: { "Content-Type": "application/json", "Cache-Control": "max-age=600" } })));

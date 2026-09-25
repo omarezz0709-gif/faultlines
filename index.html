@@ -1567,6 +1567,9 @@ function wirePanel(){
   setMin(false); panelMode = '';
   hideAdminMap(); document.getElementById('admin-btn').setAttribute('aria-pressed', 'false');   // leaving the admin page
   document.getElementById('live-btn').setAttribute('aria-pressed', 'false');
+  // phones: an opened panel and the question box (with top story + video) would overlap, so fold the question box away
+  const top = document.querySelector('.top');
+  if (mob() && top.classList.contains('asking')){ top.classList.remove('asking'); document.getElementById('ask-form').classList.remove('open'); document.getElementById('ask-btn').setAttribute('aria-expanded', 'false'); }
   const ph = panel.querySelector('.p-head'); if (ph) ph.onclick = e => { if (mob() && !e.target.closest('button')) toggleMin(); };
   const all = document.getElementById('all-upd'); if (all) all.onclick = renderChanges;
   panel.querySelectorAll('[data-allnews]').forEach(b => b.onclick = renderChanges);
@@ -2978,6 +2981,16 @@ TR_RE.push(
 );
 // "20 min ago" etc. inside longer text (source · time)
 TR_RE.push([/^✓ (\d+) outlets$/, ['✓ $1 médias', '✓ $1 medios', '✓ $1 وسائل إعلام']]);
+// the facts-table footnote is built from optional parts; translate each part
+const FIG_PARTS = [
+  ['Plain figures: World Bank, latest year shown', ['Chiffres simples : Banque mondiale, dernière année disponible', 'Cifras simples: Banco Mundial, último año disponible', 'الأرقام العادية: البنك الدولي، آخر سنة متاحة']],
+  ['; gold = highest (or lowest where lower is better)', [' ; doré = le plus élevé (ou le plus bas quand c’est mieux)', '; dorado = el más alto (o el más bajo si es mejor)', '؛ الذهبي = الأعلى (أو الأدنى حين يكون ذلك أفضل)']],
+  ['. ≈ = AI estimate from the model\'s own knowledge, with year and source; check before relying on it.', ['. ≈ = estimation de l’IA à partir de ses connaissances, avec année et source ; à vérifier.', '. ≈ = estimación de la IA con su propio conocimiento, con año y fuente; compruébala.', '. ≈ = تقدير الذكاء الاصطناعي من معرفته، مع السنة والمصدر؛ تحقّق منه.']],
+  [' ✓ = from Wikidata (refreshed daily; links to the source).', [' ✓ = Wikidata (mis à jour chaque jour ; lien vers la source).', ' ✓ = Wikidata (actualizado a diario; enlaza a la fuente).', ' ✓ = من ويكي بيانات (يُحدَّث يوميًا؛ مع رابط المصدر).']],
+];
+TR_RE.push([/^Plain figures: World Bank/, (m, whole) => [0, 1, 2].map(li => FIG_PARTS.reduce((s, [en, t]) => s.replace(en, t[li]), whole))]);
+TR_RE.push([/^(.+ via .+)\. Shown in colour on the globe\.$/, (m, list) => [
+  list.replace(/ via /g, ' via ') + '. Affichés en couleur sur le globe.', list.replace(/ via /g, ' vía ') + '. Se muestran en color en el globo.', list.replace(/ via /g, ' عبر ') + '. معروضة بالألوان على الكرة.']]);
 const TR_AGO = [[/(\d+) min ago/, ['il y a $1 min', 'hace $1 min', 'منذ $1 دقيقة']], [/(\d+) h ago/, ['il y a $1 h', 'hace $1 h', 'منذ $1 ساعة']], [/(\d+) d ago/, ['il y a $1 j', 'hace $1 d', 'منذ $1 يوم']]];
 const LI = {fr: 0, es: 1, ar: 2};
 // country names: ISO3 -> ISO2 for the browser's translations; a few set by hand
@@ -3003,7 +3016,7 @@ function trText(s){
   let out = trMap.get(core);
   if (out == null){
     const li = LI[LANG];
-    for (const [re, t] of TR_RE){ if (re.test(core)){ out = typeof t === 'function' ? t(...core.match(re))[li] : core.replace(re, t[li]); break; } }
+    for (const [re, t] of TR_RE){ if (re.test(core)){ out = typeof t === 'function' ? t(...core.match(re), core)[li] : core.replace(re, t[li]); break; } }   // functions also get the whole text last
   }
   if (out == null) return null;
   return s.replace(core, out);
@@ -3058,8 +3071,11 @@ const aiLangNote = json => LANG === 'en' ? '' : `\n\nWrite ${json ? 'all text va
    ASK: free questions, answered by the AI with the globe's data as context
    ================================================================ */
 const askForm = document.getElementById('ask-form'), askQ = document.getElementById('ask-q'), askBtn = document.getElementById('ask-btn');
-askBtn.onclick = () => { const on = !askForm.classList.contains('open'); askForm.classList.toggle('open', on); document.querySelector('.top').classList.toggle('asking', on); askBtn.setAttribute('aria-expanded', on); if (on) askQ.focus(); };
-askForm.onsubmit = e => { e.preventDefault(); const q = askQ.value.trim(); if (q.length < 3) return; askQ.blur(); renderAsk(q); };
+askBtn.onclick = () => {
+  const on = !askForm.classList.contains('open'); askForm.classList.toggle('open', on); document.querySelector('.top').classList.toggle('asking', on); askBtn.setAttribute('aria-expanded', on);
+  if (on){ if (mob()) setMin(true); askQ.focus(); }   // phones: fold the panel so the two don't overlap
+};
+askForm.onsubmit = e => { e.preventDefault(); const q = askQ.value.trim().slice(0, 300); if (q.length < 3) return; askQ.blur(); renderAsk(q); };
 function mentioned(q){
   const low = ' ' + q.toLowerCase() + ' ';
   const hit = (name) => { const n = name.toLowerCase(); const i = low.indexOf(n); return i > 0 && !/\p{L}/u.test(low[i - 1]) && !/\p{L}/u.test(low[i + n.length] || ' '); };
