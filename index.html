@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Interactive globe of international relations, chokepoints and flashpoints, refreshed from the news three times a day.">
 <title>Faultlines Globe</title>
+<!-- light or dark before anything is drawn: the saved choice, otherwise the device setting -->
+<script>try { var th = localStorage.getItem('fl-theme'); document.documentElement.dataset.theme = th === 'light' || th === 'dark' ? th : (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'); } catch(e) { document.documentElement.dataset.theme = 'dark'; }</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
@@ -23,8 +25,19 @@
   --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
 }
+/* light mode: warm ivory, dark text, antique gold (bright gold is unreadable on light backgrounds) */
+:root[data-theme="light"]{
+  color-scheme: light;
+  --bg:#ece5d6; --panel:rgba(251,248,241,.95); --panel-solid:#fbf8f1;
+  --raise:#f2ecdf; --raise2:#e7dfcf; --hover:#ede6d8;
+  --line:#e2d9c7; --line2:#cfc4ad;
+  --text:#1d1b17; --soft:#3b372f; --muted:#6b6457; --faint:#968d7c;
+  --gold:#9a7a1f; --gold-hi:#7a5f12; --gold-dim:rgba(154,122,31,.42); --on-gold:#fffaf0;
+  --s-N:#8a8578; --p-land:#6f6a60; --p-base:#6f6a60; --p-resource:#b8952c;
+}
 html,body{height:100%}
 body{margin:0;background:radial-gradient(120% 90% at 40% 45%,#1c1c1c 0%,var(--bg) 62%,#000 100%);background-color:var(--bg);color:var(--text);font:14px/1.5 var(--body);overflow:hidden}
+[data-theme="light"] body{background:radial-gradient(120% 90% at 40% 45%,#fdfbf5 0%,var(--bg) 62%,#ddd4c2 100%)}
 #globe{position:fixed;inset:0}
 button{font:inherit;color:inherit}
 :focus-visible{outline:2px solid var(--sel);outline-offset:2px}
@@ -170,6 +183,14 @@ button{font:inherit;color:inherit}
 .city span{position:absolute;left:4px;top:-5px;white-space:nowrap;font:400 9px/1 var(--body);letter-spacing:.01em;color:rgba(200,200,200,.8);text-shadow:0 0 2px #000}
 .city.cap i{background:var(--gold);width:4px;height:4px;left:-2px;top:-2px}
 .city.cap span{font-weight:500;font-size:10px;color:var(--gold-hi);top:-5.5px}
+/* light mode: the few places with fixed dark colours */
+[data-theme="light"] .poi span{background:rgba(251,248,241,.96);box-shadow:0 1px 4px rgba(0,0,0,.15)}
+[data-theme="light"] .chip.lang option{background:var(--panel-solid)}
+[data-theme="light"] .tv{background:linear-gradient(180deg,rgba(247,239,214,.97),rgba(251,248,241,.97))}
+[data-theme="light"] .vid{background:var(--panel)}
+[data-theme="light"] .city i{background:#6b6457}
+[data-theme="light"] .city span{color:#2f2b24;text-shadow:0 0 3px #fff,0 0 2px #fff}
+[data-theme="light"] .float-tooltip-kap{background:rgba(251,248,241,.97)!important;box-shadow:0 2px 10px rgba(0,0,0,.12)}
 
 /* ---------- side panel ---------- */
 .panel{position:fixed;right:16px;top:calc(16px + env(safe-area-inset-top,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));width:380px;z-index:6;background:var(--panel);border:1px solid var(--line2);border-radius:8px;backdrop-filter:blur(12px);display:flex;flex-direction:column;overflow:hidden}
@@ -414,6 +435,7 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
     <button class="chip mode" id="cmp-btn" aria-pressed="false">⇄ Compare countries</button>
     <button class="chip" id="flt-btn" aria-expanded="false" aria-controls="filters"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 5h18M6 12h12M10 19h4"/></svg>Filters<span class="fcount" id="flt-count" hidden></span></button>
     <button class="chip icon" id="admin-btn" aria-label="Admin" title="Admin">⚙</button>
+    <button class="chip icon" id="theme-btn" aria-label="Light or dark mode" title="Light or dark mode">☀</button>
     <select class="chip lang" id="lang-sel" aria-label="Language" title="Language"><option value="en">EN</option><option value="fr">FR</option><option value="es">ES</option><option value="ar">عربي</option></select>
     <button class="chip mob-only" id="ask-btn" aria-expanded="false">✦ Ask</button>
     <button class="chip mob-only" id="live-btn"><i class="live-dot"></i>Live</button>
@@ -1220,7 +1242,17 @@ function relationsFor(id){
    GLOBE
    ================================================================ */
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const LAND = 'rgba(56,56,56,0.96)', LAND_DIM='rgba(34,34,34,0.92)', LAND_HOVER='rgba(92,92,92,0.97)', GOLD='#d4af37';
+// globe colours per theme (the interface itself uses the CSS variables)
+const GLOBE_THEME = {
+  dark:  {land: 'rgba(56,56,56,0.96)', dim: 'rgba(34,34,34,0.92)', hover: 'rgba(92,92,92,0.97)', gold: '#d4af37', sea: '#0b0b0b', glow: '#050505',
+          side: 'rgba(12,12,12,0.85)', micro: '#bdbdbd', river: 'rgba(8,8,8,0.9)', grat: 'rgba(212,175,55,0.15)', gratMain: 'rgba(212,175,55,0.42)',
+          stroke: 'rgba(212,175,55,0.42)', strokeHi: 'rgba(240,214,120,1)', atmo: '#b8952c', ata: 'rgba(70,70,70,0.5)'},
+  light: {land: 'rgba(250,246,236,0.98)', dim: 'rgba(231,225,211,0.96)', hover: 'rgba(255,253,246,1)', gold: '#9a7a1f', sea: '#b9c2c8', glow: '#5d666c',
+          side: 'rgba(196,188,170,0.9)', micro: '#6f6a60', river: 'rgba(118,138,152,0.95)', grat: 'rgba(122,95,18,0.16)', gratMain: 'rgba(122,95,18,0.42)',
+          stroke: 'rgba(122,95,18,0.5)', strokeHi: 'rgba(122,95,18,1)', atmo: '#d9c58c', ata: 'rgba(245,245,242,0.9)'},
+};
+let GT = GLOBE_THEME[document.documentElement.dataset.theme === 'light' ? 'light' : 'dark'];
+let LAND = GT.land, LAND_DIM = GT.dim, LAND_HOVER = GT.hover, GOLD = GT.gold;
 let sel = {type:'none'};
 let relMap = new Map();
 let hoverId = null;
@@ -1241,14 +1273,14 @@ function passesPair(a, b, r){
   return true;
 }
 const inBloc = id => !!(filters.bloc && BLOCS[filters.bloc].set.has(id));
-function strokeColor(f){ if (f.lake) return 'rgba(140,140,140,0.35)'; return inBloc(eff(f.id)) ? 'rgba(240,214,120,1)' : 'rgba(212,175,55,0.42)'; }
+function strokeColor(f){ if (f.lake) return 'rgba(140,140,140,0.35)'; return inBloc(eff(f.id)) ? GT.strokeHi : GT.stroke; }
 
 const hexA = (hex,a) => { const n=parseInt(hex.slice(1),16); return `rgba(${n>>16&255},${n>>8&255},${n&255},${a})`; };
 
 function capColor(f){
-  if (f.lake) return '#0b0b0b';   // lakes: same black as the sea
+  if (f.lake) return GT.sea;   // lakes: same colour as the sea
   const id = eff(f.id);
-  if (f.id==='ATA') return 'rgba(70,70,70,0.5)';
+  if (f.id==='ATA') return GT.ata;
   if (sel.type==='compare'){
     if (sel.ids.includes(id)) return 'rgba(212,175,55,0.96)';
     if (cmpPois().some(p=>p.p.includes(id))) return id===hoverId ? 'rgba(212,175,55,0.5)' : 'rgba(212,175,55,0.28)';
@@ -1302,11 +1334,11 @@ const globeW = () => window.innerWidth + (window.innerWidth > 760 ? 400 : 0);   
 const globe = new Globe(globeEl, {animateIn:true})
   .width(globeW()).height(window.innerHeight)
   .backgroundColor('rgba(0,0,0,0)')
-  .showAtmosphere(true).atmosphereColor('#b8952c').atmosphereAltitude(0.13)
+  .showAtmosphere(true).atmosphereColor(GT.atmo).atmosphereAltitude(0.13)
   .showGraticules(false)
   .polygonsData(features)
   .polygonCapColor(capColor)
-  .polygonSideColor(()=> 'rgba(12,12,12,0.85)')
+  .polygonSideColor(()=> GT.side)
   .polygonStrokeColor(f=> strokeColor(f))
   .polygonAltitude(altitude)
   .polygonsTransitionDuration(260)
@@ -1317,7 +1349,7 @@ const globe = new Globe(globeEl, {animateIn:true})
   .pointColor(p=>{
     if (sel.type==='compare') return sel.ids.includes(p.id) ? GOLD : '#5a5a5a';
     if (sel.type==='country'){ if (p.id===sel.id) return GOLD; const r=relMap.get(p.id); return passesPair(sel.id,p.id,r) ? STATUS[r.s].color : '#5a5a5a'; }
-    return inBloc(p.id) ? GOLD : '#bdbdbd';
+    return inBloc(p.id) ? GOLD : GT.micro;
   })
   .pointLabel(p=>{ if (sel.type==='compare') return tip(p.name, `<span class="muted">${sel.ids.includes(p.id)?'Click to remove':'Click to add to comparison'}</span>`); const r = sel.type==='country' && sel.id!==p.id ? relMap.get(p.id) : null; return tip(p.name, r ? pillHTML(r.s) : '<span class="muted">Small state</span>'); })
   .onPointClick(p=>{ if (!justClickedMarker()) pickCountry(p.id); })
@@ -1337,7 +1369,7 @@ const globe = new Globe(globeEl, {animateIn:true})
 globe.htmlElementVisibilityModifier((el,v)=>{ el.style.opacity = v ? 1 : 0; el.style.pointerEvents = v && !el.classList.contains('city') ? 'auto' : 'none'; });
 
 const mat = globe.globeMaterial();
-mat.color.set('#0b0b0b'); if (mat.emissive) mat.emissive.set('#050505'); mat.shininess = 4;
+mat.color.set(GT.sea); if (mat.emissive) mat.emissive.set(GT.glow); mat.shininess = 4;
 const ctr = globe.controls();
 ctr.autoRotate = !reduceMotion; ctr.autoRotateSpeed = 0.35;
 globeEl.addEventListener('pointerdown', ()=>{ ctr.autoRotate = false; });
@@ -1354,7 +1386,7 @@ for (let lng=-180; lng<180; lng+=15){ const pts=[]; for (let lat=-84; lat<=84; l
 // same layer carries the rivers (points [lat, lng, host country]) once zoomed in; they ride on their country's height
 globe.pathsData(GRAT).pathPoints(d=>d).pathPointLat(p=>p[0]).pathPointLng(p=>p[1])
   .pathPointAlt(p => p.length > 2 ? (p[2] ? altitude(p[2]) : 0.006) + 0.0008 : 0.0015)
-  .pathColor(d=> d.river ? 'rgba(8,8,8,0.9)' : d.main ? 'rgba(212,175,55,0.42)' : 'rgba(212,175,55,0.15)').pathStroke(null).pathTransitionDuration(0);
+  .pathColor(d=> d.river ? GT.river : d.main ? GT.gratMain : GT.grat).pathStroke(null).pathTransitionDuration(0);
 
 function refreshPolys(){ globe.polygonCapColor(capColor).polygonAltitude(altitude); refreshGeo(); }
 
@@ -2984,7 +3016,7 @@ const TR = {
     'عناوين أخبار العالم من Google News، تُحدَّث كل بضع دقائق. تُميَّز العناوين التي تذكر دولة وكلمات مثل حرب أو غارة أو عقوبات.'],
   'No live headlines right now.': ['Aucun titre en direct pour le moment.', 'No hay titulares en vivo ahora.', 'لا توجد عناوين مباشرة الآن.'],
   'Gaza Strip': ['Bande de Gaza', 'Franja de Gaza', 'قطاع غزة'], 'Antarctica': ['Antarctique', 'Antártida', 'القارة القطبية الجنوبية'],
-  'Close': ['Fermer', 'Cerrar', 'إغلاق'], 'TOP STORY': ['À LA UNE', 'PORTADA', 'أبرز خبر'], 'World': ['Monde', 'Mundo', 'العالم'],
+  'Close': ['Fermer', 'Cerrar', 'إغلاق'], 'Light or dark mode': ['Mode clair ou sombre', 'Modo claro u oscuro', 'الوضع الفاتح أو الداكن'], 'TOP STORY': ['À LA UNE', 'PORTADA', 'أبرز خبر'], 'World': ['Monde', 'Mundo', 'العالم'],
   'Previous story': ['Sujet précédent', 'Noticia anterior', 'الخبر السابق'], '▶ VIDEO': ['▶ VIDÉO', '▶ VÍDEO', '▶ فيديو'],
   'LIVE TV': ['TV EN DIRECT', 'TV EN VIVO', 'بث مباشر'], 'Live TV': ['TV en direct', 'TV en vivo', 'بث مباشر'], 'Hide video': ['Masquer la vidéo', 'Ocultar vídeo', 'إخفاء الفيديو'],
   'Only stories reported by at least two independent outlets are shown; state propaganda outlets (RT, Sputnik, TASS, Press TV, Global Times, CGTN and others) are left out.': [
@@ -3402,6 +3434,22 @@ document.getElementById('vid-min').onclick = () => {
 if (vidEl.classList.contains('min')) document.getElementById('vid-min').textContent = '▴';
 setInterval(() => vidRefresh(false), 700);
 setInterval(() => { vidCache.clear(); if (!vid.engaged) vidRefresh(true); }, 10 * 60e3);
+
+/* LIGHT / DARK: follows the device setting until the viewer picks one with ☀ / ☾ (then remembered) */
+function applyTheme(t, save){
+  t = t === 'light' ? 'light' : 'dark';
+  document.documentElement.dataset.theme = t;
+  if (save) try { localStorage.setItem('fl-theme', t); } catch(e){}
+  GT = GLOBE_THEME[t]; LAND = GT.land; LAND_DIM = GT.dim; LAND_HOVER = GT.hover; GOLD = GT.gold;
+  mat.color.set(GT.sea); if (mat.emissive) mat.emissive.set(GT.glow);
+  globe.atmosphereColor(GT.atmo).polygonSideColor(() => GT.side).polygonStrokeColor(strokeColor).pointColor(globe.pointColor())
+    .pathColor(d => d.river ? GT.river : d.main ? GT.gratMain : GT.grat);
+  refreshPolys();
+  const b = document.getElementById('theme-btn'); b.textContent = t === 'light' ? '☾' : '☀';
+}
+document.getElementById('theme-btn').onclick = () => applyTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light', true);
+try { matchMedia('(prefers-color-scheme: light)').addEventListener('change', e => { let saved = null; try { saved = localStorage.getItem('fl-theme'); } catch(err){} if (!saved) applyTheme(e.matches ? 'light' : 'dark'); }); } catch(e){}
+applyTheme(document.documentElement.dataset.theme);
 
 /* start in a working state */
 let startLang = 'en'; try { startLang = localStorage.getItem('fl-lang') || ((navigator.language || 'en').slice(0, 2)); } catch(e){}
