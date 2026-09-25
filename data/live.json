@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-09-25T10:18:16Z",
+  "lastRun": "2026-09-25T16:04:45Z",
   "log": [
    {
     "date": "2026-09-25",
@@ -24,6 +24,16 @@
       "label": "Morocco",
       "change": "Election result added: parliamentary election September 2026",
       "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVHd6aWZhdHZQbnhOVkRoZlFHcEFXakZ4WmNob251TTNtVWducUhUeHZOYUlzeFJMWUZET2ZscG1oUl92ZW12MXZvaE5OZTVFUFc3dEJMMWRkeklJN0JTMGlqMlY4LUZtVGpJWGJTRi14T2Qxa0JKTTA4OFZpWnh3QzR6RThIOHM1eXNPQnNnLUZrY0hZX0tkclZNRGdQT1ZTUmNDZ2JqNFZTTkhrRTVMWjNB?oc=5"
+     },
+     {
+      "label": "Colombia–Iran",
+      "change": "Normal/mixed → Hostile: Colombia cuts ties with Iran",
+      "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeXZlYkpnWllMU3U2UUJXY3BDNl91Uks4V3JmRjczdXlROXdUUV8xQW9TbVRBSjkzcXdsUHlfMzRua1UzZHlONm1BYTdlQnlUYUp0MnZROGNRTzRfM3NKQktpTGM5TDNpYWFCanZxT3JpMVpLNHU4dDJkT2F2ZV9hWm96bGLSAYoBQVVfeXFMTTdWZ3N0TGcyblU3MnNXMUNxWlNnemFHUjZuOUZDRWRHVFB0N203U2RhV2E1YUlnMmZuT0VGRXhCLXoxbGxzNVY4Y1BTT2kzbnh3aW80SmFLd01kWnh3Wmc2SkN0dENFbmw4ODFCVHoxNW8zYTFWQXVVZWRpd3dUTmdsZk5CRGpGbVBB?oc=5"
+     },
+     {
+      "label": "Canada–Vietnam",
+      "change": "Normal → Partner: Establishment of formal strategic partnership",
+      "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUjhOWllpQVhCNVRHVTFpSUh6SUdyMlh4dUJXbmFmbnRyTWtaWGZrUHFWQndlX0xweS1DeXRjZUtDRmNvcHVHNXdYMWUtX0lIUVRLbVNoODdwMmMtZS02TmwwbW41aGxHeFh3OFVDdzZFUWZOQW4xNHRZVFlMbzJXb0V4dE5uMFpPd09udHkxRFg0YnV0RmhnbDQ1Yw?oc=5"
      }
     ]
    },
@@ -131,7 +141,7 @@
     ]
    }
   ],
-  "summary": "Colombia severs diplomatic ties with Iran and Canada establishes a strategic partnership with Vietnam, alongside parliamentary election results in Russia and Morocco."
+  "summary": "Colombia severs diplomatic ties with Iran, while Vietnam and Canada establish a strategic partnership at the UN General Assembly."
  },
  "relations": {
   "DNK-USA": {
@@ -202,9 +212,9 @@
    "a": "COL",
    "b": "IRN",
    "s": "H",
-   "note": "Colombia severs diplomatic ties with Iran and designates the IRGC (Islamic Revolutionary Guard Corps) as a terrorist organization.",
+   "note": "Colombia cuts diplomatic ties with Iran and designates the Islamic Revolutionary Guard Corps (IRGC) as a terrorist organization.",
    "updated": "2026-09-25",
-   "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNYnZvU2R2enJKMTdfamVRV3ltSnJvZ2FfbnFYUldjbS1TcVRmLWVaNldic3dhenc5S1FoMV9qM0M3cW1sSVpMSDllRXFpRzdta2p0a3dhaVE4M1dPcFkzaXpQS3ZzUGpuTVIzaEk5MkFoTkNnX2s0RzVrMXI4RWlkNWVObzdUR2VfRjF0aW8tWWhLVmxBZ0hHT252UzRQZGVjU0NDSU5WOFhSenN1cWJodU91SlA?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeXZlYkpnWllMU3U2UUJXY3BDNl91Uks4V3JmRjczdXlROXdUUV8xQW9TbVRBSjkzcXdsUHlfMzRua1UzZHlONm1BYTdlQnlUYUp0MnZROGNRTzRfM3NKQktpTGM5TDNpYWFCanZxT3JpMVpLNHU4dDJkT2F2ZV9hWm96bGLSAYoBQVVfeXFMTTdWZ3N0TGcyblU3MnNXMUNxWlNnemFHUjZuOUZDRWRHVFB0N203U2RhV2E1YUlnMmZuT0VGRXhCLXoxbGxzNVY4Y1BTT2kzbnh3aW80SmFLd01kWnh3Wmc2SkN0dENFbmw4ODFCVHoxNW8zYTFWQXVVZWRpd3dUTmdsZk5CRGpGbVBB?oc=5"
   },
   "CAN-VNM": {
    "a": "CAN",
