@@ -76,7 +76,7 @@ button{font:inherit;color:inherit}
 .g-lake{background:#0b0b0b;border-radius:45% 55% 50% 50%;width:12px;height:8px;box-shadow:0 0 0 1px rgba(140,140,140,.5)}
 .g-ping{background:#b36bff;border-radius:50%}
 [data-theme="light"] .g-micro{background:#1f3a63} [data-theme="light"] .g-city{background:#6b6457}
-[data-theme="light"] .g-river{background:linear-gradient(160deg,transparent 40%,#1d2b40 42%,#1d2b40 58%,transparent 60%),#ded4be} [data-theme="light"] .g-lake{background:#1d2b40}
+[data-theme="light"] .g-river{background:linear-gradient(160deg,transparent 40%,#283e5e 42%,#283e5e 58%,transparent 60%),#ded4be} [data-theme="light"] .g-lake{background:#1f3a63;box-shadow:none}
 [data-theme="light"] .g-base{background:#1f3a63} [data-theme="light"] .g-land{background:#3b4b63}
 /* legend pop-up (right of the left column; bottom sheet on phones) */
 .pop{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));left:392px;width:340px;max-height:calc(100vh - 32px);z-index:20;display:flex;flex-direction:column;
@@ -97,6 +97,21 @@ button{font:inherit;color:inherit}
 .vmodal-meta{padding:8px 12px;font:12px var(--mono);color:var(--muted)}
 .vmodal-meta b{color:var(--gold-hi)}
 .vid-popped{position:absolute;inset:0;display:grid;place-items:center;color:var(--gold-hi);font:600 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;background:radial-gradient(circle,rgba(212,175,55,.12),#050505 70%);border:0;cursor:pointer;width:100%}
+/* top-story pop-up */
+.smodal-box{width:min(820px,100%);max-height:calc(100vh - 32px);display:flex;flex-direction:column}
+.smodal-body{overflow:auto;padding:0 0 16px}
+.smodal-stage{background:#000;min-height:60px}
+.smodal-stage img{display:block;width:100%;max-height:52vh;object-fit:cover}
+.smodal-stage img[hidden]{display:none}
+.smodal-title{margin:14px 18px 6px;font:700 24px/1.25 var(--body);color:var(--text)}
+.smodal-meta{margin:0 18px 12px;font:12.5px/1.5 var(--mono);color:var(--muted)}
+.smodal-meta b{color:var(--gold-hi)}
+.smodal-read{display:inline-block;margin:0 18px;text-decoration:none}
+.smodal-h{margin:18px 18px 6px;font:600 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.smodal-list{margin:0 18px;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-size:13.5px}
+.smodal-list button{background:none;border:0;padding:0;color:var(--soft);text-align:start;cursor:pointer;font:inherit}
+.smodal-list button:hover,.smodal-list li.on button{color:var(--gold-hi)}
+@media (max-width:760px){ .smodal-title{font-size:19px} }
 @media (max-width:760px){ .pop{left:8px;right:8px;width:auto;top:auto;bottom:calc(8px + env(safe-area-inset-bottom,0px));max-height:70vh} }
 .maplegend{display:grid;grid-template-columns:1fr 1fr;gap:7px 14px;font-size:12.5px;color:var(--soft)}
 .maplegend span{display:flex;align-items:center;gap:8px;line-height:1.25}
@@ -488,7 +503,7 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
       <a class="tv-pic" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img id="tv-img" alt="" hidden loading="lazy" referrerpolicy="no-referrer" onerror="this.hidden=true"></a>
     </div>
     <div class="tv-meta" id="tv-meta"></div>
-    <div class="tv-foot"><div class="tv-prog"><i id="tv-prog"></i></div><button class="tv-btn" id="tv-prev" aria-label="Previous story">‹</button><button class="tv-btn" id="tv-next" aria-label="Next story">›</button></div>
+    <div class="tv-foot"><div class="tv-prog"><i id="tv-prog"></i></div><button class="tv-btn" id="tv-pop" aria-label="Open story large" title="Open story large">⤢</button><button class="tv-btn" id="tv-prev" aria-label="Previous story">‹</button><button class="tv-btn" id="tv-next" aria-label="Next story">›</button></div>
   </section>
   <section class="vid" id="vid" hidden>
     <div class="tv-top"><span class="vid-tag">▶ VIDEO</span><span class="tv-where" id="vid-where">World</span><span class="tv-n" id="vid-n"></span>
@@ -536,6 +551,23 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
       <button class="vid-arrow prev" id="vmodal-prev" aria-label="Previous video">‹</button>
       <button class="vid-arrow next" id="vmodal-next" aria-label="Next video">›</button></div>
     <div class="vmodal-meta" id="vmodal-meta"></div>
+  </div>
+</div>
+
+<div class="vmodal" id="smodal" hidden role="dialog" aria-label="Top story">
+  <div class="vmodal-box smodal-box">
+    <div class="vmodal-head"><span class="tv-tag"><i class="live-dot"></i>TOP STORY</span><span class="tv-where" id="smodal-where"></span><span class="tv-n" id="smodal-n"></span>
+      <button class="iconbtn" id="smodal-close" aria-label="Close">✕</button></div>
+    <div class="smodal-body">
+      <div class="vid-stage smodal-stage"><img id="smodal-img" alt="" referrerpolicy="no-referrer" onerror="this.hidden=true">
+        <button class="vid-arrow prev" id="smodal-prev" aria-label="Previous story">‹</button>
+        <button class="vid-arrow next" id="smodal-next" aria-label="Next story">›</button></div>
+      <h2 class="smodal-title" id="smodal-title" dir="auto"></h2>
+      <div class="smodal-meta" id="smodal-meta"></div>
+      <a class="btn smodal-read" id="smodal-read" target="_blank" rel="noopener">Read the article ↗</a>
+      <h4 class="smodal-h">All top stories</h4>
+      <ol class="smodal-list" id="smodal-list"></ol>
+    </div>
   </div>
 </div>
 
@@ -1299,11 +1331,11 @@ const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').match
 const GLOBE_THEME = {
   dark:  {land: 'rgba(56,56,56,0.96)', dim: 'rgba(34,34,34,0.92)', hover: 'rgba(92,92,92,0.97)', gold: '#d4af37', sea: '#0b0b0b', glow: '#050505',
           side: 'rgba(12,12,12,0.85)', micro: '#bdbdbd', river: 'rgba(8,8,8,0.9)', grat: 'rgba(212,175,55,0.15)', gratMain: 'rgba(212,175,55,0.42)',
-          stroke: 'rgba(212,175,55,0.42)', strokeHi: 'rgba(240,214,120,1)', atmo: '#b8952c', ata: 'rgba(70,70,70,0.5)'},
-  // light mode: a darker globe (deep navy sea, parchment land) with navy blue outlines
-  light: {land: 'rgba(222,212,190,0.98)', dim: 'rgba(196,186,164,0.96)', hover: 'rgba(238,230,210,1)', gold: '#9a7a1f', sea: '#1d2b40', glow: '#0e1624',
-          side: 'rgba(40,58,86,0.9)', micro: '#1f3a63', river: 'rgba(29,43,64,0.95)', grat: 'rgba(31,58,99,0.22)', gratMain: 'rgba(31,58,99,0.55)',
-          stroke: 'rgba(24,48,86,0.85)', strokeHi: 'rgba(12,34,72,1)', atmo: '#3a5a8c', ata: 'rgba(226,228,232,0.9)'},
+          stroke: 'rgba(212,175,55,0.42)', strokeHi: 'rgba(240,214,120,1)', atmo: '#b8952c', ata: 'rgba(70,70,70,0.5)', lake: '#0b0b0b'},
+  // light mode: light grey-blue sea, parchment land; navy blue for borders, rivers and lakes
+  light: {land: 'rgba(222,212,190,0.98)', dim: 'rgba(196,186,164,0.96)', hover: 'rgba(238,230,210,1)', gold: '#9a7a1f', sea: '#a3b3c0', glow: '#4d5b68',
+          side: 'rgba(40,58,86,0.9)', micro: '#1f3a63', river: 'rgba(24,48,86,0.95)', grat: 'rgba(31,58,99,0.18)', gratMain: 'rgba(31,58,99,0.45)',
+          stroke: 'rgba(24,48,86,0.85)', strokeHi: 'rgba(12,34,72,1)', atmo: '#7f96b5', ata: 'rgba(226,228,232,0.9)', lake: '#1f3a63'},
 };
 let GT = GLOBE_THEME[document.documentElement.dataset.theme === 'light' ? 'light' : 'dark'];
 let LAND = GT.land, LAND_DIM = GT.dim, LAND_HOVER = GT.hover, GOLD = GT.gold;
@@ -1332,7 +1364,7 @@ function strokeColor(f){ if (f.lake) return 'rgba(140,140,140,0.35)'; return inB
 const hexA = (hex,a) => { const n=parseInt(hex.slice(1),16); return `rgba(${n>>16&255},${n>>8&255},${n&255},${a})`; };
 
 function capColor(f){
-  if (f.lake) return GT.sea;   // lakes: same colour as the sea
+  if (f.lake) return GT.lake;   // lakes: black in dark mode, navy in light mode
   const id = eff(f.id);
   if (f.id==='ATA') return GT.ata;
   if (sel.type==='compare'){
@@ -3111,6 +3143,8 @@ const TR = {
   'Filters → Map markers switches symbol types on and off.': ['Filtres → Repères sur la carte active ou désactive les symboles.', 'Filtros → Marcadores del mapa activa o desactiva los símbolos.', 'التصفية ← علامات الخريطة لإظهار الرموز أو إخفائها.'],
   'Open video large': ['Agrandir la vidéo', 'Ampliar el vídeo', 'تكبير الفيديو'], '▶ Playing in the large window': ['▶ Lecture dans la grande fenêtre', '▶ Reproduciendo en la ventana grande', '▶ يُعرض في النافذة الكبيرة'],
   'Show the large video': ['Afficher la grande vidéo', 'Mostrar el vídeo grande', 'عرض الفيديو الكبير'],
+  'Open story large': ['Agrandir l’article', 'Ampliar la noticia', 'تكبير الخبر'], 'Read the article ↗': ['Lire l’article ↗', 'Leer el artículo ↗', 'اقرأ المقال ↗'],
+  'All top stories': ['Tous les grands titres', 'Todas las noticias principales', 'كل الأخبار الرئيسية'],
   'Close': ['Fermer', 'Cerrar', 'إغلاق'], 'Light or dark mode': ['Mode clair ou sombre', 'Modo claro u oscuro', 'الوضع الفاتح أو الداكن'], 'TOP STORY': ['À LA UNE', 'PORTADA', 'أبرز خبر'], 'World': ['Monde', 'Mundo', 'العالم'],
   'Previous story': ['Sujet précédent', 'Noticia anterior', 'الخبر السابق'], '▶ VIDEO': ['▶ VIDÉO', '▶ VÍDEO', '▶ فيديو'],
   'LIVE TV': ['TV EN DIRECT', 'TV EN VIVO', 'بث مباشر'], 'Live TV': ['TV en direct', 'TV en vivo', 'بث مباشر'], 'Hide video': ['Masquer la vidéo', 'Ocultar vídeo', 'إخفاء الفيديو'],
@@ -3432,17 +3466,48 @@ function tvShow(){
   document.getElementById('tv-meta').innerHTML = `<b>${esc(s.s || '')}</b>${s.s ? ' · ' : ''}${esc(ago(s.d))}${s.n > 1 ? ` · ${w[0]} ${s.n} ${w[1]}` : ''}${s.also && s.also.length ? ` ${w[2]} ${esc(s.also.slice(0, 3).join(', '))}` : ''}`;
   const prog = document.getElementById('tv-prog'); prog.classList.remove('run'); void prog.offsetWidth; prog.classList.add('run');
   clearTimeout(tvTimer); tvTimer = setTimeout(tvNext, TV_MS);
+  if (typeof storyOpen !== 'undefined' && storyOpen) storyShow();   // keep the large view in step
 }
 function tvNext(step = 1, manual = false){
   if (!tv.stories.length) return;
-  // hovering pauses the automatic rotation (the arrows always work)
-  if (!manual && tvEl.matches(':hover')){ clearTimeout(tvTimer); tvTimer = setTimeout(tvNext, 1500); return; }
+  // hovering or the open story pop-up pauses the automatic rotation (the arrows always work)
+  if (!manual && (tvEl.matches(':hover') || storyOpen)){ clearTimeout(tvTimer); tvTimer = setTimeout(tvNext, 1500); return; }
   clearTimeout(tvTimer);
   tvEl.classList.add('fade');
   setTimeout(() => { tv.i = (tv.i + step + tv.stories.length) % tv.stories.length; tvShow(); tvEl.classList.remove('fade'); }, 300);
 }
 document.getElementById('tv-next').onclick = () => tvNext(1, true);
 document.getElementById('tv-prev').onclick = () => tvNext(-1, true);
+
+/* top story, large: photo, headline, outlets, "read the article" and the list of all top stories */
+var storyOpen = false;
+function storyShow(){
+  if (!storyOpen) return;
+  if (!tv.stories.length) return storyPop(false);
+  const n = tv.stories.length, i = tv.i % n, s = tv.stories[i], u = safeUrl(s.u), w = TVW[LANG] || TVW.en;
+  document.getElementById('smodal-where').textContent = tv.label;
+  document.getElementById('smodal-n').textContent = `${i + 1}/${n}`;
+  const img = document.getElementById('smodal-img'), src = s.img && /^https:\/\//.test(s.img) ? s.img : '';
+  img.hidden = !src; if (src) img.src = src; else img.removeAttribute('src');
+  document.getElementById('smodal-title').textContent = s.t;
+  document.getElementById('smodal-meta').innerHTML = `<b>${esc(s.s || '')}</b>${s.s ? ' · ' : ''}${esc(ago(s.d))}${s.n > 1 ? ` · ${w[0]} ${s.n} ${w[1]}` : ''}${s.also && s.also.length ? `: ${esc(s.also.join(', '))}` : ''}`;
+  const read = document.getElementById('smodal-read'); read.hidden = !u; if (u) read.href = u;
+  document.getElementById('smodal-prev').hidden = document.getElementById('smodal-next').hidden = n < 2;
+  const list = document.getElementById('smodal-list');
+  list.innerHTML = tv.stories.map((x, j) => `<li class="${j === i ? 'on' : ''}"><button data-si="${j}" dir="auto">${esc(x.t)}</button></li>`).join('');
+  list.querySelectorAll('[data-si]').forEach(b => b.onclick = () => { tv.i = +b.dataset.si; tvShow(); });
+}
+function storyPop(on){
+  storyOpen = on;
+  document.getElementById('smodal').hidden = !on;
+  if (on) storyShow(); else tvShow();   // closing restarts the rotation
+}
+document.getElementById('tv-pop').onclick = () => storyPop(true);
+document.getElementById('smodal-close').onclick = () => storyPop(false);
+document.getElementById('smodal').addEventListener('click', e => { if (e.target.id === 'smodal') storyPop(false); });
+document.getElementById('smodal-next').onclick = () => tvNext(1, true);
+document.getElementById('smodal-prev').onclick = () => tvNext(-1, true);
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && storyOpen) storyPop(false); });
 document.documentElement.style.setProperty('--tv-ms', TV_MS + 'ms');
 setInterval(() => tvRefresh(false), 600);                              // follow the selection
 setInterval(() => { tvCache.clear(); tvRefresh(true); }, 10 * 60e3);    // and refresh every 10 minutes
