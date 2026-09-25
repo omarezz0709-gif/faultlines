@@ -223,8 +223,8 @@ button{font:inherit;color:inherit}
   .ask{display:none}
   .ask.open{display:flex}
   .tv,.vid{display:none!important}
-  .top.asking .tv:not([hidden]),.top.asking .vid:not([hidden]){display:block!important}   /* on phones: shown with the question box */
-  .top.asking{max-height:calc(100vh - 110px);overflow-y:auto}
+  .top.news-on .tv:not([hidden]),.top.news-on .vid:not([hidden]){display:block!important}   /* on phones: shown with the News button */
+  .top.asking,.top.news-on{max-height:calc(100vh - 110px);overflow-y:auto}
   .tv-head{font-size:14px}
   .ticker{display:none!important}
 }
@@ -490,6 +490,7 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
     <button class="chip icon" id="theme-btn" aria-label="Light or dark mode" title="Light or dark mode">☀</button>
     <select class="chip lang" id="lang-sel" aria-label="Language" title="Language"><option value="en">EN</option><option value="fr">FR</option><option value="es">ES</option><option value="ar">عربي</option></select>
     <button class="chip mob-only" id="ask-btn" aria-expanded="false">✦ Ask</button>
+    <button class="chip mob-only" id="news-btn" aria-pressed="false">▶ News</button>
     <button class="chip mob-only" id="live-btn"><i class="live-dot"></i>Live</button>
   </div>
   <form class="ask" id="ask-form" autocomplete="off">
@@ -1597,12 +1598,13 @@ function makeCity(c){
    ================================================================ */
 const panel = document.getElementById('panel');
 // the globe is centred in the free space, so a selected place is simply centred (phones: a bit higher, above the panel)
-function fly(lat,lng,alt){ ctr.autoRotate=false; globe.pointOfView({lat: mob()? lat-8 : lat, lng, altitude: alt || (mob()? 2.6 : Math.max(2.0, fitAlt() * 0.8))}, 1100); }
+function fly(lat,lng,alt){ ctr.autoRotate=false; globe.pointOfView({lat: mob()? lat-8 : lat, lng, altitude: alt || Math.max(2.0, fitAlt() * 0.8)}, 1100); }
 /* the altitude at which the whole globe fits the free space (between the left column and the panel) */
 function fitAlt(){
   const W = window.innerWidth, H = window.innerHeight;
-  if (!W || !H || mob()) return 2.5;
-  const freeW = W - 400 - (document.body.classList.contains('pmin') ? 0 : 420);
+  if (!W || !H) return 2.5;
+  // phones: the whole screen width (a tall narrow screen would otherwise clip the globe left and right)
+  const freeW = mob() ? W - 16 : W - 400 - (document.body.classList.contains('pmin') ? 0 : 420);
   const r = Math.max(160, Math.min(freeW, H - 40) * 0.47);   // globe radius in px, with a margin
   const fov = (globe.camera().fov || 50) * Math.PI / 180;
   const theta = Math.atan(r * Math.tan(fov / 2) / (H / 2));
@@ -1683,11 +1685,19 @@ function head(eyebrow, title, glyph){
 /* push the panel down to its title bar; on wide screens the globe then slides into the freed space */
 function setMin(on){
   panel.classList.toggle('min', on); document.body.classList.toggle('pmin', on);
+  if (!on && mob()) setNews(false);   // phones: an open panel and the news would overlap
   const m = document.getElementById('collapse'); if (m){ m.textContent = on ? '▴' : '▾'; m.title = on ? 'Open panel' : 'Push panel down'; }
 }
 function toggleMin(){ setMin(!panel.classList.contains('min')); }
+// phones: the top story and video, shown with the News button; the panel folds down to its title bar meanwhile,
+// and a country clicked while the news is on keeps it folded, so its top story and video are what you see
+function setNews(on){
+  document.querySelector('.top').classList.toggle('news-on', on);
+  document.getElementById('news-btn').setAttribute('aria-pressed', on);
+  if (on && mob()) setMin(true);
+}
 function wirePanel(){
-  setMin(false); panelMode = '';
+  setMin(mob() && document.querySelector('.top').classList.contains('news-on')); panelMode = '';
   hideAdminMap(); document.getElementById('admin-btn').setAttribute('aria-pressed', 'false');   // leaving the admin page
   document.getElementById('live-btn').setAttribute('aria-pressed', 'false');
   // phones: an opened panel and the question box (with top story + video) would overlap, so fold the question box away
@@ -2769,10 +2779,22 @@ function tensionHTML(p){
   return `<div class="tension"><div class="tbar"><i style="width:${Math.min(100, p)}%;background:${col}"></i></div>
     <span><b style="color:${col}">${lvl} tension</b> · ${p}% of recent headlines mention conflict terms</span></div>`;
 }
+// a filter that keeps only the first headline of each story (the same story from several outlets shows once;
+// its "✓ N outlets" already says how many carry it)
+const storyWords = t => new Set(t.toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, ' ').split(/\s+/).filter(w => w.length > 3));
+function oneStory(){
+  const seen = [];
+  return it => { const w = storyWords(it.t);
+    const dup = seen.some(s => { let n = 0; w.forEach(x => { if (s.has(x)) n++; }); return n >= 3 && n / Math.min(w.size, s.size) >= 0.6; });
+    if (!dup) seen.push(w); return !dup; };
+}
 function newsSection(id){
   const c = NEWS && NEWS.countries && NEWS.countries[id];
   if (!c) return '';
-  const items = newsItems(c.i);
+  // leave out headlines about other countries that only mention this one in the article (e.g. Colombia's VP at the UN
+  // under Angola); headlines naming this country come first, ones naming no country (a leader's name, say) after
+  const items = newsItems(c.i).map(it => [it, mentioned(it.t).ids]).filter(([, ids]) => !ids.length || ids.includes(id))
+    .sort((a, b) => b[1].includes(id) - a[1].includes(id)).map(x => x[0]).filter(oneStory());
   return `<section class="newsbox"><h3>In the news <em>${c.n || 0} headlines · last 2 days</em></h3>
     ${tensionHTML(c.tension)}
     ${items.length ? `<ul class="news">${items.map(newsLi).join('')}</ul>` : '<p class="note muted">No recent headlines found.</p>'}
@@ -2797,7 +2819,7 @@ function alertLi(a){
   return `<li><b>${esc(names)}</b> <span class="kw">${esc(a.kw)}</span><br><span dir="auto">${u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(a.t)}</a>` : esc(a.t)}</span> <span class="nmeta">${esc(a.s || '')} · ${esc(ago(a.d))}${confTag(a.k, a.o)}</span></li>`;
 }
 function alertsSection(n){
-  const al = ((NEWS && NEWS.alerts) || []).filter(confirmedNews);
+  const al = ((NEWS && NEWS.alerts) || []).filter(confirmedNews).filter(oneStory());   // each story once
   if (!al.length) return '';
   return `<section><h3>Headlines to watch <em>flagged automatically</em></h3><ul class="alerts">${al.slice(0, n).map(alertLi).join('')}</ul>
     ${n < al.length ? `<button class="tag" data-allnews>All ${al.length} headlines to watch</button>` : ''}
@@ -3015,7 +3037,7 @@ const TR = {
   '⇄ Compare countries': ['⇄ Comparer des pays', '⇄ Comparar países', '⇄ قارن الدول'],
   'Compare countries': ['Comparer des pays', 'Comparar países', 'قارن الدول'],
   'Filters': ['Filtres', 'Filtros', 'التصفية'],
-  '✦ Ask': ['✦ Question', '✦ Preguntar', '✦ اسأل'],
+  '✦ Ask': ['✦ Question', '✦ Preguntar', '✦ اسأل'], '▶ News': ['▶ Actus', '▶ Noticias', '▶ أخبار'],
   'Live': ['En direct', 'En vivo', 'مباشر'],
   'LIVE': ['DIRECT', 'EN VIVO', 'مباشر'],
   'Ask anything about world affairs…': ['Posez une question sur l’actualité mondiale…', 'Pregunta lo que quieras sobre el mundo…', 'اسأل أي سؤال عن الشؤون الدولية…'],
@@ -3281,12 +3303,106 @@ askBtn.onclick = () => {
   const on = !askForm.classList.contains('open'); askForm.classList.toggle('open', on); document.querySelector('.top').classList.toggle('asking', on); askBtn.setAttribute('aria-expanded', on);
   if (on){ if (mob()) setMin(true); askQ.focus(); }   // phones: fold the panel so the two don't overlap
 };
+document.getElementById('news-btn').onclick = () => setNews(!document.querySelector('.top').classList.contains('news-on'));
 askForm.onsubmit = e => { e.preventDefault(); const q = askQ.value.trim().slice(0, 300); if (q.length < 3) return; askQ.blur(); renderAsk(q); };
+// words that identify a country in a headline (demonyms, capitals, key actors), the same list the news script uses;
+// matched case-sensitively as whole words, so "US" isn't the word "us" and "Mali" isn't "malicious"
+const HEAD_ALIAS_RAW = `USA:U.S.|US|America|American|Americans|Washington|Pentagon|White House
+GBR:Britain|British|UK|U.K.|Downing Street
+RUS:Russian|Russians|Moscow|Kremlin
+CHN:Chinese|Beijing
+TWN:Taiwanese|Taipei
+UKR:Ukrainian|Ukrainians|Kyiv
+BLR:Belarusian|Minsk
+ISR:Israeli|Israelis|IDF
+PSE:Palestinian|Palestinians|Gaza|West Bank|Hamas
+IRN:Iranian|Tehran
+IRQ:Iraqi|Baghdad
+SYR:Syrian|Damascus
+LBN:Lebanese|Beirut|Hezbollah
+YEM:Yemeni|Houthi|Houthis|Sanaa
+SAU:Saudi|Riyadh
+ARE:UAE|Emirati|Abu Dhabi|Dubai
+QAT:Qatari|Doha
+TUR:Turkey|Turkish|Ankara|Erdogan
+EGY:Egyptian|Cairo
+JOR:Jordanian|Amman
+AFG:Afghan|Kabul|Taliban
+PAK:Pakistani|Islamabad
+IND:Indian|New Delhi
+JPN:Japanese|Tokyo
+KOR:South Korean|Seoul
+PRK:North Korean|Pyongyang
+DEU:German|Berlin
+FRA:French|Paris
+ITA:Italian|Rome
+ESP:Spanish|Madrid
+POL:Polish|Warsaw
+GRC:Greek|Athens
+SDN:Sudanese|Khartoum|RSF
+SSD:South Sudanese|Juba
+COD:DRC|Democratic Republic of Congo|Democratic Republic of the Congo|Kinshasa|Goma|M23
+COG:Congo-Brazzaville|Brazzaville
+RWA:Rwandan|Kigali
+MLI:Malian|Bamako
+BFA:Burkinabe|Ouagadougou
+NER:Nigerien|Niamey
+NGA:Nigerian|Abuja
+ETH:Ethiopian|Addis Ababa
+ERI:Eritrean|Asmara
+SOM:Somali|Mogadishu|al-Shabaab
+LBY:Libyan|Tripoli|Benghazi
+DZA:Algerian|Algiers
+MAR:Moroccan|Rabat
+TCD:Chadian|N'Djamena
+VEN:Venezuelan|Caracas
+CUB:Cuban|Havana
+MEX:Mexican
+CAN:Canadian|Ottawa
+BRA:Brazilian|Brasilia
+ARG:Argentine|Buenos Aires
+COL:Colombian|Bogota
+AUS:Australian|Canberra
+ARM:Armenian|Yerevan
+AZE:Azerbaijani|Baku
+GEO:Georgian|Tbilisi
+SRB:Serbian|Belgrade
+XKX:Kosovar|Pristina
+HUN:Hungarian|Budapest|Orban
+MDA:Moldovan|Chisinau|Transnistria
+PHL:Philippine|Filipino|Manila
+VNM:Vietnamese|Hanoi
+MMR:Burmese
+THA:Thai|Bangkok
+KHM:Cambodian|Phnom Penh
+IDN:Indonesian|Jakarta
+BGD:Bangladeshi|Dhaka
+LKA:Sri Lankan|Colombo
+NLD:Dutch
+SWE:Swedish|Stockholm
+FIN:Finnish|Helsinki
+NOR:Norwegian|Oslo
+DNK:Danish|Copenhagen|Greenland
+CYP:Cypriot|Nicosia
+NCY:Turkish Cypriot
+ESH:Polisario|Sahrawi
+KAZ:Kazakh|Astana
+VAT:Vatican|Holy See|Pope`;
+let HEAD_ALIAS = null;
+function headAlias(){
+  if (!HEAD_ALIAS){
+    HEAD_ALIAS = {};
+    const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    HEAD_ALIAS_RAW.split('\n').forEach(line => { const [id, ws] = line.split(':');
+      HEAD_ALIAS[id] = new RegExp('(?<![\\p{L}.])(?:' + ws.split('|').map(escRe).join('|') + ')(?![\\p{L}])', 'u'); });
+  }
+  return HEAD_ALIAS;
+}
 function mentioned(q){
   const low = ' ' + q.toLowerCase() + ' ';
   const hit = (name) => { const n = name.toLowerCase(); const i = low.indexOf(n); return i > 0 && !/\p{L}/u.test(low[i - 1]) && !/\p{L}/u.test(low[i + n.length] || ' '); };
-  const DEMONYM = {USA: ['american', 'us ', 'u.s.', 'washington'], GBR: ['british', 'uk ', 'britain', 'london'], RUS: ['russian', 'kremlin', 'moscow'], CHN: ['chinese', 'beijing'], UKR: ['ukrainian', 'kyiv'], ISR: ['israeli'], IRN: ['iranian', 'tehran'], TUR: ['turkish', 'turkey', 'ankara'], SAU: ['saudi', 'riyadh'], FRA: ['french'], DEU: ['german'], IND: ['indian'], PAK: ['pakistani'], EGY: ['egyptian', 'cairo'], JPN: ['japanese'], KOR: ['south korea', 'korean'], PRK: ['north korea', 'pyongyang'], PSE: ['palestinian', 'gaza', 'west bank'], SYR: ['syrian'], ARE: ['uae', 'emirati'], TWN: ['taiwanese']};
-  const ids = ALL_IDS.filter(id => allNames(id).some(hit) || (DEMONYM[id] || []).some(d => low.includes(' ' + d)));
+  const DEMONYM = {USA: ['american', 'usa', 'u.s.', 'washington'], GBR: ['british', 'britain', 'london'], RUS: ['russian', 'kremlin', 'moscow'], CHN: ['chinese', 'beijing'], UKR: ['ukrainian', 'kyiv'], ISR: ['israeli'], IRN: ['iranian', 'tehran'], TUR: ['turkish', 'turkey', 'ankara'], SAU: ['saudi', 'riyadh'], FRA: ['french'], DEU: ['german'], IND: ['indian'], PAK: ['pakistani'], EGY: ['egyptian', 'cairo'], JPN: ['japanese'], KOR: ['south korea', 'korean'], PRK: ['north korea', 'pyongyang'], PSE: ['palestinian', 'gaza', 'west bank'], SYR: ['syrian'], ARE: ['uae', 'emirati'], TWN: ['taiwanese']};
+  const ids = ALL_IDS.filter(id => allNames(id).some(hit) || (DEMONYM[id] || []).some(d => low.includes(' ' + d)) || (headAlias()[id] && headAlias()[id].test(q)));
   const pois = POIS.filter(p => hit(p.n) || hit(p.n.replace(/^(Strait|Straits|Gulf|Port) of /, '')));
   return {ids: ids.slice(0, 6), pois: pois.slice(0, 4)};
 }
@@ -3352,7 +3468,7 @@ async function loadFeed(){
     if (r.ok){ const d = await r.json(); items = d.items || []; feedAt = d.generated; }
   } catch(e){}
   if (!items.length){   // older Worker without /live: use the flagged headlines the site already has
-    items = ((NEWS && NEWS.alerts) || []).filter(confirmedNews).map(a => ({t: a.t, u: a.u, s: a.s, d: a.d, c: a.c, kw: a.kw, imp: true, k: a.k, o: a.o}));
+    items = ((NEWS && NEWS.alerts) || []).filter(confirmedNews).filter(oneStory()).map(a => ({t: a.t, u: a.u, s: a.s, d: a.d, c: a.c, kw: a.kw, imp: true, k: a.k, o: a.o}));
     feedAt = NEWS && NEWS.generated;
   }
   FEED = items.map(tagFeed);

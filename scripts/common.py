@@ -54,6 +54,7 @@ ALIASES = {
   "SWE": ["Sweden", "Swedish", "Stockholm"], "FIN": ["Finland", "Finnish", "Helsinki"], "NOR": ["Norway", "Norwegian", "Oslo"],
   "DNK": ["Denmark", "Danish", "Copenhagen", "Greenland"], "CYP": ["Cyprus", "Cypriot", "Nicosia"], "NCY": ["Northern Cyprus", "Turkish Cypriot"],
   "ESH": ["Western Sahara", "Polisario", "Sahrawi"], "SOL": ["Somaliland"], "KAZ": ["Kazakhstan", "Kazakh", "Astana"],
+  "VAT": ["Vatican City", "Vatican", "Holy See", "Pope"],
 }
 
 # Google News search terms where the plain name would be ambiguous

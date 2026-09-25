@@ -128,6 +128,18 @@ def corroborate(items: list[dict]) -> None:
         x.pop("_c", None)
 
 
+def one_per_story(items: list[dict]) -> list[dict]:
+    """Keep the first headline of each story; the same story from other outlets is already counted in k."""
+    kept, seen = [], []
+    for x in items:
+        w = sig_words(x["t"])
+        if any(len(w & s) >= 3 and len(w & s) / max(1, min(len(w), len(s))) >= 0.6 for s in seen):
+            continue
+        seen.append(w)
+        kept.append(x)
+    return kept
+
+
 def main() -> None:
     t0 = now_utc()
     prev = load_json("news.json", {})
@@ -173,6 +185,12 @@ def main() -> None:
     for iso, items in fetched.items():
         hits = sum(1 for x in items if TENSION.search(x["t"]))
         confirmed = [x for x in items if x["k"] >= MIN_SOURCES]
+        # drop headlines about other countries that only mention this one in the article text; headlines naming
+        # this country first, then ones naming no country (e.g. just the leader's name)
+        named_in = {id(x): countries_in(x["t"]) for x in confirmed}
+        confirmed = [x for x in confirmed if not named_in[id(x)] or iso in named_in[id(x)]]
+        confirmed.sort(key=lambda x: iso not in named_in[id(x)])
+        confirmed = one_per_story(confirmed)
         countries[iso] = {"i": [ref(x) for x in confirmed[:KEEP_PER_COUNTRY]], "n": len(items), "c": len(confirmed),
                           "tension": round(100 * hits / len(items)) if items else None}
         for x in confirmed:
@@ -207,6 +225,7 @@ def main() -> None:
             continue
         seen.update((a["u"], title_key))
         alerts.append(a)
+    alerts = one_per_story(alerts)   # the same story from several outlets once (newest first)
     save_json("news.json", {"generated": iso_z(t0), "items": pool, "countries": countries, "pairs": pairs,
                             "alerts": alerts[:MAX_ALERTS]}, compact=True)
     print(f"Wrote news.json with {len(alerts[:MAX_ALERTS])} alerts.")
