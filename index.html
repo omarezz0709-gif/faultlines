@@ -132,6 +132,14 @@ button{font:inherit;color:inherit}
 .vid-thumb:hover::after{background-color:#d93025}
 .vid-golive{background:radial-gradient(circle at 50% 45%,rgba(212,175,55,.16),#050505 70%)}
 .vid-golive span{position:absolute;left:0;right:0;top:calc(50% + 28px);font:600 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--gold-hi)}
+/* big arrows on the video's left and right edges */
+.vid-stage{position:relative}
+.vid-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:34px;height:52px;border:0;border-radius:6px;
+  background:rgba(8,8,8,.72);color:var(--gold-hi);font:400 30px/1 var(--body);cursor:pointer;opacity:.85;transition:opacity .2s,background .2s}
+.vid-arrow:hover{opacity:1;background:rgba(8,8,8,.9)}
+.vid-arrow.prev{left:6px}
+.vid-arrow.next{right:6px}
+.vid-arrow[hidden]{display:none}
 .vid-cap{padding:8px 12px 2px;font:600 13px/1.35 var(--body);color:var(--text)}
 .vid-meta{flex:1;min-width:0;font:11px/1.4 var(--mono);color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .vid-meta b{color:var(--gold-hi);font-weight:600}
@@ -423,7 +431,11 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
       <button class="vid-live" id="vid-live" aria-pressed="false" title="24/7 live news channel"><i class="live-dot"></i>LIVE TV</button>
       <button class="tv-btn" id="vid-min" aria-label="Hide video" title="Hide video">▾</button></div>
     <div class="vid-box" id="vid-box">
-      <div class="vid-frame" id="vid-frame"></div>
+      <div class="vid-stage">
+        <div class="vid-frame" id="vid-frame"></div>
+        <button class="vid-arrow prev" id="vid-prev2" aria-label="Previous video">‹</button>
+        <button class="vid-arrow next" id="vid-next2" aria-label="Next video">›</button>
+      </div>
       <div class="vid-cap" id="vid-cap" dir="auto"></div>
       <div class="tv-foot"><div class="vid-meta" id="vid-meta"></div><button class="tv-btn" id="vid-prev" aria-label="Previous video">‹</button><button class="tv-btn" id="vid-next" aria-label="Next video">›</button></div>
     </div>
@@ -3256,11 +3268,12 @@ function vidShow(){
   document.getElementById('vid-live').setAttribute('aria-pressed', vid.live);
   if (vidEl.classList.contains('min')) return;   // hidden: nothing plays
   if (vid.live){
+    ['vid-prev', 'vid-next', 'vid-prev2', 'vid-next2'].forEach(id => document.getElementById(id).hidden = true);
     document.getElementById('vid-n').textContent = '';
     embed(`https://www.youtube.com/embed/live_stream?channel=${VID_LIVE[LANG] || VID_LIVE.en}&autoplay=1&mute=1&playsinline=1`);
     cap.textContent = ''; meta.innerHTML = ''; return;
   }
-  document.getElementById('vid-prev').hidden = document.getElementById('vid-next').hidden = n < 2;
+  ['vid-prev', 'vid-next', 'vid-prev2', 'vid-next2'].forEach(id => document.getElementById(id).hidden = n < 2);
   if (!n){   // no story videos right now: offer the 24/7 live channel instead of an empty box
     vidFrame.innerHTML = `<button class="vid-thumb vid-golive" aria-label="Watch live news"><span>Watch live news</span></button>`;
     vidFrame.querySelector('button').onclick = () => { vid.live = true; vidShow(); };
@@ -3278,8 +3291,8 @@ function vidShow(){
   meta.innerHTML = `<b>${esc(v.s)}</b> · ${esc(ago(v.d))}${v.n > 1 ? ` · ${w[0]} ${v.n}` : ''}`;
 }
 function vidStep(k){ if (vid.live || !vid.videos.length) return; vid.i = (vid.i + k + vid.videos.length) % vid.videos.length; vidShow(); }
-document.getElementById('vid-next').onclick = () => vidStep(1);
-document.getElementById('vid-prev').onclick = () => vidStep(-1);
+document.getElementById('vid-next').onclick = document.getElementById('vid-next2').onclick = () => vidStep(1);
+document.getElementById('vid-prev').onclick = document.getElementById('vid-prev2').onclick = () => vidStep(-1);
 document.getElementById('vid-live').onclick = () => { vid.live = !vid.live; if (!vid.live) vidFrame.innerHTML = ''; vidShow(); };
 document.getElementById('vid-min').onclick = () => {
   const on = !vidEl.classList.contains('min'); vidEl.classList.toggle('min', on);
