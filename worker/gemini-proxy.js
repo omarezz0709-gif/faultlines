@@ -326,7 +326,7 @@ const TRUSTED = ["reuters", "associated press", "ap news", "afp", "agence france
   "the times", "the telegraph", "the independent", "euronews", "le monde", "le figaro", "libération", "el país", "el pais", "el mundo",
   "la vanguardia", "bbc mundo", "bbc arabic", "al arabiya", "العربية", "الجزيرة", "sky news arabia", "سكاي نيوز", "asharq al-awsat",
   "الشرق الأوسط", "cnn arabic", "nikkei", "south china morning post", "the hindu", "haaretz", "times of israel", "kyiv independent",
-  "the moscow times", "der spiegel", "spiegel", "zeit", "süddeutsche", "faz", "frankfurter allgemeine", "tagesschau", "orf", "swissinfo", "cbc", "abc.net.au", "cna", "channel newsasia"];
+  "the moscow times", "der spiegel", "spiegel", "zeit", "süddeutsche", "faz", "frankfurter allgemeine", "tagesschau", "orf", "swissinfo", "cbc", "abc.net.au", "cna", "channel newsasia", "guardian", "channel 4"];
 const trusted = s => { const l = (s || "").toLowerCase(); return TRUSTED.some(t => l === t || l.includes(t)); };
 // state-controlled propaganda outlets: never shown, never counted as a confirming source
 const STATE_MEDIA = /^(rt|rt news|rt\.com|russia today\b.*|sputnik\b.*|tass|tass\.com|ria novosti\b.*|ria\.ru|press ?tv\b.*|presstv\.ir|tasnim\b.*|fars news\b.*|farsnews\b.*|mehr news\b.*|irna\b.*|global ?times|globaltimes\.cn|cgtn\b.*|china daily\b.*|xinhua\b.*|people'?s daily\b.*|kcna|kcna\.kp|telesur\b.*|al mayadeen\b.*|sana|syrian arab news agency|belta\b.*|granma|pravda\b.*|izvestia|belarus\.by|azertac\b.*|سانا|وكالة سانا|روسيا اليوم|آر تي|سبوتنيك|برس تي في|تسنيم|وكالة تسنيم|فارس|وكالة فارس|مهر|الميادين|شينخوا|وكالة شينخوا|ارنا|إرنا)$/i;
@@ -390,7 +390,7 @@ function scoreStories(items, focus, minSources = MIN_SOURCES){
     const pol = POLITICAL.reduce((a, [re, w]) => a + (re.test(text) ? w : 0), 0);
     const hours = st.d ? (now - Date.parse(st.d)) / 36e5 : 48;
     const lead = st.members.find(x => trusted(x.s)) || st.members[0];
-    const actors = new Set((text.match(ACTORS) || []).map(a => a.toLowerCase()).filter(a => !focus || !focus.test(a)));
+    const actors = new Set((text.match(ACTORS) || []).filter(a => !focus || !focus.test(a)).map(a => a.toLowerCase()));   // other countries than the selected one
     Object.assign(st, { lead, srcs, n: srcs.length, trustedN: trustedSrcs.length, political: pol + actors.size > 0 && !SPORT.test(text),
       score: srcs.length * 2 + trustedSrcs.length * 3 + pol * 2 + Math.min(actors.size, 4) * 2.5
         - Math.min(hours, 72) / 8 - (SPORT.test(text) ? 20 : 0)
@@ -405,9 +405,8 @@ async function topStories(lang, q, en, ctx){
   const cache = caches.default, hit = await cache.match(key);
   if (hit) return new Response(hit.body, { status: 200, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "hit" }) });
   const pool = await newsPool(lang, ctx);
-  // a country or place: only stories that name it (in the page language or in English)
-  const names = [q, en].filter(Boolean).map(x => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
-  const focus = names.length ? new RegExp(names.join("|"), "i") : null;
+  // a country or place: only stories that name it (page language or English, plus capital/leader/"US"-style aliases)
+  const focus = focusRegex(q, en);
   const recent = it => !it.d || Date.now() - Date.parse(it.d) < (focus ? 5 : 2) * 864e5;
   const items = pool.items.filter(it => recent(it) && (!focus || focus.test(it.t + " " + it.members.map(m => m.t + " " + (m.x || "")).join(" "))));
   let ranked = scoreStories(items, focus);
@@ -422,17 +421,39 @@ async function topStories(lang, q, en, ctx){
   return new Response(body, { status: 200, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "miss" }) });   // an empty list is a normal answer
 }
 
+/* how headlines name the major countries besides their official name (capital, leader, "US", "Kremlin" ...) */
+const COUNTRY_ALIASES = {
+  "United States": ["U\\.S\\.", "US", "USA", "America", "American", "Washington", "White House", "Trump", "Pentagon"],
+  "United Kingdom": ["UK", "U\\.K\\.", "Britain", "British", "London", "Downing Street", "Starmer"],
+  "Russia": ["Russian", "Kremlin", "Moscow", "Putin"], "China": ["Chinese", "Beijing", "Xi Jinping", "Xi"],
+  "Ukraine": ["Ukrainian", "Kyiv", "Zelensky", "Zelenskyy"], "Israel": ["Israeli", "Netanyahu", "IDF", "Jerusalem"],
+  "Palestine": ["Palestinian", "Gaza", "West Bank", "Hamas"], "Iran": ["Iranian", "Tehran", "Khamenei", "Pezeshkian"],
+  "Germany": ["German", "Berlin", "Merz", "Bundeswehr"], "France": ["French", "Paris", "Macron", "Élysée", "Elysee"],
+  "Egypt": ["Egyptian", "Cairo", "Sisi", "Suez"], "Türkiye": ["Turkey", "Turkish", "Ankara", "Erdogan", "Erdoğan"],
+  "India": ["Indian", "New Delhi", "Delhi", "Modi"], "Pakistan": ["Pakistani", "Islamabad"], "Japan": ["Japanese", "Tokyo"],
+  "Saudi Arabia": ["Saudi", "Riyadh"], "North Korea": ["Pyongyang", "Kim Jong Un"], "South Korea": ["Seoul", "South Korean"],
+  "Taiwan": ["Taiwanese", "Taipei"], "Syria": ["Syrian", "Damascus"], "Lebanon": ["Lebanese", "Beirut", "Hezbollah"],
+  "Yemen": ["Yemeni", "Houthi", "Houthis", "Sanaa"], "Sudan": ["Sudanese", "Khartoum", "RSF"], "Venezuela": ["Venezuelan", "Caracas", "Maduro"],
+  "Poland": ["Polish", "Warsaw"], "Italy": ["Italian", "Rome", "Meloni"], "Iraq": ["Iraqi", "Baghdad"], "Afghanistan": ["Afghan", "Kabul", "Taliban"],
+};
+function focusRegex(q, en){
+  const names = [q, en].filter(Boolean).map(x => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).concat(COUNTRY_ALIASES[en] || []);
+  return names.length ? new RegExp(`(^|[^\\p{L}])(${names.join("|")})(?![\\p{L}])`, (COUNTRY_ALIASES[en] ? "u" : "iu")) : null;   // aliases like "US" are case-sensitive
+}
+
 /* ------------------------------------------------------------------ news videos
    Trusted news channels' public YouTube feeds (latest ~15 videos each, no key needed). Videos are grouped into
    stories and ranked like the top stories; world videos that match today's biggest stories get a boost. */
 const CHANNELS = {
   en: [["Al Jazeera English", "UCNye-wNBqNL5ZzHSJj3l8Bg"], ["Sky News", "UCoMdktPbSTixAyNGwb-UYkQ"], ["DW News", "UCknLrEdhRCp1aegoMqRaCZg"],
        ["France 24 English", "UCQfwfsi5VrQ8yKZ-UWmAEFg"], ["BBC News", "UC16niRr50-MSBwiO3YDb3RA"], ["Reuters", "UChqUTb7kYRX8-EiaN3XFrSQ"],
-       ["Associated Press", "UC52X5wxOL_s5yw0dQk7NtgA"], ["CNA", "UC83jt4dlz1Gjl58fzQrrKZg"]],
+       ["Associated Press", "UC52X5wxOL_s5yw0dQk7NtgA"], ["CNA", "UC83jt4dlz1Gjl58fzQrrKZg"], ["Guardian News", "UCIRYBXDze5krPDzAEOxFGVA"],
+       ["PBS NewsHour", "UC6ZFN9Tx6xh-skXCuRHCDpQ"], ["Channel 4 News", "UCTrQ7HXWRRxr7OsOtodr2_w"], ["euronews", "UCSrZ3UV4jOidv8ppoVuvW9Q"],
+       ["CBS News", "UC8p1vwvWtl6T73JiExfWs1g"], ["NBC News", "UCeY0bbntWzzVIaj2z3QigXg"], ["ABC News", "UCBi2mrWuNuyYy4gbM6fU18Q"]],
   fr: [["France 24", "UCCCPCZNChQdGa9EkATeye4g"], ["Euronews", "UCW2QcKZiU8aUGg4yxCIditg"], ["DW News", "UCknLrEdhRCp1aegoMqRaCZg"]],
   es: [["France 24 Español", "UCUdOoVWuWmgo1wByzcsyKDQ"], ["DW Español", "UCT4Jg8h03dD0iN3Pb5L0PMA"]],
   ar: [["Al Jazeera Arabic", "UCfiwzLy-8yKzIbsmZTzxDgw"], ["Sky News Arabia", "UCIJXOvggjKtCagMfxvcCzAA"], ["France 24 Arabic", "UCdTyuXgmJkG_O8_75eqej-w"],
-       ["DW Arabic", "UC30ditU5JI16o5NbFsHde_Q"], ["BBC News Arabic", "UCelk6aHijZq-GJBBB9YpReA"]],
+       ["DW Arabic", "UC30ditU5JI16o5NbFsHde_Q"], ["BBC News Arabic", "UCelk6aHijZq-GJBBB9YpReA"], ["Al Arabiya", "UCahpxixMCwoANAftn6IxkTg"]],
 };
 // 24/7 live news streams per language (the "LIVE TV" button)
 const LIVE_TV = { en: "UCNye-wNBqNL5ZzHSJj3l8Bg", fr: "UCCCPCZNChQdGa9EkATeye4g", es: "UCUdOoVWuWmgo1wByzcsyKDQ", ar: "UCfiwzLy-8yKzIbsmZTzxDgw" };
@@ -463,10 +484,12 @@ async function topVideos(lang, q, en, ctx){
   const cache = caches.default, hit = await cache.match(key);
   if (hit) return new Response(hit.body, { status: 200, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "hit" }) });
   const pool = await videoPool(lang, ctx);
-  const nm = [q, en].filter(Boolean).map(x => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
-  const focus = nm.length ? new RegExp(nm.join("|"), "i") : null;
+  const focus = focusRegex(q, en);
   const recent = it => !it.d || Date.now() - Date.parse(it.d) < (focus ? 7 : 2) * 864e5;
-  let items = pool.items.filter(it => recent(it) && (!focus || focus.test(it.t + " " + it.members[0].x)));
+  // which country a video is about: its title only, without the channel's brand ("• FRANCE 24 English" is not about France;
+  // descriptions carry boilerplate like "DW is Germany's international broadcaster")
+  const unbrand = t => t.replace(/\s*[•|]\s*[^•|]*(france\s*24|dw|euronews|sky news|al jazeera|bbc|cna)[^•|]*$/i, "").replace(/france\s*24|france24|radio france|deutsche welle/gi, " ");
+  let items = pool.items.filter(it => recent(it) && (!focus || focus.test(unbrand(it.t))));
   // A video is shown only if its story is confirmed by 2+ independent organisations: other channels, or news outlets
   // reporting the same story (the channel and the same outlet's website count once: "Al Jazeera English" = "Al Jazeera").
   const news = await newsPool(lang, ctx);
