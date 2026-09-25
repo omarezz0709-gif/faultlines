@@ -3503,20 +3503,23 @@ function showTicker(){
   el.title = it.t; el.dataset.i = FEED.indexOf(it);
   const rtl = /[֐-ࣿ]/.test(it.t);
   el.dir = rtl ? 'rtl' : 'ltr';   // starts at the beginning of the headline, whatever the page direction
-  // too long for the bar: scroll it through (about 45 px a second), and show the next headline only after that
-  const run = el.querySelector('.tk-run'), over = run.scrollWidth - (el.clientWidth - 24);
+  // every headline: a 2-second stop at its start, then it keeps moving left (about 50 px a second) until it has
+  // scrolled out of the bar completely, and the next one starts right away
+  const run = el.querySelector('.tk-run');
   let hold = 7000;
-  if (over > 4 && !tk.classList.contains('folded')){
-    const dur = over / 45;
-    run.style.setProperty('--tk-dx', (rtl ? over : -over) + 'px'); run.style.setProperty('--tk-dur', dur + 's');
+  if (!tk.classList.contains('folded')){
+    const dist = run.scrollWidth + 12, dur = dist / 50;
+    run.style.setProperty('--tk-dx', (rtl ? dist : -dist) + 'px'); run.style.setProperty('--tk-dur', dur + 's'); run.style.setProperty('--tk-wait', '2s');
     run.classList.add('go');
-    hold = Math.max(7000, (1.6 + dur + 2) * 1000);
+    run.addEventListener('animationend', () => tkNext(true), {once: true});   // the next one when it has really gone (hover pauses it)
+    hold = (2 + dur) * 1000 + 30000;   // just a safety net
   }
   clearTimeout(tkTimer); tkTimer = setTimeout(tkNext, hold);
 }
 var tkTimer = null;
-function tkNext(){
+function tkNext(scrolledOut){
   const el = document.getElementById('tk-item'), tk = document.getElementById('ticker');
+  if (scrolledOut === true){ tkIdx++; showTicker(); return; }   // straight on, no gap
   // hidden page, folded bar or the mouse on it: wait (a scrolling headline is paused while hovered)
   if (!FEED.length || document.hidden || tk.matches(':hover') || tk.classList.contains('folded')){ clearTimeout(tkTimer); tkTimer = setTimeout(tkNext, 1500); return; }
   el.classList.add('fade'); setTimeout(() => { tkIdx++; showTicker(); el.classList.remove('fade'); }, 320);
