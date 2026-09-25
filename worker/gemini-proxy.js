@@ -103,7 +103,9 @@ async function logEvent(env, request, rec) {
   };
   const key = `l:${String(9999999999999 - meta.t).padStart(13, "0")}:${Math.random().toString(36).slice(2, 7)}`;
   // expires at the next 00:00 Berlin (KV needs at least 60 s ahead)
-  const expiration = Math.max(Math.floor(nextBerlinMidnight(meta.t) / 1000), Math.floor(meta.t / 1000) + 60);
+  // kept until 01:00 after the next midnight, so the nightly archive (00:10) can still copy the finished day;
+  // the admin panel itself only shows entries since 00:00
+  const expiration = Math.max(Math.floor((nextBerlinMidnight(meta.t) + 3600e3) / 1000), Math.floor(meta.t / 1000) + 60);
   try { await env.LOGS.put(key, "", { metadata: meta, expiration }); } catch (e) { /* free KV write limit reached */ }
 }
 
@@ -116,6 +118,33 @@ async function readLogs(env, max = 3000) {
     cursor = page.list_complete ? null : page.cursor;
   } while (cursor && out.length < max);
   return out;
+}
+
+/* ------------------------------------------------------------------ daily archive (backup)
+   A Cron Trigger shortly after 00:00 Berlin saves the finished day as ONE KV entry "a:YYYY-MM-DD" (one write a day),
+   kept for a year. The admin panel can open any archived day. */
+const ARCHIVE_DAYS = 365;
+const berlinDay = ts => new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Berlin", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date(ts));
+async function archiveYesterday(env){
+  if (!env.LOGS) return "no LOGS binding";
+  const end = berlinMidnightBefore(Date.now()), start = berlinMidnightBefore(end - 3600e3), day = berlinDay(start);
+  const entries = (await readLogs(env, 20000)).filter(x => x.t >= start && x.t < end).sort((a, b) => a.t - b.t);
+  const key = `a:${day}`;
+  // both summer/winter cron times may fire: never replace an archive with a smaller one (entries may have expired meanwhile)
+  const old = await env.LOGS.get(key, "json").catch(() => null);
+  if (old && (old.entries || []).length >= entries.length) return `${day}: kept existing archive (${old.entries.length})`;
+  await env.LOGS.put(key, JSON.stringify({ day, saved: new Date().toISOString(), entries }), { expirationTtl: ARCHIVE_DAYS * 86400,
+    metadata: { n: entries.length, visits: entries.filter(x => x.k === "visit" && !x.b).length } });
+  return `${day}: archived ${entries.length}`;
+}
+async function listArchive(env){
+  const out = []; let cursor;
+  do {
+    const page = await env.LOGS.list({ prefix: "a:", limit: 1000, cursor });
+    for (const k of page.keys) out.push({ day: k.name.slice(2), n: (k.metadata || {}).n || 0, visits: (k.metadata || {}).visits || 0 });
+    cursor = page.list_complete ? null : page.cursor;
+  } while (cursor);
+  return out.sort((a, b) => b.day.localeCompare(a.day));
 }
 
 /* ------------------------------------------------------------------ automatic fallback chain
@@ -558,6 +587,12 @@ export default {
     out.headers.set("Access-Control-Allow-Origin", origin);
     return out;
   },
+  // Cron Trigger (Worker → Settings → Triggers): "10 22,23 * * *" = 00:10 Berlin in summer and winter
+  async scheduled(event, env, ctx) {
+    const berlinHour = +new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Berlin", hour: "2-digit", hourCycle: "h23" }).format(new Date(event.scheduledTime));
+    if (berlinHour !== 0) return;   // the other (summer/winter) trigger: not our slot
+    ctx.waitUntil(archiveYesterday(env));
+  },
 };
 
 async function handle(request, env, ctx, origin) {
@@ -587,7 +622,7 @@ async function handle(request, env, ctx, origin) {
                                           (url.searchParams.get("en") || "").slice(0, 60), ctx);
 
     // --- admin: usage log ---
-    if (path === "admin/logs") {
+    if (path === "admin/logs" || path === "admin/archive") {
       if (!env.ADMIN_CODE) return deny(500, "ADMIN_CODE secret is not set on the Worker.");
       const code = request.headers.get("X-Admin-Code") || "";
       const wrongKey = `adminfail:${ip}`;
@@ -595,7 +630,14 @@ async function handle(request, env, ctx, origin) {
       if (fails.length >= ADMIN_LIMIT.max) return deny(429, "Too many wrong codes. Try again in 15 minutes.");
       if (code !== env.ADMIN_CODE) { fails.push(Date.now()); hits.set(wrongKey, fails); return deny(401, "Wrong code."); }
       if (!env.LOGS) return json(200, { logs: [], note: "No KV namespace bound as LOGS, so nothing is being logged yet." });
-      return json(200, { logs: await readLogs(env), generated: new Date().toISOString() }, { "Cache-Control": "no-store" });
+      if (path === "admin/archive"){   // ?day=YYYY-MM-DD opens one archived day; without it: the list of archived days
+        const day = url.searchParams.get("day") || "";
+        if (!day) return json(200, { days: await listArchive(env) }, { "Cache-Control": "no-store" });
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(day)) return deny(400, "Bad day.");
+        const a = await env.LOGS.get(`a:${day}`, "json");
+        return a ? json(200, { day, logs: a.entries || [], saved: a.saved }, { "Cache-Control": "no-store" }) : deny(404, "No archive for that day.");
+      }
+      return json(200, { logs: await readLogs(env), generated: new Date().toISOString(), archive: (await listArchive(env)).slice(0, 60) }, { "Cache-Control": "no-store" });
     }
 
     // --- generate with automatic fallback: Gemini keys/models -> Groq -> Cloudflare Workers AI ---
