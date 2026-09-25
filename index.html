@@ -145,6 +145,10 @@ button{font:inherit;color:inherit}
 .vid-meta{flex:1;min-width:0;font:11px/1.4 var(--mono);color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .vid-meta b{color:var(--gold-hi);font-weight:600}
 .vid.min .vid-box{display:none}
+.vid-none{color:var(--s-T)}
+/* loading a new country's story/video: dim the old content so the switch is visible */
+.tv.loading .tv-head,.tv.loading .tv-meta,.tv.loading .tv-pic,.vid.loading .vid-stage,.vid.loading .vid-cap,.vid.loading .vid-meta{opacity:.25;transition:opacity .2s}
+.tv.loading .tv-where::after,.vid.loading .tv-where::after{content:" …";animation:pulse 1s infinite}
 /* the left column scrolls if it gets taller than the screen */
 @media (min-width:761px){ .top{max-height:calc(100vh - 90px);overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;scrollbar-color:var(--line2) transparent;padding-bottom:2px} }
 .mob-only{display:none}
@@ -3188,7 +3192,11 @@ async function loadTop(t){
     if (r.ok) stories = (await r.json()).stories || [];
   } catch(e){}
   if (!stories.length){   // nothing from the outlets right now (or an older Worker): the site's own headlines
-    if (t.id){ const cn = NEWS && NEWS.countries && NEWS.countries[t.id]; stories = cn ? rankLocal(newsItems(cn.i), t.id).slice(0, 5).map(it => ({t: it.t, u: it.u, s: it.s, d: it.d})) : []; }
+    if (t.id){   // the site's confirmed headlines that actually name this country
+      const cn = NEWS && NEWS.countries && NEWS.countries[t.id];
+      const own = cn ? newsItems(cn.i).filter(it => mentioned(it.t).ids.includes(t.id)) : [];
+      stories = rankLocal(own, t.id).slice(0, 5).map(it => ({t: it.t, u: it.u, s: it.s, d: it.d, n: it.k, also: it.o}));
+    }
     else stories = (FEED.filter(f => f.imp).length ? FEED.filter(f => f.imp) : FEED).slice(0, 5).map(f => ({t: f.t, u: f.u, s: f.s, d: f.d}));
   }
   if (stories.length) tvCache.set(ck, {at: Date.now(), stories});
@@ -3202,15 +3210,27 @@ const TV_SOFT = /\b(football|soccer|league|match|tennis|olympic|celebrity|actor|
 function rankLocal(items, id){
   const score = it => { const others = mentioned(it.t).ids.filter(x => x !== id).length;
     return TV_POL.reduce((a, [re, w]) => a + (re.test(it.t) ? w : 0), 0) * 2 + Math.min(others, 3) * 2.5 - (TV_SOFT.test(it.t) ? 6 : 0)
+      + Math.min(it.k || 1, 12) * 1.5   // more independent outlets = bigger story
       - Math.min(48, (Date.now() - new Date(it.d)) / 36e5 || 48) / 8; };
-  return items.map(it => [score(it), it]).sort((a, b) => b[0] - a[0]).map(x => x[1]);
+  const ranked = items.map(it => [score(it), it]).sort((a, b) => b[0] - a[0]);
+  // politics and foreign affairs first (political words or other countries named); the rest only if nothing else
+  const political = ranked.filter(([, it]) => !TV_SOFT.test(it.t) && (TV_POL.some(([re]) => re.test(it.t)) || mentioned(it.t).ids.some(x => x !== id)));
+  return (political.length ? political : ranked).map(x => x[1]);
 }
 async function tvRefresh(force){
   const t = tvTarget(), key = LANG + '|' + t.key;
   if (!force && key === tv.key) return;
   tv.key = key;
+  // switch the label right away and show that the new story is loading (the first request can take a few seconds)
+  if (!tvCache.has(key)){
+    clearTimeout(tvTimer);
+    document.getElementById('tv-where').textContent = t.label;
+    document.getElementById('tv-n').textContent = '';
+    tvEl.classList.add('loading');
+  }
   const stories = await loadTop(t);
-  if (tv.key !== key) return;   // the selection changed while loading
+  if (tv.key !== key) return;   // the selection changed while loading (the newer request takes over)
+  tvEl.classList.remove('loading');
   // a country with nothing big right now falls back to the world's top stories
   if (!stories.length && t.key !== 'world'){ tv.label = 'World'; tv.stories = await loadTop({key: 'world', q: '', en: '', label: 'World'}); }
   else { tv.label = t.label; tv.stories = stories; }
@@ -3266,9 +3286,15 @@ async function vidRefresh(force){
   const t = tvTarget(), key = LANG + '|' + t.key;
   if (!force && key === vid.key) return;
   vid.key = key;
+  if (!vidCache.has(key) && !vid.live){ document.getElementById('vid-where').textContent = t.label; vidEl.classList.add('loading'); }
   let videos = await loadVideos(t), label = t.label;
+  vid.none = '';
   if (vid.key !== key) return;
-  if (!videos.length && t.key !== 'world'){ videos = await loadVideos({key: 'world', q: '', en: ''}); label = 'World'; }   // nothing on this country: the world's
+  if (!videos.length && t.key !== 'world'){   // nothing confirmed on this country right now: say so, show the world's
+    videos = await loadVideos({key: 'world', q: '', en: ''}); label = 'World'; vid.none = t.label;
+    if (vid.key !== key) return;
+  }
+  vidEl.classList.remove('loading');
   vid.videos = videos; vid.label = label; vid.i = 0;
   vidEl.hidden = false;   // LIVE TV is always there, even without story videos
   if (!vid.live) vidShow();
@@ -3300,8 +3326,12 @@ function vidShow(){
   }
   cap.textContent = v.t;
   const w = TVW[LANG] || TVW.en;
-  meta.innerHTML = `<b>${esc(v.s)}</b> · ${esc(ago(v.d))}${v.n > 1 ? ` · ${w[0]} ${v.n}` : ''}`;
+  meta.innerHTML = (vid.none ? `<span class="vid-none">${esc(noVideoText(vid.none))}</span> · ` : '') + `<b>${esc(v.s)}</b> · ${esc(ago(v.d))}${v.n > 1 ? ` · ✓ ${v.n}` : ''}`;
 }
+const noVideoText = place => {
+  const n = (trMap && trMap.get(place)) || place;
+  return {en: `No confirmed video on ${n} yet`, fr: `Pas encore de vidéo confirmée : ${n}`, es: `Aún no hay vídeo confirmado sobre ${n}`, ar: `لا يوجد فيديو مؤكد عن ${n} بعد`}[LANG] || `No confirmed video on ${n} yet`;
+};
 function vidStep(k){ if (vid.live || !vid.videos.length) return; vid.i = (vid.i + k + vid.videos.length) % vid.videos.length; vidShow(); }
 document.getElementById('vid-next').onclick = document.getElementById('vid-next2').onclick = () => vidStep(1);
 document.getElementById('vid-prev').onclick = document.getElementById('vid-prev2').onclick = () => vidStep(-1);

@@ -391,7 +391,7 @@ function scoreStories(items, focus, minSources = MIN_SOURCES){
     const hours = st.d ? (now - Date.parse(st.d)) / 36e5 : 48;
     const lead = st.members.find(x => trusted(x.s)) || st.members[0];
     const actors = new Set((text.match(ACTORS) || []).map(a => a.toLowerCase()).filter(a => !focus || !focus.test(a)));
-    Object.assign(st, { lead, srcs, n: srcs.length, trustedN: trustedSrcs.length,
+    Object.assign(st, { lead, srcs, n: srcs.length, trustedN: trustedSrcs.length, political: pol + actors.size > 0 && !SPORT.test(text),
       score: srcs.length * 2 + trustedSrcs.length * 3 + pol * 2 + Math.min(actors.size, 4) * 2.5
         - Math.min(hours, 72) / 8 - (SPORT.test(text) ? 20 : 0)
         + (focus && !focus.test(text) ? -15 : 0) });
@@ -410,7 +410,9 @@ async function topStories(lang, q, en, ctx){
   const focus = names.length ? new RegExp(names.join("|"), "i") : null;
   const recent = it => !it.d || Date.now() - Date.parse(it.d) < (focus ? 5 : 2) * 864e5;
   const items = pool.items.filter(it => recent(it) && (!focus || focus.test(it.t + " " + it.members.map(m => m.t + " " + (m.x || "")).join(" "))));
-  const stories = scoreStories(items, focus).slice(0, 6).map(st => {
+  let ranked = scoreStories(items, focus);
+  if (focus) ranked = ranked.filter(st => st.political);   // a country: politics and foreign affairs only (else the site uses its own headlines)
+  const stories = ranked.slice(0, 6).map(st => {
     const lead = st.members.find(m => trusted(m.s) && m.img) || st.lead;   // prefer a trusted outlet with a photo
     return { t: lead.t || st.t, u: lead.u, s: lead.s, d: st.d, n: st.n, img: (st.members.find(m => m.img) || {}).img || "",
              also: st.srcs.filter(x => x !== lead.s).slice(0, 6) };
@@ -465,16 +467,21 @@ async function topVideos(lang, q, en, ctx){
   const focus = nm.length ? new RegExp(nm.join("|"), "i") : null;
   const recent = it => !it.d || Date.now() - Date.parse(it.d) < (focus ? 7 : 2) * 864e5;
   let items = pool.items.filter(it => recent(it) && (!focus || focus.test(it.t + " " + it.members[0].x)));
-  // stories that 2+ independent news outlets confirm (world, or naming this country): a video must be about one of them,
-  // or be carried by 2+ channels itself
+  // A video is shown only if its story is confirmed by 2+ independent organisations: other channels, or news outlets
+  // reporting the same story (the channel and the same outlet's website count once: "Al Jazeera English" = "Al Jazeera").
   const news = await newsPool(lang, ctx);
-  const confirmed = scoreStories(news.items.filter(it => (!it.d || Date.now() - Date.parse(it.d) < (focus ? 5 : 2) * 864e5)
-    && (!focus || focus.test(it.t + " " + it.members.map(m => m.t + " " + (m.x || "")).join(" ")))), focus);
-  const topWords = confirmed.slice(0, 8).map(st => st.nm);
-  const matches = (tw, st) => { let names = 0, ws = 0; st.nm.forEach(x => tw.has(x) && names++); st.w.forEach(x => tw.has(x) && ws++); return names >= 2 || ws >= 3; };
+  const newsItems = news.items.filter(it => (!it.d || Date.now() - Date.parse(it.d) < (focus ? 5 : 2) * 864e5)
+    && (!focus || focus.test(it.t + " " + it.members.map(m => m.t + " " + (m.x || "")).join(" "))));
+  const org = s => (s || "").toLowerCase().replace(/\b(english|news|arabic|español|en français|tv|online|world|international)\b/g, "").replace(/[^\p{L}\p{N}]/gu, "");
+  const newsStories = scoreStories(newsItems, focus, 1);
+  const topWords = scoreStories(newsItems, focus).slice(0, 8).map(st => st.nm);
+  const overlap = (tw, st) => { let names = 0, ws = 0; st.nm.forEach(x => tw.has(x) && names++); st.w.forEach(x => tw.has(x) && ws++); return names >= 2 || ws >= 3; };
   const stories = scoreStories(items, focus, 1).filter(st => {
     const tw = words(st.t + " " + st.members.map(m => m.t).join(" "));
-    return st.n >= MIN_SOURCES || confirmed.some(c => matches(tw, c));
+    const orgs = new Set(st.srcs.map(org));
+    newsStories.filter(ns => overlap(tw, ns)).forEach(ns => ns.srcs.forEach(s => orgs.add(org(s))));
+    st.confirmedBy = orgs.size;
+    return orgs.size >= MIN_SOURCES;
   }).map(st => {
     const tw = words(st.t + " " + st.members.map(m => m.t).join(" "));
     const hot = focus ? 0 : topWords.reduce((a, nms) => { let k = 0; nms.forEach(x => tw.has(x) && k++); return Math.max(a, k); }, 0);
@@ -482,7 +489,7 @@ async function topVideos(lang, q, en, ctx){
     return Object.assign(st, { score: st.score + Math.min(hot, 3) * 4 - format });
   }).sort((a, b) => b.score - a.score).slice(0, 5).map(st => {
     const lead = st.members.slice().sort((a, b) => (b.d || "").localeCompare(a.d || ""))[0];   // newest video on the story
-    return { id: lead.id, t: lead.t, s: lead.s, d: lead.d || st.d, n: st.n, also: st.srcs.filter(x => x !== lead.s).slice(0, 4) };
+    return { id: lead.id, t: lead.t, s: lead.s, d: lead.d || st.d, n: st.confirmedBy || st.n, also: st.srcs.filter(x => x !== lead.s).slice(0, 4) };
   });
   const body = JSON.stringify({ lang, q, live: LIVE_TV[lang], generated: new Date().toISOString(), videos: stories });
   if (stories.length) ctx.waitUntil(cache.put(key, new Response(body, { headers: { "Content-Type": "application/json", "Cache-Control": "max-age=600" } })));
