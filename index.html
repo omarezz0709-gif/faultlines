@@ -2766,6 +2766,9 @@ function rowsTable(entries, label, max = 8){
 // bots: marked by the Worker (b), or older entries from a data-centre provider (Google, Amazon, Microsoft, Cloudflare, ...)
 const ADMIN_DC = /google|amazon|aws|microsoft|azure|cloudflare|digitalocean|ovh|hetzner|linode|akamai|vultr|oracle|alibaba|tencent|contabo|leaseweb|scaleway|choopa|m247|datacamp|fastly|meta platforms|facebook/i;
 const isBotLog = x => !!x.b || ADMIN_DC.test(x.isp || '');
+// VPN / proxy networks: could be a real person with a VPN or a scanner, so still counted, but marked 🛡
+const ADMIN_VPN = /oculus networks|code200|stat telecommunication|packethub|cdn77|datacamp|zscaler|nordvpn|nord security|expressvpn|express vpn|private internet access|mullvad|proton|surfshark|cyberghost|hide\.me|windscribe|ipvanish|tunnelbear|kape|tzulo|performive|clouvider|g-core|gcore|quadranet|psychz|servers\.com|hostroyale|iomart|cogent/i;
+const isVpnLog = x => !isBotLog(x) && ADMIN_VPN.test(x.isp || '');
 function renderAdmin(data){
   const all = (data.logs || []).slice().sort((a, b) => b.t - a.t), now = Date.now();
   const logs = all.filter(x => !isBotLog(x)), bots = all.filter(isBotLog);   // numbers, places and the map count people only
@@ -2793,9 +2796,9 @@ function renderAdmin(data){
       <p class="note faint">Places come from the visitor's IP address. Internet providers often register addresses at a regional hub, so a city can be off by 100–200 km (e.g. Mannheim showing as Freiburg), especially on mobile data.</p></section>
     <section><h3>Devices <em>last 7 days</em></h3>${rowsTable(countBy(d7, x => x.d), 'Device', 6)}</section>
     <section><h3>What was asked <em>last 7 days</em></h3>${rowsTable(countBy(ai7, x => kindName(x.k)), 'Kind', 8)}</section>
-    <section><h3>Latest activity <em>${all.length} logged in 30 days · 🤖 = bot / crawler / link preview</em></h3>
+    <section><h3>Latest activity <em>${all.length} logged in 30 days · 🤖 = bot / crawler / link preview · 🛡 = VPN or proxy (a person or a scanner)</em></h3>
       <div class="mx-wrap"><table class="atable"><thead><tr><th>When</th><th>Where</th><th>Device</th><th>What</th><th></th></tr></thead><tbody>
-      ${all.slice(0, 80).map(x => `<tr${isBotLog(x) ? ' class="botrow"' : ''}><td style="white-space:nowrap">${isBotLog(x) ? '🤖 ' : ''}${esc(fmtDateTime(x.t))}${x.o ? `<br><span class="faint">${esc(x.o.includes('pages.dev') ? 'pages.dev' : 'github.io')}</span>` : ''}</td><td>${esc(place(x))}${x.pc || x.isp ? `<br><span class="faint">${esc([x.pc, x.isp].filter(Boolean).join(' · '))}</span>` : ''}</td><td>${esc(x.d || '')}</td><td>${esc(kindName(x.k))}${x.m ? `<br><span class="faint">${esc(x.m)}</span>` : ''}</td><td>${x.k === 'visit' ? '' : status(x)}</td></tr>`).join('') || '<tr><td colspan="5" class="muted">Nothing logged yet.</td></tr>'}
+      ${all.slice(0, 80).map(x => `<tr${isBotLog(x) ? ' class="botrow"' : ''}><td style="white-space:nowrap">${isBotLog(x) ? '🤖 ' : isVpnLog(x) ? '🛡 ' : ''}${esc(fmtDateTime(x.t))}${x.o ? `<br><span class="faint">${esc(x.o.includes('pages.dev') ? 'pages.dev' : 'github.io')}</span>` : ''}</td><td>${esc(place(x))}${x.pc || x.isp ? `<br><span class="faint">${esc([x.pc, x.isp].filter(Boolean).join(' · '))}</span>` : ''}</td><td>${esc(x.d || '')}</td><td>${esc(kindName(x.k))}${x.m ? `<br><span class="faint">${esc(x.m)}</span>` : ''}</td><td>${x.k === 'visit' ? '' : status(x)}</td></tr>`).join('') || '<tr><td colspan="5" class="muted">Nothing logged yet.</td></tr>'}
       </tbody></table></div></section>
     <section><h3>Automatic updates <em>GitHub</em></h3><div id="admin-runs"><p class="note muted thinking">Loading…</p></div></section>
     <div class="actions"><button class="tag" id="admin-refresh">↻ Refresh</button><button class="tag" id="admin-out">Log out</button></div>
