@@ -64,6 +64,14 @@ function device(ua) {
   return `${os} · ${br}`;
 }
 
+// crawlers, link-preview fetchers and automated browsers: marked as bots in the admin log
+const BOT_UA = /bot|crawl|spider|slurp|preview|facebookexternalhit|whatsapp|telegram|discord|slack|headless|lighthouse|pagespeed|phantom|puppeteer|playwright|selenium|python|curl|wget|go-http|java\/|node-fetch|axios/i;
+const DATACENTER = /google|amazon|aws|microsoft|azure|cloudflare|digitalocean|ovh|hetzner|linode|akamai|vultr|oracle|alibaba|tencent|contabo|leaseweb|scaleway|choopa|m247|datacamp|fastly|meta platforms|facebook/i;
+function isBot(request){
+  const ua = request.headers.get("User-Agent") || "", isp = (request.cf && request.cf.asOrganization) || "";
+  return BOT_UA.test(ua) || DATACENTER.test(isp) || !ua;
+}
+
 async function logEvent(env, request, rec) {
   if (!env.LOGS) return;
   const cf = request.cf || {};
@@ -77,6 +85,8 @@ async function logEvent(env, request, rec) {
     pc: (cf.postalCode || "").slice(0, 10), isp: (cf.asOrganization || "").slice(0, 40),   // IP-based, so approximate
     la: cf.latitude ? Math.round(parseFloat(cf.latitude) * 100) / 100 : undefined,        // for the admin map (city level)
     lo: cf.longitude ? Math.round(parseFloat(cf.longitude) * 100) / 100 : undefined,
+    b: isBot(request) ? 1 : undefined,                                                    // crawler / preview / data-centre visit
+    o: (request.headers.get("Origin") || "").replace(/^https:\/\//, "").slice(0, 40),       // which site address (GitHub or Cloudflare Pages)
   };
   const key = `l:${String(9999999999999 - meta.t).padStart(13, "0")}:${Math.random().toString(36).slice(2, 7)}`;
   try { await env.LOGS.put(key, "", { metadata: meta, expirationTtl: LOG_DAYS * 86400 }); } catch (e) { /* free KV write limit reached */ }

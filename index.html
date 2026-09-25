@@ -90,6 +90,7 @@ button{font:inherit;color:inherit}
 .feed .fc .tag{font-size:11px;padding:2px 7px}
 .feed .imp b.kwb{color:var(--s-H);font:600 10px var(--mono);text-transform:uppercase;letter-spacing:.06em;margin-inline-end:6px}
 .conf{color:var(--s-F);white-space:nowrap}
+.atable tr.botrow td{opacity:.55}
 .q-asked{font:500 17px/1.4 var(--body);color:var(--text);margin:0}
 /* top story "TV" segment under the question box */
 .tv{background:linear-gradient(180deg,rgba(24,20,10,.94),rgba(10,10,10,.94));border:1px solid var(--gold-dim);border-radius:6px;overflow:hidden;backdrop-filter:blur(10px)}
@@ -2762,8 +2763,12 @@ function rowsTable(entries, label, max = 8){
   if (!entries.length) return '<p class="note muted">Nothing yet.</p>';
   return `<table class="atable"><thead><tr><th>${esc(label)}</th><th style="text-align:right">Count</th></tr></thead><tbody>${entries.slice(0, max).map(([k, n]) => `<tr><td>${esc(k)}</td><td class="n">${n}</td></tr>`).join('')}</tbody></table>`;
 }
+// bots: marked by the Worker (b), or older entries from a data-centre provider (Google, Amazon, Microsoft, Cloudflare, ...)
+const ADMIN_DC = /google|amazon|aws|microsoft|azure|cloudflare|digitalocean|ovh|hetzner|linode|akamai|vultr|oracle|alibaba|tencent|contabo|leaseweb|scaleway|choopa|m247|datacamp|fastly|meta platforms|facebook/i;
+const isBotLog = x => !!x.b || ADMIN_DC.test(x.isp || '');
 function renderAdmin(data){
-  const logs = (data.logs || []).slice().sort((a, b) => b.t - a.t), now = Date.now();
+  const all = (data.logs || []).slice().sort((a, b) => b.t - a.t), now = Date.now();
+  const logs = all.filter(x => !isBotLog(x)), bots = all.filter(isBotLog);   // numbers, places and the map count people only
   const within = h => logs.filter(x => now - x.t < h * 36e5);
   const ai = list => list.filter(x => x.k !== 'visit');
   const d1 = within(24), d7 = within(168);
@@ -2781,15 +2786,16 @@ function renderAdmin(data){
       <div class="tile"><b>${errs1.length}</b><span>errors, last 24 h${errs1.length ? ` (${countBy(errs1, x => String(x.s)).map(([s, n]) => n + '× ' + s).join(', ')})` : ''}</span></div>
       <div class="tile"><b>${d1.filter(x => x.k === 'visit').length}</b><span>visits, last 24 h</span></div>
       <div class="tile"><b>${new Set(d1.map(x => x.v)).size}</b><span>different visitors, last 24 h</span></div>
+      <div class="tile"><b>${bots.filter(x => now - x.t < 168 * 36e5).length}</b><span>🤖 bots & crawlers, last 7 days (not counted above)</span></div>
     </div>
     <section><h3>Where from <em>last 7 days · approximate</em></h3>${rowsTable(countBy(d7, place), 'Place')}
       <p class="note"><span style="color:#b36bff">●</span> Purple dots on the globe mark where pings came from (last 30 days); bigger = more. Hover a dot for details.</p>
       <p class="note faint">Places come from the visitor's IP address. Internet providers often register addresses at a regional hub, so a city can be off by 100–200 km (e.g. Mannheim showing as Freiburg), especially on mobile data.</p></section>
     <section><h3>Devices <em>last 7 days</em></h3>${rowsTable(countBy(d7, x => x.d), 'Device', 6)}</section>
     <section><h3>What was asked <em>last 7 days</em></h3>${rowsTable(countBy(ai7, x => kindName(x.k)), 'Kind', 8)}</section>
-    <section><h3>Latest activity <em>${logs.length} logged in 30 days</em></h3>
+    <section><h3>Latest activity <em>${all.length} logged in 30 days · 🤖 = bot / crawler / link preview</em></h3>
       <div class="mx-wrap"><table class="atable"><thead><tr><th>When</th><th>Where</th><th>Device</th><th>What</th><th></th></tr></thead><tbody>
-      ${logs.slice(0, 80).map(x => `<tr><td style="white-space:nowrap">${esc(fmtDateTime(x.t))}</td><td>${esc(place(x))}${x.pc || x.isp ? `<br><span class="faint">${esc([x.pc, x.isp].filter(Boolean).join(' · '))}</span>` : ''}</td><td>${esc(x.d || '')}</td><td>${esc(kindName(x.k))}${x.m ? `<br><span class="faint">${esc(x.m)}</span>` : ''}</td><td>${x.k === 'visit' ? '' : status(x)}</td></tr>`).join('') || '<tr><td colspan="5" class="muted">Nothing logged yet.</td></tr>'}
+      ${all.slice(0, 80).map(x => `<tr${isBotLog(x) ? ' class="botrow"' : ''}><td style="white-space:nowrap">${isBotLog(x) ? '🤖 ' : ''}${esc(fmtDateTime(x.t))}${x.o ? `<br><span class="faint">${esc(x.o.includes('pages.dev') ? 'pages.dev' : 'github.io')}</span>` : ''}</td><td>${esc(place(x))}${x.pc || x.isp ? `<br><span class="faint">${esc([x.pc, x.isp].filter(Boolean).join(' · '))}</span>` : ''}</td><td>${esc(x.d || '')}</td><td>${esc(kindName(x.k))}${x.m ? `<br><span class="faint">${esc(x.m)}</span>` : ''}</td><td>${x.k === 'visit' ? '' : status(x)}</td></tr>`).join('') || '<tr><td colspan="5" class="muted">Nothing logged yet.</td></tr>'}
       </tbody></table></div></section>
     <section><h3>Automatic updates <em>GitHub</em></h3><div id="admin-runs"><p class="note muted thinking">Loading…</p></div></section>
     <div class="actions"><button class="tag" id="admin-refresh">↻ Refresh</button><button class="tag" id="admin-out">Log out</button></div>
