@@ -90,12 +90,36 @@ button{font:inherit;color:inherit}
 .feed .fc .tag{font-size:11px;padding:2px 7px}
 .feed .imp b.kwb{color:var(--s-H);font:600 10px var(--mono);text-transform:uppercase;letter-spacing:.06em;margin-inline-end:6px}
 .q-asked{font:500 17px/1.4 var(--body);color:var(--text);margin:0}
+/* top story "TV" segment under the question box */
+.tv{background:linear-gradient(180deg,rgba(24,20,10,.94),rgba(10,10,10,.94));border:1px solid var(--gold-dim);border-radius:6px;overflow:hidden;backdrop-filter:blur(10px)}
+.tv[hidden]{display:none}
+.tv-top{display:flex;align-items:center;gap:8px;padding:7px 10px;background:rgba(212,175,55,.1);border-bottom:1px solid var(--line2)}
+.tv-tag{display:flex;align-items:center;gap:6px;font:700 10.5px var(--mono);letter-spacing:.12em;color:#fff;background:#b3261e;padding:3px 7px;border-radius:3px}
+.tv-tag .live-dot{background:#fff;margin:0;width:6px;height:6px}
+.tv-where{font:700 13px var(--display);letter-spacing:.06em;text-transform:uppercase;color:var(--gold-hi);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tv-n{margin-inline-start:auto;font:500 11px var(--mono);color:var(--faint)}
+.tv-head{display:block;padding:10px 12px 4px;color:var(--text);font:600 15px/1.35 var(--body);text-decoration:none;transition:opacity .3s;min-height:42px}
+.tv-head:hover{color:var(--gold-hi)}
+.tv-meta{padding:0 12px 9px;font:11.5px/1.4 var(--mono);color:var(--muted);transition:opacity .3s}
+.tv-meta b{color:var(--gold-hi);font-weight:600}
+.tv.fade .tv-head,.tv.fade .tv-meta{opacity:0}
+.tv-foot{display:flex;align-items:center;gap:4px;padding:0 6px 6px 12px}
+.tv-prog{flex:1;height:2px;background:var(--line2);border-radius:2px;overflow:hidden}
+.tv-prog i{display:block;height:100%;width:0;background:var(--gold)}
+.tv-prog i.run{animation:tvprog var(--tv-ms,9000ms) linear forwards}
+.tv:hover .tv-prog i.run{animation-play-state:paused}
+@keyframes tvprog{to{width:100%}}
+.tv-btn{border:0;background:none;color:var(--muted);font-size:18px;line-height:1;width:24px;height:22px;cursor:pointer;border-radius:3px}
+.tv-btn:hover{color:var(--gold-hi);background:var(--raise)}
 .mob-only{display:none}
 [dir="rtl"] .p-body, [dir="rtl"] .p-head, [dir="rtl"] .top, [dir="rtl"] .ticker{text-align:right}
 @media (max-width:760px){
   .mob-only{display:inline-flex;align-items:center}
   .ask{display:none}
   .ask.open{display:flex}
+  .tv{display:none!important}
+  .top.asking .tv:not([hidden]){display:block!important}   /* on phones the top story shows with the question box */
+  .tv-head{font-size:14px}
   .ticker{display:none!important}
 }
 /* city names when zoomed in: small dot + name, grey; capitals gold */
@@ -355,6 +379,12 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
     <input id="ask-q" type="text" maxlength="300" placeholder="Ask anything about world affairs…" aria-label="Ask a question">
     <button class="ask-go" type="submit" aria-label="Ask">→</button>
   </form>
+  <section class="tv" id="tv" hidden aria-live="polite">
+    <div class="tv-top"><span class="tv-tag"><i class="live-dot"></i>TOP STORY</span><span class="tv-where" id="tv-where">World</span><span class="tv-n" id="tv-n"></span></div>
+    <a class="tv-head" id="tv-head" target="_blank" rel="noopener" dir="auto"></a>
+    <div class="tv-meta" id="tv-meta"></div>
+    <div class="tv-foot"><div class="tv-prog"><i id="tv-prog"></i></div><button class="tv-btn" id="tv-prev" aria-label="Previous story">‹</button><button class="tv-btn" id="tv-next" aria-label="Next story">›</button></div>
+  </section>
   <div class="filters" id="filters" hidden>
     <div class="fg"><h4>Relationship types</h4>
       <div class="fchips" id="f-status" role="group" aria-label="Relationship types"></div>
@@ -2830,7 +2860,8 @@ const TR = {
     'عناوين أخبار العالم من Google News، تُحدَّث كل بضع دقائق. تُميَّز العناوين التي تذكر دولة وكلمات مثل حرب أو غارة أو عقوبات.'],
   'No live headlines right now.': ['Aucun titre en direct pour le moment.', 'No hay titulares en vivo ahora.', 'لا توجد عناوين مباشرة الآن.'],
   'Gaza Strip': ['Bande de Gaza', 'Franja de Gaza', 'قطاع غزة'], 'Antarctica': ['Antarctique', 'Antártida', 'القارة القطبية الجنوبية'],
-  'Close': ['Fermer', 'Cerrar', 'إغلاق'], 'Territory': ['Territoire', 'Territorio', 'إقليم'], 'Continent': ['Continent', 'Continente', 'قارة'],
+  'Close': ['Fermer', 'Cerrar', 'إغلاق'], 'TOP STORY': ['À LA UNE', 'PORTADA', 'أبرز خبر'], 'World': ['Monde', 'Mundo', 'العالم'],
+  'Previous story': ['Sujet précédent', 'Noticia anterior', 'الخبر السابق'], 'Next story': ['Sujet suivant', 'Noticia siguiente', 'الخبر التالي'], 'Territory': ['Territoire', 'Territorio', 'إقليم'], 'Continent': ['Continent', 'Continente', 'قارة'],
   'No match. Try a country or strait name.': ['Aucun résultat. Essayez un pays ou un détroit.', 'Sin resultados. Prueba un país o estrecho.', 'لا نتائج. جرّب اسم دولة أو مضيق.'], 'Open panel': ['Ouvrir le panneau', 'Abrir panel', 'افتح اللوحة'], 'Push panel down': ['Réduire le panneau', 'Bajar el panel', 'اخفض اللوحة'],
 };
 // phrases with numbers or dates
@@ -2894,7 +2925,7 @@ const NAME_HOSTS = 'b, h2, h3, th, .tag, .tip b, option, .th-title, .kw, .fc';
 function translateNode(n){
   if (n.nodeType === 3){
     // skip AI answers (already in the chosen language), headlines and the reader's own question
-    if (!n.nodeValue.trim() || n.parentElement && n.parentElement.closest('script, style, .city, input, textarea, .ai h3, .ai h4, .ai li, .ai p:not(.muted):not(.faint), .alerts a, .news a, .feed a, .q-asked')) return;
+    if (!n.nodeValue.trim() || n.parentElement && n.parentElement.closest('script, style, .city, input, textarea, .ai h3, .ai h4, .ai li, .ai p:not(.muted):not(.faint), .alerts a, .news a, .feed a, .q-asked, .tv-head, .tv-meta')) return;
     if (n.__en === undefined || (n.nodeValue !== n.__tr)) n.__en = n.nodeValue;   // remember the English original
     let v = trText(n.__en);
     if (v == null && n.parentElement && n.parentElement.closest(NAME_HOSTS) && nameRe) v = n.__en.replace(nameRe, (m, pre, nm) => pre + trMap.get(nm));
@@ -2940,7 +2971,7 @@ const aiLangNote = json => LANG === 'en' ? '' : `\n\nWrite ${json ? 'all text va
    ASK: free questions, answered by the AI with the globe's data as context
    ================================================================ */
 const askForm = document.getElementById('ask-form'), askQ = document.getElementById('ask-q'), askBtn = document.getElementById('ask-btn');
-askBtn.onclick = () => { const on = !askForm.classList.contains('open'); askForm.classList.toggle('open', on); askBtn.setAttribute('aria-expanded', on); if (on) askQ.focus(); };
+askBtn.onclick = () => { const on = !askForm.classList.contains('open'); askForm.classList.toggle('open', on); document.querySelector('.top').classList.toggle('asking', on); askBtn.setAttribute('aria-expanded', on); if (on) askQ.focus(); };
 askForm.onsubmit = e => { e.preventDefault(); const q = askQ.value.trim(); if (q.length < 3) return; askQ.blur(); renderAsk(q); };
 function mentioned(q){
   const low = ' ' + q.toLowerCase() + ' ';
@@ -3019,6 +3050,7 @@ async function loadFeed(){
   // important ones first in the ticker, then newest
   tkIdx = 0; showTicker();
   if (panelMode === 'feed') renderFeed();
+  if (typeof tvRefresh === 'function' && !tv.stories.length) tvRefresh(true);   // the top-story segment can fall back on these
 }
 function tickerList(){ const imp = FEED.filter(f => f.imp); return (imp.length >= 5 ? imp : FEED).slice(0, 15); }
 function showTicker(){
@@ -3047,6 +3079,70 @@ function renderFeed(){
   document.getElementById('live-btn').setAttribute('aria-pressed', 'true');
 }
 setInterval(() => { if (!document.hidden) loadFeed(); }, 5 * 60 * 1000);
+
+/* ================================================================
+   TOP STORY "TV" under the question box: the biggest stories right now, ranked by how many outlets cover them
+   (trusted outlets and foreign-policy stories first). Follows the selection: click Russia and it shows
+   Russia's biggest story; a chokepoint shows that place's; nothing selected shows the world's.
+   ================================================================ */
+const TV_MS = 9000;
+const tvEl = document.getElementById('tv');
+let tv = {key: null, stories: [], i: 0, label: ''}, tvTimer = null;
+const tvCache = new Map();
+const TVW = {en: ['covered by', 'outlets', 'incl.'], fr: ['couvert par', 'médias', 'dont'], es: ['cubierto por', 'medios', 'incl.'], ar: ['تغطيه', 'وسيلة إعلام', 'منها']};
+function tvTarget(){
+  if (sel.type === 'country') return {key: 'c:' + sel.id, q: (LANG !== 'en' && localNames[sel.id]) || ENT[sel.id].name, en: ENT[sel.id].name, label: ENT[sel.id].name, id: sel.id};
+  if (sel.type === 'poi' && sel.poi && sel.poi.n) return {key: 'p:' + sel.poi.n, q: sel.poi.n, en: sel.poi.n, label: sel.poi.n};
+  return {key: 'world', q: '', en: '', label: 'World'};
+}
+async function loadTop(t){
+  const ck = LANG + '|' + t.key, c = tvCache.get(ck);
+  if (c && Date.now() - c.at < 10 * 60e3) return c.stories;
+  let stories = [];
+  try {
+    const r = await fetch(`${AI_PROXY}/top?lang=${LANG}&q=${encodeURIComponent(t.q)}&en=${encodeURIComponent(t.en)}`);
+    if (r.ok) stories = (await r.json()).stories || [];
+  } catch(e){}
+  if (!stories.length){   // Worker without /top yet: the site's own headlines
+    if (t.id){ const cn = NEWS && NEWS.countries && NEWS.countries[t.id]; stories = cn ? newsItems(cn.i).slice(0, 5).map(it => ({t: it.t, u: it.u, s: it.s, d: it.d})) : []; }
+    else stories = (FEED.filter(f => f.imp).length ? FEED.filter(f => f.imp) : FEED).slice(0, 5).map(f => ({t: f.t, u: f.u, s: f.s, d: f.d}));
+  }
+  if (stories.length) tvCache.set(ck, {at: Date.now(), stories});
+  return stories;
+}
+async function tvRefresh(force){
+  const t = tvTarget(), key = LANG + '|' + t.key;
+  if (!force && key === tv.key) return;
+  tv.key = key;
+  const stories = await loadTop(t);
+  if (tv.key !== key) return;   // the selection changed while loading
+  // a country with nothing big right now falls back to the world's top stories
+  if (!stories.length && t.key !== 'world'){ tv.label = 'World'; tv.stories = await loadTop({key: 'world', q: '', en: '', label: 'World'}); }
+  else { tv.label = t.label; tv.stories = stories; }
+  tv.i = 0; tvShow();
+}
+function tvShow(){
+  if (!tv.stories.length){ tvEl.hidden = true; return; }
+  tvEl.hidden = false;
+  const s = tv.stories[tv.i % tv.stories.length], w = TVW[LANG] || TVW.en, u = safeUrl(s.u);
+  document.getElementById('tv-where').textContent = tv.label;
+  document.getElementById('tv-n').textContent = `${tv.i % tv.stories.length + 1}/${tv.stories.length}`;
+  const head = document.getElementById('tv-head'); head.textContent = s.t; if (u) head.href = u; else head.removeAttribute('href');
+  document.getElementById('tv-meta').innerHTML = `<b>${esc(s.s || '')}</b>${s.s ? ' · ' : ''}${esc(ago(s.d))}${s.n > 1 ? ` · ${w[0]} ${s.n} ${w[1]}` : ''}${s.also && s.also.length ? ` ${w[2]} ${esc(s.also.slice(0, 3).join(', '))}` : ''}`;
+  const prog = document.getElementById('tv-prog'); prog.classList.remove('run'); void prog.offsetWidth; prog.classList.add('run');
+  clearTimeout(tvTimer); tvTimer = setTimeout(tvNext, TV_MS);
+}
+function tvNext(step = 1){
+  if (!tv.stories.length) return;
+  if (tvEl.matches(':hover')){ clearTimeout(tvTimer); tvTimer = setTimeout(tvNext, 1500); return; }   // hovering pauses
+  tvEl.classList.add('fade');
+  setTimeout(() => { tv.i = (tv.i + step + tv.stories.length) % tv.stories.length; tvShow(); tvEl.classList.remove('fade'); }, 300);
+}
+document.getElementById('tv-next').onclick = () => tvNext(1);
+document.getElementById('tv-prev').onclick = () => tvNext(-1);
+document.documentElement.style.setProperty('--tv-ms', TV_MS + 'ms');
+setInterval(() => tvRefresh(false), 600);                              // follow the selection
+setInterval(() => { tvCache.clear(); tvRefresh(true); }, 10 * 60e3);    // and refresh every 10 minutes
 
 /* start in a working state */
 let startLang = 'en'; try { startLang = localStorage.getItem('fl-lang') || ((navigator.language || 'en').slice(0, 2)); } catch(e){}

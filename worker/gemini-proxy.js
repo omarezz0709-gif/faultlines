@@ -274,6 +274,101 @@ async function liveFeed(lang, ctx){
   return new Response(body, { status: items.length ? 200 : 502, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "miss" }) });
 }
 
+/* ------------------------------------------------------------------ top stories
+   Google News topic feeds already group articles into stories (the <ol> in each item lists other outlets on the
+   same story); country searches return single articles, which are grouped here by shared title words.
+   A story's score = how many outlets cover it + trusted outlets + how political/foreign-policy it is + recency. */
+const TRUSTED = ["reuters", "associated press", "ap news", "afp", "agence france", "bbc", "al jazeera", "sky news", "the guardian",
+  "new york times", "nytimes", "washington post", "financial times", "ft.com", "bloomberg", "the economist", "wall street journal", "wsj",
+  "dw", "deutsche welle", "france 24", "france24", "rfi", "npr", "pbs", "cnn", "abc news", "cbs news", "nbc news", "politico", "axios",
+  "the times", "the telegraph", "the independent", "euronews", "le monde", "le figaro", "libération", "el país", "el pais", "el mundo",
+  "la vanguardia", "bbc mundo", "bbc arabic", "al arabiya", "العربية", "الجزيرة", "sky news arabia", "سكاي نيوز", "asharq al-awsat",
+  "الشرق الأوسط", "cnn arabic", "nikkei", "south china morning post", "the hindu", "haaretz", "times of israel", "kyiv independent",
+  "the moscow times", "der spiegel", "spiegel", "zeit", "süddeutsche", "faz", "frankfurter allgemeine", "tagesschau", "orf", "swissinfo", "cbc", "abc.net.au"];
+const trusted = s => { const l = (s || "").toLowerCase(); return TRUSTED.some(t => l === t || l.includes(t)); };
+const POLITICAL = [
+  [/\b(war|invasion|offensive|front ?line|missiles?|drones?|air ?strikes?|strikes?|shelling|troops|military|army|attacks?|killed|nuclear|guerre|frappes?|armée|militaire|guerra|ataques?|misil(es)?|ejército|militar)\b|حرب|هجوم|غارة|صاروخ|قصف|جيش|عسكري/i, 3],
+  [/\b(sanctions?|ceasefire|truce|peace talks?|talks|negotiations?|summit|treaty|deal|diplomat\w*|embassy|ambassador|foreign minister|un security council|nato|sanctions|cessez-le-feu|négociations?|sommet|accord|diplomat\w*|sanciones|alto el fuego|negociaciones|cumbre|acuerdo)\b|عقوبات|وقف إطلاق النار|مفاوضات|قمة|اتفاق|دبلوماسي/i, 2],
+  [/\b(president|prime minister|government|parliament|election|opposition|protests?|coup|minister|kremlin|white house|président|gouvernement|élection|manifestations?|presidente|gobierno|elecciones|protestas?|golpe)\b|رئيس|حكومة|انتخابات|احتجاج|برلمان|انقلاب/i, 1],
+];
+const SPORT = /\b(football|soccer|league|cup|match|tennis|nba|nfl|nhl|hockey|olympic|goal|coach|striker|forward|goalkeeper|player|players|season|transfer|box office|celebrity|actor|singer|concert|film|movie|recipe|weather|horoscope|lottery|fashion|bear|zoo|animal)\b|كرة|مباراة|دوري/i;
+// other countries and blocs named in a story: the more foreign actors, the more "foreign policy" it is
+const ACTORS = /\b(united states|u\.s\.|us|america|washington|russia|moscow|kremlin|ukraine|kyiv|china|beijing|taiwan|iran|tehran|israel|gaza|palestin\w*|lebanon|hezbollah|syria|iraq|yemen|houthis?|saudi|emirates|uae|qatar|turkey|türkiye|egypt|libya|sudan|ethiopia|somalia|india|pakistan|afghanistan|north korea|south korea|japan|germany|france|britain|uk|poland|baltic|estonia|latvia|lithuania|finland|belarus|georgia|armenia|azerbaijan|venezuela|cuba|mexico|nato|european union|eu|united nations|un|g7|brics|sahel|mali|niger)\b|روسيا|أوكرانيا|الصين|إيران|إسرائيل|غزة|أمريكا|الولايات المتحدة|تركيا|السعودية|الناتو/gi;
+function relItems(descHtml){
+  const out = [];
+  for (const m of unxml(descHtml).matchAll(/<li><a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>(?:&nbsp;|\s)*<font[^>]*>([\s\S]*?)<\/font><\/li>/g))
+    out.push({ u: m[1], t: unxml(m[2]), s: unxml(m[3]) });
+  return out;
+}
+function parseRssClusters(xml){
+  const out = [];
+  for (const m of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)){
+    const b = m[1], g = tag => { const r = b.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`)); return r ? r[1] : ""; };
+    let t = unxml(g("title")); const s = unxml(g("source")), d = new Date(unxml(g("pubDate")));
+    if (s && t.endsWith(" - " + s)) t = t.slice(0, -(s.length + 3));
+    const rel = relItems(g("description"));
+    const members = rel.length ? rel : [{ u: unxml(g("link")), t, s }];
+    if (t) out.push({ t, d: isNaN(d) ? null : d.toISOString(), members });
+  }
+  return out;
+}
+const STOP = new Set("the a an and or of to in on for with at by from as is are was were be been after over into says said amid new more than its his her their this that will would could about against between under what how why who latest live update updates news report reports les des une pour dans sur avec par est son ses qui que del los las por para con una sobre".split(" "));
+const words = t => new Set(t.toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, " ").split(/\s+/).filter(w => w.length > 3 && !STOP.has(w)));
+function scoreStories(items, focus){
+  // merge items whose titles share enough words into one story
+  const stories = [];
+  for (const it of items){
+    const w = words(it.t);
+    let best = null, bestSim = 0;
+    for (const st of stories){
+      let inter = 0; w.forEach(x => st.w.has(x) && inter++);
+      const sim = inter / Math.max(1, Math.min(w.size, st.w.size));
+      if (sim > bestSim){ bestSim = sim; best = st; }
+    }
+    if (best && bestSim >= 0.45){ best.members.push(...it.members); w.forEach(x => best.w.add(x)); if (it.d && (!best.d || it.d > best.d)) best.d = it.d; }
+    else stories.push({ t: it.t, d: it.d, w, members: [...it.members] });
+  }
+  const now = Date.now();
+  for (const st of stories){
+    const srcs = [...new Set(st.members.map(x => x.s).filter(Boolean))];
+    const trustedSrcs = srcs.filter(trusted);
+    const text = st.t + " " + st.members.map(x => x.t).join(" ");
+    const pol = POLITICAL.reduce((a, [re, w]) => a + (re.test(text) ? w : 0), 0);
+    const hours = st.d ? (now - Date.parse(st.d)) / 36e5 : 48;
+    const lead = st.members.find(x => trusted(x.s)) || st.members[0];
+    const actors = new Set((text.match(ACTORS) || []).map(a => a.toLowerCase()).filter(a => !focus || !focus.test(a)));
+    Object.assign(st, { lead, srcs, n: srcs.length, trustedN: trustedSrcs.length,
+      score: srcs.length * 2 + trustedSrcs.length * 3 + pol * 2 + Math.min(actors.size, 4) * 2.5
+        - Math.min(hours, 72) / 8 - (SPORT.test(text) ? 20 : 0)
+        + (focus && !focus.test(text) ? -15 : 0) });
+  }
+  return stories.filter(st => st.trustedN > 0 || st.n >= 3).sort((a, b) => b.score - a.score);
+}
+async function topStories(lang, q, en, ctx){
+  if (!NEWS_LANG[lang]) lang = "en";
+  const key = `https://faultlines-cache/top/${lang}/${encodeURIComponent(q.toLowerCase())}`;
+  const cache = caches.default, hit = await cache.match(key);
+  if (hit) return new Response(hit.body, { status: 200, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "hit" }) });
+  const base = "https://news.google.com/rss", p = NEWS_LANG[lang];
+  const pol = { en: "war OR military OR sanctions OR talks OR president OR minister OR election OR attack OR ceasefire",
+    fr: "guerre OR armée OR sanctions OR négociations OR président OR ministre OR élection OR attaque",
+    es: "guerra OR ejército OR sanciones OR negociaciones OR presidente OR ministro OR elecciones OR ataque",
+    ar: "حرب OR جيش OR عقوبات OR مفاوضات OR رئيس OR وزير OR انتخابات OR هجوم" }[lang];
+  const urls = q
+    ? [`${base}/search?q=${encodeURIComponent(`"${q}" (${pol}) when:3d`)}&${p}`, `${base}/search?q=${encodeURIComponent(`"${q}" when:2d`)}&${p}`]
+    : [`${base}/headlines/section/topic/WORLD?${p}`, `${base}/headlines/section/topic/NATION?${p}`, `${base}/search?q=${encodeURIComponent(`(${pol}) when:1d`)}&${p}`];
+  const lists = await Promise.all(urls.map(u => fetch(u, { headers: { "User-Agent": "Mozilla/5.0 (Faultlines top stories)" } })
+    .then(r => r.ok ? r.text() : "").then(parseRssClusters).catch(() => [])));
+  const focus = q ? new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i") : null;
+  const stories = scoreStories(lists.flat(), focus).slice(0, 6).map(st => ({
+    t: st.lead.t || st.t, u: st.lead.u, s: st.lead.s, d: st.d, n: st.n,
+    also: st.srcs.filter(x => x !== st.lead.s).slice(0, 6),
+  }));
+  const body = JSON.stringify({ lang, q, generated: new Date().toISOString(), stories });
+  if (stories.length) ctx.waitUntil(cache.put(key, new Response(body, { headers: { "Content-Type": "application/json", "Cache-Control": "max-age=600" } })));
+  return new Response(body, { status: stories.length ? 200 : 502, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "miss" }) });
+}
+
 export default {
   async fetch(request, env, ctx) {
     const origin = request.headers.get("Origin") || "";
@@ -293,6 +388,10 @@ export default {
 
     // --- live feed: latest world headlines from Google News, cached 10 minutes per language ---
     if (path === "live") return liveFeed(url.searchParams.get("lang") || "en", ctx);
+
+    // --- top stories: the biggest stories right now (world, or one country), ranked by how widely they're covered ---
+    if (path === "top") return topStories(url.searchParams.get("lang") || "en", (url.searchParams.get("q") || "").slice(0, 60),
+                                          (url.searchParams.get("en") || "").slice(0, 60), ctx);
 
     // --- admin: usage log ---
     if (path === "admin/logs") {
