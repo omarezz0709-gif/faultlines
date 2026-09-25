@@ -141,11 +141,22 @@ button{font:inherit;color:inherit}
 .ask-go{border:0;background:var(--gold);color:var(--on-gold);border-radius:4px;width:30px;height:28px;cursor:pointer;font-weight:700}
 .ticker{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:5;display:flex;align-items:stretch;width:360px;background:var(--panel);border:1px solid var(--line2);border-radius:6px;overflow:hidden;backdrop-filter:blur(10px)}
 .ticker[hidden]{display:none}
+.ticker{direction:ltr}   /* it sits bottom-left and folds to the left in every language (the headline keeps its own direction) */
 .tk-live{border:0;border-right:1px solid var(--line2);background:var(--raise);color:var(--gold-hi);font:600 11px var(--mono);letter-spacing:.1em;padding:0 11px;cursor:pointer;display:flex;align-items:center;gap:7px;white-space:nowrap}
 .live-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#e0604f;margin-right:5px;animation:pulse 1.6s infinite}
 .tk-live .live-dot{margin:0}
 @keyframes pulse{50%{opacity:.3}}
-.tk-item{border:0;background:none;color:var(--text);font:13px/1.3 var(--body);text-align:start;padding:9px 12px;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;flex:1;transition:opacity .3s}
+.tk-item{border:0;background:none;color:var(--text);font:13px/1.3 var(--body);text-align:start;padding:9px 12px;cursor:pointer;white-space:nowrap;overflow:hidden;min-width:0;flex:1;transition:opacity .3s;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 10px,#000 calc(100% - 14px),transparent);mask-image:linear-gradient(90deg,transparent 0,#000 10px,#000 calc(100% - 14px),transparent)}
+/* long headlines scroll through once: pause, glide to the end, pause (then the next one) */
+.tk-run{display:inline-block;will-change:transform}
+.tk-run.go{animation:tkrun var(--tk-dur,6s) linear var(--tk-wait,1.6s) forwards}
+.ticker:hover .tk-run.go{animation-play-state:paused}
+@keyframes tkrun{to{transform:translateX(var(--tk-dx,0))}}
+.tk-fold{border:0;border-inline-start:1px solid var(--line2);background:var(--raise);color:var(--muted);font-size:16px;line-height:1;width:28px;cursor:pointer;flex:none}
+.tk-fold:hover{color:var(--gold-hi)}
+.ticker.folded{width:auto}
+.ticker.folded .tk-item{display:none}
 .tk-item b{color:var(--gold-hi);font-weight:600;margin-inline-end:6px}
 .tk-item small{color:var(--faint);font:11px var(--mono);margin-inline-start:6px}
 .tk-item.fade{opacity:0}
@@ -579,6 +590,7 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
 <div class="ticker" id="ticker" hidden>
   <button class="tk-live" id="tk-open" title="Open the live feed"><i class="live-dot"></i>LIVE</button>
   <button class="tk-item" id="tk-item"></button>
+  <button class="tk-fold" id="tk-fold" aria-label="Hide the headline" title="Hide the headline">‹</button>
 </div>
 
 <aside class="panel" id="panel" aria-live="polite">
@@ -3174,6 +3186,7 @@ const TR = {
   'Open story large': ['Agrandir l’article', 'Ampliar la noticia', 'تكبير الخبر'], 'Read the article ↗': ['Lire l’article ↗', 'Leer el artículo ↗', 'اقرأ المقال ↗'],
   'All top stories': ['Tous les grands titres', 'Todas las noticias principales', 'كل الأخبار الرئيسية'],
   'Close': ['Fermer', 'Cerrar', 'إغلاق'], 'Light or dark mode': ['Mode clair ou sombre', 'Modo claro u oscuro', 'الوضع الفاتح أو الداكن'],
+  'Hide the headline': ['Masquer le titre', 'Ocultar el titular', 'إخفاء العنوان'], 'Show the headline': ['Afficher le titre', 'Mostrar el titular', 'إظهار العنوان'],
   'Reset zoom': ['Réinitialiser le zoom', 'Restablecer zoom', 'إعادة ضبط التكبير'], 'Reset zoom: whole globe, normal page size': ['Réinitialiser le zoom : globe entier, taille normale', 'Restablecer zoom: globo completo, tamaño normal', 'إعادة ضبط التكبير: الكرة كاملة والحجم العادي'], 'TOP STORY': ['À LA UNE', 'PORTADA', 'أبرز خبر'], 'World': ['Monde', 'Mundo', 'العالم'],
   'Previous story': ['Sujet précédent', 'Noticia anterior', 'الخبر السابق'], '▶ VIDEO': ['▶ VIDÉO', '▶ VÍDEO', '▶ فيديو'],
   'LIVE TV': ['TV EN DIRECT', 'TV EN VIVO', 'بث مباشر'], 'Live TV': ['TV en direct', 'TV en vivo', 'بث مباشر'], 'Hide video': ['Masquer la vidéo', 'Ocultar vídeo', 'إخفاء الفيديو'],
@@ -3486,11 +3499,38 @@ function showTicker(){
   if (!list.length){ tk.hidden = true; return; }
   tk.hidden = false;
   const it = list[tkIdx % list.length];
-  el.innerHTML = `${it.c && it.c.length ? `<b>${esc(it.c.map(c => ENT[c].name).join(' – '))}</b>` : ''}<span dir="auto">${esc(it.t)}</span><small>${esc(ago(it.d))}</small>`;
+  el.innerHTML = `<span class="tk-run">${it.c && it.c.length ? `<b>${esc(it.c.map(c => ENT[c].name).join(' – '))}</b>` : ''}<span dir="auto">${esc(it.t)}</span><small>${esc(ago(it.d))}</small></span>`;
   el.title = it.t; el.dataset.i = FEED.indexOf(it);
-  el.dir = /[֐-ࣿ]/.test(it.t) ? 'rtl' : 'ltr';   // cut off at the end of the headline, whatever the page direction
+  const rtl = /[֐-ࣿ]/.test(it.t);
+  el.dir = rtl ? 'rtl' : 'ltr';   // starts at the beginning of the headline, whatever the page direction
+  // too long for the bar: scroll it through (about 45 px a second), and show the next headline only after that
+  const run = el.querySelector('.tk-run'), over = run.scrollWidth - (el.clientWidth - 24);
+  let hold = 7000;
+  if (over > 4 && !tk.classList.contains('folded')){
+    const dur = over / 45;
+    run.style.setProperty('--tk-dx', (rtl ? over : -over) + 'px'); run.style.setProperty('--tk-dur', dur + 's');
+    run.classList.add('go');
+    hold = Math.max(7000, (1.6 + dur + 2) * 1000);
+  }
+  clearTimeout(tkTimer); tkTimer = setTimeout(tkNext, hold);
 }
-setInterval(() => { const el = document.getElementById('tk-item'); if (!FEED.length || document.hidden) return; el.classList.add('fade'); setTimeout(() => { tkIdx++; showTicker(); el.classList.remove('fade'); }, 320); }, 7000);
+var tkTimer = null;
+function tkNext(){
+  const el = document.getElementById('tk-item'), tk = document.getElementById('ticker');
+  // hidden page, folded bar or the mouse on it: wait (a scrolling headline is paused while hovered)
+  if (!FEED.length || document.hidden || tk.matches(':hover') || tk.classList.contains('folded')){ clearTimeout(tkTimer); tkTimer = setTimeout(tkNext, 1500); return; }
+  el.classList.add('fade'); setTimeout(() => { tkIdx++; showTicker(); el.classList.remove('fade'); }, 320);
+}
+// ‹ folds the bar to the left (just the LIVE tab stays), › opens it again; remembered
+function tkFold(on){
+  const tk = document.getElementById('ticker'), b = document.getElementById('tk-fold');
+  tk.classList.toggle('folded', on); b.textContent = on ? '›' : '‹';
+  b.title = b.ariaLabel = on ? 'Show the headline' : 'Hide the headline';
+  try { localStorage.setItem('fl-tk-fold', on ? '1' : '0'); } catch(e){}
+  if (!on && FEED.length) showTicker();   // restart the headline (and its scrolling) when opened
+}
+document.getElementById('tk-fold').onclick = () => tkFold(!document.getElementById('ticker').classList.contains('folded'));
+try { if (localStorage.getItem('fl-tk-fold') === '1') tkFold(true); } catch(e){}
 document.getElementById('tk-open').onclick = () => panelMode === 'feed' ? renderIntro() : renderFeed();
 document.getElementById('live-btn').onclick = () => panelMode === 'feed' ? renderIntro() : renderFeed();
 document.getElementById('tk-item').onclick = e => { const it = FEED[+e.currentTarget.dataset.i]; if (!it) return renderFeed(); if (it.c && it.c.length >= 2) startCompare(it.c); else if (it.c && it.c.length) selectCountry(it.c[0]); else renderFeed(); };
