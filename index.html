@@ -1452,7 +1452,7 @@ const justClickedMarker = () => Date.now() - markerClickAt < 500;
 function makeMarker(p){
   const el = document.createElement('button');
   el.type='button'; el.className='poi poi-'+p.t; el.setAttribute('aria-label', p.n);
-  el.innerHTML = `<i></i><span>${p.n}</span>`;
+  el.innerHTML = `<i></i><span>${esc(p.n)}</span>`;
   el.addEventListener('click', e=>{ e.stopPropagation(); markerClickAt = Date.now(); pickPoi(p); });
   // keep the press from also reaching the globe underneath (it would count as a click on the ocean or a country)
   ['pointerdown', 'pointerup', 'mousedown', 'mouseup', 'touchstart', 'touchend'].forEach(t => el.addEventListener(t, e => { e.stopPropagation(); markerClickAt = Date.now(); }));
@@ -2487,7 +2487,7 @@ function applyLive(){
     const c = {};
     ['n','s','d','updated'].forEach(k=>{ if (d[k]!=null) c[k]=String(d[k]); });
     if (POI_TYPES[d.t]) c.t = d.t;
-    if (Number.isFinite(+d.lat) && Number.isFinite(+d.lng) && d.lat!=null && d.lng!=null){ c.lat=+d.lat; c.lng=+d.lng; }
+    if (Number.isFinite(+d.lat) && Number.isFinite(+d.lng) && d.lat!=null && d.lng!=null && Math.abs(+d.lat) <= 90 && Math.abs(+d.lng) <= 180){ c.lat=+d.lat; c.lng=+d.lng; }
     if (Array.isArray(d.p)) c.p = d.p.filter(x=>ENT[x]);
     if (ex) Object.assign(ex,c); else if (c.t && c.lat!=null && c.p) POIS.push({s:'',d:'',...c});
   });
