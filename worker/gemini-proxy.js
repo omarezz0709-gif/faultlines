@@ -519,11 +519,25 @@ async function topVideos(lang, q, en, ctx){
   return new Response(body, { status: 200, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "miss" }) });
 }
 
+// the site's addresses: GitHub Pages and Cloudflare Pages (faultlines*.pages.dev, including preview builds)
+const ALLOWED_ORIGINS = [/^https:\/\/omarezz0709-gif\.github\.io$/, /^https:\/\/([a-z0-9-]+\.)?faultlines(-[a-z0-9]+)?\.pages\.dev$/];
+const allowedOrigin = o => ALLOWED_ORIGINS.some(re => re.test(o || ""));
+
 export default {
   async fetch(request, env, ctx) {
     const origin = request.headers.get("Origin") || "";
+    const res = await handle(request, env, ctx, origin);
+    if (!allowedOrigin(origin)) return res;
+    // answer with the caller's own address, so both site addresses work
+    const out = new Response(res.body, res);
+    out.headers.set("Access-Control-Allow-Origin", origin);
+    return out;
+  },
+};
+
+async function handle(request, env, ctx, origin) {
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: cors() });
-    if (origin !== ALLOWED_ORIGIN) return deny(403, "This AI proxy only serves the Faultlines site.");
+    if (!allowedOrigin(origin)) return deny(403, "This AI proxy only serves the Faultlines site.");
 
     const url = new URL(request.url);
     const path = url.pathname.replace(/^\/+/, "");
@@ -626,5 +640,4 @@ export default {
       }
     })());
     return new Response(toClient, { status: 200, headers: cors({ "Content-Type": type, "Cache-Control": "no-store", "X-Faultlines-Cache": "miss" }) });
-  },
-};
+}
