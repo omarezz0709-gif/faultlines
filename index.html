@@ -1247,9 +1247,10 @@ const GLOBE_THEME = {
   dark:  {land: 'rgba(56,56,56,0.96)', dim: 'rgba(34,34,34,0.92)', hover: 'rgba(92,92,92,0.97)', gold: '#d4af37', sea: '#0b0b0b', glow: '#050505',
           side: 'rgba(12,12,12,0.85)', micro: '#bdbdbd', river: 'rgba(8,8,8,0.9)', grat: 'rgba(212,175,55,0.15)', gratMain: 'rgba(212,175,55,0.42)',
           stroke: 'rgba(212,175,55,0.42)', strokeHi: 'rgba(240,214,120,1)', atmo: '#b8952c', ata: 'rgba(70,70,70,0.5)'},
-  light: {land: 'rgba(250,246,236,0.98)', dim: 'rgba(231,225,211,0.96)', hover: 'rgba(255,253,246,1)', gold: '#9a7a1f', sea: '#b9c2c8', glow: '#5d666c',
-          side: 'rgba(196,188,170,0.9)', micro: '#6f6a60', river: 'rgba(118,138,152,0.95)', grat: 'rgba(122,95,18,0.16)', gratMain: 'rgba(122,95,18,0.42)',
-          stroke: 'rgba(122,95,18,0.5)', strokeHi: 'rgba(122,95,18,1)', atmo: '#d9c58c', ata: 'rgba(245,245,242,0.9)'},
+  // light mode: a darker globe (deep navy sea, parchment land) with navy blue outlines
+  light: {land: 'rgba(222,212,190,0.98)', dim: 'rgba(196,186,164,0.96)', hover: 'rgba(238,230,210,1)', gold: '#9a7a1f', sea: '#1d2b40', glow: '#0e1624',
+          side: 'rgba(40,58,86,0.9)', micro: '#1f3a63', river: 'rgba(29,43,64,0.95)', grat: 'rgba(31,58,99,0.22)', gratMain: 'rgba(31,58,99,0.55)',
+          stroke: 'rgba(24,48,86,0.85)', strokeHi: 'rgba(12,34,72,1)', atmo: '#3a5a8c', ata: 'rgba(226,228,232,0.9)'},
 };
 let GT = GLOBE_THEME[document.documentElement.dataset.theme === 'light' ? 'light' : 'dark'];
 let LAND = GT.land, LAND_DIM = GT.dim, LAND_HOVER = GT.hover, GOLD = GT.gold;
