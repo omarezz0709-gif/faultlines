@@ -244,11 +244,14 @@ async function answerAuto(request, env, ctx, ip, kind) {
         if (search && !r.ok && [400, 403, 429].includes(r.status)) {
           const why = (await r.text().catch(() => "")).replace(/\s+/g, " ").slice(0, 160);
           searchNote = lastSearchRefusal = `refused ${r.status} on ${model}: ${why}`.replace(/[^\x20-\x7e]/g, "");
-          skip(`search:k${ki}`, 30 * 60_000);   // search refused (limit reached or not offered): answer without it
           search = false;
           r = await fetch(`${GOOGLE}/models/${model}:streamGenerateContent?alt=sse`, {
             method: "POST", headers: { "x-goog-api-key": key, "Content-Type": "application/json" }, body: JSON.stringify(b),
           });
+          // only if the model works WITHOUT search was it the search that was refused (then pause search on this key);
+          // if it fails either way, the model itself is used up and the next model still tries with search
+          if (r.ok) skip(`search:k${ki}`, 30 * 60_000);
+          else searchNote = "on";
         }
       } catch { continue; }
       if (r.ok && r.body) {
