@@ -3067,6 +3067,25 @@ function berlinMidnightBefore(ts){
   return w === 0 ? g : w > 12 * 3600e3 ? g + (24 * 3600e3 - w) : g - w;
 }
 const berlinDayOf = ts => new Intl.DateTimeFormat('en-CA', {timeZone: 'Europe/Berlin', year: 'numeric', month: '2-digit', day: '2-digit'}).format(new Date(ts));
+/* SYSTEM CHECK: the report of the daily diagnostics (GitHub Actions, 12:30 and 18:30 Berlin; data/health.json) */
+async function loadHealth(){
+  const box = document.getElementById('health-box'); if (!box) return;
+  let h = null;
+  try { const r = await fetch('data/health.json?t=' + Date.now(), {cache: 'no-store'}); if (r.ok) h = await r.json(); } catch(e){}
+  const run = 'https://github.com/omarezz0709-gif/faultlines/actions/workflows/diagnose.yml';
+  if (!document.body.contains(box)) return;
+  if (!h){ box.innerHTML = `<h3>System check</h3><p class="note muted">No report yet. The check runs every day at 12:30 and 18:30 Berlin time, or <a href="${run}" target="_blank" rel="noopener">run it now on GitHub</a> (Run workflow).</p>`; return; }
+  const icon = {ok: '✓', warn: '!', fail: '✗'}, col = {ok: 'var(--s-F)', warn: 'var(--s-T)', fail: 'var(--s-H)'};
+  const bad = (h.checks || []).filter(c => c.status !== 'ok').sort((a, b) => (a.status === 'fail' ? 0 : 1) - (b.status === 'fail' ? 0 : 1));
+  const line = c => `<li><b style="color:${col[c.status]}">${icon[c.status]}</b> ${esc(c.name)}${c.detail ? ` <span class="faint">${esc(c.detail)}</span>` : ''}</li>`;
+  const headline = h.status === 'ok' ? 'All good' : h.status === 'warn' ? `${bad.length} warning${bad.length > 1 ? 's' : ''}` : `${bad.filter(c => c.status === 'fail').length} problem(s)`;
+  box.innerHTML = `<h3>System check <em>${esc(h.berlin || h.generated)} Berlin · ${(h.checks || []).length} checks</em></h3>
+    <p class="note"><b style="color:${col[h.status]}">${icon[h.status]} ${esc(headline)}</b>${h.status === 'ok' ? ' — site, data, AI, news sources and a full browser test all passed.' : ''}</p>
+    ${bad.length ? `<ul class="intro-list">${bad.map(line).join('')}</ul>` : ''}
+    ${(h.repairs || []).length ? `<p class="note">🔧 Repaired automatically: ${esc(h.repairs.join('; '))}</p>` : ''}
+    <details><summary class="faint" style="cursor:pointer">All ${(h.checks || []).length} checks</summary><ul class="intro-list">${(h.checks || []).map(line).join('')}</ul></details>
+    <p class="hidden-note">Runs every day at 12:30 and 18:30 Berlin time; problems also come by email from GitHub. <a href="${run}" target="_blank" rel="noopener">Run a check now</a> (Run workflow).</p>`;
+}
 function renderAdmin(data){
   // data.viewDay set = an archived day (from the nightly backup); otherwise today since 00:00 Berlin
   const now = Date.now(), vd = data.viewDay || null, since = berlinMidnightBefore(now);
@@ -3078,11 +3097,13 @@ function renderAdmin(data){
   const ai1 = ai(d1), ai7 = ai1;
   const mem = ai7.filter(x => x.c).length, errs1 = ai1.filter(x => x.s >= 400);
   const place = x => [x.ci, regionName(x.co)].filter(Boolean).join(', ') || 'Unknown';
-  const kindName = k => ({pair: 'Explain relationship', country: 'Explain country', poi: 'Explain location', group: 'Analyse comparison', ask: 'Question box', visit: 'Page visit'})[k] || (k.startsWith('facts-') ? 'Fill in ' + k.slice(6) : k);
+  const kindName = k => ({pair: 'Explain relationship', country: 'Explain country', poi: 'Explain location', group: 'Analyse comparison', ask: 'Question box', visit: 'Page visit',
+    diag: 'Daily diagnostics', private: 'Private chat', unlock: 'Backup code', admin: 'Admin login (wrong code)'})[k] || (k.startsWith('facts-') ? 'Fill in ' + k.slice(6) : k);
   const status = x => x.s >= 400 ? `<span class="st err">${x.s === 429 ? 'limit 429' : x.s === 503 ? 'busy 503' : 'error ' + x.s}</span>` : x.c ? '<span class="st mem">memory</span>' : '<span class="st ok">OK</span>';
   panel.innerHTML = head('Admin', vd ? 'Archive · ' + vd : 'Usage & logs') + `<div class="p-body">
     ${data.note ? `<p class="note" style="color:var(--s-T)">${esc(data.note)}</p>` : ''}
-    ${vd ? `<p class="note"><button class="tag" id="admin-today">← Back to today</button> <span class="faint">Archived day, saved by the nightly backup.</span></p>` : ''}
+    ${vd ? `<p class="note"><button class="tag" id="admin-today">← Back to today</button> <span class="faint">Archived day, saved by the nightly backup.</span></p>`
+      : '<section id="health-box"><h3>System check <em>loading…</em></h3></section>'}
     <div class="tiles">
       <div class="tile"><b>${d1.filter(x => x.k === 'visit').length}</b><span>visits ${dw}</span></div>
       <div class="tile"><b>${new Set(d1.map(x => x.v)).size}</b><span>different visitors ${dw}</span></div>
@@ -3111,6 +3132,7 @@ function renderAdmin(data){
   wirePanel(); panelMode = 'admin'; adminBtn.setAttribute('aria-pressed', 'true');
   showAdminMap(logs);
   document.getElementById('admin-refresh').onclick = () => openAdmin(adminCode());
+  loadHealth();
   const botBtn = document.getElementById('admin-bots'); if (botBtn) botBtn.onclick = () => { showBots = !showBots; renderAdmin(data); };
   // archive: open a saved day; "back to today" returns to the live log
   panel.querySelectorAll('[data-day]').forEach(b => b.onclick = async () => {
