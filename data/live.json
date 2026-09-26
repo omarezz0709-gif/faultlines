@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-09-26T10:16:29Z",
+  "lastRun": "2026-09-26T16:04:31Z",
   "log": [
    {
     "date": "2026-09-26",
@@ -39,6 +39,31 @@
       "label": "South Sudan",
       "change": "Recorded scheduled general election for December 2026",
       "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOX2g4SERrV05YLVFFdFEteWlBb2VrdlZ4ZWVBbzBqa2hpa2FDemdUSnVpZ01aUGlYWmgzM3RId2hKRWZIb0RkN1ZrR191bTZ0bXB0SG1jbVRKM1FrYTYyUkZOakJHTWwzeHFYLS0tSTBFOUw0UHFxV3Q2ZURKVnpSSW5HNTFIWkZyTEFWLThQQS1BLU1HVy1FV0xpLVBiMUJ1MWt5VXRhTHV1aEN4RnV6TkZxVQ?oc=5"
+     },
+     {
+      "label": "United States–China",
+      "change": "Tense: Trump-Xi summit yields tariff cuts and AI safety channel",
+      "source": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNSTl6VHRQNEFzdFYtMVFpejQzc0MzYlUwbUpVODBScGNpT1VYTnVPd2V5QkpYTnVzYUZNaW5Jckdhb1ozSzdPTXlNSzctOFYyVmw2Szg2UXlnakdTaTdHQzZyRUZmWUdGR1ZHMFh2WU9ZOW1yT3lDMGQzZDE2N1dncktQaVVPQkg2UVVFLVhwSThzYVMxbm04MjVaOUgtSzZDREl1RzdLYXlOU0tmM1F1YlB5dnRIUHFOMjBMMG5JaGFYVDdMSUpPUmtpOENadw?oc=5"
+     },
+     {
+      "label": "Belize–Guatemala",
+      "change": "Normal → Tense: Belize accuses Guatemala of military airspace violations",
+      "source": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPMkNRSDF4ZmtNaEZWbmxmZm1XNUhxZWh6QVJON1Vyak1kUU1aeWt6OVo1VjVlMFk3ZHNYSWU0MUFaakw0QzlHLWROTEx3NXBvd2RuYUFIQzhWTVlZWVNaalg1S3QtNlZDaGlXclVldHdrbHNMTE4taEJWcnJkV2ZVbENWcWlaLXlyd3pKdGprVkdPaUVOQ01RT2c2QmlhNmRoMVFTcXdFVkxMMDNXcDR3NUprdXVXSjMtV2FvWTNoTVlEM3FjQk1PbjlpdGU3T25nTTFOMnFtc1lqbVFnNHpOZjNLaW9CTWdxMHQ5RGhadw?oc=5"
+     },
+     {
+      "label": "Germany–Hungary",
+      "change": "Normal → Partner: Revived defense ties and Leopard tank cooperation",
+      "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQW81UHNNR1RBeXNBTUR2d0NwRldyVHQ1U1otcXh6YzNhenJiNk4wTUpQUTVabGZ4RVV6Ql9UUVhKTHpib3k5Ry1VOVlweHJqOE15TjZqV2ktS2tGWUZza2QzSGs2MThBbDA0RUs0dk5mdFhkQW1pMGxuUFpWSWtQMw?oc=5"
+     },
+     {
+      "label": "Hungary–Ukraine",
+      "change": "Tense → Normal: Hungary expresses openness to joining Carpathian Eight alliance",
+      "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdEtFcXBtVHJleXJKNjhUQ1Q2ZmtxRHIzTkFjeGhKMnhoY0JkV3JldGQwa2tJeTJ3YVpHWXdMbmN5QmNFRnJpMHdwa0ZJcml4WU9CN2RqdDBjLTd0Mm43THM1NGdOaV9wWUUtX0tiUTd1VTBjbUQzbnNDMFBtZUVBcmI3ZExLRFRjcUJ2NjFwcVFhUy1kUXUwVjBZNFlNVmJsQlZGWjU1eTFhZi1PbktEZFlTSTI?oc=5"
+     },
+     {
+      "label": "United States–Zimbabwe",
+      "change": "Normal → Tense: US health funding ends over data-sharing dispute",
+      "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNSlEtUmR0dUxYeGRTRVlwUUdKVXdsbU55bFFSLWtLUkc0S0MySWp5dHRIT3dpeXc3bFh1V3hKRDA3bnlSZTVJTlRnWFdRa2JORS1NRGQ1RV8xR0lUTUNKUV9BSW5oV2dZUXg3eVJSZlcydmpreURjQ0RVTF9abloxeVV4OVEwTkQ1ZFB6bmVNek9jdkdNUmRibFMzbU5WQ1oxS2ZDNzNpUEd4VzByNnN3OENvZXM4aWhxdTNTaXVNc0k1dWVpMHREV1RLWUViblJsaW52aE1B?oc=5"
      }
     ]
    },
@@ -191,7 +216,7 @@
     ]
    }
   ],
-  "summary": "France deploys troops to Saudi Arabia's Yanbu port amid escalating Houthi attacks, Morocco concludes parliamentary elections, and South Sudan prepares for December polls."
+  "summary": "This update captures major diplomatic shifts from the UN General Assembly, including the US-China summit agreements, Colombia cutting ties with Iran, and regional defense pacts in response to Houthi attacks."
  },
  "relations": {
   "DNK-USA": {
@@ -305,6 +330,46 @@
    "note": "Central European neighbours navigate regional energy and transit policies following Hungary's leadership transition to Péter Magyar.",
    "updated": "2026-09-26",
    "source": "https://www.wikidata.org/wiki/Q28"
+  },
+  "CHN-USA": {
+   "a": "CHN",
+   "b": "USA",
+   "s": "T",
+   "note": "Following the Trump-Xi summit, both nations agree to a $30 billion tariff cut and establish an AI safety dialogue channel.",
+   "updated": "2026-09-26",
+   "source": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNSTl6VHRQNEFzdFYtMVFpejQzc0MzYlUwbUpVODBScGNpT1VYTnVPd2V5QkpYTnVzYUZNaW5Jckdhb1ozSzdPTXlNSzctOFYyVmw2Szg2UXlnakdTaTdHQzZyRUZmWUdGR1ZHMFh2WU9ZOW1yT3lDMGQzZDE2N1dncktQaVVPQkg2UVVFLVhwSThzYVMxbm04MjVaOUgtSzZDREl1RzdLYXlOU0tmM1F1YlB5dnRIUHFOMjBMMG5JaGFYVDdMSUpPUmtpOENadw?oc=5"
+  },
+  "BLZ-GTM": {
+   "a": "BLZ",
+   "b": "GTM",
+   "s": "T",
+   "note": "Tensions rise as Belize accuses Guatemala of violating its airspace with military aircraft and seeks international monitoring.",
+   "updated": "2026-09-26",
+   "source": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPMkNRSDF4ZmtNaEZWbmxmZm1XNUhxZWh6QVJON1Vyak1kUU1aeWt6OVo1VjVlMFk3ZHNYSWU0MUFaakw0QzlHLWROTEx3NXBvd2RuYUFIQzhWTVlZWVNaalg1S3QtNlZDaGlXclVldHdrbHNMTE4taEJWcnJkV2ZVbENWcWlaLXlyd3pKdGprVkdPaUVOQ01RT2c2QmlhNmRoMVFTcXdFVkxMMDNXcDR3NUprdXVXSjMtV2FvWTNoTVlEM3FjQk1PbjlpdGU3T25nTTFOMnFtc1lqbVFnNHpOZjNLaW9CTWdxMHQ5RGhadw?oc=5"
+  },
+  "DEU-HUN": {
+   "a": "DEU",
+   "b": "HUN",
+   "s": "F",
+   "note": "Germany and Hungary revive bilateral defense ties, agreeing to joint military exercises and Leopard tank cooperation.",
+   "updated": "2026-09-26",
+   "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQW81UHNNR1RBeXNBTUR2d0NwRldyVHQ1U1otcXh6YzNhenJiNk4wTUpQUTVabGZ4RVV6Ql9UUVhKTHpib3k5Ry1VOVlweHJqOE15TjZqV2ktS2tGWUZza2QzSGs2MThBbDA0RUs0dk5mdFhkQW1pMGxuUFpWSWtQMw?oc=5"
+  },
+  "HUN-UKR": {
+   "a": "HUN",
+   "b": "UKR",
+   "s": "N",
+   "note": "Relations show signs of warming as Hungary, under PM Péter Magyar, expresses openness to joining the Ukraine-led Carpathian Eight alliance.",
+   "updated": "2026-09-26",
+   "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdEtFcXBtVHJleXJKNjhUQ1Q2ZmtxRHIzTkFjeGhKMnhoY0JkV3JldGQwa2tJeTJ3YVpHWXdMbmN5QmNFRnJpMHdwa0ZJcml4WU9CN2RqdDBjLTd0Mm43THM1NGdOaV9wWUUtX0tiUTd1VTBjbUQzbnNDMFBtZUVBcmI3ZExLRFRjcUJ2NjFwcVFhUy1kUXUwVjBZNFlNVmJsQlZGWjU1eTFhZi1PbktEZFlTSTI?oc=5"
+  },
+  "USA-ZWE": {
+   "a": "USA",
+   "b": "ZWE",
+   "s": "T",
+   "note": "Relations deteriorate as US-funded health programs in Zimbabwe end following a dispute over a data-sharing clause.",
+   "updated": "2026-09-26",
+   "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNSlEtUmR0dUxYeGRTRVlwUUdKVXdsbU55bFFSLWtLUkc0S0MySWp5dHRIT3dpeXc3bFh1V3hKRDA3bnlSZTVJTlRnWFdRa2JORS1NRGQ1RV8xR0lUTUNKUV9BSW5oV2dZUXg3eVJSZlcydmpreURjQ0RVTF9abloxeVV4OVEwTkQ1ZFB6bmVNek9jdkdNUmRibFMzbU5WQ1oxS2ZDNzNpUEd4VzByNnN3OENvZXM4aWhxdTNTaXVNc0k1dWVpMHREV1RLWUViblJsaW52aE1B?oc=5"
   }
  },
  "threads": {
@@ -319,11 +384,13 @@
     "ISR",
     "USA",
     "GBR",
-    "FRA"
+    "FRA",
+    "TUR",
+    "PAK"
    ],
-   "d": "Iran equips Houthis targeting Red Sea shipping and Saudi oil terminals like Yanbu; attacks disrupt Suez traffic while French, American, and British forces defend shipping lanes.",
+   "d": "Iran equips Houthis targeting Red Sea shipping and Saudi sites; attacks prompt a joint defense pledge by Saudi Arabia, Turkey, and Pakistan under the Makkah Alliance.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOc1hqLXVaZ1RWdmRrUFNMQ3o2anNfZHo4R3VUSXJJVEV1T0k5eU9ZdDBrejdXcjlvOWhWWV9vX0czUV8yUjZETTZwWWtsTHVEZXJxZ01iYVhMQVQ2d3ZkT2dLYURRQVdMaFpfS3JJSUt5ckszNFBNSjU5Y0U0VEE2RHM5WGJpdUJER3I0RlMxaE5wQQ?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQ0xTUXZkREJ2aUV6a2E4ajhManVjVjE5WGt4eDhneWhhMmktWWlvOVprMkZocEE5andfamlMVFpsNG91MWd5QkpRSnU5Rk1pdk5XN1oxZlJqamNqTFJYWktfM3dKaWhlSVNvYklfazRkODJUNU5PeF93VzNPcHNQUlBwMzQ4VUpCelY0UDgyelNqcm1Yak9aTFRWQlJ3MXFnSzlBZVM1cXZmdkdNWDVLMkV4LXBXZExoelZCSVkycw?oc=5",
    "t": "security",
    "updated": "2026-09-26"
   }
@@ -351,11 +418,11 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "The only sea exit from the Persian Gulf. Commercial vessels face missile attacks amid the conflict, including a fatal strike off Oman in September 2026.",
+   "d": "The only sea exit from the Persian Gulf. President Trump rejected an Iranian proposal to reopen the strait, while France drafts a UN resolution to restore navigation.",
    "n": "Strait of Hormuz",
-   "s": "US blockade of Iran · fatal MV Cape Dao strike Sept 2026",
-   "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMFRjejVIbUVST0RZaDVOY201TmlvREJ4bjl4dnhsaXpjQ1lndFpPWTlkOUFodkZNRDFuZ0RJSlNVNXdVa0FZYTRZMDFnZ1JUbmkwUkUzX3hTSTBnd3NQajBRR3NqNW4yYVJnZzNYQnBjVDNsdkxmWk5EdUVPbjdhM0VueFNHREFFRnhhMw?oc=5",
-   "updated": "2026-09-23",
+   "s": "US blockade continues · Trump rejects reopening proposal",
+   "source": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNa1Rja0Y2Z0RxMU12MzE5M2d5UUhPRnZYYWdhQVJ3YTdtdjBIZ1c0eXV1WjQzSVZJNnk2UGlpR2dQV2RtUHZqR2tzRjVwaTNSbXJRV1RWUEdEN2hBY1p0VXBxVzJnZFUxVV92N0gyTmhqYkg2Szc3THE3UTByRWUyN09fT2M2WWRDanQ5VTV0aGJCWXFDeXZCSjNxMEY4LUQyY3ZBWHk1VHl0RjktMGh2V0VwTUZ4SGpqOFpELVNTQlFSRjh2b1Vtdg?oc=5",
+   "updated": "2026-09-26",
    "t": "strait",
    "lat": 26.57,
    "lng": 56.25,
@@ -468,9 +535,9 @@
    "updated": "2026-09-23"
   },
   "MAR": {
-   "lastelec": "parliamentary, Sep 2026, PAM (Authenticity and Modernity Party)",
+   "lastelec": "parliamentary, September 2026, Authenticity and Modernity Party (PAM) wins",
    "updated": "2026-09-26",
-   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNWnBhOFphOVZZcEh6OFdGb1BWRFp2NnRkelFYQ1Z3dTVDR05xTG9zUUtudzNXcWwtVjA5QUNyejZudkxsYjFKWEtscG5OOHVtdzBEMXYzUWVFX1plZ3ktamZqaFJ1eWc5bU1XZ1ROXzZpZnJNNWVlV1R3QWNKRld3WmIxcVRKUjZ4Y3I4ZUZUeWo5R3ktVmYwVVAybm1uemhwUUZreUtlZUlsX0hNaU9VUGZ3?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWmY4M2JENFhSVGl5ZV9VWElkUm1ZbWhXRmxyeEtzMDQzU0lCOVFMTkNKcloxZ1N0aEpTU1RkX0hUOG9Yelpwak94aDlzUldxS0VvU2JZV2NMajFCMk5UekI5OVcxNjVBTjhPTi1yM2QzRTVhQ3hXZFJHZ3RqdkI5Szd1N2pLQjhqaHMxeXdYajFRZmRMdXFxZG1TTDE?oc=5"
   },
   "BGR": {
    "nextelec": "presidential, 25 October 2026",
@@ -478,7 +545,7 @@
    "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWDh2YVFnb3VwZDNPdjB4NnZmT0t4X1Z3M085YTljU3pBXzVwcm9EN0R1NkNmWGxfOGp5WFZFaHZ1c0RyTzdNSktEVG8zRE9QZ1JEdm1Rd1FQRVpoWUh0M0VNdUhyc2tJeGNzMEx4RFJRRDZQcERIcnZlMlBIZ1JDZDF2Wm5CMWtqZUE2UnI1a0dfNGJfRE5KUWhVaTNKTVRIM1VqSEluTU9YREl1c3c?oc=5"
   },
   "SSD": {
-   "nextelec": "general, Dec 2026",
+   "nextelec": "presidential and parliamentary, December 2026",
    "updated": "2026-09-26",
    "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOX2g4SERrV05YLVFFdFEteWlBb2VrdlZ4ZWVBbzBqa2hpa2FDemdUSnVpZ01aUGlYWmgzM3RId2hKRWZIb0RkN1ZrR191bTZ0bXB0SG1jbVRKM1FrYTYyUkZOakJHTWwzeHFYLS0tSTBFOUw0UHFxV3Q2ZURKVnpSSW5HNTFIWkZyTEFWLThQQS1BLU1HVy1FV0xpLVBiMUJ1MWt5VXRhTHV1aEN4RnV6TkZxVQ?oc=5"
   }
