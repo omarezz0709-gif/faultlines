@@ -327,12 +327,14 @@ async function answerAuto(request, env, ctx, ip, kind) {
 /* ------------------------------------------------------------------ live feed (Google News RSS, free) */
 const NEWS_LANG = {
   en: "hl=en-US&gl=US&ceid=US:en", fr: "hl=fr&gl=FR&ceid=FR:fr", es: "hl=es&gl=ES&ceid=ES:es", ar: "hl=ar&gl=EG&ceid=EG:ar",
+  de: "hl=de&gl=DE&ceid=DE:de",
 };
 const NEWS_QUERIES = {
   en: ["war OR attack OR missile OR drone OR strike", "sanctions OR ceasefire OR coup OR talks OR summit"],
   fr: ["guerre OR attaque OR missile OR frappe", "sanctions OR cessez-le-feu OR coup OR sommet"],
   es: ["guerra OR ataque OR misil OR bombardeo", "sanciones OR alto el fuego OR golpe OR cumbre"],
   ar: ["حرب OR هجوم OR صاروخ OR غارة", "عقوبات OR وقف إطلاق النار OR انقلاب OR قمة"],
+  de: ["Krieg OR Angriff OR Rakete OR Drohne OR Luftangriff", "Sanktionen OR Waffenruhe OR Putsch OR Gespräche OR Gipfel"],
 };
 const unxml = s => s.replace(/<!\[CDATA\[|\]\]>/g, "").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">")
   .replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&#(\d+);/g, (_, n) => String.fromCharCode(+n)).trim();
@@ -363,6 +365,11 @@ const OUTLETS = {
   ar: [["BBC Arabic", "https://feeds.bbci.co.uk/arabic/rss.xml"], ["France 24", "https://www.france24.com/ar/rss"], ["DW", "https://rss.dw.com/rdf/rss-ar-all"],
        ["Sky News Arabia", "https://www.skynewsarabia.com/web/rss"], ["Al Jazeera", "https://www.aljazeera.net/aljazeerarss/a7c186be-1baa-4bd4-9d80-a84db769f779/73d0e1b4-532f-45ef-b135-bfdff8b8cab9"],
        ["Euronews", "https://arabic.euronews.com/rss"]],
+  de: [["tagesschau", "https://www.tagesschau.de/ausland/index~rss2.xml"], ["DW", "https://rss.dw.com/rdf/rss-de-all"],
+       ["Der Spiegel", "https://www.spiegel.de/ausland/index.rss"], ["Zeit", "https://newsfeed.zeit.de/politik/ausland/index"],
+       ["FAZ", "https://www.faz.net/rss/aktuell/politik/ausland/"], ["Süddeutsche", "https://rss.sueddeutsche.de/rss/Politik"],
+       ["ZDF", "https://www.zdf.de/rss/zdf/nachrichten"], ["NZZ", "https://www.nzz.ch/international.rss"],
+       ["Der Standard", "https://www.derstandard.at/rss/international"], ["Euronews", "https://de.euronews.com/rss"]],
 };
 const stripTags = s => unxml(s).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
 function parseFeed(xml, source){
@@ -414,8 +421,10 @@ const RT_STOP = new Set(("who what when where why how which whom whose is are wa
   + "from as about into over after before between its it this that these those will would could should can may might has have had not no than then there "
   + "their they them his her he she we you i me my our your current currently now today latest recent recently news tell explain happening going happen "
   + "think right qui que quoi quel quelle pourquoi comment est sont le la les un une des du de et ou en au aux avec pour sur dans ce cette quién qué "
-  + "cuál por cómo es son el los las unos unas del y o con para sobre este esta من ما ماذا لماذا كيف هل في على عن مع إلى هذا هذه").split(" "));
-const GDELT_LANG = { en: "english", fr: "french", es: "spanish", ar: "arabic" };
+  + "cuál por cómo es son el los las unos unas del y o con para sobre este esta من ما ماذا لماذا كيف هل في على عن مع إلى هذا هذه "
+  + "wer was wann wo warum wieso weshalb wie welche welcher welches ist sind war waren der die das den dem des ein eine einen und oder mit von zu im in "
+  + "auf für über nach bei aus gerade jetzt heute aktuell aktuelle neueste passiert gibt es sich nicht auch").split(" "));
+const GDELT_LANG = { en: "english", fr: "french", es: "spanish", ar: "arabic", de: "german" };
 function parseBing(xml){
   const out = [];
   for (const m of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)){
@@ -478,7 +487,8 @@ const TRUSTED = ["reuters", "associated press", "ap news", "afp", "agence france
   "the times", "the telegraph", "the independent", "euronews", "le monde", "le figaro", "libération", "el país", "el pais", "el mundo",
   "la vanguardia", "bbc mundo", "bbc arabic", "al arabiya", "العربية", "الجزيرة", "sky news arabia", "سكاي نيوز", "asharq al-awsat",
   "الشرق الأوسط", "cnn arabic", "nikkei", "south china morning post", "the hindu", "haaretz", "times of israel", "kyiv independent",
-  "the moscow times", "der spiegel", "spiegel", "zeit", "süddeutsche", "faz", "frankfurter allgemeine", "tagesschau", "orf", "swissinfo", "cbc", "abc.net.au", "cna", "channel newsasia", "guardian", "channel 4"];
+  "the moscow times", "der spiegel", "spiegel", "zeit", "süddeutsche", "faz", "frankfurter allgemeine", "tagesschau", "orf", "swissinfo", "cbc", "abc.net.au", "cna", "channel newsasia", "guardian", "channel 4",
+  "zdf", "nzz", "neue zürcher", "der standard", "handelsblatt", "welt", "n-tv", "ntv", "deutschlandfunk", "br24", "srf"];
 const trusted = s => { const l = (s || "").toLowerCase(); return TRUSTED.some(t => l === t || l.includes(t)); };
 // state-controlled propaganda outlets: never shown, never counted as a confirming source
 const STATE_MEDIA = /^(rt|rt news|rt\.com|russia today\b.*|sputnik\b.*|tass|tass\.com|ria novosti\b.*|ria\.ru|press ?tv\b.*|presstv\.ir|tasnim\b.*|fars news\b.*|farsnews\b.*|mehr news\b.*|irna\b.*|global ?times|globaltimes\.cn|cgtn\b.*|china daily\b.*|xinhua\b.*|people'?s daily\b.*|kcna|kcna\.kp|telesur\b.*|al mayadeen\b.*|sana|syrian arab news agency|belta\b.*|granma|pravda\b.*|izvestia|belarus\.by|azertac\b.*|سانا|وكالة سانا|روسيا اليوم|آر تي|سبوتنيك|برس تي في|تسنيم|وكالة تسنيم|فارس|وكالة فارس|مهر|الميادين|شينخوا|وكالة شينخوا|ارنا|إرنا)$/i;
@@ -486,11 +496,11 @@ const STATE_MEDIA = /^(rt|rt news|rt\.com|russia today\b.*|sputnik\b.*|tass|tass
 const AGGREGATOR = /(yahoo|msn|newsbreak|ground ?news|flipboard|head ?topics|newsnow|inkl|devdiscourse|latestly)/i;
 const MIN_SOURCES = 2;   // a story is only shown when at least two independent outlets report it
 const POLITICAL = [
-  [/\b(war|invasion|offensive|front ?line|missiles?|drones?|air ?strikes?|strikes?|shelling|troops|military|army|attacks?|killed|nuclear|guerre|frappes?|armée|militaire|guerra|ataques?|misil(es)?|ejército|militar)\b|حرب|هجوم|غارة|صاروخ|قصف|جيش|عسكري/i, 3],
-  [/\b(sanctions?|ceasefire|truce|peace talks?|talks|negotiations?|summit|treaty|deal|diplomat\w*|embassy|ambassador|foreign minister|un security council|nato|sanctions|cessez-le-feu|négociations?|sommet|accord|diplomat\w*|sanciones|alto el fuego|negociaciones|cumbre|acuerdo)\b|عقوبات|وقف إطلاق النار|مفاوضات|قمة|اتفاق|دبلوماسي/i, 2],
-  [/\b(president|prime minister|government|parliament|election|opposition|protests?|coup|minister|kremlin|white house|président|gouvernement|élection|manifestations?|presidente|gobierno|elecciones|protestas?|golpe)\b|رئيس|حكومة|انتخابات|احتجاج|برلمان|انقلاب/i, 1],
+  [/\b(war|invasion|offensive|front ?line|missiles?|drones?|air ?strikes?|strikes?|shelling|troops|military|army|attacks?|killed|nuclear|guerre|frappes?|armée|militaire|guerra|ataques?|misil(es)?|ejército|militar|krieg\w*|angriff\w*|raketen?\w*|drohnen?\w*|luftangriff\w*|truppen|armee|bundeswehr|militär\w*|getötet|atom\w*)\b|حرب|هجوم|غارة|صاروخ|قصف|جيش|عسكري/i, 3],
+  [/\b(sanctions?|ceasefire|truce|peace talks?|talks|negotiations?|summit|treaty|deal|diplomat\w*|embassy|ambassador|foreign minister|un security council|nato|sanctions|cessez-le-feu|négociations?|sommet|accord|diplomat\w*|sanciones|alto el fuego|negociaciones|cumbre|acuerdo|sanktion\w*|waffenruhe|waffenstillstand|verhandlung\w*|gespräche|gipfel\w*|abkommen|botschaft\w*|außenminister\w*|sicherheitsrat)\b|عقوبات|وقف إطلاق النار|مفاوضات|قمة|اتفاق|دبلوماسي/i, 2],
+  [/\b(president|prime minister|government|parliament|election|opposition|protests?|coup|minister|kremlin|white house|président|gouvernement|élection|manifestations?|presidente|gobierno|elecciones|protestas?|golpe|präsident\w*|regierung\w*|kanzler\w*|parlament\w*|wahl\w*|opposition|proteste?|putsch|minister\w*|kreml)\b|رئيس|حكومة|انتخابات|احتجاج|برلمان|انقلاب/i, 1],
 ];
-const SPORT = /\b(football|soccer|league|cup|match|tennis|nba|nfl|nhl|hockey|olympic|goal|coach|striker|forward|goalkeeper|player|players|season|transfer|box office|celebrity|actor|singer|concert|film|movie|recipe|weather|horoscope|lottery|fashion|bear|zoo|animal)\b|كرة|مباراة|دوري/i;
+const SPORT = /\b(football|soccer|league|cup|match|tennis|nba|nfl|nhl|hockey|olympic|goal|coach|striker|forward|goalkeeper|player|players|season|transfer|box office|celebrity|actor|singer|concert|film|movie|recipe|weather|horoscope|lottery|fashion|bear|zoo|animal|fußball|bundesliga|trainer|spieler|wetter|rezept|promi\w*|sänger\w*|schauspieler\w*|lotto)\b|كرة|مباراة|دوري/i;
 // other countries and blocs named in a story: the more foreign actors, the more "foreign policy" it is
 const ACTORS = /\b(united states|u\.s\.|us|america|washington|russia|moscow|kremlin|ukraine|kyiv|china|beijing|taiwan|iran|tehran|israel|gaza|palestin\w*|lebanon|hezbollah|syria|iraq|yemen|houthis?|saudi|emirates|uae|qatar|turkey|türkiye|egypt|libya|sudan|ethiopia|somalia|india|pakistan|afghanistan|north korea|south korea|japan|germany|france|britain|uk|poland|baltic|estonia|latvia|lithuania|finland|belarus|georgia|armenia|azerbaijan|venezuela|cuba|mexico|nato|european union|eu|united nations|un|g7|brics|sahel|mali|niger)\b|روسيا|أوكرانيا|الصين|إيران|إسرائيل|غزة|أمريكا|الولايات المتحدة|تركيا|السعودية|الناتو/gi;
 function relItems(descHtml){
@@ -511,7 +521,7 @@ function parseRssClusters(xml){
   }
   return out;
 }
-const STOP = new Set("the a an and or of to in on for with at by from as is are was were be been after over into says said amid new more than its his her their this that will would could about against between under what how why who latest live update updates news report reports les des une pour dans sur avec par est son ses qui que del los las por para con una sobre".split(" "));
+const STOP = new Set("the a an and or of to in on for with at by from as is are was were be been after over into says said amid new more than its his her their this that will would could about against between under what how why who latest live update updates news report reports les des une pour dans sur avec par est son ses qui que del los las por para con una sobre der die das und mit von für auf ist den dem des ein eine einen nach über bei wie zum zur sich nicht auch als oder wird werden hat haben".split(" "));
 const words = t => new Set(t.toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, " ").split(/\s+/).filter(w => w.length > 3 && !STOP.has(w)));
 // names in a headline (capitalised words after the first): outlets word the same story differently but name the same actors
 const names = t => new Set((t.match(/(?<!^)\b\p{Lu}[\p{L}'’-]{2,}/gu) || []).map(x => x.toLowerCase().replace(/[’']s$/, "")).filter(x => !STOP.has(x)));
@@ -606,9 +616,11 @@ const CHANNELS = {
   es: [["France 24 Español", "UCUdOoVWuWmgo1wByzcsyKDQ"], ["DW Español", "UCT4Jg8h03dD0iN3Pb5L0PMA"]],
   ar: [["Al Jazeera Arabic", "UCfiwzLy-8yKzIbsmZTzxDgw"], ["Sky News Arabia", "UCIJXOvggjKtCagMfxvcCzAA"], ["France 24 Arabic", "UCdTyuXgmJkG_O8_75eqej-w"],
        ["DW Arabic", "UC30ditU5JI16o5NbFsHde_Q"], ["BBC News Arabic", "UCelk6aHijZq-GJBBB9YpReA"], ["Al Arabiya", "UCahpxixMCwoANAftn6IxkTg"]],
+  de: [["tagesschau", "UC5NOEUbkLheQcaaRldYW5GA"], ["ZDFheute Nachrichten", "UCeqKIgPQfNInOswGRWt48kQ"], ["DW Deutsch", "UCMIgOXM2JEQ2Pv2d0_PVfcg"],
+       ["WELT Nachrichtensender", "UCZMsvbAhhRblVGXmEXW8TSA"], ["phoenix", "UCwyiPnNlT8UABRmGmU0T9jg"], ["ntv Nachrichten", "UCSeil5V81-mEGB1-VNR7YEA"]],
 };
 // 24/7 live news streams per language (the "LIVE TV" button)
-const LIVE_TV = { en: "UCNye-wNBqNL5ZzHSJj3l8Bg", fr: "UCCCPCZNChQdGa9EkATeye4g", es: "UCUdOoVWuWmgo1wByzcsyKDQ", ar: "UCfiwzLy-8yKzIbsmZTzxDgw" };
+const LIVE_TV = { en: "UCNye-wNBqNL5ZzHSJj3l8Bg", fr: "UCCCPCZNChQdGa9EkATeye4g", es: "UCUdOoVWuWmgo1wByzcsyKDQ", ar: "UCfiwzLy-8yKzIbsmZTzxDgw", de: "UCZMsvbAhhRblVGXmEXW8TSA" };
 function parseYouTube(xml, channel){
   const out = [];
   for (const m of xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)){
