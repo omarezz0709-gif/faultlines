@@ -3592,7 +3592,11 @@ function flagConvo(fly1){
 const srcsHTML = src => src && src.length ? `<p class="srcs"><b>Sources</b>${src.slice(0, 6).map(s => safeUrl(s.uri) ? `<a href="${esc(s.uri)}" target="_blank" rel="noopener" title="${esc(s.title)}">${esc(s.title || host(s.uri))}</a>` : '').join('')}</p>` : '';
 // real-time answers: the numbered reports ([1] Reuters · 2 h ago), and the answer's [n] markers become links to them
 const liveSrcsHTML = live => live && live.length ? `<p class="srcs live"><b>Latest reports</b>${live.map((it, i) => safeUrl(it.u) ? `<a href="${esc(it.u)}" target="_blank" rel="noopener" dir="auto">[${i + 1}] ${esc(it.t)}<small>${esc(it.s || host(it.u))}${it.d ? ' · ' + esc(ago(it.d)) : ''}${it.n > 1 ? ' · ✓ ' + it.n : ''}</small></a>` : '').join('')}</p>` : '';
-const cite = (html, live) => live && live.length ? html.replace(/\[(\d{1,2})\](?![^<]*<\/a>)/g, (m, n) => { const it = live[+n - 1]; return it && safeUrl(it.u) ? `<a class="cite" href="${esc(it.u)}" target="_blank" rel="noopener" title="${esc((it.s ? it.s + ': ' : '') + it.t)}">${n}</a>` : m; }) : html;
+// "[2]" or "[1, 7, 9]" → one small link per report
+const cite = (html, live) => live && live.length ? html.replace(/\[(\d{1,2}(?:\s*[,–-]\s*\d{1,2})*)\](?![^<]*<\/a>)/g, (m, list) => {
+  const links = list.split(/\s*,\s*/).map(n => { const it = live[+n - 1]; return it && safeUrl(it.u) ? `<a class="cite" href="${esc(it.u)}" target="_blank" rel="noopener" title="${esc((it.s ? it.s + ': ' : '') + it.t)}">${n}</a>` : null; });
+  return links.every(Boolean) ? links.join('') : m;
+}) : html;
 const answerHTML = t => cite(md(t.a), t.live) + liveSrcsHTML(t.live) + srcsHTML(t.src);
 function turnHTML(t, i){
   return `<div class="turn"><p class="q-asked" dir="auto">${esc(t.q)}${t.rt ? '<span class="rt-badge">⚡ Real-time</span>' : ''}</p>
