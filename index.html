@@ -156,6 +156,11 @@ button{font:inherit;color:inherit}
 .tour-btn{border:1px solid var(--line2);background:var(--raise);color:var(--text);border-radius:5px;padding:5px 11px;font:600 12.5px var(--body);cursor:pointer;white-space:nowrap}
 .tour-btn.go{background:var(--gold);border-color:var(--gold);color:var(--on-gold)}
 .tour-btn.skip{border:0;background:none;color:var(--muted);padding:5px 6px}
+.tour-langs{margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
+.tour-langs[hidden]{display:none}
+.tour-langs small{display:block;margin-bottom:6px;font:600 10.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
+.tour-langs div{display:flex;flex-wrap:wrap;gap:5px}
+.tour-langs .tour-btn{padding:4px 9px;font-weight:500}
 /* ⚡ real-time search mode: the bar glows red while it's on */
 .ask-rt{border:0;background:none;color:var(--muted);border-radius:4px;width:28px;height:28px;cursor:pointer;font-size:14px;filter:grayscale(1);opacity:.75}
 .ask-rt:hover{background:var(--raise);opacity:1}
@@ -3374,6 +3379,7 @@ const TR = {
     'Empieza por un país que te interese. Puedes repetir este recorrido cuando quieras desde el botón ?.',
     'ابدأ بدولة تهمّك. يمكنك إعادة هذه الجولة في أي وقت من زر ؟.',
     'Fang mit einem Land an, das dich interessiert. Die Tour kannst du jederzeit über den ?-Button wiederholen.'],
+  'Choose your language': ['Choisissez votre langue', 'Elige tu idioma', 'اختر لغتك', 'Wähle deine Sprache'],
   'Skip': ['Passer', 'Saltar', 'تخطَّ', 'Überspringen'], '‹ Back': ['‹ Retour', '‹ Atrás', '‹ رجوع', '‹ Zurück'], 'Next ›': ['Suivant ›', 'Siguiente ›', 'التالي ›', 'Weiter ›'],
   'Start the tour ›': ['Commencer la visite ›', 'Empezar el recorrido ›', 'ابدأ الجولة ›', 'Tour starten ›'], 'Let’s go': ['C’est parti', 'Vamos', 'لنبدأ', 'Los geht’s'],
   'Tour': ['Visite', 'Recorrido', 'جولة', 'Tour'], '↺ Replay the tour': ['↺ Revoir la visite', '↺ Repetir el recorrido', '↺ أعد الجولة', '↺ Tour wiederholen'],
@@ -4375,11 +4381,16 @@ function startTour(){
   const box = document.createElement('div');
   box.className = 'tour'; box.setAttribute('role', 'dialog'); box.setAttribute('aria-label', 'Tour');
   box.innerHTML = `<div class="tour-spot none"></div><div class="tour-card"><h4></h4><p></p>
+    <div class="tour-langs"><small>Choose your language</small><div>${[['en', 'English'], ['de', 'Deutsch'], ['fr', 'Français'], ['es', 'Español'], ['ar', 'العربية']]
+      .map(([l, n]) => `<button class="tour-btn" data-lang="${l}" lang="${l}">${n}</button>`).join('')}</div></div>
     <div class="tour-foot"><span class="tour-dots">${steps.map(() => '<i></i>').join('')}</span>
       <button class="tour-btn skip" data-t="skip">Skip</button><button class="tour-btn" data-t="back">‹ Back</button><button class="tour-btn go" data-t="next">Next ›</button></div></div>`;
   document.body.appendChild(box);
   tour = {i: 0, steps, box, phone: mob()};
-  box.addEventListener('click', e => { const b = e.target.closest('[data-t]'); if (!b) return; const a = b.dataset.t;
+  box.addEventListener('click', e => {
+    const l = e.target.closest('[data-lang]');
+    if (l){ setLang(l.dataset.lang); tourGo(tour.i); return; }   // the whole site switches; the tour carries on in that language
+    const b = e.target.closest('[data-t]'); if (!b) return; const a = b.dataset.t;
     if (a === 'skip') endTour(true); else if (a === 'back') tourGo(tour.i - 1, -1); else tourGo(tour.i + 1); });
   tourGo(0);
 }
@@ -4400,6 +4411,9 @@ function tourGo(i, dir = 1){
   card.querySelector('h4').textContent = st.t; card.querySelector('p').textContent = st.b;
   box.querySelectorAll('.tour-dots i').forEach((d, k) => d.classList.toggle('on', k === tour.i));
   box.querySelector('[data-t="back"]').hidden = tour.i === 0;
+  // the first card offers the languages (the chosen one highlighted)
+  box.querySelector('.tour-langs').hidden = tour.i !== 0;
+  box.querySelectorAll('[data-lang]').forEach(b => b.classList.toggle('go', b.dataset.lang === LANG));
   box.querySelector('[data-t="skip"]').hidden = !!st.last;
   box.querySelector('[data-t="next"]').textContent = st.last ? 'Let’s go' : tour.i === 0 ? 'Start the tour ›' : 'Next ›';
   if (LANG !== 'en') translateNode(card);
