@@ -154,8 +154,9 @@ async function listArchive(env){
 const exhausted = new Map();   // model -> time until which it is skipped
 const skip = (model, ms) => exhausted.set(model, Date.now() + ms);
 const usable = model => (exhausted.get(model) || 0) < Date.now();
-const GROQ_MODELS = ["openai/gpt-oss-120b", "llama-3.3-70b-versatile", "openai/gpt-oss-20b", "llama-3.1-8b-instant"];
-const CF_MODELS = ["@cf/meta/llama-3.3-70b-instruct-fp8-fast", "@cf/openai/gpt-oss-120b", "@cf/meta/llama-3.1-8b-instruct-fast"];
+// (the small 8B models were dropped: they invent facts, and a "busy, try again" is better than a wrong answer)
+const GROQ_MODELS = ["openai/gpt-oss-120b", "llama-3.3-70b-versatile", "openai/gpt-oss-20b"];
+const CF_MODELS = ["@cf/openai/gpt-oss-120b", "@cf/meta/llama-3.3-70b-instruct-fp8-fast"];
 
 async function geminiOrder(env, ctx) {
   const cache = caches.default;
@@ -204,7 +205,7 @@ async function answerAuto(request, env, ctx, ip, kind) {
 
   // 1. answered in the last 24 h: from memory
   const cache = caches.default;
-  const ck = new Request(`https://faultlines-cache/auto/${await sha256(JSON.stringify(body))}`);
+  const ck = new Request(`https://faultlines-cache/auto2/${await sha256(JSON.stringify(body))}`);   // auto2: answers since Google Search was added
   const cached = await cache.match(ck);
   if (cached) { log(200, "memory", true); return new Response(cached.body, { status: 200, headers: cors({ "Content-Type": "text/event-stream", "X-Faultlines-Cache": "hit" }) }); }
 
@@ -219,6 +220,9 @@ async function answerAuto(request, env, ctx, ip, kind) {
   //    has its own daily allowance, so each model is tried with each key
   const keys = [env.GEMINI_API_KEY, env.GEMINI_API_KEY_2, env.GEMINI_API_KEY_3, env.GEMINI_API_KEY_4, env.GEMINI_API_KEY_5].filter(Boolean);
   const order = keys.length ? await geminiOrder(env, ctx) : [];
+  // written answers (questions, explanations) may look things up on Google Search, so recent events come out right;
+  // the search has its own free daily allowance: when Google refuses it, the same model answers without it
+  const wantsSearch = !wantsJson;
   for (const [ki, key] of keys.entries()) {
     for (const model of order) {
       const slot = `k${ki}:${model}`;
@@ -228,14 +232,22 @@ async function answerAuto(request, env, ctx, ip, kind) {
         b.contents = [{ role: "user", parts: [{ text: plainPrompt(body) }] }];
         delete b.systemInstruction; delete b.generationConfig.responseMimeType;
       }
+      const search = wantsSearch && !model.startsWith("gemma") && usable(`search:k${ki}`);
       let r;
       try {
         r = await fetch(`${GOOGLE}/models/${model}:streamGenerateContent?alt=sse`, {
-          method: "POST", headers: { "x-goog-api-key": key, "Content-Type": "application/json" }, body: JSON.stringify(b),
+          method: "POST", headers: { "x-goog-api-key": key, "Content-Type": "application/json" },
+          body: JSON.stringify(search ? { ...b, tools: [{ google_search: {} }] } : b),
         });
+        if (search && !r.ok && [400, 403, 429].includes(r.status)) {
+          skip(`search:k${ki}`, 30 * 60_000);   // search refused (limit reached or not offered): answer without it
+          r = await fetch(`${GOOGLE}/models/${model}:streamGenerateContent?alt=sse`, {
+            method: "POST", headers: { "x-goog-api-key": key, "Content-Type": "application/json" }, body: JSON.stringify(b),
+          });
+        }
       } catch { continue; }
       if (r.ok && r.body) {
-        log(200, keys.length > 1 ? `${model} #${ki + 1}` : model);
+        log(200, (keys.length > 1 ? `${model} #${ki + 1}` : model) + (search ? " +search" : ""));
         const [toClient, toCache] = r.body.tee();
         ctx.waitUntil(new Response(toCache).text().then(t => { if (t.length > 20) remember(t); }));
         return new Response(toClient, { status: 200, headers: cors({ "Content-Type": "text/event-stream", "X-Faultlines-Cache": "miss", "X-Faultlines-Provider": model }) });

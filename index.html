@@ -39,7 +39,7 @@ html,body{height:100%}
 html{touch-action:manipulation}   /* phones: no accidental double-tap zoom (pinching still works) */
 body{margin:0;background:radial-gradient(120% 90% at 40% 45%,#1c1c1c 0%,var(--bg) 62%,#000 100%);background-color:var(--bg);color:var(--text);font:14px/1.5 var(--body);overflow:hidden}
 [data-theme="light"] body{background:radial-gradient(120% 90% at 40% 45%,#fdfbf5 0%,var(--bg) 62%,#ddd4c2 100%)}
-#globe{position:fixed;inset:0}
+#globe{position:fixed;inset:0;direction:ltr}   /* the globe's pins are placed from the left edge; in Arabic (right-to-left) they would all land off-screen */
 button{font:inherit;color:inherit}
 :focus-visible{outline:2px solid var(--sel);outline-offset:2px}
 
@@ -139,6 +139,22 @@ button{font:inherit;color:inherit}
 .ask-i{color:var(--gold);font-size:13px}
 .ask input{flex:1;min-width:0;background:none;border:0;color:var(--text);font:14px var(--body);padding:6px 0;outline:none}
 .ask-go{border:0;background:var(--gold);color:var(--on-gold);border-radius:4px;width:30px;height:28px;cursor:pointer;font-weight:700}
+.ask-hist{border:0;background:none;color:var(--muted);border-radius:4px;width:28px;height:28px;cursor:pointer;font-size:15px}
+.ask-hist:hover,.ask-hist[aria-pressed="true"]{color:var(--gold-hi);background:var(--raise)}
+/* a conversation in the panel: each question with its answer, then a box for a follow-up */
+.turn{display:flex;flex-direction:column;gap:8px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.turn:last-of-type{border-bottom:0;padding-bottom:4px}
+.turn .q-asked{font-size:15.5px}
+.turn .q-asked::before{content:"✦ ";color:var(--gold)}
+.srcs{font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+.srcs b{font:600 10.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
+.srcs a{color:var(--gold-hi);text-decoration:none;max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.srcs a:hover{text-decoration:underline}
+.ask-more{margin-top:2px;position:sticky;bottom:-20px;box-shadow:0 -8px 14px var(--panel)}
+.hist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.hist button{width:100%;text-align:start;border:1px solid var(--line);background:var(--raise);color:var(--text);border-radius:5px;padding:8px 10px;cursor:pointer;font:13.5px/1.35 var(--body);display:flex;flex-direction:column;gap:2px}
+.hist button:hover{border-color:var(--gold-dim)}
+.hist small{color:var(--faint);font:11px var(--mono)}
 .ticker{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:5;display:flex;align-items:stretch;width:360px;background:var(--panel);border:1px solid var(--line2);border-radius:6px;overflow:hidden;backdrop-filter:blur(10px)}
 .ticker[hidden]{display:none}
 .ticker{direction:ltr}   /* it sits bottom-left and folds to the left in every language (the headline keeps its own direction) */
@@ -509,6 +525,7 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
   <form class="ask" id="ask-form" autocomplete="off">
     <span class="ask-i" aria-hidden="true">✦</span>
     <input id="ask-q" type="text" maxlength="300" placeholder="Ask anything about world affairs…" aria-label="Ask a question">
+    <button class="ask-hist" id="ask-hist" type="button" aria-label="Your earlier questions" title="Your earlier questions" aria-pressed="false">☰</button>
     <button class="ask-go" type="submit" aria-label="Ask">→</button>
   </form>
   <section class="tv" id="tv" hidden aria-live="polite">
@@ -1351,10 +1368,13 @@ const GLOBE_THEME = {
           stroke: 'rgba(212,175,55,0.42)', strokeHi: 'rgba(240,214,120,1)', atmo: '#b8952c', ata: 'rgba(70,70,70,0.5)', lake: '#0b0b0b',
           reliefLand: '#3a3a3a', landR: 'rgba(56,56,56,0.35)', dimR: 'rgba(20,20,20,0.55)', hoverR: 'rgba(120,120,120,0.45)'},
   // light mode: light grey-blue sea, parchment land; navy blue for borders, rivers and lakes
-  light: {land: 'rgba(222,212,190,0.98)', dim: 'rgba(196,186,164,0.96)', hover: 'rgba(238,230,210,1)', gold: '#9a7a1f', sea: '#a3b3c0', glow: '#4d5b68',
-          side: 'rgba(40,58,86,0.9)', micro: '#1f3a63', river: 'rgba(24,48,86,0.95)', grat: 'rgba(31,58,99,0.18)', gratMain: 'rgba(31,58,99,0.45)',
-          stroke: 'rgba(24,48,86,0.85)', strokeHi: 'rgba(12,34,72,1)', atmo: '#7f96b5', ata: 'rgba(226,228,232,0.9)', lake: '#1f3a63',
-          reliefLand: '#ded4be', landR: 'rgba(222,212,190,0.3)', dimR: 'rgba(170,160,138,0.45)', hoverR: 'rgba(255,250,236,0.5)'},
+  // light: an atlas look — soft blue sea, even parchment land, thin navy borders; the raised country edges are
+  // parchment-coloured (dark ones made every border a heavy black ridge) and the lighting is flatter (see applyTheme)
+  light: {land: 'rgba(222,212,190,0.98)', dim: 'rgba(196,186,164,0.96)', hover: 'rgba(238,230,210,1)', gold: '#9a7a1f', sea: '#b3cadf', glow: '#4d5b68',
+          side: 'rgba(196,184,158,0.55)', micro: '#1f3a63', river: 'rgba(24,48,86,0.95)', grat: 'rgba(31,58,99,0.18)', gratMain: 'rgba(31,58,99,0.45)',
+          stroke: 'rgba(31,58,99,0.5)', strokeHi: 'rgba(12,34,72,1)', atmo: '#9fb8d4', ata: 'rgba(226,228,232,0.9)', lake: '#1f3a63',
+          reliefLand: '#e9dfc7', landR: 'rgba(233,223,199,0.55)', dimR: 'rgba(200,190,166,0.62)', hoverR: 'rgba(255,250,236,0.7)',
+          ambient: 1.25, sun: 0.35},
 };
 let GT = GLOBE_THEME[document.documentElement.dataset.theme === 'light' ? 'light' : 'dark'];
 let LAND = GT.land, LAND_DIM = GT.dim, LAND_HOVER = GT.hover, GOLD = GT.gold;
@@ -1398,6 +1418,12 @@ function capColor(f){
     return id===hoverId ? LAND_HOVER : LAND_DIM;
   }
   if (sel.type==='poi' && sel.poi.p.includes(id)) return id===hoverId ? 'rgba(212,175,55,0.96)' : 'rgba(212,175,55,0.62)';
+  if (sel.type==='ask'){   // a question: its countries gold, countries the answer names light gold, the rest dimmed
+    const f = sel.flags.get(id);
+    if (f === 1) return id===hoverId ? 'rgba(240,214,120,1)' : 'rgba(212,175,55,0.92)';
+    if (f === 2) return id===hoverId ? 'rgba(212,175,55,0.7)' : 'rgba(212,175,55,0.42)';
+    return id===hoverId ? LAND_HOVER : LAND_DIM;
+  }
   if (inBloc(id)) return id===hoverId ? 'rgba(212,175,55,0.75)' : 'rgba(212,175,55,0.45)';
   return id===hoverId ? LAND_HOVER : LAND;
 }
@@ -1414,6 +1440,7 @@ function altBase(f){
   if (sel.type==='country' && id===sel.id) return 0.035;
   if (sel.type==='compare' && sel.ids.includes(id)) return 0.03;
   if (sel.type==='poi' && sel.poi.p.includes(id)) return 0.02;
+  if (sel.type==='ask' && sel.flags.has(id)) return sel.flags.get(id) === 1 ? 0.03 : 0.016;
   if (id===hoverId && !zoomedIn()) return 0.02;   // zoomed in the hover lift would bury rivers, lakes and city names
   if (visibleRel(id) || (sel.type==='none' && inBloc(id))) return 0.012;
   return 0.006;
@@ -1454,6 +1481,7 @@ const globe = new Globe(globeEl, {animateIn:true})
   .pointColor(p=>{
     if (sel.type==='compare') return sel.ids.includes(p.id) ? GOLD : '#5a5a5a';
     if (sel.type==='country'){ if (p.id===sel.id) return GOLD; const r=relMap.get(p.id); return passesPair(sel.id,p.id,r) ? STATUS[r.s].color : '#5a5a5a'; }
+    if (sel.type==='ask') return sel.flags.has(p.id) ? GOLD : '#5a5a5a';
     return inBloc(p.id) ? GOLD : GT.micro;
   })
   .pointLabel(p=>{ if (sel.type==='compare') return tip(p.name, `<span class="muted">${sel.ids.includes(p.id)?'Click to remove':'Click to add to comparison'}</span>`); const r = sel.type==='country' && sel.id!==p.id ? relMap.get(p.id) : null; return tip(p.name, r ? pillHTML(r.s) : '<span class="muted">Small state</span>'); })
@@ -1714,6 +1742,7 @@ function wirePanel(){
   setMin(mob() && document.querySelector('.top').classList.contains('news-on')); panelMode = '';
   hideAdminMap(); document.getElementById('admin-btn').setAttribute('aria-pressed', 'false');   // leaving the admin page
   document.getElementById('live-btn').setAttribute('aria-pressed', 'false');
+  document.getElementById('ask-hist').setAttribute('aria-pressed', 'false');
   // phones: an opened panel and the question box (with top story + video) would overlap, so fold the question box away
   const top = document.querySelector('.top');
   if (mob() && top.classList.contains('asking')){ top.classList.remove('asking'); document.getElementById('ask-form').classList.remove('open'); document.getElementById('ask-btn').setAttribute('aria-expanded', 'false'); }
@@ -1884,13 +1913,14 @@ async function geminiSample(key){
   async function sample(prompt, opts = {}){
     prompt += aiLangNote(opts.json);   // answer in the chosen language
     const ttl = (opts.cache && opts.cache.gcTime) || 0;
-    const ck = 'faultlines-ai:' + hashStr('gemini2|' + (opts.json ? 'j' : 't') + '|' + prompt);
+    const ck = 'faultlines-ai:' + hashStr('gemini3|' + (opts.json ? 'j' : 't') + '|' + prompt);   // gemini3: answers since Google Search
     if (ttl){
-      try { const c = JSON.parse(lsGet(ck) || 'null'); if (c && Date.now()-c.t < ttl){ if (opts.onText) opts.onText({text:c.text, delta:c.text}); return {text:c.text, truncated:false}; } } catch(e){}
+      try { const c = JSON.parse(lsGet(ck) || 'null'); if (c && Date.now()-c.t < ttl){ if (opts.onText) opts.onText({text:c.text, delta:c.text}); return {text:c.text, truncated:false, sources:c.sources || []}; } } catch(e){}
     }
     const body = {contents:[{role:'user', parts:[{text: prompt}]}], generationConfig:{temperature: 0.4, maxOutputTokens: 8192}};
     if (opts.json) body.generationConfig.responseMimeType = 'application/json';
     let text = '', finish = '';
+    const sources = [];
     const fail = (code, message) => ({code: opts.signal && opts.signal.aborted ? 'cancelled' : code, message, text});
     let r, msg = '';
     // busy (503), retired (404) or out of quota (429): move to the next model; if all are busy, wait and go round once more
@@ -1940,6 +1970,8 @@ async function geminiSample(key){
           if (ev.promptFeedback && ev.promptFeedback.blockReason) throw {code:'refused'};
           const c = (ev.candidates || [])[0]; if (!c) continue;
           const d = ((c.content || {}).parts || []).filter(p => !p.thought).map(p => p.text || '').join('');   // skip the model's private notes (Gemma "thought" parts)
+          // pages the AI looked up on Google Search (shown under the answer as sources)
+          ((c.groundingMetadata || {}).groundingChunks || []).forEach(g => { const w = g.web || {}; if (w.uri && !sources.some(s => s.uri === w.uri)) sources.push({uri: w.uri, title: w.title || w.domain || ''}); });
           if (d){ text += d; if (opts.onText) opts.onText({text, delta: d}); }
           if (c.finishReason) finish = c.finishReason;
         }
@@ -1947,8 +1979,8 @@ async function geminiSample(key){
     } catch(e){ throw e && e.code ? {...e, text} : fail('upstream_error', e && e.message); }
     if (finish === 'SAFETY' || finish === 'PROHIBITED_CONTENT') throw {code:'refused'};
     if (!text.trim()) throw {code:'empty_completion'};
-    if (ttl) lsSet(ck, JSON.stringify({t:Date.now(), text}));
-    return {text, truncated: finish === 'MAX_TOKENS'};
+    if (ttl) lsSet(ck, JSON.stringify({t:Date.now(), text, sources}));
+    return {text, truncated: finish === 'MAX_TOKENS', sources};
   }
   return withJson(sample);
 }
@@ -2002,7 +2034,7 @@ async function getSample(){
   return withJson(sample);
 }
 const TODAY = new Date().toISOString().slice(0,10);
-const RULES = `You are the analyst behind "Faultlines", an interactive globe of international relations. Today is ${TODAY}. Write for a curious, intelligent reader: clear, neutral, factual, no preamble, no sign-off. Use short "### " headings and "- " bullets as asked. The page data below is the page's latest recorded state (it is refreshed daily from the news), so stay consistent with it; if you are unsure about very recent events, say so briefly instead of guessing.
+const RULES = `You are the analyst behind "Faultlines", an interactive globe of international relations. Today is ${TODAY}. Write for a curious, intelligent reader: clear, neutral, factual, no preamble, no sign-off. Use short "### " headings and "- " bullets as asked. The page data below is the page's latest recorded state (refreshed from the news several times a day); use it as your starting point. If you can search the web, check anything that may have changed in the last two years (who holds office, wars and ceasefires, elections, sanctions, deals, alliances) and, where current reliable reporting contradicts the page data, follow the reporting. Never present guesses as facts: give exact figures, dates and names only when you are sure of them, and if you are unsure about something recent, say so briefly.
 
 Go beyond formal diplomacy. Real relationships also run through second-order channels, and these often matter most when two countries have few direct ties:
 - security spillover: militant and jihadist networks, where fighters train, transit and strike; arms and fuel smuggling; insurgent sanctuaries
@@ -3160,6 +3192,12 @@ const TR = {
   'Hidden by filters': ['Masqué par les filtres', 'Oculto por los filtros', 'مخفي بسبب التصفية'], 'Small state': ['Petit État', 'Estado pequeño', 'دولة صغيرة'],
   'Your question': ['Votre question', 'Tu pregunta', 'سؤالك'], 'Question': ['Question', 'Pregunta', 'سؤال'],
   'Mentioned on the map': ['Mentionnés sur la carte', 'Mencionados en el mapa', 'مذكورة على الخريطة'],
+  'Ask a follow-up…': ['Posez une question de suivi…', 'Haz una pregunta de seguimiento…', 'اطرح سؤال متابعة…'], 'Ask a follow-up question': ['Poser une question de suivi', 'Hacer una pregunta de seguimiento', 'اطرح سؤال متابعة'],
+  'Your earlier questions': ['Vos questions précédentes', 'Tus preguntas anteriores', 'أسئلتك السابقة'], '☰ Your earlier questions': ['☰ Vos questions précédentes', '☰ Tus preguntas anteriores', '☰ أسئلتك السابقة'],
+  'Sources': ['Sources', 'Fuentes', 'المصادر'], 'Clear history': ['Effacer l’historique', 'Borrar historial', 'مسح السجل'], 'Sure? Clear all': ['Sûr ? Tout effacer', '¿Seguro? Borrar todo', 'متأكد؟ امسح الكل'],
+  'No questions yet. Ask one in the question bar.': ['Aucune question pour l’instant. Posez-en une dans la barre de questions.', 'Aún no hay preguntas. Haz una en la barra de preguntas.', 'لا توجد أسئلة بعد. اطرح سؤالًا في شريط الأسئلة.'],
+  'Kept only in this browser, never sent anywhere.': ['Conservé uniquement dans ce navigateur, jamais envoyé.', 'Guardado solo en este navegador, nunca se envía.', 'محفوظ في هذا المتصفح فقط، ولا يُرسل إلى أي مكان.'],
+  "Written by AI from the page's data, its own knowledge and, where listed, web sources; check recent events against the news.": ["Rédigé par une IA à partir des données du site, de ses connaissances et, le cas échéant, de sources web ; vérifiez les événements récents dans l’actualité.", "Escrito por IA a partir de los datos de la página, su propio conocimiento y, si se indican, fuentes web; contrasta los hechos recientes con las noticias.", "كتبه الذكاء الاصطناعي من بيانات الموقع ومعرفته ومصادر الويب المذكورة؛ تحقق من الأحداث الأخيرة في الأخبار."],
   'Live feed': ['Fil en direct', 'Noticias en vivo', 'البث المباشر'], 'World news': ['Actualité mondiale', 'Noticias del mundo', 'أخبار العالم'],
   'Latest headlines': ['Derniers titres', 'Últimos titulares', 'آخر العناوين'],
   'Google News world headlines, checked every few minutes. Headlines that name a country and words like war, strike or sanctions are marked.': [
@@ -3320,7 +3358,7 @@ askBtn.onclick = () => {
   if (on){ if (mob()) setMin(true); askQ.focus(); }   // phones: fold the panel so the two don't overlap
 };
 document.getElementById('news-btn').onclick = () => setNews(!document.querySelector('.top').classList.contains('news-on'));
-askForm.onsubmit = e => { e.preventDefault(); const q = askQ.value.trim().slice(0, 300); if (q.length < 3) return; askQ.blur(); renderAsk(q); };
+askForm.onsubmit = e => { e.preventDefault(); const q = askQ.value.trim().slice(0, 300); if (q.length < 3) return; askQ.value = ''; askQ.blur(); renderAsk(q); };   // the question moves into the panel; the bar is free for the next
 // words that identify a country in a headline (demonyms, capitals, key actors), the same list the news script uses;
 // matched case-sensitively as whole words, so "US" isn't the word "us" and "Mali" isn't "malicious"
 const HEAD_ALIAS_RAW = `USA:U.S.|US|America|American|Americans|Washington|Pentagon|White House
@@ -3414,13 +3452,13 @@ function headAlias(){
   }
   return HEAD_ALIAS;
 }
-function mentioned(q){
+function mentioned(q, max = 6){
   const low = ' ' + q.toLowerCase() + ' ';
   const hit = (name) => { const n = name.toLowerCase(); const i = low.indexOf(n); return i > 0 && !/\p{L}/u.test(low[i - 1]) && !/\p{L}/u.test(low[i + n.length] || ' '); };
   const DEMONYM = {USA: ['american', 'usa', 'u.s.', 'washington'], GBR: ['british', 'britain', 'london'], RUS: ['russian', 'kremlin', 'moscow'], CHN: ['chinese', 'beijing'], UKR: ['ukrainian', 'kyiv'], ISR: ['israeli'], IRN: ['iranian', 'tehran'], TUR: ['turkish', 'turkey', 'ankara'], SAU: ['saudi', 'riyadh'], FRA: ['french'], DEU: ['german'], IND: ['indian'], PAK: ['pakistani'], EGY: ['egyptian', 'cairo'], JPN: ['japanese'], KOR: ['south korea', 'korean'], PRK: ['north korea', 'pyongyang'], PSE: ['palestinian', 'gaza', 'west bank'], SYR: ['syrian'], ARE: ['uae', 'emirati'], TWN: ['taiwanese']};
   const ids = ALL_IDS.filter(id => allNames(id).some(hit) || (DEMONYM[id] || []).some(d => low.includes(' ' + d)) || (headAlias()[id] && headAlias()[id].test(q)));
   const pois = POIS.filter(p => hit(p.n) || hit(p.n.replace(/^(Strait|Straits|Gulf|Port) of /, '')));
-  return {ids: ids.slice(0, 6), pois: pois.slice(0, 4)};
+  return {ids: ids.slice(0, max), pois: pois.slice(0, 4)};
 }
 // every country's name in English, French, Spanish and Arabic, so questions in any language find their countries
 let NAMES_ALL = null;
@@ -3436,35 +3474,117 @@ function allNames(id){
   }
   return NAMES_ALL[id] || [];
 }
-function askPrompt(q, ids, pois){
+function askPrompt(q, ids, pois, earlier = []){
   const news = ids.flatMap(id => { const c = NEWS && NEWS.countries && NEWS.countries[id]; return c ? newsItems(c.i).slice(0, 4).map(it => `- ${it.t} (${it.s || 'news'}, ${ago(it.d)})`) : []; });
   const th = THREADS.filter(t => ids.some(i => t.c.includes(i))).slice(0, 8);
   const pairs = []; ids.forEach((a, i) => ids.slice(i + 1).forEach(b => { const f = pairFacts(a, b); pairs.push(`- ${f.A} – ${f.B}: ${STATUS[f.r.s].label} — ${f.r.note}`); }));
+  // a follow-up: the conversation so far, so "and what about their economy?" knows who "they" are
+  const convo = earlier.length ? `The conversation so far (the reader's new question follows up on it):\n${earlier.map(t => `Q: ${t.q}\nA: ${t.a.length > 1500 ? t.a.slice(0, 1500) + ' […]' : t.a}`).join('\n\n')}\n\n` : '';
   return `${RULES}
 
-A reader of the globe asks: "${q.replace(/"/g, "'")}"
-Answer it directly in the first one or two sentences, then add short "### " sections with bullets only where they help. About 150–400 words, shorter if the question is simple. If the question is not about international affairs, geopolitics, geography or the countries and places on this globe, say in one sentence that this assistant only covers world affairs.
+${convo}A reader of the globe asks: "${q.replace(/"/g, "'")}"
+Answer it directly in the first one or two sentences, then add short "### " sections with bullets only where they help. About 150–400 words, shorter if the question is simple.${earlier.length ? ' Do not repeat what the earlier answers already said; build on them.' : ''} If the question is not about international affairs, geopolitics, geography or the countries and places on this globe, say in one sentence that this assistant only covers world affairs.
 ${ids.length ? `Page data for the countries mentioned:\n${ids.map(id => `${ENT[id].name} (blocs: ${blocsOf(id).map(b => b.name).join(', ') || 'none'}):\n${relLines(id, 10)}`).join('\n')}\n` : ''}${pairs.length ? `Between them:\n${pairs.join('\n')}\n` : ''}${th.length ? `Transnational issues:\n${threadLines(th)}\n` : ''}${pois.length ? `Places mentioned:\n${pois.map(p => `- ${p.n}: ${p.s}. ${p.d}`).join('\n')}\n` : ''}${news.length ? `Recent headlines:\n${news.slice(0, 12).join('\n')}\n` : ''}`;
 }
-async function renderAsk(q){
-  const {ids, pois} = mentioned(q);
-  clearSelectionQuiet();
-  panel.innerHTML = head('Your question', 'Question') + `<div class="p-body">
-    <p class="q-asked">${esc(q)}</p>
-    ${ids.length || pois.length ? `<section><h3>Mentioned on the map</h3><div class="chips">${ids.map(c => `<button class="tag" data-c="${c}">${esc(ENT[c].name)}</button>`).join('')}${pois.map(p => `<button class="tag" data-p="${POIS.indexOf(p)}"><i class="g g-${p.t}"></i> ${esc(p.n)}</button>`).join('')}${ids.length >= 2 ? `<button class="tag" data-cmp="${ids.join('|')}">⇄ Compare these countries</button>` : ''}</div></section>` : ''}
-    <div class="ai"><p class="muted thinking">Thinking…</p></div></div>`;
-  wirePanel(); panelMode = 'ask';
-  if (ids.length){ const e = ENT[ids[0]]; fly(e.lat, e.lng); }
-  const out = panel.querySelector('.ai');
-  const sample = await getSample();
-  if (!sample){ out.innerHTML = `<p class="muted">${esc(AI_MSG.rate_limited)}</p>`; return; }
-  try {
-    const {text, truncated} = await sample(askPrompt(q, ids, pois), {kind: 'ask', cache: {gcTime: 86400000}, onText: ({text}) => { out.innerHTML = md(text); }});
-    out.innerHTML = md(text) + (truncated ? '<p class="faint">Cut short.</p>' : '') + '<p class="faint">Written by AI from the page\'s data and its own knowledge; check recent events against the news.</p>';
-  } catch(e){
-    out.innerHTML = (e && e.text ? md(e.text) : '') + `<p class="muted">${esc(AI_MSG[e && e.code] || 'Something went wrong. Try again.')}</p>`;
+
+/* ASK: a conversation. Every question and answer stays in the panel with a follow-up box underneath; the countries
+   the questions name are marked gold on the globe, the ones the answers name light gold. Conversations are kept
+   in this browser (☰ in the question bar lists them), up to 30. */
+const ASK_HIST_KEY = 'fl-ask-hist', ASK_HIST_MAX = 30;
+let convo = null;   // {id, turns: [{q, a, ids, aIds, pois, src, at}]}
+function askHist(){ try { const h = JSON.parse(localStorage.getItem(ASK_HIST_KEY) || '[]'); return Array.isArray(h) ? h : []; } catch(e){ return []; } }
+function saveConvo(){
+  if (!convo || !convo.turns.some(t => t.a)) return;
+  const h = askHist().filter(c => c.id !== convo.id);
+  h.unshift({id: convo.id, turns: convo.turns.filter(t => t.a).map(t => ({...t, a: t.a.slice(0, 8000)}))});
+  try { localStorage.setItem(ASK_HIST_KEY, JSON.stringify(h.slice(0, ASK_HIST_MAX))); }
+  catch(e){ try { localStorage.setItem(ASK_HIST_KEY, JSON.stringify(h.slice(0, 8))); } catch(e2){} }   // storage full: keep the newest
+}
+// mark the conversation's countries and places on the globe
+function flagConvo(fly1){
+  if (!convo) return;
+  const flags = new Map(), pn = new Set();
+  convo.turns.forEach(t => { (t.aIds || []).forEach(id => { if (ENT[id] && !flags.has(id)) flags.set(id, 2); }); });
+  convo.turns.forEach(t => { t.ids.forEach(id => { if (ENT[id]) flags.set(id, 1); }); (t.pois || []).forEach(n => pn.add(n)); });
+  sel = {type: 'ask', flags}; relMap = new Map(); setCmp(false);
+  POIS.forEach(p => p._el && p._el.classList.toggle('on', pn.has(p.n)));
+  refreshPolys(); globe.pointColor(globe.pointColor()); globe.arcsData([]); globe.ringsData([]);
+  if (fly1){   // show the question's countries (or, if it names none, the answer's)
+    const last = convo.turns[convo.turns.length - 1];
+    const pts = [...(last.ids.length ? last.ids : (last.aIds || []).slice(0, 4)).map(i => ENT[i]), ...POIS.filter(p => (last.pois || []).includes(p.n))].filter(Boolean);
+    // the middle of them all (longitudes averaged on the circle, so Alaska and Russia don't meet over Africa)
+    const rad = Math.PI / 180, lng = Math.atan2(pts.reduce((s, x) => s + Math.sin(x.lng * rad), 0), pts.reduce((s, x) => s + Math.cos(x.lng * rad), 0)) / rad;
+    if (pts.length) fly(pts.reduce((s, x) => s + x.lat, 0) / pts.length, lng, pts.length > 1 ? (mob() ? 2.8 : 2.3) : undefined);
   }
 }
+const srcsHTML = src => src && src.length ? `<p class="srcs"><b>Sources</b>${src.slice(0, 6).map(s => safeUrl(s.uri) ? `<a href="${esc(s.uri)}" target="_blank" rel="noopener" title="${esc(s.title)}">${esc(s.title || host(s.uri))}</a>` : '').join('')}</p>` : '';
+function turnHTML(t, i){
+  return `<div class="turn"><p class="q-asked" dir="auto">${esc(t.q)}</p>
+    <div class="ai" ${i === convo.turns.length - 1 ? 'id="ai-cur"' : ''}>${t.a ? md(t.a) + srcsHTML(t.src) : t.err ? `<p class="muted">${esc(t.err)}</p>` : '<p class="muted thinking">Thinking…</p>'}</div></div>`;
+}
+function drawConvo(){
+  const ids = [...new Set(convo.turns.flatMap(t => t.ids))].filter(i => ENT[i]);
+  const pois = POIS.filter(p => convo.turns.some(t => (t.pois || []).includes(p.n)));
+  panel.innerHTML = head('Question', 'Your question') + `<div class="p-body">
+    ${ids.length || pois.length ? `<section><h3>Mentioned on the map</h3><div class="chips">${ids.map(c => `<button class="tag" data-c="${c}">${esc(ENT[c].name)}</button>`).join('')}${pois.map(p => `<button class="tag" data-p="${POIS.indexOf(p)}"><i class="g g-${p.t}"></i> ${esc(p.n)}</button>`).join('')}${ids.length >= 2 ? `<button class="tag" data-cmp="${ids.slice(0, CMP_MAX).join('|')}">⇄ Compare these countries</button>` : ''}</div></section>` : ''}
+    ${convo.turns.map(turnHTML).join('')}
+    <p class="faint">Written by AI from the page's data, its own knowledge and, where listed, web sources; check recent events against the news.</p>
+    <form class="ask ask-more" id="ask-more" autocomplete="off"><span class="ask-i" aria-hidden="true">↳</span>
+      <input type="text" maxlength="300" placeholder="Ask a follow-up…" aria-label="Ask a follow-up question">
+      <button class="ask-go" type="submit" aria-label="Ask">→</button></form>
+    <button class="tag" data-askhist style="align-self:flex-start">☰ Your earlier questions</button></div>`;
+  wirePanel(); panelMode = 'ask';
+  const more = document.getElementById('ask-more');
+  more.onsubmit = e => { e.preventDefault(); const v = more.querySelector('input').value.trim().slice(0, 300); if (v.length < 2) return; renderAsk(v, true); };
+  panel.querySelector('[data-askhist]').onclick = renderAskHistory;
+}
+async function renderAsk(q, cont = false){
+  if (!cont || !convo) convo = {id: Date.now(), turns: []};
+  const earlier = convo.turns.filter(t => t.a).slice(-4);
+  const {ids: qIds, pois} = mentioned(q);
+  // a follow-up that names no country ("what about their army?") still gets the earlier questions' countries as context
+  const ctxIds = [...new Set([...qIds, ...earlier.flatMap(t => t.ids)])].slice(0, 6);
+  const turn = {q, a: '', ids: qIds, aIds: [], pois: pois.map(p => p.n), at: Date.now()};
+  convo.turns.push(turn);
+  drawConvo(); flagConvo(true);
+  const body = panel.querySelector('.p-body'), cur = () => document.getElementById('ai-cur');
+  if (cont) body.scrollTop = body.scrollHeight;
+  const myConvo = convo;
+  const sample = await getSample();
+  if (!sample){ turn.err = AI_MSG.rate_limited; convo.turns.pop(); if (cur()) cur().innerHTML = `<p class="muted">${esc(AI_MSG.rate_limited)}</p>`; return; }
+  try {
+    const {text, truncated, sources} = await sample(askPrompt(q, ctxIds, pois, earlier), {kind: 'ask', cache: {gcTime: 86400000},
+      onText: ({text}) => { if (convo === myConvo && cur()) cur().innerHTML = md(text); }});
+    turn.a = text + (truncated ? '\n\n(Cut short.)' : ''); turn.src = (sources || []).slice(0, 6);
+    turn.aIds = mentioned(text, 14).ids.filter(i => !qIds.includes(i));
+    saveConvo();
+    if (convo !== myConvo) return;   // the viewer has moved on to another conversation
+    if (cur()) cur().innerHTML = md(turn.a) + srcsHTML(turn.src);
+    if (panelMode === 'ask') flagConvo(false);   // now also the countries the answer names
+  } catch(e){
+    const i = myConvo.turns.indexOf(turn); if (i >= 0) myConvo.turns.splice(i, 1);   // a failed question is not part of the conversation
+    if (convo === myConvo && cur()) cur().innerHTML = (e && e.text ? md(e.text) : '') + `<p class="muted">${esc(AI_MSG[e && e.code] || 'Something went wrong. Try again.')}</p>`;
+  }
+}
+// ☰ your earlier questions: reopen one (its answers are kept, nothing is asked again) and carry on with a follow-up
+function renderAskHistory(){
+  const h = askHist();
+  clearSelectionQuiet();
+  const when = t => { const d = new Date(t); return isNaN(d) ? '' : d.toLocaleDateString(uiLocale(), {day: 'numeric', month: 'short'}) + ' ' + d.toLocaleTimeString(uiLocale(), {hour: '2-digit', minute: '2-digit'}); };
+  panel.innerHTML = head('Question', 'Your earlier questions') + `<div class="p-body">
+    ${h.length ? `<ul class="hist">${h.map((c, i) => `<li><button data-hi="${i}"><span dir="auto">${esc(c.turns[0].q)}</span><small>${esc(when(c.turns[c.turns.length - 1].at || c.id))}${c.turns.length > 1 ? ` · +${c.turns.length - 1} follow-up${c.turns.length > 2 ? 's' : ''}` : ''}</small></button></li>`).join('')}</ul>
+      <button class="tag" id="hist-clear" style="align-self:flex-start">Clear history</button>` : '<p class="note muted">No questions yet. Ask one in the question bar.</p>'}
+    <p class="hidden-note">Kept only in this browser, never sent anywhere.</p></div>`;
+  wirePanel(); panelMode = 'askhist';
+  document.getElementById('ask-hist').setAttribute('aria-pressed', 'true');
+  panel.querySelectorAll('[data-hi]').forEach(b => b.onclick = () => { convo = JSON.parse(JSON.stringify(h[+b.dataset.hi])); drawConvo(); flagConvo(true); });
+  const clr = document.getElementById('hist-clear');
+  if (clr) clr.onclick = () => {
+    if (!clr.dataset.sure){ clr.dataset.sure = '1'; clr.textContent = 'Sure? Clear all'; return; }
+    try { localStorage.removeItem(ASK_HIST_KEY); } catch(e){} renderAskHistory();
+  };
+}
+document.getElementById('ask-hist').onclick = () => panelMode === 'askhist' ? renderIntro() : renderAskHistory();
 
 /* ================================================================
    LIVE FEED: latest world headlines (Worker /live, every few minutes), ticker at the bottom left
@@ -3811,6 +3931,8 @@ function applyTheme(t, save){
   GT = GLOBE_THEME[t]; GOLD = GT.gold; setLandColours();
   if (!reliefOn){ mat.color.set(GT.sea); if (mat.emissive) mat.emissive.set(GT.glow); }
   buildRelief();   // repaint the relief in this theme's colours
+  // light mode: flatter light (less of a dark rim), dark mode: the library's own lighting
+  globe.scene().traverse(o => { if (o.isAmbientLight) o.intensity = Math.PI * (GT.ambient || 1); if (o.isDirectionalLight) o.intensity = Math.PI * (GT.sun || 0.6); });
   globe.atmosphereColor(GT.atmo).polygonSideColor(() => GT.side).polygonStrokeColor(strokeColor).pointColor(globe.pointColor())
     .pathColor(d => d.river ? GT.river : d.main ? GT.gratMain : GT.grat);
   refreshPolys();

@@ -73,6 +73,9 @@ def pick_model(models: list[dict]) -> str:
     return pick_models(models)[0]
 
 
+WEB_SOURCES: list[str] = []   # pages the model looked up on Google Search in the last call
+
+
 def call_gemini(key: str, system: str, prompt: str) -> str:
     pinned = os.environ.get("GEMINI_MODEL")
     if pinned:
@@ -84,26 +87,44 @@ def call_gemini(key: str, system: str, prompt: str) -> str:
             print(f"model list failed ({e}); using fallbacks")
             candidates = FALLBACK_MODELS + LAST_RESORT
 
-    def body_for(model: str) -> dict:
+    def body_for(model: str, search: bool) -> dict:
         if model.startswith("gemma"):   # Gemma: no system instruction or JSON mode; the prompt asks for JSON
             return {"contents": [{"role": "user", "parts": [{"text": system + "\n\n" + prompt}]}],
                     "generationConfig": {"temperature": 0.2, "maxOutputTokens": 16384}}
-        return {"systemInstruction": {"parts": [{"text": system}]},
+        body = {"systemInstruction": {"parts": [{"text": system}]},
                 "contents": [{"role": "user", "parts": [{"text": prompt}]}],
                 "generationConfig": {"temperature": 0.2, "responseMimeType": "application/json", "maxOutputTokens": 16384}}
+        if search:   # Google Search to check facts (JSON mode can't be combined with it; the prompt asks for JSON anyway)
+            body["tools"] = [{"google_search": {}}]
+            del body["generationConfig"]["responseMimeType"]
+        return body
 
     # try models in order: a busy (503), retired (404), rate-limited (429) or unsupported (400 on Gemma) model falls through
     tries = [m for m in dict.fromkeys(candidates)][:10]
+    search = os.environ.get("FL_NO_SEARCH") != "search"
+    WEB_SOURCES.clear()
     for attempt, model in enumerate(tries):
-        print(f"Using {model}", flush=True)
+        use_search = search and not model.startswith("gemma")
+        print(f"Using {model}{' with Google Search' if use_search else ''}", flush=True)
         try:
-            res = _req("POST", f"{API}/models/{model}:generateContent", key, body_for(model))
+            try:
+                res = _req("POST", f"{API}/models/{model}:generateContent", key, body_for(model, use_search))
+            except urllib.error.HTTPError as e:
+                if not use_search or e.code not in (400, 403, 429):
+                    raise
+                print(f"{model}: Google Search refused (HTTP {e.code}); asking without it", flush=True)
+                search = use_search = False
+                res = _req("POST", f"{API}/models/{model}:generateContent", key, body_for(model, False))
             cands = res.get("candidates") or []
             if not cands:
                 raise SystemExit(f"Gemini returned no answer: {json.dumps(res.get('promptFeedback', {}))[:300]}")
             parts = (cands[0].get("content") or {}).get("parts") or []
             u = res.get("usageMetadata", {})
             print(f"finish={cands[0].get('finishReason')} in={u.get('promptTokenCount')} out={u.get('candidatesTokenCount')}")
+            WEB_SOURCES[:] = [c["web"]["uri"] for c in ((cands[0].get("groundingMetadata") or {}).get("groundingChunks") or [])
+                              if str((c.get("web") or {}).get("uri", "")).startswith("https://")]
+            if WEB_SOURCES:
+                print(f"looked up {len(WEB_SOURCES)} web page(s)")
             return "".join(p.get("text", "") for p in parts if not p.get("thought"))   # skip Gemma's private notes
         except urllib.error.HTTPError as e:
             msg = e.read().decode(errors="replace")[:300]
@@ -152,8 +173,9 @@ SYSTEM = """You maintain "Faultlines", a public interactive globe of internation
 On each run you receive the latest news headlines (each with an id like h12) and return only the changes they justify, as JSON.
 
 Rules:
-- Be conservative. Change a relationship status only when a headline clearly shows an event that moves it (diplomatic ties cut or restored, war starts or ends, formal alliance or defence pact signed, coup, major sanctions). Routine rhetoric, talks and visits are not status changes, but you may refresh a relationship note to mention a notable new development. A typical run has 0-3 changes.
-- Every change MUST cite the id of a headline from the list in "src" (e.g. "h12"). Never invent facts or ids. If headlines are ambiguous, make no change.
+- Be conservative. Change a relationship status only when a headline clearly shows an event that moves it (diplomatic ties cut or restored, war starts or ends, formal alliance or defence pact signed, coup, major sanctions). Routine rhetoric, talks and visits are not status changes, but you may refresh a relationship note to mention a notable new development. A typical run has 0-3 headline changes.
+- Every headline change MUST cite the id of a headline from the list in "src" (e.g. "h12"). Never invent facts or ids. If headlines are ambiguous, make no change.
+- Fact check: if you can use Google Search, also check the notes of relations between the countries in today's headlines against current reporting and correct up to 5 that are out of date or wrong (for example a government that has changed, a war or ceasefire that started or ended, a pact signed or broken, a leader who left office). Use "src": "search" for these and only when search results clearly confirm the correction.
 - Status codes: A=Ally (formal/de facto alliance), F=Partner, N=Normal/mixed, T=Tense, H=Hostile, W=Armed conflict; "none" removes a baseline pair.
 - Countries use ISO3 codes (special: XKX Kosovo, NCY Northern Cyprus, SOL Somaliland, PSE Palestine, TWN Taiwan, ESH Western Sahara).
 - Thread types: security, trafficking, migration, proxy, resource, economy. A thread description explains the mechanism as a chain: what happens where, how it moves, who it hits and who is watching. When updating a baseline thread, give its full countries list and description.
@@ -224,9 +246,13 @@ def merge(live: dict, upd: dict, lookup: dict, t_utc: dt.datetime) -> int:
         h = lookup.get(str(x.get("src", "")).strip())
         return h["u"] if h and str(h.get("u", "")).startswith("https://") else None
 
-    changes = 0
+    changes, checked = 0, 0
     for r in upd.get("relations") or []:
         a, b, s, u = str(r.get("a", "")).upper(), str(r.get("b", "")).upper(), r.get("s"), src(r)
+        # a correction found with Google Search: only when the model really searched, at most 5 per run
+        if not u and str(r.get("src", "")).strip() == "search" and WEB_SOURCES and checked < 5:
+            u = WEB_SOURCES[0]
+            checked += 1
         if not (ISO.match(a) and ISO.match(b)) or a == b or s not in STATUSES or not u:
             continue
         a, b = sorted((a, b))
@@ -284,6 +310,7 @@ def merge(live: dict, upd: dict, lookup: dict, t_utc: dt.datetime) -> int:
         if isinstance(i, dict) and i.get("label"):
             item = {"label": _txt(i["label"], 120), "change": _txt(i.get("change", ""), 240)}
             if src(i): item["source"] = src(i)
+            elif str(i.get("src", "")).strip() == "search" and WEB_SOURCES: item["source"] = WEB_SOURCES[0]
             items.append(item)
     log = meta.setdefault("log", [])
     if log and log[0].get("date") == today:
@@ -329,7 +356,17 @@ def main() -> None:
         upd = parse_json(text)
     except (ValueError, json.JSONDecodeError) as e:
         print(text[-2000:])
-        sys.exit(f"Could not parse Gemini's JSON ({e}); nothing written.")
+        if os.environ.get("FL_NO_SEARCH") == "search":   # already the strict retry
+            sys.exit(f"Could not parse Gemini's JSON ({e}); nothing written.")
+        # the answer written with Google Search wasn't clean JSON: ask once more in strict JSON mode, without search
+        print(f"Could not parse the searched answer ({e}); asking again without search.")
+        os.environ["FL_NO_SEARCH"] = "search"
+        text = call_gemini(keys[0], SYSTEM, prompt)
+        try:
+            upd = parse_json(text)
+        except (ValueError, json.JSONDecodeError) as e2:
+            print(text[-2000:])
+            sys.exit(f"Could not parse Gemini's JSON ({e2}); nothing written.")
     n = merge(live, upd, lookup, t0)
     save_json("live.json", live)
     print(f"Wrote {n} change(s). Summary: {live['meta']['summary']}")
