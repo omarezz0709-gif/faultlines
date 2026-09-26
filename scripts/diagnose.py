@@ -304,8 +304,37 @@ def main() -> None:
                               "status": status, "summary": summary[:600], "repairs": heal, "checks": checks,
                               "ms": int((now_utc() - t0).total_seconds() * 1000)})
     print(f"\n{status.upper()}: {summary}")
+    write_email(t0, status, fails, warns, prev)
     if fails:
-        sys.exit(1)   # the workflow fails, so GitHub emails the owner
+        sys.exit(1)   # the workflow fails (shown in red on GitHub)
+
+
+def write_email(t0, status: str, fails: list, warns: list, prev: dict) -> None:
+    """The report email (sent by the workflow to the address in the REPORT_EMAIL secret): on any problem, or when a
+    NEW warning appears (a warning that stays for days doesn't send twice a day)."""
+    before = {c["name"] for c in prev.get("checks", []) if c.get("status") == "warn"}
+    new_warns = [c for c in warns if c["name"] not in before]
+    send = bool(fails or new_warns)
+    when = t0.astimezone(BERLIN).strftime("%d %b %Y, %H:%M")
+    subject = (f"Faultlines: {len(fails)} problem(s) found ({when})" if fails else
+               f"Faultlines: new warning ({when})" if new_warns else f"Faultlines: all good ({when})")
+    icon = {"ok": "OK  ", "warn": "WARN", "fail": "FAIL"}
+    lines = [f"Faultlines system check, {when} Berlin time", "",
+             "Everything works." if status == "ok" else f"{len(fails)} problem(s), {len(warns)} warning(s):", ""]
+    for c in fails + warns:
+        lines.append(f"  {icon[c['status']]}  {c['name']}: {c['detail']}" + ("   (new)" if c in new_warns else ""))
+    if heal:
+        lines += ["", "Repaired automatically: " + "; ".join(heal)]
+    lines += ["", f"{sum(c['status'] == 'ok' for c in checks)} of {len(checks)} checks passed.",
+              "", f"Website: {SITE}", "Full report: open the site, ⚙ Usage & logs, System check",
+              f"Run a check now: https://github.com/omarezz0709-gif/faultlines/actions/workflows/diagnose.yml",
+              "", "(Sent by the daily diagnostics at 12:30 and 18:30. You get an email when something is wrong or a new warning appears.)"]
+    with open(os.path.join(ROOT, "report-email.txt"), "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+    out = os.environ.get("GITHUB_OUTPUT")
+    if out:
+        with open(out, "a", encoding="utf-8") as f:
+            f.write(f"email={'true' if send else 'false'}\nsubject={subject}\n")
 
 
 if __name__ == "__main__":

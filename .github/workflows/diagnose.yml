@@ -23,6 +23,9 @@ jobs:
   diagnose:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    env:   # only used to know whether the report email is set up
+      MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+      REPORT_EMAIL: ${{ secrets.REPORT_EMAIL }}
     steps:
       - uses: actions/checkout@v5
 
@@ -62,7 +65,23 @@ jobs:
           done
           exit 1
 
-      - name: Problems found → this run fails, so GitHub emails you
+      # the report by email to any address: secrets REPORT_EMAIL (who gets it), MAIL_USERNAME + MAIL_PASSWORD
+      # (the Gmail address that sends it and its Google "app password"). Without them this step is skipped.
+      - name: Email the report
+        if: steps.diag.outputs.email == 'true' && env.MAIL_USERNAME != '' && env.REPORT_EMAIL != ''
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          from: Faultlines diagnostics <${{ secrets.MAIL_USERNAME }}>
+          to: ${{ secrets.REPORT_EMAIL }}
+          subject: ${{ steps.diag.outputs.subject }}
+          body: file://report-email.txt
+
+      - name: Problems found → this run fails (red on GitHub)
         if: steps.diag.outcome == 'failure'
         run: |
           echo "::error::Diagnostics found problems. The report is in data/health.json and in the admin panel (System check)."
