@@ -3374,11 +3374,11 @@ const TR = {
     '؟ يشرح الرموز، و☀ يبدّل بين الوضع الفاتح والداكن، و⟲ يعيد ضبط التكبير، وقائمة اللغات تضم English وDeutsch وFrançais وEspañol والعربية.',
     '? erklärt die Symbole, ☀ wechselt zwischen Hell- und Dunkelmodus, ⟲ setzt den Zoom zurück, und im Sprachmenü gibt es English, Deutsch, Français, Español und العربية.'],
   'You’re ready': ['C’est parti', 'Listo', 'أنت جاهز', 'Los geht’s'],
-  'Start with a country you care about. You can replay this tour any time from the ? button.': [
-    'Commencez par un pays qui vous intéresse. Vous pouvez revoir cette visite à tout moment via le bouton ?.',
-    'Empieza por un país que te interese. Puedes repetir este recorrido cuando quieras desde el botón ?.',
-    'ابدأ بدولة تهمّك. يمكنك إعادة هذه الجولة في أي وقت من زر ؟.',
-    'Fang mit einem Land an, das dich interessiert. Die Tour kannst du jederzeit über den ?-Button wiederholen.'],
+  'Start with a country you care about. To see this tour again: click the ? button (lit up here), then ↺ Replay the tour at the bottom.': [
+    'Commencez par un pays qui vous intéresse. Pour revoir cette visite : cliquez sur le bouton ? (mis en évidence ici), puis sur ↺ Revoir la visite en bas.',
+    'Empieza por un país que te interese. Para ver este recorrido otra vez: pulsa el botón ? (resaltado aquí) y luego ↺ Repetir el recorrido abajo.',
+    'ابدأ بدولة تهمّك. لمشاهدة هذه الجولة مرة أخرى: انقر على زر ؟ (المضاء هنا)، ثم على ↺ أعد الجولة في الأسفل.',
+    'Fang mit einem Land an, das dich interessiert. Um die Tour noch einmal zu sehen: Klick auf den ?-Button (hier hervorgehoben) und dann unten auf ↺ Tour wiederholen.'],
   'Choose your language': ['Choisissez votre langue', 'Elige tu idioma', 'اختر لغتك', 'Wähle deine Sprache'],
   'Skip': ['Passer', 'Saltar', 'تخطَّ', 'Überspringen'], '‹ Back': ['‹ Retour', '‹ Atrás', '‹ رجوع', '‹ Zurück'], 'Next ›': ['Suivant ›', 'Siguiente ›', 'التالي ›', 'Weiter ›'],
   'Start the tour ›': ['Commencer la visite ›', 'Empezar el recorrido ›', 'ابدأ الجولة ›', 'Tour starten ›'], 'Let’s go': ['C’est parti', 'Vamos', 'لنبدأ', 'Los geht’s'],
@@ -4368,7 +4368,7 @@ function tourSteps(){
     {el: '#panel', t: 'Details', b: 'Everything about what you clicked appears here: relationships and why, news, facts & figures. ✦ Explain its foreign policy gives you an AI analysis, and every relationship can be explained in depth.'});
   s.push(
     {el: '.modes', t: 'Tools', b: '? explains the symbols, ☀ switches light and dark mode, ⟲ resets the zoom, and the language menu has English, Deutsch, Français, Español and العربية.'},
-    {t: 'You’re ready', b: 'Start with a country you care about. You can replay this tour any time from the ? button.', last: true});
+    {el: '#legend-btn', t: 'You’re ready', b: 'Start with a country you care about. To see this tour again: click the ? button (lit up here), then ↺ Replay the tour at the bottom.', last: true});
   return s;
 }
 // a step whose feature isn't on screen right now (e.g. the top story before the news has loaded) is skipped
