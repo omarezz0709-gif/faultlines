@@ -335,6 +335,15 @@ def write_email(t0, status: str, fails: list, warns: list, prev: dict) -> None:
     if out:
         with open(out, "a", encoding="utf-8") as f:
             f.write(f"email={'true' if send else 'false'}\nsubject={subject}\n")
+    # Outlook (or any address) without Gmail: through Resend (free; secrets RESEND_API_KEY and REPORT_EMAIL,
+    # REPORT_EMAIL being the address the Resend account was opened with)
+    key, to = os.environ.get("RESEND_API_KEY", "").strip(), os.environ.get("REPORT_EMAIL", "").strip()
+    if key and to and (send or os.environ.get("TEST_EMAIL") == "true"):
+        s, b, _, _ = fetch("https://api.resend.com/emails", method="POST",
+                           headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+                           body=json.dumps({"from": "Faultlines diagnostics <onboarding@resend.dev>", "to": [to],
+                                            "subject": subject, "text": "\n".join(lines)}).encode())
+        print(f"report email via Resend: HTTP {s}" + ("" if s in (200, 201) else f" {b[:200].decode('utf-8', 'replace')}"))
 
 
 if __name__ == "__main__":

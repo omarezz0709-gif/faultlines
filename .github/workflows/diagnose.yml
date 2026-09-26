@@ -28,7 +28,7 @@ jobs:
   diagnose:
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    env:   # only used to know whether the report email is set up
+    env:   # where the report email goes (and whether the Gmail way is set up)
       MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
       REPORT_EMAIL: ${{ secrets.REPORT_EMAIL }}
     steps:
@@ -55,6 +55,9 @@ jobs:
         run: python scripts/diagnose.py
         env:
           GH_TOKEN: ${{ github.token }}
+          # report email through Resend (works for Outlook; no Gmail needed)
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TEST_EMAIL: ${{ inputs.test_email }}
 
       - name: Save the report (admin panel → System check)
         if: steps.slot.outputs.run == 'true'
@@ -70,8 +73,9 @@ jobs:
           done
           exit 1
 
-      # the report by email to any address: secrets REPORT_EMAIL (who gets it), MAIL_USERNAME + MAIL_PASSWORD
-      # (the Gmail address that sends it and its Google "app password"). Without them this step is skipped.
+      # the report by email, either way: (a) Resend, sent by the script above (secrets RESEND_API_KEY + REPORT_EMAIL;
+      # good for Outlook), or (b) a Gmail account, this step (secrets MAIL_USERNAME + MAIL_PASSWORD, Google "app
+      # password", + REPORT_EMAIL). Without them nothing is sent.
       - name: Email the report
         if: (steps.diag.outputs.email == 'true' || inputs.test_email) && steps.slot.outputs.run == 'true' && env.MAIL_USERNAME != '' && env.REPORT_EMAIL != ''
         uses: dawidd6/action-send-mail@v3
