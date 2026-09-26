@@ -3319,7 +3319,27 @@ const TR = {
     'يفتح شريط الأسئلة. اسأل عن أي دولة أو نزاع: تضيء الدول على الكرة، و⚡ للأخبار الفورية، و☰ لأسئلتك السابقة.',
     'Öffnet die Fragenleiste. Frag zu jedem Land oder Konflikt: Die Länder leuchten auf dem Globus auf, ⚡ schaltet auf Echtzeit, ☰ zeigt deine früheren Fragen.'],
   'News & video': ['Actualité & vidéo', 'Noticias y vídeo', 'الأخبار والفيديو', 'Nachrichten & Video'],
-  'Top story & video': ['À la une & vidéo', 'Portada y vídeo', 'أبرز خبر وفيديو', 'Top-Meldung & Video'],
+  'Top story': ['À la une', 'Portada', 'أبرز خبر', 'Top-Meldung'], 'News video': ['Vidéo d’actualité', 'Vídeo de noticias', 'فيديو الأخبار', 'Nachrichtenvideo'],
+  'The biggest story right now, confirmed by several outlets. It follows whatever you click: click Russia and you get Russia’s top story. ⤢ opens it large.': [
+    'Le grand titre du moment, confirmé par plusieurs médias. Il suit ce que vous cliquez : cliquez sur la Russie et vous voyez son grand titre. ⤢ l’ouvre en grand.',
+    'La noticia principal del momento, confirmada por varios medios. Sigue lo que pulsas: haz clic en Rusia y verás su noticia principal. ⤢ la abre en grande.',
+    'أبرز خبر الآن، مؤكد من عدة وسائل إعلام. يتبع ما تنقر عليه: انقر على روسيا لترى أبرز أخبارها. ⤢ يفتحه بحجم كبير.',
+    'Die wichtigste Meldung gerade, bestätigt von mehreren Medien. Sie folgt dem, was du anklickst: Klick auf Russland, und du siehst Russlands Top-Meldung. ⤢ öffnet sie groß.'],
+  'News videos on the day’s big stories from trusted channels, or LIVE TV for a 24/7 news channel. Like the top story, they follow whatever you click.': [
+    'Des vidéos sur les grands sujets du jour, issues de chaînes fiables, ou TV EN DIRECT pour une chaîne d’info en continu. Comme le grand titre, elles suivent ce que vous cliquez.',
+    'Vídeos sobre las grandes noticias del día de canales fiables, o TV EN VIVO para un canal de noticias 24/7. Como la portada, siguen lo que pulsas.',
+    'مقاطع فيديو عن أهم أخبار اليوم من قنوات موثوقة، أو البث المباشر لقناة أخبار على مدار الساعة. مثل أبرز خبر، تتبع ما تنقر عليه.',
+    'Nachrichtenvideos zu den großen Themen des Tages von vertrauenswürdigen Sendern, oder LIVE-TV für einen Nachrichtensender rund um die Uhr. Wie die Top-Meldung folgen sie dem, was du anklickst.'],
+  'Everything about what you tapped appears here: relationships, news, facts & figures, and ✦ Explain its foreign policy for an AI analysis. Tap its title to open or fold it.': [
+    'Tout sur ce que vous avez touché s’affiche ici : relations, actualité, faits & chiffres, et ✦ Expliquer la politique étrangère pour une analyse par l’IA. Touchez le titre pour l’ouvrir ou le replier.',
+    'Aquí aparece todo sobre lo que tocaste: relaciones, noticias, datos y cifras, y ✦ Explicar la política exterior para un análisis con IA. Toca el título para abrirlo o plegarlo.',
+    'يظهر هنا كل ما يخص ما لمسته: العلاقات والأخبار والحقائق والأرقام، و✦ اشرح السياسة الخارجية لتحليل بالذكاء الاصطناعي. المس العنوان لفتحه أو طيّه.',
+    'Hier erscheint alles zu dem, was du angetippt hast: Beziehungen, Nachrichten, Fakten & Zahlen und ✦ Außenpolitik erklären für eine KI-Analyse. Tipp auf den Titel, um ihn zu öffnen oder einzuklappen.'],
+  'Everything about what you clicked appears here: relationships and why, news, facts & figures. ✦ Explain its foreign policy gives you an AI analysis, and every relationship can be explained in depth.': [
+    'Tout sur ce que vous avez cliqué s’affiche ici : les relations et leurs raisons, l’actualité, les faits & chiffres. ✦ Expliquer la politique étrangère vous donne une analyse par l’IA, et chaque relation peut être expliquée en détail.',
+    'Aquí aparece todo sobre lo que pulsaste: relaciones y sus motivos, noticias, datos y cifras. ✦ Explicar la política exterior te da un análisis con IA, y cada relación puede explicarse a fondo.',
+    'يظهر هنا كل ما يخص ما نقرت عليه: العلاقات وأسبابها، والأخبار، والحقائق والأرقام. ✦ اشرح السياسة الخارجية يمنحك تحليلًا بالذكاء الاصطناعي، ويمكن شرح كل علاقة بالتفصيل.',
+    'Hier erscheint alles zu dem, was du angeklickt hast: Beziehungen und ihre Gründe, Nachrichten, Fakten & Zahlen. ✦ Außenpolitik erklären liefert dir eine KI-Analyse, und jede Beziehung lässt sich ausführlich erklären.'],
   'The biggest story and news videos right now. They follow whatever you tap: tap Russia and you get Russia’s top story.': [
     'Le grand titre et les vidéos d’actualité du moment. Ils suivent ce que vous touchez : touchez la Russie et vous voyez son grand titre.',
     'La noticia principal y los vídeos del momento. Siguen lo que tocas: toca Rusia y verás su noticia principal.',
@@ -4334,11 +4354,12 @@ function tourSteps(){
     {el: '#ask-btn', t: 'Ask anything', b: 'Opens the question bar. Ask about any country or conflict: the countries in your question light up on the globe, ⚡ switches to real-time news, ☰ shows your earlier questions.'},
     {el: '#news-btn', t: 'News & video', b: 'The biggest story and news videos right now. They follow whatever you tap: tap Russia and you get Russia’s top story.'},
     {el: '#live-btn', t: 'Live feed', b: 'Breaking headlines, confirmed by at least two independent outlets.'},
-    {el: '#panel', t: 'Details', b: 'Everything about what you tapped appears here: relationships, news, facts & figures. Tap its title to open or fold it.'});
+    {el: '#panel', t: 'Details', b: 'Everything about what you tapped appears here: relationships, news, facts & figures, and ✦ Explain its foreign policy for an AI analysis. Tap its title to open or fold it.'});
   else s.push(
     {el: '#ask-form', t: 'Ask anything', b: 'Ask about any country or conflict and follow up. The countries in your question light up on the globe; ⚡ switches to real-time news, ☰ shows your earlier questions.'},
-    {el: '#tv', t: 'Top story & video', b: 'The biggest story and news videos right now. They follow whatever you click: click Russia and you get Russia’s top story.'},
-    {el: '#panel', t: 'Details', b: 'Everything about what you clicked appears here: relationships and why, news, facts & figures, and AI explanations.'});
+    {el: '#tv', t: 'Top story', b: 'The biggest story right now, confirmed by several outlets. It follows whatever you click: click Russia and you get Russia’s top story. ⤢ opens it large.'},
+    {el: '#vid', t: 'News video', b: 'News videos on the day’s big stories from trusted channels, or LIVE TV for a 24/7 news channel. Like the top story, they follow whatever you click.'},
+    {el: '#panel', t: 'Details', b: 'Everything about what you clicked appears here: relationships and why, news, facts & figures. ✦ Explain its foreign policy gives you an AI analysis, and every relationship can be explained in depth.'});
   s.push(
     {el: '.modes', t: 'Tools', b: '? explains the symbols, ☀ switches light and dark mode, ⟲ resets the zoom, and the language menu has English, Deutsch, Français, Español and العربية.'},
     {t: 'You’re ready', b: 'Start with a country you care about. You can replay this tour any time from the ? button.', last: true});
