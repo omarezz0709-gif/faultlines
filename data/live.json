@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-09-26T05:14:28Z",
+  "lastRun": "2026-09-26T10:16:29Z",
   "log": [
    {
     "date": "2026-09-26",
@@ -14,6 +14,31 @@
       "label": "United States–Colombia",
       "change": "Note refreshed: Updated leadership reference to President Abelardo de la Espriella",
       "source": "https://www.wikidata.org/wiki/Q739"
+     },
+     {
+      "label": "France–Saudi Arabia",
+      "change": "None → Partner: France deploys troops to Yanbu to safeguard Saudi port infrastructure against Houthi strikes",
+      "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOc1hqLXVaZ1RWdmRrUFNMQ3o2anNfZHo4R3VUSXJJVEV1T0k5eU9ZdDBrejdXcjlvOWhWWV9vX0czUV8yUjZETTZwWWtsTHVEZXJxZ01iYVhMQVQ2d3ZkT2dLYURRQVdMaFpfS3JJSUt5ckszNFBNSjU5Y0U0VEE2RHM5WGJpdUJER3I0RlMxaE5wQQ?oc=5"
+     },
+     {
+      "label": "Hungary–Slovakia",
+      "change": "Updated note to reflect Hungarian Prime Minister Péter Magyar",
+      "source": "https://www.wikidata.org/wiki/Q28"
+     },
+     {
+      "label": "Houthi Red Sea campaign",
+      "change": "Added France to countries following deployment to defend Yanbu terminal",
+      "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOc1hqLXVaZ1RWdmRrUFNMQ3o2anNfZHo4R3VUSXJJVEV1T0k5eU9ZdDBrejdXcjlvOWhWWV9vX0czUV8yUjZETTZwWWtsTHVEZXJxZ01iYVhMQVQ2d3ZkT2dLYURRQVdMaFpfS3JJSUt5ckszNFBNSjU5Y0U0VEE2RHM5WGJpdUJER3I0RlMxaE5wQQ?oc=5"
+     },
+     {
+      "label": "Morocco",
+      "change": "Recorded parliamentary election victory by Authenticity and Modernity Party",
+      "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNWnBhOFphOVZZcEh6OFdGb1BWRFp2NnRkelFYQ1Z3dTVDR05xTG9zUUtudzNXcWwtVjA5QUNyejZudkxsYjFKWEtscG5OOHVtdzBEMXYzUWVFX1plZ3ktamZqaFJ1eWc5bU1XZ1ROXzZpZnJNNWVlV1R3QWNKRld3WmIxcVRKUjZ4Y3I4ZUZUeWo5R3ktVmYwVVAybm1uemhwUUZreUtlZUlsX0hNaU9VUGZ3?oc=5"
+     },
+     {
+      "label": "South Sudan",
+      "change": "Recorded scheduled general election for December 2026",
+      "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOX2g4SERrV05YLVFFdFEteWlBb2VrdlZ4ZWVBbzBqa2hpa2FDemdUSnVpZ01aUGlYWmgzM3RId2hKRWZIb0RkN1ZrR191bTZ0bXB0SG1jbVRKM1FrYTYyUkZOakJHTWwzeHFYLS0tSTBFOUw0UHFxV3Q2ZURKVnpSSW5HNTFIWkZyTEFWLThQQS1BLU1HVy1FV0xpLVBiMUJ1MWt5VXRhTHV1aEN4RnV6TkZxVQ?oc=5"
      }
     ]
    },
@@ -166,7 +191,7 @@
     ]
    }
   ],
-  "summary": "Saudi Arabia and Türkiye deepen defense ties alongside Pakistan, while election milestones unfold in Morocco, South Sudan, and Brazil."
+  "summary": "France deploys troops to Saudi Arabia's Yanbu port amid escalating Houthi attacks, Morocco concludes parliamentary elections, and South Sudan prepares for December polls."
  },
  "relations": {
   "DNK-USA": {
@@ -264,6 +289,22 @@
    "note": "Long-time security partner; bilateral relations reset under President Abelardo de la Espriella.",
    "updated": "2026-09-26",
    "source": "https://www.wikidata.org/wiki/Q739"
+  },
+  "FRA-SAU": {
+   "a": "FRA",
+   "b": "SAU",
+   "s": "F",
+   "note": "France deploys military personnel to Yanbu to help protect Saudi energy infrastructure from Houthi strikes.",
+   "updated": "2026-09-26",
+   "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOc1hqLXVaZ1RWdmRrUFNMQ3o2anNfZHo4R3VUSXJJVEV1T0k5eU9ZdDBrejdXcjlvOWhWWV9vX0czUV8yUjZETTZwWWtsTHVEZXJxZ01iYVhMQVQ2d3ZkT2dLYURRQVdMaFpfS3JJSUt5ckszNFBNSjU5Y0U0VEE2RHM5WGJpdUJER3I0RlMxaE5wQQ?oc=5"
+  },
+  "HUN-SVK": {
+   "a": "HUN",
+   "b": "SVK",
+   "s": "F",
+   "note": "Central European neighbours navigate regional energy and transit policies following Hungary's leadership transition to Péter Magyar.",
+   "updated": "2026-09-26",
+   "source": "https://www.wikidata.org/wiki/Q28"
   }
  },
  "threads": {
@@ -277,13 +318,14 @@
     "EGY",
     "ISR",
     "USA",
-    "GBR"
+    "GBR",
+    "FRA"
    ],
-   "d": "Iran-armed Houthis, who hit Red Sea shipping from 2023, reopened war on Saudi Arabia in 2026 and in September seized Yemen's side of Bab-el-Mandeb. With Hormuz disrupted, Saudi oil exports rerouted to the Red Sea are now the target; Egypt's Suez revenue suffers while the US stays out and the UK sends limited help to Riyadh.",
+   "d": "Iran equips Houthis targeting Red Sea shipping and Saudi oil terminals like Yanbu; attacks disrupt Suez traffic while French, American, and British forces defend shipping lanes.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://www.aljazeera.com/news/2026/9/18/as-houthis-grab-bab-al-mandeb-us-appears-willing-to-watch-from-sidelines",
+   "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOc1hqLXVaZ1RWdmRrUFNMQ3o2anNfZHo4R3VUSXJJVEV1T0k5eU9ZdDBrejdXcjlvOWhWWV9vX0czUV8yUjZETTZwWWtsTHVEZXJxZ01iYVhMQVQ2d3ZkT2dLYURRQVdMaFpfS3JJSUt5ckszNFBNSjU5Y0U0VEE2RHM5WGJpdUJER3I0RlMxaE5wQQ?oc=5",
    "t": "security",
-   "updated": "2026-09-23"
+   "updated": "2026-09-26"
   }
  },
  "pois": {
@@ -426,9 +468,9 @@
    "updated": "2026-09-23"
   },
   "MAR": {
-   "lastelec": "Parliamentary, September 2026, Authenticity and Modernity Party (PAM)",
+   "lastelec": "parliamentary, Sep 2026, PAM (Authenticity and Modernity Party)",
    "updated": "2026-09-26",
-   "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOd0pCNXN2Z2IyQVB1bldRbU1LcktSb0plOVo1SWpsM05rY0RSamxOQ2ZLU1pFY0lfeGJsWGdmSGFaRDJEOUd6M25Yc0l4WWtCd2VXVDg2YzRkSkgzWllOY0JxMlFubExoTFJ5R01rbDFteGpfcjMxRTZKT2JUZjI0WC1NX2dpeTdtYV81UUhzZU9oYkVXdUVQYm81Uk9qU3ZsNXl5U2JoUTZobmVNTU5NNW9MY9IBuAFBVV95cUxPdkFjN3MyU2V6OUNrWm8zb3VYdWYzQUxmRFh6T3RoOS1aVnNOd0RjZkpHY1FzMFdMTDUyNTFRMGczaTJFNFN6Vi1SUGZ0aUJOTDkwaFN2a0VNbV9LenRjc1hSemJGeW8tZzA0V0tST2lncDVTV3JqYjhkQjVEb09LQzFHTkFqU3IxdEh0SFB3MG02Q253b0JUWmdXVDB6LS1ra1h3VVlJcVlLNnctSTROeUxDSE55dWtO?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNWnBhOFphOVZZcEh6OFdGb1BWRFp2NnRkelFYQ1Z3dTVDR05xTG9zUUtudzNXcWwtVjA5QUNyejZudkxsYjFKWEtscG5OOHVtdzBEMXYzUWVFX1plZ3ktamZqaFJ1eWc5bU1XZ1ROXzZpZnJNNWVlV1R3QWNKRld3WmIxcVRKUjZ4Y3I4ZUZUeWo5R3ktVmYwVVAybm1uemhwUUZreUtlZUlsX0hNaU9VUGZ3?oc=5"
   },
   "BGR": {
    "nextelec": "presidential, 25 October 2026",
@@ -436,9 +478,9 @@
    "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWDh2YVFnb3VwZDNPdjB4NnZmT0t4X1Z3M085YTljU3pBXzVwcm9EN0R1NkNmWGxfOGp5WFZFaHZ1c0RyTzdNSktEVG8zRE9QZ1JEdm1Rd1FQRVpoWUh0M0VNdUhyc2tJeGNzMEx4RFJRRDZQcERIcnZlMlBIZ1JDZDF2Wm5CMWtqZUE2UnI1a0dfNGJfRE5KUWhVaTNKTVRIM1VqSEluTU9YREl1c3c?oc=5"
   },
   "SSD": {
-   "nextelec": "Presidential and Parliamentary, December 2026",
+   "nextelec": "general, Dec 2026",
    "updated": "2026-09-26",
-   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQWDlIemNKNUdNQVRMakJTS0J4UEhzTXk5YnBaZG91MW9zR1FjR1NjWEg3SW1XUDFxY0dXbDBGb1RaN0tEUV9BdW56djdaVDZZYXZpQ0NqRHprNmwyWmJrX3NPMFpmNldTQm5uVzExeC1EMzJlbko0WnZfd210UWtaR3Jkdk5pTjJZanZJOHBxTVNpYkE2c1ZmR25rbGVraHAtWVhXUzRyMnkxYjZSVTdJTjFKa0JDbjA?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOX2g4SERrV05YLVFFdFEteWlBb2VrdlZ4ZWVBbzBqa2hpa2FDemdUSnVpZ01aUGlYWmgzM3RId2hKRWZIb0RkN1ZrR191bTZ0bXB0SG1jbVRKM1FrYTYyUkZOakJHTWwzeHFYLS0tSTBFOUw0UHFxV3Q2ZURKVnpSSW5HNTFIWkZyTEFWLThQQS1BLU1HVy1FV0xpLVBiMUJ1MWt5VXRhTHV1aEN4RnV6TkZxVQ?oc=5"
   }
  }
 }
