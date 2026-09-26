@@ -4487,7 +4487,8 @@ setTimeout(loadFeed, 1500);
    skipped). Phones get their own steps. Each step lights up one feature; ‹ › or the arrow keys move, Esc skips.
    It can be replayed from the ? legend.
    ================================================================ */
-const TOUR_KEY = 'fl-tour-1';
+// bump the number to show the tour once more on every device (e.g. after it changed): v2 = with the language choice
+const TOUR_KEY = 'fl-tour-2';
 function tourSteps(){
   const phone = mob();
   const s = [
