@@ -1771,6 +1771,7 @@ function setNews(on){
   if (on && mob()) setMin(true);
 }
 function wirePanel(){
+  if (typeof PRIV !== 'undefined' && PRIV && !privDrawing) PRIV = null;   // anything else opened in the panel deletes the private chat
   setMin(mob() && document.querySelector('.top').classList.contains('news-on')); panelMode = '';
   hideAdminMap(); document.getElementById('admin-btn').setAttribute('aria-pressed', 'false');   // leaving the admin page
   document.getElementById('live-btn').setAttribute('aria-pressed', 'false');
@@ -2948,7 +2949,10 @@ applyAIVisibility();
 
 /* ---------- admin (usage log from the AI Worker; the code is checked by the Worker) ---------- */
 const regionName = (() => { try { const d = new Intl.DisplayNames(['en'], {type: 'region'}); return c => { try { return c ? d.of(c) : ''; } catch(e){ return c; } }; } catch(e){ return c => c; } })();
+// the code this tab logged in with (kept for this tab only): the admin code, or the backup code after a lock
 function adminCode(){ try { return sessionStorage.getItem('fl-admin') || ''; } catch(e){ return ''; } }
+const adminKind = () => { try { return sessionStorage.getItem('fl-admin-kind') || 'admin'; } catch(e){ return 'admin'; } };
+const adminHeaders = (code = adminCode(), kind = adminKind()) => kind === 'backup' ? {'X-Backup-Code': code} : {'X-Admin-Code': code};
 const adminBtn = document.getElementById('admin-btn');
 /* purple dots on the globe: one per place pings came from (Cloudflare's city coordinates; older entries without
    coordinates fall back to the middle of their country), bigger dots = more pings */
@@ -3000,27 +3004,40 @@ function onView(pov){
   if (k !== microK){ microK = k; globe.pointRadius(0.42 * k).pointAltitude(0.004 * k); }
 }
 function hideAdminMap(){ if (adminPts && adminPts.length){ adminPts = []; adminPlaces = []; setLabels(); } }
-function renderAdminLogin(msg){
+// login: the admin code; after 5 wrong codes (from anyone) the Worker locks it and only the backup code opens it
+let adminLocked = false;
+try { adminLocked = localStorage.getItem('fl-admin-locked') === '1'; } catch(e){}
+function renderAdminLogin(msg, locked = adminLocked){
   clearSelectionQuiet();
+  adminLocked = locked; try { localStorage.setItem('fl-admin-locked', locked ? '1' : '0'); } catch(e){}
   panel.innerHTML = head('Admin', 'Usage & logs') + `<div class="p-body">
-    <p class="note">Enter the admin code to see who is using the AI, from where, and how the automatic updates are running.</p>
-    <form class="admin-form" id="admin-form"><input id="admin-code" type="password" inputmode="numeric" autocomplete="off" placeholder="Code" aria-label="Admin code"><button class="btn" type="submit">Open</button></form>
-    ${msg ? `<p class="note" style="color:var(--s-H)">${esc(msg)}</p>` : ''}</div>`;
+    ${locked ? `<p class="note" style="color:var(--s-H)"><b>🔒 Locked.</b> After 5 wrong codes the login is closed for everyone. Enter the backup code to unlock it.</p>`
+      : '<p class="note">Enter the admin code to see who is using the AI, from where, and how the automatic updates are running.</p>'}
+    <form class="admin-form" id="admin-form"><input id="admin-code" type="password" ${locked ? '' : 'inputmode="numeric"'} autocomplete="off" placeholder="${locked ? 'Backup code' : 'Code'}" aria-label="${locked ? 'Backup code' : 'Admin code'}"><button class="btn" type="submit">${locked ? 'Unlock' : 'Open'}</button></form>
+    ${msg ? `<p class="note" style="color:var(--s-H)">${esc(msg)}</p>` : ''}
+    ${locked ? '' : '<p class="hidden-note">5 wrong codes lock the login for everyone until the backup code is entered.</p>'}</div>`;
   wirePanel(); panelMode = 'admin'; adminBtn.setAttribute('aria-pressed', 'true');
   const form = document.getElementById('admin-form');
-  form.onsubmit = e => { e.preventDefault(); openAdmin(document.getElementById('admin-code').value.trim()); };
+  form.onsubmit = e => { e.preventDefault(); openAdmin(document.getElementById('admin-code').value.trim(), locked ? 'backup' : 'admin'); };
   setTimeout(() => { const i = document.getElementById('admin-code'); if (i && !mob()) i.focus(); }, 50);
 }
-async function openAdmin(code){
+async function openAdmin(code, kind = adminKind()){
   if (!code) return renderAdminLogin();
   panel.querySelector('.p-body').insertAdjacentHTML('beforeend', '<p class="note muted thinking" id="admin-wait">Loading…</p>');
   let data;
   try {
-    const r = await fetch(`${AI_PROXY}/admin/logs`, {headers: {'X-Admin-Code': code}});
+    const r = await fetch(`${AI_PROXY}/admin/logs`, {headers: adminHeaders(code, kind)});
     data = await r.json().catch(() => ({}));
-    if (!r.ok) return renderAdminLogin((data.error && data.error.message) || `Error ${r.status}`);
+    if (!r.ok){
+      try { sessionStorage.removeItem('fl-admin'); } catch(e){}
+      const msg = (data.error && data.error.message) || `Error ${r.status}`;
+      // locked: the panel closes; the next time ⚙ is opened it asks for the backup code
+      if (r.status === 423 && kind !== 'backup'){ adminLocked = true; try { localStorage.setItem('fl-admin-locked', '1'); } catch(e){} renderIntro(); return; }
+      return renderAdminLogin(msg, r.status === 423 || kind === 'backup');
+    }
   } catch(e){ return renderAdminLogin('Could not reach the AI Worker.'); }
-  try { sessionStorage.setItem('fl-admin', code); } catch(e){}
+  try { sessionStorage.setItem('fl-admin', code); sessionStorage.setItem('fl-admin-kind', kind); localStorage.setItem('fl-admin-locked', '0'); } catch(e){}
+  adminLocked = false;
   renderAdmin(data);
 }
 function countBy(list, fn){ const m = new Map(); list.forEach(x => { const k = fn(x); if (k) m.set(k, (m.get(k) || 0) + 1); }); return [...m.entries()].sort((a, b) => b[1] - a[1]); }
@@ -3096,7 +3113,7 @@ function renderAdmin(data){
   panel.querySelectorAll('[data-day]').forEach(b => b.onclick = async () => {
     b.textContent = '…';
     try {
-      const r = await fetch(`${AI_PROXY}/admin/archive?day=${encodeURIComponent(b.dataset.day)}`, {headers: {'X-Admin-Code': adminCode()}});
+      const r = await fetch(`${AI_PROXY}/admin/archive?day=${encodeURIComponent(b.dataset.day)}`, {headers: adminHeaders()});
       const d = await r.json();
       if (!r.ok) throw new Error((d.error && d.error.message) || r.status);
       renderAdmin({logs: d.logs, archive: data.archive, viewDay: b.dataset.day, todayData: data.todayData || data});
@@ -3104,7 +3121,7 @@ function renderAdmin(data){
     } catch(e){ b.textContent = 'Could not load: ' + e.message; }
   });
   const back = document.getElementById('admin-today'); if (back) back.onclick = () => renderAdmin(data.todayData || data);
-  document.getElementById('admin-out').onclick = () => { try { sessionStorage.removeItem('fl-admin'); } catch(e){} clearSelectionQuiet(); renderIntro(); };
+  document.getElementById('admin-out').onclick = () => { try { sessionStorage.removeItem('fl-admin'); sessionStorage.removeItem('fl-admin-kind'); } catch(e){} clearSelectionQuiet(); renderIntro(); };
   fetch('https://api.github.com/repos/omarezz0709-gif/faultlines/actions/runs?per_page=10').then(r => r.json()).then(d => {
     const el = document.getElementById('admin-runs'); if (!el) return;
     const runs = d.workflow_runs || [];
@@ -3625,7 +3642,66 @@ askBtn.onclick = () => {
   if (on){ if (mob()) setMin(true); askQ.focus(); }   // phones: fold the panel so the two don't overlap
 };
 document.getElementById('news-btn').onclick = () => setNews(!document.querySelector('.top').classList.contains('news-on'));
-askForm.onsubmit = e => { e.preventDefault(); const q = askQ.value.trim().slice(0, 300); if (q.length < 3) return; askQ.value = ''; askQ.blur(); renderAsk(q); };   // the question moves into the panel; the bar is free for the next
+askForm.onsubmit = async e => {
+  e.preventDefault(); const q = askQ.value.trim().slice(0, 300);
+  // one "word" with a digit in it looks like a code: check it with the Worker (never sent to the AI, never stored)
+  if (/^\S{4,64}$/.test(q) && /\d/.test(q)){
+    askQ.value = ''; askQ.blur();
+    let ok = false;
+    try { const r = await fetch(`${AI_PROXY}/private/verify`, {method: 'POST', headers: {'X-Backup-Code': q}}); ok = r.ok; } catch(err){}
+    if (ok) return startPrivate();
+    clearSelectionQuiet();
+    panel.innerHTML = head('Question', 'Your question') + `<div class="p-body"><p class="note muted">That looks like a code, but it isn't a valid one. To ask a question, write it in words.</p></div>`;
+    wirePanel(); panelMode = 'ask'; return;
+  }
+  if (q.length < 3) return;
+  askQ.value = ''; askQ.blur(); renderAsk(q);   // the question moves into the panel; the bar is free for the next
+};
+
+/* PRIVATE CHAT (opened by typing the backup code into the question bar): any topic, with follow-ups. Nothing is
+   kept: not in the history, not cached by the browser or the Worker, and the chat is gone as soon as it's closed. */
+var PRIV = null, privDrawing = false;   // (var: the panel may be drawn before this part of the script has run)
+function startPrivate(){ PRIV = {turns: []}; drawPrivate(); }
+function drawPrivate(){
+  if (!PRIV) return;
+  clearSelectionQuiet();
+  panel.innerHTML = head('Private', '🔒 Private chat') + `<div class="p-body">
+    <p class="note">Ask about anything, not just world affairs. <b>Nothing is saved</b>: this chat is not in your history, not cached anywhere, and it is deleted as soon as you close it.</p>
+    ${PRIV.turns.map((t, i) => `<div class="turn"><p class="q-asked" dir="auto">${esc(t.q)}</p>
+      <div class="ai" ${i === PRIV.turns.length - 1 ? 'id="ai-cur"' : ''}>${t.a ? md(t.a) : t.err ? `<p class="muted">${esc(t.err)}</p>` : '<p class="muted thinking">Thinking…</p>'}</div></div>`).join('')}
+    <form class="ask ask-more" id="priv-more" autocomplete="off"><span class="ask-i" aria-hidden="true">🔒</span>
+      <input type="text" maxlength="1000" placeholder="Ask anything…" aria-label="Ask anything" autocomplete="off">
+      <button class="ask-go" type="submit" aria-label="Ask">→</button></form>
+    <button class="tag" id="priv-end" style="align-self:flex-start">✕ End and delete this chat</button></div>`;
+  privDrawing = true; try { wirePanel(); } finally { privDrawing = false; }
+  panelMode = 'private';
+  const f = document.getElementById('priv-more'), inp = f.querySelector('input');
+  f.onsubmit = e => { e.preventDefault(); const v = inp.value.trim().slice(0, 1000); if (v.length < 2) return; inp.value = ''; askPrivate(v); };
+  document.getElementById('priv-end').onclick = () => { PRIV = null; renderIntro(); };
+  const body = panel.querySelector('.p-body'); body.scrollTop = body.scrollHeight;
+  if (!mob()) setTimeout(() => inp.focus(), 50);
+}
+async function askPrivate(q){
+  const chat = PRIV; if (!chat) return;
+  const earlier = chat.turns.filter(t => t.a).slice(-6);
+  const turn = {q, a: ''}; chat.turns.push(turn);
+  drawPrivate();
+  const cur = () => PRIV === chat ? document.getElementById('ai-cur') : null;
+  const [sample, wiki, live] = await Promise.all([getSample(), wikiContext(q, []), RT_MODE ? liveSearch(q) : Promise.resolve([])]);
+  if (!sample){ turn.err = AI_MSG.rate_limited; if (cur()) cur().innerHTML = `<p class="muted">${esc(turn.err)}</p>`; return; }
+  const prompt = `You are a helpful, knowledgeable assistant. Today is ${TODAY}. Answer the question directly and clearly, in plain language; use short "### " headings and "- " bullets only where they help. If you are unsure about something recent, say so briefly instead of guessing.
+${earlier.length ? `\nThe conversation so far:\n${earlier.map(t => `Q: ${t.q}\nA: ${t.a.length > 2000 ? t.a.slice(0, 2000) + ' […]' : t.a}`).join('\n\n')}\n` : ''}${liveBlock(live)}${wiki.length ? `\nReference articles from Wikipedia, retrieved today (use them if relevant):\n${wiki.map(w => `[${w.title}] ${w.text}`).join('\n\n')}\n` : ''}
+Question: ${q}`;
+  try {
+    // kind 'private': the Worker neither caches nor keeps it; no cache option here, so the browser keeps nothing either
+    const {text, truncated} = await sample(prompt, {kind: 'private', onText: ({text}) => { if (cur()) cur().innerHTML = cite(md(text), live); }});
+    turn.a = text + (truncated ? '\n\n(Cut short.)' : '');
+    if (cur()) cur().innerHTML = cite(md(turn.a), live) + liveSrcsHTML(live);
+  } catch(e){
+    turn.err = AI_MSG[e && e.code] || 'Something went wrong. Try again.';
+    if (cur()) cur().innerHTML = `<p class="muted">${esc(turn.err)}</p>`;
+  }
+}
 // words that identify a country in a headline (demonyms, capitals, key actors), the same list the news script uses;
 // matched case-sensitively as whole words, so "US" isn't the word "us" and "Mali" isn't "malicious"
 const HEAD_ALIAS_RAW = `USA:U.S.|US|America|American|Americans|Washington|Pentagon|White House

@@ -23,7 +23,26 @@ const MAX_OUTPUT_TOKENS = 8192;
 const MAX_BODY_BYTES = 200_000;
 const CACHE_SECONDS = 24 * 3600;
 const VISITOR_LIMIT = { max: 12, windowMs: 5 * 60_000 };      // AI requests per visitor per 5 minutes
-const ADMIN_LIMIT = { max: 5, windowMs: 15 * 60_000 };        // wrong admin codes per visitor per 15 minutes
+const ADMIN_LIMIT = { max: 5, windowMs: 15 * 60_000 };        // (older per-visitor limit, kept for reference)
+const ADMIN_MAX_TRIES = 5;                                     // wrong admin codes in total before the login locks for everyone
+const BACKUP_LIMIT = { max: 5, windowMs: 60 * 60_000 };       // wrong backup codes per visitor per hour
+// the admin lock lives in KV (survives restarts, shared by all Cloudflare locations); memory is the fallback
+let memLock = { fails: 0, locked: false };
+async function getAdminLock(env){
+  if (!env.LOGS) return memLock;
+  try { return (await env.LOGS.get("sec:admin", "json")) || { fails: 0, locked: false }; } catch { return memLock; }
+}
+async function setAdminLock(env, v){
+  memLock = v;
+  if (env.LOGS) try { await env.LOGS.put("sec:admin", JSON.stringify(v)); } catch {}
+}
+// compares two codes without leaking how many characters matched (both are hashed first)
+async function sameSecret(given, real){
+  if (!given || !real) return false;
+  const [a, b] = await Promise.all([sha256("fl|" + given), sha256("fl|" + real)]);
+  let d = 0; for (let i = 0; i < a.length; i++) d |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  return d === 0 && a.length === b.length;
+}
 
 const hits = new Map();        // in-memory counters (per Worker instance; good enough to stop floods)
 function limited(key, { max, windowMs }) {
@@ -39,8 +58,8 @@ function cors(extra = {}) {
   return {
     "Access-Control-Allow-Origin": ALLOWED_ORIGIN,
     "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-    "Access-Control-Allow-Headers": "Content-Type, X-Faultlines-Kind, X-Admin-Code",
-    "Access-Control-Expose-Headers": "X-Faultlines-Cache, X-Faultlines-Limit, X-Faultlines-Provider, X-Faultlines-Search",
+    "Access-Control-Allow-Headers": "Content-Type, X-Faultlines-Kind, X-Admin-Code, X-Backup-Code",
+    "Access-Control-Expose-Headers": "X-Faultlines-Cache, X-Faultlines-Limit, X-Faultlines-Provider, X-Faultlines-Search, X-Faultlines-Locked, X-Faultlines-Tries",
     "Access-Control-Max-Age": "86400",
     "Vary": "Origin",
     ...extra,
@@ -209,7 +228,9 @@ async function answerAuto(request, env, ctx, ip, kind) {
   // 1. answered in the last 24 h: from memory
   const cache = caches.default;
   const ck = new Request(`https://faultlines-cache/auto2/${await sha256(JSON.stringify(body))}`);   // auto2: answers since Google Search was added
-  const cached = await cache.match(ck);
+  // the private chat (opened with the backup code) is never kept: no cache, nothing stored
+  const keep = kind !== "private";
+  const cached = keep ? await cache.match(ck) : null;
   if (cached) { log(200, "memory", true); return new Response(cached.body, { status: 200, headers: cors({ "Content-Type": "text/event-stream", "X-Faultlines-Cache": "hit" }) }); }
 
   // 2. fair use per visitor
@@ -217,7 +238,7 @@ async function answerAuto(request, env, ctx, ip, kind) {
     log(429, "visitor-limit");
     return deny(429, "You've asked a lot in the last few minutes. Please wait a moment.", { "X-Faultlines-Limit": "visitor" });
   }
-  const remember = text => ctx.waitUntil(cache.put(ck, new Response(text, { headers: { "Content-Type": "text/event-stream", "Cache-Control": `max-age=${CACHE_SECONDS}` } })));
+  const remember = text => { if (keep) ctx.waitUntil(cache.put(ck, new Response(text, { headers: { "Content-Type": "text/event-stream", "Cache-Control": `max-age=${CACHE_SECONDS}` } }))); };
 
   // 3. Gemini models, streamed; every extra key (GEMINI_API_KEY_2 ... _5, each from its own Google project)
   //    has its own daily allowance, so each model is tried with each key
@@ -737,14 +758,44 @@ async function handle(request, env, ctx, origin) {
     if (path === "top") return topStories(url.searchParams.get("lang") || "en", (url.searchParams.get("q") || "").slice(0, 60),
                                           (url.searchParams.get("en") || "").slice(0, 60), ctx);
 
-    // --- admin: usage log ---
+    // --- the backup code (secret ADMIN_BACKUP_CODE): unlocks a locked admin login, and opens the private chat ---
+    // 5 wrong backup codes per visitor per hour, so it can't be guessed
+    const backup = request.headers.get("X-Backup-Code");
+    const checkBackup = async () => {   // null = right; otherwise the refusal to send
+      if (!env.ADMIN_BACKUP_CODE) return deny(500, "ADMIN_BACKUP_CODE secret is not set on the Worker.");
+      const failKey = `backupfail:${ip}`;
+      const fails = (hits.get(failKey) || []).filter(t => Date.now() - t < BACKUP_LIMIT.windowMs);
+      if (fails.length >= BACKUP_LIMIT.max) return deny(429, "Too many wrong backup codes. Try again in an hour.");
+      if (await sameSecret(backup || "", env.ADMIN_BACKUP_CODE)) return null;
+      fails.push(Date.now()); hits.set(failKey, fails);
+      ctx.waitUntil(logEvent(env, request, { kind: path === "private/verify" ? "private" : "unlock", status: 401 }));
+      return deny(401, "Wrong backup code.", { "X-Faultlines-Tries": String(BACKUP_LIMIT.max - fails.length) });
+    };
+    if (path === "private/verify") {
+      const no = await checkBackup(); if (no) return no;
+      ctx.waitUntil(logEvent(env, request, { kind: "private", status: 200 }));
+      return json(200, { ok: true });
+    }
+
+    // --- admin: usage log. 5 wrong codes in total (from anyone) lock it for everyone; only the backup code
+    //     (sent instead of the admin code) unlocks it, and it opens the logs too ---
     if (path === "admin/logs" || path === "admin/archive") {
       if (!env.ADMIN_CODE) return deny(500, "ADMIN_CODE secret is not set on the Worker.");
       const code = request.headers.get("X-Admin-Code") || "";
-      const wrongKey = `adminfail:${ip}`;
-      const fails = (hits.get(wrongKey) || []).filter(t => Date.now() - t < ADMIN_LIMIT.windowMs);
-      if (fails.length >= ADMIN_LIMIT.max) return deny(429, "Too many wrong codes. Try again in 15 minutes.");
-      if (code !== env.ADMIN_CODE) { fails.push(Date.now()); hits.set(wrongKey, fails); return deny(401, "Wrong code."); }
+      const lock = await getAdminLock(env);
+      if (backup) {
+        const no = await checkBackup(); if (no) return no;
+        if (lock.locked || lock.fails){ await setAdminLock(env, { fails: 0, locked: false }); ctx.waitUntil(logEvent(env, request, { kind: "unlock", status: 200 })); }
+      }
+      else if (lock.locked) return deny(423, "Locked after 5 wrong codes. Enter the backup code to unlock.", { "X-Faultlines-Locked": "1" });
+      else if (!(await sameSecret(code, env.ADMIN_CODE))) {
+        const n = (lock.fails || 0) + 1;
+        await setAdminLock(env, { fails: n, locked: n >= ADMIN_MAX_TRIES, at: new Date().toISOString() });
+        ctx.waitUntil(logEvent(env, request, { kind: "admin", status: n >= ADMIN_MAX_TRIES ? 423 : 401 }));
+        if (n >= ADMIN_MAX_TRIES) return deny(423, "Locked after 5 wrong codes. Enter the backup code to unlock.", { "X-Faultlines-Locked": "1" });
+        return deny(401, `Wrong code. ${ADMIN_MAX_TRIES - n} ${ADMIN_MAX_TRIES - n === 1 ? "try" : "tries"} left.`, { "X-Faultlines-Tries": String(ADMIN_MAX_TRIES - n) });
+      }
+      if (lock.fails) await setAdminLock(env, { fails: 0, locked: false });   // a right code resets the count
       if (!env.LOGS) return json(200, { logs: [], note: "No KV namespace bound as LOGS, so nothing is being logged yet." });
       if (path === "admin/archive"){   // ?day=YYYY-MM-DD opens one archived day; without it: the list of archived days
         const day = url.searchParams.get("day") || "";
