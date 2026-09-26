@@ -113,8 +113,8 @@ button{font:inherit;color:inherit}
 .smodal-list{margin:0 18px;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-size:13.5px}
 .smodal-list button{background:none;border:0;padding:0;color:var(--soft);text-align:start;cursor:pointer;font:inherit}
 .smodal-list button:hover,.smodal-list li.on button{color:var(--gold-hi)}
-@media (max-width:760px){ .smodal-title{font-size:19px} }
-@media (max-width:760px){ .pop{left:8px;right:8px;width:auto;top:auto;bottom:calc(8px + env(safe-area-inset-bottom,0px));max-height:70vh} }
+@media (max-width:900px){ .smodal-title{font-size:19px} }
+@media (max-width:900px){ .pop{left:8px;right:8px;width:auto;top:auto;bottom:calc(8px + env(safe-area-inset-bottom,0px));max-height:70vh} }
 .maplegend{display:grid;grid-template-columns:1fr 1fr;gap:7px 14px;font-size:12.5px;color:var(--soft)}
 .maplegend span{display:flex;align-items:center;gap:8px;line-height:1.25}
 .maplegend .g{justify-self:center}
@@ -275,10 +275,10 @@ button{font:inherit;color:inherit}
 .tv.loading .tv-head,.tv.loading .tv-meta,.tv.loading .tv-pic,.vid.loading .vid-stage,.vid.loading .vid-cap,.vid.loading .vid-meta{opacity:.25;transition:opacity .2s}
 .tv.loading .tv-where::after,.vid.loading .tv-where::after{content:" …";animation:pulse 1s infinite}
 /* the left column scrolls if it gets taller than the screen */
-@media (min-width:761px){ .top{max-height:calc(100vh - 90px);overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;scrollbar-color:var(--line2) transparent;padding-bottom:2px} }
+@media (min-width:901px){ .top{max-height:calc(100vh - 90px);overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;scrollbar-color:var(--line2) transparent;padding-bottom:2px} }
 .mob-only{display:none}
 [dir="rtl"] .p-body, [dir="rtl"] .p-head, [dir="rtl"] .top, [dir="rtl"] .ticker{text-align:right}
-@media (max-width:760px){
+@media (max-width:900px){
   .mob-only{display:inline-flex;align-items:center}
   .ask{display:none}
   .ask.open{display:flex}
@@ -485,7 +485,7 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
 .intro-list{margin:0;padding-left:18px;color:var(--soft);display:flex;flex-direction:column;gap:4px}
 .panel.min .p-body{display:none}
 .panel.min .collapse{display:grid}
-@media (min-width:761px){
+@media (min-width:901px){
   /* panel open: centre the globe in the space left of it; pushed down: title bar at the bottom, globe back in the middle */
   /* the canvas is 400px wider than the window (globeW); the box must be exactly as wide, or clicks land off-target.
      open: globe 100px left of centre; pushed down: centred */
@@ -505,8 +505,8 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
 .tip .pill{align-self:flex-start}
 .tip .muted{font-size:12px}
 
-@media (max-width:760px){
-  .top{left:10px;top:calc(10px + env(safe-area-inset-top,0px));width:calc(100vw - 20px);gap:7px}
+@media (max-width:900px){
+  .top{left:10px;top:calc(10px + env(safe-area-inset-top,0px));width:min(calc(100vw - 20px),520px);gap:7px}   /* tablets: not stretched across the screen */
   .brand{gap:8px;align-items:center}
   .brand h1{font-size:21px}
   .brand > span{display:none}
@@ -1415,7 +1415,7 @@ let sel = {type:'none'};
 let relMap = new Map();
 let hoverId = null;
 const layers = {strait:true, land:true, flash:true, base:true, resource:true, arcs:true};
-const mob = () => window.innerWidth <= 760;
+const mob = () => window.innerWidth <= 900;
 const CMP_MAX = 12;
 
 /* ---------- filters (per-viewer; remembered in this browser) ---------- */
@@ -1495,7 +1495,7 @@ function polyLabel(f){
 }
 
 const globeEl = document.getElementById('globe');
-const globeW = () => window.innerWidth + (window.innerWidth > 760 ? 400 : 0);   // wider on desktop so it can slide beside the panel
+const globeW = () => window.innerWidth + (window.innerWidth > 900 ? 400 : 0);   // wider on desktop so it can slide beside the panel
 const globe = new Globe(globeEl, {animateIn:true})
   .width(globeW()).height(window.innerHeight)
   .backgroundColor('rgba(0,0,0,0)')
@@ -1680,7 +1680,7 @@ function fitAlt(){
   if (!W || !H) return 2.5;
   // phones: the whole screen width (a tall narrow screen would otherwise clip the globe left and right)
   const freeW = mob() ? W - 16 : W - 400 - (document.body.classList.contains('pmin') ? 0 : 420);
-  const r = Math.max(160, Math.min(freeW, H - 40) * 0.47);   // globe radius in px, with a margin
+  const r = Math.max(mob() ? 110 : 160, Math.min(freeW, H - 40) * 0.47);   // globe radius in px, with a margin (small phones: no bigger than the screen)
   const fov = (globe.camera().fov || 50) * Math.PI / 180;
   const theta = Math.atan(r * Math.tan(fov / 2) / (H / 2));
   return Math.min(6, Math.max(1.6, 1 / Math.sin(theta) - 1));
@@ -2765,7 +2765,9 @@ function applyLive(){
 }
 
 function changeItems(entry){
-  return (entry.items||[]).map(it=>{
+  // the same pair updated by several runs that day: only its latest entry
+  const items = (entry.items||[]).filter((it, i, all) => !all.slice(i + 1).some(x => x.label === it.label));
+  return items.map(it=>{
     const u = safeUrl(it.source);
     const label = String(it.label||'').replace(/\b[A-Z]{3}\b/g, c => ENT[c] ? ENT[c].name : c);   // ISO codes -> names
     return `<li><b>${esc(label)}</b> <span class="muted">${gx(it.change||'')}</span>${u?` <a href="${esc(u)}" target="_blank" rel="noopener">${esc(host(u))}</a>`:''}</li>`;
@@ -3305,6 +3307,34 @@ const TR = {
     'Solo se muestran noticias publicadas por al menos dos medios independientes; se excluyen los medios de propaganda estatal (RT, Sputnik, TASS, Press TV, Global Times, CGTN…).',
     'تُعرض فقط الأخبار التي تنقلها وسيلتا إعلام مستقلتان على الأقل؛ وتُستبعد وسائل الدعاية الحكومية (RT وسبوتنيك وتاس وبرس تي في وغلوبال تايمز وCGTN وغيرها).'],
   'Play video': ['Lire la vidéo', 'Reproducir vídeo', 'تشغيل الفيديو'], 'Watch live news': ['Regarder l’info en direct', 'Ver noticias en directo', 'شاهد الأخبار مباشرة'], '24/7 live news channel': ['Chaîne d’info en continu', 'Canal de noticias 24/7', 'قناة أخبار مباشرة'], 'Next story': ['Sujet suivant', 'Noticia siguiente', 'الخبر التالي'], 'Territory': ['Territoire', 'Territorio', 'إقليم'], 'Continent': ['Continent', 'Continente', 'قارة'],
+  // intro footer, compare panel, quick comparisons  [French, Spanish, Arabic, German]
+  'Headlines, leaders and figures refresh automatically; relationship statuses are an editorial baseline. Relations are editorial shorthand, not a substitute for analysis.': [
+    'Titres, dirigeants et chiffres se mettent à jour automatiquement ; les statuts des relations sont une base éditoriale. Ce sont des raccourcis, pas une analyse.',
+    'Titulares, líderes y cifras se actualizan automáticamente; los estados de las relaciones son una base editorial. Son resúmenes, no un análisis.',
+    'تُحدَّث العناوين والقادة والأرقام تلقائيًا؛ أما تصنيفات العلاقات فهي أساس تحريري، وهي اختصارات لا تغني عن التحليل.',
+    'Schlagzeilen, Staatsspitzen und Zahlen aktualisieren sich automatisch; die Beziehungseinstufungen sind eine redaktionelle Grundlage. Sie sind Kurzformen, keine Analyse.'],
+  'marks pairs with indirect links (militant networks, smuggling, migration, proxies, resources).': [
+    'signale les paires avec des liens indirects (réseaux militants, contrebande, migrations, groupes par procuration, ressources).',
+    'marca los pares con vínculos indirectos (redes militantes, contrabando, migración, grupos subsidiarios, recursos).',
+    'يشير إلى الأزواج ذات الروابط غير المباشرة (شبكات مسلحة، تهريب، هجرة، وكلاء، موارد).',
+    'markiert Paare mit indirekten Verbindungen (militante Netzwerke, Schmuggel, Migration, Stellvertreter, Rohstoffe).'],
+  'No bloc includes all of them.': ['Aucun bloc ne les réunit tous.', 'Ningún bloque los incluye a todos.', 'لا يوجد تكتل يضمها جميعًا.', 'Kein Block umfasst alle.'],
+  'Partly shared:': ['En partie communs :', 'Compartidos en parte:', 'مشتركة جزئيًا:', 'Teilweise gemeinsam:'],
+  'Hotspots involving 2+ of them': ['Points chauds impliquant au moins deux d’entre eux', 'Puntos calientes con 2 o más de ellos', 'بؤر توتر تشمل اثنين منها أو أكثر', 'Brennpunkte mit 2 oder mehr von ihnen'],
+  'Click to add a location to this comparison.': ['Cliquez pour ajouter un lieu à cette comparaison.', 'Haz clic para añadir un lugar a esta comparación.', 'انقر لإضافة موقع إلى هذه المقارنة.', 'Klick, um einen Ort zu diesem Vergleich hinzuzufügen.'],
+  'Nuclear-armed states': ['États dotés de l’arme nucléaire', 'Estados con armas nucleares', 'الدول النووية', 'Atommächte'],
+  'Gulf & Iran': ['Golfe & Iran', 'Golfo e Irán', 'الخليج وإيران', 'Golf & Iran'], 'Middle East': ['Moyen-Orient', 'Oriente Medio', 'الشرق الأوسط', 'Naher Osten'],
+  'Korean Peninsula': ['Péninsule coréenne', 'Península de Corea', 'شبه الجزيرة الكورية', 'Koreanische Halbinsel'], 'South China Sea': ['Mer de Chine méridionale', 'Mar de China Meridional', 'بحر الصين الجنوبي', 'Südchinesisches Meer'],
+  'South Asia': ['Asie du Sud', 'Asia del Sur', 'جنوب آسيا', 'Südasien'], 'Baltic & Nordic': ['Baltique & pays nordiques', 'Báltico y nórdicos', 'البلطيق والشمال الأوروبي', 'Baltikum & Nordeuropa'],
+  'Black Sea': ['Mer Noire', 'Mar Negro', 'البحر الأسود', 'Schwarzes Meer'], 'Caucasus': ['Caucase', 'Cáucaso', 'القوقاز', 'Kaukasus'],
+  'Horn of Africa': ['Corne de l’Afrique', 'Cuerno de África', 'القرن الأفريقي', 'Horn von Afrika'], 'Sahel': ['Sahel', 'Sahel', 'الساحل', 'Sahel'],
+  'Great Lakes': ['Grands Lacs', 'Grandes Lagos', 'البحيرات العظمى', 'Große Seen'], 'Americas': ['Amériques', 'Américas', 'الأمريكتان', 'Amerika'],
+  '⚓ Oil & gas chokepoints': ['⚓ Passages du pétrole & du gaz', '⚓ Pasos del petróleo y el gas', '⚓ ممرات النفط والغاز', '⚓ Engpässe für Öl & Gas'],
+  '⚓ Asia–Europe sea route': ['⚓ Route maritime Asie–Europe', '⚓ Ruta marítima Asia–Europa', '⚓ الطريق البحري بين آسيا وأوروبا', '⚓ Seeweg Asien–Europa'],
+  '⚓ Red Sea crisis': ['⚓ Crise en mer Rouge', '⚓ Crisis del mar Rojo', '⚓ أزمة البحر الأحمر', '⚓ Krise im Roten Meer'],
+  '⚓ Taiwan & South China Sea': ['⚓ Taïwan & mer de Chine méridionale', '⚓ Taiwán y mar de China Meridional', '⚓ تايوان وبحر الصين الجنوبي', '⚓ Taiwan & Südchinesisches Meer'],
+  '⚓ Arctic routes': ['⚓ Routes arctiques', '⚓ Rutas árticas', '⚓ الطرق القطبية', '⚓ Arktische Routen'],
+  '⚓ Russia\'s sea exits': ['⚓ Accès maritimes de la Russie', '⚓ Salidas marítimas de Rusia', '⚓ منافذ روسيا البحرية', '⚓ Russlands Zugänge zum Meer'],
   // the first-visit tour  [French, Spanish, Arabic, German]
   'Welcome to Faultlines': ['Bienvenue sur Faultlines', 'Bienvenido a Faultlines', 'مرحبًا بك في Faultlines', 'Willkommen bei Faultlines'],
   'An interactive globe of world politics: who is allied with whom, where the tensions are, and what is happening right now. Take the 30-second tour?': [
@@ -3431,6 +3461,10 @@ TR_RE.push(
 );
 // "20 min ago" etc. inside longer text (source · time)
 TR_RE.push([/^✓ (\d+) outlets$/, ['✓ $1 médias', '✓ $1 medios', '✓ $1 وسائل إعلام']]);
+TR_RE.push([/^updated (.+)$/, ['mis à jour $1', 'actualizado $1', 'حُدِّث $1', 'aktualisiert $1']],
+  [/^1 pair$/, ['1 paire', '1 par', 'زوج واحد', '1 Paar']], [/^(\d+) pairs$/, ['$1 paires', '$1 pares', '$1 أزواج', '$1 Paare']],
+  [/^(\d+) pairs? hidden by filters ·$/, ['$1 paire(s) masquée(s) par les filtres ·', '$1 par(es) ocultos por los filtros ·', '$1 أزواج مخفية بسبب التصفية ·', '$1 Paar(e) durch Filter ausgeblendet ·']],
+  [/^Show all$/, ['Tout afficher', 'Mostrar todo', 'عرض الكل', 'Alle zeigen']]);
 // the facts-table footnote is built from optional parts; translate each part
 const FIG_PARTS = [
   ['Plain figures: World Bank, latest year shown', ['Chiffres simples : Banque mondiale, dernière année disponible', 'Cifras simples: Banco Mundial, último año disponible', 'الأرقام العادية: البنك الدولي، آخر سنة متاحة', 'Einfache Zahlen: Weltbank, neuestes verfügbares Jahr']],
@@ -3588,7 +3622,7 @@ function trText(s){
   if (out == null) return null;
   return s.replace(core, out);
 }
-const NAME_HOSTS = 'b, h2, h3, th, .tag, .tip b, option, .th-title, .kw, .fc';
+const NAME_HOSTS = 'b, h2, h3, th, .tag, .tip b, option, .th-title, .kw, .fc, p.note';
 function translateNode(n){
   if (n.nodeType === 3){
     // skip AI answers (already in the chosen language), headlines and the reader's own question
@@ -3645,8 +3679,9 @@ askBtn.onclick = () => {
 document.getElementById('news-btn').onclick = () => setNews(!document.querySelector('.top').classList.contains('news-on'));
 askForm.onsubmit = async e => {
   e.preventDefault(); const q = askQ.value.trim().slice(0, 300);
-  // one "word" with a digit in it looks like a code: check it with the Worker (never sent to the AI, never stored)
-  if (/^\S{4,64}$/.test(q) && /\d/.test(q)){
+  // a code-like "word" (4+ digits, or 8+ characters mixing letters and digits; not "COP29" or "G20") is checked
+  // with the Worker as a possible backup code: never sent to the AI, never stored
+  if (/^\d{4,64}$/.test(q) || (/^[^\s?]{8,64}$/.test(q) && /\d/.test(q) && /\p{L}/u.test(q))){
     askQ.value = ''; askQ.blur();
     let ok = false;
     try { const r = await fetch(`${AI_PROXY}/private/verify`, {method: 'POST', headers: {'X-Backup-Code': q}}); ok = r.ok; } catch(err){}
@@ -4421,6 +4456,7 @@ let startLang = 'en'; try { startLang = localStorage.getItem('fl-lang') || ((nav
 setLang(LANG_NAME[startLang] ? startLang : 'en', false);
 buildIndex();   // now with the French, Spanish and Arabic country names
 renderIntro();
+if (!mob() && innerWidth < 1200) setMin(true);   // iPad sideways, small laptops: the intro starts folded so the globe has room
 fitView(0);   // start with the whole globe in the free space
 setTimeout(loadFeed, 1500);
 

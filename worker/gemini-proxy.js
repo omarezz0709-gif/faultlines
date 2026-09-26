@@ -268,8 +268,10 @@ async function answerAuto(request, env, ctx, ip, kind) {
           return new Response(toClient, { status: 200, headers: cors({ "Content-Type": "text/event-stream", "X-Faultlines-Cache": "miss",
             "X-Faultlines-Provider": model, "X-Faultlines-Search": "on" }) });
         }
-        lastSearchRefusal = `${r.status} on ${model}: ${(await r.text().catch(() => "")).replace(/\s+/g, " ").slice(0, 140)}`.replace(/[^\x20-\x7e]/g, "");
-        skip(slot, r.status === 429 ? 30 * 60_000 : r.status === 503 ? 60_000 : 6 * 3600_000);
+        const why = (await r.text().catch(() => "")).replace(/\s+/g, " ");
+        lastSearchRefusal = `${r.status} on ${model}: ${why.slice(0, 140)}`.replace(/[^\x20-\x7e]/g, "");
+        // "check your plan and billing" = search isn't in the free plan at all: don't ask again for 12 hours
+        skip(slot, /billing|plan/i.test(why) ? 12 * 3600_000 : r.status === 429 ? 30 * 60_000 : r.status === 503 ? 60_000 : 6 * 3600_000);
       }
     }
   }
@@ -380,12 +382,16 @@ const OUTLETS = {
        ["CBS News", "https://www.cbsnews.com/latest/rss/world"], ["ABC News", "https://abcnews.go.com/abcnews/internationalheadlines"],
        ["Washington Post", "https://feeds.washingtonpost.com/rss/world"]],
   fr: [["France 24", "https://www.france24.com/fr/rss"], ["Le Monde", "https://www.lemonde.fr/international/rss_full.xml"], ["RFI", "https://www.rfi.fr/fr/rss"],
-       ["Euronews", "https://fr.euronews.com/rss"]],
+       ["Euronews", "https://fr.euronews.com/rss"], ["franceinfo", "https://www.francetvinfo.fr/monde.rss"], ["Le Figaro", "https://www.lefigaro.fr/rss/figaro_international.xml"],
+       ["Libération", "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/international/?outputType=xml"], ["20 Minutes", "https://www.20minutes.fr/feeds/rss-monde.xml"],
+       ["Le Parisien", "https://feeds.leparisien.fr/leparisien/rss/international"], ["La Presse", "https://www.lapresse.ca/international/rss"],
+       ["Le Temps", "https://www.letemps.ch/articles.rss"], ["TV5Monde", "https://information.tv5monde.com/rss.xml"]],
   es: [["El País", "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/internacional/portada"], ["BBC Mundo", "https://feeds.bbci.co.uk/mundo/rss.xml"],
        ["France 24", "https://www.france24.com/es/rss"], ["DW", "https://rss.dw.com/rdf/rss-sp-all"], ["Euronews", "https://es.euronews.com/rss"]],
   ar: [["BBC Arabic", "https://feeds.bbci.co.uk/arabic/rss.xml"], ["France 24", "https://www.france24.com/ar/rss"], ["DW", "https://rss.dw.com/rdf/rss-ar-all"],
        ["Sky News Arabia", "https://www.skynewsarabia.com/web/rss"], ["Al Jazeera", "https://www.aljazeera.net/aljazeerarss/a7c186be-1baa-4bd4-9d80-a84db769f779/73d0e1b4-532f-45ef-b135-bfdff8b8cab9"],
-       ["Euronews", "https://arabic.euronews.com/rss"]],
+       ["Euronews", "https://arabic.euronews.com/rss"], ["Asharq Al-Awsat", "https://aawsat.com/feed"], ["CNN Arabic", "https://arabic.cnn.com/api/v1/rss/rss.xml"],
+       ["UN News", "https://news.un.org/feed/subscribe/ar/news/all/rss.xml"]],
   de: [["tagesschau", "https://www.tagesschau.de/ausland/index~rss2.xml"], ["DW", "https://rss.dw.com/rdf/rss-de-all"],
        ["Der Spiegel", "https://www.spiegel.de/ausland/index.rss"], ["Zeit", "https://newsfeed.zeit.de/politik/ausland/index"],
        ["FAZ", "https://www.faz.net/rss/aktuell/politik/ausland/"], ["Süddeutsche", "https://rss.sueddeutsche.de/rss/Politik"],
@@ -464,17 +470,15 @@ async function realtimeSearch(q, lang, ctx){
   const cache = caches.default, ck = new Request(`https://faultlines-cache/rt/${lang}/${encodeURIComponent(kws.join(" "))}`);
   const hit = await cache.match(ck);
   if (hit) return new Response(hit.body, { status: 200, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "hit" }) });
-  // 3.5 seconds per source: a slow one (GDELT often is) is left out rather than making the answer wait
+  // 3.5 seconds per source: a slow one is left out rather than making the answer wait
+  // (GDELT was tried too, but it never answered in time from Cloudflare and only made every search 3 s slower)
   const get = (u, type = "text") => fetch(u, { headers: { "User-Agent": "Mozilla/5.0 (compatible; Faultlines news reader)", "Accept-Language": lang },
     signal: AbortSignal.timeout(3500) }).then(r => r.ok ? (type === "json" ? r.json() : r.text()) : null).catch(() => null);
   const query = kws.join(" ");
-  const [google, bing, gdelt, pool] = await Promise.all([
+  const gdelt = [];
+  const [google, bing, pool] = await Promise.all([
     get(`https://news.google.com/rss/search?q=${encodeURIComponent(query + " when:3d")}&${NEWS_LANG[lang]}`).then(x => x ? parseRss(x) : []),
     get(`https://www.bing.com/news/search?q=${encodeURIComponent(query)}&format=rss&qft=${encodeURIComponent('sortbydate="1"')}&setlang=${lang}`).then(x => x ? parseBing(x) : []),
-    get(`https://api.gdeltproject.org/api/v2/doc/doc?query=${encodeURIComponent(kws.slice(0, 4).join(" ") + " sourcelang:" + GDELT_LANG[lang])}&mode=artlist&format=json&maxrecords=30&sort=datedesc&timespan=3d`, "json")
-      .then(j => ((j && j.articles) || []).map(a => { const d = /^(\d{4})(\d\d)(\d\d)T(\d\d)(\d\d)(\d\d)Z$/.exec(a.seendate || "");
-        return { t: String(a.title || "").slice(0, 300), u: String(a.url || "").slice(0, 2000), s: String(a.domain || "").replace(/^www\./, "").slice(0, 80),
-                 d: d ? `${d[1]}-${d[2]}-${d[3]}T${d[4]}:${d[5]}:${d[6]}Z` : null }; })),
     // the trusted outlets' feeds: stories whose title or summary has most of the question's key words
     newsPool(lang, ctx).then(p => p.items.map(it => it.members[0] && { t: it.members[0].t, u: it.members[0].u, s: it.members[0].s, d: it.d, x: it.members[0].x })
       .filter(it => it && kws.filter(k => (it.t + " " + (it.x || "")).toLowerCase().includes(k)).length >= Math.min(2, kws.length))).catch(() => []),
@@ -509,7 +513,8 @@ const TRUSTED = ["reuters", "associated press", "ap news", "afp", "agence france
   "la vanguardia", "bbc mundo", "bbc arabic", "al arabiya", "العربية", "الجزيرة", "sky news arabia", "سكاي نيوز", "asharq al-awsat",
   "الشرق الأوسط", "cnn arabic", "nikkei", "south china morning post", "the hindu", "haaretz", "times of israel", "kyiv independent",
   "the moscow times", "der spiegel", "spiegel", "zeit", "süddeutsche", "faz", "frankfurter allgemeine", "tagesschau", "orf", "swissinfo", "cbc", "abc.net.au", "cna", "channel newsasia", "guardian", "channel 4",
-  "zdf", "nzz", "neue zürcher", "der standard", "handelsblatt", "welt", "n-tv", "ntv", "deutschlandfunk", "br24", "srf"];
+  "zdf", "nzz", "neue zürcher", "der standard", "handelsblatt", "welt", "n-tv", "ntv", "deutschlandfunk", "br24", "srf",
+  "franceinfo", "20 minutes", "le parisien", "la presse", "le temps", "tv5monde", "bfmtv", "un news"];
 const trusted = s => { const l = (s || "").toLowerCase(); return TRUSTED.some(t => l === t || l.includes(t)); };
 // state-controlled propaganda outlets: never shown, never counted as a confirming source
 const STATE_MEDIA = /^(rt|rt news|rt\.com|russia today\b.*|sputnik\b.*|tass|tass\.com|ria novosti\b.*|ria\.ru|press ?tv\b.*|presstv\.ir|tasnim\b.*|fars news\b.*|farsnews\b.*|mehr news\b.*|irna\b.*|global ?times|globaltimes\.cn|cgtn\b.*|china daily\b.*|xinhua\b.*|people'?s daily\b.*|kcna|kcna\.kp|telesur\b.*|al mayadeen\b.*|sana|syrian arab news agency|belta\b.*|granma|pravda\b.*|izvestia|belarus\.by|azertac\b.*|سانا|وكالة سانا|روسيا اليوم|آر تي|سبوتنيك|برس تي في|تسنيم|وكالة تسنيم|فارس|وكالة فارس|مهر|الميادين|شينخوا|وكالة شينخوا|ارنا|إرنا)$/i;
@@ -633,7 +638,8 @@ const CHANNELS = {
        ["Associated Press", "UC52X5wxOL_s5yw0dQk7NtgA"], ["CNA", "UC83jt4dlz1Gjl58fzQrrKZg"], ["Guardian News", "UCIRYBXDze5krPDzAEOxFGVA"],
        ["PBS NewsHour", "UC6ZFN9Tx6xh-skXCuRHCDpQ"], ["Channel 4 News", "UCTrQ7HXWRRxr7OsOtodr2_w"], ["euronews", "UCSrZ3UV4jOidv8ppoVuvW9Q"],
        ["CBS News", "UC8p1vwvWtl6T73JiExfWs1g"], ["NBC News", "UCeY0bbntWzzVIaj2z3QigXg"], ["ABC News", "UCBi2mrWuNuyYy4gbM6fU18Q"]],
-  fr: [["France 24", "UCCCPCZNChQdGa9EkATeye4g"], ["Euronews", "UCW2QcKZiU8aUGg4yxCIditg"], ["DW News", "UCknLrEdhRCp1aegoMqRaCZg"]],
+  fr: [["France 24", "UCCCPCZNChQdGa9EkATeye4g"], ["Euronews", "UCW2QcKZiU8aUGg4yxCIditg"], ["DW News", "UCknLrEdhRCp1aegoMqRaCZg"],
+       ["BFMTV", "UCXwDLMDV86ldKoFVc_g8P0g"], ["Le Monde", "UCYpRDnhk5H8h16jpS84uqsA"]],
   es: [["France 24 Español", "UCUdOoVWuWmgo1wByzcsyKDQ"], ["DW Español", "UCT4Jg8h03dD0iN3Pb5L0PMA"]],
   ar: [["Al Jazeera Arabic", "UCfiwzLy-8yKzIbsmZTzxDgw"], ["Sky News Arabia", "UCIJXOvggjKtCagMfxvcCzAA"], ["France 24 Arabic", "UCdTyuXgmJkG_O8_75eqej-w"],
        ["DW Arabic", "UC30ditU5JI16o5NbFsHde_Q"], ["BBC News Arabic", "UCelk6aHijZq-GJBBB9YpReA"], ["Al Arabiya", "UCahpxixMCwoANAftn6IxkTg"]],
@@ -788,6 +794,7 @@ async function handle(request, env, ctx, origin) {
         if (lock.locked || lock.fails){ await setAdminLock(env, { fails: 0, locked: false }); ctx.waitUntil(logEvent(env, request, { kind: "unlock", status: 200 })); }
       }
       else if (lock.locked) return deny(423, "Locked after 5 wrong codes. Enter the backup code to unlock.", { "X-Faultlines-Locked": "1" });
+      else if (!code) return deny(401, "Enter the admin code.");   // no code at all (a bot or a crawler): not counted as a try
       else if (!(await sameSecret(code, env.ADMIN_CODE))) {
         const n = (lock.fails || 0) + 1;
         await setAdminLock(env, { fails: n, locked: n >= ADMIN_MAX_TRIES, at: new Date().toISOString() });

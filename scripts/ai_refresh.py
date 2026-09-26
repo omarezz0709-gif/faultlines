@@ -328,7 +328,9 @@ def merge(live: dict, upd: dict, lookup: dict, t_utc: dt.datetime) -> int:
             items.append(item)
     log = meta.setdefault("log", [])
     if log and log[0].get("date") == today:
-        log[0].setdefault("items", []).extend(items)
+        # several runs a day: a pair updated again replaces its earlier entry instead of being listed twice
+        again = {i["label"] for i in items}
+        log[0]["items"] = [i for i in log[0].get("items", []) if i.get("label") not in again] + items
     else:
         log.insert(0, {"date": today, "items": items})
     meta["log"] = log[:30]
