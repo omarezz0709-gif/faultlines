@@ -1,7 +1,22 @@
 {
  "meta": {
-  "lastRun": "2026-09-25T22:08:41Z",
+  "lastRun": "2026-09-26T05:14:28Z",
   "log": [
+   {
+    "date": "2026-09-26",
+    "items": [
+     {
+      "label": "Saudi Arabia–Türkiye",
+      "change": "Normal/mixed → Partner: Deepened defense and intelligence cooperation under joint framework",
+      "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOUEJnTmktQk1WeDZTbDRTSmpjNHNiZ1BGSlM2dDBhYjd5LVF3UVppOVNaZTVqUlJuYkZ1M3czRTh6TFhtcGY4Si1Hai00Y29zSGMyUDZMRTNXMUJucEtiWFdpM1MtVWJBRXR2NnJnRFJXb3lRUEpYQTdmeHd1Vll3bnNSQnJhSURubWZxVW1fTEJ5Y3diMERMLXpaQm03NUFqS3BFUVh3cXpVOFVWRjFwZTdJb1FzeEFMUHAzNkU0R2EzQTZ4d21RVDMzMkRsS1pPc2lsMDEtb0U?oc=5"
+     },
+     {
+      "label": "United States–Colombia",
+      "change": "Note refreshed: Updated leadership reference to President Abelardo de la Espriella",
+      "source": "https://www.wikidata.org/wiki/Q739"
+     }
+    ]
+   },
    {
     "date": "2026-09-25",
     "items": [
@@ -151,7 +166,7 @@
     ]
    }
   ],
-  "summary": "Morocco confirms election results with the PAM winning 97 seats, Colombia formally cuts diplomatic ties with Iran, and regional defense talks intensify around Saudi Arabia amid Houthi attacks."
+  "summary": "Saudi Arabia and Türkiye deepen defense ties alongside Pakistan, while election milestones unfold in Morocco, South Sudan, and Brazil."
  },
  "relations": {
   "DNK-USA": {
@@ -233,6 +248,22 @@
    "note": "Canada and Vietnam establish a formal Strategic Partnership to elevate bilateral economic and security cooperation.",
    "updated": "2026-09-25",
    "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUjhOWllpQVhCNVRHVTFpSUh6SUdyMlh4dUJXbmFmbnRyTWtaWGZrUHFWQndlX0xweS1DeXRjZUtDRmNvcHVHNXdYMWUtX0lIUVRLbVNoODdwMmMtZS02TmwwbW41aGxHeFh3OFVDdzZFUWZOQW4xNHRZVFlMbzJXb0V4dE5uMFpPd09udHkxRFg0YnV0RmhnbDQ1Yw?oc=5"
+  },
+  "SAU-TUR": {
+   "a": "SAU",
+   "b": "TUR",
+   "s": "F",
+   "note": "Saudi Arabia and Türkiye deepen military and intelligence cooperation alongside Pakistan under a joint defense agreement.",
+   "updated": "2026-09-26",
+   "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOUEJnTmktQk1WeDZTbDRTSmpjNHNiZ1BGSlM2dDBhYjd5LVF3UVppOVNaZTVqUlJuYkZ1M3czRTh6TFhtcGY4Si1Hai00Y29zSGMyUDZMRTNXMUJucEtiWFdpM1MtVWJBRXR2NnJnRFJXb3lRUEpYQTdmeHd1Vll3bnNSQnJhSURubWZxVW1fTEJ5Y3diMERMLXpaQm03NUFqS3BFUVh3cXpVOFVWRjFwZTdJb1FzeEFMUHAzNkU0R2EzQTZ4d21RVDMzMkRsS1pPc2lsMDEtb0U?oc=5"
+  },
+  "COL-USA": {
+   "a": "COL",
+   "b": "USA",
+   "s": "N",
+   "note": "Long-time security partner; bilateral relations reset under President Abelardo de la Espriella.",
+   "updated": "2026-09-26",
+   "source": "https://www.wikidata.org/wiki/Q739"
   }
  },
  "threads": {
@@ -298,11 +329,11 @@
    "hog": "Luiz Inácio Lula da Silva, President",
    "hos": "Luiz Inácio Lula da Silva, President",
    "lastelec": "General election, October 2022, won by Lula (PT)",
-   "nextelec": "General election, 4 October 2026 (runoff 25 October)",
+   "nextelec": "Presidential and General, October 2026",
    "ruling": "Workers' Party (PT)-led broad coalition",
-   "source": "https://www.as-coa.org/articles/brazils-2026-elections-timeline-and-fast-facts",
+   "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPT3c4Y0ZtWTlyTlJEOGRwamZrSGU3YVVKWmlnR3NqeV9GSGFQaHo5dUZMU1BZTlVRVzVnVC04LTMzTGdkbnNmWVB5Qi1HN2tyLWN4bmhrUmYzR3NWOUpwem9uSjdGWkRsR2s1V0Jsa0gyMnpGbkd6QVNVaDhFMEpvSDFfN0JidnVPdzRYb3NFelhsUQ?oc=5",
    "system": "Federal presidential republic",
-   "updated": "2026-09-23"
+   "updated": "2026-09-26"
   },
   "CAN": {
    "hog": "Mark Carney, Prime Minister",
@@ -395,14 +426,19 @@
    "updated": "2026-09-23"
   },
   "MAR": {
-   "lastelec": "Parliamentary, September 2026, PAM won 97 seats",
-   "updated": "2026-09-25",
-   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOb3RVa0h1bDNUMGZ2VV9XYTJpcFQyQURVd0RZd1YwbGFOdDlQRUlrejBnT3FGX0ZJMWF5Q0d3YXh2ai1PRFNNNXhNZ0lHWmNQSkhIcTZrMmZlVFloN2pCRnVpSUowQnh6cFlQR0NOb1JCZXZvV19CNTF0YTllM3dvWXZ2WkNvTVhSdngtTjdFSkVBQktFekFhUzVYTEVjWnNkTEpOaWRHRy04NlppM1lrcGs2YXF6VTNsZFU3eG5R?oc=5"
+   "lastelec": "Parliamentary, September 2026, Authenticity and Modernity Party (PAM)",
+   "updated": "2026-09-26",
+   "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOd0pCNXN2Z2IyQVB1bldRbU1LcktSb0plOVo1SWpsM05rY0RSamxOQ2ZLU1pFY0lfeGJsWGdmSGFaRDJEOUd6M25Yc0l4WWtCd2VXVDg2YzRkSkgzWllOY0JxMlFubExoTFJ5R01rbDFteGpfcjMxRTZKT2JUZjI0WC1NX2dpeTdtYV81UUhzZU9oYkVXdUVQYm81Uk9qU3ZsNXl5U2JoUTZobmVNTU5NNW9MY9IBuAFBVV95cUxPdkFjN3MyU2V6OUNrWm8zb3VYdWYzQUxmRFh6T3RoOS1aVnNOd0RjZkpHY1FzMFdMTDUyNTFRMGczaTJFNFN6Vi1SUGZ0aUJOTDkwaFN2a0VNbV9LenRjc1hSemJGeW8tZzA0V0tST2lncDVTV3JqYjhkQjVEb09LQzFHTkFqU3IxdEh0SFB3MG02Q253b0JUWmdXVDB6LS1ra1h3VVlJcVlLNnctSTROeUxDSE55dWtO?oc=5"
   },
   "BGR": {
    "nextelec": "presidential, 25 October 2026",
    "updated": "2026-09-23",
    "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWDh2YVFnb3VwZDNPdjB4NnZmT0t4X1Z3M085YTljU3pBXzVwcm9EN0R1NkNmWGxfOGp5WFZFaHZ1c0RyTzdNSktEVG8zRE9QZ1JEdm1Rd1FQRVpoWUh0M0VNdUhyc2tJeGNzMEx4RFJRRDZQcERIcnZlMlBIZ1JDZDF2Wm5CMWtqZUE2UnI1a0dfNGJfRE5KUWhVaTNKTVRIM1VqSEluTU9YREl1c3c?oc=5"
+  },
+  "SSD": {
+   "nextelec": "Presidential and Parliamentary, December 2026",
+   "updated": "2026-09-26",
+   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQWDlIemNKNUdNQVRMakJTS0J4UEhzTXk5YnBaZG91MW9zR1FjR1NjWEg3SW1XUDFxY0dXbDBGb1RaN0tEUV9BdW56djdaVDZZYXZpQ0NqRHprNmwyWmJrX3NPMFpmNldTQm5uVzExeC1EMzJlbko0WnZfd210UWtaR3Jkdk5pTjJZanZJOHBxTVNpYkE2c1ZmR25rbGVraHAtWVhXUzRyMnkxYjZSVTdJTjFKa0JDbjA?oc=5"
   }
  }
 }
