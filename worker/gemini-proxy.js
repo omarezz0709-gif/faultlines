@@ -406,6 +406,66 @@ async function liveFeed(lang, ctx){
   return new Response(body, { status: 200, headers: cors({ "Content-Type": "application/json" }) });   // an empty list is a normal answer
 }
 
+/* ------------------------------------------------------------------ real-time search (the question bar's ⚡ mode)
+   The newest reports on a question from several free sources at once: Google News and Bing News searches, GDELT
+   (a global news index updated every 15 minutes) and the trusted-outlet feeds above. State propaganda outlets are
+   dropped, the same story from several outlets is kept once (with how many carry it), newest first. Cached 5 min. */
+const RT_STOP = new Set(("who what when where why how which whom whose is are was were be been being do does did the a an and or of to in on for with at by "
+  + "from as about into over after before between its it this that these those will would could should can may might has have had not no than then there "
+  + "their they them his her he she we you i me my our your current currently now today latest recent recently news tell explain happening going happen "
+  + "think right qui que quoi quel quelle pourquoi comment est sont le la les un une des du de et ou en au aux avec pour sur dans ce cette quién qué "
+  + "cuál por cómo es son el los las unos unas del y o con para sobre este esta من ما ماذا لماذا كيف هل في على عن مع إلى هذا هذه").split(" "));
+const GDELT_LANG = { en: "english", fr: "french", es: "spanish", ar: "arabic" };
+function parseBing(xml){
+  const out = [];
+  for (const m of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)){
+    const b = m[1], g = tag => { const r = b.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`)); return r ? unxml(r[1]) : ""; };
+    let u = g("link"); try { const real = new URL(u).searchParams.get("url"); if (real) u = real; } catch {}
+    const d = new Date(g("pubDate"));
+    const t = stripTags(g("title"));
+    if (t && /^https?:\/\//.test(u)) out.push({ t: t.slice(0, 300), u: u.slice(0, 2000), s: stripTags(g("News:Source")).slice(0, 80), d: isNaN(d) ? null : d.toISOString(), x: stripTags(g("description")).slice(0, 300) });
+  }
+  return out;
+}
+async function realtimeSearch(q, lang, ctx){
+  if (!NEWS_LANG[lang]) lang = "en";
+  const kws = [...new Set(q.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, " ").split(/\s+/).filter(w => w.length > 1 && !RT_STOP.has(w)))].slice(0, 8);
+  if (!kws.length) return json(200, { q, items: [], used: {} });
+  const cache = caches.default, ck = new Request(`https://faultlines-cache/rt/${lang}/${encodeURIComponent(kws.join(" "))}`);
+  const hit = await cache.match(ck);
+  if (hit) return new Response(hit.body, { status: 200, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "hit" }) });
+  const get = (u, type = "text") => fetch(u, { headers: { "User-Agent": "Mozilla/5.0 (compatible; Faultlines news reader)", "Accept-Language": lang },
+    signal: AbortSignal.timeout(5000) }).then(r => r.ok ? (type === "json" ? r.json() : r.text()) : null).catch(() => null);
+  const query = kws.join(" ");
+  const [google, bing, gdelt, pool] = await Promise.all([
+    get(`https://news.google.com/rss/search?q=${encodeURIComponent(query + " when:3d")}&${NEWS_LANG[lang]}`).then(x => x ? parseRss(x) : []),
+    get(`https://www.bing.com/news/search?q=${encodeURIComponent(query)}&format=rss&qft=${encodeURIComponent('sortbydate="1"')}&setlang=${lang}`).then(x => x ? parseBing(x) : []),
+    get(`https://api.gdeltproject.org/api/v2/doc/doc?query=${encodeURIComponent(kws.slice(0, 4).join(" ") + " sourcelang:" + GDELT_LANG[lang])}&mode=artlist&format=json&maxrecords=30&sort=datedesc&timespan=3d`, "json")
+      .then(j => ((j && j.articles) || []).map(a => { const d = /^(\d{4})(\d\d)(\d\d)T(\d\d)(\d\d)(\d\d)Z$/.exec(a.seendate || "");
+        return { t: String(a.title || "").slice(0, 300), u: String(a.url || "").slice(0, 2000), s: String(a.domain || "").replace(/^www\./, "").slice(0, 80),
+                 d: d ? `${d[1]}-${d[2]}-${d[3]}T${d[4]}:${d[5]}:${d[6]}Z` : null }; })),
+    // the trusted outlets' feeds: stories whose title or summary has most of the question's key words
+    newsPool(lang, ctx).then(p => p.items.map(it => it.members[0] && { t: it.members[0].t, u: it.members[0].u, s: it.members[0].s, d: it.d, x: it.members[0].x })
+      .filter(it => it && kws.filter(k => (it.t + " " + (it.x || "")).toLowerCase().includes(k)).length >= Math.min(2, kws.length))).catch(() => []),
+  ]);
+  const cutoff = Date.now() - 4 * 864e5;
+  const all = [...pool, ...google, ...bing, ...gdelt].filter(it => it.t && /^https?:\/\//.test(it.u || "") && !STATE_MEDIA.test((it.s || "").trim())
+    && (!it.d || Date.parse(it.d) > cutoff));
+  // the same story from several outlets: keep the first (newest), count the others
+  const stories = [];
+  for (const it of all.sort((a, b) => (b.d || "").localeCompare(a.d || ""))){
+    const w = words(it.t);
+    const same = stories.find(s => { let n = 0; w.forEach(x => { if (s.w.has(x)) n++; }); return n >= 3 && n / Math.min(w.size, s.w.size) >= 0.5; });
+    if (same){ if (it.s && !same.srcs.includes(it.s)) same.srcs.push(it.s); if (!same.x && it.x) same.x = it.x; continue; }
+    stories.push({ ...it, w, srcs: it.s ? [it.s] : [] });
+  }
+  const items = stories.slice(0, 15).map(({ w, srcs, ...it }) => ({ ...it, n: srcs.filter(s => !AGGREGATOR.test(s)).length || 1, also: srcs.slice(1, 4) }));
+  const body = JSON.stringify({ q, lang, generated: new Date().toISOString(), items,
+    used: { outlets: pool.length, google: google.length, bing: bing.length, gdelt: gdelt.length } });
+  if (items.length) ctx.waitUntil(cache.put(ck, new Response(body, { headers: { "Content-Type": "application/json", "Cache-Control": "max-age=300" } })));
+  return new Response(body, { status: 200, headers: cors({ "Content-Type": "application/json" }) });
+}
+
 /* ------------------------------------------------------------------ top stories
    Google News topic feeds already group articles into stories (the <ol> in each item lists other outlets on the
    same story); country searches return single articles, which are grouped here by shared title words.
@@ -644,6 +704,12 @@ async function handle(request, env, ctx, origin) {
     if (path === "hit") {
       ctx.waitUntil(logEvent(env, request, { kind: "visit", status: 200 }));
       return new Response(null, { status: 204, headers: cors() });
+    }
+
+    // --- real-time search for the question bar's ⚡ mode (fair use: 20 searches per visitor per 5 minutes) ---
+    if (path === "search") {
+      if (limited(`rt:${ip}`, { max: 20, windowMs: 5 * 60_000 })) return deny(429, "Too many searches in a few minutes. Please wait a moment.", { "X-Faultlines-Limit": "visitor" });
+      return realtimeSearch((url.searchParams.get("q") || "").slice(0, 300), url.searchParams.get("lang") || "en", ctx);
     }
 
     // --- live feed: latest world headlines from Google News, cached 10 minutes per language ---
