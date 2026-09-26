@@ -434,8 +434,9 @@ async function realtimeSearch(q, lang, ctx){
   const cache = caches.default, ck = new Request(`https://faultlines-cache/rt/${lang}/${encodeURIComponent(kws.join(" "))}`);
   const hit = await cache.match(ck);
   if (hit) return new Response(hit.body, { status: 200, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "hit" }) });
+  // 3.5 seconds per source: a slow one (GDELT often is) is left out rather than making the answer wait
   const get = (u, type = "text") => fetch(u, { headers: { "User-Agent": "Mozilla/5.0 (compatible; Faultlines news reader)", "Accept-Language": lang },
-    signal: AbortSignal.timeout(5000) }).then(r => r.ok ? (type === "json" ? r.json() : r.text()) : null).catch(() => null);
+    signal: AbortSignal.timeout(3500) }).then(r => r.ok ? (type === "json" ? r.json() : r.text()) : null).catch(() => null);
   const query = kws.join(" ");
   const [google, bing, gdelt, pool] = await Promise.all([
     get(`https://news.google.com/rss/search?q=${encodeURIComponent(query + " when:3d")}&${NEWS_LANG[lang]}`).then(x => x ? parseRss(x) : []),
@@ -451,10 +452,11 @@ async function realtimeSearch(q, lang, ctx){
   const cutoff = Date.now() - 4 * 864e5;
   const all = [...pool, ...google, ...bing, ...gdelt].filter(it => it.t && /^https?:\/\//.test(it.u || "") && !STATE_MEDIA.test((it.s || "").trim())
     && (!it.d || Date.parse(it.d) > cutoff));
-  // the same story from several outlets: keep the first (newest), count the others
+  // the same story from several outlets: keep the first (newest), count the others. The searched words themselves
+  // don't count as shared (every result says "Strait of Hormuz"), or all the results would melt into one story.
   const stories = [];
   for (const it of all.sort((a, b) => (b.d || "").localeCompare(a.d || ""))){
-    const w = words(it.t);
+    const w = new Set([...words(it.t)].filter(x => !kws.some(k => x.startsWith(k) || k.startsWith(x))));
     const same = stories.find(s => { let n = 0; w.forEach(x => { if (s.w.has(x)) n++; }); return n >= 3 && n / Math.min(w.size, s.w.size) >= 0.5; });
     if (same){ if (it.s && !same.srcs.includes(it.s)) same.srcs.push(it.s); if (!same.x && it.x) same.x = it.x; continue; }
     stories.push({ ...it, w, srcs: it.s ? [it.s] : [] });

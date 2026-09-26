@@ -141,6 +141,17 @@ button{font:inherit;color:inherit}
 .ask-go{border:0;background:var(--gold);color:var(--on-gold);border-radius:4px;width:30px;height:28px;cursor:pointer;font-weight:700}
 .ask-hist{border:0;background:none;color:var(--muted);border-radius:4px;width:28px;height:28px;cursor:pointer;font-size:15px}
 .ask-hist:hover,.ask-hist[aria-pressed="true"]{color:var(--gold-hi);background:var(--raise)}
+/* ⚡ real-time search mode: the bar glows red while it's on */
+.ask-rt{border:0;background:none;color:var(--muted);border-radius:4px;width:28px;height:28px;cursor:pointer;font-size:14px;filter:grayscale(1);opacity:.75}
+.ask-rt:hover{background:var(--raise);opacity:1}
+.ask-rt[aria-pressed="true"]{filter:none;opacity:1;background:rgba(224,96,79,.16);box-shadow:inset 0 0 0 1px rgba(224,96,79,.55)}
+.ask.rt-on{border-color:rgba(224,96,79,.6);box-shadow:0 0 0 1px rgba(224,96,79,.25)}
+.rt-badge{display:inline-block;margin-inline-start:6px;padding:1px 6px;border-radius:3px;background:rgba(224,96,79,.16);color:#e0604f;font:600 10px var(--mono);letter-spacing:.06em;vertical-align:middle}
+.ai a.cite{display:inline-block;min-width:15px;padding:0 3px;margin:0 1px;border-radius:3px;background:var(--raise);color:var(--gold-hi);font:600 10.5px/1.5 var(--mono);text-align:center;text-decoration:none;vertical-align:1px}
+.ai a.cite:hover{background:var(--gold);color:var(--on-gold)}
+.srcs.live{flex-direction:column;align-items:flex-start;gap:3px}
+.srcs.live a{max-width:100%}
+.srcs.live small{color:var(--faint);font:10.5px var(--mono);margin-inline-start:4px}
 /* a conversation in the panel: each question with its answer, then a box for a follow-up */
 .turn{display:flex;flex-direction:column;gap:8px;padding-bottom:16px;border-bottom:1px solid var(--line)}
 .turn:last-of-type{border-bottom:0;padding-bottom:4px}
@@ -525,6 +536,7 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
   <form class="ask" id="ask-form" autocomplete="off">
     <span class="ask-i" aria-hidden="true">✦</span>
     <input id="ask-q" type="text" maxlength="300" placeholder="Ask anything about world affairs…" aria-label="Ask a question">
+    <button class="ask-rt" id="ask-rt" type="button" aria-label="Real-time search" title="Real-time search: answers from news published in the last hours" aria-pressed="false">⚡</button>
     <button class="ask-hist" id="ask-hist" type="button" aria-label="Your earlier questions" title="Your earlier questions" aria-pressed="false">☰</button>
     <button class="ask-go" type="submit" aria-label="Ask">→</button>
   </form>
@@ -3207,6 +3219,11 @@ const TR = {
   'Hidden by filters': ['Masqué par les filtres', 'Oculto por los filtros', 'مخفي بسبب التصفية'], 'Small state': ['Petit État', 'Estado pequeño', 'دولة صغيرة'],
   'Your question': ['Votre question', 'Tu pregunta', 'سؤالك'], 'Question': ['Question', 'Pregunta', 'سؤال'],
   'Mentioned on the map': ['Mentionnés sur la carte', 'Mencionados en el mapa', 'مذكورة على الخريطة'],
+  'Real-time: ask about what is happening now…': ['Temps réel : que se passe-t-il en ce moment ?…', 'Tiempo real: pregunta qué está pasando ahora…', 'مباشر: اسأل عمّا يحدث الآن…'],
+  'Real-time search': ['Recherche en temps réel', 'Búsqueda en tiempo real', 'بحث فوري'],
+  'Real-time search: answers from news published in the last hours': ['Recherche en temps réel : réponses tirées de l’actualité des dernières heures', 'Búsqueda en tiempo real: respuestas con noticias de las últimas horas', 'بحث فوري: إجابات من أخبار الساعات الأخيرة'],
+  'Latest reports': ['Derniers articles', 'Últimas noticias', 'آخر التقارير'], '⚡ Real-time': ['⚡ Temps réel', '⚡ Tiempo real', '⚡ مباشر'],
+  'Searching the latest news…': ['Recherche des dernières actualités…', 'Buscando las últimas noticias…', 'جارٍ البحث في آخر الأخبار…'],
   'Ask a follow-up…': ['Posez une question de suivi…', 'Haz una pregunta de seguimiento…', 'اطرح سؤال متابعة…'], 'Ask a follow-up question': ['Poser une question de suivi', 'Hacer una pregunta de seguimiento', 'اطرح سؤال متابعة'],
   'Your earlier questions': ['Vos questions précédentes', 'Tus preguntas anteriores', 'أسئلتك السابقة'], '☰ Your earlier questions': ['☰ Vos questions précédentes', '☰ Tus preguntas anteriores', '☰ أسئلتك السابقة'],
   'Sources': ['Sources', 'Fuentes', 'المصادر'], 'Clear history': ['Effacer l’historique', 'Borrar historial', 'مسح السجل'], 'Sure? Clear all': ['Sûr ? Tout effacer', '¿Seguro? Borrar todo', 'متأكد؟ امسح الكل'],
@@ -3489,7 +3506,12 @@ function allNames(id){
   }
   return NAMES_ALL[id] || [];
 }
-function askPrompt(q, ids, pois, earlier = [], wiki = []){
+// ⚡ real-time mode: the newest reports on the question, numbered so the answer can cite them as [1], [2]…
+const liveBlock = live => live && live.length ? `REAL-TIME MODE. News reports found just now for this question, newest first (age · outlet · how many outlets report it):
+${live.map((it, i) => `[${i + 1}] ${it.d ? ago(it.d) : 'recent'} · ${it.s || 'news'}${it.n > 1 ? ` (${it.n} outlets)` : ''}: ${it.t}${it.x ? ' — ' + it.x : ''}`).join('\n')}
+Base the answer on these reports: lead with the latest development and say when it happened (e.g. "3 hours ago", "on Thursday"), say what is still unconfirmed or disputed, and cite the reports you use by number, like [2]. A report from a single outlet is a claim, not a confirmed fact. If the reports don't answer the question, say so briefly and answer from the other information below.
+` : '';
+function askPrompt(q, ids, pois, earlier = [], wiki = [], live = []){
   const th = THREADS.filter(t => ids.some(i => t.c.includes(i))).slice(0, 8);
   const pairs = []; ids.forEach((a, i) => ids.slice(i + 1).forEach(b => { const f = pairFacts(a, b); pairs.push(`- ${f.A} – ${f.B}: ${STATUS[f.r.s].label} — ${f.r.note}`); }));
   // a follow-up: the conversation so far, so "and what about their economy?" knows who "they" are
@@ -3498,7 +3520,7 @@ function askPrompt(q, ids, pois, earlier = [], wiki = []){
 
 ${convo}A reader of the globe asks: "${q.replace(/"/g, "'")}"
 Answer it directly in the first one or two sentences, then add short "### " sections with bullets only where they help. About 150–400 words, shorter if the question is simple.${earlier.length ? ' Do not repeat what the earlier answers already said; build on them.' : ''} If the question is not about international affairs, geopolitics, geography or the countries and places on this globe, say in one sentence that this assistant only covers world affairs.
-${currentFacts(ids, 4)}${wiki.length ? `Reference articles from Wikipedia, retrieved today (current; prefer them over what you remember):\n${wiki.map(w => `[${w.title}] ${w.text}`).join('\n\n')}\n` : ''}${ids.length ? `Page data for the countries mentioned:\n${ids.map(id => `${ENT[id].name} (blocs: ${blocsOf(id).map(b => b.name).join(', ') || 'none'}):\n${relLines(id, 10)}`).join('\n')}\n` : ''}${pairs.length ? `Between them:\n${pairs.join('\n')}\n` : ''}${th.length ? `Transnational issues:\n${threadLines(th)}\n` : ''}${pois.length ? `Places mentioned:\n${pois.map(p => `- ${p.n}: ${p.s}. ${p.d}`).join('\n')}\n` : ''}`;
+${liveBlock(live)}${currentFacts(ids, 4)}${wiki.length ? `Reference articles from Wikipedia, retrieved today (current; prefer them over what you remember):\n${wiki.map(w => `[${w.title}] ${w.text}`).join('\n\n')}\n` : ''}${ids.length ? `Page data for the countries mentioned:\n${ids.map(id => `${ENT[id].name} (blocs: ${blocsOf(id).map(b => b.name).join(', ') || 'none'}):\n${relLines(id, 10)}`).join('\n')}\n` : ''}${pairs.length ? `Between them:\n${pairs.join('\n')}\n` : ''}${th.length ? `Transnational issues:\n${threadLines(th)}\n` : ''}${pois.length ? `Places mentioned:\n${pois.map(p => `- ${p.n}: ${p.s}. ${p.d}`).join('\n')}\n` : ''}`;
 }
 /* Wikipedia, read live for each question: the articles that best match it (their opening sections), so the AI has
    today's facts on elections, wars and deals its own knowledge doesn't reach. Free, no key; Wikipedia allows this
@@ -3568,9 +3590,34 @@ function flagConvo(fly1){
   }
 }
 const srcsHTML = src => src && src.length ? `<p class="srcs"><b>Sources</b>${src.slice(0, 6).map(s => safeUrl(s.uri) ? `<a href="${esc(s.uri)}" target="_blank" rel="noopener" title="${esc(s.title)}">${esc(s.title || host(s.uri))}</a>` : '').join('')}</p>` : '';
+// real-time answers: the numbered reports ([1] Reuters · 2 h ago), and the answer's [n] markers become links to them
+const liveSrcsHTML = live => live && live.length ? `<p class="srcs live"><b>Latest reports</b>${live.map((it, i) => safeUrl(it.u) ? `<a href="${esc(it.u)}" target="_blank" rel="noopener" dir="auto">[${i + 1}] ${esc(it.t)}<small>${esc(it.s || host(it.u))}${it.d ? ' · ' + esc(ago(it.d)) : ''}${it.n > 1 ? ' · ✓ ' + it.n : ''}</small></a>` : '').join('')}</p>` : '';
+const cite = (html, live) => live && live.length ? html.replace(/\[(\d{1,2})\](?![^<]*<\/a>)/g, (m, n) => { const it = live[+n - 1]; return it && safeUrl(it.u) ? `<a class="cite" href="${esc(it.u)}" target="_blank" rel="noopener" title="${esc((it.s ? it.s + ': ' : '') + it.t)}">${n}</a>` : m; }) : html;
+const answerHTML = t => cite(md(t.a), t.live) + liveSrcsHTML(t.live) + srcsHTML(t.src);
 function turnHTML(t, i){
-  return `<div class="turn"><p class="q-asked" dir="auto">${esc(t.q)}</p>
-    <div class="ai" ${i === convo.turns.length - 1 ? 'id="ai-cur"' : ''}>${t.a ? md(t.a) + srcsHTML(t.src) : t.err ? `<p class="muted">${esc(t.err)}</p>` : '<p class="muted thinking">Thinking…</p>'}</div></div>`;
+  return `<div class="turn"><p class="q-asked" dir="auto">${esc(t.q)}${t.rt ? '<span class="rt-badge">⚡ Real-time</span>' : ''}</p>
+    <div class="ai" ${i === convo.turns.length - 1 ? 'id="ai-cur"' : ''}>${t.a ? answerHTML(t) : t.err ? `<p class="muted">${esc(t.err)}</p>` : `<p class="muted thinking">${t.rt ? 'Searching the latest news…' : 'Thinking…'}</p>`}</div></div>`;
+}
+// ⚡ on/off (remembered); while on, every question and follow-up searches the news first
+let RT_MODE = false;
+try { RT_MODE = localStorage.getItem('fl-ask-rt') === '1'; } catch(e){}
+function setRT(on){
+  RT_MODE = on;
+  document.getElementById('ask-rt').setAttribute('aria-pressed', on);
+  document.getElementById('ask-form').classList.toggle('rt-on', on);
+  const inp = document.getElementById('ask-q');
+  inp.placeholder = on ? 'Real-time: ask about what is happening now…' : 'Ask anything about world affairs…';
+  try { if (LANG !== 'en') translateNode(inp.parentElement); } catch(e){}   // (on first load the language is set up later)
+  try { localStorage.setItem('fl-ask-rt', on ? '1' : '0'); } catch(e){}
+}
+document.getElementById('ask-rt').onclick = () => { setRT(!RT_MODE); document.getElementById('ask-q').focus(); };
+setRT(RT_MODE);
+async function liveSearch(q){
+  try {
+    const r = await fetch(`${AI_PROXY}/search?lang=${LANG}&q=${encodeURIComponent(q.slice(0, 300))}`, {signal: AbortSignal.timeout(9000)});
+    if (!r.ok) return [];
+    return ((await r.json()).items || []).filter(it => safeUrl(it.u)).slice(0, 12);
+  } catch(e){ return []; }
 }
 function drawConvo(){
   const ids = [...new Set(convo.turns.flatMap(t => t.ids))].filter(i => ENT[i]);
@@ -3594,7 +3641,7 @@ async function renderAsk(q, cont = false){
   const {ids: qIds, pois} = mentioned(q);
   // a follow-up that names no country ("what about their army?") still gets the earlier questions' countries as context
   const ctxIds = [...new Set([...qIds, ...earlier.flatMap(t => t.ids)])].slice(0, 6);
-  const turn = {q, a: '', ids: qIds, aIds: [], pois: pois.map(p => p.n), at: Date.now()};
+  const turn = {q, a: '', ids: qIds, aIds: [], pois: pois.map(p => p.n), at: Date.now(), rt: RT_MODE};
   convo.turns.push(turn);
   drawConvo(); flagConvo(true);
   const body = panel.querySelector('.p-body'), cur = () => document.getElementById('ai-cur');
@@ -3602,17 +3649,21 @@ async function renderAsk(q, cont = false){
   const myConvo = convo;
   // today's facts from Wikipedia, looked up while the AI connection is prepared (a follow-up is searched with the
   // conversation's opening question, so "and their army?" still finds the right articles)
-  const [sample, wiki] = await Promise.all([getSample(), wikiContext(earlier.length ? `${earlier[0].q} ${q}` : q, ctxIds)]);
+  // ⚡ real-time mode also searches the news (a follow-up together with the opening question, for context)
+  const topic = earlier.length ? `${earlier[0].q} ${q}` : q;
+  const [sample, wiki, live] = await Promise.all([getSample(), wikiContext(topic, ctxIds), turn.rt ? liveSearch(earlier.length ? `${q} ${earlier[0].q}` : q) : Promise.resolve([])]);
+  turn.live = live.map(({t, u, s, d, n}) => ({t, u, s, d, n}));
+  if (turn.rt && cur()) cur().innerHTML = `<p class="muted thinking">${live.length ? `Found ${live.length} recent reports. Writing…` : 'No recent reports found; answering from what the site knows…'}</p>`;
   if (!sample){ turn.err = AI_MSG.rate_limited; convo.turns.pop(); if (cur()) cur().innerHTML = `<p class="muted">${esc(AI_MSG.rate_limited)}</p>`; return; }
   try {
-    const {text, truncated, sources} = await sample(askPrompt(q, ctxIds, pois, earlier, wiki), {kind: 'ask', cache: {gcTime: 86400000},
-      onText: ({text}) => { if (convo === myConvo && cur()) cur().innerHTML = md(text); }});
+    const {text, truncated, sources} = await sample(askPrompt(q, ctxIds, pois, earlier, wiki, live), {kind: 'ask', cache: {gcTime: turn.rt ? 10 * 60e3 : 86400000},
+      onText: ({text}) => { if (convo === myConvo && cur()) cur().innerHTML = cite(md(text), turn.live); }});
     turn.a = text + (truncated ? '\n\n(Cut short.)' : '');
     turn.src = [...wiki.map(w => ({uri: w.uri, title: 'Wikipedia: ' + w.title})), ...(sources || [])].slice(0, 6);
     turn.aIds = mentioned(text, 14).ids.filter(i => !qIds.includes(i));
     saveConvo();
     if (convo !== myConvo) return;   // the viewer has moved on to another conversation
-    if (cur()) cur().innerHTML = md(turn.a) + srcsHTML(turn.src);
+    if (cur()) cur().innerHTML = answerHTML(turn);
     if (panelMode === 'ask') flagConvo(false);   // now also the countries the answer names
   } catch(e){
     const i = myConvo.turns.indexOf(turn); if (i >= 0) myConvo.turns.splice(i, 1);   // a failed question is not part of the conversation
