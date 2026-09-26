@@ -276,6 +276,8 @@ button{font:inherit;color:inherit}
 .tv.loading .tv-where::after,.vid.loading .tv-where::after{content:" …";animation:pulse 1s infinite}
 /* the left column scrolls if it gets taller than the screen */
 @media (min-width:901px){ .top{max-height:calc(100vh - 90px);overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;scrollbar-color:var(--line2) transparent;padding-bottom:2px} }
+/* its boxes keep their full height (squeezed to fit, the top story lost its ‹ › row on 768 px laptop screens) */
+.top > *{flex-shrink:0}
 .mob-only{display:none}
 [dir="rtl"] .p-body, [dir="rtl"] .p-head, [dir="rtl"] .top, [dir="rtl"] .ticker{text-align:right}
 @media (max-width:900px){
