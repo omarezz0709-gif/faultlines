@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <meta name="description" content="Interactive globe of international relations, chokepoints and flashpoints, refreshed from the news three times a day.">
 <title>Faultlines Globe</title>
 <!-- light or dark before anything is drawn: the saved choice, otherwise the device setting -->
@@ -36,7 +36,8 @@
   --s-N:#8a8578; --p-land:#6f6a60; --p-base:#6f6a60; --p-resource:#b8952c;
 }
 html,body{height:100%}
-html{touch-action:manipulation}   /* phones: no accidental double-tap zoom (pinching still works) */
+html{touch-action:pan-x pan-y}   /* phones: pinching or double-tapping never zooms the page (only the globe zooms) */
+#globe canvas{touch-action:none}
 body{margin:0;background:radial-gradient(120% 90% at 40% 45%,#1c1c1c 0%,var(--bg) 62%,#000 100%);background-color:var(--bg);color:var(--text);font:14px/1.5 var(--body);overflow:hidden}
 [data-theme="light"] body{background:radial-gradient(120% 90% at 40% 45%,#fdfbf5 0%,var(--bg) 62%,#ddd4c2 100%)}
 #globe{position:fixed;inset:0;direction:ltr}   /* the globe's pins are placed from the left edge; in Arabic (right-to-left) they would all land off-screen */
@@ -4393,6 +4394,12 @@ async function buildRelief(){
 }
 // countries: solid without relief, partly see-through with it (relationship colours stay on top)
 function setLandColours(){ LAND = reliefOn ? GT.landR : GT.land; LAND_DIM = reliefOn ? GT.dimR : GT.dim; LAND_HOVER = reliefOn ? GT.hoverR : GT.hover; }
+
+/* NO ACCIDENTAL PAGE ZOOM: pinching (phone, or a laptop trackpad, which the browser sees as Ctrl + scroll) zooms the
+   globe, never the whole page. Over the globe the globe's own controls still get the gesture. Ctrl +/- keys still work. */
+addEventListener('wheel', e => { if (e.ctrlKey) e.preventDefault(); }, {passive: false});
+['gesturestart', 'gesturechange', 'gestureend'].forEach(t => document.addEventListener(t, e => e.preventDefault(), {passive: false}));   // Safari (iPhone, iPad, Mac)
+document.addEventListener('touchmove', e => { if (e.touches.length > 1 && !e.target.closest('#globe')) e.preventDefault(); }, {passive: false});
 
 /* ⟲ RESET ZOOM: the whole globe back in view and, on phones, the page back to its normal size after an accidental pinch
    (a page can't set the zoom directly, but briefly capping it at 100% makes the phone snap back) */
