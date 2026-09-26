@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-09-26T16:04:31Z",
+  "lastRun": "2026-09-26T22:08:29Z",
   "log": [
    {
     "date": "2026-09-26",
@@ -31,16 +31,6 @@
       "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOc1hqLXVaZ1RWdmRrUFNMQ3o2anNfZHo4R3VUSXJJVEV1T0k5eU9ZdDBrejdXcjlvOWhWWV9vX0czUV8yUjZETTZwWWtsTHVEZXJxZ01iYVhMQVQ2d3ZkT2dLYURRQVdMaFpfS3JJSUt5ckszNFBNSjU5Y0U0VEE2RHM5WGJpdUJER3I0RlMxaE5wQQ?oc=5"
      },
      {
-      "label": "Morocco",
-      "change": "Recorded parliamentary election victory by Authenticity and Modernity Party",
-      "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNWnBhOFphOVZZcEh6OFdGb1BWRFp2NnRkelFYQ1Z3dTVDR05xTG9zUUtudzNXcWwtVjA5QUNyejZudkxsYjFKWEtscG5OOHVtdzBEMXYzUWVFX1plZ3ktamZqaFJ1eWc5bU1XZ1ROXzZpZnJNNWVlV1R3QWNKRld3WmIxcVRKUjZ4Y3I4ZUZUeWo5R3ktVmYwVVAybm1uemhwUUZreUtlZUlsX0hNaU9VUGZ3?oc=5"
-     },
-     {
-      "label": "South Sudan",
-      "change": "Recorded scheduled general election for December 2026",
-      "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOX2g4SERrV05YLVFFdFEteWlBb2VrdlZ4ZWVBbzBqa2hpa2FDemdUSnVpZ01aUGlYWmgzM3RId2hKRWZIb0RkN1ZrR191bTZ0bXB0SG1jbVRKM1FrYTYyUkZOakJHTWwzeHFYLS0tSTBFOUw0UHFxV3Q2ZURKVnpSSW5HNTFIWkZyTEFWLThQQS1BLU1HVy1FV0xpLVBiMUJ1MWt5VXRhTHV1aEN4RnV6TkZxVQ?oc=5"
-     },
-     {
       "label": "United States–China",
       "change": "Tense: Trump-Xi summit yields tariff cuts and AI safety channel",
       "source": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNSTl6VHRQNEFzdFYtMVFpejQzc0MzYlUwbUpVODBScGNpT1VYTnVPd2V5QkpYTnVzYUZNaW5Jckdhb1ozSzdPTXlNSzctOFYyVmw2Szg2UXlnakdTaTdHQzZyRUZmWUdGR1ZHMFh2WU9ZOW1yT3lDMGQzZDE2N1dncktQaVVPQkg2UVVFLVhwSThzYVMxbm04MjVaOUgtSzZDREl1RzdLYXlOU0tmM1F1YlB5dnRIUHFOMjBMMG5JaGFYVDdMSUpPUmtpOENadw?oc=5"
@@ -64,6 +54,41 @@
       "label": "United States–Zimbabwe",
       "change": "Normal → Tense: US health funding ends over data-sharing dispute",
       "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNSlEtUmR0dUxYeGRTRVlwUUdKVXdsbU55bFFSLWtLUkc0S0MySWp5dHRIT3dpeXc3bFh1V3hKRDA3bnlSZTVJTlRnWFdRa2JORS1NRGQ1RV8xR0lUTUNKUV9BSW5oV2dZUXg3eVJSZlcydmpreURjQ0RVTF9abloxeVV4OVEwTkQ1ZFB6bmVNek9jdkdNUmRibFMzbU5WQ1oxS2ZDNzNpUEd4VzByNnN3OENvZXM4aWhxdTNTaXVNc0k1dWVpMHREV1RLWUViblJsaW52aE1B?oc=5"
+     },
+     {
+      "label": "Colombia–United States",
+      "change": "Normal → Partner: security alignment strengthens with rebel leader extradition",
+      "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNenZnazZ6aXE3RWJNVjhSOUJOY1hldzA1VzVLQXA0eWw2dmRldHZvVmotQ0VQRXlmcVFZOVdDRnNQZ3JvVGgyeTlqTnh1eWhwSUY2UnhveU8yUnUxWjJQMXBQaDMzaVRyNml3d1l0MVh4OTBxOGtSVE1XSnlJRzJodEx4elc5WUp6WFQwS3lEUVd5TE5jYmpWOEgxNmFYQmRiNE1zbHRiVkx1blVrSi1VUFJ0aUpIMmtGdjBMUllMX3p1TWc?oc=5"
+     },
+     {
+      "label": "Germany–Russia",
+      "change": "Note updated: foreign ministers hold first bilateral meeting since 2022 invasion",
+      "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbWNfaThadkVvT1ZZTVdqejc3bTJQUHpXZFlaa1BCNE1UWExnVm5jR2VneGxjQWx2RDZya0tlTlhDb2lPd0lrTWNVdmtCZjdBWlFtU2RUQ2VkN0JnYmF0bTY0am5QOHhpMm5FdFVZN05ab2RIcVlDS0V4b0tPaGNLZlVBa2x2dGVlTG41ZlpDZjVTcUEwekppRi1B?oc=5"
+     },
+     {
+      "label": "Pakistan–Saudi Arabia",
+      "change": "Note updated: trilateral defense talks with Türkiye reinforce Riyadh defense pact",
+      "source": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBsakxhamZUMHhOOV9GNzc3QXphWFdlRjhXYnYxU0MtY1NGRzVHalhEQjR5S3BYTE1ZSjl4NUZEdkxiWWJZMUozUXdWX19uV3M?oc=5"
+     },
+     {
+      "label": "Taliban-era jihadist networks (TTP, IS-Khorasan)",
+      "change": "Thread updated: fatal border clashes between Pakistani troops and Taliban forces",
+      "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOelJVNmlqOW9mY09xVmRGRUVVNDZmVkxkT0JNSlVzbVhjQmFKd3Y0NGlQWXRhVnRQME5zWi1yX3cwckVLdGtJQVE1SkZMcVhqZ1Rzb3pHMWRvYXNnN2h2VDNTS3g2c1JUS0Fva2R0Q252bVVKRGtlQnFXOWdZLXNrRzBXZVdwZXhsYUczSUswNlZlMVpiQWc?oc=5"
+     },
+     {
+      "label": "Morocco",
+      "change": "Election logged: parliamentary, Sep 2026, PAM victory",
+      "source": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNbE1QalBVTi1Qa3JYbGJmYnZXVFlLSGhPd3FLZkxWblVSM3dhVHBsbTBITFRxZjZVVWROUzNna283bUFuNEtoRVNCcUhTUklKN0dnZzhpc1JvSWNnWF9zUEpUQ01hSUhNWGd5ejQyaDZLbzBaQTRPN1M3Y1NwTHNDM1Q0WFotdGRPMW5pVFlQeDF5amFDN3RObWJpRTgySldtN0ppNWNPY0Rya1JxamVBNHo2anVBSERSeGNWY09qanpxU19sTHd4MWVIRjk1TUhmMjFfRVFydUhubVJm?oc=5"
+     },
+     {
+      "label": "Serbia",
+      "change": "Election scheduled: general, 25 Oct 2026",
+      "source": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNMjc0ZzVBenRZdUgxR1NRYjFqOTViVF84V2tmNXNwQ2NST21zQlFVYVpOU24xeHVkYWhSZHFlUkkwdmxZOExUMHdraHk2MC1pSUxER1lFVW1URUpyLU9nNS1rYUhYT3E1U0RGWDB0TWF6bDlZeklnZndOcWRDb283NTREV29wZDVzd3ZyWDAwNGp2RGdFanNabm84TEpjeWY1eENkQkJIODB6SGRLVjdzOXVUcVhtS1R6TzR6Y1V3dm1uS0Q5WEI4Z2tKblZ1am9hTGM2M0l0U3JYcnRKNHhQYTFKOTVGa2tfWHpTZDVfamhTMnFGMEJ5UTBITXpkTFZOT2YzM3pVd0tkRjg?oc=5"
+     },
+     {
+      "label": "South Sudan",
+      "change": "Election scheduled: general, Dec 2026",
+      "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOX2g4SERrV05YLVFFdFEteWlBb2VrdlZ4ZWVBbzBqa2hpa2FDemdUSnVpZ01aUGlYWmgzM3RId2hKRWZIb0RkN1ZrR191bTZ0bXB0SG1jbVRKM1FrYTYyUkZOakJHTWwzeHFYLS0tSTBFOUw0UHFxV3Q2ZURKVnpSSW5HNTFIWkZyTEFWLThQQS1BLU1HVy1FV0xpLVBiMUJ1MWt5VXRhTHV1aEN4RnV6TkZxVQ?oc=5"
      }
     ]
    },
@@ -216,7 +241,7 @@
     ]
    }
   ],
-  "summary": "This update captures major diplomatic shifts from the UN General Assembly, including the US-China summit agreements, Colombia cutting ties with Iran, and regional defense pacts in response to Houthi attacks."
+  "summary": "Elevate Colombia–US relations to Partner following rebel extraditions and security realignment, record UNGA diplomatic exchanges for Germany–Russia and Saudi–Pakistan, update the AfPak border conflict thread, and log elections for Morocco, South Sudan, and Serbia."
  },
  "relations": {
   "DNK-USA": {
@@ -310,10 +335,10 @@
   "COL-USA": {
    "a": "COL",
    "b": "USA",
-   "s": "N",
-   "note": "Long-time security partner; bilateral relations reset under President Abelardo de la Espriella.",
+   "s": "F",
+   "note": "Bilateral security ties strengthen as Colombia extradites armed group commanders to the US under President Abelardo de la Espriella.",
    "updated": "2026-09-26",
-   "source": "https://www.wikidata.org/wiki/Q739"
+   "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNenZnazZ6aXE3RWJNVjhSOUJOY1hldzA1VzVLQXA0eWw2dmRldHZvVmotQ0VQRXlmcVFZOVdDRnNQZ3JvVGgyeTlqTnh1eWhwSUY2UnhveU8yUnUxWjJQMXBQaDMzaVRyNml3d1l0MVh4OTBxOGtSVE1XSnlJRzJodEx4elc5WUp6WFQwS3lEUVd5TE5jYmpWOEgxNmFYQmRiNE1zbHRiVkx1blVrSi1VUFJ0aUpIMmtGdjBMUllMX3p1TWc?oc=5"
   },
   "FRA-SAU": {
    "a": "FRA",
@@ -370,6 +395,22 @@
    "note": "Relations deteriorate as US-funded health programs in Zimbabwe end following a dispute over a data-sharing clause.",
    "updated": "2026-09-26",
    "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNSlEtUmR0dUxYeGRTRVlwUUdKVXdsbU55bFFSLWtLUkc0S0MySWp5dHRIT3dpeXc3bFh1V3hKRDA3bnlSZTVJTlRnWFdRa2JORS1NRGQ1RV8xR0lUTUNKUV9BSW5oV2dZUXg3eVJSZlcydmpreURjQ0RVTF9abloxeVV4OVEwTkQ1ZFB6bmVNek9jdkdNUmRibFMzbU5WQ1oxS2ZDNzNpUEd4VzByNnN3OENvZXM4aWhxdTNTaXVNc0k1dWVpMHREV1RLWUViblJsaW52aE1B?oc=5"
+  },
+  "DEU-RUS": {
+   "a": "DEU",
+   "b": "RUS",
+   "s": "H",
+   "note": "Adversaries over Ukraine; foreign ministers hold first talks since 2022 as Berlin warns Moscow against escalating hybrid warfare.",
+   "updated": "2026-09-26",
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbWNfaThadkVvT1ZZTVdqejc3bTJQUHpXZFlaa1BCNE1UWExnVm5jR2VneGxjQWx2RDZya0tlTlhDb2lPd0lrTWNVdmtCZjdBWlFtU2RUQ2VkN0JnYmF0bTY0am5QOHhpMm5FdFVZN05ab2RIcVlDS0V4b0tPaGNLZlVBa2x2dGVlTG41ZlpDZjVTcUEwekppRi1B?oc=5"
+  },
+  "PAK-SAU": {
+   "a": "PAK",
+   "b": "SAU",
+   "s": "A",
+   "note": "Allies under a mutual defence pact, coordinating with Türkiye to defend Saudi territory from escalatory Houthi missile and drone strikes.",
+   "updated": "2026-09-26",
+   "source": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBsakxhamZUMHhOOV9GNzc3QXphWFdlRjhXYnYxU0MtY1NGRzVHalhEQjR5S3BYTE1ZSjl4NUZEdkxiWWJZMUozUXdWX19uV3M?oc=5"
   }
  },
  "threads": {
@@ -393,6 +434,23 @@
    "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQ0xTUXZkREJ2aUV6a2E4ajhManVjVjE5WGt4eDhneWhhMmktWWlvOVprMkZocEE5andfamlMVFpsNG91MWd5QkpRSnU5Rk1pdk5XN1oxZlJqamNqTFJYWktfM3dKaWhlSVNvYklfazRkODJUNU5PeF93VzNPcHNQUlBwMzQ4VUpCelY0UDgyelNqcm1Yak9aTFRWQlJ3MXFnSzlBZVM1cXZmdkdNWDVLMkV4LXBXZExoelZCSVkycw?oc=5",
    "t": "security",
    "updated": "2026-09-26"
+  },
+  "afpak-jihad": {
+   "t": "security",
+   "n": "Taliban-era jihadist networks (TTP, IS-Khorasan)",
+   "d": "Tehrik-i-Taliban Pakistan (TTP) and Islamic State Khorasan Province (ISKP) operate from Afghan sanctuaries, triggering cross-border Pakistani counter-strikes and fatal military clashes along the Durand Line.",
+   "c": [
+    "AFG",
+    "PAK",
+    "TJK",
+    "UZB",
+    "IRN",
+    "RUS",
+    "TUR",
+    "CHN"
+   ],
+   "updated": "2026-09-26",
+   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOelJVNmlqOW9mY09xVmRGRUVVNDZmVkxkT0JNSlVzbVhjQmFKd3Y0NGlQWXRhVnRQME5zWi1yX3cwckVLdGtJQVE1SkZMcVhqZ1Rzb3pHMWRvYXNnN2h2VDNTS3g2c1JUS0Fva2R0Q252bVVKRGtlQnFXOWdZLXNrRzBXZVdwZXhsYUczSUswNlZlMVpiQWc?oc=5"
   }
  },
  "pois": {
@@ -535,9 +593,9 @@
    "updated": "2026-09-23"
   },
   "MAR": {
-   "lastelec": "parliamentary, September 2026, Authenticity and Modernity Party (PAM) wins",
+   "lastelec": "parliamentary, Sep 2026, PAM",
    "updated": "2026-09-26",
-   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWmY4M2JENFhSVGl5ZV9VWElkUm1ZbWhXRmxyeEtzMDQzU0lCOVFMTkNKcloxZ1N0aEpTU1RkX0hUOG9Yelpwak94aDlzUldxS0VvU2JZV2NMajFCMk5UekI5OVcxNjVBTjhPTi1yM2QzRTVhQ3hXZFJHZ3RqdkI5Szd1N2pLQjhqaHMxeXdYajFRZmRMdXFxZG1TTDE?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNbE1QalBVTi1Qa3JYbGJmYnZXVFlLSGhPd3FLZkxWblVSM3dhVHBsbTBITFRxZjZVVWROUzNna283bUFuNEtoRVNCcUhTUklKN0dnZzhpc1JvSWNnWF9zUEpUQ01hSUhNWGd5ejQyaDZLbzBaQTRPN1M3Y1NwTHNDM1Q0WFotdGRPMW5pVFlQeDF5amFDN3RObWJpRTgySldtN0ppNWNPY0Rya1JxamVBNHo2anVBSERSeGNWY09qanpxU19sTHd4MWVIRjk1TUhmMjFfRVFydUhubVJm?oc=5"
   },
   "BGR": {
    "nextelec": "presidential, 25 October 2026",
@@ -545,9 +603,14 @@
    "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWDh2YVFnb3VwZDNPdjB4NnZmT0t4X1Z3M085YTljU3pBXzVwcm9EN0R1NkNmWGxfOGp5WFZFaHZ1c0RyTzdNSktEVG8zRE9QZ1JEdm1Rd1FQRVpoWUh0M0VNdUhyc2tJeGNzMEx4RFJRRDZQcERIcnZlMlBIZ1JDZDF2Wm5CMWtqZUE2UnI1a0dfNGJfRE5KUWhVaTNKTVRIM1VqSEluTU9YREl1c3c?oc=5"
   },
   "SSD": {
-   "nextelec": "presidential and parliamentary, December 2026",
+   "nextelec": "general, Dec 2026",
    "updated": "2026-09-26",
    "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOX2g4SERrV05YLVFFdFEteWlBb2VrdlZ4ZWVBbzBqa2hpa2FDemdUSnVpZ01aUGlYWmgzM3RId2hKRWZIb0RkN1ZrR191bTZ0bXB0SG1jbVRKM1FrYTYyUkZOakJHTWwzeHFYLS0tSTBFOUw0UHFxV3Q2ZURKVnpSSW5HNTFIWkZyTEFWLThQQS1BLU1HVy1FV0xpLVBiMUJ1MWt5VXRhTHV1aEN4RnV6TkZxVQ?oc=5"
+  },
+  "SRB": {
+   "nextelec": "general, 25 Oct 2026",
+   "updated": "2026-09-26",
+   "source": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNMjc0ZzVBenRZdUgxR1NRYjFqOTViVF84V2tmNXNwQ2NST21zQlFVYVpOU24xeHVkYWhSZHFlUkkwdmxZOExUMHdraHk2MC1pSUxER1lFVW1URUpyLU9nNS1rYUhYT3E1U0RGWDB0TWF6bDlZeklnZndOcWRDb283NTREV29wZDVzd3ZyWDAwNGp2RGdFanNabm84TEpjeWY1eENkQkJIODB6SGRLVjdzOXVUcVhtS1R6TzR6Y1V3dm1uS0Q5WEI4Z2tKblZ1am9hTGM2M0l0U3JYcnRKNHhQYTFKOTVGa2tfWHpTZDVfamhTMnFGMEJ5UTBITXpkTFZOT2YzM3pVd0tkRjg?oc=5"
   }
  }
 }
