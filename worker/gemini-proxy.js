@@ -152,6 +152,7 @@ async function listArchive(env){
    Order: every usable Gemini model -> Groq (secret GROQ_API_KEY, free) -> Cloudflare Workers AI (binding AI, free).
    Models that just said "quota used up" are skipped for a while so later questions go straight to one that works. */
 const exhausted = new Map();   // model -> time until which it is skipped
+let lastSearchRefusal = "";    // why Google last refused a Google Search request (shown in a response header)
 const skip = (model, ms) => exhausted.set(model, Date.now() + ms);
 const usable = model => (exhausted.get(model) || 0) < Date.now();
 // (the small 8B models were dropped: they invent facts, and a "busy, try again" is better than a wrong answer)
@@ -233,7 +234,7 @@ async function answerAuto(request, env, ctx, ip, kind) {
         delete b.systemInstruction; delete b.generationConfig.responseMimeType;
       }
       let search = wantsSearch && !model.startsWith("gemma") && usable(`search:k${ki}`);
-      let searchNote = search ? "on" : wantsSearch ? "paused" : "off";
+      let searchNote = search ? "on" : wantsSearch ? `paused (${lastSearchRefusal})` : "off";
       let r;
       try {
         r = await fetch(`${GOOGLE}/models/${model}:streamGenerateContent?alt=sse`, {
@@ -242,7 +243,7 @@ async function answerAuto(request, env, ctx, ip, kind) {
         });
         if (search && !r.ok && [400, 403, 429].includes(r.status)) {
           const why = (await r.text().catch(() => "")).replace(/\s+/g, " ").slice(0, 160);
-          searchNote = `refused ${r.status}: ${why}`.replace(/[^\x20-\x7e]/g, "");
+          searchNote = lastSearchRefusal = `refused ${r.status} on ${model}: ${why}`.replace(/[^\x20-\x7e]/g, "");
           skip(`search:k${ki}`, 30 * 60_000);   // search refused (limit reached or not offered): answer without it
           search = false;
           r = await fetch(`${GOOGLE}/models/${model}:streamGenerateContent?alt=sse`, {
