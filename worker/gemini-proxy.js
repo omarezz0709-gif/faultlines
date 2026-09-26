@@ -153,6 +153,8 @@ async function listArchive(env){
    Models that just said "quota used up" are skipped for a while so later questions go straight to one that works. */
 const exhausted = new Map();   // model -> time until which it is skipped
 let lastSearchRefusal = "";    // why Google last refused a Google Search request (shown in a response header)
+// models whose free plan includes Google Search (the newest Flash models refuse it without billing)
+const SEARCH_MODELS = ["gemini-2.5-flash", "gemini-flash-latest", "gemini-2.5-flash-lite"];
 const skip = (model, ms) => exhausted.set(model, Date.now() + ms);
 const usable = model => (exhausted.get(model) || 0) < Date.now();
 // (the small 8B models were dropped: they invent facts, and a "busy, try again" is better than a wrong answer)
@@ -224,6 +226,33 @@ async function answerAuto(request, env, ctx, ip, kind) {
   // written answers (questions, explanations) may look things up on Google Search, so recent events come out right;
   // the search has its own free daily allowance: when Google refuses it, the same model answers without it
   const wantsSearch = !wantsJson;
+  // 3a. with Google Search: on the free plan only some models include it (the newest ones answer "check your plan"),
+  //     so written answers first try the models that do; a refusal pauses that model's search for a while
+  if (wantsSearch) {
+    for (const [ki, key] of keys.entries()) {
+      for (const model of SEARCH_MODELS) {
+        const slot = `search:k${ki}:${model}`;
+        if (!usable(slot)) continue;
+        let r;
+        try {
+          r = await fetch(`${GOOGLE}/models/${model}:streamGenerateContent?alt=sse`, {
+            method: "POST", headers: { "x-goog-api-key": key, "Content-Type": "application/json" },
+            body: JSON.stringify({ ...body, tools: [{ google_search: {} }] }),
+          });
+        } catch { continue; }
+        if (r.ok && r.body) {
+          log(200, (keys.length > 1 ? `${model} #${ki + 1}` : model) + " +search");
+          const [toClient, toCache] = r.body.tee();
+          ctx.waitUntil(new Response(toCache).text().then(t => { if (t.length > 20) remember(t); }));
+          return new Response(toClient, { status: 200, headers: cors({ "Content-Type": "text/event-stream", "X-Faultlines-Cache": "miss",
+            "X-Faultlines-Provider": model, "X-Faultlines-Search": "on" }) });
+        }
+        lastSearchRefusal = `${r.status} on ${model}: ${(await r.text().catch(() => "")).replace(/\s+/g, " ").slice(0, 140)}`.replace(/[^\x20-\x7e]/g, "");
+        skip(slot, r.status === 429 ? 30 * 60_000 : r.status === 503 ? 60_000 : 6 * 3600_000);
+      }
+    }
+  }
+  // 3b. every model without search
   for (const [ki, key] of keys.entries()) {
     for (const model of order) {
       const slot = `k${ki}:${model}`;
@@ -233,29 +262,15 @@ async function answerAuto(request, env, ctx, ip, kind) {
         b.contents = [{ role: "user", parts: [{ text: plainPrompt(body) }] }];
         delete b.systemInstruction; delete b.generationConfig.responseMimeType;
       }
-      let search = wantsSearch && !model.startsWith("gemma") && usable(`search:k${ki}`);
-      let searchNote = search ? "on" : wantsSearch ? `paused (${lastSearchRefusal})` : "off";
+      const searchNote = wantsSearch ? `unavailable (${lastSearchRefusal || "no search model"})` : "off";
       let r;
       try {
         r = await fetch(`${GOOGLE}/models/${model}:streamGenerateContent?alt=sse`, {
-          method: "POST", headers: { "x-goog-api-key": key, "Content-Type": "application/json" },
-          body: JSON.stringify(search ? { ...b, tools: [{ google_search: {} }] } : b),
+          method: "POST", headers: { "x-goog-api-key": key, "Content-Type": "application/json" }, body: JSON.stringify(b),
         });
-        if (search && !r.ok && [400, 403, 429].includes(r.status)) {
-          const why = (await r.text().catch(() => "")).replace(/\s+/g, " ").slice(0, 160);
-          searchNote = lastSearchRefusal = `refused ${r.status} on ${model}: ${why}`.replace(/[^\x20-\x7e]/g, "");
-          search = false;
-          r = await fetch(`${GOOGLE}/models/${model}:streamGenerateContent?alt=sse`, {
-            method: "POST", headers: { "x-goog-api-key": key, "Content-Type": "application/json" }, body: JSON.stringify(b),
-          });
-          // only if the model works WITHOUT search was it the search that was refused (then pause search on this key);
-          // if it fails either way, the model itself is used up and the next model still tries with search
-          if (r.ok) skip(`search:k${ki}`, 30 * 60_000);
-          else searchNote = "on";
-        }
       } catch { continue; }
       if (r.ok && r.body) {
-        log(200, (keys.length > 1 ? `${model} #${ki + 1}` : model) + (search ? " +search" : ""));
+        log(200, keys.length > 1 ? `${model} #${ki + 1}` : model);
         const [toClient, toCache] = r.body.tee();
         ctx.waitUntil(new Response(toCache).text().then(t => { if (t.length > 20) remember(t); }));
         return new Response(toClient, { status: 200, headers: cors({ "Content-Type": "text/event-stream", "X-Faultlines-Cache": "miss",
