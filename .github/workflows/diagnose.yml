@@ -10,6 +10,11 @@ on:
     - cron: "30 10,11 * * *"   # 12:30 Berlin
     - cron: "30 16,17 * * *"   # 18:30 Berlin
   workflow_dispatch:           # "Run workflow" button for a check right now
+    inputs:
+      test_email:
+        description: "Send the report email even if everything is fine (to test the email)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write              # save data/health.json
@@ -68,7 +73,7 @@ jobs:
       # the report by email to any address: secrets REPORT_EMAIL (who gets it), MAIL_USERNAME + MAIL_PASSWORD
       # (the Gmail address that sends it and its Google "app password"). Without them this step is skipped.
       - name: Email the report
-        if: steps.diag.outputs.email == 'true' && env.MAIL_USERNAME != '' && env.REPORT_EMAIL != ''
+        if: (steps.diag.outputs.email == 'true' || inputs.test_email) && steps.slot.outputs.run == 'true' && env.MAIL_USERNAME != '' && env.REPORT_EMAIL != ''
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
