@@ -40,7 +40,7 @@ function cors(extra = {}) {
     "Access-Control-Allow-Origin": ALLOWED_ORIGIN,
     "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type, X-Faultlines-Kind, X-Admin-Code",
-    "Access-Control-Expose-Headers": "X-Faultlines-Cache, X-Faultlines-Limit",
+    "Access-Control-Expose-Headers": "X-Faultlines-Cache, X-Faultlines-Limit, X-Faultlines-Provider, X-Faultlines-Search",
     "Access-Control-Max-Age": "86400",
     "Vary": "Origin",
     ...extra,
@@ -232,7 +232,8 @@ async function answerAuto(request, env, ctx, ip, kind) {
         b.contents = [{ role: "user", parts: [{ text: plainPrompt(body) }] }];
         delete b.systemInstruction; delete b.generationConfig.responseMimeType;
       }
-      const search = wantsSearch && !model.startsWith("gemma") && usable(`search:k${ki}`);
+      let search = wantsSearch && !model.startsWith("gemma") && usable(`search:k${ki}`);
+      let searchNote = search ? "on" : wantsSearch ? "paused" : "off";
       let r;
       try {
         r = await fetch(`${GOOGLE}/models/${model}:streamGenerateContent?alt=sse`, {
@@ -240,7 +241,10 @@ async function answerAuto(request, env, ctx, ip, kind) {
           body: JSON.stringify(search ? { ...b, tools: [{ google_search: {} }] } : b),
         });
         if (search && !r.ok && [400, 403, 429].includes(r.status)) {
+          const why = (await r.text().catch(() => "")).replace(/\s+/g, " ").slice(0, 160);
+          searchNote = `refused ${r.status}: ${why}`.replace(/[^\x20-\x7e]/g, "");
           skip(`search:k${ki}`, 30 * 60_000);   // search refused (limit reached or not offered): answer without it
+          search = false;
           r = await fetch(`${GOOGLE}/models/${model}:streamGenerateContent?alt=sse`, {
             method: "POST", headers: { "x-goog-api-key": key, "Content-Type": "application/json" }, body: JSON.stringify(b),
           });
@@ -250,7 +254,8 @@ async function answerAuto(request, env, ctx, ip, kind) {
         log(200, (keys.length > 1 ? `${model} #${ki + 1}` : model) + (search ? " +search" : ""));
         const [toClient, toCache] = r.body.tee();
         ctx.waitUntil(new Response(toCache).text().then(t => { if (t.length > 20) remember(t); }));
-        return new Response(toClient, { status: 200, headers: cors({ "Content-Type": "text/event-stream", "X-Faultlines-Cache": "miss", "X-Faultlines-Provider": model }) });
+        return new Response(toClient, { status: 200, headers: cors({ "Content-Type": "text/event-stream", "X-Faultlines-Cache": "miss",
+          "X-Faultlines-Provider": model, "X-Faultlines-Search": searchNote }) });
       }
       if (r.status === 400 || r.status === 401 || r.status === 403) { if (!model.startsWith("gemma")) break; }   // bad key: next key
       skip(slot, r.status === 429 ? 30 * 60_000 : r.status === 503 ? 60_000 : 6 * 3600_000);   // quota / busy / unsupported
