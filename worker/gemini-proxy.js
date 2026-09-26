@@ -479,8 +479,10 @@ async function realtimeSearch(q, lang, ctx){
   const [google, bing, pool] = await Promise.all([
     get(`https://news.google.com/rss/search?q=${encodeURIComponent(query + " when:3d")}&${NEWS_LANG[lang]}`).then(x => x ? parseRss(x) : []),
     get(`https://www.bing.com/news/search?q=${encodeURIComponent(query)}&format=rss&qft=${encodeURIComponent('sortbydate="1"')}&setlang=${lang}`).then(x => x ? parseBing(x) : []),
-    // the trusted outlets' feeds: stories whose title or summary has most of the question's key words
-    newsPool(lang, ctx).then(p => p.items.map(it => it.members[0] && { t: it.members[0].t, u: it.members[0].u, s: it.members[0].s, d: it.d, x: it.members[0].x })
+    // the trusted outlets' feeds: stories whose title or summary has most of the question's key words. When the
+    // pool isn't cached (every 10 min) it takes up to 5 s to load: wait 1.5 s at most; it keeps loading for the next search
+    Promise.race([(() => { const p = newsPool(lang, ctx); ctx.waitUntil(p.catch(() => {})); return p; })(),
+                  new Promise(res => setTimeout(() => res({ items: [] }), 1500))]).then(p => p.items.map(it => it.members[0] && { t: it.members[0].t, u: it.members[0].u, s: it.members[0].s, d: it.d, x: it.members[0].x })
       .filter(it => it && kws.filter(k => (it.t + " " + (it.x || "")).toLowerCase().includes(k)).length >= Math.min(2, kws.length))).catch(() => []),
   ]);
   const cutoff = Date.now() - 4 * 864e5;
