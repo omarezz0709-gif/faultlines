@@ -2050,12 +2050,27 @@ function relLines(a, max){
   return [...relationsFor(a).entries()].filter(([,r])=>r.src==='explicit').sort(bySeverity).slice(0,max)
     .map(([o,r])=>`- ${ENT[o].name}: ${STATUS[r.s].label} — ${r.note}`).join('\n');
 }
+/* what is true NOW for these countries: current leaders and elections (Wikidata, refreshed daily) and the latest
+   confirmed headlines. The models' own knowledge stops months or years back, so every prompt gets this. */
+function currentFacts(ids, nNews = 4){
+  const lines = [];
+  ids.filter(id => ENT[id]).forEach(id => {
+    const p = (typeof POL !== 'undefined' && POL && POL[id]) || {};
+    const bits = [p.hos && `head of state ${p.hos}`, p.hog && p.hog !== p.hos && `head of government ${p.hog}`, p.ruling && `in power: ${p.ruling}`,
+      p.lastelec && `last election: ${p.lastelec}`, p.nextelec && `next election: ${p.nextelec}`].filter(Boolean);
+    if (bits.length) lines.push(`- ${ENT[id].name}: ${bits.join('; ')}`);
+  });
+  const news = ids.flatMap(id => { const c = NEWS && NEWS.countries && NEWS.countries[id]; return c ? newsItems(c.i).slice(0, nNews) : []; })
+    .filter((it, i, a) => a.findIndex(x => x.u === it.u) === i).slice(0, 10).map(it => `- ${it.t} (${it.s || 'news'}, ${ago(it.d)})`);
+  return (lines.length ? `Current facts as of today (from Wikidata, updated daily; these override anything you remember):\n${lines.join('\n')}\n` : '')
+    + (news.length ? `Latest confirmed headlines (reported by at least two independent outlets):\n${news.join('\n')}\n` : '');
+}
 function pairPrompt(a,b){
   const f = pairFacts(a,b);
   return `${RULES}
 
 Explain the relationship between ${f.A} and ${f.B} in about 280–380 words.
-Page data:
+${currentFacts([a, b], 3)}Page data:
 - Status: ${STATUS[f.r.s].label} (${STATUS_DESC[f.r.s]})
 - Note: ${f.r.note}
 - Geography: ${f.geo}
@@ -2078,7 +2093,7 @@ function countryPrompt(id){
   return `${RULES}
 
 Explain ${e.name}'s place in the world and its foreign policy in about 300–400 words.
-Page data:
+${currentFacts([id], 6)}Page data:
 - Blocs: ${blocsOf(id).map(b=>b.name).join(', ') || 'none'}
 - Key recorded relationships:
 ${relLines(id, 30)}
@@ -2122,7 +2137,7 @@ function groupPrompt(ids, pl){
   return `${RULES}
 
 Analyse, in depth, ${subject}, and how they relate to each other. About 450–700 words.
-${pairs.length ? `Page data (pairwise, formal status):\n${pairs.join('\n')}\nBlocs: ${ids.map(i=>`${ENT[i].name}: ${blocsOf(i).map(b=>b.name).join(', ')||'none'}`).join('; ')}\nIndirect links touching 2+ of the countries:\n${threadLines(gt)}\n` : ''}${pl.length ? `Locations:\n${locLines}\n${linkLines.length ? `Recorded links between locations:\n${linkLines.join('\n')}\n` : ''}${locThreads.length ? `Transnational issues around these locations:\n${threadLines(locThreads)}\n` : ''}` : ''}${who ? `Which selected countries are involved where:\n${who}\n` : ''}
+${currentFacts([...ids, ...pl.flatMap(p => p.p)].filter((x, i, a) => a.indexOf(x) === i).slice(0, 8), 2)}${pairs.length ? `Page data (pairwise, formal status):\n${pairs.join('\n')}\nBlocs: ${ids.map(i=>`${ENT[i].name}: ${blocsOf(i).map(b=>b.name).join(', ')||'none'}`).join('; ')}\nIndirect links touching 2+ of the countries:\n${threadLines(gt)}\n` : ''}${pl.length ? `Locations:\n${locLines}\n${linkLines.length ? `Recorded links between locations:\n${linkLines.join('\n')}\n` : ''}${locThreads.length ? `Transnational issues around these locations:\n${threadLines(locThreads)}\n` : ''}` : ''}${who ? `Which selected countries are involved where:\n${who}\n` : ''}
 Structure:
 ### The big picture
 ${ids.length>=2 ? countryStruct + '\n' : ''}${pl.length ? locStruct + '\n' : ''}${ids.length && pl.length ? `### The countries and these locations
@@ -2168,7 +2183,7 @@ function poiPrompt(p){
   return `${RULES}
 
 Explain why ${p.n} matters strategically, in about 200–250 words.
-Page data: type: ${POI_TYPES[p.t].eyebrow}; countries involved: ${p.p.map(c=>ENT[c]?ENT[c].name:c).join(', ')}; key fact: ${p.s}; summary: ${p.d}
+${currentFacts(p.p.filter(c => ENT[c]), 3)}Page data: type: ${POI_TYPES[p.t].eyebrow}; countries involved: ${p.p.map(c=>ENT[c]?ENT[c].name:c).join(', ')}; key fact: ${p.s}; summary: ${p.d}
 
 Structure:
 ### Why it matters
@@ -3474,8 +3489,7 @@ function allNames(id){
   }
   return NAMES_ALL[id] || [];
 }
-function askPrompt(q, ids, pois, earlier = []){
-  const news = ids.flatMap(id => { const c = NEWS && NEWS.countries && NEWS.countries[id]; return c ? newsItems(c.i).slice(0, 4).map(it => `- ${it.t} (${it.s || 'news'}, ${ago(it.d)})`) : []; });
+function askPrompt(q, ids, pois, earlier = [], wiki = []){
   const th = THREADS.filter(t => ids.some(i => t.c.includes(i))).slice(0, 8);
   const pairs = []; ids.forEach((a, i) => ids.slice(i + 1).forEach(b => { const f = pairFacts(a, b); pairs.push(`- ${f.A} – ${f.B}: ${STATUS[f.r.s].label} — ${f.r.note}`); }));
   // a follow-up: the conversation so far, so "and what about their economy?" knows who "they" are
@@ -3484,7 +3498,43 @@ function askPrompt(q, ids, pois, earlier = []){
 
 ${convo}A reader of the globe asks: "${q.replace(/"/g, "'")}"
 Answer it directly in the first one or two sentences, then add short "### " sections with bullets only where they help. About 150–400 words, shorter if the question is simple.${earlier.length ? ' Do not repeat what the earlier answers already said; build on them.' : ''} If the question is not about international affairs, geopolitics, geography or the countries and places on this globe, say in one sentence that this assistant only covers world affairs.
-${ids.length ? `Page data for the countries mentioned:\n${ids.map(id => `${ENT[id].name} (blocs: ${blocsOf(id).map(b => b.name).join(', ') || 'none'}):\n${relLines(id, 10)}`).join('\n')}\n` : ''}${pairs.length ? `Between them:\n${pairs.join('\n')}\n` : ''}${th.length ? `Transnational issues:\n${threadLines(th)}\n` : ''}${pois.length ? `Places mentioned:\n${pois.map(p => `- ${p.n}: ${p.s}. ${p.d}`).join('\n')}\n` : ''}${news.length ? `Recent headlines:\n${news.slice(0, 12).join('\n')}\n` : ''}`;
+${currentFacts(ids, 4)}${wiki.length ? `Reference articles from Wikipedia, retrieved today (current; prefer them over what you remember):\n${wiki.map(w => `[${w.title}] ${w.text}`).join('\n\n')}\n` : ''}${ids.length ? `Page data for the countries mentioned:\n${ids.map(id => `${ENT[id].name} (blocs: ${blocsOf(id).map(b => b.name).join(', ') || 'none'}):\n${relLines(id, 10)}`).join('\n')}\n` : ''}${pairs.length ? `Between them:\n${pairs.join('\n')}\n` : ''}${th.length ? `Transnational issues:\n${threadLines(th)}\n` : ''}${pois.length ? `Places mentioned:\n${pois.map(p => `- ${p.n}: ${p.s}. ${p.d}`).join('\n')}\n` : ''}`;
+}
+/* Wikipedia, read live for each question: the articles that best match it (their opening sections), so the AI has
+   today's facts on elections, wars and deals its own knowledge doesn't reach. Free, no key; Wikipedia allows this
+   from browsers (origin=*). Gives up quietly after 4 seconds. */
+const WIKI_STOP = new Set(('who what when where why how which whom whose is are was were be been being do does did the a an and or of to in on for with at by from as about into over after before between '
+  + 'its it this that these those will would could should can may might has have had not no than then there their they them his her he she we you i me my our your current currently now today '
+  + 'latest recent recently news tell explain happening going happen think won win wins change changed changes affect affected right '
+  // French, Spanish, Arabic question words
+  + 'qui que quoi quel quelle quels quelles pourquoi comment est sont le la les un une des du de et ou en au aux avec pour sur dans ce cette '
+  + 'quién qué cuál cuáles por cómo es son el los las unos unas del y o en con para sobre este esta '
+  + 'من ما ماذا لماذا كيف هل في على عن مع إلى هذا هذه').split(' '));
+async function wikiContext(q, ids){
+  // questions in French, Spanish or Arabic: that language's Wikipedia (well kept for world affairs)
+  const W = `https://${['fr', 'es', 'ar'].includes(LANG) ? LANG : 'en'}.wikipedia.org/w/api.php?format=json&origin=*`;
+  const ctl = new AbortController(), timer = setTimeout(() => ctl.abort(), 4000);
+  try {
+    // Wikipedia's search wants key words, not sentences: drop the question words, then search twice — all key words,
+    // and just the first four ("2026 colombian presidential election") — and take the best of both
+    // (other languages: plus the English names of the countries the question mentions)
+    const words = q.toLowerCase()
+      .replace(/[^\p{L}\p{N}\s-]/gu, ' ').split(/\s+/).filter(w => w && !WIKI_STOP.has(w));
+    if (!words.length) return [];
+    // a year in the question ("2026") must be in the article's title: Wikipedia's search alone happily returns 2006 or 1861
+    const years = words.filter(w => /^(19|20)\d\d$/.test(w));
+    const rank = list => years.length ? [...list.filter(t => years.some(y => t.includes(y))), ...list.filter(t => !years.some(y => t.includes(y)))] : list;
+    const find = s => fetch(`${W}&action=query&list=search&srlimit=${years.length ? 8 : 3}&srsearch=${encodeURIComponent(s.slice(0, 250))}`, {signal: ctl.signal})
+      .then(r => r.json()).then(d => rank(((d.query || {}).search || []).map(x => x.title))).catch(() => []);
+    const [all, short] = await Promise.all([find(words.join(' ')), words.length > 4 ? find(words.slice(0, 4).join(' ')) : Promise.resolve([])]);
+    const titles = rank([...new Set([short[0], all[0], short[1], all[1], short[2], all[2], ...all.slice(3), ...short.slice(3)].filter(Boolean))]).slice(0, 3);
+    if (!titles.length) return [];
+    const e = await fetch(`${W}&action=query&prop=extracts|info&inprop=url&exintro=1&explaintext=1&exlimit=3&redirects=1&titles=${encodeURIComponent(titles.join('|'))}`, {signal: ctl.signal}).then(r => r.json());
+    const pages = Object.values((e.query || {}).pages || {});
+    return titles.map(t => pages.find(p => p.title === t)).filter(p => p && p.extract)
+      .map(p => ({title: p.title, uri: p.fullurl || W.split('/w/')[0] + `/wiki/${encodeURIComponent(p.title.replace(/ /g, '_'))}`, text: p.extract.replace(/\s+/g, ' ').slice(0, 1800)}));
+  } catch(e){ return []; }
+  finally { clearTimeout(timer); }
 }
 
 /* ASK: a conversation. Every question and answer stays in the panel with a follow-up box underneath; the countries
@@ -3550,12 +3600,15 @@ async function renderAsk(q, cont = false){
   const body = panel.querySelector('.p-body'), cur = () => document.getElementById('ai-cur');
   if (cont) body.scrollTop = body.scrollHeight;
   const myConvo = convo;
-  const sample = await getSample();
+  // today's facts from Wikipedia, looked up while the AI connection is prepared (a follow-up is searched with the
+  // conversation's opening question, so "and their army?" still finds the right articles)
+  const [sample, wiki] = await Promise.all([getSample(), wikiContext(earlier.length ? `${earlier[0].q} ${q}` : q, ctxIds)]);
   if (!sample){ turn.err = AI_MSG.rate_limited; convo.turns.pop(); if (cur()) cur().innerHTML = `<p class="muted">${esc(AI_MSG.rate_limited)}</p>`; return; }
   try {
-    const {text, truncated, sources} = await sample(askPrompt(q, ctxIds, pois, earlier), {kind: 'ask', cache: {gcTime: 86400000},
+    const {text, truncated, sources} = await sample(askPrompt(q, ctxIds, pois, earlier, wiki), {kind: 'ask', cache: {gcTime: 86400000},
       onText: ({text}) => { if (convo === myConvo && cur()) cur().innerHTML = md(text); }});
-    turn.a = text + (truncated ? '\n\n(Cut short.)' : ''); turn.src = (sources || []).slice(0, 6);
+    turn.a = text + (truncated ? '\n\n(Cut short.)' : '');
+    turn.src = [...wiki.map(w => ({uri: w.uri, title: 'Wikipedia: ' + w.title})), ...(sources || [])].slice(0, 6);
     turn.aIds = mentioned(text, 14).ids.filter(i => !qIds.includes(i));
     saveConvo();
     if (convo !== myConvo) return;   // the viewer has moved on to another conversation
