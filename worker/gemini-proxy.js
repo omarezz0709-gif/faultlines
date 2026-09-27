@@ -625,13 +625,16 @@ const COUNTRY_ALIASES = {
   "Russia": ["Russian", "Kremlin", "Moscow", "Putin"], "China": ["Chinese", "Beijing", "Xi Jinping", "Xi"],
   "Ukraine": ["Ukrainian", "Kyiv", "Zelensky", "Zelenskyy"], "Israel": ["Israeli", "Netanyahu", "IDF", "Jerusalem"],
   "Palestine": ["Palestinian", "Gaza", "West Bank", "Hamas"], "Iran": ["Iranian", "Tehran", "Khamenei", "Pezeshkian"],
-  "Germany": ["German", "Berlin", "Merz", "Bundeswehr"], "France": ["French", "Paris", "Macron", "Élysée", "Elysee"],
+  "Germany": ["German", "Berlin", "Merz", "Bundeswehr", "Deutschland", "[Dd]eutsch\\w*", "Bundesregierung", "Bundestag", "Allemagne", "Alemania", "Germania", "tedesc\\w*", "allemand\\w*", "alemán", "alemana"],
+  "France": ["French", "Paris", "Macron", "Élysée", "Elysee", "Frankreich", "Francia", "[Ff]ran[cç]ais\\w*", "[Ff]ranzösisch\\w*", "francese?", "francesi", "Parigi", "Quai d'Orsay"],
+  "Italy": ["Italian", "Rome", "Meloni", "Italia", "[Ii]talian[oaie]", "Roma", "Mattarella", "Palazzo Chigi", "Farnesina", "Italien", "italienisch\\w*", "Italie", "italien\\w*", "italiano", "italiana"],
+  "Spain": ["Spanish", "Madrid", "Sánchez", "España", "[Ee]spañol\\w*", "Moncloa", "Espagne", "espagnol\\w*", "Spanien", "spanisch\\w*", "Spagna", "spagnol\\w*"],
   "Egypt": ["Egyptian", "Cairo", "Sisi", "Suez"], "Türkiye": ["Turkey", "Turkish", "Ankara", "Erdogan", "Erdoğan"],
   "India": ["Indian", "New Delhi", "Delhi", "Modi"], "Pakistan": ["Pakistani", "Islamabad"], "Japan": ["Japanese", "Tokyo"],
   "Saudi Arabia": ["Saudi", "Riyadh"], "North Korea": ["Pyongyang", "Kim Jong Un"], "South Korea": ["Seoul", "South Korean"],
   "Taiwan": ["Taiwanese", "Taipei"], "Syria": ["Syrian", "Damascus"], "Lebanon": ["Lebanese", "Beirut", "Hezbollah"],
   "Yemen": ["Yemeni", "Houthi", "Houthis", "Sanaa"], "Sudan": ["Sudanese", "Khartoum", "RSF"], "Venezuela": ["Venezuelan", "Caracas", "Maduro"],
-  "Poland": ["Polish", "Warsaw"], "Italy": ["Italian", "Rome", "Meloni"], "Iraq": ["Iraqi", "Baghdad"], "Afghanistan": ["Afghan", "Kabul", "Taliban"],
+  "Poland": ["Polish", "Warsaw"], "Iraq": ["Iraqi", "Baghdad"], "Afghanistan": ["Afghan", "Kabul", "Taliban"],
 };
 function focusRegex(q, en){
   const names = [q, en].filter(Boolean).map(x => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).concat(COUNTRY_ALIASES[en] || []);
