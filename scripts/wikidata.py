@@ -10,6 +10,7 @@ from __future__ import annotations
 import json
 import sys
 import time
+import urllib.error
 import urllib.parse
 
 from common import NAMES, http_get, in_slot, iso_z, load_json, now_utc, ran_recently, save_json, scheduled
@@ -28,15 +29,78 @@ def qid(uri: str) -> str:
     return uri.rsplit("/", 1)[-1]
 
 
+class QueryServiceDown(Exception):
+    pass
+
+
 def query() -> list[dict]:
     url = "https://query.wikidata.org/sparql?query=" + urllib.parse.quote(SPARQL)
-    for attempt in range(5):
+    for attempt in range(2):
         try:
             return json.loads(http_get(url, timeout=120, accept="application/sparql-results+json"))["results"]["bindings"]
-        except Exception as e:  # the query service rate-limits and has outages; back off and retry
+        except Exception as e:  # the query service rate-limits and has outages; back off and retry once
             print(f"query attempt {attempt + 1} failed: {e}")
-            time.sleep(70)
-    raise SystemExit("Wikidata query failed; keeping the previous politics.json.")
+            if attempt == 0:
+                time.sleep(70)
+    raise QueryServiceDown()
+
+
+def truthy(claims: list) -> list[str]:
+    """The item ids of a property's 'truthy' statements, like wdt: in the query service: preferred rank if any, else normal."""
+    live = [c for c in claims if c.get("rank") != "deprecated"]
+    best = [c for c in live if c.get("rank") == "preferred"] or live
+    out = []
+    for c in best:
+        v = ((c.get("mainsnak") or {}).get("datavalue") or {}).get("value") or {}
+        if isinstance(v, dict) and v.get("id") and v["id"] not in out:
+            out.append(v["id"])
+    return out
+
+
+def api_get(url: str, deadline: float) -> dict:
+    """One regular-API request, gently: on "too many requests" it waits as long as Wikidata asks."""
+    for attempt in range(4):
+        if time.time() > deadline:
+            raise TimeoutError("time budget used up")
+        try:
+            return json.loads(http_get(url, timeout=30))
+        except urllib.error.HTTPError as e:
+            if e.code == 429:
+                wait = min(int(e.headers.get("Retry-After") or 30), 120)
+                print(f"  Wikidata says slow down; waiting {wait} s")
+                time.sleep(wait)
+                continue
+            raise
+        except Exception:
+            time.sleep(3)
+    raise RuntimeError("gave up after retries")
+
+
+def by_country_api(prev: dict) -> dict[str, dict]:
+    """Fallback when the query service is down: the same heads of state/government through the regular Wikidata API,
+    one small request per country and property, about one a second, for at most 10 minutes (the country ids come from
+    the previous politics.json). Countries it doesn't reach keep their previous entry."""
+    by: dict[str, dict] = {}
+    deadline = time.time() + 600
+    for iso, doc in (prev.get("countries") or {}).items():
+        q = qid(doc.get("source", ""))
+        if iso not in NAMES or not q.startswith("Q"):
+            continue
+        e = {"qid": q, "hos": [], "hog": [], "form": []}
+        try:
+            for prop, field in (("P35", "hos"), ("P6", "hog")):
+                url = f"https://www.wikidata.org/w/api.php?format=json&action=wbgetclaims&entity={q}&property={prop}"
+                e[field] = truthy(api_get(url, deadline).get("claims", {}).get(prop, []))
+                time.sleep(1)
+        except TimeoutError:
+            print("fallback: 10 minutes used up; the remaining countries keep their previous entry")
+            break
+        except Exception as ex:
+            print(f"{iso}: {ex}; keeps its previous entry")
+            continue
+        by[iso] = e
+    print(f"fallback API: {len(by)} countries refreshed")
+    return by
 
 
 def entities(ids: list[str], props: str) -> dict:
@@ -87,16 +151,24 @@ def main() -> None:
         return
 
     by: dict[str, dict] = {}
-    for b in query():
-        iso = b["iso"]["value"]
-        if iso not in NAMES:
-            continue
-        e = by.setdefault(iso, {"qid": qid(b["c"]["value"]), "hos": [], "hog": [], "form": []})
-        for f in ("hos", "hog", "form"):
-            if f in b:
-                v = qid(b[f]["value"])
-                if v not in e[f]:
-                    e[f].append(v)
+    try:
+        for b in query():
+            iso = b["iso"]["value"]
+            if iso not in NAMES:
+                continue
+            e = by.setdefault(iso, {"qid": qid(b["c"]["value"]), "hos": [], "hog": [], "form": []})
+            for f in ("hos", "hog", "form"):
+                if f in b:
+                    v = qid(b[f]["value"])
+                    if v not in e[f]:
+                        e[f].append(v)
+    except QueryServiceDown:
+        # the query service has outages (then it throttles everyone to 1 request a minute): use the regular API instead
+        print("Wikidata query service unavailable; using the regular Wikidata API instead.")
+        by = by_country_api(prev)
+        fallback = True
+    else:
+        fallback = False
 
     hogs = sorted({q for e in by.values() for q in e["hog"]})
     hog_ents = entities(hogs, "labels|sitelinks|claims")
@@ -113,12 +185,17 @@ def main() -> None:
         party = [p for p in party if p.lower() != "independent politician"] or (["Independent"] if party else [])
         doc = {}
         if form: doc["system"] = ", ".join(dict.fromkeys(form[:2]))
+        elif (prev.get("countries") or {}).get(iso, {}).get("system"):   # fallback run: the system of government rarely changes
+            doc["system"] = prev["countries"][iso]["system"]
         if hos: doc["hos"] = " / ".join(dict.fromkeys(hos[:2]))
         if hog: doc["hog"] = " / ".join(dict.fromkeys(hog[:2]))
         if party: doc["ruling"] = " / ".join(dict.fromkeys(party[:2])) + " (party of the head of government)"
         if doc:
             doc["source"] = f"https://www.wikidata.org/wiki/{e['qid']}"
             out[iso] = doc
+    if fallback:   # countries the fallback didn't reach keep yesterday's entry
+        for iso, doc in (prev.get("countries") or {}).items():
+            out.setdefault(iso, doc)
     print(f"{len(out)} countries with politics data.")
     if len(out) < 120:
         sys.exit("Too few countries returned; keeping the previous politics.json.")
