@@ -1,8 +1,8 @@
 {
- "generated": "2026-09-27T10:37:44Z",
- "berlin": "2026-09-27 12:37",
+ "generated": "2026-09-27T16:36:23Z",
+ "berlin": "2026-09-27 18:36",
  "status": "warn",
- "summary": "0 problem(s), 2 warning(s): Leaders (politics.json): last update 36.5 h ago; News outlet feeds: 55/57 working; not working: Sky News Arabia (200), UN News (200)",
+ "summary": "0 problem(s), 1 warning(s): Leaders (politics.json): last update 42.4 h ago",
  "repairs": [],
  "checks": [
   {
@@ -10,80 +10,80 @@
    "name": "Website",
    "status": "ok",
    "detail": "HTTP 200, 418 KB",
-   "ms": 351
+   "ms": 116
   },
   {
    "g": "site",
    "name": "GitHub Pages copy",
    "status": "ok",
    "detail": "HTTP 200",
-   "ms": 216
+   "ms": 179
   },
   {
    "g": "site",
    "name": "data/news.json",
    "status": "ok",
-   "detail": "HTTP 200, 605 KB",
-   "ms": 298
+   "detail": "HTTP 200, 580 KB",
+   "ms": 255
   },
   {
    "g": "site",
    "name": "data/live.json",
    "status": "ok",
-   "detail": "HTTP 200, 43 KB",
-   "ms": 162
+   "detail": "HTTP 200, 48 KB",
+   "ms": 183
   },
   {
    "g": "site",
    "name": "data/politics.json",
    "status": "ok",
    "detail": "HTTP 200, 42 KB",
-   "ms": 128
+   "ms": 81
   },
   {
    "g": "site",
    "name": "data/wb.json",
    "status": "ok",
    "detail": "HTTP 200, 83 KB",
-   "ms": 134
+   "ms": 65
   },
   {
    "g": "site",
    "name": "data/geo.json",
    "status": "ok",
    "detail": "HTTP 200, 697 KB",
-   "ms": 216
+   "ms": 98
   },
   {
    "g": "site",
    "name": "data/cities.json",
    "status": "ok",
    "detail": "HTTP 200, 151 KB",
-   "ms": 144
+   "ms": 73
   },
   {
    "g": "fresh",
    "name": "Headlines (news.json)",
    "status": "ok",
-   "detail": "last update 0.4 h ago"
+   "detail": "last update 0.6 h ago"
   },
   {
    "g": "fresh",
    "name": "AI relationship update (live.json)",
    "status": "ok",
-   "detail": "last update 0.4 h ago"
+   "detail": "last update 0.5 h ago"
   },
   {
    "g": "fresh",
    "name": "Leaders (politics.json)",
    "status": "warn",
-   "detail": "last update 36.5 h ago"
+   "detail": "last update 42.4 h ago"
   },
   {
    "g": "fresh",
    "name": "Countries with confirmed headlines",
    "status": "ok",
-   "detail": "196"
+   "detail": "194"
   },
   {
    "g": "fresh",
@@ -107,182 +107,182 @@
    "g": "worker",
    "name": "/live (en)",
    "status": "ok",
-   "detail": "31 items",
-   "ms": 5162
+   "detail": "30 items",
+   "ms": 5167
   },
   {
    "g": "worker",
    "name": "/top (en)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 112
+   "ms": 5120
   },
   {
    "g": "worker",
    "name": "/videos (en)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 694
+   "ms": 1232
   },
   {
    "g": "worker",
    "name": "/live (de)",
    "status": "ok",
-   "detail": "18 items",
-   "ms": 2441
+   "detail": "23 items",
+   "ms": 2748
   },
   {
    "g": "worker",
    "name": "/top (de)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 95
+   "ms": 113
   },
   {
    "g": "worker",
    "name": "/videos (de)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 383
+   "ms": 603
   },
   {
    "g": "worker",
    "name": "/live (fr)",
    "status": "ok",
-   "detail": "30 items",
-   "ms": 1034
+   "detail": "33 items",
+   "ms": 1082
   },
   {
    "g": "worker",
    "name": "/top (fr)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 95
+   "ms": 929
   },
   {
    "g": "worker",
    "name": "/videos (fr)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 412
+   "ms": 381
   },
   {
    "g": "worker",
    "name": "/live (es)",
    "status": "ok",
-   "detail": "10 items",
-   "ms": 255
+   "detail": "15 items",
+   "ms": 552
   },
   {
    "g": "worker",
    "name": "/top (es)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 81
+   "ms": 742
   },
   {
    "g": "worker",
    "name": "/videos (es)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 305
+   "ms": 272
   },
   {
    "g": "worker",
    "name": "/live (it)",
    "status": "ok",
-   "detail": "24 items",
-   "ms": 1312
+   "detail": "23 items",
+   "ms": 1871
   },
   {
    "g": "worker",
    "name": "/top (it)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 107
+   "ms": 1191
   },
   {
    "g": "worker",
    "name": "/videos (it)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 243
+   "ms": 340
   },
   {
    "g": "worker",
    "name": "/live (ar)",
    "status": "ok",
-   "detail": "9 items",
-   "ms": 408
+   "detail": "7 items",
+   "ms": 413
   },
   {
    "g": "worker",
    "name": "/top (ar)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 104
+   "ms": 139
   },
   {
    "g": "worker",
    "name": "/videos (ar)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 432
+   "ms": 336
   },
   {
    "g": "worker",
    "name": "Real-time search",
    "status": "ok",
-   "detail": "12 reports",
-   "ms": 3592
+   "detail": "15 reports",
+   "ms": 542
   },
   {
    "g": "security",
    "name": "Other websites are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 67
+   "ms": 62
   },
   {
    "g": "security",
    "name": "Look-alike Pages projects are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 68
+   "ms": 54
   },
   {
    "g": "security",
    "name": "Only the site's own prompts are answered",
    "status": "ok",
    "detail": "HTTP 400 (should be 400)",
-   "ms": 76
+   "ms": 49
   },
   {
    "g": "security",
    "name": "Private chat needs a valid pass",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 81
+   "ms": 40
   },
   {
    "g": "security",
    "name": "Admin login",
    "status": "ok",
    "detail": "HTTP 401 without a code (should be 401)",
-   "ms": 64
+   "ms": 39
   },
   {
    "g": "ai",
    "name": "AI answers",
    "status": "ok",
    "detail": "answered by gemini-3.6-flash",
-   "ms": 2053
+   "ms": 3208
   },
   {
    "g": "sources",
    "name": "News outlet feeds",
-   "status": "warn",
-   "detail": "55/57 working; not working: Sky News Arabia (200), UN News (200)"
+   "status": "ok",
+   "detail": "57/57 working"
   },
   {
    "g": "sources",
@@ -295,7 +295,7 @@
    "name": "Page loads and the globe starts",
    "status": "ok",
    "detail": "",
-   "ms": 3029
+   "ms": 2744
   },
   {
    "g": "browser",
@@ -334,5 +334,5 @@
    "detail": "page width 820 px on a 820 px screen"
   }
  ],
- "ms": 474733
+ "ms": 307045
 }
