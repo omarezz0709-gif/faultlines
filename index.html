@@ -551,7 +551,7 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
     <button class="chip icon" id="legend-btn" aria-label="Legend" title="Legend: what the symbols mean" aria-pressed="false">?</button>
     <button class="chip icon" id="theme-btn" aria-label="Light or dark mode" title="Light or dark mode">☀</button>
     <button class="chip icon" id="reset-btn" aria-label="Reset zoom" title="Reset zoom: whole globe, normal page size">⟲</button>
-    <select class="chip lang" id="lang-sel" aria-label="Language" title="Language"><option value="en">EN</option><option value="de">DE</option><option value="fr">FR</option><option value="es">ES</option><option value="ar">عربي</option></select>
+    <select class="chip lang" id="lang-sel" aria-label="Language" title="Language"><option value="en">EN</option><option value="de">DE</option><option value="fr">FR</option><option value="es">ES</option><option value="it">IT</option><option value="ar">عربي</option></select>
     <button class="chip mob-only" id="ask-btn" aria-expanded="false">✦ Ask</button>
     <button class="chip mob-only" id="news-btn" aria-pressed="false">▶ News</button>
     <button class="chip mob-only" id="live-btn"><i class="live-dot"></i>Live</button>
@@ -3169,7 +3169,7 @@ try { if (AI_PROXY && !sessionStorage.getItem('fl-visit')){ sessionStorage.setIt
    headlines stay in their original language.
    ================================================================ */
 var LANG = 'en';
-const LANG_NAME = {en: 'English', de: 'German', fr: 'French', es: 'Spanish', ar: 'Arabic'};
+const LANG_NAME = {en: 'English', de: 'German', fr: 'French', es: 'Spanish', it: 'Italian', ar: 'Arabic'};
 // English -> [French, Spanish, Arabic]
 const TR = {
   'relations · chokepoints · flashpoints': ['relations · détroits · points chauds', 'relaciones · pasos estratégicos · puntos calientes', 'العلاقات · الممرات الاستراتيجية · بؤر التوتر'],
@@ -3440,11 +3440,11 @@ const TR = {
     'يظهر هنا كل ما يخص ما نقرت عليه: العلاقات وأسبابها، والأخبار، والحقائق والأرقام، وشروح الذكاء الاصطناعي.',
     'Hier erscheint alles zu dem, was du angeklickt hast: Beziehungen und ihre Gründe, Nachrichten, Fakten & Zahlen und KI-Erklärungen.'],
   'Tools': ['Outils', 'Herramientas', 'الأدوات', 'Werkzeuge'],
-  '? explains the symbols, ☀ switches light and dark mode, ⟲ resets the zoom, and the language menu has English, Deutsch, Français, Español and العربية.': [
-    '? explique les symboles, ☀ bascule entre mode clair et sombre, ⟲ réinitialise le zoom, et le menu des langues propose English, Deutsch, Français, Español et العربية.',
-    '? explica los símbolos, ☀ cambia entre modo claro y oscuro, ⟲ restablece el zoom, y el menú de idiomas ofrece English, Deutsch, Français, Español y العربية.',
-    '؟ يشرح الرموز، و☀ يبدّل بين الوضع الفاتح والداكن، و⟲ يعيد ضبط التكبير، وقائمة اللغات تضم English وDeutsch وFrançais وEspañol والعربية.',
-    '? erklärt die Symbole, ☀ wechselt zwischen Hell- und Dunkelmodus, ⟲ setzt den Zoom zurück, und im Sprachmenü gibt es English, Deutsch, Français, Español und العربية.'],
+  '? explains the symbols, ☀ switches light and dark mode, ⟲ resets the zoom, and the language menu has English, Deutsch, Français, Español, Italiano and العربية.': [
+    '? explique les symboles, ☀ bascule entre mode clair et sombre, ⟲ réinitialise le zoom, et le menu des langues propose English, Deutsch, Français, Español, Italiano et العربية.',
+    '? explica los símbolos, ☀ cambia entre modo claro y oscuro, ⟲ restablece el zoom, y el menú de idiomas ofrece English, Deutsch, Français, Español, Italiano y العربية.',
+    '؟ يشرح الرموز، و☀ يبدّل بين الوضع الفاتح والداكن، و⟲ يعيد ضبط التكبير، وقائمة اللغات تضم English وDeutsch وFrançais وEspañol وItaliano والعربية.',
+    '? erklärt die Symbole, ☀ wechselt zwischen Hell- und Dunkelmodus, ⟲ setzt den Zoom zurück, und im Sprachmenü gibt es English, Deutsch, Français, Español, Italiano und العربية.'],
   'You’re ready': ['C’est parti', 'Listo', 'أنت جاهز', 'Los geht’s'],
   'Start with a country you care about. To see this tour again: click the ? button (lit up here), then ↺ Replay the tour at the bottom.': [
     'Commencez par un pays qui vous intéresse. Pour revoir cette visite : cliquez sur le bouton ? (mis en évidence ici), puis sur ↺ Revoir la visite en bas.',
@@ -3488,19 +3488,20 @@ TR_RE.push([/^✓ (\d+) outlets$/, ['✓ $1 médias', '✓ $1 medios', '✓ $1 �
 TR_RE.push([/^updated (.+)$/, ['mis à jour $1', 'actualizado $1', 'حُدِّث $1', 'aktualisiert $1']],
   [/^1 pair$/, ['1 paire', '1 par', 'زوج واحد', '1 Paar']], [/^(\d+) pairs$/, ['$1 paires', '$1 pares', '$1 أزواج', '$1 Paare']],
   [/^(\d+) pairs? hidden by filters ·$/, ['$1 paire(s) masquée(s) par les filtres ·', '$1 par(es) ocultos por los filtros ·', '$1 أزواج مخفية بسبب التصفية ·', '$1 Paar(e) durch Filter ausgeblendet ·']],
-  [/^Show all$/, ['Tout afficher', 'Mostrar todo', 'عرض الكل', 'Alle zeigen']]);
+  [/^Show all$/, ['Tout afficher', 'Mostrar todo', 'عرض الكل', 'Alle zeigen']],
+  [/^(.+) · \+(\d+) follow-ups?$/, ['$1 · +$2 question(s) de suivi', '$1 · +$2 pregunta(s) de seguimiento', '$1 · +$2 سؤال متابعة', '$1 · +$2 Anschlussfrage(n)', '$1 · +$2 domanda/e di approfondimento']]);
 // the facts-table footnote is built from optional parts; translate each part
 const FIG_PARTS = [
-  ['Plain figures: World Bank, latest year shown', ['Chiffres simples : Banque mondiale, dernière année disponible', 'Cifras simples: Banco Mundial, último año disponible', 'الأرقام العادية: البنك الدولي، آخر سنة متاحة', 'Einfache Zahlen: Weltbank, neuestes verfügbares Jahr']],
-  ['; gold = highest (or lowest where lower is better)', [' ; doré = le plus élevé (ou le plus bas quand c’est mieux)', '; dorado = el más alto (o el más bajo si es mejor)', '؛ الذهبي = الأعلى (أو الأدنى حين يكون ذلك أفضل)', '; golden = am höchsten (oder am niedrigsten, wo weniger besser ist)']],
-  ['. ≈ = AI estimate from the model\'s own knowledge, with year and source; check before relying on it.', ['. ≈ = estimation de l’IA à partir de ses connaissances, avec année et source ; à vérifier.', '. ≈ = estimación de la IA con su propio conocimiento, con año y fuente; compruébala.', '. ≈ = تقدير الذكاء الاصطناعي من معرفته، مع السنة والمصدر؛ تحقّق منه.', '. ≈ = KI-Schätzung aus eigenem Wissen, mit Jahr und Quelle; vor Verwendung prüfen.']],
-  [' ✓ = from Wikidata (refreshed daily; links to the source).', [' ✓ = Wikidata (mis à jour chaque jour ; lien vers la source).', ' ✓ = Wikidata (actualizado a diario; enlaza a la fuente).', ' ✓ = من ويكي بيانات (يُحدَّث يوميًا؛ مع رابط المصدر).', ' ✓ = aus Wikidata (täglich aktualisiert; mit Link zur Quelle).']],
+  ['Plain figures: World Bank, latest year shown', ['Chiffres simples : Banque mondiale, dernière année disponible', 'Cifras simples: Banco Mundial, último año disponible', 'الأرقام العادية: البنك الدولي، آخر سنة متاحة', 'Einfache Zahlen: Weltbank, neuestes verfügbares Jahr', 'Dati semplici: Banca Mondiale, ultimo anno disponibile']],
+  ['; gold = highest (or lowest where lower is better)', [' ; doré = le plus élevé (ou le plus bas quand c’est mieux)', '; dorado = el más alto (o el más bajo si es mejor)', '؛ الذهبي = الأعلى (أو الأدنى حين يكون ذلك أفضل)', '; golden = am höchsten (oder am niedrigsten, wo weniger besser ist)', '; oro = il più alto (o il più basso dove è meglio)']],
+  ['. ≈ = AI estimate from the model\'s own knowledge, with year and source; check before relying on it.', ['. ≈ = estimation de l’IA à partir de ses connaissances, avec année et source ; à vérifier.', '. ≈ = estimación de la IA con su propio conocimiento, con año y fuente; compruébala.', '. ≈ = تقدير الذكاء الاصطناعي من معرفته، مع السنة والمصدر؛ تحقّق منه.', '. ≈ = KI-Schätzung aus eigenem Wissen, mit Jahr und Quelle; vor Verwendung prüfen.', '. ≈ = stima dell’IA dalle sue conoscenze, con anno e fonte; verificala prima di usarla.']],
+  [' ✓ = from Wikidata (refreshed daily; links to the source).', [' ✓ = Wikidata (mis à jour chaque jour ; lien vers la source).', ' ✓ = Wikidata (actualizado a diario; enlaza a la fuente).', ' ✓ = من ويكي بيانات (يُحدَّث يوميًا؛ مع رابط المصدر).', ' ✓ = aus Wikidata (täglich aktualisiert; mit Link zur Quelle).', ' ✓ = da Wikidata (aggiornato ogni giorno; con link alla fonte).']],
 ];
-TR_RE.push([/^Plain figures: World Bank/, (m, whole) => [0, 1, 2, 3].map(li => FIG_PARTS.reduce((s, [en, t]) => s.replace(en, t[li]), whole))]);
+TR_RE.push([/^Plain figures: World Bank/, (m, whole) => [0, 1, 2, 3, 4].map(li => FIG_PARTS.reduce((s, [en, t]) => s.replace(en, t[li]), whole))]);
 TR_RE.push([/^(.+ via .+)\. Shown in colour on the globe\.$/, (m, list) => [
   list.replace(/ via /g, ' via ') + '. Affichés en couleur sur le globe.', list.replace(/ via /g, ' vía ') + '. Se muestran en color en el globo.', list.replace(/ via /g, ' عبر ') + '. معروضة بالألوان على الكرة.']]);
-const TR_AGO = [[/(\d+) min ago/, ['il y a $1 min', 'hace $1 min', 'منذ $1 دقيقة', 'vor $1 Min.']], [/(\d+) h ago/, ['il y a $1 h', 'hace $1 h', 'منذ $1 ساعة', 'vor $1 Std.']], [/(\d+) d ago/, ['il y a $1 j', 'hace $1 d', 'منذ $1 يوم', 'vor $1 Tg.']]];
-const LI = {fr: 0, es: 1, ar: 2, de: 3};
+const TR_AGO = [[/(\d+) min ago/, ['il y a $1 min', 'hace $1 min', 'منذ $1 دقيقة', 'vor $1 Min.', '$1 min fa']], [/(\d+) h ago/, ['il y a $1 h', 'hace $1 h', 'منذ $1 ساعة', 'vor $1 Std.', '$1 h fa']], [/(\d+) d ago/, ['il y a $1 j', 'hace $1 d', 'منذ $1 يوم', 'vor $1 Tg.', '$1 g fa']]];
+const LI = {fr: 0, es: 1, ar: 2, de: 3, it: 4};
 
 /* GERMAN: English -> German, added as the 4th entry of each phrase above */
 const TR_DE = {
@@ -3618,9 +3619,173 @@ TR_RE.forEach(e => {
   if (typeof e[1] === 'function'){ const f = e[1]; e[1] = (...a) => { const r = f(...a); r[3] = typeof de === 'function' ? de(...a) : de; return r; }; }
   else e[1][3] = de;
 });
+
+/* ITALIAN: English -> Italian, added as the 5th entry of each phrase */
+const TR_IT = {
+  'relations · chokepoints · flashpoints': 'relazioni · stretti · punti caldi',
+  '⇄ Compare countries': '⇄ Confronta paesi', 'Compare countries': 'Confronta paesi', 'Filters': 'Filtri',
+  '✦ Ask': '✦ Chiedi', '▶ News': '▶ Notizie', 'Live': 'Diretta', 'LIVE': 'DIRETTA',
+  'Ask anything about world affairs…': 'Chiedi qualsiasi cosa sull’attualità mondiale…', 'Ask a question': 'Fai una domanda', 'Ask': 'Chiedi',
+  'Language': 'Lingua', 'Open the live feed': 'Apri le notizie in diretta', 'Relationship types': 'Tipi di relazione',
+  'Ally': 'Alleato', 'Partner': 'Partner', 'Normal / mixed': 'Normale / mista', 'Tense': 'Tesa', 'Hostile': 'Ostile', 'Armed conflict': 'Conflitto armato',
+  'All': 'Tutti', 'Friends only': 'Solo amici', 'Rivals only': 'Solo rivali', 'Hostile & war': 'Ostilità e guerra', 'Ties': 'Legami',
+  'Include ties inferred from shared blocs': 'Includi i legami dedotti dai blocchi comuni', 'Neighbours only': 'Solo vicini',
+  'Highlight a bloc': 'Evidenzia un blocco', 'None': 'Nessuno', '⇄ Compare members': '⇄ Confronta i membri', 'Quick comparisons': 'Confronti rapidi',
+  'Map markers': 'Simboli sulla mappa', 'Map layers': 'Livelli della mappa', 'Relation arcs': 'Archi delle relazioni',
+  'Straits & canals': 'Stretti e canali', 'Land corridors': 'Corridoi terrestri', 'Flashpoints': 'Punti caldi', 'Bases & ports': 'Basi e porti',
+  'Resources': 'Risorse', 'Reset all filters': 'Azzera tutti i filtri',
+  'Search a country or strait…': 'Cerca un paese o uno stretto…', 'Search countries and locations': 'Cerca paesi e luoghi',
+  'How to read it': 'Come leggerla', 'A world of faultlines': 'Un mondo di linee di faglia',
+  'Click any country to colour the world by its relationships, with arcs to its neighbours and key partners or rivals. Click a relationship to see why it has that status, or ask the AI to explain it in depth. Use':
+    'Clicca su un paese per colorare il mondo in base alle sue relazioni, con archi verso i vicini e i principali partner o rivali. Clicca su una relazione per vedere perché ha quello stato, o chiedi all’IA di spiegarla a fondo. Usa',
+  'to pick 2–12 countries and see how they all relate, and': 'per scegliere da 2 a 12 paesi e vedere come sono legati tra loro, e',
+  "to narrow what's shown.": 'per restringere ciò che viene mostrato.',
+  'Headlines to watch': 'Titoli da seguire', 'flagged automatically': 'segnalati automaticamente',
+  'Latest news updates': 'Ultimi aggiornamenti', 'All updates': 'Tutti gli aggiornamenti', 'Relationship key': 'Legenda delle relazioni', 'Try a country': 'Prova un paese',
+  'Critical chokepoints': 'Passaggi critici', 'On the map': 'Sulla mappa', 'Country': 'Paese', '⇄ Compare with others': '⇄ Confronta con altri',
+  'Click any relationship below for an explanation.': 'Clicca su una relazione qui sotto per una spiegazione.',
+  'In the news': 'Nelle notizie', 'In the news together': 'Insieme nelle notizie',
+  'Low tension': 'Tensione bassa', 'Elevated tension': 'Tensione elevata', 'High tension': 'Tensione alta',
+  'Alignment': 'Allineamenti', 'Blocs & alliances': 'Blocchi e alleanze', 'Facts & figures': 'Fatti e cifre',
+  'economy · society · military · environment · politics': 'economia · società · forze armate · ambiente · politica',
+  'Economy': 'Economia', 'Society': 'Società', 'Military & security': 'Forze armate e sicurezza', 'Environment': 'Ambiente', 'Politics': 'Politica',
+  'GDP': 'PIL', 'GDP per person': 'PIL pro capite', 'Income per person (PPP)': 'Reddito pro capite (PPA)', 'Median income': 'Reddito mediano',
+  'Inflation': 'Inflazione', 'Unemployment': 'Disoccupazione', 'Housing prices': 'Prezzi delle case', 'Petrol price': 'Prezzo della benzina',
+  'Fertility rate': 'Tasso di fecondità', 'Birth rate': 'Tasso di natalità', 'Life expectancy': 'Aspettativa di vita', 'PISA scores': 'Punteggi PISA', 'Happiness': 'Felicità',
+  'Social protection coverage': 'Copertura della protezione sociale', 'Social mobility': 'Mobilità sociale', 'Inequality (Gini)': 'Disuguaglianza (Gini)',
+  'Military spending': 'Spesa militare', 'Military spending (% of GDP)': 'Spesa militare (% del PIL)', 'Armed forces personnel': 'Personale delle forze armate',
+  'Abuse & assault in the military': 'Abusi e aggressioni nelle forze armate', 'Torture': 'Tortura', 'Intelligence agencies': 'Servizi segreti', 'SDG Index': 'Indice SDG',
+  'Forest cover': 'Copertura forestale', 'Protected areas': 'Aree protette', 'Urban green space': 'Verde urbano', 'CO₂ per person': 'CO₂ pro capite',
+  'Renewable energy': 'Energia rinnovabile', 'System of government': 'Forma di governo', 'Head of state': 'Capo di Stato', 'Head of government': 'Capo del governo',
+  'Ruling party / coalition': 'Partito / coalizione al governo', 'Last national election': 'Ultime elezioni nazionali', 'Next national election': 'Prossime elezioni nazionali',
+  '✦ Fill in the ≈ rows with AI': '✦ Completa le righe ≈ con l’IA',
+  'Neighbours': 'Vicini', 'by sea': 'via mare', 'Key relationships': 'Relazioni chiave', 'Transnational issues': 'Questioni transnazionali',
+  'Militancy & security': 'Militanza e sicurezza', 'Smuggling & trafficking': 'Contrabbando e traffici', 'Migration & refugees': 'Migrazioni e rifugiati',
+  'Proxy wars & rival camps': 'Guerre per procura e campi rivali', 'Water, food & energy': 'Acqua, cibo ed energia', 'Money & people': 'Denaro e persone',
+  '⇄ Compare these countries': '⇄ Confronta questi paesi', 'Strategic locations': 'Luoghi strategici', 'Also aligned through blocs': 'Allineati anche tramite blocchi',
+  'Simplified snapshot as of mid-2026. Statuses are editorial shorthand for complex relationships; unlisted neighbours default to "normal".':
+    'Quadro semplificato a metà 2026. Gli stati sono sintesi redazionali di relazioni complesse; i vicini non elencati sono «normali» per impostazione.',
+  'Maritime chokepoint': 'Stretto marittimo strategico', 'Land corridor': 'Corridoio terrestre', 'Flashpoint / disputed area': 'Punto caldo / area contesa',
+  'Strategic base or port': 'Base o porto strategico', 'Strategic resource': 'Risorsa strategica', '✦ Explain in depth': '✦ Spiega a fondo',
+  '⇄ Compare with other locations or countries': '⇄ Confronta con altri luoghi o paesi', 'Countries involved': 'Paesi coinvolti', 'Related locations': 'Luoghi collegati',
+  'Figures are approximate and rounded; snapshot as of mid-2026.': 'Cifre approssimative e arrotondate; dati a metà 2026.',
+  'Compare': 'Confronta', 'Pick what to compare': 'Scegli cosa confrontare', 'Analysis': 'Analisi',
+  '✦ Analyse this comparison in depth': '✦ Analizza a fondo questo confronto', 'Compare facts & figures': 'Confronta fatti e cifre',
+  'Relationship grid': 'Griglia delle relazioni', 'Hidden connections': 'Legami nascosti', 'Every pair': 'Tutte le coppie', 'Blocs': 'Blocchi', 'All in:': 'Tutti in:',
+  'News & updates': 'Notizie e aggiornamenti', 'Recorded relationship changes': 'Cambiamenti registrati nelle relazioni',
+  'Automated summaries can be wrong; check the linked sources.': 'I riassunti automatici possono sbagliare; verifica le fonti collegate.',
+  'Thinking…': 'Sto pensando…', '■ Stop': '■ Ferma', 'Cut short.': 'Risposta interrotta.',
+  "Written by AI from the page's data and its own knowledge; check recent events against the news.": 'Scritto dall’IA con i dati della pagina e le sue conoscenze; verifica i fatti recenti nelle notizie.',
+  'Something went wrong. Try again.': 'Qualcosa è andato storto. Riprova.',
+  "You've asked a lot in the last few minutes. Wait a moment, then try again.": 'Hai fatto molte domande negli ultimi minuti. Aspetta un momento e riprova.',
+  'The free AI quota is used up for the moment. Try again in a few minutes (answers already asked today still load instantly).': 'La quota gratuita dell’IA è esaurita per il momento. Riprova tra qualche minuto (le domande già fatte oggi si caricano subito).',
+  'No answer came back. Try again.': 'Nessuna risposta. Riprova.',
+  'Click to add to comparison': 'Clicca per aggiungere al confronto', 'Click to remove from comparison': 'Clicca per togliere dal confronto',
+  'No notable link recorded': 'Nessun legame rilevante registrato', 'Hidden by filters': 'Nascosto dai filtri', 'Small state': 'Piccolo stato',
+  'Your question': 'La tua domanda', 'Question': 'Domanda', 'Mentioned on the map': 'Citati sulla mappa',
+  'Real-time: ask about what is happening now…': 'Tempo reale: chiedi cosa sta succedendo ora…', 'Real-time search': 'Ricerca in tempo reale',
+  'Real-time search: answers from news published in the last hours': 'Ricerca in tempo reale: risposte dalle notizie delle ultime ore',
+  'Latest reports': 'Ultimi articoli', '⚡ Real-time': '⚡ Tempo reale', 'Searching the latest news…': 'Cerco le ultime notizie…',
+  'Ask a follow-up…': 'Fai una domanda di approfondimento…', 'Ask a follow-up question': 'Fai una domanda di approfondimento',
+  'Your earlier questions': 'Le tue domande precedenti', '☰ Your earlier questions': '☰ Le tue domande precedenti',
+  'Sources': 'Fonti', 'Clear history': 'Cancella la cronologia', 'Sure? Clear all': 'Sicuro? Cancella tutto',
+  'No questions yet. Ask one in the question bar.': 'Nessuna domanda per ora. Fanne una nella barra delle domande.',
+  'Kept only in this browser, never sent anywhere.': 'Conservato solo in questo browser, mai inviato altrove.',
+  "Written by AI from the page's data, its own knowledge and, where listed, web sources; check recent events against the news.": 'Scritto dall’IA con i dati della pagina, le sue conoscenze e, se indicate, fonti web; verifica i fatti recenti nelle notizie.',
+  'Live feed': 'Notizie in diretta', 'World news': 'Notizie dal mondo', 'Latest headlines': 'Ultimi titoli',
+  'Google News world headlines, checked every few minutes. Headlines that name a country and words like war, strike or sanctions are marked.': 'Titoli dal mondo di Google News, controllati ogni pochi minuti. Sono evidenziati i titoli che citano un paese e parole come guerra, attacco o sanzioni.',
+  'No live headlines right now.': 'Nessun titolo in diretta al momento.', 'Gaza Strip': 'Striscia di Gaza', 'Antarctica': 'Antartide',
+  'Legend': 'Legenda', 'Legend: what the symbols mean': 'Legenda: cosa significano i simboli', 'Map symbols': 'Simboli della mappa', 'Country colours': 'Colori dei paesi',
+  'Click a country: it turns gold and every other country is coloured by its relationship with it.': 'Clicca su un paese: diventa dorato e tutti gli altri si colorano secondo la loro relazione con esso.',
+  'Small states (too small to draw)': 'Piccoli stati (troppo piccoli da disegnare)', 'Relationship line': 'Linea di relazione', 'Capital (zoom in)': 'Capitale (ingrandisci)',
+  'City (zoom in)': 'Città (ingrandisci)', 'River (zoom in)': 'Fiume (ingrandisci)', 'Lake': 'Lago', 'Tips': 'Suggerimenti',
+  'Hover any symbol or country to see its name; click it to open it.': 'Passa sopra un simbolo o un paese per vederne il nome; cliccalo per aprirlo.',
+  'Zoom in to see cities and rivers.': 'Ingrandisci per vedere città e fiumi.', 'Filters → Map markers switches symbol types on and off.': 'Filtri → Simboli sulla mappa attiva o disattiva i tipi di simbolo.',
+  'Open video large': 'Apri il video in grande', '▶ Playing in the large window': '▶ In riproduzione nella finestra grande', 'Show the large video': 'Mostra il video grande',
+  'Open story large': 'Apri la notizia in grande', 'Read the article ↗': 'Leggi l’articolo ↗', 'All top stories': 'Tutte le notizie principali',
+  'Close': 'Chiudi', 'Light or dark mode': 'Modalità chiara o scura', 'Hide the headline': 'Nascondi il titolo', 'Show the headline': 'Mostra il titolo',
+  'Reset zoom': 'Reimposta lo zoom', 'Reset zoom: whole globe, normal page size': 'Reimposta lo zoom: globo intero, dimensione normale della pagina',
+  'TOP STORY': 'IN PRIMO PIANO', 'World': 'Mondo', 'Previous story': 'Notizia precedente', '▶ VIDEO': '▶ VIDEO', 'LIVE TV': 'TV IN DIRETTA', 'Live TV': 'TV in diretta', 'Hide video': 'Nascondi il video',
+  'Only stories reported by at least two independent outlets are shown; state propaganda outlets (RT, Sputnik, TASS, Press TV, Global Times, CGTN and others) are left out.':
+    'Sono mostrate solo le notizie riportate da almeno due testate indipendenti; i media di propaganda di Stato (RT, Sputnik, TASS, Press TV, Global Times, CGTN e altri) sono esclusi.',
+  'Play video': 'Riproduci il video', 'Watch live news': 'Guarda le notizie in diretta', '24/7 live news channel': 'Canale di notizie 24 ore su 24', 'Next story': 'Notizia successiva',
+  'Territory': 'Territorio', 'Continent': 'Continente',
+  'Headlines, leaders and figures refresh automatically; relationship statuses are an editorial baseline. Relations are editorial shorthand, not a substitute for analysis.':
+    'Titoli, leader e cifre si aggiornano automaticamente; gli stati delle relazioni sono una base redazionale. Sono sintesi, non un’analisi.',
+  'marks pairs with indirect links (militant networks, smuggling, migration, proxies, resources).': 'indica le coppie con legami indiretti (reti militanti, contrabbando, migrazioni, gruppi per procura, risorse).',
+  'No bloc includes all of them.': 'Nessun blocco li comprende tutti.', 'Partly shared:': 'In parte comuni:',
+  'Hotspots involving 2+ of them': 'Punti caldi con 2 o più di loro', 'Click to add a location to this comparison.': 'Clicca per aggiungere un luogo a questo confronto.',
+  'Nuclear-armed states': 'Stati con armi nucleari', 'Gulf & Iran': 'Golfo e Iran', 'Middle East': 'Medio Oriente', 'Korean Peninsula': 'Penisola coreana',
+  'South China Sea': 'Mar Cinese Meridionale', 'South Asia': 'Asia meridionale', 'Baltic & Nordic': 'Baltico e Paesi nordici', 'Black Sea': 'Mar Nero',
+  'Caucasus': 'Caucaso', 'Horn of Africa': 'Corno d’Africa', 'Sahel': 'Sahel', 'Great Lakes': 'Grandi Laghi', 'Americas': 'Americhe',
+  '⚓ Oil & gas chokepoints': '⚓ Passaggi di petrolio e gas', '⚓ Asia–Europe sea route': '⚓ Rotta marittima Asia–Europa', '⚓ Red Sea crisis': '⚓ Crisi del Mar Rosso',
+  '⚓ Taiwan & South China Sea': '⚓ Taiwan e Mar Cinese Meridionale', '⚓ Arctic routes': '⚓ Rotte artiche', "⚓ Russia's sea exits": '⚓ Sbocchi marittimi della Russia',
+  'Welcome to Faultlines': 'Benvenuto su Faultlines',
+  'An interactive globe of world politics: who is allied with whom, where the tensions are, and what is happening right now. Take the 30-second tour?':
+    'Un globo interattivo della politica mondiale: chi è alleato con chi, dove sono le tensioni e cosa sta succedendo adesso. Fai il tour di 30 secondi?',
+  'Click any country': 'Clicca su un paese',
+  'Click a country: it turns gold and the world is coloured by its relationships, from allies to wars. Drag to turn the globe, scroll to zoom in on cities and rivers.':
+    'Clicca su un paese: diventa dorato e il mondo si colora secondo le sue relazioni, dagli alleati alle guerre. Trascina per ruotare il globo, scorri per ingrandire città e fiumi.',
+  'Tap a country: it turns gold and the world is coloured by its relationships, from allies to wars. Drag to turn the globe, pinch to zoom.':
+    'Tocca un paese: diventa dorato e il mondo si colora secondo le sue relazioni, dagli alleati alle guerre. Trascina per ruotare il globo, allarga con due dita per ingrandire.',
+  'Search': 'Cerca',
+  'Find any country, or a strategic place such as the Strait of Hormuz or the Panama Canal.': 'Trova qualsiasi paese o un luogo strategico come lo Stretto di Hormuz o il Canale di Panama.',
+  'Pick 2–12 countries or places and see how they all relate, with an AI analysis of the hidden connections.': 'Scegli da 2 a 12 paesi o luoghi e guarda come sono legati, con un’analisi dell’IA dei legami nascosti.',
+  'Ask anything': 'Chiedi qualsiasi cosa',
+  'Ask about any country or conflict and follow up. The countries in your question light up on the globe; ⚡ switches to real-time news, ☰ shows your earlier questions.':
+    'Chiedi di qualsiasi paese o conflitto e approfondisci. I paesi della tua domanda si illuminano sul globo; ⚡ passa alle notizie in tempo reale, ☰ mostra le tue domande precedenti.',
+  'Opens the question bar. Ask about any country or conflict: the countries in your question light up on the globe, ⚡ switches to real-time news, ☰ shows your earlier questions.':
+    'Apre la barra delle domande. Chiedi di qualsiasi paese o conflitto: i paesi si illuminano sul globo, ⚡ passa al tempo reale, ☰ mostra le tue domande precedenti.',
+  'News & video': 'Notizie e video', 'Top story': 'In primo piano', 'News video': 'Video di notizie',
+  'The biggest story right now, confirmed by several outlets. It follows whatever you click: click Russia and you get Russia’s top story. ⤢ opens it large.':
+    'La notizia principale del momento, confermata da più testate. Segue ciò che clicchi: clicca sulla Russia e vedi la notizia principale sulla Russia. ⤢ la apre in grande.',
+  'News videos on the day’s big stories from trusted channels, or LIVE TV for a 24/7 news channel. Like the top story, they follow whatever you click.':
+    'Video sulle grandi notizie del giorno da canali affidabili, o TV IN DIRETTA per un canale di notizie 24 ore su 24. Come la notizia principale, seguono ciò che clicchi.',
+  'Everything about what you tapped appears here: relationships, news, facts & figures, and ✦ Explain its foreign policy for an AI analysis. Tap its title to open or fold it.':
+    'Qui compare tutto su ciò che hai toccato: relazioni, notizie, fatti e cifre, e ✦ Spiega la politica estera per un’analisi dell’IA. Tocca il titolo per aprirlo o chiuderlo.',
+  'Everything about what you clicked appears here: relationships and why, news, facts & figures. ✦ Explain its foreign policy gives you an AI analysis, and every relationship can be explained in depth.':
+    'Qui compare tutto su ciò che hai cliccato: le relazioni e i loro motivi, notizie, fatti e cifre. ✦ Spiega la politica estera ti dà un’analisi dell’IA, e ogni relazione si può spiegare a fondo.',
+  'The biggest story and news videos right now. They follow whatever you tap: tap Russia and you get Russia’s top story.':
+    'La notizia principale e i video di adesso. Seguono ciò che tocchi: tocca la Russia e vedi la notizia principale sulla Russia.',
+  'Breaking headlines, confirmed by at least two independent outlets.': 'Le ultime notizie, confermate da almeno due testate indipendenti.',
+  'Details': 'Dettagli', 'Tools': 'Strumenti',
+  '? explains the symbols, ☀ switches light and dark mode, ⟲ resets the zoom, and the language menu has English, Deutsch, Français, Español, Italiano and العربية.':
+    '? spiega i simboli, ☀ passa dalla modalità chiara a quella scura, ⟲ reimposta lo zoom, e nel menu delle lingue ci sono English, Deutsch, Français, Español, Italiano e العربية.',
+  'You’re ready': 'Sei pronto',
+  'Start with a country you care about. To see this tour again: click the ? button (lit up here), then ↺ Replay the tour at the bottom.':
+    'Inizia da un paese che ti interessa. Per rivedere il tour: clicca sul pulsante ? (evidenziato qui), poi su ↺ Rivedi il tour in fondo.',
+  'Choose your language': 'Scegli la tua lingua', 'Skip': 'Salta', '‹ Back': '‹ Indietro', 'Next ›': 'Avanti ›', 'Start the tour ›': 'Inizia il tour ›',
+  'Let’s go': 'Andiamo', 'Tour': 'Tour', '↺ Replay the tour': '↺ Rivedi il tour',
+  'No match. Try a country or strait name.': 'Nessun risultato. Prova con il nome di un paese o di uno stretto.',
+  'Open panel': 'Apri il pannello', 'Push panel down': 'Abbassa il pannello',
+};
+Object.entries(TR_IT).forEach(([en, it]) => { if (TR[en]) TR[en][4] = it; else TR[en] = [null, null, null, null, it]; });
+const TR_RE_IT = new Map([
+  ['^Updated (.+)$', 'Aggiornato $1'], ['^checked (.+)$', 'controllato $1'],
+  ['^(by sea · )?1 indirect link$', '$11 legame indiretto'], ['^(by sea · )?(\\d+) indirect links$', '$1$2 legami indiretti'],
+  ['^(\\d+) headlines · last 2 days$', '$1 titoli · ultimi 2 giorni'], ['^(\\d+) links$', '$1 legami'], ['^(\\d+) countries$', '$1 paesi'],
+  ['^All (\\d+) headlines to watch$', 'Tutti i $1 titoli da seguire'],
+  ['^· (\\d+)% of recent headlines mention conflict terms$', '· il $1% dei titoli recenti cita termini di conflitto'],
+  ['^(\\d+) countries and territories, including (\\d+) small states shown as dots$', '$1 paesi e territori, di cui $2 piccoli stati mostrati come punti'],
+  ['^(\\d+) strategic locations across five categories$', '$1 luoghi strategici in cinque categorie'],
+  ['^(\\d+) annotated bilateral relationships, plus alliances and blocs$', '$1 relazioni bilaterali commentate, più alleanze e blocchi'],
+  ["^✦ Explain (.+)'s foreign policy$", (m, n) => '✦ Spiega la politica estera: ' + tn(n)],
+  ['^Google News, refreshed at 00:00, 07:00, 12:00 and 18:00 Berlin time · last (.+)\\.$', (m, d) => 'Google News, aggiornato alle 00:00, 07:00, 12:00 e 18:00 (ora di Berlino) · ultimo: ' + d + '.'],
+  ['^Headlines last refreshed (.+); the site refreshes at 00:00, 07:00, 12:00 and 18:00 Berlin time\\.$', (m, d) => 'Titoli aggiornati ' + d + '; il sito si aggiorna alle 00:00, 07:00, 12:00 e 18:00 (ora di Berlino).'],
+  ['^Headlines naming two or more countries with words like war, sanctions, ceasefire or coup, from the last 7 days\\. Keyword matching only: read the article before drawing conclusions\\.$',
+    () => 'Titoli degli ultimi 7 giorni che citano due o più paesi con parole come guerra, sanzioni, cessate il fuoco o golpe. Solo corrispondenza di parole: leggi l’articolo prima di trarre conclusioni.'],
+  ['^✓ (\\d+) outlets$', '✓ $1 testate'], ['^updated (.+)$', 'aggiornato $1'], ['^1 pair$', '1 coppia'], ['^(\\d+) pairs$', '$1 coppie'],
+  ['^(\\d+) pairs? hidden by filters ·$', '$1 coppia/e nascosta/e dai filtri ·'], ['^Show all$', 'Mostra tutto'],
+  ['^(.+ via .+)\\. Shown in colour on the globe\\.$', (m, list) => list.replace(/ via /g, ' tramite ') + '. Mostrati a colori sul globo.'],
+]);
+TR_RE.forEach(e => {
+  const it = TR_RE_IT.get(e[0].source); if (!it) return;
+  if (typeof e[1] === 'function'){ const f = e[1]; e[1] = (...a) => { const r = f(...a); r[4] = typeof it === 'function' ? it(...a) : it; return r; }; }
+  else e[1][4] = it;
+});
 // country names: ISO3 -> ISO2 for the browser's translations; a few set by hand
 const ISO2 = Object.fromEntries('AFGAF AGOAO ALBAL AREAE ARGAR ARMAM AUSAU AUTAT AZEAZ BDIBI BELBE BENBJ BFABF BGDBD BGRBG BHSBS BIHBA BLRBY BLZBZ BOLBO BRABR BRNBN BTNBT BWABW CAFCF CANCA CHECH CHLCL CHNCN CIVCI CMRCM CODCD COGCG COLCO CRICR CUBCU CYPCY CZECZ DEUDE DJIDJ DNKDK DOMDO DZADZ ECUEC EGYEG ERIER ESPES ESTEE ETHET FINFI FJIFJ FRAFR GABGA GBRGB GEOGE GHAGH GINGN GMBGM GNBGW GNQGQ GRCGR GTMGT GUYGY HNDHN HRVHR HTIHT HUNHU IDNID INDIN IRLIE IRNIR IRQIQ ISLIS ISRIL ITAIT JAMJM JORJO JPNJP KAZKZ KENKE KGZKG KHMKH KORKR XKXXK KWTKW LAOLA LBNLB LBRLR LBYLY LKALK LSOLS LTULT LUXLU LVALV MARMA MDAMD MDGMG MEXMX MKDMK MLIML MMRMM MNEME MNGMN MOZMZ MRTMR MWIMW MYSMY NAMNA NERNE NGANG NICNI NLDNL NORNO NPLNP NZLNZ OMNOM PAKPK PANPA PERPE PHLPH PNGPG POLPL PRKKP PRTPT PRYPY QATQA ROURO RUSRU RWARW ESHEH SAUSA SDNSD SSDSS SENSN SLBSB SLESL SLVSV SOMSO SRBRS SURSR SVKSK SVNSI SWESE SWZSZ SYRSY TCDTD TGOTG THATH TJKTJ TKMTM TLSTL TTOTT TUNTN TURTR TWNTW TZATZ UGAUG UKRUA URYUY USAUS UZBUZ VENVE VNMVN VUTVU YEMYE ZAFZA ZMBZM ZWEZW SGPSG BHRBH MLTMT MDVMV MUSMU SYCSC CPVCV COMKM STPST BRBBB ATGAG DMADM GRDGD KNAKN LCALC VCTVC ANDAD MCOMC LIELI SMRSM VATVA WSMWS TONTO KIRKI FSMFM PLWPW MHLMH TUVTV NRUNR'.split(' ').map(s => [s.slice(0, 3), s.slice(3)]));
-const NAME_LOC = {PSE: ['Palestine', 'Palestina', 'فلسطين', 'Palästina'], NCY: ['Chypre du Nord', 'Chipre del Norte', 'شمال قبرص', 'Nordzypern'], SOL: ['Somaliland', 'Somalilandia', 'أرض الصومال', 'Somaliland']};
+const NAME_LOC = {PSE: ['Palestine', 'Palestina', 'فلسطين', 'Palästina', 'Palestina'], NCY: ['Chypre du Nord', 'Chipre del Norte', 'شمال قبرص', 'Nordzypern', 'Cipro del Nord'], SOL: ['Somaliland', 'Somalilandia', 'أرض الصومال', 'Somaliland', 'Somaliland']};
 let trMap = null, nameRe = null, localNames = {};
 function buildTr(){
   trMap = new Map(); localNames = {};
@@ -3868,7 +4033,7 @@ let NAMES_ALL = null;
 function allNames(id){
   if (!NAMES_ALL){
     NAMES_ALL = {};
-    const dns = ['fr', 'es', 'ar', 'de'].map(l => { try { return new Intl.DisplayNames([l], {type: 'region'}); } catch(e){ return null; } });
+    const dns = ['fr', 'es', 'ar', 'de', 'it'].map(l => { try { return new Intl.DisplayNames([l], {type: 'region'}); } catch(e){ return null; } });
     ALL_IDS.forEach(i => {
       const list = [ENT[i].name];
       dns.forEach((dn, k) => { const v = NAME_LOC[i] ? NAME_LOC[i][k] : (dn && ISO2[i] ? (() => { try { return dn.of(ISO2[i]); } catch(e){ return null; } })() : null); if (v && v !== ISO2[i]) list.push(v); });
@@ -3904,9 +4069,11 @@ const WIKI_STOP = new Set(('who what when where why how which whom whose is are 
   + 'quién qué cuál cuáles por cómo es son el los las unos unas del y o en con para sobre este esta '
   + 'من ما ماذا لماذا كيف هل في على عن مع إلى هذا هذه '
   + 'wer was wann wo warum wieso weshalb wie welche welcher welches ist sind war waren der die das den dem des ein eine einen und oder mit von zu im in auf für über nach bei aus gerade jetzt heute aktuell passiert gibt').split(' '));
+'chi cosa quando dove perché come quale quali è sono il lo la i gli le un una di del della dei delle e o con per su tra fra da in al alla ai nel nella questo questa oggi ora adesso attuale ultime notizie succede'
+  .split(' ').forEach(w => WIKI_STOP.add(w));   // Italian
 async function wikiContext(q, ids){
   // questions in French, Spanish or Arabic: that language's Wikipedia (well kept for world affairs)
-  const W = `https://${['fr', 'es', 'ar', 'de'].includes(LANG) ? LANG : 'en'}.wikipedia.org/w/api.php?format=json&origin=*`;
+  const W = `https://${['fr', 'es', 'ar', 'de', 'it'].includes(LANG) ? LANG : 'en'}.wikipedia.org/w/api.php?format=json&origin=*`;
   const ctl = new AbortController(), timer = setTimeout(() => ctl.abort(), 4000);
   try {
     // Wikipedia's search wants key words, not sentences: drop the question words, then search twice — all key words,
@@ -4070,7 +4237,7 @@ document.getElementById('ask-hist').onclick = () => panelMode === 'askhist' ? re
    LIVE FEED: latest world headlines (Worker /live, every few minutes), ticker at the bottom left
    ================================================================ */
 let FEED = [], feedAt = null, tkIdx = 0;
-const FEED_KW = /\b(war|attacks?|strikes?|missiles?|drones?|ceasefire|truce|sanctions?|coup|invasion|invades?|clashes|killed|troops|nuclear|blockade|hostages?|bomb\w*|shelling|offensive|guerre|attaque|frappe|cessez-le-feu|guerra|ataque|misil|bombardeo|alto el fuego|krieg|angriff\w*|rakete\w*|drohne\w*|luftangriff\w*|waffenruhe|sanktion\w*|putsch|truppen|geisel\w*)\b|حرب|هجوم|غارة|صاروخ|عقوبات|قصف|اشتباكات/i;
+const FEED_KW = /\b(war|attacks?|strikes?|missiles?|drones?|ceasefire|truce|sanctions?|coup|invasion|invades?|clashes|killed|troops|nuclear|blockade|hostages?|bomb\w*|shelling|offensive|guerre|attaque|frappe|cessez-le-feu|guerra|ataque|misil|bombardeo|alto el fuego|krieg|angriff\w*|rakete\w*|drohne\w*|luftangriff\w*|waffenruhe|sanktion\w*|putsch|truppen|geisel\w*|attacc\w*|missil\w*|droni|raid|cessate il fuoco|sanzioni|golpe|truppe|ostaggi)\b|حرب|هجوم|غارة|صاروخ|عقوبات|قصف|اشتباكات/i;
 function tagFeed(it){
   if (it.c) return it;
   const {ids} = mentioned(it.t);
@@ -4161,7 +4328,7 @@ const TV_MS = 9000;
 const tvEl = document.getElementById('tv');
 let tv = {key: null, stories: [], i: 0, label: ''}, tvTimer = null;
 const tvCache = new Map();
-const TVW = {en: ['covered by', 'outlets', 'incl.'], de: ['berichtet von', 'Medien', 'u. a.'], fr: ['couvert par', 'médias', 'dont'], es: ['cubierto por', 'medios', 'incl.'], ar: ['تغطيه', 'وسيلة إعلام', 'منها']};
+const TVW = {en: ['covered by', 'outlets', 'incl.'], de: ['berichtet von', 'Medien', 'u. a.'], it: ['coperto da', 'testate', 'tra cui'], fr: ['couvert par', 'médias', 'dont'], es: ['cubierto por', 'medios', 'incl.'], ar: ['تغطيه', 'وسيلة إعلام', 'منها']};
 function tvTarget(){
   if (sel.type === 'country') return {key: 'c:' + sel.id, q: (LANG !== 'en' && localNames[sel.id]) || ENT[sel.id].name, en: ENT[sel.id].name, label: ENT[sel.id].name, id: sel.id};
   if (sel.type === 'poi' && sel.poi && sel.poi.n) return {key: 'p:' + sel.poi.n, q: sel.poi.n, en: sel.poi.n, label: sel.poi.n};
@@ -4377,7 +4544,7 @@ function vidShow(){
 }
 const noVideoText = place => {
   const n = (trMap && trMap.get(place)) || place;
-  return {en: `No confirmed video on ${n} yet`, de: `Noch kein bestätigtes Video zu ${n}`, fr: `Pas encore de vidéo confirmée : ${n}`, es: `Aún no hay vídeo confirmado sobre ${n}`, ar: `لا يوجد فيديو مؤكد عن ${n} بعد`}[LANG] || `No confirmed video on ${n} yet`;
+  return {en: `No confirmed video on ${n} yet`, de: `Noch kein bestätigtes Video zu ${n}`, it: `Ancora nessun video confermato su ${n}`, fr: `Pas encore de vidéo confirmée : ${n}`, es: `Aún no hay vídeo confirmado sobre ${n}`, ar: `لا يوجد فيديو مؤكد عن ${n} بعد`}[LANG] || `No confirmed video on ${n} yet`;
 };
 function vidStep(k){ if (vid.live || !vid.videos.length) return; vid.i = (vid.i + k + vid.videos.length) % vid.videos.length; vidShow(); }
 document.getElementById('vid-next').onclick = document.getElementById('vid-next2').onclick = () => vidStep(1);
@@ -4511,7 +4678,7 @@ function tourSteps(){
     {el: '#vid', t: 'News video', b: 'News videos on the day’s big stories from trusted channels, or LIVE TV for a 24/7 news channel. Like the top story, they follow whatever you click.'},
     {el: '#panel', t: 'Details', b: 'Everything about what you clicked appears here: relationships and why, news, facts & figures. ✦ Explain its foreign policy gives you an AI analysis, and every relationship can be explained in depth.'});
   s.push(
-    {el: '.modes', t: 'Tools', b: '? explains the symbols, ☀ switches light and dark mode, ⟲ resets the zoom, and the language menu has English, Deutsch, Français, Español and العربية.'},
+    {el: '.modes', t: 'Tools', b: '? explains the symbols, ☀ switches light and dark mode, ⟲ resets the zoom, and the language menu has English, Deutsch, Français, Español, Italiano and العربية.'},
     {el: '#legend-btn', t: 'You’re ready', b: 'Start with a country you care about. To see this tour again: click the ? button (lit up here), then ↺ Replay the tour at the bottom.', last: true});
   return s;
 }
@@ -4525,7 +4692,7 @@ function startTour(){
   const box = document.createElement('div');
   box.className = 'tour'; box.setAttribute('role', 'dialog'); box.setAttribute('aria-label', 'Tour');
   box.innerHTML = `<div class="tour-spot none"></div><div class="tour-card"><h4></h4><p></p>
-    <div class="tour-langs"><small>Choose your language</small><div>${[['en', 'English'], ['de', 'Deutsch'], ['fr', 'Français'], ['es', 'Español'], ['ar', 'العربية']]
+    <div class="tour-langs"><small>Choose your language</small><div>${[['en', 'English'], ['de', 'Deutsch'], ['fr', 'Français'], ['es', 'Español'], ['it', 'Italiano'], ['ar', 'العربية']]
       .map(([l, n]) => `<button class="tour-btn" data-lang="${l}" lang="${l}">${n}</button>`).join('')}</div></div>
     <div class="tour-foot"><span class="tour-dots">${steps.map(() => '<i></i>').join('')}</span>
       <button class="tour-btn skip" data-t="skip">Skip</button><button class="tour-btn" data-t="back">‹ Back</button><button class="tour-btn go" data-t="next">Next ›</button></div></div>`;

@@ -23,7 +23,7 @@ SITE = "https://faultlines-1pw.pages.dev"
 MIRROR = "https://omarezz0709-gif.github.io/faultlines/"
 WORKER = "https://faultlines-ai.omarezz0709.workers.dev"
 ORIGIN = SITE
-LANGS = ("en", "de", "fr", "es", "ar")
+LANGS = ("en", "de", "fr", "es", "it", "ar")
 UA = "Mozilla/5.0 (compatible; Faultlines diagnostics)"
 
 checks: list[dict] = []
@@ -184,7 +184,7 @@ async () => {
   const chk = n => { const m = document.body.innerText.match(BAD); if (m) bad.push(n); };
   const step = async (n, f) => { try { await f(); } catch(e){ E.push(n + ': ' + e.message); } await new Promise(r => setTimeout(r, 5)); };
   const ids = Object.keys(ENT).filter(k => ENT[k] && ENT[k].name);
-  for (const l of ['en', 'de', 'fr', 'es', 'ar']) {
+  for (const l of ['en', 'de', 'fr', 'es', 'it', 'ar']) {
     await step('lang ' + l, () => setLang(l));
     for (const id of ids) { await step(l + ' ' + id, () => selectCountry(id)); chk(l + ' ' + id); }
     for (const p of POIS) { await step(l + ' ' + p.n, () => selectPoi(p)); chk(l + ' ' + p.n); }
@@ -227,12 +227,12 @@ def check_browser() -> None:
         page.wait_for_timeout(3000)
         try:
             r = page.evaluate(BROWSER_TEST)
-            add("browser", "Every country, place and panel in 5 languages",
+            add("browser", "Every country, place and panel in 6 languages",
                 "ok" if not r["nErrors"] and not r["nBad"] else "fail",
                 f"{r['countries']} countries, {r['places']} places: {r['nErrors']} errors, {r['nBad']} panels with broken text"
                 + (f"; e.g. {'; '.join(r['errors'][:3] or r['bad'][:3])}" if r["nErrors"] or r["nBad"] else ""))
         except Exception as e:
-            add("browser", "Every country, place and panel in 5 languages", "fail", str(e)[:200])
+            add("browser", "Every country, place and panel in 6 languages", "fail", str(e)[:200])
         add("browser", "Script errors while loading", "ok" if not js_errors else "fail",
             "none" if not js_errors else "; ".join(js_errors[:3]))
         net = [c for c in console if "Failed to load resource" in c]
