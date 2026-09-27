@@ -1,7 +1,37 @@
 {
  "meta": {
-  "lastRun": "2026-09-26T22:08:29Z",
+  "lastRun": "2026-09-27T05:14:26Z",
   "log": [
+   {
+    "date": "2026-09-27",
+    "items": [
+     {
+      "label": "Djibouti–Ethiopia",
+      "change": "Updated relation note to reflect $660 million fuel pipeline agreement",
+      "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOLXFYSWxuZjdWWm1PRFhaWE56aTYwSlQyTVU1a19MdDk2UnlUYWtTTFVDM3p3Y29Da2xGUFo1eHJxbEs3THRpbjNJTENjNFFwcE5VTDZkdnJFaXZyVWhCWXhYYnlDUVBlYWxBMksxNTBTNXc5Qm1MRmstYXJBdS1PTVpjMFdXYWprRC1CX0RDTWFTRG5IcG9iT3VfVkxYRGNBNnN6WUxaM1hSN3BhZnRZM2lyUERMMVU?oc=5"
+     },
+     {
+      "label": "Colombia–United States",
+      "change": "Fact check: updated leadership reference in relation note to President Abelardo de la Espriella",
+      "source": "https://www.wikidata.org/wiki/Q739"
+     },
+     {
+      "label": "Indus waters",
+      "change": "Updated thread description following Pakistan's warning over river diversion",
+      "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWXJRQmUyRzFGb0twUk1VQzJpc3U4M09ldkl4aWdQUnJhSEc2TUdyR2o5WVpxWFN5Ry1DOC0tLV9PUFlKSUhyelpLOWlwOTBtcGdmLWwtT1daR3ZDZTRFRGx4ZG9rMUVKa21Fb1ZBSXBLempwdTQ0S0ZUTkI5OUxGOEhGdk5NQ1NVaHNIMEw3YVJZVy04TjIxXzQxMDJEYU5ETkRBM3p0ZTY?oc=5"
+     },
+     {
+      "label": "Morocco",
+      "change": "Recorded parliamentary election results with PAM winning the most seats",
+      "source": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNbE1QalBVTi1Qa3JYbGJmYnZXVFlLSGhPd3FLZkxWblVSM3dhVHBsbTBITFRxZjZVVWROUzNna283bUFuNEtoRVNCcUhTUklKN0dnZzhpc1JvSWNnWF9zUEpUQ01hSUhNWGd5ejQyaDZLbzBaQTRPN1M3Y1NwTHNDM1Q0WFotdGRPMW5pVFlQeDF5amFDN3RObWJpRTgySldtN0ppNWNPY0Rya1JxamVBNHo2anVBSERSeGNWY09qanpxU19sTHd4MWVIRjk1TUhmMjFfRVFydUhubVJm?oc=5"
+     },
+     {
+      "label": "South Sudan",
+      "change": "Recorded upcoming general election date for December 2026",
+      "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWUlwWEJ0R2JPeVl4TUNzYkNyMVZfaWlwU21SSF96Ui1hdXIyR0wyNkpwQlFjRmw3UGJya0NYZ25TQjVGWWdrWEdEdjBsaFlJdmtQNGdIYjVJcG5zUG02b3I3TFhPXzluNmQyZTh3ejJVRGtMMG42M21yZjc4RXBleU9RTzVZRURlZDJGdkFTRXF2QVNiSVdmN2VtMkdNRzIzQnE5SFdHMlQ5TXVoSGo0?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-09-26",
     "items": [
@@ -241,7 +271,7 @@
     ]
    }
   ],
-  "summary": "Elevate Colombia–US relations to Partner following rebel extraditions and security realignment, record UNGA diplomatic exchanges for Germany–Russia and Saudi–Pakistan, update the AfPak border conflict thread, and log elections for Morocco, South Sudan, and Serbia."
+  "summary": "UNGA addresses highlight regional disputes while East Africa launches a major energy project and Morocco completes parliamentary elections."
  },
  "relations": {
   "DNK-USA": {
@@ -336,9 +366,9 @@
    "a": "COL",
    "b": "USA",
    "s": "F",
-   "note": "Bilateral security ties strengthen as Colombia extradites armed group commanders to the US under President Abelardo de la Espriella.",
-   "updated": "2026-09-26",
-   "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNenZnazZ6aXE3RWJNVjhSOUJOY1hldzA1VzVLQXA0eWw2dmRldHZvVmotQ0VQRXlmcVFZOVdDRnNQZ3JvVGgyeTlqTnh1eWhwSUY2UnhveU8yUnUxWjJQMXBQaDMzaVRyNml3d1l0MVh4OTBxOGtSVE1XSnlJRzJodEx4elc5WUp6WFQwS3lEUVd5TE5jYmpWOEgxNmFYQmRiNE1zbHRiVkx1blVrSi1VUFJ0aUpIMmtGdjBMUllMX3p1TWc?oc=5"
+   "note": "Long-time security partners aligning on counter-narcotics under President Abelardo de la Espriella.",
+   "updated": "2026-09-27",
+   "source": "https://www.wikidata.org/wiki/Q739"
   },
   "FRA-SAU": {
    "a": "FRA",
@@ -411,6 +441,14 @@
    "note": "Allies under a mutual defence pact, coordinating with Türkiye to defend Saudi territory from escalatory Houthi missile and drone strikes.",
    "updated": "2026-09-26",
    "source": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBsakxhamZUMHhOOV9GNzc3QXphWFdlRjhXYnYxU0MtY1NGRzVHalhEQjR5S3BYTE1ZSjl4NUZEdkxiWWJZMUozUXdWX19uV3M?oc=5"
+  },
+  "DJI-ETH": {
+   "a": "DJI",
+   "b": "ETH",
+   "s": "F",
+   "note": "Strong economic partners; Djibouti and Ethiopia launch a $660 million cross-border fuel pipeline project.",
+   "updated": "2026-09-27",
+   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOLXFYSWxuZjdWWm1PRFhaWE56aTYwSlQyTVU1a19MdDk2UnlUYWtTTFVDM3p3Y29Da2xGUFo1eHJxbEs3THRpbjNJTENjNFFwcE5VTDZkdnJFaXZyVWhCWXhYYnlDUVBlYWxBMksxNTBTNXc5Qm1MRmstYXJBdS1PTVpjMFdXYWprRC1CX0RDTWFTRG5IcG9iT3VfVkxYRGNBNnN6WUxaM1hSN3BhZnRZM2lyUERMMVU?oc=5"
   }
  },
  "threads": {
@@ -451,6 +489,19 @@
    ],
    "updated": "2026-09-26",
    "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOelJVNmlqOW9mY09xVmRGRUVVNDZmVkxkT0JNSlVzbVhjQmFKd3Y0NGlQWXRhVnRQME5zWi1yX3cwckVLdGtJQVE1SkZMcVhqZ1Rzb3pHMWRvYXNnN2h2VDNTS3g2c1JUS0Fva2R0Q252bVVKRGtlQnFXOWdZLXNrRzBXZVdwZXhsYUczSUswNlZlMVpiQWc?oc=5"
+  },
+  "indus": {
+   "t": "resource",
+   "n": "Indus waters",
+   "d": "Water allocation in the Indus basin remains contentious as Pakistan warns India that diverting river flows would constitute an act of war.",
+   "c": [
+    "IND",
+    "PAK",
+    "CHN",
+    "AFG"
+   ],
+   "updated": "2026-09-27",
+   "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWXJRQmUyRzFGb0twUk1VQzJpc3U4M09ldkl4aWdQUnJhSEc2TUdyR2o5WVpxWFN5Ry1DOC0tLV9PUFlKSUhyelpLOWlwOTBtcGdmLWwtT1daR3ZDZTRFRGx4ZG9rMUVKa21Fb1ZBSXBLempwdTQ0S0ZUTkI5OUxGOEhGdk5NQ1NVaHNIMEw3YVJZVy04TjIxXzQxMDJEYU5ETkRBM3p0ZTY?oc=5"
   }
  },
  "pois": {
@@ -593,8 +644,8 @@
    "updated": "2026-09-23"
   },
   "MAR": {
-   "lastelec": "parliamentary, Sep 2026, PAM",
-   "updated": "2026-09-26",
+   "lastelec": "parliamentary, September 2026, PAM",
+   "updated": "2026-09-27",
    "source": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNbE1QalBVTi1Qa3JYbGJmYnZXVFlLSGhPd3FLZkxWblVSM3dhVHBsbTBITFRxZjZVVWROUzNna283bUFuNEtoRVNCcUhTUklKN0dnZzhpc1JvSWNnWF9zUEpUQ01hSUhNWGd5ejQyaDZLbzBaQTRPN1M3Y1NwTHNDM1Q0WFotdGRPMW5pVFlQeDF5amFDN3RObWJpRTgySldtN0ppNWNPY0Rya1JxamVBNHo2anVBSERSeGNWY09qanpxU19sTHd4MWVIRjk1TUhmMjFfRVFydUhubVJm?oc=5"
   },
   "BGR": {
@@ -603,9 +654,9 @@
    "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWDh2YVFnb3VwZDNPdjB4NnZmT0t4X1Z3M085YTljU3pBXzVwcm9EN0R1NkNmWGxfOGp5WFZFaHZ1c0RyTzdNSktEVG8zRE9QZ1JEdm1Rd1FQRVpoWUh0M0VNdUhyc2tJeGNzMEx4RFJRRDZQcERIcnZlMlBIZ1JDZDF2Wm5CMWtqZUE2UnI1a0dfNGJfRE5KUWhVaTNKTVRIM1VqSEluTU9YREl1c3c?oc=5"
   },
   "SSD": {
-   "nextelec": "general, Dec 2026",
-   "updated": "2026-09-26",
-   "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOX2g4SERrV05YLVFFdFEteWlBb2VrdlZ4ZWVBbzBqa2hpa2FDemdUSnVpZ01aUGlYWmgzM3RId2hKRWZIb0RkN1ZrR191bTZ0bXB0SG1jbVRKM1FrYTYyUkZOakJHTWwzeHFYLS0tSTBFOUw0UHFxV3Q2ZURKVnpSSW5HNTFIWkZyTEFWLThQQS1BLU1HVy1FV0xpLVBiMUJ1MWt5VXRhTHV1aEN4RnV6TkZxVQ?oc=5"
+   "nextelec": "general, December 2026",
+   "updated": "2026-09-27",
+   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWUlwWEJ0R2JPeVl4TUNzYkNyMVZfaWlwU21SSF96Ui1hdXIyR0wyNkpwQlFjRmw3UGJya0NYZ25TQjVGWWdrWEdEdjBsaFlJdmtQNGdIYjVJcG5zUG02b3I3TFhPXzluNmQyZTh3ejJVRGtMMG42M21yZjc4RXBleU9RTzVZRURlZDJGdkFTRXF2QVNiSVdmN2VtMkdNRzIzQnE5SFdHMlQ5TXVoSGo0?oc=5"
   },
   "SRB": {
    "nextelec": "general, 25 Oct 2026",
