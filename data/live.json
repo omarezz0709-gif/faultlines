@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-09-27T10:16:40Z",
+  "lastRun": "2026-09-27T16:04:30Z",
   "log": [
    {
     "date": "2026-09-27",
@@ -44,6 +44,31 @@
       "label": "Morocco",
       "change": "Election: Authenticity and Modernity Party (PAM) wins parliamentary election",
       "source": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1IZFBReEg0anFUSkhVcDhJZkZ4LWZkMVpvTkxtcno3ZElGdWxnN3Z0ZV9DdndLNDM1aHhablBXU3VwRGlFOWNvdlBLUGJUaDExM0RpNTJQZGtRekpS?oc=5"
+     },
+     {
+      "label": "Morocco–Saudi Arabia",
+      "change": "Normal → Ally: King Mohammed VI declares any attack on Saudi Arabia is an attack on Morocco",
+      "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVmk3UXB5QzBiYk5TblJSc3VEYjFSOTU0WS1aZUFGMkVMZHVtUUhuQjk0SHMyR01nOW1NVmktcktWdUxJcjEzLUY0RDd2cVN3aHVkUm9jYWpMd2NJczBmR3FPX2ZKQnktR3Q3RW90cFd2QUpQRnRna2JyVHJ2VXotU2FLR2pFNzlzbjJzRm9ZUFB2bVlVbXZJc3lfU3ZjTE9aWk9OZFEzTHVyRk9hTGVOM0RSc1lqWF9zcjcxdkZHNXo?oc=5"
+     },
+     {
+      "label": "South Korea–Ukraine",
+      "change": "Normal → Tense: South Korea protests disclosure of confidential POW transfer agreement",
+      "source": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxON2tpNTQ4QWxwbFo2QjZEV25iUklxMHppdTlockJpMjZOY19wMnJSNENZZ0RMcFBfSDRNWU1YaWpaWEtXcHNCQ3E2WU9SaXlYTEZkbEpwRkFVdXc3cUlLU3NCTW96TTNhMzZwNlpJVGhrLVEwTU5lQTY3UXd6VmZLTlVZaExCdnBhSVR6aGxtdV9BQk9RMGlJaEw5eHlOamR0X2JuSHhaLUI5aFB3X282TGxGcnRwRUVLcWV1Y01NQ1Q2SnhINU1XT1RVS0d5UmVab1MzckVXcDAxUWMxV1NfWE9ITVY2d25RV1NvVFVuYjNQLU1KS1NtVkxNSWZ0dw?oc=5"
+     },
+     {
+      "label": "Moldova–Russia",
+      "change": "Hostile: Russian ambassador admits crashed drones in Moldova may be Russian",
+      "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNnRhMktIb2NCTEZ3aGxKMFFpZExOdmZYRkRtbDUteE9rcml4WmNJSm5SY2ZYTFlVU2ZJcmcxbWVLX0xPbVFzT1g1djJIRm5mNldoMGctMUo3OFhFeWdWamVhVzlWQS1jUHlfYkp0ckYyQk55X2FTMEJvR1hURlZvSl9WMlVOMERjQWF2YlpoeFkwbW9OZVJ0ajVRNXlfMl90aTFWVXJZdzR1N2JUbGdoQUd5N1A?oc=5"
+     },
+     {
+      "label": "Japan–United States",
+      "change": "Ally: Prime Minister Sanae Takaichi reaffirms security alliance with US",
+      "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTUc3MVVnZEtXWGx6WFhianFMOU1PREhQamhzNjFJOUhSUVM0ZUo0ODFHbGpaeFJ0aW95ZnM3R3NoVm1aREdFeDZMZ1hRX0RxMFhJLTVEUXFpZlp6bFViQUk1Q2NOQi14MWhZVG0wZU9BUE5IMDNUQkl4Yl9Tdno1N0x4c00?oc=5"
+     },
+     {
+      "label": "Switzerland",
+      "change": "Referendum result: Voters reject constitutional amendment to tighten neutrality rules",
+      "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeUEtZzFGZmtIZEc2eGxDQU9Jd0psUU5QemVqNkY3SHFaN0xvY3czNHNza1F4SXFiS2VvdU91TFhiWWNZOEM3TWpNb2p4WE4taDZqdmpCR0lvaU42UTQwWW11TDJOSTFGQTgxMk9adDdDRzlpUFNkTnNJUnptZ3lnYzdpZkhSWnNHZmx4RVVnVdIBjwFBVV95cUxQOWNENzBrcktUVXJ5SU1JUEhiTlo3ekI3eG9qd053Rmc3Q1JuNlFaUmV5ekRJMnlxdVh5bllsMV9LcjZienpLVV9HbUxoejJSRF9mWnMzOFFPRkJrZ0RGWVZUVzNUYlJ1TG1XXzMxTk10VEhlYlhmMTg5S0xOS2V6Zjg1b0lGZnJ0MW41V3UyTQ?oc=5"
      }
     ]
    },
@@ -286,7 +311,7 @@
     ]
    }
   ],
-  "summary": "Recorded Morocco's legislative election outcome, updated Afghanistan-Pakistan border hostilities, and refreshed relations for Ethiopia-Eritrea and Bangladesh-India."
+  "summary": "Morocco pledges mutual defence support to Saudi Arabia, South Korea protests Ukraine's disclosure of confidential prisoner-of-war agreements, and Swiss voters reject a proposal to tighten neutrality rules."
  },
  "relations": {
   "DNK-USA": {
@@ -488,6 +513,38 @@
    "note": "Relations remain strained over Sheikh Hasina's exile and negotiations on the Ganges Water treaty under Prime Minister Tarique Rahman.",
    "updated": "2026-09-27",
    "source": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNclVLNmFwOFhhWkpjc0dlaVFQT1JRaGg2TTJ2RHJUUUNKR1VwMXpPZTVHSkQxWjc2amsxRy0well0NVVJYkpmVVZ3aUNTdU5QQ2hDWWx2WmpBTWUxYWRySEJ2MUlfT1lFV19wX3Y2VWZyUVZ6OVlGWjJSN1g2b3QwdDkzYjR5dDlZdmZzNDRxUmdKcExyRjc5ZkF3WGpWSzdPZHduaVlPRzJ5SkJZMW5fVGY0dmRSTkhBM1JlMzlnSl8wZTYwZDBoamo5U0w4UkM0c0ZKTjdxUjlOZVZJTmk5bjhBc3B6WDNlMmdmam5wa3ZNRG5WbkRJZ0stWlVUQkJW0gGGAkFVX3lxTE5TSFdhOWJ0bkg1d0wwYmxmR05VTUN1MVpCZUx4enA1c1B6aGtNaTZwQ0N5bEdVVGsxWnZuSXhwcVlhQ2wzeFVNMzJxaGpyTElkd2xCMFZ5MzF1TWlQTFhoS2dZaVVZbEVidnJUZWctdUEtYzc4T3A5SmZzTlNpQVh6SVNYbmpnRWJnRDU1ZWFsN3dQRVp4MlhvdTdfdmlTSWxCX3FPN3V2WGhNNEJiNHFTSTRMRVdlSE5XdjBSMmtUbGduZkZKR2NaNllfeVFzbDZmWGxTYXUwQTVweVVXMGI1NUxNa09HcVpGck9Od1Q3Sks2cnpFZEN0VDFoYWZ3N1VGTUJoT2c?oc=5"
+  },
+  "MAR-SAU": {
+   "a": "MAR",
+   "b": "SAU",
+   "s": "A",
+   "note": "King Mohammed VI declares any attack on Saudi Arabia is an attack on Morocco following Houthi strikes on Saudi territory.",
+   "updated": "2026-09-27",
+   "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVmk3UXB5QzBiYk5TblJSc3VEYjFSOTU0WS1aZUFGMkVMZHVtUUhuQjk0SHMyR01nOW1NVmktcktWdUxJcjEzLUY0RDd2cVN3aHVkUm9jYWpMd2NJczBmR3FPX2ZKQnktR3Q3RW90cFd2QUpQRnRna2JyVHJ2VXotU2FLR2pFNzlzbjJzRm9ZUFB2bVlVbXZJc3lfU3ZjTE9aWk9OZFEzTHVyRk9hTGVOM0RSc1lqWF9zcjcxdkZHNXo?oc=5"
+  },
+  "KOR-UKR": {
+   "a": "KOR",
+   "b": "UKR",
+   "s": "T",
+   "note": "South Korea demands an apology from Ukraine after Kyiv disclosed a confidential agreement on North Korean prisoner of war (POW) transfers.",
+   "updated": "2026-09-27",
+   "source": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxON2tpNTQ4QWxwbFo2QjZEV25iUklxMHppdTlockJpMjZOY19wMnJSNENZZ0RMcFBfSDRNWU1YaWpaWEtXcHNCQ3E2WU9SaXlYTEZkbEpwRkFVdXc3cUlLU3NCTW96TTNhMzZwNlpJVGhrLVEwTU5lQTY3UXd6VmZLTlVZaExCdnBhSVR6aGxtdV9BQk9RMGlJaEw5eHlOamR0X2JuSHhaLUI5aFB3X282TGxGcnRwRUVLcWV1Y01NQ1Q2SnhINU1XT1RVS0d5UmVab1MzckVXcDAxUWMxV1NfWE9ITVY2d25RV1NvVFVuYjNQLU1KS1NtVkxNSWZ0dw?oc=5"
+  },
+  "MDA-RUS": {
+   "a": "MDA",
+   "b": "RUS",
+   "s": "H",
+   "note": "Moldova presses Russia after Moscow's ambassador acknowledges drone fragments found in Moldovan territory may be Russian.",
+   "updated": "2026-09-27",
+   "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNnRhMktIb2NCTEZ3aGxKMFFpZExOdmZYRkRtbDUteE9rcml4WmNJSm5SY2ZYTFlVU2ZJcmcxbWVLX0xPbVFzT1g1djJIRm5mNldoMGctMUo3OFhFeWdWamVhVzlWQS1jUHlfYkp0ckYyQk55X2FTMEJvR1hURlZvSl9WMlVOMERjQWF2YlpoeFkwbW9OZVJ0ajVRNXlfMl90aTFWVXJZdzR1N2JUbGdoQUd5N1A?oc=5"
+  },
+  "JPN-USA": {
+   "a": "JPN",
+   "b": "USA",
+   "s": "A",
+   "note": "Japanese Prime Minister Sanae Takaichi reaffirms the United States (US) security alliance and bilateral alignment on China.",
+   "updated": "2026-09-27",
+   "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTUc3MVVnZEtXWGx6WFhianFMOU1PREhQamhzNjFJOUhSUVM0ZUo0ODFHbGpaeFJ0aW95ZnM3R3NoVm1aREdFeDZMZ1hRX0RxMFhJLTVEUXFpZlp6bFViQUk1Q2NOQi14MWhZVG0wZU9BUE5IMDNUQkl4Yl9Tdno1N0x4c00?oc=5"
   }
  },
  "threads": {
@@ -701,6 +758,11 @@
    "nextelec": "general, 25 Oct 2026",
    "updated": "2026-09-26",
    "source": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNMjc0ZzVBenRZdUgxR1NRYjFqOTViVF84V2tmNXNwQ2NST21zQlFVYVpOU24xeHVkYWhSZHFlUkkwdmxZOExUMHdraHk2MC1pSUxER1lFVW1URUpyLU9nNS1rYUhYT3E1U0RGWDB0TWF6bDlZeklnZndOcWRDb283NTREV29wZDVzd3ZyWDAwNGp2RGdFanNabm84TEpjeWY1eENkQkJIODB6SGRLVjdzOXVUcVhtS1R6TzR6Y1V3dm1uS0Q5WEI4Z2tKblZ1am9hTGM2M0l0U3JYcnRKNHhQYTFKOTVGa2tfWHpTZDVfamhTMnFGMEJ5UTBITXpkTFZOT2YzM3pVd0tkRjg?oc=5"
+  },
+  "CHE": {
+   "lastelec": "referendum, Sep 2026, rejected stricter neutrality",
+   "updated": "2026-09-27",
+   "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeUEtZzFGZmtIZEc2eGxDQU9Jd0psUU5QemVqNkY3SHFaN0xvY3czNHNza1F4SXFiS2VvdU91TFhiWWNZOEM3TWpNb2p4WE4taDZqdmpCR0lvaU42UTQwWW11TDJOSTFGQTgxMk9adDdDRzlpUFNkTnNJUnptZ3lnYzdpZkhSWnNHZmx4RVVnVdIBjwFBVV95cUxQOWNENzBrcktUVXJ5SU1JUEhiTlo3ekI3eG9qd053Rmc3Q1JuNlFaUmV5ekRJMnlxdVh5bllsMV9LcjZienpLVV9HbUxoejJSRF9mWnMzOFFPRkJrZ0RGWVZUVzNUYlJ1TG1XXzMxTk10VEhlYlhmMTg5S0xOS2V6Zjg1b0lGZnJ0MW41V3UyTQ?oc=5"
   }
  }
 }
