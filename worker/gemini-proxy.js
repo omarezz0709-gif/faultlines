@@ -17,24 +17,47 @@
  * Optional extra capacity: secrets GEMINI_API_KEY_2 ... GEMINI_API_KEY_5 (keys from other Google projects),
  * secret GROQ_API_KEY (free at console.groq.com), and a Workers AI binding named AI.
  */
+import { DurableObject } from "cloudflare:workers";
+
 const ALLOWED_ORIGIN = "https://omarezz0709-gif.github.io";
 const GOOGLE = "https://generativelanguage.googleapis.com/v1beta";
 const MAX_OUTPUT_TOKENS = 8192;
 const MAX_BODY_BYTES = 200_000;
 const CACHE_SECONDS = 24 * 3600;
 const VISITOR_LIMIT = { max: 12, windowMs: 5 * 60_000 };      // AI requests per visitor per 5 minutes
-const ADMIN_LIMIT = { max: 5, windowMs: 15 * 60_000 };        // (older per-visitor limit, kept for reference)
 const ADMIN_MAX_TRIES = 5;                                     // wrong admin codes in total before the login locks for everyone
+const ADMIN_IP_LIMIT = { max: 5, windowMs: 60 * 60_000 };     // wrong admin codes per visitor per hour
 const BACKUP_LIMIT = { max: 5, windowMs: 60 * 60_000 };       // wrong backup codes per visitor per hour
-// the admin lock lives in KV (survives restarts, shared by all Cloudflare locations); memory is the fallback
-let memLock = { fails: 0, locked: false };
-async function getAdminLock(env){
-  if (!env.LOGS) return memLock;
-  try { return (await env.LOGS.get("sec:admin", "json")) || { fails: 0, locked: false }; } catch { return memLock; }
+const BACKUP_ALL_LIMIT = { max: 25, windowMs: 60 * 60_000 };  // wrong backup codes from everyone together per hour
+const PRIVATE_PASS_MS = 2 * 3600e3;                            // a private-chat pass lasts 2 hours
+const LOG_KEEP_MS = 3 * 86400e3;                               // raw log entries kept 3 days (the archive keeps days)
+const ARCHIVE_KEEP_DAYS = 90;                                  // archived days kept 90 days
+
+/* SECURITY STORE: one Durable Object (SQLite, free plan) holds the admin lock, the attempt and request counters and
+   the usage log. It is strongly consistent and shared by every Cloudflare location and Worker copy, so counters don't
+   reset and can't be wiped. If it can't be reached, the admin login and the backup code FAIL CLOSED (refused). */
+const guard = env => env.GUARD ? env.GUARD.get(env.GUARD.idFromName("main")) : null;
+// one key per visitor: IPv4 address, or the /64 network of an IPv6 address (one IPv6 user can hold billions of addresses)
+function ipKey(ip){
+  if (!ip || !ip.includes(":")) return ip || "?";
+  const [head, tail] = ip.toLowerCase().split("::");
+  const h = head ? head.split(":") : [], t = tail !== undefined ? (tail ? tail.split(":") : []) : [];
+  const full = tail === undefined ? h : [...h, ...Array(Math.max(0, 8 - h.length - t.length)).fill("0"), ...t];
+  return full.slice(0, 4).join(":") + "::/64";
 }
-async function setAdminLock(env, v){
-  memLock = v;
-  if (env.LOGS) try { await env.LOGS.put("sec:admin", JSON.stringify(v)); } catch {}
+// a keyed hash (HMAC-SHA-256): visitor IDs and private-chat passes can't be recomputed without the secret
+async function hmac(secret, text){
+  const key = await crypto.subtle.importKey("raw", new TextEncoder().encode(secret), { name: "HMAC", hash: "SHA-256" }, false, ["sign"]);
+  const sig = await crypto.subtle.sign("HMAC", key, new TextEncoder().encode(text));
+  return [...new Uint8Array(sig)].map(b => b.toString(16).padStart(2, "0")).join("");
+}
+const logSalt = env => env.LOG_SALT || ((env.ADMIN_BACKUP_CODE || "") + "|" + (env.ADMIN_CODE || "")) || "faultlines";
+// private-chat pass: "expiry.signature", signed with the backup code, checked on every private AI request
+async function privatePass(env){ const exp = Date.now() + PRIVATE_PASS_MS; return `${exp}.${(await hmac(env.ADMIN_BACKUP_CODE, "priv|" + exp)).slice(0, 40)}`; }
+async function validPass(env, pass){
+  const [exp, sig] = String(pass || "").split(".");
+  if (!env.ADMIN_BACKUP_CODE || !exp || !sig || +exp < Date.now() || +exp > Date.now() + PRIVATE_PASS_MS + 60e3) return false;
+  return sameSecret(sig, (await hmac(env.ADMIN_BACKUP_CODE, "priv|" + exp)).slice(0, 40));
 }
 // compares two codes without leaking how many characters matched (both are hashed first)
 async function sameSecret(given, real){
@@ -44,21 +67,29 @@ async function sameSecret(given, real){
   return d === 0 && a.length === b.length;
 }
 
-const hits = new Map();        // in-memory counters (per Worker instance; good enough to stop floods)
+// in-memory counters (per Worker copy): a cheap first line against floods, before anything is stored. When the map
+// gets big, only stale entries are dropped (never everything at once, so rotating addresses can't wipe the counters).
+const hits = new Map();
 function limited(key, { max, windowMs }) {
   const now = Date.now();
   const list = (hits.get(key) || []).filter(t => now - t < windowMs);
   if (list.length >= max) { hits.set(key, list); return true; }
   list.push(now); hits.set(key, list);
-  if (hits.size > 5000) hits.clear();
+  if (hits.size > 5000) for (const [k, v] of hits) { if (!v.length || now - v[v.length - 1] > 3600e3) hits.delete(k); if (hits.size < 4000) break; }
   return false;
+}
+// the shared limit (security store), falling back to the in-memory one if the store can't be reached
+async function limitedShared(env, key, lim){
+  const g = guard(env);
+  if (g) try { return !(await g.take(key, lim.max, lim.windowMs)); } catch {}
+  return limited(key, lim);
 }
 
 function cors(extra = {}) {
   return {
     "Access-Control-Allow-Origin": ALLOWED_ORIGIN,
     "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-    "Access-Control-Allow-Headers": "Content-Type, X-Faultlines-Kind, X-Admin-Code, X-Backup-Code",
+    "Access-Control-Allow-Headers": "Content-Type, X-Faultlines-Kind, X-Admin-Code, X-Backup-Code, X-Private-Pass",
     "Access-Control-Expose-Headers": "X-Faultlines-Cache, X-Faultlines-Limit, X-Faultlines-Provider, X-Faultlines-Search, X-Faultlines-Locked, X-Faultlines-Tries",
     "Access-Control-Max-Age": "86400",
     "Vary": "Origin",
@@ -105,65 +136,70 @@ function berlinMidnightBefore(ts){
 const nextBerlinMidnight = ts => berlinMidnightBefore(berlinMidnightBefore(ts) + 26 * 3600e3);
 
 async function logEvent(env, request, rec) {
-  if (!env.LOGS) return;
+  const g = guard(env); if (!g) return;
   const cf = request.cf || {};
-  const ip = request.headers.get("CF-Connecting-IP") || "";
+  const ip = ipKey(request.headers.get("CF-Connecting-IP") || "");
   const day = new Date().toISOString().slice(0, 10);
   const meta = {
     t: Date.now(), k: rec.kind || "?", s: rec.status || 0, c: rec.cached ? 1 : 0, m: (rec.model || "").replace("gemini-", ""),
     co: cf.country || "", ci: (cf.city || "").slice(0, 40), re: (cf.region || "").slice(0, 40),
-    d: device(request.headers.get("User-Agent") || ""), v: (await sha256(ip + day)).slice(0, 8),   // visitor id, rotates daily
+    // visitor id: a keyed hash of the address and the day (can't be traced back to an IP without the secret), rotates daily
+    d: device(request.headers.get("User-Agent") || ""), v: (await hmac(logSalt(env), ip + "|" + day)).slice(0, 10),
     ms: rec.ms || 0,
     pc: (cf.postalCode || "").slice(0, 10), isp: (cf.asOrganization || "").slice(0, 40),   // IP-based, so approximate
-    la: cf.latitude ? Math.round(parseFloat(cf.latitude) * 100) / 100 : undefined,        // for the admin map (city level)
-    lo: cf.longitude ? Math.round(parseFloat(cf.longitude) * 100) / 100 : undefined,
+    la: cf.latitude ? Math.round(parseFloat(cf.latitude) * 10) / 10 : undefined,          // for the admin map, rounded to ~10 km
+    lo: cf.longitude ? Math.round(parseFloat(cf.longitude) * 10) / 10 : undefined,
     b: isBot(request) ? 1 : undefined,                                                    // crawler / preview / data-centre visit
     o: (request.headers.get("Origin") || "").replace(/^https:\/\//, "").slice(0, 40),       // which site address (GitHub or Cloudflare Pages)
   };
-  const key = `l:${String(9999999999999 - meta.t).padStart(13, "0")}:${Math.random().toString(36).slice(2, 7)}`;
-  // expires at the next 00:00 Berlin (KV needs at least 60 s ahead)
-  // kept until 01:00 after the next midnight, so the nightly archive (00:10) can still copy the finished day;
-  // the admin panel itself only shows entries since 00:00
-  const expiration = Math.max(Math.floor((nextBerlinMidnight(meta.t) + 3600e3) / 1000), Math.floor(meta.t / 1000) + 60);
-  try { await env.LOGS.put(key, "", { metadata: meta, expiration }); } catch (e) { /* free KV write limit reached */ }
+  try { await g.log(meta); } catch { /* store unreachable: this entry is skipped */ }
 }
 
-async function readLogs(env, max = 3000) {
+// the usage log: the security store, plus (for the days around the move) older entries still in KV
+async function readLogs(env, since = 0) {
   const out = [];
-  let cursor;
-  do {
-    const page = await env.LOGS.list({ prefix: "l:", limit: 1000, cursor });
-    for (const k of page.keys) if (k.metadata) out.push(k.metadata);
-    cursor = page.list_complete ? null : page.cursor;
-  } while (cursor && out.length < max);
+  const g = guard(env);
+  if (g) try { out.push(...(await g.logs(since))); } catch {}
+  if (env.LOGS) try {
+    let cursor;
+    do {
+      const page = await env.LOGS.list({ prefix: "l:", limit: 1000, cursor });
+      for (const k of page.keys) if (k.metadata && k.metadata.t >= since) out.push(k.metadata);
+      cursor = page.list_complete ? null : page.cursor;
+    } while (cursor && out.length < 20000);
+  } catch {}
   return out;
 }
 
 /* ------------------------------------------------------------------ daily archive (backup)
-   A Cron Trigger shortly after 00:00 Berlin saves the finished day as ONE KV entry "a:YYYY-MM-DD" (one write a day),
-   kept for a year. The admin panel can open any archived day. */
-const ARCHIVE_DAYS = 365;
+   A Cron Trigger shortly after 00:00 Berlin saves the finished day in the security store, kept 90 days.
+   Days archived before the move are still read from KV (they expire there by themselves). */
 const berlinDay = ts => new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Berlin", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date(ts));
 async function archiveYesterday(env){
-  if (!env.LOGS) return "no LOGS binding";
+  const g = guard(env); if (!g) return "no security store";
   const end = berlinMidnightBefore(Date.now()), start = berlinMidnightBefore(end - 3600e3), day = berlinDay(start);
-  const entries = (await readLogs(env, 20000)).filter(x => x.t >= start && x.t < end).sort((a, b) => a.t - b.t);
-  const key = `a:${day}`;
-  // both summer/winter cron times may fire: never replace an archive with a smaller one (entries may have expired meanwhile)
-  const old = await env.LOGS.get(key, "json").catch(() => null);
-  if (old && (old.entries || []).length >= entries.length) return `${day}: kept existing archive (${old.entries.length})`;
-  await env.LOGS.put(key, JSON.stringify({ day, saved: new Date().toISOString(), entries }), { expirationTtl: ARCHIVE_DAYS * 86400,
-    metadata: { n: entries.length, visits: entries.filter(x => x.k === "visit" && !x.b).length } });
-  return `${day}: archived ${entries.length}`;
+  const entries = (await readLogs(env, start)).filter(x => x.t >= start && x.t < end).sort((a, b) => a.t - b.t);
+  // both summer/winter cron times may fire: the store never replaces an archive with a smaller one
+  return g.archive(day, entries, entries.filter(x => x.k === "visit" && !x.b).length);
 }
 async function listArchive(env){
-  const out = []; let cursor;
-  do {
-    const page = await env.LOGS.list({ prefix: "a:", limit: 1000, cursor });
-    for (const k of page.keys) out.push({ day: k.name.slice(2), n: (k.metadata || {}).n || 0, visits: (k.metadata || {}).visits || 0 });
-    cursor = page.list_complete ? null : page.cursor;
-  } while (cursor);
+  const out = [];
+  const g = guard(env);
+  if (g) try { out.push(...(await g.archiveList())); } catch {}
+  if (env.LOGS) try {
+    let cursor;
+    do {
+      const page = await env.LOGS.list({ prefix: "a:", limit: 1000, cursor });
+      for (const k of page.keys) if (!out.some(x => x.day === k.name.slice(2))) out.push({ day: k.name.slice(2), n: (k.metadata || {}).n || 0, visits: (k.metadata || {}).visits || 0 });
+      cursor = page.list_complete ? null : page.cursor;
+    } while (cursor);
+  } catch {}
   return out.sort((a, b) => b.day.localeCompare(a.day));
+}
+async function getArchive(env, day){
+  const g = guard(env);
+  if (g) try { const a = await g.archiveGet(day); if (a) return a; } catch {}
+  return env.LOGS ? env.LOGS.get(`a:${day}`, "json").catch(() => null) : null;
 }
 
 /* ------------------------------------------------------------------ automatic fallback chain
@@ -228,13 +264,22 @@ async function answerAuto(request, env, ctx, ip, kind) {
   // 1. answered in the last 24 h: from memory
   const cache = caches.default;
   const ck = new Request(`https://faultlines-cache/auto2/${await sha256(JSON.stringify(body))}`);   // auto2: answers since Google Search was added
-  // the private chat (opened with the backup code) is never kept: no cache, nothing stored
+  // the private chat (opened with the backup code) is never cached, and only with a valid pass from /private/verify
   const keep = kind !== "private";
+  if (!keep && !(await validPass(env, request.headers.get("X-Private-Pass")))) {
+    log(403, "private-no-pass");
+    return deny(403, "The private chat needs the code again.", { "X-Faultlines-Limit": "private" });
+  }
+  // a speed bump against using this as a free general-purpose AI: requests must be one of the site's own prompts
+  if (keep && !/Faultlines/.test(plainPrompt(body).slice(0, 4000))) {
+    log(400, "not-a-site-prompt");
+    return deny(400, "Unsupported request.");
+  }
   const cached = keep ? await cache.match(ck) : null;
   if (cached) { log(200, "memory", true); return new Response(cached.body, { status: 200, headers: cors({ "Content-Type": "text/event-stream", "X-Faultlines-Cache": "hit" }) }); }
 
-  // 2. fair use per visitor
-  if (limited(`ai:${ip}`, VISITOR_LIMIT)) {
+  // 2. fair use per visitor (shared counter, so it holds across Cloudflare locations and restarts)
+  if (await limitedShared(env, `ai:${ipKey(ip)}`, VISITOR_LIMIT)) {
     log(429, "visitor-limit");
     return deny(429, "You've asked a lot in the last few minutes. Please wait a moment.", { "X-Faultlines-Limit": "visitor" });
   }
@@ -724,8 +769,10 @@ async function topVideos(lang, q, en, ctx){
   return new Response(body, { status: 200, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "miss" }) });
 }
 
-// the site's addresses: GitHub Pages and Cloudflare Pages (faultlines*.pages.dev, including preview builds)
-const ALLOWED_ORIGINS = [/^https:\/\/omarezz0709-gif\.github\.io$/, /^https:\/\/([a-z0-9-]+\.)?faultlines(-[a-z0-9]+)?\.pages\.dev$/];
+// the site's addresses, exactly: GitHub Pages, and this Cloudflare Pages project (with its own preview builds,
+// <build>.faultlines-1pw.pages.dev). Other Pages projects, even ones named "faultlines-something", are refused.
+// (Scripts outside a browser can fake this header; the limits, the prompt check and the security store cover that.)
+const ALLOWED_ORIGINS = [/^https:\/\/omarezz0709-gif\.github\.io$/, /^https:\/\/([a-z0-9-]+\.)?faultlines-1pw\.pages\.dev$/];
 const allowedOrigin = o => ALLOWED_ORIGINS.some(re => re.test(o || ""));
 
 export default {
@@ -755,15 +802,15 @@ async function handle(request, env, ctx, origin) {
     const ip = request.headers.get("CF-Connecting-IP") || "?";
     const kind = (request.headers.get("X-Faultlines-Kind") || "ai").slice(0, 20);
 
-    // --- visit ping (one per browser session) ---
+    // --- visit ping (one per browser session; a flood of pings is dropped before anything is stored) ---
     if (path === "hit") {
-      ctx.waitUntil(logEvent(env, request, { kind: "visit", status: 200 }));
+      if (!limited(`hit:${ipKey(ip)}`, { max: 10, windowMs: 10 * 60_000 })) ctx.waitUntil(logEvent(env, request, { kind: "visit", status: 200 }));
       return new Response(null, { status: 204, headers: cors() });
     }
 
     // --- real-time search for the question bar's ⚡ mode (fair use: 20 searches per visitor per 5 minutes) ---
     if (path === "search") {
-      if (limited(`rt:${ip}`, { max: 20, windowMs: 5 * 60_000 })) return deny(429, "Too many searches in a few minutes. Please wait a moment.", { "X-Faultlines-Limit": "visitor" });
+      if (limited(`rt:${ipKey(ip)}`, { max: 20, windowMs: 5 * 60_000 })) return deny(429, "Too many searches in a few minutes. Please wait a moment.", { "X-Faultlines-Limit": "visitor" });
       return realtimeSearch((url.searchParams.get("q") || "").slice(0, 300), url.searchParams.get("lang") || "en", ctx);
     }
 
@@ -778,54 +825,65 @@ async function handle(request, env, ctx, origin) {
     if (path === "top") return topStories(url.searchParams.get("lang") || "en", (url.searchParams.get("q") || "").slice(0, 60),
                                           (url.searchParams.get("en") || "").slice(0, 60), ctx);
 
-    // --- the backup code (secret ADMIN_BACKUP_CODE): unlocks a locked admin login, and opens the private chat ---
-    // 5 wrong backup codes per visitor per hour, so it can't be guessed
+    // --- the backup code (secret ADMIN_BACKUP_CODE): unlocks a locked admin login, and opens the private chat.
+    //     Counted in the security store: 5 wrong per visitor per hour, 25 from everyone together per hour.
+    //     If the store can't be reached, the backup code is refused (fail closed). ---
     const backup = request.headers.get("X-Backup-Code");
+    const g = guard(env), ipk = ipKey(ip);
+    const closed = () => deny(503, "The login is temporarily unavailable (security store unreachable). Try again later.");
     const checkBackup = async () => {   // null = right; otherwise the refusal to send
       if (!env.ADMIN_BACKUP_CODE) return deny(500, "ADMIN_BACKUP_CODE secret is not set on the Worker.");
-      const failKey = `backupfail:${ip}`;
-      const fails = (hits.get(failKey) || []).filter(t => Date.now() - t < BACKUP_LIMIT.windowMs);
-      if (fails.length >= BACKUP_LIMIT.max) return deny(429, "Too many wrong backup codes. Try again in an hour.");
-      if (await sameSecret(backup || "", env.ADMIN_BACKUP_CODE)) return null;
-      fails.push(Date.now()); hits.set(failKey, fails);
-      ctx.waitUntil(logEvent(env, request, { kind: path === "private/verify" ? "private" : "unlock", status: 401 }));
-      return deny(401, "Wrong backup code.", { "X-Faultlines-Tries": String(BACKUP_LIMIT.max - fails.length) });
+      if (!g) return closed();
+      try {
+        const [mine, all] = await Promise.all([g.count(`backupfail:${ipk}`, BACKUP_LIMIT.windowMs), g.count("backupfail:all", BACKUP_ALL_LIMIT.windowMs)]);
+        if (mine >= BACKUP_LIMIT.max || all >= BACKUP_ALL_LIMIT.max) return deny(429, "Too many wrong backup codes. Try again in an hour.");
+        if (await sameSecret(backup || "", env.ADMIN_BACKUP_CODE)) return null;
+        await Promise.all([g.take(`backupfail:${ipk}`, 1e9, BACKUP_LIMIT.windowMs), g.take("backupfail:all", 1e9, BACKUP_ALL_LIMIT.windowMs)]);
+        ctx.waitUntil(logEvent(env, request, { kind: path === "private/verify" ? "private" : "unlock", status: 401 }));
+        return deny(401, "Wrong backup code.", { "X-Faultlines-Tries": String(Math.max(0, BACKUP_LIMIT.max - mine - 1)) });
+      } catch { return closed(); }
     };
     if (path === "private/verify") {
       const no = await checkBackup(); if (no) return no;
       ctx.waitUntil(logEvent(env, request, { kind: "private", status: 200 }));
-      return json(200, { ok: true });
+      return json(200, { ok: true, pass: await privatePass(env) });   // the pass the private chat's AI requests must carry
     }
 
-    // --- admin: usage log. 5 wrong codes in total (from anyone) lock it for everyone; only the backup code
-    //     (sent instead of the admin code) unlocks it, and it opens the logs too ---
+    // --- admin: usage log. 5 wrong codes in total (from anyone) lock it for everyone, and 5 per visitor per hour;
+    //     only the backup code (sent instead of the admin code) unlocks it, and it opens the logs too.
+    //     Everything is decided in the security store, and refused if the store can't be reached. ---
     if (path === "admin/logs" || path === "admin/archive") {
       if (!env.ADMIN_CODE) return deny(500, "ADMIN_CODE secret is not set on the Worker.");
+      if (!g) return closed();
       const code = request.headers.get("X-Admin-Code") || "";
-      const lock = await getAdminLock(env);
-      if (backup) {
-        const no = await checkBackup(); if (no) return no;
-        if (lock.locked || lock.fails){ await setAdminLock(env, { fails: 0, locked: false }); ctx.waitUntil(logEvent(env, request, { kind: "unlock", status: 200 })); }
-      }
-      else if (lock.locked) return deny(423, "Locked after 5 wrong codes. Enter the backup code to unlock.", { "X-Faultlines-Locked": "1" });
-      else if (!code) return deny(401, "Enter the admin code.");   // no code at all (a bot or a crawler): not counted as a try
-      else if (!(await sameSecret(code, env.ADMIN_CODE))) {
-        const n = (lock.fails || 0) + 1;
-        await setAdminLock(env, { fails: n, locked: n >= ADMIN_MAX_TRIES, at: new Date().toISOString() });
-        ctx.waitUntil(logEvent(env, request, { kind: "admin", status: n >= ADMIN_MAX_TRIES ? 423 : 401 }));
-        if (n >= ADMIN_MAX_TRIES) return deny(423, "Locked after 5 wrong codes. Enter the backup code to unlock.", { "X-Faultlines-Locked": "1" });
-        return deny(401, `Wrong code. ${ADMIN_MAX_TRIES - n} ${ADMIN_MAX_TRIES - n === 1 ? "try" : "tries"} left.`, { "X-Faultlines-Tries": String(ADMIN_MAX_TRIES - n) });
-      }
-      if (lock.fails) await setAdminLock(env, { fails: 0, locked: false });   // a right code resets the count
-      if (!env.LOGS) return json(200, { logs: [], note: "No KV namespace bound as LOGS, so nothing is being logged yet." });
+      try {
+        if (backup) {
+          const no = await checkBackup(); if (no) return no;
+          if (await g.adminUnlock()) ctx.waitUntil(logEvent(env, request, { kind: "unlock", status: 200 }));
+        } else {
+          if (!code) return deny(401, "Enter the admin code.");   // no code at all (a bot or a crawler): not counted as a try
+          const r = await g.adminAttempt(await sameSecret(code, env.ADMIN_CODE), ipk, ADMIN_MAX_TRIES, ADMIN_IP_LIMIT.max, ADMIN_IP_LIMIT.windowMs);
+          if (r.locked) {
+            if (r.justLocked) ctx.waitUntil(logEvent(env, request, { kind: "admin", status: 423 }));
+            return deny(423, "Locked after 5 wrong codes. Enter the backup code to unlock.", { "X-Faultlines-Locked": "1" });
+          }
+          if (r.ipBlocked) return deny(429, "Too many wrong codes from here. Try again in an hour.");
+          if (!r.ok) {
+            ctx.waitUntil(logEvent(env, request, { kind: "admin", status: 401 }));
+            const left = ADMIN_MAX_TRIES - r.fails;
+            return deny(401, `Wrong code. ${left} ${left === 1 ? "try" : "tries"} left.`, { "X-Faultlines-Tries": String(left) });
+          }
+        }
+      } catch { return closed(); }
       if (path === "admin/archive"){   // ?day=YYYY-MM-DD opens one archived day; without it: the list of archived days
         const day = url.searchParams.get("day") || "";
         if (!day) return json(200, { days: await listArchive(env) }, { "Cache-Control": "no-store" });
         if (!/^\d{4}-\d{2}-\d{2}$/.test(day)) return deny(400, "Bad day.");
-        const a = await env.LOGS.get(`a:${day}`, "json");
+        const a = await getArchive(env, day);
         return a ? json(200, { day, logs: a.entries || [], saved: a.saved }, { "Cache-Control": "no-store" }) : deny(404, "No archive for that day.");
       }
-      return json(200, { logs: await readLogs(env), generated: new Date().toISOString(), archive: (await listArchive(env)).slice(0, 60) }, { "Cache-Control": "no-store" });
+      const since = Date.now() - 36 * 3600e3;   // the panel shows today (since 00:00 Berlin); a day and a half covers it
+      return json(200, { logs: await readLogs(env, since), generated: new Date().toISOString(), archive: (await listArchive(env)).slice(0, 60) }, { "Cache-Control": "no-store" });
     }
 
     // --- generate with automatic fallback: Gemini keys/models -> Groq -> Cloudflare Workers AI ---
@@ -847,52 +905,76 @@ async function handle(request, env, ctx, origin) {
       return new Response(body, { status: r.status, headers: cors({ "Content-Type": "application/json" }) });
     }
 
-    // --- generate: models/<flash model>:streamGenerateContent or :generateContent ---
-    const m = path.match(/^models\/(gemini-[a-z0-9.\-]*flash[a-z0-9.\-]*|gemma-[a-z0-9.\-]+):(streamGenerateContent|generateContent)$/);
-    if (request.method !== "POST" || !m) return deny(404, "Unsupported request.");
-    const raw = await request.text();
-    if (raw.length > MAX_BODY_BYTES) return deny(413, "Request too large.");
-    let body;
-    try { body = JSON.parse(raw); } catch { return deny(400, "Invalid JSON."); }
-    body.generationConfig = { ...(body.generationConfig || {}) };
-    body.generationConfig.maxOutputTokens = Math.min(body.generationConfig.maxOutputTokens || MAX_OUTPUT_TOKENS, MAX_OUTPUT_TOKENS);
-    delete body.tools;
-    delete body.cachedContent;
-    const stream = m[2] === "streamGenerateContent";
-    const started = Date.now();
+    // (the old direct route to a single Gemini model is gone: every AI request goes through models/auto above, which
+    //  applies the prompt check, the private-chat pass and the shared limits)
+    return deny(404, "Unsupported request.");
+}
 
-    // 1. the same question was answered in the last 24 h: serve it from the cache (no quota used)
-    const cache = caches.default;
-    const ck = new Request(`https://faultlines-cache/${m[2]}/${await sha256(JSON.stringify(body))}`);
-    const cached = await cache.match(ck);
-    if (cached) {
-      ctx.waitUntil(logEvent(env, request, { kind, status: 200, cached: true, model: m[1], ms: Date.now() - started }));
-      return new Response(cached.body, { status: 200, headers: cors({ "Content-Type": cached.headers.get("Content-Type") || "application/json", "X-Faultlines-Cache": "hit" }) });
-    }
 
-    // 2. fair use per visitor
-    if (limited(`ai:${ip}`, VISITOR_LIMIT)) {
-      ctx.waitUntil(logEvent(env, request, { kind, status: 429, model: m[1] }));
-      return deny(429, "You've asked a lot in the last few minutes. Please wait a moment.", { "X-Faultlines-Limit": "visitor" });
-    }
-
-    // 3. ask Gemini, stream the answer back and keep a copy in the cache
-    const r = await fetch(`${GOOGLE}/models/${m[1]}:${m[2]}${stream ? "?alt=sse" : ""}`, {
-      method: "POST",
-      headers: { "x-goog-api-key": env.GEMINI_API_KEY, "Content-Type": "application/json" },
-      body: JSON.stringify(body),
-    });
-    const type = r.headers.get("Content-Type") || (stream ? "text/event-stream" : "application/json");
-    ctx.waitUntil(logEvent(env, request, { kind, status: r.status, model: m[1], ms: Date.now() - started }));
-    if (!r.ok || !r.body) {
-      return new Response(r.body, { status: r.status, headers: cors({ "Content-Type": type, "Cache-Control": "no-store" }) });
-    }
-    const [toClient, toCache] = r.body.tee();
-    ctx.waitUntil((async () => {
-      const text = await new Response(toCache).text();
-      if (text.length > 20) {
-        await cache.put(ck, new Response(text, { headers: { "Content-Type": type, "Cache-Control": `max-age=${CACHE_SECONDS}` } }));
-      }
-    })());
-    return new Response(toClient, { status: 200, headers: cors({ "Content-Type": type, "Cache-Control": "no-store", "X-Faultlines-Cache": "miss" }) });
+/* ------------------------------------------------------------------ the security store
+   A Durable Object with its own SQLite database (free plan): ONE instance for the whole site, so the admin lock,
+   the attempt/request counters and the usage log are the same for every Cloudflare location and never reset.
+   The Worker calls these methods directly (RPC). Old rows are cleaned up every 10 minutes. */
+export class Guard extends DurableObject {
+  constructor(ctx, env){
+    super(ctx, env);
+    this.sql = ctx.storage.sql;
+    this.sql.exec("CREATE TABLE IF NOT EXISTS state (k TEXT PRIMARY KEY, v TEXT)");
+    this.sql.exec("CREATE TABLE IF NOT EXISTS hits (k TEXT, t INTEGER)");
+    this.sql.exec("CREATE INDEX IF NOT EXISTS hits_kt ON hits (k, t)");
+    this.sql.exec("CREATE TABLE IF NOT EXISTS log (t INTEGER, j TEXT)");
+    this.sql.exec("CREATE INDEX IF NOT EXISTS log_t ON log (t)");
+    this.sql.exec("CREATE TABLE IF NOT EXISTS archive (day TEXT PRIMARY KEY, saved TEXT, n INTEGER, visits INTEGER, j TEXT)");
+    this.pruned = 0;
+  }
+  prune(){
+    const now = Date.now();
+    if (now - this.pruned < 10 * 60e3) return;
+    this.pruned = now;
+    this.sql.exec("DELETE FROM hits WHERE t < ?", now - 26 * 3600e3);
+    this.sql.exec("DELETE FROM log WHERE t < ?", now - LOG_KEEP_MS);
+    this.sql.exec("DELETE FROM archive WHERE day < ?", new Date(now - ARCHIVE_KEEP_DAYS * 86400e3).toISOString().slice(0, 10));
+  }
+  // counters: how many times a key was counted in the window; take() counts one more if still under the limit
+  count(key, windowMs){ return this.sql.exec("SELECT COUNT(*) AS n FROM hits WHERE k = ? AND t > ?", key, Date.now() - windowMs).one().n; }
+  take(key, max, windowMs){
+    this.prune();
+    if (this.count(key, windowMs) >= max) return false;
+    this.sql.exec("INSERT INTO hits (k, t) VALUES (?, ?)", key, Date.now());
+    return true;
+  }
+  getState(k, dflt){ const r = this.sql.exec("SELECT v FROM state WHERE k = ?", k).toArray()[0]; return r ? JSON.parse(r.v) : dflt; }
+  setState(k, v){ this.sql.exec("INSERT INTO state (k, v) VALUES (?, ?) ON CONFLICT(k) DO UPDATE SET v = excluded.v", k, JSON.stringify(v)); }
+  // one admin login attempt, decided in one step (no race between two attempts):
+  // locked for everyone after maxTries wrong codes; a visitor with ipMax wrong codes in the window is refused
+  // even with the right code (so blocked visitors can't keep testing codes)
+  adminAttempt(ok, ipk, maxTries, ipMax, ipWindowMs){
+    const s = this.getState("admin", { fails: 0, locked: false });
+    if (s.locked) return { locked: true, fails: s.fails };
+    if (this.count(`adminfail:${ipk}`, ipWindowMs) >= ipMax) return { ipBlocked: true, fails: s.fails };
+    if (ok) { if (s.fails) this.setState("admin", { fails: 0, locked: false }); return { ok: true, fails: 0 }; }
+    this.sql.exec("INSERT INTO hits (k, t) VALUES (?, ?)", `adminfail:${ipk}`, Date.now());
+    const fails = (s.fails || 0) + 1, locked = fails >= maxTries;
+    this.setState("admin", { fails, locked, at: new Date().toISOString() });
+    return locked ? { locked: true, justLocked: true, fails } : { ok: false, fails };
+  }
+  adminUnlock(){
+    const s = this.getState("admin", { fails: 0, locked: false });
+    if (!s.locked && !s.fails) return false;
+    this.setState("admin", { fails: 0, locked: false });
+    return true;
+  }
+  // usage log
+  log(meta){ this.prune(); this.sql.exec("INSERT INTO log (t, j) VALUES (?, ?)", meta.t, JSON.stringify(meta)); }
+  logs(since){ return this.sql.exec("SELECT j FROM log WHERE t >= ? ORDER BY t DESC LIMIT 20000", since || 0).toArray().map(r => JSON.parse(r.j)); }
+  // archived days (never replaced by a smaller copy)
+  archive(day, entries, visits){
+    const old = this.sql.exec("SELECT n FROM archive WHERE day = ?", day).toArray()[0];
+    if (old && old.n >= entries.length) return `${day}: kept existing archive (${old.n})`;
+    this.sql.exec("INSERT INTO archive (day, saved, n, visits, j) VALUES (?, ?, ?, ?, ?) ON CONFLICT(day) DO UPDATE SET saved = excluded.saved, n = excluded.n, visits = excluded.visits, j = excluded.j",
+      day, new Date().toISOString(), entries.length, visits, JSON.stringify(entries));
+    return `${day}: archived ${entries.length}`;
+  }
+  archiveList(){ return this.sql.exec("SELECT day, n, visits FROM archive ORDER BY day DESC").toArray().map(r => ({ day: r.day, n: r.n, visits: r.visits })); }
+  archiveGet(day){ const r = this.sql.exec("SELECT day, saved, j FROM archive WHERE day = ?", day).toArray()[0]; return r ? { day: r.day, saved: r.saved, entries: JSON.parse(r.j) } : null; }
 }

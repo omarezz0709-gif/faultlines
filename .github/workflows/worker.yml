@@ -53,4 +53,5 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           workingDirectory: worker
+          wranglerVersion: "4.141.0"   # current Wrangler (Durable Objects with SQLite)
           command: deploy

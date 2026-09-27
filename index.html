@@ -1968,7 +1968,7 @@ async function geminiSample(key){
       const model = tryList[i];
       if (model === 'auto'){
         try { r = await fetch(`${AI_PROXY}/models/auto:streamGenerateContent`, {method:'POST', signal: opts.signal,
-          headers: {'Content-Type': 'application/json', 'X-Faultlines-Kind': opts.kind || 'ai'}, body: JSON.stringify(body)}); }
+          headers: {'Content-Type': 'application/json', 'X-Faultlines-Kind': opts.kind || 'ai', ...(opts.pass ? {'X-Private-Pass': opts.pass} : {})}, body: JSON.stringify(body)}); }
         catch(e){ throw fail('upstream_error', e && e.message); }
         if (r.ok) break;
         msg = await r.text().catch(() => '');
@@ -1980,7 +1980,7 @@ async function geminiSample(key){
       if (model.startsWith('gemma')) delete b.generationConfig.responseMimeType;   // Gemma has no JSON mode; the prompt asks for JSON anyway
       try {
         r = await fetch(key ? `${GEM}/models/${model}:streamGenerateContent?alt=sse` : `${AI_PROXY}/models/${model}:streamGenerateContent`, {method:'POST', signal: opts.signal,
-          headers: key ? {'x-goog-api-key': key, 'Content-Type': 'application/json'} : {'Content-Type': 'application/json', 'X-Faultlines-Kind': opts.kind || 'ai'}, body: JSON.stringify(b)});
+          headers: key ? {'x-goog-api-key': key, 'Content-Type': 'application/json'} : {'Content-Type': 'application/json', 'X-Faultlines-Kind': opts.kind || 'ai', ...(opts.pass ? {'X-Private-Pass': opts.pass} : {})}, body: JSON.stringify(b)});
       } catch(e){ throw fail('upstream_error', e && e.message); }
       if (r.ok){ try { sessionStorage.setItem('fl-model', model); } catch(e){} const at = models.indexOf(model); if (at > 0){ models.splice(at, 1); models.unshift(model); } break; }
       msg = await r.text().catch(() => '');
@@ -3129,7 +3129,7 @@ function renderAdmin(data){
         : '<p class="note muted">No archived days yet. The first backup is saved shortly after the next midnight.</p>'}</section>
     <section><h3>Automatic updates <em>GitHub</em></h3><div id="admin-runs"><p class="note muted thinking">Loading…</p></div></section>
     <div class="actions"><button class="tag" id="admin-refresh">↻ Refresh</button><button class="tag" id="admin-out">Log out</button></div>
-    <p class="foot">Visitor ids are anonymous and change daily; locations come from Cloudflare (city level) and full IP addresses are never stored. The log resets every night at 00:00 Berlin time; a backup of each day is kept for a year (Archive).</p>
+    <p class="foot">Visitor ids are pseudonymous (a keyed hash that changes daily; it can't be traced back without the Worker's secret); locations come from Cloudflare, rounded to about 10 km, plus the postcode, and IP addresses are never stored. The log resets every night at 00:00 Berlin time; a backup of each day is kept for 90 days (Archive).</p>
   </div>`;
   wirePanel(); panelMode = 'admin'; adminBtn.setAttribute('aria-pressed', 'true');
   showAdminMap(logs);
@@ -3873,8 +3873,9 @@ askForm.onsubmit = async e => {
   if (/^\d{4,64}$/.test(q) || (/^[^\s?]{8,64}$/.test(q) && /\d/.test(q) && /\p{L}/u.test(q))){
     askQ.value = ''; askQ.blur();
     let ok = false;
-    try { const r = await fetch(`${AI_PROXY}/private/verify`, {method: 'POST', headers: {'X-Backup-Code': q}}); ok = r.ok; } catch(err){}
-    if (ok) return startPrivate();
+    let pass = '';
+    try { const r = await fetch(`${AI_PROXY}/private/verify`, {method: 'POST', headers: {'X-Backup-Code': q}}); ok = r.ok; if (ok) pass = ((await r.json()) || {}).pass || ''; } catch(err){}
+    if (ok) return startPrivate(pass);   // the Worker's pass (2 hours) for this chat's AI requests
     clearSelectionQuiet();
     panel.innerHTML = head('Question', 'Your question') + `<div class="p-body"><p class="note muted">That looks like a code, but it isn't a valid one. To ask a question, write it in words.</p></div>`;
     wirePanel(); panelMode = 'ask'; return;
@@ -3886,12 +3887,12 @@ askForm.onsubmit = async e => {
 /* PRIVATE CHAT (opened by typing the backup code into the question bar): any topic, with follow-ups. Nothing is
    kept: not in the history, not cached by the browser or the Worker, and the chat is gone as soon as it's closed. */
 var PRIV = null, privDrawing = false;   // (var: the panel may be drawn before this part of the script has run)
-function startPrivate(){ PRIV = {turns: []}; drawPrivate(); }
+function startPrivate(pass){ PRIV = {turns: [], pass}; drawPrivate(); }
 function drawPrivate(){
   if (!PRIV) return;
   clearSelectionQuiet();
   panel.innerHTML = head('Private', '🔒 Private chat') + `<div class="p-body">
-    <p class="note">Ask about anything, not just world affairs. <b>Nothing is saved</b>: this chat is not in your history, not cached anywhere, and it is deleted as soon as you close it.</p>
+    <p class="note">Ask about anything, not just world affairs. <b>Faultlines keeps nothing</b>: this chat is not in your history, not cached, and it is deleted as soon as you close it. The questions are answered by an AI provider (Google Gemini; Groq or Cloudflare as backups), whose free service may use them to improve its products, so don't type anything confidential.</p>
     ${PRIV.turns.map((t, i) => `<div class="turn"><p class="q-asked" dir="auto">${esc(t.q)}</p>
       <div class="ai" ${i === PRIV.turns.length - 1 ? 'id="ai-cur"' : ''}>${t.a ? md(t.a) : t.err ? `<p class="muted">${esc(t.err)}</p>` : '<p class="muted thinking">Thinking…</p>'}</div></div>`).join('')}
     <form class="ask ask-more" id="priv-more" autocomplete="off"><span class="ask-i" aria-hidden="true">🔒</span>
@@ -3919,11 +3920,12 @@ ${earlier.length ? `\nThe conversation so far:\n${earlier.map(t => `Q: ${t.q}\nA
 Question: ${q}`;
   try {
     // kind 'private': the Worker neither caches nor keeps it; no cache option here, so the browser keeps nothing either
-    const {text, truncated} = await sample(prompt, {kind: 'private', onText: ({text}) => { if (cur()) cur().innerHTML = cite(md(text), live); }});
+    const {text, truncated} = await sample(prompt, {kind: 'private', pass: chat.pass, onText: ({text}) => { if (cur()) cur().innerHTML = cite(md(text), live); }});
     turn.a = text + (truncated ? '\n\n(Cut short.)' : '');
     if (cur()) cur().innerHTML = cite(md(turn.a), live) + liveSrcsHTML(live);
   } catch(e){
-    turn.err = AI_MSG[e && e.code] || 'Something went wrong. Try again.';
+    turn.err = /needs the code again/.test((e && e.message) || '') ? 'This private chat has expired (after 2 hours). Type the code in the question bar again.'
+      : AI_MSG[e && e.code] || 'Something went wrong. Try again.';
     if (cur()) cur().innerHTML = `<p class="muted">${esc(turn.err)}</p>`;
   }
 }

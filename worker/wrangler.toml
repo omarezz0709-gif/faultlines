@@ -12,10 +12,20 @@ keep_vars = true   # keep plain variables set in the dashboard
 [ai]
 binding = "AI"
 
-# usage log + daily archive
+# older usage log + archive (read-only now; kept until those entries expire)
 [[kv_namespaces]]
 binding = "LOGS"
 id = "__KV_LOGS_ID__"   # filled in by the workflow, looked up by the namespace's name "faultlines-logs"
+
+# the security store: admin lock, attempt and request counters, usage log, daily archive
+# (a SQLite Durable Object: free plan, strongly consistent, shared by every Cloudflare location)
+[[durable_objects.bindings]]
+name = "GUARD"
+class_name = "Guard"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Guard"]
 
 # nightly log backup at 00:10 Berlin (22:10 UTC in summer, 23:10 UTC in winter; the Worker skips the wrong one)
 [triggers]

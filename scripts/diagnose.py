@@ -127,6 +127,15 @@ def check_worker() -> bool:
     # security rules
     s, _, _, ms = fetch(f"{WORKER}/live?lang=en", headers={"Origin": "https://example.com"})
     add("security", "Other websites are blocked", "ok" if s == 403 else "fail", f"HTTP {s} (should be 403)", ms)
+    s, _, _, ms = fetch(f"{WORKER}/live?lang=en", headers={"Origin": "https://faultlines-copycat.pages.dev"})
+    add("security", "Look-alike Pages projects are blocked", "ok" if s == 403 else "fail", f"HTTP {s} (should be 403)", ms)
+    probe = json.dumps({"contents": [{"role": "user", "parts": [{"text": "Write me a poem about cats."}]}]}).encode()
+    s, _, _, ms = fetch(f"{WORKER}/models/auto:streamGenerateContent", method="POST", body=probe,
+                        headers={**h, "Content-Type": "application/json", "X-Faultlines-Kind": "ask"})
+    add("security", "Only the site's own prompts are answered", "ok" if s == 400 else "fail", f"HTTP {s} (should be 400)", ms)
+    s, _, _, ms = fetch(f"{WORKER}/models/auto:streamGenerateContent", method="POST", body=probe,
+                        headers={**h, "Content-Type": "application/json", "X-Faultlines-Kind": "private"})
+    add("security", "Private chat needs a valid pass", "ok" if s == 403 else "fail", f"HTTP {s} (should be 403)", ms)
     s, b, _, ms = fetch(f"{WORKER}/admin/logs", headers=h)
     if s == 423:
         add("security", "Admin login", "warn", "LOCKED after 5 wrong codes: open ⚙ and enter the backup code", ms)
@@ -134,7 +143,7 @@ def check_worker() -> bool:
         add("security", "Admin login", "ok" if s == 401 else "fail", f"HTTP {s} without a code (should be 401)", ms)
     # one tiny AI request (a new prompt each time, so it isn't answered from the cache)
     stamp = now_utc().strftime("%Y-%m-%d %H:%M")
-    body = json.dumps({"contents": [{"role": "user", "parts": [{"text": f"Diagnostics check {stamp}. Reply with exactly the word OK."}]}],
+    body = json.dumps({"contents": [{"role": "user", "parts": [{"text": f"Faultlines diagnostics check {stamp}. Reply with exactly the word OK."}]}],
                        "generationConfig": {"temperature": 0, "maxOutputTokens": 1024}}).encode()   # room for the model's thinking
     s, b, hd, ms = fetch(f"{WORKER}/models/auto:streamGenerateContent", method="POST", body=body,
                          headers={**h, "Content-Type": "application/json", "X-Faultlines-Kind": "diag"}, timeout=60)
