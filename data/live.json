@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-09-27T16:04:30Z",
+  "lastRun": "2026-09-27T22:08:23Z",
   "log": [
    {
     "date": "2026-09-27",
@@ -69,6 +69,21 @@
       "label": "Switzerland",
       "change": "Referendum result: Voters reject constitutional amendment to tighten neutrality rules",
       "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeUEtZzFGZmtIZEc2eGxDQU9Jd0psUU5QemVqNkY3SHFaN0xvY3czNHNza1F4SXFiS2VvdU91TFhiWWNZOEM3TWpNb2p4WE4taDZqdmpCR0lvaU42UTQwWW11TDJOSTFGQTgxMk9adDdDRzlpUFNkTnNJUnptZ3lnYzdpZkhSWnNHZmx4RVVnVdIBjwFBVV95cUxQOWNENzBrcktUVXJ5SU1JUEhiTlo3ekI3eG9qd053Rmc3Q1JuNlFaUmV5ekRJMnlxdVh5bllsMV9LcjZienpLVV9HbUxoejJSRF9mWnMzOFFPRkJrZ0RGWVZUVzNUYlJ1TG1XXzMxTk10VEhlYlhmMTg5S0xOS2V6Zjg1b0lGZnJ0MW41V3UyTQ?oc=5"
+     },
+     {
+      "label": "Israel–Netherlands",
+      "change": "Normal → Tense: Israel revokes credentials of Dutch diplomats over settlement trade ban",
+      "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQlZLYTRKbVlIZ1I1WmFPUGdDNkFLQkVQdDhaNVl3bkFJSnd6elNSa2VsM0VLempQWk52emdDQUZHS2J5eHZBRHZHa3YtSXE3WmR6SWUzRUN1MWxFbTMzeEY2YUd6TjdjaENuWVROMy03R0xBUFpkYnNZeXR2ZEdjN2Y0TDJCVk9LWlI3ZG5kZzJVQi1xcGVFUEk4M0x1TGsxY1dvYUZ0MTRzQUdLSHlKbGl3?oc=5"
+     },
+     {
+      "label": "Egypt–Ethiopia",
+      "change": "Note refreshed: Ethiopia accuses Egypt of backing rebel factions",
+      "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOS1hON1h0eTVlbmstTmxOTjREc3lKQ01QNVF6NzZVanQyMlg3TXhXZ3JTWWF3Qjg0cHZ6MmRvbWtWLXlDU3dYLTVDSWlxV1hZM2tPT0VvWHRfWDBXeUtlNTJjRVN1RWJqTXVqWVlqNU4yR0ZVbWhnSWpzcy1CR1M4Z25JZDdUMnNLUXFyekw3S3B2UUZ1RWQtRV9fVXktUWhNWl9mZmJCeU41NU1XUmlhUU85R1hqR0xZRURxRXMxOVVLaDh2?oc=5"
+     },
+     {
+      "label": "Serbia",
+      "change": "President Aleksandar Vučić resigns ahead of early parliamentary elections in October 2026",
+      "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTmcySFNmNWFxcDFQOEl6OU1UYy1MZ2RmcE9TU2V5N1FUYVhidncyRVRHZEtxbl9yU2Rpbi1yc0pVcmtyajlhaHFkakFqZFBPTlY3UFFObnl5aDZOcmVOajRKQzNYb2FCd2JmZnJ6clNjV0d5T0tmN1o1a0hGUDFQeHFRWi1Ba01KZDdXOG1YamVNT3RBUTRnX1RDRmNaQXhscnRYcXlON3RpdjQ?oc=5"
      }
     ]
    },
@@ -311,7 +326,7 @@
     ]
    }
   ],
-  "summary": "Morocco pledges mutual defence support to Saudi Arabia, South Korea protests Ukraine's disclosure of confidential prisoner-of-war agreements, and Swiss voters reject a proposal to tighten neutrality rules."
+  "summary": "Aleksandar Vučić resigns as Serbia's president ahead of snap elections, Israel revokes credentials of Dutch diplomats over settlement trade, and Ethiopia accuses Egypt of backing rebel groups."
  },
  "relations": {
   "DNK-USA": {
@@ -545,6 +560,22 @@
    "note": "Japanese Prime Minister Sanae Takaichi reaffirms the United States (US) security alliance and bilateral alignment on China.",
    "updated": "2026-09-27",
    "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTUc3MVVnZEtXWGx6WFhianFMOU1PREhQamhzNjFJOUhSUVM0ZUo0ODFHbGpaeFJ0aW95ZnM3R3NoVm1aREdFeDZMZ1hRX0RxMFhJLTVEUXFpZlp6bFViQUk1Q2NOQi14MWhZVG0wZU9BUE5IMDNUQkl4Yl9Tdno1N0x4c00?oc=5"
+  },
+  "ISR-NLD": {
+   "a": "ISR",
+   "b": "NLD",
+   "s": "T",
+   "note": "Israel strips diplomatic credentials of Dutch envoys to Ramallah following a Dutch ban on trade in Israeli settlement products.",
+   "updated": "2026-09-27",
+   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQlZLYTRKbVlIZ1I1WmFPUGdDNkFLQkVQdDhaNVl3bkFJSnd6elNSa2VsM0VLempQWk52emdDQUZHS2J5eHZBRHZHa3YtSXE3WmR6SWUzRUN1MWxFbTMzeEY2YUd6TjdjaENuWVROMy03R0xBUFpkYnNZeXR2ZEdjN2Y0TDJCVk9LWlI3ZG5kZzJVQi1xcGVFUEk4M0x1TGsxY1dvYUZ0MTRzQUdLSHlKbGl3?oc=5"
+  },
+  "EGY-ETH": {
+   "a": "EGY",
+   "b": "ETH",
+   "s": "T",
+   "note": "Friction over the Grand Ethiopian Renaissance Dam (GERD) deepens as Addis Ababa accuses Egypt of backing insurgent alliances.",
+   "updated": "2026-09-27",
+   "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOS1hON1h0eTVlbmstTmxOTjREc3lKQ01QNVF6NzZVanQyMlg3TXhXZ3JTWWF3Qjg0cHZ6MmRvbWtWLXlDU3dYLTVDSWlxV1hZM2tPT0VvWHRfWDBXeUtlNTJjRVN1RWJqTXVqWVlqNU4yR0ZVbWhnSWpzcy1CR1M4Z25JZDdUMnNLUXFyekw3S3B2UUZ1RWQtRV9fVXktUWhNWl9mZmJCeU41NU1XUmlhUU85R1hqR0xZRURxRXMxOVVLaDh2?oc=5"
   }
  },
  "threads": {
@@ -755,9 +786,9 @@
    "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWUlwWEJ0R2JPeVl4TUNzYkNyMVZfaWlwU21SSF96Ui1hdXIyR0wyNkpwQlFjRmw3UGJya0NYZ25TQjVGWWdrWEdEdjBsaFlJdmtQNGdIYjVJcG5zUG02b3I3TFhPXzluNmQyZTh3ejJVRGtMMG42M21yZjc4RXBleU9RTzVZRURlZDJGdkFTRXF2QVNiSVdmN2VtMkdNRzIzQnE5SFdHMlQ5TXVoSGo0?oc=5"
   },
   "SRB": {
-   "nextelec": "general, 25 Oct 2026",
-   "updated": "2026-09-26",
-   "source": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNMjc0ZzVBenRZdUgxR1NRYjFqOTViVF84V2tmNXNwQ2NST21zQlFVYVpOU24xeHVkYWhSZHFlUkkwdmxZOExUMHdraHk2MC1pSUxER1lFVW1URUpyLU9nNS1rYUhYT3E1U0RGWDB0TWF6bDlZeklnZndOcWRDb283NTREV29wZDVzd3ZyWDAwNGp2RGdFanNabm84TEpjeWY1eENkQkJIODB6SGRLVjdzOXVUcVhtS1R6TzR6Y1V3dm1uS0Q5WEI4Z2tKblZ1am9hTGM2M0l0U3JYcnRKNHhQYTFKOTVGa2tfWHpTZDVfamhTMnFGMEJ5UTBITXpkTFZOT2YzM3pVd0tkRjg?oc=5"
+   "nextelec": "parliamentary Oct 2026",
+   "updated": "2026-09-27",
+   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTmcySFNmNWFxcDFQOEl6OU1UYy1MZ2RmcE9TU2V5N1FUYVhidncyRVRHZEtxbl9yU2Rpbi1yc0pVcmtyajlhaHFkakFqZFBPTlY3UFFObnl5aDZOcmVOajRKQzNYb2FCd2JmZnJ6clNjV0d5T0tmN1o1a0hGUDFQeHFRWi1Ba01KZDdXOG1YamVNT3RBUTRnX1RDRmNaQXhscnRYcXlON3RpdjQ?oc=5"
   },
   "CHE": {
    "lastelec": "referendum, Sep 2026, rejected stricter neutrality",
