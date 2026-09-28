@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-09-28T10:19:18Z",
+  "lastRun": "2026-09-28T22:08:42Z",
   "log": [
    {
     "date": "2026-09-28",
@@ -29,6 +29,26 @@
       "label": "São Tomé and Príncipe",
       "change": "Politics updated: Legislative elections held September 2026",
       "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMmVHNDUwOXYwckhjdmREN2Nid2ZONGttMjU4TkFyTGNDdGRqRXNaSWd1LXRKNkE2cjVlb194QTBqRHlZVzNDWkJ1a0duMkYyU2Mza1NTWTJOZ0RZNHVoQVhKR0dIOWxMX09xMlEwUVV1Nk84dUgwV2dMVkxxSnJkT3JMVG1LOHRUWUhIUjZMa2p0T1pEdjFwRHA4S2JfdlpVNkh4bUgyb01VNFhObUhYbFZoaUhzQXc?oc=5"
+     },
+     {
+      "label": "Israel–Morocco",
+      "change": "Note updated: Israel and Morocco agree to upgrade reciprocal liaison offices to full embassies.",
+      "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRWZuajN5SVNxMjdZeXlickJ2WVJmX1U4U2NjeXhwLTdheU9PbjVITTZOMnNZTm1SUjNoZGJtTklKYy1QdGRZdzUyNW1nSzFVUVB1cWx1S2RtY0Q3dG5ZdTJaVWxxbFR6RTM2QUhLd3lrN0JCaUlVbVNjcXNRUjZ1UkprQ2I0MTZnQXkxb2ZJUWp4Wi13X3pVVDlSeWZwWi1LT3h0Zjd2bE02YTg?oc=5"
+     },
+     {
+      "label": "Poland–Russia",
+      "change": "Note updated: Poland readies defences after Russian drone impacts two kilometres from the border.",
+      "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1kMF83c2NsNzhsTXhGZ3VsYWlXY1A2VVZEanlLcVNESHJjZW9BWjFZcnM5bmloZGdmY24wYVhpdmhWbzd2U1g4MW5mSQ?oc=5"
+     },
+     {
+      "label": "Saudi Arabia–Yemen",
+      "change": "Note updated: Clashes and airstrikes intensify as Houthis threaten strikes on Saudi bridge infrastructure.",
+      "source": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE14OUMxZWp4Y3dLNmxLUVBJMXlfZnRQTnRJeTdBRUlxN2NIcUhKRFhBemV1U0syYnBkWVdmWUdmb2N3QWJ0UlpYdUpveWFmY21UVVFYcHBtcnRxUUlm?oc=5"
+     },
+     {
+      "label": "Bab-el-Mandeb",
+      "change": "Status updated: Saudi Arabia resumes Red Sea crude oil exports despite Houthi positions.",
+      "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOOFhDR243cDJLOUU1T1hPa3QxaEw3Tlpkang3T2pXMnQ5WkgzRjFnUmNOeU93alItNjZYQ0xMOXFoT19NUFJsQktkZWdhMTlUMXlHOU9MeDVlb2oyQUtwR00tei1yTW5DLTY4eWlqSm15TlNFQnNDeFpuakljZjRQM2FwT2hpZkFTSko4bE53S0RxUFBoLUIxQ3llUC1sSXJHc3BVMk85UmhxZU5LTXVQREhaWkVpTkp0QWRDUW9MNk9jX0hSamVJ?oc=5"
      }
     ]
    },
@@ -356,7 +376,7 @@
     ]
    }
   ],
-  "summary": "Updated political schedules for Serbia and São Tomé and Príncipe, refreshed relationship notes for Ethiopia–Sudan and Israel–UAE, and updated the Suwałki Gap location status."
+  "summary": "Updated relationship notes for Israel–Morocco on their embassy upgrade, Poland–Russia following a cross-border drone strike near Dorohusk, and Saudi–Yemen escalation, alongside Bab-el-Mandeb navigation developments."
  },
  "relations": {
   "DNK-USA": {
@@ -394,10 +414,10 @@
   "SAU-YEM": {
    "a": "SAU",
    "b": "YEM",
-   "note": "2022 truce is over: Houthis strike Riyadh and Yanbu, seize the Red Sea coast and ban Saudi ships",
    "s": "W",
-   "source": "https://www.aljazeera.com/news/2026/9/8/saudi-houthi-fighting-in-yemen-escalates-what-happened-and-whats-next",
-   "updated": "2026-09-23"
+   "note": "Fighting escalates with heavy casualties as Saudi airstrikes pound Houthi positions and Houthis threaten strikes on Saudi bridges.",
+   "updated": "2026-09-28",
+   "source": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE14OUMxZWp4Y3dLNmxLUVBJMXlfZnRQTnRJeTdBRUlxN2NIcUhKRFhBemV1U0syYnBkWVdmWUdmb2N3QWJ0UlpYdUpveWFmY21UVVFYcHBtcnRxUUlm?oc=5"
   },
   "BEL-RWA": {
    "a": "BEL",
@@ -622,6 +642,22 @@
    "note": "Israel and the United Arab Emirates (UAE) maintain Abraham Accords ties as Israeli Prime Minister holds talks on Iran in Abu Dhabi.",
    "updated": "2026-09-28",
    "source": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE02QVdsMGFYWDlWZ3V4N2xLLVZ5eTQ4R0psMVZwc0wtYk1qUFhHaF9Cb2V0WDN4SDlPMm1vMExTTGR6Q3VxSUxXQlBPSld2N0lzbk9fSXNGbTA5ay05?oc=5"
+  },
+  "ISR-MAR": {
+   "a": "ISR",
+   "b": "MAR",
+   "s": "F",
+   "note": "Israel and Morocco agree to upgrade reciprocal diplomatic missions to full embassies, deepening their Abraham Accords partnership.",
+   "updated": "2026-09-28",
+   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRWZuajN5SVNxMjdZeXlickJ2WVJmX1U4U2NjeXhwLTdheU9PbjVITTZOMnNZTm1SUjNoZGJtTklKYy1QdGRZdzUyNW1nSzFVUVB1cWx1S2RtY0Q3dG5ZdTJaVWxxbFR6RTM2QUhLd3lrN0JCaUlVbVNjcXNRUjZ1UkprQ2I0MTZnQXkxb2ZJUWp4Wi13X3pVVDlSeWZwWi1LT3h0Zjd2bE02YTg?oc=5"
+  },
+  "POL-RUS": {
+   "a": "POL",
+   "b": "RUS",
+   "s": "H",
+   "note": "Poland readies air defences and scrambles fighters after a Russian drone strikes Ukraine two kilometres from the Polish border.",
+   "updated": "2026-09-28",
+   "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1kMF83c2NsNzhsTXhGZ3VsYWlXY1A2VVZEanlLcVNESHJjZW9BWjFZcnM5bmloZGdmY24wYVhpdmhWbzd2U1g4MW5mSQ?oc=5"
   }
  },
  "threads": {
@@ -679,11 +715,11 @@
  },
  "pois": {
   "bab-el-mandeb": {
-   "d": "Links the Red Sea to the Gulf of Aden. In Sept 2026 the Houthis took Mocha, Perim (Mayyun) and the Hanish Islands, controlling Yemen's side of the strait just as Saudi exports shifted to the Red Sea.",
+   "d": "Links the Red Sea to the Gulf of Aden; Saudi Arabia resumes Red Sea crude shipments despite Houthi control of Yemen's coast and nearby islands.",
    "n": "Bab-el-Mandeb",
-   "s": "Houthi-held since Sept 2026 · Saudi ships banned",
-   "source": "https://www.euronews.com/2026/09/12/houthis-seize-yemeni-island-in-bab-el-mandeb-taking-control-of-the-strait",
-   "updated": "2026-09-23"
+   "s": "Houthi-held · Saudi Red Sea oil exports resume",
+   "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOOFhDR243cDJLOUU1T1hPa3QxaEw3Tlpkang3T2pXMnQ5WkgzRjFnUmNOeU93alItNjZYQ0xMOXFoT19NUFJsQktkZWdhMTlUMXlHOU9MeDVlb2oyQUtwR00tei1yTW5DLTY4eWlqSm15TlNFQnNDeFpuakljZjRQM2FwT2hpZkFTSko4bE53S0RxUFBoLUIxQ3llUC1sSXJHc3BVMk85UmhxZU5LTXVQREhaWkVpTkp0QWRDUW9MNk9jX0hSamVJ?oc=5",
+   "updated": "2026-09-28"
   },
   "pituffik-space-base": {
    "d": "Missile-warning radar in Greenland. A Sept 22, 2026 US-Denmark agreement added two further US sites, at Narsarsuaq and Mestersvig, with broad air and undersea access, easing friction from Trump's earlier annexation talk.",
