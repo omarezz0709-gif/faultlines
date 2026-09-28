@@ -1,7 +1,37 @@
 {
  "meta": {
-  "lastRun": "2026-09-27T22:08:23Z",
+  "lastRun": "2026-09-28T10:19:18Z",
   "log": [
+   {
+    "date": "2026-09-28",
+    "items": [
+     {
+      "label": "Ethiopia–Sudan",
+      "change": "Note updated: Ethiopia accuses Sudan of supporting opposition fighters in Tigray",
+      "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUmVKUnd1OTNfNGFRTDZlWEhTSm55VGtTZ1p3U0wzZUwwckIwa1poRnVaMUUyTEYyMnk3TC0wS1daUW5RU1dVZzlvaTNxSEhmbkpEOFFKVllRalBvOGhsdW5nTVE3dDAzekFld0hWeGlkSGRCeWo3TEZJMHNNZkRGQXVLYndPNDc1QXAxdTJPUkFXN2VZYndIc0w4R1lEckZkTEE?oc=5"
+     },
+     {
+      "label": "Israel–United Arab Emirates",
+      "change": "Note updated: High-level talks on Iran held in Abu Dhabi",
+      "source": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE02QVdsMGFYWDlWZ3V4N2xLLVZ5eTQ4R0psMVZwc0wtYk1qUFhHaF9Cb2V0WDN4SDlPMm1vMExTTGR6Q3VxSUxXQlBPSld2N0lzbk9fSXNGbTA5ay05?oc=5"
+     },
+     {
+      "label": "Suwałki Gap",
+      "change": "POI stat updated: Joint evacuation plan drafted by Poland and Lithuania",
+      "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZTJmZ3BjWVlNckVkZ1N1Vjl5ZnpiQUo3V25HQ2JjdWJ3ZFpLcTlxS2U4dU5mbVRkMXNVNEh3Rks3bTNjdUd4YnJwSVV5Rm5RdC1kYTV4bHhWYkllak9ILVh2T0ltZ25EX1c1V0J5NzU2eXVGaUxwd1Z3NVFFYmVaVS1sbUtrQXg1eVdudVVfczlRejVJdGc?oc=5"
+     },
+     {
+      "label": "Serbia",
+      "change": "Politics updated: Snap parliamentary elections scheduled for October 2026",
+      "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOT3JsUjZTVG9uZ1pkU2FXbE9HcGllQXl1em9qY1M3NHlzaEc4am5pUl9TZTdLclJja1Nnd0JqQ1FuV1FMNGs0dG9PbGRNalQwUXhIcldrTHF0czdzZUtIUkt4OHNsdVRaaHlYU0x0SnpCdDRLQ2NtWVVWY0VwZmowNlRCcUU2TnZjbG5icTVsbzduNU9xbEc1aktqTmMzXzFrSHc0OXNR0gGmAUFVX3lxTE5PcmxSNlNUb25nWmRTYVdsT0dwaWVBeXV6b2pjUzc0eXNoRzhqbmlSX1NlN0tyUmNrU2d3QmpDUW5XUUw0azR0b09sZE1qVDBReEhyV2tMcXRzN3NlS0hSS3g4c2x1VFpoeVhTTHRKekJ0NEtDY21ZVVZjRXBmajA2VEJxRTZOdmNsbmJxNWxvN241T3FsRzVqS2pOYzNfMWtIdzQ5c1E?oc=5"
+     },
+     {
+      "label": "São Tomé and Príncipe",
+      "change": "Politics updated: Legislative elections held September 2026",
+      "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMmVHNDUwOXYwckhjdmREN2Nid2ZONGttMjU4TkFyTGNDdGRqRXNaSWd1LXRKNkE2cjVlb194QTBqRHlZVzNDWkJ1a0duMkYyU2Mza1NTWTJOZ0RZNHVoQVhKR0dIOWxMX09xMlEwUVV1Nk84dUgwV2dMVkxxSnJkT3JMVG1LOHRUWUhIUjZMa2p0T1pEdjFwRHA4S2JfdlpVNkh4bUgyb01VNFhObUhYbFZoaUhzQXc?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-09-27",
     "items": [
@@ -326,7 +356,7 @@
     ]
    }
   ],
-  "summary": "Aleksandar Vučić resigns as Serbia's president ahead of snap elections, Israel revokes credentials of Dutch diplomats over settlement trade, and Ethiopia accuses Egypt of backing rebel groups."
+  "summary": "Updated political schedules for Serbia and São Tomé and Príncipe, refreshed relationship notes for Ethiopia–Sudan and Israel–UAE, and updated the Suwałki Gap location status."
  },
  "relations": {
   "DNK-USA": {
@@ -576,6 +606,22 @@
    "note": "Friction over the Grand Ethiopian Renaissance Dam (GERD) deepens as Addis Ababa accuses Egypt of backing insurgent alliances.",
    "updated": "2026-09-27",
    "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOS1hON1h0eTVlbmstTmxOTjREc3lKQ01QNVF6NzZVanQyMlg3TXhXZ3JTWWF3Qjg0cHZ6MmRvbWtWLXlDU3dYLTVDSWlxV1hZM2tPT0VvWHRfWDBXeUtlNTJjRVN1RWJqTXVqWVlqNU4yR0ZVbWhnSWpzcy1CR1M4Z25JZDdUMnNLUXFyekw3S3B2UUZ1RWQtRV9fVXktUWhNWl9mZmJCeU41NU1XUmlhUU85R1hqR0xZRURxRXMxOVVLaDh2?oc=5"
+  },
+  "ETH-SDN": {
+   "a": "ETH",
+   "b": "SDN",
+   "s": "T",
+   "note": "Tensions rise as Ethiopia accuses Sudan of backing anti-government armed groups in Tigray, claims Sudan denies.",
+   "updated": "2026-09-28",
+   "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUmVKUnd1OTNfNGFRTDZlWEhTSm55VGtTZ1p3U0wzZUwwckIwa1poRnVaMUUyTEYyMnk3TC0wS1daUW5RU1dVZzlvaTNxSEhmbkpEOFFKVllRalBvOGhsdW5nTVE3dDAzekFld0hWeGlkSGRCeWo3TEZJMHNNZkRGQXVLYndPNDc1QXAxdTJPUkFXN2VZYndIc0w4R1lEckZkTEE?oc=5"
+  },
+  "ARE-ISR": {
+   "a": "ARE",
+   "b": "ISR",
+   "s": "F",
+   "note": "Israel and the United Arab Emirates (UAE) maintain Abraham Accords ties as Israeli Prime Minister holds talks on Iran in Abu Dhabi.",
+   "updated": "2026-09-28",
+   "source": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE02QVdsMGFYWDlWZ3V4N2xLLVZ5eTQ4R0psMVZwc0wtYk1qUFhHaF9Cb2V0WDN4SDlPMm1vMExTTGR6Q3VxSUxXQlBPSld2N0lzbk9fSXNGbTA5ay05?oc=5"
   }
  },
  "threads": {
@@ -667,6 +713,12 @@
     "OMN",
     "ARE"
    ]
+  },
+  "suwa-ki-gap": {
+   "n": "Suwałki Gap",
+   "s": "NATO weak spot · Poland and Lithuania draft evacuation plan Sept 2026",
+   "updated": "2026-09-28",
+   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZTJmZ3BjWVlNckVkZ1N1Vjl5ZnpiQUo3V25HQ2JjdWJ3ZFpLcTlxS2U4dU5mbVRkMXNVNEh3Rks3bTNjdUd4YnJwSVV5Rm5RdC1kYTV4bHhWYkllak9ILVh2T0ltZ25EX1c1V0J5NzU2eXVGaUxwd1Z3NVFFYmVaVS1sbUtrQXg1eVdudVVfczlRejVJdGc?oc=5"
   }
  },
  "politics": {
@@ -786,14 +838,19 @@
    "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWUlwWEJ0R2JPeVl4TUNzYkNyMVZfaWlwU21SSF96Ui1hdXIyR0wyNkpwQlFjRmw3UGJya0NYZ25TQjVGWWdrWEdEdjBsaFlJdmtQNGdIYjVJcG5zUG02b3I3TFhPXzluNmQyZTh3ejJVRGtMMG42M21yZjc4RXBleU9RTzVZRURlZDJGdkFTRXF2QVNiSVdmN2VtMkdNRzIzQnE5SFdHMlQ5TXVoSGo0?oc=5"
   },
   "SRB": {
-   "nextelec": "parliamentary Oct 2026",
-   "updated": "2026-09-27",
-   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTmcySFNmNWFxcDFQOEl6OU1UYy1MZ2RmcE9TU2V5N1FUYVhidncyRVRHZEtxbl9yU2Rpbi1yc0pVcmtyajlhaHFkakFqZFBPTlY3UFFObnl5aDZOcmVOajRKQzNYb2FCd2JmZnJ6clNjV0d5T0tmN1o1a0hGUDFQeHFRWi1Ba01KZDdXOG1YamVNT3RBUTRnX1RDRmNaQXhscnRYcXlON3RpdjQ?oc=5"
+   "nextelec": "parliamentary, October 2026",
+   "updated": "2026-09-28",
+   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOT3JsUjZTVG9uZ1pkU2FXbE9HcGllQXl1em9qY1M3NHlzaEc4am5pUl9TZTdLclJja1Nnd0JqQ1FuV1FMNGs0dG9PbGRNalQwUXhIcldrTHF0czdzZUtIUkt4OHNsdVRaaHlYU0x0SnpCdDRLQ2NtWVVWY0VwZmowNlRCcUU2TnZjbG5icTVsbzduNU9xbEc1aktqTmMzXzFrSHc0OXNR0gGmAUFVX3lxTE5PcmxSNlNUb25nWmRTYVdsT0dwaWVBeXV6b2pjUzc0eXNoRzhqbmlSX1NlN0tyUmNrU2d3QmpDUW5XUUw0azR0b09sZE1qVDBReEhyV2tMcXRzN3NlS0hSS3g4c2x1VFpoeVhTTHRKekJ0NEtDY21ZVVZjRXBmajA2VEJxRTZOdmNsbmJxNWxvN241T3FsRzVqS2pOYzNfMWtIdzQ5c1E?oc=5"
   },
   "CHE": {
    "lastelec": "referendum, Sep 2026, rejected stricter neutrality",
    "updated": "2026-09-27",
    "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeUEtZzFGZmtIZEc2eGxDQU9Jd0psUU5QemVqNkY3SHFaN0xvY3czNHNza1F4SXFiS2VvdU91TFhiWWNZOEM3TWpNb2p4WE4taDZqdmpCR0lvaU42UTQwWW11TDJOSTFGQTgxMk9adDdDRzlpUFNkTnNJUnptZ3lnYzdpZkhSWnNHZmx4RVVnVdIBjwFBVV95cUxQOWNENzBrcktUVXJ5SU1JUEhiTlo3ekI3eG9qd053Rmc3Q1JuNlFaUmV5ekRJMnlxdVh5bllsMV9LcjZienpLVV9HbUxoejJSRF9mWnMzOFFPRkJrZ0RGWVZUVzNUYlJ1TG1XXzMxTk10VEhlYlhmMTg5S0xOS2V6Zjg1b0lGZnJ0MW41V3UyTQ?oc=5"
+  },
+  "STP": {
+   "lastelec": "legislative, September 2026",
+   "updated": "2026-09-28",
+   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMmVHNDUwOXYwckhjdmREN2Nid2ZONGttMjU4TkFyTGNDdGRqRXNaSWd1LXRKNkE2cjVlb194QTBqRHlZVzNDWkJ1a0duMkYyU2Mza1NTWTJOZ0RZNHVoQVhKR0dIOWxMX09xMlEwUVV1Nk84dUgwV2dMVkxxSnJkT3JMVG1LOHRUWUhIUjZMa2p0T1pEdjFwRHA4S2JfdlpVNkh4bUgyb01VNFhObUhYbFZoaUhzQXc?oc=5"
   }
  }
 }
