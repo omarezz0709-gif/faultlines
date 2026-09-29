@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-09-29T05:15:42Z",
+  "lastRun": "2026-09-29T10:18:59Z",
   "log": [
    {
     "date": "2026-09-29",
@@ -29,6 +29,16 @@
       "label": "Vietnam–Cambodia",
       "change": "Normal → Tense: Alleged abduction of activist on foreign soil",
       "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNLWVrNUZVOGJmYW9Jck9sZDRzYXBaQndqSXBOZkstZ296cUs5Z3BMMmhlMW5MMUhXcmhYRWh3YmZURDk0T0tfaFFpcGRyRDRDb3BVMC1CSWpENGFIMFkxMFg2aWhiSE04N3Q4RWdQM2xrRzYyZjU5RGQ5MGdldERtbDJPQWg5RTk4dnhIRUNRd3dFSG40YnMxbWdqVkIyYXc2cjNZQ0cxWHVEYnY3SEx0bVNPREdidkZHVnpuMmYyeVgwbHo1SDF5V1ZlY0RLTS16UWpJaWNlcw?oc=5"
+     },
+     {
+      "label": "Estonia–Russia",
+      "change": "Tense → Hostile: Estonia attributes defense firm arson attack to Russian sabotage.",
+      "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQYUtFMzhXSEVtRU1naFJPTWNCR0gyUXZCZ3JYNHJ0NEdGZ0pGZ0N4ZktWOHRodmxRMUVzdW5ULXMwejNiaHBqVjVsZl9kbGx1dFVKYnJlSk50ZFhRb2lQamc3X2NNTUxOSi1oM0NhdlNIVS1CajVtQkpmbVlNSVdrOWtCdmNGNC1aczZ4SFdvZmwwZ1BFaERSTUZMSU9uc0pSYzJzOGZZR0JZenAwMmFUaVFNa3lObG9xU3ctNEZJeWs5RlE?oc=5"
+     },
+     {
+      "label": "South Korea–North Korea",
+      "change": "Hostile → Armed conflict: Border landmine blasts injure troops and violate armistice.",
+      "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdGFmTEVaajZxWGlqN21ESjVuTDNtem5nWDlISTFQWDhIWDBLdVFqbUpQOERrSEJCazhWZkZIN0gtT1h4R1BSSThWdnJvZ2pOY1lqXzRjQzV0YnktWW51UlJoWmN0RjJVQ1ZRcVRxbDhaUm12U1RrUnk5ZnRYeGJBTnQtemF2SVVfYnA0WGtiOVhtVUxiNVNoeGZ4cmxLdFVoeDVHdmQwRzlsSVow?oc=5"
      }
     ]
    },
@@ -406,7 +416,7 @@
     ]
    }
   ],
-  "summary": "This update tracks North Korean troop deployments to Russia, Netanyahu's diplomatic visit to the UAE, and major election shifts in Serbia and Brazil."
+  "summary": "Estonia attributes a defense company arson attack to Russia, North Korea faces condemnation over DMZ landmine blasts and troop deployments, while regional trade and infrastructure agreements advance across Central Asia, Africa, and the Middle East."
  },
  "relations": {
   "DNK-USA": {
@@ -728,6 +738,22 @@
    "note": "Switzerland rejects a constitutional initiative to tighten neutrality, maintaining its ability to join sanctions against Russia.",
    "updated": "2026-09-29",
    "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOYVRWRU9fdzhmdWR2RzdTWm82a2lyVjg5SHJFRGw2Ty1WVlZ1aXFYenktOHpRWmc0WGFXZzcwZlgtTUp0UmNyeU9meDlackVzRUx6cDZFTUxPc2gyVmhLQzlwb2VqeHNpNlh1Y1hDUmsxNzJGaTZ6M1dqRWdkQVBGR3FjTFVzNnVrYkhvaDFaQ25hN1M5ZnJobTMxbXBRZXBUOGkzNzJVT0tXaXZmWXNtNDFVTjFkQ05LRnNOTEhR0gHEAUFVX3lxTFBocm9kZllyUE5FSlVLMVE2STQzR0hVQ0dhV3JRYWZnNEZkWWdrWGV2djFrbnZ4T2RtM0hYN052Sjl2dTZBQ0NrcXVwV2FDdjFfdC0ycnE5V0JtZHYtdHBjb0FiMjFaUkVLdWg1c216VVdwdlB4SUk1dmpRSEVLNFR2UjM1dG9BbG5kTzZidjNZdWtLdUh2Zmk0OGtsVEFWVXlxMkpTdmFXQXJuTXNHTTVOd3g4TkhxUzN2dDJmaUhqTDZiNHc?oc=5"
+  },
+  "EST-RUS": {
+   "a": "EST",
+   "b": "RUS",
+   "s": "H",
+   "note": "Estonia accuses Russia of direct sabotage following an arson attack on a domestic defense company.",
+   "updated": "2026-09-29",
+   "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQYUtFMzhXSEVtRU1naFJPTWNCR0gyUXZCZ3JYNHJ0NEdGZ0pGZ0N4ZktWOHRodmxRMUVzdW5ULXMwejNiaHBqVjVsZl9kbGx1dFVKYnJlSk50ZFhRb2lQamc3X2NNTUxOSi1oM0NhdlNIVS1CajVtQkpmbVlNSVdrOWtCdmNGNC1aczZ4SFdvZmwwZ1BFaERSTUZMSU9uc0pSYzJzOGZZR0JZenAwMmFUaVFNa3lObG9xU3ctNEZJeWs5RlE?oc=5"
+  },
+  "KOR-PRK": {
+   "a": "KOR",
+   "b": "PRK",
+   "s": "W",
+   "note": "Tensions spike after North Korean landmine blasts in the DMZ injure South Korean soldiers and violate the armistice.",
+   "updated": "2026-09-29",
+   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdGFmTEVaajZxWGlqN21ESjVuTDNtem5nWDlISTFQWDhIWDBLdVFqbUpQOERrSEJCazhWZkZIN0gtT1h4R1BSSThWdnJvZ2pOY1lqXzRjQzV0YnktWW51UlJoWmN0RjJVQ1ZRcVRxbDhaUm12U1RrUnk5ZnRYeGJBTnQtemF2SVVfYnA0WGtiOVhtVUxiNVNoeGZ4cmxLdFVoeDVHdmQwRzlsSVow?oc=5"
   }
  },
  "threads": {
