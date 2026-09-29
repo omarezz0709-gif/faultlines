@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-28T22:09:26Z",
+ "generated": "2026-09-29T22:10:15Z",
  "countries": {
   "XKX": {
    "system": "parliamentary republic",
@@ -18,15 +18,252 @@
    "hos": "Abdirahman Mohamed Abdullahi",
    "source": "https://www.wikidata.org/wiki/Q34754"
   },
-  "PSE": {
-   "system": "semi-presidential system, unitary state",
-   "hos": "Mahmoud Abbas",
-   "hog": "Mohammad Mustafa",
+  "DNK": {
+   "system": "constitutional monarchy",
+   "hos": "Frederik X of Denmark",
+   "hog": "Mette Frederiksen",
+   "ruling": "Social Democrats (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q35"
+  },
+  "GRC": {
+   "system": "parliamentary republic",
+   "hos": "Konstantinos Tasoulas",
+   "hog": "Kyriakos Mitsotakis",
+   "ruling": "New Democracy (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q41"
+  },
+  "PRT": {
+   "system": "republic",
+   "hos": "António José Seguro",
+   "hog": "Luís Montenegro",
+   "ruling": "Social Democratic Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q45"
+  },
+  "URY": {
+   "system": "republic, presidential system",
+   "hos": "Yamandú Orsi",
+   "hog": "Yamandú Orsi",
+   "ruling": "Broad Front / Movement of Popular Participation (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q77"
+  },
+  "MDA": {
+   "system": "unitary state, parliamentary republic",
+   "hos": "Maia Sandu",
+   "hog": "Vasile Tofan",
+   "source": "https://www.wikidata.org/wiki/Q217"
+  },
+  "HRV": {
+   "system": "republic",
+   "hos": "Zoran Milanović",
+   "hog": "Andrej Plenković",
+   "ruling": "Croatian Democratic Union (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q224"
+  },
+  "BIH": {
+   "system": "federal parliamentary republic",
+   "hos": "Željko Komšić / Željka Cvijanović",
+   "hog": "Borjana Krišto",
+   "ruling": "Croatian Democratic Union of Bosnia and Herzegovina (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q225"
+  },
+  "MCO": {
+   "system": "constitutional monarchy, hereditary monarchy",
+   "hos": "Albert II, Prince of Monaco",
+   "hog": "Christophe Mirmand",
+   "source": "https://www.wikidata.org/wiki/Q235"
+  },
+  "IDN": {
+   "system": "republic, presidential system",
+   "hos": "Prabowo Subianto",
+   "hog": "Prabowo Subianto",
+   "ruling": "Great Indonesia Movement Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q252"
+  },
+  "ZAF": {
+   "system": "apartheid, representative democracy",
+   "hos": "Cyril Ramaphosa",
+   "hog": "Cyril Ramaphosa",
+   "ruling": "African National Congress (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q258"
+  },
+  "KHM": {
+   "system": "constitutional monarchy",
+   "hos": "Norodom Sihamoni",
+   "hog": "Hun Manet",
+   "ruling": "Cambodian People's Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q424"
+  },
+  "TLS": {
+   "system": "republic, semi-presidential system",
+   "hos": "José Ramos-Horta",
+   "hog": "Xanana Gusmão",
+   "ruling": "National Congress for Timorese Reconstruction / Revolutionary Front for an Independent East Timor (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q574"
+  },
+  "TUV": {
+   "hos": "Charles III",
+   "hog": "Ben Do",
+   "source": "https://www.wikidata.org/wiki/Q672"
+  },
+  "VUT": {
+   "hos": "Nikenike Vurobaravu",
+   "hog": "Bob Loughman",
+   "ruling": "Vanua'aku Pati (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q686"
+  },
+  "NRU": {
+   "hos": "David Adeang",
+   "hog": "David Adeang",
+   "ruling": "Nauru First (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q697"
+  },
+  "FSM": {
+   "system": "federal republic",
+   "hos": "Wesley Simina",
+   "hog": "Wesley Simina",
+   "source": "https://www.wikidata.org/wiki/Q702"
+  },
+  "KIR": {
+   "hos": "Taneti Maamau",
+   "hog": "Taneti Maamau",
+   "ruling": "Tobwaan Kiribati Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q710"
+  },
+  "FJI": {
+   "hos": "Wiliame Katonivere",
+   "hog": "Sitiveni Rabuka",
+   "ruling": "Soqosoqo ni Vakavulewa ni Taukei / People's Alliance (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q712"
+  },
+  "SUR": {
+   "system": "republic",
+   "hos": "Jennifer Geerlings-Simons",
+   "hog": "Jennifer Geerlings-Simons",
+   "ruling": "National Democratic Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q730"
+  },
+  "PRY": {
+   "hos": "Santiago Peña Palacios",
+   "hog": "Santiago Peña Palacios",
+   "ruling": "Colorado Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q733"
+  },
+  "VCT": {
+   "system": "constitutional monarchy",
+   "hos": "Charles III",
+   "hog": "Godwin Friday",
+   "ruling": "New Democratic Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q757"
+  },
+  "JAM": {
+   "hos": "Charles III",
+   "hog": "Andrew Holness",
+   "ruling": "Jamaica Labour Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q766"
+  },
+  "BHS": {
+   "system": "constitutional monarchy",
+   "hos": "Charles III",
+   "hog": "Philip \"Brave\" Davis",
+   "ruling": "Progressive Liberal Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q778"
+  },
+  "SLV": {
+   "system": "republic, presidential system",
+   "hos": "Nayib Bukele",
+   "hog": "Nayib Bukele",
+   "ruling": "Nuevas Ideas (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q792"
+  },
+  "CRI": {
+   "hos": "Laura Fernández Delgado",
+   "hog": "Laura Fernández Delgado",
+   "ruling": "Sovereign People's Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q800"
+  },
+  "KWT": {
+   "system": "constitutional monarchy",
+   "hos": "Mishal Al-Ahmad Al-Jaber Al-Sabah",
+   "hog": "Sabah Al-Khalid Al-Sabah",
    "ruling": "Independent (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q219060"
+   "source": "https://www.wikidata.org/wiki/Q817"
+  },
+  "MMR": {
+   "system": "republic",
+   "hos": "Myint Swe",
+   "hog": "Min Aung Hlaing",
+   "ruling": "Union Solidarity and Development Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q836"
+  },
+  "NPL": {
+   "system": "people's republic, federal republic",
+   "hos": "Ram Chandra Poudel",
+   "hog": "Pushpa Kamal Dahal",
+   "ruling": "Communist Party of Nepal (Maoist Centre) (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q837"
+  },
+  "PAK": {
+   "system": "federal republic, parliamentary republic",
+   "hos": "Asif Ali Zardari",
+   "hog": "Shehbaz Sharif",
+   "ruling": "Pakistan Muslim League (N) (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q843"
+  },
+  "QAT": {
+   "system": "constitutional monarchy",
+   "hos": "Tamim bin Hamad Al Thani",
+   "hog": "Mohammed bin Abdulrahman Al Thani",
+   "ruling": "Independent (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q846"
+  },
+  "BTN": {
+   "system": "constitutional monarchy",
+   "hos": "Jigme Khesar Namgyel Wangchuck",
+   "hog": "Tshering Tobgay",
+   "ruling": "People's Democratic Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q917"
+  },
+  "TZA": {
+   "hos": "Samia Suluhu Hassan",
+   "hog": "Samia Suluhu Hassan",
+   "ruling": "Party of the Revolution (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q924"
+  },
+  "PHL": {
+   "system": "republic",
+   "hos": "Bongbong Marcos",
+   "hog": "Bongbong Marcos",
+   "ruling": "Partido Federal ng Pilipinas (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q928"
+  },
+  "ZMB": {
+   "system": "presidential system, representative democracy",
+   "hos": "Hakainde Hichilema",
+   "hog": "Edgar Lungu",
+   "ruling": "Patriotic Front (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q953"
+  },
+  "COG": {
+   "system": "parliamentary republic",
+   "hos": "Denis Sassou-Nguesso",
+   "hog": "Anatole Collinet Makosso",
+   "ruling": "Congolese Party of Labour (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q971"
+  },
+  "GNQ": {
+   "hos": "Teodoro Obiang",
+   "hog": "Manuel Osa Nsue Nsua",
+   "source": "https://www.wikidata.org/wiki/Q983"
+  },
+  "NLD": {
+   "system": "constitutional monarchy",
+   "hos": "William Alexander of the Netherlands",
+   "hog": "Rob Jetten",
+   "ruling": "Democrats 66 (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q29999"
   },
   "AGO": {
-   "system": "presidential system, republic",
+   "system": "republic, presidential system",
    "hos": "João Lourenço",
    "hog": "João Lourenço",
    "ruling": "People's Movement for the Liberation of Angola (party of the head of government)",
@@ -779,7 +1016,7 @@
   "GUY": {
    "system": "parliamentary republic",
    "hos": "Irfaan Ali",
-   "hog": "Mark Phillips",
+   "hog": "Hugo Chávez",
    "ruling": "People's Progressive Party (party of the head of government)",
    "source": "https://www.wikidata.org/wiki/Q734"
   },
@@ -1058,249 +1295,12 @@
    "hog": "Edeupa Yerimin",
    "source": "https://www.wikidata.org/wiki/Q1050"
   },
-  "DNK": {
-   "system": "constitutional monarchy",
-   "hos": "Frederik X of Denmark",
-   "hog": "Mette Frederiksen",
-   "ruling": "Social Democrats (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q35"
-  },
-  "GRC": {
-   "system": "parliamentary republic",
-   "hos": "Konstantinos Tasoulas",
-   "hog": "Kyriakos Mitsotakis",
-   "ruling": "New Democracy (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q41"
-  },
-  "PRT": {
-   "system": "republic",
-   "hos": "António José Seguro",
-   "hog": "Luís Montenegro",
-   "ruling": "Social Democratic Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q45"
-  },
-  "URY": {
-   "system": "republic, presidential system",
-   "hos": "Yamandú Orsi",
-   "hog": "Yamandú Orsi",
-   "ruling": "Broad Front / Movement of Popular Participation (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q77"
-  },
-  "MDA": {
-   "system": "unitary state, parliamentary republic",
-   "hos": "Maia Sandu",
-   "hog": "Vasile Tofan",
-   "source": "https://www.wikidata.org/wiki/Q217"
-  },
-  "HRV": {
-   "system": "republic",
-   "hos": "Zoran Milanović",
-   "hog": "Andrej Plenković",
-   "ruling": "Croatian Democratic Union (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q224"
-  },
-  "BIH": {
-   "system": "federal parliamentary republic",
-   "hos": "Željko Komšić / Željka Cvijanović",
-   "hog": "Borjana Krišto",
-   "ruling": "Croatian Democratic Union of Bosnia and Herzegovina (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q225"
-  },
-  "MCO": {
-   "system": "constitutional monarchy, hereditary monarchy",
-   "hos": "Albert II, Prince of Monaco",
-   "hog": "Christophe Mirmand",
-   "source": "https://www.wikidata.org/wiki/Q235"
-  },
-  "IDN": {
-   "system": "republic, presidential system",
-   "hos": "Prabowo Subianto",
-   "hog": "Prabowo Subianto",
-   "ruling": "Great Indonesia Movement Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q252"
-  },
-  "ZAF": {
-   "system": "apartheid, representative democracy",
-   "hos": "Cyril Ramaphosa",
-   "hog": "Cyril Ramaphosa",
-   "ruling": "African National Congress (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q258"
-  },
-  "KHM": {
-   "system": "constitutional monarchy",
-   "hos": "Norodom Sihamoni",
-   "hog": "Hun Manet",
-   "ruling": "Cambodian People's Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q424"
-  },
-  "TLS": {
-   "system": "republic, semi-presidential system",
-   "hos": "José Ramos-Horta",
-   "hog": "Xanana Gusmão",
-   "ruling": "National Congress for Timorese Reconstruction / Revolutionary Front for an Independent East Timor (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q574"
-  },
-  "TUV": {
-   "hos": "Charles III",
-   "hog": "Ben Do",
-   "source": "https://www.wikidata.org/wiki/Q672"
-  },
-  "VUT": {
-   "hos": "Nikenike Vurobaravu",
-   "hog": "Bob Loughman",
-   "ruling": "Vanua'aku Pati (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q686"
-  },
-  "NRU": {
-   "hos": "David Adeang",
-   "hog": "David Adeang",
-   "ruling": "Nauru First (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q697"
-  },
-  "FSM": {
-   "system": "federal republic",
-   "hos": "Wesley Simina",
-   "hog": "Wesley Simina",
-   "source": "https://www.wikidata.org/wiki/Q702"
-  },
-  "KIR": {
-   "hos": "Taneti Maamau",
-   "hog": "Taneti Maamau",
-   "ruling": "Tobwaan Kiribati Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q710"
-  },
-  "FJI": {
-   "hos": "Wiliame Katonivere",
-   "hog": "Sitiveni Rabuka",
-   "ruling": "Soqosoqo ni Vakavulewa ni Taukei / People's Alliance (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q712"
-  },
-  "SUR": {
-   "system": "republic",
-   "hos": "Jennifer Geerlings-Simons",
-   "hog": "Jennifer Geerlings-Simons",
-   "ruling": "National Democratic Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q730"
-  },
-  "PRY": {
-   "hos": "Santiago Peña Palacios",
-   "hog": "Santiago Peña Palacios",
-   "ruling": "Colorado Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q733"
-  },
-  "VCT": {
-   "system": "constitutional monarchy",
-   "hos": "Charles III",
-   "hog": "Godwin Friday",
-   "ruling": "New Democratic Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q757"
-  },
-  "JAM": {
-   "hos": "Charles III",
-   "hog": "Andrew Holness",
-   "ruling": "Jamaica Labour Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q766"
-  },
-  "BHS": {
-   "system": "constitutional monarchy",
-   "hos": "Charles III",
-   "hog": "Philip \"Brave\" Davis",
-   "ruling": "Progressive Liberal Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q778"
-  },
-  "SLV": {
-   "system": "republic, presidential system",
-   "hos": "Nayib Bukele",
-   "hog": "Nayib Bukele",
-   "ruling": "Nuevas Ideas (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q792"
-  },
-  "CRI": {
-   "hos": "Laura Fernández Delgado",
-   "hog": "Laura Fernández Delgado",
-   "ruling": "Sovereign People's Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q800"
-  },
-  "KWT": {
-   "system": "constitutional monarchy",
-   "hos": "Mishal Al-Ahmad Al-Jaber Al-Sabah",
-   "hog": "Sabah Al-Khalid Al-Sabah",
+  "PSE": {
+   "system": "semi-presidential system, unitary state",
+   "hos": "Mahmoud Abbas",
+   "hog": "Mohammad Mustafa",
    "ruling": "Independent (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q817"
-  },
-  "MMR": {
-   "system": "republic",
-   "hos": "Myint Swe",
-   "hog": "Min Aung Hlaing",
-   "ruling": "Union Solidarity and Development Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q836"
-  },
-  "NPL": {
-   "system": "people's republic, federal republic",
-   "hos": "Ram Chandra Poudel",
-   "hog": "Pushpa Kamal Dahal",
-   "ruling": "Communist Party of Nepal (Maoist Centre) (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q837"
-  },
-  "PAK": {
-   "system": "federal republic, parliamentary republic",
-   "hos": "Asif Ali Zardari",
-   "hog": "Shehbaz Sharif",
-   "ruling": "Pakistan Muslim League (N) (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q843"
-  },
-  "QAT": {
-   "system": "constitutional monarchy",
-   "hos": "Tamim bin Hamad Al Thani",
-   "hog": "Mohammed bin Abdulrahman Al Thani",
-   "ruling": "Independent (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q846"
-  },
-  "BTN": {
-   "system": "constitutional monarchy",
-   "hos": "Jigme Khesar Namgyel Wangchuck",
-   "hog": "Tshering Tobgay",
-   "ruling": "People's Democratic Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q917"
-  },
-  "TZA": {
-   "hos": "Samia Suluhu Hassan",
-   "hog": "Samia Suluhu Hassan",
-   "ruling": "Party of the Revolution (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q924"
-  },
-  "PHL": {
-   "system": "republic",
-   "hos": "Bongbong Marcos",
-   "hog": "Bongbong Marcos",
-   "ruling": "Partido Federal ng Pilipinas (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q928"
-  },
-  "ZMB": {
-   "system": "presidential system, representative democracy",
-   "hos": "Hakainde Hichilema",
-   "hog": "Edgar Lungu",
-   "ruling": "Patriotic Front (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q953"
-  },
-  "COG": {
-   "system": "parliamentary republic",
-   "hos": "Denis Sassou-Nguesso",
-   "hog": "Anatole Collinet Makosso",
-   "ruling": "Congolese Party of Labour (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q971"
-  },
-  "GNQ": {
-   "hos": "Teodoro Obiang",
-   "hog": "Manuel Osa Nsue Nsua",
-   "source": "https://www.wikidata.org/wiki/Q983"
-  },
-  "NLD": {
-   "system": "constitutional monarchy",
-   "hos": "William Alexander of the Netherlands",
-   "hog": "Rob Jetten",
-   "ruling": "Democrats 66 (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q29999"
+   "source": "https://www.wikidata.org/wiki/Q219060"
   }
  }
 }

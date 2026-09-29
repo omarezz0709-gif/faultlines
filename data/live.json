@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-09-29T16:07:17Z",
+  "lastRun": "2026-09-29T22:09:07Z",
   "log": [
    {
     "date": "2026-09-29",
@@ -31,11 +31,6 @@
       "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNLWVrNUZVOGJmYW9Jck9sZDRzYXBaQndqSXBOZkstZ296cUs5Z3BMMmhlMW5MMUhXcmhYRWh3YmZURDk0T0tfaFFpcGRyRDRDb3BVMC1CSWpENGFIMFkxMFg2aWhiSE04N3Q4RWdQM2xrRzYyZjU5RGQ5MGdldERtbDJPQWg5RTk4dnhIRUNRd3dFSG40YnMxbWdqVkIyYXc2cjNZQ0cxWHVEYnY3SEx0bVNPREdidkZHVnpuMmYyeVgwbHo1SDF5V1ZlY0RLTS16UWpJaWNlcw?oc=5"
      },
      {
-      "label": "Estonia–Russia",
-      "change": "Tense → Hostile: Estonia attributes defense firm arson attack to Russian sabotage.",
-      "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQYUtFMzhXSEVtRU1naFJPTWNCR0gyUXZCZ3JYNHJ0NEdGZ0pGZ0N4ZktWOHRodmxRMUVzdW5ULXMwejNiaHBqVjVsZl9kbGx1dFVKYnJlSk50ZFhRb2lQamc3X2NNTUxOSi1oM0NhdlNIVS1CajVtQkpmbVlNSVdrOWtCdmNGNC1aczZ4SFdvZmwwZ1BFaERSTUZMSU9uc0pSYzJzOGZZR0JZenAwMmFUaVFNa3lObG9xU3ctNEZJeWs5RlE?oc=5"
-     },
-     {
       "label": "South Korea–North Korea",
       "change": "Hostile → Armed conflict: Border landmine blasts injure troops and violate armistice.",
       "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdGFmTEVaajZxWGlqN21ESjVuTDNtem5nWDlISTFQWDhIWDBLdVFqbUpQOERrSEJCazhWZkZIN0gtT1h4R1BSSThWdnJvZ2pOY1lqXzRjQzV0YnktWW51UlJoWmN0RjJVQ1ZRcVRxbDhaUm12U1RrUnk5ZnRYeGJBTnQtemF2SVVfYnA0WGtiOVhtVUxiNVNoeGZ4cmxLdFVoeDVHdmQwRzlsSVow?oc=5"
@@ -46,9 +41,14 @@
       "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZU1US3dRcUp1cG1hY3V2Nzg2bzczeDZNQTBxNDV2T1BXWVNsOWNJMFNWYTh3a3R2STVFb09DSDhRTjV3RHhfa0xBZkk5ZUVxcGhBNEI0ejlMV01HSGpGbXAxMlg4VzEzNE9URzdqNXE3dHdRbm1GM05GaHRSVDNQZjQxWFRtSXNJd1JQS25EVEt6Zw?oc=5"
      },
      {
+      "label": "Estonia–Russia",
+      "change": "Normal → Hostile: Estonia accuses Russia of directing a sabotage arson attack on a defense supplier",
+      "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB3aXFTUEk1YVZhal9yVWM5MUlPRUdrWHNjN09yd3p6Z0ZkdlRxbm1mVjA3d3lNQXpoMzFuTWpvd3QyV2Zld2pjQXI0OA?oc=5"
+     },
+     {
       "label": "Morocco",
-      "change": "Fatima Ezzahra El Mansouri appointed as first female head of government.",
-      "source": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNa0lpNDFrNl96dlVGeFZvVEpaSlZjbmhneEtxbE1oeU04VnFQQml2eVdxNFVUeW1oMC1NbDFZZm5hRGQwcG5Qc2hsRndpYlh0eEwzdVZKUG0zOXJRRUZmUHZKbVlwUFR2WExCcllVY0dHWjJQLUUycmF2ejkyOGt1RUszOXZ0QTNlcms5Y2VKeFJEMXdHeU5hSnBKandDTlBjUG5vakFuQm5uRlotUXFfSDRzRVQ1UFc4RkpjUkNnUl9CZUhGdC1sTnh2Yjg?oc=5"
+      "change": "Fatima Ezzahra El Mansouri appointed as first female prime minister",
+      "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPZW1oY256ZEFkUEh4YXQ5UFgxam12bjYyOUpfcTdLQXh2cEZWUmk3OXM2Vjk5bkNQMVhuTmQyQkpnWjJNSVZoMjNYYlg1MlY3MzdxSE0zOXA3aDNCSkZscGtOOXQyZFQtQkMycDJmM21RZnB6WHpBZVdTSUt0SEU1alEwX3BBaGV6TVFOZ1dkbmlVeGlFOU5FV1V3dWpmUzZ5aExtYXpxUGN1QjdDcWZOU1NrdUs5U3B3clo0QjY4d1pFZEh5a2piSGp1NkpQTzBwbk10ZmRR?oc=5"
      }
     ]
    },
@@ -426,7 +426,7 @@
     ]
    }
   ],
-  "summary": "Updated regional updates include Serbia's transition as Ana Brnabić assumes acting presidential duties following Aleksandar Vučić's resignation, Morocco appointing its first female head of government, and ongoing security concerns along the Korean DMZ and Baltic region."
+  "summary": "Morocco appoints Fatima Ezzahra El Mansouri as first female prime minister, Estonia accuses Russia of directing a sabotage attack, and geopolitical tensions remain high across the Middle East and Eastern Europe."
  },
  "relations": {
   "DNK-USA": {
@@ -753,9 +753,9 @@
    "a": "EST",
    "b": "RUS",
    "s": "H",
-   "note": "Estonia accuses Russia of direct sabotage following an arson attack on a domestic defense company.",
+   "note": "Estonia accuses Russian special services of ordering an arson attack on a local defense-robotics manufacturer.",
    "updated": "2026-09-29",
-   "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQYUtFMzhXSEVtRU1naFJPTWNCR0gyUXZCZ3JYNHJ0NEdGZ0pGZ0N4ZktWOHRodmxRMUVzdW5ULXMwejNiaHBqVjVsZl9kbGx1dFVKYnJlSk50ZFhRb2lQamc3X2NNTUxOSi1oM0NhdlNIVS1CajVtQkpmbVlNSVdrOWtCdmNGNC1aczZ4SFdvZmwwZ1BFaERSTUZMSU9uc0pSYzJzOGZZR0JZenAwMmFUaVFNa3lObG9xU3ctNEZJeWs5RlE?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB3aXFTUEk1YVZhal9yVWM5MUlPRUdrWHNjN09yd3p6Z0ZkdlRxbm1mVjA3d3lNQXpoMzFuTWpvd3QyV2Zld2pjQXI0OA?oc=5"
   },
   "KOR-PRK": {
    "a": "KOR",
@@ -764,6 +764,14 @@
    "note": "Seoul confirms North Korean landmine blasts near the DMZ, marking a direct violation of the armistice.",
    "updated": "2026-09-29",
    "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOODgxaEltX2xuWHR4eWdzWVp0TXFZVVpWM25UT0JGZWJJSWVNcTN6LTZnSnliSXhVODRTWkZKRkdBcWl5dWpUSHRjRjJvczFJZXFWS0NFMS02aVBIWVo0bGRKcGxBOTgtaUlMTWlhcDNqNFpLWFpHdFJhTlVzbTlrSkdxU2FwaEsw?oc=5"
+  },
+  "ESP-ISR": {
+   "a": "ESP",
+   "b": "ISR",
+   "s": "T",
+   "note": "Israel reprimands the Spanish envoy after a Spanish minister made controversial 'river to sea' remarks.",
+   "updated": "2026-09-29",
+   "source": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE91TVBmU1IyOFBWNGx0cThZV1NROUtpeG9XMVNlMEhHQ0NkWmhLdXFjTHpIOHpQd1cxbTlTbm5Ydm9ncUViLWRHWA?oc=5"
   }
  },
  "threads": {
@@ -985,9 +993,10 @@
    "updated": "2026-09-23"
   },
   "MAR": {
-   "lastelec": "Legislative, September 2026, PAM (Authenticity and Modernity Party)",
+   "lastelec": "legislative election, September 2026",
    "updated": "2026-09-29",
-   "source": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPb0dBY3g4TE9rOFA4R0pJWmtCOGhLNmRvSF91OWlGRkUzUC1HeDJtNG1ZenFLTjNBQXlJeUpWZlloalRteFpkcHNwbk9uUF9VZHVwOFpXZjdPYmNSVllSbFNuYzRfN3R5dFVUbmVUeVVCdzkwb0RsMkZXUWxlTXhJUEl3cDc0TVU1Sm5qRjhwak1EbFlyZTBvVlFNOXFDOUt5YnpESW5XMU1vWTdWZVdUTHpUSVA3VkhGcU1INnQwdGo0cnVHYnRLNWRsZWZ3RzVlaHVNTG1kSmFJQkZrUWhBWTU2LVpyeDVadHdpZ0dfa1RpRjF5Wm5BMk8xaVJpSmlLcmFNcnpjbURtVEgybDJmRzNnVm5Pc29FTUhGSW00S2d0ZVM2MVJsbFNn?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPZW1oY256ZEFkUEh4YXQ5UFgxam12bjYyOUpfcTdLQXh2cEZWUmk3OXM2Vjk5bkNQMVhuTmQyQkpnWjJNSVZoMjNYYlg1MlY3MzdxSE0zOXA3aDNCSkZscGtOOXQyZFQtQkMycDJmM21RZnB6WHpBZVdTSUt0SEU1alEwX3BBaGV6TVFOZ1dkbmlVeGlFOU5FV1V3dWpmUzZ5aExtYXpxUGN1QjdDcWZOU1NrdUs5U3B3clo0QjY4d1pFZEh5a2piSGp1NkpQTzBwbk10ZmRR?oc=5",
+   "nextelec": "legislative election, 2031"
   },
   "BGR": {
    "nextelec": "presidential, 25 October 2026",
