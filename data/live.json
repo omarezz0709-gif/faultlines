@@ -1,7 +1,37 @@
 {
  "meta": {
-  "lastRun": "2026-09-28T22:08:42Z",
+  "lastRun": "2026-09-29T05:15:42Z",
   "log": [
+   {
+    "date": "2026-09-29",
+    "items": [
+     {
+      "label": "Israel–Morocco",
+      "change": "Normal → Partner: Embassy upgrade under Abraham Accords",
+      "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRWZuajN5SVNxMjdZeXlickJ2WVJmX1U4U2NjeXhwLTdheU9PbjVITTZOMnNZTm1SUjNoZGJtTklKYy1QdGRZdzUyNW1nSzFVUVB1cWx1S2RtY0Q3dG5ZdTJaVWxxbFR6RTM2QUhLd3lrN0JCaUlVbVNjcXNRUjZ1UkprQ2I0MTZnQXkxb2ZJUWp4Wi13X3pVVDlSeWZwWi1LT3h0Zjd2bE02YTg?oc=5"
+     },
+     {
+      "label": "North Korea–Russia",
+      "change": "Ally: Deployment of 10,000 troops to Ukraine theater",
+      "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOY1djOGZyenVjb09ZdTJzanFHdmFWYzJzYmgwQ094QTBXSmlmYUNCQlpUSUVLMHVtYTMwS0FOQ1BSc2xoajZHQUFDOHd6ZFFfWFZfMmlOZ0VjSTNSRXRCRFZMbFpmUXZod05VcU1vV0VldXl3TGktTGVldHViYS1ndjI0ZnVpWWdZRXphcmRXUXo1VF85LVM2MU1hRENBRE9HR2lj?oc=5"
+     },
+     {
+      "label": "Argentina–United Kingdom",
+      "change": "Tense: Legal threats over Falklands oil exploration",
+      "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUUZTdU1OTW1mWG9SRVVmbU5uUFRDcjdpbjg1RW1UQkV1bmktNi1UODlhbk52SUh2ME1VQWRRZUJjUUhaZ1JfTjJUTjFJOFFtNjhPWTk5OXlfS1QxSWplMGlTcVAyNnhlSjNLRW1tdVU4Ui1RMjFORm00a1RVTDAwR0hSZUhEaHhLWTFSbVl3WDNZMHRfUnFDWnFqcjMzcU5Bb0xUUTk2VG9kSXpOeWRObE00WnFCZ3Y1dEJYZg?oc=5"
+     },
+     {
+      "label": "Malaysia–Myanmar",
+      "change": "Normal → Tense: Forced repatriation of refugees",
+      "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTVdHMUJDVWtfc1JxYkZ2ZVN2YVlYS3ItMWxIVnp3c250V2wtMmxHdUR4bDBkTGJoX1E5QTUwa3A5WXo1b3pPNVJ1aXhjSnRpelN3T2JBQ25nR1Q5elhkTHIwcnJWZU1xOW92UDZONDlPUWd4V3hiMTZtYWVkTDhGRFpHOWI1cVZxYTJFVzdiRWhYR3JGaGY4U00xOG5sS0FUZFJfaTFJeUNUUG5MejdN?oc=5"
+     },
+     {
+      "label": "Vietnam–Cambodia",
+      "change": "Normal → Tense: Alleged abduction of activist on foreign soil",
+      "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNLWVrNUZVOGJmYW9Jck9sZDRzYXBaQndqSXBOZkstZ296cUs5Z3BMMmhlMW5MMUhXcmhYRWh3YmZURDk0T0tfaFFpcGRyRDRDb3BVMC1CSWpENGFIMFkxMFg2aWhiSE04N3Q4RWdQM2xrRzYyZjU5RGQ5MGdldERtbDJPQWg5RTk4dnhIRUNRd3dFSG40YnMxbWdqVkIyYXc2cjNZQ0cxWHVEYnY3SEx0bVNPREdidkZHVnpuMmYyeVgwbHo1SDF5V1ZlY0RLTS16UWpJaWNlcw?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-09-28",
     "items": [
@@ -376,7 +406,7 @@
     ]
    }
   ],
-  "summary": "Updated relationship notes for Israel–Morocco on their embassy upgrade, Poland–Russia following a cross-border drone strike near Dorohusk, and Saudi–Yemen escalation, alongside Bab-el-Mandeb navigation developments."
+  "summary": "This update tracks North Korean troop deployments to Russia, Netanyahu's diplomatic visit to the UAE, and major election shifts in Serbia and Brazil."
  },
  "relations": {
   "DNK-USA": {
@@ -559,9 +589,9 @@
    "a": "ERI",
    "b": "ETH",
    "s": "T",
-   "note": "Tensions mount as Ethiopia accuses Eritrea of financing armed groups to destabilize the country amid renewed northern conflict.",
-   "updated": "2026-09-27",
-   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQMk11ZzVKWUJndElFYlBGVGpCMjJJd3daN3NkeFlYR3JxX2ZWR3NNMlBDMlB6T3NBWk5qY2xMQ21PSUlQcHI0dTNaTUFsbjAtQ25sZ09yaFZrOU1GVTZoOF8yT1FrY250VnluTnVhY1RpOUhkcTJYa04zOUdQZ29qSkxlb2dhQVlEREZrWVZEYnFKUk5GRmhaSk5qTndfWmttU0s0?oc=5"
+   "note": "Ethiopia's army chief accuses Eritrea, Sudan, and Egypt of supporting Tigrayan rebels as northern fighting escalates.",
+   "updated": "2026-09-29",
+   "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQdnlJNGRnTkZuTnpHa253UUlLU01uQkVtSXNiMUprb3Q4OTBoRTlib3ppN3hfVlhsMFZONVlhZk5PanRWU0RwZklVSlM3ZHBlNkxQRzVRd1VOZllNMUMtMnJ3ekRZMy04Y1FsQjJleXZVblJHVFN2RFhtSGF6T1JhX3A2ZEljY3l0U0hvVERxV0JQX2lQUnRaUjlmdlpjU3VuV1RFUVM5c0JlNk82NWFvdUx1akR1ZkJ5RTZRNk1EUkRjVktsaE1sakp6cEtpcnM?oc=5"
   },
   "AFG-PAK": {
    "a": "AFG",
@@ -647,8 +677,8 @@
    "a": "ISR",
    "b": "MAR",
    "s": "F",
-   "note": "Israel and Morocco agree to upgrade reciprocal diplomatic missions to full embassies, deepening their Abraham Accords partnership.",
-   "updated": "2026-09-28",
+   "note": "Israel and Morocco upgrade reciprocal missions to full embassies, formalizing their Abraham Accords partnership.",
+   "updated": "2026-09-29",
    "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRWZuajN5SVNxMjdZeXlickJ2WVJmX1U4U2NjeXhwLTdheU9PbjVITTZOMnNZTm1SUjNoZGJtTklKYy1QdGRZdzUyNW1nSzFVUVB1cWx1S2RtY0Q3dG5ZdTJaVWxxbFR6RTM2QUhLd3lrN0JCaUlVbVNjcXNRUjZ1UkprQ2I0MTZnQXkxb2ZJUWp4Wi13X3pVVDlSeWZwWi1LT3h0Zjd2bE02YTg?oc=5"
   },
   "POL-RUS": {
@@ -658,6 +688,46 @@
    "note": "Poland readies air defences and scrambles fighters after a Russian drone strikes Ukraine two kilometres from the Polish border.",
    "updated": "2026-09-28",
    "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1kMF83c2NsNzhsTXhGZ3VsYWlXY1A2VVZEanlLcVNESHJjZW9BWjFZcnM5bmloZGdmY24wYVhpdmhWbzd2U1g4MW5mSQ?oc=5"
+  },
+  "PRK-RUS": {
+   "a": "PRK",
+   "b": "RUS",
+   "s": "A",
+   "note": "North Korea prepares to deploy 10,000 additional troops to support Russian operations in Ukraine.",
+   "updated": "2026-09-29",
+   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOY1djOGZyenVjb09ZdTJzanFHdmFWYzJzYmgwQ094QTBXSmlmYUNCQlpUSUVLMHVtYTMwS0FOQ1BSc2xoajZHQUFDOHd6ZFFfWFZfMmlOZ0VjSTNSRXRCRFZMbFpmUXZod05VcU1vV0VldXl3TGktTGVldHViYS1ndjI0ZnVpWWdZRXphcmRXUXo1VF85LVM2MU1hRENBRE9HR2lj?oc=5"
+  },
+  "ARG-GBR": {
+   "a": "ARG",
+   "b": "GBR",
+   "s": "T",
+   "note": "Argentina threatens international legal action against the United Kingdom (UK) over oil exploration in the Falkland Islands.",
+   "updated": "2026-09-29",
+   "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUUZTdU1OTW1mWG9SRVVmbU5uUFRDcjdpbjg1RW1UQkV1bmktNi1UODlhbk52SUh2ME1VQWRRZUJjUUhaZ1JfTjJUTjFJOFFtNjhPWTk5OXlfS1QxSWplMGlTcVAyNnhlSjNLRW1tdVU4Ui1RMjFORm00a1RVTDAwR0hSZUhEaHhLWTFSbVl3WDNZMHRfUnFDWnFqcjMzcU5Bb0xUUTk2VG9kSXpOeWRObE00WnFCZ3Y1dEJYZg?oc=5"
+  },
+  "MMR-MYS": {
+   "a": "MMR",
+   "b": "MYS",
+   "s": "T",
+   "note": "Malaysia begins repatriating Myanmar refugees despite international concerns over their safety in the conflict-torn country.",
+   "updated": "2026-09-29",
+   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTVdHMUJDVWtfc1JxYkZ2ZVN2YVlYS3ItMWxIVnp3c250V2wtMmxHdUR4bDBkTGJoX1E5QTUwa3A5WXo1b3pPNVJ1aXhjSnRpelN3T2JBQ25nR1Q5elhkTHIwcnJWZU1xOW92UDZONDlPUWd4V3hiMTZtYWVkTDhGRFpHOWI1cVZxYTJFVzdiRWhYR3JGaGY4U00xOG5sS0FUZFJfaTFJeUNUUG5MejdN?oc=5"
+  },
+  "KHM-VNM": {
+   "a": "KHM",
+   "b": "VNM",
+   "s": "T",
+   "note": "Tensions rise as Vietnamese authorities are accused of abducting an Australian activist on Cambodian soil.",
+   "updated": "2026-09-29",
+   "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNLWVrNUZVOGJmYW9Jck9sZDRzYXBaQndqSXBOZkstZ296cUs5Z3BMMmhlMW5MMUhXcmhYRWh3YmZURDk0T0tfaFFpcGRyRDRDb3BVMC1CSWpENGFIMFkxMFg2aWhiSE04N3Q4RWdQM2xrRzYyZjU5RGQ5MGdldERtbDJPQWg5RTk4dnhIRUNRd3dFSG40YnMxbWdqVkIyYXc2cjNZQ0cxWHVEYnY3SEx0bVNPREdidkZHVnpuMmYyeVgwbHo1SDF5V1ZlY0RLTS16UWpJaWNlcw?oc=5"
+  },
+  "CHE-RUS": {
+   "a": "CHE",
+   "b": "RUS",
+   "s": "N",
+   "note": "Switzerland rejects a constitutional initiative to tighten neutrality, maintaining its ability to join sanctions against Russia.",
+   "updated": "2026-09-29",
+   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOYVRWRU9fdzhmdWR2RzdTWm82a2lyVjg5SHJFRGw2Ty1WVlZ1aXFYenktOHpRWmc0WGFXZzcwZlgtTUp0UmNyeU9meDlackVzRUx6cDZFTUxPc2gyVmhLQzlwb2VqeHNpNlh1Y1hDUmsxNzJGaTZ6M1dqRWdkQVBGR3FjTFVzNnVrYkhvaDFaQ25hN1M5ZnJobTMxbXBRZXBUOGkzNzJVT0tXaXZmWXNtNDFVTjFkQ05LRnNOTEhR0gHEAUFVX3lxTFBocm9kZllyUE5FSlVLMVE2STQzR0hVQ0dhV3JRYWZnNEZkWWdrWGV2djFrbnZ4T2RtM0hYN052Sjl2dTZBQ0NrcXVwV2FDdjFfdC0ycnE5V0JtZHYtdHBjb0FiMjFaUkVLdWg1c216VVdwdlB4SUk1dmpRSEVLNFR2UjM1dG9BbG5kTzZidjNZdWtLdUh2Zmk0OGtsVEFWVXlxMkpTdmFXQXJuTXNHTTVOd3g4TkhxUzN2dDJmaUhqTDZiNHc?oc=5"
   }
  },
  "threads": {
@@ -711,6 +781,26 @@
    ],
    "updated": "2026-09-27",
    "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWXJRQmUyRzFGb0twUk1VQzJpc3U4M09ldkl4aWdQUnJhSEc2TUdyR2o5WVpxWFN5Ry1DOC0tLV9PUFlKSUhyelpLOWlwOTBtcGdmLWwtT1daR3ZDZTRFRGx4ZG9rMUVKa21Fb1ZBSXBLempwdTQ0S0ZUTkI5OUxGOEhGdk5NQ1NVaHNIMEw3YVJZVy04TjIxXzQxMDJEYU5ETkRBM3p0ZTY?oc=5"
+  },
+  "sudan-war": {
+   "t": "proxy",
+   "n": "Sudan's war and its outside backers",
+   "d": "Sudan's civil war draws in neighbors; Ethiopia accuses Sudan, Egypt, and Eritrea of backing rebels as regional tensions peak.",
+   "c": [
+    "SDN",
+    "ARE",
+    "EGY",
+    "TCD",
+    "LBY",
+    "SSD",
+    "ETH",
+    "ERI",
+    "SAU",
+    "TUR",
+    "RUS"
+   ],
+   "updated": "2026-09-29",
+   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYmVwM1JPNlNmNHNHb29OLUxSam9nZ3lpZHZ6cTVBenc4eElpb3Npc1p6YmQxd05TRG9wZmxFa0p0bWRHU0xXMGZyRjRESUdycTQwVlZJeXZrRlpsbUVRQkVTS3ZBZVFCYnVRa0NhU21RQkVDVHNvSXV5eDROdXBERTB3c3NYOHM4cWNkRHJRejVfRm56VGszNTIydl9kbHkxblpjNE1uNk01ZENQR1pSR3d2STB6dw?oc=5"
   }
  },
  "pois": {
@@ -762,11 +852,11 @@
    "hog": "Luiz Inácio Lula da Silva, President",
    "hos": "Luiz Inácio Lula da Silva, President",
    "lastelec": "General election, October 2022, won by Lula (PT)",
-   "nextelec": "Presidential and General, October 2026",
+   "nextelec": "Presidential runoff, October 2026, Lula vs Flavio Bolsonaro",
    "ruling": "Workers' Party (PT)-led broad coalition",
-   "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPT3c4Y0ZtWTlyTlJEOGRwamZrSGU3YVVKWmlnR3NqeV9GSGFQaHo5dUZMU1BZTlVRVzVnVC04LTMzTGdkbnNmWVB5Qi1HN2tyLWN4bmhrUmYzR3NWOUpwem9uSjdGWkRsR2s1V0Jsa0gyMnpGbkd6QVNVaDhFMEpvSDFfN0JidnVPdzRYb3NFelhsUQ?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOOWQzS25Vb1FSdWVrclhsT0ZCV2JOTGVrVnpXNmVhQ0dlczFYd0xKTzJ5RFFlVFpiWGItenFzTDgxalBVandJd2l3djZ4VUc4NmE5WDJCdG5KdFRBOTNraGtORjF4UGlhNHJkWWMtd0pLTGVmYmZ3aTdUdGVCaUZuMXdSQVVwUmNBajdvWE5FdGlubC1RNGR4OFVfU1lZVlBWNGFYVkhxWUo4a2RQT3NWS0t6ZTc1blFibWsxNjVLSWxJRkM2TDhsUmRpYjdPdmJHT2k1Vg?oc=5",
    "system": "Federal presidential republic",
-   "updated": "2026-09-26"
+   "updated": "2026-09-29"
   },
   "CAN": {
    "hog": "Mark Carney, Prime Minister",
@@ -859,9 +949,9 @@
    "updated": "2026-09-23"
   },
   "MAR": {
-   "lastelec": "parliamentary, September 2026, PAM",
-   "updated": "2026-09-27",
-   "source": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1IZFBReEg0anFUSkhVcDhJZkZ4LWZkMVpvTkxtcno3ZElGdWxnN3Z0ZV9DdndLNDM1aHhablBXU3VwRGlFOWNvdlBLUGJUaDExM0RpNTJQZGtRekpS?oc=5"
+   "lastelec": "Legislative, September 2026, PAM (Authenticity and Modernity Party)",
+   "updated": "2026-09-29",
+   "source": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPb0dBY3g4TE9rOFA4R0pJWmtCOGhLNmRvSF91OWlGRkUzUC1HeDJtNG1ZenFLTjNBQXlJeUpWZlloalRteFpkcHNwbk9uUF9VZHVwOFpXZjdPYmNSVllSbFNuYzRfN3R5dFVUbmVUeVVCdzkwb0RsMkZXUWxlTXhJUEl3cDc0TVU1Sm5qRjhwak1EbFlyZTBvVlFNOXFDOUt5YnpESW5XMU1vWTdWZVdUTHpUSVA3VkhGcU1INnQwdGo0cnVHYnRLNWRsZWZ3RzVlaHVNTG1kSmFJQkZrUWhBWTU2LVpyeDVadHdpZ0dfa1RpRjF5Wm5BMk8xaVJpSmlLcmFNcnpjbURtVEgybDJmRzNnVm5Pc29FTUhGSW00S2d0ZVM2MVJsbFNn?oc=5"
   },
   "BGR": {
    "nextelec": "presidential, 25 October 2026",
@@ -874,9 +964,10 @@
    "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWUlwWEJ0R2JPeVl4TUNzYkNyMVZfaWlwU21SSF96Ui1hdXIyR0wyNkpwQlFjRmw3UGJya0NYZ25TQjVGWWdrWEdEdjBsaFlJdmtQNGdIYjVJcG5zUG02b3I3TFhPXzluNmQyZTh3ejJVRGtMMG42M21yZjc4RXBleU9RTzVZRURlZDJGdkFTRXF2QVNiSVdmN2VtMkdNRzIzQnE5SFdHMlQ5TXVoSGo0?oc=5"
   },
   "SRB": {
-   "nextelec": "parliamentary, October 2026",
-   "updated": "2026-09-28",
-   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOT3JsUjZTVG9uZ1pkU2FXbE9HcGllQXl1em9qY1M3NHlzaEc4am5pUl9TZTdLclJja1Nnd0JqQ1FuV1FMNGs0dG9PbGRNalQwUXhIcldrTHF0czdzZUtIUkt4OHNsdVRaaHlYU0x0SnpCdDRLQ2NtWVVWY0VwZmowNlRCcUU2TnZjbG5icTVsbzduNU9xbEc1aktqTmMzXzFrSHc0OXNR0gGmAUFVX3lxTE5PcmxSNlNUb25nWmRTYVdsT0dwaWVBeXV6b2pjUzc0eXNoRzhqbmlSX1NlN0tyUmNrU2d3QmpDUW5XUUw0azR0b09sZE1qVDBReEhyV2tMcXRzN3NlS0hSS3g4c2x1VFpoeVhTTHRKekJ0NEtDY21ZVVZjRXBmajA2VEJxRTZOdmNsbmJxNWxvN241T3FsRzVqS2pOYzNfMWtIdzQ5c1E?oc=5"
+   "nextelec": "Snap parliamentary and presidential, late 2026",
+   "updated": "2026-09-29",
+   "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQc2JsWVVvaWI5RjBRaFVHbjdOc01iRFh5eVNnYnFrMEVQZEJJaHBlVUd4S3lpMDJfT3VBU01KbEotdUc2cXRmeHhjTXFaUkRZaXhHUDFWakVET1l4YlpvejZoaEF6VGQ2T2wzN2Y4dzNrSDZPU3BSbmJQaXVMd085MW1wTkNJaU9tTGp2Um5QaW5MOUw1Z1V6OWczZmJkX1NSV3dpZWc4QUxraVZyeEg5TVBhRDFQVS1CN01Jck8wVFp4SU5xak9OaElLZ3d1VVB2T1pHalBn0gHbAUFVX3lxTE9mMXFEbXlmZ0hqNnFrNHdVeFU3cUtVTFNPc0E3YXRTMUtEbTBNczRaUnRTUExRQTRrTkdJRk92Z0VzSi1MLXVWWHQwaW82akt5VUpER1ZZLXItVXBGUm5aQ2lhWlF2c0Q1Zk10VE9DLXBYU0RPemZBZ3pwS3VDWVAwcUtNaGprRFhQQ01Zb3UyTlBwUy1jbld5NVpTMkh3blBlNHU4VktQYTBvM3RmTS1jM1RLMTFnbFpMdlVndjQ3RVVNLXpxNXZZbjZHYjI2V2h1VksxbVlEMk8zQQ?oc=5",
+   "lastelec": "Presidential, April 2022, Aleksandar Vucic"
   },
   "CHE": {
    "lastelec": "referendum, Sep 2026, rejected stricter neutrality",
@@ -884,9 +975,14 @@
    "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeUEtZzFGZmtIZEc2eGxDQU9Jd0psUU5QemVqNkY3SHFaN0xvY3czNHNza1F4SXFiS2VvdU91TFhiWWNZOEM3TWpNb2p4WE4taDZqdmpCR0lvaU42UTQwWW11TDJOSTFGQTgxMk9adDdDRzlpUFNkTnNJUnptZ3lnYzdpZkhSWnNHZmx4RVVnVdIBjwFBVV95cUxQOWNENzBrcktUVXJ5SU1JUEhiTlo3ekI3eG9qd053Rmc3Q1JuNlFaUmV5ekRJMnlxdVh5bllsMV9LcjZienpLVV9HbUxoejJSRF9mWnMzOFFPRkJrZ0RGWVZUVzNUYlJ1TG1XXzMxTk10VEhlYlhmMTg5S0xOS2V6Zjg1b0lGZnJ0MW41V3UyTQ?oc=5"
   },
   "STP": {
-   "lastelec": "legislative, September 2026",
-   "updated": "2026-09-28",
+   "lastelec": "Legislative, September 2026, ADI (Action for Independent Democrats)",
+   "updated": "2026-09-29",
    "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMmVHNDUwOXYwckhjdmREN2Nid2ZONGttMjU4TkFyTGNDdGRqRXNaSWd1LXRKNkE2cjVlb194QTBqRHlZVzNDWkJ1a0duMkYyU2Mza1NTWTJOZ0RZNHVoQVhKR0dIOWxMX09xMlEwUVV1Nk84dUgwV2dMVkxxSnJkT3JMVG1LOHRUWUhIUjZMa2p0T1pEdjFwRHA4S2JfdlpVNkh4bUgyb01VNFhObUhYbFZoaUhzQXc?oc=5"
+  },
+  "SVK": {
+   "nextelec": "Snap parliamentary, potentially January 2027",
+   "updated": "2026-09-29",
+   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQaGZzSVNyUkk1ZVlVRC1aN3BuQlJNWHVxX2Q3OVhuWUxZSzhNN2VfRy1zdDU5RHNuTERQbTAxS3NYNWlzdzBLV1dwMDZUdGVKNXpoclRCNXZQNzhOVTZGbUdZY1pmdWtPUUQtbzl6Y19xRmFLbTYyS3BDMGdfRXUxWWR2NkZzMHZEQTJ6VmJOYjJjY2hQSXU1bE9lTDBpYTFNVmgtbFV0MDZxVmlocUxWRUpvLXVBNjFhR0HSAbgBQVVfeXFMTWVUMGhmclVScDVjaFJLUkJ2elNTd3hzd21sRjg1cF9EeWJXbFBrRmlKblRsWDdRQTN1eTc3aDhqV2dBTHhGRk5Ccll1SldRZGpXTEExMjUwUEFlUnVINVFrQWxyZzlzRmZiZE9aUUhZY1IxMFZVTE9qWktmWUJfMFcyNUpfREdkbHd4Q0VldEozQmpMVG1Yb1JLdkpZbm5tektzbTBCRTZfVE42dWUxVEhhOG1UY0hKQw?oc=5"
   }
  }
 }
