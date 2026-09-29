@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-09-29T10:18:59Z",
+  "lastRun": "2026-09-29T16:07:17Z",
   "log": [
    {
     "date": "2026-09-29",
@@ -39,6 +39,16 @@
       "label": "South Korea–North Korea",
       "change": "Hostile → Armed conflict: Border landmine blasts injure troops and violate armistice.",
       "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdGFmTEVaajZxWGlqN21ESjVuTDNtem5nWDlISTFQWDhIWDBLdVFqbUpQOERrSEJCazhWZkZIN0gtT1h4R1BSSThWdnJvZ2pOY1lqXzRjQzV0YnktWW51UlJoWmN0RjJVQ1ZRcVRxbDhaUm12U1RrUnk5ZnRYeGJBTnQtemF2SVVfYnA0WGtiOVhtVUxiNVNoeGZ4cmxLdFVoeDVHdmQwRzlsSVow?oc=5"
+     },
+     {
+      "label": "Serbia",
+      "change": "Ana Brnabić assumes acting presidential duties after Aleksandar Vučić's resignation.",
+      "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZU1US3dRcUp1cG1hY3V2Nzg2bzczeDZNQTBxNDV2T1BXWVNsOWNJMFNWYTh3a3R2STVFb09DSDhRTjV3RHhfa0xBZkk5ZUVxcGhBNEI0ejlMV01HSGpGbXAxMlg4VzEzNE9URzdqNXE3dHdRbm1GM05GaHRSVDNQZjQxWFRtSXNJd1JQS25EVEt6Zw?oc=5"
+     },
+     {
+      "label": "Morocco",
+      "change": "Fatima Ezzahra El Mansouri appointed as first female head of government.",
+      "source": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNa0lpNDFrNl96dlVGeFZvVEpaSlZjbmhneEtxbE1oeU04VnFQQml2eVdxNFVUeW1oMC1NbDFZZm5hRGQwcG5Qc2hsRndpYlh0eEwzdVZKUG0zOXJRRUZmUHZKbVlwUFR2WExCcllVY0dHWjJQLUUycmF2ejkyOGt1RUszOXZ0QTNlcms5Y2VKeFJEMXdHeU5hSnBKandDTlBjUG5vakFuQm5uRlotUXFfSDRzRVQ1UFc4RkpjUkNnUl9CZUhGdC1sTnh2Yjg?oc=5"
      }
     ]
    },
@@ -416,7 +426,7 @@
     ]
    }
   ],
-  "summary": "Estonia attributes a defense company arson attack to Russia, North Korea faces condemnation over DMZ landmine blasts and troop deployments, while regional trade and infrastructure agreements advance across Central Asia, Africa, and the Middle East."
+  "summary": "Updated regional updates include Serbia's transition as Ana Brnabić assumes acting presidential duties following Aleksandar Vučić's resignation, Morocco appointing its first female head of government, and ongoing security concerns along the Korean DMZ and Baltic region."
  },
  "relations": {
   "DNK-USA": {
@@ -751,9 +761,9 @@
    "a": "KOR",
    "b": "PRK",
    "s": "W",
-   "note": "Tensions spike after North Korean landmine blasts in the DMZ injure South Korean soldiers and violate the armistice.",
+   "note": "Seoul confirms North Korean landmine blasts near the DMZ, marking a direct violation of the armistice.",
    "updated": "2026-09-29",
-   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdGFmTEVaajZxWGlqN21ESjVuTDNtem5nWDlISTFQWDhIWDBLdVFqbUpQOERrSEJCazhWZkZIN0gtT1h4R1BSSThWdnJvZ2pOY1lqXzRjQzV0YnktWW51UlJoWmN0RjJVQ1ZRcVRxbDhaUm12U1RrUnk5ZnRYeGJBTnQtemF2SVVfYnA0WGtiOVhtVUxiNVNoeGZ4cmxLdFVoeDVHdmQwRzlsSVow?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOODgxaEltX2xuWHR4eWdzWVp0TXFZVVpWM25UT0JGZWJJSWVNcTN6LTZnSnliSXhVODRTWkZKRkdBcWl5dWpUSHRjRjJvczFJZXFWS0NFMS02aVBIWVo0bGRKcGxBOTgtaUlMTWlhcDNqNFpLWFpHdFJhTlVzbTlrSkdxU2FwaEsw?oc=5"
   }
  },
  "threads": {
@@ -990,10 +1000,10 @@
    "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWUlwWEJ0R2JPeVl4TUNzYkNyMVZfaWlwU21SSF96Ui1hdXIyR0wyNkpwQlFjRmw3UGJya0NYZ25TQjVGWWdrWEdEdjBsaFlJdmtQNGdIYjVJcG5zUG02b3I3TFhPXzluNmQyZTh3ejJVRGtMMG42M21yZjc4RXBleU9RTzVZRURlZDJGdkFTRXF2QVNiSVdmN2VtMkdNRzIzQnE5SFdHMlQ5TXVoSGo0?oc=5"
   },
   "SRB": {
-   "nextelec": "Snap parliamentary and presidential, late 2026",
+   "nextelec": "General elections, December 2026",
    "updated": "2026-09-29",
-   "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQc2JsWVVvaWI5RjBRaFVHbjdOc01iRFh5eVNnYnFrMEVQZEJJaHBlVUd4S3lpMDJfT3VBU01KbEotdUc2cXRmeHhjTXFaUkRZaXhHUDFWakVET1l4YlpvejZoaEF6VGQ2T2wzN2Y4dzNrSDZPU3BSbmJQaXVMd085MW1wTkNJaU9tTGp2Um5QaW5MOUw1Z1V6OWczZmJkX1NSV3dpZWc4QUxraVZyeEg5TVBhRDFQVS1CN01Jck8wVFp4SU5xak9OaElLZ3d1VVB2T1pHalBn0gHbAUFVX3lxTE9mMXFEbXlmZ0hqNnFrNHdVeFU3cUtVTFNPc0E3YXRTMUtEbTBNczRaUnRTUExRQTRrTkdJRk92Z0VzSi1MLXVWWHQwaW82akt5VUpER1ZZLXItVXBGUm5aQ2lhWlF2c0Q1Zk10VE9DLXBYU0RPemZBZ3pwS3VDWVAwcUtNaGprRFhQQ01Zb3UyTlBwUy1jbld5NVpTMkh3blBlNHU4VktQYTBvM3RmTS1jM1RLMTFnbFpMdlVndjQ3RVVNLXpxNXZZbjZHYjI2V2h1VksxbVlEMk8zQQ?oc=5",
-   "lastelec": "Presidential, April 2022, Aleksandar Vucic"
+   "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZU1US3dRcUp1cG1hY3V2Nzg2bzczeDZNQTBxNDV2T1BXWVNsOWNJMFNWYTh3a3R2STVFb09DSDhRTjV3RHhfa0xBZkk5ZUVxcGhBNEI0ejlMV01HSGpGbXAxMlg4VzEzNE9URzdqNXE3dHdRbm1GM05GaHRSVDNQZjQxWFRtSXNJd1JQS25EVEt6Zw?oc=5",
+   "lastelec": "Presidential, April 2022, Aleksandar Vučić"
   },
   "CHE": {
    "lastelec": "referendum, Sep 2026, rejected stricter neutrality",
