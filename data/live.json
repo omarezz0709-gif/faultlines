@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-09-30T10:19:17Z",
+  "lastRun": "2026-09-30T16:07:57Z",
   "log": [
    {
     "date": "2026-09-30",
@@ -17,8 +17,13 @@
      },
      {
       "label": "Iraq–United States",
-      "change": "Normal → Partner: US military mission concluded",
-      "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMUltLWtwZkRzcmJDMFRZRHotcEJHS0h6LWlZdFYyM3BCRUpqUWs0eXJoOXZIb3kyWEdlMUYwWkpsdFBzckRIZ3hNMWFlZ2NtbWZBUjVZVy1sLWJEZFA5Sklsemd0TmRvdHJMaWJvQ3lLYkJlemtSekUxdGdDUVRHLWZpZGJaRTZ4c3c?oc=5"
+      "change": "Hostile/Normal → Partner: US military mission in Iraq formally concluded.",
+      "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZ3lldi1rTjB2TzNYazIwNkV4ekpOeDJ3ZGFhY2N0T3dMeXBMLXVCbjl4Y21ua3puUkt2M3M5N0RxUDNncFFXNjZZdEJLVUo4MzhSZDh4REkyS1ZWRHA4VHMxelNfZ3UySUFzanZfN2VnMTFqQk5JVjIxQmJ5cmpmekNJdFQ?oc=5"
+     },
+     {
+      "label": "North Korea–Russia",
+      "change": "Ally: North Korea prepares 10,000 additional troop deployment for Russia.",
+      "source": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE05eHJqc0EyZ0VrLUMwbnJwNlBOVWVmTkY5b2JFNG1DWFJxdzZrU3I4WnF0REh2RzRYeTBaRkdVRmE3b1JwS3puS2pjOFpwVUE?oc=5"
      }
     ]
    },
@@ -446,7 +451,7 @@
     ]
    }
   ],
-  "summary": "Updated regional updates with Iraq's military transition, ongoing tensions over West Asian flights, and routine diplomatic interactions."
+  "summary": "Iraq war mission concludes as US troops withdraw; North Korea-Russia ties deepen with new troop deployment reports; global economic agreements and regional tensions update across Africa, Asia, and Europe."
  },
  "relations": {
   "DNK-USA": {
@@ -734,8 +739,8 @@
    "b": "RUS",
    "s": "A",
    "note": "North Korea prepares to deploy 10,000 additional troops to support Russian operations in Ukraine.",
-   "updated": "2026-09-29",
-   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOY1djOGZyenVjb09ZdTJzanFHdmFWYzJzYmgwQ094QTBXSmlmYUNCQlpUSUVLMHVtYTMwS0FOQ1BSc2xoajZHQUFDOHd6ZFFfWFZfMmlOZ0VjSTNSRXRCRFZMbFpmUXZod05VcU1vV0VldXl3TGktTGVldHViYS1ndjI0ZnVpWWdZRXphcmRXUXo1VF85LVM2MU1hRENBRE9HR2lj?oc=5"
+   "updated": "2026-09-30",
+   "source": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE05eHJqc0EyZ0VrLUMwbnJwNlBOVWVmTkY5b2JFNG1DWFJxdzZrU3I4WnF0REh2RzRYeTBaRkdVRmE3b1JwS3puS2pjOFpwVUE?oc=5"
   },
   "ARG-GBR": {
    "a": "ARG",
@@ -807,7 +812,7 @@
    "s": "F",
    "note": "United States forces complete their military withdrawal from Iraq, ending the anti-ISIS combat mission.",
    "updated": "2026-09-30",
-   "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMUltLWtwZkRzcmJDMFRZRHotcEJHS0h6LWlZdFYyM3BCRUpqUWs0eXJoOXZIb3kyWEdlMUYwWkpsdFBzckRIZ3hNMWFlZ2NtbWZBUjVZVy1sLWJEZFA5Sklsemd0TmRvdHJMaWJvQ3lLYkJlemtSekUxdGdDUVRHLWZpZGJaRTZ4c3c?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZ3lldi1rTjB2TzNYazIwNkV4ekpOeDJ3ZGFhY2N0T3dMeXBMLXVCbjl4Y21ua3puUkt2M3M5N0RxUDNncFFXNjZZdEJLVUo4MzhSZDh4REkyS1ZWRHA4VHMxelNfZ3UySUFzanZfN2VnMTFqQk5JVjIxQmJ5cmpmekNJdFQ?oc=5"
   },
   "KEN-RWA": {
    "a": "KEN",
@@ -1037,10 +1042,10 @@
    "updated": "2026-09-23"
   },
   "MAR": {
-   "lastelec": "legislative election, September 2026",
-   "updated": "2026-09-29",
-   "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPZW1oY256ZEFkUEh4YXQ5UFgxam12bjYyOUpfcTdLQXh2cEZWUmk3OXM2Vjk5bkNQMVhuTmQyQkpnWjJNSVZoMjNYYlg1MlY3MzdxSE0zOXA3aDNCSkZscGtOOXQyZFQtQkMycDJmM21RZnB6WHpBZVdTSUt0SEU1alEwX3BBaGV6TVFOZ1dkbmlVeGlFOU5FV1V3dWpmUzZ5aExtYXpxUGN1QjdDcWZOU1NrdUs5U3B3clo0QjY4d1pFZEh5a2piSGp1NkpQTzBwbk10ZmRR?oc=5",
-   "nextelec": "legislative election, 2031"
+   "lastelec": "legislative, September 2021, National Rally of Independents (RNI)",
+   "updated": "2026-09-30",
+   "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQ2w1QUR5YU1lWGE2LWZSOEhnRk9JVk1NVXhRZ203a25lZURHb2Y3aWpYUjRfVTJGby10dXZqeUROZHpvZ2VCdzRzaE5ITElNNXlCQ3RNV2ZYcXplODVPMG5zU2pJMWZaSWM0bDEyeEFqY1M2VXpjZFMxZ1dBWUVmRkk2V1d6enJ3bkpwRTZuZHA3cGFTVEtfLVVuUkxqdUNXZUpZazl6TkdqT2VzZGJtcHJtTQ?oc=5",
+   "nextelec": "September 2026"
   },
   "BGR": {
    "nextelec": "presidential, 25 October 2026",
