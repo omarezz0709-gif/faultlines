@@ -1,8 +1,8 @@
 {
- "generated": "2026-09-29T16:39:36Z",
- "berlin": "2026-09-29 18:39",
- "status": "ok",
- "summary": "All checks passed.",
+ "generated": "2026-09-30T10:41:01Z",
+ "berlin": "2026-09-30 12:41",
+ "status": "warn",
+ "summary": "0 problem(s), 1 warning(s): News outlet feeds: 55/57 working; not working: UN News (200), Il Sole 24 Ore (503)",
  "repairs": [],
  "checks": [
   {
@@ -10,80 +10,80 @@
    "name": "Website",
    "status": "ok",
    "detail": "HTTP 200, 418 KB",
-   "ms": 241
+   "ms": 111
   },
   {
    "g": "site",
    "name": "GitHub Pages copy",
    "status": "ok",
    "detail": "HTTP 200",
-   "ms": 168
+   "ms": 203
   },
   {
    "g": "site",
    "name": "data/news.json",
    "status": "ok",
-   "detail": "HTTP 200, 603 KB",
-   "ms": 252
+   "detail": "HTTP 200, 602 KB",
+   "ms": 231
   },
   {
    "g": "site",
    "name": "data/live.json",
    "status": "ok",
-   "detail": "HTTP 200, 67 KB",
-   "ms": 187
+   "detail": "HTTP 200, 69 KB",
+   "ms": 146
   },
   {
    "g": "site",
    "name": "data/politics.json",
    "status": "ok",
    "detail": "HTTP 200, 42 KB",
-   "ms": 214
+   "ms": 163
   },
   {
    "g": "site",
    "name": "data/wb.json",
    "status": "ok",
-   "detail": "HTTP 200, 80 KB",
-   "ms": 116
+   "detail": "HTTP 200, 83 KB",
+   "ms": 185
   },
   {
    "g": "site",
    "name": "data/geo.json",
    "status": "ok",
    "detail": "HTTP 200, 697 KB",
-   "ms": 155
+   "ms": 54
   },
   {
    "g": "site",
    "name": "data/cities.json",
    "status": "ok",
    "detail": "HTTP 200, 151 KB",
-   "ms": 87
+   "ms": 38
   },
   {
    "g": "fresh",
    "name": "Headlines (news.json)",
    "status": "ok",
-   "detail": "last update 0.6 h ago"
+   "detail": "last update 0.4 h ago"
   },
   {
    "g": "fresh",
    "name": "AI relationship update (live.json)",
    "status": "ok",
-   "detail": "last update 0.5 h ago"
+   "detail": "last update 0.4 h ago"
   },
   {
    "g": "fresh",
    "name": "Leaders (politics.json)",
    "status": "ok",
-   "detail": "last update 18.5 h ago"
+   "detail": "last update 12.5 h ago"
   },
   {
    "g": "fresh",
    "name": "Countries with confirmed headlines",
    "status": "ok",
-   "detail": "198"
+   "detail": "195"
   },
   {
    "g": "fresh",
@@ -107,182 +107,182 @@
    "g": "worker",
    "name": "/live (en)",
    "status": "ok",
-   "detail": "29 items",
-   "ms": 5281
+   "detail": "36 items",
+   "ms": 5116
   },
   {
    "g": "worker",
    "name": "/top (en)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 5277
+   "ms": 97
   },
   {
    "g": "worker",
    "name": "/videos (en)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 5671
+   "ms": 316
   },
   {
    "g": "worker",
    "name": "/live (de)",
    "status": "ok",
-   "detail": "29 items",
-   "ms": 2604
+   "detail": "23 items",
+   "ms": 1565
   },
   {
    "g": "worker",
    "name": "/top (de)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 127
+   "ms": 61
   },
   {
    "g": "worker",
    "name": "/videos (de)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 1834
+   "ms": 473
   },
   {
    "g": "worker",
    "name": "/live (fr)",
    "status": "ok",
    "detail": "35 items",
-   "ms": 1865
+   "ms": 1275
   },
   {
    "g": "worker",
    "name": "/top (fr)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 1857
+   "ms": 134
   },
   {
    "g": "worker",
    "name": "/videos (fr)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 1632
+   "ms": 395
   },
   {
    "g": "worker",
    "name": "/live (es)",
    "status": "ok",
-   "detail": "4 items",
-   "ms": 291
+   "detail": "8 items",
+   "ms": 494
   },
   {
    "g": "worker",
    "name": "/top (es)",
    "status": "ok",
-   "detail": "4 stories",
-   "ms": 214
+   "detail": "6 stories",
+   "ms": 74
   },
   {
    "g": "worker",
    "name": "/videos (es)",
    "status": "ok",
-   "detail": "5 videos",
-   "ms": 1121
+   "detail": "4 videos",
+   "ms": 241
   },
   {
    "g": "worker",
    "name": "/live (it)",
    "status": "ok",
-   "detail": "27 items",
-   "ms": 1689
+   "detail": "20 items",
+   "ms": 3458
   },
   {
    "g": "worker",
    "name": "/top (it)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 1616
+   "ms": 52
   },
   {
    "g": "worker",
    "name": "/videos (it)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 414
+   "ms": 325
   },
   {
    "g": "worker",
    "name": "/live (ar)",
    "status": "ok",
-   "detail": "5 items",
-   "ms": 785
+   "detail": "13 items",
+   "ms": 1254
   },
   {
    "g": "worker",
    "name": "/top (ar)",
    "status": "ok",
-   "detail": "5 stories",
-   "ms": 927
+   "detail": "6 stories",
+   "ms": 48
   },
   {
    "g": "worker",
    "name": "/videos (ar)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 593
+   "ms": 349
   },
   {
    "g": "worker",
    "name": "Real-time search",
    "status": "ok",
-   "detail": "1 reports",
-   "ms": 3594
+   "detail": "12 reports",
+   "ms": 3529
   },
   {
    "g": "security",
    "name": "Other websites are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 180
+   "ms": 22
   },
   {
    "g": "security",
    "name": "Look-alike Pages projects are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 100
+   "ms": 16
   },
   {
    "g": "security",
    "name": "Only the site's own prompts are answered",
    "status": "ok",
    "detail": "HTTP 400 (should be 400)",
-   "ms": 99
+   "ms": 25
   },
   {
    "g": "security",
    "name": "Private chat needs a valid pass",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 318
+   "ms": 28
   },
   {
    "g": "security",
    "name": "Admin login",
    "status": "ok",
    "detail": "HTTP 401 without a code (should be 401)",
-   "ms": 96
+   "ms": 19
   },
   {
    "g": "ai",
    "name": "AI answers",
    "status": "ok",
    "detail": "answered by gemini-3.6-flash",
-   "ms": 3229
+   "ms": 2475
   },
   {
    "g": "sources",
    "name": "News outlet feeds",
-   "status": "ok",
-   "detail": "57/57 working"
+   "status": "warn",
+   "detail": "55/57 working; not working: UN News (200), Il Sole 24 Ore (503)"
   },
   {
    "g": "sources",
@@ -295,7 +295,7 @@
    "name": "Page loads and the globe starts",
    "status": "ok",
    "detail": "",
-   "ms": 4141
+   "ms": 2535
   },
   {
    "g": "browser",
@@ -313,7 +313,7 @@
    "g": "browser",
    "name": "Console errors",
    "status": "ok",
-   "detail": "0 missing images/files"
+   "detail": "1 missing images/files"
   },
   {
    "g": "browser",
@@ -334,5 +334,5 @@
    "detail": "page width 820 px on a 820 px screen"
   }
  ],
- "ms": 417399
+ "ms": 365212
 }
