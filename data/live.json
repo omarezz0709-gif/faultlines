@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-09-30T16:07:57Z",
+  "lastRun": "2026-09-30T22:09:07Z",
   "log": [
    {
     "date": "2026-09-30",
@@ -24,6 +24,56 @@
       "label": "North Korea–Russia",
       "change": "Ally: North Korea prepares 10,000 additional troop deployment for Russia.",
       "source": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE05eHJqc0EyZ0VrLUMwbnJwNlBOVWVmTkY5b2JFNG1DWFJxdzZrU3I4WnF0REh2RzRYeTBaRkdVRmE3b1JwS3puS2pjOFpwVUE?oc=5"
+     },
+     {
+      "label": "Saudi Arabia–Türkiye",
+      "change": "Partner → Ally: Formalized under the newly unveiled Makkah Defense Alliance",
+      "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdV9uc2lscnJFWTBoRk04dmdCNlE2bHBydlRtY3dHWVF4cFNuWWlUU2FEd1laRVc5TUdJWm9NWjhaeVBCX2JET2gyNXBJeERLWGxwYXNfbnc3QWxXT1QtYUwxZmlVQWs2Y2FDNjN4SjVtOGN3Yms4YVZYbGp1QXJ6ZUJPa21RZTRINlZtaTYwS0RIdw?oc=5"
+     },
+     {
+      "label": "China–Laos",
+      "change": "Partner → Ally: China opens its third overseas military facility in Laos",
+      "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPRklYU0s2bVlzajh2N2JWaTlSOUhmS2dfWEFWWlF5M3VFZzZMbVZBXzV3bGdoTTNCVFZVbGl2SlA4elV5cThoakVfdmJIajhKa0t2bjhrWWpwMDRyS1ZoVGVRYUZRZ1lQZjc0SEhRV1hyenBIX3c4WDd0YlV5clVhb0RXcF9xTF94M2JRUVJzMW5ZMmxja2JhNlg4NHRYMmtqYXlCQnBkXzR1cHYwenRXeg?oc=5"
+     },
+     {
+      "label": "United States–Cuba",
+      "change": "Hostile → Hostile: Sanctions tightened with new banking and travel restrictions",
+      "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNVkhyMHVBblZnMXZJMTl1OGZJSFhFQ3lCQTJvbGdBaG0yMmR1YmZIeUY0cHJlRGdtWWZHUzVTSVBjVThvdmpVTGdQT1Y2WE03cDVIcEZ2b2o2Z3VnN29qS3p6ZnZBbnJXdHRVS2FkZlVTSTEyVHFBcW1hRlB5NEdkZFhxeHFDREdwSTJucWRBLTFyaHhhaWRxU185S2tNVU14SllreNIBqgFBVV95cUxQMEduU3NrcXlZZHVmRUdnX3IxZF85X0JRdk41cUU4TGF6aHBYdXdmekZxV01ZdFNqejdpYmNvQmhUcERiWWVpTkZPdTZkOXMtSnhsbE9EOC1OcFM4SzBmbXNJRDhheG1oYTNtNHZwSWFIRnlOM0NpME50d2NMR2otQm5VdnlzTU5fblU0VVVrVU9nUjM0OU1OTlpZeEtrRFlVbGt3aGdpNlpkZw?oc=5"
+     },
+     {
+      "label": "United States–Burundi",
+      "change": "none → Partner: Burundi agrees to accept US-deported migrants",
+      "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbWdqVUkyTWRpbWxSdGYySG00Y0syd0RLblhGc01UV1RWU2pBUTVkb1dYLTFnS1FzYkpTNEY3enA4OEVWTkVRZEh6RWhOWUFyRVRLdlRYZk5pOVJULTBBazRjYW5zM3lCanRzZ05nb044dFlWQmhJWmpuRDVxQ0phUTl4aVRYeWZ4dDRVQW8yTjZFc1pBNG9BenI1OVJReVVVLTJBcHpjNzQ5cTlpUGUtWGVlbEdxMXFxVkJfWHE1Zw?oc=5"
+     },
+     {
+      "label": "Colombia–Ecuador",
+      "change": "Normal → Partner: Extradition of high-profile gang family members",
+      "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNOWdPUjVybGR6RDZydkF5RVN0MDN2dFI4NkNoWjRTWEY1Z3d4UFEwSVZMOXFQZk5BWEtvVGxqSE9SRHpRYnZ3UXF1ZzFaZzhqZ0xLWUp0SVZQeDNvN2sxWXZ1S0h1dTZaS3d0VU9pY1FEREIzSy01UWR6b2hlRmpaMTRkNjE3d1pCaVJDRFdkaDhBdnBD?oc=5"
+     },
+     {
+      "label": "United States–Brazil",
+      "change": "Note refreshed to reflect President Luiz Inácio Lula da Silva",
+      "source": "https://www.wikidata.org/wiki/Q155"
+     },
+     {
+      "label": "United States–United Kingdom",
+      "change": "Note refreshed to reflect Prime Minister Andy Burnham",
+      "source": "https://www.wikidata.org/wiki/Q145"
+     },
+     {
+      "label": "United States–Canada",
+      "change": "Note refreshed to reflect Prime Minister Mark Carney",
+      "source": "https://www.wikidata.org/wiki/Q16"
+     },
+     {
+      "label": "United States–Japan",
+      "change": "Note refreshed to reflect Prime Minister Sanae Takaichi",
+      "source": "https://www.wikidata.org/wiki/Q17"
+     },
+     {
+      "label": "United States–South Korea",
+      "change": "Note refreshed to reflect President Lee Jae Myung",
+      "source": "https://www.wikidata.org/wiki/Q884"
      }
     ]
    },
@@ -451,7 +501,7 @@
     ]
    }
   ],
-  "summary": "Iraq war mission concludes as US troops withdraw; North Korea-Russia ties deepen with new troop deployment reports; global economic agreements and regional tensions update across Africa, Asia, and Europe."
+  "summary": "This update captures the formalization of the Makkah Defense Alliance between Saudi Arabia and Türkiye, China's establishment of a new military facility in Laos, tightened US sanctions on Cuba, and a new US-Burundi migration agreement, alongside leadership-based fact checks."
  },
  "relations": {
   "DNK-USA": {
@@ -537,10 +587,10 @@
   "SAU-TUR": {
    "a": "SAU",
    "b": "TUR",
-   "s": "F",
-   "note": "Saudi Arabia and Türkiye deepen military and intelligence cooperation alongside Pakistan under a joint defense agreement.",
-   "updated": "2026-09-26",
-   "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOUEJnTmktQk1WeDZTbDRTSmpjNHNiZ1BGSlM2dDBhYjd5LVF3UVppOVNaZTVqUlJuYkZ1M3czRTh6TFhtcGY4Si1Hai00Y29zSGMyUDZMRTNXMUJucEtiWFdpM1MtVWJBRXR2NnJnRFJXb3lRUEpYQTdmeHd1Vll3bnNSQnJhSURubWZxVW1fTEJ5Y3diMERMLXpaQm03NUFqS3BFUVh3cXpVOFVWRjFwZTdJb1FzeEFMUHAzNkU0R2EzQTZ4d21RVDMzMkRsS1pPc2lsMDEtb0U?oc=5"
+   "s": "A",
+   "note": "Saudi Arabia and Türkiye upgrade ties to an alliance under the newly unveiled Makkah Defense Alliance.",
+   "updated": "2026-09-30",
+   "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdV9uc2lscnJFWTBoRk04dmdCNlE2bHBydlRtY3dHWVF4cFNuWWlUU2FEd1laRVc5TUdJWm9NWjhaeVBCX2JET2gyNXBJeERLWGxwYXNfbnc3QWxXT1QtYUwxZmlVQWs2Y2FDNjN4SjVtOGN3Yms4YVZYbGp1QXJ6ZUJPa21RZTRINlZtaTYwS0RIdw?oc=5"
   },
   "COL-USA": {
    "a": "COL",
@@ -682,9 +732,9 @@
    "a": "JPN",
    "b": "USA",
    "s": "A",
-   "note": "Japanese Prime Minister Sanae Takaichi reaffirms the United States (US) security alliance and bilateral alignment on China.",
-   "updated": "2026-09-27",
-   "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTUc3MVVnZEtXWGx6WFhianFMOU1PREhQamhzNjFJOUhSUVM0ZUo0ODFHbGpaeFJ0aW95ZnM3R3NoVm1aREdFeDZMZ1hRX0RxMFhJLTVEUXFpZlp6bFViQUk1Q2NOQi14MWhZVG0wZU9BUE5IMDNUQkl4Yl9Tdno1N0x4c00?oc=5"
+   "note": "The security alliance remains robust under Prime Minister Sanae Takaichi, with over 54,000 US troops stationed in Japan.",
+   "updated": "2026-09-30",
+   "source": "https://www.wikidata.org/wiki/Q17"
   },
   "ISR-NLD": {
    "a": "ISR",
@@ -802,9 +852,9 @@
    "a": "CAN",
    "b": "USA",
    "s": "T",
-   "note": "Tensions escalate as the United States (US) bans nearly $1 billion in Canadian goods amid an expanding trade war.",
+   "note": "Tensions persist over tariffs under Prime Minister Mark Carney, though the core NATO and NORAD alliances endure.",
    "updated": "2026-09-30",
-   "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdE5aZUowb3pWWmM0dVNYb0dpcjVwV1JweEgwb0hGR3Yxa1V3WTA3QWo5VWhrY2YwV01BQmtELS1TWGRiZXVUMTByY1kyTVIxQWNIREtSVWxqc1U5SzN1aGNxRm9JTW9PM2REWUpIRWtyS1p0V28zVEhoOWVFWFpoTzlOa0RpM3Rhc1o4eXp1QmExZWFyN2FNLTZ5cGN3bEpKVnJUMkNFd202Q1RySUIzRFVJekhnSkda?oc=5"
+   "source": "https://www.wikidata.org/wiki/Q16"
   },
   "IRQ-USA": {
    "a": "IRQ",
@@ -821,6 +871,62 @@
    "note": "Kenya delivers its first 40,000-tonne fuel shipment to Rwanda via Mombasa under a new bilateral energy supply route.",
    "updated": "2026-09-30",
    "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNb290bWVzOTN5RTZYaEktNXN2aFo4aHd1eWlGQ0tNbHQ2M3lRWm5aZnJOWU5pSkxNNVFFNkt0a3JuTWNHWjVQYkJIME9JbkRNV0k3QkdvTFhNV3RJU3BhS1F5SGVGekZPZXFjc2RxdDFjekk4d1lHZ0ZEQ25kbkZ2S0NEV1ZNUW4xcUZvSGJRZw?oc=5"
+  },
+  "CHN-LAO": {
+   "a": "CHN",
+   "b": "LAO",
+   "s": "A",
+   "note": "China opens a joint aviation training and support center in Laos, marking its third overseas military facility.",
+   "updated": "2026-09-30",
+   "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPRklYU0s2bVlzajh2N2JWaTlSOUhmS2dfWEFWWlF5M3VFZzZMbVZBXzV3bGdoTTNCVFZVbGl2SlA4elV5cThoakVfdmJIajhKa0t2bjhrWWpwMDRyS1ZoVGVRYUZRZ1lQZjc0SEhRV1hyenBIX3c4WDd0YlV5clVhb0RXcF9xTF94M2JRUVJzMW5ZMmxja2JhNlg4NHRYMmtqYXlCQnBkXzR1cHYwenRXeg?oc=5"
+  },
+  "CUB-USA": {
+   "a": "CUB",
+   "b": "USA",
+   "s": "H",
+   "note": "The US tightens its embargo on Cuba with new banking, financial, and travel restrictions.",
+   "updated": "2026-09-30",
+   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNVkhyMHVBblZnMXZJMTl1OGZJSFhFQ3lCQTJvbGdBaG0yMmR1YmZIeUY0cHJlRGdtWWZHUzVTSVBjVThvdmpVTGdQT1Y2WE03cDVIcEZ2b2o2Z3VnN29qS3p6ZnZBbnJXdHRVS2FkZlVTSTEyVHFBcW1hRlB5NEdkZFhxeHFDREdwSTJucWRBLTFyaHhhaWRxU185S2tNVU14SllreNIBqgFBVV95cUxQMEduU3NrcXlZZHVmRUdnX3IxZF85X0JRdk41cUU4TGF6aHBYdXdmekZxV01ZdFNqejdpYmNvQmhUcERiWWVpTkZPdTZkOXMtSnhsbE9EOC1OcFM4SzBmbXNJRDhheG1oYTNtNHZwSWFIRnlOM0NpME50d2NMR2otQm5VdnlzTU5fblU0VVVrVU9nUjM0OU1OTlpZeEtrRFlVbGt3aGdpNlpkZw?oc=5"
+  },
+  "BDI-USA": {
+   "a": "BDI",
+   "b": "USA",
+   "s": "F",
+   "note": "Burundi agrees to accept US-deported migrants under a third-country resettlement policy.",
+   "updated": "2026-09-30",
+   "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbWdqVUkyTWRpbWxSdGYySG00Y0syd0RLblhGc01UV1RWU2pBUTVkb1dYLTFnS1FzYkpTNEY3enA4OEVWTkVRZEh6RWhOWUFyRVRLdlRYZk5pOVJULTBBazRjYW5zM3lCanRzZ05nb044dFlWQmhJWmpuRDVxQ0phUTl4aVRYeWZ4dDRVQW8yTjZFc1pBNG9BenI1OVJReVVVLTJBcHpjNzQ5cTlpUGUtWGVlbEdxMXFxVkJfWHE1Zw?oc=5"
+  },
+  "COL-ECU": {
+   "a": "COL",
+   "b": "ECU",
+   "s": "F",
+   "note": "Colombia extradites the family of Ecuadorian gang leader 'Fito' to Ecuador, boosting security cooperation.",
+   "updated": "2026-09-30",
+   "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNOWdPUjVybGR6RDZydkF5RVN0MDN2dFI4NkNoWjRTWEY1Z3d4UFEwSVZMOXFQZk5BWEtvVGxqSE9SRHpRYnZ3UXF1ZzFaZzhqZ0xLWUp0SVZQeDNvN2sxWXZ1S0h1dTZaS3d0VU9pY1FEREIzSy01UWR6b2hlRmpaMTRkNjE3d1pCaVJDRFdkaDhBdnBD?oc=5"
+  },
+  "BRA-USA": {
+   "a": "BRA",
+   "b": "USA",
+   "s": "N",
+   "note": "Strained by tariffs and sanctions, though both nations maintain trade ties under President Luiz Inácio Lula da Silva.",
+   "updated": "2026-09-30",
+   "source": "https://www.wikidata.org/wiki/Q155"
+  },
+  "GBR-USA": {
+   "a": "GBR",
+   "b": "USA",
+   "s": "A",
+   "note": "The special relationship remains strong under Prime Minister Andy Burnham, focusing on NATO, Five Eyes, and AUKUS.",
+   "updated": "2026-09-30",
+   "source": "https://www.wikidata.org/wiki/Q145"
+  },
+  "KOR-USA": {
+   "a": "KOR",
+   "b": "USA",
+   "s": "A",
+   "note": "The defense treaty remains active under President Lee Jae Myung, despite US concerns over Seoul's ties with China.",
+   "updated": "2026-09-30",
+   "source": "https://www.wikidata.org/wiki/Q884"
   }
  },
  "threads": {
@@ -1042,9 +1148,9 @@
    "updated": "2026-09-23"
   },
   "MAR": {
-   "lastelec": "legislative, September 2021, National Rally of Independents (RNI)",
+   "lastelec": "appointment, September 2026, Fatima Ezzahra El Mansouri (PAM)",
    "updated": "2026-09-30",
-   "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQ2w1QUR5YU1lWGE2LWZSOEhnRk9JVk1NVXhRZ203a25lZURHb2Y3aWpYUjRfVTJGby10dXZqeUROZHpvZ2VCdzRzaE5ITElNNXlCQ3RNV2ZYcXplODVPMG5zU2pJMWZaSWM0bDEyeEFqY1M2VXpjZFMxZ1dBWUVmRkk2V1d6enJ3bkpwRTZuZHA3cGFTVEtfLVVuUkxqdUNXZUpZazl6TkdqT2VzZGJtcHJtTQ?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOeGs3NWo4alVaS3dXVk9zT3NoeXVTTFo2bzVBaEZHQjZ2Uk1fdzRSSW9FMExBU2ZjZ3RHSlRVZjNZR1dZaEd3YURWUmh2Z0NVQWlGY2R0Z3Yzdkd1czJ5UnFpRkppdDNXaTBES2RnQzc4cUdHbEtsQXY3Y0NpbVRLRHVxaVFYR3g3VlJwcWtRZklGb3lqT0RSSE1zMDFUSFk1OG4yNnNwUjBLMzNwVkZFMVBfRng0QUdXcENnOE53?oc=5",
    "nextelec": "September 2026"
   },
   "BGR": {
@@ -1059,9 +1165,9 @@
   },
   "SRB": {
    "nextelec": "General elections, December 2026",
-   "updated": "2026-09-29",
-   "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZU1US3dRcUp1cG1hY3V2Nzg2bzczeDZNQTBxNDV2T1BXWVNsOWNJMFNWYTh3a3R2STVFb09DSDhRTjV3RHhfa0xBZkk5ZUVxcGhBNEI0ejlMV01HSGpGbXAxMlg4VzEzNE9URzdqNXE3dHdRbm1GM05GaHRSVDNQZjQxWFRtSXNJd1JQS25EVEt6Zw?oc=5",
-   "lastelec": "Presidential, April 2022, Aleksandar Vučić"
+   "updated": "2026-09-30",
+   "source": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBKNUxrTXpqVldjMmFCVUJnazZuVU1fTzg3cVlZTnlwVVVtbXZ1UFgzalhlamZKcElxekxPOWc5V3RERUZCd3hvdVZoRWEtcHNkVlJhbEdfNHZDNWcyWHZPTkhHNloxOFNDbHh3WjVwcVZxRDhncm1pVWV6QVc?oc=5",
+   "lastelec": "presidential, September 2026, Ana Brnabić"
   },
   "CHE": {
    "lastelec": "referendum, Sep 2026, rejected stricter neutrality",
@@ -1077,6 +1183,11 @@
    "nextelec": "Snap parliamentary, potentially January 2027",
    "updated": "2026-09-29",
    "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQaGZzSVNyUkk1ZVlVRC1aN3BuQlJNWHVxX2Q3OVhuWUxZSzhNN2VfRy1zdDU5RHNuTERQbTAxS3NYNWlzdzBLV1dwMDZUdGVKNXpoclRCNXZQNzhOVTZGbUdZY1pmdWtPUUQtbzl6Y19xRmFLbTYyS3BDMGdfRXUxWWR2NkZzMHZEQTJ6VmJOYjJjY2hQSXU1bE9lTDBpYTFNVmgtbFV0MDZxVmlocUxWRUpvLXVBNjFhR0HSAbgBQVVfeXFMTWVUMGhmclVScDVjaFJLUkJ2elNTd3hzd21sRjg1cF9EeWJXbFBrRmlKblRsWDdRQTN1eTc3aDhqV2dBTHhGRk5Ccll1SldRZGpXTEExMjUwUEFlUnVINVFrQWxyZzlzRmZiZE9aUUhZY1IxMFZVTE9qWktmWUJfMFcyNUpfREdkbHd4Q0VldEozQmpMVG1Yb1JLdkpZbm5tektzbTBCRTZfVE42dWUxVEhhOG1UY0hKQw?oc=5"
+  },
+  "ROU": {
+   "lastelec": "parliamentary rejection of PM-designate, September 2026",
+   "updated": "2026-09-30",
+   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQczBaMFRVNGg1ekJycXd3VTJ5MTZ3RUpFS2RrenpFaFRoblpPa21PNTR4MU01Z0RDV2UyZjZEaXZYVW5rb3RlWW0tR2s4ZVBwQkhmaDZUai1oNWxRTG1fTklJd0ZWS3lqTjF0aW8xOFdqcElWLUhqeDFHU0dvVHlpallYSGxYdjJHdEY0VU1MWTNEdHQwWFlkZDFkVGtqTUQ1U0VLX1ZtZzg4cV9HWGszUFhFb04yY2VSVGc?oc=5"
   }
  }
 }
