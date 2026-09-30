@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-09-30T05:16:48Z",
+  "lastRun": "2026-09-30T10:19:17Z",
   "log": [
    {
     "date": "2026-09-30",
@@ -11,14 +11,14 @@
       "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdE5aZUowb3pWWmM0dVNYb0dpcjVwV1JweEgwb0hGR3Yxa1V3WTA3QWo5VWhrY2YwV01BQmtELS1TWGRiZXVUMTByY1kyTVIxQWNIREtSVWxqc1U5SzN1aGNxRm9JTW9PM2REWUpIRWtyS1p0V28zVEhoOWVFWFpoTzlOa0RpM3Rhc1o4eXp1QmExZWFyN2FNLTZ5cGN3bEpKVnJUMkNFd202Q1RySUIzRFVJekhnSkda?oc=5"
      },
      {
-      "label": "Iraq–United States",
-      "change": "Updated note: US military completes withdrawal from Iraq, ending anti-ISIS mission",
-      "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNYWxUX3VibEFLOXhnX3NtYzhfblQ3WG1VTU14bk1fcjlQLVlxTWNJS3duU2J2VzF3aTJNQWJ5Z2dDZ09zcFc1UWlkeksxRHZzTlhaUnUxOHpxNHR3MjhtSHBWaE9BalBCVkttSjRzcEZlcEF0V0xGY0VPd1phN25VRlQxbDNUUVZLelU2ajllSVIyQ3pmakMwVjUzRFI1em5BcXliSWR0R0JzbDQ?oc=5"
-     },
-     {
       "label": "Kenya–Rwanda",
       "change": "Partner: Kenya opens new fuel import route for Rwanda through Mombasa",
       "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNb290bWVzOTN5RTZYaEktNXN2aFo4aHd1eWlGQ0tNbHQ2M3lRWm5aZnJOWU5pSkxNNVFFNkt0a3JuTWNHWjVQYkJIME9JbkRNV0k3QkdvTFhNV3RJU3BhS1F5SGVGekZPZXFjc2RxdDFjekk4d1lHZ0ZEQ25kbkZ2S0NEV1ZNUW4xcUZvSGJRZw?oc=5"
+     },
+     {
+      "label": "Iraq–United States",
+      "change": "Normal → Partner: US military mission concluded",
+      "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMUltLWtwZkRzcmJDMFRZRHotcEJHS0h6LWlZdFYyM3BCRUpqUWs0eXJoOXZIb3kyWEdlMUYwWkpsdFBzckRIZ3hNMWFlZ2NtbWZBUjVZVy1sLWJEZFA5Sklsemd0TmRvdHJMaWJvQ3lLYkJlemtSekUxdGdDUVRHLWZpZGJaRTZ4c3c?oc=5"
      }
     ]
    },
@@ -446,7 +446,7 @@
     ]
    }
   ],
-  "summary": "This update records the completion of the United States military withdrawal from Iraq, escalating US-Canada trade tensions, and new fuel supply infrastructure between Kenya and Rwanda."
+  "summary": "Updated regional updates with Iraq's military transition, ongoing tensions over West Asian flights, and routine diplomatic interactions."
  },
  "relations": {
   "DNK-USA": {
@@ -805,9 +805,9 @@
    "a": "IRQ",
    "b": "USA",
    "s": "F",
-   "note": "United States (US) forces complete their military withdrawal from Iraq, ending the anti-ISIS combat mission.",
+   "note": "United States forces complete their military withdrawal from Iraq, ending the anti-ISIS combat mission.",
    "updated": "2026-09-30",
-   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNYWxUX3VibEFLOXhnX3NtYzhfblQ3WG1VTU14bk1fcjlQLVlxTWNJS3duU2J2VzF3aTJNQWJ5Z2dDZ09zcFc1UWlkeksxRHZzTlhaUnUxOHpxNHR3MjhtSHBWaE9BalBCVkttSjRzcEZlcEF0V0xGY0VPd1phN25VRlQxbDNUUVZLelU2ajllSVIyQ3pmakMwVjUzRFI1em5BcXliSWR0R0JzbDQ?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMUltLWtwZkRzcmJDMFRZRHotcEJHS0h6LWlZdFYyM3BCRUpqUWs0eXJoOXZIb3kyWEdlMUYwWkpsdFBzckRIZ3hNMWFlZ2NtbWZBUjVZVy1sLWJEZFA5Sklsemd0TmRvdHJMaWJvQ3lLYkJlemtSekUxdGdDUVRHLWZpZGJaRTZ4c3c?oc=5"
   },
   "KEN-RWA": {
    "a": "KEN",
