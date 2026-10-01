@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-01T05:16:23Z",
+  "lastRun": "2026-10-01T10:20:15Z",
   "log": [
    {
     "date": "2026-10-01",
@@ -14,6 +14,16 @@
       "label": "Morocco",
       "change": "Fatima El-Mansouri appointed as first female prime minister",
       "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPT01lcWlTam4zYjdIQmRfYkswS3ktXzY5SXRPNjJ6ZFhtRFNMUDRobjV6MHVMMy1zeWdZUVB4YWxBZ0dLcUxSOHM0d0hxTjJwR0tQZUl5UGx3VDVuNDN3ZHRheVhpeDB0RmJGdTd0LVNKc2lCR194bG1PM25nNk9kYzM5REJ5Z2hxSG5wSGpza0dmNlV4cGwyTlhNU0FtQlRQaXhqR0RlTkxOa2pjS2JrVHVkQ1ZJRnFycWZmTUxfQW5ZZGFwd1BvWTRrMA?oc=5"
+     },
+     {
+      "label": "United States–Syria",
+      "change": "Normal: US lifts long-standing arms export ban on post-Assad Syria",
+      "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTWJya0JHWHhMSnFWSjFvVS0wSkUyazlqX2NhZ1dzOC1mVjZuZFVfc2JySU9oeFo4V1BSRjRIXzdKa2xIUnhhUkI1S2sxd2hoTFpTMXluMEM3WFlzYjY5RzE0dVl5OHhFWXFMaGlITHJwZHRJaGtEQXliR2ZEemFBMw?oc=5"
+     },
+     {
+      "label": "El Salvador",
+      "change": "Scheduled presidential election for 28 February 2027",
+      "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNeXdBSjRPQ01PM2lPbm54TU5leDVmNzdYa3hwMkFkd3pPY2hZN2k4TWpzbWJqSWtXM3JpTWl0cm5pb19wRi1WSFNPYUQ5MUg3akNhdmFGT0xnY25JZEp0ekNHbUlTZXdwdHAxRkhWU2EyQWxOVzdSMEpOY3pudkRva0xxUG9STXdGaGF1aUhqWlIyTWVXU0lYc252YmJtTDNWcnFLekNIbkZlZmlESzg2TG83OWpPb0tQaFBhbkFfdw?oc=5"
      }
     ]
    },
@@ -516,7 +526,7 @@
     ]
    }
   ],
-  "summary": "Pakistan conducts airstrikes in Afghanistan following militant clashes, while Morocco appoints Fatima El-Mansouri as its first female prime minister and flight incidents heighten regional tensions."
+  "summary": "The United States lifts its arms export ban on Syria, and El Salvador schedules its next presidential election for February 2027."
  },
  "relations": {
   "DNK-USA": {
@@ -950,6 +960,14 @@
    "note": "London and Jerusalem maintain intelligence-sharing channels after British warnings regarding regional threats.",
    "updated": "2026-10-01",
    "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxOQndYcGtPSjhnam05M2RZNkJqZEFLSHMzdGhlLWE3TjIydFBSVG96aUtHY0ptSnM2cVlydUdrX1VhdU1aZHhmZC1wbUpNYjhpeHRfNUZacFNIVWhRamJieFVUUmtPUnk2UjZYMV85bmlMdEQ0VzNRVlpERUctUGZBTWxMMjg4R2IwNEpleVEyQXZpRE9GUElmczdRa1pEdw?oc=5"
+  },
+  "SYR-USA": {
+   "a": "SYR",
+   "b": "USA",
+   "s": "N",
+   "note": "The United States lifts its long-standing arms export ban on Syria following the fall of the Assad regime.",
+   "updated": "2026-10-01",
+   "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTWJya0JHWHhMSnFWSjFvVS0wSkUyazlqX2NhZ1dzOC1mVjZuZFVfc2JySU9oeFo4V1BSRjRIXzdKa2xIUnhhUkI1S2sxd2hoTFpTMXluMEM3WFlzYjY5RzE0dVl5OHhFWXFMaGlITHJwZHRJaGtEQXliR2ZEemFBMw?oc=5"
   }
  },
  "threads": {
@@ -1214,9 +1232,9 @@
   },
   "SLV": {
    "lastelec": "presidential, February 2024, Nayib Bukele",
-   "nextelec": "presidential, February 28, 2027",
+   "nextelec": "Presidential, 28 February 2027",
    "updated": "2026-10-01",
-   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcXFPTzFxOTRZbXJaOFp3U0RJUXFhVjRnU1BUdjJtX0UyQU0xWGFKMDNkZ2ZzUXhnWkhMRFcwTnhwajRYNHkzTG01Y1RlcGh5Q2d2bHdtd2lWM3NvdmMtR1hDXy04b2dFdWxwVXBpZnFZYVh3TW1mc3c0YW5PWXpSaE14amYtRWtyajgzZTVkeFhOTlh0cUpXM1NScFg?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNeXdBSjRPQ01PM2lPbm54TU5leDVmNzdYa3hwMkFkd3pPY2hZN2k4TWpzbWJqSWtXM3JpTWl0cm5pb19wRi1WSFNPYUQ5MUg3akNhdmFGT0xnY25JZEp0ekNHbUlTZXdwdHAxRkhWU2EyQWxOVzdSMEpOY3pudkRva0xxUG9STXdGaGF1aUhqWlIyTWVXU0lYc252YmJtTDNWcnFLekNIbkZlZmlESzg2TG83OWpPb0tQaFBhbkFfdw?oc=5"
   }
  }
 }
