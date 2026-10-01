@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-01T16:06:19Z",
+  "lastRun": "2026-10-01T22:08:36Z",
   "log": [
    {
     "date": "2026-10-01",
@@ -27,8 +27,8 @@
      },
      {
       "label": "Eritrea–Ethiopia",
-      "change": "Tense → Hostile: Embassy closure and diplomat expulsions amid escalating war",
-      "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNRjkzVWhqM0w0Umh6amZlck1JSjhqX2htQWNVbUlOWjVjSFZua3Fvak4tQWVEdzJCOHFzdVlyNVJ3cUF4SkdSbTh3ellHTVJnTEhGNzVuNUk0YlF4OVdJa1k4TEVydzRpWm9ZME1oVmhvWWRuTXNhQkdENGgwTG42eHlOajFJZ1JTOXZjWjQzWlZNRGdMal8tUE5EcUpadjc2b0lvWUhILXhIVHNIVC1TWW03SjZTNVBhbXJMX1FtcU5oTnZlSTUwQ1pMUdIB0AFBVV95cUxPc2ZUVUFzSEhwZTJ0ZWI4cnNhTHMycnNFblNtTXZUNFlfenVMaXZ4ZjhRQTZLSWNMb3lpemtxSFdzejZ1Y19iZElzYmNieHBXaXJFLUtuejlKT0prRm5IOVluR2YwRlVDMHRSQnphNG5Jd0x2QklNMm1ZeUxyQTBFXzZsc1NIZkxaQXFncHlCbWdjN2VEbVhzaDVGSGdiclp5cWwyaG01QVQxXzFHWlYwWVcyZFhITGpRbk5rZ21kbmh4NkFMWS04NVVWb3V6UHha?oc=5"
+      "change": "Tense → Armed conflict: Eritrea severs diplomatic ties and Ethiopia capital hit by drone strikes",
+      "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQeEVNU0ZlSFBNbXhPTXdaVEw5c1FCY2RORElXeERNVW5PN0I2ZkRmaVhFcTFKaTh0UkxiZ2gzZGVSU2I2dkxmdS1TVHoxaHQzbFl1V0ZSWXE0dzNNaWpJc3hXNHVvd3hjYUhOUjU5N0NCaVNxR00zZjBWOWs5eEtkdU8tSkJnMl9KbkJHdC14anduWldyX3V4aFppU2dTNTZtWWVTVjhsU0UwMFlHUzFYcQ?oc=5"
      }
     ]
    },
@@ -531,7 +531,7 @@
     ]
    }
   ],
-  "summary": "Ethiopia closes its embassy in Eritrea and expels diplomats amid escalating conflict, while regional tensions flare over border clashes and diplomatic realignments."
+  "summary": "Ethiopia and Eritrea sever diplomatic ties after Addis Ababa expels ten Eritrean diplomats; Pakistan launches cross-border strikes in Afghanistan; US issues diesel ultimatum to Germany and France."
  },
  "relations": {
   "DNK-USA": {
@@ -713,18 +713,18 @@
   "ERI-ETH": {
    "a": "ERI",
    "b": "ETH",
-   "s": "H",
-   "note": "Ethiopia closes its embassy in Asmara and expels ten Eritrean diplomats, citing acts of hostility and regional war.",
+   "s": "W",
+   "note": "Eritrea severs diplomatic ties and Ethiopia capital is struck by drones following the expulsion of Eritrean diplomats.",
    "updated": "2026-10-01",
-   "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNRjkzVWhqM0w0Umh6amZlck1JSjhqX2htQWNVbUlOWjVjSFZua3Fvak4tQWVEdzJCOHFzdVlyNVJ3cUF4SkdSbTh3ellHTVJnTEhGNzVuNUk0YlF4OVdJa1k4TEVydzRpWm9ZME1oVmhvWWRuTXNhQkdENGgwTG42eHlOajFJZ1JTOXZjWjQzWlZNRGdMal8tUE5EcUpadjc2b0lvWUhILXhIVHNIVC1TWW03SjZTNVBhbXJMX1FtcU5oTnZlSTUwQ1pMUdIB0AFBVV95cUxPc2ZUVUFzSEhwZTJ0ZWI4cnNhTHMycnNFblNtTXZUNFlfenVMaXZ4ZjhRQTZLSWNMb3lpemtxSFdzejZ1Y19iZElzYmNieHBXaXJFLUtuejlKT0prRm5IOVluR2YwRlVDMHRSQnphNG5Jd0x2QklNMm1ZeUxyQTBFXzZsc1NIZkxaQXFncHlCbWdjN2VEbVhzaDVGSGdiclp5cWwyaG01QVQxXzFHWlYwWVcyZFhITGpRbk5rZ21kbmh4NkFMWS04NVVWb3V6UHha?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQeEVNU0ZlSFBNbXhPTXdaVEw5c1FCY2RORElXeERNVW5PN0I2ZkRmaVhFcTFKaTh0UkxiZ2gzZGVSU2I2dkxmdS1TVHoxaHQzbFl1V0ZSWXE0dzNNaWpJc3hXNHVvd3hjYUhOUjU5N0NCaVNxR00zZjBWOWs5eEtkdU8tSkJnMl9KbkJHdC14anduWldyX3V4aFppU2dTNTZtWWVTVjhsU0UwMFlHUzFYcQ?oc=5"
   },
   "AFG-PAK": {
    "a": "AFG",
    "b": "PAK",
    "s": "W",
-   "note": "Cross-border hostilities escalate as Pakistan conducts targeted airstrikes inside Afghanistan, resulting in civilian and militant casualties.",
+   "note": "Pakistan launches deadly airstrikes inside Afghanistan, sharply escalating cross-border hostilities with the Taliban.",
    "updated": "2026-10-01",
-   "source": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFB1UjFvQ3JILUl0bm84Tmc4XzZwcmlDWWRDNEFDaDdjTUdNTWwxMzN5anhKeERrRUlLSEZCZ3pjdm9sajdYeDEwZjhR?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbmRRVHF2dW9BcElUaFo3SEZlX0hvSHlUaHpWNTIzdzd5LXhTems2V1VnWjk5SFdIZV8xajNKZnBDbmhDYm84RVlkbUF1cEhmenZvMmtsZEFlUDl5Rmw2TTF3SWI1NWxUeEs2clh1VVJ2Y25FT1Vqb0x3emZGVGd2SDFuQ0c5aS0tYUo1bXBTdk1pWThWVXFvN1RteEptZ3NSQ3RocDhkMGVWMXc0enfSAbMBQVVfeXFMTmFOeW1ZYjR2RkJPSUJUdFdESjZqdVR1VlRCVjVTMFdYNjhLRUY5SjFhZFNldGx5YTlXcGJlMEdVY0RCWXl6RDg0Sks0aHo3Ukt6dU9xWHNMTl9yNl9yZmNPWE4zUm1nenAtWHEyUm1zbVJTbUg5YmpKRFlSYXV3aURPZU9MdUE2ZmozeElaMzJRcGxjd0lTeHdkakRFcVpKMVVZay1xTWVPSm1XRjNaX014VU0?oc=5"
   },
   "BGD-IND": {
    "a": "BGD",
