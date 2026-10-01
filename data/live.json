@@ -1,7 +1,22 @@
 {
  "meta": {
-  "lastRun": "2026-09-30T22:09:07Z",
+  "lastRun": "2026-10-01T05:16:23Z",
   "log": [
+   {
+    "date": "2026-10-01",
+    "items": [
+     {
+      "label": "Afghanistan–Pakistan",
+      "change": "Tense → Armed conflict: Pakistani airstrikes inside Afghan territory",
+      "source": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFB1UjFvQ3JILUl0bm84Tmc4XzZwcmlDWWRDNEFDaDdjTUdNTWwxMzN5anhKeERrRUlLSEZCZ3pjdm9sajdYeDEwZjhR?oc=5"
+     },
+     {
+      "label": "Morocco",
+      "change": "Fatima El-Mansouri appointed as first female prime minister",
+      "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPT01lcWlTam4zYjdIQmRfYkswS3ktXzY5SXRPNjJ6ZFhtRFNMUDRobjV6MHVMMy1zeWdZUVB4YWxBZ0dLcUxSOHM0d0hxTjJwR0tQZUl5UGx3VDVuNDN3ZHRheVhpeDB0RmJGdTd0LVNKc2lCR194bG1PM25nNk9kYzM5REJ5Z2hxSG5wSGpza0dmNlV4cGwyTlhNU0FtQlRQaXhqR0RlTkxOa2pjS2JrVHVkQ1ZJRnFycWZmTUxfQW5ZZGFwd1BvWTRrMA?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-09-30",
     "items": [
@@ -501,7 +516,7 @@
     ]
    }
   ],
-  "summary": "This update captures the formalization of the Makkah Defense Alliance between Saudi Arabia and Türkiye, China's establishment of a new military facility in Laos, tightened US sanctions on Cuba, and a new US-Burundi migration agreement, alongside leadership-based fact checks."
+  "summary": "Pakistan conducts airstrikes in Afghanistan following militant clashes, while Morocco appoints Fatima El-Mansouri as its first female prime minister and flight incidents heighten regional tensions."
  },
  "relations": {
   "DNK-USA": {
@@ -691,10 +706,10 @@
   "AFG-PAK": {
    "a": "AFG",
    "b": "PAK",
-   "s": "H",
-   "note": "Cross-border clashes erupt along the Durand Line in Kurram as Pakistan strikes Taliban positions following militant incursions.",
-   "updated": "2026-09-27",
-   "source": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNMnpWWTY1eElFQ0JpRU5Fd3hZemFJU1Q1ODFmR0JvcmczOWNEM0JoczJUdWNPeUZmanRHbjUzWXRfV2tjZThlNlBrVUVRY01na24tVmxycUFRMXRFM2FIWDZzcFY5eldmYmJqNkI3QmhWSEZwcmFTQmtJUE9ncF95ZFJnTnNqQ3lDaFRyWnFxT21oeEtrbFhxdG9vOTFYaFVBR0Y1bHZtT1dnWEdpODZGcW5TcWlFd0VkcGtUREZuaEdLY2VZQ1FDZ20tV0hpVjhNaWJEb3JsMXRZSTFPRldleEMwVdIB6AFBVV95cUxNdGxUdk5pazRlS2ZRNFZldFJpVl9TV3MxdU1uNF9sc3luakc0MVJHWUsyeUdjcEhIemJVSnlaRTBjRDhtbTlmMDVOMlM1ZXRVY0x4cUtSZk05TmE1VERNVjNtV3N3a1ROQWQ2Ujlmekh3SDBEMDhkYWI2eW9vNjU5NzF3S2lTUnJMdThpeUlSNVpoaE9HMndCbEI3Q3U2OUs3ZmZUckNSNG5GTFoydFMtWDFxVGNSTTAwUHl0VHNuTnZTNVFUTnNPWHAzU3ZGM3pvSUk4Mnc4OWh2czBhU1JmSU5HRFltOFda?oc=5"
+   "s": "W",
+   "note": "Cross-border hostilities escalate as Pakistan conducts targeted airstrikes inside Afghanistan, resulting in civilian and militant casualties.",
+   "updated": "2026-10-01",
+   "source": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFB1UjFvQ3JILUl0bm84Tmc4XzZwcmlDWWRDNEFDaDdjTUdNTWwxMzN5anhKeERrRUlLSEZCZ3pjdm9sajdYeDEwZjhR?oc=5"
   },
   "BGD-IND": {
    "a": "BGD",
@@ -764,9 +779,9 @@
    "a": "ARE",
    "b": "ISR",
    "s": "F",
-   "note": "Israel and the United Arab Emirates (UAE) maintain Abraham Accords ties as Israeli Prime Minister holds talks on Iran in Abu Dhabi.",
-   "updated": "2026-09-28",
-   "source": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE02QVdsMGFYWDlWZ3V4N2xLLVZ5eTQ4R0psMVZwc0wtYk1qUFhHaF9Cb2V0WDN4SDlPMm1vMExTTGR6Q3VxSUxXQlBPSld2N0lzbk9fSXNGbTA5ay05?oc=5"
+   "note": "Abraham Accords partnership strained as Israel and the UAE coordinate a response to an attack on a Flydubai flight.",
+   "updated": "2026-10-01",
+   "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUi04bVVoM1oyNjhKWlpMbW5uUG9ubGVrdmR6cUFJUndMbGRYOGMyNXBDc2NLYi1zVE5wa280REFwRjZfRGFXeDU2bFd3bDdGeTA0VHhqTG5YWHBNX1JyajhJdlRMVU9xWDNfLXlxNHRPSjhaY2lqYXlvRlhidWNsNGducF9lcEtaTjF3b3MySldJVVNzaUpTZEx5M00weFBPWk1Cem42NUJSQXpxYXN5MlZsdGhOLVd0eW1mUg?oc=5"
   },
   "ISR-MAR": {
    "a": "ISR",
@@ -927,6 +942,14 @@
    "note": "The defense treaty remains active under President Lee Jae Myung, despite US concerns over Seoul's ties with China.",
    "updated": "2026-09-30",
    "source": "https://www.wikidata.org/wiki/Q884"
+  },
+  "GBR-ISR": {
+   "a": "GBR",
+   "b": "ISR",
+   "s": "F",
+   "note": "London and Jerusalem maintain intelligence-sharing channels after British warnings regarding regional threats.",
+   "updated": "2026-10-01",
+   "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxOQndYcGtPSjhnam05M2RZNkJqZEFLSHMzdGhlLWE3TjIydFBSVG96aUtHY0ptSnM2cVlydUdrX1VhdU1aZHhmZC1wbUpNYjhpeHRfNUZacFNIVWhRamJieFVUUmtPUnk2UjZYMV85bmlMdEQ0VzNRVlpERUctUGZBTWxMMjg4R2IwNEpleVEyQXZpRE9GUElmczdRa1pEdw?oc=5"
   }
  },
  "threads": {
@@ -1148,10 +1171,10 @@
    "updated": "2026-09-23"
   },
   "MAR": {
-   "lastelec": "appointment, September 2026, Fatima Ezzahra El Mansouri (PAM)",
-   "updated": "2026-09-30",
-   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOeGs3NWo4alVaS3dXVk9zT3NoeXVTTFo2bzVBaEZHQjZ2Uk1fdzRSSW9FMExBU2ZjZ3RHSlRVZjNZR1dZaEd3YURWUmh2Z0NVQWlGY2R0Z3Yzdkd1czJ5UnFpRkppdDNXaTBES2RnQzc4cUdHbEtsQXY3Y0NpbVRLRHVxaVFYR3g3VlJwcWtRZklGb3lqT0RSSE1zMDFUSFk1OG4yNnNwUjBLMzNwVkZFMVBfRng0QUdXcENnOE53?oc=5",
-   "nextelec": "September 2026"
+   "lastelec": "legislative, September 2021, National Rally of Independents",
+   "updated": "2026-10-01",
+   "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPT01lcWlTam4zYjdIQmRfYkswS3ktXzY5SXRPNjJ6ZFhtRFNMUDRobjV6MHVMMy1zeWdZUVB4YWxBZ0dLcUxSOHM0d0hxTjJwR0tQZUl5UGx3VDVuNDN3ZHRheVhpeDB0RmJGdTd0LVNKc2lCR194bG1PM25nNk9kYzM5REJ5Z2hxSG5wSGpza0dmNlV4cGwyTlhNU0FtQlRQaXhqR0RlTkxOa2pjS2JrVHVkQ1ZJRnFycWZmTUxfQW5ZZGFwd1BvWTRrMA?oc=5",
+   "nextelec": "legislative, 2026"
   },
   "BGR": {
    "nextelec": "presidential, 25 October 2026",
@@ -1188,6 +1211,12 @@
    "lastelec": "parliamentary rejection of PM-designate, September 2026",
    "updated": "2026-09-30",
    "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQczBaMFRVNGg1ekJycXd3VTJ5MTZ3RUpFS2RrenpFaFRoblpPa21PNTR4MU01Z0RDV2UyZjZEaXZYVW5rb3RlWW0tR2s4ZVBwQkhmaDZUai1oNWxRTG1fTklJd0ZWS3lqTjF0aW8xOFdqcElWLUhqeDFHU0dvVHlpallYSGxYdjJHdEY0VU1MWTNEdHQwWFlkZDFkVGtqTUQ1U0VLX1ZtZzg4cV9HWGszUFhFb04yY2VSVGc?oc=5"
+  },
+  "SLV": {
+   "lastelec": "presidential, February 2024, Nayib Bukele",
+   "nextelec": "presidential, February 28, 2027",
+   "updated": "2026-10-01",
+   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcXFPTzFxOTRZbXJaOFp3U0RJUXFhVjRnU1BUdjJtX0UyQU0xWGFKMDNkZ2ZzUXhnWkhMRFcwTnhwajRYNHkzTG01Y1RlcGh5Q2d2bHdtd2lWM3NvdmMtR1hDXy04b2dFdWxwVXBpZnFZYVh3TW1mc3c0YW5PWXpSaE14amYtRWtyajgzZTVkeFhOTlh0cUpXM1NScFg?oc=5"
   }
  }
 }
