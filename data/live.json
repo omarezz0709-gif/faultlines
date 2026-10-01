@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-01T10:20:15Z",
+  "lastRun": "2026-10-01T16:06:19Z",
   "log": [
    {
     "date": "2026-10-01",
@@ -24,6 +24,11 @@
       "label": "El Salvador",
       "change": "Scheduled presidential election for 28 February 2027",
       "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNeXdBSjRPQ01PM2lPbm54TU5leDVmNzdYa3hwMkFkd3pPY2hZN2k4TWpzbWJqSWtXM3JpTWl0cm5pb19wRi1WSFNPYUQ5MUg3akNhdmFGT0xnY25JZEp0ekNHbUlTZXdwdHAxRkhWU2EyQWxOVzdSMEpOY3pudkRva0xxUG9STXdGaGF1aUhqWlIyTWVXU0lYc252YmJtTDNWcnFLekNIbkZlZmlESzg2TG83OWpPb0tQaFBhbkFfdw?oc=5"
+     },
+     {
+      "label": "Eritrea–Ethiopia",
+      "change": "Tense → Hostile: Embassy closure and diplomat expulsions amid escalating war",
+      "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNRjkzVWhqM0w0Umh6amZlck1JSjhqX2htQWNVbUlOWjVjSFZua3Fvak4tQWVEdzJCOHFzdVlyNVJ3cUF4SkdSbTh3ellHTVJnTEhGNzVuNUk0YlF4OVdJa1k4TEVydzRpWm9ZME1oVmhvWWRuTXNhQkdENGgwTG42eHlOajFJZ1JTOXZjWjQzWlZNRGdMal8tUE5EcUpadjc2b0lvWUhILXhIVHNIVC1TWW03SjZTNVBhbXJMX1FtcU5oTnZlSTUwQ1pMUdIB0AFBVV95cUxPc2ZUVUFzSEhwZTJ0ZWI4cnNhTHMycnNFblNtTXZUNFlfenVMaXZ4ZjhRQTZLSWNMb3lpemtxSFdzejZ1Y19iZElzYmNieHBXaXJFLUtuejlKT0prRm5IOVluR2YwRlVDMHRSQnphNG5Jd0x2QklNMm1ZeUxyQTBFXzZsc1NIZkxaQXFncHlCbWdjN2VEbVhzaDVGSGdiclp5cWwyaG01QVQxXzFHWlYwWVcyZFhITGpRbk5rZ21kbmh4NkFMWS04NVVWb3V6UHha?oc=5"
      }
     ]
    },
@@ -526,7 +531,7 @@
     ]
    }
   ],
-  "summary": "The United States lifts its arms export ban on Syria, and El Salvador schedules its next presidential election for February 2027."
+  "summary": "Ethiopia closes its embassy in Eritrea and expels diplomats amid escalating conflict, while regional tensions flare over border clashes and diplomatic realignments."
  },
  "relations": {
   "DNK-USA": {
@@ -708,10 +713,10 @@
   "ERI-ETH": {
    "a": "ERI",
    "b": "ETH",
-   "s": "T",
-   "note": "Ethiopia's army chief accuses Eritrea, Sudan, and Egypt of supporting Tigrayan rebels as northern fighting escalates.",
-   "updated": "2026-09-29",
-   "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQdnlJNGRnTkZuTnpHa253UUlLU01uQkVtSXNiMUprb3Q4OTBoRTlib3ppN3hfVlhsMFZONVlhZk5PanRWU0RwZklVSlM3ZHBlNkxQRzVRd1VOZllNMUMtMnJ3ekRZMy04Y1FsQjJleXZVblJHVFN2RFhtSGF6T1JhX3A2ZEljY3l0U0hvVERxV0JQX2lQUnRaUjlmdlpjU3VuV1RFUVM5c0JlNk82NWFvdUx1akR1ZkJ5RTZRNk1EUkRjVktsaE1sakp6cEtpcnM?oc=5"
+   "s": "H",
+   "note": "Ethiopia closes its embassy in Asmara and expels ten Eritrean diplomats, citing acts of hostility and regional war.",
+   "updated": "2026-10-01",
+   "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNRjkzVWhqM0w0Umh6amZlck1JSjhqX2htQWNVbUlOWjVjSFZua3Fvak4tQWVEdzJCOHFzdVlyNVJ3cUF4SkdSbTh3ellHTVJnTEhGNzVuNUk0YlF4OVdJa1k4TEVydzRpWm9ZME1oVmhvWWRuTXNhQkdENGgwTG42eHlOajFJZ1JTOXZjWjQzWlZNRGdMal8tUE5EcUpadjc2b0lvWUhILXhIVHNIVC1TWW03SjZTNVBhbXJMX1FtcU5oTnZlSTUwQ1pMUdIB0AFBVV95cUxPc2ZUVUFzSEhwZTJ0ZWI4cnNhTHMycnNFblNtTXZUNFlfenVMaXZ4ZjhRQTZLSWNMb3lpemtxSFdzejZ1Y19iZElzYmNieHBXaXJFLUtuejlKT0prRm5IOVluR2YwRlVDMHRSQnphNG5Jd0x2QklNMm1ZeUxyQTBFXzZsc1NIZkxaQXFncHlCbWdjN2VEbVhzaDVGSGdiclp5cWwyaG01QVQxXzFHWlYwWVcyZFhITGpRbk5rZ21kbmh4NkFMWS04NVVWb3V6UHha?oc=5"
   },
   "AFG-PAK": {
    "a": "AFG",
@@ -1232,9 +1237,9 @@
   },
   "SLV": {
    "lastelec": "presidential, February 2024, Nayib Bukele",
-   "nextelec": "Presidential, 28 February 2027",
+   "nextelec": "Presidential, February 28, 2027",
    "updated": "2026-10-01",
-   "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNeXdBSjRPQ01PM2lPbm54TU5leDVmNzdYa3hwMkFkd3pPY2hZN2k4TWpzbWJqSWtXM3JpTWl0cm5pb19wRi1WSFNPYUQ5MUg3akNhdmFGT0xnY25JZEp0ekNHbUlTZXdwdHAxRkhWU2EyQWxOVzdSMEpOY3pudkRva0xxUG9STXdGaGF1aUhqWlIyTWVXU0lYc252YmJtTDNWcnFLekNIbkZlZmlESzg2TG83OWpPb0tQaFBhbkFfdw?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNXFXa1c5U05DZHNINV9rcExET0NiRnFoaEkyczUyUjNIUi1pa1psaVEyQ1hUR2JvYllsUkxPQnRJWTlxdnV0QmFQTjE3d3A3RXdQLTkxU0hWaVR1MW5vUlZJUmxSSHVLWUFWdlJVbk91X1I5NnVZaWZ6aXk0NmRxa1ZDdk92UnhxNFIxUFVLVkE1TVhhelU5SW9ueThycGJfZG1LZmZRVmhXQnlKMFl5cVBDa1BqblRMODYwZWV6UFZEaHF5aFRfVml6UUtJZzNp0gHWAUFVX3lxTE5XWVRjcFRCQXdGWEktQ3Y0Zi1ZeXgyQWo1bUdIVlFNTkdReU1jWEQ4MkhYNnRTNGM1MGxDWHJndjM0bUU2WThEWElkYUhER2tpUE1Za2sxWjVldkhkRllGWDlUcjlpVXUxSVFpaTFfOE8tTlpjamRJaUhNZnJqVDZ3bmlacF9iS2NqbWpZcGktT29ZbjJ2bHBETUlqZXJPVVhQNkhwNnZmdERQczl6dWw3MWctSDdfQ0R2VzlEV2VQSHdDYkx6Snh2cVYxM3gtLThOalNpX3c?oc=5"
   }
  }
 }
