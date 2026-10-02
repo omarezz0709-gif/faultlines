@@ -1,7 +1,32 @@
 {
  "meta": {
-  "lastRun": "2026-10-01T22:08:36Z",
+  "lastRun": "2026-10-02T05:16:19Z",
   "log": [
+   {
+    "date": "2026-10-02",
+    "items": [
+     {
+      "label": "Eritrea–Ethiopia",
+      "change": "Tense → Armed conflict: Eritrea severs diplomatic ties as northern fighting escalates",
+      "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPVmRQeE0yUmJiQkRnMnlqS0pNZWRPcVZNWkxIS25CY0hELWxzbFRqUHl5cF8tYmZjOHpxOGVmc2ZxdXNCMmxFMUJSRkJ5NkU2MHhablJHb3pTdVJyNXVNUWVMTGwyb1lJdXdzek5yV2dGcHNzc0JndGFkdnN4bm5HMFJxdHRicWFHQVNTVUh5Q2RVbDVCbnIxR1dwN2d3ZzhQNVNERnc5dVNzZ1V5UkJtclFFRlYweERicGpLRTE3SXBHOE0?oc=5"
+     },
+     {
+      "label": "Hungary–Ukraine",
+      "change": "Tense → Normal: Agreement on steps to reopen EU accession talks",
+      "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNUzFBeHhjRWpuZ3A4OWFhbnIxazBmMjFlQ1BjdVpUWWlvRmJyUlA0Q2R3d0FYQ1p2UW1KZThKaFU4dFhNOWhCMm0ydmdsRzBQc2ZIVUhIcHFiS0tlUi1Zek13SVZUOHhlelFhdmItQnR3UmxQS0g0OGpOeFA0YUNNTWtpYk5PbzVCZjZEc3MwZWV4S0pleUE?oc=5"
+     },
+     {
+      "label": "South Korea–Ukraine",
+      "change": "Normal → Tense: Row over North Korean prisoners of war",
+      "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNY1p6ejV0Yk51eTZ2R1hTYktMNXhfaENlYm9jVzhWMzZfUmZ5TndicmtEM3FHdVlheUxvLVgtSEhDMzQtRDh0Q1pFdG05NlBlV3BhRHJjQTZDXzlVNHBIM0E1aDhCY2N0LTNWbkhxTVhGdTdTVFN5VzB4RU40V0VvZm9EdThYT0RRQWdjZmFJa3lIWFlhS3llUmRpYXVGVDRYS1JpTmtSM0xwdEI3LU9rME90SnVuQmRLVUh1TXB4SWg?oc=5"
+     },
+     {
+      "label": "Bolivia–United States",
+      "change": "Normal → Tense: Bolivia arrests its Attorney General following US drug accusations",
+      "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNYWg2eTM4MXBtX2hHR0VSTmxTb2lTZFVTYlVCZ3E3Vll0ZUh0V1J4QXJWMjlfalRqMGtQYzkzTE5tX1pLQUpqcWFscWFzYWt6bjVNcFZEblo0bEtxbGRPR1dxN0QybDNldHl5WVB4ZHY2WUlDZzk4aU82VFFsWm9nZXQzVkNXcXppU2g1WjF0R2VCdXVQaTVSbm9XdV83Z1FURkVnYjVTRXZ1bHlMODJhc1JpM3h2ZTdxTGh2MWdMS1c?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-01",
     "items": [
@@ -531,7 +556,7 @@
     ]
    }
   ],
-  "summary": "Ethiopia and Eritrea sever diplomatic ties after Addis Ababa expels ten Eritrean diplomats; Pakistan launches cross-border strikes in Afghanistan; US issues diesel ultimatum to Germany and France."
+  "summary": "Eritrea severs diplomatic ties with Ethiopia amid escalating northern fighting, while Hungary and Ukraine agree on steps to reopen EU talks."
  },
  "relations": {
   "DNK-USA": {
@@ -570,9 +595,9 @@
    "a": "SAU",
    "b": "YEM",
    "s": "W",
-   "note": "Fighting escalates with heavy casualties as Saudi airstrikes pound Houthi positions and Houthis threaten strikes on Saudi bridges.",
-   "updated": "2026-09-28",
-   "source": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE14OUMxZWp4Y3dLNmxLUVBJMXlfZnRQTnRJeTdBRUlxN2NIcUhKRFhBemV1U0syYnBkWVdmWUdmb2N3QWJ0UlpYdUpveWFmY21UVVFYcHBtcnRxUUlm?oc=5"
+   "note": "Armed conflict intensifies as Saudi Arabia accuses the Houthis of a drone attack on a power station in Madinah.",
+   "updated": "2026-10-02",
+   "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQRzBZdGJDMzM4Rlc1UlZuYndpaFQ1MlRFNi02ajBxb3ZFTkVQRFVpTHhzb254bzB2aVlST0NHZjB5LXN1YktfM3FZSFpQRUFTR1FwdFEzZWFkT0RrNTd6YmdnZkMyVm83VE5DZHNWR3BwNzQzMVF2VGVHeF9MNi1BX01oSG9sVVZPTG5ad3VkTWxSU204ZkF3YWE3bjNvSV9UeXROVWJ6T1hlaENCdUotR1dTRFVzRWNhNnNqRE10dk9GYVVSc3RlaHJB0gHPAUFVX3lxTFBMM1VzWWtRMXFKcFV3eW40cXFRNm5iWk9PTVl3ajNGSEE2MXhxZ05ncjNIel8tRnlCMnlUUHduTkJ3amtybEV4TkhvdEZXV1dpX05peDRPZkd4Sk1sT0h0aXQ5VzZFdmljWHNxUW9JOWduaTl1SG44QmpqQWQ2NkJYNkcxSDFCLVllb0Nia2dhU0c0bm9IUmFLa083ejBQQ1lsb0dTUE1ORHBiMU1MNXNEM2NLUUdQenEyZE11R0NVbGlOSVpRUW1IX2dfcGhoZw?oc=5"
   },
   "BEL-RWA": {
    "a": "BEL",
@@ -674,9 +699,9 @@
    "a": "HUN",
    "b": "UKR",
    "s": "N",
-   "note": "Relations show signs of warming as Hungary, under PM Péter Magyar, expresses openness to joining the Ukraine-led Carpathian Eight alliance.",
-   "updated": "2026-09-26",
-   "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdEtFcXBtVHJleXJKNjhUQ1Q2ZmtxRHIzTkFjeGhKMnhoY0JkV3JldGQwa2tJeTJ3YVpHWXdMbmN5QmNFRnJpMHdwa0ZJcml4WU9CN2RqdDBjLTd0Mm43THM1NGdOaV9wWUUtX0tiUTd1VTBjbUQzbnNDMFBtZUVBcmI3ZExLRFRjcUJ2NjFwcVFhUy1kUXUwVjBZNFlNVmJsQlZGWjU1eTFhZi1PbktEZFlTSTI?oc=5"
+   "note": "Relations warm as Hungary and Ukraine agree on a step-by-step deal to unblock Kyiv's European Union (EU) accession talks.",
+   "updated": "2026-10-02",
+   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNUzFBeHhjRWpuZ3A4OWFhbnIxazBmMjFlQ1BjdVpUWWlvRmJyUlA0Q2R3d0FYQ1p2UW1KZThKaFU4dFhNOWhCMm0ydmdsRzBQc2ZIVUhIcHFiS0tlUi1Zek13SVZUOHhlelFhdmItQnR3UmxQS0g0OGpOeFA0YUNNTWtpYk5PbzVCZjZEc3MwZWV4S0pleUE?oc=5"
   },
   "USA-ZWE": {
    "a": "USA",
@@ -714,9 +739,9 @@
    "a": "ERI",
    "b": "ETH",
    "s": "W",
-   "note": "Eritrea severs diplomatic ties and Ethiopia capital is struck by drones following the expulsion of Eritrean diplomats.",
-   "updated": "2026-10-01",
-   "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQeEVNU0ZlSFBNbXhPTXdaVEw5c1FCY2RORElXeERNVW5PN0I2ZkRmaVhFcTFKaTh0UkxiZ2gzZGVSU2I2dkxmdS1TVHoxaHQzbFl1V0ZSWXE0dzNNaWpJc3hXNHVvd3hjYUhOUjU5N0NCaVNxR00zZjBWOWs5eEtkdU8tSkJnMl9KbkJHdC14anduWldyX3V4aFppU2dTNTZtWWVTVjhsU0UwMFlHUzFYcQ?oc=5"
+   "note": "Eritrea formally severs diplomatic ties with Ethiopia as fighting escalates in the north, raising fears of a wider regional war.",
+   "updated": "2026-10-02",
+   "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPVmRQeE0yUmJiQkRnMnlqS0pNZWRPcVZNWkxIS25CY0hELWxzbFRqUHl5cF8tYmZjOHpxOGVmc2ZxdXNCMmxFMUJSRkJ5NkU2MHhablJHb3pTdVJyNXVNUWVMTGwyb1lJdXdzek5yV2dGcHNzc0JndGFkdnN4bm5HMFJxdHRicWFHQVNTVUh5Q2RVbDVCbnIxR1dwN2d3ZzhQNVNERnc5dVNzZ1V5UkJtclFFRlYweERicGpLRTE3SXBHOE0?oc=5"
   },
   "AFG-PAK": {
    "a": "AFG",
@@ -746,9 +771,9 @@
    "a": "KOR",
    "b": "UKR",
    "s": "T",
-   "note": "South Korea demands an apology from Ukraine after Kyiv disclosed a confidential agreement on North Korean prisoner of war (POW) transfers.",
-   "updated": "2026-09-27",
-   "source": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxON2tpNTQ4QWxwbFo2QjZEV25iUklxMHppdTlockJpMjZOY19wMnJSNENZZ0RMcFBfSDRNWU1YaWpaWEtXcHNCQ3E2WU9SaXlYTEZkbEpwRkFVdXc3cUlLU3NCTW96TTNhMzZwNlpJVGhrLVEwTU5lQTY3UXd6VmZLTlVZaExCdnBhSVR6aGxtdV9BQk9RMGlJaEw5eHlOamR0X2JuSHhaLUI5aFB3X282TGxGcnRwRUVLcWV1Y01NQ1Q2SnhINU1XT1RVS0d5UmVab1MzckVXcDAxUWMxV1NfWE9ITVY2d25RV1NvVFVuYjNQLU1KS1NtVkxNSWZ0dw?oc=5"
+   "note": "Tensions rise as South Korea threatens additional measures against Ukraine over a dispute regarding North Korean prisoners of war (POWs).",
+   "updated": "2026-10-02",
+   "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNY1p6ejV0Yk51eTZ2R1hTYktMNXhfaENlYm9jVzhWMzZfUmZ5TndicmtEM3FHdVlheUxvLVgtSEhDMzQtRDh0Q1pFdG05NlBlV3BhRHJjQTZDXzlVNHBIM0E1aDhCY2N0LTNWbkhxTVhGdTdTVFN5VzB4RU40V0VvZm9EdThYT0RRQWdjZmFJa3lIWFlhS3llUmRpYXVGVDRYS1JpTmtSM0xwdEI3LU9rME90SnVuQmRLVUh1TXB4SWg?oc=5"
   },
   "MDA-RUS": {
    "a": "MDA",
@@ -973,6 +998,22 @@
    "note": "The United States lifts its long-standing arms export ban on Syria following the fall of the Assad regime.",
    "updated": "2026-10-01",
    "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTWJya0JHWHhMSnFWSjFvVS0wSkUyazlqX2NhZ1dzOC1mVjZuZFVfc2JySU9oeFo4V1BSRjRIXzdKa2xIUnhhUkI1S2sxd2hoTFpTMXluMEM3WFlzYjY5RzE0dVl5OHhFWXFMaGlITHJwZHRJaGtEQXliR2ZEemFBMw?oc=5"
+  },
+  "BOL-USA": {
+   "a": "BOL",
+   "b": "USA",
+   "s": "T",
+   "note": "Relations strain as Bolivia arrests its Attorney General, Roger Mariaca, following United States (US) drug trafficking accusations.",
+   "updated": "2026-10-02",
+   "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNYWg2eTM4MXBtX2hHR0VSTmxTb2lTZFVTYlVCZ3E3Vll0ZUh0V1J4QXJWMjlfalRqMGtQYzkzTE5tX1pLQUpqcWFscWFzYWt6bjVNcFZEblo0bEtxbGRPR1dxN0QybDNldHl5WVB4ZHY2WUlDZzk4aU82VFFsWm9nZXQzVkNXcXppU2g1WjF0R2VCdXVQaTVSbm9XdV83Z1FURkVnYjVTRXZ1bHlMODJhc1JpM3h2ZTdxTGh2MWdMS1c?oc=5"
+  },
+  "EGY-USA": {
+   "a": "EGY",
+   "b": "USA",
+   "s": "F",
+   "note": "The United States (US) waives human rights restrictions on $320 million in military aid to Egypt, citing regional security concerns.",
+   "updated": "2026-10-02",
+   "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNSFVXZDZpSk80ZVVld3ZSTDJGajQtZU9GWmFpUDh3ajctMlNUSEl5dDVCNlBzbzFmSWpfSE81bG9fWjJGOVpHcXdKVUpCWXdVck0xR05VcE1xUENsUUFVT1BXQVRhYjdFZ1VtQUctUkFWUmRIczg2SVBONkdLUE1yWlpBblRBbGhuV21LNkZKNm94Uk0wME9LWF9zaWY2WG52cnNuWTFWUUczZmoyWWctZkVZM1JnSGhFZEYtNzktMnFkUWx5?oc=5"
   }
  },
  "threads": {
@@ -991,11 +1032,11 @@
     "TUR",
     "PAK"
    ],
-   "d": "Iran equips Houthis targeting Red Sea shipping and Saudi sites; attacks prompt a joint defense pledge by Saudi Arabia, Turkey, and Pakistan under the Makkah Alliance.",
+   "d": "Iran-backed Houthis expand their strike range, attacking a power station in Madinah, Saudi Arabia, drawing widespread regional condemnation.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQ0xTUXZkREJ2aUV6a2E4ajhManVjVjE5WGt4eDhneWhhMmktWWlvOVprMkZocEE5andfamlMVFpsNG91MWd5QkpRSnU5Rk1pdk5XN1oxZlJqamNqTFJYWktfM3dKaWhlSVNvYklfazRkODJUNU5PeF93VzNPcHNQUlBwMzQ4VUpCelY0UDgyelNqcm1Yak9aTFRWQlJ3MXFnSzlBZVM1cXZmdkdNWDVLMkV4LXBXZExoelZCSVkycw?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQRzBZdGJDMzM4Rlc1UlZuYndpaFQ1MlRFNi02ajBxb3ZFTkVQRFVpTHhzb254bzB2aVlST0NHZjB5LXN1YktfM3FZSFpQRUFTR1FwdFEzZWFkT0RrNTd6YmdnZkMyVm83VE5DZHNWR3BwNzQzMVF2VGVHeF9MNi1BX01oSG9sVVZPTG5ad3VkTWxSU204ZkF3YWE3bjNvSV9UeXROVWJ6T1hlaENCdUotR1dTRFVzRWNhNnNqRE10dk9GYVVSc3RlaHJB0gHPAUFVX3lxTFBMM1VzWWtRMXFKcFV3eW40cXFRNm5iWk9PTVl3ajNGSEE2MXhxZ05ncjNIel8tRnlCMnlUUHduTkJ3amtybEV4TkhvdEZXV1dpX05peDRPZkd4Sk1sT0h0aXQ5VzZFdmljWHNxUW9JOWduaTl1SG44QmpqQWQ2NkJYNkcxSDFCLVllb0Nia2dhU0c0bm9IUmFLa083ejBQQ1lsb0dTUE1ORHBiMU1MNXNEM2NLUUdQenEyZE11R0NVbGlOSVpRUW1IX2dfcGhoZw?oc=5",
    "t": "security",
-   "updated": "2026-09-26"
+   "updated": "2026-10-02"
   },
   "afpak-jihad": {
    "t": "security",
@@ -1097,11 +1138,11 @@
    "hog": "Luiz Inácio Lula da Silva, President",
    "hos": "Luiz Inácio Lula da Silva, President",
    "lastelec": "General election, October 2022, won by Lula (PT)",
-   "nextelec": "presidential election, October 2026",
+   "nextelec": "presidential runoff, October 2026",
    "ruling": "Workers' Party (PT)-led broad coalition",
-   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZ2RCcnJJN2M5Q1AzZENydEF2aXpFUmVDbzk3aUhKS0dnd1pLbFpCRnNhdzFXX1g1elFvbzRsaFZCbnJqX3Z6M2IyVEJxdHZlQU1ZV1V6T3M1U1AyOFpuaHlja3VKYWJPNlRpd0NQZzllZTEtLWx5YVhMbG01VFFHLUN1djNyZ2pfX2duaWZvanRwMEJPTjN5MDU4Mzg?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQeGhBQUhxZVdrdXBoV3ZYVWR2eF91WXoybHJaUklveGRTYUJqeHNYOVlXOHEtNFBnZ29sb1BVWE1PUHZpT0tpVmxScE9XSURhZnNwbEFDRUpuOU9ndWZMX3A3emlaMEI2RjNIeUVlS21sak9pUmcxc25wZUxTLVZQa0lTX1UtcWJFRExPQ2xyY0h4eG5zTERJTjVRcUQ?oc=5",
    "system": "Federal presidential republic",
-   "updated": "2026-09-30"
+   "updated": "2026-10-02"
   },
   "CAN": {
    "hog": "Mark Carney, Prime Minister",
@@ -1240,6 +1281,16 @@
    "nextelec": "Presidential, February 28, 2027",
    "updated": "2026-10-01",
    "source": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNXFXa1c5U05DZHNINV9rcExET0NiRnFoaEkyczUyUjNIUi1pa1psaVEyQ1hUR2JvYllsUkxPQnRJWTlxdnV0QmFQTjE3d3A3RXdQLTkxU0hWaVR1MW5vUlZJUmxSSHVLWUFWdlJVbk91X1I5NnVZaWZ6aXk0NmRxa1ZDdk92UnhxNFIxUFVLVkE1TVhhelU5SW9ueThycGJfZG1LZmZRVmhXQnlKMFl5cVBDa1BqblRMODYwZWV6UFZEaHF5aFRfVml6UUtJZzNp0gHWAUFVX3lxTE5XWVRjcFRCQXdGWEktQ3Y0Zi1ZeXgyQWo1bUdIVlFNTkdReU1jWEQ4MkhYNnRTNGM1MGxDWHJndjM0bUU2WThEWElkYUhER2tpUE1Za2sxWjVldkhkRllGWDlUcjlpVXUxSVFpaTFfOE8tTlpjamRJaUhNZnJqVDZ3bmlacF9iS2NqbWpZcGktT29ZbjJ2bHBETUlqZXJPVVhQNkhwNnZmdERQczl6dWw3MWctSDdfQ0R2VzlEV2VQSHdDYkx6Snh2cVYxM3gtLThOalNpX3c?oc=5"
+  },
+  "NZL": {
+   "nextelec": "general election, November 2026",
+   "updated": "2026-10-02",
+   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQl9wRFE3aUtVbzRfM3FkUExlX2tLaDVIejVpQm80UnZQbmM0d01JdUhOcG96NkduT015Qm50UVM5Zjl5S3pxYTBMRnlPUlFQVUZ6QzZSSFZrdWtBZjNOdnlSWDdQLUlfb2VldGNfRUxxNWN1X0RDM202bllLUWtieENFdnBhQkZCSlJsM0V3QTFwcFBiTkJXaU5TM1IzdFZOcXJIdXRtTXpoc2s?oc=5"
+  },
+  "GRD": {
+   "nextelec": "general election, late 2026",
+   "updated": "2026-10-02",
+   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNeFpoYU9JRWhOWDA5QVllZ2FSeU92alRrVlZFODBRTkVMQ0xPcFo5cENRUDlYT0N1V0VWdVhyd0xCVmttc0dod180TUZONld2SDZ4VjNVU3dxTGhFRmxKaGZRR003Mm8zV0M2WmpnU0VsQnlDb2F3SmFzc1JtTy16WlBrOVI5VWZfUEFxU1VMNUZTN3BqeE1hS2pEYmRmSFp0YTdn?oc=5"
   }
  }
 }
