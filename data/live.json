@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-02T05:16:19Z",
+  "lastRun": "2026-10-02T10:17:53Z",
   "log": [
    {
     "date": "2026-10-02",
@@ -24,6 +24,31 @@
       "label": "Bolivia–United States",
       "change": "Normal → Tense: Bolivia arrests its Attorney General following US drug accusations",
       "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNYWg2eTM4MXBtX2hHR0VSTmxTb2lTZFVTYlVCZ3E3Vll0ZUh0V1J4QXJWMjlfalRqMGtQYzkzTE5tX1pLQUpqcWFscWFzYWt6bjVNcFZEblo0bEtxbGRPR1dxN0QybDNldHl5WVB4ZHY2WUlDZzk4aU82VFFsWm9nZXQzVkNXcXppU2g1WjF0R2VCdXVQaTVSbm9XdV83Z1FURkVnYjVTRXZ1bHlMODJhc1JpM3h2ZTdxTGh2MWdMS1c?oc=5"
+     },
+     {
+      "label": "Egypt–Ethiopia",
+      "change": "Tense: reciprocal expulsion of diplomats over dam and regional security disputes",
+      "source": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQanp2aHpWOGxWQjlyQ1NENkxjRkxndVEzODhBbVhPcVk1N3I4ZG9LNjNyYkFUM0xFN1FiQVRMSGZ1Q3gzVVRPZUVvSEJvUDFIRXFzd2dwQkdUdlQxNldlcGU2Y2dGWW9kNkR3S1VEc0ZhRHJTdGgtSnJHeUhHTDBfcW1wVFZCcVowM3BZ?oc=5"
+     },
+     {
+      "label": "Taiwan–United States",
+      "change": "Partner: delivery of first F-16V fighter jets reinforces bilateral defense ties",
+      "source": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPNkZJNTkxOGlXMnp4VTFROE1YRFcySjFWd0RlaHYyTEU0ZGVFQmRiZ2RTeHdCVkNiUHhtSnVFbDNPZUlWaTR2M0dZNVRHLUEwZ05HVXZiZjZpbHF4eHJBV0RnU29CTi00TXNTcXp0c3RsNmp2MGdHcXQ1S3RqYXpwXy1yV0ZVZFduM1hhd18yX1FWMXNOTVNxOFdBM0Z2dUdxYmRocWhrdUdDSzBkUmw5Qnc2OXJzYUkxNDZ3SHdoaUxGekZ5dUtfTThrbEFDRzl6aXh4WlRxM0o5NUhVbWNkVkJ0SmJlMXZ2Z2RBLXluYw?oc=5"
+     },
+     {
+      "label": "Hungary–Slovakia",
+      "change": "Partner: updated note to reflect Prime Minister Péter Magyar in office",
+      "source": "https://www.wikidata.org/wiki/Q28"
+     },
+     {
+      "label": "Cocaine via West Africa & the Sahel to Europe",
+      "change": "Thread updated: added Sierra Leone following EU aid freeze over drug trafficking",
+      "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdWVYVDVWcExtNGRTUl9tNVpiYllpbkJNdHVaUFlQS3paVVBBdFdGV2duNzlabktBTzNINzBCQlVfWUF0WnpyY0t3MjR3aklKbjEtZUxOelRoeF9XSHZTSHprRmNNdkFoa2pDV0h3aEtEM2VjTW9Rb2o3VGRabndTNE45RnhtaTdqVDZPQ1RaWkY?oc=5"
+     },
+     {
+      "label": "New Zealand",
+      "change": "Upcoming election announced for November 2026 following parliament dissolution",
+      "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQl9wRFE3aUtVbzRfM3FkUExlX2tLaDVIejVpQm80UnZQbmM0d01JdUhOcG96NkduT015Qm50UVM5Zjl5S3pxYTBMRnlPUlFQVUZ6QzZSSFZrdWtBZjNOdnlSWDdQLUlfb2VldGNfRUxxNWN1X0RDM202bllLUWtieENFdnBhQkZCSlJsM0V3QTFwcFBiTkJXaU5TM1IzdFZOcXJIdXRtTXpoc2s?oc=5"
      }
     ]
    },
@@ -556,7 +581,7 @@
     ]
    }
   ],
-  "summary": "Eritrea severs diplomatic ties with Ethiopia amid escalating northern fighting, while Hungary and Ukraine agree on steps to reopen EU talks."
+  "summary": "Egypt and Ethiopia exchange diplomatic expulsions over dam disputes, Taiwan receives US F-16V jet deliveries, New Zealand schedules upcoming elections, and EU sanctions highlight Sierra Leone's role in West African drug transit routes."
  },
  "relations": {
   "DNK-USA": {
@@ -667,8 +692,8 @@
    "a": "HUN",
    "b": "SVK",
    "s": "F",
-   "note": "Central European neighbours navigate regional energy and transit policies following Hungary's leadership transition to Péter Magyar.",
-   "updated": "2026-09-26",
+   "note": "Hungary and Slovakia maintain partner ties under Prime Minister Péter Magyar and Prime Minister Robert Fico.",
+   "updated": "2026-10-02",
    "source": "https://www.wikidata.org/wiki/Q28"
   },
   "CHN-USA": {
@@ -803,9 +828,9 @@
    "a": "EGY",
    "b": "ETH",
    "s": "T",
-   "note": "Friction over the Grand Ethiopian Renaissance Dam (GERD) deepens as Addis Ababa accuses Egypt of backing insurgent alliances.",
-   "updated": "2026-09-27",
-   "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOS1hON1h0eTVlbmstTmxOTjREc3lKQ01QNVF6NzZVanQyMlg3TXhXZ3JTWWF3Qjg0cHZ6MmRvbWtWLXlDU3dYLTVDSWlxV1hZM2tPT0VvWHRfWDBXeUtlNTJjRVN1RWJqTXVqWVlqNU4yR0ZVbWhnSWpzcy1CR1M4Z25JZDdUMnNLUXFyekw3S3B2UUZ1RWQtRV9fVXktUWhNWl9mZmJCeU41NU1XUmlhUU85R1hqR0xZRURxRXMxOVVLaDh2?oc=5"
+   "note": "Egypt and Ethiopia expel each other's diplomats amid escalating rifts over the Grand Ethiopian Renaissance Dam (GERD).",
+   "updated": "2026-10-02",
+   "source": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQanp2aHpWOGxWQjlyQ1NENkxjRkxndVEzODhBbVhPcVk1N3I4ZG9LNjNyYkFUM0xFN1FiQVRMSGZ1Q3gzVVRPZUVvSEJvUDFIRXFzd2dwQkdUdlQxNldlcGU2Y2dGWW9kNkR3S1VEc0ZhRHJTdGgtSnJHeUhHTDBfcW1wVFZCcVowM3BZ?oc=5"
   },
   "ETH-SDN": {
    "a": "ETH",
@@ -1014,6 +1039,14 @@
    "note": "The United States (US) waives human rights restrictions on $320 million in military aid to Egypt, citing regional security concerns.",
    "updated": "2026-10-02",
    "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNSFVXZDZpSk80ZVVld3ZSTDJGajQtZU9GWmFpUDh3ajctMlNUSEl5dDVCNlBzbzFmSWpfSE81bG9fWjJGOVpHcXdKVUpCWXdVck0xR05VcE1xUENsUUFVT1BXQVRhYjdFZ1VtQUctUkFWUmRIczg2SVBONkdLUE1yWlpBblRBbGhuV21LNkZKNm94Uk0wME9LWF9zaWY2WG52cnNuWTFWUUczZmoyWWctZkVZM1JnSGhFZEYtNzktMnFkUWx5?oc=5"
+  },
+  "TWN-USA": {
+   "a": "TWN",
+   "b": "USA",
+   "s": "F",
+   "note": "The United States (US) delivers its first F-16V fighter jets to Taiwan, reinforcing defense ties under the Taiwan Relations Act.",
+   "updated": "2026-10-02",
+   "source": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPNkZJNTkxOGlXMnp4VTFROE1YRFcySjFWd0RlaHYyTEU0ZGVFQmRiZ2RTeHdCVkNiUHhtSnVFbDNPZUlWaTR2M0dZNVRHLUEwZ05HVXZiZjZpbHF4eHJBV0RnU29CTi00TXNTcXp0c3RsNmp2MGdHcXQ1S3RqYXpwXy1yV0ZVZFduM1hhd18yX1FWMXNOTVNxOFdBM0Z2dUdxYmRocWhrdUdDSzBkUmw5Qnc2OXJzYUkxNDZ3SHdoaUxGekZ5dUtfTThrbEFDRzl6aXh4WlRxM0o5NUhVbWNkVkJ0SmJlMXZ2Z2RBLXluYw?oc=5"
   }
  },
  "threads": {
@@ -1087,6 +1120,28 @@
    ],
    "updated": "2026-09-29",
    "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYmVwM1JPNlNmNHNHb29OLUxSam9nZ3lpZHZ6cTVBenc4eElpb3Npc1p6YmQxd05TRG9wZmxFa0p0bWRHU0xXMGZyRjRESUdycTQwVlZJeXZrRlpsbUVRQkVTS3ZBZVFCYnVRa0NhU21RQkVDVHNvSXV5eDROdXBERTB3c3NYOHM4cWNkRHJRejVfRm56VGszNTIydl9kbHkxblpjNE1uNk01ZENQR1pSR3d2STB6dw?oc=5"
+  },
+  "cocaine-europe": {
+   "t": "trafficking",
+   "n": "Cocaine via West Africa & the Sahel to Europe",
+   "d": "Andean cocaine transits West Africa, including Sierra Leone and Guinea-Bissau, toward European markets, triggering diplomatic sanctions.",
+   "c": [
+    "COL",
+    "ECU",
+    "BRA",
+    "GNB",
+    "SEN",
+    "SLE",
+    "MLI",
+    "NER",
+    "LBY",
+    "MAR",
+    "ESP",
+    "NLD",
+    "BEL"
+   ],
+   "updated": "2026-10-02",
+   "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdWVYVDVWcExtNGRTUl9tNVpiYllpbkJNdHVaUFlQS3paVVBBdFdGV2duNzlabktBTzNINzBCQlVfWUF0WnpyY0t3MjR3aklKbjEtZUxOelRoeF9XSHZTSHprRmNNdkFoa2pDV0h3aEtEM2VjTW9Rb2o3VGRabndTNE45RnhtaTdqVDZPQ1RaWkY?oc=5"
   }
  },
  "pois": {
