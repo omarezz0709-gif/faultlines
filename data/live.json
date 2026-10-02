@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-02T10:17:53Z",
+  "lastRun": "2026-10-02T22:08:28Z",
   "log": [
    {
     "date": "2026-10-02",
@@ -49,6 +49,16 @@
       "label": "New Zealand",
       "change": "Upcoming election announced for November 2026 following parliament dissolution",
       "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQl9wRFE3aUtVbzRfM3FkUExlX2tLaDVIejVpQm80UnZQbmM0d01JdUhOcG96NkduT015Qm50UVM5Zjl5S3pxYTBMRnlPUlFQVUZ6QzZSSFZrdWtBZjNOdnlSWDdQLUlfb2VldGNfRUxxNWN1X0RDM202bllLUWtieENFdnBhQkZCSlJsM0V3QTFwcFBiTkJXaU5TM1IzdFZOcXJIdXRtTXpoc2s?oc=5"
+     },
+     {
+      "label": "Dominican Republic–Nicaragua",
+      "change": "Normal → Tense: Dominican Republic closes its embassy in Managua over opposition bans",
+      "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOTlJFVk9zS0w5UFZON1A3RFZEaXVOdkNJdTZFVnBldnNDcDhsYTktalA4OEpxU2JqSExnNE90UWg4SG9GOUl0dU5tYllTSngtQjNyUFJ1b2RBVXVjeTQydVhReHRXanc5QVBwQkhXaXZoM1NGS2Rna2pyQXZlTUNaN29ES2gtaE41VU1IQ0VRUElfWW1QYVBwUnpYeFQ3b3c0NDNWVDFvVlRGYVVrMFZ6VUYydThGZzdHR3Rscy1B0gG-AUFVX3lxTE5OUkVWT3NLTDlQVk43UDdEVkRpdU52Q0l1NkVWcGV2c0NwOGxhOS1qUDg4SnFTYmpITGc0T3RRaDhIb0Y5SXR1Tm1iWVNKeC1CM3JQUnVvZEFVdWN5NDJ1WFF4dFdqdzlBUHBCSFdpdmgzU0ZLZGdranJBdmVNQ1o3b0RLaC1oTjVVTUhDRVFQSV9ZbVBhUHBSelh4VDdvdzQ0M1ZUMW9WVEZhVWswVnpVRjJ1OEZnN0dHdGxzLUE?oc=5"
+     },
+     {
+      "label": "Saudi Arabia–Yemen",
+      "change": "Armed conflict: Saudi Arabia launches wave of airstrikes against Houthi forces",
+      "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQd1NUQXQ5UGd5VHhQeUlMRS01X2ZQUjhtamJ3WkFjS280ZlotZlJJMkFHVENqRjU3UXNKR0JUa1c4LS1pdDRKVnNBZm1KUUZkc2drQ1BkSkM5Y2IzMFNJUDhCb2lOTWNzSk84eXh1REFlR19xSVNRM0dPMnhwVkIzd3RKMmNhM1BvVTJfdWtjckdpOTRHbU5iOTFzaG42eUVCYkpKX0F5aDRvVU5VQlpzOElCdzJ4c2g2TkN0R1JCaUtMcjIweVo2VHYyLVpKa2xBRHdaeW1tdHrSAd4BQVVfeXFMT2dVTllTR2pvNXFzdEtwb1dBeV9XUENDVG5UT0o3VjcwVE1pNGZxM1lwUlhodHdrV3o3WHo4NU1Sc2F2NUdoWHJXV1ZpNV9DNlA5ajNaeUREV0JON2oyMlQtVm5XVVI1SnlWdzJ6MVVrYWpCWUFwRDV4bUp3SFVwaC1wTDZNYUgyV3FBZTVsVElYSEdhZi00Mkdpci1sQ3BMbjdSSjlXUVd4ZWpfd0J0S3FEOXM5dGxOMTJ2c1Fyei04alV5VTNBUmJvSXpZQWVMYW11bk43YnVyOVpjN0pR?oc=5"
      }
     ]
    },
@@ -581,7 +591,7 @@
     ]
    }
   ],
-  "summary": "Egypt and Ethiopia exchange diplomatic expulsions over dam disputes, Taiwan receives US F-16V jet deliveries, New Zealand schedules upcoming elections, and EU sanctions highlight Sierra Leone's role in West African drug transit routes."
+  "summary": "Updated Dominican Republic–Nicaragua relations following the closure of the Managua embassy, noted escalated Saudi airstrikes against the Houthis in Yemen, and logged scheduled elections in New Zealand."
  },
  "relations": {
   "DNK-USA": {
@@ -620,9 +630,9 @@
    "a": "SAU",
    "b": "YEM",
    "s": "W",
-   "note": "Armed conflict intensifies as Saudi Arabia accuses the Houthis of a drone attack on a power station in Madinah.",
+   "note": "Saudi Arabia launches dozens of airstrikes on Yemen and plans an offensive against the Houthis to break their Red Sea shipping chokehold.",
    "updated": "2026-10-02",
-   "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQRzBZdGJDMzM4Rlc1UlZuYndpaFQ1MlRFNi02ajBxb3ZFTkVQRFVpTHhzb254bzB2aVlST0NHZjB5LXN1YktfM3FZSFpQRUFTR1FwdFEzZWFkT0RrNTd6YmdnZkMyVm83VE5DZHNWR3BwNzQzMVF2VGVHeF9MNi1BX01oSG9sVVZPTG5ad3VkTWxSU204ZkF3YWE3bjNvSV9UeXROVWJ6T1hlaENCdUotR1dTRFVzRWNhNnNqRE10dk9GYVVSc3RlaHJB0gHPAUFVX3lxTFBMM1VzWWtRMXFKcFV3eW40cXFRNm5iWk9PTVl3ajNGSEE2MXhxZ05ncjNIel8tRnlCMnlUUHduTkJ3amtybEV4TkhvdEZXV1dpX05peDRPZkd4Sk1sT0h0aXQ5VzZFdmljWHNxUW9JOWduaTl1SG44QmpqQWQ2NkJYNkcxSDFCLVllb0Nia2dhU0c0bm9IUmFLa083ejBQQ1lsb0dTUE1ORHBiMU1MNXNEM2NLUUdQenEyZE11R0NVbGlOSVpRUW1IX2dfcGhoZw?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQd1NUQXQ5UGd5VHhQeUlMRS01X2ZQUjhtamJ3WkFjS280ZlotZlJJMkFHVENqRjU3UXNKR0JUa1c4LS1pdDRKVnNBZm1KUUZkc2drQ1BkSkM5Y2IzMFNJUDhCb2lOTWNzSk84eXh1REFlR19xSVNRM0dPMnhwVkIzd3RKMmNhM1BvVTJfdWtjckdpOTRHbU5iOTFzaG42eUVCYkpKX0F5aDRvVU5VQlpzOElCdzJ4c2g2TkN0R1JCaUtMcjIweVo2VHYyLVpKa2xBRHdaeW1tdHrSAd4BQVVfeXFMT2dVTllTR2pvNXFzdEtwb1dBeV9XUENDVG5UT0o3VjcwVE1pNGZxM1lwUlhodHdrV3o3WHo4NU1Sc2F2NUdoWHJXV1ZpNV9DNlA5ajNaeUREV0JON2oyMlQtVm5XVVI1SnlWdzJ6MVVrYWpCWUFwRDV4bUp3SFVwaC1wTDZNYUgyV3FBZTVsVElYSEdhZi00Mkdpci1sQ3BMbjdSSjlXUVd4ZWpfd0J0S3FEOXM5dGxOMTJ2c1Fyei04alV5VTNBUmJvSXpZQWVMYW11bk43YnVyOVpjN0pR?oc=5"
   },
   "BEL-RWA": {
    "a": "BEL",
@@ -1047,6 +1057,14 @@
    "note": "The United States (US) delivers its first F-16V fighter jets to Taiwan, reinforcing defense ties under the Taiwan Relations Act.",
    "updated": "2026-10-02",
    "source": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPNkZJNTkxOGlXMnp4VTFROE1YRFcySjFWd0RlaHYyTEU0ZGVFQmRiZ2RTeHdCVkNiUHhtSnVFbDNPZUlWaTR2M0dZNVRHLUEwZ05HVXZiZjZpbHF4eHJBV0RnU29CTi00TXNTcXp0c3RsNmp2MGdHcXQ1S3RqYXpwXy1yV0ZVZFduM1hhd18yX1FWMXNOTVNxOFdBM0Z2dUdxYmRocWhrdUdDSzBkUmw5Qnc2OXJzYUkxNDZ3SHdoaUxGekZ5dUtfTThrbEFDRzl6aXh4WlRxM0o5NUhVbWNkVkJ0SmJlMXZ2Z2RBLXluYw?oc=5"
+  },
+  "DOM-NIC": {
+   "a": "DOM",
+   "b": "NIC",
+   "s": "T",
+   "note": "The Dominican Republic closes its embassy in Managua and withdraws staff after Nicaragua bans opposition parties from elections.",
+   "updated": "2026-10-02",
+   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOTlJFVk9zS0w5UFZON1A3RFZEaXVOdkNJdTZFVnBldnNDcDhsYTktalA4OEpxU2JqSExnNE90UWg4SG9GOUl0dU5tYllTSngtQjNyUFJ1b2RBVXVjeTQydVhReHRXanc5QVBwQkhXaXZoM1NGS2Rna2pyQXZlTUNaN29ES2gtaE41VU1IQ0VRUElfWW1QYVBwUnpYeFQ3b3c0NDNWVDFvVlRGYVVrMFZ6VUYydThGZzdHR3Rscy1B0gG-AUFVX3lxTE5OUkVWT3NLTDlQVk43UDdEVkRpdU52Q0l1NkVWcGV2c0NwOGxhOS1qUDg4SnFTYmpITGc0T3RRaDhIb0Y5SXR1Tm1iWVNKeC1CM3JQUnVvZEFVdWN5NDJ1WFF4dFdqdzlBUHBCSFdpdmgzU0ZLZGdranJBdmVNQ1o3b0RLaC1oTjVVTUhDRVFQSV9ZbVBhUHBSelh4VDdvdzQ0M1ZUMW9WVEZhVWswVnpVRjJ1OEZnN0dHdGxzLUE?oc=5"
   }
  },
  "threads": {
@@ -1338,9 +1356,9 @@
    "source": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNXFXa1c5U05DZHNINV9rcExET0NiRnFoaEkyczUyUjNIUi1pa1psaVEyQ1hUR2JvYllsUkxPQnRJWTlxdnV0QmFQTjE3d3A3RXdQLTkxU0hWaVR1MW5vUlZJUmxSSHVLWUFWdlJVbk91X1I5NnVZaWZ6aXk0NmRxa1ZDdk92UnhxNFIxUFVLVkE1TVhhelU5SW9ueThycGJfZG1LZmZRVmhXQnlKMFl5cVBDa1BqblRMODYwZWV6UFZEaHF5aFRfVml6UUtJZzNp0gHWAUFVX3lxTE5XWVRjcFRCQXdGWEktQ3Y0Zi1ZeXgyQWo1bUdIVlFNTkdReU1jWEQ4MkhYNnRTNGM1MGxDWHJndjM0bUU2WThEWElkYUhER2tpUE1Za2sxWjVldkhkRllGWDlUcjlpVXUxSVFpaTFfOE8tTlpjamRJaUhNZnJqVDZ3bmlacF9iS2NqbWpZcGktT29ZbjJ2bHBETUlqZXJPVVhQNkhwNnZmdERQczl6dWw3MWctSDdfQ0R2VzlEV2VQSHdDYkx6Snh2cVYxM3gtLThOalNpX3c?oc=5"
   },
   "NZL": {
-   "nextelec": "general election, November 2026",
+   "nextelec": "general, 7 November 2026",
    "updated": "2026-10-02",
-   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQl9wRFE3aUtVbzRfM3FkUExlX2tLaDVIejVpQm80UnZQbmM0d01JdUhOcG96NkduT015Qm50UVM5Zjl5S3pxYTBMRnlPUlFQVUZ6QzZSSFZrdWtBZjNOdnlSWDdQLUlfb2VldGNfRUxxNWN1X0RDM202bllLUWtieENFdnBhQkZCSlJsM0V3QTFwcFBiTkJXaU5TM1IzdFZOcXJIdXRtTXpoc2s?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxNbTVwT0QwalBBOWhseC0tWUdHX0cxek5fR3I3d0M1RWc3bGJ5VThrb3h0OHgtNXBXR2xxckVrdGt1X01vUHFUS0tVeHllNUFKVmhwRlFuVlRkNGFOYjV2Z1RJUzN0cE9zSF9JNkxIQXhyY1hHN0xhZHl3QUtfRUVDVnl4SDhLaEVkZFNwUmZVbWtZalZmSTNjcktKWXIzOGEzWmZhWTFTTDB1SHktaDRSaW00dFlWb3ZrdU1IS2ZsZzF5LVlIaE94ajFLX1BKcE41SW9mQlhkWGxUN3BLY1BsUDM1NmgxbGNqQm13ZFlILS15TXlnVXJaRlRLNGdOWjJ4M21iUWpDY2ZGc09rTXVyRl8zYVJ1WUdwekNqX09MOEZJZWlELW9pV1QtZEpwRVlMWmFWZXBPcDRSaXEzblhNd0xDYjZoZ2xJcXZmY2tnOGRVdm14U1NTUdIB2AJBVV95cUxNbTVwT0QwalBBOWhseC0tWUdHX0cxek5fR3I3d0M1RWc3bGJ5VThrb3h0OHgtNXBXR2xxckVrdGt1X01vUHFUS0tVeHllNUFKVmhwRlFuVlRkNGFOYjV2Z1RJUzN0cE9zSF9JNkxIQXhyY1hHN0xhZHl3QUtfRUVDVnl4SDhLaEVkZFNwUmZVbWtZalZmSTNjcktKWXIzOGEzWmZhWTFTTDB1SHktaDRSaW00dFlWb3ZrdU1IS2ZsZzF5LVlIaE94ajFLX1BKcE41SW9mQlhkWGxUN3BLY1BsUDM1NmgxbGNqQm13ZFlILS15TXlnVXJaRlRLNGdOWjJ4M21iUWpDY2ZGc09rTXVyRl8zYVJ1WUdwekNqX09MOEZJZWlELW9pV1QtZEpwRVlMWmFWZXBPcDRSaXEzblhNd0xDYjZoZ2xJcXZmY2tnOGRVdm14U1NTUQ?oc=5"
   },
   "GRD": {
    "nextelec": "general election, late 2026",
