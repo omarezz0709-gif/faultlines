@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-03T05:15:23Z",
+  "lastRun": "2026-10-03T10:16:50Z",
   "log": [
    {
     "date": "2026-10-03",
@@ -39,6 +39,11 @@
       "label": "Grenada",
       "change": "Recorded upcoming general election following parliamentary dissolution",
       "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPY3haT1RtLTduVG5rbkMtcng3bkZUQWV1Ri1OZjdsa0FUUG5ZZmdOTEFHNVhZSXAwWFB3ZFdoYkJRbzN5R3BvZ3FyRDdSSGsxVFFCOW41VTFlSklwLUFMOWpWcmNxUmxRN3ZsNWR6VG9xVkRhMEVWV3lNUmdWYTItMEhnRWlKeVQ4WkdsdWZuNi02WE1HVEI0eHJQSQ?oc=5"
+     },
+     {
+      "label": "South Korea–North Korea",
+      "change": "Tense → Armed conflict: Border landmine blasts and missile launch",
+      "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPb1hwSU50eTEyejRKcV93MldTRVF5NHVOY1BBaDVFTVhIZGx6QnRidW9hQllEb29tazBtQ1EyaVBsQXRBT0syN2lyOXVXV1VGc19rbGpvZDNxX0dZSXZ5VHBKU2NYeldpMGlVVDJWSDN3Uk9BSy1sbkNKUzRGLTNIU0JhMjNkVnhpRU1oOFNvc2NIQThxSndfUjF1UlBEVDZ6ajVXWUF30gGrAUFVX3lxTE1Oam81eWlHT1pBT01SOUFBUVVhY1pUUkM1aVNEZWZSWTdJQk96ekcyeENmMC1VOUtJZUQ1MzZ1YTctWGNUalNyblNIaU56bEU2WkdtUF8yWUJoODJTVkJQNHZjYXppalJGYXlOVW8xdHlwV1dIeU1TMUFqb2FPYjk3eUNRSXQyZTIyOGlMdW5rN19NUGQ1dFZXZFowa0lEVnVVTGdOajlrWmRKaw?oc=5"
      }
     ]
    },
@@ -631,7 +636,7 @@
     ]
    }
   ],
-  "summary": "Updated election schedules for Latvia, Brazil, New Zealand, and Grenada, while refreshing security notes for Saudi-Yemen hostilities and key maritime choke points."
+  "summary": "Moldova reports Russian drone airspace violations, Flydubai investigates a cockpit attack by an Omani pilot with extremist links, and North Korea launches a ballistic missile into the East Sea."
  },
  "relations": {
   "DNK-USA": {
@@ -966,9 +971,9 @@
    "a": "KOR",
    "b": "PRK",
    "s": "W",
-   "note": "Seoul confirms North Korean landmine blasts near the DMZ, marking a direct violation of the armistice.",
-   "updated": "2026-09-29",
-   "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOODgxaEltX2xuWHR4eWdzWVp0TXFZVVpWM25UT0JGZWJJSWVNcTN6LTZnSnliSXhVODRTWkZKRkdBcWl5dWpUSHRjRjJvczFJZXFWS0NFMS02aVBIWVo0bGRKcGxBOTgtaUlMTWlhcDNqNFpLWFpHdFJhTlVzbTlrSkdxU2FwaEsw?oc=5"
+   "note": "Inter-Korean tensions escalate following North Korean landmine blasts near the DMZ and a fresh ballistic missile launch.",
+   "updated": "2026-10-03",
+   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPb1hwSU50eTEyejRKcV93MldTRVF5NHVOY1BBaDVFTVhIZGx6QnRidW9hQllEb29tazBtQ1EyaVBsQXRBT0syN2lyOXVXV1VGc19rbGpvZDNxX0dZSXZ5VHBKU2NYeldpMGlVVDJWSDN3Uk9BSy1sbkNKUzRGLTNIU0JhMjNkVnhpRU1oOFNvc2NIQThxSndfUjF1UlBEVDZ6ajVXWUF30gGrAUFVX3lxTE1Oam81eWlHT1pBT01SOUFBUVVhY1pUUkM1aVNEZWZSWTdJQk96ekcyeENmMC1VOUtJZUQ1MzZ1YTctWGNUalNyblNIaU56bEU2WkdtUF8yWUJoODJTVkJQNHZjYXppalJGYXlOVW8xdHlwV1dIeU1TMUFqb2FPYjk3eUNRSXQyZTIyOGlMdW5rN19NUGQ1dFZXZFowa0lEVnVVTGdOajlrWmRKaw?oc=5"
   },
   "ESP-ISR": {
    "a": "ESP",
@@ -1408,7 +1413,8 @@
   "LVA": {
    "lastelec": "parliamentary, October 2026",
    "updated": "2026-10-03",
-   "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQOE93RGtrM183MlV0OGhZZVpmYkIyU2hHZzc3ZmQ4b3hRYkZHMWtUci1fLWpSWi1WNnp4cjg1dEJvbGJXRlFlQmJRblFGakpzeTdmNm93cWttVWJCejlVbHo3a1pKTXA0aU5jUWxJNW51VVYtd3dnNFI1VXBLYVZOR0pfMUVmZ09weTUxSzdIUWRXeUkyZV9SVFh6ME8yVGpGaE5NUlVsLVRxeWYwemFra19rRXlCYUhPVG9fcDJoS2Z4S25RaTlR?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQd0l5WVk2R2o0TGhIMjlCSWtUd295NWVfdTUtWmx1dGxyNnltNGFHT3pvSDloR1VYX2l6ejRwVVJhRXpWNmhHUUhpUTNWTHZmaU1uQzFRMEwxMkxxREJZTXV5TjFTeXJHQjZqQ3VIcXNxajJTSXFqVWFVWF9sT2prLTgtYkU3TmlhOTVBQ1FyM19MM2JtUVp5RHNWYXRRcTJGamlJd2dSZGZxcFBPYU5YM09vSQ?oc=5",
+   "nextelec": "Parliamentary (Saeima), October 2026"
   }
  }
 }
