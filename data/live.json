@@ -1,7 +1,47 @@
 {
  "meta": {
-  "lastRun": "2026-10-02T22:08:28Z",
+  "lastRun": "2026-10-03T05:15:23Z",
   "log": [
+   {
+    "date": "2026-10-03",
+    "items": [
+     {
+      "label": "Saudi Arabia–Yemen",
+      "change": "Armed conflict: Note updated to reflect planned Saudi offensive to secure Bab-el-Mandeb",
+      "source": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1qelpTbU15U2R3T1hRR1hvUWxuZEV6MEV5d1BSejZFSnRJUml6SU1Yc1N6RG1yTWJSSnFiNUUwQWxrTW1VZzFuaXJmXzJqU2xybEpycVlWMUtsTHNZQTRFU2NWWUJURE0?oc=5"
+     },
+     {
+      "label": "Bab-el-Mandeb",
+      "change": "Location note updated for planned Saudi coalition campaign",
+      "source": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1qelpTbU15U2R3T1hRR1hvUWxuZEV6MEV5d1BSejZFSnRJUml6SU1Yc1N6RG1yTWJSSnFiNUUwQWxrTW1VZzFuaXJmXzJqU2xybEpycVlWMUtsTHNZQTRFU2NWWUJURE0?oc=5"
+     },
+     {
+      "label": "Strait of Hormuz",
+      "change": "Location note updated for projectile attacks on commercial shipping",
+      "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQVTE0M0VtS09OYmhZSmZOM2Q1SUM1R01pWl9JcF9TbDdwRzJENWozcGRkRWdQb19tbVc2Xy1UUWRQSHN6ejNtTmFMLW1JWnVYVTVfSGhzX2RpWFJBM0FkTURXamNHMWFSZmF5QW5mTnBsYmdQMUZ4elVsTXdIX2tHYl9HTjBNU1p4UVpsYTcxTURYazRWTjhGTGFtOExybHZkbkprVnpqTjhZWUhlWEFsUmw4bE5NSnlUSEdqTjVFQXVBclFKckpDUjVjZG1CcnplalFxTWZ30gHbAUFVX3lxTFBLb0ROQndHZ3dSOFpfREstdkFBMHpWa2x3Y3Y1Y1FSaEdfS2t3WFYyQllBVnpmVlRfbDYzYU5zSld3bEs1RGdFS0hsekRycFUyNGtpcE9YODRRQ0otS0dWY3lTaFdKMERibzNWVW9CNXdnZkVEZnFCeXhtbURJV25YaF9qOWR6a2J0MEJxZklJYmozNTFkS2ZPZTVyNWx4Q1JwSng4NGFKMGFVM3BqNEFBTWpzRnhaSERVZDN3NnlOX1M0VkFxUXZ0c2FrSFRhdE94ZXJ2X0xEWThNaw?oc=5"
+     },
+     {
+      "label": "Latvia",
+      "change": "Recorded October 2026 parliamentary election",
+      "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQOE93RGtrM183MlV0OGhZZVpmYkIyU2hHZzc3ZmQ4b3hRYkZHMWtUci1fLWpSWi1WNnp4cjg1dEJvbGJXRlFlQmJRblFGakpzeTdmNm93cWttVWJCejlVbHo3a1pKTXA0aU5jUWxJNW51VVYtd3dnNFI1VXBLYVZOR0pfMUVmZ09weTUxSzdIUWRXeUkyZV9SVFh6ME8yVGpGaE5NUlVsLVRxeWYwemFra19rRXlCYUhPVG9fcDJoS2Z4S25RaTlR?oc=5"
+     },
+     {
+      "label": "Brazil",
+      "change": "Recorded October 2026 presidential election",
+      "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPX2FnTWlaNko5MlBVdVJyRklOTmxSc3NDaXdtV2x2aEtZQ2tJaFhzVU42ZzlxYk1jX1JyWFg5NlJBRVRBN3hqdXJDdVJDT3hSYzJzVVdsYzdLQUhSc3hldFRTUEFNUk0xOElXYjIwdnJMcng1cjBsMnlRZk8tWUprc19WazloQQ?oc=5"
+     },
+     {
+      "label": "New Zealand",
+      "change": "Recorded upcoming November 2026 general election date",
+      "source": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxNbTVwT0QwalBBOWhseC0tWUdHX0cxek5fR3I3d0M1RWc3bGJ5VThrb3h0OHgtNXBXR2xxckVrdGt1X01vUHFUS0tVeHllNUFKVmhwRlFuVlRkNGFOYjV2Z1RJUzN0cE9zSF9JNkxIQXhyY1hHN0xhZHl3QUtfRUVDVnl4SDhLaEVkZFNwUmZVbWtZalZmSTNjcktKWXIzOGEzWmZhWTFTTDB1SHktaDRSaW00dFlWb3ZrdU1IS2ZsZzF5LVlIaE94ajFLX1BKcE41SW9mQlhkWGxUN3BLY1BsUDM1NmgxbGNqQm13ZFlILS15TXlnVXJaRlRLNGdOWjJ4M21iUWpDY2ZGc09rTXVyRl8zYVJ1WUdwekNqX09MOEZJZWlELW9pV1QtZEpwRVlMWmFWZXBPcDRSaXEzblhNd0xDYjZoZ2xJcXZmY2tnOGRVdm14U1NTUdIB2AJBVV95cUxNbTVwT0QwalBBOWhseC0tWUdHX0cxek5fR3I3d0M1RWc3bGJ5VThrb3h0OHgtNXBXR2xxckVrdGt1X01vUHFUS0tVeHllNUFKVmhwRlFuVlRkNGFOYjV2Z1RJUzN0cE9zSF9JNkxIQXhyY1hHN0xhZHl3QUtfRUVDVnl4SDhLaEVkZFNwUmZVbWtZalZmSTNjcktKWXIzOGEzWmZhWTFTTDB1SHktaDRSaW00dFlWb3ZrdU1IS2ZsZzF5LVlIaE94ajFLX1BKcE41SW9mQlhkWGxUN3BLY1BsUDM1NmgxbGNqQm13ZFlILS15TXlnVXJaRlRLNGdOWjJ4M21iUWpDY2ZGc09rTXVyRl8zYVJ1WUdwekNqX09MOEZJZWlELW9pV1QtZEpwRVlMWmFWZXBPcDRSaXEzblhNd0xDYjZoZ2xJcXZmY2tnOGRVdm14U1NTUQ?oc=5"
+     },
+     {
+      "label": "Grenada",
+      "change": "Recorded upcoming general election following parliamentary dissolution",
+      "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPY3haT1RtLTduVG5rbkMtcng3bkZUQWV1Ri1OZjdsa0FUUG5ZZmdOTEFHNVhZSXAwWFB3ZFdoYkJRbzN5R3BvZ3FyRDdSSGsxVFFCOW41VTFlSklwLUFMOWpWcmNxUmxRN3ZsNWR6VG9xVkRhMEVWV3lNUmdWYTItMEhnRWlKeVQ4WkdsdWZuNi02WE1HVEI0eHJQSQ?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-02",
     "items": [
@@ -591,7 +631,7 @@
     ]
    }
   ],
-  "summary": "Updated Dominican Republic–Nicaragua relations following the closure of the Managua embassy, noted escalated Saudi airstrikes against the Houthis in Yemen, and logged scheduled elections in New Zealand."
+  "summary": "Updated election schedules for Latvia, Brazil, New Zealand, and Grenada, while refreshing security notes for Saudi-Yemen hostilities and key maritime choke points."
  },
  "relations": {
   "DNK-USA": {
@@ -630,9 +670,9 @@
    "a": "SAU",
    "b": "YEM",
    "s": "W",
-   "note": "Saudi Arabia launches dozens of airstrikes on Yemen and plans an offensive against the Houthis to break their Red Sea shipping chokehold.",
-   "updated": "2026-10-02",
-   "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQd1NUQXQ5UGd5VHhQeUlMRS01X2ZQUjhtamJ3WkFjS280ZlotZlJJMkFHVENqRjU3UXNKR0JUa1c4LS1pdDRKVnNBZm1KUUZkc2drQ1BkSkM5Y2IzMFNJUDhCb2lOTWNzSk84eXh1REFlR19xSVNRM0dPMnhwVkIzd3RKMmNhM1BvVTJfdWtjckdpOTRHbU5iOTFzaG42eUVCYkpKX0F5aDRvVU5VQlpzOElCdzJ4c2g2TkN0R1JCaUtMcjIweVo2VHYyLVpKa2xBRHdaeW1tdHrSAd4BQVVfeXFMT2dVTllTR2pvNXFzdEtwb1dBeV9XUENDVG5UT0o3VjcwVE1pNGZxM1lwUlhodHdrV3o3WHo4NU1Sc2F2NUdoWHJXV1ZpNV9DNlA5ajNaeUREV0JON2oyMlQtVm5XVVI1SnlWdzJ6MVVrYWpCWUFwRDV4bUp3SFVwaC1wTDZNYUgyV3FBZTVsVElYSEdhZi00Mkdpci1sQ3BMbjdSSjlXUVd4ZWpfd0J0S3FEOXM5dGxOMTJ2c1Fyei04alV5VTNBUmJvSXpZQWVMYW11bk43YnVyOVpjN0pR?oc=5"
+   "note": "Saudi Arabia prepares a major offensive against Houthi forces in Yemen to regain control of the Bab-el-Mandeb strait.",
+   "updated": "2026-10-03",
+   "source": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1qelpTbU15U2R3T1hRR1hvUWxuZEV6MEV5d1BSejZFSnRJUml6SU1Yc1N6RG1yTWJSSnFiNUUwQWxrTW1VZzFuaXJmXzJqU2xybEpycVlWMUtsTHNZQTRFU2NWWUJURE0?oc=5"
   },
   "BEL-RWA": {
    "a": "BEL",
@@ -1164,11 +1204,11 @@
  },
  "pois": {
   "bab-el-mandeb": {
-   "d": "Links the Red Sea to the Gulf of Aden; Saudi Arabia resumes Red Sea crude shipments despite Houthi control of Yemen's coast and nearby islands.",
+   "d": "Links the Red Sea to the Gulf of Aden; Saudi Arabia prepares a military offensive to regain control of the strategic choke point from Houthis.",
    "n": "Bab-el-Mandeb",
-   "s": "Houthi-held · Saudi Red Sea oil exports resume",
-   "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOOFhDR243cDJLOUU1T1hPa3QxaEw3Tlpkang3T2pXMnQ5WkgzRjFnUmNOeU93alItNjZYQ0xMOXFoT19NUFJsQktkZWdhMTlUMXlHOU9MeDVlb2oyQUtwR00tei1yTW5DLTY4eWlqSm15TlNFQnNDeFpuakljZjRQM2FwT2hpZkFTSko4bE53S0RxUFBoLUIxQ3llUC1sSXJHc3BVMk85UmhxZU5LTXVQREhaWkVpTkp0QWRDUW9MNk9jX0hSamVJ?oc=5",
-   "updated": "2026-09-28"
+   "s": "Houthi-held · Saudi offensive planned",
+   "source": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1qelpTbU15U2R3T1hRR1hvUWxuZEV6MEV5d1BSejZFSnRJUml6SU1Yc1N6RG1yTWJSSnFiNUUwQWxrTW1VZzFuaXJmXzJqU2xybEpycVlWMUtsTHNZQTRFU2NWWUJURE0?oc=5",
+   "updated": "2026-10-03"
   },
   "pituffik-space-base": {
    "d": "Missile-warning radar in Greenland. A Sept 22, 2026 US-Denmark agreement added two further US sites, at Narsarsuaq and Mestersvig, with broad air and undersea access, easing friction from Trump's earlier annexation talk.",
@@ -1185,11 +1225,11 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "The only sea exit from the Persian Gulf. President Trump rejected an Iranian proposal to reopen the strait, while France drafts a UN resolution to restore navigation.",
+   "d": "The strategic Gulf exit remains volatile as commercial tankers face projectile strikes amid the ongoing US blockade and regional conflict.",
    "n": "Strait of Hormuz",
-   "s": "US blockade continues · Trump rejects reopening proposal",
-   "source": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNa1Rja0Y2Z0RxMU12MzE5M2d5UUhPRnZYYWdhQVJ3YTdtdjBIZ1c0eXV1WjQzSVZJNnk2UGlpR2dQV2RtUHZqR2tzRjVwaTNSbXJRV1RWUEdEN2hBY1p0VXBxVzJnZFUxVV92N0gyTmhqYkg2Szc3THE3UTByRWUyN09fT2M2WWRDanQ5VTV0aGJCWXFDeXZCSjNxMEY4LUQyY3ZBWHk1VHl0RjktMGh2V0VwTUZ4SGpqOFpELVNTQlFSRjh2b1Vtdg?oc=5",
-   "updated": "2026-09-26",
+   "s": "US blockade continues · Tankers hit by projectiles",
+   "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQVTE0M0VtS09OYmhZSmZOM2Q1SUM1R01pWl9JcF9TbDdwRzJENWozcGRkRWdQb19tbVc2Xy1UUWRQSHN6ejNtTmFMLW1JWnVYVTVfSGhzX2RpWFJBM0FkTURXamNHMWFSZmF5QW5mTnBsYmdQMUZ4elVsTXdIX2tHYl9HTjBNU1p4UVpsYTcxTURYazRWTjhGTGFtOExybHZkbkprVnpqTjhZWUhlWEFsUmw4bE5NSnlUSEdqTjVFQXVBclFKckpDUjVjZG1CcnplalFxTWZ30gHbAUFVX3lxTFBLb0ROQndHZ3dSOFpfREstdkFBMHpWa2x3Y3Y1Y1FSaEdfS2t3WFYyQllBVnpmVlRfbDYzYU5zSld3bEs1RGdFS0hsekRycFUyNGtpcE9YODRRQ0otS0dWY3lTaFdKMERibzNWVW9CNXdnZkVEZnFCeXhtbURJV25YaF9qOWR6a2J0MEJxZklJYmozNTFkS2ZPZTVyNWx4Q1JwSng4NGFKMGFVM3BqNEFBTWpzRnhaSERVZDN3NnlOX1M0VkFxUXZ0c2FrSFRhdE94ZXJ2X0xEWThNaw?oc=5",
+   "updated": "2026-10-03",
    "t": "strait",
    "lat": 26.57,
    "lng": 56.25,
@@ -1210,12 +1250,12 @@
   "BRA": {
    "hog": "Luiz Inácio Lula da Silva, President",
    "hos": "Luiz Inácio Lula da Silva, President",
-   "lastelec": "General election, October 2022, won by Lula (PT)",
+   "lastelec": "presidential, October 2026",
    "nextelec": "presidential runoff, October 2026",
    "ruling": "Workers' Party (PT)-led broad coalition",
-   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQeGhBQUhxZVdrdXBoV3ZYVWR2eF91WXoybHJaUklveGRTYUJqeHNYOVlXOHEtNFBnZ29sb1BVWE1PUHZpT0tpVmxScE9XSURhZnNwbEFDRUpuOU9ndWZMX3A3emlaMEI2RjNIeUVlS21sak9pUmcxc25wZUxTLVZQa0lTX1UtcWJFRExPQ2xyY0h4eG5zTERJTjVRcUQ?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPX2FnTWlaNko5MlBVdVJyRklOTmxSc3NDaXdtV2x2aEtZQ2tJaFhzVU42ZzlxYk1jX1JyWFg5NlJBRVRBN3hqdXJDdVJDT3hSYzJzVVdsYzdLQUhSc3hldFRTUEFNUk0xOElXYjIwdnJMcng1cjBsMnlRZk8tWUprc19WazloQQ?oc=5",
    "system": "Federal presidential republic",
-   "updated": "2026-10-02"
+   "updated": "2026-10-03"
   },
   "CAN": {
    "hog": "Mark Carney, Prime Minister",
@@ -1356,14 +1396,19 @@
    "source": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNXFXa1c5U05DZHNINV9rcExET0NiRnFoaEkyczUyUjNIUi1pa1psaVEyQ1hUR2JvYllsUkxPQnRJWTlxdnV0QmFQTjE3d3A3RXdQLTkxU0hWaVR1MW5vUlZJUmxSSHVLWUFWdlJVbk91X1I5NnVZaWZ6aXk0NmRxa1ZDdk92UnhxNFIxUFVLVkE1TVhhelU5SW9ueThycGJfZG1LZmZRVmhXQnlKMFl5cVBDa1BqblRMODYwZWV6UFZEaHF5aFRfVml6UUtJZzNp0gHWAUFVX3lxTE5XWVRjcFRCQXdGWEktQ3Y0Zi1ZeXgyQWo1bUdIVlFNTkdReU1jWEQ4MkhYNnRTNGM1MGxDWHJndjM0bUU2WThEWElkYUhER2tpUE1Za2sxWjVldkhkRllGWDlUcjlpVXUxSVFpaTFfOE8tTlpjamRJaUhNZnJqVDZ3bmlacF9iS2NqbWpZcGktT29ZbjJ2bHBETUlqZXJPVVhQNkhwNnZmdERQczl6dWw3MWctSDdfQ0R2VzlEV2VQSHdDYkx6Snh2cVYxM3gtLThOalNpX3c?oc=5"
   },
   "NZL": {
-   "nextelec": "general, 7 November 2026",
-   "updated": "2026-10-02",
+   "nextelec": "general, November 2026",
+   "updated": "2026-10-03",
    "source": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxNbTVwT0QwalBBOWhseC0tWUdHX0cxek5fR3I3d0M1RWc3bGJ5VThrb3h0OHgtNXBXR2xxckVrdGt1X01vUHFUS0tVeHllNUFKVmhwRlFuVlRkNGFOYjV2Z1RJUzN0cE9zSF9JNkxIQXhyY1hHN0xhZHl3QUtfRUVDVnl4SDhLaEVkZFNwUmZVbWtZalZmSTNjcktKWXIzOGEzWmZhWTFTTDB1SHktaDRSaW00dFlWb3ZrdU1IS2ZsZzF5LVlIaE94ajFLX1BKcE41SW9mQlhkWGxUN3BLY1BsUDM1NmgxbGNqQm13ZFlILS15TXlnVXJaRlRLNGdOWjJ4M21iUWpDY2ZGc09rTXVyRl8zYVJ1WUdwekNqX09MOEZJZWlELW9pV1QtZEpwRVlMWmFWZXBPcDRSaXEzblhNd0xDYjZoZ2xJcXZmY2tnOGRVdm14U1NTUdIB2AJBVV95cUxNbTVwT0QwalBBOWhseC0tWUdHX0cxek5fR3I3d0M1RWc3bGJ5VThrb3h0OHgtNXBXR2xxckVrdGt1X01vUHFUS0tVeHllNUFKVmhwRlFuVlRkNGFOYjV2Z1RJUzN0cE9zSF9JNkxIQXhyY1hHN0xhZHl3QUtfRUVDVnl4SDhLaEVkZFNwUmZVbWtZalZmSTNjcktKWXIzOGEzWmZhWTFTTDB1SHktaDRSaW00dFlWb3ZrdU1IS2ZsZzF5LVlIaE94ajFLX1BKcE41SW9mQlhkWGxUN3BLY1BsUDM1NmgxbGNqQm13ZFlILS15TXlnVXJaRlRLNGdOWjJ4M21iUWpDY2ZGc09rTXVyRl8zYVJ1WUdwekNqX09MOEZJZWlELW9pV1QtZEpwRVlMWmFWZXBPcDRSaXEzblhNd0xDYjZoZ2xJcXZmY2tnOGRVdm14U1NTUQ?oc=5"
   },
   "GRD": {
-   "nextelec": "general election, late 2026",
-   "updated": "2026-10-02",
-   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNeFpoYU9JRWhOWDA5QVllZ2FSeU92alRrVlZFODBRTkVMQ0xPcFo5cENRUDlYT0N1V0VWdVhyd0xCVmttc0dod180TUZONld2SDZ4VjNVU3dxTGhFRmxKaGZRR003Mm8zV0M2WmpnU0VsQnlDb2F3SmFzc1JtTy16WlBrOVI5VWZfUEFxU1VMNUZTN3BqeE1hS2pEYmRmSFp0YTdn?oc=5"
+   "nextelec": "general, late 2026",
+   "updated": "2026-10-03",
+   "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPY3haT1RtLTduVG5rbkMtcng3bkZUQWV1Ri1OZjdsa0FUUG5ZZmdOTEFHNVhZSXAwWFB3ZFdoYkJRbzN5R3BvZ3FyRDdSSGsxVFFCOW41VTFlSklwLUFMOWpWcmNxUmxRN3ZsNWR6VG9xVkRhMEVWV3lNUmdWYTItMEhnRWlKeVQ4WkdsdWZuNi02WE1HVEI0eHJQSQ?oc=5"
+  },
+  "LVA": {
+   "lastelec": "parliamentary, October 2026",
+   "updated": "2026-10-03",
+   "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQOE93RGtrM183MlV0OGhZZVpmYkIyU2hHZzc3ZmQ4b3hRYkZHMWtUci1fLWpSWi1WNnp4cjg1dEJvbGJXRlFlQmJRblFGakpzeTdmNm93cWttVWJCejlVbHo3a1pKTXA0aU5jUWxJNW51VVYtd3dnNFI1VXBLYVZOR0pfMUVmZ09weTUxSzdIUWRXeUkyZV9SVFh6ME8yVGpGaE5NUlVsLVRxeWYwemFra19rRXlCYUhPVG9fcDJoS2Z4S25RaTlR?oc=5"
   }
  }
 }
