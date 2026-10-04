@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-04T16:09:31Z",
+  "lastRun": "2026-10-04T22:09:47Z",
   "log": [
    {
     "date": "2026-10-04",
@@ -21,16 +21,6 @@
       "source": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE80QURmMHpvWjVYU0xVaVJOSWQxQzZKd0FOclZsTmx6SmtGQzNTWnB3MVlidm5ETXV3NEtZRGREUV9xQTR5d0E?oc=5"
      },
      {
-      "label": "Latvia",
-      "change": "Recorded Oct 2026 parliamentary election victory for pro-Ukraine coalition",
-      "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZTIwcE45V0lmZzhHYW12c3pOb1JUSjVadEYxbjNXQlE5ZkdTYzFXYXdOeURWaE9ZMEFCZ1NDd2RwZ0R1anFJT3ZPajZLTS1hamhOTFlZcTJ2QWtSWU1LMVI3bHRUQU9SRlNSZ24xVXRwSTYxWXNTcG9Hc09Sd21RSUlHTlFmMGVvbFNVZ3VsWWx0WUc0VUZ5WXExSldMVUJScURtXzQ3aVV1RkNqWGNjSjZxemtyZVpPUGM3dkJpWDlZMXpDSGs2WHlYZ1hndmFERjhMNUNFNmrSAdgBQVVfeXFMT2UyMHBOOVdJZmc4R2FtdnN6Tm9SVEo1WnRGMW4zV0JROWZHU2MxV2F3TnlEVmhPWTBBQmdTQ3dkcGdEdWpxSU92T2o2S00tYWpoTkxZWXEydkFrUllNSzFSN2x0VEFPUkZTUmduMVV0cEk2MVlzU3BvR3NPUndtUUlJR05RZjBlb2xTVWd1bFlsdFlHNFVGeVlxMUpXTFVCUnFEbV80N2lVdUZDalhjY0o2cXprcmVaT1BjN3ZCaVg5WTF6Q0hrNlh5WGdYZ3ZhREY4TDVDRTZq?oc=5"
-     },
-     {
-      "label": "Grenada",
-      "change": "Recorded general election scheduled for 5 November 2026",
-      "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5GRWp5WnpTYmFMaXBRMGlaR1Z6dmVxZU9MaVR1d0p4REdwYWY3RWJZUFlhYk9EMXVyem1lYVZxa0ZJRjRkb3F0OV9LOUJjLTNJQTluLWt3WExnMEs0MFZYQnlyNjJzVTlvaGo3OEV3?oc=5"
-     },
-     {
       "label": "France–Türkiye",
       "change": "Normal → Partner: Defense roadmap signed in Ankara to expand military cooperation",
       "source": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBRUVdDY1NDRnhoLUlZQko0MzM1VEtuQjlIcmktOHJFRHNVd296ME9zcXJQUHNYclFMRlFmTzFwcUEwSnpCYXZxSTAyTW04azczOTdJ?oc=5"
@@ -49,6 +39,31 @@
       "label": "Wakhan Corridor",
       "change": "Updated description to reflect the opening of the Wakhan Road to China",
       "source": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPYS1CbXFGTXZ2MllSWE9vNnZLLTczUkpzeWtwTEpmTEFRM0Njd3ozSHo3dVpwbjB4ZVp5VmdsRUhuTXpHdk5LSTBTajRBMkItWGlqNWFIRVJHRkpmUVo1N010Y3dDRXVrUGJ5VHduRXBFZ0Rmcmw5aHg3Zno4bG9qU0lVUk14MlBNa21J?oc=5"
+     },
+     {
+      "label": "Algeria–Niger",
+      "change": "Tense → Normal: Algeria deploys fighter jets to Niger to help thwart reported coup attempt",
+      "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTi1idkVjT1ZpcHhxbEZaYVUxR1FYNThkY2owS2ZzcG5tTG4zNDN5Mmd3YjJiOS1TcEw4WUF4YnRGYkRCS3piUVVpalNVWW5BdFRsLVVLQ1RZTHNLSC1LemRteGdFbnhQb1hyOVlnWkh0RDROQWV5bFJoYmltZGUwOS1MNWZWLU0wcGVzdEIyMkRHQjVBbVBoUzVwQ3ZTTkp0Wko0dzdxcnhYV0ZCcVNhRHo2MNIBuAFBVV95cUxQTTJkY1RWblFfenhoRUZVU2c2OFRIdzNVdkhiY01ySGd3VjFVQjhHMXpNSFRjdTJvQTI1VXU1eGJERmJNT1RSVmF4WWRGVHZGdmtaM0pjR3VUSGR0TDUyLTBQWldaWDhoRHp1WVdHSG1YSjlqcmtnMnR2RnRxRURKMGVRSDYtM1JkMUJ4NmdCOTh2QjZtOG1RTkRJYWZGT3ljc2tUVE40aWZTWWg3OTMzNHlNTEZpS2Ut?oc=5"
+     },
+     {
+      "label": "Latvia",
+      "change": "Election: parliamentary held Oct 2026",
+      "source": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQQkYtRW1RcEpBMDU4NURJSTZial9LZHI5QTVTWTlIYTZPeTNabThNN2k4VHJLQUZ3YXQ3M1VISUNpUDNpSUJLNHlDUXc1cFdfTFZlUW5XekNNdFQxbFJkR2tiQmlEUVowSlFwd3BuNGpTRGdWQ2pfdkVnVVQ0VGt2NDdOWEx1bTY4RWUxblVnQ2ZRcm45MVdHZmV0RjFta1FNTVF5c09DX2NhY0NkeGFIMDBHdjgzdXlVODNXb0M4RXp3M1FLSHRnQTZrTUx0YlFaZXA3WWtWT3V2SjhIVDg3bDlUbVVMSWd0aElRTEVLMVo5cnRRNklCdTR1Qll2QVFB0gGGAkFVX3lxTE9hX2dPbTJRcE1xN2toUzVmS3V0Y2F3bDlXdXdldUhyUjdySEpma2EwNFlrU21QbUhEa1ZEQ0hfOXZaREpGTzVCWTJQRGlhM1VCNkZlZ3FCZ3VOS0dSTTEyVzNZaFhDWlFhZjNYNjhzQnJpLV81TVBXMjBoVldxdElUMEhUYWE5RkxkelpHOUliNlpRSzVselJwNHpjLXEwcW41U2RVRm82V2NSaS1HeGlsZ1N2eTMyX3dXOFM1eDRONnd5aVdWYWc3Z2JxUGNVeUwzc3lXX2lGalc5OWVCbHN6TGJqa0hWY3BzZTVJN1o1RzNWc0xEdnd1aFp6S1ZCTjczNDBfX3c?oc=5"
+     },
+     {
+      "label": "Bosnia and Herzegovina",
+      "change": "Election: general held Oct 2026",
+      "source": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qbkdIY3lnV04tMzQyaW1ZS1YwVkNKNjZ3YkcxWXhZLVZwQ3FYZFpSendrdUZRWU5ab2VFS1FBUi1NbjdRdGRIcVFXZUxQbXFUWFFDd042cDc?oc=5"
+     },
+     {
+      "label": "Brazil",
+      "change": "Election: presidential round 1 held Oct 2026",
+      "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNV3FqSmV4SUdMMmlfMlVhQ3N4TmozbkQtQlg4anRGd3otZ05feWlwejFKOEtQQ1ZBR3VTMVVCZ29fSVlJYUFRdXJ6dlZjTlBVQURDYmtEUmJFSEFkWEthMFhabjJKTHpiSDBsUVFrSnp2OWlzUGtRQ2U1QUI3eHZPQm5fMWhBTUVaU3pNb1pTZ0FiOE0?oc=5"
+     },
+     {
+      "label": "Grenada",
+      "change": "Election: general scheduled for 5 Nov 2026",
+      "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOU0VvM25tTlJ0eTlDT2J0dTJURXBvSnIyUVAwQVRDdlN3aGZGT1g0b2JGcE5UTzY2U0VWRlpYT2xhQlVUVHhFYlRneEc0Z1lSdVlDd2xYRG9hcDViUnNkN2NjRExmNU9nTzZWcXVSanp5R3h5OFFrNkh1M3dWWEFxUUVucEVuQnAzLXlBNE1qam9vWkhickdUak1R?oc=5"
      }
     ]
    },
@@ -686,7 +701,7 @@
     ]
    }
   ],
-  "summary": "This update registers key diplomatic shifts including a new France-Türkiye defense roadmap, Somalia's hostile stance toward Israel, and multiple national elections."
+  "summary": "Updated elections for Latvia, Bosnia and Herzegovina, Brazil, and Grenada, and noted easing Algeria–Niger tensions following military support."
  },
  "relations": {
   "DNK-USA": {
@@ -1184,6 +1199,14 @@
    "note": "Somalia rejects any Israeli presence and accuses Israel of seeking a military base in breakaway Somaliland.",
    "updated": "2026-10-04",
    "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZFlMbWQ3cnotcTdwZ0ZJeXJFRXQxNDA1NlFha2ZORUtYMVZJM2VNaE40SWJGSzFZNVg5MG15OC10dWhCQjFXYlpuSUR4c2VYVlA5N1pEcWVMRXFnN19nN1ZUVWVudm9HcWN5WWJ2QjJmOEhtUmNFUWdCRTl1RmZqYUhybzJYWUxkLVlKRXFPOTZsb3ZTWldqUURMZ0lKNzdWR3VxSkNjRWEwbzRtUlE?oc=5"
+  },
+  "DZA-NER": {
+   "a": "DZA",
+   "b": "NER",
+   "s": "N",
+   "note": "Ties improve as Algeria deploys fighter jets to Niger to help thwart a reported coup attempt.",
+   "updated": "2026-10-04",
+   "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTi1idkVjT1ZpcHhxbEZaYVUxR1FYNThkY2owS2ZzcG5tTG4zNDN5Mmd3YjJiOS1TcEw4WUF4YnRGYkRCS3piUVVpalNVWW5BdFRsLVVLQ1RZTHNLSC1LemRteGdFbnhQb1hyOVlnWkh0RDROQWV5bFJoYmltZGUwOS1MNWZWLU0wcGVzdEIyMkRHQjVBbVBoUzVwQ3ZTTkp0Wko0dzdxcnhYV0ZCcVNhRHo2MNIBuAFBVV95cUxQTTJkY1RWblFfenhoRUZVU2c2OFRIdzNVdkhiY01ySGd3VjFVQjhHMXpNSFRjdTJvQTI1VXU1eGJERmJNT1RSVmF4WWRGVHZGdmtaM0pjR3VUSGR0TDUyLTBQWldaWDhoRHp1WVdHSG1YSjlqcmtnMnR2RnRxRURKMGVRSDYtM1JkMUJ4NmdCOTh2QjZtOG1RTkRJYWZGT3ljc2tUVE40aWZTWWg3OTMzNHlNTEZpS2Ut?oc=5"
   }
  },
  "threads": {
@@ -1345,10 +1368,10 @@
   "BRA": {
    "hog": "Luiz Inácio Lula da Silva, President",
    "hos": "Luiz Inácio Lula da Silva, President",
-   "lastelec": "presidential, October 2026, election ongoing",
+   "lastelec": "presidential (round 1), Oct 2026",
    "nextelec": "presidential runoff, October 2026",
    "ruling": "Workers' Party (PT)-led broad coalition",
-   "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTndfRkxzcjdQeEhEMUdxajV3dHBWQkpCSzRMOHNHNGJBM1habTd2dG5fNEZhTTZwUndYeGJXYjJnLWFLMGhhVXJ5SDdtOGRac3dwMjEyQ3FkeHNxQXE1NnVTYUxibkN4aG9VWXpHVkxGQmlDYUViX1pVWngtTEJzMlpybmlicFNadnRMLVNFd2pST19mUmk1SWRyNjFYSG5PY2IwMUFFRldWZkdJLVFtY2p2UdIBuAFBVV95cUxQZDFDXzJSMVNwSm1ua3d2aURZMkNSRi1sMzhfOExYbTNEVmxtTngzZHR6ME1LTzdGS2dkSkFCLW1SMDV4TUhyWVg1X0trd21sMXhVSHBlcHoxa1FLLVBDSGd5MEZad1NwUG85NVN5aHBoZFR1d0E1bFNjaDYyN0FUTXNuNmxQRGpVV0w5cFZTNkx0bUREb25pMHR4U3oyUjlRY1MxVXNIdmRvc1UxeDBkUERjLV9rQWQx?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNV3FqSmV4SUdMMmlfMlVhQ3N4TmozbkQtQlg4anRGd3otZ05feWlwejFKOEtQQ1ZBR3VTMVVCZ29fSVlJYUFRdXJ6dlZjTlBVQURDYmtEUmJFSEFkWEthMFhabjJKTHpiSDBsUVFrSnp2OWlzUGtRQ2U1QUI3eHZPQm5fMWhBTUVaU3pNb1pTZ0FiOE0?oc=5",
    "system": "Federal presidential republic",
    "updated": "2026-10-04"
   },
@@ -1496,20 +1519,20 @@
    "source": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxNbTVwT0QwalBBOWhseC0tWUdHX0cxek5fR3I3d0M1RWc3bGJ5VThrb3h0OHgtNXBXR2xxckVrdGt1X01vUHFUS0tVeHllNUFKVmhwRlFuVlRkNGFOYjV2Z1RJUzN0cE9zSF9JNkxIQXhyY1hHN0xhZHl3QUtfRUVDVnl4SDhLaEVkZFNwUmZVbWtZalZmSTNjcktKWXIzOGEzWmZhWTFTTDB1SHktaDRSaW00dFlWb3ZrdU1IS2ZsZzF5LVlIaE94ajFLX1BKcE41SW9mQlhkWGxUN3BLY1BsUDM1NmgxbGNqQm13ZFlILS15TXlnVXJaRlRLNGdOWjJ4M21iUWpDY2ZGc09rTXVyRl8zYVJ1WUdwekNqX09MOEZJZWlELW9pV1QtZEpwRVlMWmFWZXBPcDRSaXEzblhNd0xDYjZoZ2xJcXZmY2tnOGRVdm14U1NTUdIB2AJBVV95cUxNbTVwT0QwalBBOWhseC0tWUdHX0cxek5fR3I3d0M1RWc3bGJ5VThrb3h0OHgtNXBXR2xxckVrdGt1X01vUHFUS0tVeHllNUFKVmhwRlFuVlRkNGFOYjV2Z1RJUzN0cE9zSF9JNkxIQXhyY1hHN0xhZHl3QUtfRUVDVnl4SDhLaEVkZFNwUmZVbWtZalZmSTNjcktKWXIzOGEzWmZhWTFTTDB1SHktaDRSaW00dFlWb3ZrdU1IS2ZsZzF5LVlIaE94ajFLX1BKcE41SW9mQlhkWGxUN3BLY1BsUDM1NmgxbGNqQm13ZFlILS15TXlnVXJaRlRLNGdOWjJ4M21iUWpDY2ZGc09rTXVyRl8zYVJ1WUdwekNqX09MOEZJZWlELW9pV1QtZEpwRVlMWmFWZXBPcDRSaXEzblhNd0xDYjZoZ2xJcXZmY2tnOGRVdm14U1NTUQ?oc=5"
   },
   "GRD": {
-   "nextelec": "general, November 2026",
+   "nextelec": "general, 5 Nov 2026",
    "updated": "2026-10-04",
-   "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5GRWp5WnpTYmFMaXBRMGlaR1Z6dmVxZU9MaVR1d0p4REdwYWY3RWJZUFlhYk9EMXVyem1lYVZxa0ZJRjRkb3F0OV9LOUJjLTNJQTluLWt3WExnMEs0MFZYQnlyNjJzVTlvaGo3OEV3?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOU0VvM25tTlJ0eTlDT2J0dTJURXBvSnIyUVAwQVRDdlN3aGZGT1g0b2JGcE5UTzY2U0VWRlpYT2xhQlVUVHhFYlRneEc0Z1lSdVlDd2xYRG9hcDViUnNkN2NjRExmNU9nTzZWcXVSanp5R3h5OFFrNkh1M3dWWEFxUUVucEVuQnAzLXlBNE1qam9vWkhickdUak1R?oc=5"
   },
   "LVA": {
-   "lastelec": "parliamentary, October 2026, United List",
+   "lastelec": "parliamentary, Oct 2026, United List (Andris Kulbergs)",
    "updated": "2026-10-04",
-   "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxNbDM2OXVVc0dPcnBRb3EtM3hSSE1SN1pBbHVhMVJWZ0NRYjdpSDFOWThxUW1ZMXpQWWlrSnl1WHhUdkZ3VUZSMkhCTFhRanAyVTRaZDQwX0tfSVNqUmlVb2FTSVp3cnMtcmhWU3RIdy1NdHdLZjB1VHlUWFRiSVBYSWZaUXJVUUZoSnFsVXN3S3RfYjU3QW1SOUF5Q0t1Zw?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQQkYtRW1RcEpBMDU4NURJSTZial9LZHI5QTVTWTlIYTZPeTNabThNN2k4VHJLQUZ3YXQ3M1VISUNpUDNpSUJLNHlDUXc1cFdfTFZlUW5XekNNdFQxbFJkR2tiQmlEUVowSlFwd3BuNGpTRGdWQ2pfdkVnVVQ0VGt2NDdOWEx1bTY4RWUxblVnQ2ZRcm45MVdHZmV0RjFta1FNTVF5c09DX2NhY0NkeGFIMDBHdjgzdXlVODNXb0M4RXp3M1FLSHRnQTZrTUx0YlFaZXA3WWtWT3V2SjhIVDg3bDlUbVVMSWd0aElRTEVLMVo5cnRRNklCdTR1Qll2QVFB0gGGAkFVX3lxTE9hX2dPbTJRcE1xN2toUzVmS3V0Y2F3bDlXdXdldUhyUjdySEpma2EwNFlrU21QbUhEa1ZEQ0hfOXZaREpGTzVCWTJQRGlhM1VCNkZlZ3FCZ3VOS0dSTTEyVzNZaFhDWlFhZjNYNjhzQnJpLV81TVBXMjBoVldxdElUMEhUYWE5RkxkelpHOUliNlpRSzVselJwNHpjLXEwcW41U2RVRm82V2NSaS1HeGlsZ1N2eTMyX3dXOFM1eDRONnd5aVdWYWc3Z2JxUGNVeUwzc3lXX2lGalc5OWVCbHN6TGJqa0hWY3BzZTVJN1o1RzNWc0xEdnd1aFp6S1ZCTjczNDBfX3c?oc=5",
    "nextelec": "Parliamentary (Saeima), October 2026"
   },
   "BIH": {
-   "lastelec": "general, October 2026, election ongoing",
+   "lastelec": "general, Oct 2026",
    "updated": "2026-10-04",
-   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQV1dnS093SDFUSWYya2ZTMDFubzFJdV94UnNvWXh2aVNoRUp4bkMtWTdzOXhNQkhBeWpONFFnMFcxbTBHay03cS03VlJiSnV0SGNfczFDYnJkZ1JrajlvUVl5YTJHUGlvcFpOcldSWTlNcXNDSzY1S0VaRk5IRkVtc1htZWptVVBRdHhzZng5WFNTTWhJNThZNHpJWklSZHZBbDdmenIyUDRlR1l5?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qbkdIY3lnV04tMzQyaW1ZS1YwVkNKNjZ3YkcxWXhZLVZwQ3FYZFpSendrdUZRWU5ab2VFS1FBUi1NbjdRdGRIcVFXZUxQbXFUWFFDd042cDc?oc=5"
   }
  }
 }
