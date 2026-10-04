@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-04T11:04:14Z",
+  "lastRun": "2026-10-04T16:09:31Z",
   "log": [
    {
     "date": "2026-10-04",
@@ -29,6 +29,26 @@
       "label": "Grenada",
       "change": "Recorded general election scheduled for 5 November 2026",
       "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5GRWp5WnpTYmFMaXBRMGlaR1Z6dmVxZU9MaVR1d0p4REdwYWY3RWJZUFlhYk9EMXVyem1lYVZxa0ZJRjRkb3F0OV9LOUJjLTNJQTluLWt3WExnMEs0MFZYQnlyNjJzVTlvaGo3OEV3?oc=5"
+     },
+     {
+      "label": "France–Türkiye",
+      "change": "Normal → Partner: Defense roadmap signed in Ankara to expand military cooperation",
+      "source": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBRUVdDY1NDRnhoLUlZQko0MzM1VEtuQjlIcmktOHJFRHNVd296ME9zcXJQUHNYclFMRlFmTzFwcUEwSnpCYXZxSTAyTW04azczOTdJ?oc=5"
+     },
+     {
+      "label": "Somalia–Israel",
+      "change": "Hostile: Somalia rejects Israeli presence and accuses it of seeking a base in Somaliland",
+      "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZFlMbWQ3cnotcTdwZ0ZJeXJFRXQxNDA1NlFha2ZORUtYMVZJM2VNaE40SWJGSzFZNVg5MG15OC10dWhCQjFXYlpuSUR4c2VYVlA5N1pEcWVMRXFnN19nN1ZUVWVudm9HcWN5WWJ2QjJmOEhtUmNFUWdCRTl1RmZqYUhybzJYWUxkLVlKRXFPOTZsb3ZTWldqUURMZ0lKNzdWR3VxSkNjRWEwbzRtUlE?oc=5"
+     },
+     {
+      "label": "Bangladesh–India",
+      "change": "Tense: Note refreshed to reflect formal extradition request for Sheikh Hasina",
+      "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNYW9CTEhwZ205blp6S3Q4bVRMeDY5QWdlTDZzd3FhbWozREFOX3BVTEcwSjY1OTRjYVBFNXB4ZHd3TWlGUUl2bk9mSVNmcUsxN3dyVmd0MGNMRDVGazdRZXFlQW9oZkh4cTFPZVY3RVBmQVRNT285S1dGNmc4SnNaQXVuaUlqcC1kUW9GeHEyVnRrU0dCNHRScDlubWxvTE90RGdhM0g3aS0xQjRibTZfTW55Ym9jejMzYkJ0dnpGR2Y0TXdBaUxaMXRKTzE3bWwtZGNYSHJFNNIB1wFBVV95cUxNYW9CTEhwZ205blp6S3Q4bVRMeDY5QWdlTDZzd3FhbWozREFOX3BVTEcwSjY1OTRjYVBFNXB4ZHd3TWlGUUl2bk9mSVNmcUsxN3dyVmd0MGNMRDVGazdRZXFlQW9oZkh4cTFPZVY3RVBmQVRNT285S1dGNmc4SnNaQXVuaUlqcC1kUW9GeHEyVnRrU0dCNHRScDlubWxvTE90RGdhM0g3aS0xQjRibTZfTW55Ym9jejMzYkJ0dnpGR2Y0TXdBaUxaMXRKTzE3bWwtZGNYSHJFNA?oc=5"
+     },
+     {
+      "label": "Wakhan Corridor",
+      "change": "Updated description to reflect the opening of the Wakhan Road to China",
+      "source": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPYS1CbXFGTXZ2MllSWE9vNnZLLTczUkpzeWtwTEpmTEFRM0Njd3ozSHo3dVpwbjB4ZVp5VmdsRUhuTXpHdk5LSTBTajRBMkItWGlqNWFIRVJHRkpmUVo1N010Y3dDRXVrUGJ5VHduRXBFZ0Rmcmw5aHg3Zno4bG9qU0lVUk14MlBNa21J?oc=5"
      }
     ]
    },
@@ -666,7 +686,7 @@
     ]
    }
   ],
-  "summary": "Record Latvian parliamentary election outcome, Grenada election scheduling, DEU-UKR defense package, JPN-USA Okinawa friction, and escalating Houthi strikes on Saudi energy facilities."
+  "summary": "This update registers key diplomatic shifts including a new France-Türkiye defense roadmap, Somalia's hostile stance toward Israel, and multiple national elections."
  },
  "relations": {
   "DNK-USA": {
@@ -865,9 +885,9 @@
    "a": "BGD",
    "b": "IND",
    "s": "T",
-   "note": "Relations remain strained over Sheikh Hasina's exile and negotiations on the Ganges Water treaty under Prime Minister Tarique Rahman.",
-   "updated": "2026-09-27",
-   "source": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNclVLNmFwOFhhWkpjc0dlaVFQT1JRaGg2TTJ2RHJUUUNKR1VwMXpPZTVHSkQxWjc2amsxRy0well0NVVJYkpmVVZ3aUNTdU5QQ2hDWWx2WmpBTWUxYWRySEJ2MUlfT1lFV19wX3Y2VWZyUVZ6OVlGWjJSN1g2b3QwdDkzYjR5dDlZdmZzNDRxUmdKcExyRjc5ZkF3WGpWSzdPZHduaVlPRzJ5SkJZMW5fVGY0dmRSTkhBM1JlMzlnSl8wZTYwZDBoamo5U0w4UkM0c0ZKTjdxUjlOZVZJTmk5bjhBc3B6WDNlMmdmam5wa3ZNRG5WbkRJZ0stWlVUQkJW0gGGAkFVX3lxTE5TSFdhOWJ0bkg1d0wwYmxmR05VTUN1MVpCZUx4enA1c1B6aGtNaTZwQ0N5bEdVVGsxWnZuSXhwcVlhQ2wzeFVNMzJxaGpyTElkd2xCMFZ5MzF1TWlQTFhoS2dZaVVZbEVidnJUZWctdUEtYzc4T3A5SmZzTlNpQVh6SVNYbmpnRWJnRDU1ZWFsN3dQRVp4MlhvdTdfdmlTSWxCX3FPN3V2WGhNNEJiNHFTSTRMRVdlSE5XdjBSMmtUbGduZkZKR2NaNllfeVFzbDZmWGxTYXUwQTVweVVXMGI1NUxNa09HcVpGck9Od1Q3Sks2cnpFZEN0VDFoYWZ3N1VGTUJoT2c?oc=5"
+   "note": "Tensions persist as Bangladesh formally requests India to expedite the extradition of ousted leader Sheikh Hasina.",
+   "updated": "2026-10-04",
+   "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNYW9CTEhwZ205blp6S3Q4bVRMeDY5QWdlTDZzd3FhbWozREFOX3BVTEcwSjY1OTRjYVBFNXB4ZHd3TWlGUUl2bk9mSVNmcUsxN3dyVmd0MGNMRDVGazdRZXFlQW9oZkh4cTFPZVY3RVBmQVRNT285S1dGNmc4SnNaQXVuaUlqcC1kUW9GeHEyVnRrU0dCNHRScDlubWxvTE90RGdhM0g3aS0xQjRibTZfTW55Ym9jejMzYkJ0dnpGR2Y0TXdBaUxaMXRKTzE3bWwtZGNYSHJFNNIB1wFBVV95cUxNYW9CTEhwZ205blp6S3Q4bVRMeDY5QWdlTDZzd3FhbWozREFOX3BVTEcwSjY1OTRjYVBFNXB4ZHd3TWlGUUl2bk9mSVNmcUsxN3dyVmd0MGNMRDVGazdRZXFlQW9oZkh4cTFPZVY3RVBmQVRNT285S1dGNmc4SnNaQXVuaUlqcC1kUW9GeHEyVnRrU0dCNHRScDlubWxvTE90RGdhM0g3aS0xQjRibTZfTW55Ym9jejMzYkJ0dnpGR2Y0TXdBaUxaMXRKTzE3bWwtZGNYSHJFNA?oc=5"
   },
   "MAR-SAU": {
    "a": "MAR",
@@ -1148,6 +1168,22 @@
    "note": "Germany pledges €1.35 billion in aid and finalises a drone deal during Chancellor Merz's visit to Kyiv amid heavy Russian air strikes.",
    "updated": "2026-10-04",
    "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPalJZZkl0aXNXVjlCaDAzM0o1VXkyMUNVTDlUNlU5dEV6NXZYWHhUalJ3Zm8tVUdNSFgtZ0tVcU1TSFBaT0tzdEhQNkZ3WFFRamxCcmFzelVoWWFyZngzLXpjQmpFcDNlSUp6a1E5NEJZR1Mxb2RCcW05WWhJY3NCX2FKVHpsLXZCYWkyUlFlbnpCU2NxXzQ3M29QMGJxU0dnV2puU0RiY2loanZYdjJsXzdBMTNEU1pWbE82Vlg5eHE3VTlGcDcwWGJmOTBYcFVjdzFWdXZ5Zw?oc=5"
+  },
+  "FRA-TUR": {
+   "a": "FRA",
+   "b": "TUR",
+   "s": "F",
+   "note": "France and Türkiye sign a defense roadmap in Ankara to expand military and security cooperation.",
+   "updated": "2026-10-04",
+   "source": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBRUVdDY1NDRnhoLUlZQko0MzM1VEtuQjlIcmktOHJFRHNVd296ME9zcXJQUHNYclFMRlFmTzFwcUEwSnpCYXZxSTAyTW04azczOTdJ?oc=5"
+  },
+  "ISR-SOM": {
+   "a": "ISR",
+   "b": "SOM",
+   "s": "H",
+   "note": "Somalia rejects any Israeli presence and accuses Israel of seeking a military base in breakaway Somaliland.",
+   "updated": "2026-10-04",
+   "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZFlMbWQ3cnotcTdwZ0ZJeXJFRXQxNDA1NlFha2ZORUtYMVZJM2VNaE40SWJGSzFZNVg5MG15OC10dWhCQjFXYlpuSUR4c2VYVlA5N1pEcWVMRXFnN19nN1ZUVWVudm9HcWN5WWJ2QjJmOEhtUmNFUWdCRTl1RmZqYUhybzJYWUxkLVlKRXFPOTZsb3ZTWldqUURMZ0lKNzdWR3VxSkNjRWEwbzRtUlE?oc=5"
   }
  },
  "threads": {
@@ -1287,18 +1323,34 @@
    "s": "NATO weak spot · Poland and Lithuania draft evacuation plan Sept 2026",
    "updated": "2026-09-28",
    "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZTJmZ3BjWVlNckVkZ1N1Vjl5ZnpiQUo3V25HQ2JjdWJ3ZFpLcTlxS2U4dU5mbVRkMXNVNEh3Rks3bTNjdUd4YnJwSVV5Rm5RdC1kYTV4bHhWYkllak9ILVh2T0ltZ25EX1c1V0J5NzU2eXVGaUxwd1Z3NVFFYmVaVS1sbUtrQXg1eVdudVVfczlRejVJdGc?oc=5"
+  },
+  "wakhan-corridor": {
+   "n": "Wakhan Corridor",
+   "t": "land",
+   "s": "Wakhan Road opened",
+   "d": "Afghanistan opens a 121-kilometer road through the corridor to the Chinese border, aiming to establish direct trade.",
+   "lat": 37.0,
+   "lng": 72.5,
+   "p": [
+    "AFG",
+    "CHN",
+    "TJK",
+    "PAK"
+   ],
+   "updated": "2026-10-04",
+   "source": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPYS1CbXFGTXZ2MllSWE9vNnZLLTczUkpzeWtwTEpmTEFRM0Njd3ozSHo3dVpwbjB4ZVp5VmdsRUhuTXpHdk5LSTBTajRBMkItWGlqNWFIRVJHRkpmUVo1N010Y3dDRXVrUGJ5VHduRXBFZ0Rmcmw5aHg3Zno4bG9qU0lVUk14MlBNa21J?oc=5"
   }
  },
  "politics": {
   "BRA": {
    "hog": "Luiz Inácio Lula da Silva, President",
    "hos": "Luiz Inácio Lula da Silva, President",
-   "lastelec": "presidential, October 2026",
+   "lastelec": "presidential, October 2026, election ongoing",
    "nextelec": "presidential runoff, October 2026",
    "ruling": "Workers' Party (PT)-led broad coalition",
-   "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPX2FnTWlaNko5MlBVdVJyRklOTmxSc3NDaXdtV2x2aEtZQ2tJaFhzVU42ZzlxYk1jX1JyWFg5NlJBRVRBN3hqdXJDdVJDT3hSYzJzVVdsYzdLQUhSc3hldFRTUEFNUk0xOElXYjIwdnJMcng1cjBsMnlRZk8tWUprc19WazloQQ?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTndfRkxzcjdQeEhEMUdxajV3dHBWQkpCSzRMOHNHNGJBM1habTd2dG5fNEZhTTZwUndYeGJXYjJnLWFLMGhhVXJ5SDdtOGRac3dwMjEyQ3FkeHNxQXE1NnVTYUxibkN4aG9VWXpHVkxGQmlDYUViX1pVWngtTEJzMlpybmlicFNadnRMLVNFd2pST19mUmk1SWRyNjFYSG5PY2IwMUFFRldWZkdJLVFtY2p2UdIBuAFBVV95cUxQZDFDXzJSMVNwSm1ua3d2aURZMkNSRi1sMzhfOExYbTNEVmxtTngzZHR6ME1LTzdGS2dkSkFCLW1SMDV4TUhyWVg1X0trd21sMXhVSHBlcHoxa1FLLVBDSGd5MEZad1NwUG85NVN5aHBoZFR1d0E1bFNjaDYyN0FUTXNuNmxQRGpVV0w5cFZTNkx0bUREb25pMHR4U3oyUjlRY1MxVXNIdmRvc1UxeDBkUERjLV9rQWQx?oc=5",
    "system": "Federal presidential republic",
-   "updated": "2026-10-03"
+   "updated": "2026-10-04"
   },
   "CAN": {
    "hog": "Mark Carney, Prime Minister",
@@ -1440,19 +1492,24 @@
   },
   "NZL": {
    "nextelec": "general, November 2026",
-   "updated": "2026-10-03",
+   "updated": "2026-10-04",
    "source": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxNbTVwT0QwalBBOWhseC0tWUdHX0cxek5fR3I3d0M1RWc3bGJ5VThrb3h0OHgtNXBXR2xxckVrdGt1X01vUHFUS0tVeHllNUFKVmhwRlFuVlRkNGFOYjV2Z1RJUzN0cE9zSF9JNkxIQXhyY1hHN0xhZHl3QUtfRUVDVnl4SDhLaEVkZFNwUmZVbWtZalZmSTNjcktKWXIzOGEzWmZhWTFTTDB1SHktaDRSaW00dFlWb3ZrdU1IS2ZsZzF5LVlIaE94ajFLX1BKcE41SW9mQlhkWGxUN3BLY1BsUDM1NmgxbGNqQm13ZFlILS15TXlnVXJaRlRLNGdOWjJ4M21iUWpDY2ZGc09rTXVyRl8zYVJ1WUdwekNqX09MOEZJZWlELW9pV1QtZEpwRVlMWmFWZXBPcDRSaXEzblhNd0xDYjZoZ2xJcXZmY2tnOGRVdm14U1NTUdIB2AJBVV95cUxNbTVwT0QwalBBOWhseC0tWUdHX0cxek5fR3I3d0M1RWc3bGJ5VThrb3h0OHgtNXBXR2xxckVrdGt1X01vUHFUS0tVeHllNUFKVmhwRlFuVlRkNGFOYjV2Z1RJUzN0cE9zSF9JNkxIQXhyY1hHN0xhZHl3QUtfRUVDVnl4SDhLaEVkZFNwUmZVbWtZalZmSTNjcktKWXIzOGEzWmZhWTFTTDB1SHktaDRSaW00dFlWb3ZrdU1IS2ZsZzF5LVlIaE94ajFLX1BKcE41SW9mQlhkWGxUN3BLY1BsUDM1NmgxbGNqQm13ZFlILS15TXlnVXJaRlRLNGdOWjJ4M21iUWpDY2ZGc09rTXVyRl8zYVJ1WUdwekNqX09MOEZJZWlELW9pV1QtZEpwRVlMWmFWZXBPcDRSaXEzblhNd0xDYjZoZ2xJcXZmY2tnOGRVdm14U1NTUQ?oc=5"
   },
   "GRD": {
-   "nextelec": "general, 5 Nov 2026",
+   "nextelec": "general, November 2026",
    "updated": "2026-10-04",
    "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5GRWp5WnpTYmFMaXBRMGlaR1Z6dmVxZU9MaVR1d0p4REdwYWY3RWJZUFlhYk9EMXVyem1lYVZxa0ZJRjRkb3F0OV9LOUJjLTNJQTluLWt3WExnMEs0MFZYQnlyNjJzVTlvaGo3OEV3?oc=5"
   },
   "LVA": {
-   "lastelec": "parliamentary, Oct 2026, United List / pro-Ukraine coalition",
+   "lastelec": "parliamentary, October 2026, United List",
    "updated": "2026-10-04",
-   "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZTIwcE45V0lmZzhHYW12c3pOb1JUSjVadEYxbjNXQlE5ZkdTYzFXYXdOeURWaE9ZMEFCZ1NDd2RwZ0R1anFJT3ZPajZLTS1hamhOTFlZcTJ2QWtSWU1LMVI3bHRUQU9SRlNSZ24xVXRwSTYxWXNTcG9Hc09Sd21RSUlHTlFmMGVvbFNVZ3VsWWx0WUc0VUZ5WXExSldMVUJScURtXzQ3aVV1RkNqWGNjSjZxemtyZVpPUGM3dkJpWDlZMXpDSGs2WHlYZ1hndmFERjhMNUNFNmrSAdgBQVVfeXFMT2UyMHBOOVdJZmc4R2FtdnN6Tm9SVEo1WnRGMW4zV0JROWZHU2MxV2F3TnlEVmhPWTBBQmdTQ3dkcGdEdWpxSU92T2o2S00tYWpoTkxZWXEydkFrUllNSzFSN2x0VEFPUkZTUmduMVV0cEk2MVlzU3BvR3NPUndtUUlJR05RZjBlb2xTVWd1bFlsdFlHNFVGeVlxMUpXTFVCUnFEbV80N2lVdUZDalhjY0o2cXprcmVaT1BjN3ZCaVg5WTF6Q0hrNlh5WGdYZ3ZhREY4TDVDRTZq?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxNbDM2OXVVc0dPcnBRb3EtM3hSSE1SN1pBbHVhMVJWZ0NRYjdpSDFOWThxUW1ZMXpQWWlrSnl1WHhUdkZ3VUZSMkhCTFhRanAyVTRaZDQwX0tfSVNqUmlVb2FTSVp3cnMtcmhWU3RIdy1NdHdLZjB1VHlUWFRiSVBYSWZaUXJVUUZoSnFsVXN3S3RfYjU3QW1SOUF5Q0t1Zw?oc=5",
    "nextelec": "Parliamentary (Saeima), October 2026"
+  },
+  "BIH": {
+   "lastelec": "general, October 2026, election ongoing",
+   "updated": "2026-10-04",
+   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQV1dnS093SDFUSWYya2ZTMDFubzFJdV94UnNvWXh2aVNoRUp4bkMtWTdzOXhNQkhBeWpONFFnMFcxbTBHay03cS03VlJiSnV0SGNfczFDYnJkZ1JrajlvUVl5YTJHUGlvcFpOcldSWTlNcXNDSzY1S0VaRk5IRkVtc1htZWptVVBRdHhzZng5WFNTTWhJNThZNHpJWklSZHZBbDdmenIyUDRlR1l5?oc=5"
   }
  }
 }
