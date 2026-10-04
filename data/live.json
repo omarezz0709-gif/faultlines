@@ -1,7 +1,37 @@
 {
  "meta": {
-  "lastRun": "2026-10-03T10:16:50Z",
+  "lastRun": "2026-10-04T11:04:14Z",
   "log": [
+   {
+    "date": "2026-10-04",
+    "items": [
+     {
+      "label": "Germany–Ukraine",
+      "change": "Note updated: Chancellor Merz visits Kyiv and unveils €1.35B package and drone deal",
+      "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPalJZZkl0aXNXVjlCaDAzM0o1VXkyMUNVTDlUNlU5dEV6NXZYWHhUalJ3Zm8tVUdNSFgtZ0tVcU1TSFBaT0tzdEhQNkZ3WFFRamxCcmFzelVoWWFyZngzLXpjQmpFcDNlSUp6a1E5NEJZR1Mxb2RCcW05WWhJY3NCX2FKVHpsLXZCYWkyUlFlbnpCU2NxXzQ3M29QMGJxU0dnV2puU0RiY2loanZYdjJsXzdBMTNEU1pWbE82Vlg5eHE3VTlGcDcwWGJmOTBYcFVjdzFWdXZ5Zw?oc=5"
+     },
+     {
+      "label": "Japan–United States",
+      "change": "Note updated: Tokyo files formal protest over Okinawa murder by US Marine",
+      "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSzVKU1hwU25TSEx0ZDhhMmFHZDZQejVBaUJja1R6THk0bXQ4UGs1OVpaZUFHbTZQZzJiVFA0OGxsUDd0eXlGVGkyWV9jMGxqTVgyOTIyT2xLRVZVSFVBSVU0WHJOQVAtdVFIWDUwWkNUWHBQMzNvSXozbWJuOHhGZg?oc=5"
+     },
+     {
+      "label": "Moldova–Russia",
+      "change": "Note updated: Moldova lodges protest over Russian drone and missile incursions",
+      "source": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE80QURmMHpvWjVYU0xVaVJOSWQxQzZKd0FOclZsTmx6SmtGQzNTWnB3MVlidm5ETXV3NEtZRGREUV9xQTR5d0E?oc=5"
+     },
+     {
+      "label": "Latvia",
+      "change": "Recorded Oct 2026 parliamentary election victory for pro-Ukraine coalition",
+      "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZTIwcE45V0lmZzhHYW12c3pOb1JUSjVadEYxbjNXQlE5ZkdTYzFXYXdOeURWaE9ZMEFCZ1NDd2RwZ0R1anFJT3ZPajZLTS1hamhOTFlZcTJ2QWtSWU1LMVI3bHRUQU9SRlNSZ24xVXRwSTYxWXNTcG9Hc09Sd21RSUlHTlFmMGVvbFNVZ3VsWWx0WUc0VUZ5WXExSldMVUJScURtXzQ3aVV1RkNqWGNjSjZxemtyZVpPUGM3dkJpWDlZMXpDSGs2WHlYZ1hndmFERjhMNUNFNmrSAdgBQVVfeXFMT2UyMHBOOVdJZmc4R2FtdnN6Tm9SVEo1WnRGMW4zV0JROWZHU2MxV2F3TnlEVmhPWTBBQmdTQ3dkcGdEdWpxSU92T2o2S00tYWpoTkxZWXEydkFrUllNSzFSN2x0VEFPUkZTUmduMVV0cEk2MVlzU3BvR3NPUndtUUlJR05RZjBlb2xTVWd1bFlsdFlHNFVGeVlxMUpXTFVCUnFEbV80N2lVdUZDalhjY0o2cXprcmVaT1BjN3ZCaVg5WTF6Q0hrNlh5WGdYZ3ZhREY4TDVDRTZq?oc=5"
+     },
+     {
+      "label": "Grenada",
+      "change": "Recorded general election scheduled for 5 November 2026",
+      "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5GRWp5WnpTYmFMaXBRMGlaR1Z6dmVxZU9MaVR1d0p4REdwYWY3RWJZUFlhYk9EMXVyem1lYVZxa0ZJRjRkb3F0OV9LOUJjLTNJQTluLWt3WExnMEs0MFZYQnlyNjJzVTlvaGo3OEV3?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-03",
     "items": [
@@ -636,7 +666,7 @@
     ]
    }
   ],
-  "summary": "Moldova reports Russian drone airspace violations, Flydubai investigates a cockpit attack by an Omani pilot with extremist links, and North Korea launches a ballistic missile into the East Sea."
+  "summary": "Record Latvian parliamentary election outcome, Grenada election scheduling, DEU-UKR defense package, JPN-USA Okinawa friction, and escalating Houthi strikes on Saudi energy facilities."
  },
  "relations": {
   "DNK-USA": {
@@ -859,17 +889,17 @@
    "a": "MDA",
    "b": "RUS",
    "s": "H",
-   "note": "Moldova presses Russia after Moscow's ambassador acknowledges drone fragments found in Moldovan territory may be Russian.",
-   "updated": "2026-09-27",
-   "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNnRhMktIb2NCTEZ3aGxKMFFpZExOdmZYRkRtbDUteE9rcml4WmNJSm5SY2ZYTFlVU2ZJcmcxbWVLX0xPbVFzT1g1djJIRm5mNldoMGctMUo3OFhFeWdWamVhVzlWQS1jUHlfYkp0ckYyQk55X2FTMEJvR1hURlZvSl9WMlVOMERjQWF2YlpoeFkwbW9OZVJ0ajVRNXlfMl90aTFWVXJZdzR1N2JUbGdoQUd5N1A?oc=5"
+   "note": "Moldova formally protests repeated Russian missile and drone airspace incursions during attacks on neighboring Ukraine.",
+   "updated": "2026-10-04",
+   "source": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE80QURmMHpvWjVYU0xVaVJOSWQxQzZKd0FOclZsTmx6SmtGQzNTWnB3MVlidm5ETXV3NEtZRGREUV9xQTR5d0E?oc=5"
   },
   "JPN-USA": {
    "a": "JPN",
    "b": "USA",
    "s": "A",
-   "note": "The security alliance remains robust under Prime Minister Sanae Takaichi, with over 54,000 US troops stationed in Japan.",
-   "updated": "2026-09-30",
-   "source": "https://www.wikidata.org/wiki/Q17"
+   "note": "Alliance faces domestic scrutiny as Tokyo protests the murder of an Okinawa woman allegedly committed by a US Marine.",
+   "updated": "2026-10-04",
+   "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSzVKU1hwU25TSEx0ZDhhMmFHZDZQejVBaUJja1R6THk0bXQ4UGs1OVpaZUFHbTZQZzJiVFA0OGxsUDd0eXlGVGkyWV9jMGxqTVgyOTIyT2xLRVZVSFVBSVU0WHJOQVAtdVFIWDUwWkNUWHBQMzNvSXozbWJuOHhGZg?oc=5"
   },
   "ISR-NLD": {
    "a": "ISR",
@@ -1110,6 +1140,14 @@
    "note": "The Dominican Republic closes its embassy in Managua and withdraws staff after Nicaragua bans opposition parties from elections.",
    "updated": "2026-10-02",
    "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOTlJFVk9zS0w5UFZON1A3RFZEaXVOdkNJdTZFVnBldnNDcDhsYTktalA4OEpxU2JqSExnNE90UWg4SG9GOUl0dU5tYllTSngtQjNyUFJ1b2RBVXVjeTQydVhReHRXanc5QVBwQkhXaXZoM1NGS2Rna2pyQXZlTUNaN29ES2gtaE41VU1IQ0VRUElfWW1QYVBwUnpYeFQ3b3c0NDNWVDFvVlRGYVVrMFZ6VUYydThGZzdHR3Rscy1B0gG-AUFVX3lxTE5OUkVWT3NLTDlQVk43UDdEVkRpdU52Q0l1NkVWcGV2c0NwOGxhOS1qUDg4SnFTYmpITGc0T3RRaDhIb0Y5SXR1Tm1iWVNKeC1CM3JQUnVvZEFVdWN5NDJ1WFF4dFdqdzlBUHBCSFdpdmgzU0ZLZGdranJBdmVNQ1o3b0RLaC1oTjVVTUhDRVFQSV9ZbVBhUHBSelh4VDdvdzQ0M1ZUMW9WVEZhVWswVnpVRjJ1OEZnN0dHdGxzLUE?oc=5"
+  },
+  "DEU-UKR": {
+   "a": "DEU",
+   "b": "UKR",
+   "s": "F",
+   "note": "Germany pledges €1.35 billion in aid and finalises a drone deal during Chancellor Merz's visit to Kyiv amid heavy Russian air strikes.",
+   "updated": "2026-10-04",
+   "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPalJZZkl0aXNXVjlCaDAzM0o1VXkyMUNVTDlUNlU5dEV6NXZYWHhUalJ3Zm8tVUdNSFgtZ0tVcU1TSFBaT0tzdEhQNkZ3WFFRamxCcmFzelVoWWFyZngzLXpjQmpFcDNlSUp6a1E5NEJZR1Mxb2RCcW05WWhJY3NCX2FKVHpsLXZCYWkyUlFlbnpCU2NxXzQ3M29QMGJxU0dnV2puU0RiY2loanZYdjJsXzdBMTNEU1pWbE82Vlg5eHE3VTlGcDcwWGJmOTBYcFVjdzFWdXZ5Zw?oc=5"
   }
  },
  "threads": {
@@ -1128,11 +1166,11 @@
     "TUR",
     "PAK"
    ],
-   "d": "Iran-backed Houthis expand their strike range, attacking a power station in Madinah, Saudi Arabia, drawing widespread regional condemnation.",
+   "d": "Iran-backed Houthis target Saudi Aramco oil infrastructure and power facilities, prompting coalition air strikes across Yemen.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQRzBZdGJDMzM4Rlc1UlZuYndpaFQ1MlRFNi02ajBxb3ZFTkVQRFVpTHhzb254bzB2aVlST0NHZjB5LXN1YktfM3FZSFpQRUFTR1FwdFEzZWFkT0RrNTd6YmdnZkMyVm83VE5DZHNWR3BwNzQzMVF2VGVHeF9MNi1BX01oSG9sVVZPTG5ad3VkTWxSU204ZkF3YWE3bjNvSV9UeXROVWJ6T1hlaENCdUotR1dTRFVzRWNhNnNqRE10dk9GYVVSc3RlaHJB0gHPAUFVX3lxTFBMM1VzWWtRMXFKcFV3eW40cXFRNm5iWk9PTVl3ajNGSEE2MXhxZ05ncjNIel8tRnlCMnlUUHduTkJ3amtybEV4TkhvdEZXV1dpX05peDRPZkd4Sk1sT0h0aXQ5VzZFdmljWHNxUW9JOWduaTl1SG44QmpqQWQ2NkJYNkcxSDFCLVllb0Nia2dhU0c0bm9IUmFLa083ejBQQ1lsb0dTUE1ORHBiMU1MNXNEM2NLUUdQenEyZE11R0NVbGlOSVpRUW1IX2dfcGhoZw?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdC1jenhXS0RLMXFaaTNaUTVsTVJrcDNLdDZKLVR6SWVYOEdRNWdqRjktRktWSEFRTG1DbEhYd3ZvSGpGd1ZtTEVNNDdMd09SQ3pXdHJMMXlodWVQRjlySVBpNXVlTlRZUDVDdlpjTk12TEw4WVhUaU9rODlnV3RRVUR1OE1UVlJVUjlKa0NNV2MzN2dQUldvUzFn?oc=5",
    "t": "security",
-   "updated": "2026-10-02"
+   "updated": "2026-10-04"
   },
   "afpak-jihad": {
    "t": "security",
@@ -1406,14 +1444,14 @@
    "source": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxNbTVwT0QwalBBOWhseC0tWUdHX0cxek5fR3I3d0M1RWc3bGJ5VThrb3h0OHgtNXBXR2xxckVrdGt1X01vUHFUS0tVeHllNUFKVmhwRlFuVlRkNGFOYjV2Z1RJUzN0cE9zSF9JNkxIQXhyY1hHN0xhZHl3QUtfRUVDVnl4SDhLaEVkZFNwUmZVbWtZalZmSTNjcktKWXIzOGEzWmZhWTFTTDB1SHktaDRSaW00dFlWb3ZrdU1IS2ZsZzF5LVlIaE94ajFLX1BKcE41SW9mQlhkWGxUN3BLY1BsUDM1NmgxbGNqQm13ZFlILS15TXlnVXJaRlRLNGdOWjJ4M21iUWpDY2ZGc09rTXVyRl8zYVJ1WUdwekNqX09MOEZJZWlELW9pV1QtZEpwRVlMWmFWZXBPcDRSaXEzblhNd0xDYjZoZ2xJcXZmY2tnOGRVdm14U1NTUdIB2AJBVV95cUxNbTVwT0QwalBBOWhseC0tWUdHX0cxek5fR3I3d0M1RWc3bGJ5VThrb3h0OHgtNXBXR2xxckVrdGt1X01vUHFUS0tVeHllNUFKVmhwRlFuVlRkNGFOYjV2Z1RJUzN0cE9zSF9JNkxIQXhyY1hHN0xhZHl3QUtfRUVDVnl4SDhLaEVkZFNwUmZVbWtZalZmSTNjcktKWXIzOGEzWmZhWTFTTDB1SHktaDRSaW00dFlWb3ZrdU1IS2ZsZzF5LVlIaE94ajFLX1BKcE41SW9mQlhkWGxUN3BLY1BsUDM1NmgxbGNqQm13ZFlILS15TXlnVXJaRlRLNGdOWjJ4M21iUWpDY2ZGc09rTXVyRl8zYVJ1WUdwekNqX09MOEZJZWlELW9pV1QtZEpwRVlMWmFWZXBPcDRSaXEzblhNd0xDYjZoZ2xJcXZmY2tnOGRVdm14U1NTUQ?oc=5"
   },
   "GRD": {
-   "nextelec": "general, late 2026",
-   "updated": "2026-10-03",
-   "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPY3haT1RtLTduVG5rbkMtcng3bkZUQWV1Ri1OZjdsa0FUUG5ZZmdOTEFHNVhZSXAwWFB3ZFdoYkJRbzN5R3BvZ3FyRDdSSGsxVFFCOW41VTFlSklwLUFMOWpWcmNxUmxRN3ZsNWR6VG9xVkRhMEVWV3lNUmdWYTItMEhnRWlKeVQ4WkdsdWZuNi02WE1HVEI0eHJQSQ?oc=5"
+   "nextelec": "general, 5 Nov 2026",
+   "updated": "2026-10-04",
+   "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5GRWp5WnpTYmFMaXBRMGlaR1Z6dmVxZU9MaVR1d0p4REdwYWY3RWJZUFlhYk9EMXVyem1lYVZxa0ZJRjRkb3F0OV9LOUJjLTNJQTluLWt3WExnMEs0MFZYQnlyNjJzVTlvaGo3OEV3?oc=5"
   },
   "LVA": {
-   "lastelec": "parliamentary, October 2026",
-   "updated": "2026-10-03",
-   "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQd0l5WVk2R2o0TGhIMjlCSWtUd295NWVfdTUtWmx1dGxyNnltNGFHT3pvSDloR1VYX2l6ejRwVVJhRXpWNmhHUUhpUTNWTHZmaU1uQzFRMEwxMkxxREJZTXV5TjFTeXJHQjZqQ3VIcXNxajJTSXFqVWFVWF9sT2prLTgtYkU3TmlhOTVBQ1FyM19MM2JtUVp5RHNWYXRRcTJGamlJd2dSZGZxcFBPYU5YM09vSQ?oc=5",
+   "lastelec": "parliamentary, Oct 2026, United List / pro-Ukraine coalition",
+   "updated": "2026-10-04",
+   "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZTIwcE45V0lmZzhHYW12c3pOb1JUSjVadEYxbjNXQlE5ZkdTYzFXYXdOeURWaE9ZMEFCZ1NDd2RwZ0R1anFJT3ZPajZLTS1hamhOTFlZcTJ2QWtSWU1LMVI3bHRUQU9SRlNSZ24xVXRwSTYxWXNTcG9Hc09Sd21RSUlHTlFmMGVvbFNVZ3VsWWx0WUc0VUZ5WXExSldMVUJScURtXzQ3aVV1RkNqWGNjSjZxemtyZVpPUGM3dkJpWDlZMXpDSGs2WHlYZ1hndmFERjhMNUNFNmrSAdgBQVVfeXFMT2UyMHBOOVdJZmc4R2FtdnN6Tm9SVEo1WnRGMW4zV0JROWZHU2MxV2F3TnlEVmhPWTBBQmdTQ3dkcGdEdWpxSU92T2o2S00tYWpoTkxZWXEydkFrUllNSzFSN2x0VEFPUkZTUmduMVV0cEk2MVlzU3BvR3NPUndtUUlJR05RZjBlb2xTVWd1bFlsdFlHNFVGeVlxMUpXTFVCUnFEbV80N2lVdUZDalhjY0o2cXprcmVaT1BjN3ZCaVg5WTF6Q0hrNlh5WGdYZ3ZhREY4TDVDRTZq?oc=5",
    "nextelec": "Parliamentary (Saeima), October 2026"
   }
  }
