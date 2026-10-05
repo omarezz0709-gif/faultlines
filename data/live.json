@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-05T05:25:07Z",
+  "lastRun": "2026-10-05T10:20:53Z",
   "log": [
    {
     "date": "2026-10-05",
@@ -41,11 +41,6 @@
       "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNaFFzTUpETjhUVDN0MFBFWDBOQ0dpeUZzZjZTdlNsSDZCNjA0aWluNkhLUndna0RwSHNtMTBEal9JOVpJWXMxMk5PUkZOVUlGTFo0OFlGdk9tN0MxSWlxX1RBUFhzYVZZVno3SXhVVHI4Tlo0RndvamZtekxTRjZIWHk0XzJXWG5zcXhYeV93?oc=5"
      },
      {
-      "label": "Latvia",
-      "change": "Politics recorded: United List wins parliamentary election",
-      "source": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5JeHZzV0Noa1U5cmVQY01EczVxNDVNWlViZ0JrU0ZwVHotbzVValNsNTZFbVdGeS1QXzdOVGI3cWJsT3c1ZTNnSGt4R0EwSTNGYS1aMDhrNXRzbXZrZXZkcFFWcmxxLUE?oc=5"
-     },
-     {
       "label": "Bosnia and Herzegovina",
       "change": "Politics recorded: General elections determine tripartite presidency seats",
       "source": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQdXVPOU5iVUwtNTNIdWREaUNQRGJsRW1Qa21qQkVtclY4dDhiNVdyci15dV9JbkRMXzV4d0ZteTZCVzdXN3hQRHY2MG8tS09XSWxVeTBCSjV1Y0VqNHZ3MTVwMXRFaHZBcFV4QTRja0t0S0ZGTFBTaUFFMk1rby14SGg0MU5FRWxwT05SLUU4NGU4VjAwdFRyOFFhd1YtTU04NkhxaWtuc3dyOGpTZ1BUcnQwaFM5REJUY2NJQ0pNM29aMEU4T2Vkb0lXNFdtbWpWTUo4cWloTGNKTkl3RTZUbU4tdW12V0ZpVWFr?oc=5"
@@ -54,6 +49,16 @@
       "label": "Grenada",
       "change": "Politics scheduled: General election announced for 5 November 2026",
       "source": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB2a1RMc3I0ZXZnQXJTWlpsVTM5Tk9uTXZGQUZoSDktRkdDazlybV80VUR0QWdZaVVvcUp4N29KUUo1N2ZiZ1FKUVZBQUh2TEFlelNUakVZUV9HV0F5OEYwREo3TW00SUk0ckFNNWFkUThraHpNRW40aVlB?oc=5"
+     },
+     {
+      "label": "Spain",
+      "change": "Snap election called for November 29, 2026",
+      "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQX1N2aHdSaGlfX0lnTUZJS3o1SFBzSGptRUFmUnJXWW5DRGRLRC1HVVJ5OFliTDNYaGZnSWM2NGU2WUhpb1BYWHFzZjhvcTFaSm5XcTZvRW5DMjBZd0R0MHkzSlpBS2NadV9sN2w2cm5mMEtEeGpKd2dPeEpZcTlaOHUtNktETGR3aWlFSFJzaG5jRkZEYllUY1psT2ZaNUp5QzVVTGZUMjd0UQ?oc=5"
+     },
+     {
+      "label": "Latvia",
+      "change": "Pro-Ukraine United List wins parliamentary election",
+      "source": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5JeHZzV0Noa1U5cmVQY01EczVxNDVNWlViZ0JrU0ZwVHotbzVValNsNTZFbVdGeS1QXzdOVGI3cWJsT3c1ZTNnSGt4R0EwSTNGYS1aMDhrNXRzbXZrZXZkcFFWcmxxLUE?oc=5"
      }
     ]
    },
@@ -756,7 +761,7 @@
     ]
    }
   ],
-  "summary": "Updated security threads and diplomatic notes following the Yemeni government counteroffensive, the El-Alamein Horn of Africa summit, and general elections in Brazil, Latvia, and Bosnia."
+  "summary": "Spain calls a snap election for November 29 amid housing protests, Latvia's pro-Ukraine coalition wins a landslide election, and North Korea is blamed for DMZ mine explosions."
  },
  "relations": {
   "DNK-USA": {
@@ -1091,9 +1096,9 @@
    "a": "KOR",
    "b": "PRK",
    "s": "W",
-   "note": "Inter-Korean tensions escalate following North Korean landmine blasts near the DMZ and a fresh ballistic missile launch.",
-   "updated": "2026-10-03",
-   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPb1hwSU50eTEyejRKcV93MldTRVF5NHVOY1BBaDVFTVhIZGx6QnRidW9hQllEb29tazBtQ1EyaVBsQXRBT0syN2lyOXVXV1VGc19rbGpvZDNxX0dZSXZ5VHBKU2NYeldpMGlVVDJWSDN3Uk9BSy1sbkNKUzRGLTNIU0JhMjNkVnhpRU1oOFNvc2NIQThxSndfUjF1UlBEVDZ6ajVXWUF30gGrAUFVX3lxTE1Oam81eWlHT1pBT01SOUFBUVVhY1pUUkM1aVNEZWZSWTdJQk96ekcyeENmMC1VOUtJZUQ1MzZ1YTctWGNUalNyblNIaU56bEU2WkdtUF8yWUJoODJTVkJQNHZjYXppalJGYXlOVW8xdHlwV1dIeU1TMUFqb2FPYjk3eUNRSXQyZTIyOGlMdW5rN19NUGQ1dFZXZFowa0lEVnVVTGdOajlrWmRKaw?oc=5"
+   "note": "South Korea concludes that North Korean landmines caused border blast injuries and urges an official apology.",
+   "updated": "2026-10-05",
+   "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdHozYUJQbmEzNDNsS1RHVW1HX1gtQ1lNU3hGT2ljQXF2QWcwNklfbzU5Tk9oSVVtenNaU3pteGJjQTdYWVBfWkp6NkhVU2Y0Y1lzV1JXazZhbUFHUWxSX0pvOTZSMnp0RWJQWFE5RGdRU2hQMDRXTXJDN0RUMUJRNzRycGZocDlxTlpNTkRsc3k4dFJxTmxEUlFuOXpZV0ZEdkJQdkU3MNIBrAFBVV95cUxONkNwNXlkQjlDX0h3N2JzcDBSNjFCN1pHNlRrN1gxTVFZZ2otdmtTeDlCSU5CSzlrdExyajYxV2owOExVbHo5S0x4MDF3ZUp4N3hQUFdvb3hrM0lPTkhzcU1pNThyaDNDbG5tNS1OTThLNEFCaGNkbUZHNlpJV3huUU1ycVZjRGlDVjBHMm9OZU14cXRxYWFJTGI3ZDZaT2dwWUtoWFE1Wm5vaW01?oc=5"
   },
   "ESP-ISR": {
    "a": "ESP",
@@ -1588,7 +1593,7 @@
    "source": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB2a1RMc3I0ZXZnQXJTWlpsVTM5Tk9uTXZGQUZoSDktRkdDazlybV80VUR0QWdZaVVvcUp4N29KUUo1N2ZiZ1FKUVZBQUh2TEFlelNUakVZUV9HV0F5OEYwREo3TW00SUk0ckFNNWFkUThraHpNRW40aVlB?oc=5"
   },
   "LVA": {
-   "lastelec": "parliamentary, Oct 2026, United List",
+   "lastelec": "Parliamentary election, October 2026, United List landslide",
    "updated": "2026-10-05",
    "source": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5JeHZzV0Noa1U5cmVQY01EczVxNDVNWlViZ0JrU0ZwVHotbzVValNsNTZFbVdGeS1QXzdOVGI3cWJsT3c1ZTNnSGt4R0EwSTNGYS1aMDhrNXRzbXZrZXZkcFFWcmxxLUE?oc=5",
    "nextelec": "Parliamentary (Saeima), October 2026"
@@ -1597,6 +1602,11 @@
    "lastelec": "presidential, Oct 2026, Becirovic/Cvijanovic/Filipovic",
    "updated": "2026-10-05",
    "source": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQdXVPOU5iVUwtNTNIdWREaUNQRGJsRW1Qa21qQkVtclY4dDhiNVdyci15dV9JbkRMXzV4d0ZteTZCVzdXN3hQRHY2MG8tS09XSWxVeTBCSjV1Y0VqNHZ3MTVwMXRFaHZBcFV4QTRja0t0S0ZGTFBTaUFFMk1rby14SGg0MU5FRWxwT05SLUU4NGU4VjAwdFRyOFFhd1YtTU04NkhxaWtuc3dyOGpTZ1BUcnQwaFM5REJUY2NJQ0pNM29aMEU4T2Vkb0lXNFdtbWpWTUo4cWloTGNKTkl3RTZUbU4tdW12V0ZpVWFr?oc=5"
+  },
+  "ESP": {
+   "nextelec": "General election, 29 November 2026",
+   "updated": "2026-10-05",
+   "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQX1N2aHdSaGlfX0lnTUZJS3o1SFBzSGptRUFmUnJXWW5DRGRLRC1HVVJ5OFliTDNYaGZnSWM2NGU2WUhpb1BYWHFzZjhvcTFaSm5XcTZvRW5DMjBZd0R0MHkzSlpBS2NadV9sN2w2cm5mMEtEeGpKd2dPeEpZcTlaOHUtNktETGR3aWlFSFJzaG5jRkZEYllUY1psT2ZaNUp5QzVVTGZUMjd0UQ?oc=5"
   }
  }
 }
