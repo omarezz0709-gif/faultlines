@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-05T10:20:53Z",
+  "lastRun": "2026-10-05T22:09:50Z",
   "log": [
    {
     "date": "2026-10-05",
@@ -59,6 +59,31 @@
       "label": "Latvia",
       "change": "Pro-Ukraine United List wins parliamentary election",
       "source": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5JeHZzV0Noa1U5cmVQY01EczVxNDVNWlViZ0JrU0ZwVHotbzVValNsNTZFbVdGeS1QXzdOVGI3cWJsT3c1ZTNnSGt4R0EwSTNGYS1aMDhrNXRzbXZrZXZkcFFWcmxxLUE?oc=5"
+     },
+     {
+      "label": "Egypt–Somalia",
+      "change": "None → Ally: Formal alliance signed under the El Alamein Declaration to counter Ethiopian influence.",
+      "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSEI5YlFGaENFWHFmb1EzX2xyOHR5WGtLZkRQVEJ0MjNiUFR5ekZnc0JnZTJZSGtzdTEzX3UzRTVoakhIbDZoQ2dZNHRNYklnVkY5a01qUHBBZjlxblVOMG5veGx4ZDVObWlWSEZRTFhISGx5dDZUX1NhbXZtLUhJTWE3S2lYZ3N2NVdERlFmcEhXZFM0eFBULTZKby1OazROUU5RRXMxbWJFbXRXWS00UXhnZWtZTWVQcHFjcVVhY3BlbTVWRVUxUVhB?oc=5"
+     },
+     {
+      "label": "Egypt–Eritrea",
+      "change": "None → Ally: Formal alliance signed under the El Alamein Declaration to manage Red Sea governance.",
+      "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSEI5YlFGaENFWHFmb1EzX2xyOHR5WGtLZkRQVEJ0MjNiUFR5ekZnc0JnZTJZSGtzdTEzX3UzRTVoakhIbDZoQ2dZNHRNYklnVkY5a01qUHBBZjlxblVOMG5veGx4ZDVObWlWSEZRTFhISGx5dDZUX1NhbXZtLUhJTWE3S2lYZ3N2NVdERlFmcEhXZFM0eFBULTZKby1OazROUU5RRXMxbWJFbXRXWS00UXhnZWtZTWVQcHFjcVVhY3BlbTVWRVUxUVhB?oc=5"
+     },
+     {
+      "label": "Ethiopia–Somalia",
+      "change": "Normal → Tense: Somalia aligns with Egypt and Eritrea, opposing Ethiopian regional ambitions.",
+      "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZ3d3Q1ZtbjZMVVdRZ2NuZnZCZ0NTZzlWOVhSN09feDF3cFN0blFsUm40Rk5vaGx6aWYwUnlHaEpIRHhTY0NDNGFydzRXbVRRVTRPWThiWGRNVG55WGJxdGVMXzFxSWRiYVVlRGp1dnRIZjE4ZjljTGNUdXR3NjV4TlR4RDA1VHUwdFg3Z01IR2tlLV9BSFZtV2tEc0ZuMWNnUTBmTVJpV05ncThjZzhKVNIBtgFBVV95cUxQaVNpZ1pMT3NTWGQtRDhtZE1GUHZBSlRMeXVDanlLNktCU2ZWUWtlQ3A3V1E5VVJOdVJZR0E0YUZjemQwVnBFNFJ5dDhFaDVpZGNBd182Vmw2NHc2OG9NSzk0WXlicEc1M1JwUWVSWEFjaDNENmEzYUhVdGdFZk85dVdjQi0zY1p1emhZVXZrUkpJUHpmVEJRNVhRZG50bWdMLUItUnVnbzFqMzVSRTUtTGlXN0x2dw?oc=5"
+     },
+     {
+      "label": "United Kingdom–Israel",
+      "change": "Partner → Tense: UK threatens to expel 27 Israeli diplomats over Jerusalem consulate dispute.",
+      "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOeDFocHg1WnhnbXQ5RVlCUUcwdUlmX2tZYjRfRVRVdUNJQkdWUTVfeF9KWWtQWnN6NXB6czk5QmpJWUxpaGNrQktDeFFLU0tnRThMWjVmd1RGQjgwRml5dUxWRGF6X2lBQXFoaWJLS0x4d1Zfb2h3OHhRcmQ4UGRIWUljemRJYjBQMVNsQ1lUa0FadngxOUdpTGtlZFN1RHpULU5mZjk5czBHSExi0gGyAUFVX3lxTFBZVmJnR0dGTlJ3blRYa3l5YU1GMDRRa19SbnRhRnhOV204clNmdWxUclplMnBNeHp3SWp5SllZbC1mZ0RLam5kdzJvUDJEUHBOWXVBN2hxeW5jOHNqUWE5Z3FYMDBxNmp0Umo4S1FvRU80ZkxubGFGY2M5ZnRkZjhiVWtyRi1BVHF3TmtzZklOZFlEQWtTeUJCSUlhQW9OTHk3WnkzVzBFT1hlNWFvbkdWdEE?oc=5"
+     },
+     {
+      "label": "United States–Mexico",
+      "change": "Partner → Tense: Border gunfire incident prompts Mexican troop deployment and demands for evidence.",
+      "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPMUhEQ3owRGZHQzRnNjBrMEZKUkNESG5QTlZUanhzOWVDZ09aU3VWX2FHTG5odHNZbGVSdkM5YmxWZWp4dFdQc3NfWGJERG5Fc3pNYXczY2VJMGVxUEl1dlg0SXJtSmVrOEVKREtTLVhlVlFTM0hmbmZGTmdiXzlXbF9Qemh5ZVBEcjJ6ZzRpU2xKc1lDWEgxVnpPU2NNNFdDLThPRjJpckQ1T0VteWlHaVF3M2RKNjQ4T0E?oc=5"
      }
     ]
    },
@@ -761,7 +786,7 @@
     ]
    }
   ],
-  "summary": "Spain calls a snap election for November 29 amid housing protests, Latvia's pro-Ukraine coalition wins a landslide election, and North Korea is blamed for DMZ mine explosions."
+  "summary": "Egypt, Eritrea, Somalia, and Sudan form a Red Sea alliance under the El Alamein Declaration, while the UK threatens to expel Israeli diplomats and US-Mexico border tensions rise."
  },
  "relations": {
   "DNK-USA": {
@@ -1191,10 +1216,10 @@
   "GBR-ISR": {
    "a": "GBR",
    "b": "ISR",
-   "s": "F",
-   "note": "London and Jerusalem maintain intelligence-sharing channels after British warnings regarding regional threats.",
-   "updated": "2026-10-01",
-   "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxOQndYcGtPSjhnam05M2RZNkJqZEFLSHMzdGhlLWE3TjIydFBSVG96aUtHY0ptSnM2cVlydUdrX1VhdU1aZHhmZC1wbUpNYjhpeHRfNUZacFNIVWhRamJieFVUUmtPUnk2UjZYMV85bmlMdEQ0VzNRVlpERUctUGZBTWxMMjg4R2IwNEpleVEyQXZpRE9GUElmczdRa1pEdw?oc=5"
+   "s": "T",
+   "note": "Ties grow tense as the United Kingdom threatens to expel 27 Israeli diplomats over the ordered closure of its Jerusalem consulate.",
+   "updated": "2026-10-05",
+   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOeDFocHg1WnhnbXQ5RVlCUUcwdUlmX2tZYjRfRVRVdUNJQkdWUTVfeF9KWWtQWnN6NXB6czk5QmpJWUxpaGNrQktDeFFLU0tnRThMWjVmd1RGQjgwRml5dUxWRGF6X2lBQXFoaWJLS0x4d1Zfb2h3OHhRcmQ4UGRIWUljemRJYjBQMVNsQ1lUa0FadngxOUdpTGtlZFN1RHpULU5mZjk5czBHSExi0gGyAUFVX3lxTFBZVmJnR0dGTlJ3blRYa3l5YU1GMDRRa19SbnRhRnhOV204clNmdWxUclplMnBNeHp3SWp5SllZbC1mZ0RLam5kdzJvUDJEUHBOWXVBN2hxeW5jOHNqUWE5Z3FYMDBxNmp0Umo4S1FvRU80ZkxubGFGY2M5ZnRkZjhiVWtyRi1BVHF3TmtzZklOZFlEQWtTeUJCSUlhQW9OTHk3WnkzVzBFT1hlNWFvbkdWdEE?oc=5"
   },
   "SYR-USA": {
    "a": "SYR",
@@ -1275,6 +1300,38 @@
    "note": "Ties remain strained over migration controls and border fencing, aggravated by the Dominican Republic banning Haitian football squads.",
    "updated": "2026-10-05",
    "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPM3lwQzFuQkRJbFdSY1RUcXJZdzMxOUtVN29mMVF0dDRiaFpyaTVBd3FhR1FUS3AzeFE4Q0hUMDdyZFVhenlrZUVxRW1rV0g5WnljLWRDczFiNkJVODEwb05CLTNnTUtRdFJ4TFZ2cllvLW1MQjByZ205QjNabzdpNmViWDVkeTg0TzhzV1F0dUN4cFE4aG5EV2pFMXVsVk83dXhtOGUyRzlzbGU5YUhpWXF3?oc=5"
+  },
+  "EGY-SOM": {
+   "a": "EGY",
+   "b": "SOM",
+   "s": "A",
+   "note": "Egypt and Somalia forge a formal alliance under the El Alamein Declaration to coordinate on Red Sea security and counter Ethiopia.",
+   "updated": "2026-10-05",
+   "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSEI5YlFGaENFWHFmb1EzX2xyOHR5WGtLZkRQVEJ0MjNiUFR5ekZnc0JnZTJZSGtzdTEzX3UzRTVoakhIbDZoQ2dZNHRNYklnVkY5a01qUHBBZjlxblVOMG5veGx4ZDVObWlWSEZRTFhISGx5dDZUX1NhbXZtLUhJTWE3S2lYZ3N2NVdERlFmcEhXZFM0eFBULTZKby1OazROUU5RRXMxbWJFbXRXWS00UXhnZWtZTWVQcHFjcVVhY3BlbTVWRVUxUVhB?oc=5"
+  },
+  "EGY-ERI": {
+   "a": "EGY",
+   "b": "ERI",
+   "s": "A",
+   "note": "Egypt and Eritrea establish a formal alliance under the El Alamein Declaration, asserting exclusive littoral control of the Red Sea.",
+   "updated": "2026-10-05",
+   "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSEI5YlFGaENFWHFmb1EzX2xyOHR5WGtLZkRQVEJ0MjNiUFR5ekZnc0JnZTJZSGtzdTEzX3UzRTVoakhIbDZoQ2dZNHRNYklnVkY5a01qUHBBZjlxblVOMG5veGx4ZDVObWlWSEZRTFhISGx5dDZUX1NhbXZtLUhJTWE3S2lYZ3N2NVdERlFmcEhXZFM0eFBULTZKby1OazROUU5RRXMxbWJFbXRXWS00UXhnZWtZTWVQcHFjcVVhY3BlbTVWRVUxUVhB?oc=5"
+  },
+  "ETH-SOM": {
+   "a": "ETH",
+   "b": "SOM",
+   "s": "T",
+   "note": "Relations deteriorate as Somalia aligns with Egypt and Eritrea under the El Alamein Declaration, opposing Ethiopian regional ambitions.",
+   "updated": "2026-10-05",
+   "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZ3d3Q1ZtbjZMVVdRZ2NuZnZCZ0NTZzlWOVhSN09feDF3cFN0blFsUm40Rk5vaGx6aWYwUnlHaEpIRHhTY0NDNGFydzRXbVRRVTRPWThiWGRNVG55WGJxdGVMXzFxSWRiYVVlRGp1dnRIZjE4ZjljTGNUdXR3NjV4TlR4RDA1VHUwdFg3Z01IR2tlLV9BSFZtV2tEc0ZuMWNnUTBmTVJpV05ncThjZzhKVNIBtgFBVV95cUxQaVNpZ1pMT3NTWGQtRDhtZE1GUHZBSlRMeXVDanlLNktCU2ZWUWtlQ3A3V1E5VVJOdVJZR0E0YUZjemQwVnBFNFJ5dDhFaDVpZGNBd182Vmw2NHc2OG9NSzk0WXlicEc1M1JwUWVSWEFjaDNENmEzYUhVdGdFZk85dVdjQi0zY1p1emhZVXZrUkpJUHpmVEJRNVhRZG50bWdMLUItUnVnbzFqMzVSRTUtTGlXN0x2dw?oc=5"
+  },
+  "MEX-USA": {
+   "a": "MEX",
+   "b": "USA",
+   "s": "T",
+   "note": "Ties face friction as Mexico deploys troops to the border and demands evidence after the US Coast Guard reportedly came under fire.",
+   "updated": "2026-10-05",
+   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPMUhEQ3owRGZHQzRnNjBrMEZKUkNESG5QTlZUanhzOWVDZ09aU3VWX2FHTG5odHNZbGVSdkM5YmxWZWp4dFdQc3NfWGJERG5Fc3pNYXczY2VJMGVxUEl1dlg0SXJtSmVrOEVKREtTLVhlVlFTM0hmbmZGTmdiXzlXbF9Qemh5ZVBEcjJ6ZzRpU2xKc1lDWEgxVnpPU2NNNFdDLThPRjJpckQ1T0VteWlHaVF3M2RKNjQ4T0E?oc=5"
   }
  },
  "threads": {
@@ -1293,9 +1350,9 @@
     "TUR",
     "PAK"
    ],
-   "d": "Houthis target Saudi infrastructure while Yemen's Saudi-backed government launches a broad counteroffensive to reclaim lost territory.",
+   "d": "Houthis target Saudi infrastructure while Turkey and Pakistan deploy forces under the Mecca Pact to defend Saudi Arabia.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPei1GRWxVZ0U1T1hGZTJ6YmxVVTJtd19DWENYaDRLUDhIQjFYUDVVNjA1VVp0U1g2VmhDbjBxRXYxcDRYMmloSmxqNDdkOVNEWG9hRGpxb2RKWEhSM0l3bnNrNHprMmh1QkhZUGVZRUg0QnppdHpOWkN2ZWNjdTlwQ0JZU3FZMEh0TE9zeG16cmNBM21UOV9LTnRqYkFEMUR0TldEVWtsY2NIY0RYZnlNeU81cGxSZ9IBuwFBVV95cUxQZE52dGFBalJDa01aMldXQWlUYVhZRnJHXzBZWThsRTZIZEE2LUtjM1NTSFdFTWhMZ1hqY01Pc0xyX1BqWi12RHhrSVBlNy1EMi1GU3pGVHhKNjVTUDZ2OWE5R2dkTzdhQ0xGR2d5NGFpUF9WaEtHd3VzSE5uamlxLWVUODdxb3RGeXlxb2k0aUZDNDFVV3gycGl5dEEzbDU4ZTlvYi12Wnd3bEROYnpRNW8wSUdoTTFmaWt3?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbndCN0ZDVGg2amdidV9TSG5QR1oxdWxCTkF1RVJ6MDF3Qi1IaVRoZ01rS0ZOTEJPel9GRkZmVk1SeGtuaDJEMDJvdUxHZm1yWTFaZmNUWjUxSTBiV1UtNG84NllxQWQ0TzlvQmVKR09TLWczN0FRT1ZqT2Q5MWhtZDFKc2ZUWGVSeGp4M2psa2Jrb2hhOHhjcG1JVFRHNGJCc3FUN21PbnDSAa4BQVVfeXFMT0pPVnhBeEtmNXNrZ3Zpd2VDTW9PdFVtNG4wYk9UZFZjWWFwRUZWU0hKT3Q3LVJQaGlGc3JrXzFjQ2dTMUdfRzB1c3cyTENPUndzMTlOa0tuZlYyYUo3RGxTUWFrN1FXRDNQNmdweUZGcmFWWVRadFJHZmo3M3lIUWlvNXBfLXZlWXRicUtydHlJS01OQUszM2xOQi1wTWZyMzVBM0FmRTdIY05ZX1JB?oc=5",
    "t": "security",
    "updated": "2026-10-05"
   },
@@ -1332,7 +1389,7 @@
   "sudan-war": {
    "t": "proxy",
    "n": "Sudan's war and its outside backers",
-   "d": "Sudan's war triggers regional realignments; Egypt, Eritrea, Somalia, and Sudan form a quadrilateral front to counter Ethiopian influence.",
+   "d": "Sudan's war triggers regional realignments; Egypt, Eritrea, Somalia, and Sudan sign the El Alamein Declaration to counter Ethiopian influence.",
    "c": [
     "SDN",
     "ARE",
@@ -1348,7 +1405,7 @@
     "RUS"
    ],
    "updated": "2026-10-05",
-   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNT2dPdzh3Zkk3b05fa25EenJialplVkZmSWJ2eExwZ3oxaWNGZ3ZveFRFakQ2Vzh6WHdieDNINE50Wm1rQmE1bUt1SS1rUWlZRGZZY0xNYl9mMGpJOTRteTJjRjRsR2hwaGxPNmp4bEhIb1VxQ3VmMXZxV2c1VDloeFNXT3VlRDB4N1hWUndWcFBHazZzSlBDRGxic0xnQlI4NlZJOA?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSEI5YlFGaENFWHFmb1EzX2xyOHR5WGtLZkRQVEJ0MjNiUFR5ekZnc0JnZTJZSGtzdTEzX3UzRTVoakhIbDZoQ2dZNHRNYklnVkY5a01qUHBBZjlxblVOMG5veGx4ZDVObWlWSEZRTFhISGx5dDZUX1NhbXZtLUhJTWE3S2lYZ3N2NVdERlFmcEhXZFM0eFBULTZKby1OazROUU5RRXMxbWJFbXRXWS00UXhnZWtZTWVQcHFjcVVhY3BlbTVWRVUxUVhB?oc=5"
   },
   "cocaine-europe": {
    "t": "trafficking",
@@ -1375,10 +1432,10 @@
  },
  "pois": {
   "bab-el-mandeb": {
-   "d": "Connects the Red Sea to the Gulf of Aden; Saudi-backed Yemeni government forces launch an offensive to reclaim territory and maritime access.",
+   "d": "Connects the Red Sea to the Gulf of Aden; Saudi-backed Yemeni government forces claim control of the strait after a major offensive.",
    "n": "Bab-el-Mandeb",
-   "s": "Houthi-held · Government offensive launched",
-   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPei1GRWxVZ0U1T1hGZTJ6YmxVVTJtd19DWENYaDRLUDhIQjFYUDVVNjA1VVp0U1g2VmhDbjBxRXYxcDRYMmloSmxqNDdkOVNEWG9hRGpxb2RKWEhSM0l3bnNrNHprMmh1QkhZUGVZRUg0QnppdHpOWkN2ZWNjdTlwQ0JZU3FZMEh0TE9zeG16cmNBM21UOV9LTnRqYkFEMUR0TldEVWtsY2NIY0RYZnlNeU81cGxSZ9IBuwFBVV95cUxQZE52dGFBalJDa01aMldXQWlUYVhZRnJHXzBZWThsRTZIZEE2LUtjM1NTSFdFTWhMZ1hqY01Pc0xyX1BqWi12RHhrSVBlNy1EMi1GU3pGVHhKNjVTUDZ2OWE5R2dkTzdhQ0xGR2d5NGFpUF9WaEtHd3VzSE5uamlxLWVUODdxb3RGeXlxb2k0aUZDNDFVV3gycGl5dEEzbDU4ZTlvYi12Wnd3bEROYnpRNW8wSUdoTTFmaWt3?oc=5",
+   "s": "Government forces claim control",
+   "source": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOUHZGLVRldkRVb0JWeExXeUN6UmZPdGpOcWFvckdfV2hLR2hla1VKdXZsb092ZlJObEVqTkN0NmtmUURudU5rOS04eDJQQlVFNll6VDVfV3lINHdaSjdkNFRsUVg0cG1QVWNwLUFLYlIxYVVkRzYxQXFfUDRseWhlU0NGbHVhVXozMHFWcUxOUU9qSE5mcnZNWGFmbmxEb2FsWldxY0YtS1BFa0QtLUYxSE5EREhnUW92M1BEUkozenFEcFYtVlRLYUh1M0poTDhzX3pCVTdLbDVXT09fRHFmRm0tSk9WSERKck1wSWZoaw?oc=5",
    "updated": "2026-10-05"
   },
   "pituffik-space-base": {
@@ -1437,10 +1494,10 @@
   "BRA": {
    "hog": "Luiz Inácio Lula da Silva, President",
    "hos": "Luiz Inácio Lula da Silva, President",
-   "lastelec": "presidential (1st round), Oct 2026, runoff",
+   "lastelec": "Presidential first round, October 2026, runoff scheduled",
    "nextelec": "presidential runoff, Oct 2026",
    "ruling": "Workers' Party (PT)-led broad coalition",
-   "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNaFFzTUpETjhUVDN0MFBFWDBOQ0dpeUZzZjZTdlNsSDZCNjA0aWluNkhLUndna0RwSHNtMTBEal9JOVpJWXMxMk5PUkZOVUlGTFo0OFlGdk9tN0MxSWlxX1RBUFhzYVZZVno3SXhVVHI4Tlo0RndvamZtekxTRjZIWHk0XzJXWG5zcXhYeV93?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcEZ1TWRvOWNrZUJ6MHdwajByN0RaZTB6YWtWNnFUNHhJVUhCMGIwZTJidk9GblFTNXpFbThYTEJxeFhUaHpPUFhpcjc1Rm84dkEzaUJjWjYzZVVhZlhoN2o4cGtZU0pxdV90RXBUaXJULXViNU9GcDRFNVZRT091T0dfeUFoVkZ2V3BWS0JJQnV4NkpVZHZ2VnFlQWw?oc=5",
    "system": "Federal presidential republic",
    "updated": "2026-10-05"
   },
@@ -1588,25 +1645,25 @@
    "source": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxNbTVwT0QwalBBOWhseC0tWUdHX0cxek5fR3I3d0M1RWc3bGJ5VThrb3h0OHgtNXBXR2xxckVrdGt1X01vUHFUS0tVeHllNUFKVmhwRlFuVlRkNGFOYjV2Z1RJUzN0cE9zSF9JNkxIQXhyY1hHN0xhZHl3QUtfRUVDVnl4SDhLaEVkZFNwUmZVbWtZalZmSTNjcktKWXIzOGEzWmZhWTFTTDB1SHktaDRSaW00dFlWb3ZrdU1IS2ZsZzF5LVlIaE94ajFLX1BKcE41SW9mQlhkWGxUN3BLY1BsUDM1NmgxbGNqQm13ZFlILS15TXlnVXJaRlRLNGdOWjJ4M21iUWpDY2ZGc09rTXVyRl8zYVJ1WUdwekNqX09MOEZJZWlELW9pV1QtZEpwRVlMWmFWZXBPcDRSaXEzblhNd0xDYjZoZ2xJcXZmY2tnOGRVdm14U1NTUdIB2AJBVV95cUxNbTVwT0QwalBBOWhseC0tWUdHX0cxek5fR3I3d0M1RWc3bGJ5VThrb3h0OHgtNXBXR2xxckVrdGt1X01vUHFUS0tVeHllNUFKVmhwRlFuVlRkNGFOYjV2Z1RJUzN0cE9zSF9JNkxIQXhyY1hHN0xhZHl3QUtfRUVDVnl4SDhLaEVkZFNwUmZVbWtZalZmSTNjcktKWXIzOGEzWmZhWTFTTDB1SHktaDRSaW00dFlWb3ZrdU1IS2ZsZzF5LVlIaE94ajFLX1BKcE41SW9mQlhkWGxUN3BLY1BsUDM1NmgxbGNqQm13ZFlILS15TXlnVXJaRlRLNGdOWjJ4M21iUWpDY2ZGc09rTXVyRl8zYVJ1WUdwekNqX09MOEZJZWlELW9pV1QtZEpwRVlMWmFWZXBPcDRSaXEzblhNd0xDYjZoZ2xJcXZmY2tnOGRVdm14U1NTUQ?oc=5"
   },
   "GRD": {
-   "nextelec": "general, 5 Nov 2026",
+   "nextelec": "General election, November 5, 2026",
    "updated": "2026-10-05",
-   "source": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB2a1RMc3I0ZXZnQXJTWlpsVTM5Tk9uTXZGQUZoSDktRkdDazlybV80VUR0QWdZaVVvcUp4N29KUUo1N2ZiZ1FKUVZBQUh2TEFlelNUakVZUV9HV0F5OEYwREo3TW00SUk0ckFNNWFkUThraHpNRW40aVlB?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdWdnajliWHZLRzY4T0F4RkVvb2RLLXlhaGRZeGlvYjRsekdjMDNqRVBfQi1uM3l1N3Y3bEhoZ2lJUzBORG1JallUcDZ6MDhsZzE3VjFES3JTdlQ4OEpzV3VTdHNRa3JrU0lNMDR1cE5SX2Z2WlBYMEFCVmRYZE02OTBqd09hTEhRdF9KZ3YtSno1MHd3S0E?oc=5"
   },
   "LVA": {
-   "lastelec": "Parliamentary election, October 2026, United List landslide",
+   "lastelec": "Parliamentary, October 2026, United List (Andris Kulbergs) wins",
    "updated": "2026-10-05",
-   "source": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5JeHZzV0Noa1U5cmVQY01EczVxNDVNWlViZ0JrU0ZwVHotbzVValNsNTZFbVdGeS1QXzdOVGI3cWJsT3c1ZTNnSGt4R0EwSTNGYS1aMDhrNXRzbXZrZXZkcFFWcmxxLUE?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNM1l6Y2JBVFZZeVR6SXRWMFNWQjh2aFp3Yk5HTFZvUGhaM2trUks3Y04yTXA4MGJiVWlrTks3SEo1V0d6TVZMdUZUcndNdXNaNWxicXVIdzBBY3NXbjB6SFduVUUtWlZvNVREbEhHc2Rab3dzbDk0eHpWNktReFFrakEtcDFBeFlRLWlfS3FSbmN3RFBTbV84VE1sUlA5TnoxM1gzd1VaSXNZUk0zOEpfdG5lMGFmRWVvLVE?oc=5",
    "nextelec": "Parliamentary (Saeima), October 2026"
   },
   "BIH": {
-   "lastelec": "presidential, Oct 2026, Becirovic/Cvijanovic/Filipovic",
+   "lastelec": "General election, October 2026, Becirovic, Cvijanovic, and Filipovic win presidency seats",
    "updated": "2026-10-05",
-   "source": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQdXVPOU5iVUwtNTNIdWREaUNQRGJsRW1Qa21qQkVtclY4dDhiNVdyci15dV9JbkRMXzV4d0ZteTZCVzdXN3hQRHY2MG8tS09XSWxVeTBCSjV1Y0VqNHZ3MTVwMXRFaHZBcFV4QTRja0t0S0ZGTFBTaUFFMk1rby14SGg0MU5FRWxwT05SLUU4NGU4VjAwdFRyOFFhd1YtTU04NkhxaWtuc3dyOGpTZ1BUcnQwaFM5REJUY2NJQ0pNM29aMEU4T2Vkb0lXNFdtbWpWTUo4cWloTGNKTkl3RTZUbU4tdW12V0ZpVWFr?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQTmtRdVc3R3ZzanNJUFdtOUoxem5FbE55M0I0S1hLM3Rqd3RrZnZnQ0N0c1VOZUxsZUdVVjFvY3VaZWk5X1JOU0ozODcySXo1LVdyVkVYN29WNXNwMjU4clE1YlpiQnFiTWVsWVM3RE5waFN3eXZrZUMyOXMxV1pYRWk0MHBQdDRUUWcxUVVFcy1IXzBnbzFzUVdNMjhCaHZxVk13YzVKRUVMM3F3TnB1T2ZfazZvWVBFUzB2eWdCaw?oc=5"
   },
   "ESP": {
-   "nextelec": "General election, 29 November 2026",
+   "nextelec": "Snap general election, November 2026",
    "updated": "2026-10-05",
-   "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQX1N2aHdSaGlfX0lnTUZJS3o1SFBzSGptRUFmUnJXWW5DRGRLRC1HVVJ5OFliTDNYaGZnSWM2NGU2WUhpb1BYWHFzZjhvcTFaSm5XcTZvRW5DMjBZd0R0MHkzSlpBS2NadV9sN2w2cm5mMEtEeGpKd2dPeEpZcTlaOHUtNktETGR3aWlFSFJzaG5jRkZEYllUY1psT2ZaNUp5QzVVTGZUMjd0UQ?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOaGNITlBpX3pWaHh5RjQ3YTJucVBQazFkVG5nLUpIaWllM3gyYXpTcVpQaU42Y3BtOWEwVVlKd0ZNdldWR0tfU3FrUi1kTHROV1U1Z2VuZkZveW43THpuelIzaklOa3dxVnp2WGpGTmZEbTBIWHdLZ3dhX05kd0JocTlOa19QRWtia09GZ1hqaTlIbUVtazYwaV93?oc=5"
   }
  }
 }
