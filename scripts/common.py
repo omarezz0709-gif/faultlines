@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import datetime as dt
+import gzip
 import json
 import os
 import re
@@ -104,7 +105,8 @@ def http_get(url: str, timeout: int = 40, accept: str | None = None) -> bytes:
     if accept:
         headers["Accept"] = accept
     with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=timeout) as r:
-        return r.read()
+        b = r.read()
+    return gzip.decompress(b) if b[:2] == b"\x1f\x8b" else b   # some servers send gzip without saying so
 
 
 def load_json(name: str, default):

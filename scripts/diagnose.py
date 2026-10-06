@@ -8,6 +8,7 @@ Run by hand:  python scripts/diagnose.py            (add --no-browser to skip th
 from __future__ import annotations
 
 import datetime as dt
+import gzip
 import json
 import os
 import re
@@ -42,7 +43,10 @@ def fetch(url: str, *, headers: dict | None = None, method: str = "GET", body: b
     req = urllib.request.Request(url, data=body, method=method, headers={"User-Agent": UA, **(headers or {})})
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
-            return r.status, r.read(), dict(r.headers), int((time.time() - t0) * 1000)
+            b = r.read()
+            if b[:2] == b"\x1f\x8b":   # some servers (UN News) send gzip without saying so
+                b = gzip.decompress(b)
+            return r.status, b, dict(r.headers), int((time.time() - t0) * 1000)
     except urllib.error.HTTPError as e:
         return e.code, e.read(), dict(e.headers or {}), int((time.time() - t0) * 1000)
     except Exception as e:  # timeout, DNS, TLS ...
