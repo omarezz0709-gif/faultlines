@@ -90,7 +90,7 @@ def check_fresh(data: dict) -> list[str]:
             continue
         st = "ok" if h <= warn_h else "warn" if h <= fail_h else "fail"
         add("fresh", label, st, f"last update {h:.1f} h ago")
-        if st != "ok" and label.startswith(("Headlines", "AI")):
+        if st != "ok":   # stale headlines, AI update or leaders: a manual refresh run catches up on all of them
             stale.append("refresh")
     countries = sum(1 for c in (news.get("countries") or {}).values() if c.get("i"))
     add("fresh", "Countries with confirmed headlines", "ok" if countries >= 100 else "warn", f"{countries}")
@@ -141,20 +141,34 @@ def check_worker() -> bool:
         add("security", "Admin login", "warn", "LOCKED after 5 wrong codes: open ⚙ and enter the backup code", ms)
     else:
         add("security", "Admin login", "ok" if s == 401 else "fail", f"HTTP {s} without a code (should be 401)", ms)
-    # one tiny AI request (a new prompt each time, so it isn't answered from the cache)
-    stamp = now_utc().strftime("%Y-%m-%d %H:%M")
-    body = json.dumps({"contents": [{"role": "user", "parts": [{"text": f"Faultlines diagnostics check {stamp}. Reply with exactly the word OK."}]}],
-                       "generationConfig": {"temperature": 0, "maxOutputTokens": 1024}}).encode()   # room for the model's thinking
-    s, b, hd, ms = fetch(f"{WORKER}/models/auto:streamGenerateContent", method="POST", body=body,
-                         headers={**h, "Content-Type": "application/json", "X-Faultlines-Kind": "diag"}, timeout=60)
-    text = "".join(re.findall(r'"text":\s*"((?:[^"\\]|\\.)*)"', b.decode("utf-8", "replace")))
-    provider = hd.get("X-Faultlines-Provider") or hd.get("x-faultlines-provider") or "?"
+    # one tiny AI request (a new prompt each time, so it isn't answered from the cache). By evening the fast models'
+    # free quota can be used up and the slow fallback (Gemma) answers: that can take 2 minutes, so wait up to 150 s,
+    # and try a second time before calling it a problem (a single slow moment at Google isn't one)
+    def ask(n: int):
+        stamp = now_utc().strftime("%Y-%m-%d %H:%M:%S")
+        body = json.dumps({"contents": [{"role": "user", "parts": [{"text": f"Faultlines diagnostics check {stamp} #{n}. Reply with exactly the word OK."}]}],
+                           "generationConfig": {"temperature": 0, "maxOutputTokens": 1024}}).encode()   # room for the model's thinking
+        s, b, hd, ms = fetch(f"{WORKER}/models/auto:streamGenerateContent", method="POST", body=body,
+                             headers={**h, "Content-Type": "application/json", "X-Faultlines-Kind": "diag"}, timeout=150)
+        text = "".join(re.findall(r'"text":\s*"((?:[^"\\]|\\.)*)"', b.decode("utf-8", "replace")))
+        return s, b, text, hd.get("X-Faultlines-Provider") or hd.get("x-faultlines-provider") or "?", ms
+    s, b, text, provider, ms = ask(1)
+    first_failed = not (s == 200 and "OK" in text.upper()) and s != 429
+    if first_failed:
+        print(f"  first AI try: HTTP {s} after {ms} ms; trying again in 20 s", flush=True)
+        time.sleep(20)
+        s, b, text, provider, ms = ask(2)
     if s == 200 and "OK" in text.upper():
-        add("ai", "AI answers", "ok", f"answered by {provider}", ms)
+        if first_failed:
+            add("ai", "AI answers", "warn", f"the first try failed, the second worked ({provider})", ms)
+        elif ms > 45_000:
+            add("ai", "AI answers", "warn", f"answered by {provider}, but slowly ({ms // 1000} s): the fast models' free quota is probably used up for today", ms)
+        else:
+            add("ai", "AI answers", "ok", f"answered by {provider}", ms)
     elif s == 429:
         add("ai", "AI answers", "warn", "the free AI quota is used up right now (it refills during the day)", ms)
     else:
-        add("ai", "AI answers", "fail", f"HTTP {s}: {text[:80] or b[:120].decode('utf-8', 'replace')}", ms)
+        add("ai", "AI answers", "fail", f"no answer twice in a row: HTTP {s}: {text[:80] or b[:120].decode('utf-8', 'replace')}", ms)
         broken += 1
     return broken >= 5
 

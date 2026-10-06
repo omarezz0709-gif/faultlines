@@ -143,7 +143,11 @@ def one_per_story(items: list[dict]) -> list[dict]:
 def main() -> None:
     t0 = now_utc()
     prev = load_json("news.json", {})
-    if scheduled() and (not in_slot(t0) or ran_recently(prev.get("generated"), t0)):
+    # in each refresh slot; and if GitHub dropped a slot's run, any later run catches up once the headlines are
+    # more than 6.5 hours old (the longest regular gap is 7 hours, 00:00 → 07:00)
+    due = in_slot(t0) and not ran_recently(prev.get("generated"), t0)
+    overdue = not ran_recently(prev.get("generated"), t0, hours=6.5)
+    if scheduled() and not (due or overdue):
         print("Not a refresh slot (or already refreshed); skipping.")
         return
 

@@ -146,7 +146,11 @@ def current_parties(ent: dict) -> list[str]:
 def main() -> None:
     t0 = now_utc()
     prev = load_json("politics.json", {})
-    if scheduled() and (not in_slot(t0, hours=(0,)) or ran_recently(prev.get("generated"), t0, hours=20)):
+    # once a day in the midnight slot; and if GitHub dropped that run (it sometimes does), any later run catches up
+    # once the data is more than 30 hours old
+    due = in_slot(t0, hours=(0,)) and not ran_recently(prev.get("generated"), t0, hours=20)
+    overdue = not ran_recently(prev.get("generated"), t0, hours=30)
+    if scheduled() and not (due or overdue):
         print("Wikidata refresh runs once a day in the midnight slot; skipping.")
         return
 

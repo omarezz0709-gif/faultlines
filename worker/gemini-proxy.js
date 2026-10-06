@@ -207,9 +207,6 @@ async function getArchive(env, day){
    Order: every usable Gemini model -> Groq (secret GROQ_API_KEY, free) -> Cloudflare Workers AI (binding AI, free).
    Models that just said "quota used up" are skipped for a while so later questions go straight to one that works. */
 const exhausted = new Map();   // model -> time until which it is skipped
-let lastSearchRefusal = "";    // why Google last refused a Google Search request (shown in a response header)
-// models whose free plan includes Google Search (the newest Flash models refuse it without billing)
-const SEARCH_MODELS = ["gemini-2.5-flash", "gemini-flash-latest", "gemini-2.5-flash-lite"];
 const skip = (model, ms) => exhausted.set(model, Date.now() + ms);
 const usable = model => (exhausted.get(model) || 0) < Date.now();
 // (the small 8B models were dropped: they invent facts, and a "busy, try again" is better than a wrong answer)
@@ -237,9 +234,15 @@ async function geminiOrder(env, ctx) {
   const flash = names.filter(n => n.startsWith("gemini-") && n.includes("flash") && !n.includes("lite") && !bad.test(n) && ver(n) >= 3).sort(newest);
   const lite = names.filter(n => n.startsWith("gemini-") && n.includes("flash-lite") && !bad.test(n) && (ver(n) >= 3 || n.includes("latest"))).sort(newest);
   const gemma = names.filter(n => n.startsWith("gemma-") && !bad.test(n)).sort((a, b) => (ver(b) - ver(a)) || (b.includes("31b") - a.includes("31b")));
-  return [...new Set(["gemini-3.6-flash", ...flash, ...gemma.slice(0, 1), ...lite, ...gemma.slice(1)])].filter(n => names.includes(n) || !names.length);
+  // fast Flash models first, then the fast Flash-Lite ones; Gemma last (it answers, but a long question can take 2 minutes)
+  return [...new Set(["gemini-3.6-flash", ...flash, ...lite, ...gemma])].filter(n => names.includes(n) || !names.length);
 }
 
+// a request that must START answering (send its headers) within `ms`; after that the answer may take as long as it needs
+async function fetchStarted(url, init, ms){
+  const ctl = new AbortController(), timer = setTimeout(() => ctl.abort(), ms);
+  try { return await fetch(url, { ...init, signal: ctl.signal }); } finally { clearTimeout(timer); }
+}
 // one SSE event in Gemini's shape, so the website reads every provider the same way
 const asSSE = text => `data: ${JSON.stringify({ candidates: [{ content: { role: "model", parts: [{ text }] }, finishReason: "STOP", index: 0 }] })}\n\n`;
 
@@ -289,38 +292,12 @@ async function answerAuto(request, env, ctx, ip, kind) {
   //    has its own daily allowance, so each model is tried with each key
   const keys = [env.GEMINI_API_KEY, env.GEMINI_API_KEY_2, env.GEMINI_API_KEY_3, env.GEMINI_API_KEY_4, env.GEMINI_API_KEY_5].filter(Boolean);
   const order = keys.length ? await geminiOrder(env, ctx) : [];
-  // written answers (questions, explanations) may look things up on Google Search, so recent events come out right;
-  // the search has its own free daily allowance: when Google refuses it, the same model answers without it
-  const wantsSearch = !wantsJson;
-  // 3a. with Google Search: on the free plan only some models include it (the newest ones answer "check your plan"),
-  //     so written answers first try the models that do; a refusal pauses that model's search for a while
-  if (wantsSearch) {
-    for (const [ki, key] of keys.entries()) {
-      for (const model of SEARCH_MODELS) {
-        const slot = `search:k${ki}:${model}`;
-        if (!usable(slot)) continue;
-        let r;
-        try {
-          r = await fetch(`${GOOGLE}/models/${model}:streamGenerateContent?alt=sse`, {
-            method: "POST", headers: { "x-goog-api-key": key, "Content-Type": "application/json" },
-            body: JSON.stringify({ ...body, tools: [{ google_search: {} }] }),
-          });
-        } catch { continue; }
-        if (r.ok && r.body) {
-          log(200, (keys.length > 1 ? `${model} #${ki + 1}` : model) + " +search");
-          const [toClient, toCache] = r.body.tee();
-          ctx.waitUntil(new Response(toCache).text().then(t => { if (t.length > 20) remember(t); }));
-          return new Response(toClient, { status: 200, headers: cors({ "Content-Type": "text/event-stream", "X-Faultlines-Cache": "miss",
-            "X-Faultlines-Provider": model, "X-Faultlines-Search": "on" }) });
-        }
-        const why = (await r.text().catch(() => "")).replace(/\s+/g, " ");
-        lastSearchRefusal = `${r.status} on ${model}: ${why.slice(0, 140)}`.replace(/[^\x20-\x7e]/g, "");
-        // "check your plan and billing" = search isn't in the free plan at all: don't ask again for 12 hours
-        skip(slot, /billing|plan/i.test(why) ? 12 * 3600_000 : r.status === 429 ? 30 * 60_000 : r.status === 503 ? 60_000 : 6 * 3600_000);
-      }
-    }
-  }
-  // 3b. every model without search
+  // which models are used up / busy right now, as learnt by any Worker copy (security store), so this request goes
+  // straight to one that works instead of trying the used-up ones again
+  const g = guard(env);
+  if (g) try { for (const [k, until] of Object.entries(await g.modelSkips())) exhausted.set(k, Math.max(exhausted.get(k) || 0, until)); } catch {}
+  const skipShared = (slot, ms) => { skip(slot, ms); if (g) ctx.waitUntil(g.setModelSkip(slot, Date.now() + ms).catch(() => {})); };
+  // every model in turn; a model that hasn't started answering within its time is skipped for a minute
   for (const [ki, key] of keys.entries()) {
     for (const model of order) {
       const slot = `k${ki}:${model}`;
@@ -330,22 +307,21 @@ async function answerAuto(request, env, ctx, ip, kind) {
         b.contents = [{ role: "user", parts: [{ text: plainPrompt(body) }] }];
         delete b.systemInstruction; delete b.generationConfig.responseMimeType;
       }
-      const searchNote = wantsSearch ? `unavailable (${lastSearchRefusal || "no search model"})` : "off";
       let r;
       try {
-        r = await fetch(`${GOOGLE}/models/${model}:streamGenerateContent?alt=sse`, {
+        r = await fetchStarted(`${GOOGLE}/models/${model}:streamGenerateContent?alt=sse`, {
           method: "POST", headers: { "x-goog-api-key": key, "Content-Type": "application/json" }, body: JSON.stringify(b),
-        });
-      } catch { continue; }
+        }, model.startsWith("gemma") ? 110_000 : 50_000);
+      } catch { skipShared(slot, 60_000); continue; }   // no start within the time (or no connection): busy, try the next
       if (r.ok && r.body) {
         log(200, keys.length > 1 ? `${model} #${ki + 1}` : model);
         const [toClient, toCache] = r.body.tee();
         ctx.waitUntil(new Response(toCache).text().then(t => { if (t.length > 20) remember(t); }));
         return new Response(toClient, { status: 200, headers: cors({ "Content-Type": "text/event-stream", "X-Faultlines-Cache": "miss",
-          "X-Faultlines-Provider": model, "X-Faultlines-Search": searchNote }) });
+          "X-Faultlines-Provider": model }) });
       }
       if (r.status === 400 || r.status === 401 || r.status === 403) { if (!model.startsWith("gemma")) break; }   // bad key: next key
-      skip(slot, r.status === 429 ? 30 * 60_000 : r.status === 503 ? 60_000 : 6 * 3600_000);   // quota / busy / unsupported
+      skipShared(slot, r.status === 429 ? 30 * 60_000 : r.status === 503 ? 60_000 : 6 * 3600_000);   // quota / busy / unsupported
     }
   }
 
@@ -357,12 +333,12 @@ async function answerAuto(request, env, ctx, ip, kind) {
     for (const model of GROQ_MODELS.filter(m => usable("groq:" + m))) {
       try {
         const r = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-          method: "POST",
+          method: "POST", signal: AbortSignal.timeout(60_000),
           headers: { Authorization: `Bearer ${env.GROQ_API_KEY}`, "Content-Type": "application/json" },
           body: JSON.stringify({ model, messages: [{ role: "user", content: prompt }], max_tokens: maxTokens, temperature: 0.4,
                                  ...(wantsJson ? { response_format: { type: "json_object" } } : {}) }),
         });
-        if (!r.ok) { skip("groq:" + model, r.status === 429 ? 15 * 60_000 : 6 * 3600_000); continue; }
+        if (!r.ok) { skipShared("groq:" + model, r.status === 429 ? 15 * 60_000 : 6 * 3600_000); continue; }
         const d = await r.json();
         const text = (((d.choices || [])[0] || {}).message || {}).content || "";
         if (!text.trim()) continue;
@@ -377,14 +353,15 @@ async function answerAuto(request, env, ctx, ip, kind) {
   if (env.AI) {
     for (const model of CF_MODELS.filter(m => usable("cf:" + m))) {
       try {
-        const res = await env.AI.run(model, { messages: [{ role: "user", content: prompt }], max_tokens: Math.min(maxTokens, 4096) });
+        const res = await Promise.race([env.AI.run(model, { messages: [{ role: "user", content: prompt }], max_tokens: Math.min(maxTokens, 4096) }),
+          new Promise((_, no) => setTimeout(() => no(new Error("timeout")), 60_000))]);
         const text = typeof res === "string" ? res : typeof res.response === "string" ? res.response
           : ((((res.choices || [])[0] || {}).message || {}).content || "");
         if (!text || !String(text).trim()) continue;
         log(200, "cf:" + model.split("/").pop());
         const sse = asSSE(String(text)); remember(sse);
         return new Response(sse, { status: 200, headers: cors({ "Content-Type": "text/event-stream", "X-Faultlines-Provider": "cf:" + model }) });
-      } catch { skip("cf:" + model, 15 * 60_000); continue; }
+      } catch { skipShared("cf:" + model, 15 * 60_000); continue; }
     }
   }
 
@@ -957,6 +934,14 @@ export class Guard extends DurableObject {
     const fails = (s.fails || 0) + 1, locked = fails >= maxTries;
     this.setState("admin", { fails, locked, at: new Date().toISOString() });
     return locked ? { locked: true, justLocked: true, fails } : { ok: false, fails };
+  }
+  // models that are used up or busy, shared by every Worker copy: {slot: until}
+  modelSkips(){ const s = this.getState("modelskips", {}), now = Date.now(); for (const k in s) if (s[k] < now) delete s[k]; return s; }
+  setModelSkip(slot, until){
+    const s = this.getState("modelskips", {}), now = Date.now();
+    s[slot] = Math.max(s[slot] || 0, until);
+    for (const k in s) if (s[k] < now) delete s[k];
+    this.setState("modelskips", s);
   }
   adminUnlock(){
     const s = this.getState("admin", { fails: 0, locked: false });

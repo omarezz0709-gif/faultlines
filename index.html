@@ -1881,6 +1881,17 @@ function aiBlock(kind, label){
 /* tiny markdown: ### headings, - bullets, **bold**, paragraphs */
 // models sometimes write arrows and symbols as LaTeX ($\rightarrow$); show the real characters
 const LATEX = {rightarrow: '→', to: '→', leftarrow: '←', leftrightarrow: '↔', Rightarrow: '⇒', uparrow: '↑', downarrow: '↓', approx: '≈', times: '×', sim: '~', geq: '≥', leq: '≤', pm: '±', cdot: '·', ge: '≥', le: '≤', neq: '≠', longrightarrow: '→'};
+// a "Thinking…" that lasts more than 15 seconds says why: in the evening the fast free models can be used up and a
+// slower one answers (up to a minute or two), so visitors don't think the page froze
+setInterval(() => {
+  document.querySelectorAll('.thinking').forEach(el => {
+    if (!el.dataset.t){ el.dataset.t = Date.now(); return; }
+    if (!el.dataset.slow && Date.now() - el.dataset.t > 15000){
+      el.dataset.slow = '1';
+      el.textContent = 'Still thinking… the free AI is busy right now, so this can take up to a minute or two.';
+    }
+  });
+}, 3000);
 const unLatex = s => s.replace(/\$?\s*\\(rightarrow|leftrightarrow|leftarrow|Rightarrow|longrightarrow|uparrow|downarrow|approx|times|sim|geq|leq|neq|pm|cdot|to|ge|le)\b\s*\$?/g, (m, k) => ' ' + LATEX[k] + ' ').replace(/\$(\d[\d.,]*\s*%?)\$/g, '$1').replace(/ {2,}/g, ' ');
 function md(text){
   const lines = esc(unLatex(text)).split('\n'); let html='', list=false, para=[];
@@ -3359,6 +3370,12 @@ const TR = {
   '⚓ Taiwan & South China Sea': ['⚓ Taïwan & mer de Chine méridionale', '⚓ Taiwán y mar de China Meridional', '⚓ تايوان وبحر الصين الجنوبي', '⚓ Taiwan & Südchinesisches Meer'],
   '⚓ Arctic routes': ['⚓ Routes arctiques', '⚓ Rutas árticas', '⚓ الطرق القطبية', '⚓ Arktische Routen'],
   '⚓ Russia\'s sea exits': ['⚓ Accès maritimes de la Russie', '⚓ Salidas marítimas de Rusia', '⚓ منافذ روسيا البحرية', '⚓ Russlands Zugänge zum Meer'],
+  'Still thinking… the free AI is busy right now, so this can take up to a minute or two.': [
+    'Toujours en réflexion… l’IA gratuite est très demandée en ce moment, cela peut prendre une ou deux minutes.',
+    'Sigo pensando… la IA gratuita está muy ocupada ahora, puede tardar uno o dos minutos.',
+    'ما زال يفكر… الذكاء الاصطناعي المجاني مشغول الآن، وقد يستغرق ذلك دقيقة أو دقيقتين.',
+    'Denke noch nach… die kostenlose KI ist gerade stark ausgelastet, das kann ein bis zwei Minuten dauern.',
+    'Sto ancora pensando… l’IA gratuita è molto occupata ora, potrebbe volerci un minuto o due.'],
   // the first-visit tour  [French, Spanish, Arabic, German]
   'Welcome to Faultlines': ['Bienvenue sur Faultlines', 'Bienvenido a Faultlines', 'مرحبًا بك في Faultlines', 'Willkommen bei Faultlines'],
   'An interactive globe of world politics: who is allied with whom, where the tensions are, and what is happening right now. Take the 30-second tour?': [
