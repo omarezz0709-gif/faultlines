@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-06T16:07:35Z",
+  "lastRun": "2026-10-06T22:08:42Z",
   "log": [
    {
     "date": "2026-10-06",
@@ -64,6 +64,41 @@
       "label": "Poland–Ukraine",
       "change": "Normal → Ally: Swedish Patriot deployment enhances frontline defense and logistics protection",
       "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQbkV3czZWMjNNUnFtNExsWTRlY2hsNm81YlAyal9jcmpKMFRad1BWUTZDSlJ1LXZacjFhUF9oUXJIYmdrMHJBTnBmLVJzcnNrSUxteGRUVUl0cWVlUjlmNE9raXBNSzlrVHhPOHY3eGtVcmZRWEJMRFF2WmxFd2hTMUJzaEFjeUxWUmdqai1mZWtuSTdyV1cxVDAtLUNZQjkwSm5pUjV0UQ?oc=5"
+     },
+     {
+      "label": "Iceland–United States",
+      "change": "None → Ally: US seeks to expand Arctic military footprint via Iceland",
+      "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1FX1NiNEI4bTFTQVBaNG9IeTNBWkR0akdnY2RXVDJNSzlvSEpIZmxQM1FlcGpaQXl6WHhQT3JnUlpMeUplTFI1eW5ndw?oc=5"
+     },
+     {
+      "label": "Lithuania–United States",
+      "change": "None → Ally: Lithuania votes to lift nuclear ban and offers to host US base",
+      "source": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOZ1phU1gzV0FKV0IxbmtaMnROcGZBc1F2eHlFaXpRTFFka1UyVFJCZFc1M0NOWjhnMGROSlR0Tk5yNnFTMklIVnp2di16QjBNcDludXVESnRlTHFpX1ZQRDF2Q1E0NHRlTXM5WDlqY3pFdEtxamZaRmlpUkxZRlRqVHpR?oc=5"
+     },
+     {
+      "label": "Philippines–Poland",
+      "change": "None → Partner: Polish President visits Manila to sign security pacts",
+      "source": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNdzM4eVY3N1RhVjBhZUthRmxQSGxtRnJWQXoyWWxwd2J6RDJFQmN6N1JRajN1S2hiQUVqYzRZamNOUHozT2FpOENzeEx5WG9wUFBRQjVadHNfRnFPZjY1c3ZETHEwQUJFeU5LbU1DUFdQRlRDMlh2TGtqMG1CV01ESlUzMUJwTDlpbHYyMTJwVWcwemhLcjZocXlZcHZReUo0MEU5MGJrSDJoMVVEWTR5UHlqYzhIdTFUZGVKTGRjeFFHb3ZCNjNiekhQaGhUM09X?oc=5"
+     },
+     {
+      "label": "Panama–Vietnam",
+      "change": "None → Partner: Leaders meet in Hanoi to establish trade gateways",
+      "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdFYxRDVfbjhWbGFCVkMzZEdIYnIwcER4MHBJWm05a1hLNWxWdnY4WkgtWnQ1RnR2b096R1JHc1J5UmdfUFJLMGRXT2p2MmNsb2Z4QXBleG1keUJEcndYVTNvVktGd3RwaExDM3pFbE1hdEUyOGsxbFNFZVBfc19LT3R6OXBpdi1nRmRvLTYxa3dGSlJuNHZXZHA0VUI3TXhKYy1RR00tcTRIVnM?oc=5"
+     },
+     {
+      "label": "Ecuador–United States",
+      "change": "None → Partner: US deploys Reaper drones to Ecuador to hunt cartels",
+      "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZzdxZ09ZNjdBZnNxeTlaM09KU0JrcHkxTDRIcjlObGxfaUFYZkRJSGtoMzNWT1plX2huUVpFVmdSNzRWd3pLU3RoQzU1cFBoWmxwTWxUYjhFTGhONHItdzJ5bmlIWWNmQXJxWUhSSWtSa0tNRWNfelhZR1Z6LURuN0Q2UVVaRm9XSGo0UEMzelZJV0toOUI4TWE4NTg?oc=5"
+     },
+     {
+      "label": "United States–Zambia",
+      "change": "None → Partner: $3.6B health deal signed after data dispute resolved",
+      "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPMVZhWU9jbVZUTTlnMVNCRlZPYTNSRHBnMXl5Nzc1dk9YTEN1azQzSFAtMFNRd2JnLUdRQjZWbWZqaUd3WS1qZlZyQlJ2dDQ2RHZrZWhNaEFfTDFoVF91WlFXYXdNU2dtQi1yUDU2SlB5TEdyeTh3eGtZbW1seTVLaXhEanRIRzczTUVsN1dUTklaZ2Ja?oc=5"
+     },
+     {
+      "label": "Israel–Somaliland",
+      "change": "None → Partner: Somaliland seeks Israeli military support against Turkish presence",
+      "source": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBoa1E0TWpzc21GSlY0WnFIUHJDY1UwMGZnOHNtS0dlWk10VzNHTU1LOTFnTG93ZTgzckkxWHpibUFrTE1EWDdpdVpMRGNhSDhYSG84TUNTc0Z5UmhweFI0?oc=5"
      }
     ]
    },
@@ -851,7 +886,7 @@
     ]
    }
   ],
-  "summary": "Poland and Sweden agree on Patriot air defense deployments near the Ukrainian border to protect NATO logistics hubs, while Yemen's government recaptures key Red Sea coastal areas."
+  "summary": "This update captures the activation of the Mecca Defense Alliance by Saudi Arabia, Turkey, and Pakistan, alongside key diplomatic shifts, military agreements, and upcoming elections in Spain, Grenada, and Brazil."
  },
  "relations": {
   "DNK-USA": {
@@ -1453,6 +1488,62 @@
    "note": "Sweden deploys Patriot air defense systems to eastern Poland to protect critical NATO logistics hubs supporting Ukraine.",
    "updated": "2026-10-06",
    "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQbkV3czZWMjNNUnFtNExsWTRlY2hsNm81YlAyal9jcmpKMFRad1BWUTZDSlJ1LXZacjFhUF9oUXJIYmdrMHJBTnBmLVJzcnNrSUxteGRUVUl0cWVlUjlmNE9raXBNSzlrVHhPOHY3eGtVcmZRWEJMRFF2WmxFd2hTMUJzaEFjeUxWUmdqai1mZWtuSTdyV1cxVDAtLUNZQjkwSm5pUjV0UQ?oc=5"
+  },
+  "ISL-USA": {
+   "a": "ISL",
+   "b": "USA",
+   "s": "A",
+   "note": "NATO (North Atlantic Treaty Organization) allies; the US seeks to expand its Arctic footprint via Iceland, which emphasizes consent.",
+   "updated": "2026-10-06",
+   "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1FX1NiNEI4bTFTQVBaNG9IeTNBWkR0akdnY2RXVDJNSzlvSEpIZmxQM1FlcGpaQXl6WHhQT3JnUlpMeUplTFI1eW5ndw?oc=5"
+  },
+  "LTU-USA": {
+   "a": "LTU",
+   "b": "USA",
+   "s": "A",
+   "note": "NATO (North Atlantic Treaty Organization) allies; Lithuania votes to lift its nuclear ban and offers to host a permanent US base.",
+   "updated": "2026-10-06",
+   "source": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOZ1phU1gzV0FKV0IxbmtaMnROcGZBc1F2eHlFaXpRTFFka1UyVFJCZFc1M0NOWjhnMGROSlR0Tk5yNnFTMklIVnp2di16QjBNcDludXVESnRlTHFpX1ZQRDF2Q1E0NHRlTXM5WDlqY3pFdEtxamZaRmlpUkxZRlRqVHpR?oc=5"
+  },
+  "PHL-POL": {
+   "a": "PHL",
+   "b": "POL",
+   "s": "F",
+   "note": "Partners; Polish President Karol Nawrocki visits Manila to sign a crime-combatting pact and strengthen defense cooperation.",
+   "updated": "2026-10-06",
+   "source": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNdzM4eVY3N1RhVjBhZUthRmxQSGxtRnJWQXoyWWxwd2J6RDJFQmN6N1JRajN1S2hiQUVqYzRZamNOUHozT2FpOENzeEx5WG9wUFBRQjVadHNfRnFPZjY1c3ZETHEwQUJFeU5LbU1DUFdQRlRDMlh2TGtqMG1CV01ESlUzMUJwTDlpbHYyMTJwVWcwemhLcjZocXlZcHZReUo0MEU5MGJrSDJoMVVEWTR5UHlqYzhIdTFUZGVKTGRjeFFHb3ZCNjNiekhQaGhUM09X?oc=5"
+  },
+  "PAN-VNM": {
+   "a": "PAN",
+   "b": "VNM",
+   "s": "F",
+   "note": "Partners; leaders meet in Hanoi to position their nations as trade and logistics gateways between their regions.",
+   "updated": "2026-10-06",
+   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdFYxRDVfbjhWbGFCVkMzZEdIYnIwcER4MHBJWm05a1hLNWxWdnY4WkgtWnQ1RnR2b096R1JHc1J5UmdfUFJLMGRXT2p2MmNsb2Z4QXBleG1keUJEcndYVTNvVktGd3RwaExDM3pFbE1hdEUyOGsxbFNFZVBfc19LT3R6OXBpdi1nRmRvLTYxa3dGSlJuNHZXZHA0VUI3TXhKYy1RR00tcTRIVnM?oc=5"
+  },
+  "ECU-USA": {
+   "a": "ECU",
+   "b": "USA",
+   "s": "F",
+   "note": "Partners; the United States (US) deploys Reaper drones to Ecuador to assist in hunting drug cartels and monitoring routes.",
+   "updated": "2026-10-06",
+   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZzdxZ09ZNjdBZnNxeTlaM09KU0JrcHkxTDRIcjlObGxfaUFYZkRJSGtoMzNWT1plX2huUVpFVmdSNzRWd3pLU3RoQzU1cFBoWmxwTWxUYjhFTGhONHItdzJ5bmlIWWNmQXJxWUhSSWtSa0tNRWNfelhZR1Z6LURuN0Q2UVVaRm9XSGo0UEMzelZJV0toOUI4TWE4NTg?oc=5"
+  },
+  "USA-ZMB": {
+   "a": "USA",
+   "b": "ZMB",
+   "s": "F",
+   "note": "Partners; both nations reach a $3.6 billion health support agreement after resolving data-sharing disputes.",
+   "updated": "2026-10-06",
+   "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPMVZhWU9jbVZUTTlnMVNCRlZPYTNSRHBnMXl5Nzc1dk9YTEN1azQzSFAtMFNRd2JnLUdRQjZWbWZqaUd3WS1qZlZyQlJ2dDQ2RHZrZWhNaEFfTDFoVF91WlFXYXdNU2dtQi1yUDU2SlB5TEdyeTh3eGtZbW1seTVLaXhEanRIRzczTUVsN1dUTklaZ2Ja?oc=5"
+  },
+  "ISR-SOL": {
+   "a": "ISR",
+   "b": "SOL",
+   "s": "F",
+   "note": "Partners; Somaliland seeks Israeli military support to counter Turkey's expanding security footprint in Somalia.",
+   "updated": "2026-10-06",
+   "source": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBoa1E0TWpzc21GSlY0WnFIUHJDY1UwMGZnOHNtS0dlWk10VzNHTU1LOTFnTG93ZTgzckkxWHpibUFrTE1EWDdpdVpMRGNhSDhYSG84TUNTc0Z5UmhweFI0?oc=5"
   }
  },
  "threads": {
@@ -1473,7 +1564,7 @@
    ],
    "d": "Yemen's Houthis target Saudi infrastructure, prompting Saudi-backed forces to launch offensives while Turkey and Pakistan deploy troops under the Mecca Pact.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5fMVlnLUdpM1VlMVhPSVVJY2tmNlFOaUpLRXN3Unl3UjNWRnFxcXRYX3VfbUh0czhfVW5vcnR6Nzg0S2dJYXlaWDI0Qml0WGM?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOWEF2dWwzTENGVTZ3WTRWY2xFN0JRQmQ4Vldoa3Z0MDRLY3ZoSHBTalZlMFpQQWRld1NZYThjaHZweG81MVRNLTRtVGRRSDFvRXh2T0l4OGE4bHp4SXZNR2owOUdvZjdyb3Iwbnk0VVRIT2Q5ZWh2ZVFtNktMQ0ZiazFxanVMVFFVcFlWVVlKbHJoUUk2MU5kU3I3UTZ0bU9WWWhLY1pSblA3Q0JQQXA5U04yZ3VtWEw1cEZ3TjROd3JaVDBwUFZJVUliWTI?oc=5",
    "t": "security",
    "updated": "2026-10-06"
   },
@@ -1623,10 +1714,10 @@
   "BRA": {
    "hog": "Luiz Inácio Lula da Silva, President",
    "hos": "Luiz Inácio Lula da Silva, President",
-   "lastelec": "presidential (round 1), Oct 2026, Lula da Silva vs Flávio Bolsonaro",
+   "lastelec": "presidential election first round, October 2026, runoff scheduled",
    "nextelec": "presidential runoff, Oct 2026",
    "ruling": "Workers' Party (PT)-led broad coalition",
-   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPYV9IbUxxY1FKbmtCalJiS1JmWS1hOWpNM2hxWGVCV01weTBFYWFTN0o1Smp6SFhCS0d6eGdMcmQzNklwbm1uRk9KM2M3VEFBMUxqZEFock8weEtWZmtHOE8wLU81amtMZXZUWjB5M0k2TjFaY1J3Z2luWVhIODNQT3paeEtCWEY2Q3p3dGdTek5Mcnczb2RTZ0lQOXFYakJHVjJnRTBR?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOOGxJOUMwT1pWblA0ZE9EUVFyM2VaTFNZODd2M1YyTThkbGN4ZS16aG5SUlRHT0xsdXVJYkpPVnpVcUhaa0xwQzRWekF5QjlkYkQzM1B4RzBtNGNGZDlzUWtQN1hlWmhzUk9IVURnYzJlWUxya0oxQUQ3ei12SGxoeld3dVJfamJJWEVtVGNYUnYxSHR5OUM4?oc=5",
    "system": "Federal presidential republic",
    "updated": "2026-10-06"
   },
@@ -1774,25 +1865,25 @@
    "source": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxNbTVwT0QwalBBOWhseC0tWUdHX0cxek5fR3I3d0M1RWc3bGJ5VThrb3h0OHgtNXBXR2xxckVrdGt1X01vUHFUS0tVeHllNUFKVmhwRlFuVlRkNGFOYjV2Z1RJUzN0cE9zSF9JNkxIQXhyY1hHN0xhZHl3QUtfRUVDVnl4SDhLaEVkZFNwUmZVbWtZalZmSTNjcktKWXIzOGEzWmZhWTFTTDB1SHktaDRSaW00dFlWb3ZrdU1IS2ZsZzF5LVlIaE94ajFLX1BKcE41SW9mQlhkWGxUN3BLY1BsUDM1NmgxbGNqQm13ZFlILS15TXlnVXJaRlRLNGdOWjJ4M21iUWpDY2ZGc09rTXVyRl8zYVJ1WUdwekNqX09MOEZJZWlELW9pV1QtZEpwRVlMWmFWZXBPcDRSaXEzblhNd0xDYjZoZ2xJcXZmY2tnOGRVdm14U1NTUdIB2AJBVV95cUxNbTVwT0QwalBBOWhseC0tWUdHX0cxek5fR3I3d0M1RWc3bGJ5VThrb3h0OHgtNXBXR2xxckVrdGt1X01vUHFUS0tVeHllNUFKVmhwRlFuVlRkNGFOYjV2Z1RJUzN0cE9zSF9JNkxIQXhyY1hHN0xhZHl3QUtfRUVDVnl4SDhLaEVkZFNwUmZVbWtZalZmSTNjcktKWXIzOGEzWmZhWTFTTDB1SHktaDRSaW00dFlWb3ZrdU1IS2ZsZzF5LVlIaE94ajFLX1BKcE41SW9mQlhkWGxUN3BLY1BsUDM1NmgxbGNqQm13ZFlILS15TXlnVXJaRlRLNGdOWjJ4M21iUWpDY2ZGc09rTXVyRl8zYVJ1WUdwekNqX09MOEZJZWlELW9pV1QtZEpwRVlMWmFWZXBPcDRSaXEzblhNd0xDYjZoZ2xJcXZmY2tnOGRVdm14U1NTUQ?oc=5"
   },
   "GRD": {
-   "nextelec": "general, 5 Nov 2026",
+   "nextelec": "general election, November 5, 2026",
    "updated": "2026-10-06",
-   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdWdnajliWHZLRzY4T0F4RkVvb2RLLXlhaGRZeGlvYjRsekdjMDNqRVBfQi1uM3l1N3Y3bEhoZ2lJUzBORG1JallUcDZ6MDhsZzE3VjFES3JTdlQ4OEpzV3VTdHNRa3JrU0lNMDR1cE5SX2Z2WlBYMEFCVmRYZE02OTBqd09hTEhRdF9KZ3YtSno1MHd3S0E?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMieEFVX3lxTE82V21icndFamx6TUdzT29CTlo4RW55eEppalRTcUNWdGUwcWlkaEtpTG9CZ1l4QVA3dDFxb1FwT2RmdE9ScVMxLVhrMGJoakUyUDk4bUlQRW5fV3NBdVdnMGtwUEZvZC1MOVZpWmZVR3ljMHpndkRZQg?oc=5"
   },
   "LVA": {
-   "lastelec": "parliamentary, Oct 2026, United List",
+   "lastelec": "parliamentary election, October 2026, Andris Kulbergs nominated PM",
    "updated": "2026-10-06",
-   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNM1l6Y2JBVFZZeVR6SXRWMFNWQjh2aFp3Yk5HTFZvUGhaM2trUks3Y04yTXA4MGJiVWlrTks3SEo1V0d6TVZMdUZUcndNdXNaNWxicXVIdzBBY3NXbjB6SFduVUUtWlZvNVREbEhHc2Rab3dzbDk0eHpWNktReFFrakEtcDFBeFlRLWlfS3FSbmN3RFBTbV84VE1sUlA5TnoxM1gzd1VaSXNZUk0zOEpfdG5lMGFmRWVvLVE?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQeW5kQlVkb1BSMXktc1ZBRUdZWjBMSzlPWDVacXpyNlNaMTlYVDU5b2pibFJoZ0J6ZEs3b3c2ZHowVFlzVWdVMEVvaUNWU3o3UVNULTBPR19vN2N1RFAxNE0tSW1FemdqVGtlTDV2VlhnQ0xMWml2WEVQbTFiN0xlYnBuU29vcnQ2M01IOUVqNGxUWW5qZzlSd0JMQ1d6dGQ5amU2SE9uVzVJcE1tN0pzblVFZ0xmdw?oc=5",
    "nextelec": "Parliamentary (Saeima), October 2026"
   },
   "BIH": {
-   "lastelec": "Presidential/Local, October 2026, Becirovic (Bosniak) / Filipovic (Croat) / Dodik's party (Serb)",
+   "lastelec": "general election, October 2026",
    "updated": "2026-10-06",
-   "source": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQdXVPOU5iVUwtNTNIdWREaUNQRGJsRW1Qa21qQkVtclY4dDhiNVdyci15dV9JbkRMXzV4d0ZteTZCVzdXN3hQRHY2MG8tS09XSWxVeTBCSjV1Y0VqNHZ3MTVwMXRFaHZBcFV4QTRja0t0S0ZGTFBTaUFFMk1rby14SGg0MU5FRWxwT05SLUU4NGU4VjAwdFRyOFFhd1YtTU04NkhxaWtuc3dyOGpTZ1BUcnQwaFM5REJUY2NJQ0pNM29aMEU4T2Vkb0lXNFdtbWpWTUo4cWloTGNKTkl3RTZUbU4tdW12V0ZpVWFr?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSGtaN0YzYTJnMjB2WGU1X1Z0Q0hwYmNjel9ZOXdiLU1yQmpNOXdTdlIwYnRlazZLXy1vQ05EUWsxbkhGUlpVYWhwR2x2a1FNcUpFaktWZXBOc2dfSDh6aEtFbGRDY3RsRDRnNHZwMGRGdUlfM050VkhZXy1SNXBfSXJvNmRpejdyS3c?oc=5"
   },
   "ESP": {
-   "nextelec": "snap general, Nov 2026",
+   "nextelec": "snap general election, November 2026",
    "updated": "2026-10-06",
-   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQQkxFcVJoYUdNZVFwQUNuNjI4b25Hc1FuOEN3bUNUTlhjU20tZDNWU2xRVzNBNlE5ejNRNjNzRkdHZ29Wa3ZMd2pnMXdWLXlrN09ESnhrUlhkS0g1OVU5dzFPRXozOEkzQ251U1IwY0tBU2JxTzVGdFE3VmNEeXJvc1ZnRXhxb1FKQmlqUHo5Z3lDQjJ5MDhVUU5R?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQUhad2JXbnFHaGpHYVNNRnhXYW5tTDJpWkxFbXBmNzdhZ3NOYjlBWlpiU21kLXF4d0QzTVRMTVVRbzlETm5pOS1YcDMzNFM3NGszX2dVc1BnaG5WeGFEMTJmeVVnQ2lWU0MwQ1k4c3VPMGo5Z1dCdHBoeUxmdDlmaTc1WHFNT3pEOVlUVUJGT1VvMUxEcjY1NXZ3Ym9CS3p4eVhHUnlyWWdBSFRmd0tEYWNkcmYyblhteE94bXBPU1Bid0U?oc=5"
   }
  }
 }
