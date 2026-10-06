@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-06T10:18:32Z",
+  "lastRun": "2026-10-06T16:07:35Z",
   "log": [
    {
     "date": "2026-10-06",
@@ -59,6 +59,11 @@
       "label": "Grenada",
       "change": "Scheduled general election for November 5, 2026",
       "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdWdnajliWHZLRzY4T0F4RkVvb2RLLXlhaGRZeGlvYjRsekdjMDNqRVBfQi1uM3l1N3Y3bEhoZ2lJUzBORG1JallUcDZ6MDhsZzE3VjFES3JTdlQ4OEpzV3VTdHNRa3JrU0lNMDR1cE5SX2Z2WlBYMEFCVmRYZE02OTBqd09hTEhRdF9KZ3YtSno1MHd3S0E?oc=5"
+     },
+     {
+      "label": "Poland–Ukraine",
+      "change": "Normal → Ally: Swedish Patriot deployment enhances frontline defense and logistics protection",
+      "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQbkV3czZWMjNNUnFtNExsWTRlY2hsNm81YlAyal9jcmpKMFRad1BWUTZDSlJ1LXZacjFhUF9oUXJIYmdrMHJBTnBmLVJzcnNrSUxteGRUVUl0cWVlUjlmNE9raXBNSzlrVHhPOHY3eGtVcmZRWEJMRFF2WmxFd2hTMUJzaEFjeUxWUmdqai1mZWtuSTdyV1cxVDAtLUNZQjkwSm5pUjV0UQ?oc=5"
      }
     ]
    },
@@ -846,7 +851,7 @@
     ]
    }
   ],
-  "summary": "Spain calls a snap election, Brazil heads to a presidential runoff, Latvia's parliamentary election concludes, and Lithuania advances legislation to lift its nuclear weapons ban."
+  "summary": "Poland and Sweden agree on Patriot air defense deployments near the Ukrainian border to protect NATO logistics hubs, while Yemen's government recaptures key Red Sea coastal areas."
  },
  "relations": {
   "DNK-USA": {
@@ -1440,6 +1445,14 @@
    "note": "India and Bhutan expand energy cooperation as Bhutan's state utility and Adani Power agree to develop a 770 MW hydropower project.",
    "updated": "2026-10-06",
    "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNWdDUVZZN0EyQkxlWWE2OEdXSHpENC1tRk9ZclRqWHdkRTN3U0xicmFMTE5NN0RUUGttRnRfQTF1T2xPRzNlWHB1cXFKTDhabEpMUmthY0tqVkxTb1AyeTVrak1Wa2dGZGJmSkd1WnRmWkRhVTJTUjdOOFR4Ym1Fam8xSXExNU9EbllZQUZjd24yYVVVbS0zeDhBTFg5dW1SbWFmQWpUREEwNlFad0JmVEZkdG1yaG96bEpv?oc=5"
+  },
+  "POL-UKR": {
+   "a": "POL",
+   "b": "UKR",
+   "s": "A",
+   "note": "Sweden deploys Patriot air defense systems to eastern Poland to protect critical NATO logistics hubs supporting Ukraine.",
+   "updated": "2026-10-06",
+   "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQbkV3czZWMjNNUnFtNExsWTRlY2hsNm81YlAyal9jcmpKMFRad1BWUTZDSlJ1LXZacjFhUF9oUXJIYmdrMHJBTnBmLVJzcnNrSUxteGRUVUl0cWVlUjlmNE9raXBNSzlrVHhPOHY3eGtVcmZRWEJMRFF2WmxFd2hTMUJzaEFjeUxWUmdqai1mZWtuSTdyV1cxVDAtLUNZQjkwSm5pUjV0UQ?oc=5"
   }
  },
  "threads": {
