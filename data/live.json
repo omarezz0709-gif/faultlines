@@ -1,7 +1,37 @@
 {
  "meta": {
-  "lastRun": "2026-10-05T22:09:50Z",
+  "lastRun": "2026-10-06T05:16:10Z",
   "log": [
+   {
+    "date": "2026-10-06",
+    "items": [
+     {
+      "label": "Egypt–Israel",
+      "change": "Normal → Tense: Egypt condemns Israeli actions in Syria; Israeli minister warns Egypt over Sinai.",
+      "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxObVJReFFVS1hBUlVOWks5d21EMU5rTFNEZUtXTHVYLWY3SW9LQVFVaHFPYXJ6eENPYV84WHJhdFVMTGJMRHB3SEVweWZvZGhXbnR4YjBHb1RRSzZwN0VZbzU0SlYza3NTY0c5WjhzUjNkd0l5YVJUaEZBN0xqSGVEUVBpVllKWmZxNHQzb21ONEZEWFloclpoS2JlVVVsQ1N5Smg5dWoybFVzYXhqTFE?oc=5"
+     },
+     {
+      "label": "Somalia–United Arab Emirates",
+      "change": "None → Tense: Somalia accuses UAE of supporting Somaliland secession.",
+      "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdUl4UkxYMktqWDhYQjdlQ0NkSmRKdXVBNjU2V1BNT0hxU0N3b3RvLUkzazNCOHQxUkpCbTdKSkQ3c1MtMTRXREx2RmZiRzFKMWNhYUtyR1BzZDQyR3dVVjRVMTZFRnY0ZW50VWFjOThsY25QcFBWNE9QVWFxeEVTaUdWVjVvbWlsd3c0UUVSZUVrUVcwQ28wYm1sZGRnc3JNdmRN?oc=5"
+     },
+     {
+      "label": "Pakistan–Turkey",
+      "change": "Partner → Ally: Activation of Mecca defense pact and joint troop deployment to Saudi Arabia.",
+      "source": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5fMVlnLUdpM1VlMVhPSVVJY2tmNlFOaUpLRXN3Unl3UjNWRnFxcXRYX3VfbUh0czhfVW5vcnR6Nzg0S2dJYXlaWDI0Qml0WGM?oc=5"
+     },
+     {
+      "label": "Armenia–Russia",
+      "change": "Tense: Russia warns Armenia against turning West and becoming a 'new Ukraine'.",
+      "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxORGZCZ3VNZS1UUjlpSFRwQ1dLR1h1dS1lUE5ncTZ6U1NXRWtYYmdaTXRpMTZXeGxiRTNSeFl6bl9LcGZyRE1GaXdaQU12cmxqLWQ4QzY2bmtmWkc0NTZCV3lWQVE4d2tWTEVzd3FMc1VNRGpUMEp2Vm4yNVBxcnZOSWE5eUFZRlpjSHVNQkx2Vk42aknSAZMBQVVfeXFMTkRmQmd1TWUtVFI5aUhUcENXS0dYdXUtZVBOZ3E2elNTV0VrWGJnWk10aTE2V3hsYkUzUnhZem5fS3BmckRNRml3WkFNdnJsai1kOEM2Nm5rZlpHNDU2Qld5VkFROHdrVkxFc3dxTHNVTURqVDBKdlZuMjVQcXJ2TklhOXlBWUZaY0h1TUJMdlZONmpJ?oc=5"
+     },
+     {
+      "label": "Malaysia–Myanmar",
+      "change": "Tense: Malaysia repatriates 10,000 Myanmar nationals while planning to host junta chief.",
+      "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNMlk2VzBNNVNzWXQ4TXNJalppTi1haktObmxWLXlNb096WkNfNGFMYldvTWFHQTkxZTI0VnV0SGVQeUpwVGNaT29UWDhCbTRTQjBZMEhaVzJEWlVxcG5RdFhsbFlEaUczUU5BQS1aZDRPVU1OZzhwdkNOSktPZ2pPZDRFZlZTS3UtdGk2WFphcU1xbDR4Vy1lb3daOW5NRDlNOTNSeXhrcTV0bTB1ajdOd0pxNjV4dExzY05kM28tYVI4c3RNeHRYdXZhNA?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-05",
     "items": [
@@ -786,7 +816,7 @@
     ]
    }
   ],
-  "summary": "Egypt, Eritrea, Somalia, and Sudan form a Red Sea alliance under the El Alamein Declaration, while the UK threatens to expel Israeli diplomats and US-Mexico border tensions rise."
+  "summary": "This update captures the activation of the Mecca defense pact by Saudi Arabia, Pakistan, and Türkiye, escalating tensions between Egypt and Israel over Sinai rhetoric, and key electoral developments in Spain, Latvia, Bosnia, and Brazil."
  },
  "relations": {
   "DNK-USA": {
@@ -1089,9 +1119,9 @@
    "a": "MMR",
    "b": "MYS",
    "s": "T",
-   "note": "Malaysia deports nearly 1,500 Myanmar nationals back to the conflict-hit country despite United Nations warnings over returnee safety.",
-   "updated": "2026-10-05",
-   "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbkxQVk5PRlNDYVZPRUpVOXYzWW1obEQyT0lxOGVjR21yRl94aWhub2JyRXlORWVZZUJwMWdzMFdJd3I0MG5qOXhCMjI1OEdJNjZ1YTRpSFpOeDZCRU5tVFN1LU55MEp1WjQtcGdLbDNKUmZsM1plWm9DamNoQ0pKbDJVX0hmOTlvaFc0aUVVQ2hiZWMzNFNnd0M0YUVZLUk4RXg1QlJNRzBNQWI5eDJ1b2tTb9IBuAFBVV95cUxPTFFYNGI2cmttQVo5NHgyX29iOWhRUi1fbXhQM29Pb0Y4SGt5TFdfWFF6LWpiVlJ2SnpJbzl5ZkpfcVhpcklmOE5JQkFxUUVzZGE3QzgyQU9GbmN5ZnBkUHE4NGgyWk5ReVd3N0FnTTR3NzJYSzNWLTB4N0VoQ3FPNlRXQkpyMkhZbHJOd1hnUVdhOGlyQUI4aVU5YUZCVE9vak9fV2dBd3ZqLU5vbE93M3J1SERIX1hB?oc=5"
+   "note": "Malaysia repatriates over 10,000 Myanmar nationals since January, even as Prime Minister Anwar Ibrahim prepares to host junta chief.",
+   "updated": "2026-10-06",
+   "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNMlk2VzBNNVNzWXQ4TXNJalppTi1haktObmxWLXlNb096WkNfNGFMYldvTWFHQTkxZTI0VnV0SGVQeUpwVGNaT29UWDhCbTRTQjBZMEhaVzJEWlVxcG5RdFhsbFlEaUczUU5BQS1aZDRPVU1OZzhwdkNOSktPZ2pPZDRFZlZTS3UtdGk2WFphcU1xbDR4Vy1lb3daOW5NRDlNOTNSeXhrcTV0bTB1ajdOd0pxNjV4dExzY05kM28tYVI4c3RNeHRYdXZhNA?oc=5"
   },
   "KHM-VNM": {
    "a": "KHM",
@@ -1332,6 +1362,38 @@
    "note": "Ties face friction as Mexico deploys troops to the border and demands evidence after the US Coast Guard reportedly came under fire.",
    "updated": "2026-10-05",
    "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPMUhEQ3owRGZHQzRnNjBrMEZKUkNESG5QTlZUanhzOWVDZ09aU3VWX2FHTG5odHNZbGVSdkM5YmxWZWp4dFdQc3NfWGJERG5Fc3pNYXczY2VJMGVxUEl1dlg0SXJtSmVrOEVKREtTLVhlVlFTM0hmbmZGTmdiXzlXbF9Qemh5ZVBEcjJ6ZzRpU2xKc1lDWEgxVnpPU2NNNFdDLThPRjJpckQ1T0VteWlHaVF3M2RKNjQ4T0E?oc=5"
+  },
+  "EGY-ISR": {
+   "a": "EGY",
+   "b": "ISR",
+   "s": "T",
+   "note": "Relations strain as Egypt condemns Israeli military construction in Syria and an Israeli minister warns Egypt could lose the Sinai Peninsula.",
+   "updated": "2026-10-06",
+   "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxObVJReFFVS1hBUlVOWks5d21EMU5rTFNEZUtXTHVYLWY3SW9LQVFVaHFPYXJ6eENPYV84WHJhdFVMTGJMRHB3SEVweWZvZGhXbnR4YjBHb1RRSzZwN0VZbzU0SlYza3NTY0c5WjhzUjNkd0l5YVJUaEZBN0xqSGVEUVBpVllKWmZxNHQzb21ONEZEWFloclpoS2JlVVVsQ1N5Smg5dWoybFVzYXhqTFE?oc=5"
+  },
+  "ARE-SOM": {
+   "a": "ARE",
+   "b": "SOM",
+   "s": "T",
+   "note": "Somalia accuses the United Arab Emirates (UAE) of encouraging Somaliland's secession, further complicating regional diplomacy.",
+   "updated": "2026-10-06",
+   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdUl4UkxYMktqWDhYQjdlQ0NkSmRKdXVBNjU2V1BNT0hxU0N3b3RvLUkzazNCOHQxUkpCbTdKSkQ3c1MtMTRXREx2RmZiRzFKMWNhYUtyR1BzZDQyR3dVVjRVMTZFRnY0ZW50VWFjOThsY25QcFBWNE9QVWFxeEVTaUdWVjVvbWlsd3c0UUVSZUVrUVcwQ28wYm1sZGRnc3JNdmRN?oc=5"
+  },
+  "PAK-TUR": {
+   "a": "PAK",
+   "b": "TUR",
+   "s": "A",
+   "note": "Pakistan and Türkiye activate the Mecca defense pact, agreeing to deploy troops to Saudi Arabia to counter escalating Houthi threats.",
+   "updated": "2026-10-06",
+   "source": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5fMVlnLUdpM1VlMVhPSVVJY2tmNlFOaUpLRXN3Unl3UjNWRnFxcXRYX3VfbUh0czhfVW5vcnR6Nzg0S2dJYXlaWDI0Qml0WGM?oc=5"
+  },
+  "ARM-RUS": {
+   "a": "ARM",
+   "b": "RUS",
+   "s": "T",
+   "note": "Tensions persist as Russian official Dmitry Medvedev warns Armenia against turning West and becoming a 'new Ukraine'.",
+   "updated": "2026-10-06",
+   "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxORGZCZ3VNZS1UUjlpSFRwQ1dLR1h1dS1lUE5ncTZ6U1NXRWtYYmdaTXRpMTZXeGxiRTNSeFl6bl9LcGZyRE1GaXdaQU12cmxqLWQ4QzY2bmtmWkc0NTZCV3lWQVE4d2tWTEVzd3FMc1VNRGpUMEp2Vm4yNVBxcnZOSWE5eUFZRlpjSHVNQkx2Vk42aknSAZMBQVVfeXFMTkRmQmd1TWUtVFI5aUhUcENXS0dYdXUtZVBOZ3E2elNTV0VrWGJnWk10aTE2V3hsYkUzUnhZem5fS3BmckRNRml3WkFNdnJsai1kOEM2Nm5rZlpHNDU2Qld5VkFROHdrVkxFc3dxTHNVTURqVDBKdlZuMjVQcXJ2TklhOXlBWUZaY0h1TUJMdlZONmpJ?oc=5"
   }
  },
  "threads": {
@@ -1350,11 +1412,11 @@
     "TUR",
     "PAK"
    ],
-   "d": "Houthis target Saudi infrastructure while Turkey and Pakistan deploy forces under the Mecca Pact to defend Saudi Arabia.",
+   "d": "Yemen's Houthis target Saudi infrastructure, prompting Saudi-backed forces to launch offensives while Turkey and Pakistan deploy troops under the Mecca Pact.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbndCN0ZDVGg2amdidV9TSG5QR1oxdWxCTkF1RVJ6MDF3Qi1IaVRoZ01rS0ZOTEJPel9GRkZmVk1SeGtuaDJEMDJvdUxHZm1yWTFaZmNUWjUxSTBiV1UtNG84NllxQWQ0TzlvQmVKR09TLWczN0FRT1ZqT2Q5MWhtZDFKc2ZUWGVSeGp4M2psa2Jrb2hhOHhjcG1JVFRHNGJCc3FUN21PbnDSAa4BQVVfeXFMT0pPVnhBeEtmNXNrZ3Zpd2VDTW9PdFVtNG4wYk9UZFZjWWFwRUZWU0hKT3Q3LVJQaGlGc3JrXzFjQ2dTMUdfRzB1c3cyTENPUndzMTlOa0tuZlYyYUo3RGxTUWFrN1FXRDNQNmdweUZGcmFWWVRadFJHZmo3M3lIUWlvNXBfLXZlWXRicUtydHlJS01OQUszM2xOQi1wTWZyMzVBM0FmRTdIY05ZX1JB?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5fMVlnLUdpM1VlMVhPSVVJY2tmNlFOaUpLRXN3Unl3UjNWRnFxcXRYX3VfbUh0czhfVW5vcnR6Nzg0S2dJYXlaWDI0Qml0WGM?oc=5",
    "t": "security",
-   "updated": "2026-10-05"
+   "updated": "2026-10-06"
   },
   "afpak-jihad": {
    "t": "security",
@@ -1389,7 +1451,7 @@
   "sudan-war": {
    "t": "proxy",
    "n": "Sudan's war and its outside backers",
-   "d": "Sudan's war triggers regional realignments; Egypt, Eritrea, Somalia, and Sudan sign the El Alamein Declaration to counter Ethiopian influence.",
+   "d": "Sudan's civil war drives regional realignments; Egypt, Eritrea, Somalia, and Sudan sign the El Alamein Declaration to secure the Red Sea and counter Ethiopia.",
    "c": [
     "SDN",
     "ARE",
@@ -1404,8 +1466,8 @@
     "TUR",
     "RUS"
    ],
-   "updated": "2026-10-05",
-   "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSEI5YlFGaENFWHFmb1EzX2xyOHR5WGtLZkRQVEJ0MjNiUFR5ekZnc0JnZTJZSGtzdTEzX3UzRTVoakhIbDZoQ2dZNHRNYklnVkY5a01qUHBBZjlxblVOMG5veGx4ZDVObWlWSEZRTFhISGx5dDZUX1NhbXZtLUhJTWE3S2lYZ3N2NVdERlFmcEhXZFM0eFBULTZKby1OazROUU5RRXMxbWJFbXRXWS00UXhnZWtZTWVQcHFjcVVhY3BlbTVWRVUxUVhB?oc=5"
+   "updated": "2026-10-06",
+   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNY0RyNTZrNlpSSFNDTXhPNXB5Yk5vb3RXckxGM1NZMktvUFJKa1lkdldFallLaG1uU2I1Mi1oRHFMR3NSeF9IeHhEYVdENk1JZ3RKdUN1ajhHSlNiZ2s2VE1HcVRySmJsOGkxOFlIWkczQ1ZaVzVrOE0waWUyTS1jb3hzNVhjT1ZxMmkyQUx3STBfOUpENEhuSG1fOHpnYkFMSFlhSXpxNkpGcWg3STVJMWpR?oc=5"
   },
   "cocaine-europe": {
    "t": "trafficking",
@@ -1432,11 +1494,19 @@
  },
  "pois": {
   "bab-el-mandeb": {
-   "d": "Connects the Red Sea to the Gulf of Aden; Saudi-backed Yemeni government forces claim control of the strait after a major offensive.",
+   "d": "The strategic strait remains highly volatile as Saudi-backed Yemeni government forces claim control of the area following a major offensive against Houthis.",
    "n": "Bab-el-Mandeb",
    "s": "Government forces claim control",
    "source": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOUHZGLVRldkRVb0JWeExXeUN6UmZPdGpOcWFvckdfV2hLR2hla1VKdXZsb092ZlJObEVqTkN0NmtmUURudU5rOS04eDJQQlVFNll6VDVfV3lINHdaSjdkNFRsUVg0cG1QVWNwLUFLYlIxYVVkRzYxQXFfUDRseWhlU0NGbHVhVXozMHFWcUxOUU9qSE5mcnZNWGFmbmxEb2FsWldxY0YtS1BFa0QtLUYxSE5EREhnUW92M1BEUkozenFEcFYtVlRLYUh1M0poTDhzX3pCVTdLbDVXT09fRHFmRm0tSk9WSERKck1wSWZoaw?oc=5",
-   "updated": "2026-10-05"
+   "updated": "2026-10-06",
+   "t": "strait",
+   "lat": 12.6,
+   "lng": 43.3,
+   "p": [
+    "YEM",
+    "DJI",
+    "ERI"
+   ]
   },
   "pituffik-space-base": {
    "d": "Missile-warning radar in Greenland. A Sept 22, 2026 US-Denmark agreement added two further US sites, at Narsarsuaq and Mestersvig, with broad air and undersea access, easing friction from Trump's earlier annexation talk.",
@@ -1495,11 +1565,11 @@
    "hog": "Luiz Inácio Lula da Silva, President",
    "hos": "Luiz Inácio Lula da Silva, President",
    "lastelec": "Presidential first round, October 2026, runoff scheduled",
-   "nextelec": "presidential runoff, Oct 2026",
+   "nextelec": "Presidential runoff, October 2026",
    "ruling": "Workers' Party (PT)-led broad coalition",
    "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcEZ1TWRvOWNrZUJ6MHdwajByN0RaZTB6YWtWNnFUNHhJVUhCMGIwZTJidk9GblFTNXpFbThYTEJxeFhUaHpPUFhpcjc1Rm84dkEzaUJjWjYzZVVhZlhoN2o4cGtZU0pxdV90RXBUaXJULXViNU9GcDRFNVZRT091T0dfeUFoVkZ2V3BWS0JJQnV4NkpVZHZ2VnFlQWw?oc=5",
    "system": "Federal presidential republic",
-   "updated": "2026-10-05"
+   "updated": "2026-10-06"
   },
   "CAN": {
    "hog": "Mark Carney, Prime Minister",
@@ -1650,20 +1720,20 @@
    "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdWdnajliWHZLRzY4T0F4RkVvb2RLLXlhaGRZeGlvYjRsekdjMDNqRVBfQi1uM3l1N3Y3bEhoZ2lJUzBORG1JallUcDZ6MDhsZzE3VjFES3JTdlQ4OEpzV3VTdHNRa3JrU0lNMDR1cE5SX2Z2WlBYMEFCVmRYZE02OTBqd09hTEhRdF9KZ3YtSno1MHd3S0E?oc=5"
   },
   "LVA": {
-   "lastelec": "Parliamentary, October 2026, United List (Andris Kulbergs) wins",
-   "updated": "2026-10-05",
-   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNM1l6Y2JBVFZZeVR6SXRWMFNWQjh2aFp3Yk5HTFZvUGhaM2trUks3Y04yTXA4MGJiVWlrTks3SEo1V0d6TVZMdUZUcndNdXNaNWxicXVIdzBBY3NXbjB6SFduVUUtWlZvNVREbEhHc2Rab3dzbDk0eHpWNktReFFrakEtcDFBeFlRLWlfS3FSbmN3RFBTbV84VE1sUlA5TnoxM1gzd1VaSXNZUk0zOEpfdG5lMGFmRWVvLVE?oc=5",
+   "lastelec": "Parliamentary, October 2026, United List (Andris Kulbergs)",
+   "updated": "2026-10-06",
+   "source": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNVDh4UHJNbDhkRXpOd2dDSmNsM3FpWThzeldRT0hNQWpjWG95ZV9hb3JiS1o3VDJNcEUxUGx6Q2RTMTg5aktkbG1oQktYT0RvUEk0d1hjSjdkNE8xbnpTYzJhSnFSVU00RkhVYU5OVjFtWkRnRjUtS0lrOWI5U3FUWjFqazBzUkVha09XT0NmZTBDMG9IZURBU0dFYUhTQ3Q2NU1TbzdHTVFvaUtFWWRidXJvcGVCaGNHTl93b3kxLWJpRU1PNUhESERwa09qNXhCOWlEMGNmM2h1emhUa3UzbDAzdWpmUGtrTmFFVXdPWnZLbEJkNExTbDFPVzZMRTUwdWE0djFFZTZCUdIBigJBVV95cUxNVDh4UHJNbDhkRXpOd2dDSmNsM3FpWThzeldRT0hNQWpjWG95ZV9hb3JiS1o3VDJNcEUxUGx6Q2RTMTg5aktkbG1oQktYT0RvUEk0d1hjSjdkNE8xbnpTYzJhSnFSVU00RkhVYU5OVjFtWkRnRjUtS0lrOWI5U3FUWjFqazBzUkVha09XT0NmZTBDMG9IZURBU0dFYUhTQ3Q2NU1TbzdHTVFvaUtFWWRidXJvcGVCaGNHTl93b3kxLWJpRU1PNUhESERwa09qNXhCOWlEMGNmM2h1emhUa3UzbDAzdWpmUGtrTmFFVXdPWnZLbEJkNExTbDFPVzZMRTUwdWE0djFFZTZCUQ?oc=5",
    "nextelec": "Parliamentary (Saeima), October 2026"
   },
   "BIH": {
-   "lastelec": "General election, October 2026, Becirovic, Cvijanovic, and Filipovic win presidency seats",
-   "updated": "2026-10-05",
-   "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQTmtRdVc3R3ZzanNJUFdtOUoxem5FbE55M0I0S1hLM3Rqd3RrZnZnQ0N0c1VOZUxsZUdVVjFvY3VaZWk5X1JOU0ozODcySXo1LVdyVkVYN29WNXNwMjU4clE1YlpiQnFiTWVsWVM3RE5waFN3eXZrZUMyOXMxV1pYRWk0MHBQdDRUUWcxUVVFcy1IXzBnbzFzUVdNMjhCaHZxVk13YzVKRUVMM3F3TnB1T2ZfazZvWVBFUzB2eWdCaw?oc=5"
+   "lastelec": "Presidential/Local, October 2026, Becirovic (Bosniak) / Filipovic (Croat) / Dodik's party (Serb)",
+   "updated": "2026-10-06",
+   "source": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQdXVPOU5iVUwtNTNIdWREaUNQRGJsRW1Qa21qQkVtclY4dDhiNVdyci15dV9JbkRMXzV4d0ZteTZCVzdXN3hQRHY2MG8tS09XSWxVeTBCSjV1Y0VqNHZ3MTVwMXRFaHZBcFV4QTRja0t0S0ZGTFBTaUFFMk1rby14SGg0MU5FRWxwT05SLUU4NGU4VjAwdFRyOFFhd1YtTU04NkhxaWtuc3dyOGpTZ1BUcnQwaFM5REJUY2NJQ0pNM29aMEU4T2Vkb0lXNFdtbWpWTUo4cWloTGNKTkl3RTZUbU4tdW12V0ZpVWFr?oc=5"
   },
   "ESP": {
    "nextelec": "Snap general election, November 2026",
-   "updated": "2026-10-05",
-   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOaGNITlBpX3pWaHh5RjQ3YTJucVBQazFkVG5nLUpIaWllM3gyYXpTcVpQaU42Y3BtOWEwVVlKd0ZNdldWR0tfU3FrUi1kTHROV1U1Z2VuZkZveW43THpuelIzaklOa3dxVnp2WGpGTmZEbTBIWHdLZ3dhX05kd0JocTlOa19QRWtia09GZ1hqaTlIbUVtazYwaV93?oc=5"
+   "updated": "2026-10-06",
+   "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOczhjVEhxUUhwZGVrdzBpR1lnOER3RUlaYmdveWU2WlNPTFAwZm4zZmFSMWdlYjBLWFk2QUNCcC1JdUc2MDNldGdMd0YwRml2TGd6em0tVDZNWFRnSkpmYzFWdC1MUFVvRjF5MGhiLXB2Ni1XeG1xVEs4ZWhnUnlZbzFsVFk4Y2sxdEREdVlpcWM3U2xXMTNrMElVRGxlczZkSzhQbm4xU0NqSHZKVUg3amE4X3LSAbQBQVVfeXFMTnM4Y1RIcVFIcGRla3cwaUdZZzhEd0VJWmJnb3llNlpTT0xQMGZuM2ZhUjFnZWIwS1hZNkFDQnAtSXVHNjAzZXRnTHdGMEZpdkxnenptLVQ2TVhUZ0pKZmMxVnQtTFBVb0YxeTBoYi1wdjYtV3htcVRLOGVoZ1J5WW8xbFRZOGNrMXRERHVZaXFjN1NsVzEzazBJVURsZXM2ZEs4UG5uMVNDakh2SlVIN2phOF9y?oc=5"
   }
  }
 }
