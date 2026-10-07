@@ -1,7 +1,57 @@
 {
  "meta": {
-  "lastRun": "2026-10-06T22:08:42Z",
+  "lastRun": "2026-10-07T05:16:47Z",
   "log": [
+   {
+    "date": "2026-10-07",
+    "items": [
+     {
+      "label": "Latvia–Belarus",
+      "change": "Tense → Hostile: Armed smugglers cross border and threaten soldiers",
+      "source": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQVEFlaDVPV3VzT25sODdLeHJJSGQ2Zl9vZTJGSTIyNEJ3Y3QwNmM5MEMweElEQzBfMGdBelctZzRrY21mSG1WUURPZExSdHdpam5UNW1mcWpDQ3JpNEYtbkpLZHgxTXNuYUhFVXhUUUlqRGY4b1g1c3F1c1ZybHFmaW12OERydTVUcGRFamw3MmF1R2lWUmtMZ0FTR2ZMbmczRlBQWnZmZldkZlRGc0drakVYSHJFUUdUenpiZ184VFBTZ2RUVlFZOG1IbDgycFoxc1l5YVFfdjhxOWh2TE9McDhR?oc=5"
+     },
+     {
+      "label": "South Korea–Ukraine",
+      "change": "Tense: Ukraine accuses South Korea of oil shipments to Russia; Seoul demands POW apology",
+      "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNY3ExNDNMZllIeFY4LTh2TVpwYkZ4dVZ6M19fcm9WMmY3WWxYOFJvcjVuMWgyOXBmUGlWRDdQTmhMZVBQOHdJMi1HeW1IUWdLbVhyT3JoZ2RzVFZYV1QwZXNuQUg5RjEyQlIxakhzRERjS0hUaWp2dk1DSVN0S2VKakIycXI?oc=5"
+     },
+     {
+      "label": "Saudi Arabia–Turkey",
+      "change": "Ally: Turkey deploys troops under Mecca Joint Defense Agreement",
+      "source": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPdEltR052QUpLeFVyT1F6dVBGOE94bzJZVjhRMFBvUkdGQVM2T3lCRGlLUmd1RzZyemRXUHVzME9XUGNmSmxJTWcxNmhSdE5kdTBRWDJwU0oyWURHYmc0eGtjdjdyNzNNUFo5ZWdmNDhaSVNvT1RFeXpwU1k3dHBlb0RoZVpYSFdoNVhwcWNsR2x5akZnWElkVVY0OVJzZmZwV1NtV1Y5RklnV1BKLXgtbnRVd0pPWFpUSnY0R0hpRFlaa21FUzNaREtLRVRGZVIxaVVnV0poNEdUTTBQVGE1TQ?oc=5"
+     },
+     {
+      "label": "Pakistan–Saudi Arabia",
+      "change": "Ally: Pakistan deploys troops under Mecca Joint Defense Agreement",
+      "source": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPdEltR052QUpLeFVyT1F6dVBGOE94bzJZVjhRMFBvUkdGQVM2T3lCRGlLUmd1RzZyemRXUHVzME9XUGNmSmxJTWcxNmhSdE5kdTBRWDJwU0oyWURHYmc0eGtjdjdyNzNNUFo5ZWdmNDhaSVNvT1RFeXpwU1k3dHBlb0RoZVpYSFdoNVhwcWNsR2x5akZnWElkVVY0OVJzZmZwV1NtV1Y5RklnV1BKLXgtbnRVd0pPWFpUSnY0R0hpRFlaa21FUzNaREtLRVRGZVIxaVVnV0poNEdUTTBQVGE1TQ?oc=5"
+     },
+     {
+      "label": "Germany–Ukraine",
+      "change": "Note updated with Chancellor Friedrich Merz",
+      "source": "https://www.wikidata.org/wiki/Q183"
+     },
+     {
+      "label": "Japan–United States",
+      "change": "Note updated with Prime Minister Sanae Takaichi",
+      "source": "https://www.wikidata.org/wiki/Q17"
+     },
+     {
+      "label": "Iceland–United States",
+      "change": "Note updated with Prime Minister Kristrún Mjöll Frostadóttir",
+      "source": "https://www.wikidata.org/wiki/Q189"
+     },
+     {
+      "label": "India–Sri Lanka",
+      "change": "Note updated with Prime Minister Harini Amarasuriya",
+      "source": "https://www.wikidata.org/wiki/Q854"
+     },
+     {
+      "label": "Spain–Morocco",
+      "change": "Note updated with Prime Minister Pedro Sánchez",
+      "source": "https://www.wikidata.org/wiki/Q29"
+     }
+    ]
+   },
    {
     "date": "2026-10-06",
     "items": [
@@ -886,7 +936,7 @@
     ]
    }
   ],
-  "summary": "This update captures the activation of the Mecca Defense Alliance by Saudi Arabia, Turkey, and Pakistan, alongside key diplomatic shifts, military agreements, and upcoming elections in Spain, Grenada, and Brazil."
+  "summary": "This update captures the activation of the Mecca Joint Defense Agreement with Turkish and Pakistani troop deployments to Saudi Arabia, rising tensions between Latvia and Belarus over armed border incursions, and leadership-based relation updates."
  },
  "relations": {
   "DNK-USA": {
@@ -973,9 +1023,9 @@
    "a": "SAU",
    "b": "TUR",
    "s": "A",
-   "note": "Saudi Arabia and Türkiye upgrade ties to an alliance under the newly unveiled Makkah Defense Alliance.",
-   "updated": "2026-09-30",
-   "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdV9uc2lscnJFWTBoRk04dmdCNlE2bHBydlRtY3dHWVF4cFNuWWlUU2FEd1laRVc5TUdJWm9NWjhaeVBCX2JET2gyNXBJeERLWGxwYXNfbnc3QWxXT1QtYUwxZmlVQWs2Y2FDNjN4SjVtOGN3Yms4YVZYbGp1QXJ6ZUJPa21RZTRINlZtaTYwS0RIdw?oc=5"
+   "note": "Under the Mecca Joint Defense Agreement, Türkiye deploys troops to Saudi Arabia to help defend against Houthi missile strikes.",
+   "updated": "2026-10-07",
+   "source": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPdEltR052QUpLeFVyT1F6dVBGOE94bzJZVjhRMFBvUkdGQVM2T3lCRGlLUmd1RzZyemRXUHVzME9XUGNmSmxJTWcxNmhSdE5kdTBRWDJwU0oyWURHYmc0eGtjdjdyNzNNUFo5ZWdmNDhaSVNvT1RFeXpwU1k3dHBlb0RoZVpYSFdoNVhwcWNsR2x5akZnWElkVVY0OVJzZmZwV1NtV1Y5RklnV1BKLXgtbnRVd0pPWFpUSnY0R0hpRFlaa21FUzNaREtLRVRGZVIxaVVnV0poNEdUTTBQVGE1TQ?oc=5"
   },
   "COL-USA": {
    "a": "COL",
@@ -1053,9 +1103,9 @@
    "a": "PAK",
    "b": "SAU",
    "s": "A",
-   "note": "Allies under a mutual defence pact, coordinating with Türkiye to defend Saudi territory from escalatory Houthi missile and drone strikes.",
-   "updated": "2026-09-26",
-   "source": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBsakxhamZUMHhOOV9GNzc3QXphWFdlRjhXYnYxU0MtY1NGRzVHalhEQjR5S3BYTE1ZSjl4NUZEdkxiWWJZMUozUXdWX19uV3M?oc=5"
+   "note": "Under the Mecca Joint Defense Agreement, Pakistan deploys military forces to Saudi Arabia to counter escalating Houthi attacks.",
+   "updated": "2026-10-07",
+   "source": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPdEltR052QUpLeFVyT1F6dVBGOE94bzJZVjhRMFBvUkdGQVM2T3lCRGlLUmd1RzZyemRXUHVzME9XUGNmSmxJTWcxNmhSdE5kdTBRWDJwU0oyWURHYmc0eGtjdjdyNzNNUFo5ZWdmNDhaSVNvT1RFeXpwU1k3dHBlb0RoZVpYSFdoNVhwcWNsR2x5akZnWElkVVY0OVJzZmZwV1NtV1Y5RklnV1BKLXgtbnRVd0pPWFpUSnY0R0hpRFlaa21FUzNaREtLRVRGZVIxaVVnV0poNEdUTTBQVGE1TQ?oc=5"
   },
   "DJI-ETH": {
    "a": "DJI",
@@ -1101,9 +1151,9 @@
    "a": "KOR",
    "b": "UKR",
    "s": "T",
-   "note": "Tensions rise as South Korea threatens additional measures against Ukraine over a dispute regarding North Korean prisoners of war (POWs).",
-   "updated": "2026-10-02",
-   "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNY1p6ejV0Yk51eTZ2R1hTYktMNXhfaENlYm9jVzhWMzZfUmZ5TndicmtEM3FHdVlheUxvLVgtSEhDMzQtRDh0Q1pFdG05NlBlV3BhRHJjQTZDXzlVNHBIM0E1aDhCY2N0LTNWbkhxTVhGdTdTVFN5VzB4RU40V0VvZm9EdThYT0RRQWdjZmFJa3lIWFlhS3llUmRpYXVGVDRYS1JpTmtSM0xwdEI3LU9rME90SnVuQmRLVUh1TXB4SWg?oc=5"
+   "note": "Tensions rise as Ukraine accuses South Korea of aiding Russia with oil, while Seoul demands a better apology over prisoners of war (POWs).",
+   "updated": "2026-10-07",
+   "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNY3ExNDNMZllIeFY4LTh2TVpwYkZ4dVZ6M19fcm9WMmY3WWxYOFJvcjVuMWgyOXBmUGlWRDdQTmhMZVBQOHdJMi1HeW1IUWdLbVhyT3JoZ2RzVFZYV1QwZXNuQUg5RjEyQlIxakhzRERjS0hUaWp2dk1DSVN0S2VKakIycXI?oc=5"
   },
   "MDA-RUS": {
    "a": "MDA",
@@ -1117,9 +1167,9 @@
    "a": "JPN",
    "b": "USA",
    "s": "A",
-   "note": "Alliance faces domestic scrutiny as Tokyo protests the murder of an Okinawa woman allegedly committed by a US Marine.",
-   "updated": "2026-10-04",
-   "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSzVKU1hwU25TSEx0ZDhhMmFHZDZQejVBaUJja1R6THk0bXQ4UGs1OVpaZUFHbTZQZzJiVFA0OGxsUDd0eXlGVGkyWV9jMGxqTVgyOTIyT2xLRVZVSFVBSVU0WHJOQVAtdVFIWDUwWkNUWHBQMzNvSXozbWJuOHhGZg?oc=5"
+   "note": "The alliance under Prime Minister Sanae Takaichi faces scrutiny over a murder linked to a United States (US) Marine in Okinawa.",
+   "updated": "2026-10-07",
+   "source": "https://www.wikidata.org/wiki/Q17"
   },
   "ISR-NLD": {
    "a": "ISR",
@@ -1365,9 +1415,9 @@
    "a": "DEU",
    "b": "UKR",
    "s": "F",
-   "note": "Germany pledges €1.35 billion in aid and finalises a drone deal during Chancellor Merz's visit to Kyiv amid heavy Russian air strikes.",
-   "updated": "2026-10-04",
-   "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPalJZZkl0aXNXVjlCaDAzM0o1VXkyMUNVTDlUNlU5dEV6NXZYWHhUalJ3Zm8tVUdNSFgtZ0tVcU1TSFBaT0tzdEhQNkZ3WFFRamxCcmFzelVoWWFyZngzLXpjQmpFcDNlSUp6a1E5NEJZR1Mxb2RCcW05WWhJY3NCX2FKVHpsLXZCYWkyUlFlbnpCU2NxXzQ3M29QMGJxU0dnV2puU0RiY2loanZYdjJsXzdBMTNEU1pWbE82Vlg5eHE3VTlGcDcwWGJmOTBYcFVjdzFWdXZ5Zw?oc=5"
+   "note": "Germany supports Ukraine under Chancellor Friedrich Merz, pledging military aid and drone cooperation.",
+   "updated": "2026-10-07",
+   "source": "https://www.wikidata.org/wiki/Q183"
   },
   "FRA-TUR": {
    "a": "FRA",
@@ -1493,9 +1543,9 @@
    "a": "ISL",
    "b": "USA",
    "s": "A",
-   "note": "NATO (North Atlantic Treaty Organization) allies; the US seeks to expand its Arctic footprint via Iceland, which emphasizes consent.",
-   "updated": "2026-10-06",
-   "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1FX1NiNEI4bTFTQVBaNG9IeTNBWkR0akdnY2RXVDJNSzlvSEpIZmxQM1FlcGpaQXl6WHhQT3JnUlpMeUplTFI1eW5ndw?oc=5"
+   "note": "The United States (US) expands its Arctic security footprint in Iceland under Prime Minister Kristrún Mjöll Frostadóttir.",
+   "updated": "2026-10-07",
+   "source": "https://www.wikidata.org/wiki/Q189"
   },
   "LTU-USA": {
    "a": "LTU",
@@ -1544,6 +1594,30 @@
    "note": "Partners; Somaliland seeks Israeli military support to counter Turkey's expanding security footprint in Somalia.",
    "updated": "2026-10-06",
    "source": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBoa1E0TWpzc21GSlY0WnFIUHJDY1UwMGZnOHNtS0dlWk10VzNHTU1LOTFnTG93ZTgzckkxWHpibUFrTE1EWDdpdVpMRGNhSDhYSG84TUNTc0Z5UmhweFI0?oc=5"
+  },
+  "BLR-LVA": {
+   "a": "BLR",
+   "b": "LVA",
+   "s": "H",
+   "note": "Relations deteriorate to hostile as armed, masked smugglers cross from Belarus, threatening Latvian soldiers at the border.",
+   "updated": "2026-10-07",
+   "source": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQVEFlaDVPV3VzT25sODdLeHJJSGQ2Zl9vZTJGSTIyNEJ3Y3QwNmM5MEMweElEQzBfMGdBelctZzRrY21mSG1WUURPZExSdHdpam5UNW1mcWpDQ3JpNEYtbkpLZHgxTXNuYUhFVXhUUUlqRGY4b1g1c3F1c1ZybHFmaW12OERydTVUcGRFamw3MmF1R2lWUmtMZ0FTR2ZMbmczRlBQWnZmZldkZlRGc0drakVYSHJFUUdUenpiZ184VFBTZ2RUVlFZOG1IbDgycFoxc1l5YVFfdjhxOWh2TE9McDhR?oc=5"
+  },
+  "IND-LKA": {
+   "a": "IND",
+   "b": "LKA",
+   "s": "F",
+   "note": "India and Sri Lanka, led by Prime Minister Harini Amarasuriya, boost food supply and cooperative networks.",
+   "updated": "2026-10-07",
+   "source": "https://www.wikidata.org/wiki/Q854"
+  },
+  "ESP-MAR": {
+   "a": "ESP",
+   "b": "MAR",
+   "s": "F",
+   "note": "Spain and Morocco maintain warm ties under Prime Minister Pedro Sánchez, coordinating on migration and regional security.",
+   "updated": "2026-10-07",
+   "source": "https://www.wikidata.org/wiki/Q29"
   }
  },
  "threads": {
@@ -1562,11 +1636,11 @@
     "TUR",
     "PAK"
    ],
-   "d": "Yemen's Houthis target Saudi infrastructure, prompting Saudi-backed forces to launch offensives while Turkey and Pakistan deploy troops under the Mecca Pact.",
+   "d": "Yemen's Houthis launch escalatory missile strikes on Saudi airports and Aden, prompting Turkey and Pakistan to deploy troops under the Mecca Joint Defense Agreement.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOWEF2dWwzTENGVTZ3WTRWY2xFN0JRQmQ4Vldoa3Z0MDRLY3ZoSHBTalZlMFpQQWRld1NZYThjaHZweG81MVRNLTRtVGRRSDFvRXh2T0l4OGE4bHp4SXZNR2owOUdvZjdyb3Iwbnk0VVRIT2Q5ZWh2ZVFtNktMQ0ZiazFxanVMVFFVcFlWVVlKbHJoUUk2MU5kU3I3UTZ0bU9WWWhLY1pSblA3Q0JQQXA5U04yZ3VtWEw1cEZ3TjROd3JaVDBwUFZJVUliWTI?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPdEltR052QUpLeFVyT1F6dVBGOE94bzJZVjhRMFBvUkdGQVM2T3lCRGlLUmd1RzZyemRXUHVzME9XUGNmSmxJTWcxNmhSdE5kdTBRWDJwU0oyWURHYmc0eGtjdjdyNzNNUFo5ZWdmNDhaSVNvT1RFeXpwU1k3dHBlb0RoZVpYSFdoNVhwcWNsR2x5akZnWElkVVY0OVJzZmZwV1NtV1Y5RklnV1BKLXgtbnRVd0pPWFpUSnY0R0hpRFlaa21FUzNaREtLRVRGZVIxaVVnV0poNEdUTTBQVGE1TQ?oc=5",
    "t": "security",
-   "updated": "2026-10-06"
+   "updated": "2026-10-07"
   },
   "afpak-jihad": {
    "t": "security",
@@ -1640,6 +1714,26 @@
    ],
    "updated": "2026-10-02",
    "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdWVYVDVWcExtNGRTUl9tNVpiYllpbkJNdHVaUFlQS3paVVBBdFdGV2duNzlabktBTzNINzBCQlVfWUF0WnpyY0t3MjR3aklKbjEtZUxOelRoeF9XSHZTSHprRmNNdkFoa2pDV0h3aEtEM2VjTW9Rb2o3VGRabndTNE45RnhtaTdqVDZPQ1RaWkY?oc=5"
+  },
+  "cocaine-americas": {
+   "t": "trafficking",
+   "n": "Andean cocaine to North America",
+   "d": "Andean cocaine moves through Central America and Mexico to the United States (US); the US deploys Reaper drones to Colombia and Ecuador.",
+   "c": [
+    "COL",
+    "PER",
+    "BOL",
+    "ECU",
+    "PAN",
+    "HND",
+    "GTM",
+    "MEX",
+    "USA",
+    "CAN",
+    "VEN"
+   ],
+   "updated": "2026-10-07",
+   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZzdxZ09ZNjdBZnNxeTlaM09KU0JrcHkxTDRIcjlObGxfaUFYZkRJSGtoMzNWT1plX2huUVpFVmdSNzRWd3pLU3RoQzU1cFBoWmxwTWxUYjhFTGhONHItdzJ5bmlIWWNmQXJxWUhSSWtSa0tNRWNfelhZR1Z6LURuN0Q2UVVaRm9XSGo0UEMzelZJV0toOUI4TWE4NTg?oc=5"
   }
  },
  "pois": {
@@ -1673,11 +1767,11 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "The strategic Gulf exit remains volatile as commercial tankers face projectile strikes amid the ongoing US blockade and regional conflict.",
+   "d": "The strategic Gulf exit remains highly volatile as commercial tankers, including a Panama-flagged vessel with Indian crew, face projectile strikes.",
    "n": "Strait of Hormuz",
-   "s": "US blockade continues · Tankers hit by projectiles",
-   "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQVTE0M0VtS09OYmhZSmZOM2Q1SUM1R01pWl9JcF9TbDdwRzJENWozcGRkRWdQb19tbVc2Xy1UUWRQSHN6ejNtTmFMLW1JWnVYVTVfSGhzX2RpWFJBM0FkTURXamNHMWFSZmF5QW5mTnBsYmdQMUZ4elVsTXdIX2tHYl9HTjBNU1p4UVpsYTcxTURYazRWTjhGTGFtOExybHZkbkprVnpqTjhZWUhlWEFsUmw4bE5NSnlUSEdqTjVFQXVBclFKckpDUjVjZG1CcnplalFxTWZ30gHbAUFVX3lxTFBLb0ROQndHZ3dSOFpfREstdkFBMHpWa2x3Y3Y1Y1FSaEdfS2t3WFYyQllBVnpmVlRfbDYzYU5zSld3bEs1RGdFS0hsekRycFUyNGtpcE9YODRRQ0otS0dWY3lTaFdKMERibzNWVW9CNXdnZkVEZnFCeXhtbURJV25YaF9qOWR6a2J0MEJxZklJYmozNTFkS2ZPZTVyNWx4Q1JwSng4NGFKMGFVM3BqNEFBTWpzRnhaSERVZDN3NnlOX1M0VkFxUXZ0c2FrSFRhdE94ZXJ2X0xEWThNaw?oc=5",
-   "updated": "2026-10-03",
+   "s": "Highly volatile · Tankers hit by projectiles",
+   "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNOE95NzUyQVlseER4WUVGeFI2U1RxdnVJUlBmczViQ1NRajVkUmlGaHBzVjVpMUowYnNfSXp5OW1QNVBDYnp5VF9aVnNlZVp3WmFzdmw2TEpXM1drTmtSTFJvaU5leTFFSlpGRXhicFI5MGhNNXhoeXUtRmxIVFQ3WXpnbXZ5T3ZDalJsSTlCMW1EQnA0Z2pyMGtUeE9CLTlmX2UzX0JVZTFiNFhnTi16N1k5Z3Z3TzZwSGVKbnd1Tk1BTWc4SWRXOVdDYXZ1Rm_SAdwBQVVfeXFMT0ZGQXVLWTB3YVNZRVU5Ylp5eHdRczJKdzNGY01FSTlWd2dOMDltd29RSHBtdFY3OGltMFBpV0o5Szhoakh3S1hVcElWOVJuQWZ2dXJYLTNOSTlTeFNzdzBVNWwwMXhCcndTYXFpelJfRlFpUmZVbFVfUURkRmo1T1NvanZFSjJaQ3M3Q29KNE9Fc3dncnJEM01EbWtQQjlUa2h2cF9ubUp5bE1PODJkVGRrYmtJajFuWm0yUlZyU2FzUFAxWHNxZnBIMW4yTlRnV29tc0N1bUdYTGdLVA?oc=5",
+   "updated": "2026-10-07",
    "t": "strait",
    "lat": 26.57,
    "lng": 56.25,
@@ -1714,12 +1808,12 @@
   "BRA": {
    "hog": "Luiz Inácio Lula da Silva, President",
    "hos": "Luiz Inácio Lula da Silva, President",
-   "lastelec": "presidential election first round, October 2026, runoff scheduled",
+   "lastelec": "Presidential first round, October 2026, Lula and Flavio Bolsonaro advance to runoff",
    "nextelec": "presidential runoff, Oct 2026",
    "ruling": "Workers' Party (PT)-led broad coalition",
-   "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOOGxJOUMwT1pWblA0ZE9EUVFyM2VaTFNZODd2M1YyTThkbGN4ZS16aG5SUlRHT0xsdXVJYkpPVnpVcUhaa0xwQzRWekF5QjlkYkQzM1B4RzBtNGNGZDlzUWtQN1hlWmhzUk9IVURnYzJlWUxya0oxQUQ3ei12SGxoeld3dVJfamJJWEVtVGNYUnYxSHR5OUM4?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPYV9IbUxxY1FKbmtCalJiS1JmWS1hOWpNM2hxWGVCV01weTBFYWFTN0o1Smp6SFhCS0d6eGdMcmQzNklwbm1uRk9KM2M3VEFBMUxqZEFock8weEtWZmtHOE8wLU81amtMZXZUWjB5M0k2TjFaY1J3Z2luWVhIODNQT3paeEtCWEY2Q3p3dGdTek5Mcnczb2RTZ0lQOXFYakJHVjJnRTBR?oc=5",
    "system": "Federal presidential republic",
-   "updated": "2026-10-06"
+   "updated": "2026-10-07"
   },
   "CAN": {
    "hog": "Mark Carney, Prime Minister",
@@ -1881,9 +1975,14 @@
    "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSGtaN0YzYTJnMjB2WGU1X1Z0Q0hwYmNjel9ZOXdiLU1yQmpNOXdTdlIwYnRlazZLXy1vQ05EUWsxbkhGUlpVYWhwR2x2a1FNcUpFaktWZXBOc2dfSDh6aEtFbGRDY3RsRDRnNHZwMGRGdUlfM050VkhZXy1SNXBfSXJvNmRpejdyS3c?oc=5"
   },
   "ESP": {
-   "nextelec": "snap general election, November 2026",
-   "updated": "2026-10-06",
-   "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQUhad2JXbnFHaGpHYVNNRnhXYW5tTDJpWkxFbXBmNzdhZ3NOYjlBWlpiU21kLXF4d0QzTVRMTVVRbzlETm5pOS1YcDMzNFM3NGszX2dVc1BnaG5WeGFEMTJmeVVnQ2lWU0MwQ1k4c3VPMGo5Z1dCdHBoeUxmdDlmaTc1WHFNT3pEOVlUVUJGT1VvMUxEcjY1NXZ3Ym9CS3p4eVhHUnlyWWdBSFRmd0tEYWNkcmYyblhteE94bXBPU1Bid0U?oc=5"
+   "nextelec": "Snap parliamentary election, late 2026",
+   "updated": "2026-10-07",
+   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQeXJxcWktWUpvY3Etekd3UFdsMW5ncTVScnRRaGpFdko1X2o1QUFablByNy1QSWhQY2kyd01uRnZ1X3oyNGdJTXhNVVBMR0Zqc0dhMEY5b1VoazF5OW80OGFyUGRHeV82d19XWHIzXzNPNHFkcUQ1dlRiY3FUbFdrc3hXUWZjcGszdW1wdVFPczAxaDlwTkHSAZYBQVVfeXFMUHZkZTNVZzRSVlM4dm96UE0zM285a3JRSTRXbGczNjMzMHFoOGRHeUd3RzlVSVFsMkl0d1J5eUxmSHZpd0c0NmVlRWczUUhRejhrZTNfd2hwbE4ybW42Sk5qNTNidktjbDdkYnFNeGQ0NG53N3lCakE1MjRWbDduUWZnVEhZcXhWZ1pRN2IzZWZBaWJnandR?oc=5"
+  },
+  "XKX": {
+   "lastelec": "Presidential (parliamentary vote), October 2026, Justina Shiroka Pula",
+   "updated": "2026-10-07",
+   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOQjg5OEFmV1EtdFd2U05VUURLcldpc2lobV9EMGpISkVWelRoM1VCUEhnVXgxaHZqMWM1Y1Nycm5zZEhWem5JWHVQajBKeU1NTWlxUkZYUU15V0hwUk81aVZSWlc3Mk83RXBtZ1p5OUJiNGtKS1VkMTFVVDRlOVVFNk9HdEJYNDM2Z3JpRkNCY3A3Q0ZiZGdFWmh1R2o?oc=5"
   }
  }
 }
