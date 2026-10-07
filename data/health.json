@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-06T20:28:46Z",
- "berlin": "2026-10-06 22:28",
+ "generated": "2026-10-07T10:41:29Z",
+ "berlin": "2026-10-07 12:41",
  "status": "ok",
  "summary": "All checks passed.",
  "repairs": [],
@@ -10,80 +10,80 @@
    "name": "Website",
    "status": "ok",
    "detail": "HTTP 200, 419 KB",
-   "ms": 143
+   "ms": 177
   },
   {
    "g": "site",
    "name": "GitHub Pages copy",
    "status": "ok",
    "detail": "HTTP 200",
-   "ms": 124
+   "ms": 257
   },
   {
    "g": "site",
    "name": "data/news.json",
    "status": "ok",
-   "detail": "HTTP 200, 597 KB",
-   "ms": 59
+   "detail": "HTTP 200, 610 KB",
+   "ms": 197
   },
   {
    "g": "site",
    "name": "data/live.json",
    "status": "ok",
-   "detail": "HTTP 200, 125 KB",
-   "ms": 73
+   "detail": "HTTP 200, 135 KB",
+   "ms": 180
   },
   {
    "g": "site",
    "name": "data/politics.json",
    "status": "ok",
    "detail": "HTTP 200, 42 KB",
-   "ms": 44
+   "ms": 179
   },
   {
    "g": "site",
    "name": "data/wb.json",
    "status": "ok",
    "detail": "HTTP 200, 83 KB",
-   "ms": 55
+   "ms": 51
   },
   {
    "g": "site",
    "name": "data/geo.json",
    "status": "ok",
    "detail": "HTTP 200, 697 KB",
-   "ms": 73
+   "ms": 62
   },
   {
    "g": "site",
    "name": "data/cities.json",
    "status": "ok",
    "detail": "HTTP 200, 151 KB",
-   "ms": 45
+   "ms": 49
   },
   {
    "g": "fresh",
    "name": "Headlines (news.json)",
    "status": "ok",
-   "detail": "last update 4.4 h ago"
+   "detail": "last update 0.4 h ago"
   },
   {
    "g": "fresh",
    "name": "AI relationship update (live.json)",
    "status": "ok",
-   "detail": "last update 4.4 h ago"
+   "detail": "last update 5.4 h ago"
   },
   {
    "g": "fresh",
    "name": "Leaders (politics.json)",
    "status": "ok",
-   "detail": "last update 22.3 h ago"
+   "detail": "last update 12.5 h ago"
   },
   {
    "g": "fresh",
    "name": "Countries with confirmed headlines",
    "status": "ok",
-   "detail": "189"
+   "detail": "191"
   },
   {
    "g": "fresh",
@@ -107,176 +107,176 @@
    "g": "worker",
    "name": "/live (en)",
    "status": "ok",
-   "detail": "27 items",
-   "ms": 5155
+   "detail": "32 items",
+   "ms": 5132
   },
   {
    "g": "worker",
    "name": "/top (en)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 168
+   "ms": 78
   },
   {
    "g": "worker",
    "name": "/videos (en)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 501
+   "ms": 454
   },
   {
    "g": "worker",
    "name": "/live (de)",
    "status": "ok",
-   "detail": "37 items",
-   "ms": 1762
+   "detail": "19 items",
+   "ms": 1349
   },
   {
    "g": "worker",
    "name": "/top (de)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 1768
+   "ms": 50
   },
   {
    "g": "worker",
    "name": "/videos (de)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 401
+   "ms": 299
   },
   {
    "g": "worker",
    "name": "/live (fr)",
    "status": "ok",
-   "detail": "37 items",
-   "ms": 3305
+   "detail": "41 items",
+   "ms": 836
   },
   {
    "g": "worker",
    "name": "/top (fr)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 1021
+   "ms": 58
   },
   {
    "g": "worker",
    "name": "/videos (fr)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 332
+   "ms": 385
   },
   {
    "g": "worker",
    "name": "/live (es)",
    "status": "ok",
-   "detail": "13 items",
-   "ms": 317
+   "detail": "9 items",
+   "ms": 538
   },
   {
    "g": "worker",
    "name": "/top (es)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 106
+   "ms": 41
   },
   {
    "g": "worker",
    "name": "/videos (es)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 416
+   "ms": 285
   },
   {
    "g": "worker",
    "name": "/live (it)",
    "status": "ok",
-   "detail": "26 items",
-   "ms": 1493
+   "detail": "25 items",
+   "ms": 1140
   },
   {
    "g": "worker",
    "name": "/top (it)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 1036
+   "ms": 40
   },
   {
    "g": "worker",
    "name": "/videos (it)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 1185
+   "ms": 414
   },
   {
    "g": "worker",
    "name": "/live (ar)",
    "status": "ok",
-   "detail": "5 items",
-   "ms": 210
+   "detail": "11 items",
+   "ms": 477
   },
   {
    "g": "worker",
    "name": "/top (ar)",
    "status": "ok",
-   "detail": "5 stories",
-   "ms": 789
+   "detail": "6 stories",
+   "ms": 50
   },
   {
    "g": "worker",
    "name": "/videos (ar)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 439
+   "ms": 403
   },
   {
    "g": "worker",
    "name": "Real-time search",
    "status": "ok",
-   "detail": "8 reports",
-   "ms": 3606
+   "detail": "6 reports",
+   "ms": 3535
   },
   {
    "g": "security",
    "name": "Other websites are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 40
+   "ms": 21
   },
   {
    "g": "security",
    "name": "Look-alike Pages projects are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 82
+   "ms": 17
   },
   {
    "g": "security",
    "name": "Only the site's own prompts are answered",
    "status": "ok",
    "detail": "HTTP 400 (should be 400)",
-   "ms": 102
+   "ms": 21
   },
   {
    "g": "security",
    "name": "Private chat needs a valid pass",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 34
+   "ms": 23
   },
   {
    "g": "security",
    "name": "Admin login",
    "status": "ok",
    "detail": "HTTP 401 without a code (should be 401)",
-   "ms": 86
+   "ms": 17
   },
   {
    "g": "ai",
    "name": "AI answers",
    "status": "ok",
    "detail": "answered by gemini-3.6-flash",
-   "ms": 2210
+   "ms": 3527
   },
   {
    "g": "sources",
@@ -295,7 +295,7 @@
    "name": "Page loads and the globe starts",
    "status": "ok",
    "detail": "",
-   "ms": 3259
+   "ms": 3795
   },
   {
    "g": "browser",
@@ -334,5 +334,5 @@
    "detail": "page width 820 px on a 820 px screen"
   }
  ],
- "ms": 490217
+ "ms": 531206
 }
