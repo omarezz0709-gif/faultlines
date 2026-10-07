@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-07T05:16:47Z",
+  "lastRun": "2026-10-07T11:15:39Z",
   "log": [
    {
     "date": "2026-10-07",
@@ -49,6 +49,41 @@
       "label": "Spain–Morocco",
       "change": "Note updated with Prime Minister Pedro Sánchez",
       "source": "https://www.wikidata.org/wiki/Q29"
+     },
+     {
+      "label": "Bulgaria–Russia",
+      "change": "Normal/mixed → Tense: Russian drone strikes hit commercial vessels in Bulgaria's EEZ",
+      "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWGIzbm82d1A0UUNFZUlMLXBMS3pVd1BXS0ZqMjlNTXBwc2ktaWJVMlpRSjNza3BDX1BwWE5pU1hkSUtnQTVrdG51RDVKalBLd3dJMjhsMWNlTy1vTW5LVmtWNXZUbFBMTzNZYXU5U0JpSHpkeXdOWEZTeTNNN2YyekN0Vktzc0lTMGUwSUpyMXRRcDVfZGl0eUtuMHItWHE3LW4zdkljM3IzTXRRMEtR?oc=5"
+     },
+     {
+      "label": "Greece–United States",
+      "change": "Normal/mixed → Ally: Deepening defense and energy ties during Senator Rubio's visit",
+      "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOWnVNVm44Nk5seWUtSzFrTXJ0MGtlaVpQcFJHWDFIRDBDNlAwaVBXbDJfMlJKTGg4R09uRzE3NE5aWjZoUElXclY5TktzcXA0ZFVZN01NejJDeGVlTEVjbmtqdVlUNm90TUN6U1U4YVNBMjhmdlhjb2RZZ2pDS1h0S182RDdPQ05mMGJsbm40MDNGN0ZUcUxPb25TQjFyQWc4UFZ0c2tWWFY3aG1zQ2wwT2kyRXgzQ3k1X0JtZlo3eFFNTXliUk5n?oc=5"
+     },
+     {
+      "label": "Bahrain–Pakistan",
+      "change": "Normal/mixed → Partner: Expanding trade and defense cooperation during FM visit",
+      "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUkZMZHZUNDJqbXFmWnk0djZJT0VFZ2lzWVA0VXlzY3NfUHhsMHZuTjNTc1hKMlFsczRHVkhJTFZ4QnppbkZWMFRQS21iZmpSdFkwTkwtZU4zODlvUE83aTlpSjN6ZWZ4dmFYVEswcmJ5NlBXTFo0Z0lQbDVYMXpHMTREM1ByMTktTTZWRUR6SkxiWUNaMkczSXF3dE8xMjlVMDBxRzNUTFdYbmQyZjdr?oc=5"
+     },
+     {
+      "label": "Sweden–Poland",
+      "change": "Normal/mixed → Partner: Sweden deploys Patriot air defense unit to Poland",
+      "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQWXE1RmVBTmt0a29NTk9qU0FOWkNLSXkwX0ozdnR3OTVzNTd4Mlp5ZGpFLWtEcks4eDhzaTNxa3lRMTFOdEJmaXBZTDJWTFdmcFAwQXZKYktpTFNFbVZ4U2FjVTMwdkdhUnNYRk1nazllOWpJWGJ3NzlzTnk1Wld3aDItUkNmN2xCN3pTMmdpNWZVSmhlaXRkYWtqblBSRGUwVkpZZG5icEJ3N0FWYWlr0gGvAUFVX3lxTFBZcTVGZUFOa3Rrb01OT2pTQU5aQ0tJeTBfSjN2dHc5NXM1N3gyWnlkakUta0RySzh4OHNpM3FreVExMU50QmZpcFlMMlZMV2ZwUDBBdkpiS2lMU0VtVnhTYWNVMzB2R2FSc1hGTWdrOWU5aklYYnc3OXNOeTVaV3doMi1SQ2Y3bEI3elMyZ2k1ZlVKaGVpdGRha2puUFJEZTBWSllkbmJwQnc3QVZhaWs?oc=5"
+     },
+     {
+      "label": "Syria–Saudi Arabia",
+      "change": "Normal/mixed → Partner: Diplomatic engagement restored as Sharaa meets MBS",
+      "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQRHY5TnRlRno3bXlhVURsRTFldGVrNDVCbnJKeGFfOWQyNWx6TEhQVldvWFU1eWJ1UFJ3SEJyTC0tbmNrbWZoaDNzVW8xdURCVzZFV2dHRWM2VW1RVzd2TXpXSG1fUnNQbEs5YlNHckhsRmdFcWdqWXNacnotQkprOEd3VUNZRWhySW5kdmVwaEUxc0d3NXNoaEJPQjN3RVI0dUZJdXNFMFdqdGwyUG1hZDhMM19LWmtzQWYxWWxqR2FzRzRTbHA0Snp2eVkzQkticWVmSHVrbllzX0xHU3NXakZkZ3RVbXZoOXc?oc=5"
+     },
+     {
+      "label": "Tajikistan–Iran",
+      "change": "Normal/mixed → Partner: Implementing full visa-free travel",
+      "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWkpsbVNYQ1UxWmJQazQ3MlBNSGJpUVRuQmM2czMwczVaWW55aE5fOUxBSklydEV3MG56NTdndEgzSF92SVBGSVB6SEQwdFVZbW1aMldycko4OXJ5UHdHc3ZLdjlrUG9TSXB4ZHVtbW1QdHlkWVBSR1ktT2d0N2R4QzYtNHNPaThHNlZLVERDNVV3d2s?oc=5"
+     },
+     {
+      "label": "United States–Colombia",
+      "change": "Normal/mixed → Partner: Aligning on counter-narcotics under President Abelardo de la Espriella",
+      "source": "https://www.wikidata.org/wiki/Q739"
      }
     ]
    },
@@ -936,7 +971,7 @@
     ]
    }
   ],
-  "summary": "This update captures the activation of the Mecca Joint Defense Agreement with Turkish and Pakistani troop deployments to Saudi Arabia, rising tensions between Latvia and Belarus over armed border incursions, and leadership-based relation updates."
+  "summary": "This update registers diplomatic and security shifts, including tensions between Bulgaria and Russia over Black Sea shipping strikes, new defense ties for Greece and Sweden, and regional updates in the Middle East and Sahel."
  },
  "relations": {
   "DNK-USA": {
@@ -1032,7 +1067,7 @@
    "b": "USA",
    "s": "F",
    "note": "Long-time security partners aligning on counter-narcotics under President Abelardo de la Espriella.",
-   "updated": "2026-09-27",
+   "updated": "2026-10-07",
    "source": "https://www.wikidata.org/wiki/Q739"
   },
   "FRA-SAU": {
@@ -1247,9 +1282,9 @@
    "a": "KHM",
    "b": "VNM",
    "s": "T",
-   "note": "Tensions rise as Vietnamese authorities are accused of abducting an Australian activist on Cambodian soil.",
-   "updated": "2026-09-29",
-   "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNLWVrNUZVOGJmYW9Jck9sZDRzYXBaQndqSXBOZkstZ296cUs5Z3BMMmhlMW5MMUhXcmhYRWh3YmZURDk0T0tfaFFpcGRyRDRDb3BVMC1CSWpENGFIMFkxMFg2aWhiSE04N3Q4RWdQM2xrRzYyZjU5RGQ5MGdldERtbDJPQWg5RTk4dnhIRUNRd3dFSG40YnMxbWdqVkIyYXc2cjNZQ0cxWHVEYnY3SEx0bVNPREdidkZHVnpuMmYyeVgwbHo1SDF5V1ZlY0RLTS16UWpJaWNlcw?oc=5"
+   "note": "Tensions persist as Cambodia denies any role in the alleged abduction of Vietnamese activists on its soil.",
+   "updated": "2026-10-07",
+   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZ1F5OThwYzdFUzA4NU1lR2gySkNUZGZnRkNDNlVxcWo5Y3o1T2dnWU9Ibi05eGQ1YkJKcVhrMUFaUTZZTkxSZGh4Z1lmV1hmM3lFOEptYnhlMmJ0UEdGT2xYOXNnZFI4dllUSlM1WnVrZHlJSUtpRUJDU0ZLRlh6WG42enVrclpaZFlETlJRLTkwUHZjQ3c?oc=5"
   },
   "CHE-RUS": {
    "a": "CHE",
@@ -1439,9 +1474,9 @@
    "a": "DZA",
    "b": "NER",
    "s": "N",
-   "note": "Ties improve as Algeria deploys fighter jets to Niger to help thwart a reported coup attempt.",
-   "updated": "2026-10-04",
-   "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTi1idkVjT1ZpcHhxbEZaYVUxR1FYNThkY2owS2ZzcG5tTG4zNDN5Mmd3YjJiOS1TcEw4WUF4YnRGYkRCS3piUVVpalNVWW5BdFRsLVVLQ1RZTHNLSC1LemRteGdFbnhQb1hyOVlnWkh0RDROQWV5bFJoYmltZGUwOS1MNWZWLU0wcGVzdEIyMkRHQjVBbVBoUzVwQ3ZTTkp0Wko0dzdxcnhYV0ZCcVNhRHo2MNIBuAFBVV95cUxQTTJkY1RWblFfenhoRUZVU2c2OFRIdzNVdkhiY01ySGd3VjFVQjhHMXpNSFRjdTJvQTI1VXU1eGJERmJNT1RSVmF4WWRGVHZGdmtaM0pjR3VUSGR0TDUyLTBQWldaWDhoRHp1WVdHSG1YSjlqcmtnMnR2RnRxRURKMGVRSDYtM1JkMUJ4NmdCOTh2QjZtOG1RTkRJYWZGT3ljc2tUVE40aWZTWWg3OTMzNHlNTEZpS2Ut?oc=5"
+   "note": "Ties improve as Algeria and Niger launch a Trans-Saharan fiber optic link, alongside security cooperation.",
+   "updated": "2026-10-07",
+   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQa2dLOUh0dE1yTExLSWpCc3RFclBjZmFFSTV3RlduczV6bThLQlg3VXdMLWxVbUVFUU9NWHdTSzNlVHg2bU85N29CZHBRajhHQjZPbUVwXzQxSlJNRzFHWlFBNjM2dEMtUk1uTWNDdklIYThJSGJUaENvX0hpRkJYZnhobnR3d3I2UERqX2JlLXdLcl9Id0ZxZXRCV0NKUDA?oc=5"
   },
   "DOM-HTI": {
    "a": "DOM",
@@ -1495,9 +1530,9 @@
    "a": "ARE",
    "b": "SOM",
    "s": "T",
-   "note": "Somalia accuses the United Arab Emirates (UAE) of encouraging Somaliland's secession, further complicating regional diplomacy.",
-   "updated": "2026-10-06",
-   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdUl4UkxYMktqWDhYQjdlQ0NkSmRKdXVBNjU2V1BNT0hxU0N3b3RvLUkzazNCOHQxUkpCbTdKSkQ3c1MtMTRXREx2RmZiRzFKMWNhYUtyR1BzZDQyR3dVVjRVMTZFRnY0ZW50VWFjOThsY25QcFBWNE9QVWFxeEVTaUdWVjVvbWlsd3c0UUVSZUVrUVcwQ28wYm1sZGRnc3JNdmRN?oc=5"
+   "note": "Somalia accuses the United Arab Emirates (UAE) of encouraging Somaliland's secession, while Somaliland defends its security ties with Israel.",
+   "updated": "2026-10-07",
+   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMW9ReDl4OGJWRUZPNHpHSjcyelZiekk1OU1QcXdIRWFFNFRUMjdGLTI3ZmhVc3hvRGRSX3A2Ym0wZDhET2ZBQnhMVGVSNER1OWtGQzgycGk4WktqSUVxN0lVdWw3d3N0V19kbmtGVDZ1VnQwREhlUzFJZDczeVd0YmVpUE81MGE0LTQ4X3Z5N2dlNzZwWlU1U21PdlJrQ2JoNExFSnpQbkhXZUhXVU1YMG1R?oc=5"
   },
   "PAK-TUR": {
    "a": "PAK",
@@ -1599,9 +1634,9 @@
    "a": "BLR",
    "b": "LVA",
    "s": "H",
-   "note": "Relations deteriorate to hostile as armed, masked smugglers cross from Belarus, threatening Latvian soldiers at the border.",
+   "note": "Relations remain hostile as armed, masked smugglers cross from Belarus, carrying out sabotage at the Latvian border.",
    "updated": "2026-10-07",
-   "source": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQVEFlaDVPV3VzT25sODdLeHJJSGQ2Zl9vZTJGSTIyNEJ3Y3QwNmM5MEMweElEQzBfMGdBelctZzRrY21mSG1WUURPZExSdHdpam5UNW1mcWpDQ3JpNEYtbkpLZHgxTXNuYUhFVXhUUUlqRGY4b1g1c3F1c1ZybHFmaW12OERydTVUcGRFamw3MmF1R2lWUmtMZ0FTR2ZMbmczRlBQWnZmZldkZlRGc0drakVYSHJFUUdUenpiZ184VFBTZ2RUVlFZOG1IbDgycFoxc1l5YVFfdjhxOWh2TE9McDhR?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQcDlYWDVlSnJOc1BGNExIdVg3ekxuZ3prWDlKWWV1SVY5NHdad01LdUQzY1dNcVI1ejFPR0hKMVhYSzNKMTlrTDR4OW9BMlN3T1k1WGRWcGdBT2JHU25LdnhLS25VdUlPcExXN2dWc0JrNkpIQ1ZvWVNkZTVJcVJlTTFET29zRXRLQW8yaWhfc3hxOUV1SkxkaUg2cnE?oc=5"
   },
   "IND-LKA": {
    "a": "IND",
@@ -1618,6 +1653,70 @@
    "note": "Spain and Morocco maintain warm ties under Prime Minister Pedro Sánchez, coordinating on migration and regional security.",
    "updated": "2026-10-07",
    "source": "https://www.wikidata.org/wiki/Q29"
+  },
+  "BGR-RUS": {
+   "a": "BGR",
+   "b": "RUS",
+   "s": "T",
+   "note": "Relations between Bulgaria and Russia deteriorate after Russian drone strikes hit commercial vessels in Bulgaria's Exclusive Economic Zone (EEZ).",
+   "updated": "2026-10-07",
+   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWGIzbm82d1A0UUNFZUlMLXBMS3pVd1BXS0ZqMjlNTXBwc2ktaWJVMlpRSjNza3BDX1BwWE5pU1hkSUtnQTVrdG51RDVKalBLd3dJMjhsMWNlTy1vTW5LVmtWNXZUbFBMTzNZYXU5U0JpSHpkeXdOWEZTeTNNN2YyekN0Vktzc0lTMGUwSUpyMXRRcDVfZGl0eUtuMHItWHE3LW4zdkljM3IzTXRRMEtR?oc=5"
+  },
+  "GRC-USA": {
+   "a": "GRC",
+   "b": "USA",
+   "s": "A",
+   "note": "Greece and the United States (US) deepen defense and energy ties during US Senator Marco Rubio's visit to Athens.",
+   "updated": "2026-10-07",
+   "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOWnVNVm44Nk5seWUtSzFrTXJ0MGtlaVpQcFJHWDFIRDBDNlAwaVBXbDJfMlJKTGg4R09uRzE3NE5aWjZoUElXclY5TktzcXA0ZFVZN01NejJDeGVlTEVjbmtqdVlUNm90TUN6U1U4YVNBMjhmdlhjb2RZZ2pDS1h0S182RDdPQ05mMGJsbm40MDNGN0ZUcUxPb25TQjFyQWc4UFZ0c2tWWFY3aG1zQ2wwT2kyRXgzQ3k1X0JtZlo3eFFNTXliUk5n?oc=5"
+  },
+  "BHR-PAK": {
+   "a": "BHR",
+   "b": "PAK",
+   "s": "F",
+   "note": "Bahrain and Pakistan expand trade and defense cooperation during the Bahraini Foreign Minister's (FM) visit to Islamabad.",
+   "updated": "2026-10-07",
+   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUkZMZHZUNDJqbXFmWnk0djZJT0VFZ2lzWVA0VXlzY3NfUHhsMHZuTjNTc1hKMlFsczRHVkhJTFZ4QnppbkZWMFRQS21iZmpSdFkwTkwtZU4zODlvUE83aTlpSjN6ZWZ4dmFYVEswcmJ5NlBXTFo0Z0lQbDVYMXpHMTREM1ByMTktTTZWRUR6SkxiWUNaMkczSXF3dE8xMjlVMDBxRzNUTFdYbmQyZjdr?oc=5"
+  },
+  "POL-SWE": {
+   "a": "POL",
+   "b": "SWE",
+   "s": "F",
+   "note": "Sweden deploys a Patriot air defense unit and troops to Poland to protect the critical North Atlantic Treaty Organization (NATO) logistics hub.",
+   "updated": "2026-10-07",
+   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQWXE1RmVBTmt0a29NTk9qU0FOWkNLSXkwX0ozdnR3OTVzNTd4Mlp5ZGpFLWtEcks4eDhzaTNxa3lRMTFOdEJmaXBZTDJWTFdmcFAwQXZKYktpTFNFbVZ4U2FjVTMwdkdhUnNYRk1nazllOWpJWGJ3NzlzTnk1Wld3aDItUkNmN2xCN3pTMmdpNWZVSmhlaXRkYWtqblBSRGUwVkpZZG5icEJ3N0FWYWlr0gGvAUFVX3lxTFBZcTVGZUFOa3Rrb01OT2pTQU5aQ0tJeTBfSjN2dHc5NXM1N3gyWnlkakUta0RySzh4OHNpM3FreVExMU50QmZpcFlMMlZMV2ZwUDBBdkpiS2lMU0VtVnhTYWNVMzB2R2FSc1hGTWdrOWU5aklYYnc3OXNOeTVaV3doMi1SQ2Y3bEI3elMyZ2k1ZlVKaGVpdGRha2puUFJEZTBWSllkbmJwQnc3QVZhaWs?oc=5"
+  },
+  "SAU-SYR": {
+   "a": "SAU",
+   "b": "SYR",
+   "s": "F",
+   "note": "Syria and Saudi Arabia restore diplomatic engagement as Syrian President Ahmed al-Sharaa meets Crown Prince Mohammed bin Salman (MBS) in Riyadh.",
+   "updated": "2026-10-07",
+   "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQRHY5TnRlRno3bXlhVURsRTFldGVrNDVCbnJKeGFfOWQyNWx6TEhQVldvWFU1eWJ1UFJ3SEJyTC0tbmNrbWZoaDNzVW8xdURCVzZFV2dHRWM2VW1RVzd2TXpXSG1fUnNQbEs5YlNHckhsRmdFcWdqWXNacnotQkprOEd3VUNZRWhySW5kdmVwaEUxc0d3NXNoaEJPQjN3RVI0dUZJdXNFMFdqdGwyUG1hZDhMM19LWmtzQWYxWWxqR2FzRzRTbHA0Snp2eVkzQkticWVmSHVrbllzX0xHU3NXakZkZ3RVbXZoOXc?oc=5"
+  },
+  "IRN-TJK": {
+   "a": "IRN",
+   "b": "TJK",
+   "s": "F",
+   "note": "Tajikistan and Iran establish closer ties by implementing full visa-free travel for ordinary passport holders.",
+   "updated": "2026-10-07",
+   "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWkpsbVNYQ1UxWmJQazQ3MlBNSGJpUVRuQmM2czMwczVaWW55aE5fOUxBSklydEV3MG56NTdndEgzSF92SVBGSVB6SEQwdFVZbW1aMldycko4OXJ5UHdHc3ZLdjlrUG9TSXB4ZHVtbW1QdHlkWVBSR1ktT2d0N2R4QzYtNHNPaThHNlZLVERDNVV3d2s?oc=5"
+  },
+  "ARM-AZE": {
+   "a": "ARM",
+   "b": "AZE",
+   "s": "T",
+   "note": "Tensions remain high as Armenia prepares to vacate a disputed border village to Azerbaijan amid local protests.",
+   "updated": "2026-10-07",
+   "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTDlDZkgtcTc1aUs0WUh4dEotbVlVMnBvc2x6cGZuUkU5UmZmSEtBWUhXUWIwRndzSm4tYWxMb1RaTzZzNk5OZlFaZ2FVemItWU5HNW9UbVZhMWQ2YTg5OHhpbDduUldYNS1yQ1pzR2h2YjQwNzNJM2JMQWp2eWRMZlRMQjBkdUtxX1BpZ0ZYNVJWbms?oc=5"
+  },
+  "ISR-SYR": {
+   "a": "ISR",
+   "b": "SYR",
+   "s": "T",
+   "note": "Tensions remain high as Israeli forces intensify incursions in southern Syria's Quneitra, drawing condemnation from Damascus.",
+   "updated": "2026-10-07",
+   "source": "https://news.google.com/rss/articles/CBMif0FVX3lxTE81MWtRYlZGWmhtenNxZkQxeWZUWHpZeVBkbVZzYlBzUkFkcWpHaTFLd0s4ck90OG1qdXJqM3hBMW9XYVFJcVgtX1FkUGt1bnpwMXhUMXVRZXlkMElBdTNJVmtrdjJvWHFkdHlFbzNMellhWmFpNjdienZ2Z2VSbnM?oc=5"
   }
  },
  "threads": {
@@ -1675,7 +1774,7 @@
   "sudan-war": {
    "t": "proxy",
    "n": "Sudan's war and its outside backers",
-   "d": "Sudan's civil war drives regional realignments; Egypt, Eritrea, Somalia, and Sudan sign the El Alamein Declaration to secure the Red Sea and counter Ethiopia.",
+   "d": "Sudan's civil war drives regional realignments; Egypt, Eritrea, Somalia, and Sudan sign the El Alamein Declaration to secure the Red Sea, drawing warnings from Ethiopia.",
    "c": [
     "SDN",
     "ARE",
@@ -1685,13 +1784,13 @@
     "SSD",
     "ETH",
     "ERI",
-    "SOM",
     "SAU",
     "TUR",
-    "RUS"
+    "RUS",
+    "SOM"
    ],
-   "updated": "2026-10-06",
-   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNY0RyNTZrNlpSSFNDTXhPNXB5Yk5vb3RXckxGM1NZMktvUFJKa1lkdldFallLaG1uU2I1Mi1oRHFMR3NSeF9IeHhEYVdENk1JZ3RKdUN1ajhHSlNiZ2s2VE1HcVRySmJsOGkxOFlIWkczQ1ZaVzVrOE0waWUyTS1jb3hzNVhjT1ZxMmkyQUx3STBfOUpENEhuSG1fOHpnYkFMSFlhSXpxNkpGcWg3STVJMWpR?oc=5"
+   "updated": "2026-10-07",
+   "source": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNVWd6dDh5MDBlb29fQTZqUVhPaENGZEdjMlJ1S08wVTJVNVROTmlJMFlmT1FOMGxiTGhKT0dWQU05UkhOMnU5TzM3ODh6NFp0bVp0Si1YODVqYnNXUUoxMDFGUTVqOVZxU0lfM09rY0VTRmc2am9vOGlXWWlhc2ZWak5ERnBRanhwZ280dDgzdDItZlJqWE9ieGhzWmlSUXEzZFR2Q2VFalozX2hRaUx1d1dvQjhBVXhLUWp0Vk10ZWw2V2JrOGxBbFZHU2RmcU5kc2RpZ013eERQTUE?oc=5"
   },
   "cocaine-europe": {
    "t": "trafficking",
@@ -1718,7 +1817,7 @@
   "cocaine-americas": {
    "t": "trafficking",
    "n": "Andean cocaine to North America",
-   "d": "Andean cocaine moves through Central America and Mexico to the United States (US); the US deploys Reaper drones to Colombia and Ecuador.",
+   "d": "Andean cocaine moves through Central America and Mexico to the United States (US); the US deploys MQ-9 Reaper drones to Colombia and Ecuador to monitor trafficking routes.",
    "c": [
     "COL",
     "PER",
@@ -1733,7 +1832,24 @@
     "VEN"
    ],
    "updated": "2026-10-07",
-   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZzdxZ09ZNjdBZnNxeTlaM09KU0JrcHkxTDRIcjlObGxfaUFYZkRJSGtoMzNWT1plX2huUVpFVmdSNzRWd3pLU3RoQzU1cFBoWmxwTWxUYjhFTGhONHItdzJ5bmlIWWNmQXJxWUhSSWtSa0tNRWNfelhZR1Z6LURuN0Q2UVVaRm9XSGo0UEMzelZJV0toOUI4TWE4NTg?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNUmZXUDJBblJMRmkxUjF2TS11NmpkYVJ6UTlOaXU4MnFiXzhNTE51QTBnX2tFRko2RnVTelFzY3kxbkNiYXQwM0ZGbVlFT2ZBOVNKTFhldlFwLWViVGNUUjRSUHpMLWx4bkxMb2dTc29id3pkUDhOdFF2YVE5TzZlQndBeVVlUzNGbjhjZDhKaTdKQTJoMHEwaUctbExaT0VhdWJDM0lKMjRRUWJ5aGlRT1pPeW11RV9fWHA0ZlJ3WXNLZk1DVUtMbnFaNWZxZ3pjQUxpNVFB0gHqAUFVX3lxTFBwenFMMjVxcHUyWWs4Nm9EU2tQOFpLRWFaUkpKR2tqWHRPdXJld2h1RXJQU3RGLUlGT1lwenZRN2o0THc0ZlJETW5DUm1HYkxmaXprTWdvTFhpR2FlN1piYWpxTTFUUXpiWGRlNktyaFVmbDI2TnlUM0w2X1VTLTFuaElkQkJUVjlVaS1TZms0ZWJEMnJJY3dWRzQyMFNOUFg0Z1RoeDBrandhUFZ1WERwOFNfV3NvRmtWUEg4eG1vei1KcF8tUUtCampMaTNnQ1daNXMtQ0xMdDRxU1hvd3dkUlcweXFxcWdiZw?oc=5"
+  },
+  "africa-corps": {
+   "t": "proxy",
+   "n": "Russia's security footprint in Africa",
+   "d": "Russia's Africa Corps backs Sahel juntas; Malian forces successfully reclaim the rebel stronghold of Kidal with Russian military support.",
+   "c": [
+    "RUS",
+    "MLI",
+    "BFA",
+    "NER",
+    "CAF",
+    "LBY",
+    "SDN",
+    "FRA"
+   ],
+   "updated": "2026-10-07",
+   "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVmRpRzJzamxqdHVMU2RhM1pLRjZjdFhKRGJzMGF2TkxFNV9md2ZyUUVVX1VyekFhRlJUZzRGYlNzQTN5LW9HQlZ5RkVOdmt3ejZJMzdReURVXzJRS3FkV0lOTG1CSDJpUi1GdE43QXZzZzVvSUlDQm1jWVBLc3JyVXFjcUl5ME95WnpkOWFQSE0xWXlUT2E0UmEyRlFFUQ?oc=5"
   }
  },
  "pois": {
@@ -1770,7 +1886,7 @@
    "d": "The strategic Gulf exit remains highly volatile as commercial tankers, including a Panama-flagged vessel with Indian crew, face projectile strikes.",
    "n": "Strait of Hormuz",
    "s": "Highly volatile · Tankers hit by projectiles",
-   "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNOE95NzUyQVlseER4WUVGeFI2U1RxdnVJUlBmczViQ1NRajVkUmlGaHBzVjVpMUowYnNfSXp5OW1QNVBDYnp5VF9aVnNlZVp3WmFzdmw2TEpXM1drTmtSTFJvaU5leTFFSlpGRXhicFI5MGhNNXhoeXUtRmxIVFQ3WXpnbXZ5T3ZDalJsSTlCMW1EQnA0Z2pyMGtUeE9CLTlmX2UzX0JVZTFiNFhnTi16N1k5Z3Z3TzZwSGVKbnd1Tk1BTWc4SWRXOVdDYXZ1Rm_SAdwBQVVfeXFMT0ZGQXVLWTB3YVNZRVU5Ylp5eHdRczJKdzNGY01FSTlWd2dOMDltd29RSHBtdFY3OGltMFBpV0o5Szhoakh3S1hVcElWOVJuQWZ2dXJYLTNOSTlTeFNzdzBVNWwwMXhCcndTYXFpelJfRlFpUmZVbFVfUURkRmo1T1NvanZFSjJaQ3M3Q29KNE9Fc3dncnJEM01EbWtQQjlUa2h2cF9ubUp5bE1PODJkVGRrYmtJajFuWm0yUlZyU2FzUFAxWHNxZnBIMW4yTlRnV29tc0N1bUdYTGdLVA?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRmRrSWp0M1V4dGpYTmIyNThOZFZ5OXBiNjZfQ0M5ODdLSEJRTnJ6cTdxRmFIN0pJZGJxMG1Va0Z4SE9OX1pOTzg4ZjAzLVBKaGh4OTdaX3p0R0NhVzJfTU1hcmZadEVqMGxpSXE3c1B1QXE4dGFMcFZ5TFNsNHRuQlUxNXJ0aWx2Mk84T3JhRHFLQ0hKVnlYOVh3UFVSRXVZdlRha0pKdF9KS1FBa3c?oc=5",
    "updated": "2026-10-07",
    "t": "strait",
    "lat": 26.57,
@@ -1975,14 +2091,14 @@
    "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSGtaN0YzYTJnMjB2WGU1X1Z0Q0hwYmNjel9ZOXdiLU1yQmpNOXdTdlIwYnRlazZLXy1vQ05EUWsxbkhGUlpVYWhwR2x2a1FNcUpFaktWZXBOc2dfSDh6aEtFbGRDY3RsRDRnNHZwMGRGdUlfM050VkhZXy1SNXBfSXJvNmRpejdyS3c?oc=5"
   },
   "ESP": {
-   "nextelec": "Snap parliamentary election, late 2026",
+   "nextelec": "Snap general election, scheduled for late 2026",
    "updated": "2026-10-07",
-   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQeXJxcWktWUpvY3Etekd3UFdsMW5ncTVScnRRaGpFdko1X2o1QUFablByNy1QSWhQY2kyd01uRnZ1X3oyNGdJTXhNVVBMR0Zqc0dhMEY5b1VoazF5OW80OGFyUGRHeV82d19XWHIzXzNPNHFkcUQ1dlRiY3FUbFdrc3hXUWZjcGszdW1wdVFPczAxaDlwTkHSAZYBQVVfeXFMUHZkZTNVZzRSVlM4dm96UE0zM285a3JRSTRXbGczNjMzMHFoOGRHeUd3RzlVSVFsMkl0d1J5eUxmSHZpd0c0NmVlRWczUUhRejhrZTNfd2hwbE4ybW42Sk5qNTNidktjbDdkYnFNeGQ0NG53N3lCakE1MjRWbDduUWZnVEhZcXhWZ1pRN2IzZWZBaWJnandR?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaVljRGFEc3E2TWc0OXY2THJXLWlqY0JTb1RuVHFVZWl6TmxCMXNtTm9uMnhyaEFRalVZOGExZ3ozY0FGWEJhNWJhdEc1QkhPcXlVS2ktRXhzSEZZZXU0SlRmQ2lLR0VXc1VOU0NiRGFod0g2VFRobWdfSU5GUUc3SEg1RHpKdzhVQVp4ZnRPUWY0ZHZYaUlVc05NaXg4dUZmR2Fhb3pB?oc=5"
   },
   "XKX": {
-   "lastelec": "Presidential (parliamentary vote), October 2026, Justina Shiroka Pula",
+   "lastelec": "Presidential election, October 2026, Justina Shiroka Pula",
    "updated": "2026-10-07",
-   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOQjg5OEFmV1EtdFd2U05VUURLcldpc2lobV9EMGpISkVWelRoM1VCUEhnVXgxaHZqMWM1Y1Nycm5zZEhWem5JWHVQajBKeU1NTWlxUkZYUU15V0hwUk81aVZSWlc3Mk83RXBtZ1p5OUJiNGtKS1VkMTFVVDRlOVVFNk9HdEJYNDM2Z3JpRkNCY3A3Q0ZiZGdFWmh1R2o?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVkp3X2hqdFNnXzkwMmpmMGxxMm5xblNaOVdFdUUtdXNjZnRFMmMzMVZqSkRRTDdtYXNiR0lheDB0UFMyV3Iwc19mZGI3MlhwTi1SZlNKRG9fSzktNTRWemQwYWpfZFdUX0JsTHVQRFpCSlFkNVlGQWxfWDdfMW4xZV9fT1JGU2NCbkdRMGx2UXFpTl8zYUNJczlB?oc=5"
   }
  }
 }
