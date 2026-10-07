@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-07T10:41:29Z",
- "berlin": "2026-10-07 12:41",
- "status": "ok",
- "summary": "All checks passed.",
+ "generated": "2026-10-07T16:42:12Z",
+ "berlin": "2026-10-07 18:42",
+ "status": "warn",
+ "summary": "0 problem(s), 2 warning(s): AI answers: answered by gemini-3.5-flash-lite, but slowly (74 s): the fast models' free quota is probably used up for today; News outlet feeds: 56/57 working; not working: Der Spiegel (0)",
  "repairs": [],
  "checks": [
   {
@@ -10,62 +10,62 @@
    "name": "Website",
    "status": "ok",
    "detail": "HTTP 200, 419 KB",
-   "ms": 177
+   "ms": 272
   },
   {
    "g": "site",
    "name": "GitHub Pages copy",
    "status": "ok",
    "detail": "HTTP 200",
-   "ms": 257
+   "ms": 383
   },
   {
    "g": "site",
    "name": "data/news.json",
    "status": "ok",
    "detail": "HTTP 200, 610 KB",
-   "ms": 197
+   "ms": 212
   },
   {
    "g": "site",
    "name": "data/live.json",
    "status": "ok",
-   "detail": "HTTP 200, 135 KB",
-   "ms": 180
+   "detail": "HTTP 200, 143 KB",
+   "ms": 220
   },
   {
    "g": "site",
    "name": "data/politics.json",
    "status": "ok",
    "detail": "HTTP 200, 42 KB",
-   "ms": 179
+   "ms": 145
   },
   {
    "g": "site",
    "name": "data/wb.json",
    "status": "ok",
    "detail": "HTTP 200, 83 KB",
-   "ms": 51
+   "ms": 146
   },
   {
    "g": "site",
    "name": "data/geo.json",
    "status": "ok",
    "detail": "HTTP 200, 697 KB",
-   "ms": 62
+   "ms": 192
   },
   {
    "g": "site",
    "name": "data/cities.json",
    "status": "ok",
    "detail": "HTTP 200, 151 KB",
-   "ms": 49
+   "ms": 178
   },
   {
    "g": "fresh",
    "name": "Headlines (news.json)",
    "status": "ok",
-   "detail": "last update 0.4 h ago"
+   "detail": "last update 6.4 h ago"
   },
   {
    "g": "fresh",
@@ -77,7 +77,7 @@
    "g": "fresh",
    "name": "Leaders (politics.json)",
    "status": "ok",
-   "detail": "last update 12.5 h ago"
+   "detail": "last update 18.5 h ago"
   },
   {
    "g": "fresh",
@@ -107,182 +107,182 @@
    "g": "worker",
    "name": "/live (en)",
    "status": "ok",
-   "detail": "32 items",
-   "ms": 5132
+   "detail": "30 items",
+   "ms": 5298
   },
   {
    "g": "worker",
    "name": "/top (en)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 78
+   "ms": 176
   },
   {
    "g": "worker",
    "name": "/videos (en)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 454
+   "ms": 5604
   },
   {
    "g": "worker",
    "name": "/live (de)",
    "status": "ok",
-   "detail": "19 items",
-   "ms": 1349
+   "detail": "17 items",
+   "ms": 2222
   },
   {
    "g": "worker",
    "name": "/top (de)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 50
+   "ms": 1497
   },
   {
    "g": "worker",
    "name": "/videos (de)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 299
+   "ms": 420
   },
   {
    "g": "worker",
    "name": "/live (fr)",
    "status": "ok",
-   "detail": "41 items",
-   "ms": 836
+   "detail": "38 items",
+   "ms": 1020
   },
   {
    "g": "worker",
    "name": "/top (fr)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 58
+   "ms": 148
   },
   {
    "g": "worker",
    "name": "/videos (fr)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 385
+   "ms": 457
   },
   {
    "g": "worker",
    "name": "/live (es)",
    "status": "ok",
-   "detail": "9 items",
-   "ms": 538
+   "detail": "12 items",
+   "ms": 300
   },
   {
    "g": "worker",
    "name": "/top (es)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 41
+   "ms": 160
   },
   {
    "g": "worker",
    "name": "/videos (es)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 285
+   "ms": 496
   },
   {
    "g": "worker",
    "name": "/live (it)",
    "status": "ok",
-   "detail": "25 items",
-   "ms": 1140
+   "detail": "21 items",
+   "ms": 3488
   },
   {
    "g": "worker",
    "name": "/top (it)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 40
+   "ms": 141
   },
   {
    "g": "worker",
    "name": "/videos (it)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 414
+   "ms": 1960
   },
   {
    "g": "worker",
    "name": "/live (ar)",
    "status": "ok",
-   "detail": "11 items",
-   "ms": 477
+   "detail": "9 items",
+   "ms": 630
   },
   {
    "g": "worker",
    "name": "/top (ar)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 50
+   "ms": 154
   },
   {
    "g": "worker",
    "name": "/videos (ar)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 403
+   "ms": 687
   },
   {
    "g": "worker",
    "name": "Real-time search",
    "status": "ok",
-   "detail": "6 reports",
-   "ms": 3535
+   "detail": "8 reports",
+   "ms": 3584
   },
   {
    "g": "security",
    "name": "Other websites are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 21
+   "ms": 93
   },
   {
    "g": "security",
    "name": "Look-alike Pages projects are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 17
+   "ms": 127
   },
   {
    "g": "security",
    "name": "Only the site's own prompts are answered",
    "status": "ok",
    "detail": "HTTP 400 (should be 400)",
-   "ms": 21
+   "ms": 112
   },
   {
    "g": "security",
    "name": "Private chat needs a valid pass",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 23
+   "ms": 84
   },
   {
    "g": "security",
    "name": "Admin login",
    "status": "ok",
    "detail": "HTTP 401 without a code (should be 401)",
-   "ms": 17
+   "ms": 70
   },
   {
    "g": "ai",
    "name": "AI answers",
-   "status": "ok",
-   "detail": "answered by gemini-3.6-flash",
-   "ms": 3527
+   "status": "warn",
+   "detail": "answered by gemini-3.5-flash-lite, but slowly (74 s): the fast models' free quota is probably used up for today",
+   "ms": 74960
   },
   {
    "g": "sources",
    "name": "News outlet feeds",
-   "status": "ok",
-   "detail": "57/57 working"
+   "status": "warn",
+   "detail": "56/57 working; not working: Der Spiegel (0)"
   },
   {
    "g": "sources",
@@ -295,7 +295,7 @@
    "name": "Page loads and the globe starts",
    "status": "ok",
    "detail": "",
-   "ms": 3795
+   "ms": 2114
   },
   {
    "g": "browser",
@@ -334,5 +334,5 @@
    "detail": "page width 820 px on a 820 px screen"
   }
  ],
- "ms": 531206
+ "ms": 423464
 }
