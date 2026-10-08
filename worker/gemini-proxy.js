@@ -307,11 +307,17 @@ async function answerAuto(request, env, ctx, ip, kind) {
         b.contents = [{ role: "user", parts: [{ text: plainPrompt(body) }] }];
         delete b.systemInstruction; delete b.generationConfig.responseMimeType;
       }
+      // Gemini 3 thinks hard by default: 10-40 s before the first word. "low" starts in 2-5 s with answers as good
+      // for these questions (the facts come with the prompt)
+      const quick = /^gemini-3/.test(model) && !b.generationConfig.thinkingConfig;
+      if (quick) b.generationConfig.thinkingConfig = { thinkingLevel: "low" };
+      const send = () => fetchStarted(`${GOOGLE}/models/${model}:streamGenerateContent?alt=sse`, {
+        method: "POST", headers: { "x-goog-api-key": key, "Content-Type": "application/json" }, body: JSON.stringify(b),
+      }, model.startsWith("gemma") ? 110_000 : 50_000);
       let r;
       try {
-        r = await fetchStarted(`${GOOGLE}/models/${model}:streamGenerateContent?alt=sse`, {
-          method: "POST", headers: { "x-goog-api-key": key, "Content-Type": "application/json" }, body: JSON.stringify(b),
-        }, model.startsWith("gemma") ? 110_000 : 50_000);
+        r = await send();
+        if (r.status === 400 && quick) { delete b.generationConfig.thinkingConfig; r = await send(); }   // a model without thinking levels
       } catch { skipShared(slot, 60_000); continue; }   // no start within the time (or no connection): busy, try the next
       if (r.ok && r.body) {
         log(200, keys.length > 1 ? `${model} #${ki + 1}` : model);
