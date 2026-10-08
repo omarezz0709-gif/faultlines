@@ -1,6 +1,6 @@
 """Daily diagnostics (GitHub Actions, 12:30 and 18:30 Berlin time): checks the live site, its data, the AI Worker,
 every news source and a real browser run, writes data/health.json (shown in the admin panel), repairs what it can
-(a stale refresh or a broken Worker deploy is re-run) and fails the job on real problems, so GitHub sends an email.
+(a stale refresh or a broken Worker deploy is re-run, a hanging refresh run is cancelled) and fails the job on real problems, so GitHub sends an email.
 
 Statuses: ok, warn (worth a look, the site still works), fail (something visitors notice).
 Run by hand:  python scripts/diagnose.py            (add --no-browser to skip the browser test)
@@ -67,7 +67,8 @@ def check_site() -> dict:
     s, b, _, ms = fetch(SITE + "/")
     add("site", "Website", "ok" if s == 200 and b"Faultlines" in b else "fail", f"HTTP {s}, {len(b) // 1024} KB", ms)
     s, _, _, ms = fetch(MIRROR)
-    add("site", "GitHub Pages copy", "ok" if s == 200 else "warn", f"HTTP {s}", ms)
+    mirror_ok = s == 200
+    add("site", "GitHub Pages copy", "ok" if mirror_ok else "warn", f"HTTP {s}", ms)
     data = {}
     for name in ("news", "live", "politics", "wb", "geo", "cities"):
         s, b, _, ms = fetch(f"{SITE}/data/{name}.json?diag={int(time.time())}")
@@ -77,6 +78,15 @@ def check_site() -> dict:
             data[name] = None
         add("site", f"data/{name}.json", "ok" if data[name] is not None else "fail",
             f"HTTP {s}, {len(b) // 1024} KB" if data[name] is not None else f"HTTP {s}, not valid JSON", ms)
+    # the copy is published by the refresh run's last step: if that step hangs, the copy falls behind
+    if mirror_ok and data.get("news"):
+        s, b, _, _ = fetch(f"{MIRROR}data/news.json?diag={int(time.time())}")
+        try:
+            lag = age_hours(json.loads(b).get("generated")) - age_hours(data["news"].get("generated"))
+            add("site", "GitHub Pages copy is up to date", "ok" if lag < 8 else "warn",
+                f"{lag:.1f} h behind the main site" if lag >= 0.1 else "same data as the main site")
+        except (ValueError, TypeError, AttributeError):
+            add("site", "GitHub Pages copy is up to date", "warn", f"HTTP {s}, could not read its data")
     return data
 
 
@@ -292,6 +302,35 @@ def trigger(workflow: str) -> None:
     print(f"repair: gh workflow run {workflow} -> {r.returncode}", flush=True)
 
 
+def unstick_refresh() -> None:
+    """Only one refresh runs at a time, so a run that hangs holds up every later one (on 7 Oct GitHub left one
+    'waiting' for 30 hours and every refresh after it was cancelled). Cancel any that has been going for over an hour;
+    a normal run takes a few minutes."""
+    if not os.environ.get("GH_TOKEN"):
+        return
+    repo = os.environ.get("GITHUB_REPOSITORY", "omarezz0709-gif/faultlines")
+    r = subprocess.run(["gh", "run", "list", "--repo", repo, "--workflow", "refresh.yml", "--limit", "30",
+                        "--json", "databaseId,status,createdAt"], capture_output=True, text=True)
+    if r.returncode:
+        add("fresh", "Refresh runs", "warn", f"could not list them: {r.stderr.strip()[:150]}")
+        return
+    stuck = [x for x in json.loads(r.stdout or "[]")
+             if x.get("status") != "completed" and (age_hours(x.get("createdAt")) or 0) > 1]
+    for x in stuck:
+        run = str(x["databaseId"])
+        c = subprocess.run(["gh", "run", "cancel", run, "--repo", repo], capture_output=True, text=True)
+        if c.returncode:   # a run stuck before its job even started may refuse a normal cancel
+            c = subprocess.run(["gh", "api", "-X", "POST", f"repos/{repo}/actions/runs/{run}/force-cancel"],
+                               capture_output=True, text=True)
+        heal.append(f"cancelled refresh run {run} ({x.get('status')} for {age_hours(x.get('createdAt')):.0f} h)"
+                    + ("" if c.returncode == 0 else f" (failed: {c.stderr.strip()[:120]})"))
+        print(f"repair: cancel stuck refresh run {run} -> {c.returncode}", flush=True)
+    add("fresh", "Refresh runs", "ok" if not stuck else "warn",
+        "none hanging" if not stuck else f"{len(stuck)} hanging run(s) cancelled")
+    if stuck:
+        time.sleep(5)   # let GitHub release the queue before a new run is started
+
+
 def main() -> None:
     try:
         sys.stdout.reconfigure(encoding="utf-8")   # ✓ ✗ on any console
@@ -318,6 +357,7 @@ def main() -> None:
         except Exception as e:
             add("browser", "Browser test", "warn", f"could not run: {str(e)[:160]}")
     # repairs
+    unstick_refresh()
     if "refresh" in stale:
         trigger("refresh.yml")
     if worker_broken:

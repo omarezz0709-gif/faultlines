@@ -16,14 +16,16 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: refresh
-  cancel-in-progress: false
-
+# One data refresh at a time (set per job, not for the whole run): if publishing the GitHub Pages copy hangs
+# (GitHub once left it "waiting" for 30 hours), the next refreshes still run. Publishing shares the "pages" queue
+# with Publish site, and a newer publish replaces one that is still waiting.
 jobs:
   refresh:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    concurrency:
+      group: refresh-data
+      cancel-in-progress: false
     outputs:
       changed: ${{ steps.commit.outputs.changed }}
     steps:
@@ -81,6 +83,10 @@ jobs:
     needs: refresh
     if: needs.refresh.outputs.changed == 'true'
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    concurrency:
+      group: pages
+      cancel-in-progress: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
