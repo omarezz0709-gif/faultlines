@@ -1,7 +1,37 @@
 {
  "meta": {
-  "lastRun": "2026-10-07T11:15:39Z",
+  "lastRun": "2026-10-08T22:10:53Z",
   "log": [
+   {
+    "date": "2026-10-08",
+    "items": [
+     {
+      "label": "South Korea–Ukraine",
+      "change": "Note updated: South Korea recalls ambassador to Ukraine amid dispute over North Korean POWs",
+      "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNaFpvUzdPb1g5aG5hMERiblk2aWFHMFFDZS1HZW5zMFpaVklyWWlQZjh1SXk4UTF5ZVFjaE5tcFZwUmNsWURmRktxTGRoUEdKbE5KZVhBckdEVXhwejZwV0hleFdWM05UUGs1Q2oyRU5YSjEzUVVDOVJtZVpZMjlYTjY2U2kydWd4?oc=5"
+     },
+     {
+      "label": "Israel–United Kingdom",
+      "change": "Note updated: Israel downgrades UK consulate in Jerusalem over West Bank settler sanctions",
+      "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNV1hIX05LQ28yZlZuaTJFYzJyQXY4NmhmX21lSW0xOFJPZ052dHJ0TE83ck4xQ1YyUkJ3bUgwdHMwMGltVDI3VFF6ZW5FRUdaQ0xpX2ZKdFgzZHpwbzRrRnd5cHl6V3hnRHFMRGNvc1pWM2xya3UyWTZUU3dNWkRrUV9ld2NMdmRTZFhCYXhPUGVMaXdfcU4zSzViSjV6T3EzM01RX2ZteE9vc0t6Z2tLcFF6ZTNRMWN0?oc=5"
+     },
+     {
+      "label": "Eritrea–Ethiopia",
+      "change": "Note updated: Ethiopian drone strikes target Eritrean forces crossing into Tigray",
+      "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNQWFCNmFIZDM5V3F4R1QzQTM5N1V2TWZTLXRkWHg2T1h4clFpclMzVlNkQzNqd09kTHJERGsxNFlrV2hkV2JjbEtfdmNuM1FmckctcmhHd2RXcjlUMURyd3JvTGhtNFhaUW1LQ3VNaUpfVjdkZktEVi01Y3hNT29VMFpJZGlNdXlKeDhOWDV5c2YwVHZtSDFhdXd4U1lhRl9ZMVRJ?oc=5"
+     },
+     {
+      "label": "Strait of Hormuz",
+      "change": "Updated: Tanker strikes off Qatar and Oman safe corridor talks",
+      "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWGpBZ3dHeE0yV0pvMTR0VTBMdHpZQUZoWjdneXNyV0d3RWVoZm1TWFJ5cS16Y0lCRk5PM2dEdVp1dlp2ZEJwTkQ5SlR4dVVoYzVwa0pEdjd5OUJCUTZmaVdRTUk4alo5TTJFRlVVV2lkSzl3MU5PMER5WkR1T2tlYVdNNU15cGQxMVViendna1NZRjBxdnUxb2dMZHFua2ZzVFZ4YTJ4cUg?oc=5"
+     },
+     {
+      "label": "Kosovo",
+      "change": "Presidential election: Justina Shiroka Pula elected president by parliament",
+      "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNcXNYdk0xcTVZR21jTUJwSWtNS1hlanhxSlVTMXpKQkw0SjlLbC1UOFRrRVVMSDB6dEpPTXFwd2lVMENRRzVlVkpIaXhqV3E5THBoSzhiWERZRnp2SnQxWWFLU18tSnJGUjJMZ1dvdEFRc2YxY2pTME82YTNLQ2RjNjZ0cjlzUQ?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-07",
     "items": [
@@ -971,7 +1001,7 @@
     ]
    }
   ],
-  "summary": "This update registers diplomatic and security shifts, including tensions between Bulgaria and Russia over Black Sea shipping strikes, new defense ties for Greece and Sweden, and regional updates in the Middle East and Sahel."
+  "summary": "South Korea recalls its ambassador from Ukraine over North Korean POWs, Israel downgrades the UK consulate in Jerusalem, Ethiopian drones strike Eritrean forces in Tigray, and Hormuz attacks spread to waters off Qatar."
  },
  "relations": {
   "DNK-USA": {
@@ -1154,9 +1184,9 @@
    "a": "ERI",
    "b": "ETH",
    "s": "W",
-   "note": "Eritrea formally severs diplomatic ties with Ethiopia as fighting escalates in the north, raising fears of a wider regional war.",
-   "updated": "2026-10-02",
-   "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPVmRQeE0yUmJiQkRnMnlqS0pNZWRPcVZNWkxIS25CY0hELWxzbFRqUHl5cF8tYmZjOHpxOGVmc2ZxdXNCMmxFMUJSRkJ5NkU2MHhablJHb3pTdVJyNXVNUWVMTGwyb1lJdXdzek5yV2dGcHNzc0JndGFkdnN4bm5HMFJxdHRicWFHQVNTVUh5Q2RVbDVCbnIxR1dwN2d3ZzhQNVNERnc5dVNzZ1V5UkJtclFFRlYweERicGpLRTE3SXBHOE0?oc=5"
+   "note": "Ethiopian forces launch drone strikes against Eritrean troops in Tigray as cross-border fighting reignites regional conflict.",
+   "updated": "2026-10-08",
+   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNQWFCNmFIZDM5V3F4R1QzQTM5N1V2TWZTLXRkWHg2T1h4clFpclMzVlNkQzNqd09kTHJERGsxNFlrV2hkV2JjbEtfdmNuM1FmckctcmhHd2RXcjlUMURyd3JvTGhtNFhaUW1LQ3VNaUpfVjdkZktEVi01Y3hNT29VMFpJZGlNdXlKeDhOWDV5c2YwVHZtSDFhdXd4U1lhRl9ZMVRJ?oc=5"
   },
   "AFG-PAK": {
    "a": "AFG",
@@ -1186,9 +1216,9 @@
    "a": "KOR",
    "b": "UKR",
    "s": "T",
-   "note": "Tensions rise as Ukraine accuses South Korea of aiding Russia with oil, while Seoul demands a better apology over prisoners of war (POWs).",
-   "updated": "2026-10-07",
-   "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNY3ExNDNMZllIeFY4LTh2TVpwYkZ4dVZ6M19fcm9WMmY3WWxYOFJvcjVuMWgyOXBmUGlWRDdQTmhMZVBQOHdJMi1HeW1IUWdLbVhyT3JoZ2RzVFZYV1QwZXNuQUg5RjEyQlIxakhzRERjS0hUaWp2dk1DSVN0S2VKakIycXI?oc=5"
+   "note": "South Korea recalls its ambassador to Ukraine amid an escalating diplomatic rift over North Korean prisoners of war (POWs).",
+   "updated": "2026-10-08",
+   "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNaFpvUzdPb1g5aG5hMERiblk2aWFHMFFDZS1HZW5zMFpaVklyWWlQZjh1SXk4UTF5ZVFjaE5tcFZwUmNsWURmRktxTGRoUEdKbE5KZVhBckdEVXhwejZwV0hleFdWM05UUGs1Q2oyRU5YSjEzUVVDOVJtZVpZMjlYTjY2U2kydWd4?oc=5"
   },
   "MDA-RUS": {
    "a": "MDA",
@@ -1402,9 +1432,9 @@
    "a": "GBR",
    "b": "ISR",
    "s": "T",
-   "note": "Ties grow tense as the United Kingdom threatens to expel 27 Israeli diplomats over the ordered closure of its Jerusalem consulate.",
-   "updated": "2026-10-05",
-   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOeDFocHg1WnhnbXQ5RVlCUUcwdUlmX2tZYjRfRVRVdUNJQkdWUTVfeF9KWWtQWnN6NXB6czk5QmpJWUxpaGNrQktDeFFLU0tnRThMWjVmd1RGQjgwRml5dUxWRGF6X2lBQXFoaWJLS0x4d1Zfb2h3OHhRcmQ4UGRIWUljemRJYjBQMVNsQ1lUa0FadngxOUdpTGtlZFN1RHpULU5mZjk5czBHSExi0gGyAUFVX3lxTFBZVmJnR0dGTlJ3blRYa3l5YU1GMDRRa19SbnRhRnhOV204clNmdWxUclplMnBNeHp3SWp5SllZbC1mZ0RLam5kdzJvUDJEUHBOWXVBN2hxeW5jOHNqUWE5Z3FYMDBxNmp0Umo4S1FvRU80ZkxubGFGY2M5ZnRkZjhiVWtyRi1BVHF3TmtzZklOZFlEQWtTeUJCSUlhQW9OTHk3WnkzVzBFT1hlNWFvbkdWdEE?oc=5"
+   "note": "Israel downgrades the United Kingdom's consulate in Jerusalem to a mission over sanctions targeting West Bank settlements.",
+   "updated": "2026-10-08",
+   "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNV1hIX05LQ28yZlZuaTJFYzJyQXY4NmhmX21lSW0xOFJPZ052dHJ0TE83ck4xQ1YyUkJ3bUgwdHMwMGltVDI3VFF6ZW5FRUdaQ0xpX2ZKdFgzZHpwbzRrRnd5cHl6V3hnRHFMRGNvc1pWM2xya3UyWTZUU3dNWkRrUV9ld2NMdmRTZFhCYXhPUGVMaXdfcU4zSzViSjV6T3EzM01RX2ZteE9vc0t6Z2tLcFF6ZTNRMWN0?oc=5"
   },
   "SYR-USA": {
    "a": "SYR",
@@ -1883,18 +1913,19 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "The strategic Gulf exit remains highly volatile as commercial tankers, including a Panama-flagged vessel with Indian crew, face projectile strikes.",
+   "d": "Iran threatens full closure while striking tankers off Qatar, as Tehran and Oman discuss a temporary safe transit corridor.",
    "n": "Strait of Hormuz",
-   "s": "Highly volatile · Tankers hit by projectiles",
-   "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRmRrSWp0M1V4dGpYTmIyNThOZFZ5OXBiNjZfQ0M5ODdLSEJRTnJ6cTdxRmFIN0pJZGJxMG1Va0Z4SE9OX1pOTzg4ZjAzLVBKaGh4OTdaX3p0R0NhVzJfTU1hcmZadEVqMGxpSXE3c1B1QXE4dGFMcFZ5TFNsNHRuQlUxNXJ0aWx2Mk84T3JhRHFLQ0hKVnlYOVh3UFVSRXVZdlRha0pKdF9KS1FBa3c?oc=5",
-   "updated": "2026-10-07",
+   "s": "Threatened closure · Tankers struck off Qatar",
+   "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWGpBZ3dHeE0yV0pvMTR0VTBMdHpZQUZoWjdneXNyV0d3RWVoZm1TWFJ5cS16Y0lCRk5PM2dEdVp1dlp2ZEJwTkQ5SlR4dVVoYzVwa0pEdjd5OUJCUTZmaVdRTUk4alo5TTJFRlVVV2lkSzl3MU5PMER5WkR1T2tlYVdNNU15cGQxMVViendna1NZRjBxdnUxb2dMZHFua2ZzVFZ4YTJ4cUg?oc=5",
+   "updated": "2026-10-08",
    "t": "strait",
    "lat": 26.57,
    "lng": 56.25,
    "p": [
     "IRN",
     "OMN",
-    "ARE"
+    "ARE",
+    "QAT"
    ]
   },
   "suwa-ki-gap": {
@@ -2096,9 +2127,9 @@
    "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaVljRGFEc3E2TWc0OXY2THJXLWlqY0JTb1RuVHFVZWl6TmxCMXNtTm9uMnhyaEFRalVZOGExZ3ozY0FGWEJhNWJhdEc1QkhPcXlVS2ktRXhzSEZZZXU0SlRmQ2lLR0VXc1VOU0NiRGFod0g2VFRobWdfSU5GUUc3SEg1RHpKdzhVQVp4ZnRPUWY0ZHZYaUlVc05NaXg4dUZmR2Fhb3pB?oc=5"
   },
   "XKX": {
-   "lastelec": "Presidential election, October 2026, Justina Shiroka Pula",
-   "updated": "2026-10-07",
-   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVkp3X2hqdFNnXzkwMmpmMGxxMm5xblNaOVdFdUUtdXNjZnRFMmMzMVZqSkRRTDdtYXNiR0lheDB0UFMyV3Iwc19mZGI3MlhwTi1SZlNKRG9fSzktNTRWemQwYWpfZFdUX0JsTHVQRFpCSlFkNVlGQWxfWDdfMW4xZV9fT1JGU2NCbkdRMGx2UXFpTl8zYUNJczlB?oc=5"
+   "lastelec": "presidential, October 2026, Justina Shiroka Pula",
+   "updated": "2026-10-08",
+   "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNcXNYdk0xcTVZR21jTUJwSWtNS1hlanhxSlVTMXpKQkw0SjlLbC1UOFRrRVVMSDB6dEpPTXFwd2lVMENRRzVlVkpIaXhqV3E5THBoSzhiWERZRnp2SnQxWWFLU18tSnJGUjJMZ1dvdEFRc2YxY2pTME82YTNLQ2RjNjZ0cjlzUQ?oc=5"
   }
  }
 }
