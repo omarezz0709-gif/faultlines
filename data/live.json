@@ -1,7 +1,17 @@
 {
  "meta": {
-  "lastRun": "2026-10-08T22:10:53Z",
+  "lastRun": "2026-10-09T05:16:41Z",
   "log": [
+   {
+    "date": "2026-10-09",
+    "items": [
+     {
+      "label": "South Korea–Ukraine",
+      "change": "Normal → Tense: Ambassador recalled over North Korean POW dispute",
+      "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPS3owNDFFRVJubUtqWllGa3dtTi1EcDFjWHFTd0ZkYW9ydUhhZG9yRS1td2ZaVnM0RkFINS1XVi1rRy1ocEVoT3pXQmFaSmZoQUxDX19xSDZsbWE3TlhrSmp6LVV4a2JUM3g0aV8tVzVHSmI5aDlRMGVweEVuTFNQZmFOZVg0ZDJXa21CajFBeHVBZG5VTTlhbjhmZndoNFg2OWlpVDVoYm5YbWpM?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-08",
     "items": [
@@ -1001,7 +1011,7 @@
     ]
    }
   ],
-  "summary": "South Korea recalls its ambassador from Ukraine over North Korean POWs, Israel downgrades the UK consulate in Jerusalem, Ethiopian drones strike Eritrean forces in Tigray, and Hormuz attacks spread to waters off Qatar."
+  "summary": "Poland elects Karol Nawrocki, Kosovo elects Justina Shiroka Pula, and Spain prepares for snap elections following housing protests."
  },
  "relations": {
   "DNK-USA": {
@@ -1216,9 +1226,9 @@
    "a": "KOR",
    "b": "UKR",
    "s": "T",
-   "note": "South Korea recalls its ambassador to Ukraine amid an escalating diplomatic rift over North Korean prisoners of war (POWs).",
-   "updated": "2026-10-08",
-   "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNaFpvUzdPb1g5aG5hMERiblk2aWFHMFFDZS1HZW5zMFpaVklyWWlQZjh1SXk4UTF5ZVFjaE5tcFZwUmNsWURmRktxTGRoUEdKbE5KZVhBckdEVXhwejZwV0hleFdWM05UUGs1Q2oyRU5YSjEzUVVDOVJtZVpZMjlYTjY2U2kydWd4?oc=5"
+   "note": "South Korea recalls its ambassador to Ukraine over a diplomatic dispute regarding North Korean prisoners of war.",
+   "updated": "2026-10-09",
+   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPS3owNDFFRVJubUtqWllGa3dtTi1EcDFjWHFTd0ZkYW9ydUhhZG9yRS1td2ZaVnM0RkFINS1XVi1rRy1ocEVoT3pXQmFaSmZoQUxDX19xSDZsbWE3TlhrSmp6LVV4a2JUM3g0aV8tVzVHSmI5aDlRMGVweEVuTFNQZmFOZVg0ZDJXa21CajFBeHVBZG5VTTlhbjhmZndoNFg2OWlpVDVoYm5YbWpM?oc=5"
   },
   "MDA-RUS": {
    "a": "MDA",
@@ -2122,14 +2132,20 @@
    "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSGtaN0YzYTJnMjB2WGU1X1Z0Q0hwYmNjel9ZOXdiLU1yQmpNOXdTdlIwYnRlazZLXy1vQ05EUWsxbkhGUlpVYWhwR2x2a1FNcUpFaktWZXBOc2dfSDh6aEtFbGRDY3RsRDRnNHZwMGRGdUlfM050VkhZXy1SNXBfSXJvNmRpejdyS3c?oc=5"
   },
   "ESP": {
-   "nextelec": "Snap general election, scheduled for late 2026",
-   "updated": "2026-10-07",
-   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaVljRGFEc3E2TWc0OXY2THJXLWlqY0JTb1RuVHFVZWl6TmxCMXNtTm9uMnhyaEFRalVZOGExZ3ozY0FGWEJhNWJhdEc1QkhPcXlVS2ktRXhzSEZZZXU0SlRmQ2lLR0VXc1VOU0NiRGFod0g2VFRobWdfSU5GUUc3SEg1RHpKdzhVQVp4ZnRPUWY0ZHZYaUlVc05NaXg4dUZmR2Fhb3pB?oc=5"
+   "nextelec": "Snap election, late 2026",
+   "updated": "2026-10-09",
+   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOd1lxakh4S193MUNCR0R6bTR6Z25xbXJnWi04WFczdEJsOWJVREoyMlEwekxQZHpfOHdiTGlDRFdoM0R5RC1FZmF3MkJ3Z25uTVlWcnItYXAxRTVKYzc2bTFvZXFpVXNoeDk1Z2tzR0ZkRkdpczFkLVZ2dVd2cG03X3VxYmc0U0dodzdWX3AyUXRtTW9CQzViV0FpM0loQ0Y5Tk1mb2RSZ2pCcVk?oc=5"
   },
   "XKX": {
    "lastelec": "presidential, October 2026, Justina Shiroka Pula",
    "updated": "2026-10-08",
    "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNcXNYdk0xcTVZR21jTUJwSWtNS1hlanhxSlVTMXpKQkw0SjlLbC1UOFRrRVVMSDB6dEpPTXFwd2lVMENRRzVlVkpIaXhqV3E5THBoSzhiWERZRnp2SnQxWWFLU18tSnJGUjJMZ1dvdEFRc2YxY2pTME82YTNLQ2RjNjZ0cjlzUQ?oc=5"
+  },
+  "POL": {
+   "lastelec": "Presidential, October 2025, Karol Nawrocki",
+   "nextelec": "Parliamentary, 2027",
+   "updated": "2026-10-09",
+   "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPN2tPN2FYN25QYkwweTJiaV8yY3hTQlZDRlFkWXFONGlkdDhiSzh6a0N2ZFVCUmdta2xhaE1pUDl2M3RzQl9BazZYR0o0bjVZaFFpX1hveDJiT0ZvRy0tdkI3OHdab2k1bDBLWXEtTG9GY2JmR1N0dTRuQ1A4dEFhWlo1TmNuVnpKOHpPYU1pYVMxLVQwQ2dSVFRRUVktX05Bd0otemNrcnl2MkdpNS1fMUhCVzc3T08xbnMxVm1Od3dyUE1RQUs0Nk5wcDh6OTBURGd0SWVMSQ?oc=5"
   }
  }
 }
