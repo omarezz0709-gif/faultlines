@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-09T05:16:41Z",
+  "lastRun": "2026-10-09T11:15:16Z",
   "log": [
    {
     "date": "2026-10-09",
@@ -9,6 +9,41 @@
       "label": "South Korea–Ukraine",
       "change": "Normal → Tense: Ambassador recalled over North Korean POW dispute",
       "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPS3owNDFFRVJubUtqWllGa3dtTi1EcDFjWHFTd0ZkYW9ydUhhZG9yRS1td2ZaVnM0RkFINS1XVi1rRy1ocEVoT3pXQmFaSmZoQUxDX19xSDZsbWE3TlhrSmp6LVV4a2JUM3g0aV8tVzVHSmI5aDlRMGVweEVuTFNQZmFOZVg0ZDJXa21CajFBeHVBZG5VTTlhbjhmZndoNFg2OWlpVDVoYm5YbWpM?oc=5"
+     },
+     {
+      "label": "Turkmenistan–Uzbekistan",
+      "change": "Normal → Partner: strategic partnership treaty establishes Supreme Council",
+      "source": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNZlZJWk1LVDZscnN0M3g1NU91T0lQaERtTDE2Y2FDTXg1TVo1U1BYcm94Q0NzZGRPbkNRbUNmUFB6WHhBY241ZXZBN0lBZEduc0Ntd0p4X0s3ekxtZHdHOWxTWFZVVjhDUEVUbzNQMEl5S2xOYmtNTWlBUTVLYkdQQUJZZEVFQXNQck0zWmJkSXQtYWlqaTZPeWQ3Vm5fdks2bUh4ckYzX2gzc2ZEUDdqWjZsUlFfOEZEblI2MWFGbVBKWVBCQXllTWZFRWpkNmF3VHRwOXZleUQzdDNYUTRTSm9Fbng?oc=5"
+     },
+     {
+      "label": "Japan–Russia",
+      "change": "Note updated: Tokyo protests Russian extradition requests for ICC staff",
+      "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQYU9vdjZMUWJxOU0xejdUYVF4Y0d5bnR1Y1pmdUVRem1IVjlLTzJQbXRzVlM3aFNacUpDdl9UbERIZzhNd3VCMnVPVkVkSndZYzBfNXRBeDJQODVXNGw5dmhiaGtNZlFPVUdSN0ZYUVFuTjJNVlhDbXRaRWt4dDZESkZ0OWo1R01XV3RZSWo3QWw1QW96RmhZdkhrd0ZFaVBubEZLRmtpalJPeHVaWVlPQld3?oc=5"
+     },
+     {
+      "label": "Houthi Red Sea campaign",
+      "change": "Thread updated: Syria added as Riyadh airport strikes kill three",
+      "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQMEFCQWZhWGJXa25ZeDBOZlE3b3RWQldSSUM5MmRDd1JqdFNvbl83R19nc014ek1YTW1iQlBqbW1paUlManF3UzlNT21BTl81cG5NNGQ5MWhWOWZOMnpQamN6TmxrUFVLVXRCaTl2T0JYclhVc3dvLUpNeG5wY3JSci02OHVtWmRpemp2UExRUGRoTnpyN3lKUGlRQ3FHdS1pZDNvNVM0bWE2djAzNzNvNTg4RVdXVEhw?oc=5"
+     },
+     {
+      "label": "Strait of Magellan",
+      "change": "POI updated: US-Chile diplomatic controversy over navigation alignment",
+      "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOSVFxQ2c2ZmE2d2QyNFQzcVlma09JZHlBRzVUR0dXWHJxNlBHc3loWjlwbURfSFJrWDdtck9yMmVPRXhacjBCUlNhX1EtVm13R2ZNWkNJdnhJUTRPTWllTVVLOHZRMDllSXJmeWJQNFQ5WllqZ3c1TWJGenRMNUthQWJKZHVJY3hDN21OdUtRTWgyMWFCY1dYSUZDSS1fUDZmS3lialRoSVFaa1RNOHA0N3RIQnhSWnhLRzZPZUtvWF9CUUhy?oc=5"
+     },
+     {
+      "label": "Spain",
+      "change": "Politics updated: snap general election scheduled for Nov 2026",
+      "source": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNTVzV2tnVC1rR0hDV1k4dndkcVh5R0Zha3VNS1NmTzlOQ1RxQnByendkSS1HVTdTQndFVXdLeWR0cnJwWXJzZmNpS1J3cTd2OWFwaEh0Vm5keHNadDhxaHdpaWZzZEtDamdMUUFGUm1TSjUzMzlyaG1iWmdmbm16NG9YemhWeG9xbHgwTG9tYmFRbjBJRVlmbVFyelVTWER1TmZ6WHQwWDBJRE53RHFZaWFCRkJlRXB6TGRfcVZvLW5NN0VYWnE5RlFSazJPd0RhenN1NEtFQ0VaOXE5NFHSAd4BQVVfeXFMTTU1c1drZ1Qta0dIQ1dZOHZ3ZHFYeUdGYWt1TUtTZk85TkNUcUJwcnp3ZEktR1U3U0J3RVV3S3lkdHJycFlyc2ZjaUtSd3E3djlhcGhIdFZuZHhzWnQ4cWh3aWlmc2RLQ2pnTFFBRlJtU0o1MzM5cmhtYlpnZm5tejRvWHpoVnhvcWx4MExvbWJhUW4wSUVZZm1RcnpVU1hEdU5melh0MFgwSUROd0RxWWlhQkZCZUVwekxkX3FWby1uTTdFWFpxOUZRUmsyT3dEYXpzdTRLRUNFWjlxOTRR?oc=5"
+     },
+     {
+      "label": "Guinea-Bissau",
+      "change": "Politics updated: December 6 general elections postponed",
+      "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcnp0STN1eU9aU0hDQnNLVlBCNUhnYkZfLUFZTUpJeWhoUnc5TkZkcXVmSndfM0NSMHRwQVZJUW1VTExnRTEtdXJUQWNzTk5TZUNwdVBDQ2ZZSGhQWjhjQUY0eWluazJZUEcycWw4bndBcHJMZnFPQVMzZmNVMlFmX1FfV0E3Ymtja200SU1Ed2gyNnFXbWc?oc=5"
+     },
+     {
+      "label": "Kosovo",
+      "change": "Politics updated: Justina Shiroka-Pula elected president",
+      "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUWNGbTNiTDJwakpEd1lYYko2MkpzOUpzWHRIdnFRZWllYV9lX3lyOHZuZkhwUjFuNVQzdUdzMGc2UWZEWXV2MmxGOHhLdTRHUTg5Y0tqclN6czJFcXN1TTBYZ1NyYTU4WkN5M0l5c2hkV1p0Z2xjeWktWEFfaUlrdGw1dC1iY055UkJkVVo0dzBveHMzNDZiTDZDeHRxWVpZeE5hVzRn?oc=5"
      }
     ]
    },
@@ -1011,7 +1046,7 @@
     ]
    }
   ],
-  "summary": "Poland elects Karol Nawrocki, Kosovo elects Justina Shiroka Pula, and Spain prepares for snap elections following housing protests."
+  "summary": "Turkmenistan and Uzbekistan sign a strategic partnership treaty; Tokyo protests Moscow's extradition warrants for ICC staff; and Houthi strikes on Riyadh airport prompt potential Syrian defense engagement."
  },
  "relations": {
   "DNK-USA": {
@@ -1757,6 +1792,22 @@
    "note": "Tensions remain high as Israeli forces intensify incursions in southern Syria's Quneitra, drawing condemnation from Damascus.",
    "updated": "2026-10-07",
    "source": "https://news.google.com/rss/articles/CBMif0FVX3lxTE81MWtRYlZGWmhtenNxZkQxeWZUWHpZeVBkbVZzYlBzUkFkcWpHaTFLd0s4ck90OG1qdXJqM3hBMW9XYVFJcVgtX1FkUGt1bnpwMXhUMXVRZXlkMElBdTNJVmtrdjJvWHFkdHlFbzNMellhWmFpNjdienZ2Z2VSbnM?oc=5"
+  },
+  "JPN-RUS": {
+   "a": "JPN",
+   "b": "RUS",
+   "s": "T",
+   "note": "Tokyo protests Moscow's extradition requests targeting International Criminal Court (ICC) President Tomoko Akane and staff.",
+   "updated": "2026-10-09",
+   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQYU9vdjZMUWJxOU0xejdUYVF4Y0d5bnR1Y1pmdUVRem1IVjlLTzJQbXRzVlM3aFNacUpDdl9UbERIZzhNd3VCMnVPVkVkSndZYzBfNXRBeDJQODVXNGw5dmhiaGtNZlFPVUdSN0ZYUVFuTjJNVlhDbXRaRWt4dDZESkZ0OWo1R01XV3RZSWo3QWw1QW96RmhZdkhrd0ZFaVBubEZLRmtpalJPeHVaWVlPQld3?oc=5"
+  },
+  "TKM-UZB": {
+   "a": "TKM",
+   "b": "UZB",
+   "s": "F",
+   "note": "Turkmenistan and Uzbekistan sign a strategic partnership treaty establishing a Supreme Council for Strategic Partnership.",
+   "updated": "2026-10-09",
+   "source": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNZlZJWk1LVDZscnN0M3g1NU91T0lQaERtTDE2Y2FDTXg1TVo1U1BYcm94Q0NzZGRPbkNRbUNmUFB6WHhBY241ZXZBN0lBZEduc0Ntd0p4X0s3ekxtZHdHOWxTWFZVVjhDUEVUbzNQMEl5S2xOYmtNTWlBUTVLYkdQQUJZZEVFQXNQck0zWmJkSXQtYWlqaTZPeWQ3Vm5fdks2bUh4ckYzX2gzc2ZEUDdqWjZsUlFfOEZEblI2MWFGbVBKWVBCQXllTWZFRWpkNmF3VHRwOXZleUQzdDNYUTRTSm9Fbng?oc=5"
   }
  },
  "threads": {
@@ -1773,13 +1824,14 @@
     "GBR",
     "FRA",
     "TUR",
-    "PAK"
+    "PAK",
+    "SYR"
    ],
-   "d": "Yemen's Houthis launch escalatory missile strikes on Saudi airports and Aden, prompting Turkey and Pakistan to deploy troops under the Mecca Joint Defense Agreement.",
+   "d": "Iranian-backed Houthis launch missiles from Yemen at Saudi airports, killing civilians in Riyadh and prompting potential Syrian and allied defense aid.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPdEltR052QUpLeFVyT1F6dVBGOE94bzJZVjhRMFBvUkdGQVM2T3lCRGlLUmd1RzZyemRXUHVzME9XUGNmSmxJTWcxNmhSdE5kdTBRWDJwU0oyWURHYmc0eGtjdjdyNzNNUFo5ZWdmNDhaSVNvT1RFeXpwU1k3dHBlb0RoZVpYSFdoNVhwcWNsR2x5akZnWElkVVY0OVJzZmZwV1NtV1Y5RklnV1BKLXgtbnRVd0pPWFpUSnY0R0hpRFlaa21FUzNaREtLRVRGZVIxaVVnV0poNEdUTTBQVGE1TQ?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQMEFCQWZhWGJXa25ZeDBOZlE3b3RWQldSSUM5MmRDd1JqdFNvbl83R19nc014ek1YTW1iQlBqbW1paUlManF3UzlNT21BTl81cG5NNGQ5MWhWOWZOMnpQamN6TmxrUFVLVXRCaTl2T0JYclhVc3dvLUpNeG5wY3JSci02OHVtWmRpemp2UExRUGRoTnpyN3lKUGlRQ3FHdS1pZDNvNVM0bWE2djAzNzNvNTg4RVdXVEhw?oc=5",
    "t": "security",
-   "updated": "2026-10-07"
+   "updated": "2026-10-09"
   },
   "afpak-jihad": {
    "t": "security",
@@ -1959,6 +2011,13 @@
    ],
    "updated": "2026-10-04",
    "source": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPYS1CbXFGTXZ2MllSWE9vNnZLLTczUkpzeWtwTEpmTEFRM0Njd3ozSHo3dVpwbjB4ZVp5VmdsRUhuTXpHdk5LSTBTajRBMkItWGlqNWFIRVJHRkpmUVo1N010Y3dDRXVrUGJ5VHduRXBFZ0Rmcmw5aHg3Zno4bG9qU0lVUk14MlBNa21J?oc=5"
+  },
+  "strait-of-magellan": {
+   "n": "Strait of Magellan",
+   "s": "US-Chile transit dispute",
+   "d": "Diplomatic friction rises as the United States (US) presses Chile to align passage rights through the strategic waterway with Washington.",
+   "updated": "2026-10-09",
+   "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOSVFxQ2c2ZmE2d2QyNFQzcVlma09JZHlBRzVUR0dXWHJxNlBHc3loWjlwbURfSFJrWDdtck9yMmVPRXhacjBCUlNhX1EtVm13R2ZNWkNJdnhJUTRPTWllTVVLOHZRMDllSXJmeWJQNFQ5WllqZ3c1TWJGenRMNUthQWJKZHVJY3hDN21OdUtRTWgyMWFCY1dYSUZDSS1fUDZmS3lialRoSVFaa1RNOHA0N3RIQnhSWnhLRzZPZUtvWF9CUUhy?oc=5"
   }
  },
  "politics": {
@@ -2132,20 +2191,25 @@
    "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSGtaN0YzYTJnMjB2WGU1X1Z0Q0hwYmNjel9ZOXdiLU1yQmpNOXdTdlIwYnRlazZLXy1vQ05EUWsxbkhGUlpVYWhwR2x2a1FNcUpFaktWZXBOc2dfSDh6aEtFbGRDY3RsRDRnNHZwMGRGdUlfM050VkhZXy1SNXBfSXJvNmRpejdyS3c?oc=5"
   },
   "ESP": {
-   "nextelec": "Snap election, late 2026",
+   "nextelec": "snap general, Nov 2026",
    "updated": "2026-10-09",
-   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOd1lxakh4S193MUNCR0R6bTR6Z25xbXJnWi04WFczdEJsOWJVREoyMlEwekxQZHpfOHdiTGlDRFdoM0R5RC1FZmF3MkJ3Z25uTVlWcnItYXAxRTVKYzc2bTFvZXFpVXNoeDk1Z2tzR0ZkRkdpczFkLVZ2dVd2cG03X3VxYmc0U0dodzdWX3AyUXRtTW9CQzViV0FpM0loQ0Y5Tk1mb2RSZ2pCcVk?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNTVzV2tnVC1rR0hDV1k4dndkcVh5R0Zha3VNS1NmTzlOQ1RxQnByendkSS1HVTdTQndFVXdLeWR0cnJwWXJzZmNpS1J3cTd2OWFwaEh0Vm5keHNadDhxaHdpaWZzZEtDamdMUUFGUm1TSjUzMzlyaG1iWmdmbm16NG9YemhWeG9xbHgwTG9tYmFRbjBJRVlmbVFyelVTWER1TmZ6WHQwWDBJRE53RHFZaWFCRkJlRXB6TGRfcVZvLW5NN0VYWnE5RlFSazJPd0RhenN1NEtFQ0VaOXE5NFHSAd4BQVVfeXFMTTU1c1drZ1Qta0dIQ1dZOHZ3ZHFYeUdGYWt1TUtTZk85TkNUcUJwcnp3ZEktR1U3U0J3RVV3S3lkdHJycFlyc2ZjaUtSd3E3djlhcGhIdFZuZHhzWnQ4cWh3aWlmc2RLQ2pnTFFBRlJtU0o1MzM5cmhtYlpnZm5tejRvWHpoVnhvcWx4MExvbWJhUW4wSUVZZm1RcnpVU1hEdU5melh0MFgwSUROd0RxWWlhQkZCZUVwekxkX3FWby1uTTdFWFpxOUZRUmsyT3dEYXpzdTRLRUNFWjlxOTRR?oc=5"
   },
   "XKX": {
-   "lastelec": "presidential, October 2026, Justina Shiroka Pula",
-   "updated": "2026-10-08",
-   "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNcXNYdk0xcTVZR21jTUJwSWtNS1hlanhxSlVTMXpKQkw0SjlLbC1UOFRrRVVMSDB6dEpPTXFwd2lVMENRRzVlVkpIaXhqV3E5THBoSzhiWERZRnp2SnQxWWFLU18tSnJGUjJMZ1dvdEFRc2YxY2pTME82YTNLQ2RjNjZ0cjlzUQ?oc=5"
+   "lastelec": "presidential, Oct 2026, Justina Shiroka-Pula",
+   "updated": "2026-10-09",
+   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUWNGbTNiTDJwakpEd1lYYko2MkpzOUpzWHRIdnFRZWllYV9lX3lyOHZuZkhwUjFuNVQzdUdzMGc2UWZEWXV2MmxGOHhLdTRHUTg5Y0tqclN6czJFcXN1TTBYZ1NyYTU4WkN5M0l5c2hkV1p0Z2xjeWktWEFfaUlrdGw1dC1iY055UkJkVVo0dzBveHMzNDZiTDZDeHRxWVpZeE5hVzRn?oc=5"
   },
   "POL": {
    "lastelec": "Presidential, October 2025, Karol Nawrocki",
    "nextelec": "Parliamentary, 2027",
    "updated": "2026-10-09",
    "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPN2tPN2FYN25QYkwweTJiaV8yY3hTQlZDRlFkWXFONGlkdDhiSzh6a0N2ZFVCUmdta2xhaE1pUDl2M3RzQl9BazZYR0o0bjVZaFFpX1hveDJiT0ZvRy0tdkI3OHdab2k1bDBLWXEtTG9GY2JmR1N0dTRuQ1A4dEFhWlo1TmNuVnpKOHpPYU1pYVMxLVQwQ2dSVFRRUVktX05Bd0otemNrcnl2MkdpNS1fMUhCVzc3T08xbnMxVm1Od3dyUE1RQUs0Nk5wcDh6OTBURGd0SWVMSQ?oc=5"
+  },
+  "GNB": {
+   "nextelec": "general, postponed from Dec 2026",
+   "updated": "2026-10-09",
+   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcnp0STN1eU9aU0hDQnNLVlBCNUhnYkZfLUFZTUpJeWhoUnc5TkZkcXVmSndfM0NSMHRwQVZJUW1VTExnRTEtdXJUQWNzTk5TZUNwdVBDQ2ZZSGhQWjhjQUY0eWluazJZUEcycWw4bndBcHJMZnFPQVMzZmNVMlFmX1FfV0E3Ymtja200SU1Ed2gyNnFXbWc?oc=5"
   }
  }
 }
