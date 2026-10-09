@@ -1,15 +1,10 @@
 {
  "meta": {
-  "lastRun": "2026-10-09T16:08:25Z",
+  "lastRun": "2026-10-09T22:09:57Z",
   "log": [
    {
     "date": "2026-10-09",
     "items": [
-     {
-      "label": "South Korea–Ukraine",
-      "change": "Normal → Tense: Ambassador recalled over North Korean POW dispute",
-      "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPS3owNDFFRVJubUtqWllGa3dtTi1EcDFjWHFTd0ZkYW9ydUhhZG9yRS1td2ZaVnM0RkFINS1XVi1rRy1ocEVoT3pXQmFaSmZoQUxDX19xSDZsbWE3TlhrSmp6LVV4a2JUM3g0aV8tVzVHSmI5aDlRMGVweEVuTFNQZmFOZVg0ZDJXa21CajFBeHVBZG5VTTlhbjhmZndoNFg2OWlpVDVoYm5YbWpM?oc=5"
-     },
      {
       "label": "Turkmenistan–Uzbekistan",
       "change": "Normal → Partner: strategic partnership treaty establishes Supreme Council",
@@ -59,6 +54,11 @@
       "label": "Kosovo",
       "change": "Parliament elects Justina Shiroka Pula as president in a late-night vote to avert early elections.",
       "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPWDliNVFiM3lXLWszb2UxUzYxNHd2TFNwNXFIZVZITVpXeVNjZ2gzYlZYOFNlNVhzVm5VQTUtR3RfcUJRNXQ4ZnZ0LS1lYW1FODRyS2lUd0pERzEtaVpFUFl5TVcyNjh6bEpRMFdaemtLcjZrZXFDZS1TNTlLOXc4UldGbFJDb1Y5STg5Vk5Vd2pJa2tIRl9zbHFQeHZ6bWs4Tkx1d1BQR29GclgxWUp5UE9oVFpIYjQ?oc=5"
+     },
+     {
+      "label": "South Korea–Ukraine",
+      "change": "Normal → Tense: South Korea recalls ambassador over POW dispute",
+      "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdGlHMFdmMXF1VV9KcE5vQnFfYXRQQ1hPcjFfWVpESlZsLWlrRUVZMmE5cVZKY1N0Um9VQS1yYTZUVEJQQkFWdTlMcUxSSDJ5Zy0yZ0dJX0NSVlZ6UkJ6QW5ycUp3VUg0UkJKTTd1OElscVFXVE5LRUFmRzFVNHlKd2otWV9EYUc4?oc=5"
      }
     ]
    },
@@ -1061,7 +1061,7 @@
     ]
    }
   ],
-  "summary": "Montenegro expels a Russian military blogger over alleged destabilisation plots, Ethiopia reports an Eritrean invasion push to the UN, and Kosovo lawmakers elect a new president."
+  "summary": "South Korea recalls its ambassador to Ukraine over a North Korean prisoner of war dispute, while Houthi strikes on Saudi Arabia escalate regional tensions."
  },
  "relations": {
   "DNK-USA": {
@@ -1278,7 +1278,7 @@
    "s": "T",
    "note": "South Korea recalls its ambassador to Ukraine over a diplomatic dispute regarding North Korean prisoners of war.",
    "updated": "2026-10-09",
-   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPS3owNDFFRVJubUtqWllGa3dtTi1EcDFjWHFTd0ZkYW9ydUhhZG9yRS1td2ZaVnM0RkFINS1XVi1rRy1ocEVoT3pXQmFaSmZoQUxDX19xSDZsbWE3TlhrSmp6LVV4a2JUM3g0aV8tVzVHSmI5aDlRMGVweEVuTFNQZmFOZVg0ZDJXa21CajFBeHVBZG5VTTlhbjhmZndoNFg2OWlpVDVoYm5YbWpM?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdGlHMFdmMXF1VV9KcE5vQnFfYXRQQ1hPcjFfWVpESlZsLWlrRUVZMmE5cVZKY1N0Um9VQS1yYTZUVEJQQkFWdTlMcUxSSDJ5Zy0yZ0dJX0NSVlZ6UkJ6QW5ycUp3VUg0UkJKTTd1OElscVFXVE5LRUFmRzFVNHlKd2otWV9EYUc4?oc=5"
   },
   "MDA-RUS": {
    "a": "MDA",
