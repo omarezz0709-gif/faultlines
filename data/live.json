@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-09T11:15:16Z",
+  "lastRun": "2026-10-09T16:08:25Z",
   "log": [
    {
     "date": "2026-10-09",
@@ -41,9 +41,24 @@
       "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcnp0STN1eU9aU0hDQnNLVlBCNUhnYkZfLUFZTUpJeWhoUnc5TkZkcXVmSndfM0NSMHRwQVZJUW1VTExnRTEtdXJUQWNzTk5TZUNwdVBDQ2ZZSGhQWjhjQUY0eWluazJZUEcycWw4bndBcHJMZnFPQVMzZmNVMlFmX1FfV0E3Ymtja200SU1Ed2gyNnFXbWc?oc=5"
      },
      {
+      "label": "Ethiopia–Eritrea",
+      "change": "Note updated: Ethiopia tells the UN Security Council that Eritrea invaded Tigray and advanced 60 km.",
+      "source": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5lc2h0MmpQMHF1Nnd3bXRtd3pCNVc3SU96eFVWejduYlNYWHpQZnNRRVBSM1hDYnRuc1IzMlhfQW44LWc4SWc2dDFRUXJLajlIX3NUMmREbVBQYkwtLWZtQW1pbVo2LTJLQk02LTQ3dw?oc=5"
+     },
+     {
+      "label": "Cambodia–Vietnam",
+      "change": "Tense → Normal: Relations improve as Vietnam's new prime minister visits Phnom Penh and signs six bilateral pacts.",
+      "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPd0h6ZFJkeXR3MHJNVlRaMUw3bC1GNUpMVVJfZ25FN3dYVGtzenQydko0SFd4TElMdHZ0WXlmN3FiMFpoejhpSkFCeHFvd1MwZjFVLTJfZHFvRDQwcldlNkpEbExTTE9wbndQcGo2VlJmVW40alJGZmxXYkhsaERQMlNud2xMUWdNejdEckNkT3ZTaVJQWVZmZEFrTnN4MC1q?oc=5"
+     },
+     {
+      "label": "Montenegro–Russia",
+      "change": "None → Tense: Montenegro detains and expels a prominent Russian pro-war blogger over alleged hybrid warfare activities.",
+      "source": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQN0x1cWkxTWo4SnNFZk0yOE5nanFMLVJkTFBhTTgzc3BhWldfYU5FaW5TYzFNdHlibWd6czRWd1BXZFFjT3hJYmFiUUpRUzk3SlN3Vnd4dVlWWC05ODZ1eWpvYldOSmhuaHN0V2ptV1UyZjNNWWxKNTJSNWh3ZXNlUEt4NUJJM3pvR0MyRlBzVTlBZW11dWhXMFRQNXZkNFowQmUyT3hBbDZaSDJBTF9WR0ZHc005LWFyM3RNcmZsLUNxU0JZVXJGZjF3MlM4TEd0YzBN?oc=5"
+     },
+     {
       "label": "Kosovo",
-      "change": "Politics updated: Justina Shiroka-Pula elected president",
-      "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUWNGbTNiTDJwakpEd1lYYko2MkpzOUpzWHRIdnFRZWllYV9lX3lyOHZuZkhwUjFuNVQzdUdzMGc2UWZEWXV2MmxGOHhLdTRHUTg5Y0tqclN6czJFcXN1TTBYZ1NyYTU4WkN5M0l5c2hkV1p0Z2xjeWktWEFfaUlrdGw1dC1iY055UkJkVVo0dzBveHMzNDZiTDZDeHRxWVpZeE5hVzRn?oc=5"
+      "change": "Parliament elects Justina Shiroka Pula as president in a late-night vote to avert early elections.",
+      "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPWDliNVFiM3lXLWszb2UxUzYxNHd2TFNwNXFIZVZITVpXeVNjZ2gzYlZYOFNlNVhzVm5VQTUtR3RfcUJRNXQ4ZnZ0LS1lYW1FODRyS2lUd0pERzEtaVpFUFl5TVcyNjh6bEpRMFdaemtLcjZrZXFDZS1TNTlLOXc4UldGbFJDb1Y5STg5Vk5Vd2pJa2tIRl9zbHFQeHZ6bWs4Tkx1d1BQR29GclgxWUp5UE9oVFpIYjQ?oc=5"
      }
     ]
    },
@@ -1046,7 +1061,7 @@
     ]
    }
   ],
-  "summary": "Turkmenistan and Uzbekistan sign a strategic partnership treaty; Tokyo protests Moscow's extradition warrants for ICC staff; and Houthi strikes on Riyadh airport prompt potential Syrian defense engagement."
+  "summary": "Montenegro expels a Russian military blogger over alleged destabilisation plots, Ethiopia reports an Eritrean invasion push to the UN, and Kosovo lawmakers elect a new president."
  },
  "relations": {
   "DNK-USA": {
@@ -1229,9 +1244,9 @@
    "a": "ERI",
    "b": "ETH",
    "s": "W",
-   "note": "Ethiopian forces launch drone strikes against Eritrean troops in Tigray as cross-border fighting reignites regional conflict.",
-   "updated": "2026-10-08",
-   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNQWFCNmFIZDM5V3F4R1QzQTM5N1V2TWZTLXRkWHg2T1h4clFpclMzVlNkQzNqd09kTHJERGsxNFlrV2hkV2JjbEtfdmNuM1FmckctcmhHd2RXcjlUMURyd3JvTGhtNFhaUW1LQ3VNaUpfVjdkZktEVi01Y3hNT29VMFpJZGlNdXlKeDhOWDV5c2YwVHZtSDFhdXd4U1lhRl9ZMVRJ?oc=5"
+   "note": "Ethiopia accuses Eritrea of an invasion pushing 60 km into Tigray as both nations exchange accusations of waging war.",
+   "updated": "2026-10-09",
+   "source": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5lc2h0MmpQMHF1Nnd3bXRtd3pCNVc3SU96eFVWejduYlNYWHpQZnNRRVBSM1hDYnRuc1IzMlhfQW44LWc4SWc2dDFRUXJLajlIX3NUMmREbVBQYkwtLWZtQW1pbVo2LTJLQk02LTQ3dw?oc=5"
   },
   "AFG-PAK": {
    "a": "AFG",
@@ -1356,10 +1371,10 @@
   "KHM-VNM": {
    "a": "KHM",
    "b": "VNM",
-   "s": "T",
-   "note": "Tensions persist as Cambodia denies any role in the alleged abduction of Vietnamese activists on its soil.",
-   "updated": "2026-10-07",
-   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZ1F5OThwYzdFUzA4NU1lR2gySkNUZGZnRkNDNlVxcWo5Y3o1T2dnWU9Ibi05eGQ1YkJKcVhrMUFaUTZZTkxSZGh4Z1lmV1hmM3lFOEptYnhlMmJ0UEdGT2xYOXNnZFI4dllUSlM1WnVrZHlJSUtpRUJDU0ZLRlh6WG42enVrclpaZFlETlJRLTkwUHZjQ3c?oc=5"
+   "s": "N",
+   "note": "Vietnamese Prime Minister Le Minh Hung visits Phnom Penh to sign six bilateral agreements on trade, education, and security.",
+   "updated": "2026-10-09",
+   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPd0h6ZFJkeXR3MHJNVlRaMUw3bC1GNUpMVVJfZ25FN3dYVGtzenQydko0SFd4TElMdHZ0WXlmN3FiMFpoejhpSkFCeHFvd1MwZjFVLTJfZHFvRDQwcldlNkpEbExTTE9wbndQcGo2VlJmVW40alJGZmxXYkhsaERQMlNud2xMUWdNejdEckNkT3ZTaVJQWVZmZEFrTnN4MC1q?oc=5"
   },
   "CHE-RUS": {
    "a": "CHE",
@@ -1808,6 +1823,14 @@
    "note": "Turkmenistan and Uzbekistan sign a strategic partnership treaty establishing a Supreme Council for Strategic Partnership.",
    "updated": "2026-10-09",
    "source": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNZlZJWk1LVDZscnN0M3g1NU91T0lQaERtTDE2Y2FDTXg1TVo1U1BYcm94Q0NzZGRPbkNRbUNmUFB6WHhBY241ZXZBN0lBZEduc0Ntd0p4X0s3ekxtZHdHOWxTWFZVVjhDUEVUbzNQMEl5S2xOYmtNTWlBUTVLYkdQQUJZZEVFQXNQck0zWmJkSXQtYWlqaTZPeWQ3Vm5fdks2bUh4ckYzX2gzc2ZEUDdqWjZsUlFfOEZEblI2MWFGbVBKWVBCQXllTWZFRWpkNmF3VHRwOXZleUQzdDNYUTRTSm9Fbng?oc=5"
+  },
+  "MNE-RUS": {
+   "a": "MNE",
+   "b": "RUS",
+   "s": "T",
+   "note": "Montenegro expels Russian military blogger Mikhail Zvinchuk over alleged destabilisation plots, prompting a Russian probe.",
+   "updated": "2026-10-09",
+   "source": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQN0x1cWkxTWo4SnNFZk0yOE5nanFMLVJkTFBhTTgzc3BhWldfYU5FaW5TYzFNdHlibWd6czRWd1BXZFFjT3hJYmFiUUpRUzk3SlN3Vnd4dVlWWC05ODZ1eWpvYldOSmhuaHN0V2ptV1UyZjNNWWxKNTJSNWh3ZXNlUEt4NUJJM3pvR0MyRlBzVTlBZW11dWhXMFRQNXZkNFowQmUyT3hBbDZaSDJBTF9WR0ZHc005LWFyM3RNcmZsLUNxU0JZVXJGZjF3MlM4TEd0YzBN?oc=5"
   }
  },
  "threads": {
@@ -2196,9 +2219,9 @@
    "source": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNTVzV2tnVC1rR0hDV1k4dndkcVh5R0Zha3VNS1NmTzlOQ1RxQnByendkSS1HVTdTQndFVXdLeWR0cnJwWXJzZmNpS1J3cTd2OWFwaEh0Vm5keHNadDhxaHdpaWZzZEtDamdMUUFGUm1TSjUzMzlyaG1iWmdmbm16NG9YemhWeG9xbHgwTG9tYmFRbjBJRVlmbVFyelVTWER1TmZ6WHQwWDBJRE53RHFZaWFCRkJlRXB6TGRfcVZvLW5NN0VYWnE5RlFSazJPd0RhenN1NEtFQ0VaOXE5NFHSAd4BQVVfeXFMTTU1c1drZ1Qta0dIQ1dZOHZ3ZHFYeUdGYWt1TUtTZk85TkNUcUJwcnp3ZEktR1U3U0J3RVV3S3lkdHJycFlyc2ZjaUtSd3E3djlhcGhIdFZuZHhzWnQ4cWh3aWlmc2RLQ2pnTFFBRlJtU0o1MzM5cmhtYlpnZm5tejRvWHpoVnhvcWx4MExvbWJhUW4wSUVZZm1RcnpVU1hEdU5melh0MFgwSUROd0RxWWlhQkZCZUVwekxkX3FWby1uTTdFWFpxOUZRUmsyT3dEYXpzdTRLRUNFWjlxOTRR?oc=5"
   },
   "XKX": {
-   "lastelec": "presidential, Oct 2026, Justina Shiroka-Pula",
+   "lastelec": "presidential, October 2026, Justina Shiroka Pula",
    "updated": "2026-10-09",
-   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUWNGbTNiTDJwakpEd1lYYko2MkpzOUpzWHRIdnFRZWllYV9lX3lyOHZuZkhwUjFuNVQzdUdzMGc2UWZEWXV2MmxGOHhLdTRHUTg5Y0tqclN6czJFcXN1TTBYZ1NyYTU4WkN5M0l5c2hkV1p0Z2xjeWktWEFfaUlrdGw1dC1iY055UkJkVVo0dzBveHMzNDZiTDZDeHRxWVpZeE5hVzRn?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPWDliNVFiM3lXLWszb2UxUzYxNHd2TFNwNXFIZVZITVpXeVNjZ2gzYlZYOFNlNVhzVm5VQTUtR3RfcUJRNXQ4ZnZ0LS1lYW1FODRyS2lUd0pERzEtaVpFUFl5TVcyNjh6bEpRMFdaemtLcjZrZXFDZS1TNTlLOXc4UldGbFJDb1Y5STg5Vk5Vd2pJa2tIRl9zbHFQeHZ6bWs4Tkx1d1BQR29GclgxWUp5UE9oVFpIYjQ?oc=5"
   },
   "POL": {
    "lastelec": "Presidential, October 2025, Karol Nawrocki",
