@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-10T10:17:06Z",
+  "lastRun": "2026-10-10T22:08:14Z",
   "log": [
    {
     "date": "2026-10-10",
@@ -24,6 +24,16 @@
       "label": "Spain",
       "change": "Next election set: snap general election announced",
       "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPc2hEMmViQkNJWmlmZ0x2cmFrTUNVWHhxNHAwUDcwM0ZlZmhjVUNiU2FuYkNTdVdpUGRQbXRXVEw1VnNQSnotNllzQjdYNUxYRDVHX2ZqLTVXMnFLMlg3Q0F0Vmd0eWY5RHFtZWFPT0VaU1Znd0h0bVhtbVkzN1BHNGlRZUVuZXpya0phVy1RRzEwY3ZCRVUwZmdDNUVLc1B6ZzZzQ2drdmR2aDZyTjg5WXg1VdIBtwFBVV95cUxQVTRqeFp5Q2tzUnBiczdvNnZsei1JZWhwT3c4NnI0bnFxNVIyejg4cXRkMWpIb0VmdmlrUHpDV0Y4WF81Vk5uYkptR19xUW5COXd5em4xMTlxT3BtU05fUUVGMDZibVd4RWFwRDNSNU56bm5TbjlIODlwNnB4aXkxVlJ2OEgzVnM4bHNUWDZYM2hRSkRjeEJvcUFMYnlpMndCYUdLbDFKSTlhelJrelg0em9BUy1RMW8?oc=5"
+     },
+     {
+      "label": "United States–Ukraine",
+      "change": "Partner → Tense: US signs Russian diesel deal and calls for Ukrainian leadership change",
+      "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVzQyclJRckNHd2JzSkhSY2FPSmR4anpVRzljNUkxVFRlN3JNSnRvTWNqRDJ5dS1HTXJ4R3RlLWNZNW1rRkdZLTVjU0UyM2YzcmRnTHVETXpMYlktam5KR21GLWc5RXBxN2dWWVFjdmxROC0xTFpraEdLQ2dDWER2NW8tV3owVjdBdXJidFpLbUFKR1NKQmFVbXVEVjYwWWRpTnZDX0xyVl9HUC1oVmRiZmp0Z0hSdmZzQWhMOTZubjI?oc=5"
+     },
+     {
+      "label": "Germany–Russia",
+      "change": "Note refreshed: Germany maintains sanctions despite US-Russia diesel deal",
+      "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNmJQM3NXMWRLZVUzQTBVYU9sc2xpdzRRR044OU15anFzS0ZKNlhDVjVnSjJvUHRGRjUyV2JBMGRvTU9CU1paZm1XTjV6b0NESW92NUVwb29pdm16NDNURW5HdGJtblBCbmtTbkRYQnEtUU5LWnlwOHh2VVZxOWhMelFzczAxOEE1cERnZzdsVlBMcFg0R2RnMjBmdUw0Z0JtbkpkYlJHMjMwOGw5Q2pUWg?oc=5"
      }
     ]
    },
@@ -1086,7 +1096,7 @@
     ]
    }
   ],
-  "summary": "The United States moves to lift its decades-old flight ban to Lebanon and signs a diesel trade deal with Russia, while Slovakia restores military dialogue with Moscow and Houthi strikes escalate in Saudi Arabia."
+  "summary": "Tensions increase between the United States and Ukraine as Washington signs a diesel agreement with Moscow and calls for leadership changes in Kyiv, while European nations reaffirm sanctions on Russia."
  },
  "relations": {
   "DNK-USA": {
@@ -1245,9 +1255,9 @@
    "a": "DEU",
    "b": "RUS",
    "s": "H",
-   "note": "Adversaries over Ukraine; foreign ministers hold first talks since 2022 as Berlin warns Moscow against escalating hybrid warfare.",
-   "updated": "2026-09-26",
-   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbWNfaThadkVvT1ZZTVdqejc3bTJQUHpXZFlaa1BCNE1UWExnVm5jR2VneGxjQWx2RDZya0tlTlhDb2lPd0lrTWNVdmtCZjdBWlFtU2RUQ2VkN0JnYmF0bTY0am5QOHhpMm5FdFVZN05ab2RIcVlDS0V4b0tPaGNLZlVBa2x2dGVlTG41ZlpDZjVTcUEwekppRi1B?oc=5"
+   "note": "Germany maintains sanctions against Russia, rejecting a United States (US) agreement on Russian diesel imports.",
+   "updated": "2026-10-10",
+   "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNmJQM3NXMWRLZVUzQTBVYU9sc2xpdzRRR044OU15anFzS0ZKNlhDVjVnSjJvUHRGRjUyV2JBMGRvTU9CU1paZm1XTjV6b0NESW92NUVwb29pdm16NDNURW5HdGJtblBCbmtTbkRYQnEtUU5LWnlwOHh2VVZxOWhMelFzczAxOEE1cERnZzdsVlBMcFg0R2RnMjBmdUw0Z0JtbkpkYlJHMjMwOGw5Q2pUWg?oc=5"
   },
   "PAK-SAU": {
    "a": "PAK",
@@ -1880,6 +1890,14 @@
    "note": "Relations remain strained over Ukraine, though the United States (US) signs an agreement to purchase Russian diesel.",
    "updated": "2026-10-10",
    "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPOWNiWXFjdDVDWlJVSnNhZjNfT0lRcHdldENiRnk5NDVFeGczWXlnRXU2bEhieTl6TWM1Q0dCS0dnVG5fd2dFSXdaY2xRcGVqV1U5U245MHdPWnpsTlc1Y1BQOUdpZ0JoQkNsUUQ1MHlBQ0tNbW9PNzZsVzFoRW4xRG1sNzNZc0FPd0I5LUszVmhmM1JkVW1Sb2VSVlNOTXZaSk9kUjNaOFRPbTY0djhKYmcyUnFlWkh1bzdvcndBZGxOTTZFb1Z6THNVdE4tTGROUFZVUw?oc=5"
+  },
+  "UKR-USA": {
+   "a": "UKR",
+   "b": "USA",
+   "s": "T",
+   "note": "Tensions rise as the United States (US) signs a Russian diesel deal and demands Ukrainian leadership change.",
+   "updated": "2026-10-10",
+   "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVzQyclJRckNHd2JzSkhSY2FPSmR4anpVRzljNUkxVFRlN3JNSnRvTWNqRDJ5dS1HTXJ4R3RlLWNZNW1rRkdZLTVjU0UyM2YzcmRnTHVETXpMYlktam5KR21GLWc5RXBxN2dWWVFjdmxROC0xTFpraEdLQ2dDWER2NW8tV3owVjdBdXJidFpLbUFKR1NKQmFVbXVEVjYwWWRpTnZDX0xyVl9HUC1oVmRiZmp0Z0hSdmZzQWhMOTZubjI?oc=5"
   }
  },
  "threads": {
@@ -2242,9 +2260,9 @@
    "source": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNXFXa1c5U05DZHNINV9rcExET0NiRnFoaEkyczUyUjNIUi1pa1psaVEyQ1hUR2JvYllsUkxPQnRJWTlxdnV0QmFQTjE3d3A3RXdQLTkxU0hWaVR1MW5vUlZJUmxSSHVLWUFWdlJVbk91X1I5NnVZaWZ6aXk0NmRxa1ZDdk92UnhxNFIxUFVLVkE1TVhhelU5SW9ueThycGJfZG1LZmZRVmhXQnlKMFl5cVBDa1BqblRMODYwZWV6UFZEaHF5aFRfVml6UUtJZzNp0gHWAUFVX3lxTE5XWVRjcFRCQXdGWEktQ3Y0Zi1ZeXgyQWo1bUdIVlFNTkdReU1jWEQ4MkhYNnRTNGM1MGxDWHJndjM0bUU2WThEWElkYUhER2tpUE1Za2sxWjVldkhkRllGWDlUcjlpVXUxSVFpaTFfOE8tTlpjamRJaUhNZnJqVDZ3bmlacF9iS2NqbWpZcGktT29ZbjJ2bHBETUlqZXJPVVhQNkhwNnZmdERQczl6dWw3MWctSDdfQ0R2VzlEV2VQSHdDYkx6Snh2cVYxM3gtLThOalNpX3c?oc=5"
   },
   "NZL": {
-   "nextelec": "general, November 2026",
-   "updated": "2026-10-04",
-   "source": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxNbTVwT0QwalBBOWhseC0tWUdHX0cxek5fR3I3d0M1RWc3bGJ5VThrb3h0OHgtNXBXR2xxckVrdGt1X01vUHFUS0tVeHllNUFKVmhwRlFuVlRkNGFOYjV2Z1RJUzN0cE9zSF9JNkxIQXhyY1hHN0xhZHl3QUtfRUVDVnl4SDhLaEVkZFNwUmZVbWtZalZmSTNjcktKWXIzOGEzWmZhWTFTTDB1SHktaDRSaW00dFlWb3ZrdU1IS2ZsZzF5LVlIaE94ajFLX1BKcE41SW9mQlhkWGxUN3BLY1BsUDM1NmgxbGNqQm13ZFlILS15TXlnVXJaRlRLNGdOWjJ4M21iUWpDY2ZGc09rTXVyRl8zYVJ1WUdwekNqX09MOEZJZWlELW9pV1QtZEpwRVlMWmFWZXBPcDRSaXEzblhNd0xDYjZoZ2xJcXZmY2tnOGRVdm14U1NTUdIB2AJBVV95cUxNbTVwT0QwalBBOWhseC0tWUdHX0cxek5fR3I3d0M1RWc3bGJ5VThrb3h0OHgtNXBXR2xxckVrdGt1X01vUHFUS0tVeHllNUFKVmhwRlFuVlRkNGFOYjV2Z1RJUzN0cE9zSF9JNkxIQXhyY1hHN0xhZHl3QUtfRUVDVnl4SDhLaEVkZFNwUmZVbWtZalZmSTNjcktKWXIzOGEzWmZhWTFTTDB1SHktaDRSaW00dFlWb3ZrdU1IS2ZsZzF5LVlIaE94ajFLX1BKcE41SW9mQlhkWGxUN3BLY1BsUDM1NmgxbGNqQm13ZFlILS15TXlnVXJaRlRLNGdOWjJ4M21iUWpDY2ZGc09rTXVyRl8zYVJ1WUdwekNqX09MOEZJZWlELW9pV1QtZEpwRVlMWmFWZXBPcDRSaXEzblhNd0xDYjZoZ2xJcXZmY2tnOGRVdm14U1NTUQ?oc=5"
+   "nextelec": "General election, November 2026",
+   "updated": "2026-10-10",
+   "source": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOQ1JRd1JnTWpNYk1uRzNnUVRuUHJzcDdyLWpxTHJmemNHelVienFoY2xCVDViS2dtNXpXY1ZnZW9ra1RGUEQ2TUUwcjZPcHBjaFR6OHcyam9xSlRFZ2VYSmlGTXdQVWdHRWpmQTc1Q0Q2dDJJSTdhYWRVbFYyNGs0ZldoQThJV2VVdkdtR1QtYXdJUFRuc0pxSlZUYUN3NlI0QjlOUXU2bkxPakRfRWN3WGtWOGhRMm1wOHJ0NmFKUTZQNEpzYnhaMTF6eDkya2d4ZG5PSUxYcUJqOHFlLUdz0gHkAUFVX3lxTE9tWk5IOTZyTUdDTFRlZDg0elJoaHlpSFJSay1sY01GU05jb3h1TVVQV2dURlFpVzZmNVctYkczQ0o1RUQ4bFlZWDg5dExQVjRIWk5ONnZBcHJyTExGVm4xX01mUDM1YVp3RTl4SFppLXJjUHBjakUxNmJnTEwyWFhZTklkTTJrZzRCODVDSFVqOUVyU3FkdWRHT2hGMHFJX0hqM0RidEhPNElHVGdUdDlmOGl4Q0Q4Y2o5UWVLa0RPNXA5ZVhoeklVbk9GRWx2bGxmQjhLZ2g2MF90YW5VUUFvMXcxZw?oc=5"
   },
   "GRD": {
    "nextelec": "general election, November 5, 2026",
@@ -2279,9 +2297,14 @@
    "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPN2tPN2FYN25QYkwweTJiaV8yY3hTQlZDRlFkWXFONGlkdDhiSzh6a0N2ZFVCUmdta2xhaE1pUDl2M3RzQl9BazZYR0o0bjVZaFFpX1hveDJiT0ZvRy0tdkI3OHdab2k1bDBLWXEtTG9GY2JmR1N0dTRuQ1A4dEFhWlo1TmNuVnpKOHpPYU1pYVMxLVQwQ2dSVFRRUVktX05Bd0otemNrcnl2MkdpNS1fMUhCVzc3T08xbnMxVm1Od3dyUE1RQUs0Nk5wcDh6OTBURGd0SWVMSQ?oc=5"
   },
   "GNB": {
-   "nextelec": "general, postponed from Dec 2026",
-   "updated": "2026-10-09",
-   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcnp0STN1eU9aU0hDQnNLVlBCNUhnYkZfLUFZTUpJeWhoUnc5TkZkcXVmSndfM0NSMHRwQVZJUW1VTExnRTEtdXJUQWNzTk5TZUNwdVBDQ2ZZSGhQWjhjQUY0eWluazJZUEcycWw4bndBcHJMZnFPQVMzZmNVMlFmX1FfV0E3Ymtja200SU1Ed2gyNnFXbWc?oc=5"
+   "nextelec": "General elections postponed",
+   "updated": "2026-10-10",
+   "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeWpPV0VtSUdjN3h4dEJ3OUJ1Y0EtWWNvb3VUX2FMNHk3ZDBJRHB2Y29JX2J6ZXlKeUxFMkZpcDVHZjlmaE44YnQ5UTdNYlFiSTlFRnYzdUZOX3BsdFk3blVVUU1WU3hTNXo5MUhBaWZOdnM4ek9ZTThpR2VxbWI1Ni1VemxDcEpIdHdzTlI3VQ?oc=5"
+  },
+  "PSE": {
+   "nextelec": "Legislative elections postponed to September 2027",
+   "updated": "2026-10-10",
+   "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQc3kzNDkzYlBzWkE1TnJ4UzJibG1WaG1WTk42anJBRGpqVFdrV3FLR1FNT0EwVHBxX00zYlVhOTVfRV9tVTJXRFZEMTNKUWt1dnNob1Jyc2dYLUpibUlQVFBLNDgtUmk1X0tCdGwtelJuWXpyU1ZnS1R1UVRkdTNDTUwtT19jMzFaQmZuVzRjSjM1dzlGcXpldGtvZlZYZHhtbE9FRFlJMWVlUklyYVE?oc=5"
   }
  }
 }
