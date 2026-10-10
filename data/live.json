@@ -1,7 +1,32 @@
 {
  "meta": {
-  "lastRun": "2026-10-09T22:09:57Z",
+  "lastRun": "2026-10-10T10:17:06Z",
   "log": [
+   {
+    "date": "2026-10-10",
+    "items": [
+     {
+      "label": "Lebanon–United States",
+      "change": "Note refreshed: US moves to lift 41-year air travel ban",
+      "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWkg0Q3lZbkxhMThrcGVNTWtDdnNSSEl2M1ctMFo3a2pIenhxbnUxS014Qm1MVlE5TXF3aWlpYjZsbGRvQnByTlFmdDhxVmhQZlI3aURHVXdjSmhOaW5OaW95cjVLSUk4STJxZzRqZHByc21RckRId2JNRGJud2k1Rk5SNDNNbzRpRDZ2QzEzcDZqQzh4cl9PMEo4ODNNa19xZmJxS3FQNzN4WVdwR3FF?oc=5"
+     },
+     {
+      "label": "Russia–Slovakia",
+      "change": "Hostile → Normal: Slovakia restores military contacts with Russia",
+      "source": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9lbXFEcGJyeGlrajMwOEtMOWZTeE1wN1RuSlZwVmpZRUhVdldXUkxUMlduR1lfOURtaWl1OGpPTWUxcC1Mc2k1TGhJaEp5dHdhVFcxNW13TmlnRm9EQWxaQndWUFBvM1ItemZSODZzSVNSVERDaEE?oc=5"
+     },
+     {
+      "label": "Russia–United States",
+      "change": "Note refreshed: US signs diesel import agreement with Russia",
+      "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPOWNiWXFjdDVDWlJVSnNhZjNfT0lRcHdldENiRnk5NDVFeGczWXlnRXU2bEhieTl6TWM1Q0dCS0dnVG5fd2dFSXdaY2xRcGVqV1U5U245MHdPWnpsTlc1Y1BQOUdpZ0JoQkNsUUQ1MHlBQ0tNbW9PNzZsVzFoRW4xRG1sNzNZc0FPd0I5LUszVmhmM1JkVW1Sb2VSVlNOTXZaSk9kUjNaOFRPbTY0djhKYmcyUnFlWkh1bzdvcndBZGxOTTZFb1Z6THNVdE4tTGROUFZVUw?oc=5"
+     },
+     {
+      "label": "Spain",
+      "change": "Next election set: snap general election announced",
+      "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPc2hEMmViQkNJWmlmZ0x2cmFrTUNVWHhxNHAwUDcwM0ZlZmhjVUNiU2FuYkNTdVdpUGRQbXRXVEw1VnNQSnotNllzQjdYNUxYRDVHX2ZqLTVXMnFLMlg3Q0F0Vmd0eWY5RHFtZWFPT0VaU1Znd0h0bVhtbVkzN1BHNGlRZUVuZXpya0phVy1RRzEwY3ZCRVUwZmdDNUVLc1B6ZzZzQ2drdmR2aDZyTjg5WXg1VdIBtwFBVV95cUxQVTRqeFp5Q2tzUnBiczdvNnZsei1JZWhwT3c4NnI0bnFxNVIyejg4cXRkMWpIb0VmdmlrUHpDV0Y4WF81Vk5uYkptR19xUW5COXd5em4xMTlxT3BtU05fUUVGMDZibVd4RWFwRDNSNU56bm5TbjlIODlwNnB4aXkxVlJ2OEgzVnM4bHNUWDZYM2hRSkRjeEJvcUFMYnlpMndCYUdLbDFKSTlhelJrelg0em9BUy1RMW8?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-09",
     "items": [
@@ -1061,7 +1086,7 @@
     ]
    }
   ],
-  "summary": "South Korea recalls its ambassador to Ukraine over a North Korean prisoner of war dispute, while Houthi strikes on Saudi Arabia escalate regional tensions."
+  "summary": "The United States moves to lift its decades-old flight ban to Lebanon and signs a diesel trade deal with Russia, while Slovakia restores military dialogue with Moscow and Houthi strikes escalate in Saudi Arabia."
  },
  "relations": {
   "DNK-USA": {
@@ -1831,6 +1856,30 @@
    "note": "Montenegro expels Russian military blogger Mikhail Zvinchuk over alleged destabilisation plots, prompting a Russian probe.",
    "updated": "2026-10-09",
    "source": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQN0x1cWkxTWo4SnNFZk0yOE5nanFMLVJkTFBhTTgzc3BhWldfYU5FaW5TYzFNdHlibWd6czRWd1BXZFFjT3hJYmFiUUpRUzk3SlN3Vnd4dVlWWC05ODZ1eWpvYldOSmhuaHN0V2ptV1UyZjNNWWxKNTJSNWh3ZXNlUEt4NUJJM3pvR0MyRlBzVTlBZW11dWhXMFRQNXZkNFowQmUyT3hBbDZaSDJBTF9WR0ZHc005LWFyM3RNcmZsLUNxU0JZVXJGZjF3MlM4TEd0YzBN?oc=5"
+  },
+  "LBN-USA": {
+   "a": "LBN",
+   "b": "USA",
+   "s": "F",
+   "note": "The United States (US) moves to lift a 41-year flight ban to Lebanon, welcomed by Lebanese leaders.",
+   "updated": "2026-10-10",
+   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWkg0Q3lZbkxhMThrcGVNTWtDdnNSSEl2M1ctMFo3a2pIenhxbnUxS014Qm1MVlE5TXF3aWlpYjZsbGRvQnByTlFmdDhxVmhQZlI3aURHVXdjSmhOaW5OaW95cjVLSUk4STJxZzRqZHByc21RckRId2JNRGJud2k1Rk5SNDNNbzRpRDZ2QzEzcDZqQzh4cl9PMEo4ODNNa19xZmJxS3FQNzN4WVdwR3FF?oc=5"
+  },
+  "RUS-SVK": {
+   "a": "RUS",
+   "b": "SVK",
+   "s": "N",
+   "note": "Slovakia restores direct military contacts with Russia after a four-year suspension.",
+   "updated": "2026-10-10",
+   "source": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9lbXFEcGJyeGlrajMwOEtMOWZTeE1wN1RuSlZwVmpZRUhVdldXUkxUMlduR1lfOURtaWl1OGpPTWUxcC1Mc2k1TGhJaEp5dHdhVFcxNW13TmlnRm9EQWxaQndWUFBvM1ItemZSODZzSVNSVERDaEE?oc=5"
+  },
+  "RUS-USA": {
+   "a": "RUS",
+   "b": "USA",
+   "s": "H",
+   "note": "Relations remain strained over Ukraine, though the United States (US) signs an agreement to purchase Russian diesel.",
+   "updated": "2026-10-10",
+   "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPOWNiWXFjdDVDWlJVSnNhZjNfT0lRcHdldENiRnk5NDVFeGczWXlnRXU2bEhieTl6TWM1Q0dCS0dnVG5fd2dFSXdaY2xRcGVqV1U5U245MHdPWnpsTlc1Y1BQOUdpZ0JoQkNsUUQ1MHlBQ0tNbW9PNzZsVzFoRW4xRG1sNzNZc0FPd0I5LUszVmhmM1JkVW1Sb2VSVlNOTXZaSk9kUjNaOFRPbTY0djhKYmcyUnFlWkh1bzdvcndBZGxOTTZFb1Z6THNVdE4tTGROUFZVUw?oc=5"
   }
  },
  "threads": {
@@ -1850,11 +1899,11 @@
     "PAK",
     "SYR"
    ],
-   "d": "Iranian-backed Houthis launch missiles from Yemen at Saudi airports, killing civilians in Riyadh and prompting potential Syrian and allied defense aid.",
-   "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQMEFCQWZhWGJXa25ZeDBOZlE3b3RWQldSSUM5MmRDd1JqdFNvbl83R19nc014ek1YTW1iQlBqbW1paUlManF3UzlNT21BTl81cG5NNGQ5MWhWOWZOMnpQamN6TmxrUFVLVXRCaTl2T0JYclhVc3dvLUpNeG5wY3JSci02OHVtWmRpemp2UExRUGRoTnpyN3lKUGlRQ3FHdS1pZDNvNVM0bWE2djAzNzNvNTg4RVdXVEhw?oc=5",
+   "d": "Iranian-backed Houthis launch drones and missiles from Yemen at Saudi airports and Red Sea shipping, drawing heavy retaliatory strikes from Saudi-led coalition forces.",
+   "n": "Houthi Red Sea & regional missile campaign",
+   "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPbXZIOE9yRm9VZXdZRlZJWUU0c0FfbllFcW0zMjRWMnJlQnJSSUxZX3NrNFMtRk41QjRpbWRma3JaTTd4ajQ4NkFkbGplRnBta29qV2llMmdpVmJzQURMVThMcXlyU0J2RV9iTGp5TjlObF8xWldYNndkV08yNjgxd1g5VGFJYUo1V0E?oc=5",
    "t": "security",
-   "updated": "2026-10-09"
+   "updated": "2026-10-10"
   },
   "afpak-jihad": {
    "t": "security",
@@ -2047,12 +2096,12 @@
   "BRA": {
    "hog": "Luiz Inácio Lula da Silva, President",
    "hos": "Luiz Inácio Lula da Silva, President",
-   "lastelec": "Presidential first round, October 2026, Lula and Flavio Bolsonaro advance to runoff",
-   "nextelec": "presidential runoff, Oct 2026",
+   "lastelec": "presidential first round, October 2026",
+   "nextelec": "presidential runoff, October 2026",
    "ruling": "Workers' Party (PT)-led broad coalition",
-   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPYV9IbUxxY1FKbmtCalJiS1JmWS1hOWpNM2hxWGVCV01weTBFYWFTN0o1Smp6SFhCS0d6eGdMcmQzNklwbm1uRk9KM2M3VEFBMUxqZEFock8weEtWZmtHOE8wLU81amtMZXZUWjB5M0k2TjFaY1J3Z2luWVhIODNQT3paeEtCWEY2Q3p3dGdTek5Mcnczb2RTZ0lQOXFYakJHVjJnRTBR?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1MU0w1LXA5MkZxdjlWNnFkSHBaMGVMUnVhcVZjV212ZGdLdHdCbTM4cFk4elBybXJJSjQ0ay1ISncyTTZfLXdLeEp0VUJGUnRwSU9yc3lFMjNtbGV6?oc=5",
    "system": "Federal presidential republic",
-   "updated": "2026-10-07"
+   "updated": "2026-10-10"
   },
   "CAN": {
    "hog": "Mark Carney, Prime Minister",
@@ -2214,9 +2263,9 @@
    "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSGtaN0YzYTJnMjB2WGU1X1Z0Q0hwYmNjel9ZOXdiLU1yQmpNOXdTdlIwYnRlazZLXy1vQ05EUWsxbkhGUlpVYWhwR2x2a1FNcUpFaktWZXBOc2dfSDh6aEtFbGRDY3RsRDRnNHZwMGRGdUlfM050VkhZXy1SNXBfSXJvNmRpejdyS3c?oc=5"
   },
   "ESP": {
-   "nextelec": "snap general, Nov 2026",
-   "updated": "2026-10-09",
-   "source": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNTVzV2tnVC1rR0hDV1k4dndkcVh5R0Zha3VNS1NmTzlOQ1RxQnByendkSS1HVTdTQndFVXdLeWR0cnJwWXJzZmNpS1J3cTd2OWFwaEh0Vm5keHNadDhxaHdpaWZzZEtDamdMUUFGUm1TSjUzMzlyaG1iWmdmbm16NG9YemhWeG9xbHgwTG9tYmFRbjBJRVlmbVFyelVTWER1TmZ6WHQwWDBJRE53RHFZaWFCRkJlRXB6TGRfcVZvLW5NN0VYWnE5RlFSazJPd0RhenN1NEtFQ0VaOXE5NFHSAd4BQVVfeXFMTTU1c1drZ1Qta0dIQ1dZOHZ3ZHFYeUdGYWt1TUtTZk85TkNUcUJwcnp3ZEktR1U3U0J3RVV3S3lkdHJycFlyc2ZjaUtSd3E3djlhcGhIdFZuZHhzWnQ4cWh3aWlmc2RLQ2pnTFFBRlJtU0o1MzM5cmhtYlpnZm5tejRvWHpoVnhvcWx4MExvbWJhUW4wSUVZZm1RcnpVU1hEdU5melh0MFgwSUROd0RxWWlhQkZCZUVwekxkX3FWby1uTTdFWFpxOUZRUmsyT3dEYXpzdTRLRUNFWjlxOTRR?oc=5"
+   "nextelec": "snap general election, late 2026",
+   "updated": "2026-10-10",
+   "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPc2hEMmViQkNJWmlmZ0x2cmFrTUNVWHhxNHAwUDcwM0ZlZmhjVUNiU2FuYkNTdVdpUGRQbXRXVEw1VnNQSnotNllzQjdYNUxYRDVHX2ZqLTVXMnFLMlg3Q0F0Vmd0eWY5RHFtZWFPT0VaU1Znd0h0bVhtbVkzN1BHNGlRZUVuZXpya0phVy1RRzEwY3ZCRVUwZmdDNUVLc1B6ZzZzQ2drdmR2aDZyTjg5WXg1VdIBtwFBVV95cUxQVTRqeFp5Q2tzUnBiczdvNnZsei1JZWhwT3c4NnI0bnFxNVIyejg4cXRkMWpIb0VmdmlrUHpDV0Y4WF81Vk5uYkptR19xUW5COXd5em4xMTlxT3BtU05fUUVGMDZibVd4RWFwRDNSNU56bm5TbjlIODlwNnB4aXkxVlJ2OEgzVnM4bHNUWDZYM2hRSkRjeEJvcUFMYnlpMndCYUdLbDFKSTlhelJrelg0em9BUy1RMW8?oc=5"
   },
   "XKX": {
    "lastelec": "presidential, October 2026, Justina Shiroka Pula",
