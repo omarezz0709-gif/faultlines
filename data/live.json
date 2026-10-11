@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-11T17:05:56Z",
+  "lastRun": "2026-10-11T22:09:00Z",
   "log": [
    {
     "date": "2026-10-11",
@@ -31,11 +31,6 @@
       "source": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9rZS1sR05LY3ZnSHg1RUtRUG1fRkR2R2M3QWJoZTZ1UE5XWFNfb0lvcEdPWUJpS2F6MFIzQmpFMFFQR2NMXzlpM0hmMllTa2kzNnlOVmRkZw?oc=5"
      },
      {
-      "label": "Palestine",
-      "change": "Next election updated: Legislative elections postponed to late 2027",
-      "source": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9YclI3RTQzYUs0T2xhQUlaR3VDeC1WQU93SXFDdFBuREtkelhHamxXcnhXSFVUaDE5cFRScllFMFlnRXRmV1hvNGVnNW4xUnZYdXBRODhZUUR5WlZKR1lDVW0yNGVEUkhZYUxCSUJvYzFESjlfYjJBVTI3V21uczTSAX9BVV95cUxNem9XaFZOWjVUNjlyOF9NdjNvSjFwb2hHeVp3Zk5hSHJlZXpSdjdfcUJpUVNJVnRaajJaTmtvZ2J1STNzNmhqVjdDanhidzRqdFpUN3NBcVF6ZVBSZ2Jra2xxQll2dGZfTU55SmJGRkJpYm1KR3BjUDRYbGdvWTd3?oc=5"
-     },
-     {
       "label": "United Kingdom–Russia",
       "change": "Hostile: note updated on Burnham accusing Russia of 2016 Brexit interference",
       "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWHJJdG9NWWZzeFA5ZlZ4ZU4tMVlOTzc1aGxiUHFlYkJkbUtpVDl3YzBJYXVfX2VCWUpUVnZfRnRXS1VzSHc0UDhpWVJ6X2dwZU9LRlU1Y1ZSM2FTS0FlVXRFcEZBWUh0VE1rdUt5UUdjZGgySU0xdFZWNXM5d1BYSWRmeHVRYXJqLXV3UEFNeU9MTVhKWHVJQ2dUOXJiNUE?oc=5"
@@ -56,9 +51,34 @@
       "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTHV4WjJ4NGh6MVVqSU93UVFtQ0t1VnlidGJKREJRWjA3b01zRVF0VVdfQlpWNmVTRTZxM1RsYjBab1BzcXQ1OVVnNS1hRkZCV3hZOXdPSjd4S0JSdm1SM3FiTlhvZm1OTE1CN3A4LV9wTnZaQ0hWWGJWcmVYTTJQejdreWxoN0ZUZUhGYXB3YkJBbU9FQmRRRWJYU2hSaHBGdzM3cWxmeXVPTDMxZ2ZEMXAyUEs3QXVsRU1ZUw?oc=5"
      },
      {
+      "label": "Argentina–Israel",
+      "change": "None → Partner: bilateral defense cooperation agreement signed",
+      "source": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9nV3g1cml0bFZETVlRMFEydnFDc3ZwOC1HeXBoVUdxdXFRb1IwX1ZNZzVVZEJ4Vk1wV1FyS243YWY1YkxwWDk3cERldWRGWW9HLVNDbm5iVlY?oc=5"
+     },
+     {
+      "label": "Algeria–Morocco",
+      "change": "Hostile: note updated after Algeria detains 61 Moroccans on sabotage allegations",
+      "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRFNVc01iZ18zeHNxMkVkUEVtVlZQSHZodjFsdDBlaUVEbWhMZzRZWmJqSVZQbjZKWDhfSHU5NUo5M2xkMFJ0djhpcVpBcEJBNVI3eWQxT3hwSmFTQUJoUWZuLWJnNG1NWDRYMWNQN1lILTFFV3lsTjBkX0Z4WDI4OG1WU3g3MmFUdHpNZ2dsQVU4TVZPQXlkbV9ZenFVNGNBYk94S1ktUHk3NTFJbEVJ?oc=5"
+     },
+     {
+      "label": "Captagon trade",
+      "change": "Thread updated to include Libya following cooperative interdictions with Iraq",
+      "source": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBBcDV6TGJJbHFBLWhWTUxKV0tuVm1tc2FKUEg3NzJmVS1ZT0EwRUk1WGEzSmo1WjY2dFNaNGNVT1A1b0FTVU96QXBmcFhLVGttTi1WU0JSbTBMdzR3aXM2NkJhZDZXdw?oc=5"
+     },
+     {
+      "label": "Palestine",
+      "change": "Elections postponed to September 2027",
+      "source": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5jQVIxRWZ1TFo5c3hLWUdfVkFfLUp5MzJDVmF6MDU0dXdEeDRlaF93Y3hYQkY3TUZGWFl0SWI1RU9XQQ?oc=5"
+     },
+     {
       "label": "New Zealand",
-      "change": "General election confirmed for November 7, 2026",
+      "change": "General election scheduled for 7 November 2026",
       "source": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQN2swT2xhOVdZQVpSY3c5U3piYmw0U1BNTjZldUE2Nm4zaFhMZHB3aUZDYklfbUprdTlRT3J3TnR4QTNGb3dlcFRPQWhmaTFteVVDb2R1R3V3cGgydWlmSG1uSkt1YU4zZEJoQmNFaDFhUi1GdVdROUl6ZkE2Mm5fWVZZeHo2ajNYeHVlZ3F2QTh0OTNZeUU0REFfVXF0UV9fd3VUM1JNc19reWhOXzlYWVBONzVHVjhpNEE2QnJnYnBCbHNPaUFKSDdoYkk2ZjBVSWJEamhQZ2FfMHFhQlpF?oc=5"
+     },
+     {
+      "label": "Haiti",
+      "change": "General election planned for December 2026",
+      "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdkxxQXJURTVFaC1DSm53XzloeGV3MFo5bDlmdi1hVzBidXQyc0tYeVRZbHlUSkxpT0ZZLUZMX2J3RExGQzF6Z012V1JHd1FTcTVZR2otUHZXMF9QNHJBYVZVd1JFcHVvME1LUzdHajFGTmNRaGJzS3NhMXNnelhndThlMGtGd2JudHkyTGNpUFFzVmJYU0FkZlU3SmxvU2w4SWNFUVRmcXowWlhWTWc?oc=5"
      }
     ]
    },
@@ -1156,7 +1176,7 @@
     ]
    }
   ],
-  "summary": "Updated UK-Russia and UK-Mauritius relations, recorded US blockade enforcement near the Strait of Hormuz, and logged election developments in Spain and New Zealand."
+  "summary": "Updated Argentina–Israel relations following a bilateral defense pact, refreshed Algeria–Morocco border tensions, expanded the Captagon trafficking thread, and recorded newly scheduled elections."
  },
  "relations": {
   "DNK-USA": {
@@ -1998,6 +2018,22 @@
    "note": "Mauritius threatens legal action against the United Kingdom (UK) over the stalled treaty transferring the Chagos Islands.",
    "updated": "2026-10-11",
    "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPazExV0JGeXZ2UUl4NVRxSlJ4Q01YNHpkXzNzaWZtOWFMT3FYdjEzY0JRckEza2hwZUVjMkRjSEZQaENiSmRtR0Q0VUpVTUEwQzZGT2MyTkdCV3JDLURXblZFZ3dvUHJMNEpNRHR1Q0FHbk9vTFRSMUtGUTl3WVhSTmExZG5Pd2VJWUo1LTVndXBRR0ROeXlnUFFVTE5tUG9ab0c0UlNFRQ?oc=5"
+  },
+  "ARG-ISR": {
+   "a": "ARG",
+   "b": "ISR",
+   "s": "F",
+   "note": "Argentina and Israel sign a defense cooperation agreement to expand military ties and strategic technology sharing.",
+   "updated": "2026-10-11",
+   "source": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9nV3g1cml0bFZETVlRMFEydnFDc3ZwOC1HeXBoVUdxdXFRb1IwX1ZNZzVVZEJ4Vk1wV1FyS243YWY1YkxwWDk3cERldWRGWW9HLVNDbm5iVlY?oc=5"
+  },
+  "DZA-MAR": {
+   "a": "DZA",
+   "b": "MAR",
+   "s": "H",
+   "note": "Relations remain hostile as Algerian authorities arrest 61 Moroccans accused of plotting acts of sabotage.",
+   "updated": "2026-10-11",
+   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRFNVc01iZ18zeHNxMkVkUEVtVlZQSHZodjFsdDBlaUVEbWhMZzRZWmJqSVZQbjZKWDhfSHU5NUo5M2xkMFJ0djhpcVpBcEJBNVI3eWQxT3hwSmFTQUJoUWZuLWJnNG1NWDRYMWNQN1lILTFFV3lsTjBkX0Z4WDI4OG1WU3g3MmFUdHpNZ2dsQVU4TVZPQXlkbV9ZenFVNGNBYk94S1ktUHk3NTFJbEVJ?oc=5"
   }
  },
  "threads": {
@@ -2132,6 +2168,22 @@
    ],
    "updated": "2026-10-07",
    "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVmRpRzJzamxqdHVMU2RhM1pLRjZjdFhKRGJzMGF2TkxFNV9md2ZyUUVVX1VyekFhRlJUZzRGYlNzQTN5LW9HQlZ5RkVOdmt3ejZJMzdReURVXzJRS3FkV0lOTG1CSDJpUi1GdE43QXZzZzVvSUlDQm1jWVBLc3JyVXFjcUl5ME95WnpkOWFQSE0xWXlUT2E0UmEyRlFFUQ?oc=5"
+  },
+  "captagon": {
+   "t": "trafficking",
+   "n": "Captagon trade",
+   "d": "Captagon produced in Syria and Lebanon moves through Jordan, Iraq, and maritime routes to consumers in the Gulf and North Africa, prompting joint interdictions.",
+   "c": [
+    "SYR",
+    "LBN",
+    "JOR",
+    "IRQ",
+    "SAU",
+    "ARE",
+    "LBY"
+   ],
+   "updated": "2026-10-11",
+   "source": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBBcDV6TGJJbHFBLWhWTUxKV0tuVm1tc2FKUEg3NzJmVS1ZT0EwRUk1WGEzSmo1WjY2dFNaNGNVT1A1b0FTVU96QXBmcFhLVGttTi1WU0JSbTBMdzR3aXM2NkJhZDZXdw?oc=5"
   }
  },
  "pois": {
@@ -2360,7 +2412,7 @@
    "source": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNXFXa1c5U05DZHNINV9rcExET0NiRnFoaEkyczUyUjNIUi1pa1psaVEyQ1hUR2JvYllsUkxPQnRJWTlxdnV0QmFQTjE3d3A3RXdQLTkxU0hWaVR1MW5vUlZJUmxSSHVLWUFWdlJVbk91X1I5NnVZaWZ6aXk0NmRxa1ZDdk92UnhxNFIxUFVLVkE1TVhhelU5SW9ueThycGJfZG1LZmZRVmhXQnlKMFl5cVBDa1BqblRMODYwZWV6UFZEaHF5aFRfVml6UUtJZzNp0gHWAUFVX3lxTE5XWVRjcFRCQXdGWEktQ3Y0Zi1ZeXgyQWo1bUdIVlFNTkdReU1jWEQ4MkhYNnRTNGM1MGxDWHJndjM0bUU2WThEWElkYUhER2tpUE1Za2sxWjVldkhkRllGWDlUcjlpVXUxSVFpaTFfOE8tTlpjamRJaUhNZnJqVDZ3bmlacF9iS2NqbWpZcGktT29ZbjJ2bHBETUlqZXJPVVhQNkhwNnZmdERQczl6dWw3MWctSDdfQ0R2VzlEV2VQSHdDYkx6Snh2cVYxM3gtLThOalNpX3c?oc=5"
   },
   "NZL": {
-   "nextelec": "general election, November 7, 2026",
+   "nextelec": "General election, 7 November 2026",
    "updated": "2026-10-11",
    "source": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQN2swT2xhOVdZQVpSY3c5U3piYmw0U1BNTjZldUE2Nm4zaFhMZHB3aUZDYklfbUprdTlRT3J3TnR4QTNGb3dlcFRPQWhmaTFteVVDb2R1R3V3cGgydWlmSG1uSkt1YU4zZEJoQmNFaDFhUi1GdVdROUl6ZkE2Mm5fWVZZeHo2ajNYeHVlZ3F2QTh0OTNZeUU0REFfVXF0UV9fd3VUM1JNc19reWhOXzlYWVBONzVHVjhpNEE2QnJnYnBCbHNPaUFKSDdoYkk2ZjBVSWJEamhQZ2FfMHFhQlpF?oc=5"
   },
@@ -2402,9 +2454,14 @@
    "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeWpPV0VtSUdjN3h4dEJ3OUJ1Y0EtWWNvb3VUX2FMNHk3ZDBJRHB2Y29JX2J6ZXlKeUxFMkZpcDVHZjlmaE44YnQ5UTdNYlFiSTlFRnYzdUZOX3BsdFk3blVVUU1WU3hTNXo5MUhBaWZOdnM4ek9ZTThpR2VxbWI1Ni1VemxDcEpIdHdzTlI3VQ?oc=5"
   },
   "PSE": {
-   "nextelec": "legislative elections, late 2027",
+   "nextelec": "Legislative election, September 2027",
    "updated": "2026-10-11",
-   "source": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9YclI3RTQzYUs0T2xhQUlaR3VDeC1WQU93SXFDdFBuREtkelhHamxXcnhXSFVUaDE5cFRScllFMFlnRXRmV1hvNGVnNW4xUnZYdXBRODhZUUR5WlZKR1lDVW0yNGVEUkhZYUxCSUJvYzFESjlfYjJBVTI3V21uczTSAX9BVV95cUxNem9XaFZOWjVUNjlyOF9NdjNvSjFwb2hHeVp3Zk5hSHJlZXpSdjdfcUJpUVNJVnRaajJaTmtvZ2J1STNzNmhqVjdDanhidzRqdFpUN3NBcVF6ZVBSZ2Jra2xxQll2dGZfTU55SmJGRkJpYm1KR3BjUDRYbGdvWTd3?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5jQVIxRWZ1TFo5c3hLWUdfVkFfLUp5MzJDVmF6MDU0dXdEeDRlaF93Y3hYQkY3TUZGWFl0SWI1RU9XQQ?oc=5"
+  },
+  "HTI": {
+   "nextelec": "General election, December 2026",
+   "updated": "2026-10-11",
+   "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdkxxQXJURTVFaC1DSm53XzloeGV3MFo5bDlmdi1hVzBidXQyc0tYeVRZbHlUSkxpT0ZZLUZMX2J3RExGQzF6Z012V1JHd1FTcTVZR2otUHZXMF9QNHJBYVZVd1JFcHVvME1LUzdHajFGTmNRaGJzS3NhMXNnelhndThlMGtGd2JudHkyTGNpUFFzVmJYU0FkZlU3SmxvU2w4SWNFUVRmcXowWlhWTWc?oc=5"
   }
  }
 }
