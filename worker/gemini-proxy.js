@@ -89,7 +89,7 @@ function cors(extra = {}) {
   return {
     "Access-Control-Allow-Origin": ALLOWED_ORIGIN,
     "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-    "Access-Control-Allow-Headers": "Content-Type, X-Faultlines-Kind, X-Admin-Code, X-Backup-Code, X-Private-Pass",
+    "Access-Control-Allow-Headers": "Content-Type, X-Faultlines-Kind, X-Faultlines-Q, X-Admin-Code, X-Backup-Code, X-Private-Pass",
     "Access-Control-Expose-Headers": "X-Faultlines-Cache, X-Faultlines-Limit, X-Faultlines-Provider, X-Faultlines-Search, X-Faultlines-Locked, X-Faultlines-Tries",
     "Access-Control-Max-Age": "86400",
     "Vary": "Origin",
@@ -151,6 +151,7 @@ async function logEvent(env, request, rec) {
     lo: cf.longitude ? Math.round(parseFloat(cf.longitude) * 10) / 10 : undefined,
     b: isBot(request) ? 1 : undefined,                                                    // crawler / preview / data-centre visit
     o: (request.headers.get("Origin") || "").replace(/^https:\/\//, "").slice(0, 40),       // which site address (GitHub or Cloudflare Pages)
+    q: rec.q || undefined,                                                                // the question typed in the question box
   };
   try { await g.log(meta); } catch { /* store unreachable: this entry is skipped */ }
 }
@@ -262,7 +263,10 @@ async function answerAuto(request, env, ctx, ip, kind) {
   delete body.tools; delete body.cachedContent;
   const wantsJson = body.generationConfig.responseMimeType === "application/json";
   const started = Date.now();
-  const log = (status, model, cached) => ctx.waitUntil(logEvent(env, request, { kind, status, model, cached, ms: Date.now() - started }));
+  // the visitor's own words, for the admin log: question box only (never the private chat, which keeps nothing)
+  let q = "";
+  if (kind === "ask") try { q = decodeURIComponent(request.headers.get("X-Faultlines-Q") || "").replace(/[\u0000-\u001f\u007f]/g, " ").trim().slice(0, 200); } catch {}
+  const log = (status, model, cached) => ctx.waitUntil(logEvent(env, request, { kind, status, model, cached, ms: Date.now() - started, q }));
 
   // 1. answered in the last 24 h: from memory
   const cache = caches.default;

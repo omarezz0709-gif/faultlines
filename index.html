@@ -282,7 +282,7 @@ button{font:inherit;color:inherit}
 [dir="rtl"] .p-body, [dir="rtl"] .p-head, [dir="rtl"] .top, [dir="rtl"] .ticker{text-align:right}
 @media (max-width:900px){
   .mob-only{display:inline-flex;align-items:center}
-  .ask{display:none}
+  .ask:not(.ask-more){display:none}   /* the top question bar opens with the Ask button; follow-up boxes always show */
   .ask.open{display:flex}
   .tv,.vid{display:none!important}
   .top.news-on .tv:not([hidden]),.top.news-on .vid:not([hidden]){display:block!important}   /* on phones: shown with the News button */
@@ -1955,6 +1955,13 @@ function withJson(sample){
   return sample;
 }
 let autoMissing = false;
+// headers for the shared Worker: the private chat's pass, and a question box question's own words (for the owner's
+// usage log; the private chat never sends them)
+function askedHeader(opts){
+  const h = opts.pass ? {'X-Private-Pass': opts.pass} : {};
+  if (opts.q && opts.kind === 'ask') try { h['X-Faultlines-Q'] = encodeURIComponent(Array.from(opts.q).slice(0, 200).join('')); } catch(e){}
+  return h;
+}
 async function geminiSample(key){
   const models = await geminiModel(key);
   async function sample(prompt, opts = {}){
@@ -1979,7 +1986,7 @@ async function geminiSample(key){
       const model = tryList[i];
       if (model === 'auto'){
         try { r = await fetch(`${AI_PROXY}/models/auto:streamGenerateContent`, {method:'POST', signal: opts.signal,
-          headers: {'Content-Type': 'application/json', 'X-Faultlines-Kind': opts.kind || 'ai', ...(opts.pass ? {'X-Private-Pass': opts.pass} : {})}, body: JSON.stringify(body)}); }
+          headers: {'Content-Type': 'application/json', 'X-Faultlines-Kind': opts.kind || 'ai', ...askedHeader(opts)}, body: JSON.stringify(body)}); }
         catch(e){ throw fail('upstream_error', e && e.message); }
         if (r.ok) break;
         msg = await r.text().catch(() => '');
@@ -1991,7 +1998,7 @@ async function geminiSample(key){
       if (model.startsWith('gemma')) delete b.generationConfig.responseMimeType;   // Gemma has no JSON mode; the prompt asks for JSON anyway
       try {
         r = await fetch(key ? `${GEM}/models/${model}:streamGenerateContent?alt=sse` : `${AI_PROXY}/models/${model}:streamGenerateContent`, {method:'POST', signal: opts.signal,
-          headers: key ? {'x-goog-api-key': key, 'Content-Type': 'application/json'} : {'Content-Type': 'application/json', 'X-Faultlines-Kind': opts.kind || 'ai', ...(opts.pass ? {'X-Private-Pass': opts.pass} : {})}, body: JSON.stringify(b)});
+          headers: key ? {'x-goog-api-key': key, 'Content-Type': 'application/json'} : {'Content-Type': 'application/json', 'X-Faultlines-Kind': opts.kind || 'ai', ...askedHeader(opts)}, body: JSON.stringify(b)});
       } catch(e){ throw fail('upstream_error', e && e.message); }
       if (r.ok){ try { sessionStorage.setItem('fl-model', model); } catch(e){} const at = models.indexOf(model); if (at > 0){ models.splice(at, 1); models.unshift(model); } break; }
       msg = await r.text().catch(() => '');
@@ -3109,6 +3116,7 @@ function renderAdmin(data){
   const d1 = logs, d7 = logs;
   const ai1 = ai(d1), ai7 = ai1;
   const mem = ai7.filter(x => x.c).length, errs1 = ai1.filter(x => x.s >= 400);
+  const asked = (showBots ? all : logs).filter(x => x.q && x.k === 'ask');   // the question box's own words, newest first
   const place = x => [x.ci, regionName(x.co)].filter(Boolean).join(', ') || 'Unknown';
   const kindName = k => ({pair: 'Explain relationship', country: 'Explain country', poi: 'Explain location', group: 'Analyse comparison', ask: 'Question box', visit: 'Page visit',
     diag: 'Daily diagnostics', private: 'Private chat', unlock: 'Backup code', admin: 'Admin login (wrong code)'})[k] || (k.startsWith('facts-') ? 'Fill in ' + k.slice(6) : k);
@@ -3130,17 +3138,22 @@ function renderAdmin(data){
       <p class="note faint">Places come from the visitor's IP address. Internet providers often register addresses at a regional hub, so a city can be off by 100–200 km (e.g. Mannheim showing as Freiburg), especially on mobile data.</p></section>
     <section><h3>Devices <em>${dw}</em></h3>${rowsTable(countBy(d7, x => x.d), 'Device', 6)}</section>
     <section><h3>What was asked <em>${dw}</em></h3>${rowsTable(countBy(ai7, x => kindName(x.k)), 'Kind', 8)}</section>
+    <section><h3>Questions <em>${asked.length} ${dw} · from every device · ↳ follow-up · ⚡ real-time</em></h3>
+      ${asked.length ? `<div class="mx-wrap"><table class="atable"><thead><tr><th>When</th><th>Question</th><th>Where · device</th></tr></thead><tbody>
+      ${asked.slice(0, 300).map(x => `<tr><td style="white-space:nowrap">${esc(fmtDateTime(x.t))}</td><td class="q-log" dir="auto">${esc(x.q)}${x.s >= 400 ? ' <span class="st err">not answered</span>' : ''}</td><td>${esc(place(x))}<br><span class="faint">${esc([x.d, x.v ? 'visitor #' + x.v.slice(0, 4) : ''].filter(Boolean).join(' · '))}</span></td></tr>`).join('')}
+      </tbody></table></div>` : `<p class="note muted">No questions ${dw}${vd ? '' : ' yet'}.</p>`}
+      <p class="note faint">Questions typed in the question box (up to 200 characters), recorded since 11 Oct 2026. Questions from the private chat are never recorded. The same visitor # means the same device and internet connection that day.</p></section>
     <section><h3>${vd ? 'Activity' : 'Latest activity'} <em>${showBots ? all.length : logs.length} ${dw}${showBots ? ' · 🤖 = bot / crawler / link preview' : ''} · 🛡 = VPN or proxy (a person or a scanner)</em></h3>
       ${bots.length ? `<p class="note"><button class="tag" id="admin-bots">${showBots ? 'Hide bots' : `Show bots (${bots.length})`}</button> <span class="faint">Bots are still recorded (they can use AI quota), just hidden here.</span></p>` : ''}
       <div class="mx-wrap"><table class="atable"><thead><tr><th>When</th><th>Where</th><th>Device</th><th>What</th><th></th></tr></thead><tbody>
-      ${(showBots ? all : logs).slice(0, 80).map(x => `<tr${isBotLog(x) ? ' class="botrow"' : ''}><td style="white-space:nowrap">${isBotLog(x) ? '🤖 ' : isVpnLog(x) ? '🛡 ' : ''}${esc(fmtDateTime(x.t))}${x.o ? `<br><span class="faint">${esc(x.o.includes('pages.dev') ? 'pages.dev' : 'github.io')}</span>` : ''}</td><td>${esc(place(x))}${x.pc || x.isp ? `<br><span class="faint">${esc([x.pc, x.isp].filter(Boolean).join(' · '))}</span>` : ''}</td><td>${esc(x.d || '')}</td><td>${esc(kindName(x.k))}${x.m ? `<br><span class="faint">${esc(x.m)}</span>` : ''}</td><td>${x.k === 'visit' ? '' : status(x)}</td></tr>`).join('') || `<tr><td colspan="5" class="muted">${vd ? 'Nothing logged that day.' : 'Nothing logged today yet.'}</td></tr>`}
+      ${(showBots ? all : logs).slice(0, 80).map(x => `<tr${isBotLog(x) ? ' class="botrow"' : ''}><td style="white-space:nowrap">${isBotLog(x) ? '🤖 ' : isVpnLog(x) ? '🛡 ' : ''}${esc(fmtDateTime(x.t))}${x.o ? `<br><span class="faint">${esc(x.o.includes('pages.dev') ? 'pages.dev' : 'github.io')}</span>` : ''}</td><td>${esc(place(x))}${x.pc || x.isp ? `<br><span class="faint">${esc([x.pc, x.isp].filter(Boolean).join(' · '))}</span>` : ''}</td><td>${esc(x.d || '')}</td><td>${esc(kindName(x.k))}${x.q ? `<br><span class="q-log" dir="auto">“${esc(x.q)}”</span>` : ''}${x.m ? `<br><span class="faint">${esc(x.m)}</span>` : ''}</td><td>${x.k === 'visit' ? '' : status(x)}</td></tr>`).join('') || `<tr><td colspan="5" class="muted">${vd ? 'Nothing logged that day.' : 'Nothing logged today yet.'}</td></tr>`}
       </tbody></table></div></section>
-    <section><h3>Archive <em>daily backup after 00:00 · kept 1 year</em></h3>
+    <section><h3>Archive <em>daily backup after 00:00 · kept 90 days</em></h3>
       ${(data.archive || []).length ? `<div class="chips">${data.archive.map(a => `<button class="tag${a.day === vd ? ' on' : ''}" data-day="${esc(a.day)}">${esc(a.day)} <span class="faint">· ${+a.visits || 0} visits</span></button>`).join('')}</div>`
         : '<p class="note muted">No archived days yet. The first backup is saved shortly after the next midnight.</p>'}</section>
     <section><h3>Automatic updates <em>GitHub</em></h3><div id="admin-runs"><p class="note muted thinking">Loading…</p></div></section>
     <div class="actions"><button class="tag" id="admin-refresh">↻ Refresh</button><button class="tag" id="admin-out">Log out</button></div>
-    <p class="foot">Visitor ids are pseudonymous (a keyed hash that changes daily; it can't be traced back without the Worker's secret); locations come from Cloudflare, rounded to about 10 km, plus the postcode, and IP addresses are never stored. The log resets every night at 00:00 Berlin time; a backup of each day is kept for 90 days (Archive).</p>
+    <p class="foot">Visitor ids are pseudonymous (a keyed hash that changes daily; it can't be traced back without the Worker's secret); locations come from Cloudflare, rounded to about 10 km, plus the postcode, and IP addresses are never stored. Question box questions are recorded word for word; the private chat never is. The log resets every night at 00:00 Berlin time; a backup of each day is kept for 90 days (Archive).</p>
   </div>`;
   wirePanel(); panelMode = 'admin'; adminBtn.setAttribute('aria-pressed', 'true');
   showAdminMap(logs);
@@ -3376,6 +3389,12 @@ const TR = {
     'ما زال يفكر… الذكاء الاصطناعي المجاني مشغول الآن، وقد يستغرق ذلك دقيقة أو دقيقتين.',
     'Denke noch nach… die kostenlose KI ist gerade stark ausgelastet, das kann ein bis zwei Minuten dauern.',
     'Sto ancora pensando… l’IA gratuita è molto occupata ora, potrebbe volerci un minuto o due.'],
+  "Questions are kept in the site's usage log for up to 90 days, without your IP address.": [
+    'Les questions sont conservées dans le journal d’utilisation du site jusqu’à 90 jours, sans votre adresse IP.',
+    'Las preguntas se guardan en el registro de uso del sitio hasta 90 días, sin tu dirección IP.',
+    'تُحفظ الأسئلة في سجل استخدام الموقع لمدة تصل إلى 90 يومًا، دون عنوان IP الخاص بك.',
+    'Fragen werden bis zu 90 Tage im Nutzungsprotokoll der Seite gespeichert, ohne deine IP-Adresse.',
+    'Le domande vengono conservate nel registro d’uso del sito fino a 90 giorni, senza il tuo indirizzo IP.'],
   // the first-visit tour  [French, Spanish, Arabic, German]
   'Welcome to Faultlines': ['Bienvenue sur Faultlines', 'Bienvenido a Faultlines', 'مرحبًا بك في Faultlines', 'Willkommen bei Faultlines'],
   'An interactive globe of world politics: who is allied with whom, where the tensions are, and what is happening right now. Take the 30-second tour?': [
@@ -3832,7 +3851,7 @@ const NAME_HOSTS = 'b, h2, h3, th, .tag, .tip b, option, .th-title, .kw, .fc, p.
 function translateNode(n){
   if (n.nodeType === 3){
     // skip AI answers (already in the chosen language), headlines and the reader's own question
-    if (!n.nodeValue.trim() || n.parentElement && n.parentElement.closest('script, style, .city, input, textarea, .ai h3, .ai h4, .ai li, .ai p:not(.muted):not(.faint), .alerts a, .news a, .feed a, .q-asked, .tv-head, .tv-meta, .vid-cap, .vid-meta')) return;
+    if (!n.nodeValue.trim() || n.parentElement && n.parentElement.closest('script, style, .city, input, textarea, .ai h3, .ai h4, .ai li, .ai p:not(.muted):not(.faint), .alerts a, .news a, .feed a, .q-asked, .q-log, .tv-head, .tv-meta, .vid-cap, .vid-meta')) return;
     if (n.__en === undefined || (n.nodeValue !== n.__tr)) n.__en = n.nodeValue;   // remember the English original
     let v = trText(n.__en);
     if (v == null && n.parentElement && n.parentElement.closest(NAME_HOSTS) && nameRe) v = n.__en.replace(nameRe, (m, pre, nm) => pre + trMap.get(nm));
@@ -4191,7 +4210,8 @@ function drawConvo(){
     <form class="ask ask-more" id="ask-more" autocomplete="off"><span class="ask-i" aria-hidden="true">↳</span>
       <input type="text" maxlength="300" placeholder="Ask a follow-up…" aria-label="Ask a follow-up question">
       <button class="ask-go" type="submit" aria-label="Ask">→</button></form>
-    <button class="tag" data-askhist style="align-self:flex-start">☰ Your earlier questions</button></div>`;
+    <button class="tag" data-askhist style="align-self:flex-start">☰ Your earlier questions</button>
+    <p class="faint">Questions are kept in the site's usage log for up to 90 days, without your IP address.</p></div>`;
   wirePanel(); panelMode = 'ask';
   const more = document.getElementById('ask-more');
   more.onsubmit = e => { e.preventDefault(); const v = more.querySelector('input').value.trim().slice(0, 300); if (v.length < 2) return; renderAsk(v, true); };
@@ -4219,6 +4239,7 @@ async function renderAsk(q, cont = false){
   if (!sample){ turn.err = AI_MSG.rate_limited; convo.turns.pop(); if (cur()) cur().innerHTML = `<p class="muted">${esc(AI_MSG.rate_limited)}</p>`; return; }
   try {
     const {text, truncated, sources} = await sample(askPrompt(q, ctxIds, pois, earlier, wiki, live), {kind: 'ask', cache: {gcTime: turn.rt ? 10 * 60e3 : 86400000},
+      q: (earlier.length ? '↳ ' : '') + (turn.rt ? '⚡ ' : '') + q,   // shown in the usage log (↳ follow-up, ⚡ real-time)
       onText: ({text}) => { if (convo === myConvo && cur()) cur().innerHTML = cite(md(text), turn.live); }});
     turn.a = text + (truncated ? '\n\n(Cut short.)' : '');
     turn.src = [...wiki.map(w => ({uri: w.uri, title: 'Wikipedia: ' + w.title})), ...(sources || [])].slice(0, 6);
