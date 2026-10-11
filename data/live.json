@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-11T10:17:15Z",
+  "lastRun": "2026-10-11T17:05:56Z",
   "log": [
    {
     "date": "2026-10-11",
@@ -36,13 +36,28 @@
       "source": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9YclI3RTQzYUs0T2xhQUlaR3VDeC1WQU93SXFDdFBuREtkelhHamxXcnhXSFVUaDE5cFRScllFMFlnRXRmV1hvNGVnNW4xUnZYdXBRODhZUUR5WlZKR1lDVW0yNGVEUkhZYUxCSUJvYzFESjlfYjJBVTI3V21uczTSAX9BVV95cUxNem9XaFZOWjVUNjlyOF9NdjNvSjFwb2hHeVp3Zk5hSHJlZXpSdjdfcUJpUVNJVnRaajJaTmtvZ2J1STNzNmhqVjdDanhidzRqdFpUN3NBcVF6ZVBSZ2Jra2xxQll2dGZfTU55SmJGRkJpYm1KR3BjUDRYbGdvWTd3?oc=5"
      },
      {
+      "label": "United Kingdom–Russia",
+      "change": "Hostile: note updated on Burnham accusing Russia of 2016 Brexit interference",
+      "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWHJJdG9NWWZzeFA5ZlZ4ZU4tMVlOTzc1aGxiUHFlYkJkbUtpVDl3YzBJYXVfX2VCWUpUVnZfRnRXS1VzSHc0UDhpWVJ6X2dwZU9LRlU1Y1ZSM2FTS0FlVXRFcEZBWUh0VE1rdUt5UUdjZGgySU0xdFZWNXM5d1BYSWRmeHVRYXJqLXV3UEFNeU9MTVhKWHVJQ2dUOXJiNUE?oc=5"
+     },
+     {
+      "label": "Mauritius–United Kingdom",
+      "change": "Normal: note updated as Mauritius threatens lawsuit over stalled Chagos treaty",
+      "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPazExV0JGeXZ2UUl4NVRxSlJ4Q01YNHpkXzNzaWZtOWFMT3FYdjEzY0JRckEza2hwZUVjMkRjSEZQaENiSmRtR0Q0VUpVTUEwQzZGT2MyTkdCV3JDLURXblZFZ3dvUHJMNEpNRHR1Q0FHbk9vTFRSMUtGUTl3WVhSTmExZG5Pd2VJWUo1LTVndXBRR0ROeXlnUFFVTE5tUG9ab0c0UlNFRQ?oc=5"
+     },
+     {
+      "label": "Strait of Hormuz",
+      "change": "US forces disable merchant ship attempting to breach Iran blockade",
+      "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNW9FeS0xY0pkWHlqMHYyZnVvVUUxd3RSOG5fdlFrY2pqcmt3T3htTXQxNjk1VHdVX3ZZZ0l2SmZSdE50UzZld3lYNWlDMk5kbnBFcTNPUjVrOXN4R1pNc3VnVkVHcmozZVpUSG9XT2tYWk1OZjI2M1RPU3ZkRHF0M3BkQ0J5dWN5c2NqOEUtWl9UOE0tNFpuZmVDZTRFVHRsTXlLUm9iOTFsbGtoQ0NLSDhR0gG3AUFVX3lxTE5oeXI0NjB5enlxWHA5LVQ1X3l6SU9CV2xzN2Jxa0tNbkVyX0VtZ1FTY21RMFh3M2plMUV4cUpzNC1aVkFYZHVxbGVWNHAwSDRBQ01QRXBnU1dyZFJ1SENOQjNWMmlzTF9tWmpReHdDeWhjOHE2RUdCbHJWamRRa3RCSV8yQkNLNGsxc1NoTU5mRlBlbm5VVnU4aXRYVW44Yzh1QTg4S2F6ZldxODhGMmMyLWk0VUtpSQ?oc=5"
+     },
+     {
       "label": "Spain",
-      "change": "Next election updated: Snap general election called for 2026",
+      "change": "Snap general election called amid housing crisis protests",
       "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTHV4WjJ4NGh6MVVqSU93UVFtQ0t1VnlidGJKREJRWjA3b01zRVF0VVdfQlpWNmVTRTZxM1RsYjBab1BzcXQ1OVVnNS1hRkZCV3hZOXdPSjd4S0JSdm1SM3FiTlhvZm1OTE1CN3A4LV9wTnZaQ0hWWGJWcmVYTTJQejdreWxoN0ZUZUhGYXB3YkJBbU9FQmRRRWJYU2hSaHBGdzM3cWxmeXVPTDMxZ2ZEMXAyUEs3QXVsRU1ZUw?oc=5"
      },
      {
       "label": "New Zealand",
-      "change": "Next election updated: General election scheduled for November 7, 2026",
+      "change": "General election confirmed for November 7, 2026",
       "source": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQN2swT2xhOVdZQVpSY3c5U3piYmw0U1BNTjZldUE2Nm4zaFhMZHB3aUZDYklfbUprdTlRT3J3TnR4QTNGb3dlcFRPQWhmaTFteVVDb2R1R3V3cGgydWlmSG1uSkt1YU4zZEJoQmNFaDFhUi1GdVdROUl6ZkE2Mm5fWVZZeHo2ajNYeHVlZ3F2QTh0OTNZeUU0REFfVXF0UV9fd3VUM1JNc19reWhOXzlYWVBONzVHVjhpNEE2QnJnYnBCbHNPaUFKSDdoYkk2ZjBVSWJEamhQZ2FfMHFhQlpF?oc=5"
      }
     ]
@@ -1141,7 +1156,7 @@
     ]
    }
   ],
-  "summary": "Palestine delays legislative elections to 2027, Spain calls snap elections, New Zealand prepares for a November 2026 vote, and Iran and Afghanistan sign a Chabahar Port investment agreement."
+  "summary": "Updated UK-Russia and UK-Mauritius relations, recorded US blockade enforcement near the Strait of Hormuz, and logged election developments in Spain and New Zealand."
  },
  "relations": {
   "DNK-USA": {
@@ -1967,6 +1982,22 @@
    "note": "Eswatini reinforces diplomatic ties with Taiwan following a military helicopter donation during King Mswati III's state visit.",
    "updated": "2026-10-11",
    "source": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9rZS1sR05LY3ZnSHg1RUtRUG1fRkR2R2M3QWJoZTZ1UE5XWFNfb0lvcEdPWUJpS2F6MFIzQmpFMFFQR2NMXzlpM0hmMllTa2kzNnlOVmRkZw?oc=5"
+  },
+  "GBR-RUS": {
+   "a": "GBR",
+   "b": "RUS",
+   "s": "H",
+   "note": "Relations remain hostile as Prime Minister Andy Burnham states Russia interfered in the 2016 Brexit referendum.",
+   "updated": "2026-10-11",
+   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWHJJdG9NWWZzeFA5ZlZ4ZU4tMVlOTzc1aGxiUHFlYkJkbUtpVDl3YzBJYXVfX2VCWUpUVnZfRnRXS1VzSHc0UDhpWVJ6X2dwZU9LRlU1Y1ZSM2FTS0FlVXRFcEZBWUh0VE1rdUt5UUdjZGgySU0xdFZWNXM5d1BYSWRmeHVRYXJqLXV3UEFNeU9MTVhKWHVJQ2dUOXJiNUE?oc=5"
+  },
+  "GBR-MUS": {
+   "a": "GBR",
+   "b": "MUS",
+   "s": "N",
+   "note": "Mauritius threatens legal action against the United Kingdom (UK) over the stalled treaty transferring the Chagos Islands.",
+   "updated": "2026-10-11",
+   "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPazExV0JGeXZ2UUl4NVRxSlJ4Q01YNHpkXzNzaWZtOWFMT3FYdjEzY0JRckEza2hwZUVjMkRjSEZQaENiSmRtR0Q0VUpVTUEwQzZGT2MyTkdCV3JDLURXblZFZ3dvUHJMNEpNRHR1Q0FHbk9vTFRSMUtGUTl3WVhSTmExZG5Pd2VJWUo1LTVndXBRR0ROeXlnUFFVTE5tUG9ab0c0UlNFRQ?oc=5"
   }
  },
  "threads": {
@@ -2134,11 +2165,11 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "Iran threatens full closure while striking tankers off Qatar, as Tehran and Oman discuss a temporary safe transit corridor.",
+   "d": "The United States (US) enforces a naval blockade against Iran, disabling a commercial vessel in adjacent waters attempting to run the cordon.",
    "n": "Strait of Hormuz",
-   "s": "Threatened closure · Tankers struck off Qatar",
-   "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWGpBZ3dHeE0yV0pvMTR0VTBMdHpZQUZoWjdneXNyV0d3RWVoZm1TWFJ5cS16Y0lCRk5PM2dEdVp1dlp2ZEJwTkQ5SlR4dVVoYzVwa0pEdjd5OUJCUTZmaVdRTUk4alo5TTJFRlVVV2lkSzl3MU5PMER5WkR1T2tlYVdNNU15cGQxMVViendna1NZRjBxdnUxb2dMZHFua2ZzVFZ4YTJ4cUg?oc=5",
-   "updated": "2026-10-08",
+   "s": "US blockade active · Ship disabled",
+   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNW9FeS0xY0pkWHlqMHYyZnVvVUUxd3RSOG5fdlFrY2pqcmt3T3htTXQxNjk1VHdVX3ZZZ0l2SmZSdE50UzZld3lYNWlDMk5kbnBFcTNPUjVrOXN4R1pNc3VnVkVHcmozZVpUSG9XT2tYWk1OZjI2M1RPU3ZkRHF0M3BkQ0J5dWN5c2NqOEUtWl9UOE0tNFpuZmVDZTRFVHRsTXlLUm9iOTFsbGtoQ0NLSDhR0gG3AUFVX3lxTE5oeXI0NjB5enlxWHA5LVQ1X3l6SU9CV2xzN2Jxa0tNbkVyX0VtZ1FTY21RMFh3M2plMUV4cUpzNC1aVkFYZHVxbGVWNHAwSDRBQ01QRXBnU1dyZFJ1SENOQjNWMmlzTF9tWmpReHdDeWhjOHE2RUdCbHJWamRRa3RCSV8yQkNLNGsxc1NoTU5mRlBlbm5VVnU4aXRYVW44Yzh1QTg4S2F6ZldxODhGMmMyLWk0VUtpSQ?oc=5",
+   "updated": "2026-10-11",
    "t": "strait",
    "lat": 26.57,
    "lng": 56.25,
@@ -2350,7 +2381,7 @@
    "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSGtaN0YzYTJnMjB2WGU1X1Z0Q0hwYmNjel9ZOXdiLU1yQmpNOXdTdlIwYnRlazZLXy1vQ05EUWsxbkhGUlpVYWhwR2x2a1FNcUpFaktWZXBOc2dfSDh6aEtFbGRDY3RsRDRnNHZwMGRGdUlfM050VkhZXy1SNXBfSXJvNmRpejdyS3c?oc=5"
   },
   "ESP": {
-   "nextelec": "snap general election 2026",
+   "nextelec": "snap general election called",
    "updated": "2026-10-11",
    "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTHV4WjJ4NGh6MVVqSU93UVFtQ0t1VnlidGJKREJRWjA3b01zRVF0VVdfQlpWNmVTRTZxM1RsYjBab1BzcXQ1OVVnNS1hRkZCV3hZOXdPSjd4S0JSdm1SM3FiTlhvZm1OTE1CN3A4LV9wTnZaQ0hWWGJWcmVYTTJQejdreWxoN0ZUZUhGYXB3YkJBbU9FQmRRRWJYU2hSaHBGdzM3cWxmeXVPTDMxZ2ZEMXAyUEs3QXVsRU1ZUw?oc=5"
   },
