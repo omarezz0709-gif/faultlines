@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-12T10:21:50Z",
+  "lastRun": "2026-10-12T16:09:17Z",
   "log": [
    {
     "date": "2026-10-12",
@@ -24,6 +24,31 @@
       "label": "New Zealand",
       "change": "Recorded scheduled general election for 7 November 2026",
       "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdDlaQXVYbmIyYWdIbmtFclNfTnVkM29oRGdoR2tIcTVlZ1g2alZBZU1NNkpTaG81M0RQNDBfenFVZkxGZXpGSXdrV1A3NlZteEY5NE5WS1NQMGt2X1dTb1lmSjcydnotblJZa3dtd1F5MlVMUjQ5bnpzZXVrUDFCUW9VQmNrMXFPNVdhRWk3NzV2VzFuNlA0TVNHMzU4eDBkM0ZTYW01VGZONWN2bG9qZVlpZjRYczFBek5mZVhZZ2pSNEp4OS1hWHNSZDFZdFY2MFNmY1ZR?oc=5"
+     },
+     {
+      "label": "United Kingdom–Iran",
+      "change": "Hostile: refreshed note as UK attributes Fairford security threats to Iran's IRGC",
+      "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWWJ0NVNWU296YXNLZ1BDNC11S1V3MW5uY1ViQ2M3VmZ4eVZVLWtTT2x4MG4zOGJncUVrOFFyZkcwekpYZXpWRWhvc0lxWkhveHU3MmV0VW03dEo1RmN4dzVhSVFWajBzMXlZVDFQWXRkQ3V3eFdVTDdadFpJNjFCVzVlQ05WMkYxZEpmelV6RDdBaWhSN19YVDJROXcySFo0anBOWTNQYk81TENDaUY4?oc=5"
+     },
+     {
+      "label": "Hungary–Ukraine",
+      "change": "Normal/mixed: refreshed note as Ukraine enacts minority education law amendments",
+      "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9wTjlPd0RvelVpeEdhZHc1TlVpRElnWXViOVJFYXRDS25yYWdMekxETi1PR29zb2wyQldyRFhwNDF3WWtBTHJoOEZLN0VESHRLblJrX1V5Zm9uaGV1VkFzS1UwZlLSAXBBVV95cUxQcWh1VkRzNWF6ZzIxdFRINm5yeERrU1l1UzE1TFliU2p3RDB1SmdoaVBxVHRvdndfMmpZT0I3UDVZdlZ6MHVodW9jSXdyZVVKcTlmWGc5MnJDVVY4LVhEdG1la3RQQWlheTRweDI5WUlO?oc=5"
+     },
+     {
+      "label": "The Kurdish question",
+      "change": "Updated: PKK begins camp pullout in northern Iraq while Iran strikes KDPI in Koya",
+      "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdVUwUllsWWk0QzItUzVEejgwa2NBQXN4RW9YQWFhR2czcFlTNU1TRUl2RGl1WHVLUGZRS256c2pCV0N5aFNKS3hIMWFfYk5BT2xXWV8yTjhDbzBUb1hEQldlWEdJV2k5VFJqelRBV3Qybm9jOW1LV0xyTlhsQW1JSmRlak5VUjFiTURMOFZmdzlUNHE0N2FLRUNHcTNHRF84MlEtUlRNSzVoVHZ2a2d0SmVKMEFrbEFFOUIxYnc4MjY5UEZVZHd3cmV0SWEzOFRiRjRUT1BR?oc=5"
+     },
+     {
+      "label": "Brazil",
+      "change": "Election: first-round presidential election concludes with Flávio Bolsonaro advancing to runoff",
+      "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcUhoRUhxNnhRLTZQekFzMUNDdHUwWEZNSGcySzZRVU5EYVdwODFjcVJrN0FNRHMtUVl6VG5BVHVoc21CZkdtM0NRb1VjcXVxdHBTelF1R0lveHc3cDNuMzBzSjdjUFBMY1htQjFWTEJjV2w4cDNKYnRrOTZXUnVPVWM4MWxSQ0dEYUFuamVrendIeTFzaXdBeXZmVDZWSFZEOHZ0ZnI3T2dwTmZJZjUweTdwT3g?oc=5"
+     },
+     {
+      "label": "Spain",
+      "change": "Election: snap general election called amid severe housing crisis",
+      "source": "https://news.google.com/rss/articles/CBMie0FVX3lxTE11WEpFOGdJUkcyNG1MRGRKR1FBLUdqZVdSNEJvaEN4U1M2V1BRY0tBVVprbHZUSkZ3Q2xabWxIOEZMNTUzSlkxT21abkptNGRXYXdYRzI5UWg2UU93OTltVFNoUkNRckdxTkw2LVJPZFBCY0M2ZVFmVEpqRQ?oc=5"
      }
     ]
    },
@@ -1201,7 +1226,7 @@
     ]
    }
   ],
-  "summary": "Egypt and Malaysia formalise a strategic partnership, New Zealand gears up for general elections in November 2026, and tanker drone strikes escalate tensions around the Strait of Hormuz."
+  "summary": "Updated UK–Iran and Hungary–Ukraine relations following UK accusations over RAF Fairford and Ukrainian minority law enactment; recorded Brazil and Spain election developments."
  },
  "relations": {
   "DNK-USA": {
@@ -1344,9 +1369,9 @@
    "a": "HUN",
    "b": "UKR",
    "s": "N",
-   "note": "Relations warm as Hungary and Ukraine agree on a step-by-step deal to unblock Kyiv's European Union (EU) accession talks.",
-   "updated": "2026-10-02",
-   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNUzFBeHhjRWpuZ3A4OWFhbnIxazBmMjFlQ1BjdVpUWWlvRmJyUlA0Q2R3d0FYQ1p2UW1KZThKaFU4dFhNOWhCMm0ydmdsRzBQc2ZIVUhIcHFiS0tlUi1Zek13SVZUOHhlelFhdmItQnR3UmxQS0g0OGpOeFA0YUNNTWtpYk5PbzVCZjZEc3MwZWV4S0pleUE?oc=5"
+   "note": "Relations improve as Ukraine enacts Hungarian minority education rights into law to advance European Union (EU) accession talks.",
+   "updated": "2026-10-12",
+   "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9wTjlPd0RvelVpeEdhZHc1TlVpRElnWXViOVJFYXRDS25yYWdMekxETi1PR29zb2wyQldyRFhwNDF3WWtBTHJoOEZLN0VESHRLblJrX1V5Zm9uaGV1VkFzS1UwZlLSAXBBVV95cUxQcWh1VkRzNWF6ZzIxdFRINm5yeERrU1l1UzE1TFliU2p3RDB1SmdoaVBxVHRvdndfMmpZT0I3UDVZdlZ6MHVodW9jSXdyZVVKcTlmWGc5MnJDVVY4LVhEdG1la3RQQWlheTRweDI5WUlO?oc=5"
   },
   "USA-ZWE": {
    "a": "USA",
@@ -2075,6 +2100,14 @@
    "note": "Egypt and Malaysia establish a strategic partnership, aligning on trade, Nile water security, and Palestine.",
    "updated": "2026-10-12",
    "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNOS1zNDdYSW82V0xUQ1BXR1YtRnE4dWJfaVlhUk9fSnNIQVJmSllDVi1vS01kN0JYOHVGY2F5RTZzMDJHWmYzVlh4VXNsVnpuVEVOd0JPRXhuY2ZHWXcwenFJSVVndWNHdGdOY3d2NVg0NExJQUFsWFkzUDR1TEJvME9jaXBoWjZUc3dmYUJGdnVUSDVlRzU2MUVqTFQxa0ZqQ3JKbWM3SjE4QXY5cjlITkp3?oc=5"
+  },
+  "GBR-IRN": {
+   "a": "GBR",
+   "b": "IRN",
+   "s": "H",
+   "note": "Relations remain hostile as the UK blames Iran's Islamic Revolutionary Guard Corps (IRGC) for security threats at RAF Fairford.",
+   "updated": "2026-10-12",
+   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWWJ0NVNWU296YXNLZ1BDNC11S1V3MW5uY1ViQ2M3VmZ4eVZVLWtTT2x4MG4zOGJncUVrOFFyZkcwekpYZXpWRWhvc0lxWkhveHU3MmV0VW03dEo1RmN4dzVhSVFWajBzMXlZVDFQWXRkQ3V3eFdVTDdadFpJNjFCVzVlQ05WMkYxZEpmelV6RDdBaWhSN19YVDJROXcySFo0anBOWTNQYk81TENDaUY4?oc=5"
   }
  },
  "threads": {
@@ -2225,6 +2258,19 @@
    ],
    "updated": "2026-10-11",
    "source": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBBcDV6TGJJbHFBLWhWTUxKV0tuVm1tc2FKUEg3NzJmVS1ZT0EwRUk1WGEzSmo1WjY2dFNaNGNVT1A1b0FTVU96QXBmcFhLVGttTi1WU0JSbTBMdzR3aXM2NkJhZDZXdw?oc=5"
+  },
+  "kurdish": {
+   "t": "security",
+   "n": "The Kurdish question",
+   "d": "Kurdish groups face shifting fronts as the PKK (Kurdistan Workers' Party) vacates northern Iraq camps in a Turkish peace bid, while Iranian drones strike KDPI (Democratic Party of Iranian Kurdistan) bases in Koya.",
+   "c": [
+    "TUR",
+    "SYR",
+    "IRQ",
+    "IRN"
+   ],
+   "updated": "2026-10-12",
+   "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdVUwUllsWWk0QzItUzVEejgwa2NBQXN4RW9YQWFhR2czcFlTNU1TRUl2RGl1WHVLUGZRS256c2pCV0N5aFNKS3hIMWFfYk5BT2xXWV8yTjhDbzBUb1hEQldlWEdJV2k5VFJqelRBV3Qybm9jOW1LV0xyTlhsQW1JSmRlak5VUjFiTURMOFZmdzlUNHE0N2FLRUNHcTNHRF84MlEtUlRNSzVoVHZ2a2d0SmVKMEFrbEFFOUIxYnc4MjY5UEZVZHd3cmV0SWEzOFRiRjRUT1BR?oc=5"
   }
  },
  "pois": {
@@ -2307,12 +2353,12 @@
   "BRA": {
    "hog": "Luiz Inácio Lula da Silva, President",
    "hos": "Luiz Inácio Lula da Silva, President",
-   "lastelec": "presidential 1st round, Oct 2026, Flavio Bolsonaro advances",
-   "nextelec": "presidential runoff, Oct 2026",
+   "lastelec": "presidential (round 1), October 2026, Flávio Bolsonaro advances",
+   "nextelec": "presidential runoff, October 2026",
    "ruling": "Workers' Party (PT)-led broad coalition",
    "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcUhoRUhxNnhRLTZQekFzMUNDdHUwWEZNSGcySzZRVU5EYVdwODFjcVJrN0FNRHMtUVl6VG5BVHVoc21CZkdtM0NRb1VjcXVxdHBTelF1R0lveHc3cDNuMzBzSjdjUFBMY1htQjFWTEJjV2w4cDNKYnRrOTZXUnVPVWM4MWxSQ0dEYUFuamVrendIeTFzaXdBeXZmVDZWSFZEOHZ0ZnI3T2dwTmZJZjUweTdwT3g?oc=5",
    "system": "Federal presidential republic",
-   "updated": "2026-10-11"
+   "updated": "2026-10-12"
   },
   "CAN": {
    "hog": "Mark Carney, Prime Minister",
@@ -2475,8 +2521,8 @@
   },
   "ESP": {
    "nextelec": "snap general election called",
-   "updated": "2026-10-11",
-   "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTHV4WjJ4NGh6MVVqSU93UVFtQ0t1VnlidGJKREJRWjA3b01zRVF0VVdfQlpWNmVTRTZxM1RsYjBab1BzcXQ1OVVnNS1hRkZCV3hZOXdPSjd4S0JSdm1SM3FiTlhvZm1OTE1CN3A4LV9wTnZaQ0hWWGJWcmVYTTJQejdreWxoN0ZUZUhGYXB3YkJBbU9FQmRRRWJYU2hSaHBGdzM3cWxmeXVPTDMxZ2ZEMXAyUEs3QXVsRU1ZUw?oc=5"
+   "updated": "2026-10-12",
+   "source": "https://news.google.com/rss/articles/CBMie0FVX3lxTE11WEpFOGdJUkcyNG1MRGRKR1FBLUdqZVdSNEJvaEN4U1M2V1BRY0tBVVprbHZUSkZ3Q2xabWxIOEZMNTUzSlkxT21abkptNGRXYXdYRzI5UWg2UU93OTltVFNoUkNRckdxTkw2LVJPZFBCY0M2ZVFmVEpqRQ?oc=5"
   },
   "XKX": {
    "lastelec": "presidential, October 2026, Justina Shiroka Pula",
