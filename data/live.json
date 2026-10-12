@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-12T16:09:17Z",
+  "lastRun": "2026-10-12T22:09:43Z",
   "log": [
    {
     "date": "2026-10-12",
@@ -46,9 +46,39 @@
       "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcUhoRUhxNnhRLTZQekFzMUNDdHUwWEZNSGcySzZRVU5EYVdwODFjcVJrN0FNRHMtUVl6VG5BVHVoc21CZkdtM0NRb1VjcXVxdHBTelF1R0lveHc3cDNuMzBzSjdjUFBMY1htQjFWTEJjV2w4cDNKYnRrOTZXUnVPVWM4MWxSQ0dEYUFuamVrendIeTFzaXdBeXZmVDZWSFZEOHZ0ZnI3T2dwTmZJZjUweTdwT3g?oc=5"
      },
      {
+      "label": "China–Paraguay",
+      "change": "None → Tense: China sanctions Paraguayan ministers over Taiwan ties",
+      "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPR2wwRUhmemtmbTNyd3RoYXJmeVQ2c1dydjJYcDFUODZGRlQ3dDBaRG96X1RkVW9rdnE2RXp2bjN4MkhENkNZcmR4OG5fUHFsa212QjZHbVVKVVdmb2owYWVxOGNxOHFJVkVTMTlqUnJuUUJ0THJZeUFLTmgyOG83eGxoTl8zVjNSUzVpd0lJQkEza0drd3daUg?oc=5"
+     },
+     {
+      "label": "China–Belize",
+      "change": "None → Tense: China sanctions Belizean officials over Taiwan ties",
+      "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPR2wwRUhmemtmbTNyd3RoYXJmeVQ2c1dydjJYcDFUODZGRlQ3dDBaRG96X1RkVW9rdnE2RXp2bjN4MkhENkNZcmR4OG5fUHFsa212QjZHbVVKVVdmb2owYWVxOGNxOHFJVkVTMTlqUnJuUUJ0THJZeUFLTmgyOG83eGxoTl8zVjNSUzVpd0lJQkEza0drd3daUg?oc=5"
+     },
+     {
+      "label": "Egypt–Sudan",
+      "change": "Partner → Tense: Egyptian border strike kills 72 miners, prompting Sudanese military probe",
+      "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdUNTTXZadFFkTDZQNEc0UzZjbUxYTkt2eXNkNGthZHdPTXZWNFJxVGJadUhyRXh3OWpHV1dDemwzeThXZk9BLVhjejI2MUtnblJDMlRnbzZ0bjhBQU9BSTFKQ1lwOWxTQk9tblFWMlk5dVZ5TlduWEs3TFdNbUVDd0ZjWUdRR3M?oc=5"
+     },
+     {
+      "label": "Sahel & Sudan gold flows",
+      "change": "Thread updated to include Egypt following military operations against border gold mining",
+      "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSE9aLW9LOFFvdVVuTnBOZlV3ZnJwZ1lsWnVqNEs3enVSV2ZfSHROeEdjQ1ZTT1ZSRkJKcHZUVnFqSVFUNTlLcU9Nb0RSVHh0elpDRW5XZldEa09ZazFaZG5zdlg0T2l0bEhnNlR5NkxxM041NWdLQUtiNm1rME1IQ19KZFlka0lEa0lEaGRUWmJNb2wta25GalpOTW8wa21MSXI3ZEk5Q2RPTEZObDFKTHhoamJObnozaDdkNF93?oc=5"
+     },
+     {
+      "label": "Eastern DR Congo",
+      "change": "Flashpoint updated as former president Kabila allies with M23/AFC rebels",
+      "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPci1RTGdpRW55UVdiMi1mZmxOUnprSDJEb3hFb3VjQXNTbFkzOFpwSzEyM1lDVlpKUlBhSEVwNkZESWRuMTc4NWF2T1J3bXUxd0ZkREF1eHY2WVRfTUpsVFZONVNTa0dOVjc4VVlKanRSWi1wQUpWVG1VNGtWZ1BHRlhacW0xZFprSDg3V0ozaS1QdXBrYWg2NUIxUVFod3FwSmpSa3BWQUN0MjhEWVhMb1h1LTBQTC1LR3NMdQ?oc=5"
+     },
+     {
       "label": "Spain",
-      "change": "Election: snap general election called amid severe housing crisis",
-      "source": "https://news.google.com/rss/articles/CBMie0FVX3lxTE11WEpFOGdJUkcyNG1MRGRKR1FBLUdqZVdSNEJvaEN4U1M2V1BRY0tBVVprbHZUSkZ3Q2xabWxIOEZMNTUzSlkxT21abkptNGRXYXdYRzI5UWg2UU93OTltVFNoUkNRckdxTkw2LVJPZFBCY0M2ZVFmVEpqRQ?oc=5"
+      "change": "Snap general election scheduled for November 29, 2026",
+      "source": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaU9jQXNhQmdSX201RWw0ZkluSDh0S3JwQXVWeXBvVXBrQjAzc0VDWFgwc3J5Q1pMeldFSUFVZHZIRDhtY0NrN2N4anJXU3JGZ2ZoeXJDTlJHcWtyUkpUd0FDR21XSUhLSjc3b19rSW5Yd1o0OUVTeFdCSk5qVk44N3Z6ZVVFQ0xQdjlLSWtSUzZ5c2l4Zlo2dHJLRTBnYWhHMzVyc0xDeUQ1ekJvaEx3UmlTNlhvZXVsUUJIaXBZeFIxc3VJX2fSAdoBQVVfeXFMTkVfdk4wSlZPOHphdGRKR3VlODZZSDlUa0k1MUJQYU9sa2ptRjluVWNMN0Q1QkdYZU5PTFBDX25sM09HWmllekhKb2ZMdDdYbG4tX2ZndHlGcXFNY0kzRnU2VHd1c1FudTcxQ0J6Z0I1MVkwUklSbGtOdU9iLUdUTGN2Z2E1cnlkYkxWU3pqNk50dDVFdXBBbTd1MHhubVk2WUFKYk9KcHB2NHlFWWVkWXkxV3ZWQnNWNVlJbDVKY1BkZDdJOUg5Q21LR1pxYkRyREI0NllMY2ZmYkE?oc=5"
+     },
+     {
+      "label": "Serbia",
+      "change": "General election confirmed for October 25, 2026",
+      "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPN1lfZVpHbE5WOEg4bG16NVR0cEtUaFdqeXV6Z3paazJlWU5mOGIyN3FFVkxaWnlkMXB2Y2h3cGtIanY4Z1F3ZTBJZHZ5UFIxYkFDcTcwVDJPUGkwUlB0cmhjcGJGbU1SVk9rQUlMeWZrZ1QwSEc1MWQwSzJOY3V4Q2R3UUxOeFVJR3UydE0yN0FWdWE0ZF93c0hFMVJZOUVUVnBfN3FCN2Q3eGho?oc=5"
      }
     ]
    },
@@ -1226,7 +1256,7 @@
     ]
    }
   ],
-  "summary": "Updated UK–Iran and Hungary–Ukraine relations following UK accusations over RAF Fairford and Ukrainian minority law enactment; recorded Brazil and Spain election developments."
+  "summary": "Recorded Chinese sanctions on Belize and Paraguay, tensions over an Egyptian strike on Sudanese miners, and upcoming elections in Spain and Serbia."
  },
  "relations": {
   "DNK-USA": {
@@ -2108,6 +2138,30 @@
    "note": "Relations remain hostile as the UK blames Iran's Islamic Revolutionary Guard Corps (IRGC) for security threats at RAF Fairford.",
    "updated": "2026-10-12",
    "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWWJ0NVNWU296YXNLZ1BDNC11S1V3MW5uY1ViQ2M3VmZ4eVZVLWtTT2x4MG4zOGJncUVrOFFyZkcwekpYZXpWRWhvc0lxWkhveHU3MmV0VW03dEo1RmN4dzVhSVFWajBzMXlZVDFQWXRkQ3V3eFdVTDdadFpJNjFCVzVlQ05WMkYxZEpmelV6RDdBaWhSN19YVDJROXcySFo0anBOWTNQYk81TENDaUY4?oc=5"
+  },
+  "CHN-PRY": {
+   "a": "CHN",
+   "b": "PRY",
+   "s": "T",
+   "note": "China imposes sanctions on Paraguayan ministers over official ties with Taiwan, warning of broader diplomatic friction.",
+   "updated": "2026-10-12",
+   "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPR2wwRUhmemtmbTNyd3RoYXJmeVQ2c1dydjJYcDFUODZGRlQ3dDBaRG96X1RkVW9rdnE2RXp2bjN4MkhENkNZcmR4OG5fUHFsa212QjZHbVVKVVdmb2owYWVxOGNxOHFJVkVTMTlqUnJuUUJ0THJZeUFLTmgyOG83eGxoTl8zVjNSUzVpd0lJQkEza0drd3daUg?oc=5"
+  },
+  "BLZ-CHN": {
+   "a": "BLZ",
+   "b": "CHN",
+   "s": "T",
+   "note": "China levies sanctions on Belizean officials following high-level visits to Taiwan, asserting its one-China principle.",
+   "updated": "2026-10-12",
+   "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPR2wwRUhmemtmbTNyd3RoYXJmeVQ2c1dydjJYcDFUODZGRlQ3dDBaRG96X1RkVW9rdnE2RXp2bjN4MkhENkNZcmR4OG5fUHFsa212QjZHbVVKVVdmb2owYWVxOGNxOHFJVkVTMTlqUnJuUUJ0THJZeUFLTmgyOG83eGxoTl8zVjNSUzVpd0lJQkEza0drd3daUg?oc=5"
+  },
+  "EGY-SDN": {
+   "a": "EGY",
+   "b": "SDN",
+   "s": "T",
+   "note": "Tensions flare after an Egyptian airstrike kills 72 artisanal gold miners along the border, prompting an official Sudanese military probe.",
+   "updated": "2026-10-12",
+   "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdUNTTXZadFFkTDZQNEc0UzZjbUxYTkt2eXNkNGthZHdPTXZWNFJxVGJadUhyRXh3OWpHV1dDemwzeThXZk9BLVhjejI2MUtnblJDMlRnbzZ0bjhBQU9BSTFKQ1lwOWxTQk9tblFWMlk5dVZ5TlduWEs3TFdNbUVDd0ZjWUdRR3M?oc=5"
   }
  },
  "threads": {
@@ -2271,6 +2325,24 @@
    ],
    "updated": "2026-10-12",
    "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdVUwUllsWWk0QzItUzVEejgwa2NBQXN4RW9YQWFhR2czcFlTNU1TRUl2RGl1WHVLUGZRS256c2pCV0N5aFNKS3hIMWFfYk5BT2xXWV8yTjhDbzBUb1hEQldlWEdJV2k5VFJqelRBV3Qybm9jOW1LV0xyTlhsQW1JSmRlak5VUjFiTURMOFZmdzlUNHE0N2FLRUNHcTNHRF84MlEtUlRNSzVoVHZ2a2d0SmVKMEFrbEFFOUIxYnc4MjY5UEZVZHd3cmV0SWEzOFRiRjRUT1BR?oc=5"
+  },
+  "sahel-gold": {
+   "t": "economy",
+   "n": "Sahel & Sudan gold flows",
+   "d": "Artisanal gold from the Sahel and the Egypt-Sudan border is smuggled to the United Arab Emirates (UAE) and Switzerland, funding armed factions.",
+   "c": [
+    "MLI",
+    "BFA",
+    "NER",
+    "SDN",
+    "TCD",
+    "EGY",
+    "ARE",
+    "RUS",
+    "CHE"
+   ],
+   "updated": "2026-10-12",
+   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSE9aLW9LOFFvdVVuTnBOZlV3ZnJwZ1lsWnVqNEs3enVSV2ZfSHROeEdjQ1ZTT1ZSRkJKcHZUVnFqSVFUNTlLcU9Nb0RSVHh0elpDRW5XZldEa09ZazFaZG5zdlg0T2l0bEhnNlR5NkxxM041NWdLQUtiNm1rME1IQ19KZFlka0lEa0lEaGRUWmJNb2wta25GalpOTW8wa21MSXI3ZEk5Q2RPTEZObDFKTHhoamJObnozaDdkNF93?oc=5"
   }
  },
  "pois": {
@@ -2347,6 +2419,13 @@
    "d": "Diplomatic friction rises as the United States (US) presses Chile to align passage rights through the strategic waterway with Washington.",
    "updated": "2026-10-09",
    "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOSVFxQ2c2ZmE2d2QyNFQzcVlma09JZHlBRzVUR0dXWHJxNlBHc3loWjlwbURfSFJrWDdtck9yMmVPRXhacjBCUlNhX1EtVm13R2ZNWkNJdnhJUTRPTWllTVVLOHZRMDllSXJmeWJQNFQ5WllqZ3c1TWJGenRMNUthQWJKZHVJY3hDN21OdUtRTWgyMWFCY1dYSUZDSS1fUDZmS3lialRoSVFaa1RNOHA0N3RIQnhSWnhLRzZPZUtvWF9CUUhy?oc=5"
+  },
+  "eastern-dr-congo": {
+   "n": "Eastern DR Congo",
+   "s": "Kabila allies with M23",
+   "d": "Former president Joseph Kabila allies with the M23 and AFC (Alliance Fleuve Congo) coalition, heightening regional conflict.",
+   "updated": "2026-10-12",
+   "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPci1RTGdpRW55UVdiMi1mZmxOUnprSDJEb3hFb3VjQXNTbFkzOFpwSzEyM1lDVlpKUlBhSEVwNkZESWRuMTc4NWF2T1J3bXUxd0ZkREF1eHY2WVRfTUpsVFZONVNTa0dOVjc4VVlKanRSWi1wQUpWVG1VNGtWZ1BHRlhacW0xZFprSDg3V0ozaS1QdXBrYWg2NUIxUVFod3FwSmpSa3BWQUN0MjhEWVhMb1h1LTBQTC1LR3NMdQ?oc=5"
   }
  },
  "politics": {
@@ -2467,9 +2546,9 @@
    "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWUlwWEJ0R2JPeVl4TUNzYkNyMVZfaWlwU21SSF96Ui1hdXIyR0wyNkpwQlFjRmw3UGJya0NYZ25TQjVGWWdrWEdEdjBsaFlJdmtQNGdIYjVJcG5zUG02b3I3TFhPXzluNmQyZTh3ejJVRGtMMG42M21yZjc4RXBleU9RTzVZRURlZDJGdkFTRXF2QVNiSVdmN2VtMkdNRzIzQnE5SFdHMlQ5TXVoSGo0?oc=5"
   },
   "SRB": {
-   "nextelec": "General elections, December 2026",
-   "updated": "2026-09-30",
-   "source": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBKNUxrTXpqVldjMmFCVUJnazZuVU1fTzg3cVlZTnlwVVVtbXZ1UFgzalhlamZKcElxekxPOWc5V3RERUZCd3hvdVZoRWEtcHNkVlJhbEdfNHZDNWcyWHZPTkhHNloxOFNDbHh3WjVwcVZxRDhncm1pVWV6QVc?oc=5",
+   "nextelec": "general election, October 25, 2026",
+   "updated": "2026-10-12",
+   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPN1lfZVpHbE5WOEg4bG16NVR0cEtUaFdqeXV6Z3paazJlWU5mOGIyN3FFVkxaWnlkMXB2Y2h3cGtIanY4Z1F3ZTBJZHZ5UFIxYkFDcTcwVDJPUGkwUlB0cmhjcGJGbU1SVk9rQUlMeWZrZ1QwSEc1MWQwSzJOY3V4Q2R3UUxOeFVJR3UydE0yN0FWdWE0ZF93c0hFMVJZOUVUVnBfN3FCN2Q3eGho?oc=5",
    "lastelec": "presidential, September 2026, Ana Brnabić"
   },
   "CHE": {
@@ -2520,9 +2599,9 @@
    "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSGtaN0YzYTJnMjB2WGU1X1Z0Q0hwYmNjel9ZOXdiLU1yQmpNOXdTdlIwYnRlazZLXy1vQ05EUWsxbkhGUlpVYWhwR2x2a1FNcUpFaktWZXBOc2dfSDh6aEtFbGRDY3RsRDRnNHZwMGRGdUlfM050VkhZXy1SNXBfSXJvNmRpejdyS3c?oc=5"
   },
   "ESP": {
-   "nextelec": "snap general election called",
+   "nextelec": "snap general election, November 29, 2026",
    "updated": "2026-10-12",
-   "source": "https://news.google.com/rss/articles/CBMie0FVX3lxTE11WEpFOGdJUkcyNG1MRGRKR1FBLUdqZVdSNEJvaEN4U1M2V1BRY0tBVVprbHZUSkZ3Q2xabWxIOEZMNTUzSlkxT21abkptNGRXYXdYRzI5UWg2UU93OTltVFNoUkNRckdxTkw2LVJPZFBCY0M2ZVFmVEpqRQ?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaU9jQXNhQmdSX201RWw0ZkluSDh0S3JwQXVWeXBvVXBrQjAzc0VDWFgwc3J5Q1pMeldFSUFVZHZIRDhtY0NrN2N4anJXU3JGZ2ZoeXJDTlJHcWtyUkpUd0FDR21XSUhLSjc3b19rSW5Yd1o0OUVTeFdCSk5qVk44N3Z6ZVVFQ0xQdjlLSWtSUzZ5c2l4Zlo2dHJLRTBnYWhHMzVyc0xDeUQ1ekJvaEx3UmlTNlhvZXVsUUJIaXBZeFIxc3VJX2fSAdoBQVVfeXFMTkVfdk4wSlZPOHphdGRKR3VlODZZSDlUa0k1MUJQYU9sa2ptRjluVWNMN0Q1QkdYZU5PTFBDX25sM09HWmllekhKb2ZMdDdYbG4tX2ZndHlGcXFNY0kzRnU2VHd1c1FudTcxQ0J6Z0I1MVkwUklSbGtOdU9iLUdUTGN2Z2E1cnlkYkxWU3pqNk50dDVFdXBBbTd1MHhubVk2WUFKYk9KcHB2NHlFWWVkWXkxV3ZWQnNWNVlJbDVKY1BkZDdJOUg5Q21LR1pxYkRyREI0NllMY2ZmYkE?oc=5"
   },
   "XKX": {
    "lastelec": "presidential, October 2026, Justina Shiroka Pula",
