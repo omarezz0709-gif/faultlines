@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-12T10:45:06Z",
- "berlin": "2026-10-12 12:45",
- "status": "ok",
- "summary": "All checks passed.",
+ "generated": "2026-10-12T16:41:06Z",
+ "berlin": "2026-10-12 18:41",
+ "status": "warn",
+ "summary": "0 problem(s), 1 warning(s): News outlet feeds: 56/57 working; not working: Sky News Arabia (200)",
  "repairs": [],
  "checks": [
   {
@@ -10,56 +10,56 @@
    "name": "Website",
    "status": "ok",
    "detail": "HTTP 200, 423 KB",
-   "ms": 206
+   "ms": 117
   },
   {
    "g": "site",
    "name": "GitHub Pages copy",
    "status": "ok",
    "detail": "HTTP 200",
-   "ms": 108
+   "ms": 99
   },
   {
    "g": "site",
    "name": "data/news.json",
    "status": "ok",
-   "detail": "HTTP 200, 511 KB",
-   "ms": 343
+   "detail": "HTTP 200, 519 KB",
+   "ms": 179
   },
   {
    "g": "site",
    "name": "data/live.json",
    "status": "ok",
-   "detail": "HTTP 200, 173 KB",
-   "ms": 232
+   "detail": "HTTP 200, 176 KB",
+   "ms": 172
   },
   {
    "g": "site",
    "name": "data/politics.json",
    "status": "ok",
    "detail": "HTTP 200, 42 KB",
-   "ms": 183
+   "ms": 61
   },
   {
    "g": "site",
    "name": "data/wb.json",
    "status": "ok",
    "detail": "HTTP 200, 84 KB",
-   "ms": 222
+   "ms": 67
   },
   {
    "g": "site",
    "name": "data/geo.json",
    "status": "ok",
    "detail": "HTTP 200, 697 KB",
-   "ms": 134
+   "ms": 102
   },
   {
    "g": "site",
    "name": "data/cities.json",
    "status": "ok",
    "detail": "HTTP 200, 151 KB",
-   "ms": 112
+   "ms": 67
   },
   {
    "g": "site",
@@ -71,19 +71,19 @@
    "g": "fresh",
    "name": "Headlines (news.json)",
    "status": "ok",
-   "detail": "last update 0.4 h ago"
+   "detail": "last update 0.6 h ago"
   },
   {
    "g": "fresh",
    "name": "AI relationship update (live.json)",
    "status": "ok",
-   "detail": "last update 0.4 h ago"
+   "detail": "last update 0.5 h ago"
   },
   {
    "g": "fresh",
    "name": "Leaders (politics.json)",
    "status": "ok",
-   "detail": "last update 12.6 h ago"
+   "detail": "last update 18.5 h ago"
   },
   {
    "g": "fresh",
@@ -113,182 +113,182 @@
    "g": "worker",
    "name": "/live (en)",
    "status": "ok",
-   "detail": "27 items",
-   "ms": 5129
+   "detail": "31 items",
+   "ms": 5191
   },
   {
    "g": "worker",
    "name": "/top (en)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 112
+   "ms": 5131
   },
   {
    "g": "worker",
    "name": "/videos (en)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 478
+   "ms": 391
   },
   {
    "g": "worker",
    "name": "/live (de)",
    "status": "ok",
-   "detail": "30 items",
-   "ms": 1359
+   "detail": "28 items",
+   "ms": 1641
   },
   {
    "g": "worker",
    "name": "/top (de)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 155
+   "ms": 113
   },
   {
    "g": "worker",
    "name": "/videos (de)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 454
+   "ms": 362
   },
   {
    "g": "worker",
    "name": "/live (fr)",
    "status": "ok",
-   "detail": "38 items",
-   "ms": 810
+   "detail": "32 items",
+   "ms": 1135
   },
   {
    "g": "worker",
    "name": "/top (fr)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 113
+   "ms": 1322
   },
   {
    "g": "worker",
    "name": "/videos (fr)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 398
+   "ms": 355
   },
   {
    "g": "worker",
    "name": "/live (es)",
    "status": "ok",
-   "detail": "10 items",
-   "ms": 238
+   "detail": "7 items",
+   "ms": 344
   },
   {
    "g": "worker",
    "name": "/top (es)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 62
+   "ms": 130
   },
   {
    "g": "worker",
    "name": "/videos (es)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 308
+   "ms": 315
   },
   {
    "g": "worker",
    "name": "/live (it)",
    "status": "ok",
-   "detail": "29 items",
-   "ms": 1317
+   "detail": "24 items",
+   "ms": 1000
   },
   {
    "g": "worker",
    "name": "/top (it)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 95
+   "ms": 190
   },
   {
    "g": "worker",
    "name": "/videos (it)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 329
+   "ms": 430
   },
   {
    "g": "worker",
    "name": "/live (ar)",
    "status": "ok",
-   "detail": "16 items",
-   "ms": 563
+   "detail": "6 items",
+   "ms": 425
   },
   {
    "g": "worker",
    "name": "/top (ar)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 75
+   "ms": 435
   },
   {
    "g": "worker",
    "name": "/videos (ar)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 505
+   "ms": 452
   },
   {
    "g": "worker",
    "name": "Real-time search",
    "status": "ok",
-   "detail": "9 reports",
-   "ms": 3624
+   "detail": "10 reports",
+   "ms": 3556
   },
   {
    "g": "security",
    "name": "Other websites are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 51
+   "ms": 52
   },
   {
    "g": "security",
    "name": "Look-alike Pages projects are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 46
+   "ms": 61
   },
   {
    "g": "security",
    "name": "Only the site's own prompts are answered",
    "status": "ok",
    "detail": "HTTP 400 (should be 400)",
-   "ms": 52
+   "ms": 47
   },
   {
    "g": "security",
    "name": "Private chat needs a valid pass",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 45
+   "ms": 43
   },
   {
    "g": "security",
    "name": "Admin login",
    "status": "ok",
    "detail": "HTTP 401 without a code (should be 401)",
-   "ms": 44
+   "ms": 37
   },
   {
    "g": "ai",
    "name": "AI answers",
    "status": "ok",
    "detail": "answered by gemini-3.6-flash",
-   "ms": 1654
+   "ms": 2606
   },
   {
    "g": "sources",
    "name": "News outlet feeds",
-   "status": "ok",
-   "detail": "57/57 working"
+   "status": "warn",
+   "detail": "56/57 working; not working: Sky News Arabia (200)"
   },
   {
    "g": "sources",
@@ -301,7 +301,7 @@
    "name": "Page loads and the globe starts",
    "status": "ok",
    "detail": "",
-   "ms": 3527
+   "ms": 4127
   },
   {
    "g": "browser",
@@ -346,5 +346,5 @@
    "detail": "none hanging"
   }
  ],
- "ms": 499768
+ "ms": 409296
 }
