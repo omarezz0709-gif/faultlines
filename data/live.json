@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-12T05:17:59Z",
+  "lastRun": "2026-10-12T10:21:50Z",
   "log": [
    {
     "date": "2026-10-12",
@@ -9,6 +9,21 @@
       "label": "North Korea–South Korea",
       "change": "Normal → Armed conflict: Inter-Korean missile exchanges and military posturing escalate hostilities.",
       "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQk1yN0VGNGJfVDNQYzVNVFBzV251RWFmQmc0UDg5dzdmWXZBR2YxdzB3dnNWUF9uc1Fod0MtN21CMTVLUWk0UnJ2WWVENHJEM3V6SzFKeTJNTVQ1SFZ2c09kTUVkMUpVcDFrQnM4ZTlQd2ZyQU1BUHpqUHlZN2w1QnRtWnk2dnFXaDJmdEhjbVg3TmNxNUptaFdERklRZWoyVUFSY2lDVEtoOXVtZ29UWUxQUQ?oc=5"
+     },
+     {
+      "label": "Egypt–Malaysia",
+      "change": "Normal → Partner: strategic partnership established covering trade, regional security, and Palestine",
+      "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNOS1zNDdYSW82V0xUQ1BXR1YtRnE4dWJfaVlhUk9fSnNIQVJmSllDVi1vS01kN0JYOHVGY2F5RTZzMDJHWmYzVlh4VXNsVnpuVEVOd0JPRXhuY2ZHWXcwenFJSVVndWNHdGdOY3d2NVg0NExJQUFsWFkzUDR1TEJvME9jaXBoWjZUc3dmYUJGdnVUSDVlRzU2MUVqTFQxa0ZqQ3JKbWM3SjE4QXY5cjlITkp3?oc=5"
+     },
+     {
+      "label": "Strait of Hormuz",
+      "change": "Updated status to reflect commercial tanker drone strikes off the coast of Oman",
+      "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcHVGY2RTcVBPTU15WUZYakJSWUtkYmFmaVlwY2ZIRjhvSDh4dEU2R2p2Mkh1Ym9ZQjFYR3FPMl9uRVQtZVlUOXF2aXZfbGpEMFlFOGI3aHA3SkxNWU53M0RQVzB3Yk1mZF9saFZNQ0pBM3h3M05CelREQ29jWDNveEQxRl9Lak1ZZGJuanotT0tEakQzcUFGZGdvV0FRQU5KLTF6bGZKQkFnUTNNRVlzZEdsUVJhUQ?oc=5"
+     },
+     {
+      "label": "New Zealand",
+      "change": "Recorded scheduled general election for 7 November 2026",
+      "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdDlaQXVYbmIyYWdIbmtFclNfTnVkM29oRGdoR2tIcTVlZ1g2alZBZU1NNkpTaG81M0RQNDBfenFVZkxGZXpGSXdrV1A3NlZteEY5NE5WS1NQMGt2X1dTb1lmSjcydnotblJZa3dtd1F5MlVMUjQ5bnpzZXVrUDFCUW9VQmNrMXFPNVdhRWk3NzV2VzFuNlA0TVNHMzU4eDBkM0ZTYW01VGZONWN2bG9qZVlpZjRYczFBek5mZVhZZ2pSNEp4OS1hWHNSZDFZdFY2MFNmY1ZR?oc=5"
      }
     ]
    },
@@ -1186,7 +1201,7 @@
     ]
    }
   ],
-  "summary": "Escalating Houthi strikes on Saudi Arabia draw international condemnation and regional security realignments, while North Korea fires multiple ballistic missiles."
+  "summary": "Egypt and Malaysia formalise a strategic partnership, New Zealand gears up for general elections in November 2026, and tanker drone strikes escalate tensions around the Strait of Hormuz."
  },
  "relations": {
   "DNK-USA": {
@@ -2052,6 +2067,14 @@
    "note": "Iran continues to back Houthi forces as their missile and drone campaign against Saudi Arabia intensifies.",
    "updated": "2026-10-12",
    "source": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOZ3BrcXA5OUY3UldsSWxsb1A2eHBFVXlkT3R5ckVJT0NMLVBrZHJPWl9JSDE3OUQ5b1FXZVZPaU51cmxsOGktS01TbzRlZDNiZGQxdV90V2dUT3N1SEluMWpwZTFibTgxdTdWSHJjbi1fT2pYOUlxa0FhYU9NVHk2Yk5MWUxvMEZYWGltWk52QjNFaGdxeTdpUW9zSm1TTlROSVRjVzU5UklKZ0FqZFVmeEFQcndFT0JKNFBnYWpJdy15RFFQaWhYRE9kU0pyZHE1Mk5vaW1XeThkTWxHT01ydG15aFp4Qk56QmlWQtIB_AFBVV95cUxPMmxDOFU5SG05QmNMWkhjNUwzRVotaFZjSnBXWGswNV9lT2R2R1RWYVM2cEdzMUtjOW12RHVpaVhzYk4wcWY5UkN1Vk1wc2p5aDhrV3ZqZml3dmFCa1lucGlGODZqM3AwQUxnZjE3UlNBZG5CMUFfbUFfaHFxVnRZSHFJMWhIanNWT2lsRk1QNG5OMFEzRWg4QmxTd20zZGVyQkxFNTU0R2FfRW9zNzZiWHVDU3gwT2lPVm5TQzdRSEQ1YU9tTnFqdkZhcDB1VmJnRFlBTlJ6YlRCZjF0anNQdEx4ZnVBYTNTMGh0Y3RiT2xTSi1CSzR4UFpPdzM?oc=5"
+  },
+  "EGY-MYS": {
+   "a": "EGY",
+   "b": "MYS",
+   "s": "F",
+   "note": "Egypt and Malaysia establish a strategic partnership, aligning on trade, Nile water security, and Palestine.",
+   "updated": "2026-10-12",
+   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNOS1zNDdYSW82V0xUQ1BXR1YtRnE4dWJfaVlhUk9fSnNIQVJmSllDVi1vS01kN0JYOHVGY2F5RTZzMDJHWmYzVlh4VXNsVnpuVEVOd0JPRXhuY2ZHWXcwenFJSVVndWNHdGdOY3d2NVg0NExJQUFsWFkzUDR1TEJvME9jaXBoWjZUc3dmYUJGdnVUSDVlRzU2MUVqTFQxa0ZqQ3JKbWM3SjE4QXY5cjlITkp3?oc=5"
   }
  },
  "threads": {
@@ -2235,11 +2258,11 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "The United States (US) enforces a naval blockade against Iran, disabling a commercial vessel in adjacent waters attempting to run the cordon.",
+   "d": "The United States (US) enforces an Iran naval blockade amid escalating drone attacks on commercial tankers off Oman.",
    "n": "Strait of Hormuz",
-   "s": "US blockade active · Ship disabled",
-   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNW9FeS0xY0pkWHlqMHYyZnVvVUUxd3RSOG5fdlFrY2pqcmt3T3htTXQxNjk1VHdVX3ZZZ0l2SmZSdE50UzZld3lYNWlDMk5kbnBFcTNPUjVrOXN4R1pNc3VnVkVHcmozZVpUSG9XT2tYWk1OZjI2M1RPU3ZkRHF0M3BkQ0J5dWN5c2NqOEUtWl9UOE0tNFpuZmVDZTRFVHRsTXlLUm9iOTFsbGtoQ0NLSDhR0gG3AUFVX3lxTE5oeXI0NjB5enlxWHA5LVQ1X3l6SU9CV2xzN2Jxa0tNbkVyX0VtZ1FTY21RMFh3M2plMUV4cUpzNC1aVkFYZHVxbGVWNHAwSDRBQ01QRXBnU1dyZFJ1SENOQjNWMmlzTF9tWmpReHdDeWhjOHE2RUdCbHJWamRRa3RCSV8yQkNLNGsxc1NoTU5mRlBlbm5VVnU4aXRYVW44Yzh1QTg4S2F6ZldxODhGMmMyLWk0VUtpSQ?oc=5",
-   "updated": "2026-10-11",
+   "s": "Blockade active · Tanker hit off Oman",
+   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcHVGY2RTcVBPTU15WUZYakJSWUtkYmFmaVlwY2ZIRjhvSDh4dEU2R2p2Mkh1Ym9ZQjFYR3FPMl9uRVQtZVlUOXF2aXZfbGpEMFlFOGI3aHA3SkxNWU53M0RQVzB3Yk1mZF9saFZNQ0pBM3h3M05CelREQ29jWDNveEQxRl9Lak1ZZGJuanotT0tEakQzcUFGZGdvV0FRQU5KLTF6bGZKQkFnUTNNRVlzZEdsUVJhUQ?oc=5",
+   "updated": "2026-10-12",
    "t": "strait",
    "lat": 26.57,
    "lng": 56.25,
@@ -2432,7 +2455,7 @@
   "NZL": {
    "nextelec": "General election, 7 November 2026",
    "updated": "2026-10-12",
-   "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMW9QSnEzOHhuc1BYU2VOaHI4SU5ZUlp1RVA0emtKREdKdklwbFotSzlMVkwxclk0SVF1MkZOSVNhNllNY1ZGbmRsNlNqMF9zQnU5LWtmM0huWGRiazd3MmlBeGo4ZmVMZW1rdVFMS2tMMU5PeG9rYTlKczlqVVpDb19hNEJiaW4taDlnRE5YX3RsdmVjQ1J30gGcAUFVX3lxTFB5Y3NmTlNhTUhDbTcyRnZYZUlyU1JFYThIU3pLVlJ5WUJCbTUxZnVLSWlkLW9qX0R6UHd5QXlhbXhyTGk1NmlGanVFY0pfMkxfUEFZN0lFS0pmS3FMQU9tS1R4em53clJ5VEs0T3JKU2NYai1TWVVtVmRmSTFPRnBzZjBaTTZHTlVVeGtTcWlXMDFveEdaRG5zd0VzUQ?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdDlaQXVYbmIyYWdIbmtFclNfTnVkM29oRGdoR2tIcTVlZ1g2alZBZU1NNkpTaG81M0RQNDBfenFVZkxGZXpGSXdrV1A3NlZteEY5NE5WS1NQMGt2X1dTb1lmSjcydnotblJZa3dtd1F5MlVMUjQ5bnpzZXVrUDFCUW9VQmNrMXFPNVdhRWk3NzV2VzFuNlA0TVNHMzU4eDBkM0ZTYW01VGZONWN2bG9qZVlpZjRYczFBek5mZVhZZ2pSNEp4OS1hWHNSZDFZdFY2MFNmY1ZR?oc=5"
   },
   "GRD": {
    "nextelec": "general election, November 5, 2026",
