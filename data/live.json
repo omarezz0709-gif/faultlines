@@ -1,7 +1,17 @@
 {
  "meta": {
-  "lastRun": "2026-10-11T22:09:00Z",
+  "lastRun": "2026-10-12T05:17:59Z",
   "log": [
+   {
+    "date": "2026-10-12",
+    "items": [
+     {
+      "label": "North Korea–South Korea",
+      "change": "Normal → Armed conflict: Inter-Korean missile exchanges and military posturing escalate hostilities.",
+      "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQk1yN0VGNGJfVDNQYzVNVFBzV251RWFmQmc0UDg5dzdmWXZBR2YxdzB3dnNWUF9uc1Fod0MtN21CMTVLUWk0UnJ2WWVENHJEM3V6SzFKeTJNTVQ1SFZ2c09kTUVkMUpVcDFrQnM4ZTlQd2ZyQU1BUHpqUHlZN2w1QnRtWnk2dnFXaDJmdEhjbVg3TmNxNUptaFdERklRZWoyVUFSY2lDVEtoOXVtZ29UWUxQUQ?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-11",
     "items": [
@@ -1176,7 +1186,7 @@
     ]
    }
   ],
-  "summary": "Updated Argentina–Israel relations following a bilateral defense pact, refreshed Algeria–Morocco border tensions, expanded the Captagon trafficking thread, and recorded newly scheduled elections."
+  "summary": "Escalating Houthi strikes on Saudi Arabia draw international condemnation and regional security realignments, while North Korea fires multiple ballistic missiles."
  },
  "relations": {
   "DNK-USA": {
@@ -1511,9 +1521,9 @@
    "a": "KOR",
    "b": "PRK",
    "s": "W",
-   "note": "South Korea concludes that North Korean landmines caused border blast injuries and urges an official apology.",
-   "updated": "2026-10-05",
-   "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdHozYUJQbmEzNDNsS1RHVW1HX1gtQ1lNU3hGT2ljQXF2QWcwNklfbzU5Tk9oSVVtenNaU3pteGJjQTdYWVBfWkp6NkhVU2Y0Y1lzV1JXazZhbUFHUWxSX0pvOTZSMnp0RWJQWFE5RGdRU2hQMDRXTXJDN0RUMUJRNzRycGZocDlxTlpNTkRsc3k4dFJxTmxEUlFuOXpZV0ZEdkJQdkU3MNIBrAFBVV95cUxONkNwNXlkQjlDX0h3N2JzcDBSNjFCN1pHNlRrN1gxTVFZZ2otdmtTeDlCSU5CSzlrdExyajYxV2owOExVbHo5S0x4MDF3ZUp4N3hQUFdvb3hrM0lPTkhzcU1pNThyaDNDbG5tNS1OTThLNEFCaGNkbUZHNlpJV3huUU1ycVZjRGlDVjBHMm9OZU14cXRxYWFJTGI3ZDZaT2dwWUtoWFE1Wm5vaW01?oc=5"
+   "note": "Inter-Korean tensions spike as North Korea launches multiple ballistic missiles following recent joint exercises.",
+   "updated": "2026-10-12",
+   "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQk1yN0VGNGJfVDNQYzVNVFBzV251RWFmQmc0UDg5dzdmWXZBR2YxdzB3dnNWUF9uc1Fod0MtN21CMTVLUWk0UnJ2WWVENHJEM3V6SzFKeTJNTVQ1SFZ2c09kTUVkMUpVcDFrQnM4ZTlQd2ZyQU1BUHpqUHlZN2w1QnRtWnk2dnFXaDJmdEhjbVg3TmNxNUptaFdERklRZWoyVUFSY2lDVEtoOXVtZ29UWUxQUQ?oc=5"
   },
   "ESP-ISR": {
    "a": "ESP",
@@ -2034,6 +2044,14 @@
    "note": "Relations remain hostile as Algerian authorities arrest 61 Moroccans accused of plotting acts of sabotage.",
    "updated": "2026-10-11",
    "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRFNVc01iZ18zeHNxMkVkUEVtVlZQSHZodjFsdDBlaUVEbWhMZzRZWmJqSVZQbjZKWDhfSHU5NUo5M2xkMFJ0djhpcVpBcEJBNVI3eWQxT3hwSmFTQUJoUWZuLWJnNG1NWDRYMWNQN1lILTFFV3lsTjBkX0Z4WDI4OG1WU3g3MmFUdHpNZ2dsQVU4TVZPQXlkbV9ZenFVNGNBYk94S1ktUHk3NTFJbEVJ?oc=5"
+  },
+  "IRN-YEM": {
+   "a": "IRN",
+   "b": "YEM",
+   "s": "F",
+   "note": "Iran continues to back Houthi forces as their missile and drone campaign against Saudi Arabia intensifies.",
+   "updated": "2026-10-12",
+   "source": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOZ3BrcXA5OUY3UldsSWxsb1A2eHBFVXlkT3R5ckVJT0NMLVBrZHJPWl9JSDE3OUQ5b1FXZVZPaU51cmxsOGktS01TbzRlZDNiZGQxdV90V2dUT3N1SEluMWpwZTFibTgxdTdWSHJjbi1fT2pYOUlxa0FhYU9NVHk2Yk5MWUxvMEZYWGltWk52QjNFaGdxeTdpUW9zSm1TTlROSVRjVzU5UklKZ0FqZFVmeEFQcndFT0JKNFBnYWpJdy15RFFQaWhYRE9kU0pyZHE1Mk5vaW1XeThkTWxHT01ydG15aFp4Qk56QmlWQtIB_AFBVV95cUxPMmxDOFU5SG05QmNMWkhjNUwzRVotaFZjSnBXWGswNV9lT2R2R1RWYVM2cEdzMUtjOW12RHVpaVhzYk4wcWY5UkN1Vk1wc2p5aDhrV3ZqZml3dmFCa1lucGlGODZqM3AwQUxnZjE3UlNBZG5CMUFfbUFfaHFxVnRZSHFJMWhIanNWT2lsRk1QNG5OMFEzRWg4QmxTd20zZGVyQkxFNTU0R2FfRW9zNzZiWHVDU3gwT2lPVm5TQzdRSEQ1YU9tTnFqdkZhcDB1VmJnRFlBTlJ6YlRCZjF0anNQdEx4ZnVBYTNTMGh0Y3RiT2xTSi1CSzR4UFpPdzM?oc=5"
   }
  },
  "threads": {
@@ -2413,8 +2431,8 @@
   },
   "NZL": {
    "nextelec": "General election, 7 November 2026",
-   "updated": "2026-10-11",
-   "source": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQN2swT2xhOVdZQVpSY3c5U3piYmw0U1BNTjZldUE2Nm4zaFhMZHB3aUZDYklfbUprdTlRT3J3TnR4QTNGb3dlcFRPQWhmaTFteVVDb2R1R3V3cGgydWlmSG1uSkt1YU4zZEJoQmNFaDFhUi1GdVdROUl6ZkE2Mm5fWVZZeHo2ajNYeHVlZ3F2QTh0OTNZeUU0REFfVXF0UV9fd3VUM1JNc19reWhOXzlYWVBONzVHVjhpNEE2QnJnYnBCbHNPaUFKSDdoYkk2ZjBVSWJEamhQZ2FfMHFhQlpF?oc=5"
+   "updated": "2026-10-12",
+   "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMW9QSnEzOHhuc1BYU2VOaHI4SU5ZUlp1RVA0emtKREdKdklwbFotSzlMVkwxclk0SVF1MkZOSVNhNllNY1ZGbmRsNlNqMF9zQnU5LWtmM0huWGRiazd3MmlBeGo4ZmVMZW1rdVFMS2tMMU5PeG9rYTlKczlqVVpDb19hNEJiaW4taDlnRE5YX3RsdmVjQ1J30gGcAUFVX3lxTFB5Y3NmTlNhTUhDbTcyRnZYZUlyU1JFYThIU3pLVlJ5WUJCbTUxZnVLSWlkLW9qX0R6UHd5QXlhbXhyTGk1NmlGanVFY0pfMkxfUEFZN0lFS0pmS3FMQU9tS1R4em53clJ5VEs0T3JKU2NYai1TWVVtVmRmSTFPRnBzZjBaTTZHTlVVeGtTcWlXMDFveEdaRG5zd0VzUQ?oc=5"
   },
   "GRD": {
    "nextelec": "general election, November 5, 2026",
