@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-13T10:21:25Z",
+  "lastRun": "2026-10-13T16:10:00Z",
   "log": [
    {
     "date": "2026-10-13",
@@ -17,13 +17,18 @@
      },
      {
       "label": "Bulgaria–Russia",
-      "change": "Note update: Sofia summons Russian ambassador after drone attack sinks ship in EEZ",
-      "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE44TVBTTEhLaVVtQWZYZEhHSzN1MGdyaG9rWDFManFETW9ILUdKbFc3ZG4wUGNlTE1aMWRpbURnUllvb2dRR3ZEWG84aw?oc=5"
+      "change": "Normal → Tense: drone attack on ships in Black Sea",
+      "source": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBtOXhiczM5QnZQbVJGRVpuZm5UOXBfaFpVRFhOV2M1bk1YOGFoMVdKMjN1dm4zMEpqeE9ZUXFFU0Z1VkNwRTBpaE9JdXBjanBDUVA0dDlwS0tNT2c?oc=5"
+     },
+     {
+      "label": "South Korea–Ukraine",
+      "change": "Normal → Tense: diplomatic dispute over North Korean POWs",
+      "source": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9jUldnOHp0Vi1aLTdtUUpEak43T1dnbGxvV0RXLWVpSElFcUMxLUNqdTZqMmI4ZV9ZalNHXzdiVFluZXE2cS1qZkY4dlJEaUhBS3JDOC1jUTMzeUR5M2pVTnJlZTktQQ?oc=5"
      },
      {
       "label": "Israel–Saudi Arabia",
-      "change": "Note update: Riyadh rejects Israeli request to coordinate strikes against Houthis",
-      "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSTJJX2NDZDVoYXk3WlBnSm1EZFBFcFNrWDZMMFNHNWkybUxKckJFWnlCNV9xNkx6bmlKUUtXV1AzWEMtVEVZT3o3MndYYWM0LUpsRWdxVjJ1bEpZSjFrRS1Ka29CZUNkQWwyNi14SlBjNU56aGkyVkI3cVFFVjlIYnZTZTNicDdHb1ZSSXQzM09GVEIyYWQyT0p4cDl0TnBPWVE?oc=5"
+      "change": "Normal → Normal: normalization remains stalled despite Houthi attacks",
+      "source": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPMHQta2VOcnJWc0Q1VE16TUR3Zy10Nm5leFYzQkEzMzFlbDRlX1RnMkhjUHphOTFFV0RDN3pOcXRzTlNWMFFaRzd0T1VSVktjNWxyOThRNDBIdW1Gc1pHX1l3VUlsck9URUhsb3NCelBSb1hON0g1cUNMNXh2bkZheFFBSm1YRjVZR2ZBaDZLQmFQNkJkX0JkRE0yckI2YS1kTThWSndVVmR5R3JDcG5laUp0bXB4SjBrZDQ1WV9PcnVCQXgzSUhodWRMWkpoelBJR19GOGRGMVFlbHh4UXVrenFZdGHSAeoBQVVfeXFMUHhXb0Z5b0p0T2Q1eENmOUgySVh0ejI5TV9iNmd5Sm1TOGp1TlIzN0t6V0gzMkJmTVlHekFwWnlpUnJsRlNRU3pPXzNKNUtZWEFIc2wtN1BwVGVuT0twdDhIaW01RGRNXzhfUlJMUlMyMWRyalFENHlEcWVHWlhuTC15NG00ZWQtNEJkN3BibmpvQ3pBeHdtNnFpN0gtaG5zeW5sR3ZiOERheDFJaEhneW5zeUlET2VQS2FVSWY5OWxwbm9UX1pVazN3VEdtX1FqVXA1WXkwN2NfQmY5S2tNcVA5RDI5QXBKVzZB?oc=5"
      }
     ]
    },
@@ -1281,7 +1286,7 @@
     ]
    }
   ],
-  "summary": "Bulgaria summons Russia's ambassador after a drone strike sinks a ship in its waters, while Saudi Arabia rebuffs Israeli requests to join strikes against Houthis."
+  "summary": "The update reflects the escalation of the Houthi missile campaign, the resulting regional security realignments, and the diplomatic fallout from the Starlink sabotage in Poland."
  },
  "relations": {
   "DNK-USA": {
@@ -1497,8 +1502,8 @@
    "b": "UKR",
    "s": "T",
    "note": "South Korea recalls its ambassador to Ukraine over a diplomatic dispute regarding North Korean prisoners of war.",
-   "updated": "2026-10-09",
-   "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdGlHMFdmMXF1VV9KcE5vQnFfYXRQQ1hPcjFfWVpESlZsLWlrRUVZMmE5cVZKY1N0Um9VQS1yYTZUVEJQQkFWdTlMcUxSSDJ5Zy0yZ0dJX0NSVlZ6UkJ6QW5ycUp3VUg0UkJKTTd1OElscVFXVE5LRUFmRzFVNHlKd2otWV9EYUc4?oc=5"
+   "updated": "2026-10-13",
+   "source": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9jUldnOHp0Vi1aLTdtUUpEak43T1dnbGxvV0RXLWVpSElFcUMxLUNqdTZqMmI4ZV9ZalNHXzdiVFluZXE2cS1qZkY4dlJEaUhBS3JDOC1jUTMzeUR5M2pVTnJlZTktQQ?oc=5"
   },
   "MDA-RUS": {
    "a": "MDA",
@@ -1968,9 +1973,9 @@
    "a": "BGR",
    "b": "RUS",
    "s": "T",
-   "note": "Bulgaria summons the Russian ambassador after drone strikes sink a cargo ship in its Black Sea Exclusive Economic Zone (EEZ).",
+   "note": "Bulgaria summons the Russian ambassador after drone strikes sink a cargo ship in its Black Sea Exclusive Economic Zone.",
    "updated": "2026-10-13",
-   "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE44TVBTTEhLaVVtQWZYZEhHSzN1MGdyaG9rWDFManFETW9ILUdKbFc3ZG4wUGNlTE1aMWRpbURnUllvb2dRR3ZEWG84aw?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBtOXhiczM5QnZQbVJGRVpuZm5UOXBfaFpVRFhOV2M1bk1YOGFoMVdKMjN1dm4zMEpqeE9ZUXFFU0Z1VkNwRTBpaE9JdXBjanBDUVA0dDlwS0tNT2c?oc=5"
   },
   "GRC-USA": {
    "a": "GRC",
@@ -2202,7 +2207,7 @@
    "s": "N",
    "note": "Saudi Arabia rejects Israeli requests to join or coordinate strikes against Houthis in Yemen as normalization remains stalled.",
    "updated": "2026-10-13",
-   "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSTJJX2NDZDVoYXk3WlBnSm1EZFBFcFNrWDZMMFNHNWkybUxKckJFWnlCNV9xNkx6bmlKUUtXV1AzWEMtVEVZT3o3MndYYWM0LUpsRWdxVjJ1bEpZSjFrRS1Ka29CZUNkQWwyNi14SlBjNU56aGkyVkI3cVFFVjlIYnZTZTNicDdHb1ZSSXQzM09GVEIyYWQyT0p4cDl0TnBPWVE?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPMHQta2VOcnJWc0Q1VE16TUR3Zy10Nm5leFYzQkEzMzFlbDRlX1RnMkhjUHphOTFFV0RDN3pOcXRzTlNWMFFaRzd0T1VSVktjNWxyOThRNDBIdW1Gc1pHX1l3VUlsck9URUhsb3NCelBSb1hON0g1cUNMNXh2bkZheFFBSm1YRjVZR2ZBaDZLQmFQNkJkX0JkRE0yckI2YS1kTThWSndVVmR5R3JDcG5laUp0bXB4SjBrZDQ1WV9PcnVCQXgzSUhodWRMWkpoelBJR19GOGRGMVFlbHh4UXVrenFZdGHSAeoBQVVfeXFMUHhXb0Z5b0p0T2Q1eENmOUgySVh0ejI5TV9iNmd5Sm1TOGp1TlIzN0t6V0gzMkJmTVlHekFwWnlpUnJsRlNRU3pPXzNKNUtZWEFIc2wtN1BwVGVuT0twdDhIaW01RGRNXzhfUlJMUlMyMWRyalFENHlEcWVHWlhuTC15NG00ZWQtNEJkN3BibmpvQ3pBeHdtNnFpN0gtaG5zeW5sR3ZiOERheDFJaEhneW5zeUlET2VQS2FVSWY5OWxwbm9UX1pVazN3VEdtX1FqVXA1WXkwN2NfQmY5S2tNcVA5RDI5QXBKVzZB?oc=5"
   }
  },
  "threads": {
@@ -2420,8 +2425,8 @@
    "d": "The United States (US) enforces an Iran naval blockade amid escalating drone attacks on commercial tankers off Oman.",
    "n": "Strait of Hormuz",
    "s": "Blockade active · Tanker hit off Oman",
-   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcHVGY2RTcVBPTU15WUZYakJSWUtkYmFmaVlwY2ZIRjhvSDh4dEU2R2p2Mkh1Ym9ZQjFYR3FPMl9uRVQtZVlUOXF2aXZfbGpEMFlFOGI3aHA3SkxNWU53M0RQVzB3Yk1mZF9saFZNQ0pBM3h3M05CelREQ29jWDNveEQxRl9Lak1ZZGJuanotT0tEakQzcUFGZGdvV0FRQU5KLTF6bGZKQkFnUTNNRVlzZEdsUVJhUQ?oc=5",
-   "updated": "2026-10-12",
+   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNQkJHRmhHXzdULXNTTHlENkVGcGFTbEx3eUhVWkE1VEZ2R3lfMk8xdUVpc1o1YjIxaTN2S0NLUUNHQ0hRMlRiRVlTS2RiSkpBMTRNMWFFX0NqWjFnZlNMMFFIX0d2aWtXNDRpYmpzVzVzWkhNMENfWGhHWmM1Sk0wYmhIdmN6SENzMy1zNzkxa0E5NXpxSUNlYVJ1M1E3Umc?oc=5",
+   "updated": "2026-10-13",
    "t": "strait",
    "lat": 26.57,
    "lng": 56.25,
