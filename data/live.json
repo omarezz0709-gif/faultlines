@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-13T05:18:36Z",
+  "lastRun": "2026-10-13T10:21:25Z",
   "log": [
    {
     "date": "2026-10-13",
@@ -14,6 +14,16 @@
       "label": "Egypt–Malaysia",
       "change": "Normal → Ally: Upgraded to strategic partnership",
       "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQYm1OTy1uc2pCM1pGX0htVFF1cXNVT1JoZXhTZkt1amtENUVlSno0WDhhbVFuSkYzdWVWS053X2U0NUNsTUlnendCX0I2QmVROUZJT1JGMTBUMGxIVVc5bzlOdnVuYU5WVWY4cklYTlYwN0toQWhuWGdvNi1xS3RRWm1UZG9rMENGWDYtTXBB?oc=5"
+     },
+     {
+      "label": "Bulgaria–Russia",
+      "change": "Note update: Sofia summons Russian ambassador after drone attack sinks ship in EEZ",
+      "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE44TVBTTEhLaVVtQWZYZEhHSzN1MGdyaG9rWDFManFETW9ILUdKbFc3ZG4wUGNlTE1aMWRpbURnUllvb2dRR3ZEWG84aw?oc=5"
+     },
+     {
+      "label": "Israel–Saudi Arabia",
+      "change": "Note update: Riyadh rejects Israeli request to coordinate strikes against Houthis",
+      "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSTJJX2NDZDVoYXk3WlBnSm1EZFBFcFNrWDZMMFNHNWkybUxKckJFWnlCNV9xNkx6bmlKUUtXV1AzWEMtVEVZT3o3MndYYWM0LUpsRWdxVjJ1bEpZSjFrRS1Ka29CZUNkQWwyNi14SlBjNU56aGkyVkI3cVFFVjlIYnZTZTNicDdHb1ZSSXQzM09GVEIyYWQyT0p4cDl0TnBPWVE?oc=5"
      }
     ]
    },
@@ -1271,7 +1281,7 @@
     ]
    }
   ],
-  "summary": "Cyprus and Saudi Arabia sign an energy MoU, while international concern mounts over ongoing Houthi attacks and regional escalation."
+  "summary": "Bulgaria summons Russia's ambassador after a drone strike sinks a ship in its waters, while Saudi Arabia rebuffs Israeli requests to join strikes against Houthis."
  },
  "relations": {
   "DNK-USA": {
@@ -1958,9 +1968,9 @@
    "a": "BGR",
    "b": "RUS",
    "s": "T",
-   "note": "Relations between Bulgaria and Russia deteriorate after Russian drone strikes hit commercial vessels in Bulgaria's Exclusive Economic Zone (EEZ).",
-   "updated": "2026-10-07",
-   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWGIzbm82d1A0UUNFZUlMLXBMS3pVd1BXS0ZqMjlNTXBwc2ktaWJVMlpRSjNza3BDX1BwWE5pU1hkSUtnQTVrdG51RDVKalBLd3dJMjhsMWNlTy1vTW5LVmtWNXZUbFBMTzNZYXU5U0JpSHpkeXdOWEZTeTNNN2YyekN0Vktzc0lTMGUwSUpyMXRRcDVfZGl0eUtuMHItWHE3LW4zdkljM3IzTXRRMEtR?oc=5"
+   "note": "Bulgaria summons the Russian ambassador after drone strikes sink a cargo ship in its Black Sea Exclusive Economic Zone (EEZ).",
+   "updated": "2026-10-13",
+   "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE44TVBTTEhLaVVtQWZYZEhHSzN1MGdyaG9rWDFManFETW9ILUdKbFc3ZG4wUGNlTE1aMWRpbURnUllvb2dRR3ZEWG84aw?oc=5"
   },
   "GRC-USA": {
    "a": "GRC",
@@ -2185,6 +2195,14 @@
    "note": "Cyprus and Saudi Arabia deepen economic and diplomatic ties, signing a memorandum of understanding (MoU) on energy cooperation.",
    "updated": "2026-10-13",
    "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQS1haDV5SjFWZTNfSWY3TldrTngyX2tkdy1vTHJhbzh4NEJ5aHdVNzdCdno5S1BTcUxPSG5qTGlUUDFwVDRvY1hZY2NEU04wOXBQRUFveGZJUmRIN052UFhneldHTG9wUVF4cjVWcjJyandSMzJwZDJ4RUZ3bzFPYTZkZHR3MlVoNzVLbW5NRkM3Y09JdlJV?oc=5"
+  },
+  "ISR-SAU": {
+   "a": "ISR",
+   "b": "SAU",
+   "s": "N",
+   "note": "Saudi Arabia rejects Israeli requests to join or coordinate strikes against Houthis in Yemen as normalization remains stalled.",
+   "updated": "2026-10-13",
+   "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSTJJX2NDZDVoYXk3WlBnSm1EZFBFcFNrWDZMMFNHNWkybUxKckJFWnlCNV9xNkx6bmlKUUtXV1AzWEMtVEVZT3o3MndYYWM0LUpsRWdxVjJ1bEpZSjFrRS1Ka29CZUNkQWwyNi14SlBjNU56aGkyVkI3cVFFVjlIYnZTZTNicDdHb1ZSSXQzM09GVEIyYWQyT0p4cDl0TnBPWVE?oc=5"
   }
  },
  "threads": {
@@ -2553,10 +2571,10 @@
    "updated": "2026-09-23"
   },
   "MAR": {
-   "lastelec": "legislative, September 2021, National Rally of Independents",
-   "updated": "2026-10-01",
-   "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPT01lcWlTam4zYjdIQmRfYkswS3ktXzY5SXRPNjJ6ZFhtRFNMUDRobjV6MHVMMy1zeWdZUVB4YWxBZ0dLcUxSOHM0d0hxTjJwR0tQZUl5UGx3VDVuNDN3ZHRheVhpeDB0RmJGdTd0LVNKc2lCR194bG1PM25nNk9kYzM5REJ5Z2hxSG5wSGpza0dmNlV4cGwyTlhNU0FtQlRQaXhqR0RlTkxOa2pjS2JrVHVkQ1ZJRnFycWZmTUxfQW5ZZGFwd1BvWTRrMA?oc=5",
-   "nextelec": "legislative, 2026"
+   "lastelec": "parliamentary, Oct 2026, PAM coalition",
+   "updated": "2026-10-13",
+   "source": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOcXZPSmM1cUtvdWsyTDIwTk1qRloyZ08taXlnbjFMNXhPVHJfS3cyVDU0a0doVzNOMWsxblBEOFJmQ2k3bDZRejh2bEpoWllCaDZweFlaSXFyZVdMRUVWSG1tTGFxcEFvaEZhcE1HaFRCY3R2azU2c2ZjeVBhZXMzeTRkeUV1RkRScVIyelVKMncwUm91blhMUHJiLUhQb3ZGS0l6TjM3N1hGbmtpSW5DcHNkeTNOVXNkcjkwRGI0dHVvbG9CX2tPWQ?oc=5",
+   "nextelec": "parliamentary 2031"
   },
   "BGR": {
    "nextelec": "presidential, 25 October 2026",
