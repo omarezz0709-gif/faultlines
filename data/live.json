@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-13T16:10:00Z",
+  "lastRun": "2026-10-13T22:19:00Z",
   "log": [
    {
     "date": "2026-10-13",
@@ -29,6 +29,31 @@
       "label": "Israel–Saudi Arabia",
       "change": "Normal → Normal: normalization remains stalled despite Houthi attacks",
       "source": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPMHQta2VOcnJWc0Q1VE16TUR3Zy10Nm5leFYzQkEzMzFlbDRlX1RnMkhjUHphOTFFV0RDN3pOcXRzTlNWMFFaRzd0T1VSVktjNWxyOThRNDBIdW1Gc1pHX1l3VUlsck9URUhsb3NCelBSb1hON0g1cUNMNXh2bkZheFFBSm1YRjVZR2ZBaDZLQmFQNkJkX0JkRE0yckI2YS1kTThWSndVVmR5R3JDcG5laUp0bXB4SjBrZDQ1WV9PcnVCQXgzSUhodWRMWkpoelBJR19GOGRGMVFlbHh4UXVrenFZdGHSAeoBQVVfeXFMUHhXb0Z5b0p0T2Q1eENmOUgySVh0ejI5TV9iNmd5Sm1TOGp1TlIzN0t6V0gzMkJmTVlHekFwWnlpUnJsRlNRU3pPXzNKNUtZWEFIc2wtN1BwVGVuT0twdDhIaW01RGRNXzhfUlJMUlMyMWRyalFENHlEcWVHWlhuTC15NG00ZWQtNEJkN3BibmpvQ3pBeHdtNnFpN0gtaG5zeW5sR3ZiOERheDFJaEhneW5zeUlET2VQS2FVSWY5OWxwbm9UX1pVazN3VEdtX1FqVXA1WXkwN2NfQmY5S2tNcVA5RDI5QXBKVzZB?oc=5"
+     },
+     {
+      "label": "Argentina–United Kingdom",
+      "change": "Note updated: Argentina challenges Falklands oil drilling at international tribunal",
+      "source": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNRmpHQjlPZHBQMURST1ptX2JCV1BDa2JJN25aMENGS0RnV01PWlJwckY0XzJsWUJ4UkFpY3BIWk9va1JOSEVXazBGMUptdWJPZUpXVVREb3RzbnZBRTR2dmdEX0YwcmsxcGIxYU0yN05qNU1hZnFqV0pfN2xtMFVvZm9mYkhMMVZmVjBoUlZPTWVxdnRnSmprT2tSVGNMNXdWRmd2Um5nbS1GT2M4MVZUNlI5YUxjOVZqS0FlUWd5ZnFKaFlMWkd3VG5peHNtV0x0MG5vVWZkQWFGbUQ4SEc1R2xXck9YLU9NZ3l2RnVUczJ6NXQ5cm1F?oc=5"
+     },
+     {
+      "label": "Nicaragua–United States",
+      "change": "Note updated: US withdraws envoy after diplomatic rejection and asset seizures",
+      "source": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPczlTaGlVRzB6QmcybzI4OEJ4bjhXWEhubkxwNVYxdVkwT2NHaEN2cjJKTzNtLUF4cFhMY1FXdDEtX1hkZWJyZzRnNGFWOTdVUmFEVEsyZ3Q0d09LeGpXWHNjWjktRGJQUEktVzFIT2hCcHEwZVhxSzlzbUkzRm1lSDN3?oc=5"
+     },
+     {
+      "label": "Saudi Arabia–Yemen",
+      "change": "Note updated: Houthi missile strikes hit Saudi Aramco headquarters",
+      "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUHZtMnk3dUVFWmVkT2FmZVRqNWNrUUc5YkNkWVJMOEhWMmo1dnc2S3FlUlExbjFscTdlY3NQcExPejdxUlF1clZ5S1BKQ1JLdjhzaFdXT2l1YVBmN2VVSkFOSlJNNmlTR2w5d082MDR2b3RkY1VrTTlwWFhuclBteVRaTmtMRUczY0VPaWxBeVV1RE9vUE9kRFZaUlZEX0NnOXZqVnNtNlJIcFU3cnE2VVFTNzhfNVZ0TzZiQWFtSUJCdXJXYU5rU0JB?oc=5"
+     },
+     {
+      "label": "Houthi Red Sea & regional missile campaign",
+      "change": "Thread updated: strikes target Saudi Aramco headquarters",
+      "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUHZtMnk3dUVFWmVkT2FmZVRqNWNrUUc5YkNkWVJMOEhWMmo1dnc2S3FlUlExbjFscTdlY3NQcExPejdxUlF1clZ5S1BKQ1JLdjhzaFdXT2l1YVBmN2VVSkFOSlJNNmlTR2w5d082MDR2b3RkY1VrTTlwWFhuclBteVRaTmtMRUczY0VPaWxBeVV1RE9vUE9kRFZaUlZEX0NnOXZqVnNtNlJIcFU3cnE2VVFTNzhfNVZ0TzZiQWFtSUJCdXJXYU5rU0JB?oc=5"
+     },
+     {
+      "label": "Falkland Islands",
+      "change": "POI updated: drilling dispute submitted to international tribunal",
+      "source": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNRmpHQjlPZHBQMURST1ptX2JCV1BDa2JJN25aMENGS0RnV01PWlJwckY0XzJsWUJ4UkFpY3BIWk9va1JOSEVXazBGMUptdWJPZUpXVVREb3RzbnZBRTR2dmdEX0YwcmsxcGIxYU0yN05qNU1hZnFqV0pfN2xtMFVvZm9mYkhMMVZmVjBoUlZPTWVxdnRnSmprT2tSVGNMNXdWRmd2Um5nbS1GT2M4MVZUNlI5YUxjOVZqS0FlUWd5ZnFKaFlMWkd3VG5peHNtV0x0MG5vVWZkQWFGbUQ4SEc1R2xXck9YLU9NZ3l2RnVUczJ6NXQ5cm1F?oc=5"
      }
     ]
    },
@@ -1286,7 +1311,7 @@
     ]
    }
   ],
-  "summary": "The update reflects the escalation of the Houthi missile campaign, the resulting regional security realignments, and the diplomatic fallout from the Starlink sabotage in Poland."
+  "summary": "Updated Falkland Islands dispute following Argentina's submission to an international tribunal, refreshed the Saudi-Yemen conflict after Houthi missile strikes hit Saudi Aramco, and recorded US-Nicaragua diplomatic friction."
  },
  "relations": {
   "DNK-USA": {
@@ -1325,9 +1350,9 @@
    "a": "SAU",
    "b": "YEM",
    "s": "W",
-   "note": "Conflict escalates after a Houthi missile attack on Riyadh airport kills 12, prompting Saudi vows of a forceful response.",
-   "updated": "2026-10-11",
-   "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOY2JtSjh0UWdJdkhGdDJBUi1vbmtGU0todlFwYndfbWJnNDZVaE5mY3VQQmtvMWxWcXNmQl9QY1NDWk1FcF9Oc2ZaY09XVW9hRDZfZnRva3JSUFpwLTk1b2lSVkRIdDJrMGxJUFRXTEoxQjg4dVMyeXVWem0xRDZBbGNqaEx6cjg0ejJ5NmlpSGVwUjl2TnBfdm90WHpuSDktUFVXQ05HT1lsc2NTTjFzVjZLMjI3dWptRWFsZFBiNEJvY0gyX09GRnFHWUd0WF9SdUVOMXZHY9IB3AFBVV95cUxQZVFldW13ZEtuQmI5UVpicmxZZ01qNTBzQUpOZHo0bVNOcFVwRkdNb3dQQmVvUFJBRjh3QkJwc1NacDVlTU5hNmNVTWJTTzBpaHFrNk9mWnUzWmpRQjlaWEN4RlFRVHVWV19Xb3pONVBYRkYyTEhPUUNNakZ5NmZCM0VGMFRRUlJtcUZ4ZzVnQzJkR2tYWTk2RGxHWVRJTUhIa2FDRUlVRE5zeTAzTnhYeXFvTFFNeDFjVXRZQlNqLXZDMGgyYl9aOVhoREdOd2ZEUnhPSTczMk1iSHpo?oc=5"
+   "note": "War intensifies as Houthi missiles hit Saudi Aramco headquarters and Riyadh, triggering coalition airstrikes on Sanaa oil sites.",
+   "updated": "2026-10-13",
+   "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUHZtMnk3dUVFWmVkT2FmZVRqNWNrUUc5YkNkWVJMOEhWMmo1dnc2S3FlUlExbjFscTdlY3NQcExPejdxUlF1clZ5S1BKQ1JLdjhzaFdXT2l1YVBmN2VVSkFOSlJNNmlTR2w5d082MDR2b3RkY1VrTTlwWFhuclBteVRaTmtMRUczY0VPaWxBeVV1RE9vUE9kRFZaUlZEX0NnOXZqVnNtNlJIcFU3cnE2VVFTNzhfNVZ0TzZiQWFtSUJCdXJXYU5rU0JB?oc=5"
   },
   "BEL-RWA": {
    "a": "BEL",
@@ -1581,9 +1606,9 @@
    "a": "ARG",
    "b": "GBR",
    "s": "T",
-   "note": "Argentina threatens international legal action against the United Kingdom (UK) over oil exploration in the Falkland Islands.",
-   "updated": "2026-09-29",
-   "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUUZTdU1OTW1mWG9SRVVmbU5uUFRDcjdpbjg1RW1UQkV1bmktNi1UODlhbk52SUh2ME1VQWRRZUJjUUhaZ1JfTjJUTjFJOFFtNjhPWTk5OXlfS1QxSWplMGlTcVAyNnhlSjNLRW1tdVU4Ui1RMjFORm00a1RVTDAwR0hSZUhEaHhLWTFSbVl3WDNZMHRfUnFDWnFqcjMzcU5Bb0xUUTk2VG9kSXpOeWRObE00WnFCZ3Y1dEJYZg?oc=5"
+   "note": "Argentina challenges Falklands oil drilling at an international tribunal as the United Kingdom (UK) stages defence exercises.",
+   "updated": "2026-10-13",
+   "source": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNRmpHQjlPZHBQMURST1ptX2JCV1BDa2JJN25aMENGS0RnV01PWlJwckY0XzJsWUJ4UkFpY3BIWk9va1JOSEVXazBGMUptdWJPZUpXVVREb3RzbnZBRTR2dmdEX0YwcmsxcGIxYU0yN05qNU1hZnFqV0pfN2xtMFVvZm9mYkhMMVZmVjBoUlZPTWVxdnRnSmprT2tSVGNMNXdWRmd2Um5nbS1GT2M4MVZUNlI5YUxjOVZqS0FlUWd5ZnFKaFlMWkd3VG5peHNtV0x0MG5vVWZkQWFGbUQ4SEc1R2xXck9YLU9NZ3l2RnVUczJ6NXQ5cm1F?oc=5"
   },
   "MMR-MYS": {
    "a": "MMR",
@@ -2208,6 +2233,14 @@
    "note": "Saudi Arabia rejects Israeli requests to join or coordinate strikes against Houthis in Yemen as normalization remains stalled.",
    "updated": "2026-10-13",
    "source": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPMHQta2VOcnJWc0Q1VE16TUR3Zy10Nm5leFYzQkEzMzFlbDRlX1RnMkhjUHphOTFFV0RDN3pOcXRzTlNWMFFaRzd0T1VSVktjNWxyOThRNDBIdW1Gc1pHX1l3VUlsck9URUhsb3NCelBSb1hON0g1cUNMNXh2bkZheFFBSm1YRjVZR2ZBaDZLQmFQNkJkX0JkRE0yckI2YS1kTThWSndVVmR5R3JDcG5laUp0bXB4SjBrZDQ1WV9PcnVCQXgzSUhodWRMWkpoelBJR19GOGRGMVFlbHh4UXVrenFZdGHSAeoBQVVfeXFMUHhXb0Z5b0p0T2Q1eENmOUgySVh0ejI5TV9iNmd5Sm1TOGp1TlIzN0t6V0gzMkJmTVlHekFwWnlpUnJsRlNRU3pPXzNKNUtZWEFIc2wtN1BwVGVuT0twdDhIaW01RGRNXzhfUlJMUlMyMWRyalFENHlEcWVHWlhuTC15NG00ZWQtNEJkN3BibmpvQ3pBeHdtNnFpN0gtaG5zeW5sR3ZiOERheDFJaEhneW5zeUlET2VQS2FVSWY5OWxwbm9UX1pVazN3VEdtX1FqVXA1WXkwN2NfQmY5S2tNcVA5RDI5QXBKVzZB?oc=5"
+  },
+  "NIC-USA": {
+   "a": "NIC",
+   "b": "USA",
+   "s": "T",
+   "note": "Tensions mount as the United States (US) withdraws its diplomat after Nicaragua rejects an ambassador nominee and seizes retiree homes.",
+   "updated": "2026-10-13",
+   "source": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPczlTaGlVRzB6QmcybzI4OEJ4bjhXWEhubkxwNVYxdVkwT2NHaEN2cjJKTzNtLUF4cFhMY1FXdDEtX1hkZWJyZzRnNGFWOTdVUmFEVEsyZ3Q0d09LeGpXWHNjWjktRGJQUEktVzFIT2hCcHEwZVhxSzlzbUkzRm1lSDN3?oc=5"
   }
  },
  "threads": {
@@ -2227,11 +2260,11 @@
     "PAK",
     "SYR"
    ],
-   "d": "Iranian-backed Houthis launch drones and missiles from Yemen at Saudi airports and Red Sea shipping, drawing heavy retaliatory strikes from Saudi-led coalition forces.",
+   "d": "Iranian-backed Houthis hit Saudi Aramco headquarters and airports, prompting Saudi-led coalition air strikes on Sanaa oil facilities.",
    "n": "Houthi Red Sea & regional missile campaign",
-   "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPbXZIOE9yRm9VZXdZRlZJWUU0c0FfbllFcW0zMjRWMnJlQnJSSUxZX3NrNFMtRk41QjRpbWRma3JaTTd4ajQ4NkFkbGplRnBta29qV2llMmdpVmJzQURMVThMcXlyU0J2RV9iTGp5TjlObF8xWldYNndkV08yNjgxd1g5VGFJYUo1V0E?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUHZtMnk3dUVFWmVkT2FmZVRqNWNrUUc5YkNkWVJMOEhWMmo1dnc2S3FlUlExbjFscTdlY3NQcExPejdxUlF1clZ5S1BKQ1JLdjhzaFdXT2l1YVBmN2VVSkFOSlJNNmlTR2w5d082MDR2b3RkY1VrTTlwWFhuclBteVRaTmtMRUczY0VPaWxBeVV1RE9vUE9kRFZaUlZEX0NnOXZqVnNtNlJIcFU3cnE2VVFTNzhfNVZ0TzZiQWFtSUJCdXJXYU5rU0JB?oc=5",
    "t": "security",
-   "updated": "2026-10-10"
+   "updated": "2026-10-13"
   },
   "afpak-jihad": {
    "t": "security",
@@ -2472,6 +2505,13 @@
    "d": "Former president Joseph Kabila allies with the M23 and AFC (Alliance Fleuve Congo) coalition, heightening regional conflict.",
    "updated": "2026-10-12",
    "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPci1RTGdpRW55UVdiMi1mZmxOUnprSDJEb3hFb3VjQXNTbFkzOFpwSzEyM1lDVlpKUlBhSEVwNkZESWRuMTc4NWF2T1J3bXUxd0ZkREF1eHY2WVRfTUpsVFZONVNTa0dOVjc4VVlKanRSWi1wQUpWVG1VNGtWZ1BHRlhacW0xZFprSDg3V0ozaS1QdXBrYWg2NUIxUVFod3FwSmpSa3BWQUN0MjhEWVhMb1h1LTBQTC1LR3NMdQ?oc=5"
+  },
+  "falkland-islands": {
+   "n": "Falkland Islands",
+   "s": "Dispute sent to sea tribunal",
+   "d": "Argentina challenges Falklands oil drilling at an international tribunal as the United Kingdom (UK) stages military defence drills.",
+   "updated": "2026-10-13",
+   "source": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNRmpHQjlPZHBQMURST1ptX2JCV1BDa2JJN25aMENGS0RnV01PWlJwckY0XzJsWUJ4UkFpY3BIWk9va1JOSEVXazBGMUptdWJPZUpXVVREb3RzbnZBRTR2dmdEX0YwcmsxcGIxYU0yN05qNU1hZnFqV0pfN2xtMFVvZm9mYkhMMVZmVjBoUlZPTWVxdnRnSmprT2tSVGNMNXdWRmd2Um5nbS1GT2M4MVZUNlI5YUxjOVZqS0FlUWd5ZnFKaFlMWkd3VG5peHNtV0x0MG5vVWZkQWFGbUQ4SEc1R2xXck9YLU9NZ3l2RnVUczJ6NXQ5cm1F?oc=5"
   }
  },
  "politics": {
