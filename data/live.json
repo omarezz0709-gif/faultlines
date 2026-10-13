@@ -1,7 +1,22 @@
 {
  "meta": {
-  "lastRun": "2026-10-12T22:09:43Z",
+  "lastRun": "2026-10-13T05:18:36Z",
   "log": [
+   {
+    "date": "2026-10-13",
+    "items": [
+     {
+      "label": "Cyprus–Saudi Arabia",
+      "change": "Normal → Partner: Signed energy cooperation MoU",
+      "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQS1haDV5SjFWZTNfSWY3TldrTngyX2tkdy1vTHJhbzh4NEJ5aHdVNzdCdno5S1BTcUxPSG5qTGlUUDFwVDRvY1hZY2NEU04wOXBQRUFveGZJUmRIN052UFhneldHTG9wUVF4cjVWcjJyandSMzJwZDJ4RUZ3bzFPYTZkZHR3MlVoNzVLbW5NRkM3Y09JdlJV?oc=5"
+     },
+     {
+      "label": "Egypt–Malaysia",
+      "change": "Normal → Ally: Upgraded to strategic partnership",
+      "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQYm1OTy1uc2pCM1pGX0htVFF1cXNVT1JoZXhTZkt1amtENUVlSno0WDhhbVFuSkYzdWVWS053X2U0NUNsTUlnendCX0I2QmVROUZJT1JGMTBUMGxIVVc5bzlOdnVuYU5WVWY4cklYTlYwN0toQWhuWGdvNi1xS3RRWm1UZG9rMENGWDYtTXBB?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-12",
     "items": [
@@ -1256,7 +1271,7 @@
     ]
    }
   ],
-  "summary": "Recorded Chinese sanctions on Belize and Paraguay, tensions over an Egyptian strike on Sudanese miners, and upcoming elections in Spain and Serbia."
+  "summary": "Cyprus and Saudi Arabia sign an energy MoU, while international concern mounts over ongoing Houthi attacks and regional escalation."
  },
  "relations": {
   "DNK-USA": {
@@ -2126,10 +2141,10 @@
   "EGY-MYS": {
    "a": "EGY",
    "b": "MYS",
-   "s": "F",
+   "s": "A",
    "note": "Egypt and Malaysia establish a strategic partnership, aligning on trade, Nile water security, and Palestine.",
-   "updated": "2026-10-12",
-   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNOS1zNDdYSW82V0xUQ1BXR1YtRnE4dWJfaVlhUk9fSnNIQVJmSllDVi1vS01kN0JYOHVGY2F5RTZzMDJHWmYzVlh4VXNsVnpuVEVOd0JPRXhuY2ZHWXcwenFJSVVndWNHdGdOY3d2NVg0NExJQUFsWFkzUDR1TEJvME9jaXBoWjZUc3dmYUJGdnVUSDVlRzU2MUVqTFQxa0ZqQ3JKbWM3SjE4QXY5cjlITkp3?oc=5"
+   "updated": "2026-10-13",
+   "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQYm1OTy1uc2pCM1pGX0htVFF1cXNVT1JoZXhTZkt1amtENUVlSno0WDhhbVFuSkYzdWVWS053X2U0NUNsTUlnendCX0I2QmVROUZJT1JGMTBUMGxIVVc5bzlOdnVuYU5WVWY4cklYTlYwN0toQWhuWGdvNi1xS3RRWm1UZG9rMENGWDYtTXBB?oc=5"
   },
   "GBR-IRN": {
    "a": "GBR",
@@ -2162,6 +2177,14 @@
    "note": "Tensions flare after an Egyptian airstrike kills 72 artisanal gold miners along the border, prompting an official Sudanese military probe.",
    "updated": "2026-10-12",
    "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdUNTTXZadFFkTDZQNEc0UzZjbUxYTkt2eXNkNGthZHdPTXZWNFJxVGJadUhyRXh3OWpHV1dDemwzeThXZk9BLVhjejI2MUtnblJDMlRnbzZ0bjhBQU9BSTFKQ1lwOWxTQk9tblFWMlk5dVZ5TlduWEs3TFdNbUVDd0ZjWUdRR3M?oc=5"
+  },
+  "CYP-SAU": {
+   "a": "CYP",
+   "b": "SAU",
+   "s": "F",
+   "note": "Cyprus and Saudi Arabia deepen economic and diplomatic ties, signing a memorandum of understanding (MoU) on energy cooperation.",
+   "updated": "2026-10-13",
+   "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQS1haDV5SjFWZTNfSWY3TldrTngyX2tkdy1vTHJhbzh4NEJ5aHdVNzdCdno5S1BTcUxPSG5qTGlUUDFwVDRvY1hZY2NEU04wOXBQRUFveGZJUmRIN052UFhneldHTG9wUVF4cjVWcjJyandSMzJwZDJ4RUZ3bzFPYTZkZHR3MlVoNzVLbW5NRkM3Y09JdlJV?oc=5"
   }
  },
  "threads": {
