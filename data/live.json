@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-14T10:31:41Z",
+  "lastRun": "2026-10-14T16:23:52Z",
   "log": [
    {
     "date": "2026-10-14",
@@ -31,11 +31,6 @@
       "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOYWtXNGwxOU1FNlJ6RzJKSXRCbksxemFzQVdYaTlXOUFteW1KTFVsdGVrSWpBdUJrTFlIMWVQQXVjNG5LY0o5MU5kQTRGRUNYbWl4X2ZlamJwOFBhOGhpcTd2VmRxLW51UVpac1dRal83WTRTVVctOVYyb2pwYzN6S2VZVXVDTmZscEZVSjdjdi1ZZi1wRXAxdk9SREczaHM2STQyQnRwakZfT3UtZVQtVTh30gG3AUFVX3lxTFBrZXp2RHRmanF5bzZyeGg1bkdJSHdSZkpVSWxMRW1XQUtSaXd1YlVYN3h2OG9icGNqSmxYTF9JZFc3d2RYQTQzWkExTmFnUk5LTU1iQm1YV2E0RGx4d3lEWUdac2pjWTlBUm9LbXUyT3J3OG5tSlF3UWxYLW8yeko4aUR3YjcxQ0U3clAtQlZpdG9ndXZWOEJGS0dyQnczNkNHQkVUTWFKV3VYc1pWUWdTbS1SWWFJTQ?oc=5"
      },
      {
-      "label": "Colombia–Israel",
-      "change": "Hostile → Partner: Restored free trade agreement and opened embassy in Jerusalem",
-      "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQaW5tZzlyQWx5WjVVeTRLam5wamtUZlltUlgzeG5sUlFpLVI1RHlleE54RTJkcnU4MkdLZ1g3czllalY1TFNyclZCWUh3SG9FRURWUklBdXZXTWtRVlZkeVVkZUVuZl9hY1M2UnlKN3JjV3BPZ3VYQVpnQjNaNUdGSWpsXzh5VjZQNFZzdXNzb09mZWg3QTR0WmVZNDN1MGMyMXZPUzB4OEZ1eUI2dFYxcmpPVGJWaE9VNkVveQ?oc=5"
-     },
-     {
       "label": "Armenia–Turkey",
       "change": "Updated note: Progress in normalization talks toward potential border reopening",
       "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1zMmt5SEpCcTg4cXFodHNjbjFyM2RITl9pMDJXYzNqekxZMzVzdkx4UThJWEdPRTFpWkJ1Wnl1TDFuamFpdjNBUXdzRmVrc3dycXfSAVdBVV95cUxQUTJOSFpFUHYxMEZhNUxMMWpkNVlUbGRRd2VEVHQ3VXBwVW81dmJZQUg0WjktaXR2V25RSHN1dTdHU0UxWElRSnNyZnZYTWJsVTZjUGc5U3M?oc=5"
@@ -54,6 +49,11 @@
       "label": "Brazil",
       "change": "Election recorded: Presidential first round held in October 2026",
       "source": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4tbE1TdFNzSW1YZ0ZMcjZWajBiUFJXcE4yQ0dLaVN1Y19uWHVrUmp4VUZJbHA0S001cVBnX2Jsa181ajZhNXIxN2VqcjloY0ZqcVE0MHVRWlAxV1IxUzFTN1FTbXRGVnc?oc=5"
+     },
+     {
+      "label": "Colombia–Israel",
+      "change": "Tense → Partner: Colombia opens an embassy in Jerusalem and restores trade",
+      "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQaW5tZzlyQWx5WjVVeTRLam5wamtUZlltUlgzeG5sUlFpLVI1RHlleE54RTJkcnU4MkdLZ1g3czllalY1TFNyclZCWUh3SG9FRURWUklBdXZXTWtRVlZkeVVkZUVuZl9hY1M2UnlKN3JjV3BPZ3VYQVpnQjNaNUdGSWpsXzh5VjZQNFZzdXNzb09mZWg3QTR0WmVZNDN1MGMyMXZPUzB4OEZ1eUI2dFYxcmpPVGJWaE9VNkVveQ?oc=5"
      }
     ]
    },
@@ -1366,7 +1366,7 @@
     ]
    }
   ],
-  "summary": "Colombia restores trade ties and opens an embassy in Jerusalem, Armenia and Turkey report progress toward reopening their border, and China and North Korea open a long-delayed border bridge."
+  "summary": "Colombia establishes an embassy in Jerusalem and restores a free trade agreement with Israel, while Houthi attacks continue to escalate tensions in the Red Sea and Saudi Arabia."
  },
  "relations": {
   "DNK-USA": {
