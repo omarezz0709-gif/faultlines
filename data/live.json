@@ -1,7 +1,37 @@
 {
  "meta": {
-  "lastRun": "2026-10-13T22:19:00Z",
+  "lastRun": "2026-10-14T05:29:03Z",
   "log": [
+   {
+    "date": "2026-10-14",
+    "items": [
+     {
+      "label": "Botswana–China",
+      "change": "Unlisted → Partner: Countries establish comprehensive strategic cooperative partnership",
+      "source": "https://news.google.com/rss/articles/CBMiakFVX3lxTE85Y3pkV2JjckkxcUlmbmJZVHZfWnNvUnEtay1qVHp4Ukpxek5JR1pMNnZRbHotN2xabmRCVDFzbWkyZ1JiUHRsWmFqN2t3MEFIbVVvMEdKZzUycEFJSnZzQTJ1YktfdXNGb0E?oc=5"
+     },
+     {
+      "label": "France–Chad",
+      "change": "Note updated: Macron and Déby agree to revive military and defence cooperation",
+      "source": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOT1hDRzZKcU9Ndlp2YVowSF9NRGctMnlHTmJ6YUllOFRoSHdYUEFiSkFfU1FJTnFBQnpsdEJhTlUwU2k3WTdoOG1OQkRTb3dwT0xDTEloY3NPTnFUOGlJSWF5aDNIQnpHUFZWcDVHTFAtYktEUGp6VGQyNTN4c21ydF9jaGNXQmdoLWZSaWthakRuUW5laXFhaVNPU1Z5eUJEajlBc3NhTDdhdVphME9sakdUNjk2RTJkbmZmdVF5VURwX1lJSlhaaUFCQ2JzRzg4SFZXTVdrdGJRcUtUeEo5RXB3?oc=5"
+     },
+     {
+      "label": "Japan–Russia",
+      "change": "Note updated: Russia detains Japanese journalist on espionage charges",
+      "source": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE10NTlJVnR5UHhDTUJjN2FfLXpGLWU5eFJKcVVka1dCenVtX0Z2ZVozYmVIZFBGVGhqeTNQb05XZGt3bDlja3lFSGhSVzFOYTlzcnoyQ29B?oc=5"
+     },
+     {
+      "label": "Hungary–Ukraine",
+      "change": "Note updated: Hungary lifts veto on European Union accession clusters",
+      "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNMlY5S0NfVnFPYTVOWjQ4dGE1S3FFX3F3QXdQSzhXSy1HbEVhYlFIMEN5WmwyZ1NsTWVUUjVSbU9sbkh6eGZqbllPc2h1Zy0wV3BFbGplbG4yUWlpTXVyLUVqSTcteThvNFBRd3FTSUZEdURvOFEtZTZKbGZTMVlMT0FVbUF5akwzYlE?oc=5"
+     },
+     {
+      "label": "Golden Triangle drugs & scam centres",
+      "change": "Description updated: China sentences Myanmar border scam ringleaders to death",
+      "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOYWtXNGwxOU1FNlJ6RzJKSXRCbksxemFzQVdYaTlXOUFteW1KTFVsdGVrSWpBdUJrTFlIMWVQQXVjNG5LY0o5MU5kQTRGRUNYbWl4X2ZlamJwOFBhOGhpcTd2VmRxLW51UVpac1dRal83WTRTVVctOVYyb2pwYzN6S2VZVXVDTmZscEZVSjdjdi1ZZi1wRXAxdk9SREczaHM2STQyQnRwakZfT3UtZVQtVTh30gG3AUFVX3lxTFBrZXp2RHRmanF5bzZyeGg1bkdJSHdSZkpVSWxMRW1XQUtSaXd1YlVYN3h2OG9icGNqSmxYTF9JZFc3d2RYQTQzWkExTmFnUk5LTU1iQm1YV2E0RGx4d3lEWUdac2pjWTlBUm9LbXUyT3J3OG5tSlF3UWxYLW8yeko4aUR3YjcxQ0U3clAtQlZpdG9ndXZWOEJGS0dyQnczNkNHQkVUTWFKV3VYc1pWUWdTbS1SWWFJTQ?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-13",
     "items": [
@@ -1311,7 +1341,7 @@
     ]
    }
   ],
-  "summary": "Updated Falkland Islands dispute following Argentina's submission to an international tribunal, refreshed the Saudi-Yemen conflict after Houthi missile strikes hit Saudi Aramco, and recorded US-Nicaragua diplomatic friction."
+  "summary": "Updated China–Botswana relations to partner status following a comprehensive agreement, refreshed notes for France–Chad, Japan–Russia, and Hungary–Ukraine, and tracked the Golden Triangle scam compound crackdown."
  },
  "relations": {
   "DNK-USA": {
@@ -1454,9 +1484,9 @@
    "a": "HUN",
    "b": "UKR",
    "s": "N",
-   "note": "Relations improve as Ukraine enacts Hungarian minority education rights into law to advance European Union (EU) accession talks.",
-   "updated": "2026-10-12",
-   "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9wTjlPd0RvelVpeEdhZHc1TlVpRElnWXViOVJFYXRDS25yYWdMekxETi1PR29zb2wyQldyRFhwNDF3WWtBTHJoOEZLN0VESHRLblJrX1V5Zm9uaGV1VkFzS1UwZlLSAXBBVV95cUxQcWh1VkRzNWF6ZzIxdFRINm5yeERrU1l1UzE1TFliU2p3RDB1SmdoaVBxVHRvdndfMmpZT0I3UDVZdlZ6MHVodW9jSXdyZVVKcTlmWGc5MnJDVVY4LVhEdG1la3RQQWlheTRweDI5WUlO?oc=5"
+   "note": "Ties improve as Hungary lifts its veto, enabling the European Union (EU) to open new accession negotiation clusters with Ukraine.",
+   "updated": "2026-10-14",
+   "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNMlY5S0NfVnFPYTVOWjQ4dGE1S3FFX3F3QXdQSzhXSy1HbEVhYlFIMEN5WmwyZ1NsTWVUUjVSbU9sbkh6eGZqbllPc2h1Zy0wV3BFbGplbG4yUWlpTXVyLUVqSTcteThvNFBRd3FTSUZEdURvOFEtZTZKbGZTMVlMT0FVbUF5akwzYlE?oc=5"
   },
   "USA-ZWE": {
    "a": "USA",
@@ -2062,9 +2092,9 @@
    "a": "JPN",
    "b": "RUS",
    "s": "T",
-   "note": "Tokyo protests Moscow's extradition requests targeting International Criminal Court (ICC) President Tomoko Akane and staff.",
-   "updated": "2026-10-09",
-   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQYU9vdjZMUWJxOU0xejdUYVF4Y0d5bnR1Y1pmdUVRem1IVjlLTzJQbXRzVlM3aFNacUpDdl9UbERIZzhNd3VCMnVPVkVkSndZYzBfNXRBeDJQODVXNGw5dmhiaGtNZlFPVUdSN0ZYUVFuTjJNVlhDbXRaRWt4dDZESkZ0OWo1R01XV3RZSWo3QWw1QW96RmhZdkhrd0ZFaVBubEZLRmtpalJPeHVaWVlPQld3?oc=5"
+   "note": "Tensions rise as Russia detains a Japanese journalist on espionage charges, prompting formal inquiries and protests from Tokyo.",
+   "updated": "2026-10-14",
+   "source": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE10NTlJVnR5UHhDTUJjN2FfLXpGLWU5eFJKcVVka1dCenVtX0Z2ZVozYmVIZFBGVGhqeTNQb05XZGt3bDlja3lFSGhSVzFOYTlzcnoyQ29B?oc=5"
   },
   "TKM-UZB": {
    "a": "TKM",
@@ -2241,6 +2271,22 @@
    "note": "Tensions mount as the United States (US) withdraws its diplomat after Nicaragua rejects an ambassador nominee and seizes retiree homes.",
    "updated": "2026-10-13",
    "source": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPczlTaGlVRzB6QmcybzI4OEJ4bjhXWEhubkxwNVYxdVkwT2NHaEN2cjJKTzNtLUF4cFhMY1FXdDEtX1hkZWJyZzRnNGFWOTdVUmFEVEsyZ3Q0d09LeGpXWHNjWjktRGJQUEktVzFIT2hCcHEwZVhxSzlzbUkzRm1lSDN3?oc=5"
+  },
+  "BWA-CHN": {
+   "a": "BWA",
+   "b": "CHN",
+   "s": "F",
+   "note": "China and Botswana establish a comprehensive strategic cooperative partnership to deepen bilateral and economic ties.",
+   "updated": "2026-10-14",
+   "source": "https://news.google.com/rss/articles/CBMiakFVX3lxTE85Y3pkV2JjckkxcUlmbmJZVHZfWnNvUnEtay1qVHp4Ukpxek5JR1pMNnZRbHotN2xabmRCVDFzbWkyZ1JiUHRsWmFqN2t3MEFIbVVvMEdKZzUycEFJSnZzQTJ1YktfdXNGb0E?oc=5"
+  },
+  "FRA-TCD": {
+   "a": "FRA",
+   "b": "TCD",
+   "s": "N",
+   "note": "France and Chad agree to revive military and defence cooperation during high-level bilateral talks in Paris.",
+   "updated": "2026-10-14",
+   "source": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOT1hDRzZKcU9Ndlp2YVowSF9NRGctMnlHTmJ6YUllOFRoSHdYUEFiSkFfU1FJTnFBQnpsdEJhTlUwU2k3WTdoOG1OQkRTb3dwT0xDTEloY3NPTnFUOGlJSWF5aDNIQnpHUFZWcDVHTFAtYktEUGp6VGQyNTN4c21ydF9jaGNXQmdoLWZSaWthakRuUW5laXFhaVNPU1Z5eUJEajlBc3NhTDdhdVphME9sakdUNjk2RTJkbmZmdVF5VURwX1lJSlhaaUFCQ2JzRzg4SFZXTVdrdGJRcUtUeEo5RXB3?oc=5"
   }
  },
  "threads": {
@@ -2422,6 +2468,20 @@
    ],
    "updated": "2026-10-12",
    "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSE9aLW9LOFFvdVVuTnBOZlV3ZnJwZ1lsWnVqNEs3enVSV2ZfSHROeEdjQ1ZTT1ZSRkJKcHZUVnFqSVFUNTlLcU9Nb0RSVHh0elpDRW5XZldEa09ZazFaZG5zdlg0T2l0bEhnNlR5NkxxM041NWdLQUtiNm1rME1IQ19KZFlka0lEa0lEaGRUWmJNb2wta25GalpOTW8wa21MSXI3ZEk5Q2RPTEZObDFKTHhoamJObnozaDdkNF93?oc=5"
+  },
+  "golden-triangle": {
+   "t": "trafficking",
+   "n": "Golden Triangle drugs & scam centres",
+   "d": "Syndicates operate scam centers and drug labs across Myanmar borderlands targeting global victims, prompting Chinese-led cross-border trials.",
+   "c": [
+    "MMR",
+    "LAO",
+    "THA",
+    "KHM",
+    "CHN"
+   ],
+   "updated": "2026-10-14",
+   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOYWtXNGwxOU1FNlJ6RzJKSXRCbksxemFzQVdYaTlXOUFteW1KTFVsdGVrSWpBdUJrTFlIMWVQQXVjNG5LY0o5MU5kQTRGRUNYbWl4X2ZlamJwOFBhOGhpcTd2VmRxLW51UVpac1dRal83WTRTVVctOVYyb2pwYzN6S2VZVXVDTmZscEZVSjdjdi1ZZi1wRXAxdk9SREczaHM2STQyQnRwakZfT3UtZVQtVTh30gG3AUFVX3lxTFBrZXp2RHRmanF5bzZyeGg1bkdJSHdSZkpVSWxMRW1XQUtSaXd1YlVYN3h2OG9icGNqSmxYTF9JZFc3d2RYQTQzWkExTmFnUk5LTU1iQm1YV2E0RGx4d3lEWUdac2pjWTlBUm9LbXUyT3J3OG5tSlF3UWxYLW8yeko4aUR3YjcxQ0U3clAtQlZpdG9ndXZWOEJGS0dyQnczNkNHQkVUTWFKV3VYc1pWUWdTbS1SWWFJTQ?oc=5"
   }
  },
  "pois": {
