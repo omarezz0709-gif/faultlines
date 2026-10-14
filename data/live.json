@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-14T16:23:52Z",
+  "lastRun": "2026-10-14T22:20:40Z",
   "log": [
    {
     "date": "2026-10-14",
@@ -41,11 +41,6 @@
       "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPaS1JVERETmJrUFhSRXNtQ240TUVtdlBHX2xFNFdnTG5rUzNRZVh3S3JUY2s5ZVAtX2FWbm92TjFXdTVVUkRPdEt2SW5fTzk1a0JreTg2NGRRWDgyOWJTbGdURWdLajNucmp4ZXRqNUpRbzIyOFBKQ0Ixanp6QzlSUGtjY0xxbHFjNDR6RVc5YnA0eGJjQ3BfQ1dlU1k2SHZWdEVOR0U2SEFPQdIBrwFBVV95cUxPR0F2QW1raWpQMS05eC01eWlfLWRqaGNJN0M2Y2NsRHZtY1BockcxS1FaTURpQ2FpNDVLVHB1VE1UbS1ZNUVQVXUtTjZ2MlZKZUk5ajdrbXlmMEVweHVCeEdzdy01bktPY0dmbTN6Z0RhMVFwVk5wdlBoWGRaOEFaX2kzM1BoV1FJNW1kUE5ZanNpQmpPS01xWTRPTEVkTzNLQkJZb3pIdEljcjlqQ2dz?oc=5"
      },
      {
-      "label": "Strait of Hormuz",
-      "change": "Updated details: Temporary Oman-Iran agreement and mine hazard warnings",
-      "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOUVg1Nk04ckJ0Si1ScTVXclNGYmtPZFE2bF95OW9VWnlDbTF6ZUZSNHpLcmlVMjYySlRFNkN1Sk9ESTJuUFItMFFTNHp1M2ZoU0JYSmFBenp1RmE3VkRNcmMzbHpWOVJBRTItcldEck5GV2R4ckUzT3lXbFdCVEMwekVxTW5idkRPbHVPUmRza3N5QjBDWi1ydm5YS2tfSmNfWkVWbDBWdXNTU1R5Q0RKMlRXLVRidURERVRwTnlPQQ?oc=5"
-     },
-     {
       "label": "Brazil",
       "change": "Election recorded: Presidential first round held in October 2026",
       "source": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4tbE1TdFNzSW1YZ0ZMcjZWajBiUFJXcE4yQ0dLaVN1Y19uWHVrUmp4VUZJbHA0S001cVBnX2Jsa181ajZhNXIxN2VqcjloY0ZqcVE0MHVRWlAxV1IxUzFTN1FTbXRGVnc?oc=5"
@@ -54,6 +49,16 @@
       "label": "Colombia–Israel",
       "change": "Tense → Partner: Colombia opens an embassy in Jerusalem and restores trade",
       "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQaW5tZzlyQWx5WjVVeTRLam5wamtUZlltUlgzeG5sUlFpLVI1RHlleE54RTJkcnU4MkdLZ1g3czllalY1TFNyclZCWUh3SG9FRURWUklBdXZXTWtRVlZkeVVkZUVuZl9hY1M2UnlKN3JjV3BPZ3VYQVpnQjNaNUdGSWpsXzh5VjZQNFZzdXNzb09mZWg3QTR0WmVZNDN1MGMyMXZPUzB4OEZ1eUI2dFYxcmpPVGJWaE9VNkVveQ?oc=5"
+     },
+     {
+      "label": "United States–Venezuela",
+      "change": "Hostile: US lifts sanctions on National Assembly head Jorge Rodríguez",
+      "source": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9FLWNCaFRKOENNQnVYbHdaQ2ZGMFAzaWZGYWFnRWVHVnp5d0RxSlFtaHM4eGlTMGdkZFNlV2J4WHlyLURMOENGQ1FpTmI4ZFE3R1lCc04xdjRUYlI2cFZB?oc=5"
+     },
+     {
+      "label": "Strait of Hormuz",
+      "change": "Updated status to reflect two ships sunk by projectiles",
+      "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNVg0eWh4OTZ1NG5IR1M1ZWJJejUxUncyYVVWeHB3QTdHaHYzUnRDOHBpaFpEZldsb0RNZG5SNVZDMWJIVUV6U0JZRVhLSmdtWEZfSnpGSDlXWVU1UlRRSF9wT0JSbktPRTRWT2dkazNCSmJoWDBaUl9wZEI3bjVpLUNZS2ZDWW9IQk9oUndRNU1qYUpHclhnUzhVYVU1RE0?oc=5"
      }
     ]
    },
@@ -1366,7 +1371,7 @@
     ]
    }
   ],
-  "summary": "Colombia establishes an embassy in Jerusalem and restores a free trade agreement with Israel, while Houthi attacks continue to escalate tensions in the Red Sea and Saudi Arabia."
+  "summary": "Updated the Strait of Hormuz security assessment following commercial ship sinkings and refreshed US-Venezuela relations after targeted sanctions relief."
  },
  "relations": {
   "DNK-USA": {
@@ -1429,9 +1434,9 @@
    "a": "USA",
    "b": "VEN",
    "s": "H",
-   "note": "Deep confrontation persists, though acting leader Delcy Rodriguez and Donald Trump hold talks on debt restructuring and ties.",
-   "updated": "2026-09-23",
-   "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORTY3d0w0RXVMcmJNc2hqYTd6aXA4ZDFrR2ZfZmtwVGRyeXE1V0Z5T0lLcFJ2eUd1bzYxendoMlZQMUJKVHVsYUdmZzIyd3FjNFFya1ZyYmlZOEwyRHgzMjhWSjZ2alZseDZJYWdtX0VHRHl6R1Nsa0UyQUJRSUxGM01YUENFZnlKZ2VNNmJmalJMRGhkUXdiU1BzN0MwbURkM3JjSTU2Q1FIanVSZElLS09tOENmRFhT?oc=5"
+   "note": "Confrontation persists, but the United States (US) lifts sanctions on National Assembly head Jorge Rodríguez amid oilfield access talks.",
+   "updated": "2026-10-14",
+   "source": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9FLWNCaFRKOENNQnVYbHdaQ2ZGMFAzaWZGYWFnRWVHVnp5d0RxSlFtaHM4eGlTMGdkZFNlV2J4WHlyLURMOENGQ1FpTmI4ZFE3R1lCc04xdjRUYlI2cFZB?oc=5"
   },
   "COL-IRN": {
    "a": "COL",
@@ -2564,10 +2569,10 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "Iran and Oman reach a temporary maritime agreement while shipping faces heightened threats and mine hazards in the Strait of Hormuz.",
+   "d": "Commercial vessels face lethal attacks and sinkings from Iranian projectiles and mines amid an escalation in the Strait of Hormuz.",
    "n": "Strait of Hormuz",
-   "s": "Temporary Oman-Iran deal · Shipping mine risk",
-   "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOUVg1Nk04ckJ0Si1ScTVXclNGYmtPZFE2bF95OW9VWnlDbTF6ZUZSNHpLcmlVMjYySlRFNkN1Sk9ESTJuUFItMFFTNHp1M2ZoU0JYSmFBenp1RmE3VkRNcmMzbHpWOVJBRTItcldEck5GV2R4ckUzT3lXbFdCVEMwekVxTW5idkRPbHVPUmRza3N5QjBDWi1ydm5YS2tfSmNfWkVWbDBWdXNTU1R5Q0RKMlRXLVRidURERVRwTnlPQQ?oc=5",
+   "s": "Two ships sunk by projectiles",
+   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNVg0eWh4OTZ1NG5IR1M1ZWJJejUxUncyYVVWeHB3QTdHaHYzUnRDOHBpaFpEZldsb0RNZG5SNVZDMWJIVUV6U0JZRVhLSmdtWEZfSnpGSDlXWVU1UlRRSF9wT0JSbktPRTRWT2dkazNCSmJoWDBaUl9wZEI3bjVpLUNZS2ZDWW9IQk9oUndRNU1qYUpHclhnUzhVYVU1RE0?oc=5",
    "updated": "2026-10-14",
    "t": "strait",
    "lat": 26.57,
