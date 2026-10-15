@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-15T10:30:26Z",
+  "lastRun": "2026-10-15T16:20:14Z",
   "log": [
    {
     "date": "2026-10-15",
@@ -39,6 +39,21 @@
       "label": "Ukraine–United States",
       "change": "Tense: friction eases as Ukraine reports Starshield satellite service restoration",
       "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNYjBWTXF0enlsejUzNkJ5XzI1bzJBNUI1YlZoWWJSc1gwRWNLNWc4YjRDOUM5OVBxOHhXUzZ2TUFTeGFFcjdMUDBOYy13YVlnRTlpVldLeEI0Q0ZENm1WZkJPYkdHdEpabjhjQW8zRnZYa2dRbEhZSGN1MWRYWW1xSGh4aWk?oc=5"
+     },
+     {
+      "label": "Lesotho–Oman",
+      "change": "Normal: Established formal diplomatic relations",
+      "source": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1qYjBGWWJBN2J2bWZIX0FvS0M4UnpHUmtTNHdzenA1TThkNERxN1BidXNDVnllWW1ubFhUN0M4MHdWTWpzdE93NXNoZDZLeEdhdnVHSWIzOHc3OG9l?oc=5"
+     },
+     {
+      "label": "Croatia–Serbia",
+      "change": "Tense: Serbia sends protest note over alleged election interference",
+      "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeWxsSEN1U0VRWlcyMFFsbmpOSGJ1MzZiZ0labmYwR2lkRkN6bFFNSEJ1amJRdjBVbXVsa2pQWjI5LXNINHNVVWl1aHJjdUFxWGE5M3AwWk9RUHpOd0c0VzAxeS14bjFtaFFtbjdPX19OakhFeHN3dEVKV2h4ckRqWVNmMk9Ybmh6WjVaWTJpejdJbVdneVduMVVBZFdxQjVZMVR5QjdtbHdzdTg?oc=5"
+     },
+     {
+      "label": "Eastern DR Congo",
+      "change": "Updated details: Former president Kabila joins M23-led AFC alliance",
+      "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOY1l3VHE1di1Wa0h6U2lwT0NpSmc0UlA2SFN4WWd5VzItMkdvQk5ockhqQ3pvMTJObS0weDRfbHY0aWI5ODZRWWdnWXFJTUNrTDk5RFlvczlBX2VVYXNfLWFoZ3lnQWlMeW5oMW1jd1JTcElsVTUza1IyMzhWd2ZCdW4tZjRJVDViY0U3dTc1aDFLNW8?oc=5"
      }
     ]
    },
@@ -1411,7 +1426,7 @@
     ]
    }
   ],
-  "summary": "Ukraine reports the restoration of Starshield satellite services following earlier disruptions, while ousted Bangladeshi leader Sheikh Hasina raises concerns over minority safety from India."
+  "summary": "Oman and Lesotho establish formal diplomatic ties; Serbia protests alleged Croatian election interference; Somalia schedules national elections for 2027; DRC opposition realigns in eastern regions."
  },
  "relations": {
   "DNK-USA": {
@@ -2381,6 +2396,22 @@
    "note": "China and North Korea open the New Yalu River Bridge after a 12-year delay to expand cross-border trade.",
    "updated": "2026-10-14",
    "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPaS1JVERETmJrUFhSRXNtQ240TUVtdlBHX2xFNFdnTG5rUzNRZVh3S3JUY2s5ZVAtX2FWbm92TjFXdTVVUkRPdEt2SW5fTzk1a0JreTg2NGRRWDgyOWJTbGdURWdLajNucmp4ZXRqNUpRbzIyOFBKQ0Ixanp6QzlSUGtjY0xxbHFjNDR6RVc5YnA0eGJjQ3BfQ1dlU1k2SHZWdEVOR0U2SEFPQdIBrwFBVV95cUxPR0F2QW1raWpQMS05eC01eWlfLWRqaGNJN0M2Y2NsRHZtY1BockcxS1FaTURpQ2FpNDVLVHB1VE1UbS1ZNUVQVXUtTjZ2MlZKZUk5ajdrbXlmMEVweHVCeEdzdy01bktPY0dmbTN6Z0RhMVFwVk5wdlBoWGRaOEFaX2kzM1BoV1FJNW1kUE5ZanNpQmpPS01xWTRPTEVkTzNLQkJZb3pIdEljcjlqQ2dz?oc=5"
+  },
+  "LSO-OMN": {
+   "a": "LSO",
+   "b": "OMN",
+   "s": "N",
+   "note": "Lesotho and Oman establish formal diplomatic relations to expand economic and diplomatic cooperation.",
+   "updated": "2026-10-15",
+   "source": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1qYjBGWWJBN2J2bWZIX0FvS0M4UnpHUmtTNHdzenA1TThkNERxN1BidXNDVnllWW1ubFhUN0M4MHdWTWpzdE93NXNoZDZLeEdhdnVHSWIzOHc3OG9l?oc=5"
+  },
+  "HRV-SRB": {
+   "a": "HRV",
+   "b": "SRB",
+   "s": "T",
+   "note": "Tensions rise as Serbia issues a formal protest note accusing Croatia of election interference, which Zagreb denies.",
+   "updated": "2026-10-15",
+   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeWxsSEN1U0VRWlcyMFFsbmpOSGJ1MzZiZ0labmYwR2lkRkN6bFFNSEJ1amJRdjBVbXVsa2pQWjI5LXNINHNVVWl1aHJjdUFxWGE5M3AwWk9RUHpOd0c0VzAxeS14bjFtaFFtbjdPX19OakhFeHN3dEVKV2h4ckRqWVNmMk9Ybmh6WjVaWTJpejdJbVdneVduMVVBZFdxQjVZMVR5QjdtbHdzdTg?oc=5"
   }
  },
  "threads": {
@@ -2676,10 +2707,10 @@
   },
   "eastern-dr-congo": {
    "n": "Eastern DR Congo",
-   "s": "Kabila allies with M23",
-   "d": "Former president Joseph Kabila allies with the M23 and AFC (Alliance Fleuve Congo) coalition, heightening regional conflict.",
-   "updated": "2026-10-12",
-   "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPci1RTGdpRW55UVdiMi1mZmxOUnprSDJEb3hFb3VjQXNTbFkzOFpwSzEyM1lDVlpKUlBhSEVwNkZESWRuMTc4NWF2T1J3bXUxd0ZkREF1eHY2WVRfTUpsVFZONVNTa0dOVjc4VVlKanRSWi1wQUpWVG1VNGtWZ1BHRlhacW0xZFprSDg3V0ozaS1QdXBrYWg2NUIxUVFod3FwSmpSa3BWQUN0MjhEWVhMb1h1LTBQTC1LR3NMdQ?oc=5"
+   "s": "Kabila joins M23 coalition",
+   "d": "Former DR Congo (Democratic Republic of the Congo) president Joseph Kabila joins the M23 rebel-led AFC (Alliance Fleuve Congo) coalition.",
+   "updated": "2026-10-15",
+   "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOY1l3VHE1di1Wa0h6U2lwT0NpSmc0UlA2SFN4WWd5VzItMkdvQk5ockhqQ3pvMTJObS0weDRfbHY0aWI5ODZRWWdnWXFJTUNrTDk5RFlvczlBX2VVYXNfLWFoZ3lnQWlMeW5oMW1jd1JTcElsVTUza1IyMzhWd2ZCdW4tZjRJVDViY0U3dTc1aDFLNW8?oc=5"
   },
   "falkland-islands": {
    "n": "Falkland Islands",
@@ -2889,6 +2920,11 @@
    "nextelec": "General election, December 2026",
    "updated": "2026-10-11",
    "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdkxxQXJURTVFaC1DSm53XzloeGV3MFo5bDlmdi1hVzBidXQyc0tYeVRZbHlUSkxpT0ZZLUZMX2J3RExGQzF6Z012V1JHd1FTcTVZR2otUHZXMF9QNHJBYVZVd1JFcHVvME1LUzdHajFGTmNRaGJzS3NhMXNnelhndThlMGtGd2JudHkyTGNpUFFzVmJYU0FkZlU3SmxvU2w4SWNFUVRmcXowWlhWTWc?oc=5"
+  },
+  "SOM": {
+   "nextelec": "presidential and parliamentary, 2027",
+   "updated": "2026-10-15",
+   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWjNRSEsybno3ai1PWUlJMTFHcExzV1U2bUJVb1RNZUs2ZE5lWV9GMEM0cVJERTZ0YTB2WkNnUm96QmJrODdaUXNPNnAyX05RT09va2ZtQjRUa1Nid2xTeHVWWFFfeFlWTWNsXzJHenJCcnVEdTh2Vjg2Nl9kb3Yxa2ZCWkJHY0ExTGdBSWlXMEVzYXZHVzVFNTNiSS1wT1J3Nlg3aGZwVDBzVXVmaktZLXhyXzFuWGQ5YkE?oc=5"
   }
  }
 }
