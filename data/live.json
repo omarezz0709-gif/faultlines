@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-15T16:20:14Z",
+  "lastRun": "2026-10-15T22:20:48Z",
   "log": [
    {
     "date": "2026-10-15",
@@ -36,11 +36,6 @@
       "source": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQZ0wzejZmc3pNUi16VTB0WGtiQmVsSzFhemkwSjFTR3FOcHdCSWh2ZngzUWIySFBPWXhEbkxEdzVGRktzM0pzRTQ3UTdUa1M0Rkg0VEstSnVCVTAzdUNBQTdrT0dVaFRmZVpSZ2w2MkdndTVBU0JNYVAxNVhMcVFCbGY1NVpyNDZxU3dlZU9NTy1sVVF3OVk2NlBHQlFVOVZ6Tm5vV01IS0FkbWhRTXNrdG9rVHRSRkdwaGhVVjZBeEcyWm1RZHdrNU9BX01UZHRiMnQ3Sm1OQ2NnWko5N1RsaTZoMXJXNlMy0gHuAUFVX3lxTE92WlVrSlpsR2Nsc3F3ajJqX1NtdV8xakZvTFhncEk1S2FkWWtGdGpHUTNsNDN3MHBxVU5yclotbkt3MXRKeExXOTFWMVIxM3B2eEpMZWpYakZjLU9EN0tNYWRwdmNpV2JjQjZlMXhFWFN0NjUyOEl5WFRSdnFXMjJyTW5WaWZnTEViVFhPQVdKUWpxcGdua3ZId01IWGxIMW1RUXluazc0eU9oMmE5UnFiRGZ2VEJHRTl2R0xiM0Z2ZGhEMkFiWS1LOE15Zk1KcnRGSzFqdmg4eWwwMXRfSWR0SGd3MHhWNjAxeUljdFE?oc=5"
      },
      {
-      "label": "Ukraine–United States",
-      "change": "Tense: friction eases as Ukraine reports Starshield satellite service restoration",
-      "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNYjBWTXF0enlsejUzNkJ5XzI1bzJBNUI1YlZoWWJSc1gwRWNLNWc4YjRDOUM5OVBxOHhXUzZ2TUFTeGFFcjdMUDBOYy13YVlnRTlpVldLeEI0Q0ZENm1WZkJPYkdHdEpabjhjQW8zRnZYa2dRbEhZSGN1MWRYWW1xSGh4aWk?oc=5"
-     },
-     {
       "label": "Lesotho–Oman",
       "change": "Normal: Established formal diplomatic relations",
       "source": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1qYjBGWWJBN2J2bWZIX0FvS0M4UnpHUmtTNHdzenA1TThkNERxN1BidXNDVnllWW1ubFhUN0M4MHdWTWpzdE93NXNoZDZLeEdhdnVHSWIzOHc3OG9l?oc=5"
@@ -54,6 +49,16 @@
       "label": "Eastern DR Congo",
       "change": "Updated details: Former president Kabila joins M23-led AFC alliance",
       "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOY1l3VHE1di1Wa0h6U2lwT0NpSmc0UlA2SFN4WWd5VzItMkdvQk5ockhqQ3pvMTJObS0weDRfbHY0aWI5ODZRWWdnWXFJTUNrTDk5RFlvczlBX2VVYXNfLWFoZ3lnQWlMeW5oMW1jd1JTcElsVTUza1IyMzhWd2ZCdW4tZjRJVDViY0U3dTc1aDFLNW8?oc=5"
+     },
+     {
+      "label": "Ukraine–United States",
+      "change": "Friendly → Tense: Ukraine resumes oil refinery strikes over US energy truce disagreements",
+      "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOanVvOXBrUl9qVzlNb3ljaFNMclJtU0JkcGMwOHg3WngxQnJhSUc4VzZGV0hvRDBBek9DejBaaTNwWVVSd0thaUt4dXJWZGVEVHdaeXNHQXVpV3pmZVJwN2o2ZDFrTXNGTVdaLTcwY1haLXBlWTRRNnpZSXFFSmllQ0xEdTZHLVRhREJCU3Q3WHlycGhCcEdTSXpjX0VDb1BXYXFiaGp5VjBXQQ?oc=5"
+     },
+     {
+      "label": "Somalia",
+      "change": "Added May 2027 presidential election schedule",
+      "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSUxQOENvNy1CZFN6ZV9tN09odU5UbVpHTkZnT3hkM2F3WkwzdXNUdGFQX1Z2X1MwTGJRU3ZXOEVQOXo3ZC1JTTZzQkYyZUZRM1dQS2MtME9JTWFuZ09ZSi0tLXpMUGRJVXdQZE1rd1RQTklLeERhT0huR24xTE9QM2lmMWN0LWgzaHp5ZFdrLUI?oc=5"
      }
     ]
    },
@@ -1426,7 +1431,7 @@
     ]
    }
   ],
-  "summary": "Oman and Lesotho establish formal diplomatic ties; Serbia protests alleged Croatian election interference; Somalia schedules national elections for 2027; DRC opposition realigns in eastern regions."
+  "summary": "Ukraine resumed strikes on Russian oil refineries after expressing frustration with the US, while Houthis stepped up missile attacks on Saudi Arabia and the Yemeni presidential palace."
  },
  "relations": {
   "DNK-USA": {
@@ -1448,10 +1453,10 @@
   "IRN-SAU": {
    "a": "IRN",
    "b": "SAU",
-   "note": "Iranian missiles hit Saudi cities and refineries since Feb 2026; Riyadh struck back; Iran now offers a halt",
    "s": "W",
-   "source": "https://www.thenationalnews.com/news/mena/2026/09/23/iran-us-meeting-new-york/",
-   "updated": "2026-09-23"
+   "note": "Conflict deepens as Iranian-backed Houthi forces launch continuous missile and drone strikes targeting Saudi infrastructure.",
+   "updated": "2026-10-15",
+   "source": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQODZXb0UtbHJiTHdmLTZhUENYcXNNeVptZDFGV1pUUEpuS3A0RzROVlBWSGw2V2tvdjNabmlnX1llVmh1Tno5TW5jUjhLWm5BY3VOREdYTnd5Q2RpdmdyVnVzR0lFTlp4SDV4a3JzNWo0US1xdER1eUkybkRtOHlBT2U4RE43NFI2dGVnb29fSmdPVmVPaDY3NG5fNXRabFR5dkJBU0pwNDFZSkN0NkxaU2lEd2c1Mk9HbUNUYTROV3BJUnh3TEE?oc=5"
   },
   "IRN-USA": {
    "a": "IRN",
@@ -1465,9 +1470,9 @@
    "a": "SAU",
    "b": "YEM",
    "s": "W",
-   "note": "War intensifies as Houthi missiles hit Saudi Aramco headquarters and Riyadh, triggering coalition airstrikes on Sanaa oil sites.",
-   "updated": "2026-10-13",
-   "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUHZtMnk3dUVFWmVkT2FmZVRqNWNrUUc5YkNkWVJMOEhWMmo1dnc2S3FlUlExbjFscTdlY3NQcExPejdxUlF1clZ5S1BKQ1JLdjhzaFdXT2l1YVBmN2VVSkFOSlJNNmlTR2w5d082MDR2b3RkY1VrTTlwWFhuclBteVRaTmtMRUczY0VPaWxBeVV1RE9vUE9kRFZaUlZEX0NnOXZqVnNtNlJIcFU3cnE2VVFTNzhfNVZ0TzZiQWFtSUJCdXJXYU5rU0JB?oc=5"
+   "note": "War escalates sharply as Houthi missiles strike the Saudi-led coalition headquarters at the presidential palace in Aden.",
+   "updated": "2026-10-15",
+   "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPbkFOY3lPYnZzY2JhR0RfeEUtQU1lZDVLU1N4a254d1Z6ZmlLM25LUm12Q2tudk1VOU9oR0xSaW92aUJEUlgyWWJ5NVQzVEJNb0dzU21MWWlXcU5JNkVKWlE5eVBteEItT3RXSHRvY2djQTFkOGNIUFVuVXRERUItcnMtSl9hdw?oc=5"
   },
   "BEL-RWA": {
    "a": "BEL",
@@ -2225,9 +2230,9 @@
    "a": "UKR",
    "b": "USA",
    "s": "T",
-   "note": "Friction eases as Ukraine reports military Starshield satellite services are restored following disruption.",
+   "note": "Friction spikes as Ukraine resumes strikes on Russian oil refineries and expresses frustration with US demands.",
    "updated": "2026-10-15",
-   "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNYjBWTXF0enlsejUzNkJ5XzI1bzJBNUI1YlZoWWJSc1gwRWNLNWc4YjRDOUM5OVBxOHhXUzZ2TUFTeGFFcjdMUDBOYy13YVlnRTlpVldLeEI0Q0ZENm1WZkJPYkdHdEpabjhjQW8zRnZYa2dRbEhZSGN1MWRYWW1xSGh4aWk?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOanVvOXBrUl9qVzlNb3ljaFNMclJtU0JkcGMwOHg3WngxQnJhSUc4VzZGV0hvRDBBek9DejBaaTNwWVVSd0thaUt4dXJWZGVEVHdaeXNHQXVpV3pmZVJwN2o2ZDFrTXNGTVdaLTcwY1haLXBlWTRRNnpZSXFFSmllQ0xEdTZHLVRhREJCU3Q3WHlycGhCcEdTSXpjX0VDb1BXYXFiaGp5VjBXQQ?oc=5"
   },
   "PAK-SOM": {
    "a": "PAK",
@@ -2321,9 +2326,9 @@
    "a": "BLZ",
    "b": "CHN",
    "s": "T",
-   "note": "China levies sanctions on Belizean officials following high-level visits to Taiwan, asserting its one-China principle.",
-   "updated": "2026-10-12",
-   "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPR2wwRUhmemtmbTNyd3RoYXJmeVQ2c1dydjJYcDFUODZGRlQ3dDBaRG96X1RkVW9rdnE2RXp2bjN4MkhENkNZcmR4OG5fUHFsa212QjZHbVVKVVdmb2owYWVxOGNxOHFJVkVTMTlqUnJuUUJ0THJZeUFLTmgyOG83eGxoTl8zVjNSUzVpd0lJQkEza0drd3daUg?oc=5"
+   "note": "Tensions mount as China imposes sanctions on Belizean officials following high-level diplomatic support for Taiwan.",
+   "updated": "2026-10-15",
+   "source": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOWWpHdXBQcnRZdkQ1M25GSlFOTDNpZ0pOU1ktVnNLTHg4NXpScVQwVWk4cThxMGE1WGJmMnc1QjBsV3hlV1VzWFZFY2JUWjlWV1BiOXc3TEw0ek5Wb3RwZ3RkSWZIWnBRVEZlYjJsUzg0SE1RY2FCVWhNUU01UVJaMTl3?oc=5"
   },
   "EGY-SDN": {
    "a": "EGY",
@@ -2922,9 +2927,9 @@
    "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdkxxQXJURTVFaC1DSm53XzloeGV3MFo5bDlmdi1hVzBidXQyc0tYeVRZbHlUSkxpT0ZZLUZMX2J3RExGQzF6Z012V1JHd1FTcTVZR2otUHZXMF9QNHJBYVZVd1JFcHVvME1LUzdHajFGTmNRaGJzS3NhMXNnelhndThlMGtGd2JudHkyTGNpUFFzVmJYU0FkZlU3SmxvU2w4SWNFUVRmcXowWlhWTWc?oc=5"
   },
   "SOM": {
-   "nextelec": "presidential and parliamentary, 2027",
+   "nextelec": "Parliamentary and presidential elections, May 2027",
    "updated": "2026-10-15",
-   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWjNRSEsybno3ai1PWUlJMTFHcExzV1U2bUJVb1RNZUs2ZE5lWV9GMEM0cVJERTZ0YTB2WkNnUm96QmJrODdaUXNPNnAyX05RT09va2ZtQjRUa1Nid2xTeHVWWFFfeFlWTWNsXzJHenJCcnVEdTh2Vjg2Nl9kb3Yxa2ZCWkJHY0ExTGdBSWlXMEVzYXZHVzVFNTNiSS1wT1J3Nlg3aGZwVDBzVXVmaktZLXhyXzFuWGQ5YkE?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSUxQOENvNy1CZFN6ZV9tN09odU5UbVpHTkZnT3hkM2F3WkwzdXNUdGFQX1Z2X1MwTGJRU3ZXOEVQOXo3ZC1JTTZzQkYyZUZRM1dQS2MtME9JTWFuZ09ZSi0tLXpMUGRJVXdQZE1rd1RQTklLeERhT0huR24xTE9QM2lmMWN0LWgzaHp5ZFdrLUI?oc=5"
   }
  }
 }
