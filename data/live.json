@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-15T05:26:56Z",
+  "lastRun": "2026-10-15T10:30:26Z",
   "log": [
    {
     "date": "2026-10-15",
@@ -9,11 +9,6 @@
       "label": "France–Chad",
       "change": "Normal → Partner: signed renewed defence partnership",
       "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRTNZbDdyWlZKbDNZNEVlcXl4UGVvWGhIOUphSjBtdUVNbVdFV3AzNzV4bjNXVHJULU40VEtWekl2Y2RNaTRka3lJcTE0UkYyd2tsSVZia3p1SWZuRjFPY29zcWtYbHd1VUJ2ZGxOZDVkZGc5aTNjUVBldEs1U01NY0ppQ0Y3M05SREJiLVZvamVUZWRMdUV2dlUyS2VqOFV4Q3lNRkFRdjRMZHZQRm1iY1Nn?oc=5"
-     },
-     {
-      "label": "Ukraine–United States",
-      "change": "note: satellite access curbs heighten friction",
-      "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOa2JMRzg4YXdWTTViT3l4d2xWY0JuaHhMMHdIWHRRY1RhajBxQ0JzMU9NNEZ6YWstajhmSTQ4YmNkWE1henEtTTBOeEVYMi1VOE44WUlCdXhGTmd1ZDRZeElYYjZXamwtT2lKMDBOOFg3UWppZ2hsV0FwSS1wXzV5UFg4UXp2TFJPQ0Jid3RGeGotTUI4Nk9BblNxSnI0bE9pRkIzZGdPQ3VoSm8?oc=5"
      },
      {
       "label": "Cambodia–Vietnam",
@@ -34,6 +29,16 @@
       "label": "Brazil",
       "change": "presidential runoff election noted",
       "source": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBWLWw3a2JfdmRKRzF4dXlsb2Q0QllmSTE2bTl4Z2lRbzZhLW9oYnA1d2RPZFBFa05pNGpZVjMwcHVkTDRvUjdEbTg0NFU2RnhfcGlvdDlqLUtHb0JLYWk2MXBsN2xndnha?oc=5"
+     },
+     {
+      "label": "Bangladesh–India",
+      "change": "Tense: Sheikh Hasina criticizes Bangladesh government from India over minority safety",
+      "source": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQZ0wzejZmc3pNUi16VTB0WGtiQmVsSzFhemkwSjFTR3FOcHdCSWh2ZngzUWIySFBPWXhEbkxEdzVGRktzM0pzRTQ3UTdUa1M0Rkg0VEstSnVCVTAzdUNBQTdrT0dVaFRmZVpSZ2w2MkdndTVBU0JNYVAxNVhMcVFCbGY1NVpyNDZxU3dlZU9NTy1sVVF3OVk2NlBHQlFVOVZ6Tm5vV01IS0FkbWhRTXNrdG9rVHRSRkdwaGhVVjZBeEcyWm1RZHdrNU9BX01UZHRiMnQ3Sm1OQ2NnWko5N1RsaTZoMXJXNlMy0gHuAUFVX3lxTE92WlVrSlpsR2Nsc3F3ajJqX1NtdV8xakZvTFhncEk1S2FkWWtGdGpHUTNsNDN3MHBxVU5yclotbkt3MXRKeExXOTFWMVIxM3B2eEpMZWpYakZjLU9EN0tNYWRwdmNpV2JjQjZlMXhFWFN0NjUyOEl5WFRSdnFXMjJyTW5WaWZnTEViVFhPQVdKUWpxcGdua3ZId01IWGxIMW1RUXluazc0eU9oMmE5UnFiRGZ2VEJHRTl2R0xiM0Z2ZGhEMkFiWS1LOE15Zk1KcnRGSzFqdmg4eWwwMXRfSWR0SGd3MHhWNjAxeUljdFE?oc=5"
+     },
+     {
+      "label": "Ukraine–United States",
+      "change": "Tense: friction eases as Ukraine reports Starshield satellite service restoration",
+      "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNYjBWTXF0enlsejUzNkJ5XzI1bzJBNUI1YlZoWWJSc1gwRWNLNWc4YjRDOUM5OVBxOHhXUzZ2TUFTeGFFcjdMUDBOYy13YVlnRTlpVldLeEI0Q0ZENm1WZkJPYkdHdEpabjhjQW8zRnZYa2dRbEhZSGN1MWRYWW1xSGh4aWk?oc=5"
      }
     ]
    },
@@ -1406,7 +1411,7 @@
     ]
    }
   ],
-  "summary": "France and Chad sign a renewed defence partnership restoring military ties, while inter-Korean missile tensions and satellite disputes between Ukraine and the United States persist."
+  "summary": "Ukraine reports the restoration of Starshield satellite services following earlier disruptions, while ousted Bangladeshi leader Sheikh Hasina raises concerns over minority safety from India."
  },
  "relations": {
   "DNK-USA": {
@@ -1605,9 +1610,9 @@
    "a": "BGD",
    "b": "IND",
    "s": "T",
-   "note": "Tensions persist as Bangladesh formally requests India to expedite the extradition of ousted leader Sheikh Hasina.",
-   "updated": "2026-10-04",
-   "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNYW9CTEhwZ205blp6S3Q4bVRMeDY5QWdlTDZzd3FhbWozREFOX3BVTEcwSjY1OTRjYVBFNXB4ZHd3TWlGUUl2bk9mSVNmcUsxN3dyVmd0MGNMRDVGazdRZXFlQW9oZkh4cTFPZVY3RVBmQVRNT285S1dGNmc4SnNaQXVuaUlqcC1kUW9GeHEyVnRrU0dCNHRScDlubWxvTE90RGdhM0g3aS0xQjRibTZfTW55Ym9jejMzYkJ0dnpGR2Y0TXdBaUxaMXRKTzE3bWwtZGNYSHJFNNIB1wFBVV95cUxNYW9CTEhwZ205blp6S3Q4bVRMeDY5QWdlTDZzd3FhbWozREFOX3BVTEcwSjY1OTRjYVBFNXB4ZHd3TWlGUUl2bk9mSVNmcUsxN3dyVmd0MGNMRDVGazdRZXFlQW9oZkh4cTFPZVY3RVBmQVRNT285S1dGNmc4SnNaQXVuaUlqcC1kUW9GeHEyVnRrU0dCNHRScDlubWxvTE90RGdhM0g3aS0xQjRibTZfTW55Ym9jejMzYkJ0dnpGR2Y0TXdBaUxaMXRKTzE3bWwtZGNYSHJFNA?oc=5"
+   "note": "Tensions persist as ousted leader Sheikh Hasina criticizes Bangladesh from India over minority safety and skipping a summit.",
+   "updated": "2026-10-15",
+   "source": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQZ0wzejZmc3pNUi16VTB0WGtiQmVsSzFhemkwSjFTR3FOcHdCSWh2ZngzUWIySFBPWXhEbkxEdzVGRktzM0pzRTQ3UTdUa1M0Rkg0VEstSnVCVTAzdUNBQTdrT0dVaFRmZVpSZ2w2MkdndTVBU0JNYVAxNVhMcVFCbGY1NVpyNDZxU3dlZU9NTy1sVVF3OVk2NlBHQlFVOVZ6Tm5vV01IS0FkbWhRTXNrdG9rVHRSRkdwaGhVVjZBeEcyWm1RZHdrNU9BX01UZHRiMnQ3Sm1OQ2NnWko5N1RsaTZoMXJXNlMy0gHuAUFVX3lxTE92WlVrSlpsR2Nsc3F3ajJqX1NtdV8xakZvTFhncEk1S2FkWWtGdGpHUTNsNDN3MHBxVU5yclotbkt3MXRKeExXOTFWMVIxM3B2eEpMZWpYakZjLU9EN0tNYWRwdmNpV2JjQjZlMXhFWFN0NjUyOEl5WFRSdnFXMjJyTW5WaWZnTEViVFhPQVdKUWpxcGdua3ZId01IWGxIMW1RUXluazc0eU9oMmE5UnFiRGZ2VEJHRTl2R0xiM0Z2ZGhEMkFiWS1LOE15Zk1KcnRGSzFqdmg4eWwwMXRfSWR0SGd3MHhWNjAxeUljdFE?oc=5"
   },
   "MAR-SAU": {
    "a": "MAR",
@@ -2205,9 +2210,9 @@
    "a": "UKR",
    "b": "USA",
    "s": "T",
-   "note": "Friction mounts as Ukraine attributes restrictions on military Starshield and Starlink satellite capabilities to Washington.",
+   "note": "Friction eases as Ukraine reports military Starshield satellite services are restored following disruption.",
    "updated": "2026-10-15",
-   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOa2JMRzg4YXdWTTViT3l4d2xWY0JuaHhMMHdIWHRRY1RhajBxQ0JzMU9NNEZ6YWstajhmSTQ4YmNkWE1henEtTTBOeEVYMi1VOE44WUlCdXhGTmd1ZDRZeElYYjZXamwtT2lKMDBOOFg3UWppZ2hsV0FwSS1wXzV5UFg4UXp2TFJPQ0Jid3RGeGotTUI4Nk9BblNxSnI0bE9pRkIzZGdPQ3VoSm8?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNYjBWTXF0enlsejUzNkJ5XzI1bzJBNUI1YlZoWWJSc1gwRWNLNWc4YjRDOUM5OVBxOHhXUzZ2TUFTeGFFcjdMUDBOYy13YVlnRTlpVldLeEI0Q0ZENm1WZkJPYkdHdEpabjhjQW8zRnZYa2dRbEhZSGN1MWRYWW1xSGh4aWk?oc=5"
   },
   "PAK-SOM": {
    "a": "PAK",
