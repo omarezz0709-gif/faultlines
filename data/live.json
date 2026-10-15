@@ -1,7 +1,42 @@
 {
  "meta": {
-  "lastRun": "2026-10-14T22:20:40Z",
+  "lastRun": "2026-10-15T05:26:56Z",
   "log": [
+   {
+    "date": "2026-10-15",
+    "items": [
+     {
+      "label": "France–Chad",
+      "change": "Normal → Partner: signed renewed defence partnership",
+      "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRTNZbDdyWlZKbDNZNEVlcXl4UGVvWGhIOUphSjBtdUVNbVdFV3AzNzV4bjNXVHJULU40VEtWekl2Y2RNaTRka3lJcTE0UkYyd2tsSVZia3p1SWZuRjFPY29zcWtYbHd1VUJ2ZGxOZDVkZGc5aTNjUVBldEs1U01NY0ppQ0Y3M05SREJiLVZvamVUZWRMdUV2dlUyS2VqOFV4Q3lNRkFRdjRMZHZQRm1iY1Nn?oc=5"
+     },
+     {
+      "label": "Ukraine–United States",
+      "change": "note: satellite access curbs heighten friction",
+      "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOa2JMRzg4YXdWTTViT3l4d2xWY0JuaHhMMHdIWHRRY1RhajBxQ0JzMU9NNEZ6YWstajhmSTQ4YmNkWE1henEtTTBOeEVYMi1VOE44WUlCdXhGTmd1ZDRZeElYYjZXamwtT2lKMDBOOFg3UWppZ2hsV0FwSS1wXzV5UFg4UXp2TFJPQ0Jid3RGeGotTUI4Nk9BblNxSnI0bE9pRkIzZGdPQ3VoSm8?oc=5"
+     },
+     {
+      "label": "Cambodia–Vietnam",
+      "change": "note: defence and border security agreements",
+      "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQY1dHQS1HeUlpeG5Ha2dLUDJiejdZdzlZQ2c0OWVlbnJTRk5SY2RJeFRiODU4MjlsaTg2SGpsbEd6YWpZUXIwNXlTRUlSSFJpQ1lqUXZHMHhsV0FXUG50TF91aGFMX005SUhsd240X01LT3A1UGl3cVpFMnZMbDhPM3cwTnRtdnZ0cDZSZU5CdUxGeVJPVTJiSDV6XzMwRjM3b3FfcQ?oc=5"
+     },
+     {
+      "label": "North Korea–South Korea",
+      "change": "note: submarine cruise missile tests",
+      "source": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQaFNaRnJhenlNaF9Ga3RlQXMwZUl6LVhxaE5Ia2toV3hxYUd1cEw2WGpqN1dHY2V2V0ZneGFnQnF1cHNERTJDSVFKQWd3eldxYUlJU2Z4dGhoRkJqeHdZSmpRdG44MktLdWYwQmgyeU1zdzFJamlITFZxWjlIQ0Zla2pnY1hjTFN6MDNndE5rc2VjalJncWpEQVBPU3h2TnhfczAwOUk1NFlETkE0cFkyeHloLXNCcHkzQm9zMmNIdW1uS1ZqU0Q3WWRkNUxRci0taTYyQ3VOMlRBQdIB2gFBVV95cUxQaFNaRnJhenlNaF9Ga3RlQXMwZUl6LVhxaE5Ia2toV3hxYUd1cEw2WGpqN1dHY2V2V0ZneGFnQnF1cHNERTJDSVFKQWd3eldxYUlJU2Z4dGhoRkJqeHdZSmpRdG44MktLdWYwQmgyeU1zdzFJamlITFZxWjlIQ0Zla2pnY1hjTFN6MDNndE5rc2VjalJncWpEQVBPU3h2TnhfczAwOUk1NFlETkE0cFkyeHloLXNCcHkzQm9zMmNIdW1uS1ZqU0Q3WWRkNUxRci0taTYyQ3VOMlRBQQ?oc=5"
+     },
+     {
+      "label": "Central Mediterranean migration route",
+      "change": "updated route to include Greece and eastern Libya funding",
+      "source": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQWTNQOFBrc2txLUdiLWdRSEM1QU5FZi1iRWxVeVZIeGJvemt4bDVTNk5PeUI2TXNhQlRIeHowcURhQ2V5d3psU25JdGNsdXVDWFBDZ2M3eDFNcmhGRXBKdlAtMERVWHJIcjlZVFZMVE5WRVljamhNZDdsRDBXSkZ5SHNkb294bTFaSDl2MER5S3p6NVpXNFhGd3FkZUplUTJRemtJM3Q0NnYzVllfQ2VzOXdoZnNSU1ZnaVJSa0dRdjVmQks3djU2ek45WDZkWFNTUGtHUFJfXzZWUkc3SXpaR1Y1TFdCS1drRVdIdDlDQW9jM2hJc0w1VTJyTm80VXIwT0NYLW9HUXFUdFk0Skw0N3R3TjJpU2Vq?oc=5"
+     },
+     {
+      "label": "Brazil",
+      "change": "presidential runoff election noted",
+      "source": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBWLWw3a2JfdmRKRzF4dXlsb2Q0QllmSTE2bTl4Z2lRbzZhLW9oYnA1d2RPZFBFa05pNGpZVjMwcHVkTDRvUjdEbTg0NFU2RnhfcGlvdDlqLUtHb0JLYWk2MXBsN2xndnha?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-14",
     "items": [
@@ -1371,7 +1406,7 @@
     ]
    }
   ],
-  "summary": "Updated the Strait of Hormuz security assessment following commercial ship sinkings and refreshed US-Venezuela relations after targeted sanctions relief."
+  "summary": "France and Chad sign a renewed defence partnership restoring military ties, while inter-Korean missile tensions and satellite disputes between Ukraine and the United States persist."
  },
  "relations": {
   "DNK-USA": {
@@ -1682,9 +1717,9 @@
    "a": "KHM",
    "b": "VNM",
    "s": "N",
-   "note": "Vietnamese Prime Minister Le Minh Hung visits Phnom Penh to sign six bilateral agreements on trade, education, and security.",
-   "updated": "2026-10-09",
-   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPd0h6ZFJkeXR3MHJNVlRaMUw3bC1GNUpMVVJfZ25FN3dYVGtzenQydko0SFd4TElMdHZ0WXlmN3FiMFpoejhpSkFCeHFvd1MwZjFVLTJfZHFvRDQwcldlNkpEbExTTE9wbndQcGo2VlJmVW40alJGZmxXYkhsaERQMlNud2xMUWdNejdEckNkT3ZTaVJQWVZmZEFrTnN4MC1q?oc=5"
+   "note": "Vietnam and Cambodia deepen defence cooperation and border security coordination under high-level bilateral agreements.",
+   "updated": "2026-10-15",
+   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQY1dHQS1HeUlpeG5Ha2dLUDJiejdZdzlZQ2c0OWVlbnJTRk5SY2RJeFRiODU4MjlsaTg2SGpsbEd6YWpZUXIwNXlTRUlSSFJpQ1lqUXZHMHhsV0FXUG50TF91aGFMX005SUhsd240X01LT3A1UGl3cVpFMnZMbDhPM3cwTnRtdnZ0cDZSZU5CdUxGeVJPVTJiSDV6XzMwRjM3b3FfcQ?oc=5"
   },
   "CHE-RUS": {
    "a": "CHE",
@@ -1706,9 +1741,9 @@
    "a": "KOR",
    "b": "PRK",
    "s": "W",
-   "note": "Inter-Korean tensions spike as North Korea launches multiple ballistic missiles following recent joint exercises.",
-   "updated": "2026-10-12",
-   "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQk1yN0VGNGJfVDNQYzVNVFBzV251RWFmQmc0UDg5dzdmWXZBR2YxdzB3dnNWUF9uc1Fod0MtN21CMTVLUWk0UnJ2WWVENHJEM3V6SzFKeTJNTVQ1SFZ2c09kTUVkMUpVcDFrQnM4ZTlQd2ZyQU1BUHpqUHlZN2w1QnRtWnk2dnFXaDJmdEhjbVg3TmNxNUptaFdERklRZWoyVUFSY2lDVEtoOXVtZ29UWUxQUQ?oc=5"
+   "note": "Hostilities intensify as North Korea tests submarine-launched cruise missiles amid heightened border friction.",
+   "updated": "2026-10-15",
+   "source": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQaFNaRnJhenlNaF9Ga3RlQXMwZUl6LVhxaE5Ia2toV3hxYUd1cEw2WGpqN1dHY2V2V0ZneGFnQnF1cHNERTJDSVFKQWd3eldxYUlJU2Z4dGhoRkJqeHdZSmpRdG44MktLdWYwQmgyeU1zdzFJamlITFZxWjlIQ0Zla2pnY1hjTFN6MDNndE5rc2VjalJncWpEQVBPU3h2TnhfczAwOUk1NFlETkE0cFkyeHloLXNCcHkzQm9zMmNIdW1uS1ZqU0Q3WWRkNUxRci0taTYyQ3VOMlRBQdIB2gFBVV95cUxQaFNaRnJhenlNaF9Ga3RlQXMwZUl6LVhxaE5Ia2toV3hxYUd1cEw2WGpqN1dHY2V2V0ZneGFnQnF1cHNERTJDSVFKQWd3eldxYUlJU2Z4dGhoRkJqeHdZSmpRdG44MktLdWYwQmgyeU1zdzFJamlITFZxWjlIQ0Zla2pnY1hjTFN6MDNndE5rc2VjalJncWpEQVBPU3h2TnhfczAwOUk1NFlETkE0cFkyeHloLXNCcHkzQm9zMmNIdW1uS1ZqU0Q3WWRkNUxRci0taTYyQ3VOMlRBQQ?oc=5"
   },
   "ESP-ISR": {
    "a": "ESP",
@@ -2170,9 +2205,9 @@
    "a": "UKR",
    "b": "USA",
    "s": "T",
-   "note": "Tensions rise as the United States (US) signs a Russian diesel deal and demands Ukrainian leadership change.",
-   "updated": "2026-10-10",
-   "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVzQyclJRckNHd2JzSkhSY2FPSmR4anpVRzljNUkxVFRlN3JNSnRvTWNqRDJ5dS1HTXJ4R3RlLWNZNW1rRkdZLTVjU0UyM2YzcmRnTHVETXpMYlktam5KR21GLWc5RXBxN2dWWVFjdmxROC0xTFpraEdLQ2dDWER2NW8tV3owVjdBdXJidFpLbUFKR1NKQmFVbXVEVjYwWWRpTnZDX0xyVl9HUC1oVmRiZmp0Z0hSdmZzQWhMOTZubjI?oc=5"
+   "note": "Friction mounts as Ukraine attributes restrictions on military Starshield and Starlink satellite capabilities to Washington.",
+   "updated": "2026-10-15",
+   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOa2JMRzg4YXdWTTViT3l4d2xWY0JuaHhMMHdIWHRRY1RhajBxQ0JzMU9NNEZ6YWstajhmSTQ4YmNkWE1henEtTTBOeEVYMi1VOE44WUlCdXhGTmd1ZDRZeElYYjZXamwtT2lKMDBOOFg3UWppZ2hsV0FwSS1wXzV5UFg4UXp2TFJPQ0Jid3RGeGotTUI4Nk9BblNxSnI0bE9pRkIzZGdPQ3VoSm8?oc=5"
   },
   "PAK-SOM": {
    "a": "PAK",
@@ -2313,10 +2348,10 @@
   "FRA-TCD": {
    "a": "FRA",
    "b": "TCD",
-   "s": "N",
-   "note": "France and Chad agree to revive military and defence cooperation during high-level bilateral talks in Paris.",
-   "updated": "2026-10-14",
-   "source": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOT1hDRzZKcU9Ndlp2YVowSF9NRGctMnlHTmJ6YUllOFRoSHdYUEFiSkFfU1FJTnFBQnpsdEJhTlUwU2k3WTdoOG1OQkRTb3dwT0xDTEloY3NPTnFUOGlJSWF5aDNIQnpHUFZWcDVHTFAtYktEUGp6VGQyNTN4c21ydF9jaGNXQmdoLWZSaWthakRuUW5laXFhaVNPU1Z5eUJEajlBc3NhTDdhdVphME9sakdUNjk2RTJkbmZmdVF5VURwX1lJSlhaaUFCQ2JzRzg4SFZXTVdrdGJRcUtUeEo5RXB3?oc=5"
+   "s": "F",
+   "note": "France and Chad sign a renewed defence partnership for training and technology, restoring institutional military ties.",
+   "updated": "2026-10-15",
+   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRTNZbDdyWlZKbDNZNEVlcXl4UGVvWGhIOUphSjBtdUVNbVdFV3AzNzV4bjNXVHJULU40VEtWekl2Y2RNaTRka3lJcTE0UkYyd2tsSVZia3p1SWZuRjFPY29zcWtYbHd1VUJ2ZGxOZDVkZGc5aTNjUVBldEs1U01NY0ppQ0Y3M05SREJiLVZvamVUZWRMdUV2dlUyS2VqOFV4Q3lNRkFRdjRMZHZQRm1iY1Nn?oc=5"
   },
   "COL-ISR": {
    "a": "COL",
@@ -2536,6 +2571,27 @@
    ],
    "updated": "2026-10-14",
    "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOYWtXNGwxOU1FNlJ6RzJKSXRCbksxemFzQVdYaTlXOUFteW1KTFVsdGVrSWpBdUJrTFlIMWVQQXVjNG5LY0o5MU5kQTRGRUNYbWl4X2ZlamJwOFBhOGhpcTd2VmRxLW51UVpac1dRal83WTRTVVctOVYyb2pwYzN6S2VZVXVDTmZscEZVSjdjdi1ZZi1wRXAxdk9SREczaHM2STQyQnRwakZfT3UtZVQtVTh30gG3AUFVX3lxTFBrZXp2RHRmanF5bzZyeGg1bkdJSHdSZkpVSWxMRW1XQUtSaXd1YlVYN3h2OG9icGNqSmxYTF9JZFc3d2RYQTQzWkExTmFnUk5LTU1iQm1YV2E0RGx4d3lEWUdac2pjWTlBUm9LbXUyT3J3OG5tSlF3UWxYLW8yeko4aUR3YjcxQ0U3clAtQlZpdG9ndXZWOEJGS0dyQnczNkNHQkVUTWFKV3VYc1pWUWdTbS1SWWFJTQ?oc=5"
+  },
+  "central-med": {
+   "t": "migration",
+   "n": "Central Mediterranean migration route",
+   "d": "Migrants from Africa and Asia transit eastern Libya and Tunisia toward Italy and Greece as the European Union (EU) funds regional interdiction.",
+   "c": [
+    "GIN",
+    "CIV",
+    "MLI",
+    "NER",
+    "SDN",
+    "ERI",
+    "EGY",
+    "LBY",
+    "TUN",
+    "ITA",
+    "MLT",
+    "GRC"
+   ],
+   "updated": "2026-10-15",
+   "source": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQWTNQOFBrc2txLUdiLWdRSEM1QU5FZi1iRWxVeVZIeGJvemt4bDVTNk5PeUI2TXNhQlRIeHowcURhQ2V5d3psU25JdGNsdXVDWFBDZ2M3eDFNcmhGRXBKdlAtMERVWHJIcjlZVFZMVE5WRVljamhNZDdsRDBXSkZ5SHNkb294bTFaSDl2MER5S3p6NVpXNFhGd3FkZUplUTJRemtJM3Q0NnYzVllfQ2VzOXdoZnNSU1ZnaVJSa0dRdjVmQks3djU2ek45WDZkWFNTUGtHUFJfXzZWUkc3SXpaR1Y1TFdCS1drRVdIdDlDQW9jM2hJc0w1VTJyTm80VXIwT0NYLW9HUXFUdFk0Skw0N3R3TjJpU2Vq?oc=5"
   }
  },
  "pois": {
@@ -2635,9 +2691,9 @@
    "lastelec": "presidential first round, Oct 2026, runoff pending",
    "nextelec": "presidential runoff, October 2026",
    "ruling": "Workers' Party (PT)-led broad coalition",
-   "source": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4tbE1TdFNzSW1YZ0ZMcjZWajBiUFJXcE4yQ0dLaVN1Y19uWHVrUmp4VUZJbHA0S001cVBnX2Jsa181ajZhNXIxN2VqcjloY0ZqcVE0MHVRWlAxV1IxUzFTN1FTbXRGVnc?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBWLWw3a2JfdmRKRzF4dXlsb2Q0QllmSTE2bTl4Z2lRbzZhLW9oYnA1d2RPZFBFa05pNGpZVjMwcHVkTDRvUjdEbTg0NFU2RnhfcGlvdDlqLUtHb0JLYWk2MXBsN2xndnha?oc=5",
    "system": "Federal presidential republic",
-   "updated": "2026-10-14"
+   "updated": "2026-10-15"
   },
   "CAN": {
    "hog": "Mark Carney, Prime Minister",
