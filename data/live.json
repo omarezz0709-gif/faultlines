@@ -1,7 +1,27 @@
 {
  "meta": {
-  "lastRun": "2026-10-15T22:20:48Z",
+  "lastRun": "2026-10-16T05:27:17Z",
   "log": [
+   {
+    "date": "2026-10-16",
+    "items": [
+     {
+      "label": "Russia–Syria",
+      "change": "Normal → Tense: Moscow refuses to extradite ousted president Bashar al-Assad to Damascus",
+      "source": "https://news.google.com/rss/articles/CBMizAFBVV95cUxObGRELVhSclc3V2VRbXhGQ2JtbmkwYW45cWJic0pRajJ5Nl9GSXJwZDJmb3daQmpxS2tGcElSekg0b0k5V1JwMkY1VDdaY3htNHBGWXp0T0hMTERvbmE5YUpLUVY1UUNrLTB0dERPckY3WU45MjEwLUVOQ2NISVJOeGRMSDhUeDlQUXVLWVZjbUY3R3FVMEtzNHZXSFJWZmEtalluMHpkMDY2U1MzWEtmb3loUEpGT3VNZndTQXFfOWU5ZU8zSE9MTGl0OHfSAdIBQVVfeXFMTmdUeHd2Z1ExdU1uVnZiOXhINU5WNVZWU3dBYkVveThCSVFOTkQ2eFlKNlZWMmw4X0VjQU4xM0tuS2JvWTFiR1A1NkF0VjVFR1BWOUVSaUEwSFU1bUxRZU9yekRWc280ZWtfM0xDSmdyWG9DUGZMLXprUVNVSDdtTzVLVnlhNjVRVzVVRkJKWTlscUF1ZzNMWk1IOHZvZmhjbG1IbVVENkV5ZHhVdEhSNlExZGxoNWdTU1hCUmFtMVYyMjdxbzBwVnU2ZWlaa3BULVZB?oc=5"
+     },
+     {
+      "label": "Israel–Lebanon",
+      "change": "Hostile: Israel threatens territorial seizure as Hezbollah explosives dispute escalates",
+      "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE43TFd6VmlWR3B2OGZCaXZMbVhxRmZ0YVdMTmxKaWZ0d1psWFRsVGhId3VKVVFFeXBnMzJaM0dPcnlqR3ZSSGlxZjBkV2pjTEI5MDdCU2pRU0dXSHFwMjZTdkhzVi1HcWxpd2tXUDlR?oc=5"
+     },
+     {
+      "label": "Eastern DR Congo",
+      "change": "M23 coalition rebrands as FRN with Joseph Kabila leading Doha talks",
+      "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOY1l3VHE1di1Wa0h6U2lwT0NpSmc0UlA2SFN4WWd5VzItMkdvQk5ockhqQ3pvMTJObS0weDRfbHY0aWI5ODZRWWdnWXFJTUNrTDk5RFlvczlBX2VVYXNfLWFoZ3lnQWlMeW5oMW1jd1JTcElsVTUza1IyMzhWd2ZCdW4tZjRJVDViY0U3dTc1aDFLNW8?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-15",
     "items": [
@@ -1431,7 +1451,7 @@
     ]
    }
   ],
-  "summary": "Ukraine resumed strikes on Russian oil refineries after expressing frustration with the US, while Houthis stepped up missile attacks on Saudi Arabia and the Yemeni presidential palace."
+  "summary": "Updated Russia–Syria relations to tense following Moscow's refusal to extradite Bashar al-Assad, noted escalating Israel–Lebanon tensions, and scheduled Somalia's 2027 elections."
  },
  "relations": {
   "DNK-USA": {
@@ -2417,6 +2437,22 @@
    "note": "Tensions rise as Serbia issues a formal protest note accusing Croatia of election interference, which Zagreb denies.",
    "updated": "2026-10-15",
    "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeWxsSEN1U0VRWlcyMFFsbmpOSGJ1MzZiZ0labmYwR2lkRkN6bFFNSEJ1amJRdjBVbXVsa2pQWjI5LXNINHNVVWl1aHJjdUFxWGE5M3AwWk9RUHpOd0c0VzAxeS14bjFtaFFtbjdPX19OakhFeHN3dEVKV2h4ckRqWVNmMk9Ybmh6WjVaWTJpejdJbVdneVduMVVBZFdxQjVZMVR5QjdtbHdzdTg?oc=5"
+  },
+  "ISR-LBN": {
+   "a": "ISR",
+   "b": "LBN",
+   "s": "H",
+   "note": "Tensions mount as Israel threatens to seize Lebanese land if Hezbollah attacks, while Beirut faces pressure over seized explosives.",
+   "updated": "2026-10-16",
+   "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE43TFd6VmlWR3B2OGZCaXZMbVhxRmZ0YVdMTmxKaWZ0d1psWFRsVGhId3VKVVFFeXBnMzJaM0dPcnlqR3ZSSGlxZjBkV2pjTEI5MDdCU2pRU0dXSHFwMjZTdkhzVi1HcWxpd2tXUDlR?oc=5"
+  },
+  "RUS-SYR": {
+   "a": "RUS",
+   "b": "SYR",
+   "s": "T",
+   "note": "Ties fray as Russia refuses to extradite ousted leader Bashar al-Assad to Syria following a death sentence handed down in Damascus.",
+   "updated": "2026-10-16",
+   "source": "https://news.google.com/rss/articles/CBMizAFBVV95cUxObGRELVhSclc3V2VRbXhGQ2JtbmkwYW45cWJic0pRajJ5Nl9GSXJwZDJmb3daQmpxS2tGcElSekg0b0k5V1JwMkY1VDdaY3htNHBGWXp0T0hMTERvbmE5YUpLUVY1UUNrLTB0dERPckY3WU45MjEwLUVOQ2NISVJOeGRMSDhUeDlQUXVLWVZjbUY3R3FVMEtzNHZXSFJWZmEtalluMHpkMDY2U1MzWEtmb3loUEpGT3VNZndTQXFfOWU5ZU8zSE9MTGl0OHfSAdIBQVVfeXFMTmdUeHd2Z1ExdU1uVnZiOXhINU5WNVZWU3dBYkVveThCSVFOTkQ2eFlKNlZWMmw4X0VjQU4xM0tuS2JvWTFiR1A1NkF0VjVFR1BWOUVSaUEwSFU1bUxRZU9yekRWc280ZWtfM0xDSmdyWG9DUGZMLXprUVNVSDdtTzVLVnlhNjVRVzVVRkJKWTlscUF1ZzNMWk1IOHZvZmhjbG1IbVVENkV5ZHhVdEhSNlExZGxoNWdTU1hCUmFtMVYyMjdxbzBwVnU2ZWlaa3BULVZB?oc=5"
   }
  },
  "threads": {
@@ -2712,9 +2748,9 @@
   },
   "eastern-dr-congo": {
    "n": "Eastern DR Congo",
-   "s": "Kabila joins M23 coalition",
-   "d": "Former DR Congo (Democratic Republic of the Congo) president Joseph Kabila joins the M23 rebel-led AFC (Alliance Fleuve Congo) coalition.",
-   "updated": "2026-10-15",
+   "s": "M23 rebrands as FRN under Kabila",
+   "d": "The M23-led AFC (Alliance Fleuve Congo) rebrands as the FRN with former DR Congo president Joseph Kabila heading Doha peace talks.",
+   "updated": "2026-10-16",
    "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOY1l3VHE1di1Wa0h6U2lwT0NpSmc0UlA2SFN4WWd5VzItMkdvQk5ockhqQ3pvMTJObS0weDRfbHY0aWI5ODZRWWdnWXFJTUNrTDk5RFlvczlBX2VVYXNfLWFoZ3lnQWlMeW5oMW1jd1JTcElsVTUza1IyMzhWd2ZCdW4tZjRJVDViY0U3dTc1aDFLNW8?oc=5"
   },
   "falkland-islands": {
@@ -2927,9 +2963,9 @@
    "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdkxxQXJURTVFaC1DSm53XzloeGV3MFo5bDlmdi1hVzBidXQyc0tYeVRZbHlUSkxpT0ZZLUZMX2J3RExGQzF6Z012V1JHd1FTcTVZR2otUHZXMF9QNHJBYVZVd1JFcHVvME1LUzdHajFGTmNRaGJzS3NhMXNnelhndThlMGtGd2JudHkyTGNpUFFzVmJYU0FkZlU3SmxvU2w4SWNFUVRmcXowWlhWTWc?oc=5"
   },
   "SOM": {
-   "nextelec": "Parliamentary and presidential elections, May 2027",
-   "updated": "2026-10-15",
-   "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSUxQOENvNy1CZFN6ZV9tN09odU5UbVpHTkZnT3hkM2F3WkwzdXNUdGFQX1Z2X1MwTGJRU3ZXOEVQOXo3ZC1JTTZzQkYyZUZRM1dQS2MtME9JTWFuZ09ZSi0tLXpMUGRJVXdQZE1rd1RQTklLeERhT0huR24xTE9QM2lmMWN0LWgzaHp5ZFdrLUI?oc=5"
+   "nextelec": "presidential, May 2027",
+   "updated": "2026-10-16",
+   "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOY2RYb0cxdEhZTXdtdV80Mmdld1V1NUM5TDZUckdodE92T1Zjb2JzSjVCbmstZHBmbjVOVk9EVEk2U0k1cGE2SFA3bjV1OTVreFNlbGgyZnVpcW9zV0tHNGhpWkJqZmRERzRuQlJkazc2d2VHYnB3T1ljVVpINVREZ3R1VHJtZ0ZhVHQxbUpqT2Q0Q1Z2?oc=5"
   }
  }
 }
