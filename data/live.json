@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-16T10:30:52Z",
+  "lastRun": "2026-10-16T16:19:55Z",
   "log": [
    {
     "date": "2026-10-16",
@@ -21,14 +21,14 @@
       "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQYW80NDlmTUYyWTNQY1M1N25GOTNFNjlZTi1EazN6emtOMjdvT0k5bFBMWFh4eWFnRVhoS3hUMi1EOE9pd2lFZVAxcGtVRUNob3hSd1k5ZFdFOFMyalljOC1OdHNRLXNWQWRuMllaX0ZGYVFqN1JmeGJtM3E0WEpLZl9mMm1lX2V3SDF5QjZCRG8?oc=5"
      },
      {
-      "label": "Colombia–Israel",
-      "change": "Tense → Partner: Jerusalem embassy opening and restored trade ties",
-      "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbklScmU3d0VzS2xUNkxaNVpub1NDX2ZSRzZGbTBYWXNvQjBCdExkemM3RFl4NmNoTmFfTmtqZk51d19EWDUyU254bGFzSkFDWXNWanVWbENNVmhVT1ZJNHV6OFlHSDN6LVJ5eXdKRmFpaWhvdHpCYjFUZGtpeXdxMmJINktVclNGdzdYdG80cDBtU21MVGFPM2d0amJ4QlZFNkx4RE13YXFnaU04SENWTllveXhrblVaOWE4R29SZDA?oc=5"
-     },
-     {
       "label": "Somalia Politics",
       "change": "Added May 2027 presidential and parliamentary election timetable",
       "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNS3NxWkc0aGRNLUJWMkZYaWcxOHg2R0tZekFOU1ZqTUZ4TTZNcndCODUyOWVoUEtESGl1ekExUWtPZ3lVVG5GeHlZOUV4VVhBdjZTZ19wSHFHcXE4TE1MNURtVnhLTVowaDVlRTJnVVVwbVBhR1dsa01BZmhoX09fVjFiaVJZY2Ruc1VjZ09GUVc4M1ZCbXVJSHNlSzcyRTZOS3NaMHZQcmdkandRN0ZnWlpqXy14NzhoUEE?oc=5"
+     },
+     {
+      "label": "Colombia–Israel",
+      "change": "Tense → Partner: Colombia opens Jerusalem embassy and restores free trade",
+      "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSVBhWHpxQlZXQVYwVkdrSEZiZEZzd1U5RVNveWhHRWpmMHRDUld0bmNsWEtGeGZpNUV2dmV5N0c0R2tDeWhYZVA3SkRtSEgzWnVlbjZ1UDdMM2llZjZnWFhOWW1WZ2Nqc3dUV0RJUXpqRm9SdXppT3hsZnd1VzZtRTRoMWdUVG8?oc=5"
      }
     ]
    },
@@ -1461,7 +1461,7 @@
     ]
    }
   ],
-  "summary": "Tensions mount as Ukraine resumes strikes on Russian oil infrastructure and Houthis attack the presidential palace in Yemen, while Somalia announces upcoming 2027 elections."
+  "summary": "Tensions and diplomatic alignments shift as Ukrainian strikes resume on Russian oil targets, Colombia normalizes ties with Israel, and South Korea and Japan extend currency swaps."
  },
  "relations": {
   "DNK-USA": {
@@ -2414,7 +2414,7 @@
    "s": "F",
    "note": "Colombia opens an embassy in Jerusalem and restores a free trade deal with Israel under President Abelardo de la Espriella.",
    "updated": "2026-10-16",
-   "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbklScmU3d0VzS2xUNkxaNVpub1NDX2ZSRzZGbTBYWXNvQjBCdExkemM3RFl4NmNoTmFfTmtqZk51d19EWDUyU254bGFzSkFDWXNWanVWbENNVmhVT1ZJNHV6OFlHSDN6LVJ5eXdKRmFpaWhvdHpCYjFUZGtpeXdxMmJINktVclNGdzdYdG80cDBtU21MVGFPM2d0amJ4QlZFNkx4RE13YXFnaU04SENWTllveXhrblVaOWE4R29SZDA?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSVBhWHpxQlZXQVYwVkdrSEZiZEZzd1U5RVNveWhHRWpmMHRDUld0bmNsWEtGeGZpNUV2dmV5N0c0R2tDeWhYZVA3SkRtSEgzWnVlbjZ1UDdMM2llZjZnWFhOWW1WZ2Nqc3dUV0RJUXpqRm9SdXppT3hsZnd1VzZtRTRoMWdUVG8?oc=5"
   },
   "ARM-TUR": {
    "a": "ARM",
