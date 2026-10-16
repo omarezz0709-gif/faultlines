@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-16T05:27:17Z",
+  "lastRun": "2026-10-16T10:30:52Z",
   "log": [
    {
     "date": "2026-10-16",
@@ -11,14 +11,24 @@
       "source": "https://news.google.com/rss/articles/CBMizAFBVV95cUxObGRELVhSclc3V2VRbXhGQ2JtbmkwYW45cWJic0pRajJ5Nl9GSXJwZDJmb3daQmpxS2tGcElSekg0b0k5V1JwMkY1VDdaY3htNHBGWXp0T0hMTERvbmE5YUpLUVY1UUNrLTB0dERPckY3WU45MjEwLUVOQ2NISVJOeGRMSDhUeDlQUXVLWVZjbUY3R3FVMEtzNHZXSFJWZmEtalluMHpkMDY2U1MzWEtmb3loUEpGT3VNZndTQXFfOWU5ZU8zSE9MTGl0OHfSAdIBQVVfeXFMTmdUeHd2Z1ExdU1uVnZiOXhINU5WNVZWU3dBYkVveThCSVFOTkQ2eFlKNlZWMmw4X0VjQU4xM0tuS2JvWTFiR1A1NkF0VjVFR1BWOUVSaUEwSFU1bUxRZU9yekRWc280ZWtfM0xDSmdyWG9DUGZMLXprUVNVSDdtTzVLVnlhNjVRVzVVRkJKWTlscUF1ZzNMWk1IOHZvZmhjbG1IbVVENkV5ZHhVdEhSNlExZGxoNWdTU1hCUmFtMVYyMjdxbzBwVnU2ZWlaa3BULVZB?oc=5"
      },
      {
-      "label": "Israel–Lebanon",
-      "change": "Hostile: Israel threatens territorial seizure as Hezbollah explosives dispute escalates",
-      "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE43TFd6VmlWR3B2OGZCaXZMbVhxRmZ0YVdMTmxKaWZ0d1psWFRsVGhId3VKVVFFeXBnMzJaM0dPcnlqR3ZSSGlxZjBkV2pjTEI5MDdCU2pRU0dXSHFwMjZTdkhzVi1HcWxpd2tXUDlR?oc=5"
-     },
-     {
       "label": "Eastern DR Congo",
       "change": "M23 coalition rebrands as FRN with Joseph Kabila leading Doha talks",
       "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOY1l3VHE1di1Wa0h6U2lwT0NpSmc0UlA2SFN4WWd5VzItMkdvQk5ockhqQ3pvMTJObS0weDRfbHY0aWI5ODZRWWdnWXFJTUNrTDk5RFlvczlBX2VVYXNfLWFoZ3lnQWlMeW5oMW1jd1JTcElsVTUza1IyMzhWd2ZCdW4tZjRJVDViY0U3dTc1aDFLNW8?oc=5"
+     },
+     {
+      "label": "Israel–Lebanon",
+      "change": "Normal/mixed → Hostile: heightened tensions over seized Hezbollah explosives and border threats",
+      "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQYW80NDlmTUYyWTNQY1M1N25GOTNFNjlZTi1EazN6emtOMjdvT0k5bFBMWFh4eWFnRVhoS3hUMi1EOE9pd2lFZVAxcGtVRUNob3hSd1k5ZFdFOFMyalljOC1OdHNRLXNWQWRuMllaX0ZGYVFqN1JmeGJtM3E0WEpLZl9mMm1lX2V3SDF5QjZCRG8?oc=5"
+     },
+     {
+      "label": "Colombia–Israel",
+      "change": "Tense → Partner: Jerusalem embassy opening and restored trade ties",
+      "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbklScmU3d0VzS2xUNkxaNVpub1NDX2ZSRzZGbTBYWXNvQjBCdExkemM3RFl4NmNoTmFfTmtqZk51d19EWDUyU254bGFzSkFDWXNWanVWbENNVmhVT1ZJNHV6OFlHSDN6LVJ5eXdKRmFpaWhvdHpCYjFUZGtpeXdxMmJINktVclNGdzdYdG80cDBtU21MVGFPM2d0amJ4QlZFNkx4RE13YXFnaU04SENWTllveXhrblVaOWE4R29SZDA?oc=5"
+     },
+     {
+      "label": "Somalia Politics",
+      "change": "Added May 2027 presidential and parliamentary election timetable",
+      "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNS3NxWkc0aGRNLUJWMkZYaWcxOHg2R0tZekFOU1ZqTUZ4TTZNcndCODUyOWVoUEtESGl1ekExUWtPZ3lVVG5GeHlZOUV4VVhBdjZTZ19wSHFHcXE4TE1MNURtVnhLTVowaDVlRTJnVVVwbVBhR1dsa01BZmhoX09fVjFiaVJZY2Ruc1VjZ09GUVc4M1ZCbXVJSHNlSzcyRTZOS3NaMHZQcmdkandRN0ZnWlpqXy14NzhoUEE?oc=5"
      }
     ]
    },
@@ -1451,7 +1461,7 @@
     ]
    }
   ],
-  "summary": "Updated Russia–Syria relations to tense following Moscow's refusal to extradite Bashar al-Assad, noted escalating Israel–Lebanon tensions, and scheduled Somalia's 2027 elections."
+  "summary": "Tensions mount as Ukraine resumes strikes on Russian oil infrastructure and Houthis attack the presidential palace in Yemen, while Somalia announces upcoming 2027 elections."
  },
  "relations": {
   "DNK-USA": {
@@ -1667,8 +1677,8 @@
    "b": "UKR",
    "s": "T",
    "note": "South Korea recalls its ambassador to Ukraine over a diplomatic dispute regarding North Korean prisoners of war.",
-   "updated": "2026-10-13",
-   "source": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9jUldnOHp0Vi1aLTdtUUpEak43T1dnbGxvV0RXLWVpSElFcUMxLUNqdTZqMmI4ZV9ZalNHXzdiVFluZXE2cS1qZkY4dlJEaUhBS3JDOC1jUTMzeUR5M2pVTnJlZTktQQ?oc=5"
+   "updated": "2026-10-16",
+   "source": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBnOHhaMTcxcThZMzRQRDYyRkRqd0pueXhfdEQ5bXZaX0pkUGZrSHQyN2E0MS1sNVRoenY5LVdnOUN1SDViTHVNMnN1cVo5UkRzQkhJanh1QdIBV0FVX3lxTFBnOHhaMTcxcThZMzRQRDYyRkRqd0pueXhfdEQ5bXZaX0pkUGZrSHQyN2E0MS1sNVRoenY5LVdnOUN1SDViTHVNMnN1cVo5UkRzQkhJanh1QQ?oc=5"
   },
   "MDA-RUS": {
    "a": "MDA",
@@ -2403,8 +2413,8 @@
    "b": "ISR",
    "s": "F",
    "note": "Colombia opens an embassy in Jerusalem and restores a free trade deal with Israel under President Abelardo de la Espriella.",
-   "updated": "2026-10-14",
-   "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQaW5tZzlyQWx5WjVVeTRLam5wamtUZlltUlgzeG5sUlFpLVI1RHlleE54RTJkcnU4MkdLZ1g3czllalY1TFNyclZCWUh3SG9FRURWUklBdXZXTWtRVlZkeVVkZUVuZl9hY1M2UnlKN3JjV3BPZ3VYQVpnQjNaNUdGSWpsXzh5VjZQNFZzdXNzb09mZWg3QTR0WmVZNDN1MGMyMXZPUzB4OEZ1eUI2dFYxcmpPVGJWaE9VNkVveQ?oc=5"
+   "updated": "2026-10-16",
+   "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbklScmU3d0VzS2xUNkxaNVpub1NDX2ZSRzZGbTBYWXNvQjBCdExkemM3RFl4NmNoTmFfTmtqZk51d19EWDUyU254bGFzSkFDWXNWanVWbENNVmhVT1ZJNHV6OFlHSDN6LVJ5eXdKRmFpaWhvdHpCYjFUZGtpeXdxMmJINktVclNGdzdYdG80cDBtU21MVGFPM2d0amJ4QlZFNkx4RE13YXFnaU04SENWTllveXhrblVaOWE4R29SZDA?oc=5"
   },
   "ARM-TUR": {
    "a": "ARM",
@@ -2442,9 +2452,9 @@
    "a": "ISR",
    "b": "LBN",
    "s": "H",
-   "note": "Tensions mount as Israel threatens to seize Lebanese land if Hezbollah attacks, while Beirut faces pressure over seized explosives.",
+   "note": "Tensions escalate as Israel warns Lebanon over Hezbollah-linked weapons and cross-border security threats.",
    "updated": "2026-10-16",
-   "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE43TFd6VmlWR3B2OGZCaXZMbVhxRmZ0YVdMTmxKaWZ0d1psWFRsVGhId3VKVVFFeXBnMzJaM0dPcnlqR3ZSSGlxZjBkV2pjTEI5MDdCU2pRU0dXSHFwMjZTdkhzVi1HcWxpd2tXUDlR?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQYW80NDlmTUYyWTNQY1M1N25GOTNFNjlZTi1EazN6emtOMjdvT0k5bFBMWFh4eWFnRVhoS3hUMi1EOE9pd2lFZVAxcGtVRUNob3hSd1k5ZFdFOFMyalljOC1OdHNRLXNWQWRuMllaX0ZGYVFqN1JmeGJtM3E0WEpLZl9mMm1lX2V3SDF5QjZCRG8?oc=5"
   },
   "RUS-SYR": {
    "a": "RUS",
@@ -2963,9 +2973,10 @@
    "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdkxxQXJURTVFaC1DSm53XzloeGV3MFo5bDlmdi1hVzBidXQyc0tYeVRZbHlUSkxpT0ZZLUZMX2J3RExGQzF6Z012V1JHd1FTcTVZR2otUHZXMF9QNHJBYVZVd1JFcHVvME1LUzdHajFGTmNRaGJzS3NhMXNnelhndThlMGtGd2JudHkyTGNpUFFzVmJYU0FkZlU3SmxvU2w4SWNFUVRmcXowWlhWTWc?oc=5"
   },
   "SOM": {
-   "nextelec": "presidential, May 2027",
+   "nextelec": "Presidential and Parliamentary, May 2027",
    "updated": "2026-10-16",
-   "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOY2RYb0cxdEhZTXdtdV80Mmdld1V1NUM5TDZUckdodE92T1Zjb2JzSjVCbmstZHBmbjVOVk9EVEk2U0k1cGE2SFA3bjV1OTVreFNlbGgyZnVpcW9zV0tHNGhpWkJqZmRERzRuQlJkazc2d2VHYnB3T1ljVVpINVREZ3R1VHJtZ0ZhVHQxbUpqT2Q0Q1Z2?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNS3NxWkc0aGRNLUJWMkZYaWcxOHg2R0tZekFOU1ZqTUZ4TTZNcndCODUyOWVoUEtESGl1ekExUWtPZ3lVVG5GeHlZOUV4VVhBdjZTZ19wSHFHcXE4TE1MNURtVnhLTVowaDVlRTJnVVVwbVBhR1dsa01BZmhoX09fVjFiaVJZY2Ruc1VjZ09GUVc4M1ZCbXVJSHNlSzcyRTZOS3NaMHZQcmdkandRN0ZnWlpqXy14NzhoUEE?oc=5",
+   "lastelec": "Presidential, May 2024"
   }
  }
 }
