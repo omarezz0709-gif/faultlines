@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-16T16:19:55Z",
+  "lastRun": "2026-10-16T22:20:31Z",
   "log": [
    {
     "date": "2026-10-16",
@@ -29,6 +29,11 @@
       "label": "Colombia–Israel",
       "change": "Tense → Partner: Colombia opens Jerusalem embassy and restores free trade",
       "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSVBhWHpxQlZXQVYwVkdrSEZiZEZzd1U5RVNveWhHRWpmMHRDUld0bmNsWEtGeGZpNUV2dmV5N0c0R2tDeWhYZVA3SkRtSEgzWnVlbjZ1UDdMM2llZjZnWFhOWW1WZ2Nqc3dUV0RJUXpqRm9SdXppT3hsZnd1VzZtRTRoMWdUVG8?oc=5"
+     },
+     {
+      "label": "Bolivia–Chile",
+      "change": "Tense → Normal: Chilean President Kast makes the first state visit to Bolivia in 71 years to improve bilateral ties.",
+      "source": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNZFRmY3F6XzBWUTVlelpfUjgtaERYZEFLSV8tQURNb0RlNVhMak5JUGZ6blgzR1ZpaXBkOGx2el9pdFFPaTNIN0kzaVpPQWZTRS1LRks1UEdsenMtSWlOcGZwdTlnRTg0OE90QTFvbmpaLXJjNDJaRnY0ZzNNekhyRFdLOW54OUZQWDZoU2NaQlJvczdxd2NXYmc2S3FvVmRvVzhqWmZvQnVYNDYxbUl5TV9EUXc2X1JEOXF5RjR3R05DVGplTWoyYk9SaXNPNGxPWVhn?oc=5"
      }
     ]
    },
@@ -1461,7 +1466,7 @@
     ]
    }
   ],
-  "summary": "Tensions and diplomatic alignments shift as Ukrainian strikes resume on Russian oil targets, Colombia normalizes ties with Israel, and South Korea and Japan extend currency swaps."
+  "summary": "Chile and Bolivia hold their first bilateral presidential summit in 71 years, while Houthi missile strikes hit Aden and Saudi targets."
  },
  "relations": {
   "DNK-USA": {
@@ -2463,6 +2468,14 @@
    "note": "Ties fray as Russia refuses to extradite ousted leader Bashar al-Assad to Syria following a death sentence handed down in Damascus.",
    "updated": "2026-10-16",
    "source": "https://news.google.com/rss/articles/CBMizAFBVV95cUxObGRELVhSclc3V2VRbXhGQ2JtbmkwYW45cWJic0pRajJ5Nl9GSXJwZDJmb3daQmpxS2tGcElSekg0b0k5V1JwMkY1VDdaY3htNHBGWXp0T0hMTERvbmE5YUpLUVY1UUNrLTB0dERPckY3WU45MjEwLUVOQ2NISVJOeGRMSDhUeDlQUXVLWVZjbUY3R3FVMEtzNHZXSFJWZmEtalluMHpkMDY2U1MzWEtmb3loUEpGT3VNZndTQXFfOWU5ZU8zSE9MTGl0OHfSAdIBQVVfeXFMTmdUeHd2Z1ExdU1uVnZiOXhINU5WNVZWU3dBYkVveThCSVFOTkQ2eFlKNlZWMmw4X0VjQU4xM0tuS2JvWTFiR1A1NkF0VjVFR1BWOUVSaUEwSFU1bUxRZU9yekRWc280ZWtfM0xDSmdyWG9DUGZMLXprUVNVSDdtTzVLVnlhNjVRVzVVRkJKWTlscUF1ZzNMWk1IOHZvZmhjbG1IbVVENkV5ZHhVdEhSNlExZGxoNWdTU1hCUmFtMVYyMjdxbzBwVnU2ZWlaa3BULVZB?oc=5"
+  },
+  "BOL-CHL": {
+   "a": "BOL",
+   "b": "CHL",
+   "s": "N",
+   "note": "Chile's President Kast conducts the first state visit to Bolivia in 71 years, opening talks to ease border and economic disputes.",
+   "updated": "2026-10-16",
+   "source": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNZFRmY3F6XzBWUTVlelpfUjgtaERYZEFLSV8tQURNb0RlNVhMak5JUGZ6blgzR1ZpaXBkOGx2el9pdFFPaTNIN0kzaVpPQWZTRS1LRks1UEdsenMtSWlOcGZwdTlnRTg0OE90QTFvbmpaLXJjNDJaRnY0ZzNNekhyRFdLOW54OUZQWDZoU2NaQlJvczdxd2NXYmc2S3FvVmRvVzhqWmZvQnVYNDYxbUl5TV9EUXc2X1JEOXF5RjR3R05DVGplTWoyYk9SaXNPNGxPWVhn?oc=5"
   }
  },
  "threads": {
@@ -2482,11 +2495,11 @@
     "PAK",
     "SYR"
    ],
-   "d": "Iranian-backed Houthis hit Saudi Aramco headquarters and airports, prompting Saudi-led coalition air strikes on Sanaa oil facilities.",
+   "d": "Iranian-backed Houthis strike Aden airport, Yemen's presidential palace, and Saudi targets in Riyadh, triggering coalition air defenses.",
    "n": "Houthi Red Sea & regional missile campaign",
-   "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUHZtMnk3dUVFWmVkT2FmZVRqNWNrUUc5YkNkWVJMOEhWMmo1dnc2S3FlUlExbjFscTdlY3NQcExPejdxUlF1clZ5S1BKQ1JLdjhzaFdXT2l1YVBmN2VVSkFOSlJNNmlTR2w5d082MDR2b3RkY1VrTTlwWFhuclBteVRaTmtMRUczY0VPaWxBeVV1RE9vUE9kRFZaUlZEX0NnOXZqVnNtNlJIcFU3cnE2VVFTNzhfNVZ0TzZiQWFtSUJCdXJXYU5rU0JB?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNY0tUN2NxaHhldk5PTTBwcHFFbzlwRG5JdDJoS0FZU2JVUExsdjRUQjRCbmhSdVJFNGxIVTVIZV9YbGpsNEFBRl9wVkhyc1VLSl85RTRQS0RlM083VUxPQTFhenFES3hZcU5jTzZERW8tYmxuTG1rUy1RTFdjeUVoa2pmUnk3OENISVlTTWxabDBoUmUxNDY1MHdhT0M1VDRC?oc=5",
    "t": "security",
-   "updated": "2026-10-13"
+   "updated": "2026-10-16"
   },
   "afpak-jihad": {
    "t": "security",
@@ -2926,14 +2939,14 @@
    "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdDlaQXVYbmIyYWdIbmtFclNfTnVkM29oRGdoR2tIcTVlZ1g2alZBZU1NNkpTaG81M0RQNDBfenFVZkxGZXpGSXdrV1A3NlZteEY5NE5WS1NQMGt2X1dTb1lmSjcydnotblJZa3dtd1F5MlVMUjQ5bnpzZXVrUDFCUW9VQmNrMXFPNVdhRWk3NzV2VzFuNlA0TVNHMzU4eDBkM0ZTYW01VGZONWN2bG9qZVlpZjRYczFBek5mZVhZZ2pSNEp4OS1hWHNSZDFZdFY2MFNmY1ZR?oc=5"
   },
   "GRD": {
-   "nextelec": "general election, November 5, 2026",
-   "updated": "2026-10-06",
-   "source": "https://news.google.com/rss/articles/CBMieEFVX3lxTE82V21icndFamx6TUdzT29CTlo4RW55eEppalRTcUNWdGUwcWlkaEtpTG9CZ1l4QVA3dDFxb1FwT2RmdE9ScVMxLVhrMGJoakUyUDk4bUlQRW5fV3NBdVdnMGtwUEZvZC1MOVZpWmZVR3ljMHpndkRZQg?oc=5"
+   "nextelec": "general, 5 November 2026",
+   "updated": "2026-10-16",
+   "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWWJzLVhYTGJobjVoa1BSMXBPY1VMc29GMC1BdlVrUWpQSXJiUUxUQzZTNy1oQ1EtSDdlVllPekhSaXNRX0VZWl9hWkp4U3BOQUhvTVNnQk9aXzJIMjFOdWt4c09IY0lZNFZDdWV0czFwSlBHT2d1eVNpSmF4SlpwazYxSU1PNUlLWlB5bzlkSWpJdDlPZGlNUC15cGotNHplNFNjaTNlWG03OGVudjBYZA?oc=5"
   },
   "LVA": {
-   "lastelec": "parliamentary election, October 2026, Andris Kulbergs nominated PM",
-   "updated": "2026-10-06",
-   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQeW5kQlVkb1BSMXktc1ZBRUdZWjBMSzlPWDVacXpyNlNaMTlYVDU5b2pibFJoZ0J6ZEs3b3c2ZHowVFlzVWdVMEVvaUNWU3o3UVNULTBPR19vN2N1RFAxNE0tSW1FemdqVGtlTDV2VlhnQ0xMWml2WEVQbTFiN0xlYnBuU29vcnQ2M01IOUVqNGxUWW5qZzlSd0JMQ1d6dGQ5amU2SE9uVzVJcE1tN0pzblVFZ0xmdw?oc=5",
+   "lastelec": "parliamentary, October 2026",
+   "updated": "2026-10-16",
+   "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQW04MXpWZ3hFY0t6T2pubnJtdE9FOTQ4aXFFb3lXb3I1aEp2bXEyYzdJNlduWVctSEJWQmVUVGFSb2ZSaXhvcTNwQ3g2MjBLMi03M2ZRa3Rnckp4MG1USUpHemhBQnhWcmstQTBYRFdsdy1pZzFsMmhtUzd3NWNkOU1UckJjNXVOREFZd1VyeTZGTHVOVDR4Yw?oc=5",
    "nextelec": "Parliamentary (Saeima), October 2026"
   },
   "BIH": {
