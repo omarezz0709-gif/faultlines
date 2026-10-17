@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-16T16:56:41Z",
- "berlin": "2026-10-16 18:56",
+ "generated": "2026-10-17T10:50:38Z",
+ "berlin": "2026-10-17 12:50",
  "status": "warn",
- "summary": "0 problem(s), 1 warning(s): News outlet feeds: 56/57 working; not working: Washington Post (502)",
+ "summary": "0 problem(s), 1 warning(s): News outlet feeds: 55/57 working; not working: Washington Post (502), RaiNews (0)",
  "repairs": [],
  "checks": [
   {
@@ -10,56 +10,56 @@
    "name": "Website",
    "status": "ok",
    "detail": "HTTP 200, 423 KB",
-   "ms": 246
+   "ms": 160
   },
   {
    "g": "site",
    "name": "GitHub Pages copy",
    "status": "ok",
    "detail": "HTTP 200",
-   "ms": 206
+   "ms": 188
   },
   {
    "g": "site",
    "name": "data/news.json",
    "status": "ok",
-   "detail": "HTTP 200, 618 KB",
-   "ms": 339
+   "detail": "HTTP 200, 599 KB",
+   "ms": 254
   },
   {
    "g": "site",
    "name": "data/live.json",
    "status": "ok",
-   "detail": "HTTP 200, 209 KB",
-   "ms": 555
+   "detail": "HTTP 200, 214 KB",
+   "ms": 236
   },
   {
    "g": "site",
    "name": "data/politics.json",
    "status": "ok",
    "detail": "HTTP 200, 42 KB",
-   "ms": 111
+   "ms": 201
   },
   {
    "g": "site",
    "name": "data/wb.json",
    "status": "ok",
    "detail": "HTTP 200, 84 KB",
-   "ms": 171
+   "ms": 79
   },
   {
    "g": "site",
    "name": "data/geo.json",
    "status": "ok",
    "detail": "HTTP 200, 697 KB",
-   "ms": 197
+   "ms": 111
   },
   {
    "g": "site",
    "name": "data/cities.json",
    "status": "ok",
    "detail": "HTTP 200, 151 KB",
-   "ms": 142
+   "ms": 99
   },
   {
    "g": "site",
@@ -71,19 +71,19 @@
    "g": "fresh",
    "name": "Headlines (news.json)",
    "status": "ok",
-   "detail": "last update 0.7 h ago"
+   "detail": "last update 0.5 h ago"
   },
   {
    "g": "fresh",
    "name": "AI relationship update (live.json)",
    "status": "ok",
-   "detail": "last update 0.6 h ago"
+   "detail": "last update 0.4 h ago"
   },
   {
    "g": "fresh",
    "name": "Leaders (politics.json)",
    "status": "ok",
-   "detail": "last update 18.6 h ago"
+   "detail": "last update 12.4 h ago"
   },
   {
    "g": "fresh",
@@ -113,182 +113,182 @@
    "g": "worker",
    "name": "/live (en)",
    "status": "ok",
-   "detail": "32 items",
-   "ms": 5203
+   "detail": "23 items",
+   "ms": 5145
   },
   {
    "g": "worker",
    "name": "/top (en)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 185
+   "ms": 112
   },
   {
    "g": "worker",
    "name": "/videos (en)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 831
+   "ms": 344
   },
   {
    "g": "worker",
    "name": "/live (de)",
    "status": "ok",
    "detail": "22 items",
-   "ms": 2341
+   "ms": 2179
   },
   {
    "g": "worker",
    "name": "/top (de)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 155
+   "ms": 133
   },
   {
    "g": "worker",
    "name": "/videos (de)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 654
+   "ms": 290
   },
   {
    "g": "worker",
    "name": "/live (fr)",
    "status": "ok",
-   "detail": "34 items",
-   "ms": 1444
+   "detail": "27 items",
+   "ms": 1309
   },
   {
    "g": "worker",
    "name": "/top (fr)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 81
+   "ms": 139
   },
   {
    "g": "worker",
    "name": "/videos (fr)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 418
+   "ms": 332
   },
   {
    "g": "worker",
    "name": "/live (es)",
    "status": "ok",
    "detail": "6 items",
-   "ms": 780
+   "ms": 424
   },
   {
    "g": "worker",
    "name": "/top (es)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 144
+   "ms": 137
   },
   {
    "g": "worker",
    "name": "/videos (es)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 343
+   "ms": 270
   },
   {
    "g": "worker",
    "name": "/live (it)",
    "status": "ok",
-   "detail": "22 items",
-   "ms": 5093
+   "detail": "17 items",
+   "ms": 5070
   },
   {
    "g": "worker",
    "name": "/top (it)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 102
+   "ms": 70
   },
   {
    "g": "worker",
    "name": "/videos (it)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 444
+   "ms": 399
   },
   {
    "g": "worker",
    "name": "/live (ar)",
    "status": "ok",
-   "detail": "5 items",
-   "ms": 1198
+   "detail": "8 items",
+   "ms": 5072
   },
   {
    "g": "worker",
    "name": "/top (ar)",
    "status": "ok",
-   "detail": "5 stories",
-   "ms": 89
+   "detail": "6 stories",
+   "ms": 78
   },
   {
    "g": "worker",
    "name": "/videos (ar)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 727
+   "ms": 273
   },
   {
    "g": "worker",
    "name": "Real-time search",
    "status": "ok",
-   "detail": "5 reports",
-   "ms": 3614
+   "detail": "6 reports",
+   "ms": 3562
   },
   {
    "g": "security",
    "name": "Other websites are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 65
+   "ms": 61
   },
   {
    "g": "security",
    "name": "Look-alike Pages projects are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 83
+   "ms": 55
   },
   {
    "g": "security",
    "name": "Only the site's own prompts are answered",
    "status": "ok",
    "detail": "HTTP 400 (should be 400)",
-   "ms": 75
+   "ms": 51
   },
   {
    "g": "security",
    "name": "Private chat needs a valid pass",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 89
+   "ms": 62
   },
   {
    "g": "security",
    "name": "Admin login",
    "status": "ok",
    "detail": "HTTP 401 without a code (should be 401)",
-   "ms": 133
+   "ms": 53
   },
   {
    "g": "ai",
    "name": "AI answers",
    "status": "ok",
    "detail": "answered by gemini-3.6-flash",
-   "ms": 2085
+   "ms": 2031
   },
   {
    "g": "sources",
    "name": "News outlet feeds",
    "status": "warn",
-   "detail": "56/57 working; not working: Washington Post (502)"
+   "detail": "55/57 working; not working: Washington Post (502), RaiNews (0)"
   },
   {
    "g": "sources",
@@ -301,7 +301,7 @@
    "name": "Page loads and the globe starts",
    "status": "ok",
    "detail": "",
-   "ms": 2311
+   "ms": 2582
   },
   {
    "g": "browser",
@@ -346,5 +346,5 @@
    "detail": "none hanging"
   }
  ],
- "ms": 325702
+ "ms": 354203
 }
