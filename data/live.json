@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-17T16:12:05Z",
+  "lastRun": "2026-10-17T22:14:18Z",
   "log": [
    {
     "date": "2026-10-17",
@@ -24,11 +24,6 @@
       "label": "Belarus–North Korea",
       "change": "None → Normal: Belarus opens a resident embassy in North Korea to deepen diplomatic ties",
       "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1oaXFwZlgydXVMb0VqZEdMNVFHNWFUVmpNQlcxazNlUlFpaFJfYWxZUVZldWpOVEpqM1IwZm00Mkowb29idEhpeG9MaDJxLVRzZXZQeGtwLU4wZ29GM0RZQUhUOG1QcVM4VmpORklB?oc=5"
-     },
-     {
-      "label": "Strait of Hormuz",
-      "change": "Updated status to reflect sinking of commercial vessels in recent attacks",
-      "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSGpLUmlDNE5EUnFKWEQxaVRMUFVpVjJ4emgxUVRBdmpKQUVpWHoyS2ktYmNwVExDVVVaVFBkc3gteXljWHFlTmN2LWhJUjJjUFBzVUxqc0xLdkxkV2NLRGUyS0s1dnJTdnc0aVBLZXoxNHU0UFZpWUp2TmFXMWJGWTBCWkdrdHJUQ2N3a1NNcDJJQTlxS0IwLWlNUmVKY3MtcUMtTg?oc=5"
      },
      {
       "label": "Houthi Red Sea campaign",
@@ -59,6 +54,26 @@
       "label": "Iran–Lebanon",
       "change": "Partner → Tense: Lebanon revokes Iranian bank license under US pressure",
       "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQLTV2UTh1SXBqOTdQY2MwSkpqLWljaGJTcnQ1T3N4aE1Dd1pTTE1yRllVNGtYR1Z1cS16czFLU1o1TzZDaURudEhTZjBXTjJVRnJyYldFN2ppdkY2UVVsVzJEVF9RRG0yX25LQU1FMTZjUWdmYUFfSW94ZURzbDRFNlZQOFp5RmduTFpXYlcwS2YzOVJPM2ZnQWZtNnZrTzhqdVhtWi0xZmtqVkhNcy1HZlZtVHhJQnVYR0FHdU9maTNLcnZjOWFLNXdYNA?oc=5"
+     },
+     {
+      "label": "Costa Rica–El Salvador",
+      "change": "Normal → Partner: CRI and SLV sign bilateral agreement to combat organized crime",
+      "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWmpDUmRUekd1Y01reWhMNHlVQlpoV3Vrdm1GcHhhbVM3OU9ZTXlKOTFQaWpGWnBjd1dVYVZub0JZT0tFTHUyZ3JwQjJYUWxUVEszZEFWRDNudlo3SWlBR3VHY2s2NDFrQXR1WVdFeGlFUjR5aEZ6T2x4N2R3dTc0R0JKUVB0ZHdhTnJhUnctRW5qS0oy?oc=5"
+     },
+     {
+      "label": "Romania–Russia",
+      "change": "Tense → Hostile: Romanian jets shoot down Russian drones over the Black Sea",
+      "source": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNX1RuY0xJQ1ZSakMxQlR0NmV5MTdiMHJDMHQ3cmFWelp5MnY4cWV2LTBkSnU4WnVQejc3U1NXd1FvblhYYnRCNGpGWURnb0JVU2ljdWVqYlN2ZXh3S2kxR3VGSFdXUUMtWkcyRzJJOGxFSUxYTFJGNGdVYzgxSURUVjZYNNIBggFBVV95cUxNeTZxVldLclBnWmlCdDEtVDJ3aktDN0d2N0VtcHB2M2lDemFlcnR3ekVnVUpWd2UyR0l5dGhaMFlKcGxrcWpkcUsyV0FVb05ZLWI0YlVBbG9wTlE1dWRZWGhBUDVxaU9CTmxjR20zWUlVOG0wcG42RW90Mmx0X01ueUZ3?oc=5"
+     },
+     {
+      "label": "Strait of Hormuz",
+      "change": "Vessel attacks reach record high of 12 ships targeted in one week",
+      "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5sMGFNWTJVdHF1WTVvZFhiaGk1aU1qTE8xenJ6R3RmaXVhZ3Zkb1hMRjlrQmxOVTlCaTJxUjFnaS1uTGJ3bmlUbEw2bnFSTkZUNHlGYlltdVVGYmZ6NDNkN1NyVUVMLW5ZOGplamhB?oc=5"
+     },
+     {
+      "label": "Czechia",
+      "change": "Senate election runoff completed in October 2026",
+      "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWUVkcXJkaTJFVUxqZW5BLXJLd1FVTmF5aWNYekIwVmpzRW9fcjZjMDJDWW1xSW54SVhMRUNBVVZhU0VVV25rVkNfd0hSM1FrUzJJdTVnYUtpbE13QVRsU0M4SDdlaXd5U0FuQUlyQ3VUZWNSbWdXdHVvRTBTc2tRc3FodjFBV3lJYTlfanNFRnBxWTJPdUdGMWF3?oc=5"
      }
     ]
    },
@@ -1526,7 +1541,7 @@
     ]
    }
   ],
-  "summary": "Egypt prepares military support for Saudi Arabia against Houthis, the UAE re-enters the Yemen conflict, and Lebanon revokes an Iranian bank's license under US pressure."
+  "summary": "Costa Rica and El Salvador sign a bilateral security pact, Romania shoots down Russian drones over the Black Sea, and Czechia completes Senate election runoffs."
  },
  "relations": {
   "DNK-USA": {
@@ -2592,6 +2607,22 @@
    "note": "Relations strain as Lebanon revokes the license of Iran's Bank Saderat under United States (US) pressure over Hezbollah financing.",
    "updated": "2026-10-17",
    "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQLTV2UTh1SXBqOTdQY2MwSkpqLWljaGJTcnQ1T3N4aE1Dd1pTTE1yRllVNGtYR1Z1cS16czFLU1o1TzZDaURudEhTZjBXTjJVRnJyYldFN2ppdkY2UVVsVzJEVF9RRG0yX25LQU1FMTZjUWdmYUFfSW94ZURzbDRFNlZQOFp5RmduTFpXYlcwS2YzOVJPM2ZnQWZtNnZrTzhqdVhtWi0xZmtqVkhNcy1HZlZtVHhJQnVYR0FHdU9maTNLcnZjOWFLNXdYNA?oc=5"
+  },
+  "CRI-SLV": {
+   "a": "CRI",
+   "b": "SLV",
+   "s": "F",
+   "note": "Costa Rica and El Salvador sign a new bilateral agreement to combat transnational organized crime.",
+   "updated": "2026-10-17",
+   "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWmpDUmRUekd1Y01reWhMNHlVQlpoV3Vrdm1GcHhhbVM3OU9ZTXlKOTFQaWpGWnBjd1dVYVZub0JZT0tFTHUyZ3JwQjJYUWxUVEszZEFWRDNudlo3SWlBR3VHY2s2NDFrQXR1WVdFeGlFUjR5aEZ6T2x4N2R3dTc0R0JKUVB0ZHdhTnJhUnctRW5qS0oy?oc=5"
+  },
+  "ROU-RUS": {
+   "a": "ROU",
+   "b": "RUS",
+   "s": "H",
+   "note": "Tensions escalate after Romanian F-16 fighter jets shoot down two Russian drones over the Black Sea.",
+   "updated": "2026-10-17",
+   "source": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNX1RuY0xJQ1ZSakMxQlR0NmV5MTdiMHJDMHQ3cmFWelp5MnY4cWV2LTBkSnU4WnVQejc3U1NXd1FvblhYYnRCNGpGWURnb0JVU2ljdWVqYlN2ZXh3S2kxR3VGSFdXUUMtWkcyRzJJOGxFSUxYTFJGNGdVYzgxSURUVjZYNNIBggFBVV95cUxNeTZxVldLclBnWmlCdDEtVDJ3aktDN0d2N0VtcHB2M2lDemFlcnR3ekVnVUpWd2UyR0l5dGhaMFlKcGxrcWpkcUsyV0FVb05ZLWI0YlVBbG9wTlE1dWRZWGhBUDVxaU9CTmxjR20zWUlVOG0wcG42RW90Mmx0X01ueUZ3?oc=5"
   }
  },
  "threads": {
@@ -2840,10 +2871,10 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "Attacks escalate as commercial vessels hit mines and sink near the Strait of Hormuz amid the ongoing regional conflict.",
+   "d": "Vessel attacks reach record highs with 12 ships targeted in a single week amid the ongoing regional conflict.",
    "n": "Strait of Hormuz",
-   "s": "Multiple tankers hit by mines and sunk",
-   "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONWlJR0phMW5Ea2R0eDRHYkRaM1VsenpXSlc1LWU1cGFXYWFOdUZCSWFwV2NUZEgzOXhkOWE2TC1hdldfbmFXS0hKcWdaMGEtRDI5ZG9DRERSeExGRzhFV1BXMXZKLXJZM0szdmhWMDAzdHBackxzYVNzc0FKT2o5alEyeWxvS1E?oc=5",
+   "s": "Record 12 ship attacks in one week",
+   "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5sMGFNWTJVdHF1WTVvZFhiaGk1aU1qTE8xenJ6R3RmaXVhZ3Zkb1hMRjlrQmxOVTlCaTJxUjFnaS1uTGJ3bmlUbEw2bnFSTkZUNHlGYlltdVVGYmZ6NDNkN1NyVUVMLW5ZOGplamhB?oc=5",
    "updated": "2026-10-17",
    "t": "strait",
    "lat": 26.57,
@@ -3070,9 +3101,9 @@
    "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSGtaN0YzYTJnMjB2WGU1X1Z0Q0hwYmNjel9ZOXdiLU1yQmpNOXdTdlIwYnRlazZLXy1vQ05EUWsxbkhGUlpVYWhwR2x2a1FNcUpFaktWZXBOc2dfSDh6aEtFbGRDY3RsRDRnNHZwMGRGdUlfM050VkhZXy1SNXBfSXJvNmRpejdyS3c?oc=5"
   },
   "ESP": {
-   "nextelec": "snap general election, November 29, 2026",
-   "updated": "2026-10-12",
-   "source": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaU9jQXNhQmdSX201RWw0ZkluSDh0S3JwQXVWeXBvVXBrQjAzc0VDWFgwc3J5Q1pMeldFSUFVZHZIRDhtY0NrN2N4anJXU3JGZ2ZoeXJDTlJHcWtyUkpUd0FDR21XSUhLSjc3b19rSW5Yd1o0OUVTeFdCSk5qVk44N3Z6ZVVFQ0xQdjlLSWtSUzZ5c2l4Zlo2dHJLRTBnYWhHMzVyc0xDeUQ1ekJvaEx3UmlTNlhvZXVsUUJIaXBZeFIxc3VJX2fSAdoBQVVfeXFMTkVfdk4wSlZPOHphdGRKR3VlODZZSDlUa0k1MUJQYU9sa2ptRjluVWNMN0Q1QkdYZU5PTFBDX25sM09HWmllekhKb2ZMdDdYbG4tX2ZndHlGcXFNY0kzRnU2VHd1c1FudTcxQ0J6Z0I1MVkwUklSbGtOdU9iLUdUTGN2Z2E1cnlkYkxWU3pqNk50dDVFdXBBbTd1MHhubVk2WUFKYk9KcHB2NHlFWWVkWXkxV3ZWQnNWNVlJbDVKY1BkZDdJOUg5Q21LR1pxYkRyREI0NllMY2ZmYkE?oc=5"
+   "nextelec": "general November 2026",
+   "updated": "2026-10-17",
+   "source": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOYkZMS3hwQzgyTnlTeGgxZ05zcHhYUUtlMHV0V0QwRWxRSzRHNElFRmJOVHd2Tk9RNlp4WWRaeDB4SGgwUTZuLVMxWjBWOTVLU1RubDkxdnp5QUx4UElzV3hPczJSZ3hIbkVrejF1dktHeENpRHhuZU91VG9lRnRmLVhqTkxpV3RJR21LaXREZ3lyQUNHa2FUd2lNeHBzTjNFb0hZaGl1WTRDbmJ1elY5RE1oQXRxZU1jRVJOV3hCU211MGdXOWxrbjhRU1FKeXlyaUE?oc=5"
   },
   "XKX": {
    "lastelec": "presidential, October 2026, Justina Shiroka Pula",
@@ -3105,6 +3136,11 @@
    "updated": "2026-10-17",
    "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1YTjBQaW96SWdjUXl2QUhBUkhmdHJZWVdYeG1rRk1xRVg0UTlPcEdZTmpocnV3elRhLWxDTFQ4WDdzWkNYSE9Od3ZkVmk5LVJiR1E?oc=5",
    "lastelec": "Presidential, May 2024"
+  },
+  "CZE": {
+   "lastelec": "Senate, October 2026, STAN and ODS",
+   "updated": "2026-10-17",
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWUVkcXJkaTJFVUxqZW5BLXJLd1FVTmF5aWNYekIwVmpzRW9fcjZjMDJDWW1xSW54SVhMRUNBVVZhU0VVV25rVkNfd0hSM1FrUzJJdTVnYUtpbE13QVRsU0M4SDdlaXd5U0FuQUlyQ3VUZWNSbWdXdHVvRTBTc2tRc3FodjFBV3lJYTlfanNFRnBxWTJPdUdGMWF3?oc=5"
   }
  }
 }
