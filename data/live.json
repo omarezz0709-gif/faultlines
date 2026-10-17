@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-17T05:23:53Z",
+  "lastRun": "2026-10-17T10:25:03Z",
   "log": [
    {
     "date": "2026-10-17",
@@ -19,6 +19,26 @@
       "label": "Ukraine–United States",
       "change": "Tense: Note updated as US waives Russia sanctions while criticizing Ukrainian refinery strikes",
       "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOX2luakxEaEVyTXo5MTktaTdoVzd4Zk1EX1NoYk8zZGE4bDNoYVpBS3FZeXJnMU1jazRhVkVfT2hSZ3pPY1JmSlotWVY3LWFjcDdGeDV2eU12bHhMM2E3QWI1aVczdmxiYjhBNlhGU1RCeE9hakdKN3hmTlZvTEgwSmxQam1lNVdJOUVFemlueXNwcFVUS3hYckNfb0UwbVJrZ0ticnctYmlueFR0MHRBR0cwZ1ZJc3VlNVFNcGw5SndCczR4VVhrNndabWptMGcwMF9aVQ?oc=5"
+     },
+     {
+      "label": "Belarus–North Korea",
+      "change": "None → Normal: Belarus opens a resident embassy in North Korea to deepen diplomatic ties",
+      "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1oaXFwZlgydXVMb0VqZEdMNVFHNWFUVmpNQlcxazNlUlFpaFJfYWxZUVZldWpOVEpqM1IwZm00Mkowb29idEhpeG9MaDJxLVRzZXZQeGtwLU4wZ29GM0RZQUhUOG1QcVM4VmpORklB?oc=5"
+     },
+     {
+      "label": "Strait of Hormuz",
+      "change": "Updated status to reflect sinking of commercial vessels in recent attacks",
+      "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSGpLUmlDNE5EUnFKWEQxaVRMUFVpVjJ4emgxUVRBdmpKQUVpWHoyS2ktYmNwVExDVVVaVFBkc3gteXljWHFlTmN2LWhJUjJjUFBzVUxqc0xLdkxkV2NLRGUyS0s1dnJTdnc0aVBLZXoxNHU0UFZpWUp2TmFXMWJGWTBCWkdrdHJUQ2N3a1NNcDJJQTlxS0IwLWlNUmVKY3MtcUMtTg?oc=5"
+     },
+     {
+      "label": "Houthi Red Sea campaign",
+      "change": "Updated description to highlight Iranian intelligence provision and Aden airport strikes",
+      "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9JVi1mYUoxZ0daQzVaeUF2bTZMR19mOXVvSFVMRTZkaVg0dC15dG94YW5KSGlPQS1SVm01X29XR1N1MmZYLU5ZcGVqQW0tN0dHUGc?oc=5"
+     },
+     {
+      "label": "Grenada",
+      "change": "Upcoming election set for November 2026",
+      "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWWJzLVhYTGJobjVoa1BSMXBPY1VMc29GMC1BdlVrUWpQSXJiUUxUQzZTNy1oQ1EtSDdlVllPekhSaXNRX0VZWl9hWkp4U3BOQUhvTVNnQk9aXzJIMjFOdWt4c09IY0lZNFZDdWV0czFwSlBHT2d1eVNpSmF4SlpwazYxSU1PNUlLWlB5bzlkSWpJdDlPZGlNUC15cGotNHplNFNjaTNlWG03OGVudjBYZA?oc=5"
      }
     ]
    },
@@ -1486,7 +1506,7 @@
     ]
    }
   ],
-  "summary": "The US waives new congressional sanctions on Russia, UK threatens Eritrea with visa sanctions over migrant returns, and Cambodia signs a defense deal with Türkiye."
+  "summary": "Belarus opens a resident embassy in North Korea while Houthi attacks on Aden airport and commercial shipping in the Strait of Hormuz escalate."
  },
  "relations": {
   "DNK-USA": {
@@ -2512,6 +2532,14 @@
    "note": "Cambodia and Türkiye sign a defence cooperation deal to strengthen bilateral military and security ties.",
    "updated": "2026-10-17",
    "source": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPT0dVZU5reDY3ODVNTThaQjhpSVFjV1pSNzVMR1JPQmJFYjEtbXJVWW10aDdPSXNNbDN0c1Z1NkdJTzZ6VlhhdW5xRWFtT3VscDRuS1A4WEIyWjNEanU2OWZ3eHhJT3BEQUZjMEc0X2xZb0JKNHE1OHZva3pnbExSRmF4OFhWS1psMlF3czdtSlFvOEQ0dW5fRVJFV0ZiUTZvS08xMno0eHV5bEJzMjlHOW1DaUFjU0Q1T1FiMFQxcG9ERlAyell1TmhqVVlJb2JCYzE3REVMcXVFdEdaM2hlZg?oc=5"
+  },
+  "BLR-PRK": {
+   "a": "BLR",
+   "b": "PRK",
+   "s": "N",
+   "note": "Belarus opens a resident embassy in North Korea to expand bilateral diplomatic and economic ties.",
+   "updated": "2026-10-17",
+   "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1oaXFwZlgydXVMb0VqZEdMNVFHNWFUVmpNQlcxazNlUlFpaFJfYWxZUVZldWpOVEpqM1IwZm00Mkowb29idEhpeG9MaDJxLVRzZXZQeGtwLU4wZ29GM0RZQUhUOG1QcVM4VmpORklB?oc=5"
   }
  },
  "threads": {
@@ -2529,9 +2557,9 @@
     "PAK",
     "SYR"
    ],
-   "d": "Iranian-backed Houthis utilize Iranian intelligence to fire missiles at Saudi Arabia and Aden, triggering coalition defense responses.",
+   "d": "Iranian-backed Houthi forces fire missiles at Aden airport and Saudi Arabia using Iranian intelligence, prompting coalition defense responses.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPOS1nT1V3ajJHakhMdm5jRDRqQW5PMlU5N1FidUlPemxtZFBFYV9UY0dJdGp2US1qU2NsbGRLazVUd2RsXzc3bWIxa00xcmpEbEY4aG9xcmkzX3g2ZDd2RVdlRGRGV0JUZjZLN0JTU2xybHFKQTlaV19oYUp3a2o5Wjg2Sk9kQQ?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9JVi1mYUoxZ0daQzVaeUF2bTZMR19mOXVvSFVMRTZkaVg0dC15dG94YW5KSGlPQS1SVm01X29XR1N1MmZYLU5ZcGVqQW0tN0dHUGc?oc=5",
    "t": "security",
    "updated": "2026-10-17"
   },
@@ -2759,10 +2787,10 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "Iranian forces and projectiles target commercial tankers in the Strait of Hormuz and Gulf of Oman, leaving multiple vessels on fire.",
+   "d": "Attacks escalate as multiple commercial vessels sink or catch fire near the Strait of Hormuz and the Gulf of Oman.",
    "n": "Strait of Hormuz",
-   "s": "Tanker attacks escalate",
-   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPeDJUbWlUM2JnVFR6aV9CUFFYeVpDeVBBQjljM2VNOGRuelFGel93R3ZObndRa1hsdS02U1JpMkxvMmJYTEpmVFBXQVFoZnVEWFJCcW9oX0VxRWItQUFoYTUtMWFMX0JyV0xBQ09mOHlaalRGMmN3ZmZ5dm1aYjdQa1RpWXFqRTBTVThGZHNjaXpZdXNNdGcweXJ1X2poZS13eDhsLXhLbUltU1FYdF9Xb2FsMDlhd03SAb8BQVVfeXFMT1ZSTVozM1VvNDU2al8yOUNVZVFfR3RZNTFqUjBNczY3WFpsZnlBWGVoNWYzWEFReG1XZ3FtS2dUS3NJdUFGMHlsa3ZpS2RKUWotekg1WVUtMkxST0VvT080RlVYTGttQ3l1T29vUFNuVjNRZ1lQd1hQTHRoN1JGR1BRbEV6WUU1dlBTcXhjVVVrQWJKQ0FxUHM3TVI4WHh3UHFuY1ZkemVoZUpfUnF4ZTlQNWxhOWZNcmlyY0gzUzA?oc=5",
+   "s": "Commercial ships sunk in attacks",
+   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSGpLUmlDNE5EUnFKWEQxaVRMUFVpVjJ4emgxUVRBdmpKQUVpWHoyS2ktYmNwVExDVVVaVFBkc3gteXljWHFlTmN2LWhJUjJjUFBzVUxqc0xLdkxkV2NLRGUyS0s1dnJTdnc0aVBLZXoxNHU0UFZpWUp2TmFXMWJGWTBCWkdrdHJUQ2N3a1NNcDJJQTlxS0IwLWlNUmVKY3MtcUMtTg?oc=5",
    "updated": "2026-10-17",
    "t": "strait",
    "lat": 26.57,
@@ -2973,7 +3001,7 @@
    "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdDlaQXVYbmIyYWdIbmtFclNfTnVkM29oRGdoR2tIcTVlZ1g2alZBZU1NNkpTaG81M0RQNDBfenFVZkxGZXpGSXdrV1A3NlZteEY5NE5WS1NQMGt2X1dTb1lmSjcydnotblJZa3dtd1F5MlVMUjQ5bnpzZXVrUDFCUW9VQmNrMXFPNVdhRWk3NzV2VzFuNlA0TVNHMzU4eDBkM0ZTYW01VGZONWN2bG9qZVlpZjRYczFBek5mZVhZZ2pSNEp4OS1hWHNSZDFZdFY2MFNmY1ZR?oc=5"
   },
   "GRD": {
-   "nextelec": "general election, November 2026",
+   "nextelec": "General election, November 2026",
    "updated": "2026-10-17",
    "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWWJzLVhYTGJobjVoa1BSMXBPY1VMc29GMC1BdlVrUWpQSXJiUUxUQzZTNy1oQ1EtSDdlVllPekhSaXNRX0VZWl9hWkp4U3BOQUhvTVNnQk9aXzJIMjFOdWt4c09IY0lZNFZDdWV0czFwSlBHT2d1eVNpSmF4SlpwazYxSU1PNUlLWlB5bzlkSWpJdDlPZGlNUC15cGotNHplNFNjaTNlWG03OGVudjBYZA?oc=5"
   },
