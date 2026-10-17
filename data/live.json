@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-17T10:25:03Z",
+  "lastRun": "2026-10-17T16:12:05Z",
   "log": [
    {
     "date": "2026-10-17",
@@ -39,6 +39,26 @@
       "label": "Grenada",
       "change": "Upcoming election set for November 2026",
       "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWWJzLVhYTGJobjVoa1BSMXBPY1VMc29GMC1BdlVrUWpQSXJiUUxUQzZTNy1oQ1EtSDdlVllPekhSaXNRX0VZWl9hWkp4U3BOQUhvTVNnQk9aXzJIMjFOdWt4c09IY0lZNFZDdWV0czFwSlBHT2d1eVNpSmF4SlpwazYxSU1PNUlLWlB5bzlkSWpJdDlPZGlNUC15cGotNHplNFNjaTNlWG03OGVudjBYZA?oc=5"
+     },
+     {
+      "label": "Egypt–Saudi Arabia",
+      "change": "Partner: Egypt prepares military defense support for Saudi Arabia against Houthis",
+      "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTkVLVENIYzdsY2JjNmJFcVlaREdiSUdQSUU4T1dNOGdqdWE4ZElqaTZQMzNkQXNJamVqaDd6Nk0wYjgzUEJpZjlSS2RjLTYwaDZGeDVqYU5QOUh4UHJlLTJVR3dQeTBWTWpJZk56QXNNaThZbk5YWEo0S1VaMzdQbWJUTXR4UnpPejlZWnM5VWtIemhIMUhIQUh1cG9EdDc5RUY5eHRSVlR5MndpbXRTMUVrQmtPM09scFdRYms1S1I?oc=5"
+     },
+     {
+      "label": "United Arab Emirates–Saudi Arabia",
+      "change": "Partner: UAE agrees to re-enter Yemen conflict alongside Saudi Arabia",
+      "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWXhkalJBQ2xwVFhIUExTLWw3UTRGbHdXVlhIQ0ZLaEVOREFzNUQ3MkJqSlMtOWQ1aDRwazFhaVA3ajdqNTREZFN1andxLV9QaE4yUWk4T0ZGeXJfZDIwb0JhMDRwOHN4Qlowbl9ET0x4cVMtZU1zdjBXY3J4bEp3VHAtdDItcUhzM3FfWmNaVFljamJ4enBhb1I3dTZUWVl5Z3c?oc=5"
+     },
+     {
+      "label": "India–Maldives",
+      "change": "Normal → Partner: India rolls over currency swap facility for Maldives",
+      "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQT3ZvYmo4cEFidDY4RTBjWUhrMWxNbVVGMWk4eUxzblFaMUpVeEpQQU1BRWFTSVZuS2F6VFpLV0laekowWEI2ZHlieDNrZmtZZ0FhTHRKNzFHaXpCZXkxdTYyend6YnpIWE8zZDY4MVY4clZUaGkwQW9RczVoSjRSMG01Z2Rra0t4T3A0QnRTTWZ1V1ZURHRZMWlQckFIczJaajVScGJFMGRDNzhnWUM2Q2hKRUhHVm8zei1LZVJfWV8tbVd0aVE00gHHAUFVX3lxTFBPdm9iajhwQWJ0NjhFMGNZSGsxbE1tVUYxaTh5THNuUVoxSlV4SlBBTUFFYVNJVm5LYXpUWktXSVp6SjBYQjZkeWJ4M2tma1lnQWFMdEo3MUdpekJleTF1NjJ6d3piekhYTzNkNjgxVjhyVlRoaTBBb1FzNWhKNFIwbTVnZGtrS3hPcDRCdFNNZnVXVlREdFkxaVByQUhzMlpqNVJwYkUwZEM3OGdZQzZDaEpFSEdWbzN6LUtlUl9ZXy1tV3RpUTQ?oc=5"
+     },
+     {
+      "label": "Iran–Lebanon",
+      "change": "Partner → Tense: Lebanon revokes Iranian bank license under US pressure",
+      "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQLTV2UTh1SXBqOTdQY2MwSkpqLWljaGJTcnQ1T3N4aE1Dd1pTTE1yRllVNGtYR1Z1cS16czFLU1o1TzZDaURudEhTZjBXTjJVRnJyYldFN2ppdkY2UVVsVzJEVF9RRG0yX25LQU1FMTZjUWdmYUFfSW94ZURzbDRFNlZQOFp5RmduTFpXYlcwS2YzOVJPM2ZnQWZtNnZrTzhqdVhtWi0xZmtqVkhNcy1HZlZtVHhJQnVYR0FHdU9maTNLcnZjOWFLNXdYNA?oc=5"
      }
     ]
    },
@@ -1506,7 +1526,7 @@
     ]
    }
   ],
-  "summary": "Belarus opens a resident embassy in North Korea while Houthi attacks on Aden airport and commercial shipping in the Strait of Hormuz escalate."
+  "summary": "Egypt prepares military support for Saudi Arabia against Houthis, the UAE re-enters the Yemen conflict, and Lebanon revokes an Iranian bank's license under US pressure."
  },
  "relations": {
   "DNK-USA": {
@@ -2540,6 +2560,38 @@
    "note": "Belarus opens a resident embassy in North Korea to expand bilateral diplomatic and economic ties.",
    "updated": "2026-10-17",
    "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1oaXFwZlgydXVMb0VqZEdMNVFHNWFUVmpNQlcxazNlUlFpaFJfYWxZUVZldWpOVEpqM1IwZm00Mkowb29idEhpeG9MaDJxLVRzZXZQeGtwLU4wZ29GM0RZQUhUOG1QcVM4VmpORklB?oc=5"
+  },
+  "EGY-SAU": {
+   "a": "EGY",
+   "b": "SAU",
+   "s": "F",
+   "note": "Egypt prepares to authorize military support to assist Saudi Arabia against escalating Houthi missile and drone attacks.",
+   "updated": "2026-10-17",
+   "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTkVLVENIYzdsY2JjNmJFcVlaREdiSUdQSUU4T1dNOGdqdWE4ZElqaTZQMzNkQXNJamVqaDd6Nk0wYjgzUEJpZjlSS2RjLTYwaDZGeDVqYU5QOUh4UHJlLTJVR3dQeTBWTWpJZk56QXNNaThZbk5YWEo0S1VaMzdQbWJUTXR4UnpPejlZWnM5VWtIemhIMUhIQUh1cG9EdDc5RUY5eHRSVlR5MndpbXRTMUVrQmtPM09scFdRYms1S1I?oc=5"
+  },
+  "ARE-SAU": {
+   "a": "ARE",
+   "b": "SAU",
+   "s": "F",
+   "note": "The UAE agrees to re-enter the Yemen conflict alongside Saudi Arabia to counter advancing Houthi forces.",
+   "updated": "2026-10-17",
+   "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWXhkalJBQ2xwVFhIUExTLWw3UTRGbHdXVlhIQ0ZLaEVOREFzNUQ3MkJqSlMtOWQ1aDRwazFhaVA3ajdqNTREZFN1andxLV9QaE4yUWk4T0ZGeXJfZDIwb0JhMDRwOHN4Qlowbl9ET0x4cVMtZU1zdjBXY3J4bEp3VHAtdDItcUhzM3FfWmNaVFljamJ4enBhb1I3dTZUWVl5Z3c?oc=5"
+  },
+  "IND-MDV": {
+   "a": "IND",
+   "b": "MDV",
+   "s": "F",
+   "note": "India extends a 30 billion rupee ($360 million) currency swap facility to the Maldives on concessional terms.",
+   "updated": "2026-10-17",
+   "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQT3ZvYmo4cEFidDY4RTBjWUhrMWxNbVVGMWk4eUxzblFaMUpVeEpQQU1BRWFTSVZuS2F6VFpLV0laekowWEI2ZHlieDNrZmtZZ0FhTHRKNzFHaXpCZXkxdTYyend6YnpIWE8zZDY4MVY4clZUaGkwQW9RczVoSjRSMG01Z2Rra0t4T3A0QnRTTWZ1V1ZURHRZMWlQckFIczJaajVScGJFMGRDNzhnWUM2Q2hKRUhHVm8zei1LZVJfWV8tbVd0aVE00gHHAUFVX3lxTFBPdm9iajhwQWJ0NjhFMGNZSGsxbE1tVUYxaTh5THNuUVoxSlV4SlBBTUFFYVNJVm5LYXpUWktXSVp6SjBYQjZkeWJ4M2tma1lnQWFMdEo3MUdpekJleTF1NjJ6d3piekhYTzNkNjgxVjhyVlRoaTBBb1FzNWhKNFIwbTVnZGtrS3hPcDRCdFNNZnVXVlREdFkxaVByQUhzMlpqNVJwYkUwZEM3OGdZQzZDaEpFSEdWbzN6LUtlUl9ZXy1tV3RpUTQ?oc=5"
+  },
+  "IRN-LBN": {
+   "a": "IRN",
+   "b": "LBN",
+   "s": "T",
+   "note": "Relations strain as Lebanon revokes the license of Iran's Bank Saderat under United States (US) pressure over Hezbollah financing.",
+   "updated": "2026-10-17",
+   "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQLTV2UTh1SXBqOTdQY2MwSkpqLWljaGJTcnQ1T3N4aE1Dd1pTTE1yRllVNGtYR1Z1cS16czFLU1o1TzZDaURudEhTZjBXTjJVRnJyYldFN2ppdkY2UVVsVzJEVF9RRG0yX25LQU1FMTZjUWdmYUFfSW94ZURzbDRFNlZQOFp5RmduTFpXYlcwS2YzOVJPM2ZnQWZtNnZrTzhqdVhtWi0xZmtqVkhNcy1HZlZtVHhJQnVYR0FHdU9maTNLcnZjOWFLNXdYNA?oc=5"
   }
  },
  "threads": {
@@ -2555,11 +2607,12 @@
     "ERI",
     "DJI",
     "PAK",
-    "SYR"
+    "SYR",
+    "ARE"
    ],
-   "d": "Iranian-backed Houthi forces fire missiles at Aden airport and Saudi Arabia using Iranian intelligence, prompting coalition defense responses.",
+   "d": "Iranian-backed Houthi forces fire missiles at Aden and Saudi Arabia using Iranian intelligence, prompting coalition defense responses from Saudi Arabia and the UAE.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9JVi1mYUoxZ0daQzVaeUF2bTZMR19mOXVvSFVMRTZkaVg0dC15dG94YW5KSGlPQS1SVm01X29XR1N1MmZYLU5ZcGVqQW0tN0dHUGc?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWXhkalJBQ2xwVFhIUExTLWw3UTRGbHdXVlhIQ0ZLaEVOREFzNUQ3MkJqSlMtOWQ1aDRwazFhaVA3ajdqNTREZFN1andxLV9QaE4yUWk4T0ZGeXJfZDIwb0JhMDRwOHN4Qlowbl9ET0x4cVMtZU1zdjBXY3J4bEp3VHAtdDItcUhzM3FfWmNaVFljamJ4enBhb1I3dTZUWVl5Z3c?oc=5",
    "t": "security",
    "updated": "2026-10-17"
   },
@@ -2787,10 +2840,10 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "Attacks escalate as multiple commercial vessels sink or catch fire near the Strait of Hormuz and the Gulf of Oman.",
+   "d": "Attacks escalate as commercial vessels hit mines and sink near the Strait of Hormuz amid the ongoing regional conflict.",
    "n": "Strait of Hormuz",
-   "s": "Commercial ships sunk in attacks",
-   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSGpLUmlDNE5EUnFKWEQxaVRMUFVpVjJ4emgxUVRBdmpKQUVpWHoyS2ktYmNwVExDVVVaVFBkc3gteXljWHFlTmN2LWhJUjJjUFBzVUxqc0xLdkxkV2NLRGUyS0s1dnJTdnc0aVBLZXoxNHU0UFZpWUp2TmFXMWJGWTBCWkdrdHJUQ2N3a1NNcDJJQTlxS0IwLWlNUmVKY3MtcUMtTg?oc=5",
+   "s": "Multiple tankers hit by mines and sunk",
+   "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONWlJR0phMW5Ea2R0eDRHYkRaM1VsenpXSlc1LWU1cGFXYWFOdUZCSWFwV2NUZEgzOXhkOWE2TC1hdldfbmFXS0hKcWdaMGEtRDI5ZG9DRERSeExGRzhFV1BXMXZKLXJZM0szdmhWMDAzdHBackxzYVNzc0FKT2o5alEyeWxvS1E?oc=5",
    "updated": "2026-10-17",
    "t": "strait",
    "lat": 26.57,
@@ -3048,9 +3101,9 @@
    "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdkxxQXJURTVFaC1DSm53XzloeGV3MFo5bDlmdi1hVzBidXQyc0tYeVRZbHlUSkxpT0ZZLUZMX2J3RExGQzF6Z012V1JHd1FTcTVZR2otUHZXMF9QNHJBYVZVd1JFcHVvME1LUzdHajFGTmNRaGJzS3NhMXNnelhndThlMGtGd2JudHkyTGNpUFFzVmJYU0FkZlU3SmxvU2w4SWNFUVRmcXowWlhWTWc?oc=5"
   },
   "SOM": {
-   "nextelec": "Presidential and Parliamentary, May 2027",
-   "updated": "2026-10-16",
-   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNS3NxWkc0aGRNLUJWMkZYaWcxOHg2R0tZekFOU1ZqTUZ4TTZNcndCODUyOWVoUEtESGl1ekExUWtPZ3lVVG5GeHlZOUV4VVhBdjZTZ19wSHFHcXE4TE1MNURtVnhLTVowaDVlRTJnVVVwbVBhR1dsa01BZmhoX09fVjFiaVJZY2Ruc1VjZ09GUVc4M1ZCbXVJSHNlSzcyRTZOS3NaMHZQcmdkandRN0ZnWlpqXy14NzhoUEE?oc=5",
+   "nextelec": "presidential, May 2027",
+   "updated": "2026-10-17",
+   "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1YTjBQaW96SWdjUXl2QUhBUkhmdHJZWVdYeG1rRk1xRVg0UTlPcEdZTmpocnV3elRhLWxDTFQ4WDdzWkNYSE9Od3ZkVmk5LVJiR1E?oc=5",
    "lastelec": "Presidential, May 2024"
   }
  }
