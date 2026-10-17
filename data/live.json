@@ -1,7 +1,27 @@
 {
  "meta": {
-  "lastRun": "2026-10-16T22:20:31Z",
+  "lastRun": "2026-10-17T05:23:53Z",
   "log": [
+   {
+    "date": "2026-10-17",
+    "items": [
+     {
+      "label": "United Kingdom–Eritrea",
+      "change": "Normal → Tense: UK threatens visa ban over migrant repatriation dispute",
+      "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQbVM5djI5aUpPMHZZbkNPNDkyYktoSzY1QnFrZ2JfYk90UHJOb2pzMTMtN3U0bzVWM2t3UE02NVR6dm9zTXJmNGdYVTY0UE91dG82UGwzWGc1b2gweVdxbGNDTXRWMlFmeDNaSTRyMDJoeXktUWMzSlpUdXB4cTJaU2Z3aklaTXEwcDFGWmVJV1NSckF5bmotTjJwN3MtS0xuT0E?oc=5"
+     },
+     {
+      "label": "Cambodia–Türkiye",
+      "change": "Normal → Partner: Nations sign defense agreement",
+      "source": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPT0dVZU5reDY3ODVNTThaQjhpSVFjV1pSNzVMR1JPQmJFYjEtbXJVWW10aDdPSXNNbDN0c1Z1NkdJTzZ6VlhhdW5xRWFtT3VscDRuS1A4WEIyWjNEanU2OWZ3eHhJT3BEQUZjMEc0X2xZb0JKNHE1OHZva3pnbExSRmF4OFhWS1psMlF3czdtSlFvOEQ0dW5fRVJFV0ZiUTZvS08xMno0eHV5bEJzMjlHOW1DaUFjU0Q1T1FiMFQxcG9ERlAyell1TmhqVVlJb2JCYzE3REVMcXVFdEdaM2hlZg?oc=5"
+     },
+     {
+      "label": "Ukraine–United States",
+      "change": "Tense: Note updated as US waives Russia sanctions while criticizing Ukrainian refinery strikes",
+      "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOX2luakxEaEVyTXo5MTktaTdoVzd4Zk1EX1NoYk8zZGE4bDNoYVpBS3FZeXJnMU1jazRhVkVfT2hSZ3pPY1JmSlotWVY3LWFjcDdGeDV2eU12bHhMM2E3QWI1aVczdmxiYjhBNlhGU1RCeE9hakdKN3hmTlZvTEgwSmxQam1lNVdJOUVFemlueXNwcFVUS3hYckNfb0UwbVJrZ0ticnctYmlueFR0MHRBR0cwZ1ZJc3VlNVFNcGw5SndCczR4VVhrNndabWptMGcwMF9aVQ?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-16",
     "items": [
@@ -1466,7 +1486,7 @@
     ]
    }
   ],
-  "summary": "Chile and Bolivia hold their first bilateral presidential summit in 71 years, while Houthi missile strikes hit Aden and Saudi targets."
+  "summary": "The US waives new congressional sanctions on Russia, UK threatens Eritrea with visa sanctions over migrant returns, and Cambodia signs a defense deal with Türkiye."
  },
  "relations": {
   "DNK-USA": {
@@ -2265,9 +2285,9 @@
    "a": "UKR",
    "b": "USA",
    "s": "T",
-   "note": "Friction spikes as Ukraine resumes strikes on Russian oil refineries and expresses frustration with US demands.",
-   "updated": "2026-10-15",
-   "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOanVvOXBrUl9qVzlNb3ljaFNMclJtU0JkcGMwOHg3WngxQnJhSUc4VzZGV0hvRDBBek9DejBaaTNwWVVSd0thaUt4dXJWZGVEVHdaeXNHQXVpV3pmZVJwN2o2ZDFrTXNGTVdaLTcwY1haLXBlWTRRNnpZSXFFSmllQ0xEdTZHLVRhREJCU3Q3WHlycGhCcEdTSXpjX0VDb1BXYXFiaGp5VjBXQQ?oc=5"
+   "note": "Tensions rise as United States (US) President Donald Trump waives new Russia sanctions while criticizing Ukrainian strikes on refineries.",
+   "updated": "2026-10-17",
+   "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOX2luakxEaEVyTXo5MTktaTdoVzd4Zk1EX1NoYk8zZGE4bDNoYVpBS3FZeXJnMU1jazRhVkVfT2hSZ3pPY1JmSlotWVY3LWFjcDdGeDV2eU12bHhMM2E3QWI1aVczdmxiYjhBNlhGU1RCeE9hakdKN3hmTlZvTEgwSmxQam1lNVdJOUVFemlueXNwcFVUS3hYckNfb0UwbVJrZ0ticnctYmlueFR0MHRBR0cwZ1ZJc3VlNVFNcGw5SndCczR4VVhrNndabWptMGcwMF9aVQ?oc=5"
   },
   "PAK-SOM": {
    "a": "PAK",
@@ -2476,6 +2496,22 @@
    "note": "Chile's President Kast conducts the first state visit to Bolivia in 71 years, opening talks to ease border and economic disputes.",
    "updated": "2026-10-16",
    "source": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNZFRmY3F6XzBWUTVlelpfUjgtaERYZEFLSV8tQURNb0RlNVhMak5JUGZ6blgzR1ZpaXBkOGx2el9pdFFPaTNIN0kzaVpPQWZTRS1LRks1UEdsenMtSWlOcGZwdTlnRTg0OE90QTFvbmpaLXJjNDJaRnY0ZzNNekhyRFdLOW54OUZQWDZoU2NaQlJvczdxd2NXYmc2S3FvVmRvVzhqWmZvQnVYNDYxbUl5TV9EUXc2X1JEOXF5RjR3R05DVGplTWoyYk9SaXNPNGxPWVhn?oc=5"
+  },
+  "ERI-GBR": {
+   "a": "ERI",
+   "b": "GBR",
+   "s": "T",
+   "note": "The United Kingdom (UK) threatens Eritrea with a visa ban amid a dispute over the repatriation of undocumented migrants.",
+   "updated": "2026-10-17",
+   "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQbVM5djI5aUpPMHZZbkNPNDkyYktoSzY1QnFrZ2JfYk90UHJOb2pzMTMtN3U0bzVWM2t3UE02NVR6dm9zTXJmNGdYVTY0UE91dG82UGwzWGc1b2gweVdxbGNDTXRWMlFmeDNaSTRyMDJoeXktUWMzSlpUdXB4cTJaU2Z3aklaTXEwcDFGWmVJV1NSckF5bmotTjJwN3MtS0xuT0E?oc=5"
+  },
+  "KHM-TUR": {
+   "a": "KHM",
+   "b": "TUR",
+   "s": "F",
+   "note": "Cambodia and Türkiye sign a defence cooperation deal to strengthen bilateral military and security ties.",
+   "updated": "2026-10-17",
+   "source": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPT0dVZU5reDY3ODVNTThaQjhpSVFjV1pSNzVMR1JPQmJFYjEtbXJVWW10aDdPSXNNbDN0c1Z1NkdJTzZ6VlhhdW5xRWFtT3VscDRuS1A4WEIyWjNEanU2OWZ3eHhJT3BEQUZjMEc0X2xZb0JKNHE1OHZva3pnbExSRmF4OFhWS1psMlF3czdtSlFvOEQ0dW5fRVJFV0ZiUTZvS08xMno0eHV5bEJzMjlHOW1DaUFjU0Q1T1FiMFQxcG9ERlAyell1TmhqVVlJb2JCYzE3REVMcXVFdEdaM2hlZg?oc=5"
   }
  },
  "threads": {
@@ -2484,22 +2520,20 @@
     "IRN",
     "YEM",
     "SAU",
-    "ERI",
-    "DJI",
-    "EGY",
     "ISR",
+    "EGY",
     "USA",
     "GBR",
-    "FRA",
-    "TUR",
+    "ERI",
+    "DJI",
     "PAK",
     "SYR"
    ],
-   "d": "Iranian-backed Houthis strike Aden airport, Yemen's presidential palace, and Saudi targets in Riyadh, triggering coalition air defenses.",
-   "n": "Houthi Red Sea & regional missile campaign",
-   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNY0tUN2NxaHhldk5PTTBwcHFFbzlwRG5JdDJoS0FZU2JVUExsdjRUQjRCbmhSdVJFNGxIVTVIZV9YbGpsNEFBRl9wVkhyc1VLSl85RTRQS0RlM083VUxPQTFhenFES3hZcU5jTzZERW8tYmxuTG1rUy1RTFdjeUVoa2pmUnk3OENISVlTTWxabDBoUmUxNDY1MHdhT0M1VDRC?oc=5",
+   "d": "Iranian-backed Houthis utilize Iranian intelligence to fire missiles at Saudi Arabia and Aden, triggering coalition defense responses.",
+   "n": "Houthi Red Sea campaign",
+   "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPOS1nT1V3ajJHakhMdm5jRDRqQW5PMlU5N1FidUlPemxtZFBFYV9UY0dJdGp2US1qU2NsbGRLazVUd2RsXzc3bWIxa00xcmpEbEY4aG9xcmkzX3g2ZDd2RVdlRGRGV0JUZjZLN0JTU2xybHFKQTlaV19oYUp3a2o5Wjg2Sk9kQQ?oc=5",
    "t": "security",
-   "updated": "2026-10-16"
+   "updated": "2026-10-17"
   },
   "afpak-jihad": {
    "t": "security",
@@ -2725,11 +2759,11 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "Commercial vessels face lethal attacks and sinkings from Iranian projectiles and mines amid an escalation in the Strait of Hormuz.",
+   "d": "Iranian forces and projectiles target commercial tankers in the Strait of Hormuz and Gulf of Oman, leaving multiple vessels on fire.",
    "n": "Strait of Hormuz",
-   "s": "Two ships sunk by projectiles",
-   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNVg0eWh4OTZ1NG5IR1M1ZWJJejUxUncyYVVWeHB3QTdHaHYzUnRDOHBpaFpEZldsb0RNZG5SNVZDMWJIVUV6U0JZRVhLSmdtWEZfSnpGSDlXWVU1UlRRSF9wT0JSbktPRTRWT2dkazNCSmJoWDBaUl9wZEI3bjVpLUNZS2ZDWW9IQk9oUndRNU1qYUpHclhnUzhVYVU1RE0?oc=5",
-   "updated": "2026-10-14",
+   "s": "Tanker attacks escalate",
+   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPeDJUbWlUM2JnVFR6aV9CUFFYeVpDeVBBQjljM2VNOGRuelFGel93R3ZObndRa1hsdS02U1JpMkxvMmJYTEpmVFBXQVFoZnVEWFJCcW9oX0VxRWItQUFoYTUtMWFMX0JyV0xBQ09mOHlaalRGMmN3ZmZ5dm1aYjdQa1RpWXFqRTBTVThGZHNjaXpZdXNNdGcweXJ1X2poZS13eDhsLXhLbUltU1FYdF9Xb2FsMDlhd03SAb8BQVVfeXFMT1ZSTVozM1VvNDU2al8yOUNVZVFfR3RZNTFqUjBNczY3WFpsZnlBWGVoNWYzWEFReG1XZ3FtS2dUS3NJdUFGMHlsa3ZpS2RKUWotekg1WVUtMkxST0VvT080RlVYTGttQ3l1T29vUFNuVjNRZ1lQd1hQTHRoN1JGR1BRbEV6WUU1dlBTcXhjVVVrQWJKQ0FxUHM3TVI4WHh3UHFuY1ZkemVoZUpfUnF4ZTlQNWxhOWZNcmlyY0gzUzA?oc=5",
+   "updated": "2026-10-17",
    "t": "strait",
    "lat": 26.57,
    "lng": 56.25,
@@ -2886,9 +2920,9 @@
    "updated": "2026-09-23"
   },
   "MAR": {
-   "lastelec": "parliamentary, Oct 2026, PAM coalition",
-   "updated": "2026-10-13",
-   "source": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOcXZPSmM1cUtvdWsyTDIwTk1qRloyZ08taXlnbjFMNXhPVHJfS3cyVDU0a0doVzNOMWsxblBEOFJmQ2k3bDZRejh2bEpoWllCaDZweFlaSXFyZVdMRUVWSG1tTGFxcEFvaEZhcE1HaFRCY3R2azU2c2ZjeVBhZXMzeTRkeUV1RkRScVIyelVKMncwUm91blhMUHJiLUhQb3ZGS0l6TjM3N1hGbmtpSW5DcHNkeTNOVXNkcjkwRGI0dHVvbG9CX2tPWQ?oc=5",
+   "lastelec": "appointment, October 2026, Fatima Ezzahra El Mansouri",
+   "updated": "2026-10-17",
+   "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPV29DTjVpaVkyZHlIVjZWb1dhaklpaVp0MVVQZHZyVTFjWWNqaVdBQkNjSlc2OU9vaEdnME9pblVTTHZwUWlFY1NJdmNxbjk3X1hsMVdRbmFIdlpqaHpSQzU1T243R0Q3UG5JQXFMRVZqWVZJbnB0bFNHdy1EVEJ4VkcwbkwxR2hQWlRTYW1zSmJLU1BEXzZuZXM4YWJvWGU3VjhsWDV5OEV5UmJvUllaUVhwVXNHYndiX2pEa0ZUZEZZdm5ndGtrc0hpNkFXWHc?oc=5",
    "nextelec": "parliamentary 2031"
   },
   "BGR": {
@@ -2939,8 +2973,8 @@
    "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdDlaQXVYbmIyYWdIbmtFclNfTnVkM29oRGdoR2tIcTVlZ1g2alZBZU1NNkpTaG81M0RQNDBfenFVZkxGZXpGSXdrV1A3NlZteEY5NE5WS1NQMGt2X1dTb1lmSjcydnotblJZa3dtd1F5MlVMUjQ5bnpzZXVrUDFCUW9VQmNrMXFPNVdhRWk3NzV2VzFuNlA0TVNHMzU4eDBkM0ZTYW01VGZONWN2bG9qZVlpZjRYczFBek5mZVhZZ2pSNEp4OS1hWHNSZDFZdFY2MFNmY1ZR?oc=5"
   },
   "GRD": {
-   "nextelec": "general, 5 November 2026",
-   "updated": "2026-10-16",
+   "nextelec": "general election, November 2026",
+   "updated": "2026-10-17",
    "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWWJzLVhYTGJobjVoa1BSMXBPY1VMc29GMC1BdlVrUWpQSXJiUUxUQzZTNy1oQ1EtSDdlVllPekhSaXNRX0VZWl9hWkp4U3BOQUhvTVNnQk9aXzJIMjFOdWt4c09IY0lZNFZDdWV0czFwSlBHT2d1eVNpSmF4SlpwazYxSU1PNUlLWlB5bzlkSWpJdDlPZGlNUC15cGotNHplNFNjaTNlWG03OGVudjBYZA?oc=5"
   },
   "LVA": {
