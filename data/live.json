@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-18T10:24:49Z",
+  "lastRun": "2026-10-18T16:13:30Z",
   "log": [
    {
     "date": "2026-10-18",
@@ -44,6 +44,16 @@
       "label": "Grenada",
       "change": "Politics updated: general election scheduled for November 5, 2026",
       "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWWJzLVhYTGJobjVoa1BSMXBPY1VMc29GMC1BdlVrUWpQSXJiUUxUQzZTNy1oQ1EtSDdlVllPekhSaXNRX0VZWl9hWkp4U3BOQUhvTVNnQk9aXzJIMjFOdWt4c09IY0lZNFZDdWV0czFwSlBHT2d1eVNpSmF4SlpwazYxSU1PNUlLWlB5bzlkSWpJdDlPZGlNUC15cGotNHplNFNjaTNlWG03OGVudjBYZA?oc=5"
+     },
+     {
+      "label": "Ukraine–United States",
+      "change": "Note refreshed: US resumes missile launch intelligence sharing with Ukraine despite ongoing sanctions friction",
+      "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZ0hNc2Z5RFdaU2l6OTlIQ3l3eFI4ZEZpVmZRX2h5RjYtenRaM3ZxN0QzRklyTnBRU3lEN2Y0eUFHZUdkY0RZWkxEc18zOEE4eG5YYzBHQnFnanlXb0JCckp6X0NlbmhMLW1wcnN3TW9ELWxWTFpsUjQxeWp0RkJ4Q0lleDZIMUdTalp4cEJOcEVFcmFSdkNLenZ6U19CWHY0SXZfZ0szTHFWbHVR?oc=5"
+     },
+     {
+      "label": "Lithuania–Russia",
+      "change": "Note refreshed: Lithuania accuses Russian intelligence of arson attack on Starlink facility",
+      "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdVAzWDFBRkRQdWgyMVU4YURPR1B4MFBYWmgyVVNuR1ZtOEVEdl84YXlvczBKdmlMTWRsUl9CTXprODVRU293X1hGSHltY2xKeHNkYm9NR3N0MjFnMlpzekZnX2NhZld4bHlQTFVSc2wySWdZTUtxVXNNMkFCQi1rcHJNN2tMZGJBYUM5dDQwWFJuQnZmaTBka1R3?oc=5"
      }
     ]
    },
@@ -1586,7 +1596,7 @@
     ]
    }
   ],
-  "summary": "Updated China–Japan, Belarus–Ukraine, and Ethiopia–Somaliland notes following recent diplomatic and security statements, and recorded Grenada's upcoming election."
+  "summary": "United States resumes missile intelligence sharing with Ukraine, Lithuania accuses Russia of Starlink sabotage, and regional military coordination intensifies around Saudi Arabia and the Strait of Hormuz."
  },
  "relations": {
   "DNK-USA": {
@@ -2169,9 +2179,9 @@
    "a": "LTU",
    "b": "RUS",
    "s": "H",
-   "note": "Tensions rise as Lithuania moves to repeal its nuclear arms ban and host a permanent US base, drawing warnings of escalation from Russia.",
-   "updated": "2026-10-06",
-   "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQd1NXOExicGVCdDNUSDRXVGUwTjFZQ2puM1NpM3lZTUU3SDNRM2luMGRucHFZNjJnSkg3dFhhVlFLTS1rY1ZUUDh3dnRWSFZ4Y1pNdFppcUl6TUl6UzU5Uy00VXNZdzRIaEFaQ1VzcnplMDdCeDRXcXNhZUs3dGVoR1FxQkdtVWRocGJqem53ZkVVM3NhTzlUaGFFY3hEU1lkNzIwWGRPM3JZbG5zOWdEWWZVRmtZczljLXA1WnQwOEpWbzVBZWRVZWQ2TQ?oc=5"
+   "note": "Lithuania accuses Russian intelligence of orchestrating an arson attack on a Starlink facility serving Ukraine.",
+   "updated": "2026-10-18",
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdVAzWDFBRkRQdWgyMVU4YURPR1B4MFBYWmgyVVNuR1ZtOEVEdl84YXlvczBKdmlMTWRsUl9CTXprODVRU293X1hGSHltY2xKeHNkYm9NR3N0MjFnMlpzekZnX2NhZld4bHlQTFVSc2wySWdZTUtxVXNNMkFCQi1rcHJNN2tMZGJBYUM5dDQwWFJuQnZmaTBka1R3?oc=5"
   },
   "BTN-IND": {
    "a": "BTN",
@@ -2385,9 +2395,9 @@
    "a": "UKR",
    "b": "USA",
    "s": "T",
-   "note": "Tensions rise as United States (US) President Donald Trump waives new Russia sanctions while criticizing Ukrainian strikes on refineries.",
-   "updated": "2026-10-17",
-   "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOX2luakxEaEVyTXo5MTktaTdoVzd4Zk1EX1NoYk8zZGE4bDNoYVpBS3FZeXJnMU1jazRhVkVfT2hSZ3pPY1JmSlotWVY3LWFjcDdGeDV2eU12bHhMM2E3QWI1aVczdmxiYjhBNlhGU1RCeE9hakdKN3hmTlZvTEgwSmxQam1lNVdJOUVFemlueXNwcFVUS3hYckNfb0UwbVJrZ0ticnctYmlueFR0MHRBR0cwZ1ZJc3VlNVFNcGw5SndCczR4VVhrNndabWptMGcwMF9aVQ?oc=5"
+   "note": "Tensions persist over United States (US) Russia sanctions relief, though Washington resumes missile launch intelligence sharing with Kyiv.",
+   "updated": "2026-10-18",
+   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZ0hNc2Z5RFdaU2l6OTlIQ3l3eFI4ZEZpVmZRX2h5RjYtenRaM3ZxN0QzRklyTnBRU3lEN2Y0eUFHZUdkY0RZWkxEc18zOEE4eG5YYzBHQnFnanlXb0JCckp6X0NlbmhMLW1wcnN3TW9ELWxWTFpsUjQxeWp0RkJ4Q0lleDZIMUdTalp4cEJOcEVFcmFSdkNLenZ6U19CWHY0SXZfZ0szTHFWbHVR?oc=5"
   },
   "PAK-SOM": {
    "a": "PAK",
@@ -2726,11 +2736,11 @@
     "SYR",
     "ARE"
    ],
-   "d": "Iranian-backed Houthi forces fire missiles at Aden and Saudi Arabia using Iranian intelligence, prompting coalition defense responses from Saudi Arabia and the UAE.",
+   "d": "Iran provides targeting intelligence to Houthi forces launching strikes against Saudi Arabia, triggering defense pledges from Egypt and regional Sunni coalition partners.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWXhkalJBQ2xwVFhIUExTLWw3UTRGbHdXVlhIQ0ZLaEVOREFzNUQ3MkJqSlMtOWQ1aDRwazFhaVA3ajdqNTREZFN1andxLV9QaE4yUWk4T0ZGeXJfZDIwb0JhMDRwOHN4Qlowbl9ET0x4cVMtZU1zdjBXY3J4bEp3VHAtdDItcUhzM3FfWmNaVFljamJ4enBhb1I3dTZUWVl5Z3c?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPOS1nT1V3ajJHakhMdm5jRDRqQW5PMlU5N1FidUlPemxtZFBFYV9UY0dJdGp2US1qU2NsbGRLazVUd2RsXzc3bWIxa00xcmpEbEY4aG9xcmkzX3g2ZDd2RVdlRGRGV0JUZjZLN0JTU2xybHFKQTlaV19oYUp3a2o5Wjg2Sk9kQQ?oc=5",
    "t": "security",
-   "updated": "2026-10-17"
+   "updated": "2026-10-18"
   },
   "afpak-jihad": {
    "t": "security",
@@ -2956,10 +2966,10 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "Commercial vessels face mine strikes and missile fire as two ships sink, driving shipping risks to critical levels.",
+   "d": "Iran strikes vessels and sets regional oil terminals ablaze while demanding a deal with the United States (US), as both claim control of the waterway.",
    "n": "Strait of Hormuz",
-   "s": "Tankers hit by mines; ships sink",
-   "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcEhpeXZhQ20xWmZjb3p1eUJRVEFVSi1QbWJnUFZpRE05QmJUd0hhMU9OQmlqMmxPemhUTGN3ZmF5YlU0LUxkaF85M2JEVEpRT1FaMVAzaV8xNTBNeGk1YUlIRVNzRFNQVkpfY3FwWllQeWU3Mmk0NEpVaV90Tkp2ZnRzQ2xaZzQ2OGRLbUp1dUVNenlPUFVuQUVGRUVKSUZRbDVVR3hjZElfSFNONWhieWF5S0_SAboBQVVfeXFMT2UzSjBRSnAybzdRcU9NRWpyV0V5SU4xT1g2LWlTNWlraWJDeFBMSDlSbGVNc093MmJCOTROSjQ5bE50Uk1WSVVMNDZGN2VRWVkyRjdFdmV3QzliaGtBci1FcjRTbll0UmZQZmJTT0tXR05oVGdjRlU3Z1FvcTNUWXVPY0drS1BvamFZdWkyU0w0QU5oSjAwTnFBU0hNc2Z6dC1yUk1ma0dDNGpZX2RuVmxEZzhrUUI4bHhn?oc=5",
+   "s": "US and Iran dispute control amid tanker strikes",
+   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcUxxNHdOQmgxVGhJOTE3NDVyR3J0RUVSQkVDVjNSZFNnbnN0eU02ZHNOcUtvSVBuVmgtS0t0aGxWd05DNllrSjFRYnNMOWtJRmJJNG1hRmh6eXJkamNEek1sYUJKU2d4bVhuVEcyMXF4Y2hVUkNiSWtnOFFNZTNpTkN1MFU0Skxnb3BlTVgwODVoUzVZQVhudnJXRk9NZWpLd1ZuT3NIZmg0VE5iOHFKdE1Nek9CMWvSAbwBQVVfeXFMUFozLVllVm1zdlA2QWo0aTFOck9ZNEozcHM4RzRmeXFSTGJodmlBWkJMVlpBUHpuN2ZVVlVVLUZ4UFFYMExVeWdpVFdVV2tKUG40VV9UVVgyOWppeFU2cWxWOHdBV1ZVVko1Y2N6eW1jdERsZlV4QnpEaHVhRVFpWTVFM004dFdQbzFVVG1QM0wyRVhhcTJ6NkY4aFZxYnlmZGFMaW5ib0hKdG1KSDNEaGRTQ1VHZ2s4Xy1Oekg?oc=5",
    "updated": "2026-10-18",
    "t": "strait",
    "lat": 26.57,
@@ -3020,11 +3030,11 @@
    "hog": "Luiz Inácio Lula da Silva, President",
    "hos": "Luiz Inácio Lula da Silva, President",
    "lastelec": "presidential first round, Oct 2026, runoff pending",
-   "nextelec": "presidential runoff, October 2026",
+   "nextelec": "presidential runoff election October 2026",
    "ruling": "Workers' Party (PT)-led broad coalition",
-   "source": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBWLWw3a2JfdmRKRzF4dXlsb2Q0QllmSTE2bTl4Z2lRbzZhLW9oYnA1d2RPZFBFa05pNGpZVjMwcHVkTDRvUjdEbTg0NFU2RnhfcGlvdDlqLUtHb0JLYWk2MXBsN2xndnha?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTm5qTkhzMDNBVTZQRVZkb0laSXN1NTZOTzk4WkpodEU2TDI3bTFrc1RKYVBzbmRQdGlfS0ZUNHF0dnNacWx2M1BSeE93RWx5T1E5MHlEMEhqdUZvVGRUMWRxa2lTMjFETUhsTThTVzk4OUcwb0V1QzRjRHBEUk5KYk9WeGxXZnpEX1Z1Yl9GaXo2ZmwyZlNaeHM2OVV5aWM4?oc=5",
    "system": "Federal presidential republic",
-   "updated": "2026-10-15"
+   "updated": "2026-10-18"
   },
   "CAN": {
    "hog": "Mark Carney, Prime Minister",
@@ -3226,6 +3236,11 @@
    "lastelec": "Senate, October 2026, STAN and ODS",
    "updated": "2026-10-17",
    "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWUVkcXJkaTJFVUxqZW5BLXJLd1FVTmF5aWNYekIwVmpzRW9fcjZjMDJDWW1xSW54SVhMRUNBVVZhU0VVV25rVkNfd0hSM1FrUzJJdTVnYUtpbE13QVRsU0M4SDdlaXd5U0FuQUlyQ3VUZWNSbWdXdHVvRTBTc2tRc3FodjFBV3lJYTlfanNFRnBxWTJPdUdGMWF3?oc=5"
+  },
+  "ISR": {
+   "nextelec": "parliamentary election 2026",
+   "updated": "2026-10-18",
+   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdHJGQ2hQdUNJa1FNSUNsaXVqNUFtRW1GeVpnSUR2N2lMNDhLN0FoY1NEdjF2dHcwV1cwQWVwZDVBdmFLNUNGOThNN2k2Y3JHYWd3dTNGdE5nTEIwcmR4ZmpIQkFBUkEyeGl0Zi1mMEQ5enAxQk5NdFJxZ2hNWjc5STU4ZWZMS2ozZm0zWFFVUjk4OGdKZ0lXakExY1BXdk5FbHQ1dW94aUtPRC1Hd3F3?oc=5"
   }
  }
 }
