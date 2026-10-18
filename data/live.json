@@ -1,7 +1,37 @@
 {
  "meta": {
-  "lastRun": "2026-10-17T22:14:18Z",
+  "lastRun": "2026-10-18T05:23:48Z",
   "log": [
+   {
+    "date": "2026-10-18",
+    "items": [
+     {
+      "label": "Iran–Pakistan",
+      "change": "Normal → Tense: border trade and passenger movement suspended over security and sanctions",
+      "source": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPTTJpWmwxSE9DQWlTQ1NhTTJJcE1yYV9aS0dZdXRuQTBtTmZfaXVxRHRQZHZnRnpHTUVRdHNrdUdEMXBkX0VVVlVQbm9wcm84WFEzM3FldjVjV3ItUUExa1BiWEVKaVR3LWJGbndzcHRaQjRzdDZEN09fT0g5Nk55Uk5RMFdTbHhrQ3M3TWlySHlmYUZZU3pEcHpZQmtxVllUMlMtc3VSZURMeDV0bnhncWRtZUVrR0o5eUNWb3lOc0pBLXJCa2IzOEs4VzZYbF9LbXZaYVRvOWhUV2dDc0NGeG8zN3NqVU9fdDN3aDhzOVJfM1NxOGEwYzFMWG9TUGJfS0h4MzlxOG9JRmPSAZACQVVfeXFMTng1Z3lDcDF6Y0JGZWlUOXN4NDFjaHFQS1NFU3JJUFJET2FWMXBqMWVvYWRMenhyRklxVUNXVHJTSFE3UmU4RGpmdDRadnFzc1pBV0ljakQxWjRqMW9aUHdmbmtQNmhKaF9TZGlzLWs5a1l1MnBrZnJIV2VRdHVLOE9sLTYxdl9WbkFrZm5laWVndElrbVFkM05SbDlLVmZvTlpwazhNXy1ucGRBNUhia1FYRjFPb3FwcTlBenVsT243M3V4QmlRTEVJbmhJam9WekNtcWFhdHdpaHdZMDhNZGNSOTRMa1pxLXhhQjRIcE9iLTRqelY4N0hKa2VIdjFsVnJGM1JIYlQ1dUlYTzRZSkE?oc=5"
+     },
+     {
+      "label": "Afghanistan–Pakistan",
+      "change": "Armed conflict note updated on fatal Durand Line skirmishes",
+      "source": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOS2VNY0dEVEgzSmY4Z05Ydzk4NkZkLVFWOS03WEJiYk41dHhWVXd3ajF2dmdLZjRlSGdpaXp2b1NCdERvYl9pTWdKTFZXTENtQkxoYmhnMThMNkgtcUxXZENRRDBlSGFoNmpSRFZ0cVl6c2Fyb2tjeGhmRXdmRXRpeHY0LWNyeXFCT1JROFR5VG84bUFWVnczT181aGxfQW1TSU05NV84YWNhZzlaRGt6TFhXS3BSNU9iZjF0TmlVaDFzWVViZjdyUVlOa3dINjhGOWRUWDhtTjlmMXFDSWxDYWlXbVEzUDdBNFk5alhobXo3Mi120gH0AUFVX3lxTE5LZU1jR0RUSDNKZjhnTlh3OTg2RmQtUVY5LTdYQmJiTjV0eFZVd3dqMXZ2Z0tmNGVIZ2lpenZvU0J0RG9iX2lNZ0pMVldMQ21CTGhiaGcxOEw2SC1xTFdkQ1FEMGVIYWg2alJEVnRxWXpzYXJva2N4aGZFd2ZFdGl4djQtY3J5cUJPUlE4VHlUbzhtQVZWdzNPXzVobF9BbVNJTTk1XzhhY2FnOVpEa3pMWFdLcFI1T2JmMXROaVVoMXNZVWJmN3JRWU5rd0g2OEY5ZFRYOG1OOWYxcUNJbENhaVdtUTNQN0E0WTlqWGhtejcyLXY?oc=5"
+     },
+     {
+      "label": "India–United States",
+      "change": "Partner note updated on tariff pause and Russia sanctions waiver",
+      "source": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNcUZFaERHNm4xdGd0Nkc4eDV1cThCRG8yUTJMTE94ZVpJbHllR3hMVE9IaVdjcTdNWktlR2dMN2x0d3UxUHhabWljbHhIUkZxUVczaVBDZjl1Uy1UQWs5dzRwOUFCYmxnN2ZNLVVoYXhNYXhvTVN5TDdQNHFPR2kyMk9yV3RMWXVza0xBZ0hxQ1k0ZzJia3BwRG1idkhIZDRIME5ycWVCUUpVbmlVaTdOZmNkWjNPVTZvcWM4bTVOSEFLdnVFU0lOcjQzSjhDZnExd25wMUMxemxFVDJROWRYTGpWU3Z2RGd0X1BwOXRtUzlMcUlMcVh0cQ?oc=5"
+     },
+     {
+      "label": "Strait of Hormuz",
+      "change": "Location updated with tanker mine strikes and sunken vessels",
+      "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcEhpeXZhQ20xWmZjb3p1eUJRVEFVSi1QbWJnUFZpRE05QmJUd0hhMU9OQmlqMmxPemhUTGN3ZmF5YlU0LUxkaF85M2JEVEpRT1FaMVAzaV8xNTBNeGk1YUlIRVNzRFNQVkpfY3FwWllQeWU3Mmk0NEpVaV90Tkp2ZnRzQ2xaZzQ2OGRLbUp1dUVNenlPUFVuQUVGRUVKSUZRbDVVR3hjZElfSFNONWhieWF5S0_SAboBQVVfeXFMT2UzSjBRSnAybzdRcU9NRWpyV0V5SU4xT1g2LWlTNWlraWJDeFBMSDlSbGVNc093MmJCOTROSjQ5bE50Uk1WSVVMNDZGN2VRWVkyRjdFdmV3QzliaGtBci1FcjRTbll0UmZQZmJTT0tXR05oVGdjRlU3Z1FvcTNUWXVPY0drS1BvamFZdWkyU0w0QU5oSjAwTnFBU0hNc2Z6dC1yUk1ma0dDNGpZX2RuVmxEZzhrUUI4bHhn?oc=5"
+     },
+     {
+      "label": "Grenada",
+      "change": "General election confirmed for 5 November 2026",
+      "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWWJzLVhYTGJobjVoa1BSMXBPY1VMc29GMC1BdlVrUWpQSXJiUUxUQzZTNy1oQ1EtSDdlVllPekhSaXNRX0VZWl9hWkp4U3BOQUhvTVNnQk9aXzJIMjFOdWt4c09IY0lZNFZDdWV0czFwSlBHT2d1eVNpSmF4SlpwazYxSU1PNUlLWlB5bzlkSWpJdDlPZGlNUC15cGotNHplNFNjaTNlWG03OGVudjBYZA?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-17",
     "items": [
@@ -1541,7 +1571,7 @@
     ]
    }
   ],
-  "summary": "Costa Rica and El Salvador sign a bilateral security pact, Romania shoots down Russian drones over the Black Sea, and Czechia completes Senate election runoffs."
+  "summary": "Updated the Iran-Pakistan relation to Tense after border trade was halted, refreshed notes on Afghan-Pakistani Durand Line clashes and US-India tariff pauses, registered Grenada's November 2026 election, and updated Strait of Hormuz attacks."
  },
  "relations": {
   "DNK-USA": {
@@ -1732,9 +1762,9 @@
    "a": "AFG",
    "b": "PAK",
    "s": "W",
-   "note": "Pakistan launches deadly airstrikes inside Afghanistan, sharply escalating cross-border hostilities with the Taliban.",
-   "updated": "2026-10-01",
-   "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbmRRVHF2dW9BcElUaFo3SEZlX0hvSHlUaHpWNTIzdzd5LXhTems2V1VnWjk5SFdIZV8xajNKZnBDbmhDYm84RVlkbUF1cEhmenZvMmtsZEFlUDl5Rmw2TTF3SWI1NWxUeEs2clh1VVJ2Y25FT1Vqb0x3emZGVGd2SDFuQ0c5aS0tYUo1bXBTdk1pWThWVXFvN1RteEptZ3NSQ3RocDhkMGVWMXc0enfSAbMBQVVfeXFMTmFOeW1ZYjR2RkJPSUJUdFdESjZqdVR1VlRCVjVTMFdYNjhLRUY5SjFhZFNldGx5YTlXcGJlMEdVY0RCWXl6RDg0Sks0aHo3Ukt6dU9xWHNMTl9yNl9yZmNPWE4zUm1nenAtWHEyUm1zbVJTbUg5YmpKRFlSYXV3aURPZU9MdUE2ZmozeElaMzJRcGxjd0lTeHdkakRFcVpKMVVZay1xTWVPSm1XRjNaX014VU0?oc=5"
+   "note": "Clashes erupt along the Durand Line as Pakistani forces strike Taliban posts following cross-border infiltration attempts.",
+   "updated": "2026-10-18",
+   "source": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOS2VNY0dEVEgzSmY4Z05Ydzk4NkZkLVFWOS03WEJiYk41dHhWVXd3ajF2dmdLZjRlSGdpaXp2b1NCdERvYl9pTWdKTFZXTENtQkxoYmhnMThMNkgtcUxXZENRRDBlSGFoNmpSRFZ0cVl6c2Fyb2tjeGhmRXdmRXRpeHY0LWNyeXFCT1JROFR5VG84bUFWVnczT181aGxfQW1TSU05NV84YWNhZzlaRGt6TFhXS3BSNU9iZjF0TmlVaDFzWVViZjdyUVlOa3dINjhGOWRUWDhtTjlmMXFDSWxDYWlXbVEzUDdBNFk5alhobXo3Mi120gH0AUFVX3lxTE5LZU1jR0RUSDNKZjhnTlh3OTg2RmQtUVY5LTdYQmJiTjV0eFZVd3dqMXZ2Z0tmNGVIZ2lpenZvU0J0RG9iX2lNZ0pMVldMQ21CTGhiaGcxOEw2SC1xTFdkQ1FEMGVIYWg2alJEVnRxWXpzYXJva2N4aGZFd2ZFdGl4djQtY3J5cUJPUlE4VHlUbzhtQVZWdzNPXzVobF9BbVNJTTk1XzhhY2FnOVpEa3pMWFdLcFI1T2JmMXROaVVoMXNZVWJmN3JRWU5rd0g2OEY5ZFRYOG1OOWYxcUNJbENhaVdtUTNQN0E0WTlqWGhtejcyLXY?oc=5"
   },
   "BGD-IND": {
    "a": "BGD",
@@ -2623,6 +2653,22 @@
    "note": "Tensions escalate after Romanian F-16 fighter jets shoot down two Russian drones over the Black Sea.",
    "updated": "2026-10-17",
    "source": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNX1RuY0xJQ1ZSakMxQlR0NmV5MTdiMHJDMHQ3cmFWelp5MnY4cWV2LTBkSnU4WnVQejc3U1NXd1FvblhYYnRCNGpGWURnb0JVU2ljdWVqYlN2ZXh3S2kxR3VGSFdXUUMtWkcyRzJJOGxFSUxYTFJGNGdVYzgxSURUVjZYNNIBggFBVV95cUxNeTZxVldLclBnWmlCdDEtVDJ3aktDN0d2N0VtcHB2M2lDemFlcnR3ekVnVUpWd2UyR0l5dGhaMFlKcGxrcWpkcUsyV0FVb05ZLWI0YlVBbG9wTlE1dWRZWGhBUDVxaU9CTmxjR20zWUlVOG0wcG42RW90Mmx0X01ueUZ3?oc=5"
+  },
+  "IRN-PAK": {
+   "a": "IRN",
+   "b": "PAK",
+   "s": "T",
+   "note": "Cross-border trade and passenger movement are temporarily suspended over security concerns and banking sanctions.",
+   "updated": "2026-10-18",
+   "source": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPTTJpWmwxSE9DQWlTQ1NhTTJJcE1yYV9aS0dZdXRuQTBtTmZfaXVxRHRQZHZnRnpHTUVRdHNrdUdEMXBkX0VVVlVQbm9wcm84WFEzM3FldjVjV3ItUUExa1BiWEVKaVR3LWJGbndzcHRaQjRzdDZEN09fT0g5Nk55Uk5RMFdTbHhrQ3M3TWlySHlmYUZZU3pEcHpZQmtxVllUMlMtc3VSZURMeDV0bnhncWRtZUVrR0o5eUNWb3lOc0pBLXJCa2IzOEs4VzZYbF9LbXZaYVRvOWhUV2dDc0NGeG8zN3NqVU9fdDN3aDhzOVJfM1NxOGEwYzFMWG9TUGJfS0h4MzlxOG9JRmPSAZACQVVfeXFMTng1Z3lDcDF6Y0JGZWlUOXN4NDFjaHFQS1NFU3JJUFJET2FWMXBqMWVvYWRMenhyRklxVUNXVHJTSFE3UmU4RGpmdDRadnFzc1pBV0ljakQxWjRqMW9aUHdmbmtQNmhKaF9TZGlzLWs5a1l1MnBrZnJIV2VRdHVLOE9sLTYxdl9WbkFrZm5laWVndElrbVFkM05SbDlLVmZvTlpwazhNXy1ucGRBNUhia1FYRjFPb3FwcTlBenVsT243M3V4QmlRTEVJbmhJam9WekNtcWFhdHdpaHdZMDhNZGNSOTRMa1pxLXhhQjRIcE9iLTRqelY4N0hKa2VIdjFsVnJGM1JIYlQ1dUlYTzRZSkE?oc=5"
+  },
+  "IND-USA": {
+   "a": "IND",
+   "b": "USA",
+   "s": "F",
+   "note": "The United States (US) pauses planned tariffs and waives Russia sanctions impacting India, calling New Delhi an important ally.",
+   "updated": "2026-10-18",
+   "source": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNcUZFaERHNm4xdGd0Nkc4eDV1cThCRG8yUTJMTE94ZVpJbHllR3hMVE9IaVdjcTdNWktlR2dMN2x0d3UxUHhabWljbHhIUkZxUVczaVBDZjl1Uy1UQWs5dzRwOUFCYmxnN2ZNLVVoYXhNYXhvTVN5TDdQNHFPR2kyMk9yV3RMWXVza0xBZ0hxQ1k0ZzJia3BwRG1idkhIZDRIME5ycWVCUUpVbmlVaTdOZmNkWjNPVTZvcWM4bTVOSEFLdnVFU0lOcjQzSjhDZnExd25wMUMxemxFVDJROWRYTGpWU3Z2RGd0X1BwOXRtUzlMcUlMcVh0cQ?oc=5"
   }
  },
  "threads": {
@@ -2871,11 +2917,11 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "Vessel attacks reach record highs with 12 ships targeted in a single week amid the ongoing regional conflict.",
+   "d": "Commercial vessels face mine strikes and missile fire as two ships sink, driving shipping risks to critical levels.",
    "n": "Strait of Hormuz",
-   "s": "Record 12 ship attacks in one week",
-   "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5sMGFNWTJVdHF1WTVvZFhiaGk1aU1qTE8xenJ6R3RmaXVhZ3Zkb1hMRjlrQmxOVTlCaTJxUjFnaS1uTGJ3bmlUbEw2bnFSTkZUNHlGYlltdVVGYmZ6NDNkN1NyVUVMLW5ZOGplamhB?oc=5",
-   "updated": "2026-10-17",
+   "s": "Tankers hit by mines; ships sink",
+   "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcEhpeXZhQ20xWmZjb3p1eUJRVEFVSi1QbWJnUFZpRE05QmJUd0hhMU9OQmlqMmxPemhUTGN3ZmF5YlU0LUxkaF85M2JEVEpRT1FaMVAzaV8xNTBNeGk1YUlIRVNzRFNQVkpfY3FwWllQeWU3Mmk0NEpVaV90Tkp2ZnRzQ2xaZzQ2OGRLbUp1dUVNenlPUFVuQUVGRUVKSUZRbDVVR3hjZElfSFNONWhieWF5S0_SAboBQVVfeXFMT2UzSjBRSnAybzdRcU9NRWpyV0V5SU4xT1g2LWlTNWlraWJDeFBMSDlSbGVNc093MmJCOTROSjQ5bE50Uk1WSVVMNDZGN2VRWVkyRjdFdmV3QzliaGtBci1FcjRTbll0UmZQZmJTT0tXR05oVGdjRlU3Z1FvcTNUWXVPY0drS1BvamFZdWkyU0w0QU5oSjAwTnFBU0hNc2Z6dC1yUk1ma0dDNGpZX2RuVmxEZzhrUUI4bHhn?oc=5",
+   "updated": "2026-10-18",
    "t": "strait",
    "lat": 26.57,
    "lng": 56.25,
@@ -3085,8 +3131,8 @@
    "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdDlaQXVYbmIyYWdIbmtFclNfTnVkM29oRGdoR2tIcTVlZ1g2alZBZU1NNkpTaG81M0RQNDBfenFVZkxGZXpGSXdrV1A3NlZteEY5NE5WS1NQMGt2X1dTb1lmSjcydnotblJZa3dtd1F5MlVMUjQ5bnpzZXVrUDFCUW9VQmNrMXFPNVdhRWk3NzV2VzFuNlA0TVNHMzU4eDBkM0ZTYW01VGZONWN2bG9qZVlpZjRYczFBek5mZVhZZ2pSNEp4OS1hWHNSZDFZdFY2MFNmY1ZR?oc=5"
   },
   "GRD": {
-   "nextelec": "General election, November 2026",
-   "updated": "2026-10-17",
+   "nextelec": "General election, 5 November 2026",
+   "updated": "2026-10-18",
    "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWWJzLVhYTGJobjVoa1BSMXBPY1VMc29GMC1BdlVrUWpQSXJiUUxUQzZTNy1oQ1EtSDdlVllPekhSaXNRX0VZWl9hWkp4U3BOQUhvTVNnQk9aXzJIMjFOdWt4c09IY0lZNFZDdWV0czFwSlBHT2d1eVNpSmF4SlpwazYxSU1PNUlLWlB5bzlkSWpJdDlPZGlNUC15cGotNHplNFNjaTNlWG03OGVudjBYZA?oc=5"
   },
   "LVA": {
