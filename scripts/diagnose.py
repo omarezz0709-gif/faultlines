@@ -191,24 +191,40 @@ def check_worker() -> bool:
 def check_sources() -> None:
     src = open(os.path.join(ROOT, "worker", "gemini-proxy.js"), encoding="utf-8").read()
     outlets = src[src.index("const OUTLETS"):src.index("};", src.index("const OUTLETS"))]
-    feeds = re.findall(r'\["([^"]+)", "(https://[^"]+)"\]', outlets)
+    # each feed with its language ("France 24 FR"), since some outlets have a feed in several languages
+    langs = [(m.start(), m.group(1)) for m in re.finditer(r"\b(en|fr|es|ar|de|it): \[\[", outlets)]
+    feeds = [(f"{m.group(1)} {next((l for p, l in reversed(langs) if p < m.start()), '').upper()}".strip(), m.group(2))
+             for m in re.finditer(r'\["([^"]+)", "(https://[^"]+)"\]', outlets)]
     channels = src[src.index("const CHANNELS"):src.index("};", src.index("const CHANNELS"))]
     yts = sorted(set(re.findall(r'\["([^"]+)", "(UC[\w-]{22})"\]', channels)))
+
+    def working(url: str, ok) -> tuple[bool, int]:
+        """A feed counts as not working only if it fails twice: one-off hiccups are common and fix themselves."""
+        for attempt in (1, 2):
+            s, b, _, _ = fetch(url, timeout=12)
+            if s == 200 and ok(b):
+                return True, s
+            if attempt == 1:
+                time.sleep(3)
+        return False, s
+
     bad = []
     for name, url in feeds:
-        s, b, _, _ = fetch(url, timeout=12)
-        if s != 200 or not re.search(rb"<(item|entry)[\s>]", b):
-            bad.append(f"{name} ({s})")
+        good, s = working(url, lambda b: re.search(rb"<(item|entry)[\s>]", b))
+        if not good:
+            bad.append((name, s))
     share = len(bad) / max(1, len(feeds))
     add("sources", "News outlet feeds", "ok" if not bad else "warn" if share < 0.3 else "fail",
-        f"{len(feeds) - len(bad)}/{len(feeds)} working" + (f"; not working: {', '.join(bad[:8])}" if bad else ""))
+        f"{len(feeds) - len(bad)}/{len(feeds)} working" + (f"; not working: {', '.join(f'{n} ({s})' for n, s in bad[:8])}" if bad else ""))
+    checks[-1]["items"] = [n for n, _ in bad]   # which ones, so the email can tell a lasting problem from a new one
     bad = []
     for name, cid in yts:
-        s, b, _, _ = fetch(f"https://www.youtube.com/feeds/videos.xml?channel_id={cid}", timeout=12)
-        if s != 200 or b"<entry>" not in b:
+        good, s = working(f"https://www.youtube.com/feeds/videos.xml?channel_id={cid}", lambda b: b"<entry>" in b)
+        if not good:
             bad.append(f"{name} ({s})")
     add("sources", "YouTube news channels", "ok" if not bad else "warn" if len(bad) < len(yts) * 0.3 else "fail",
         f"{len(yts) - len(bad)}/{len(yts)} working" + (f"; not working: {', '.join(bad[:8])}" if bad else ""))
+    checks[-1]["items"] = [re.sub(r" \(\d+\)$", "", x) for x in bad]
 
 
 # ---------------------------------------------------------------- 4. a real browser
@@ -367,37 +383,54 @@ def main() -> None:
     status = "fail" if fails else "warn" if warns else "ok"
     summary = ("All checks passed." if status == "ok" else
                f"{len(fails)} problem(s), {len(warns)} warning(s): " + "; ".join(f"{c['name']}: {c['detail']}" for c in (fails + warns)[:4]))
+    print(f"\n{status.upper()}: {summary}")
+    emailed = write_email(t0, status, fails, warns, prev)
     save_json("health.json", {"generated": iso_z(t0), "berlin": t0.astimezone(BERLIN).strftime("%Y-%m-%d %H:%M"),
                               "status": status, "summary": summary[:600], "repairs": heal, "checks": checks,
-                              "ms": int((now_utc() - t0).total_seconds() * 1000)})
-    print(f"\n{status.upper()}: {summary}")
-    write_email(t0, status, fails, warns, prev)
+                              "emailed": emailed, "ms": int((now_utc() - t0).total_seconds() * 1000)})
     if fails:
         sys.exit(1)   # the workflow fails (shown in red on GitHub)
 
 
-def write_email(t0, status: str, fails: list, warns: list, prev: dict) -> None:
-    """The report email (to the address in the REPORT_EMAIL secret): ONLY when there is a problem. Nothing is sent
-    when everything is fine or there are only small warnings (those are listed in the admin panel). A locked admin
-    login counts as a problem, since only the owner can unlock it."""
-    before = {c["name"] for c in prev.get("checks", []) if c.get("status") == "warn"}
-    new_warns = [c for c in warns if c["name"] not in before]
+def warn_keys(c: dict) -> list[str]:
+    """What a warning is about: each feed or channel that isn't working, or else the check itself."""
+    return [f"{c['name']}: {i}" for i in c.get("items") or []] or [c["name"]]
+
+
+def write_email(t0, status: str, fails: list, warns: list, prev: dict) -> list[str]:
+    """The report email (to the address in the REPORT_EMAIL secret), only when something is wrong:
+    - a problem (fail), or a locked admin login (only the owner can unlock it): every time;
+    - a warning that is still there at the next check (6 hours later): once. One-off hiccups that fix themselves
+      by the next check send nothing, and a lasting warning isn't repeated twice a day; if it goes away and comes
+      back later, it is reported again.
+    Returns the warnings reported so far (saved in health.json for the next check)."""
+    now_keys = {k for c in warns for k in warn_keys(c)}
+    prev_keys = {k for c in prev.get("checks", []) if c.get("status") == "warn" for k in warn_keys(c)}
+    reported = set(prev.get("emailed") or []) & now_keys          # still going, already in an earlier email
+    lasting = (now_keys & prev_keys) - reported                   # seen in two checks in a row, not reported yet
     locked = any(c["name"] == "Admin login" for c in warns)
-    send = bool(fails or locked)
+    send = bool(fails or locked or lasting)
     when = t0.astimezone(BERLIN).strftime("%d %b %Y, %H:%M")
     subject = (f"Faultlines: {len(fails)} problem(s) found ({when})" if fails else
-               f"Faultlines: admin login locked ({when})" if locked else f"Faultlines: all good ({when})")
+               f"Faultlines: admin login locked ({when})" if locked else
+               f"Faultlines: {len(warns)} warning(s) that didn't fix themselves ({when})" if lasting else f"Faultlines: all good ({when})")
     icon = {"ok": "OK  ", "warn": "WARN", "fail": "FAIL"}
     lines = [f"Faultlines system check, {when} Berlin time", "",
              "Everything works." if status == "ok" else f"{len(fails)} problem(s), {len(warns)} warning(s):", ""]
     for c in fails + warns:
-        lines.append(f"  {icon[c['status']]}  {c['name']}: {c['detail']}" + ("   (new)" if c in new_warns else ""))
+        keys = set(warn_keys(c)) if c["status"] == "warn" else set()
+        name = lambda ks: ", ".join(sorted(k.split(": ", 1)[-1] for k in ks)) if c.get("items") else ""
+        note = (f"   (since the last check too{': ' + name(keys & lasting) if name(keys & lasting) else ''})" if keys & lasting
+                else "   (already reported)" if keys and keys <= reported
+                else "   (new; reported if it's still there at the next check)" if keys else "")
+        lines.append(f"  {icon[c['status']]}  {c['name']}: {c['detail']}" + note)
     if heal:
         lines += ["", "Repaired automatically: " + "; ".join(heal)]
     lines += ["", f"{sum(c['status'] == 'ok' for c in checks)} of {len(checks)} checks passed.",
               "", f"Website: {SITE}", "Full report: open the site, ⚙ Usage & logs, System check",
               f"Run a check now: https://github.com/omarezz0709-gif/faultlines/actions/workflows/diagnose.yml",
-              "", "(Sent by the daily diagnostics at 12:30 and 18:30, only when something is wrong.)"]
+              "", "(Sent by the daily diagnostics at 12:30 and 18:30, only when something is wrong: problems every time,",
+              "warnings once, when they are still there at the next check.)"]
     with open(os.path.join(ROOT, "report-email.txt"), "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
     out = os.environ.get("GITHUB_OUTPUT")
@@ -407,12 +440,15 @@ def write_email(t0, status: str, fails: list, warns: list, prev: dict) -> None:
     # Outlook (or any address) without Gmail: through Resend (free; secrets RESEND_API_KEY and REPORT_EMAIL,
     # REPORT_EMAIL being the address the Resend account was opened with)
     key, to = os.environ.get("RESEND_API_KEY", "").strip(), os.environ.get("REPORT_EMAIL", "").strip()
+    delivered = send   # (the Gmail way sends after this script, so it can't be checked here)
     if key and to and (send or os.environ.get("TEST_EMAIL") == "true"):
         s, b, _, _ = fetch("https://api.resend.com/emails", method="POST",
                            headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
                            body=json.dumps({"from": "Faultlines diagnostics <onboarding@resend.dev>", "to": [to],
                                             "subject": subject, "text": "\n".join(lines)}).encode())
         print(f"report email via Resend: HTTP {s}" + ("" if s in (200, 201) else f" {b[:200].decode('utf-8', 'replace')}"))
+        delivered = send and s in (200, 201)
+    return sorted(reported | (lasting if delivered else set()))   # not delivered: tried again at the next check
 
 
 if __name__ == "__main__":

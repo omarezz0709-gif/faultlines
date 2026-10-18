@@ -413,7 +413,7 @@ const OUTLETS = {
        ["DW", "https://rss.dw.com/rdf/rss-en-world"], ["France 24", "https://www.france24.com/en/rss"], ["NPR", "https://feeds.npr.org/1004/rss.xml"],
        ["New York Times", "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"], ["Euronews", "https://www.euronews.com/rss?level=theme&name=news"],
        ["CBS News", "https://www.cbsnews.com/latest/rss/world"], ["ABC News", "https://abcnews.go.com/abcnews/internationalheadlines"],
-       ["Washington Post", "https://feeds.washingtonpost.com/rss/world"]],
+       ["PBS NewsHour", "https://www.pbs.org/newshour/feeds/rss/world"]],   // (the Washington Post's feeds have been down since 13 Oct 2026)
   fr: [["France 24", "https://www.france24.com/fr/rss"], ["Le Monde", "https://www.lemonde.fr/international/rss_full.xml"], ["RFI", "https://www.rfi.fr/fr/rss"],
        ["Euronews", "https://fr.euronews.com/rss"], ["franceinfo", "https://www.francetvinfo.fr/monde.rss"], ["Le Figaro", "https://www.lefigaro.fr/rss/figaro_international.xml"],
        ["Libération", "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/international/?outputType=xml"], ["20 Minutes", "https://www.20minutes.fr/feeds/rss-monde.xml"],
@@ -422,7 +422,7 @@ const OUTLETS = {
   es: [["El País", "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/internacional/portada"], ["BBC Mundo", "https://feeds.bbci.co.uk/mundo/rss.xml"],
        ["France 24", "https://www.france24.com/es/rss"], ["DW", "https://rss.dw.com/rdf/rss-sp-all"], ["Euronews", "https://es.euronews.com/rss"]],
   ar: [["BBC Arabic", "https://feeds.bbci.co.uk/arabic/rss.xml"], ["France 24", "https://www.france24.com/ar/rss"], ["DW", "https://rss.dw.com/rdf/rss-ar-all"],
-       ["Sky News Arabia", "https://www.skynewsarabia.com/web/rss"], ["Al Jazeera", "https://www.aljazeera.net/aljazeerarss/a7c186be-1baa-4bd4-9d80-a84db769f779/73d0e1b4-532f-45ef-b135-bfdff8b8cab9"],
+       ["Sky News Arabia", "https://www.skynewsarabia.com/rss.xml"], ["Al Jazeera", "https://www.aljazeera.net/aljazeerarss/a7c186be-1baa-4bd4-9d80-a84db769f779/73d0e1b4-532f-45ef-b135-bfdff8b8cab9"],
        ["Euronews", "https://arabic.euronews.com/rss"], ["Asharq Al-Awsat", "https://aawsat.com/feed"], ["CNN Arabic", "https://arabic.cnn.com/api/v1/rss/rss.xml"],
        ["UN News", "https://news.un.org/feed/subscribe/ar/news/all/rss.xml"]],
   de: [["tagesschau", "https://www.tagesschau.de/ausland/index~rss2.xml"], ["DW", "https://rss.dw.com/rdf/rss-de-all"],
