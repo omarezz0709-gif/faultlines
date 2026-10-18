@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-18T16:13:30Z",
+  "lastRun": "2026-10-18T22:14:58Z",
   "log": [
    {
     "date": "2026-10-18",
@@ -54,6 +54,26 @@
       "label": "Lithuania–Russia",
       "change": "Note refreshed: Lithuania accuses Russian intelligence of arson attack on Starlink facility",
       "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdVAzWDFBRkRQdWgyMVU4YURPR1B4MFBYWmgyVVNuR1ZtOEVEdl84YXlvczBKdmlMTWRsUl9CTXprODVRU293X1hGSHltY2xKeHNkYm9NR3N0MjFnMlpzekZnX2NhZld4bHlQTFVSc2wySWdZTUtxVXNNMkFCQi1rcHJNN2tMZGJBYUM5dDQwWFJuQnZmaTBka1R3?oc=5"
+     },
+     {
+      "label": "Belgium–Democratic Republic of the Congo",
+      "change": "Normal → Tense: Kinshasa freezes official contacts following Belgian police raids",
+      "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNcndlUTFJbWNTaEphaE8yZURxUlYwSm8zUzM3blFpTl9wRE9NRElhazgtNHN5aVJWZGQ3a0N0aXFnTVpXaDZ6cEt6cEI2TXJRemVtZmlKLVVFcVdyWkZKVE83NEMwdHl6ZEU2b2JJVnVWQjhLLTE5V3dhM2JXZFJJQVk1U3ZhTE9wRTBkaDF0Sm5HeEJTSE9RalBzZFZXT0F5MzljQzRnTnRoVU02ZVJ6bWo2eFpwbzlTZU1nWDRsakdhQ1BlYmhDNWlXY0xENDh1ZU15N1BR?oc=5"
+     },
+     {
+      "label": "Niger–Nigeria",
+      "change": "Tense → Normal: ECOWAS and breakaway Sahel states reopen talks on a cooperation deal",
+      "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNLXFNdWttS0xsSjZmWTE1dVpOX3hOM215SzVQdVpUclMzdm5aVURvMy14My12UFVuZlJla2tTaDNxRDMxR3pTYnRYN3pxbmVZdFZvSW1tWDFrMkVKM1BLQTVQTERhWnlSZDUxV2ZxZXQ1d2ZscmRsWG93Uzc3bkdENlhSVXZrdTREOWdxNTFjRjNqV3FDRVd3VFZoeFhVczN0N25mTmpmUGctV2c2WlVzNURVdFQ1Y2hJNkN2S3RmMmNndFF3Tjl3dWxGYkFkRDY5ZFdybDBramI?oc=5"
+     },
+     {
+      "label": "Russia–United States",
+      "change": "Note updated: US suspends sanctions for 60 days to facilitate peace negotiations",
+      "source": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5jTzFvVzZoMldNWlJEVTc2bUg5OEh5dmxlWEJvLVA2LWQxVks4c0pNVzBQVTFmZGhKYTFDZHZ5MGZIT1laODhMMHhNWV9qd3VXajRiU1Z0U2MzaDQ?oc=5"
+     },
+     {
+      "label": "Egypt–Saudi Arabia",
+      "change": "Note updated: Egypt's National Defense Council pledges military support against Houthi attacks",
+      "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOM1ZKbTY3QU1rTWxKeGVfZDMzVll4a2xzRU4zMnFMd0hiMFdFbl83Mm1aVUJsdjYwUzI1aGtTQ0pVeHNoM1FaT3JORlF4WHpub05IVnM1VVc4RXNNMzFDSnRIUDcyNWdNbjNNS0FNUGE0T2FwUmFXR1JaSkFNRUlFejNSRFM3MkRubnpxanVQTU9DZmNCeFNwUHRNZmN0S216MTJ4LVBrRFhmclNKZ2p0ZkpBN1Q2UXZpYmtydTVDaW9US09EdjE0ZGpRN3ZEUGc?oc=5"
      }
     ]
    },
@@ -1596,7 +1616,7 @@
     ]
    }
   ],
-  "summary": "United States resumes missile intelligence sharing with Ukraine, Lithuania accuses Russia of Starlink sabotage, and regional military coordination intensifies around Saudi Arabia and the Strait of Hormuz."
+  "summary": "Updated DR Congo–Belgium ties over diplomatic friction, adjusted Niger–Nigeria relations amid reopened ECOWAS dialogue, and refreshed notes on US-Russia sanctions and Egypt-Saudi defense cooperation."
  },
  "relations": {
   "DNK-USA": {
@@ -2387,9 +2407,9 @@
    "a": "RUS",
    "b": "USA",
    "s": "H",
-   "note": "Relations remain strained over Ukraine, though the United States (US) signs an agreement to purchase Russian diesel.",
-   "updated": "2026-10-10",
-   "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPOWNiWXFjdDVDWlJVSnNhZjNfT0lRcHdldENiRnk5NDVFeGczWXlnRXU2bEhieTl6TWM1Q0dCS0dnVG5fd2dFSXdaY2xRcGVqV1U5U245MHdPWnpsTlc1Y1BQOUdpZ0JoQkNsUUQ1MHlBQ0tNbW9PNzZsVzFoRW4xRG1sNzNZc0FPd0I5LUszVmhmM1JkVW1Sb2VSVlNOTXZaSk9kUjNaOFRPbTY0djhKYmcyUnFlWkh1bzdvcndBZGxOTTZFb1Z6THNVdE4tTGROUFZVUw?oc=5"
+   "note": "The United States (US) suspends sanctions on Russia for 60 days to pursue Ukraine peace negotiations.",
+   "updated": "2026-10-18",
+   "source": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5jTzFvVzZoMldNWlJEVTc2bUg5OEh5dmxlWEJvLVA2LWQxVks4c0pNVzBQVTFmZGhKYTFDZHZ5MGZIT1laODhMMHhNWV9qd3VXajRiU1Z0U2MzaDQ?oc=5"
   },
   "UKR-USA": {
    "a": "UKR",
@@ -2635,9 +2655,9 @@
    "a": "EGY",
    "b": "SAU",
    "s": "F",
-   "note": "Egypt prepares to authorize military support to assist Saudi Arabia against escalating Houthi missile and drone attacks.",
-   "updated": "2026-10-17",
-   "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTkVLVENIYzdsY2JjNmJFcVlaREdiSUdQSUU4T1dNOGdqdWE4ZElqaTZQMzNkQXNJamVqaDd6Nk0wYjgzUEJpZjlSS2RjLTYwaDZGeDVqYU5QOUh4UHJlLTJVR3dQeTBWTWpJZk56QXNNaThZbk5YWEo0S1VaMzdQbWJUTXR4UnpPejlZWnM5VWtIemhIMUhIQUh1cG9EdDc5RUY5eHRSVlR5MndpbXRTMUVrQmtPM09scFdRYms1S1I?oc=5"
+   "note": "Egypt's National Defense Council pledges all necessary military support to Saudi Arabia to counter escalating Houthi attacks.",
+   "updated": "2026-10-18",
+   "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOM1ZKbTY3QU1rTWxKeGVfZDMzVll4a2xzRU4zMnFMd0hiMFdFbl83Mm1aVUJsdjYwUzI1aGtTQ0pVeHNoM1FaT3JORlF4WHpub05IVnM1VVc4RXNNMzFDSnRIUDcyNWdNbjNNS0FNUGE0T2FwUmFXR1JaSkFNRUlFejNSRFM3MkRubnpxanVQTU9DZmNCeFNwUHRNZmN0S216MTJ4LVBrRFhmclNKZ2p0ZkpBN1Q2UXZpYmtydTVDaW9US09EdjE0ZGpRN3ZEUGc?oc=5"
   },
   "ARE-SAU": {
    "a": "ARE",
@@ -2718,6 +2738,22 @@
    "note": "Somaliland reaffirms support for Ethiopia's sea access quest and discusses bilateral defense cooperation amid regional tensions.",
    "updated": "2026-10-18",
    "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSFRDOHlCSXAyY3g5ZUtvZXROd1BLQkRJdllDZDdPU2l4ek5Ndkc4eVh2TksxbEFBZkRoX251bEs2T2JrdEJIM3V0czRVLXh4OGZmejFzOEZCN3VxeHUzZFZtVG1CdldUV2dZYU5JUEo5SjQtcjVhNEZkV3kyVEM3WHNSb0MxUlgtUHNnbkk5dXlHTEZ4X2xpUTl3a0x6Snd0N3pXSnROOEJ2aURxa3FZUGdtU18wR3JVRGlVYkJtS1JHbkxp?oc=5"
+  },
+  "BEL-COD": {
+   "a": "BEL",
+   "b": "COD",
+   "s": "T",
+   "note": "The DR Congo (DRC) freezes contacts with Belgium after Belgian authorities raid the residences of presidential associates.",
+   "updated": "2026-10-18",
+   "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNcndlUTFJbWNTaEphaE8yZURxUlYwSm8zUzM3blFpTl9wRE9NRElhazgtNHN5aVJWZGQ3a0N0aXFnTVpXaDZ6cEt6cEI2TXJRemVtZmlKLVVFcVdyWkZKVE83NEMwdHl6ZEU2b2JJVnVWQjhLLTE5V3dhM2JXZFJJQVk1U3ZhTE9wRTBkaDF0Sm5HeEJTSE9RalBzZFZXT0F5MzljQzRnTnRoVU02ZVJ6bWo2eFpwbzlTZU1nWDRsakdhQ1BlYmhDNWlXY0xENDh1ZU15N1BR?oc=5"
+  },
+  "NER-NGA": {
+   "a": "NER",
+   "b": "NGA",
+   "s": "N",
+   "note": "Nigeria leads ECOWAS (Economic Community of West African States) talks with Niger to negotiate a new regional cooperation agreement.",
+   "updated": "2026-10-18",
+   "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNLXFNdWttS0xsSjZmWTE1dVpOX3hOM215SzVQdVpUclMzdm5aVURvMy14My12UFVuZlJla2tTaDNxRDMxR3pTYnRYN3pxbmVZdFZvSW1tWDFrMkVKM1BLQTVQTERhWnlSZDUxV2ZxZXQ1d2ZscmRsWG93Uzc3bkdENlhSVXZrdTREOWdxNTFjRjNqV3FDRVd3VFZoeFhVczN0N25mTmpmUGctV2c2WlVzNURVdFQ1Y2hJNkN2S3RmMmNndFF3Tjl3dWxGYkFkRDY5ZFdybDBramI?oc=5"
   }
  },
  "threads": {
@@ -3233,9 +3269,9 @@
    "lastelec": "Presidential, May 2024"
   },
   "CZE": {
-   "lastelec": "Senate, October 2026, STAN and ODS",
-   "updated": "2026-10-17",
-   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWUVkcXJkaTJFVUxqZW5BLXJLd1FVTmF5aWNYekIwVmpzRW9fcjZjMDJDWW1xSW54SVhMRUNBVVZhU0VVV25rVkNfd0hSM1FrUzJJdTVnYUtpbE13QVRsU0M4SDdlaXd5U0FuQUlyQ3VUZWNSbWdXdHVvRTBTc2tRc3FodjFBV3lJYTlfanNFRnBxWTJPdUdGMWF3?oc=5"
+   "lastelec": "Senate, October 2026",
+   "updated": "2026-10-18",
+   "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTFhmT1NGRTRCTkVtTW9sQmlBVllYR0lseWp2bVl5NkRDVjhGQ3FYMFJSVXp0N2tvMmxWeWs1X0loV0VCVUNzZFRaN2N2RlZqa1Y2NlVpVVRFZlVNb0lXWmVXUUsxQWtqS1hGR0lHWkVNcXVCU1FwcGRXc0kxLTJ2SG1mTEUzR3dXVUhQS0tqZGNRd2V6ODl6ZDhIWDl3cUJVSGpQUXNMTTQ3Rld4dFV0M3JJcFY?oc=5"
   },
   "ISR": {
    "nextelec": "parliamentary election 2026",
