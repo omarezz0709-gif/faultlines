@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-18T05:23:48Z",
+  "lastRun": "2026-10-18T10:24:49Z",
   "log": [
    {
     "date": "2026-10-18",
@@ -26,8 +26,23 @@
       "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcEhpeXZhQ20xWmZjb3p1eUJRVEFVSi1QbWJnUFZpRE05QmJUd0hhMU9OQmlqMmxPemhUTGN3ZmF5YlU0LUxkaF85M2JEVEpRT1FaMVAzaV8xNTBNeGk1YUlIRVNzRFNQVkpfY3FwWllQeWU3Mmk0NEpVaV90Tkp2ZnRzQ2xaZzQ2OGRLbUp1dUVNenlPUFVuQUVGRUVKSUZRbDVVR3hjZElfSFNONWhieWF5S0_SAboBQVVfeXFMT2UzSjBRSnAybzdRcU9NRWpyV0V5SU4xT1g2LWlTNWlraWJDeFBMSDlSbGVNc093MmJCOTROSjQ5bE50Uk1WSVVMNDZGN2VRWVkyRjdFdmV3QzliaGtBci1FcjRTbll0UmZQZmJTT0tXR05oVGdjRlU3Z1FvcTNUWXVPY0drS1BvamFZdWkyU0w0QU5oSjAwTnFBU0hNc2Z6dC1yUk1ma0dDNGpZX2RuVmxEZzhrUUI4bHhn?oc=5"
      },
      {
+      "label": "China–Japan",
+      "change": "Note updated: China condemns Prime Minister Takaichi's ritual offering to the Yasukuni Shrine",
+      "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxORVdVa2sxTFV3WktjN0F4TkQwdmpWdWtIWkMxTUJuajRiRXFNSXBDYndVdEl5czlTblNYY0VfWnBCbDNSSkNCZGY5YXNGY3YtMFdya09Ob0IyWnpRVDlYN1YtQjIxN1F6NXNfT3dZd21zYkpTTGhsQm50eUpIMkVwSnEyNEVObEhrWFBHYmMwa2VIT0U4QjNTU01UbmRRcU13VzZQM2l6QnpwSHdBbEE2U3lPZEJNa2dlQ3ZNUHBnX0hMc1hsV09oa2xQYTMwQ0d5Z1Q3MNIB1AFBVV95cUxNTFpXMmVFbDQwcjUtM0loMzJSb0d3MnV5YzE4VzAxcTQxbXJRNDZyYi1JSm44b091VnBSWEdXSDdnWEsyYmluTFp2c3AyU0NGaUNvLVdBd2toSTkxNEpRYzZXWmpQelJSUVpRX005X05BTm9zLS1WeUFYRHVYUExtZHBEMUQyTGx4N1htUHVIZjlNSmV3cTJ5YmFKZ01SS2hYOG0yeEVwYkowTktmV290VWl6ZDFvdF9ETnM1QmcxTGNtMEZjcndnVmVQUEhCV2RYZmh3aQ?oc=5"
+     },
+     {
+      "label": "Belarus–Ukraine",
+      "change": "Note updated: Ukraine warns Belarus may deploy Russian ballistic missiles against western regions",
+      "source": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPVHd6MXNWckpKYlRmWmdBVTY4X2Nmc1g1WTFsbTkwQlFkdnZkTGNSazlveGYxQzFXMFJsblJNS3AtcXBUTkhRb3dJV0hpODBoejBOWE1Hc3N0RUMwckZQZ1lvd2ZlU1B4VWRQNzhsNTBVVTRvMVVMWndoeVA1eldyaHFqZkxCVDZqUzV6WEVKUUVCOU81WjFmdFZGQ01JYUNlZVBPZHhDMXFtZDFjbE43QVFYN2Zld1NKZDhqVUM1OE9scnpsaDJPb0lGOVE3LXlVbTF5YUlER0ZOVHczVzYyUl9HX0pLTDQ?oc=5"
+     },
+     {
+      "label": "Ethiopia–Somaliland",
+      "change": "Note updated: Somaliland backs Ethiopia on sea access and holds bilateral defense discussions",
+      "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSFRDOHlCSXAyY3g5ZUtvZXROd1BLQkRJdllDZDdPU2l4ek5Ndkc4eVh2TksxbEFBZkRoX251bEs2T2JrdEJIM3V0czRVLXh4OGZmejFzOEZCN3VxeHUzZFZtVG1CdldUV2dZYU5JUEo5SjQtcjVhNEZkV3kyVEM3WHNSb0MxUlgtUHNnbkk5dXlHTEZ4X2xpUTl3a0x6Snd0N3pXSnROOEJ2aURxa3FZUGdtU18wR3JVRGlVYkJtS1JHbkxp?oc=5"
+     },
+     {
       "label": "Grenada",
-      "change": "General election confirmed for 5 November 2026",
+      "change": "Politics updated: general election scheduled for November 5, 2026",
       "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWWJzLVhYTGJobjVoa1BSMXBPY1VMc29GMC1BdlVrUWpQSXJiUUxUQzZTNy1oQ1EtSDdlVllPekhSaXNRX0VZWl9hWkp4U3BOQUhvTVNnQk9aXzJIMjFOdWt4c09IY0lZNFZDdWV0czFwSlBHT2d1eVNpSmF4SlpwazYxSU1PNUlLWlB5bzlkSWpJdDlPZGlNUC15cGotNHplNFNjaTNlWG03OGVudjBYZA?oc=5"
      }
     ]
@@ -1571,7 +1586,7 @@
     ]
    }
   ],
-  "summary": "Updated the Iran-Pakistan relation to Tense after border trade was halted, refreshed notes on Afghan-Pakistani Durand Line clashes and US-India tariff pauses, registered Grenada's November 2026 election, and updated Strait of Hormuz attacks."
+  "summary": "Updated China–Japan, Belarus–Ukraine, and Ethiopia–Somaliland notes following recent diplomatic and security statements, and recorded Grenada's upcoming election."
  },
  "relations": {
   "DNK-USA": {
@@ -2669,6 +2684,30 @@
    "note": "The United States (US) pauses planned tariffs and waives Russia sanctions impacting India, calling New Delhi an important ally.",
    "updated": "2026-10-18",
    "source": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNcUZFaERHNm4xdGd0Nkc4eDV1cThCRG8yUTJMTE94ZVpJbHllR3hMVE9IaVdjcTdNWktlR2dMN2x0d3UxUHhabWljbHhIUkZxUVczaVBDZjl1Uy1UQWs5dzRwOUFCYmxnN2ZNLVVoYXhNYXhvTVN5TDdQNHFPR2kyMk9yV3RMWXVza0xBZ0hxQ1k0ZzJia3BwRG1idkhIZDRIME5ycWVCUUpVbmlVaTdOZmNkWjNPVTZvcWM4bTVOSEFLdnVFU0lOcjQzSjhDZnExd25wMUMxemxFVDJROWRYTGpWU3Z2RGd0X1BwOXRtUzlMcUlMcVh0cQ?oc=5"
+  },
+  "CHN-JPN": {
+   "a": "CHN",
+   "b": "JPN",
+   "s": "T",
+   "note": "Tensions persist as China condemns Japanese Prime Minister Sanae Takaichi for sending a ritual offering to the Yasukuni Shrine.",
+   "updated": "2026-10-18",
+   "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxORVdVa2sxTFV3WktjN0F4TkQwdmpWdWtIWkMxTUJuajRiRXFNSXBDYndVdEl5czlTblNYY0VfWnBCbDNSSkNCZGY5YXNGY3YtMFdya09Ob0IyWnpRVDlYN1YtQjIxN1F6NXNfT3dZd21zYkpTTGhsQm50eUpIMkVwSnEyNEVObEhrWFBHYmMwa2VIT0U4QjNTU01UbmRRcU13VzZQM2l6QnpwSHdBbEE2U3lPZEJNa2dlQ3ZNUHBnX0hMc1hsV09oa2xQYTMwQ0d5Z1Q3MNIB1AFBVV95cUxNTFpXMmVFbDQwcjUtM0loMzJSb0d3MnV5YzE4VzAxcTQxbXJRNDZyYi1JSm44b091VnBSWEdXSDdnWEsyYmluTFp2c3AyU0NGaUNvLVdBd2toSTkxNEpRYzZXWmpQelJSUVpRX005X05BTm9zLS1WeUFYRHVYUExtZHBEMUQyTGx4N1htUHVIZjlNSmV3cTJ5YmFKZ01SS2hYOG0yeEVwYkowTktmV290VWl6ZDFvdF9ETnM1QmcxTGNtMEZjcndnVmVQUEhCV2RYZmh3aQ?oc=5"
+  },
+  "BLR-UKR": {
+   "a": "BLR",
+   "b": "UKR",
+   "s": "H",
+   "note": "Hostile relations persist as Ukraine warns Belarus may host Russian ballistic missiles for strikes targeting its western regions.",
+   "updated": "2026-10-18",
+   "source": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPVHd6MXNWckpKYlRmWmdBVTY4X2Nmc1g1WTFsbTkwQlFkdnZkTGNSazlveGYxQzFXMFJsblJNS3AtcXBUTkhRb3dJV0hpODBoejBOWE1Hc3N0RUMwckZQZ1lvd2ZlU1B4VWRQNzhsNTBVVTRvMVVMWndoeVA1eldyaHFqZkxCVDZqUzV6WEVKUUVCOU81WjFmdFZGQ01JYUNlZVBPZHhDMXFtZDFjbE43QVFYN2Zld1NKZDhqVUM1OE9scnpsaDJPb0lGOVE3LXlVbTF5YUlER0ZOVHczVzYyUl9HX0pLTDQ?oc=5"
+  },
+  "ETH-SOL": {
+   "a": "ETH",
+   "b": "SOL",
+   "s": "F",
+   "note": "Somaliland reaffirms support for Ethiopia's sea access quest and discusses bilateral defense cooperation amid regional tensions.",
+   "updated": "2026-10-18",
+   "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSFRDOHlCSXAyY3g5ZUtvZXROd1BLQkRJdllDZDdPU2l4ek5Ndkc4eVh2TksxbEFBZkRoX251bEs2T2JrdEJIM3V0czRVLXh4OGZmejFzOEZCN3VxeHUzZFZtVG1CdldUV2dZYU5JUEo5SjQtcjVhNEZkV3kyVEM3WHNSb0MxUlgtUHNnbkk5dXlHTEZ4X2xpUTl3a0x6Snd0N3pXSnROOEJ2aURxa3FZUGdtU18wR3JVRGlVYkJtS1JHbkxp?oc=5"
   }
  },
  "threads": {
@@ -3131,7 +3170,7 @@
    "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdDlaQXVYbmIyYWdIbmtFclNfTnVkM29oRGdoR2tIcTVlZ1g2alZBZU1NNkpTaG81M0RQNDBfenFVZkxGZXpGSXdrV1A3NlZteEY5NE5WS1NQMGt2X1dTb1lmSjcydnotblJZa3dtd1F5MlVMUjQ5bnpzZXVrUDFCUW9VQmNrMXFPNVdhRWk3NzV2VzFuNlA0TVNHMzU4eDBkM0ZTYW01VGZONWN2bG9qZVlpZjRYczFBek5mZVhZZ2pSNEp4OS1hWHNSZDFZdFY2MFNmY1ZR?oc=5"
   },
   "GRD": {
-   "nextelec": "General election, 5 November 2026",
+   "nextelec": "general election, November 5, 2026",
    "updated": "2026-10-18",
    "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWWJzLVhYTGJobjVoa1BSMXBPY1VMc29GMC1BdlVrUWpQSXJiUUxUQzZTNy1oQ1EtSDdlVllPekhSaXNRX0VZWl9hWkp4U3BOQUhvTVNnQk9aXzJIMjFOdWt4c09IY0lZNFZDdWV0czFwSlBHT2d1eVNpSmF4SlpwazYxSU1PNUlLWlB5bzlkSWpJdDlPZGlNUC15cGotNHplNFNjaTNlWG03OGVudjBYZA?oc=5"
   },
