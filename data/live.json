@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-19T05:29:56Z",
+  "lastRun": "2026-10-19T10:33:08Z",
   "log": [
    {
     "date": "2026-10-19",
@@ -19,6 +19,36 @@
       "label": "Ukraine–United States",
       "change": "Tense note updated: Trump rebukes Ukrainian deep strikes as Zelenskyy rejects capitulation push",
       "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdVpzZGxhQzRyZnpMQk5qVVpVdWJWd2tGbWp2UFk3b21KODhCMlpieUxGUEFFRTEwNmVacldMcG9zRUZEbDE2dWRRY2I1cndHZlFBVkVqSDdnNXJBaktWbGtQcVRmY2QxajQ3UDZ3S3NfRDBQSUJ3TGtUQUZWa1IyemJ1ejhHRy1N?oc=5"
+     },
+     {
+      "label": "China–Philippines",
+      "change": "Note updated: Manila summons Chinese envoy over threatening remarks",
+      "source": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNV1AzYlBYYVI0SUFFS2JYbVZQc3g2b3ZJaG5IQ0hhUi1BSkQ5NnREZWZlZklTVkF1RUNZNmt2T3NnckhadmU1X3FRSXpWTHJ5c2QtZEktOGNWZnhtQ0FZR0YwbTYxTzFZZ0Z0VUg0THNCR1U4MjY1WncyUHVUOGtpSXpvcGJvNGRxdVM5MzZONnQ3a2UzMlo3VjVldlRGTW1Ba3pOQ3FfLWZPekRmUWFrTkR1YThjVHY0c2dYWm1uR0Zsd2Fkbk5Lb3FBc1JCMW9rVE1URS1vekFrQ3hnOEY4R1NGb1pBTWFnUzN6UzdqbXgtNUM0VVJoMXNnYVp2d21HZkE?oc=5"
+     },
+     {
+      "label": "Cambodia–Thailand",
+      "change": "Note updated: trust-building measures agreed in maritime border talks",
+      "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTFpBM0lPYXA2eWFrRUhJVWpQTEFEbUppSmt1RENVLW85WDVKZ1VzMFd0UDUtQXYzVHEtSTl2TmdraWhrdUVDMk1NOWkyVzR2V0lOQTV5TWpXbTR3a1VxMVpTbHRuSHVTQ3UxWUlLWkotSHJGRS1wMDlfME4zVkZGVzhMRG96aC03WFpnVXNQQmtXM0lWT19QVEJPZk5YcDdjR09fU096ZGk?oc=5"
+     },
+     {
+      "label": "North Korea–South Korea",
+      "change": "Note updated: Pyongyang threatens loudspeaker broadcasts and strike asset deployment",
+      "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0xSnhIZDhMLTQyU1dWWXBBeFJYMDh0bW9DclhJT0lkNTNDUVhscEpkZTh0bG5oZkRlVVBoTkVabXpNaUR3NlloLXliVzNlcFBGVkdRMlZoRGpwWnd2WEx6eHYyY3A?oc=5"
+     },
+     {
+      "label": "Baloch insurgency",
+      "change": "Thread updated: BLA claims deadly IED strike on army convoy in Gwadar",
+      "source": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZF9vZnZYbGRtSFBIcWdKN2lCbmRsajdkRWdnN2ZablBCMnV5WUZickhWWWhkck1uNFJBZkx1bFhQZDV4Tzh1cFo4Wm91eFp5VG5JS1hpSF9jZU82UkJfWkZpaE9MNHlBUlFDb1VyT0NDcW9OQTNVTXpWc0haeXJ0c3lLck95SmxZak8yb0dPOG0ybzllR2d4LXhtUW44VGItaHYtS0dJTUFhMW54TnhfM2ZoczNuVXVCV2ZpZ1ozblJFdVI2RWVZRi1NaWJBWFkwSG5J0gHYAUFVX3lxTFBmU0gyUUIxeWFBWDd1QWtybWloMmU0LWhGLXFWY0xQWTlMUzY1WTh6N2xpRTB4eU83THVDMXpNTERpSmRvd2p4STlYLUppWDhzd1huZTRRY090T0xQNEpLdXRFSmJpT3gwREJySjFnV28wM0VwRUFzbUxaYVJZWVZkUVE0bmZhY1lyaEpRSE1SVlFnVnktODBlSzlhbnR4ZS1STV9kMEhzM3czU0kxTlFXRnM0UkJlM3ZsYXhwT0t6NTFDb1ZrQjN0d0QzRzRWVnBjSXdEX3E0Vg?oc=5"
+     },
+     {
+      "label": "Strait of Hormuz",
+      "change": "Location updated: record tanker attacks reported as Iran proposes 7-day talks",
+      "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOYUVkZE15VE5jYTQ3YjVDbF9kT2lUaVlWb1VIWnNyUkhUZkJNN1BMWFBPY05oTVowRnNOSjRoaW96ZXpXRnA4T3RHSkVqRnZqVnF0WDRBVVplTHA3MHBZeVBvRm9QNVh0QWg0a3VSVGNaWk1kMUVhTUluQWNoWkJDdWVOMTVGc1RwdEtURUVRTy1SbWtYclB2MTZ3ZzdkVU1wMHZDVU42VkxTTzRncFJVcC1aQnpIOHPSAbcBQVVfeXFMTmFFZGRNeVROY2E0N2I1Q2xfZE9pVGlZVm9VSFpzclJIVGZCTTdQTFhQT2NOaE1aMEZzTko0aGlvemV6V0ZwOE90R0pFakZ2alZxdFg0QVVaZUxwNzBwWXlQb0ZvUDVYdEFoNGt1UlRjWlpNZDFFYU1JbkFjaFpCQ3VlTjE1RnNUcHRLVEVFUU8tUm1rWHJQdjE2d2c3ZFVNcDB2Q1VONlZMU080Z3BSVXAtWkJ6SDhz?oc=5"
+     },
+     {
+      "label": "Grenada",
+      "change": "General election scheduled for 5 November 2026",
+      "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPSTFvRlloTllOc3ljX2FTaEhTN1l4MTU4MnNOak9qMUJ0dld5MkU0bnplWHoydkRGazlkUjVKenZTS2hra2VjZWJfTzZXTjMzUXlfRE9iWC1LX08xS0ljQzFTMFBCNXBHXzVXd003VjJsRjY3RVlYRDNudHB5ekd4VUtuODNGSmE4MzAzSkFDMlNDY2RnVFZBOTdn?oc=5"
      }
     ]
    },
@@ -1636,7 +1666,7 @@
     ]
    }
   ],
-  "summary": "Updated US-Ukraine and US-South Korea alliance dynamics amid sharp diplomatic friction, established Vietnam-Switzerland partnership post-EFTA trade pact, and recorded election schedules for Brazil, Bulgaria, the Czech Republic, and Israel."
+  "summary": "Updated China-Philippines and Cambodia-Thailand diplomatic notes, refreshed Korean border tensions, logged BLA Gwadar convoy strike, tracked Strait of Hormuz tanker attacks, and recorded Grenada's upcoming election."
  },
  "relations": {
   "DNK-USA": {
@@ -1971,9 +2001,9 @@
    "a": "KOR",
    "b": "PRK",
    "s": "W",
-   "note": "Hostilities intensify as North Korea tests submarine-launched cruise missiles amid heightened border friction.",
-   "updated": "2026-10-15",
-   "source": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQaFNaRnJhenlNaF9Ga3RlQXMwZUl6LVhxaE5Ia2toV3hxYUd1cEw2WGpqN1dHY2V2V0ZneGFnQnF1cHNERTJDSVFKQWd3eldxYUlJU2Z4dGhoRkJqeHdZSmpRdG44MktLdWYwQmgyeU1zdzFJamlITFZxWjlIQ0Zla2pnY1hjTFN6MDNndE5rc2VjalJncWpEQVBPU3h2TnhfczAwOUk1NFlETkE0cFkyeHloLXNCcHkzQm9zMmNIdW1uS1ZqU0Q3WWRkNUxRci0taTYyQ3VOMlRBQdIB2gFBVV95cUxQaFNaRnJhenlNaF9Ga3RlQXMwZUl6LVhxaE5Ia2toV3hxYUd1cEw2WGpqN1dHY2V2V0ZneGFnQnF1cHNERTJDSVFKQWd3eldxYUlJU2Z4dGhoRkJqeHdZSmpRdG44MktLdWYwQmgyeU1zdzFJamlITFZxWjlIQ0Zla2pnY1hjTFN6MDNndE5rc2VjalJncWpEQVBPU3h2TnhfczAwOUk1NFlETkE0cFkyeHloLXNCcHkzQm9zMmNIdW1uS1ZqU0Q3WWRkNUxRci0taTYyQ3VOMlRBQQ?oc=5"
+   "note": "Tensions mount along the border as North Korea threatens to resume loudspeaker broadcasts and deploy additional strike assets.",
+   "updated": "2026-10-19",
+   "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0xSnhIZDhMLTQyU1dWWXBBeFJYMDh0bW9DclhJT0lkNTNDUVhscEpkZTh0bG5oZkRlVVBoTkVabXpNaUR3NlloLXliVzNlcFBGVkdRMlZoRGpwWnd2WEx6eHYyY3A?oc=5"
   },
   "ESP-ISR": {
    "a": "ESP",
@@ -2782,6 +2812,22 @@
    "note": "Switzerland and Vietnam deepen economic ties under a partnership bolstered by the Vietnam-EFTA (European Free Trade Association) pact.",
    "updated": "2026-10-19",
    "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVWVjSElyTW1HM2VxR0hPQV9KN3dORllzTGZmXzNnQ1RpTzFpYmtPV2w5aE95MWdFbFkwOWVTbHNpSHlzelRYaDVWQTU4LW9PdU9tQlJSaXcwc2RxbnRWd1NQNXNzZVl1RU5vTmtmeGl2XzM4Z2dQSHptaDZqdkRRU29idURKa3U3WDRqa3EycU42enVzRDcxTkZXaHJnalJZYTNKTTI3ZXN2dWN4RmVfMEZqMFZpQmZTVC1mSTdxNA?oc=5"
+  },
+  "CHN-PHL": {
+   "a": "CHN",
+   "b": "PHL",
+   "s": "T",
+   "note": "Manila summons China's envoy to protest remarks perceived as threats of military force amid ongoing South China Sea tensions.",
+   "updated": "2026-10-19",
+   "source": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNV1AzYlBYYVI0SUFFS2JYbVZQc3g2b3ZJaG5IQ0hhUi1BSkQ5NnREZWZlZklTVkF1RUNZNmt2T3NnckhadmU1X3FRSXpWTHJ5c2QtZEktOGNWZnhtQ0FZR0YwbTYxTzFZZ0Z0VUg0THNCR1U4MjY1WncyUHVUOGtpSXpvcGJvNGRxdVM5MzZONnQ3a2UzMlo3VjVldlRGTW1Ba3pOQ3FfLWZPekRmUWFrTkR1YThjVHY0c2dYWm1uR0Zsd2Fkbk5Lb3FBc1JCMW9rVE1URS1vekFrQ3hnOEY4R1NGb1pBTWFnUzN6UzdqbXgtNUM0VVJoMXNnYVp2d21HZkE?oc=5"
+  },
+  "KHM-THA": {
+   "a": "KHM",
+   "b": "THA",
+   "s": "T",
+   "note": "Cambodia and Thailand agree on trust-building measures at The Hague to manage overlapping maritime boundary disputes.",
+   "updated": "2026-10-19",
+   "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTFpBM0lPYXA2eWFrRUhJVWpQTEFEbUppSmt1RENVLW85WDVKZ1VzMFd0UDUtQXYzVHEtSTl2TmdraWhrdUVDMk1NOWkyVzR2V0lOQTV5TWpXbTR3a1VxMVpTbHRuSHVTQ3UxWUlLWkotSHJGRS1wMDlfME4zVkZGVzhMRG96aC03WFpnVXNQQmtXM0lWT19QVEJPZk5YcDdjR09fU096ZGk?oc=5"
   }
  },
  "threads": {
@@ -2997,6 +3043,19 @@
    ],
    "updated": "2026-10-15",
    "source": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQWTNQOFBrc2txLUdiLWdRSEM1QU5FZi1iRWxVeVZIeGJvemt4bDVTNk5PeUI2TXNhQlRIeHowcURhQ2V5d3psU25JdGNsdXVDWFBDZ2M3eDFNcmhGRXBKdlAtMERVWHJIcjlZVFZMVE5WRVljamhNZDdsRDBXSkZ5SHNkb294bTFaSDl2MER5S3p6NVpXNFhGd3FkZUplUTJRemtJM3Q0NnYzVllfQ2VzOXdoZnNSU1ZnaVJSa0dRdjVmQks3djU2ek45WDZkWFNTUGtHUFJfXzZWUkc3SXpaR1Y1TFdCS1drRVdIdDlDQW9jM2hJc0w1VTJyTm80VXIwT0NYLW9HUXFUdFk0Skw0N3R3TjJpU2Vq?oc=5"
+  },
+  "baloch": {
+   "t": "security",
+   "n": "Baloch insurgency",
+   "d": "BLA (Balochistan Liberation Army) insurgents strike Pakistani military convoys and CPEC (China-Pakistan Economic Corridor) assets in Gwadar, provoking security crackdowns.",
+   "c": [
+    "PAK",
+    "IRN",
+    "AFG",
+    "CHN"
+   ],
+   "updated": "2026-10-19",
+   "source": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZF9vZnZYbGRtSFBIcWdKN2lCbmRsajdkRWdnN2ZablBCMnV5WUZickhWWWhkck1uNFJBZkx1bFhQZDV4Tzh1cFo4Wm91eFp5VG5JS1hpSF9jZU82UkJfWkZpaE9MNHlBUlFDb1VyT0NDcW9OQTNVTXpWc0haeXJ0c3lLck95SmxZak8yb0dPOG0ybzllR2d4LXhtUW44VGItaHYtS0dJTUFhMW54TnhfM2ZoczNuVXVCV2ZpZ1ozblJFdVI2RWVZRi1NaWJBWFkwSG5J0gHYAUFVX3lxTFBmU0gyUUIxeWFBWDd1QWtybWloMmU0LWhGLXFWY0xQWTlMUzY1WTh6N2xpRTB4eU83THVDMXpNTERpSmRvd2p4STlYLUppWDhzd1huZTRRY090T0xQNEpLdXRFSmJpT3gwREJySjFnV28wM0VwRUFzbUxaYVJZWVZkUVE0bmZhY1lyaEpRSE1SVlFnVnktODBlSzlhbnR4ZS1STV9kMEhzM3czU0kxTlFXRnM0UkJlM3ZsYXhwT0t6NTFDb1ZrQjN0d0QzRzRWVnBjSXdEX3E0Vg?oc=5"
   }
  },
  "pois": {
@@ -3030,11 +3089,11 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "Iran strikes vessels and sets regional oil terminals ablaze while demanding a deal with the United States (US), as both claim control of the waterway.",
+   "d": "Tanker attacks reach record highs with multiple ships damaged or sunk, while Iran proposes seven-day talks with the US to reopen the waterway.",
    "n": "Strait of Hormuz",
-   "s": "US and Iran dispute control amid tanker strikes",
-   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcUxxNHdOQmgxVGhJOTE3NDVyR3J0RUVSQkVDVjNSZFNnbnN0eU02ZHNOcUtvSVBuVmgtS0t0aGxWd05DNllrSjFRYnNMOWtJRmJJNG1hRmh6eXJkamNEek1sYUJKU2d4bVhuVEcyMXF4Y2hVUkNiSWtnOFFNZTNpTkN1MFU0Skxnb3BlTVgwODVoUzVZQVhudnJXRk9NZWpLd1ZuT3NIZmg0VE5iOHFKdE1Nek9CMWvSAbwBQVVfeXFMUFozLVllVm1zdlA2QWo0aTFOck9ZNEozcHM4RzRmeXFSTGJodmlBWkJMVlpBUHpuN2ZVVlVVLUZ4UFFYMExVeWdpVFdVV2tKUG40VV9UVVgyOWppeFU2cWxWOHdBV1ZVVko1Y2N6eW1jdERsZlV4QnpEaHVhRVFpWTVFM004dFdQbzFVVG1QM0wyRVhhcTJ6NkY4aFZxYnlmZGFMaW5ib0hKdG1KSDNEaGRTQ1VHZ2s4Xy1Oekg?oc=5",
-   "updated": "2026-10-18",
+   "s": "Record tanker strikes as Iran floats 7-day talks",
+   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOYUVkZE15VE5jYTQ3YjVDbF9kT2lUaVlWb1VIWnNyUkhUZkJNN1BMWFBPY05oTVowRnNOSjRoaW96ZXpXRnA4T3RHSkVqRnZqVnF0WDRBVVplTHA3MHBZeVBvRm9QNVh0QWg0a3VSVGNaWk1kMUVhTUluQWNoWkJDdWVOMTVGc1RwdEtURUVRTy1SbWtYclB2MTZ3ZzdkVU1wMHZDVU42VkxTTzRncFJVcC1aQnpIOHPSAbcBQVVfeXFMTmFFZGRNeVROY2E0N2I1Q2xfZE9pVGlZVm9VSFpzclJIVGZCTTdQTFhQT2NOaE1aMEZzTko0aGlvemV6V0ZwOE90R0pFakZ2alZxdFg0QVVaZUxwNzBwWXlQb0ZvUDVYdEFoNGt1UlRjWlpNZDFFYU1JbkFjaFpCQ3VlTjE1RnNUcHRLVEVFUU8tUm1rWHJQdjE2d2c3ZFVNcDB2Q1VONlZMU080Z3BSVXAtWkJ6SDhz?oc=5",
+   "updated": "2026-10-19",
    "t": "strait",
    "lat": 26.57,
    "lng": 56.25,
@@ -3244,9 +3303,9 @@
    "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdDlaQXVYbmIyYWdIbmtFclNfTnVkM29oRGdoR2tIcTVlZ1g2alZBZU1NNkpTaG81M0RQNDBfenFVZkxGZXpGSXdrV1A3NlZteEY5NE5WS1NQMGt2X1dTb1lmSjcydnotblJZa3dtd1F5MlVMUjQ5bnpzZXVrUDFCUW9VQmNrMXFPNVdhRWk3NzV2VzFuNlA0TVNHMzU4eDBkM0ZTYW01VGZONWN2bG9qZVlpZjRYczFBek5mZVhZZ2pSNEp4OS1hWHNSZDFZdFY2MFNmY1ZR?oc=5"
   },
   "GRD": {
-   "nextelec": "general election, November 5, 2026",
-   "updated": "2026-10-18",
-   "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWWJzLVhYTGJobjVoa1BSMXBPY1VMc29GMC1BdlVrUWpQSXJiUUxUQzZTNy1oQ1EtSDdlVllPekhSaXNRX0VZWl9hWkp4U3BOQUhvTVNnQk9aXzJIMjFOdWt4c09IY0lZNFZDdWV0czFwSlBHT2d1eVNpSmF4SlpwazYxSU1PNUlLWlB5bzlkSWpJdDlPZGlNUC15cGotNHplNFNjaTNlWG03OGVudjBYZA?oc=5"
+   "nextelec": "general election 5 November 2026",
+   "updated": "2026-10-19",
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPSTFvRlloTllOc3ljX2FTaEhTN1l4MTU4MnNOak9qMUJ0dld5MkU0bnplWHoydkRGazlkUjVKenZTS2hra2VjZWJfTzZXTjMzUXlfRE9iWC1LX08xS0ljQzFTMFBCNXBHXzVXd003VjJsRjY3RVlYRDNudHB5ekd4VUtuODNGSmE4MzAzSkFDMlNDY2RnVFZBOTdn?oc=5"
   },
   "LVA": {
    "lastelec": "parliamentary, October 2026",
