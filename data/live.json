@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-19T10:33:08Z",
+  "lastRun": "2026-10-19T16:21:56Z",
   "log": [
    {
     "date": "2026-10-19",
@@ -14,11 +14,6 @@
       "label": "South Korea–United States",
       "change": "Ally note updated: sovereignty dispute sparked by USFK commander remarks on the DMZ",
       "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBTam1jVEM2TXhrVmpKNk1zaDkxd1lIM0pCUjhXeWduRm5xY1dhMlFQZm15RDh5d1Q2VzBVQ3pxMm5BenEwVG9nLUlXTjhVYkJ1MnpRbDVYUm8tSHYxeW9BTl9wNDRjenBILW9FWkVn?oc=5"
-     },
-     {
-      "label": "Ukraine–United States",
-      "change": "Tense note updated: Trump rebukes Ukrainian deep strikes as Zelenskyy rejects capitulation push",
-      "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdVpzZGxhQzRyZnpMQk5qVVpVdWJWd2tGbWp2UFk3b21KODhCMlpieUxGUEFFRTEwNmVacldMcG9zRUZEbDE2dWRRY2I1cndHZlFBVkVqSDdnNXJBaktWbGtQcVRmY2QxajQ3UDZ3S3NfRDBQSUJ3TGtUQUZWa1IyemJ1ejhHRy1N?oc=5"
      },
      {
       "label": "China–Philippines",
@@ -49,6 +44,21 @@
       "label": "Grenada",
       "change": "General election scheduled for 5 November 2026",
       "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPSTFvRlloTllOc3ljX2FTaEhTN1l4MTU4MnNOak9qMUJ0dld5MkU0bnplWHoydkRGazlkUjVKenZTS2hra2VjZWJfTzZXTjMzUXlfRE9iWC1LX08xS0ljQzFTMFBCNXBHXzVXd003VjJsRjY3RVlYRDNudHB5ekd4VUtuODNGSmE4MzAzSkFDMlNDY2RnVFZBOTdn?oc=5"
+     },
+     {
+      "label": "United States–Russia",
+      "change": "Adversary → Hostile: 60-day sanctions waiver sparks friction",
+      "source": "https://news.google.com/rss/articles/CBMic0FVX3lxTE53QzBwWmRMY0dQaFpPMV95c1NENDVhZ3Atd0xtTUQ5ekg5T2JwYVBJMmJaXzRDY3EzazlscnVGb3FzT1ZBNUVGYVNzdjNqRXNGS3NsbEhWNG4tVndOcXZXLXdiZlh1dklUOWxxZ2RGdW9NY2s?oc=5"
+     },
+     {
+      "label": "South Korea–North Korea",
+      "change": "Hostile → Armed conflict: Border threats and loudspeaker plans",
+      "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQY0lVSDdlczdaNmZncnpJM2t4QWt3VWl2WktIWTRMZHgxbWJHVU1BZjFKSkU2QjVaOTNJenQwYjJoNHFSZF90bHhhZHlLenF0TGZXc19vMzZZWE5RRTlTWDd3N21iOFAwYUZKM0dqd0JGSXc4TndWMElxYlA3ZXRzVnBHUzI2VVVRaTl3R0ZCN29wSWlwN21XY2lPYXBON0RDOTV3b0x3?oc=5"
+     },
+     {
+      "label": "Ukraine–United States",
+      "change": "Partner → Tense: Clashes over deep strikes and sanctions pause",
+      "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdVpzZGxhQzRyZnpMQk5qVVpVdWJWd2tGbWp2UFk3b21KODhCMlpieUxGUEFFRTEwNmVacldMcG9zRUZEbDE2dWRRY2I1cndHZlFBVkVqSDdnNXJBaktWbGtQcVRmY2QxajQ3UDZ3S3NfRDBQSUJ3TGtUQUZWa1IyemJ1ejhHRy1N?oc=5"
      }
     ]
    },
@@ -1666,7 +1676,7 @@
     ]
    }
   ],
-  "summary": "Updated China-Philippines and Cambodia-Thailand diplomatic notes, refreshed Korean border tensions, logged BLA Gwadar convoy strike, tracked Strait of Hormuz tanker attacks, and recorded Grenada's upcoming election."
+  "summary": "France faces nationwide unrest and European protests, Trump halts Russia sanctions prompting European backlash and Ukrainian strikes, Houthi missile attacks kill 53 in Yemen, and regional diplomacy surges across Central Asia and the Gulf."
  },
  "relations": {
   "DNK-USA": {
@@ -2001,9 +2011,9 @@
    "a": "KOR",
    "b": "PRK",
    "s": "W",
-   "note": "Tensions mount along the border as North Korea threatens to resume loudspeaker broadcasts and deploy additional strike assets.",
+   "note": "Tensions mount as North Korea threatens to resume loudspeaker broadcasts and deploy additional strike assets along the border.",
    "updated": "2026-10-19",
-   "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0xSnhIZDhMLTQyU1dWWXBBeFJYMDh0bW9DclhJT0lkNTNDUVhscEpkZTh0bG5oZkRlVVBoTkVabXpNaUR3NlloLXliVzNlcFBGVkdRMlZoRGpwWnd2WEx6eHYyY3A?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQY0lVSDdlczdaNmZncnpJM2t4QWt3VWl2WktIWTRMZHgxbWJHVU1BZjFKSkU2QjVaOTNJenQwYjJoNHFSZF90bHhhZHlLenF0TGZXc19vMzZZWE5RRTlTWDd3N21iOFAwYUZKM0dqd0JGSXc4TndWMElxYlA3ZXRzVnBHUzI2VVVRaTl3R0ZCN29wSWlwN21XY2lPYXBON0RDOTV3b0x3?oc=5"
   },
   "ESP-ISR": {
    "a": "ESP",
@@ -2457,15 +2467,15 @@
    "a": "RUS",
    "b": "USA",
    "s": "H",
-   "note": "The United States (US) suspends sanctions on Russia for 60 days to pursue Ukraine peace negotiations.",
-   "updated": "2026-10-18",
-   "source": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5jTzFvVzZoMldNWlJEVTc2bUg5OEh5dmxlWEJvLVA2LWQxVks4c0pNVzBQVTFmZGhKYTFDZHZ5MGZIT1laODhMMHhNWV9qd3VXajRiU1Z0U2MzaDQ?oc=5"
+   "note": "The United States suspends Russia-related sanctions for 60 days to encourage peace talks, sparking intense domestic and international backlash.",
+   "updated": "2026-10-19",
+   "source": "https://news.google.com/rss/articles/CBMic0FVX3lxTE53QzBwWmRMY0dQaFpPMV95c1NENDVhZ3Atd0xtTUQ5ekg5T2JwYVBJMmJaXzRDY3EzazlscnVGb3FzT1ZBNUVGYVNzdjNqRXNGS3NsbEhWNG4tVndOcXZXLXdiZlh1dklUOWxxZ2RGdW9NY2s?oc=5"
   },
   "UKR-USA": {
    "a": "UKR",
    "b": "USA",
    "s": "T",
-   "note": "Tensions mount as US President Trump rebukes Ukraine over deep strikes in Russia, while President Zelenskyy rejects capitulation.",
+   "note": "Tensions escalate as Ukraine launches major drone strikes on Russia, drawing criticism from President Trump over peace efforts.",
    "updated": "2026-10-19",
    "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdVpzZGxhQzRyZnpMQk5qVVpVdWJWd2tGbWp2UFk3b21KODhCMlpieUxGUEFFRTEwNmVacldMcG9zRUZEbDE2dWRRY2I1cndHZlFBVkVqSDdnNXJBaktWbGtQcVRmY2QxajQ3UDZ3S3NfRDBQSUJ3TGtUQUZWa1IyemJ1ejhHRy1N?oc=5"
   },
