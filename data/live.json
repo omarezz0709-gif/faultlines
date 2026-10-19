@@ -1,7 +1,27 @@
 {
  "meta": {
-  "lastRun": "2026-10-18T22:14:58Z",
+  "lastRun": "2026-10-19T05:29:56Z",
   "log": [
+   {
+    "date": "2026-10-19",
+    "items": [
+     {
+      "label": "Switzerland–Vietnam",
+      "change": "None → Partner: EFTA free trade agreement signed to boost bilateral economic ties",
+      "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVWVjSElyTW1HM2VxR0hPQV9KN3dORllzTGZmXzNnQ1RpTzFpYmtPV2w5aE95MWdFbFkwOWVTbHNpSHlzelRYaDVWQTU4LW9PdU9tQlJSaXcwc2RxbnRWd1NQNXNzZVl1RU5vTmtmeGl2XzM4Z2dQSHptaDZqdkRRU29idURKa3U3WDRqa3EycU42enVzRDcxTkZXaHJnalJZYTNKTTI3ZXN2dWN4RmVfMEZqMFZpQmZTVC1mSTdxNA?oc=5"
+     },
+     {
+      "label": "South Korea–United States",
+      "change": "Ally note updated: sovereignty dispute sparked by USFK commander remarks on the DMZ",
+      "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBTam1jVEM2TXhrVmpKNk1zaDkxd1lIM0pCUjhXeWduRm5xY1dhMlFQZm15RDh5d1Q2VzBVQ3pxMm5BenEwVG9nLUlXTjhVYkJ1MnpRbDVYUm8tSHYxeW9BTl9wNDRjenBILW9FWkVn?oc=5"
+     },
+     {
+      "label": "Ukraine–United States",
+      "change": "Tense note updated: Trump rebukes Ukrainian deep strikes as Zelenskyy rejects capitulation push",
+      "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdVpzZGxhQzRyZnpMQk5qVVpVdWJWd2tGbWp2UFk3b21KODhCMlpieUxGUEFFRTEwNmVacldMcG9zRUZEbDE2dWRRY2I1cndHZlFBVkVqSDdnNXJBaktWbGtQcVRmY2QxajQ3UDZ3S3NfRDBQSUJ3TGtUQUZWa1IyemJ1ejhHRy1N?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-18",
     "items": [
@@ -1616,7 +1636,7 @@
     ]
    }
   ],
-  "summary": "Updated DR Congo–Belgium ties over diplomatic friction, adjusted Niger–Nigeria relations amid reopened ECOWAS dialogue, and refreshed notes on US-Russia sanctions and Egypt-Saudi defense cooperation."
+  "summary": "Updated US-Ukraine and US-South Korea alliance dynamics amid sharp diplomatic friction, established Vietnam-Switzerland partnership post-EFTA trade pact, and recorded election schedules for Brazil, Bulgaria, the Czech Republic, and Israel."
  },
  "relations": {
   "DNK-USA": {
@@ -2039,9 +2059,9 @@
    "a": "KOR",
    "b": "USA",
    "s": "A",
-   "note": "The defense treaty remains active under President Lee Jae Myung, despite US concerns over Seoul's ties with China.",
-   "updated": "2026-09-30",
-   "source": "https://www.wikidata.org/wiki/Q884"
+   "note": "Allies clash after USFK (US Forces Korea) commander remarks prompt South Korean officials to defend DMZ (Demilitarized Zone) sovereignty.",
+   "updated": "2026-10-19",
+   "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBTam1jVEM2TXhrVmpKNk1zaDkxd1lIM0pCUjhXeWduRm5xY1dhMlFQZm15RDh5d1Q2VzBVQ3pxMm5BenEwVG9nLUlXTjhVYkJ1MnpRbDVYUm8tSHYxeW9BTl9wNDRjenBILW9FWkVn?oc=5"
   },
   "GBR-ISR": {
    "a": "GBR",
@@ -2415,9 +2435,9 @@
    "a": "UKR",
    "b": "USA",
    "s": "T",
-   "note": "Tensions persist over United States (US) Russia sanctions relief, though Washington resumes missile launch intelligence sharing with Kyiv.",
-   "updated": "2026-10-18",
-   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZ0hNc2Z5RFdaU2l6OTlIQ3l3eFI4ZEZpVmZRX2h5RjYtenRaM3ZxN0QzRklyTnBRU3lEN2Y0eUFHZUdkY0RZWkxEc18zOEE4eG5YYzBHQnFnanlXb0JCckp6X0NlbmhMLW1wcnN3TW9ELWxWTFpsUjQxeWp0RkJ4Q0lleDZIMUdTalp4cEJOcEVFcmFSdkNLenZ6U19CWHY0SXZfZ0szTHFWbHVR?oc=5"
+   "note": "Tensions mount as US President Trump rebukes Ukraine over deep strikes in Russia, while President Zelenskyy rejects capitulation.",
+   "updated": "2026-10-19",
+   "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdVpzZGxhQzRyZnpMQk5qVVpVdWJWd2tGbWp2UFk3b21KODhCMlpieUxGUEFFRTEwNmVacldMcG9zRUZEbDE2dWRRY2I1cndHZlFBVkVqSDdnNXJBaktWbGtQcVRmY2QxajQ3UDZ3S3NfRDBQSUJ3TGtUQUZWa1IyemJ1ejhHRy1N?oc=5"
   },
   "PAK-SOM": {
    "a": "PAK",
@@ -2754,6 +2774,14 @@
    "note": "Nigeria leads ECOWAS (Economic Community of West African States) talks with Niger to negotiate a new regional cooperation agreement.",
    "updated": "2026-10-18",
    "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNLXFNdWttS0xsSjZmWTE1dVpOX3hOM215SzVQdVpUclMzdm5aVURvMy14My12UFVuZlJla2tTaDNxRDMxR3pTYnRYN3pxbmVZdFZvSW1tWDFrMkVKM1BLQTVQTERhWnlSZDUxV2ZxZXQ1d2ZscmRsWG93Uzc3bkdENlhSVXZrdTREOWdxNTFjRjNqV3FDRVd3VFZoeFhVczN0N25mTmpmUGctV2c2WlVzNURVdFQ1Y2hJNkN2S3RmMmNndFF3Tjl3dWxGYkFkRDY5ZFdybDBramI?oc=5"
+  },
+  "CHE-VNM": {
+   "a": "CHE",
+   "b": "VNM",
+   "s": "F",
+   "note": "Switzerland and Vietnam deepen economic ties under a partnership bolstered by the Vietnam-EFTA (European Free Trade Association) pact.",
+   "updated": "2026-10-19",
+   "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVWVjSElyTW1HM2VxR0hPQV9KN3dORllzTGZmXzNnQ1RpTzFpYmtPV2w5aE95MWdFbFkwOWVTbHNpSHlzelRYaDVWQTU4LW9PdU9tQlJSaXcwc2RxbnRWd1NQNXNzZVl1RU5vTmtmeGl2XzM4Z2dQSHptaDZqdkRRU29idURKa3U3WDRqa3EycU42enVzRDcxTkZXaHJnalJZYTNKTTI3ZXN2dWN4RmVfMEZqMFZpQmZTVC1mSTdxNA?oc=5"
   }
  },
  "threads": {
@@ -3066,11 +3094,11 @@
    "hog": "Luiz Inácio Lula da Silva, President",
    "hos": "Luiz Inácio Lula da Silva, President",
    "lastelec": "presidential first round, Oct 2026, runoff pending",
-   "nextelec": "presidential runoff election October 2026",
+   "nextelec": "presidential runoff, October 2026",
    "ruling": "Workers' Party (PT)-led broad coalition",
-   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTm5qTkhzMDNBVTZQRVZkb0laSXN1NTZOTzk4WkpodEU2TDI3bTFrc1RKYVBzbmRQdGlfS0ZUNHF0dnNacWx2M1BSeE93RWx5T1E5MHlEMEhqdUZvVGRUMWRxa2lTMjFETUhsTThTVzk4OUcwb0V1QzRjRHBEUk5KYk9WeGxXZnpEX1Z1Yl9GaXo2ZmwyZlNaeHM2OVV5aWM4?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNUExlUEdXZVRMSXNnQjZSRnE3S25zRFk0bURQT3Rmc2EyZzRSOXpyR3YxNkJFbGR1a0JLWG12Z2x2YktCem1GTUE5MGt1ZEE0S3dXeHBuamRXLTV5NF9oMzZGRm4taHJISU9VMXBYWEtwUWxSd2pvb0hkcWF3NWhSNmk2QlRIalZwN0I5YTFfNlFvdWI5?oc=5",
    "system": "Federal presidential republic",
-   "updated": "2026-10-18"
+   "updated": "2026-10-19"
   },
   "CAN": {
    "hog": "Mark Carney, Prime Minister",
@@ -3169,9 +3197,9 @@
    "nextelec": "parliamentary 2031"
   },
   "BGR": {
-   "nextelec": "presidential, 25 October 2026",
-   "updated": "2026-09-23",
-   "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWDh2YVFnb3VwZDNPdjB4NnZmT0t4X1Z3M085YTljU3pBXzVwcm9EN0R1NkNmWGxfOGp5WFZFaHZ1c0RyTzdNSktEVG8zRE9QZ1JEdm1Rd1FQRVpoWUh0M0VNdUhyc2tJeGNzMEx4RFJRRDZQcERIcnZlMlBIZ1JDZDF2Wm5CMWtqZUE2UnI1a0dfNGJfRE5KUWhVaTNKTVRIM1VqSEluTU9YREl1c3c?oc=5"
+   "nextelec": "parliamentary, 25 October 2026",
+   "updated": "2026-10-19",
+   "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbFVPdVY1LWVEbU1kcmtrUlR6QWN4UmRaUHYwR1hWRGtlVnQ2RXFFZVV0X254RnMtaFYyc0xsWW5rRHpSX1U5Ri1mcXNqY2s2STl4QVBody1IdkVkeUpxY3FmalJaNVk1dVY1VGVuMnNMc3BtbF9hQ25fOHp6bTY5MW1jZXkwU0pVbHFzQ2syWm14NWYtTFpUbUlEMXctdndyeDh5Z1hrR3pKWmJpRDRpVGRJUUVYYVZXUUJpRXZTVdIBvwFBVV95cUxNbFVPdVY1LWVEbU1kcmtrUlR6QWN4UmRaUHYwR1hWRGtlVnQ2RXFFZVV0X254RnMtaFYyc0xsWW5rRHpSX1U5Ri1mcXNqY2s2STl4QVBody1IdkVkeUpxY3FmalJaNVk1dVY1VGVuMnNMc3BtbF9hQ25fOHp6bTY5MW1jZXkwU0pVbHFzQ2syWm14NWYtTFpUbUlEMXctdndyeDh5Z1hrR3pKWmJpRDRpVGRJUUVYYVZXUUJpRXZTVQ?oc=5"
   },
   "SSD": {
    "nextelec": "general, December 2026",
@@ -3270,13 +3298,13 @@
   },
   "CZE": {
    "lastelec": "Senate, October 2026",
-   "updated": "2026-10-18",
+   "updated": "2026-10-19",
    "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTFhmT1NGRTRCTkVtTW9sQmlBVllYR0lseWp2bVl5NkRDVjhGQ3FYMFJSVXp0N2tvMmxWeWs1X0loV0VCVUNzZFRaN2N2RlZqa1Y2NlVpVVRFZlVNb0lXWmVXUUsxQWtqS1hGR0lHWkVNcXVCU1FwcGRXc0kxLTJ2SG1mTEUzR3dXVUhQS0tqZGNRd2V6ODl6ZDhIWDl3cUJVSGpQUXNMTTQ3Rld4dFV0M3JJcFY?oc=5"
   },
   "ISR": {
-   "nextelec": "parliamentary election 2026",
-   "updated": "2026-10-18",
-   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdHJGQ2hQdUNJa1FNSUNsaXVqNUFtRW1GeVpnSUR2N2lMNDhLN0FoY1NEdjF2dHcwV1cwQWVwZDVBdmFLNUNGOThNN2k2Y3JHYWd3dTNGdE5nTEIwcmR4ZmpIQkFBUkEyeGl0Zi1mMEQ5enAxQk5NdFJxZ2hNWjc5STU4ZWZMS2ozZm0zWFFVUjk4OGdKZ0lXakExY1BXdk5FbHQ1dW94aUtPRC1Hd3F3?oc=5"
+   "nextelec": "parliamentary, October 2026",
+   "updated": "2026-10-19",
+   "source": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQam1VZmlTU2lVejRCQzVmQklFNlpqaERkUDVPLWR0NmIwTUlKVU4zSTItTG9JU3lWd1M0WXV3NXJIM3pnWE9DSkJyaHdpd2J5TjNKUU5qazB5bE9FZXYtUTlxTC1DRHg4VE56eWlBb3VBUENtazNxMThaSlhib3FjeHlPTUtiZW5EM0E5eEVPN042Z0ZHRElKM1BWY28xQnVHM1lCTVRJaGlXQk5lR1drSFFRR3IwcEExVFJINnJOYk15YW5ZVmFvVncxRGExekFVYk1aLVZreHdEUnk5c1RSWGE2NXN1UnZfSG1lUjRnbFBFX1BhdjZOR3Ntbkwwd3ZMUXB6MFJ5MjRIMkItWDY3S3FoNGxTal9wbmU1NDlGT0M?oc=5"
   }
  }
 }
