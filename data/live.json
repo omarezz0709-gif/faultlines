@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-20T05:28:22Z",
+  "lastRun": "2026-10-20T10:28:48Z",
   "log": [
    {
     "date": "2026-10-20",
@@ -24,6 +24,26 @@
       "label": "Houthi Red Sea campaign",
       "change": "Thread updated: Houthi missile strike kills over 50 recruits at a Yemeni army training camp in Shabwa",
       "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNExsdEwxeUFFazVvNUpsT0o5MnVseUtPeEdjbmJYR1ZlOG1fRl9aOXdtaVY5QkZHUUdYT2pEM2h2RHhYdUhNbkZsa3lQeG9SZ2dwZEQ1LWstdFkzcTVwSU4taWZ4Qk1FZ0t0R01SME9nWlFHeVYxYzNxX2hsb3NFdVRraDVwYWRhbUY4Ny1IZ0VJVWVYWlFRcEJjWDhkcUdZWGwtRnVpYw?oc=5"
+     },
+     {
+      "label": "Sudan–South Sudan",
+      "change": "Note updated: South Sudan summons Sudanese envoy after deadly market drone strike in Abyei",
+      "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOeWtBT0pIdmRpZ0dUc1Q3VzlIdFlOSE9zOHZJTzBJZTdhRnlTTTdUVkhMV3ZBaExPd0lYbGZDWG1QaUlzZzZCMHRJZ0RXbU1NQTB3dG0tejBOWE9kZWJwLWRWblhyV1V2aG4tVTM1U2JvRFllaDk2Uzlkbm40eFFHN1hNSHk4am1ydjJ0dmJpdlVkak1FRDlB0gGcAUFVX3lxTE9hdG1iVzRHaE5fa09kcThoUU9naVR1NmRTY0VxTDNiMTFfTk85ZGd2cGg4V0JGVnY0dnB2akZ4VlZHdDNKbVZ6NEZYVy1NS3pud1JtZDltbVhtazRhZWY2VkJ5c2NnUjdOZjJUUm1qWmd2ZGFNZ2s2Mm1aWTNwSVpKMVVIbkdaYmNYcUsyNWNUUW1uMUpycWQ5XzhGZA?oc=5"
+     },
+     {
+      "label": "Eritrea–Ethiopia",
+      "change": "Note updated: PM Abiy warns Eritrea of severe consequences over rejected peace overture",
+      "source": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQYnJpQ2hVN0JPN3U5d1lycFpJRENxZnpmamVCTncxUkZDR3p5Y3ZLU0s4TTNrVDlqRVpsUTA4OC1mbzhoZE9jeGo2TUQ3bkFDZ0pmSmxWc1Rpak5CSE5saUJLaGxGMmVnZl9FSnpRbTBtVndON2FmWVI1Nk85UDlqbzlRcHVVNFIyU2lIVVh4VnpkTmY4NUhRd1UtY2xqQkdPQ2VfRVFaby16OGZWOERrNFFzTU04NmZFRURGU2RWMFhqNmtBVjhsUFNiQXZoY1NHdm1uYjVVWXRaNUpEb3ZjaA?oc=5"
+     },
+     {
+      "label": "China–Sri Lanka",
+      "change": "Note updated: Sri Lanka drops $280M Colombo Port logistics joint venture with China Merchants",
+      "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQWEtSW9FbG15a3lZTFJrb0k3enFweUV3SmFHazJrT2pycVFhZlBzbDBwZUozZExQSXJwTWJNWW1BMjFzWmxkc2owVnVyWUJpak15Qlpfd3k4cnlpZl9SdE1wZGlXWjhjTm8ydmdFVWtaRXhzdFRyMi1NdGNkZnUyenVLZUhMVUdhdlZzbWJlQUM4aEZQYTUxcF8tYTRzd25UYXcwMHhLOEczRENsbkZzejZNUlFmMHdYQl93?oc=5"
+     },
+     {
+      "label": "Abyei",
+      "change": "Flashpoint status updated after market drone strike kills 73",
+      "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbVJQNGViaFJPaXk4YTZJVHh2OU84dTdpa1pKTEt0T181Tk5wQ0ZrNkRyT2FOTXZRdmpPa2J2elIxYWRlck5fNXBJcVJLVHBsYjAxREs5SXI2Q191OHpwSm5KeDY0VkNCQUlzbWxtUXZHY3RDbVBBaGpsVDFtOTV1TVZfakVzQ3JMWUl3anFsSjQ1bUplTzRUVTIycUlSMkxJb2JPTkJqWGtMdzVQczdGWHU1aFMwX3JhSDExdA?oc=5"
      }
     ]
    },
@@ -1721,7 +1741,7 @@
     ]
    }
   ],
-  "summary": "Updated US–Uzbekistan and Nigeria–Rwanda partnerships following new economic and defence agreements, noted US legal actions targeting Raúl Castro, and refreshed the Houthi Red Sea thread after a fatal strike in Yemen."
+  "summary": "Updated Sudan–South Sudan relations and the Abyei flashpoint following a deadly drone strike, updated Ethiopia–Eritrea border tensions, and refreshed China–Sri Lanka ties over a cancelled port joint venture."
  },
  "relations": {
   "DNK-USA": {
@@ -1904,9 +1924,9 @@
    "a": "ERI",
    "b": "ETH",
    "s": "W",
-   "note": "Ethiopia accuses Eritrea of an invasion pushing 60 km into Tigray as both nations exchange accusations of waging war.",
-   "updated": "2026-10-09",
-   "source": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5lc2h0MmpQMHF1Nnd3bXRtd3pCNVc3SU96eFVWejduYlNYWHpQZnNRRVBSM1hDYnRuc1IzMlhfQW44LWc4SWc2dDFRUXJLajlIX3NUMmREbVBQYkwtLWZtQW1pbVo2LTJLQk02LTQ3dw?oc=5"
+   "note": "Prime Minister Abiy warns Eritrea of extremely severe consequences if it rejects Ethiopia's peace call amid ongoing border friction.",
+   "updated": "2026-10-20",
+   "source": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQYnJpQ2hVN0JPN3U5d1lycFpJRENxZnpmamVCTncxUkZDR3p5Y3ZLU0s4TTNrVDlqRVpsUTA4OC1mbzhoZE9jeGo2TUQ3bkFDZ0pmSmxWc1Rpak5CSE5saUJLaGxGMmVnZl9FSnpRbTBtVndON2FmWVI1Nk85UDlqbzlRcHVVNFIyU2lIVVh4VnpkTmY4NUhRd1UtY2xqQkdPQ2VfRVFaby16OGZWOERrNFFzTU04NmZFRURGU2RWMFhqNmtBVjhsUFNiQXZoY1NHdm1uYjVVWXRaNUpEb3ZjaA?oc=5"
   },
   "AFG-PAK": {
    "a": "AFG",
@@ -2923,6 +2943,22 @@
    "note": "The US and Uzbekistan expand economic and security ties, signing over $12 billion in contracts during diplomatic talks.",
    "updated": "2026-10-20",
    "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPNjJQYUtQVWstdHZCTjdjc2dabGhQOFhMMFFsZmttYWpwYUhpUV9yaGpVeHRVVUF1MFJ3RjFYWmpON3BGNm5sQmNTVWdLQzhyWXhjSm42X0syWjZsQlptRUNTeVRhQWRQbW5xSjRfZl9DaURuU1hJSm8xN0IwQnEwN0RReFBwXzFPS0phRHJB?oc=5"
+  },
+  "SDN-SSD": {
+   "a": "SDN",
+   "b": "SSD",
+   "s": "T",
+   "note": "Tensions rise as South Sudan summons Sudan's envoy following a deadly drone strike that killed 73 people at a joint market in Abyei.",
+   "updated": "2026-10-20",
+   "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOeWtBT0pIdmRpZ0dUc1Q3VzlIdFlOSE9zOHZJTzBJZTdhRnlTTTdUVkhMV3ZBaExPd0lYbGZDWG1QaUlzZzZCMHRJZ0RXbU1NQTB3dG0tejBOWE9kZWJwLWRWblhyV1V2aG4tVTM1U2JvRFllaDk2Uzlkbm40eFFHN1hNSHk4am1ydjJ0dmJpdlVkak1FRDlB0gGcAUFVX3lxTE9hdG1iVzRHaE5fa09kcThoUU9naVR1NmRTY0VxTDNiMTFfTk85ZGd2cGg4V0JGVnY0dnB2akZ4VlZHdDNKbVZ6NEZYVy1NS3pud1JtZDltbVhtazRhZWY2VkJ5c2NnUjdOZjJUUm1qWmd2ZGFNZ2s2Mm1aWTNwSVpKMVVIbkdaYmNYcUsyNWNUUW1uMUpycWQ5XzhGZA?oc=5"
+  },
+  "CHN-LKA": {
+   "a": "CHN",
+   "b": "LKA",
+   "s": "F",
+   "note": "Sri Lanka cancels a $280M Colombo Port logistics venture with China Merchants to seek open bids, while China retains Hambantota port.",
+   "updated": "2026-10-20",
+   "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQWEtSW9FbG15a3lZTFJrb0k3enFweUV3SmFHazJrT2pycVFhZlBzbDBwZUozZExQSXJwTWJNWW1BMjFzWmxkc2owVnVyWUJpak15Qlpfd3k4cnlpZl9SdE1wZGlXWjhjTm8ydmdFVWtaRXhzdFRyMi1NdGNkZnUyenVLZUhMVUdhdlZzbWJlQUM4aEZQYTUxcF8tYTRzd25UYXcwMHhLOEczRENsbkZzejZNUlFmMHdYQl93?oc=5"
   }
  },
  "threads": {
@@ -3241,6 +3277,13 @@
    "d": "Argentina challenges Falklands oil drilling at an international tribunal as the United Kingdom (UK) stages military defence drills.",
    "updated": "2026-10-13",
    "source": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNRmpHQjlPZHBQMURST1ptX2JCV1BDa2JJN25aMENGS0RnV01PWlJwckY0XzJsWUJ4UkFpY3BIWk9va1JOSEVXazBGMUptdWJPZUpXVVREb3RzbnZBRTR2dmdEX0YwcmsxcGIxYU0yN05qNU1hZnFqV0pfN2xtMFVvZm9mYkhMMVZmVjBoUlZPTWVxdnRnSmprT2tSVGNMNXdWRmd2Um5nbS1GT2M4MVZUNlI5YUxjOVZqS0FlUWd5ZnFKaFlMWkd3VG5peHNtV0x0MG5vVWZkQWFGbUQ4SEc1R2xXck9YLU9NZ3l2RnVUczJ6NXQ5cm1F?oc=5"
+  },
+  "abyei": {
+   "n": "Abyei",
+   "s": "73 killed in market drone strike",
+   "d": "Contested border region between Sudan and South Sudan; a drone strike on a joint market killed 73 people, prompting South Sudan to summon Sudan's envoy.",
+   "updated": "2026-10-20",
+   "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbVJQNGViaFJPaXk4YTZJVHh2OU84dTdpa1pKTEt0T181Tk5wQ0ZrNkRyT2FOTXZRdmpPa2J2elIxYWRlck5fNXBJcVJLVHBsYjAxREs5SXI2Q191OHpwSm5KeDY0VkNCQUlzbWxtUXZHY3RDbVBBaGpsVDFtOTV1TVZfakVzQ3JMWUl3anFsSjQ1bUplTzRUVTIycUlSMkxJb2JPTkJqWGtMdzVQczdGWHU1aFMwX3JhSDExdA?oc=5"
   }
  },
  "politics": {
