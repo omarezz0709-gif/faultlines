@@ -1,7 +1,32 @@
 {
  "meta": {
-  "lastRun": "2026-10-19T22:22:02Z",
+  "lastRun": "2026-10-20T05:28:22Z",
   "log": [
+   {
+    "date": "2026-10-20",
+    "items": [
+     {
+      "label": "Nigeria–Rwanda",
+      "change": "Normal → Partner: Agree on joint military equipment production and cadet exchanges",
+      "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPd1A3dXVJN2NaYzl5S0tRZGtIV0lVelVnNzlacWhxR1NvVEZ1VHlwQUtpQ0lvYUJneE5BRnBkSFZaSkFSMGNCZzhkMzBnRVM0aVNIb0p4Q0NhM3JNU0RsZ1docm1qSVBkMm1xQU9uakN5LVY2Wk12YzBWMzNGWUpBNUQ0SU9BRTlxR2dHLVNadW5TcS1MSWpkTndR?oc=5"
+     },
+     {
+      "label": "United States–Uzbekistan",
+      "change": "Normal → Partner: Sign $12 billion in trade and security contracts during diplomatic visit",
+      "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPNjJQYUtQVWstdHZCTjdjc2dabGhQOFhMMFFsZmttYWpwYUhpUV9yaGpVeHRVVUF1MFJ3RjFYWmpON3BGNm5sQmNTVWdLQzhyWXhjSm42X0syWjZsQlptRUNTeVRhQWRQbW5xSjRfZl9DaURuU1hJSm8xN0IwQnEwN0RReFBwXzFPS0phRHJB?oc=5"
+     },
+     {
+      "label": "Cuba–United States",
+      "change": "Hostile: US state issues arrest warrant for former Cuban leader Raúl Castro",
+      "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNUENZNE1CbzNpRlFZVWN3V0ttVHk2emxGd2ZsV0JIaXB1X2hTTHM3RHRMMFFyR2NBTnRCbWxKOTJYRHA4VHJqMTZRS25fU2FZMFpuLXJ4WjgyMnJiNEJyV0RidU5abHRESk44R205eVpMaUFPanlhdDZLVjd5N1NjaEk3eTlCRmdiMGtRcmdnYWFmQXM5N25RY2RGZw?oc=5"
+     },
+     {
+      "label": "Houthi Red Sea campaign",
+      "change": "Thread updated: Houthi missile strike kills over 50 recruits at a Yemeni army training camp in Shabwa",
+      "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNExsdEwxeUFFazVvNUpsT0o5MnVseUtPeEdjbmJYR1ZlOG1fRl9aOXdtaVY5QkZHUUdYT2pEM2h2RHhYdUhNbkZsa3lQeG9SZ2dwZEQ1LWstdFkzcTVwSU4taWZ4Qk1FZ0t0R01SME9nWlFHeVYxYzNxX2hsb3NFdVRraDVwYWRhbUY4Ny1IZ0VJVWVYWlFRcEJjWDhkcUdZWGwtRnVpYw?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-19",
     "items": [
@@ -1696,7 +1721,7 @@
     ]
    }
   ],
-  "summary": "Egypt delays a vote on deploying troops to Saudi Arabia amid Houthi strikes, while India and New Zealand enact a free trade agreement."
+  "summary": "Updated US–Uzbekistan and Nigeria–Rwanda partnerships following new economic and defence agreements, noted US legal actions targeting Raúl Castro, and refreshed the Houthi Red Sea thread after a fatal strike in Yemen."
  },
  "relations": {
   "DNK-USA": {
@@ -2079,9 +2104,9 @@
    "a": "CUB",
    "b": "USA",
    "s": "H",
-   "note": "The US tightens its embargo on Cuba with new banking, financial, and travel restrictions.",
-   "updated": "2026-09-30",
-   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNVkhyMHVBblZnMXZJMTl1OGZJSFhFQ3lCQTJvbGdBaG0yMmR1YmZIeUY0cHJlRGdtWWZHUzVTSVBjVThvdmpVTGdQT1Y2WE03cDVIcEZ2b2o2Z3VnN29qS3p6ZnZBbnJXdHRVS2FkZlVTSTEyVHFBcW1hRlB5NEdkZFhxeHFDREdwSTJucWRBLTFyaHhhaWRxU185S2tNVU14SllreNIBqgFBVV95cUxQMEduU3NrcXlZZHVmRUdnX3IxZF85X0JRdk41cUU4TGF6aHBYdXdmekZxV01ZdFNqejdpYmNvQmhUcERiWWVpTkZPdTZkOXMtSnhsbE9EOC1OcFM4SzBmbXNJRDhheG1oYTNtNHZwSWFIRnlOM0NpME50d2NMR2otQm5VdnlzTU5fblU0VVVrVU9nUjM0OU1OTlpZeEtrRFlVbGt3aGdpNlpkZw?oc=5"
+   "note": "Relations strain further as Florida authorities issue an arrest warrant and bring new charges against Raúl Castro.",
+   "updated": "2026-10-20",
+   "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNUENZNE1CbzNpRlFZVWN3V0ttVHk2emxGd2ZsV0JIaXB1X2hTTHM3RHRMMFFyR2NBTnRCbWxKOTJYRHA4VHJqMTZRS25fU2FZMFpuLXJ4WjgyMnJiNEJyV0RidU5abHRESk44R205eVpMaUFPanlhdDZLVjd5N1NjaEk3eTlCRmdiMGtRcmdnYWFmQXM5N25RY2RGZw?oc=5"
   },
   "BDI-USA": {
    "a": "BDI",
@@ -2882,6 +2907,22 @@
    "note": "India and New Zealand bring a bilateral Free Trade Agreement (FTA) into force to eliminate tariffs and double trade.",
    "updated": "2026-10-19",
    "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPX2hQUVZ1RlRmZnd1NS0wZ1lYWXFLZnNNN2RYRE1GMklBNU9PbkZMU2o5TEhabWV3S3Nwai1KMk9zWmdDVWk0bFBqMGZDS3U5OG01Y3VNQXNLTmJCUjJkYThmd0tZVDNWbTFMamFDcWd0R1pSRHFmc2JvVEFXczVOYkxhcDBYT2tqaUdyN3BiSkrSAZYBQVVfeXFMTjVqU2NZQnJvYTZXWmVhdkx1WkdPdEFKU0k4aUE0VXRsT01LbDF1OHZZNzkxd09GR0dmekpISk9ybThNOTRjd2VXOHNYbzFnUjd2Wnh4S1AzZmItUnEyRnJHdkJLVFY0WExOWWNEYmxheV9yXzBwUnVpYlliM3FfQ3lVMGZhVllVaWEyZWJMNmZwQ2lraF9B?oc=5"
+  },
+  "NGA-RWA": {
+   "a": "NGA",
+   "b": "RWA",
+   "s": "F",
+   "note": "Nigeria and Rwanda deepen defence ties, agreeing to joint military equipment production and cadet exchange programs.",
+   "updated": "2026-10-20",
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPd1A3dXVJN2NaYzl5S0tRZGtIV0lVelVnNzlacWhxR1NvVEZ1VHlwQUtpQ0lvYUJneE5BRnBkSFZaSkFSMGNCZzhkMzBnRVM0aVNIb0p4Q0NhM3JNU0RsZ1docm1qSVBkMm1xQU9uakN5LVY2Wk12YzBWMzNGWUpBNUQ0SU9BRTlxR2dHLVNadW5TcS1MSWpkTndR?oc=5"
+  },
+  "USA-UZB": {
+   "a": "USA",
+   "b": "UZB",
+   "s": "F",
+   "note": "The US and Uzbekistan expand economic and security ties, signing over $12 billion in contracts during diplomatic talks.",
+   "updated": "2026-10-20",
+   "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPNjJQYUtQVWstdHZCTjdjc2dabGhQOFhMMFFsZmttYWpwYUhpUV9yaGpVeHRVVUF1MFJ3RjFYWmpON3BGNm5sQmNTVWdLQzhyWXhjSm42X0syWjZsQlptRUNTeVRhQWRQbW5xSjRfZl9DaURuU1hJSm8xN0IwQnEwN0RReFBwXzFPS0phRHJB?oc=5"
   }
  },
  "threads": {
@@ -2900,11 +2941,11 @@
     "SYR",
     "ARE"
    ],
-   "d": "Iran-backed Houthi forces launch ballistic missile strikes on Saudi Arabia and Yemeni military camps, prompting defensive military votes in Egypt.",
+   "d": "Iran-backed Houthi forces launch ballistic missile strikes across Yemen and Saudi Arabia, killing over 50 recruits at a Shabwa training camp.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPeWF3RUhHQ1RJVW5UOTliclpqVWI0STIzVXNrSGFIbl8yUGljcmcwUHZDZGhGSFJlQm5JZVIwRzN0VllvS3NqNXQ2MlkzYmZDNUN0bHQtdUhPS1FzSWw1bHlFMjJTcU5aNGI0VkVJYXJ6UzNaQTRodHB1dHdTS3JqVC1qLUFUYmRKSzNsTEtQcHBaNXBxX3Vxb0ZxdUMzdV9qUzJPSGptb1hrc0NxNnZNOG5JamYzYXVxSmg0VXJVSERLdTdCMTNZb1ZkcmFQWmtHRXotN1l3?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNExsdEwxeUFFazVvNUpsT0o5MnVseUtPeEdjbmJYR1ZlOG1fRl9aOXdtaVY5QkZHUUdYT2pEM2h2RHhYdUhNbkZsa3lQeG9SZ2dwZEQ1LWstdFkzcTVwSU4taWZ4Qk1FZ0t0R01SME9nWlFHeVYxYzNxX2hsb3NFdVRraDVwYWRhbUY4Ny1IZ0VJVWVYWlFRcEJjWDhkcUdZWGwtRnVpYw?oc=5",
    "t": "security",
-   "updated": "2026-10-19"
+   "updated": "2026-10-20"
   },
   "afpak-jihad": {
    "t": "security",
