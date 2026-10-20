@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-20T10:28:48Z",
+  "lastRun": "2026-10-20T16:23:43Z",
   "log": [
    {
     "date": "2026-10-20",
@@ -44,6 +44,16 @@
       "label": "Abyei",
       "change": "Flashpoint status updated after market drone strike kills 73",
       "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbVJQNGViaFJPaXk4YTZJVHh2OU84dTdpa1pKTEt0T181Tk5wQ0ZrNkRyT2FOTXZRdmpPa2J2elIxYWRlck5fNXBJcVJLVHBsYjAxREs5SXI2Q191OHpwSm5KeDY0VkNCQUlzbWxtUXZHY3RDbVBBaGpsVDFtOTV1TVZfakVzQ3JMWUl3anFsSjQ1bUplTzRUVTIycUlSMkxJb2JPTkJqWGtMdzVQczdGWHU1aFMwX3JhSDExdA?oc=5"
+     },
+     {
+      "label": "Turkey–Saudi Arabia",
+      "change": "Normal → Ally: Mutual defense pact advances in parliament",
+      "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQNHBtYmltTlpfOXd0bjh5MDVlQU5KS21RUjdBWmllS2JoaU91RUNXRmhkVWg5UVdmYmVyY2NJMzF5akhyZklIbkpNVGdEZWtsVUN2OUVRb3N1TzVqXzlFRmhUMUgzN1hKSGdLcE1LaUVXXzBscXZUU3RYMXlFVjV0NTh0eFVfb0plZGxNVlh4ZThzQ2c4TVRFNGJLSG1LeWN6U2kta2FXNkFlRkZYUzN0T2toZw?oc=5"
+     },
+     {
+      "label": "Libya–Turkey",
+      "change": "Normal → Ally: House of Representatives approves maritime deal",
+      "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPQ2tUTmNFeG0xQWxDcFUzbTk0S0xlZ0V1U19OTC1EZTVMblNBNm1jRFZxa3JjMnhYVmE5M2kybHFiUkNqMW1OakZjZnBsZDQ3YXdwT19QU2lDRHhvbU5aQmtYb1hNYlh0UUwzNXNtS093aFA5d2hZSHo4akdwZTQ1RzFTY0tEOF90WHc?oc=5"
      }
     ]
    },
@@ -1741,7 +1751,7 @@
     ]
    }
   ],
-  "summary": "Updated Sudan–South Sudan relations and the Abyei flashpoint following a deadly drone strike, updated Ethiopia–Eritrea border tensions, and refreshed China–Sri Lanka ties over a cancelled port joint venture."
+  "summary": "Turkey's parliament advances the Saudi-Pakistan defense pact, Libyan HoR approves a maritime deal with Turkey, and Romania installs a new government."
  },
  "relations": {
   "DNK-USA": {
@@ -1828,9 +1838,9 @@
    "a": "SAU",
    "b": "TUR",
    "s": "A",
-   "note": "Under the Mecca Joint Defense Agreement, Türkiye deploys troops to Saudi Arabia to help defend against Houthi missile strikes.",
-   "updated": "2026-10-07",
-   "source": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPdEltR052QUpLeFVyT1F6dVBGOE94bzJZVjhRMFBvUkdGQVM2T3lCRGlLUmd1RzZyemRXUHVzME9XUGNmSmxJTWcxNmhSdE5kdTBRWDJwU0oyWURHYmc0eGtjdjdyNzNNUFo5ZWdmNDhaSVNvT1RFeXpwU1k3dHBlb0RoZVpYSFdoNVhwcWNsR2x5akZnWElkVVY0OVJzZmZwV1NtV1Y5RklnV1BKLXgtbnRVd0pPWFpUSnY0R0hpRFlaa21FUzNaREtLRVRGZVIxaVVnV0poNEdUTTBQVGE1TQ?oc=5"
+   "note": "Turkey moves the Saudi-Pakistan mutual defense pact toward parliamentary approval to bolster bilateral military ties.",
+   "updated": "2026-10-20",
+   "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQNHBtYmltTlpfOXd0bjh5MDVlQU5KS21RUjdBWmllS2JoaU91RUNXRmhkVWg5UVdmYmVyY2NJMzF5akhyZklIbkpNVGdEZWtsVUN2OUVRb3N1TzVqXzlFRmhUMUgzN1hKSGdLcE1LaUVXXzBscXZUU3RYMXlFVjV0NTh0eFVfb0plZGxNVlh4ZThzQ2c4TVRFNGJLSG1LeWN6U2kta2FXNkFlRkZYUzN0T2toZw?oc=5"
   },
   "COL-USA": {
    "a": "COL",
@@ -2959,6 +2969,14 @@
    "note": "Sri Lanka cancels a $280M Colombo Port logistics venture with China Merchants to seek open bids, while China retains Hambantota port.",
    "updated": "2026-10-20",
    "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQWEtSW9FbG15a3lZTFJrb0k3enFweUV3SmFHazJrT2pycVFhZlBzbDBwZUozZExQSXJwTWJNWW1BMjFzWmxkc2owVnVyWUJpak15Qlpfd3k4cnlpZl9SdE1wZGlXWjhjTm8ydmdFVWtaRXhzdFRyMi1NdGNkZnUyenVLZUhMVUdhdlZzbWJlQUM4aEZQYTUxcF8tYTRzd25UYXcwMHhLOEczRENsbkZzejZNUlFmMHdYQl93?oc=5"
+  },
+  "LBY-TUR": {
+   "a": "LBY",
+   "b": "TUR",
+   "s": "A",
+   "note": "Libya's eastern House of Representatives unanimously approves the 2019 maritime jurisdiction areas agreement with Turkey.",
+   "updated": "2026-10-20",
+   "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPQ2tUTmNFeG0xQWxDcFUzbTk0S0xlZ0V1U19OTC1EZTVMblNBNm1jRFZxa3JjMnhYVmE5M2kybHFiUkNqMW1OakZjZnBsZDQ3YXdwT19QU2lDRHhvbU5aQmtYb1hNYlh0UUwzNXNtS093aFA5d2hZSHo4akdwZTQ1RzFTY0tEOF90WHc?oc=5"
   }
  },
  "threads": {
@@ -3425,9 +3443,10 @@
    "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQaGZzSVNyUkk1ZVlVRC1aN3BuQlJNWHVxX2Q3OVhuWUxZSzhNN2VfRy1zdDU5RHNuTERQbTAxS3NYNWlzdzBLV1dwMDZUdGVKNXpoclRCNXZQNzhOVTZGbUdZY1pmdWtPUUQtbzl6Y19xRmFLbTYyS3BDMGdfRXUxWWR2NkZzMHZEQTJ6VmJOYjJjY2hQSXU1bE9lTDBpYTFNVmgtbFV0MDZxVmlocUxWRUpvLXVBNjFhR0HSAbgBQVVfeXFMTWVUMGhmclVScDVjaFJLUkJ2elNTd3hzd21sRjg1cF9EeWJXbFBrRmlKblRsWDdRQTN1eTc3aDhqV2dBTHhGRk5Ccll1SldRZGpXTEExMjUwUEFlUnVINVFrQWxyZzlzRmZiZE9aUUhZY1IxMFZVTE9qWktmWUJfMFcyNUpfREdkbHd4Q0VldEozQmpMVG1Yb1JLdkpZbm5tektzbTBCRTZfVE42dWUxVEhhOG1UY0hKQw?oc=5"
   },
   "ROU": {
-   "lastelec": "parliamentary rejection of PM-designate, September 2026",
-   "updated": "2026-09-30",
-   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQczBaMFRVNGg1ekJycXd3VTJ5MTZ3RUpFS2RrenpFaFRoblpPa21PNTR4MU01Z0RDV2UyZjZEaXZYVW5rb3RlWW0tR2s4ZVBwQkhmaDZUai1oNWxRTG1fTklJd0ZWS3lqTjF0aW8xOFdqcElWLUhqeDFHU0dvVHlpallYSGxYdjJHdEY0VU1MWTNEdHQwWFlkZDFkVGtqTUQ1U0VLX1ZtZzg4cV9HWGszUFhFb04yY2VSVGc?oc=5"
+   "lastelec": "legislative, December 2024, multiple parties",
+   "updated": "2026-10-20",
+   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOMFJXZ2ZFeExHOXRQVVl2aUdqNlV4ck5GZzluNF9FTHN3WUg4UVZxcEhFQ2tsUjcweW16ZHN2MHJINVQ5VEhRdUdxT3RXQk9GODlvckpZcGRkM2duS01xakd3Q2pWOER4MTF4bjdaMHBGSzNRTS1ja3NWdnVpeVJsWGxJSGsxZmVEVlEzRFFJWFBvdUlBUkRrakNHaDhZdjFS?oc=5",
+   "nextelec": "legislative, November 2028"
   },
   "SLV": {
    "lastelec": "presidential, February 2024, Nayib Bukele",
