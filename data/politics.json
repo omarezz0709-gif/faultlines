@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T22:22:31Z",
+ "generated": "2026-10-20T22:23:34Z",
  "countries": {
   "XKX": {
    "system": "parliamentary republic",
@@ -258,8 +258,8 @@
   "ROU": {
    "system": "semi-presidential system, unitary state",
    "hos": "Nicușor Dan",
-   "hog": "Ilie Bolojan",
-   "ruling": "National Liberal Party (party of the head of government)",
+   "hog": "Luca Niculescu",
+   "ruling": "Independent (party of the head of government)",
    "source": "https://www.wikidata.org/wiki/Q218"
   },
   "BGR": {
@@ -543,6 +543,143 @@
    "ruling": "Democratic Party of Turkmenistan (party of the head of government)",
    "source": "https://www.wikidata.org/wiki/Q874"
   },
+  "ARE": {
+   "system": "constitutional monarchy, absolute monarchy",
+   "hos": "Mohammed Bin Zayed Al Nahyan",
+   "hog": "Mohammed bin Rashid Al Maktoum",
+   "source": "https://www.wikidata.org/wiki/Q878"
+  },
+  "VNM": {
+   "system": "republic, one-party state",
+   "hos": "Tô Lâm",
+   "hog": "Phạm Minh Chính",
+   "ruling": "Communist Party of Vietnam (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q881"
+  },
+  "AFG": {
+   "system": "unitary state, Emirate",
+   "hos": "Hibatullah Akhundzada",
+   "hog": "Mohammad Hasan Akhund",
+   "ruling": "Taliban (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q889"
+  },
+  "BRN": {
+   "system": "unitary state, absolute monarchy",
+   "hos": "Hassanal Bolkiah I of Brunei",
+   "hog": "Hassanal Bolkiah I of Brunei",
+   "source": "https://www.wikidata.org/wiki/Q921"
+  },
+  "ZWE": {
+   "hos": "Emmerson Mnangagwa",
+   "hog": "Emmerson Mnangagwa",
+   "ruling": "Zimbabwe African National Union – Patriotic Front / Zimbabwe African People's Union (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q954"
+  },
+  "BWA": {
+   "system": "parliamentary republic",
+   "hos": "Duma Boko",
+   "source": "https://www.wikidata.org/wiki/Q963"
+  },
+  "BDI": {
+   "system": "presidential system, representative democracy",
+   "hos": "Évariste Ndayishimiye",
+   "hog": "Gervais Ndirakobuca",
+   "source": "https://www.wikidata.org/wiki/Q967"
+  },
+  "COM": {
+   "system": "federal republic",
+   "hos": "Azali Assoumani",
+   "hog": "Azali Assoumani",
+   "ruling": "Convention for the Renewal of the Comoros (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q970"
+  },
+  "COD": {
+   "system": "republic",
+   "hos": "Félix Tshisekedi",
+   "hog": "Ilunga Ilunkamba Sylvestre",
+   "ruling": "People's Party for Reconstruction and Democracy (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q974"
+  },
+  "DJI": {
+   "hos": "Ismail Omar Guelleh",
+   "hog": "Dileita Mohamed Dileita / Abdoulkader Kamil Mohamed",
+   "ruling": "People's Rally for Progress (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q977"
+  },
+  "ERI": {
+   "hos": "Isaias Afwerki",
+   "hog": "Isaias Afwerki",
+   "ruling": "People's Front for Democracy and Justice (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q986"
+  },
+  "MWI": {
+   "hos": "Peter Mutharika",
+   "hog": "Lazarus Chakwera",
+   "ruling": "Malawi Congress Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q1020"
+  },
+  "MRT": {
+   "system": "presidential system",
+   "hos": "Mohamed Ould Ghazouani",
+   "hog": "Moctar Ould Djay",
+   "ruling": "Equity Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q1025"
+  },
+  "MUS": {
+   "system": "parliamentary republic",
+   "hos": "Dharam Gokhool",
+   "hog": "Pravind Jugnauth",
+   "ruling": "Militant Socialist Movement (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q1027"
+  },
+  "MOZ": {
+   "hos": "Daniel Chapo",
+   "hog": "Maria Benvinda Levy",
+   "source": "https://www.wikidata.org/wiki/Q1029"
+  },
+  "NER": {
+   "hos": "Abdourahamane Tiani",
+   "hog": "Ali Lamine Zeine",
+   "ruling": "National Movement for the Development of Society (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q1032"
+  },
+  "UGA": {
+   "system": "presidential system",
+   "hos": "Yoweri Museveni",
+   "hog": "Nabbanja Robinah",
+   "ruling": "National Resistance Movement (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q1036"
+  },
+  "STP": {
+   "hos": "Carlos Vila Nova",
+   "hog": "Américo Ramos",
+   "source": "https://www.wikidata.org/wiki/Q1039"
+  },
+  "SLE": {
+   "system": "presidential system",
+   "hos": "Julius Maada Bio",
+   "hog": "David Sengeh",
+   "source": "https://www.wikidata.org/wiki/Q1044"
+  },
+  "SOM": {
+   "system": "federal republic",
+   "hos": "Hassan Sheikh Mohamud",
+   "hog": "Hamza Abdi Barre",
+   "ruling": "Union for Peace and Development Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q1045"
+  },
+  "SDN": {
+   "system": "federal republic",
+   "hos": "Abdel Fattah al-Burhan",
+   "hog": "Abdalla Hamdok",
+   "source": "https://www.wikidata.org/wiki/Q1049"
+  },
+  "SWZ": {
+   "system": "absolute monarchy",
+   "hos": "Mswati III",
+   "hog": "Edeupa Yerimin",
+   "source": "https://www.wikidata.org/wiki/Q1050"
+  },
   "DNK": {
    "system": "constitutional monarchy",
    "hos": "Frederik X of Denmark",
@@ -786,143 +923,6 @@
    "hog": "Rob Jetten",
    "ruling": "Democrats 66 (party of the head of government)",
    "source": "https://www.wikidata.org/wiki/Q29999"
-  },
-  "ARE": {
-   "system": "constitutional monarchy, absolute monarchy",
-   "hos": "Mohammed Bin Zayed Al Nahyan",
-   "hog": "Mohammed bin Rashid Al Maktoum",
-   "source": "https://www.wikidata.org/wiki/Q878"
-  },
-  "VNM": {
-   "system": "republic, one-party state",
-   "hos": "Tô Lâm",
-   "hog": "Phạm Minh Chính",
-   "ruling": "Communist Party of Vietnam (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q881"
-  },
-  "AFG": {
-   "system": "unitary state, Emirate",
-   "hos": "Hibatullah Akhundzada",
-   "hog": "Mohammad Hasan Akhund",
-   "ruling": "Taliban (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q889"
-  },
-  "BRN": {
-   "system": "unitary state, absolute monarchy",
-   "hos": "Hassanal Bolkiah I of Brunei",
-   "hog": "Hassanal Bolkiah I of Brunei",
-   "source": "https://www.wikidata.org/wiki/Q921"
-  },
-  "ZWE": {
-   "hos": "Emmerson Mnangagwa",
-   "hog": "Emmerson Mnangagwa",
-   "ruling": "Zimbabwe African National Union – Patriotic Front / Zimbabwe African People's Union (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q954"
-  },
-  "BWA": {
-   "system": "parliamentary republic",
-   "hos": "Duma Boko",
-   "source": "https://www.wikidata.org/wiki/Q963"
-  },
-  "BDI": {
-   "system": "presidential system, representative democracy",
-   "hos": "Évariste Ndayishimiye",
-   "hog": "Gervais Ndirakobuca",
-   "source": "https://www.wikidata.org/wiki/Q967"
-  },
-  "COM": {
-   "system": "federal republic",
-   "hos": "Azali Assoumani",
-   "hog": "Azali Assoumani",
-   "ruling": "Convention for the Renewal of the Comoros (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q970"
-  },
-  "COD": {
-   "system": "republic",
-   "hos": "Félix Tshisekedi",
-   "hog": "Ilunga Ilunkamba Sylvestre",
-   "ruling": "People's Party for Reconstruction and Democracy (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q974"
-  },
-  "DJI": {
-   "hos": "Ismail Omar Guelleh",
-   "hog": "Dileita Mohamed Dileita / Abdoulkader Kamil Mohamed",
-   "ruling": "People's Rally for Progress (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q977"
-  },
-  "ERI": {
-   "hos": "Isaias Afwerki",
-   "hog": "Isaias Afwerki",
-   "ruling": "People's Front for Democracy and Justice (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q986"
-  },
-  "MWI": {
-   "hos": "Peter Mutharika",
-   "hog": "Lazarus Chakwera",
-   "ruling": "Malawi Congress Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q1020"
-  },
-  "MRT": {
-   "system": "presidential system",
-   "hos": "Mohamed Ould Ghazouani",
-   "hog": "Moctar Ould Djay",
-   "ruling": "Equity Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q1025"
-  },
-  "MUS": {
-   "system": "parliamentary republic",
-   "hos": "Dharam Gokhool",
-   "hog": "Pravind Jugnauth",
-   "ruling": "Militant Socialist Movement (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q1027"
-  },
-  "MOZ": {
-   "hos": "Daniel Chapo",
-   "hog": "Maria Benvinda Levy",
-   "source": "https://www.wikidata.org/wiki/Q1029"
-  },
-  "NER": {
-   "hos": "Abdourahamane Tiani",
-   "hog": "Ali Lamine Zeine",
-   "ruling": "National Movement for the Development of Society (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q1032"
-  },
-  "UGA": {
-   "system": "presidential system",
-   "hos": "Yoweri Museveni",
-   "hog": "Nabbanja Robinah",
-   "ruling": "National Resistance Movement (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q1036"
-  },
-  "STP": {
-   "hos": "Carlos Vila Nova",
-   "hog": "Américo Ramos",
-   "source": "https://www.wikidata.org/wiki/Q1039"
-  },
-  "SLE": {
-   "system": "presidential system",
-   "hos": "Julius Maada Bio",
-   "hog": "David Sengeh",
-   "source": "https://www.wikidata.org/wiki/Q1044"
-  },
-  "SOM": {
-   "system": "federal republic",
-   "hos": "Hassan Sheikh Mohamud",
-   "hog": "Hamza Abdi Barre",
-   "ruling": "Union for Peace and Development Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q1045"
-  },
-  "SDN": {
-   "system": "federal republic",
-   "hos": "Abdel Fattah al-Burhan",
-   "hog": "Abdalla Hamdok",
-   "source": "https://www.wikidata.org/wiki/Q1049"
-  },
-  "SWZ": {
-   "system": "absolute monarchy",
-   "hos": "Mswati III",
-   "hog": "Edeupa Yerimin",
-   "source": "https://www.wikidata.org/wiki/Q1050"
   },
   "CAN": {
    "system": "constitutional monarchy, federation",
