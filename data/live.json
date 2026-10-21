@@ -1,7 +1,22 @@
 {
  "meta": {
-  "lastRun": "2026-10-20T22:21:35Z",
+  "lastRun": "2026-10-21T05:28:38Z",
   "log": [
+   {
+    "date": "2026-10-21",
+    "items": [
+     {
+      "label": "Sudan–South Sudan",
+      "change": "Normal → Tense: drone strike kills over 150 in Abyei market",
+      "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1adGRqQ1g5cEpJOUtVQ2ZmR21fYWZBaWdrbFI2bF9rdEQzTFFoSXp4OHNXczE3VE44MWt2Y2tXSnRFeEZya0NDRXhRbkc3UGpKSXc?oc=5"
+     },
+     {
+      "label": "United Kingdom–Saudi Arabia",
+      "change": "Partner: UK deploys Typhoon fighter jets to defend Saudi airspace",
+      "source": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPX09hOG01THVnWTBtMmVfekx4eUpYdnRtdDJZUVpRZFNuQTh5NlE0RlVaYlhHbVJzRTNXaXd4RURST1ZPTFF5TnJ1ODJCdkRCOENXTVVZd09NZHJjeXktRzZCdlJrbVNFdmYwdXUwOEtycjA1OVBlS3ZTZ25KR0NCNUZWWdIBgwFBVV95cUxNY1lEUHVHNzlwOUNJcW5YeE15RllpRmdVZThBdjlvMjdKY2JqUkxfQmV0QkVXbVNVeGgzalVacXhLMURVclhxVjhIT2JkLTZMVVNrUlkzd1hic3RuV25iWXdtSERockhvcXI3RzJ2eHMwYUpHZ0EzZnUxcVFJYW9XTC1Edw?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-20",
     "items": [
@@ -1766,7 +1781,7 @@
     ]
    }
   ],
-  "summary": "Britain deploys Typhoon fighters to defend Saudi Arabia against Houthi strikes, Denmark and Vietnam upgrade to a Comprehensive Strategic Partnership, and the Abyei drone strike death toll tops 150."
+  "summary": "Sudanese drone strikes kill over 150 in Abyei, UK troops deploy to protect Saudi Arabia, and regional diplomacy surges across Central Asia and the Middle East."
  },
  "relations": {
   "DNK-USA": {
@@ -2973,9 +2988,9 @@
    "a": "SDN",
    "b": "SSD",
    "s": "T",
-   "note": "Tensions rise as South Sudan summons Sudan's envoy after a Sudanese drone strike killed over 150 people at a market in Abyei.",
-   "updated": "2026-10-20",
-   "source": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNRHJFVXRQZTI5akltMWxPVUpmckpncUhhSWxqQnM4aUVLdkRsLU9yVE9OLUxsSXFySW9fTVhEb3lzTElrR0UtSWZ0SWpSU244OGdPWXNPNnJ5T0tsWUlaRTFuNHI4RkJ1VmU0YUxvM21JZWQyc3lkb0hfdGJqR2FtQk91dnY4S2QzcDZ3QXR2d09yMml5MVBIbEtCSl9GSEhGeGVfS01POGpCdG9FWHRBVW9fZzMyYXBTd2pJeF9EeXo4UEhpOFgybU9wM21pLTh6eU5IZUgwYnZpcnVQ?oc=5"
+   "note": "South Sudan summons Sudan's envoy after a Sudanese drone strike kills over 150 people at a market in Abyei.",
+   "updated": "2026-10-21",
+   "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1adGRqQ1g5cEpJOUtVQ2ZmR21fYWZBaWdrbFI2bF9rdEQzTFFoSXp4OHNXczE3VE44MWt2Y2tXSnRFeEZya0NDRXhRbkc3UGpKSXc?oc=5"
   },
   "CHN-LKA": {
    "a": "CHN",
@@ -3006,8 +3021,8 @@
    "b": "SAU",
    "s": "F",
    "note": "Britain deploys Royal Air Force Typhoon fighter jets to Saudi Arabia to defend against escalating Houthi missile and drone attacks.",
-   "updated": "2026-10-20",
-   "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPdmdqZkVsUmxveGtGTHl2WVNublQxN1VkVlZLRnJONk11Z01XZGxFS010S29vVTVzMTNLUE9SYk1ZWlBWR2FKclh6N0FhalJtOUw2dFhIRHkybDZ4ZHVHc1FGV0JlMEtXenhMMlNteEhWUHVOamNBamhyYlFnZE1paQ?oc=5"
+   "updated": "2026-10-21",
+   "source": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPX09hOG01THVnWTBtMmVfekx4eUpYdnRtdDJZUVpRZFNuQTh5NlE0RlVaYlhHbVJzRTNXaXd4RURST1ZPTFF5TnJ1ODJCdkRCOENXTVVZd09NZHJjeXktRzZCdlJrbVNFdmYwdXUwOEtycjA1OVBlS3ZTZ25KR0NCNUZWWdIBgwFBVV95cUxNY1lEUHVHNzlwOUNJcW5YeE15RllpRmdVZThBdjlvMjdKY2JqUkxfQmV0QkVXbVNVeGgzalVacXhLMURVclhxVjhIT2JkLTZMVVNrUlkzd1hic3RuV25iWXdtSERockhvcXI3RzJ2eHMwYUpHZ0EzZnUxcVFJYW9XTC1Edw?oc=5"
   }
  },
  "threads": {
@@ -3474,10 +3489,10 @@
    "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQaGZzSVNyUkk1ZVlVRC1aN3BuQlJNWHVxX2Q3OVhuWUxZSzhNN2VfRy1zdDU5RHNuTERQbTAxS3NYNWlzdzBLV1dwMDZUdGVKNXpoclRCNXZQNzhOVTZGbUdZY1pmdWtPUUQtbzl6Y19xRmFLbTYyS3BDMGdfRXUxWWR2NkZzMHZEQTJ6VmJOYjJjY2hQSXU1bE9lTDBpYTFNVmgtbFV0MDZxVmlocUxWRUpvLXVBNjFhR0HSAbgBQVVfeXFMTWVUMGhmclVScDVjaFJLUkJ2elNTd3hzd21sRjg1cF9EeWJXbFBrRmlKblRsWDdRQTN1eTc3aDhqV2dBTHhGRk5Ccll1SldRZGpXTEExMjUwUEFlUnVINVFrQWxyZzlzRmZiZE9aUUhZY1IxMFZVTE9qWktmWUJfMFcyNUpfREdkbHd4Q0VldEozQmpMVG1Yb1JLdkpZbm5tektzbTBCRTZfVE42dWUxVEhhOG1UY0hKQw?oc=5"
   },
   "ROU": {
-   "lastelec": "legislative, December 2024, multiple parties",
-   "updated": "2026-10-20",
-   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOMFJXZ2ZFeExHOXRQVVl2aUdqNlV4ck5GZzluNF9FTHN3WUg4UVZxcEhFQ2tsUjcweW16ZHN2MHJINVQ5VEhRdUdxT3RXQk9GODlvckpZcGRkM2duS01xakd3Q2pWOER4MTF4bjdaMHBGSzNRTS1ja3NWdnVpeVJsWGxJSGsxZmVEVlEzRFFJWFBvdUlBUkRrakNHaDhZdjFS?oc=5",
-   "nextelec": "legislative, November 2028"
+   "lastelec": "Parliamentary, December 2024, various",
+   "updated": "2026-10-21",
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOYXlYNW45eFd3bkFPUWRyTkVpNTZKakYzUHd3eVAyQVFpdlZ4QWlHbWpBSnVRV3gwMmhuTEVnQk1TOUxoY19HYVBJdXdCdWJEQi1hRTlZSy1YWThEekMyeTRNc0o2TjJKVVZXUHNnTnVmV01ubGhWRVZnUXdvUjFGc3Z2em1KTnNTUGFpbkpDbXBzTkNxeTlYRmhR?oc=5",
+   "nextelec": "General, late 2028"
   },
   "SLV": {
    "lastelec": "presidential, February 2024, Nayib Bukele",
