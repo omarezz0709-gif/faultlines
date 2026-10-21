@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-21T05:28:38Z",
+  "lastRun": "2026-10-21T11:27:43Z",
   "log": [
    {
     "date": "2026-10-21",
@@ -14,6 +14,26 @@
       "label": "United Kingdom–Saudi Arabia",
       "change": "Partner: UK deploys Typhoon fighter jets to defend Saudi airspace",
       "source": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPX09hOG01THVnWTBtMmVfekx4eUpYdnRtdDJZUVpRZFNuQTh5NlE0RlVaYlhHbVJzRTNXaXd4RURST1ZPTFF5TnJ1ODJCdkRCOENXTVVZd09NZHJjeXktRzZCdlJrbVNFdmYwdXUwOEtycjA1OVBlS3ZTZ25KR0NCNUZWWdIBgwFBVV95cUxNY1lEUHVHNzlwOUNJcW5YeE15RllpRmdVZThBdjlvMjdKY2JqUkxfQmV0QkVXbVNVeGgzalVacXhLMURVclhxVjhIT2JkLTZMVVNrUlkzd1hic3RuV25iWXdtSERockhvcXI3RzJ2eHMwYUpHZ0EzZnUxcVFJYW9XTC1Edw?oc=5"
+     },
+     {
+      "label": "Maldives–Pakistan",
+      "change": "None → Partner: 20 cooperation pacts signed covering defence, maritime security, and trade",
+      "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQYUFUWUhTcjg4UzNHM2N5bHhocmQtdVZfenA0aXVOWjZFbldDR2g5VUx4eEpZNkM5RWlaZ2ZvYkRFTzQ0TUd5MEZ2RGw0bFhSVDVTamN3dVRSdmpjLTVwRVNScEJZT011UVEtQmpnWG9FYmI3X0I1YzMxMVBCYVFZd0tKMk5zcFoyRjAxQW51WDZpclowWU9pa0wtYW51V0Zvc2JYcDFnY2Y1cXE1c19jeW5CcVdabC1qeE9wSVRn?oc=5"
+     },
+     {
+      "label": "Greece–Turkey",
+      "change": "Tense: note updated on Greek rejection of eastern Libya's Turkey maritime pact ratification",
+      "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcXpDTWlLQVd1WkZ4a0pHTEhXZXcxejk1eUF5clJiMGNTTGNfenpmZ1ZIVGRQbUhUZlhMNy1melBPYmhMMkFnNjF2STBGT0JZNG5CdE9MTUMxbVp3ZDd0QTRFZmpUaVZvMXJobEg2ZTNyZXVIYVJZTmlmc1hRaWhmWlRpTVprS0dYZlVqVGplZm8xcmh1?oc=5"
+     },
+     {
+      "label": "Russia–United States",
+      "change": "Hostile: note updated on release of US prisoner Hubbard during Witkoff ceasefire mission",
+      "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOWHdtUWp6TWtuREpjRmZWdlo5ajBESWlfM2pld3gtUFo2YVJRVnNGbG1WaHlfZkxGVTQ1OHhHQ3FYZ3lwVXJFOU8tQVhvN1Jzal8wY3o0SkRKSTh0dkNJc1ExWDRWM0ViYVRjTU52U1lTQlc2RTI5ZWR4bkpBUExKS2tkcVI1Z19DbVd0LWxQU0JtVUJLcGJqZHhhS1VCQjFIS2Z1MDJjZHI1ZmRpZS01QkM5UTVWVEFWeW5LdWt2RjlSSzFvdE1OcV9n?oc=5"
+     },
+     {
+      "label": "Houthi Red Sea campaign",
+      "change": "Thread updated to reflect UK fighter jet deployment to defend Saudi Arabia",
+      "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdVRQWlNkZkR6eGRXb0ttcXVxY2hBNkZqWm93a0pveDAtdnBTODhVSHBWZS1seHFrRzAzdVo4V21WbEQtckVvS2hEX09VNWVuNGJqZXVXNnpyODJ6QkZmT3RhcU41VHFMYnFrUk5YV0k1aVVkX3duOVI1Mk1LQ1A0UkFtb2l0UW1sdUVQZUh3Wkw0X21YUWxINGZfeDFfdVhlbUplM0dIVGpMdXlDY0txb09GU2FuQQ?oc=5"
      }
     ]
    },
@@ -1781,7 +1801,7 @@
     ]
    }
   ],
-  "summary": "Sudanese drone strikes kill over 150 in Abyei, UK troops deploy to protect Saudi Arabia, and regional diplomacy surges across Central Asia and the Middle East."
+  "summary": "Maldives and Pakistan sign 20 bilateral pacts across defence and trade, Greece rejects eastern Libya's ratification of the Turkey maritime agreement, and Russia frees an American prisoner as US peace talks proceed."
  },
  "relations": {
   "DNK-USA": {
@@ -2572,9 +2592,9 @@
    "a": "RUS",
    "b": "USA",
    "s": "H",
-   "note": "The United States suspends Russia-related sanctions for 60 days to encourage peace talks, sparking intense domestic and international backlash.",
-   "updated": "2026-10-19",
-   "source": "https://news.google.com/rss/articles/CBMic0FVX3lxTE53QzBwWmRMY0dQaFpPMV95c1NENDVhZ3Atd0xtTUQ5ekg5T2JwYVBJMmJaXzRDY3EzazlscnVGb3FzT1ZBNUVGYVNzdjNqRXNGS3NsbEhWNG4tVndOcXZXLXdiZlh1dklUOWxxZ2RGdW9NY2s?oc=5"
+   "note": "Russia releases jailed US (United States) citizen Stephen Hubbard as US envoy Steve Witkoff arrives in St. Petersburg for peace talks.",
+   "updated": "2026-10-21",
+   "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOWHdtUWp6TWtuREpjRmZWdlo5ajBESWlfM2pld3gtUFo2YVJRVnNGbG1WaHlfZkxGVTQ1OHhHQ3FYZ3lwVXJFOU8tQVhvN1Jzal8wY3o0SkRKSTh0dkNJc1ExWDRWM0ViYVRjTU52U1lTQlc2RTI5ZWR4bkpBUExKS2tkcVI1Z19DbVd0LWxQU0JtVUJLcGJqZHhhS1VCQjFIS2Z1MDJjZHI1ZmRpZS01QkM5UTVWVEFWeW5LdWt2RjlSSzFvdE1OcV9n?oc=5"
   },
   "UKR-USA": {
    "a": "UKR",
@@ -3023,6 +3043,22 @@
    "note": "Britain deploys Royal Air Force Typhoon fighter jets to Saudi Arabia to defend against escalating Houthi missile and drone attacks.",
    "updated": "2026-10-21",
    "source": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPX09hOG01THVnWTBtMmVfekx4eUpYdnRtdDJZUVpRZFNuQTh5NlE0RlVaYlhHbVJzRTNXaXd4RURST1ZPTFF5TnJ1ODJCdkRCOENXTVVZd09NZHJjeXktRzZCdlJrbVNFdmYwdXUwOEtycjA1OVBlS3ZTZ25KR0NCNUZWWdIBgwFBVV95cUxNY1lEUHVHNzlwOUNJcW5YeE15RllpRmdVZThBdjlvMjdKY2JqUkxfQmV0QkVXbVNVeGgzalVacXhLMURVclhxVjhIT2JkLTZMVVNrUlkzd1hic3RuV25iWXdtSERockhvcXI3RzJ2eHMwYUpHZ0EzZnUxcVFJYW9XTC1Edw?oc=5"
+  },
+  "MDV-PAK": {
+   "a": "MDV",
+   "b": "PAK",
+   "s": "F",
+   "note": "Maldives and Pakistan expand bilateral ties, signing 20 agreements on defence, maritime security, trade, and counter-narcotics.",
+   "updated": "2026-10-21",
+   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQYUFUWUhTcjg4UzNHM2N5bHhocmQtdVZfenA0aXVOWjZFbldDR2g5VUx4eEpZNkM5RWlaZ2ZvYkRFTzQ0TUd5MEZ2RGw0bFhSVDVTamN3dVRSdmpjLTVwRVNScEJZT011UVEtQmpnWG9FYmI3X0I1YzMxMVBCYVFZd0tKMk5zcFoyRjAxQW51WDZpclowWU9pa0wtYW51V0Zvc2JYcDFnY2Y1cXE1c19jeW5CcVdabC1qeE9wSVRn?oc=5"
+  },
+  "GRC-TUR": {
+   "a": "GRC",
+   "b": "TUR",
+   "s": "T",
+   "note": "Tensions persist as Greece rejects eastern Libya's ratification of a contested maritime boundary agreement with Turkey.",
+   "updated": "2026-10-21",
+   "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcXpDTWlLQVd1WkZ4a0pHTEhXZXcxejk1eUF5clJiMGNTTGNfenpmZ1ZIVGRQbUhUZlhMNy1melBPYmhMMkFnNjF2STBGT0JZNG5CdE9MTUMxbVp3ZDd0QTRFZmpUaVZvMXJobEg2ZTNyZXVIYVJZTmlmc1hRaWhmWlRpTVprS0dYZlVqVGplZm8xcmh1?oc=5"
   }
  },
  "threads": {
@@ -3041,11 +3077,11 @@
     "SYR",
     "ARE"
    ],
-   "d": "Iran-backed Houthi forces launch ballistic missile strikes across Yemen and Saudi Arabia, killing over 50 recruits at a Shabwa training camp.",
+   "d": "Iran-backed Houthi forces attack Saudi Arabia and Aden, prompting the UK (United Kingdom) to deploy Typhoon jets to defend Saudi airspace.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNExsdEwxeUFFazVvNUpsT0o5MnVseUtPeEdjbmJYR1ZlOG1fRl9aOXdtaVY5QkZHUUdYT2pEM2h2RHhYdUhNbkZsa3lQeG9SZ2dwZEQ1LWstdFkzcTVwSU4taWZ4Qk1FZ0t0R01SME9nWlFHeVYxYzNxX2hsb3NFdVRraDVwYWRhbUY4Ny1IZ0VJVWVYWlFRcEJjWDhkcUdZWGwtRnVpYw?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdVRQWlNkZkR6eGRXb0ttcXVxY2hBNkZqWm93a0pveDAtdnBTODhVSHBWZS1seHFrRzAzdVo4V21WbEQtckVvS2hEX09VNWVuNGJqZXVXNnpyODJ6QkZmT3RhcU41VHFMYnFrUk5YV0k1aVVkX3duOVI1Mk1LQ1A0UkFtb2l0UW1sdUVQZUh3Wkw0X21YUWxINGZfeDFfdVhlbUplM0dIVGpMdXlDY0txb09GU2FuQQ?oc=5",
    "t": "security",
-   "updated": "2026-10-20"
+   "updated": "2026-10-21"
   },
   "afpak-jihad": {
    "t": "security",
