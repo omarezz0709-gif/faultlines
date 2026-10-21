@@ -1,15 +1,10 @@
 {
  "meta": {
-  "lastRun": "2026-10-21T11:27:43Z",
+  "lastRun": "2026-10-21T16:22:31Z",
   "log": [
    {
     "date": "2026-10-21",
     "items": [
-     {
-      "label": "Sudan–South Sudan",
-      "change": "Normal → Tense: drone strike kills over 150 in Abyei market",
-      "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1adGRqQ1g5cEpJOUtVQ2ZmR21fYWZBaWdrbFI2bF9rdEQzTFFoSXp4OHNXczE3VE44MWt2Y2tXSnRFeEZya0NDRXhRbkc3UGpKSXc?oc=5"
-     },
      {
       "label": "United Kingdom–Saudi Arabia",
       "change": "Partner: UK deploys Typhoon fighter jets to defend Saudi airspace",
@@ -34,6 +29,16 @@
       "label": "Houthi Red Sea campaign",
       "change": "Thread updated to reflect UK fighter jet deployment to defend Saudi Arabia",
       "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdVRQWlNkZkR6eGRXb0ttcXVxY2hBNkZqWm93a0pveDAtdnBTODhVSHBWZS1seHFrRzAzdVo4V21WbEQtckVvS2hEX09VNWVuNGJqZXVXNnpyODJ6QkZmT3RhcU41VHFMYnFrUk5YV0k1aVVkX3duOVI1Mk1LQ1A0UkFtb2l0UW1sdUVQZUh3Wkw0X21YUWxINGZfeDFfdVhlbUplM0dIVGpMdXlDY0txb09GU2FuQQ?oc=5"
+     },
+     {
+      "label": "Sudan–South Sudan",
+      "change": "Normal → Tense: deadly drone strike in Abyei",
+      "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNai05YVNhUmlBTkVaN1BkbVR1U2ExRlNFbEQ2SWlMSy1zVlV5Ulk1Y21qbURlLWZmOGJKc2NiejFfRWR3bGo3MVIxVTZtSERpWW9BeXN2YzRveXllTmJSeklQRFFpUklnbkNGUWdGRWVva1RfeGEzaUJnTm1kdm1ubHdaRF9yS3AzN0FZUFk5dl9hRF9qRWxnMW1oV2F0eFJ5YVZVTVlvaS1uU2RBczk5LVVhbXhfcmhEdlc1T3hjbVVzVDZFLXdNcnJxeU9TdTZhQWR6ZVJLWlU?oc=5"
+     },
+     {
+      "label": "Romania political crisis",
+      "change": "New government sworn in, ending six-month deadlock",
+      "source": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNdU9Pd09LdW1iLVN0R0k4LXh2Zkg1elNhSWc1ZnFGTG5NNEJsWVNTdFFsOFZEbnM4VXJDcWtQUzE0MFdKcnJYUk5MWGJHNk5yUkt0VnRmNzg2LXJTV0d4Ry14Q1hncnNISUVjLXF5VzBsY0xkUnFxeEkyVDF2SHZJaHN4Z0J1RjRKYjZneC1hSFlSTERyTzUzRlRoQmU4UWNCc291NF9uU2w2WmhKUzd1cUU2c1dzSHQyZEJmTFJSd2ZVZ05fLWk1aV92a0dkWUpZRVZzS3A3M2NtUQ?oc=5"
      }
     ]
    },
@@ -1801,7 +1806,7 @@
     ]
    }
   ],
-  "summary": "Maldives and Pakistan sign 20 bilateral pacts across defence and trade, Greece rejects eastern Libya's ratification of the Turkey maritime agreement, and Russia frees an American prisoner as US peace talks proceed."
+  "summary": "Sudan and South Sudan tensions spike over a deadly Abyei drone strike, while Romania forms a new government and regional defence pacts advance in Asia and the Middle East."
  },
  "relations": {
   "DNK-USA": {
@@ -3008,9 +3013,9 @@
    "a": "SDN",
    "b": "SSD",
    "s": "T",
-   "note": "South Sudan summons Sudan's envoy after a Sudanese drone strike kills over 150 people at a market in Abyei.",
+   "note": "Sudan and South Sudan face escalating tensions after a deadly Sudanese drone strike hits an Abyei market.",
    "updated": "2026-10-21",
-   "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1adGRqQ1g5cEpJOUtVQ2ZmR21fYWZBaWdrbFI2bF9rdEQzTFFoSXp4OHNXczE3VE44MWt2Y2tXSnRFeEZya0NDRXhRbkc3UGpKSXc?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNai05YVNhUmlBTkVaN1BkbVR1U2ExRlNFbEQ2SWlMSy1zVlV5Ulk1Y21qbURlLWZmOGJKc2NiejFfRWR3bGo3MVIxVTZtSERpWW9BeXN2YzRveXllTmJSeklQRFFpUklnbkNGUWdGRWVva1RfeGEzaUJnTm1kdm1ubHdaRF9yS3AzN0FZUFk5dl9hRF9qRWxnMW1oV2F0eFJ5YVZVTVlvaS1uU2RBczk5LVVhbXhfcmhEdlc1T3hjbVVzVDZFLXdNcnJxeU9TdTZhQWR6ZVJLWlU?oc=5"
   },
   "CHN-LKA": {
    "a": "CHN",
@@ -3504,9 +3509,9 @@
    "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWUlwWEJ0R2JPeVl4TUNzYkNyMVZfaWlwU21SSF96Ui1hdXIyR0wyNkpwQlFjRmw3UGJya0NYZ25TQjVGWWdrWEdEdjBsaFlJdmtQNGdIYjVJcG5zUG02b3I3TFhPXzluNmQyZTh3ejJVRGtMMG42M21yZjc4RXBleU9RTzVZRURlZDJGdkFTRXF2QVNiSVdmN2VtMkdNRzIzQnE5SFdHMlQ5TXVoSGo0?oc=5"
   },
   "SRB": {
-   "nextelec": "general election, October 25, 2026",
-   "updated": "2026-10-12",
-   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPN1lfZVpHbE5WOEg4bG16NVR0cEtUaFdqeXV6Z3paazJlWU5mOGIyN3FFVkxaWnlkMXB2Y2h3cGtIanY4Z1F3ZTBJZHZ5UFIxYkFDcTcwVDJPUGkwUlB0cmhjcGJGbU1SVk9rQUlMeWZrZ1QwSEc1MWQwSzJOY3V4Q2R3UUxOeFVJR3UydE0yN0FWdWE0ZF93c0hFMVJZOUVUVnBfN3FCN2Q3eGho?oc=5",
+   "nextelec": "Parliamentary, October 25, 2026",
+   "updated": "2026-10-21",
+   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNQ29tZTFzOWF0ODE3YlFoa1V3Sy11TklKYkN6cTFyWjZfOE9CaVgtMWpaRXByN0ZXaGpZcFc5NmVvVkxVZVNwWGg3aFQwa2xxVDAtZ2FuZUdDR0FBSUEtSzhwZmxrR1ZaZEEwd0lvcy1VbWxOeEZMNkxGYTJOVW5SQXJ1LVROV0tHd1FtOU9zWXdZLUNkYWo1NUtrcFdKM0XSAaQBQVVfeXFMTWd2SXhZdFBUa1Fqa0hNaGs1dkNHY2R4TE14ZnRtOVV6c2xpcmlBWmNodXIwZHZMdDdhVXlXUXBtSTlXMjBCU1lQRGpneVJJa0xBZGlaNjEtc29fai1Gay03ZmNHNWFRMGJwcERQaXJQb2JTQllnMnRqSUNNdDl1bTM2UG1zWUtJeEpKQWV6aUlLYk13WWlucGtKZDI2TWtpX3hXMWk?oc=5",
    "lastelec": "presidential, September 2026, Ana Brnabić"
   },
   "CHE": {
@@ -3525,9 +3530,9 @@
    "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQaGZzSVNyUkk1ZVlVRC1aN3BuQlJNWHVxX2Q3OVhuWUxZSzhNN2VfRy1zdDU5RHNuTERQbTAxS3NYNWlzdzBLV1dwMDZUdGVKNXpoclRCNXZQNzhOVTZGbUdZY1pmdWtPUUQtbzl6Y19xRmFLbTYyS3BDMGdfRXUxWWR2NkZzMHZEQTJ6VmJOYjJjY2hQSXU1bE9lTDBpYTFNVmgtbFV0MDZxVmlocUxWRUpvLXVBNjFhR0HSAbgBQVVfeXFMTWVUMGhmclVScDVjaFJLUkJ2elNTd3hzd21sRjg1cF9EeWJXbFBrRmlKblRsWDdRQTN1eTc3aDhqV2dBTHhGRk5Ccll1SldRZGpXTEExMjUwUEFlUnVINVFrQWxyZzlzRmZiZE9aUUhZY1IxMFZVTE9qWktmWUJfMFcyNUpfREdkbHd4Q0VldEozQmpMVG1Yb1JLdkpZbm5tektzbTBCRTZfVE42dWUxVEhhOG1UY0hKQw?oc=5"
   },
   "ROU": {
-   "lastelec": "Parliamentary, December 2024, various",
+   "lastelec": "Government formation, October 2026",
    "updated": "2026-10-21",
-   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOYXlYNW45eFd3bkFPUWRyTkVpNTZKakYzUHd3eVAyQVFpdlZ4QWlHbWpBSnVRV3gwMmhuTEVnQk1TOUxoY19HYVBJdXdCdWJEQi1hRTlZSy1YWThEekMyeTRNc0o2TjJKVVZXUHNnTnVmV01ubGhWRVZnUXdvUjFGc3Z2em1KTnNTUGFpbkpDbXBzTkNxeTlYRmhR?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNdU9Pd09LdW1iLVN0R0k4LXh2Zkg1elNhSWc1ZnFGTG5NNEJsWVNTdFFsOFZEbnM4VXJDcWtQUzE0MFdKcnJYUk5MWGJHNk5yUkt0VnRmNzg2LXJTV0d4Ry14Q1hncnNISUVjLXF5VzBsY0xkUnFxeEkyVDF2SHZJaHN4Z0J1RjRKYjZneC1hSFlSTERyTzUzRlRoQmU4UWNCc291NF9uU2w2WmhKUzd1cUU2c1dzSHQyZEJmTFJSd2ZVZ05fLWk1aV92a0dkWUpZRVZzS3A3M2NtUQ?oc=5",
    "nextelec": "General, late 2028"
   },
   "SLV": {
