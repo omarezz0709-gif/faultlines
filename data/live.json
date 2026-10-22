@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-22T17:17:30Z",
+  "lastRun": "2026-10-22T22:21:51Z",
   "log": [
    {
     "date": "2026-10-22",
@@ -49,6 +49,11 @@
       "label": "Canada–Turkey",
       "change": "Normal → Ally: Elevated to strategic partnership",
       "source": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxONl9TbDhKQ3NjZU1wQVZSamFHbmstN0VjOEFqUFBMZ2daTTg0WEt3WEFJRVRMQnNHV1VFTm41MVoza05CNkZPX3NMcTFxVld4LTFyd1ZEN1BHdGQ3SDJ1eEdDb3NoekJodHRCV3FDVEtXaE1ra2dCYUZmSThrVUZicmR3N3Q2YTJMeFFmTEtfR3YyWVVySVlSNVVWXzRJM3BGTDBxV3N5NWJHQkc4RFNCMGhmNGs2Y2J4OUNGYUJGWnplUU5MYk1SVHFmVkREMnJ6OEZMMlZhaGdTdEtmWDFOX19EaTdneGhJMXY0?oc=5"
+     },
+     {
+      "label": "Spain–Italy",
+      "change": "Tense → Partner: Resolve border dispute and reinstate full Schengen travel",
+      "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQR0ZYSk1ZUUVtU1F0RFhMb243YWZ2VFJSVGs4bHZnVEUyeENFWUZQU0JNQ09Ea1dqb1JPWmIwa2xQN3d1SjVDc2NQQVkwM0xGYnA0RVNNZmw1bURRMWFPc3hwUkZRX2dLSk9SQnBvU2RadjhaZkVhOFY4OXBfRW44MUxGYmZUbWt5TVJhazFPcS04SHEy?oc=5"
      }
     ]
    },
@@ -1872,7 +1877,7 @@
     ]
    }
   ],
-  "summary": "The US orders partial diplomatic withdrawal from Saudi Arabia following Houthi attacks, while Canada and Turkey elevate relations to a strategic partnership."
+  "summary": "Spain and Italy resolved their border controls dispute over Ceuta to restore full Schengen travel, while Houthi strikes on Saudi infrastructure escalated regional security threats."
  },
  "relations": {
   "DNK-USA": {
@@ -3194,6 +3199,14 @@
    "note": "Canada and Türkiye elevate relations to a strategic level, committing to long-term trade and defence ties.",
    "updated": "2026-10-22",
    "source": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxONl9TbDhKQ3NjZU1wQVZSamFHbmstN0VjOEFqUFBMZ2daTTg0WEt3WEFJRVRMQnNHV1VFTm41MVoza05CNkZPX3NMcTFxVld4LTFyd1ZEN1BHdGQ3SDJ1eEdDb3NoekJodHRCV3FDVEtXaE1ra2dCYUZmSThrVUZicmR3N3Q2YTJMeFFmTEtfR3YyWVVySVlSNVVWXzRJM3BGTDBxV3N5NWJHQkc4RFNCMGhmNGs2Y2J4OUNGYUJGWnplUU5MYk1SVHFmVkREMnJ6OEZMMlZhaGdTdEtmWDFOX19EaTdneGhJMXY0?oc=5"
+  },
+  "ESP-ITA": {
+   "a": "ESP",
+   "b": "ITA",
+   "s": "F",
+   "note": "Spain and Italy resolve their border dispute triggered by a migrant influx into Ceuta and reinstate full Schengen travel.",
+   "updated": "2026-10-22",
+   "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQR0ZYSk1ZUUVtU1F0RFhMb243YWZ2VFJSVGs4bHZnVEUyeENFWUZQU0JNQ09Ea1dqb1JPWmIwa2xQN3d1SjVDc2NQQVkwM0xGYnA0RVNNZmw1bURRMWFPc3hwUkZRX2dLSk9SQnBvU2RadjhaZkVhOFY4OXBfRW44MUxGYmZUbWt5TVJhazFPcS04SHEy?oc=5"
   }
  },
  "threads": {
@@ -3212,9 +3225,9 @@
     "SYR",
     "ARE"
    ],
-   "d": "Iran-backed Houthi forces strike Saudi infrastructure, prompting US diplomatic evacuations and Royal Air Force (RAF) jet deployments.",
+   "d": "Iran-backed Houthi forces strike Saudi Arabia's King Fahd International Airport and energy infrastructure, killing civilians and prompting United States (US) diplomatic evacuations.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8zR1cwOHBqbWE1eVVxUlJheDVHLS1BWnhhS19DcktCMEZkTFU4UVpFTm8xVXloNXpBUzUwN3VMTmV5TzlHaVRWRG16S3lHaFNhXzJaYzc4YjhkazZfM2c?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPN2NvaGNRSGF1c2QyYmFRT3g4Ul9makdBTDh0NjZKRExSWjNtNEFjc09WZUVmandfc1BrYTJXSGxHR2lpMk50eWdra0lTMFMwOE0xemNfZE9LY3VERjhGVW1iYjZMcUxhYXJmVUxLNHpyalRRWXdsRmtnblgyQW9KV2liZzdmUUVEWVV6ZE1vbVM5eXlrX1E?oc=5",
    "t": "security",
    "updated": "2026-10-22"
   },
@@ -3455,10 +3468,10 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "Commercial tankers face missile strikes as Iran's Islamic Revolutionary Guard Corps (IRGC) warns the US and threatens undersea cables.",
+   "d": "Commercial tankers and a Kuwait-flagged vessel face strikes in the Strait of Hormuz as Iran's Islamic Revolutionary Guard Corps (IRGC) warns of renewed conflict.",
    "n": "Strait of Hormuz",
-   "s": "Tanker strikes; IRGC cable threats",
-   "source": "https://news.google.com/rss/articles/CBMi_gJBVV95cUxQM2FXaFRUMWlnZ1BYYjktcFdWZGtxeE1BN0pPZldXZXEybVp4R1dtb2lBd1pZdkJ4bXZja0tRQTg3R2IzbDBVLXNidlNXc0hGY2hfa01GS3pHZEtmSzBmNnh5YV9YdEU0cTBiUTdPa0FxNjlrSmhIYUltUWFiSWtTVjB3amc5SkVCMUlERi1fbWhOUlVvVFQ3c3lLT2Utc2NqLWZXN29jZEZzVkRnYjFXb0QtajF2MDVNQVNTckZ5R0NoWGo0OHQ1aFZhTHdPN0drWHZJMHVTRUJBMUlfcEp1MnlQUHRtX0g2VEl6UGRqVjA5RE5ScmFHZldORlFrbTRnYUhXUWR5SWRpVS10MzZwMHlhY2dqTFJGQVBnb2M5YjBQa2ZDaTBZeU5xaF9vYV9JaENueXdkd2FxRHotRDdhWGhlbFVjc0pfdHdKSHM3VU5xVjh3VEkwalo0TmhacFdYMUtDdlhIUkNYMnd0X1IyUUVkMTBDdFNtUkFTdFN3?oc=5",
+   "s": "Tankers struck; 7 oil tankers attacked",
+   "source": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPLTFpMnpyZVd2WWJaUDNiWUlueXhfRTY1bVZqNVhLZkJRekN2NXo5Ulhub3FDUXFyUVhRanNzVDAzbk0wV1hIekd4ZW9tNlZqQ2xMQ2J4bGs4cWU5UzR6OGxNUy1faS0wZURKcVRvVExWbG8zd1Qyb3pPU1NYenRnaFR6c0JST1lqczdOX1ZQNTUwUkluemZrYkxmbGNZSVY1THNpSlI5bnhLbVh0VEctRE5velBXa0RJaF9ObTdoYzl0cmNJbmZuNG41bnZqMXR4a1EyOTQtUXlXOXlfamM0NVdEelFTcFo2SGEtV3ZOQUJsVlVVR2h5bg?oc=5",
    "updated": "2026-10-22",
    "t": "strait",
    "lat": 26.57,
