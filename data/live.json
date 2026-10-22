@@ -1,7 +1,27 @@
 {
  "meta": {
-  "lastRun": "2026-10-21T22:21:19Z",
+  "lastRun": "2026-10-22T05:29:14Z",
   "log": [
+   {
+    "date": "2026-10-22",
+    "items": [
+     {
+      "label": "Australia–East Timor",
+      "change": "Partner: new defence and cybersecurity agreement signed",
+      "source": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOdzM1WWluOFNJMTV2WmN4TVhJc0dQOXFkaGNpYk9hVEtMUTdQRUNuaU9DZU9Ed0xQcUVwQXk2WldMemxYWjh4clh0STJTZDZpYmVSbE10ZUxxdEpPUy05eFdwSjVyTU05ZU9HQjJlMnNwR3VlbHJTdWNnNy1uQzN5Mk8yUktqN1BnczQ4UWJiMmkzV2FuUjhFbVNlWjdWYWhjb3F0Q3ZmcDVPOElyS1Fzbi1GQkZlc1VwRDZYeHpCVVhpTUFwb24zZ05wMjQ5UnFFMVBpelQ2VW0zN3NQYktyeDU5ZUlEWFF6SGJkNlczVUhLci1BQ1E?oc=5"
+     },
+     {
+      "label": "Saudi Arabia–United States",
+      "change": "Partner: US orders diplomatic staff departure over Houthi attacks",
+      "source": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8zR1cwOHBqbWE1eVVxUlJheDVHLS1BWnhhS19DcktCMEZkTFU4UVpFTm8xVXloNXpBUzUwN3VMTmV5TzlHaVRWRG16S3lHaFNhXzJaYzc4YjhkazZfM2c?oc=5"
+     },
+     {
+      "label": "El Salvador–Haiti",
+      "change": "Normal: El Salvador launches military operation following gang attack",
+      "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaFlEUDZDeTkwaUxqVFFsUHZvQkJDd3U3R2NqZDY0bmE1ZDg1dE9EVUgzV3g5ZHlkcWs2UXRETmxERkd5dEZxM0ZoWk5JUWJJNGZmNUlNcUNTbllpdW1jS1RFVDdYVk4xajNuTUtZaWFLNUZzeWdFNVdpeVFkdHplZGxFVkJvNUZmR2JqS3NHeTFGQmI3aUlONmVITVJURG4yODdRMUVndzAzUlI0N1ljVFNidWN5SzEwd0RERGdkQXJBLWlh?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-21",
     "items": [
@@ -1820,18 +1840,9 @@
       "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWDh2YVFnb3VwZDNPdjB4NnZmT0t4X1Z3M085YTljU3pBXzVwcm9EN0R1NkNmWGxfOGp5WFZFaHZ1c0RyTzdNSktEVG8zRE9QZ1JEdm1Rd1FQRVpoWUh0M0VNdUhyc2tJeGNzMEx4RFJRRDZQcERIcnZlMlBIZ1JDZDF2Wm5CMWtqZUE2UnI1a0dfNGJfRE5KUWhVaTNKTVRIM1VqSEluTU9YREl1c3c?oc=5"
      }
     ]
-   },
-   {
-    "date": "2026-09-22",
-    "items": [
-     {
-      "change": "About 300 bilateral relations and 97 strategic locations, as of mid-2026.",
-      "label": "Baseline"
-     }
-    ]
    }
   ],
-  "summary": "The United States and Guyana sign a landmark defense agreement, Argentina–Spain diplomatic tensions flare, and Slovakia resumes energy talks with Russia."
+  "summary": "Australia and Timor-Leste expand defence ties, the United States orders non-essential diplomatic staff out of Saudi Arabia amid escalating Houthi strikes, and El Salvador launches a military rescue operation in Haiti."
  },
  "relations": {
   "DNK-USA": {
@@ -3105,6 +3116,30 @@
    "note": "Tensions flare after Argentine President Milei calls Spanish Prime Minister Sánchez a dictator during a visit to Madrid.",
    "updated": "2026-10-21",
    "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVlpPM1UzM0ZVZnNRV3d2dWloaWtvQUR6b2puS1hlV1lxZmt1dEdLT256NUhSRFc3YW5tMGZCZk80S0g2S05FTmFvVW0ydlJ4ajlIeW80eFlTR2VyVGZaMDE2U2dJdXZMVFFfcjA2MF9iSkdvQ08wcF8zOV9QdmU0ZExqQi1mYXBaaEw0R0RYdlBEMVlneXNmcUxFbzg0R3NzMGZ2cjVaRU5aYWxGOUV4Yg?oc=5"
+  },
+  "AUS-TLS": {
+   "a": "AUS",
+   "b": "TLS",
+   "s": "F",
+   "note": "Australia and Timor-Leste sign a defense agreement to provide maritime patrol vessels and enhance cybersecurity cooperation.",
+   "updated": "2026-10-22",
+   "source": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOdzM1WWluOFNJMTV2WmN4TVhJc0dQOXFkaGNpYk9hVEtMUTdQRUNuaU9DZU9Ed0xQcUVwQXk2WldMemxYWjh4clh0STJTZDZpYmVSbE10ZUxxdEpPUy05eFdwSjVyTU05ZU9HQjJlMnNwR3VlbHJTdWNnNy1uQzN5Mk8yUktqN1BnczQ4UWJiMmkzV2FuUjhFbVNlWjdWYWhjb3F0Q3ZmcDVPOElyS1Fzbi1GQkZlc1VwRDZYeHpCVVhpTUFwb24zZ05wMjQ5UnFFMVBpelQ2VW0zN3NQYktyeDU5ZUlEWFF6SGJkNlczVUhLci1BQ1E?oc=5"
+  },
+  "SAU-USA": {
+   "a": "SAU",
+   "b": "USA",
+   "s": "F",
+   "note": "The US orders non-essential diplomats to leave Saudi Arabia as Houthi drone and missile strikes target Saudi infrastructure.",
+   "updated": "2026-10-22",
+   "source": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8zR1cwOHBqbWE1eVVxUlJheDVHLS1BWnhhS19DcktCMEZkTFU4UVpFTm8xVXloNXpBUzUwN3VMTmV5TzlHaVRWRG16S3lHaFNhXzJaYzc4YjhkazZfM2c?oc=5"
+  },
+  "HTI-SLV": {
+   "a": "HTI",
+   "b": "SLV",
+   "s": "N",
+   "note": "El Salvador launches a military operation in Haiti after gang attacks leave four Salvadoran security personnel missing.",
+   "updated": "2026-10-22",
+   "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaFlEUDZDeTkwaUxqVFFsUHZvQkJDd3U3R2NqZDY0bmE1ZDg1dE9EVUgzV3g5ZHlkcWs2UXRETmxERkd5dEZxM0ZoWk5JUWJJNGZmNUlNcUNTbllpdW1jS1RFVDdYVk4xajNuTUtZaWFLNUZzeWdFNVdpeVFkdHplZGxFVkJvNUZmR2JqS3NHeTFGQmI3aUlONmVITVJURG4yODdRMUVndzAzUlI0N1ljVFNidWN5SzEwd0RERGdkQXJBLWlh?oc=5"
   }
  },
  "threads": {
@@ -3123,11 +3158,11 @@
     "SYR",
     "ARE"
    ],
-   "d": "Iran-backed Houthi forces attack Saudi Arabia and Aden, prompting the UK (United Kingdom) to deploy Typhoon jets to defend Saudi airspace.",
+   "d": "Iran-backed Houthi forces strike Saudi infrastructure, prompting US diplomatic evacuations and Royal Air Force (RAF) jet deployments.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdVRQWlNkZkR6eGRXb0ttcXVxY2hBNkZqWm93a0pveDAtdnBTODhVSHBWZS1seHFrRzAzdVo4V21WbEQtckVvS2hEX09VNWVuNGJqZXVXNnpyODJ6QkZmT3RhcU41VHFMYnFrUk5YV0k1aVVkX3duOVI1Mk1LQ1A0UkFtb2l0UW1sdUVQZUh3Wkw0X21YUWxINGZfeDFfdVhlbUplM0dIVGpMdXlDY0txb09GU2FuQQ?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8zR1cwOHBqbWE1eVVxUlJheDVHLS1BWnhhS19DcktCMEZkTFU4UVpFTm8xVXloNXpBUzUwN3VMTmV5TzlHaVRWRG16S3lHaFNhXzJaYzc4YjhkazZfM2c?oc=5",
    "t": "security",
-   "updated": "2026-10-21"
+   "updated": "2026-10-22"
   },
   "afpak-jihad": {
    "t": "security",
@@ -3366,11 +3401,11 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "Tanker attacks reach record highs with multiple ships damaged or sunk, while Iran proposes seven-day talks with the US to reopen the waterway.",
+   "d": "Commercial tankers face missile strikes as Iran's Islamic Revolutionary Guard Corps (IRGC) warns the US and threatens undersea cables.",
    "n": "Strait of Hormuz",
-   "s": "Record tanker strikes as Iran floats 7-day talks",
-   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOYUVkZE15VE5jYTQ3YjVDbF9kT2lUaVlWb1VIWnNyUkhUZkJNN1BMWFBPY05oTVowRnNOSjRoaW96ZXpXRnA4T3RHSkVqRnZqVnF0WDRBVVplTHA3MHBZeVBvRm9QNVh0QWg0a3VSVGNaWk1kMUVhTUluQWNoWkJDdWVOMTVGc1RwdEtURUVRTy1SbWtYclB2MTZ3ZzdkVU1wMHZDVU42VkxTTzRncFJVcC1aQnpIOHPSAbcBQVVfeXFMTmFFZGRNeVROY2E0N2I1Q2xfZE9pVGlZVm9VSFpzclJIVGZCTTdQTFhQT2NOaE1aMEZzTko0aGlvemV6V0ZwOE90R0pFakZ2alZxdFg0QVVaZUxwNzBwWXlQb0ZvUDVYdEFoNGt1UlRjWlpNZDFFYU1JbkFjaFpCQ3VlTjE1RnNUcHRLVEVFUU8tUm1rWHJQdjE2d2c3ZFVNcDB2Q1VONlZMU080Z3BSVXAtWkJ6SDhz?oc=5",
-   "updated": "2026-10-19",
+   "s": "Tanker strikes; IRGC cable threats",
+   "source": "https://news.google.com/rss/articles/CBMi_gJBVV95cUxQM2FXaFRUMWlnZ1BYYjktcFdWZGtxeE1BN0pPZldXZXEybVp4R1dtb2lBd1pZdkJ4bXZja0tRQTg3R2IzbDBVLXNidlNXc0hGY2hfa01GS3pHZEtmSzBmNnh5YV9YdEU0cTBiUTdPa0FxNjlrSmhIYUltUWFiSWtTVjB3amc5SkVCMUlERi1fbWhOUlVvVFQ3c3lLT2Utc2NqLWZXN29jZEZzVkRnYjFXb0QtajF2MDVNQVNTckZ5R0NoWGo0OHQ1aFZhTHdPN0drWHZJMHVTRUJBMUlfcEp1MnlQUHRtX0g2VEl6UGRqVjA5RE5ScmFHZldORlFrbTRnYUhXUWR5SWRpVS10MzZwMHlhY2dqTFJGQVBnb2M5YjBQa2ZDaTBZeU5xaF9vYV9JaENueXdkd2FxRHotRDdhWGhlbFVjc0pfdHdKSHM3VU5xVjh3VEkwalo0TmhacFdYMUtDdlhIUkNYMnd0X1IyUUVkMTBDdFNtUkFTdFN3?oc=5",
+   "updated": "2026-10-22",
    "t": "strait",
    "lat": 26.57,
    "lng": 56.25,
