@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-22T11:28:41Z",
+  "lastRun": "2026-10-22T17:17:30Z",
   "log": [
    {
     "date": "2026-10-22",
@@ -9,11 +9,6 @@
       "label": "Australia–East Timor",
       "change": "Partner: new defence and cybersecurity agreement signed",
       "source": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOdzM1WWluOFNJMTV2WmN4TVhJc0dQOXFkaGNpYk9hVEtMUTdQRUNuaU9DZU9Ed0xQcUVwQXk2WldMemxYWjh4clh0STJTZDZpYmVSbE10ZUxxdEpPUy05eFdwSjVyTU05ZU9HQjJlMnNwR3VlbHJTdWNnNy1uQzN5Mk8yUktqN1BnczQ4UWJiMmkzV2FuUjhFbVNlWjdWYWhjb3F0Q3ZmcDVPOElyS1Fzbi1GQkZlc1VwRDZYeHpCVVhpTUFwb24zZ05wMjQ5UnFFMVBpelQ2VW0zN3NQYktyeDU5ZUlEWFF6SGJkNlczVUhLci1BQ1E?oc=5"
-     },
-     {
-      "label": "Saudi Arabia–United States",
-      "change": "Partner: US orders diplomatic staff departure over Houthi attacks",
-      "source": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8zR1cwOHBqbWE1eVVxUlJheDVHLS1BWnhhS19DcktCMEZkTFU4UVpFTm8xVXloNXpBUzUwN3VMTmV5TzlHaVRWRG16S3lHaFNhXzJaYzc4YjhkazZfM2c?oc=5"
      },
      {
       "label": "El Salvador–Haiti",
@@ -44,6 +39,16 @@
       "label": "Bulgaria",
       "change": "Upcoming election logged: presidential election in October 2026",
       "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQOUp6SnhKcDJmT0FZVmNzR0FQcUlhZk5CdEZGS2VGbGE2cXFCQk5GbEE5czh0OEpQWGM0YmpvbmdTR3l5MXV5cnpPVWxzQzRwOUQ4eGxEeXJLT2o3NHdraXFpLWE4UDM5X0lnN2doeWxZTnJOdS15SXNtbE1iNzhCeHg5alBuQW1KeDVya1RPRElEUDE3?oc=5"
+     },
+     {
+      "label": "Saudi Arabia–United States",
+      "change": "Partner → Tense: US orders partial diplomatic withdrawal amid Houthi attacks",
+      "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQOGZ2VEpSaUZoaWQwZHVVek1fYUJpT25DU2RIaU5mWWFVTkJZa3p1bTRXZHE1SlRTb2pMS3pOZEVKQU10MkpSeHNfY0h1Ul9PdGYxdFNvTzBWQWVidnJfTTJYUC12NjM3S01namtXWmVjcll5elY5ODVIVXlKejNKbWZ1d2xPS0YxOG9EcUdFb0hxYlBhWHBRSkJkWkhTU2pqT3ZPdFNyT3dYMTBsRm83d2Rn?oc=5"
+     },
+     {
+      "label": "Canada–Turkey",
+      "change": "Normal → Ally: Elevated to strategic partnership",
+      "source": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxONl9TbDhKQ3NjZU1wQVZSamFHbmstN0VjOEFqUFBMZ2daTTg0WEt3WEFJRVRMQnNHV1VFTm41MVoza05CNkZPX3NMcTFxVld4LTFyd1ZEN1BHdGQ3SDJ1eEdDb3NoekJodHRCV3FDVEtXaE1ra2dCYUZmSThrVUZicmR3N3Q2YTJMeFFmTEtfR3YyWVVySVlSNVVWXzRJM3BGTDBxV3N5NWJHQkc4RFNCMGhmNGs2Y2J4OUNGYUJGWnplUU5MYk1SVHFmVkREMnJ6OEZMMlZhaGdTdEtmWDFOX19EaTdneGhJMXY0?oc=5"
      }
     ]
    },
@@ -1867,7 +1872,7 @@
     ]
    }
   ],
-  "summary": "Refreshed relation notes for Russia–Ukraine, North Korea–South Korea, Argentina–United Kingdom, and Iran–Iraq amid military and diplomatic developments, and recorded Bulgaria's upcoming presidential election."
+  "summary": "The US orders partial diplomatic withdrawal from Saudi Arabia following Houthi attacks, while Canada and Turkey elevate relations to a strategic partnership."
  },
  "relations": {
   "DNK-USA": {
@@ -3153,10 +3158,10 @@
   "SAU-USA": {
    "a": "SAU",
    "b": "USA",
-   "s": "F",
+   "s": "T",
    "note": "The US orders non-essential diplomats to leave Saudi Arabia as Houthi drone and missile strikes target Saudi infrastructure.",
    "updated": "2026-10-22",
-   "source": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8zR1cwOHBqbWE1eVVxUlJheDVHLS1BWnhhS19DcktCMEZkTFU4UVpFTm8xVXloNXpBUzUwN3VMTmV5TzlHaVRWRG16S3lHaFNhXzJaYzc4YjhkazZfM2c?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQOGZ2VEpSaUZoaWQwZHVVek1fYUJpT25DU2RIaU5mWWFVTkJZa3p1bTRXZHE1SlRTb2pMS3pOZEVKQU10MkpSeHNfY0h1Ul9PdGYxdFNvTzBWQWVidnJfTTJYUC12NjM3S01namtXWmVjcll5elY5ODVIVXlKejNKbWZ1d2xPS0YxOG9EcUdFb0hxYlBhWHBRSkJkWkhTU2pqT3ZPdFNyT3dYMTBsRm83d2Rn?oc=5"
   },
   "HTI-SLV": {
    "a": "HTI",
@@ -3181,6 +3186,14 @@
    "note": "Russia bombards Kyiv with missile strikes despite agreeing to resume trilateral peace talks with the US and Ukraine in November.",
    "updated": "2026-10-22",
    "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPS2Nuc1BSZVdvcEtQZFowTktxemJJMEptN3ZhWmVLMnhaSllnZTNIcE9qeEYyZ0c2SURtY254SUJvUEJiUXFiSExkSkJBRVpSY0Z6NFFnM3QweDBfTklYNEMzWWRkc21YYnNqalozSTBTaTFNZVQtRkRhalBOOER0Y2VQUnpTZk1aaTNwU252X01qMkw5Ym5sMA?oc=5"
+  },
+  "CAN-TUR": {
+   "a": "CAN",
+   "b": "TUR",
+   "s": "A",
+   "note": "Canada and Türkiye elevate relations to a strategic level, committing to long-term trade and defence ties.",
+   "updated": "2026-10-22",
+   "source": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxONl9TbDhKQ3NjZU1wQVZSamFHbmstN0VjOEFqUFBMZ2daTTg0WEt3WEFJRVRMQnNHV1VFTm41MVoza05CNkZPX3NMcTFxVld4LTFyd1ZEN1BHdGQ3SDJ1eEdDb3NoekJodHRCV3FDVEtXaE1ra2dCYUZmSThrVUZicmR3N3Q2YTJMeFFmTEtfR3YyWVVySVlSNVVWXzRJM3BGTDBxV3N5NWJHQkc4RFNCMGhmNGs2Y2J4OUNGYUJGWnplUU5MYk1SVHFmVkREMnJ6OEZMMlZhaGdTdEtmWDFOX19EaTdneGhJMXY0?oc=5"
   }
  },
  "threads": {
