@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-22T05:29:14Z",
+  "lastRun": "2026-10-22T11:28:41Z",
   "log": [
    {
     "date": "2026-10-22",
@@ -19,6 +19,31 @@
       "label": "El Salvador–Haiti",
       "change": "Normal: El Salvador launches military operation following gang attack",
       "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaFlEUDZDeTkwaUxqVFFsUHZvQkJDd3U3R2NqZDY0bmE1ZDg1dE9EVUgzV3g5ZHlkcWs2UXRETmxERkd5dEZxM0ZoWk5JUWJJNGZmNUlNcUNTbllpdW1jS1RFVDdYVk4xajNuTUtZaWFLNUZzeWdFNVdpeVFkdHplZGxFVkJvNUZmR2JqS3NHeTFGQmI3aUlONmVITVJURG4yODdRMUVndzAzUlI0N1ljVFNidWN5SzEwd0RERGdkQXJBLWlh?oc=5"
+     },
+     {
+      "label": "Argentina–United Kingdom",
+      "change": "Note refreshed: Argentina rules out military force over Falkland Islands",
+      "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaE05bE1SaE9ieUFobXN4cXVnczRDeTdGbG1zQi1talFUV1Nnc2FScUYtSWJxQkpKaEhKUGl6bmZBcTRXR0M2OE10Uy1id1pORFlZOERQS2ZRUzNHVmJha2V3enJ1MkJxLWd0dmR4d2pjNUdIOEtTcnNUeVY2d2JWMll3aDZiTDhEck1MM1R3UHhQUHdwdnJnZUIyVm4zUWZGUkY5X2NqSDRWYkVw?oc=5"
+     },
+     {
+      "label": "Iran–Iraq",
+      "change": "Note refreshed: Iraq closes Al-Shib border crossing under US pressure",
+      "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUkJYZEdfa295eTZMRUJYTUFDQzJlbHJUcDc1Y0NydmNZQU1oQjhzWFBEVDNoWWxyeG5CZVJVOWx4OE5JMWZDZlotdF9CeDlnVjEwVWwtZ24tSWNrSVdSWExYdHpPNGxuZnVGajhkUFgyU3JxQUlSa053d1FORzliR1hmdkpMOHN6b3JxWDhRQ0VYcDBGaXZRc29CMmNhNEplQjFJUGpYSG5leU1KTFRpaQ?oc=5"
+     },
+     {
+      "label": "Russia–Ukraine",
+      "change": "Note refreshed: Russia strikes Kyiv while agreeing to November peace talks",
+      "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPS2Nuc1BSZVdvcEtQZFowTktxemJJMEptN3ZhWmVLMnhaSllnZTNIcE9qeEYyZ0c2SURtY254SUJvUEJiUXFiSExkSkJBRVpSY0Z6NFFnM3QweDBfTklYNEMzWWRkc21YYnNqalozSTBTaTFNZVQtRkRhalBOOER0Y2VQUnpTZk1aaTNwU252X01qMkw5Ym5sMA?oc=5"
+     },
+     {
+      "label": "North Korea–South Korea",
+      "change": "Note refreshed: North Korea readies border loudspeakers after DMZ incidents",
+      "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUVlxNzM2bHM2ako0T2ZZdHlxSy1LUnJIWTFXYlY4eUpCaHpKdkZRbFQ4WnB2VXJ6QWxIdUZGSVJISGFYZDUyaE1DN1FLVEV3OVB5V0RYRTI1MjlRQnpOcmNQUXlid213OEF4QW00YlRTSVNhY2dJcktPUWNOaXZZRUpTYlNoRXBYRU9NcVo2V19KeE5xQUVrdHM0dWYxZGRtdmVNdHJWa3Zzblc5eExmLWlkbVIxUQ?oc=5"
+     },
+     {
+      "label": "Bulgaria",
+      "change": "Upcoming election logged: presidential election in October 2026",
+      "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQOUp6SnhKcDJmT0FZVmNzR0FQcUlhZk5CdEZGS2VGbGE2cXFCQk5GbEE5czh0OEpQWGM0YmpvbmdTR3l5MXV5cnpPVWxzQzRwOUQ4eGxEeXJLT2o3NHdraXFpLWE4UDM5X0lnN2doeWxZTnJOdS15SXNtbE1iNzhCeHg5alBuQW1KeDVya1RPRElEUDE3?oc=5"
      }
     ]
    },
@@ -1842,7 +1867,7 @@
     ]
    }
   ],
-  "summary": "Australia and Timor-Leste expand defence ties, the United States orders non-essential diplomatic staff out of Saudi Arabia amid escalating Houthi strikes, and El Salvador launches a military rescue operation in Haiti."
+  "summary": "Refreshed relation notes for Russia–Ukraine, North Korea–South Korea, Argentina–United Kingdom, and Iran–Iraq amid military and diplomatic developments, and recorded Bulgaria's upcoming presidential election."
  },
  "relations": {
   "DNK-USA": {
@@ -2137,9 +2162,9 @@
    "a": "ARG",
    "b": "GBR",
    "s": "T",
-   "note": "Argentina challenges Falklands oil drilling at an international tribunal as the United Kingdom (UK) stages defence exercises.",
-   "updated": "2026-10-13",
-   "source": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNRmpHQjlPZHBQMURST1ptX2JCV1BDa2JJN25aMENGS0RnV01PWlJwckY0XzJsWUJ4UkFpY3BIWk9va1JOSEVXazBGMUptdWJPZUpXVVREb3RzbnZBRTR2dmdEX0YwcmsxcGIxYU0yN05qNU1hZnFqV0pfN2xtMFVvZm9mYkhMMVZmVjBoUlZPTWVxdnRnSmprT2tSVGNMNXdWRmd2Um5nbS1GT2M4MVZUNlI5YUxjOVZqS0FlUWd5ZnFKaFlMWkd3VG5peHNtV0x0MG5vVWZkQWFGbUQ4SEc1R2xXck9YLU9NZ3l2RnVUczJ6NXQ5cm1F?oc=5"
+   "note": "Argentine President Milei rules out military force over the Falkland Islands, committing to pursue diplomatic channels.",
+   "updated": "2026-10-22",
+   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaE05bE1SaE9ieUFobXN4cXVnczRDeTdGbG1zQi1talFUV1Nnc2FScUYtSWJxQkpKaEhKUGl6bmZBcTRXR0M2OE10Uy1id1pORFlZOERQS2ZRUzNHVmJha2V3enJ1MkJxLWd0dmR4d2pjNUdIOEtTcnNUeVY2d2JWMll3aDZiTDhEck1MM1R3UHhQUHdwdnJnZUIyVm4zUWZGUkY5X2NqSDRWYkVw?oc=5"
   },
   "MMR-MYS": {
    "a": "MMR",
@@ -2177,9 +2202,9 @@
    "a": "KOR",
    "b": "PRK",
    "s": "W",
-   "note": "Tensions mount as North Korea threatens to resume loudspeaker broadcasts and deploy additional strike assets along the border.",
-   "updated": "2026-10-19",
-   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQY0lVSDdlczdaNmZncnpJM2t4QWt3VWl2WktIWTRMZHgxbWJHVU1BZjFKSkU2QjVaOTNJenQwYjJoNHFSZF90bHhhZHlLenF0TGZXc19vMzZZWE5RRTlTWDd3N21iOFAwYUZKM0dqd0JGSXc4TndWMElxYlA3ZXRzVnBHUzI2VVVRaTl3R0ZCN29wSWlwN21XY2lPYXBON0RDOTV3b0x3?oc=5"
+   "note": "North Korea prepares border loudspeaker broadcasts and mobilizes forces following DMZ (Demilitarized Zone) mine explosions.",
+   "updated": "2026-10-22",
+   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUVlxNzM2bHM2ako0T2ZZdHlxSy1LUnJIWTFXYlY4eUpCaHpKdkZRbFQ4WnB2VXJ6QWxIdUZGSVJISGFYZDUyaE1DN1FLVEV3OVB5V0RYRTI1MjlRQnpOcmNQUXlid213OEF4QW00YlRTSVNhY2dJcktPUWNOaXZZRUpTYlNoRXBYRU9NcVo2V19KeE5xQUVrdHM0dWYxZGRtdmVNdHJWa3Zzblc5eExmLWlkbVIxUQ?oc=5"
   },
   "ESP-ISR": {
    "a": "ESP",
@@ -3140,6 +3165,22 @@
    "note": "El Salvador launches a military operation in Haiti after gang attacks leave four Salvadoran security personnel missing.",
    "updated": "2026-10-22",
    "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaFlEUDZDeTkwaUxqVFFsUHZvQkJDd3U3R2NqZDY0bmE1ZDg1dE9EVUgzV3g5ZHlkcWs2UXRETmxERkd5dEZxM0ZoWk5JUWJJNGZmNUlNcUNTbllpdW1jS1RFVDdYVk4xajNuTUtZaWFLNUZzeWdFNVdpeVFkdHplZGxFVkJvNUZmR2JqS3NHeTFGQmI3aUlONmVITVJURG4yODdRMUVndzAzUlI0N1ljVFNidWN5SzEwd0RERGdkQXJBLWlh?oc=5"
+  },
+  "IRN-IRQ": {
+   "a": "IRN",
+   "b": "IRQ",
+   "s": "F",
+   "note": "Iraq suspends operations at the Al-Shib border crossing with Iran following United States (US) security pressure.",
+   "updated": "2026-10-22",
+   "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUkJYZEdfa295eTZMRUJYTUFDQzJlbHJUcDc1Y0NydmNZQU1oQjhzWFBEVDNoWWxyeG5CZVJVOWx4OE5JMWZDZlotdF9CeDlnVjEwVWwtZ24tSWNrSVdSWExYdHpPNGxuZnVGajhkUFgyU3JxQUlSa053d1FORzliR1hmdkpMOHN6b3JxWDhRQ0VYcDBGaXZRc29CMmNhNEplQjFJUGpYSG5leU1KTFRpaQ?oc=5"
+  },
+  "RUS-UKR": {
+   "a": "RUS",
+   "b": "UKR",
+   "s": "W",
+   "note": "Russia bombards Kyiv with missile strikes despite agreeing to resume trilateral peace talks with the US and Ukraine in November.",
+   "updated": "2026-10-22",
+   "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPS2Nuc1BSZVdvcEtQZFowTktxemJJMEptN3ZhWmVLMnhaSllnZTNIcE9qeEYyZ0c2SURtY254SUJvUEJiUXFiSExkSkJBRVpSY0Z6NFFnM3QweDBfTklYNEMzWWRkc21YYnNqalozSTBTaTFNZVQtRkRhalBOOER0Y2VQUnpTZk1aaTNwU252X01qMkw5Ym5sMA?oc=5"
   }
  },
  "threads": {
@@ -3575,9 +3616,9 @@
    "nextelec": "parliamentary 2031"
   },
   "BGR": {
-   "nextelec": "parliamentary, 25 October 2026",
-   "updated": "2026-10-19",
-   "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbFVPdVY1LWVEbU1kcmtrUlR6QWN4UmRaUHYwR1hWRGtlVnQ2RXFFZVV0X254RnMtaFYyc0xsWW5rRHpSX1U5Ri1mcXNqY2s2STl4QVBody1IdkVkeUpxY3FmalJaNVk1dVY1VGVuMnNMc3BtbF9hQ25fOHp6bTY5MW1jZXkwU0pVbHFzQ2syWm14NWYtTFpUbUlEMXctdndyeDh5Z1hrR3pKWmJpRDRpVGRJUUVYYVZXUUJpRXZTVdIBvwFBVV95cUxNbFVPdVY1LWVEbU1kcmtrUlR6QWN4UmRaUHYwR1hWRGtlVnQ2RXFFZVV0X254RnMtaFYyc0xsWW5rRHpSX1U5Ri1mcXNqY2s2STl4QVBody1IdkVkeUpxY3FmalJaNVk1dVY1VGVuMnNMc3BtbF9hQ25fOHp6bTY5MW1jZXkwU0pVbHFzQ2syWm14NWYtTFpUbUlEMXctdndyeDh5Z1hrR3pKWmJpRDRpVGRJUUVYYVZXUUJpRXZTVQ?oc=5"
+   "nextelec": "presidential, October 2026",
+   "updated": "2026-10-22",
+   "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQOUp6SnhKcDJmT0FZVmNzR0FQcUlhZk5CdEZGS2VGbGE2cXFCQk5GbEE5czh0OEpQWGM0YmpvbmdTR3l5MXV5cnpPVWxzQzRwOUQ4eGxEeXJLT2o3NHdraXFpLWE4UDM5X0lnN2doeWxZTnJOdS15SXNtbE1iNzhCeHg5alBuQW1KeDVya1RPRElEUDE3?oc=5"
   },
   "SSD": {
    "nextelec": "general, December 2026",
