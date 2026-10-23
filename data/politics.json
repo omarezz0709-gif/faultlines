@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T22:22:23Z",
+ "generated": "2026-10-23T17:14:04Z",
  "countries": {
   "XKX": {
    "system": "parliamentary republic",
@@ -24,539 +24,6 @@
    "hog": "Mohammad Mustafa",
    "ruling": "Independent (party of the head of government)",
    "source": "https://www.wikidata.org/wiki/Q219060"
-  },
-  "AGO": {
-   "system": "republic, presidential system",
-   "hos": "João Lourenço",
-   "hog": "João Lourenço",
-   "ruling": "People's Movement for the Liberation of Angola (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q916"
-  },
-  "CAF": {
-   "hos": "Faustin-Archange Touadéra",
-   "hog": "Félix Moloua",
-   "source": "https://www.wikidata.org/wiki/Q929"
-  },
-  "TGO": {
-   "hos": "Jean-Lucien Savi de Tové",
-   "hog": "Faure Essozimna Gnassingbé",
-   "ruling": "Rally of the Togolese People / Union for the Republic (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q945"
-  },
-  "TUN": {
-   "system": "semi-presidential system, presidential system",
-   "hos": "Kais Saied",
-   "hog": "Sarra Zaafrani",
-   "source": "https://www.wikidata.org/wiki/Q948"
-  },
-  "SSD": {
-   "system": "federal republic",
-   "hos": "Salva Kiir Mayardit",
-   "hog": "Salva Kiir Mayardit",
-   "ruling": "Sudan People's Liberation Movement (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q958"
-  },
-  "BEN": {
-   "system": "republic",
-   "hos": "Romuald Wadagni",
-   "hog": "Pascal Koupaki / Lionel Zinsou",
-   "ruling": "Cowry Forces for an Emerging Benin (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q962"
-  },
-  "BFA": {
-   "system": "republic, military junta",
-   "hos": "Ibrahim Traoré",
-   "hog": "Apollinaire Joachim Kyélem de Tambèla",
-   "source": "https://www.wikidata.org/wiki/Q965"
-  },
-  "GAB": {
-   "system": "presidential system",
-   "hos": "Brice Clotaire Oligui Nguema",
-   "hog": "Raymond Ndong Sima",
-   "source": "https://www.wikidata.org/wiki/Q1000"
-  },
-  "GMB": {
-   "system": "republic",
-   "hos": "Adama Barrow",
-   "hog": "Adama Barrow",
-   "ruling": "National People's Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q1005"
-  },
-  "GIN": {
-   "system": "republic",
-   "hos": "Mamadi Doumbouya",
-   "hog": "Bah Oury",
-   "ruling": "Union des démocrates pour la renaissance de la Guinée (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q1006"
-  },
-  "GNB": {
-   "hos": "Manuel Serifo Nhamadjo / Umaro Sissoco Embaló",
-   "hog": "Rui Duarte de Barros",
-   "source": "https://www.wikidata.org/wiki/Q1007"
-  },
-  "CIV": {
-   "system": "republic",
-   "hos": "Alassane Ouattara",
-   "hog": "Robert Beugré Mambé",
-   "source": "https://www.wikidata.org/wiki/Q1008"
-  },
-  "CMR": {
-   "system": "republic",
-   "hos": "Paul Biya",
-   "hog": "Joseph Ngute",
-   "ruling": "Cameroon People's Democratic Movement (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q1009"
-  },
-  "CPV": {
-   "system": "parliamentary republic",
-   "hos": "José Maria Neves",
-   "hog": "Francisco Carvalho",
-   "ruling": "African Party for the Independence of Cape Verde (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q1011"
-  },
-  "LSO": {
-   "system": "constitutional monarchy",
-   "hos": "Letsie III of Lesotho",
-   "hog": "Sam Matekane",
-   "ruling": "Revolution for Prosperity (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q1013"
-  },
-  "LBR": {
-   "system": "republic, presidential system",
-   "hos": "Joseph Boakai",
-   "hog": "Joseph Boakai",
-   "ruling": "Unity Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q1014"
-  },
-  "LBY": {
-   "system": "republic",
-   "hos": "Mohamed al-Menfi",
-   "hog": "Abd al-Hamid Dbeibeh",
-   "ruling": "Independent (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q1016"
-  },
-  "MDG": {
-   "system": "republic",
-   "hos": "Michael Randrianirina",
-   "hog": "Mamitiana Rajaonarison",
-   "source": "https://www.wikidata.org/wiki/Q1019"
-  },
-  "MAR": {
-   "system": "constitutional monarchy",
-   "hos": "Mohammed VI of Morocco",
-   "hog": "Fatima Ezzahra El Mansouri",
-   "ruling": "Authenticity and Modernity Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q1028"
-  },
-  "NAM": {
-   "hos": "Netumbo Nandi-Ndaitwah",
-   "hog": "Elijah Ngurare",
-   "ruling": "SWAPO Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q1030"
-  },
-  "NGA": {
-   "system": "federal republic",
-   "hos": "Bola Tinubu",
-   "hog": "Bola Tinubu",
-   "ruling": "Action Congress of Nigeria / All Progressives Congress (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q1033"
-  },
-  "RWA": {
-   "system": "semi-presidential system",
-   "hos": "Paul Kagame",
-   "hog": "Justin Nsengiyumva",
-   "source": "https://www.wikidata.org/wiki/Q1037"
-  },
-  "SEN": {
-   "system": "presidential system",
-   "hos": "Bassirou Diomaye Faye",
-   "hog": "Bassirou Diomaye Faye",
-   "ruling": "African Patriots of Senegal for Work, Ethics and Fraternity (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q1041"
-  },
-  "SYC": {
-   "hos": "Patrick Herminie",
-   "hog": "Patrick Herminie",
-   "ruling": "United Seychelles Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q1042"
-  },
-  "CAN": {
-   "system": "constitutional monarchy, federation",
-   "hos": "Charles III",
-   "hog": "Mark Carney",
-   "ruling": "Liberal Party of Canada (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q16"
-  },
-  "IRL": {
-   "system": "unitary state, parliamentary republic",
-   "hos": "Catherine Connolly",
-   "hog": "Micheál Martin",
-   "ruling": "Fianna Fáil (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q27"
-  },
-  "HUN": {
-   "system": "parliamentary republic",
-   "hos": "András Baka",
-   "hog": "Péter Magyar",
-   "ruling": "Respect and Freedom Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q28"
-  },
-  "ESP": {
-   "system": "parliamentary monarchy",
-   "hos": "Felipe VI of Spain",
-   "hog": "Pedro Sánchez",
-   "ruling": "Spanish Socialist Workers' Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q29"
-  },
-  "USA": {
-   "system": "constitutional republic, democratic republic",
-   "hos": "Donald Trump",
-   "hog": "Donald Trump",
-   "ruling": "Republican Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q30"
-  },
-  "BEL": {
-   "system": "federation",
-   "hos": "Philippe of Belgium",
-   "hog": "Bart De Wever",
-   "ruling": "New Flemish Alliance / People's Union (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q31"
-  },
-  "LUX": {
-   "system": "constitutional monarchy",
-   "hos": "Guillaume V, Grand Duke of Luxembourg",
-   "hog": "Luc Frieden",
-   "ruling": "Christian Social People's Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q32"
-  },
-  "FIN": {
-   "system": "parliamentary republic",
-   "hos": "Alexander Stubb",
-   "hog": "Petteri Orpo",
-   "ruling": "National Coalition Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q33"
-  },
-  "SWE": {
-   "system": "constitutional monarchy, representative democracy",
-   "hos": "Carl XVI Gustaf of Sweden",
-   "hog": "Ulf Kristersson",
-   "ruling": "Moderate Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q34"
-  },
-  "POL": {
-   "system": "semi-presidential system, parliamentary system",
-   "hos": "Karol Nawrocki",
-   "hog": "Donald Tusk",
-   "ruling": "European People's Party / Civic Coalition (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q36"
-  },
-  "LTU": {
-   "system": "semi-presidential system, parliamentary republic",
-   "hos": "Gitanas Nausėda",
-   "hog": "Mindaugas Sinkevičius",
-   "ruling": "Social Democratic Party of Lithuania (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q37"
-  },
-  "ITA": {
-   "system": "parliamentary republic",
-   "hos": "Sergio Mattarella",
-   "hog": "Giorgia Meloni",
-   "ruling": "Brothers of Italy (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q38"
-  },
-  "CHE": {
-   "system": "federal republic, directorial system",
-   "hos": "Swiss Federal Council",
-   "hog": "Swiss Federal Council",
-   "source": "https://www.wikidata.org/wiki/Q39"
-  },
-  "AUT": {
-   "system": "republic, semi-presidential system",
-   "hos": "Alexander Van der Bellen",
-   "hog": "Christian Stocker",
-   "ruling": "Austrian People's Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q40"
-  },
-  "TUR": {
-   "system": "presidential system, unitary state",
-   "hos": "Recep Tayyip Erdoğan",
-   "hog": "Recep Tayyip Erdoğan",
-   "ruling": "Justice and Development Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q43"
-  },
-  "EGY": {
-   "system": "republic",
-   "hos": "Abdel Fattah el-Sisi",
-   "hog": "Mostafa Madbouly",
-   "ruling": "Independent (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q79"
-  },
-  "MEX": {
-   "system": "empire, presidential system",
-   "hos": "Claudia Sheinbaum",
-   "hog": "Claudia Sheinbaum",
-   "ruling": "Morena / Party of the Democratic Revolution (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q96"
-  },
-  "FRA": {
-   "system": "semi-presidential system",
-   "hos": "Emmanuel Macron",
-   "hog": "Sébastien Lecornu",
-   "ruling": "Renaissance (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q142"
-  },
-  "CHN": {
-   "system": "people's republic",
-   "hos": "Xi Jinping",
-   "hog": "Li Qiang",
-   "ruling": "Chinese Communist Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q148"
-  },
-  "BRA": {
-   "system": "presidential system, representative democracy",
-   "hos": "Luiz Inácio Lula da Silva",
-   "hog": "Luiz Inácio Lula da Silva",
-   "ruling": "Workers' Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q155"
-  },
-  "RUS": {
-   "system": "super-presidential republic",
-   "hos": "Vladimir Putin",
-   "hog": "Mikhail Mishustin",
-   "source": "https://www.wikidata.org/wiki/Q159"
-  },
-  "DEU": {
-   "system": "federal parliamentary republic",
-   "hos": "Frank-Walter Steinmeier",
-   "hog": "Friedrich Merz",
-   "ruling": "Christian Democratic Union (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q183"
-  },
-  "BLR": {
-   "system": "republic, presidential system",
-   "hos": "Alexander Lukashenka",
-   "hog": "Alexander Turchyn",
-   "source": "https://www.wikidata.org/wiki/Q184"
-  },
-  "ISL": {
-   "system": "parliamentary republic",
-   "hos": "Halla Tómasdóttir",
-   "hog": "Kristrún Mjöll Frostadóttir",
-   "ruling": "Social Democratic Alliance (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q189"
-  },
-  "LVA": {
-   "system": "republic, parliamentary republic",
-   "hos": "Edgars Rinkēvičs",
-   "hog": "Andris Kulbergs",
-   "ruling": "United List (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q211"
-  },
-  "AND": {
-   "system": "parliamentary coprincipality",
-   "hos": "Emmanuel Macron / Josep-Lluís Serrano Pentinat",
-   "hog": "Xavier Espot Zamora",
-   "ruling": "Democrats for Andorra (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q228"
-  },
-  "CYP": {
-   "system": "republic, presidential system",
-   "hos": "Nicos Christodoulides",
-   "hog": "Nicos Christodoulides",
-   "source": "https://www.wikidata.org/wiki/Q229"
-  },
-  "KAZ": {
-   "system": "presidential system",
-   "hos": "Kassym-Jomart Tokayev",
-   "hog": "Olzhas Bektenov",
-   "ruling": "Amanat (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q232"
-  },
-  "BLZ": {
-   "system": "constitutional monarchy, parliamentary monarchy",
-   "hos": "Charles III",
-   "hog": "Johnny Briceño",
-   "ruling": "People's United Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q242"
-  },
-  "BRB": {
-   "system": "unitary state, parliamentary republic",
-   "hos": "Sandra Mason",
-   "hog": "Mia Mottley",
-   "ruling": "Barbados Labour Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q244"
-  },
-  "DZA": {
-   "system": "semi-presidential system, people's republic",
-   "hos": "Abdelmadjid Tebboune",
-   "hog": "Sifi Ghrieb",
-   "source": "https://www.wikidata.org/wiki/Q262"
-  },
-  "CHL": {
-   "system": "democratic republic",
-   "hos": "José Antonio Kast",
-   "hog": "José Antonio Kast",
-   "ruling": "Independent (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q298"
-  },
-  "LIE": {
-   "system": "constitutional monarchy",
-   "hos": "Hans-Adam II, Prince of Liechtenstein",
-   "hog": "Brigitte Haas",
-   "ruling": "Fatherland Union (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q347"
-  },
-  "BHR": {
-   "system": "constitutional monarchy",
-   "hos": "Hamad II of Bahrain",
-   "hog": "Salman bin Hamad, Crown Prince of Bahrain",
-   "source": "https://www.wikidata.org/wiki/Q398"
-  },
-  "SRB": {
-   "system": "parliamentary republic",
-   "hos": "Ana Brnabić",
-   "hog": "Đuro Macut",
-   "ruling": "Independent (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q403"
-  },
-  "AUS": {
-   "system": "constitutional monarchy, federation",
-   "hos": "Charles III",
-   "hog": "Anthony Albanese",
-   "ruling": "Australian Labor Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q408"
-  },
-  "ARG": {
-   "system": "federal republic",
-   "hos": "Javier Milei",
-   "hog": "Javier Milei",
-   "ruling": "Freedom Advances / Libertarian Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q414"
-  },
-  "PRK": {
-   "system": "republic, one-party state",
-   "hos": "Kim Jong-un",
-   "hog": "Pak Thae-song",
-   "ruling": "Workers’ Party of Korea (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q423"
-  },
-  "TCD": {
-   "hos": "Mahamat Déby",
-   "hog": "Idriss Déby / Albert Pahimi Padacké",
-   "ruling": "Patriotic Salvation Movement / National Rally for Democracy in Chad (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q657"
-  },
-  "WSM": {
-   "hos": "Va'aletoa Sualauvi II",
-   "hog": "Tuilaʻepa Saʻilele Malielegaoi / Fiamē Naomi Mataʻafa",
-   "ruling": "Human Rights Protection Party / Faʻatuatua i le Atua Samoa ua Tasi (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q683"
-  },
-  "SLB": {
-   "hos": "Charles III",
-   "hog": "Jeremiah Manele",
-   "source": "https://www.wikidata.org/wiki/Q685"
-  },
-  "MHL": {
-   "hos": "Hilda Heine",
-   "hog": "Hilda Heine",
-   "ruling": "Independent (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q709"
-  },
-  "COL": {
-   "system": "republic",
-   "hos": "Abelardo de la Espriella",
-   "hog": "Abelardo de la Espriella",
-   "ruling": "Independent (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q739"
-  },
-  "KNA": {
-   "system": "constitutional monarchy, federal monarchy",
-   "hos": "Charles III",
-   "hog": "Terrance Drew",
-   "ruling": "Saint Kitts and Nevis Labour Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q763"
-  },
-  "GRD": {
-   "hos": "Charles III",
-   "hog": "Dickon Mitchell",
-   "ruling": "National Democratic Congress (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q769"
-  },
-  "ATG": {
-   "system": "constitutional monarchy",
-   "hos": "Charles III",
-   "hog": "Gaston Browne",
-   "ruling": "Antigua and Barbuda Labour Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q781"
-  },
-  "DMA": {
-   "hos": "Sylvanie Burton",
-   "hog": "Roosevelt Skerrit",
-   "ruling": "Dominica Labour Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q784"
-  },
-  "HTI": {
-   "hos": "Transitional Presidential Council",
-   "hog": "Alix Didier Fils-Aimé",
-   "source": "https://www.wikidata.org/wiki/Q790"
-  },
-  "PAN": {
-   "system": "presidential system",
-   "hos": "José Raúl Mulino",
-   "hog": "José Raúl Mulino",
-   "ruling": "Realizing Goals (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q804"
-  },
-  "MDV": {
-   "hos": "Mohamed Muizzu",
-   "hog": "Mohamed Muizzu",
-   "ruling": "People's National Congress (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q826"
-  },
-  "LKA": {
-   "system": "republic",
-   "hos": "Anura Kurankan Dissanayake",
-   "hog": "Harini Amarasuriya",
-   "source": "https://www.wikidata.org/wiki/Q854"
-  },
-  "SYR": {
-   "system": "provisional government",
-   "hos": "Ahmed al-Sharaa",
-   "source": "https://www.wikidata.org/wiki/Q858"
-  },
-  "TWN": {
-   "system": "democracy, semi-presidential system",
-   "hos": "Lai Ching-te",
-   "hog": "Cho Jung-tai",
-   "ruling": "Democratic Progressive Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q865"
-  },
-  "THA": {
-   "system": "constitutional monarchy, parliamentary monarchy",
-   "hos": "Rama X of Thailand",
-   "hog": "Paetongtarn Shinawatra",
-   "ruling": "Pheu Thai Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q869"
-  },
-  "KOR": {
-   "system": "republic, presidential system",
-   "hos": "Lee Jae Myung",
-   "hog": "Han Seong-sook",
-   "ruling": "Independent (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q884"
-  },
-  "BGD": {
-   "system": "Westminster system, parliamentary republic",
-   "hos": "Mohammad Shahabuddin",
-   "hog": "Tarique Rahman",
-   "ruling": "Bangladesh Nationalist Party (party of the head of government)",
-   "source": "https://www.wikidata.org/wiki/Q902"
-  },
-  "MLI": {
-   "hos": "Assimi Goïta",
-   "hog": "Abdoulaye Maïga",
-   "source": "https://www.wikidata.org/wiki/Q912"
   },
   "ARE": {
    "system": "constitutional monarchy, absolute monarchy",
@@ -1058,6 +525,161 @@
    "ruling": "Democratic Party of Turkmenistan (party of the head of government)",
    "source": "https://www.wikidata.org/wiki/Q874"
   },
+  "AGO": {
+   "system": "republic, presidential system",
+   "hos": "João Lourenço",
+   "hog": "João Lourenço",
+   "ruling": "People's Movement for the Liberation of Angola (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q916"
+  },
+  "CAF": {
+   "hos": "Faustin-Archange Touadéra",
+   "hog": "Félix Moloua",
+   "source": "https://www.wikidata.org/wiki/Q929"
+  },
+  "TGO": {
+   "hos": "Jean-Lucien Savi de Tové",
+   "hog": "Faure Essozimna Gnassingbé",
+   "ruling": "Rally of the Togolese People / Union for the Republic (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q945"
+  },
+  "TUN": {
+   "system": "semi-presidential system, presidential system",
+   "hos": "Kais Saied",
+   "hog": "Sarra Zaafrani",
+   "source": "https://www.wikidata.org/wiki/Q948"
+  },
+  "SSD": {
+   "system": "federal republic",
+   "hos": "Salva Kiir Mayardit",
+   "hog": "Salva Kiir Mayardit",
+   "ruling": "Sudan People's Liberation Movement (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q958"
+  },
+  "BEN": {
+   "system": "republic",
+   "hos": "Romuald Wadagni",
+   "hog": "Pascal Koupaki / Lionel Zinsou",
+   "ruling": "Cowry Forces for an Emerging Benin (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q962"
+  },
+  "BFA": {
+   "system": "republic, military junta",
+   "hos": "Ibrahim Traoré",
+   "hog": "Apollinaire Joachim Kyélem de Tambèla",
+   "source": "https://www.wikidata.org/wiki/Q965"
+  },
+  "GAB": {
+   "system": "presidential system",
+   "hos": "Brice Clotaire Oligui Nguema",
+   "hog": "Raymond Ndong Sima",
+   "source": "https://www.wikidata.org/wiki/Q1000"
+  },
+  "GMB": {
+   "system": "republic",
+   "hos": "Adama Barrow",
+   "hog": "Adama Barrow",
+   "ruling": "National People's Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q1005"
+  },
+  "GIN": {
+   "system": "republic",
+   "hos": "Mamadi Doumbouya",
+   "hog": "Bah Oury",
+   "ruling": "Union des démocrates pour la renaissance de la Guinée (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q1006"
+  },
+  "GNB": {
+   "hos": "Manuel Serifo Nhamadjo / Umaro Sissoco Embaló",
+   "hog": "Rui Duarte de Barros",
+   "source": "https://www.wikidata.org/wiki/Q1007"
+  },
+  "CIV": {
+   "system": "republic",
+   "hos": "Alassane Ouattara",
+   "hog": "Robert Beugré Mambé",
+   "source": "https://www.wikidata.org/wiki/Q1008"
+  },
+  "CMR": {
+   "system": "republic",
+   "hos": "Paul Biya",
+   "hog": "Joseph Ngute",
+   "ruling": "Cameroon People's Democratic Movement (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q1009"
+  },
+  "CPV": {
+   "system": "parliamentary republic",
+   "hos": "José Maria Neves",
+   "hog": "Francisco Carvalho",
+   "ruling": "African Party for the Independence of Cape Verde (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q1011"
+  },
+  "LSO": {
+   "system": "constitutional monarchy",
+   "hos": "Letsie III of Lesotho",
+   "hog": "Sam Matekane",
+   "ruling": "Revolution for Prosperity (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q1013"
+  },
+  "LBR": {
+   "system": "republic, presidential system",
+   "hos": "Joseph Boakai",
+   "hog": "Joseph Boakai",
+   "ruling": "Unity Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q1014"
+  },
+  "LBY": {
+   "system": "republic",
+   "hos": "Mohamed al-Menfi",
+   "hog": "Abd al-Hamid Dbeibeh",
+   "ruling": "Independent (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q1016"
+  },
+  "MDG": {
+   "system": "republic",
+   "hos": "Michael Randrianirina",
+   "hog": "Mamitiana Rajaonarison",
+   "source": "https://www.wikidata.org/wiki/Q1019"
+  },
+  "MAR": {
+   "system": "constitutional monarchy",
+   "hos": "Mohammed VI of Morocco",
+   "hog": "Fatima Ezzahra El Mansouri",
+   "ruling": "Authenticity and Modernity Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q1028"
+  },
+  "NAM": {
+   "hos": "Netumbo Nandi-Ndaitwah",
+   "hog": "Elijah Ngurare",
+   "ruling": "SWAPO Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q1030"
+  },
+  "NGA": {
+   "system": "federal republic",
+   "hos": "Bola Tinubu",
+   "hog": "Bola Tinubu",
+   "ruling": "Action Congress of Nigeria / All Progressives Congress (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q1033"
+  },
+  "RWA": {
+   "system": "semi-presidential system",
+   "hos": "Paul Kagame",
+   "hog": "Justin Nsengiyumva",
+   "source": "https://www.wikidata.org/wiki/Q1037"
+  },
+  "SEN": {
+   "system": "presidential system",
+   "hos": "Bassirou Diomaye Faye",
+   "hog": "Bassirou Diomaye Faye",
+   "ruling": "African Patriots of Senegal for Work, Ethics and Fraternity (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q1041"
+  },
+  "SYC": {
+   "hos": "Patrick Herminie",
+   "hog": "Patrick Herminie",
+   "ruling": "United Seychelles Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q1042"
+  },
   "DNK": {
    "system": "constitutional monarchy",
    "hos": "Frederik X of Denmark",
@@ -1301,6 +923,384 @@
    "hog": "Rob Jetten",
    "ruling": "Democrats 66 (party of the head of government)",
    "source": "https://www.wikidata.org/wiki/Q29999"
+  },
+  "CAN": {
+   "system": "constitutional monarchy, federation",
+   "hos": "Charles III",
+   "hog": "Mark Carney",
+   "ruling": "Liberal Party of Canada (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q16"
+  },
+  "IRL": {
+   "system": "unitary state, parliamentary republic",
+   "hos": "Catherine Connolly",
+   "hog": "Micheál Martin",
+   "ruling": "Fianna Fáil (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q27"
+  },
+  "HUN": {
+   "system": "parliamentary republic",
+   "hos": "András Baka",
+   "hog": "Péter Magyar",
+   "ruling": "Respect and Freedom Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q28"
+  },
+  "ESP": {
+   "system": "parliamentary monarchy",
+   "hos": "Felipe VI of Spain",
+   "hog": "Pedro Sánchez",
+   "ruling": "Spanish Socialist Workers' Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q29"
+  },
+  "USA": {
+   "system": "constitutional republic, democratic republic",
+   "hos": "Donald Trump",
+   "hog": "Donald Trump",
+   "ruling": "Republican Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q30"
+  },
+  "BEL": {
+   "system": "federation",
+   "hos": "Philippe of Belgium",
+   "hog": "Bart De Wever",
+   "ruling": "New Flemish Alliance / People's Union (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q31"
+  },
+  "LUX": {
+   "system": "constitutional monarchy",
+   "hos": "Guillaume V, Grand Duke of Luxembourg",
+   "hog": "Luc Frieden",
+   "ruling": "Christian Social People's Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q32"
+  },
+  "FIN": {
+   "system": "parliamentary republic",
+   "hos": "Alexander Stubb",
+   "hog": "Petteri Orpo",
+   "ruling": "National Coalition Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q33"
+  },
+  "SWE": {
+   "system": "constitutional monarchy, representative democracy",
+   "hos": "Carl XVI Gustaf of Sweden",
+   "hog": "Ulf Kristersson",
+   "ruling": "Moderate Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q34"
+  },
+  "POL": {
+   "system": "semi-presidential system, parliamentary system",
+   "hos": "Karol Nawrocki",
+   "hog": "Donald Tusk",
+   "ruling": "European People's Party / Civic Coalition (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q36"
+  },
+  "LTU": {
+   "system": "semi-presidential system, parliamentary republic",
+   "hos": "Gitanas Nausėda",
+   "hog": "Mindaugas Sinkevičius",
+   "ruling": "Social Democratic Party of Lithuania (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q37"
+  },
+  "ITA": {
+   "system": "parliamentary republic",
+   "hos": "Sergio Mattarella",
+   "hog": "Giorgia Meloni",
+   "ruling": "Brothers of Italy (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q38"
+  },
+  "CHE": {
+   "system": "federal republic, directorial system",
+   "hos": "Swiss Federal Council",
+   "hog": "Swiss Federal Council",
+   "source": "https://www.wikidata.org/wiki/Q39"
+  },
+  "AUT": {
+   "system": "republic, semi-presidential system",
+   "hos": "Alexander Van der Bellen",
+   "hog": "Christian Stocker",
+   "ruling": "Austrian People's Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q40"
+  },
+  "TUR": {
+   "system": "presidential system, unitary state",
+   "hos": "Recep Tayyip Erdoğan",
+   "hog": "Recep Tayyip Erdoğan",
+   "ruling": "Justice and Development Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q43"
+  },
+  "EGY": {
+   "system": "republic",
+   "hos": "Abdel Fattah el-Sisi",
+   "hog": "Mostafa Madbouly",
+   "ruling": "Independent (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q79"
+  },
+  "MEX": {
+   "system": "empire, presidential system",
+   "hos": "Claudia Sheinbaum",
+   "hog": "Claudia Sheinbaum",
+   "ruling": "Morena / Party of the Democratic Revolution (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q96"
+  },
+  "FRA": {
+   "system": "semi-presidential system",
+   "hos": "Emmanuel Macron",
+   "hog": "Sébastien Lecornu",
+   "ruling": "Renaissance (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q142"
+  },
+  "CHN": {
+   "system": "people's republic",
+   "hos": "Xi Jinping",
+   "hog": "Li Qiang",
+   "ruling": "Chinese Communist Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q148"
+  },
+  "BRA": {
+   "system": "presidential system, representative democracy",
+   "hos": "Luiz Inácio Lula da Silva",
+   "hog": "Luiz Inácio Lula da Silva",
+   "ruling": "Workers' Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q155"
+  },
+  "RUS": {
+   "system": "super-presidential republic",
+   "hos": "Vladimir Putin",
+   "hog": "Mikhail Mishustin",
+   "source": "https://www.wikidata.org/wiki/Q159"
+  },
+  "DEU": {
+   "system": "federal parliamentary republic",
+   "hos": "Frank-Walter Steinmeier",
+   "hog": "Friedrich Merz",
+   "ruling": "Christian Democratic Union (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q183"
+  },
+  "BLR": {
+   "system": "republic, presidential system",
+   "hos": "Alexander Lukashenka",
+   "hog": "Alexander Turchyn",
+   "source": "https://www.wikidata.org/wiki/Q184"
+  },
+  "ISL": {
+   "system": "parliamentary republic",
+   "hos": "Halla Tómasdóttir",
+   "hog": "Kristrún Mjöll Frostadóttir",
+   "ruling": "Social Democratic Alliance (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q189"
+  },
+  "LVA": {
+   "system": "republic, parliamentary republic",
+   "hos": "Edgars Rinkēvičs",
+   "hog": "Andris Kulbergs",
+   "ruling": "United List (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q211"
+  },
+  "AND": {
+   "system": "parliamentary coprincipality",
+   "hos": "Emmanuel Macron / Josep-Lluís Serrano Pentinat",
+   "hog": "Xavier Espot Zamora",
+   "ruling": "Democrats for Andorra (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q228"
+  },
+  "CYP": {
+   "system": "republic, presidential system",
+   "hos": "Nicos Christodoulides",
+   "hog": "Nicos Christodoulides",
+   "source": "https://www.wikidata.org/wiki/Q229"
+  },
+  "KAZ": {
+   "system": "presidential system",
+   "hos": "Kassym-Jomart Tokayev",
+   "hog": "Olzhas Bektenov",
+   "ruling": "Amanat (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q232"
+  },
+  "BLZ": {
+   "system": "constitutional monarchy, parliamentary monarchy",
+   "hos": "Charles III",
+   "hog": "Johnny Briceño",
+   "ruling": "People's United Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q242"
+  },
+  "BRB": {
+   "system": "unitary state, parliamentary republic",
+   "hos": "Sandra Mason",
+   "hog": "Mia Mottley",
+   "ruling": "Barbados Labour Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q244"
+  },
+  "DZA": {
+   "system": "semi-presidential system, people's republic",
+   "hos": "Abdelmadjid Tebboune",
+   "hog": "Sifi Ghrieb",
+   "source": "https://www.wikidata.org/wiki/Q262"
+  },
+  "CHL": {
+   "system": "democratic republic",
+   "hos": "José Antonio Kast",
+   "hog": "José Antonio Kast",
+   "ruling": "Independent (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q298"
+  },
+  "LIE": {
+   "system": "constitutional monarchy",
+   "hos": "Hans-Adam II, Prince of Liechtenstein",
+   "hog": "Brigitte Haas",
+   "ruling": "Fatherland Union (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q347"
+  },
+  "BHR": {
+   "system": "constitutional monarchy",
+   "hos": "Hamad II of Bahrain",
+   "hog": "Salman bin Hamad, Crown Prince of Bahrain",
+   "source": "https://www.wikidata.org/wiki/Q398"
+  },
+  "SRB": {
+   "system": "parliamentary republic",
+   "hos": "Ana Brnabić",
+   "hog": "Đuro Macut",
+   "ruling": "Independent (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q403"
+  },
+  "AUS": {
+   "system": "constitutional monarchy, federation",
+   "hos": "Charles III",
+   "hog": "Anthony Albanese",
+   "ruling": "Australian Labor Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q408"
+  },
+  "ARG": {
+   "system": "federal republic",
+   "hos": "Javier Milei",
+   "hog": "Javier Milei",
+   "ruling": "Freedom Advances / Libertarian Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q414"
+  },
+  "PRK": {
+   "system": "republic, one-party state",
+   "hos": "Kim Jong-un",
+   "hog": "Pak Thae-song",
+   "ruling": "Workers’ Party of Korea (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q423"
+  },
+  "TCD": {
+   "hos": "Mahamat Déby",
+   "hog": "Idriss Déby / Albert Pahimi Padacké",
+   "ruling": "Patriotic Salvation Movement / National Rally for Democracy in Chad (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q657"
+  },
+  "WSM": {
+   "hos": "Va'aletoa Sualauvi II",
+   "hog": "Tuilaʻepa Saʻilele Malielegaoi / Fiamē Naomi Mataʻafa",
+   "ruling": "Human Rights Protection Party / Faʻatuatua i le Atua Samoa ua Tasi (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q683"
+  },
+  "SLB": {
+   "hos": "Charles III",
+   "hog": "Jeremiah Manele",
+   "source": "https://www.wikidata.org/wiki/Q685"
+  },
+  "MHL": {
+   "hos": "Hilda Heine",
+   "hog": "Hilda Heine",
+   "ruling": "Independent (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q709"
+  },
+  "COL": {
+   "system": "republic",
+   "hos": "Abelardo de la Espriella",
+   "hog": "Abelardo de la Espriella",
+   "ruling": "Independent (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q739"
+  },
+  "KNA": {
+   "system": "constitutional monarchy, federal monarchy",
+   "hos": "Charles III",
+   "hog": "Terrance Drew",
+   "ruling": "Saint Kitts and Nevis Labour Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q763"
+  },
+  "GRD": {
+   "hos": "Charles III",
+   "hog": "Dickon Mitchell",
+   "ruling": "National Democratic Congress (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q769"
+  },
+  "ATG": {
+   "system": "constitutional monarchy",
+   "hos": "Charles III",
+   "hog": "Gaston Browne",
+   "ruling": "Antigua and Barbuda Labour Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q781"
+  },
+  "DMA": {
+   "hos": "Sylvanie Burton",
+   "hog": "Roosevelt Skerrit",
+   "ruling": "Dominica Labour Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q784"
+  },
+  "HTI": {
+   "hos": "Transitional Presidential Council",
+   "hog": "Alix Didier Fils-Aimé",
+   "source": "https://www.wikidata.org/wiki/Q790"
+  },
+  "PAN": {
+   "system": "presidential system",
+   "hos": "José Raúl Mulino",
+   "hog": "José Raúl Mulino",
+   "ruling": "Realizing Goals (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q804"
+  },
+  "MDV": {
+   "hos": "Mohamed Muizzu",
+   "hog": "Mohamed Muizzu",
+   "ruling": "People's National Congress (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q826"
+  },
+  "LKA": {
+   "system": "republic",
+   "hos": "Anura Kurankan Dissanayake",
+   "hog": "Harini Amarasuriya",
+   "source": "https://www.wikidata.org/wiki/Q854"
+  },
+  "SYR": {
+   "system": "provisional government",
+   "hos": "Ahmed al-Sharaa",
+   "source": "https://www.wikidata.org/wiki/Q858"
+  },
+  "TWN": {
+   "system": "democracy, semi-presidential system",
+   "hos": "Lai Ching-te",
+   "hog": "Cho Jung-tai",
+   "ruling": "Democratic Progressive Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q865"
+  },
+  "THA": {
+   "system": "constitutional monarchy, parliamentary monarchy",
+   "hos": "Rama X of Thailand",
+   "hog": "Paetongtarn Shinawatra",
+   "ruling": "Pheu Thai Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q869"
+  },
+  "KOR": {
+   "system": "republic, presidential system",
+   "hos": "Lee Jae Myung",
+   "hog": "Han Seong-sook",
+   "ruling": "Independent (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q884"
+  },
+  "BGD": {
+   "system": "Westminster system, parliamentary republic",
+   "hos": "Mohammad Shahabuddin",
+   "hog": "Tarique Rahman",
+   "ruling": "Bangladesh Nationalist Party (party of the head of government)",
+   "source": "https://www.wikidata.org/wiki/Q902"
+  },
+  "MLI": {
+   "hos": "Assimi Goïta",
+   "hog": "Abdoulaye Maïga",
+   "source": "https://www.wikidata.org/wiki/Q912"
   }
  }
 }
