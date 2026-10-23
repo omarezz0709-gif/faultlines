@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-23T17:09:17Z",
+  "lastRun": "2026-10-23T22:21:52Z",
   "log": [
    {
     "date": "2026-10-23",
@@ -94,6 +94,26 @@
       "label": "Canada",
       "change": "Note update: Correcting leader to Mark Carney",
       "source": "https://www.wikidata.org/wiki/Q16"
+     },
+     {
+      "label": "Moldova–Russia",
+      "change": "Updated note: Moldova expels Russian diplomat after drone crash near residential area",
+      "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNeW83MkVlcGRLbXBTV1F6Yy1rbkttdEEwZ2NhTUt2QU5oQkZzV0RGX0RvOG9acHdRQjRzZDMxcUh2NDJLS0VrLXVCLVBZVGQ3b2ZScGxyY2NoQk5BMVNUMmQzU3ZCQ3l3Z21SQW9iWXE3anZNUFc2V3hfV1FlaWpZdjdyNlBSWWhFZ2hkMzJQUnlPNmZlWFREd1lHcUE3Vjc0amJuTU52dWt3aGhDZ3Zz?oc=5"
+     },
+     {
+      "label": "Romania–Russia",
+      "change": "Updated note: Romania condemns Russian drone strike sinking merchant ship off its coast",
+      "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPd1ZiemtqMmtaVjdOdVlwcUwtMGZzWUg4MmJiNUN6dXRLR1J2LUR4OXdjaDVaYkM5Mlo1RGRkQnR2WjNFQkw5cG1fTl9pWUZodmFtMFRkV09tcURJbHgxOU1oUzN1LTZuSVJ6RmlIUi1MOXVCX0NSMV9BVkhfOExkR205V054OF8tUFFYTUs0ZHRKTncxVVp4WWpCSkQ4QzJqR1NiT1hBTXc?oc=5"
+     },
+     {
+      "label": "Serbia",
+      "change": "Next election: snap parliamentary election scheduled for October 2026",
+      "source": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1XdnhVcUJXeFJpV04xU25XR3pYTnVzNk1pS1BuVzNPRGtiMEV5Z3RCT0dacFo1cmhkREFiQXN2V1ZwbTJtbzctRC1vVElKSXVWT0RVRklR?oc=5"
+     },
+     {
+      "label": "Bulgaria",
+      "change": "Next election: presidential election scheduled for October 2026",
+      "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMWJjRHNmZGV2b3ZXTmVubklGd1liVVBlc2xzR3RCUWZJcXJ4UGo2QzFPcVhFSmZGTVA0V05kWnp4bEJTWVJYYWVjXzFqRVNXaENzbUprNUlxSHVmTWs0WGlMOVNrWVJ1Mno4ZXdGUXEwcDhjdEljXzh2bTFmVXh5WjdxZHVkaWIzcXAzeHBhNTBHWGlaaHZsZVEydnZhVXk3SUxVc2x4eUZpZm1K?oc=5"
      }
     ]
    },
@@ -1882,7 +1902,7 @@
     "items": []
    }
   ],
-  "summary": "A ceasefire in Oleshky was brokered by Melania Trump, while Austria expelled Russian diplomats and multiple nations signed new defense pacts."
+  "summary": "Updated bilateral relation notes for Moldova–Russia and Romania–Russia following Black Sea drone incidents, and logged upcoming snap parliamentary elections in Serbia and presidential elections in Bulgaria."
  },
  "relations": {
   "DNK-USA": {
@@ -2105,9 +2125,9 @@
    "a": "MDA",
    "b": "RUS",
    "s": "H",
-   "note": "Moldova formally protests repeated Russian missile and drone airspace incursions during attacks on neighboring Ukraine.",
-   "updated": "2026-10-04",
-   "source": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE80QURmMHpvWjVYU0xVaVJOSWQxQzZKd0FOclZsTmx6SmtGQzNTWnB3MVlidm5ETXV3NEtZRGREUV9xQTR5d0E?oc=5"
+   "note": "Moldova expels a Russian diplomat after a Russian drone crashes near residential homes and energy infrastructure.",
+   "updated": "2026-10-23",
+   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNeW83MkVlcGRLbXBTV1F6Yy1rbkttdEEwZ2NhTUt2QU5oQkZzV0RGX0RvOG9acHdRQjRzZDMxcUh2NDJLS0VrLXVCLVBZVGQ3b2ZScGxyY2NoQk5BMVNUMmQzU3ZCQ3l3Z21SQW9iWXE3anZNUFc2V3hfV1FlaWpZdjdyNlBSWWhFZ2hkMzJQUnlPNmZlWFREd1lHcUE3Vjc0amJuTU52dWt3aGhDZ3Zz?oc=5"
   },
   "JPN-USA": {
    "a": "JPN",
@@ -2961,9 +2981,9 @@
    "a": "ROU",
    "b": "RUS",
    "s": "H",
-   "note": "Tensions escalate after Romanian F-16 fighter jets shoot down two Russian drones over the Black Sea.",
-   "updated": "2026-10-17",
-   "source": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNX1RuY0xJQ1ZSakMxQlR0NmV5MTdiMHJDMHQ3cmFWelp5MnY4cWV2LTBkSnU4WnVQejc3U1NXd1FvblhYYnRCNGpGWURnb0JVU2ljdWVqYlN2ZXh3S2kxR3VGSFdXUUMtWkcyRzJJOGxFSUxYTFJGNGdVYzgxSURUVjZYNNIBggFBVV95cUxNeTZxVldLclBnWmlCdDEtVDJ3aktDN0d2N0VtcHB2M2lDemFlcnR3ekVnVUpWd2UyR0l5dGhaMFlKcGxrcWpkcUsyV0FVb05ZLWI0YlVBbG9wTlE1dWRZWGhBUDVxaU9CTmxjR20zWUlVOG0wcG42RW90Mmx0X01ueUZ3?oc=5"
+   "note": "Tensions heighten after a Russian drone strike sinks a merchant ship near Romanian waters, killing a crew member.",
+   "updated": "2026-10-23",
+   "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPd1ZiemtqMmtaVjdOdVlwcUwtMGZzWUg4MmJiNUN6dXRLR1J2LUR4OXdjaDVaYkM5Mlo1RGRkQnR2WjNFQkw5cG1fTl9pWUZodmFtMFRkV09tcURJbHgxOU1oUzN1LTZuSVJ6RmlIUi1MOXVCX0NSMV9BVkhfOExkR205V054OF8tUFFYTUs0ZHRKTncxVVp4WWpCSkQ4QzJqR1NiT1hBTXc?oc=5"
   },
   "IRN-PAK": {
    "a": "IRN",
@@ -3719,7 +3739,7 @@
   "BGR": {
    "nextelec": "presidential, October 2026",
    "updated": "2026-10-23",
-   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNUDBMdzJsLTh1UTRJTlBZeU1XUDM3ZFVILUV3RF9UcG9GekEyVFZlWVNhekQ4T2x6V3R6Wk9JcHdaWHlpQzVWR3ZJLUdzbHdUck9XOTJ3SGR6RzdfUElFNWtJV0tyWnRWRDdhaF9HemM3VFpKM2FreFNkaHI4OVVvWmF0Z25OejZKVEQyc2QwamlfS0dYZTg4T3diSjUwVTNZZnpuaTc0MjJHSDdTSWdQOEZJZ3dtX3M?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMWJjRHNmZGV2b3ZXTmVubklGd1liVVBlc2xzR3RCUWZJcXJ4UGo2QzFPcVhFSmZGTVA0V05kWnp4bEJTWVJYYWVjXzFqRVNXaENzbUprNUlxSHVmTWs0WGlMOVNrWVJ1Mno4ZXdGUXEwcDhjdEljXzh2bTFmVXh5WjdxZHVkaWIzcXAzeHBhNTBHWGlaaHZsZVEydnZhVXk3SUxVc2x4eUZpZm1K?oc=5",
    "lastelec": "presidential, November 2021, Rumen Radev"
   },
   "SSD": {
@@ -3730,7 +3750,7 @@
   "SRB": {
    "nextelec": "parliamentary, October 2026",
    "updated": "2026-10-23",
-   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWnRTcFB6TmRPUHVEaS1hNm5MSzJnV2JoejIwdUhwNE9sUU1TZ29GTW9GNGNJQlBnbTdsZnpqblZUZmQ2TWVEV2E5aDJqdTdyUmpLdU9wMWRrekZ3XzcxWVhhQ050TERUUnpDTGxFaUw2ZGpneHRTcVpEYWpLcVBSLXpyeGVkMDhsazVjenVLRVRlT2oxZ3lZcWFtaFRfWFNU?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1XdnhVcUJXeFJpV04xU25XR3pYTnVzNk1pS1BuVzNPRGtiMEV5Z3RCT0dacFo1cmhkREFiQXN2V1ZwbTJtbzctRC1vVElKSXVWT0RVRklR?oc=5",
    "lastelec": "parliamentary, April 2022, Aleksandar Vučić"
   },
   "CHE": {
