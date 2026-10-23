@@ -1,7 +1,27 @@
 {
  "meta": {
-  "lastRun": "2026-10-22T22:21:51Z",
+  "lastRun": "2026-10-23T05:27:50Z",
   "log": [
+   {
+    "date": "2026-10-23",
+    "items": [
+     {
+      "label": "Algeria–Niger",
+      "change": "Normal → Partner: Signed a milestone bilateral defence protocol",
+      "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPdnoxdGFqVDk4amRNYzh6ck9YZ05XS3ZkXzZ2XzBXaHZ3NXN4eTloczRlWHpqOWktYXV6cGh6aGN3VEVNa1pQSEplZkM2dzlTbUxWdVJ5Qk1uSHBlTUxNYnF1bHozLWJlbzFxc3U2d2xxakh0MnRtX0F5ZVRrdmNvX3RRLTBfMF84WmJra1NBQ3Jmejln?oc=5"
+     },
+     {
+      "label": "India–Poland",
+      "change": "Added Partner: Agreed to boost defence, space, and nuclear energy cooperation",
+      "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOLUowMElMQmd0SFBnRTZNQkVUWVQ0bDgzTnMwMzExMmRQdXhGSF9UMm9DeHJwZmh1NmxjcE5oTTM1Vmtub1dTbUlNd0pWOGJJY19aZF9BTGZIWW1vckVFNlgxaEtqZk9JMDBkWlJRV2x0LUtmOUJkSTNsMnpFbzlBdk0tRHB4SnNMSkJfVEtxaWtPNnNNVEVEVFAwamwyZE5GdHMzenlxSTNVd1BKS2hiWl91RENvNVJiWWljdkUyOFdhNVFzZWVHcWd3?oc=5"
+     },
+     {
+      "label": "Armenia–Turkey",
+      "change": "Note refreshed: Agreed on student exchanges amid border reopening talks",
+      "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQY3V5WjFlS1ZydXVUc0o5ZEV2dm1FeUIwQ0VXZ2RMMHFucnltZXc0MHVGMEd5RjVDenV6NEJ0NnJkX2pfRDNxeWFjZFJqc3g2RG9kWi04VVNJM0p6cGI5bGVSVzVYcnJuWWI2TnI5YTZXTWRoWXhFYWxBbWowS2xsb0N4cmJybHM1RjA1QW94SjAxbkRrcVdkanV3?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-22",
     "items": [
@@ -1785,99 +1805,9 @@
    {
     "date": "2026-09-24",
     "items": []
-   },
-   {
-    "date": "2026-09-23",
-    "items": [
-     {
-      "change": "Hostile → War: war since Feb 2026; US blockade; ceasefire talks at UNGA",
-      "label": "Iran–United States",
-      "source": "https://www.thenationalnews.com/news/mena/2026/09/23/iran-us-meeting-new-york/"
-     },
-     {
-      "change": "Hostile → War: open war since Feb 2026; June truce collapsed in July",
-      "label": "Iran–Israel",
-      "source": "https://www.britannica.com/event/2026-Iran-war"
-     },
-     {
-      "change": "Normal → War: Iranian strikes on Saudi territory and Saudi counter-strikes",
-      "label": "Iran–Saudi Arabia",
-      "source": "https://www.thenationalnews.com/news/mena/2026/09/23/iran-us-meeting-new-york/"
-     },
-     {
-      "change": "Tense → War: Houthis end truce, strike Riyadh and Yanbu",
-      "label": "Saudi Arabia–Yemen",
-      "source": "https://www.aljazeera.com/news/2026/9/8/saudi-houthi-fighting-in-yemen-escalates-what-happened-and-whats-next"
-     },
-     {
-      "change": "Houthis seize Mocha, Perim and Hanish Islands; Saudi ships banned",
-      "label": "Bab-el-Mandeb",
-      "source": "https://www.euronews.com/2026/09/12/houthis-seize-yemeni-island-in-bab-el-mandeb-taking-control-of-the-strait"
-     },
-     {
-      "change": "US blockade of Iran since July; Iranian attacks on shipping",
-      "label": "Strait of Hormuz",
-      "source": "https://www.aljazeera.com/news/2026/9/16/us-military-claims-strait-of-hormuz-remains-open-amid-ongoing-blockade"
-     },
-     {
-      "change": "Now aimed at Saudi Arabia and its rerouted Red Sea oil exports",
-      "label": "Houthi Red Sea campaign",
-      "source": "https://www.aljazeera.com/news/2026/9/18/as-houthis-grab-bab-al-mandeb-us-appears-willing-to-watch-from-sidelines"
-     },
-     {
-      "change": "Politics: Andy Burnham is Prime Minister since 20 July 2026",
-      "label": "United Kingdom",
-      "source": "https://www.npr.org/2026/07/19/nx-s1-5895993/andy-burnham-prime-minister-keir-starmer"
-     },
-     {
-      "change": "Politics: Mojtaba Khamenei Supreme Leader since March 2026",
-      "label": "Iran",
-      "source": "https://www.aljazeera.com/news/2026/3/8/iran-names-khameneis-son-as-new-supreme-leader-after-fathers-killing-2"
-     },
-     {
-      "change": "NATO allies sign Arctic basing deal: new US sites at Narsarsuaq and Mestersvig, Greenland",
-      "label": "Denmark–United States",
-      "source": "https://www.aljazeera.com/news/2026/9/22/us-signs-tremendous-arctic-security-deal-with-denmark-greenland"
-     },
-     {
-      "change": "State Duma election Sept 18-20 2026: United Russia wins landslide supermajority",
-      "label": "Russia",
-      "source": "https://www.aljazeera.com/news/2026/9/21/pro-putin-party-wins-supermajority-amid-ramped-up-ukrainian-attacks"
-     },
-     {
-      "label": "BEL–RWA",
-      "change": "None → Normal: diplomatic ties restored after 18-month rupture",
-      "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRFU3OWliN2pTdDVLUXcyN05kQ3BmaVNCc1BSWWZsclNTTzJ6NENaRnZ1aFZ3VTlZN2UzNTYtYXJyY3FZNzVMajd3WDBXaDhTcWJCZFlOcHlFZmxRSmRSWUVaamlHNDRweFNDZjhnRTNnZ0lSSUlsS19zTWJzOFpLMTN6YVpfMjJwenB5eUEtbWdpcjdud3VVOFlkdXhRaXlNbmJueWln?oc=5"
-     },
-     {
-      "label": "IRQ–TUR",
-      "change": "Normal: Ankara agrees to hand over northern Iraq military base",
-      "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRE1SX0IwWHRSTERscHk1cjUyTTg0RXpSRXZIb0RHdmNudldKUzR4dG5EUHVmVEp0MEdYek5JbW9EQW01enYwNlR6SmM5aTE2SktIT1NadTZiSTg4LXg0OEF2bmIxQW0tZWRIbkc0V1V4OHFaUGpSZ0lSWnFBRVhNNU9LY29IQ2tkLXN4cWE0ZEVLcjBycUVzazdOQUNrckZjblZpNnl1OUF1a3VqWTR5WFVlR2Jyb0I3SktOV2dR?oc=5"
-     },
-     {
-      "label": "USA–VEN",
-      "change": "Hostile: Rodriguez and Trump discuss debt overhaul and resuming ties",
-      "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORTY3d0w0RXVMcmJNc2hqYTd6aXA4ZDFrR2ZfZmtwVGRyeXE1V0Z5T0lLcFJ2eUd1bzYxendoMlZQMUJKVHVsYUdmZzIyd3FjNFFya1ZyYmlZOEwyRHgzMjhWSjZ2alZseDZJYWdtX0VHRHl6R1Nsa0UyQUJRSUxGM01YUENFZnlKZ2VNNmJmalJMRGhkUXdiU1BzN0MwbURkM3JjSTU2Q1FIanVSZElLS09tOENmRFhT?oc=5"
-     },
-     {
-      "label": "Strait of Hormuz",
-      "change": "Updated with fatal missile attack on commercial vessel MV Cape Dao",
-      "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMFRjejVIbUVST0RZaDVOY201TmlvREJ4bjl4dnhsaXpjQ1lndFpPWTlkOUFodkZNRDFuZ0RJSlNVNXdVa0FZYTRZMDFnZ1JUbmkwUkUzX3hTSTBnd3NQajBRR3NqNW4yYVJnZzNYQnBjVDNsdkxmWk5EdUVPbjdhM0VueFNHREFFRnhhMw?oc=5"
-     },
-     {
-      "label": "MAR",
-      "change": "Parliamentary elections held in September 2026",
-      "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNa0YzcUZhMEE5MjNQLUZ0YTI0WWlfYVhMOUJob01wNHZET1h6WTJGN2RIT2o3eVRnZUo5dnYzQmViMVhLNnhkdkFOLWxSaXBDcEJDVm5ETEdVajU0bWh3NE1tcFFoSGNfbGtPYUtlUjYxdXNSeE5Ja0Q2Vng0TG9Kc0paY0ZvQU1uRVIyZnNlVHNHZ0UzdGhYUjAzTmJOTWRRUmtrUi1SNGxOSkhUNXFkSUZvQ0hDendlYk9YZnp2bnNLeko4aFZPZGdR?oc=5"
-     },
-     {
-      "label": "BGR",
-      "change": "Presidential election set for 25 October 2026",
-      "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWDh2YVFnb3VwZDNPdjB4NnZmT0t4X1Z3M085YTljU3pBXzVwcm9EN0R1NkNmWGxfOGp5WFZFaHZ1c0RyTzdNSktEVG8zRE9QZ1JEdm1Rd1FQRVpoWUh0M0VNdUhyc2tJeGNzMEx4RFJRRDZQcERIcnZlMlBIZ1JDZDF2Wm5CMWtqZUE2UnI1a0dfNGJfRE5KUWhVaTNKTVRIM1VqSEluTU9YREl1c3c?oc=5"
-     }
-    ]
    }
   ],
-  "summary": "Spain and Italy resolved their border controls dispute over Ceuta to restore full Schengen travel, while Houthi strikes on Saudi infrastructure escalated regional security threats."
+  "summary": "Algeria and Niger sign a military defence pact, India and Poland expand strategic ties, while Houthi strikes on Saudi infrastructure intensify regional tensions."
  },
  "relations": {
   "DNK-USA": {
@@ -2379,10 +2309,10 @@
   "DZA-NER": {
    "a": "DZA",
    "b": "NER",
-   "s": "N",
-   "note": "Ties improve as Algeria and Niger launch a Trans-Saharan fiber optic link, alongside security cooperation.",
-   "updated": "2026-10-07",
-   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQa2dLOUh0dE1yTExLSWpCc3RFclBjZmFFSTV3RlduczV6bThLQlg3VXdMLWxVbUVFUU9NWHdTSzNlVHg2bU85N29CZHBRajhHQjZPbUVwXzQxSlJNRzFHWlFBNjM2dEMtUk1uTWNDdklIYThJSGJUaENvX0hpRkJYZnhobnR3d3I2UERqX2JlLXdLcl9Id0ZxZXRCV0NKUDA?oc=5"
+   "s": "F",
+   "note": "Algeria and Niger sign a milestone defence pact to bolster border security and military cooperation.",
+   "updated": "2026-10-23",
+   "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPdnoxdGFqVDk4amRNYzh6ck9YZ05XS3ZkXzZ2XzBXaHZ3NXN4eTloczRlWHpqOWktYXV6cGh6aGN3VEVNa1pQSEplZkM2dzlTbUxWdVJ5Qk1uSHBlTUxNYnF1bHozLWJlbzFxc3U2d2xxakh0MnRtX0F5ZVRrdmNvX3RRLTBfMF84WmJra1NBQ3Jmejln?oc=5"
   },
   "DOM-HTI": {
    "a": "DOM",
@@ -2836,9 +2766,9 @@
    "a": "ARM",
    "b": "TUR",
    "s": "T",
-   "note": "Armenia and Turkey report progress in normalization talks, noting that their long-closed border could open soon.",
-   "updated": "2026-10-14",
-   "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1zMmt5SEpCcTg4cXFodHNjbjFyM2RITl9pMDJXYzNqekxZMzVzdkx4UThJWEdPRTFpWkJ1Wnl1TDFuamFpdjNBUXdzRmVrc3dycXfSAVdBVV95cUxQUTJOSFpFUHYxMEZhNUxMMWpkNVlUbGRRd2VEVHQ3VXBwVW81dmJZQUg0WjktaXR2V25RSHN1dTdHU0UxWElRSnNyZnZYTWJsVTZjUGc5U3M?oc=5"
+   "note": "Armenia and Türkiye agree on student exchanges as negotiations to reopen their shared border continue.",
+   "updated": "2026-10-23",
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQY3V5WjFlS1ZydXVUc0o5ZEV2dm1FeUIwQ0VXZ2RMMHFucnltZXc0MHVGMEd5RjVDenV6NEJ0NnJkX2pfRDNxeWFjZFJqc3g2RG9kWi04VVNJM0p6cGI5bGVSVzVYcnJuWWI2TnI5YTZXTWRoWXhFYWxBbWowS2xsb0N4cmJybHM1RjA1QW94SjAxbkRrcVdkanV3?oc=5"
   },
   "CHN-PRK": {
    "a": "CHN",
@@ -3207,6 +3137,14 @@
    "note": "Spain and Italy resolve their border dispute triggered by a migrant influx into Ceuta and reinstate full Schengen travel.",
    "updated": "2026-10-22",
    "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQR0ZYSk1ZUUVtU1F0RFhMb243YWZ2VFJSVGs4bHZnVEUyeENFWUZQU0JNQ09Ea1dqb1JPWmIwa2xQN3d1SjVDc2NQQVkwM0xGYnA0RVNNZmw1bURRMWFPc3hwUkZRX2dLSk9SQnBvU2RadjhaZkVhOFY4OXBfRW44MUxGYmZUbWt5TVJhazFPcS04SHEy?oc=5"
+  },
+  "IND-POL": {
+   "a": "IND",
+   "b": "POL",
+   "s": "F",
+   "note": "India and Poland agree to expand strategic ties in defence, space, and nuclear energy.",
+   "updated": "2026-10-23",
+   "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOLUowMElMQmd0SFBnRTZNQkVUWVQ0bDgzTnMwMzExMmRQdXhGSF9UMm9DeHJwZmh1NmxjcE5oTTM1Vmtub1dTbUlNd0pWOGJJY19aZF9BTGZIWW1vckVFNlgxaEtqZk9JMDBkWlJRV2x0LUtmOUJkSTNsMnpFbzlBdk0tRHB4SnNMSkJfVEtxaWtPNnNNVEVEVFAwamwyZE5GdHMzenlxSTNVd1BKS2hiWl91RENvNVJiWWljdkUyOFdhNVFzZWVHcWd3?oc=5"
   }
  },
  "threads": {
@@ -3225,11 +3163,11 @@
     "SYR",
     "ARE"
    ],
-   "d": "Iran-backed Houthi forces strike Saudi Arabia's King Fahd International Airport and energy infrastructure, killing civilians and prompting United States (US) diplomatic evacuations.",
+   "d": "Iran-backed Houthi forces launch missile and drone attacks on Saudi Arabia's King Fahd International Airport and energy targets, killing civilians and heightening regional war risks.",
    "n": "Houthi Red Sea campaign",
    "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPN2NvaGNRSGF1c2QyYmFRT3g4Ul9makdBTDh0NjZKRExSWjNtNEFjc09WZUVmandfc1BrYTJXSGxHR2lpMk50eWdra0lTMFMwOE0xemNfZE9LY3VERjhGVW1iYjZMcUxhYXJmVUxLNHpyalRRWXdsRmtnblgyQW9KV2liZzdmUUVEWVV6ZE1vbVM5eXlrX1E?oc=5",
    "t": "security",
-   "updated": "2026-10-22"
+   "updated": "2026-10-23"
   },
   "afpak-jihad": {
    "t": "security",
@@ -3468,11 +3406,11 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "Commercial tankers and a Kuwait-flagged vessel face strikes in the Strait of Hormuz as Iran's Islamic Revolutionary Guard Corps (IRGC) warns of renewed conflict.",
+   "d": "Commercial shipping and oil tankers face missile and drone attacks in the Strait of Hormuz, raising fears of wider regional conflict.",
    "n": "Strait of Hormuz",
-   "s": "Tankers struck; 7 oil tankers attacked",
-   "source": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPLTFpMnpyZVd2WWJaUDNiWUlueXhfRTY1bVZqNVhLZkJRekN2NXo5Ulhub3FDUXFyUVhRanNzVDAzbk0wV1hIekd4ZW9tNlZqQ2xMQ2J4bGs4cWU5UzR6OGxNUy1faS0wZURKcVRvVExWbG8zd1Qyb3pPU1NYenRnaFR6c0JST1lqczdOX1ZQNTUwUkluemZrYkxmbGNZSVY1THNpSlI5bnhLbVh0VEctRE5velBXa0RJaF9ObTdoYzl0cmNJbmZuNG41bnZqMXR4a1EyOTQtUXlXOXlfamM0NVdEelFTcFo2SGEtV3ZOQUJsVlVVR2h5bg?oc=5",
-   "updated": "2026-10-22",
+   "s": "7 oil tankers struck; escalation warnings",
+   "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQb2lYdm4tQXgwRVpCQVdqRnJ4RHQzRkZFZWpRZk1sNHB0dUQ5d24xRXVpdDdsSWxMSlNCNEVxZlRqcjJ1TFJ3YjhDd1ptbXFwajRGZTZBNXBEYklIWkJ3LVJ3eHhsRmY2Zy1iaGNlelVnVnVmeG9EaHM0bk9USEw5TEZ4cHVGbkFIQmZOOHRmaV95TENqSHBBZTZMU0E2dHdnbnJ1Q3hFbUZtaUpIR2RCMdIBtgFBVV95cUxNMm54SzB2S0o0VFJ5QlVVbzJnQXN5Q0FldUZTNy1rTG5TT2pLb0t4Q2VXYXZ3aEdVUTdoTXdlVC1kcC02NEw5QTJBN0JoS1ZodFY2UXZTdVVBbkg2MWJyYjFYZGpFXzhuNG04NUhjc1VLNTEzMm5zV01JNkVsYU43WDZKOXpNM2wyT054LXVWUzIwa3hHUlctWWstX0QxajFpWm1FeHFkVVg5VDZSMFV5U3Mzc1BEUQ?oc=5",
+   "updated": "2026-10-23",
    "t": "strait",
    "lat": 26.57,
    "lng": 56.25,
@@ -3539,11 +3477,11 @@
    "hog": "Luiz Inácio Lula da Silva, President",
    "hos": "Luiz Inácio Lula da Silva, President",
    "lastelec": "presidential, Oct 2022, winner Luiz Inácio Lula da Silva",
-   "nextelec": "presidential, Oct 2026",
+   "nextelec": "presidential runoff, October 2026",
    "ruling": "Workers' Party (PT)-led broad coalition",
-   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOOW1wQVEtR2M1em9UeW1iTVZ3Q0hYRTF4Q2ZDV09nckdBT255X196VW9id3QtaHZjWFBJQmxtVnVwaXJ0QWtVUVF3S1k1U0tHc0ppS1gyWHV2cjA0cmltR0VDV3hNZE50dUtaWUNrQ2dUX1k5WjRNODAxSFZKXzBWT1BuMmlkVUd4RDJpOFdrZG1iRVNhb053a2R5OTlmY29x?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNbFZyVHdvRU9iZTdVQVFyWVFnaE9USl9qNUU1QjVKZ215WTUxYkpNQTZJUXdPQjhkSEtMVjNFb3pJbXFRbjBFeXl5bUEyUk9KNzdqMWNHZm8xVlRjbDE2NU9iTEN6Q2J5UE1BUkZxTy1EU3B5dHROV3NhQzFYdHhMUVlMZTBaZXFaRGZ1MzdWTldGOFk5QUE?oc=5",
    "system": "Federal presidential republic",
-   "updated": "2026-10-19"
+   "updated": "2026-10-23"
   },
   "CAN": {
    "hog": "Mark Carney, Prime Minister",
@@ -3652,9 +3590,9 @@
    "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWUlwWEJ0R2JPeVl4TUNzYkNyMVZfaWlwU21SSF96Ui1hdXIyR0wyNkpwQlFjRmw3UGJya0NYZ25TQjVGWWdrWEdEdjBsaFlJdmtQNGdIYjVJcG5zUG02b3I3TFhPXzluNmQyZTh3ejJVRGtMMG42M21yZjc4RXBleU9RTzVZRURlZDJGdkFTRXF2QVNiSVdmN2VtMkdNRzIzQnE5SFdHMlQ5TXVoSGo0?oc=5"
   },
   "SRB": {
-   "nextelec": "parliamentary, October 2026",
-   "updated": "2026-10-21",
-   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNQ29tZTFzOWF0ODE3YlFoa1V3Sy11TklKYkN6cTFyWjZfOE9CaVgtMWpaRXByN0ZXaGpZcFc5NmVvVkxVZVNwWGg3aFQwa2xxVDAtZ2FuZUdDR0FBSUEtSzhwZmxrR1ZaZEEwd0lvcy1VbWxOeEZMNkxGYTJOVW5SQXJ1LVROV0tHd1FtOU9zWXdZLUNkYWo1NUtrcFdKM0XSAaQBQVVfeXFMTWd2SXhZdFBUa1Fqa0hNaGs1dkNHY2R4TE14ZnRtOVV6c2xpcmlBWmNodXIwZHZMdDdhVXlXUXBtSTlXMjBCU1lQRGpneVJJa0xBZGlaNjEtc29fai1Gay03ZmNHNWFRMGJwcERQaXJQb2JTQllnMnRqSUNNdDl1bTM2UG1zWUtJeEpKQWV6aUlLYk13WWlucGtKZDI2TWtpX3hXMWk?oc=5",
+   "nextelec": "snap parliamentary election, October 2026",
+   "updated": "2026-10-23",
+   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQVBVWGVpZ1llcGZYR3IxT0FPLW50cmxXMHV1cTFPT1JUMnV4anhkS1pWd1pidHFENTUwUXVPRWJac3pzRmxyS0Rzb0xjakxPZmVyMVMzVXRZdndablFxbkZVdW1ndDU1RzZaV3ZNZlRvTW4zOGx1clpYdWkyQy1FUS0tMk1qVDFSYVhQbVFxRFJxV1ZkVzM4MHRoMklOZ3Ju?oc=5",
    "lastelec": "presidential, September 2026, Ana Brnabić"
   },
   "CHE": {
