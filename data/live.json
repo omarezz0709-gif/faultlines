@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-24T05:25:05Z",
+  "lastRun": "2026-10-24T10:25:50Z",
   "log": [
    {
     "date": "2026-10-24",
@@ -11,8 +11,23 @@
       "source": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQemp6bnJlODBmeHpGaFhBeXFnWHRIMjFtR05nUThHSWdaS1BqbDFHT2huSFU2U2JKWjVNTVlhOUN1N2V1S1FpdkNGNk0wOVhfZktIWUQzYmtmS2ViaUJST0xMZE9vei1TbktRelU2NnpSUThUd0FCVTN6NVRuMDZrQXRSdWZDcG9PNG1VVWhFdHVaVDJkNjRSeUVDR0hCWEhEaGdLWldWeEM0WFBFME54cWxGaTBQeVhFaVp4bzE4ME0wM29wQVhsbkl1eE5jUTBhSzNSZTlpWUJONkgyVEVOc0hWdmRha0lVUnJJ?oc=5"
      },
      {
+      "label": "Indonesia–Singapore",
+      "change": "Partner → Tense: Indonesia cuts natural gas exports to Singapore",
+      "source": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1jOTR2Q2JzeERDcHBXMnlGd0JCLUYwV2RueWdXWUU2aGtORnMxaGZFRnVVNU9MWEcxOFY1c3ZIdGVxcFJRZVRiSUw3TDltV0ZPWHZTa3RUUlgyeDEwVzR0OFRfZ0ZzaktVMVpv?oc=5"
+     },
+     {
+      "label": "Argentina–Israel",
+      "change": "Israel shifts stance to back Argentina's claim over the Falkland Islands",
+      "source": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPeGpfX0l0QVpiaUk5bzBQRVdyS1EzdDRiSzkxRnlTMi14ZE9ZdE1iVGhKb2R3Q3E2cXl2Ukl1OWx5Mk1tZFE2MjlpY09oWld1SC1vMThVeUpuYjNPV2tBd18yOFIzTmxwQldaNWhkRDJ3QWZrV1VFT3lack5WRk4yTlcwUVhmNW5DNl9JRjJEd1ozUnNYZm9GbXRTdXlGX1YwU240NEdianFaekV6SWdybDd6YXJSc2NZRWhrX0NDTHNERzYwdUFVQXhra2w0N0NuQ2ZoV2pEWENNajZTZG1HN2NybFk2NUhPUnpxaGRncl9LNTlTQjZFREE1eFNMZw?oc=5"
+     },
+     {
+      "label": "China–North Korea",
+      "change": "Kim Jong Un visits China via the Dandong border bridge for high-level talks",
+      "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQOEh3cHAwTkFieTJ1dFVabU9DM283WGxaUGxHaGdvNUlaRzRlNThGM3hGcGt6RnZWbmItcDdjQXpYRENXTFByRGVNRC00R1F3WlZsd2xhdzdMU3gzWVFLeUo3RWNUZzV4NFR6RGZXSmZFWDM0NjNPSl9BUmZKUEhQcjFEeHJWRUs5N2xTbXZ2ZG10UU9pd3BxdGNSbWp1a0tnMUtOdk1WQlJxdXE5cXVIVHR5ajhqVDZPRG9fMw?oc=5"
+     },
+     {
       "label": "Serbia",
-      "change": "Added snap parliamentary election politics entry",
+      "change": "Snap parliamentary election held amid student-led opposition movement",
       "source": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1XdnhVcUJXeFJpV04xU25XR3pYTnVzNk1pS1BuVzNPRGtiMEV5Z3RCT0dacFo1cmhkREFiQXN2V1ZwbTJtbzctRC1vVElKSXVWT0RVRklR?oc=5"
      }
     ]
@@ -1913,7 +1928,7 @@
     ]
    }
   ],
-  "summary": "Jordanian church attack triggers international condemnation, Serbia holds a snap parliamentary election, and new security and trade agreements are signed globally."
+  "summary": "Indonesia halts natural gas exports to Singapore, Kim Jong Un visits China via the new Dandong border bridge, and Israel shifts its diplomatic stance to support Argentina's Falkland Islands claim."
  },
  "relations": {
   "DNK-USA": {
@@ -2760,9 +2775,9 @@
    "a": "ARG",
    "b": "ISR",
    "s": "F",
-   "note": "Argentina and Israel sign a defense cooperation agreement to expand military ties and strategic technology sharing.",
-   "updated": "2026-10-11",
-   "source": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9nV3g1cml0bFZETVlRMFEydnFDc3ZwOC1HeXBoVUdxdXFRb1IwX1ZNZzVVZEJ4Vk1wV1FyS243YWY1YkxwWDk3cERldWRGWW9HLVNDbm5iVlY?oc=5"
+   "note": "Israel shifts its diplomatic stance to support Argentina's sovereignty claim over the Falkland Islands.",
+   "updated": "2026-10-24",
+   "source": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPeGpfX0l0QVpiaUk5bzBQRVdyS1EzdDRiSzkxRnlTMi14ZE9ZdE1iVGhKb2R3Q3E2cXl2Ukl1OWx5Mk1tZFE2MjlpY09oWld1SC1vMThVeUpuYjNPV2tBd18yOFIzTmxwQldaNWhkRDJ3QWZrV1VFT3lack5WRk4yTlcwUVhmNW5DNl9JRjJEd1ozUnNYZm9GbXRTdXlGX1YwU240NEdianFaekV6SWdybDd6YXJSc2NZRWhrX0NDTHNERzYwdUFVQXhra2w0N0NuQ2ZoV2pEWENNajZTZG1HN2NybFk2NUhPUnpxaGRncl9LNTlTQjZFREE1eFNMZw?oc=5"
   },
   "DZA-MAR": {
    "a": "DZA",
@@ -2880,9 +2895,9 @@
    "a": "CHN",
    "b": "PRK",
    "s": "A",
-   "note": "China and North Korea open the New Yalu River Bridge after a 12-year delay to expand cross-border trade.",
-   "updated": "2026-10-14",
-   "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPaS1JVERETmJrUFhSRXNtQ240TUVtdlBHX2xFNFdnTG5rUzNRZVh3S3JUY2s5ZVAtX2FWbm92TjFXdTVVUkRPdEt2SW5fTzk1a0JreTg2NGRRWDgyOWJTbGdURWdLajNucmp4ZXRqNUpRbzIyOFBKQ0Ixanp6QzlSUGtjY0xxbHFjNDR6RVc5YnA0eGJjQ3BfQ1dlU1k2SHZWdEVOR0U2SEFPQdIBrwFBVV95cUxPR0F2QW1raWpQMS05eC01eWlfLWRqaGNJN0M2Y2NsRHZtY1BockcxS1FaTURpQ2FpNDVLVHB1VE1UbS1ZNUVQVXUtTjZ2MlZKZUk5ajdrbXlmMEVweHVCeEdzdy01bktPY0dmbTN6Z0RhMVFwVk5wdlBoWGRaOEFaX2kzM1BoV1FJNW1kUE5ZanNpQmpPS01xWTRPTEVkTzNLQkJZb3pIdEljcjlqQ2dz?oc=5"
+   "note": "North Korean leader Kim Jong Un visits China via the newly opened Dandong bridge for high-level talks.",
+   "updated": "2026-10-24",
+   "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQOEh3cHAwTkFieTJ1dFVabU9DM283WGxaUGxHaGdvNUlaRzRlNThGM3hGcGt6RnZWbmItcDdjQXpYRENXTFByRGVNRC00R1F3WlZsd2xhdzdMU3gzWVFLeUo3RWNUZzV4NFR6RGZXSmZFWDM0NjNPSl9BUmZKUEhQcjFEeHJWRUs5N2xTbXZ2ZG10UU9pd3BxdGNSbWp1a0tnMUtOdk1WQlJxdXE5cXVIVHR5ajhqVDZPRG9fMw?oc=5"
   },
   "LSO-OMN": {
    "a": "LSO",
@@ -3291,6 +3306,14 @@
    "note": "India and Azerbaijan reset bilateral relations following high-level talks in Baku to resolve recent frictions.",
    "updated": "2026-10-23",
    "source": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPSVlRbjVIWDZYQVdaMEZaX3BOU3hpcEdSbWNSenJSVlhkRGpqOUlIQzZCNW5IOFdaY0hvOU1wbENNMW5UUEc4akxSR3ZOa3FoeDRQWE0wczlSTnZFTHk5bTk3VEJYYk8ydmM5aTZLUHg0bkJKVzNna1RSblp2RWdvaFN2Z2Q5Z2t1NGJpZUdSTHp6dnJXRkpxRkY2SFNzTlJsQW5RcUlXV251ek9YWEJvWDVmVEU0ZjdYZmlTcWZ0Nnh3ODdiY1FxbHVlYUVpbk1SeUJWQVA3eER4YnRGMURwSURJakdVTFN2MFpWR0lodEtlUXlhWGh1UTV0Y9IBgAJBVV95cUxQdDQtenpRV01LWlg1S1JKX3ZrbjNRb1Z6bHJWYmVVR3c1VlVLWXhPNkJrX05NSU1uNzFRZmZOak45LW5zRExRSkpmLVowalVfWWtsblkycE04OHBwanFmTmdhRFBkVEQzQlpzblh1cDkzRlR5ME1od0RFLXRwU2drSVF2U1YyT3hkNm82Skl5cVZtQ0xISFpQOXlzSGxsX2hndXhZaDJQWHNpSDJqZVhwd2ZHYUJpWWQ3U0ZLaFJlcUkxbEpoUVdxMDU4amhsOGkyUzdGa3N3MUlWS014b3RCd3pYdlZTN2w0UDgxUTVEUW1TZjk5cTRFXzQzS0xFT1kz?oc=5"
+  },
+  "IDN-SGP": {
+   "a": "IDN",
+   "b": "SGP",
+   "s": "T",
+   "note": "Tensions rise after Indonesia cuts natural gas exports to Singapore following bilateral friction.",
+   "updated": "2026-10-24",
+   "source": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1jOTR2Q2JzeERDcHBXMnlGd0JCLUYwV2RueWdXWUU2aGtORnMxaGZFRnVVNU9MWEcxOFY1c3ZIdGVxcFJRZVRiSUw3TDltV0ZPWHZTa3RUUlgyeDEwVzR0OFRfZ0ZzaktVMVpv?oc=5"
   }
  },
  "threads": {
@@ -3759,7 +3782,7 @@
    "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWUlwWEJ0R2JPeVl4TUNzYkNyMVZfaWlwU21SSF96Ui1hdXIyR0wyNkpwQlFjRmw3UGJya0NYZ25TQjVGWWdrWEdEdjBsaFlJdmtQNGdIYjVJcG5zUG02b3I3TFhPXzluNmQyZTh3ejJVRGtMMG42M21yZjc4RXBleU9RTzVZRURlZDJGdkFTRXF2QVNiSVdmN2VtMkdNRzIzQnE5SFdHMlQ5TXVoSGo0?oc=5"
   },
   "SRB": {
-   "nextelec": "Snap parliamentary election, October 2026",
+   "nextelec": "parliamentary election, Oct 2026",
    "updated": "2026-10-24",
    "source": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1XdnhVcUJXeFJpV04xU25XR3pYTnVzNk1pS1BuVzNPRGtiMEV5Z3RCT0dacFo1cmhkREFiQXN2V1ZwbTJtbzctRC1vVElKSXVWT0RVRklR?oc=5",
    "lastelec": "parliamentary, April 2022, Aleksandar Vučić"
