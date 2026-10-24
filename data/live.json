@@ -1,7 +1,22 @@
 {
  "meta": {
-  "lastRun": "2026-10-23T22:21:52Z",
+  "lastRun": "2026-10-24T05:25:05Z",
   "log": [
+   {
+    "date": "2026-10-24",
+    "items": [
+     {
+      "label": "Austria–Russia",
+      "change": "Normal → Tense: Austria expels four Russian diplomats",
+      "source": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQemp6bnJlODBmeHpGaFhBeXFnWHRIMjFtR05nUThHSWdaS1BqbDFHT2huSFU2U2JKWjVNTVlhOUN1N2V1S1FpdkNGNk0wOVhfZktIWUQzYmtmS2ViaUJST0xMZE9vei1TbktRelU2NnpSUThUd0FCVTN6NVRuMDZrQXRSdWZDcG9PNG1VVWhFdHVaVDJkNjRSeUVDR0hCWEhEaGdLWldWeEM0WFBFME54cWxGaTBQeVhFaVp4bzE4ME0wM29wQVhsbkl1eE5jUTBhSzNSZTlpWUJONkgyVEVOc0hWdmRha0lVUnJJ?oc=5"
+     },
+     {
+      "label": "Serbia",
+      "change": "Added snap parliamentary election politics entry",
+      "source": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1XdnhVcUJXeFJpV04xU25XR3pYTnVzNk1pS1BuVzNPRGtiMEV5Z3RCT0dacFo1cmhkREFiQXN2V1ZwbTJtbzctRC1vVElKSXVWT0RVRklR?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-23",
     "items": [
@@ -1896,13 +1911,9 @@
       "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOb3RVa0h1bDNUMGZ2VV9XYTJpcFQyQURVd0RZd1YwbGFOdDlQRUlrejBnT3FGX0ZJMWF5Q0d3YXh2ai1PRFNNNXhNZ0lHWmNQSkhIcTZrMmZlVFloN2pCRnVpSUowQnh6cFlQR0NOb1JCZXZvV19CNTF0YTllM3dvWXZ2WkNvTVhSdngtTjdFSkVBQktFekFhUzVYTEVjWnNkTEpOaWRHRy04NlppM1lrcGs2YXF6VTNsZFU3eG5R?oc=5"
      }
     ]
-   },
-   {
-    "date": "2026-09-24",
-    "items": []
    }
   ],
-  "summary": "Updated bilateral relation notes for Moldova–Russia and Romania–Russia following Black Sea drone incidents, and logged upcoming snap parliamentary elections in Serbia and presidential elections in Bulgaria."
+  "summary": "Jordanian church attack triggers international condemnation, Serbia holds a snap parliamentary election, and new security and trade agreements are signed globally."
  },
  "relations": {
   "DNK-USA": {
@@ -3246,8 +3257,8 @@
    "b": "RUS",
    "s": "T",
    "note": "Austria expels four Russian diplomats for espionage, prompting a vow of retaliation from Moscow.",
-   "updated": "2026-10-23",
-   "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOcHdZWGlXcVRsLWZUUXc1c3F5WUY0eTVQb21uX045WXFMYTVLX3p0Z2FaMm5PZlh1NndJT1FLQjZqU1BjU0ZobXdWZ3lVcWhLY1pRQktLbXBjUU04V1hMc2VxU0doSWdxY3E0N3pVbkNmcWd2VlM3a0Y5TGx1SzJnZEZ0UHBFUTIyLXdHMTI1NnAwY0FDVmdpcldkRGQwZUFjbFhyQ0lqS1NOOUFha0ZNUVVQYzNnMV9JSjVKRTZDQlJVVFE?oc=5"
+   "updated": "2026-10-24",
+   "source": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQemp6bnJlODBmeHpGaFhBeXFnWHRIMjFtR05nUThHSWdaS1BqbDFHT2huSFU2U2JKWjVNTVlhOUN1N2V1S1FpdkNGNk0wOVhfZktIWUQzYmtmS2ViaUJST0xMZE9vei1TbktRelU2NnpSUThUd0FCVTN6NVRuMDZrQXRSdWZDcG9PNG1VVWhFdHVaVDJkNjRSeUVDR0hCWEhEaGdLWldWeEM0WFBFME54cWxGaTBQeVhFaVp4bzE4ME0wM29wQVhsbkl1eE5jUTBhSzNSZTlpWUJONkgyVEVOc0hWdmRha0lVUnJJ?oc=5"
   },
   "ETH-KEN": {
    "a": "ETH",
@@ -3748,8 +3759,8 @@
    "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWUlwWEJ0R2JPeVl4TUNzYkNyMVZfaWlwU21SSF96Ui1hdXIyR0wyNkpwQlFjRmw3UGJya0NYZ25TQjVGWWdrWEdEdjBsaFlJdmtQNGdIYjVJcG5zUG02b3I3TFhPXzluNmQyZTh3ejJVRGtMMG42M21yZjc4RXBleU9RTzVZRURlZDJGdkFTRXF2QVNiSVdmN2VtMkdNRzIzQnE5SFdHMlQ5TXVoSGo0?oc=5"
   },
   "SRB": {
-   "nextelec": "parliamentary, October 2026",
-   "updated": "2026-10-23",
+   "nextelec": "Snap parliamentary election, October 2026",
+   "updated": "2026-10-24",
    "source": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1XdnhVcUJXeFJpV04xU25XR3pYTnVzNk1pS1BuVzNPRGtiMEV5Z3RCT0dacFo1cmhkREFiQXN2V1ZwbTJtbzctRC1vVElKSXVWT0RVRklR?oc=5",
    "lastelec": "parliamentary, April 2022, Aleksandar Vučić"
   },
