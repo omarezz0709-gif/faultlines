@@ -1,7 +1,32 @@
 {
  "meta": {
-  "lastRun": "2026-10-24T23:57:42Z",
+  "lastRun": "2026-10-25T09:39:42Z",
   "log": [
+   {
+    "date": "2026-10-25",
+    "items": [
+     {
+      "label": "Algeria–France",
+      "change": "Tense: note updated on Algeria moving to halt urea exports",
+      "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPVEIzcE1McnBUOG83c3dMUi1UMkxFMmVyRjlTZVh4Tk1mVXY0c1ZmTnBqMkxVOEFyMWFYTnM3UTJLWHh0d0liazZZR0ViMnFsOVZpc1JDdmtrR2dHc2w1VjJHVV9mM1cwQXl6SlgwRTQ0bVlOa1dXMUNxWW5ZTG9Gb0tSUjQ1ZVRzWDFpbUlwN0Jkb3VFQ3gtVA?oc=5"
+     },
+     {
+      "label": "Saudi Arabia–Turkey",
+      "change": "Ally: note updated on Turkey ruling out combat operations against Houthis",
+      "source": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNa18tXzV4VTlrUUVBU1ZoalBBN1lKZ1pma3BseWpkMDU3bGJnek9OaFE3ZzRTd0JmbTBtRzdSLS1sVHhBWm1Tc0t6Mm9PQ1FqQkRaYW05RWV1a29jSWdTY0ltTWdpaURKZlJpN0lKOFFFRF94Wkx4Z2VkV3RtZzFnS3dZTm04RW5xcV9LZDNyU1lqQk5halo3eXprcWlqUFlRQzZYVHJkcU1pV1FDVlhCWW9QdnRmc0VVb0VLNXFvLTF4SjNzVmhKZGFSbWdYcWg2Z1Fmd0o4OVI5QQ?oc=5"
+     },
+     {
+      "label": "Houthi Red Sea campaign",
+      "change": "Updated description to reflect widening strikes targeting Riyadh, Mecca, and Aden",
+      "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNUW9BZGhCNzBjTGpMcWhnS0xMcFB2Y0xhZEQzSk5kcm81MkxXeGo5cGxkT0pzN2l3OGlWQ1FHTDJSdTZ0d1ZfbGhQUWo4T3ltRFhOLU5zWmpJT3ZRQWRSdTFQeVNnbnBQSmZELXdCUXk3ZW1lMlZOVXBSa0RiRDh3NzduU2RRR003TDNDTVpXSXBGY0U3QWc?oc=5"
+     },
+     {
+      "label": "Strait of Hormuz",
+      "change": "Updated status and description with subsea cable threats and coastal tanker spills",
+      "source": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9tZUNfNTNNZWVPMHhsWWwydkpSN1RPUEZqY3h0WHZPbmVwRHZ2S21QMG5MTm82NXdiRXhPVVozRmR1QlJza0JnbnJpVGI3YXhZR3RWeG5SVUVVcUNzdnJCdXhJdVZBLUNlRUdlUQ?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-24",
     "items": [
@@ -1901,54 +1926,9 @@
       "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOX2g4SERrV05YLVFFdFEteWlBb2VrdlZ4ZWVBbzBqa2hpa2FDemdUSnVpZ01aUGlYWmgzM3RId2hKRWZIb0RkN1ZrR191bTZ0bXB0SG1jbVRKM1FrYTYyUkZOakJHTWwzeHFYLS0tSTBFOUw0UHFxV3Q2ZURKVnpSSW5HNTFIWkZyTEFWLThQQS1BLU1HVy1FV0xpLVBiMUJ1MWt5VXRhTHV1aEN4RnV6TkZxVQ?oc=5"
      }
     ]
-   },
-   {
-    "date": "2026-09-25",
-    "items": [
-     {
-      "label": "Colombia–Iran",
-      "change": "Normal → Hostile: Colombia severs diplomatic ties over security concerns",
-      "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNYnZvU2R2enJKMTdfamVRV3ltSnJvZ2FfbnFYUldjbS1TcVRmLWVaNldic3dhenc5S1FoMV9qM0M3cW1sSVpMSDllRXFpRzdta2p0a3dhaVE4M1dPcFkzaXpQS3ZzUGpuTVIzaEk5MkFoTkNnX2s0RzVrMXI4RWlkNWVObzdUR2VfRjF0aW8tWWhLVmxBZ0hHT252UzRQZGVjU0NDSU5WOFhSenN1cWJodU91SlA?oc=5"
-     },
-     {
-      "label": "Canada–Vietnam",
-      "change": "Normal → Partner: countries establish Strategic Partnership",
-      "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUjhOWllpQVhCNVRHVTFpSUh6SUdyMlh4dUJXbmFmbnRyTWtaWGZrUHFWQndlX0xweS1DeXRjZUtDRmNvcHVHNXdYMWUtX0lIUVRLbVNoODdwMmMtZS02TmwwbW41aGxHeFh3OFVDdzZFUWZOQW4xNHRZVFlMbzJXb0V4dE5uMFpPd09udHkxRFg0YnV0RmhnbDQ1Yw?oc=5"
-     },
-     {
-      "label": "Russia",
-      "change": "Election result added: parliamentary election September 2026",
-      "source": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNNHZvUHZBak1rRWZheVZuelV2d2N2ZG1kblQ4ak1VcUphRlZJenY5XzRLSUhHcWFSOTh2SkZQYlFzT2xZc2ZkSlVaeWo5bzB2ZzZPTi13X0pqRVpkTTVYMTVIWVZRWVMyYWpLMmdyaU5xaXo5T2F4T2g3SVBMVEFrc2tiX0ZFNTlMSE5lMDMtaHZTQnZLb2dMTjhRT2trV0JSRU93Q3VOSnU5UnpmaGJZVjVSak5ZNi1BMjBvaW9MWWZ2ZThIc2tfazRqcEF1ZFRtRlVtOGxSaFBkTE1JVDhrUzhXUXNGd0lZQXpwZmtB?oc=5"
-     },
-     {
-      "label": "Morocco",
-      "change": "Election result added: parliamentary election September 2026",
-      "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVHd6aWZhdHZQbnhOVkRoZlFHcEFXakZ4WmNob251TTNtVWducUhUeHZOYUlzeFJMWUZET2ZscG1oUl92ZW12MXZvaE5OZTVFUFc3dEJMMWRkeklJN0JTMGlqMlY4LUZtVGpJWGJTRi14T2Qxa0JKTTA4OFZpWnh3QzR6RThIOHM1eXNPQnNnLUZrY0hZX0tkclZNRGdQT1ZTUmNDZ2JqNFZTTkhrRTVMWjNB?oc=5"
-     },
-     {
-      "label": "Colombia–Iran",
-      "change": "Normal/mixed → Hostile: Colombia cuts ties with Iran",
-      "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeXZlYkpnWllMU3U2UUJXY3BDNl91Uks4V3JmRjczdXlROXdUUV8xQW9TbVRBSjkzcXdsUHlfMzRua1UzZHlONm1BYTdlQnlUYUp0MnZROGNRTzRfM3NKQktpTGM5TDNpYWFCanZxT3JpMVpLNHU4dDJkT2F2ZV9hWm96bGLSAYoBQVVfeXFMTTdWZ3N0TGcyblU3MnNXMUNxWlNnemFHUjZuOUZDRWRHVFB0N203U2RhV2E1YUlnMmZuT0VGRXhCLXoxbGxzNVY4Y1BTT2kzbnh3aW80SmFLd01kWnh3Wmc2SkN0dENFbmw4ODFCVHoxNW8zYTFWQXVVZWRpd3dUTmdsZk5CRGpGbVBB?oc=5"
-     },
-     {
-      "label": "Canada–Vietnam",
-      "change": "Normal → Partner: Establishment of formal strategic partnership",
-      "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUjhOWllpQVhCNVRHVTFpSUh6SUdyMlh4dUJXbmFmbnRyTWtaWGZrUHFWQndlX0xweS1DeXRjZUtDRmNvcHVHNXdYMWUtX0lIUVRLbVNoODdwMmMtZS02TmwwbW41aGxHeFh3OFVDdzZFUWZOQW4xNHRZVFlMbzJXb0V4dE5uMFpPd09udHkxRFg0YnV0RmhnbDQ1Yw?oc=5"
-     },
-     {
-      "label": "Colombia–Iran",
-      "change": "Normal/mixed → Hostile: Colombia cuts diplomatic ties with Iran",
-      "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbkhxNjNTQUY5YjRPN0xRT3RSTG85b1BiZ3NqakR6SDJLYXBsV1VFTlVtODhyMGQ5ZlktZEFwb1ptNTdiVFRodmhxZ3EyT3JDLUtkd3RjbHE2SUV4WVdIWnR0UlQ5NWxweTIyeVBKNlBWcTM0RkhwT2g5XzUwUFloTHVBNWN5am1mMVVvNi02UEd5dG9WNVB3Tg?oc=5"
-     },
-     {
-      "label": "Morocco",
-      "change": "Added 2026 parliamentary election results with PAM winning 97 seats",
-      "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOb3RVa0h1bDNUMGZ2VV9XYTJpcFQyQURVd0RZd1YwbGFOdDlQRUlrejBnT3FGX0ZJMWF5Q0d3YXh2ai1PRFNNNXhNZ0lHWmNQSkhIcTZrMmZlVFloN2pCRnVpSUowQnh6cFlQR0NOb1JCZXZvV19CNTF0YTllM3dvWXZ2WkNvTVhSdngtTjdFSkVBQktFekFhUzVYTEVjWnNkTEpOaWRHRy04NlppM1lrcGs2YXF6VTNsZFU3eG5R?oc=5"
-     }
-    ]
    }
   ],
-  "summary": "Russia expands military support to Uganda with a $53 million package, while Britain pledges additional defense assistance to Saudi Arabia amid ongoing Houthi strikes."
+  "summary": "Updated Turkey's operational limits under its Saudi defense pact, noted Algeria's threatened urea export halt to France, and refreshed Houthi escalation and Hormuz threats."
  },
  "relations": {
   "DNK-USA": {
@@ -2035,9 +2015,9 @@
    "a": "SAU",
    "b": "TUR",
    "s": "A",
-   "note": "Turkey moves the Saudi-Pakistan mutual defense pact toward parliamentary approval to bolster bilateral military ties.",
-   "updated": "2026-10-20",
-   "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQNHBtYmltTlpfOXd0bjh5MDVlQU5KS21RUjdBWmllS2JoaU91RUNXRmhkVWg5UVdmYmVyY2NJMzF5akhyZklIbkpNVGdEZWtsVUN2OUVRb3N1TzVqXzlFRmhUMUgzN1hKSGdLcE1LaUVXXzBscXZUU3RYMXlFVjV0NTh0eFVfb0plZGxNVlh4ZThzQ2c4TVRFNGJLSG1LeWN6U2kta2FXNkFlRkZYUzN0T2toZw?oc=5"
+   "note": "Türkiye clarifies it will not engage in combat against Houthis under the Mecca mutual defense pact with Saudi Arabia.",
+   "updated": "2026-10-25",
+   "source": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNa18tXzV4VTlrUUVBU1ZoalBBN1lKZ1pma3BseWpkMDU3bGJnek9OaFE3ZzRTd0JmbTBtRzdSLS1sVHhBWm1Tc0t6Mm9PQ1FqQkRaYW05RWV1a29jSWdTY0ltTWdpaURKZlJpN0lKOFFFRF94Wkx4Z2VkV3RtZzFnS3dZTm04RW5xcV9LZDNyU1lqQk5halo3eXprcWlqUFlRQzZYVHJkcU1pV1FDVlhCWW9QdnRmc0VVb0VLNXFvLTF4SjNzVmhKZGFSbWdYcWg2Z1Fmd0o4OVI5QQ?oc=5"
   },
   "COL-USA": {
    "a": "COL",
@@ -3342,6 +3322,14 @@
    "note": "Uganda and Russia expand military ties as Moscow delivers a $53 million defense support package and opens joint facilities.",
    "updated": "2026-10-24",
    "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUll5SGlSSjdyTFl3YXVCOUU4V3RFbVd5WmprUzZnSC13LXBJalBuY0lQTmxYYlJESENCb1lPRXM1UXpnT0hlSTA5SVJHWEJ4alhtWi1BQXdQYlNJVlQ2bWdIZWcwc1Z4Uk1RTW11cVB0Si02cC0xRTVLMmZ2akxZNmhsVHVIVlFjT3JxR2pNMXBia2NHM3pxUjdzRHQtUVFLaGQ3SkJYaWJhdDVjT3FFYld3ZnVFa28?oc=5"
+  },
+  "DZA-FRA": {
+   "a": "DZA",
+   "b": "FRA",
+   "s": "T",
+   "note": "Tensions persist as Algeria moves to halt urea exports to France amid an ongoing diplomatic rift.",
+   "updated": "2026-10-25",
+   "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPVEIzcE1McnBUOG83c3dMUi1UMkxFMmVyRjlTZVh4Tk1mVXY0c1ZmTnBqMkxVOEFyMWFYTnM3UTJLWHh0d0liazZZR0ViMnFsOVZpc1JDdmtrR2dHc2w1VjJHVV9mM1cwQXl6SlgwRTQ0bVlOa1dXMUNxWW5ZTG9Gb0tSUjQ1ZVRzWDFpbUlwN0Jkb3VFQ3gtVA?oc=5"
   }
  },
  "threads": {
@@ -3360,11 +3348,11 @@
     "SYR",
     "ARE"
    ],
-   "d": "Iran-backed Houthi forces launch missile and drone attacks on Saudi Arabia's King Fahd International Airport and energy targets.",
+   "d": "Iran-backed Houthi forces target airports and energy infrastructure across Riyadh, Mecca, and Aden with drones and ballistic missiles.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOTHVLaXkyREMxdUE2dE1WVEVzN3ZyQnFCTzdZWFJzcUN1d2t4THhKaEUzQkpHeFN6SnpSVmUwQWpOcWluSGtBa0tkNlZZcEdUeGd1U051RjY5NkZWUmhnN1NZWHdza2FPcE9PY3ZsSlRrRzY1UXE5aFRZZmFZVXdkS21JcFZ3SjJWR0Z0eFBFbjV0a3lPS0lScVlzbnNKVjRpcjRfN214YjVyeW9FbVVFN3l6dEt2RGNoc2c?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNUW9BZGhCNzBjTGpMcWhnS0xMcFB2Y0xhZEQzSk5kcm81MkxXeGo5cGxkT0pzN2l3OGlWQ1FHTDJSdTZ0d1ZfbGhQUWo4T3ltRFhOLU5zWmpJT3ZRQWRSdTFQeVNnbnBQSmZELXdCUXk3ZW1lMlZOVXBSa0RiRDh3NzduU2RRR003TDNDTVpXSXBGY0U3QWc?oc=5",
    "t": "security",
-   "updated": "2026-10-23"
+   "updated": "2026-10-25"
   },
   "afpak-jihad": {
    "t": "security",
@@ -3603,11 +3591,11 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "Commercial shipping and oil tankers face missile and drone attacks in the Strait of Hormuz, raising fears of wider regional conflict.",
+   "d": "Iran threatens subsea cables while tanker attacks near the strait cause major oil spills off the United Arab Emirates (UAE).",
    "n": "Strait of Hormuz",
-   "s": "7 oil tankers struck; escalation warnings",
-   "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdGRodHE0VnkzWjdQTHYtUnBoVlBCVHpEU0lFUFJXLWpLRTJQMk1rX3AxTVR0MV9ubXdCRTl6Y3AzSXFtNjdMalhjb01tazNaanl5Tkk2SEJ2OE5rTmduczhMbzRqRzVkYTZ4NVduekJjU0g4R0xGdW1xSlljeENmdGdZM3hEWU9neDhvWUFYOFVHY1o0bkJQYnhiRjI2a2dqUkI2ZmdHN0VuRWNONlhYaFRvUWdFcFo5MzFjcW4yN0JsN2gyUnVZREZB?oc=5",
-   "updated": "2026-10-23",
+   "s": "Internet cable threat; tanker hits",
+   "source": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9tZUNfNTNNZWVPMHhsWWwydkpSN1RPUEZqY3h0WHZPbmVwRHZ2S21QMG5MTm82NXdiRXhPVVozRmR1QlJza0JnbnJpVGI3YXhZR3RWeG5SVUVVcUNzdnJCdXhJdVZBLUNlRUdlUQ?oc=5",
+   "updated": "2026-10-25",
    "t": "strait",
    "lat": 26.57,
    "lng": 56.25,
