@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-25T09:39:42Z",
+  "lastRun": "2026-10-25T23:44:40Z",
   "log": [
    {
     "date": "2026-10-25",
@@ -24,6 +24,31 @@
       "label": "Strait of Hormuz",
       "change": "Updated status and description with subsea cable threats and coastal tanker spills",
       "source": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9tZUNfNTNNZWVPMHhsWWwydkpSN1RPUEZqY3h0WHZPbmVwRHZ2S21QMG5MTm82NXdiRXhPVVozRmR1QlJza0JnbnJpVGI3YXhZR3RWeG5SVUVVcUNzdnJCdXhJdVZBLUNlRUdlUQ?oc=5"
+     },
+     {
+      "label": "Algeria–Niger",
+      "change": "Note updated: Algeria approves troop deployment to Niger oil facilities",
+      "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZW1MYjhWdjV6OW5LSEVPVVE5T01BNUtaUkR4M2t6X1p2UVZ1UlZ4TjJnWG84VzM2ZHJDOUVxYjdnNFQ2cDhwd1o2MGh2TzJVMmlmb01FTi1zS3MwTGJRTlZjM0ZiT21keFNrSXBSWEVOdFY3X2d4eVZkUU9ncXotM3FvRUpQdEZWaXFodk1WOUxtLXh0OXU1c3Q4eWpIR3Bw?oc=5"
+     },
+     {
+      "label": "Serbia",
+      "change": "Election updated: Student List wins snap parliamentary election",
+      "source": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQT1ZpM2V3c2M1TEJSTENBNHV3QklSdjhWcFBMU3BjYWNpOGpiWk1EMkZzQ182ZXZGMUNEYnEySzV1d05mN2l0RmxqQ3UtMFpTXzdOY1pHV2Y5SzMwSm5PUmhtcWhFU1BLRm9kVmZ5V3V4RGVqbTc4SXJKMHFHY1lsRmVn?oc=5"
+     },
+     {
+      "label": "Bulgaria",
+      "change": "Election updated: Presidential election heads to a runoff",
+      "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUENOZWdKSVFYREgzUDJHdGNzSm9xT1BiSzU4RGNKUmRlNHdsRDV2WkpVclMwZ0psQ080UXlnSnQ5TDZjbnBEVmRHNlZTWm1tekNtQ0RENmlmQXNPeFF3RHhlTno4Q2ZsNS1wNDVDVVQ3MnN0b1BhSFI1UzE5NDJMc2xSQm82M2YwNTJoM1lPb0JWUUFxNVpMVA?oc=5"
+     },
+     {
+      "label": "Brazil",
+      "change": "Election updated: Presidential runoff held",
+      "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbUpkd0FBX2RydmtrZHZZaDUwdGZ6VFhGRUFRZjRFaTJQVGsxM1lSZzZJNUtFWlBKWGdBZjZBTDFmUEpicXBKUEQtaVlEcnQyejNLZVlpZi1LakMzQmRJS3cwemRlRDhtMTAta3FuVnAybkdjSV81YmVYUXRpSjRvb05uLWthbmVsUVA3VkVR?oc=5"
+     },
+     {
+      "label": "New Zealand",
+      "change": "Election updated: Voting opens for parliamentary election set for November 2026",
+      "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNMXRpZS1uTGVpTUhoY3RLTFA5NXBTcDFtQjF6a01Ld19JR3A4TXVkZllNWW4zQlBhWmZ3WEJRT3RfVmdOaXUzcUtSWFlsY3JWSEpPX1drZk54VktFVVFIMGhuSE0teHp2RVRuVlU0QldYdFh0aGR5N3F0SGZaOXFGbF9tZ1FWZWprX0lpdzVybVI5MTZ2VjVpVkwyM3M2TGpfb2dUMG95dW9tdw?oc=5"
      }
     ]
    },
@@ -1928,7 +1953,7 @@
     ]
    }
   ],
-  "summary": "Updated Turkey's operational limits under its Saudi defense pact, noted Algeria's threatened urea export halt to France, and refreshed Houthi escalation and Hormuz threats."
+  "summary": "Algeria approves its first foreign military deployment since 1973 to protect Nigerien oil facilities, while snap elections in Serbia yield a major victory for the opposition Student List."
  },
  "relations": {
   "DNK-USA": {
@@ -2431,9 +2456,9 @@
    "a": "DZA",
    "b": "NER",
    "s": "A",
-   "note": "Algeria and Niger sign a milestone defense pact to bolster border security and military cooperation.",
-   "updated": "2026-10-23",
-   "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQblNiUFZFb0lQZ1RLQTBwV0JWVDBuWGpNVHVOQW5TSGVQSjJ4MXRPUTJsUDUtaW5aVjlSbTlGMUVnb3hDanRpdjhnTllMczF2cjVZYXB1NmVWMWRiS0J5RUVDdEpqc0ItNV9hX1pMdVhYeFZ5MWp4bG40ZUJkYlNaVnJxcWhTYU0wWXZBd3c3aVdwRmdZU053UWJOdzlDWk1tbEhjOURkNGhhNVc3ZWo4RGFPX3lLYzZZ?oc=5"
+   "note": "Algeria's parliament approves army deployment to Niger to protect oil facilities in its first foreign deployment since 1973.",
+   "updated": "2026-10-25",
+   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZW1MYjhWdjV6OW5LSEVPVVE5T01BNUtaUkR4M2t6X1p2UVZ1UlZ4TjJnWG84VzM2ZHJDOUVxYjdnNFQ2cDhwd1o2MGh2TzJVMmlmb01FTi1zS3MwTGJRTlZjM0ZiT21keFNrSXBSWEVOdFY3X2d4eVZkUU9ncXotM3FvRUpQdEZWaXFodk1WOUxtLXh0OXU1c3Q4eWpIR3Bw?oc=5"
   },
   "DOM-HTI": {
    "a": "DOM",
@@ -3683,12 +3708,12 @@
   "BRA": {
    "hog": "Luiz Inácio Lula da Silva, President",
    "hos": "Luiz Inácio Lula da Silva, President",
-   "lastelec": "presidential, October 2022, Lula da Silva",
+   "lastelec": "presidential runoff, October 2026",
    "nextelec": "presidential runoff Oct 2026",
    "ruling": "Workers' Party (PT)-led broad coalition",
-   "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNM2dDQW5yVDVVYnk1ZzNMcVhCZEMxYUNyYkJxbE1vbkRuU20xVXRZVE9GdDRYQnBSY0Z3T3VIcDNmUFhub05LWS16LU9xdXdVc083b2ExNmJ0UXVCVzNLNzctOEMtUzYxX0xSVW1rMkNRWGVBMjEyRmVxTm13SXlmZDJoS3NlcG9uRHBzamVOZGl6STE4bW5vS1FUQjJSQ2hfN2Y5WXZyR1E4ZkN2ZWJ0djJrVDRnRXVhNWhnY0FKeUJVelBr?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbUpkd0FBX2RydmtrZHZZaDUwdGZ6VFhGRUFRZjRFaTJQVGsxM1lSZzZJNUtFWlBKWGdBZjZBTDFmUEpicXBKUEQtaVlEcnQyejNLZVlpZi1LakMzQmRJS3cwemRlRDhtMTAta3FuVnAybkdjSV81YmVYUXRpSjRvb05uLWthbmVsUVA3VkVR?oc=5",
    "system": "Federal presidential republic",
-   "updated": "2026-10-24"
+   "updated": "2026-10-25"
   },
   "CAN": {
    "hog": "Mark Carney, Prime Minister",
@@ -3787,10 +3812,10 @@
    "nextelec": "parliamentary 2031"
   },
   "BGR": {
-   "nextelec": "presidential Oct 2026",
-   "updated": "2026-10-24",
-   "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPRVZYSUFYOG1OcHl3OGRwNmgzc1EweTJjejAxQTBNU2hqVFpkWEIxelpEak5FMjR3TkVmRGNpWlA1U20tYnpBUlVFbVlnZ0RBeGVPY0cwU1AtaE1YYjNJRnZZUWJoNHEybnd2X1RHZ1RiTy1ocGM5OTlhVkpEQV9vb012MXh5aV8wYWF2Q3hrZ0FsS1hsY1FNTG0xSmh2c0ZOOHV2OE8xS3lVeEdjejhRNHRTQUEwU1JudnRXcA?oc=5",
-   "lastelec": "presidential, November 2021, Rumen Radev"
+   "nextelec": "presidential run-off, November 2026",
+   "updated": "2026-10-25",
+   "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUENOZWdKSVFYREgzUDJHdGNzSm9xT1BiSzU4RGNKUmRlNHdsRDV2WkpVclMwZ0psQ080UXlnSnQ5TDZjbnBEVmRHNlZTWm1tekNtQ0RENmlmQXNPeFF3RHhlTno4Q2ZsNS1wNDVDVVQ3MnN0b1BhSFI1UzE5NDJMc2xSQm82M2YwNTJoM1lPb0JWUUFxNVpMVA?oc=5",
+   "lastelec": "presidential (round 1), October 2026, run-off required"
   },
   "SSD": {
    "nextelec": "general, December 2026",
@@ -3799,9 +3824,9 @@
   },
   "SRB": {
    "nextelec": "parliamentary election, Oct 2026",
-   "updated": "2026-10-24",
-   "source": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1XdnhVcUJXeFJpV04xU25XR3pYTnVzNk1pS1BuVzNPRGtiMEV5Z3RCT0dacFo1cmhkREFiQXN2V1ZwbTJtbzctRC1vVElKSXVWT0RVRklR?oc=5",
-   "lastelec": "parliamentary, April 2022, Aleksandar Vučić"
+   "updated": "2026-10-25",
+   "source": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQT1ZpM2V3c2M1TEJSTENBNHV3QklSdjhWcFBMU3BjYWNpOGpiWk1EMkZzQ182ZXZGMUNEYnEySzV1d05mN2l0RmxqQ3UtMFpTXzdOY1pHV2Y5SzMwSm5PUmhtcWhFU1BLRm9kVmZ5V3V4RGVqbTc4SXJKMHFHY1lsRmVn?oc=5",
+   "lastelec": "snap parliamentary, October 2026, Student List"
   },
   "CHE": {
    "lastelec": "referendum, Sep 2026, rejected stricter neutrality",
@@ -3831,9 +3856,9 @@
    "source": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNXFXa1c5U05DZHNINV9rcExET0NiRnFoaEkyczUyUjNIUi1pa1psaVEyQ1hUR2JvYllsUkxPQnRJWTlxdnV0QmFQTjE3d3A3RXdQLTkxU0hWaVR1MW5vUlZJUmxSSHVLWUFWdlJVbk91X1I5NnVZaWZ6aXk0NmRxa1ZDdk92UnhxNFIxUFVLVkE1TVhhelU5SW9ueThycGJfZG1LZmZRVmhXQnlKMFl5cVBDa1BqblRMODYwZWV6UFZEaHF5aFRfVml6UUtJZzNp0gHWAUFVX3lxTE5XWVRjcFRCQXdGWEktQ3Y0Zi1ZeXgyQWo1bUdIVlFNTkdReU1jWEQ4MkhYNnRTNGM1MGxDWHJndjM0bUU2WThEWElkYUhER2tpUE1Za2sxWjVldkhkRllGWDlUcjlpVXUxSVFpaTFfOE8tTlpjamRJaUhNZnJqVDZ3bmlacF9iS2NqbWpZcGktT29ZbjJ2bHBETUlqZXJPVVhQNkhwNnZmdERQczl6dWw3MWctSDdfQ0R2VzlEV2VQSHdDYkx6Snh2cVYxM3gtLThOalNpX3c?oc=5"
   },
   "NZL": {
-   "nextelec": "General election, 7 November 2026",
-   "updated": "2026-10-12",
-   "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdDlaQXVYbmIyYWdIbmtFclNfTnVkM29oRGdoR2tIcTVlZ1g2alZBZU1NNkpTaG81M0RQNDBfenFVZkxGZXpGSXdrV1A3NlZteEY5NE5WS1NQMGt2X1dTb1lmSjcydnotblJZa3dtd1F5MlVMUjQ5bnpzZXVrUDFCUW9VQmNrMXFPNVdhRWk3NzV2VzFuNlA0TVNHMzU4eDBkM0ZTYW01VGZONWN2bG9qZVlpZjRYczFBek5mZVhZZ2pSNEp4OS1hWHNSZDFZdFY2MFNmY1ZR?oc=5"
+   "nextelec": "parliamentary, November 2026",
+   "updated": "2026-10-25",
+   "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNMXRpZS1uTGVpTUhoY3RLTFA5NXBTcDFtQjF6a01Ld19JR3A4TXVkZllNWW4zQlBhWmZ3WEJRT3RfVmdOaXUzcUtSWFlsY3JWSEpPX1drZk54VktFVVFIMGhuSE0teHp2RVRuVlU0QldYdFh0aGR5N3F0SGZaOXFGbF9tZ1FWZWprX0lpdzVybVI5MTZ2VjVpVkwyM3M2TGpfb2dUMG95dW9tdw?oc=5"
   },
   "GRD": {
    "nextelec": "general election 5 November 2026",
