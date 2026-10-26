@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-26T10:51:34Z",
+  "lastRun": "2026-10-26T20:49:51Z",
   "log": [
    {
     "date": "2026-10-26",
@@ -19,6 +19,11 @@
       "label": "Serbia",
       "change": "Recorded opposition Student List victory in snap parliamentary election.",
       "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOU8wdDJ4b2FwTm9HNXNJNGxhX1hDUGpHWk84TjM0elM5cDlEQmF5UVpBLWN0S1p6TTFXQ0dYTGxIRDhlQVNPZjlRM2hQS3BxRkVpZS1DcEY1akYtQWlkQjJVWFRGcl9kaEFlUXpISi1LLUE3RGxxcFJfbERjNG9lbTVhVTRrSUpNVjB2YW1mM3NvUQ?oc=5"
+     },
+     {
+      "label": "Algeria–Niger",
+      "change": "Normal → Ally: Algeria authorizes first foreign troop deployment to Niger to protect energy interests.",
+      "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWEFzMVJsdFFhYTRiQlZMRlczc3RYOHhVVXVFVHNFQmRxNzFZQ1M4dTgtcXAtb2JDZS1SdlpMWkJsT05UTVh2ZWJ6VzdIRGh6M3Vkd3ZrRlQyTmxTYV94eExvMER6WlhIakN2bm5oeFJLZzQtZDJNc09fZ05qR0daellWazBIeWNfRks0dW52UjJPcTlicFBxazAxcjB1blZQN19tMUdR?oc=5"
      }
     ]
    },
@@ -1883,7 +1888,7 @@
     ]
    }
   ],
-  "summary": "Poland and Vietnam establish a Strategic Partnership, while national elections conclude or progress in Brazil, Serbia, Bulgaria, and New Zealand."
+  "summary": "Algeria authorizes overseas troop deployment to Niger, Jordan strikes militant targets in Syria after a church attack, and Brazil's election win for Lula draws international reactions."
  },
  "relations": {
   "DNK-USA": {
@@ -2386,9 +2391,9 @@
    "a": "DZA",
    "b": "NER",
    "s": "A",
-   "note": "Algeria's parliament approves army deployment to Niger to protect oil facilities in its first foreign deployment since 1973.",
-   "updated": "2026-10-25",
-   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZW1MYjhWdjV6OW5LSEVPVVE5T01BNUtaUkR4M2t6X1p2UVZ1UlZ4TjJnWG84VzM2ZHJDOUVxYjdnNFQ2cDhwd1o2MGh2TzJVMmlmb01FTi1zS3MwTGJRTlZjM0ZiT21keFNrSXBSWEVOdFY3X2d4eVZkUU9ncXotM3FvRUpQdEZWaXFodk1WOUxtLXh0OXU1c3Q4eWpIR3Bw?oc=5"
+   "note": "Algeria's parliament and president approve deploying army units to protect energy assets and shared interests in Niger.",
+   "updated": "2026-10-26",
+   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWEFzMVJsdFFhYTRiQlZMRlczc3RYOHhVVXVFVHNFQmRxNzFZQ1M4dTgtcXAtb2JDZS1SdlpMWkJsT05UTVh2ZWJ6VzdIRGh6M3Vkd3ZrRlQyTmxTYV94eExvMER6WlhIakN2bm5oeFJLZzQtZDJNc09fZ05qR0daellWazBIeWNfRks0dW52UjJPcTlicFBxazAxcjB1blZQN19tMUdR?oc=5"
   },
   "DOM-HTI": {
    "a": "DOM",
