@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-27T10:17:51Z",
+  "lastRun": "2026-10-27T20:19:49Z",
   "log": [
    {
     "date": "2026-10-27",
@@ -21,11 +21,6 @@
       "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxON0ljU1VMRDd4djR4Zm5NU2Z0MTE0b2NaVktDM1RKS01oYnBKbWhVQlpodjRETko1MlhUY2o2eGFINEo3UzVtME4zckpYbDkwZnBMcENLZ2l2ckhuaG5LaGFfbzlNbHNaNVIzN3Fva3VkLUpFTzdFR2w5aUtHT2ltRnZ1UmxHNEJqUkgtb0pZaFBqMlphVVpwcTIyRWhvOW5Ga05KM3JlaTNKem9oem52NDJiRm1GN3RqOEIxSlY4RVhYalk?oc=5"
      },
      {
-      "label": "Serbia",
-      "change": "Election: Student List wins parliamentary majority with 52.6% of the vote",
-      "source": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA4MmRlWWYwNHpma21xdTBiWENRemtTOG1Ba1hwUnQyY0VYd2ZwRGZNR2lJcFdLVkhSVHE1aW1MdENJemhGN0hCYWNiUENxUUtiMnR4Qy16WGJwaW5zWTNn?oc=5"
-     },
-     {
       "label": "Israel",
       "change": "Election: Voters head to polls in national parliamentary election",
       "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWXdkYmZFcGxyVVBUbXpWSnU5bHlHeDlELWYzMnZvWVIwb0xPQmNLSDJtRlpMb3ZodnFuY1d4QkV2SW51WG5ReGFhdEZ5WlRpSERYOE1ZQzI0ajVUN0ZQRS0tM3hraERWWWlHRHhNZlRkU3h4TU1sc1pSQVYxV0VCaV9EOElqdi1IcHdZek1zTV9adVVCLUctNUtfZkxRdGVYUkdJ?oc=5"
@@ -34,6 +29,26 @@
       "label": "Bulgaria",
       "change": "Election: First round of presidential election sends Yotova to November runoff",
       "source": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUTBldlhSbUVyZEhKR3RIUlZRMUpWRTJnU0pWZm16UWxDX3NjMjVBVmNEanJqQVQ2ZFBfbEZ0di1NalVYaUJmZjh1N3BEU29jZFoxX2VWWU9hSUpTTlIwbGNJckNKWk1WeTh5b1VQMGIwR003Vm81NDdoNHFmYy1hbTY3c0hORm1FUzJRYkpxc284WVFWRDVUUWtNTnJoMHhSVXF6OVpVRWFzUkhraFQ2cXdhNTZvU2xKd0NIc3ZELVJvYmJFNnZaNWZsV1dsQ2o4MVRUU3BXR3AyY25tWE1pTFJ1UQ?oc=5"
+     },
+     {
+      "label": "Canada–United Arab Emirates",
+      "change": "Normal → Partner: signed defence, energy, and trade agreements",
+      "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPWVVnRFlYNkJrVUpJOE5wa2FEMGZPWVZuQ1E3M1cxUUdkZjJFRmtia1l0X05QNzNkeGJPbW5DRHY1ajdTcmJ5SUlGN1ZmZUJidE83SjZDUUpabjcyNEtpS2tVcTFveURvM3hxb0R4N2hKbndVamk3SXd2aVVIY2J1QWZZcnQwUFZnekFmNFd6MUNOWXl4bjZsTHBMTjZRc1BPN3F3dE8wdlBrSkFMYk5PTl9tU0FVaDdUNHcxd0tqSVhqdVV4aUlB?oc=5"
+     },
+     {
+      "label": "Moldova–Ukraine",
+      "change": "Partner: updated note for new five-year defence cooperation agreement",
+      "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWkNxX2lla0U5SHZyb3FTU2Z3U0J6c2U5cjdkUF9TTEMwRWZadXRZcktXdmk4NW10MzA3Y2tjV1lTYWNOZ1NHMFljT08tVHJnOE5ESFVsQlhVZzQ0Tkk0LWZncjBpS3p6TWNWM19yTWpNb1dOSUtFNHZaaVVZNXd0NGZFT2VlaFhqNG9ta01IdkV6SUpDVkN4Zi1RcmpkWHJ6R2JuRw?oc=5"
+     },
+     {
+      "label": "El Salvador–Haiti",
+      "change": "Partner: updated note for deployment of 1,000 Salvadoran troops",
+      "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQY1gtaGppZXZtMTh1N1dPcGJIaWNUV1NtYzRuUGRXdHh0NnNCb3dYYi1nbnY4MGtZMDh3ekRvX196WjZLZTByV1pfeGlFc1pSZHF0OWZHWUhyZDRFNG5IZDdHVG1oSTE1S3NnYzZ5RkpSR1RJSS1hWm5ZMjBYNnF4WllvdWR3dExyWUJhWXl6NWJtbFlqQ2xnbkFwa3FSUVl1Zy1zRktWbVFIZnc?oc=5"
+     },
+     {
+      "label": "Serbia",
+      "change": "Politics: Student List wins snap parliamentary election",
+      "source": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBJeDl4cDJsbkJSS1gxUnhFUmd1Z25hMmNIX3M2eC1rY1lmVG95YVk1RzFiOWxjM1JMcG9XM2FOYmF4U3lGSlBNWUticFdPYU9yUVN3SWJsdElSWmF3WXRFMHV4YVBiSl9La0dSYQ?oc=5"
      }
     ]
    },
@@ -1838,7 +1853,7 @@
     ]
    }
   ],
-  "summary": "Jordan strikes targets in Syria prompting border closures, Egypt authorizes military defense of Saudi Arabia against Houthi threats, and elections occur across Israel, Serbia, and Bulgaria."
+  "summary": "Canada and the UAE sign a strategic defence and trade pact, Moldova and Ukraine sign a five-year defence agreement, El Salvador expands troop deployment to Haiti, and Serbia's opposition Student List wins snap elections."
  },
  "relations": {
   "DNK-USA": {
@@ -3133,9 +3148,9 @@
    "a": "HTI",
    "b": "SLV",
    "s": "F",
-   "note": "El Salvador deploys special forces to Haiti to rescue missing personnel and combat gang violence.",
-   "updated": "2026-10-23",
-   "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQ202dHdUU3ViV0c5Um5fdEZrcHVuUjlfOTZZdk1oeHluT3JpbHNZWVJzcW43WDF6N01wSGRNOGlDSDc2YmU4WEJkb3J3STloOW9VdmVtRFFnSUlHRHp1YzA0cTlObXpZLXFQY2NrWkktejV1Qm9femlEZUpfVFVfMnZBODBPQXREYjg2WUVwSW02eWltM2hhdW1JTHRMVEtYVTZpVjFnZ1loNFNHdEtvcEw0dERqNHdyV3FTdQ?oc=5"
+   "note": "El Salvador deploys 1,000 soldiers to Haiti to assist international anti-gang security operations.",
+   "updated": "2026-10-27",
+   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQY1gtaGppZXZtMTh1N1dPcGJIaWNUV1NtYzRuUGRXdHh0NnNCb3dYYi1nbnY4MGtZMDh3ekRvX196WjZLZTByV1pfeGlFc1pSZHF0OWZHWUhyZDRFNG5IZDdHVG1oSTE1S3NnYzZ5RkpSR1RJSS1hWm5ZMjBYNnF4WllvdWR3dExyWUJhWXl6NWJtbFlqQ2xnbkFwa3FSUVl1Zy1zRktWbVFIZnc?oc=5"
   },
   "IRN-IRQ": {
    "a": "IRN",
@@ -3256,6 +3271,22 @@
    "note": "Jordan conducts airstrikes against Islamic State (IS) targets in southern Syria, prompting Syria to close the Nasib border crossing.",
    "updated": "2026-10-27",
    "source": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1qZlNITU9ORlBHaWpKTUxPOW1zWlQ5ZXRTMFhDLUpzbUlWRzZMb01EYW81ejRGNVRvN1pBbDhMMi1mZWZZRnptT1BlSV82WmtadEltRQ?oc=5"
+  },
+  "ARE-CAN": {
+   "a": "ARE",
+   "b": "CAN",
+   "s": "F",
+   "note": "Canada and the United Arab Emirates (UAE) sign defence, energy, and trade agreements to elevate bilateral ties.",
+   "updated": "2026-10-27",
+   "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPWVVnRFlYNkJrVUpJOE5wa2FEMGZPWVZuQ1E3M1cxUUdkZjJFRmtia1l0X05QNzNkeGJPbW5DRHY1ajdTcmJ5SUlGN1ZmZUJidE83SjZDUUpabjcyNEtpS2tVcTFveURvM3hxb0R4N2hKbndVamk3SXd2aVVIY2J1QWZZcnQwUFZnekFmNFd6MUNOWXl4bjZsTHBMTjZRc1BPN3F3dE8wdlBrSkFMYk5PTl9tU0FVaDdUNHcxd0tqSVhqdVV4aUlB?oc=5"
+  },
+  "MDA-UKR": {
+   "a": "MDA",
+   "b": "UKR",
+   "s": "F",
+   "note": "Moldova and Ukraine sign a five-year defense cooperation agreement to strengthen security against Russian threats.",
+   "updated": "2026-10-27",
+   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWkNxX2lla0U5SHZyb3FTU2Z3U0J6c2U5cjdkUF9TTEMwRWZadXRZcktXdmk4NW10MzA3Y2tjV1lTYWNOZ1NHMFljT08tVHJnOE5ESFVsQlhVZzQ0Tkk0LWZncjBpS3p6TWNWM19yTWpNb1dOSUtFNHZaaVVZNXd0NGZFT2VlaFhqNG9ta01IdkV6SUpDVkN4Zi1RcmpkWHJ6R2JuRw?oc=5"
   }
  },
  "threads": {
@@ -3726,8 +3757,8 @@
   "SRB": {
    "nextelec": "parliamentary election, Oct 2026",
    "updated": "2026-10-27",
-   "source": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA4MmRlWWYwNHpma21xdTBiWENRemtTOG1Ba1hwUnQyY0VYd2ZwRGZNR2lJcFdLVkhSVHE1aW1MdENJemhGN0hCYWNiUENxUUtiMnR4Qy16WGJwaW5zWTNn?oc=5",
-   "lastelec": "parliamentary, Oct 2026, Student List"
+   "source": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBJeDl4cDJsbkJSS1gxUnhFUmd1Z25hMmNIX3M2eC1rY1lmVG95YVk1RzFiOWxjM1JMcG9XM2FOYmF4U3lGSlBNWUticFdPYU9yUVN3SWJsdElSWmF3WXRFMHV4YVBiSl9La0dSYQ?oc=5",
+   "lastelec": "parliamentary, October 2026, Student List"
   },
   "CHE": {
    "lastelec": "referendum, Sep 2026, rejected stricter neutrality",
@@ -3762,9 +3793,9 @@
    "source": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE55OUdtMGl0TkJNTWtTa2tSSjI3TnMtTVdTOXZDVFhwZU9WRWFvLTJkYUJZM2pNMERtSDVGR3Q4UFgwTUczRTBoeUFNTF9Nem1Lalh0bFBZOFN1WHNDcjFZOXpB?oc=5"
   },
   "GRD": {
-   "nextelec": "general election 5 November 2026",
-   "updated": "2026-10-19",
-   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPSTFvRlloTllOc3ljX2FTaEhTN1l4MTU4MnNOak9qMUJ0dld5MkU0bnplWHoydkRGazlkUjVKenZTS2hra2VjZWJfTzZXTjMzUXlfRE9iWC1LX08xS0ljQzFTMFBCNXBHXzVXd003VjJsRjY3RVlYRDNudHB5ekd4VUtuODNGSmE4MzAzSkFDMlNDY2RnVFZBOTdn?oc=5"
+   "nextelec": "general, November 2026",
+   "updated": "2026-10-27",
+   "source": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4xaEdLeG9RV1g2QzZWLTJqdmFTNElQMm1PazVsc0FCQnVTSGdlcnFpVjJIY3I3eXFCYkJqeGpHRE9iSXJhaGhuTkRkWU1KQkJmb0dDbmdzT3ROaHMwNXkxb0NCQW1wcEVhZWdZRTBNRElZTG9FMWZjdjBnbkNYWUk?oc=5"
   },
   "LVA": {
    "lastelec": "parliamentary, October 2026",
@@ -3825,6 +3856,11 @@
    "updated": "2026-10-27",
    "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWXdkYmZFcGxyVVBUbXpWSnU5bHlHeDlELWYzMnZvWVIwb0xPQmNLSDJtRlpMb3ZodnFuY1d4QkV2SW51WG5ReGFhdEZ5WlRpSERYOE1ZQzI0ajVUN0ZQRS0tM3hraERWWWlHRHhNZlRkU3h4TU1sc1pSQVYxV0VCaV9EOElqdi1IcHdZek1zTV9adVVCLUctNUtfZkxRdGVYUkdJ?oc=5",
    "lastelec": "legislative, Oct 2026"
+  },
+  "OMN": {
+   "nextelec": "municipal, December 2026",
+   "updated": "2026-10-27",
+   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQY1VORGFWSDZ6MlBBakRqaXRkUnlGUWVmbkJnd21JRnRzejd2U3BYUG02WnR0enp4TmRsU01kQkpqaE1TekxjZ3BiaklDQkMxNFR6NTE3bjZsdVJhVFNQUGVGdjlrd2ItX3c2dXhGUUQ4Vm9JajJJY3hTd1VHUFl0WHdhcDNlT0RqRXl3a2doSWc5VERQLXE2MnpzVFFfZlp6S2FpaNIBugFBVV95cUxPclRYNUJtazBJRUFqSnB2T3BZM3hmdWQyUmZzQldjS1lLQ08zbGRlMk9CdnZZZlh3aWUtUTZucHBibG1fS0hYaExzeWVXYzVhTlQ4aml4UmxEWkRDMUlZTEowRUMtSV9pZmQzZENZdzBxNVllOTlNTUZWMUJKTFU0Yk1YaTJuSk5mRGU1bUZrbFYwX0lwYTdmOERHVXlGNmN0UEJfeGVZSW92NnNGbV9kTzVZRVdKTTZhREE?oc=5"
   }
  }
 }
