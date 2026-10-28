@@ -1,7 +1,37 @@
 {
  "meta": {
-  "lastRun": "2026-10-27T20:19:49Z",
+  "lastRun": "2026-10-28T11:06:50Z",
   "log": [
+   {
+    "date": "2026-10-28",
+    "items": [
+     {
+      "label": "Jordan–Syria",
+      "change": "Tense → Normal: Border crossing reopened and joint security committee formed following airstrikes",
+      "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPT0M2bWJTbUJ3ZzhJOWtjS0FneXhHWlNrTGZ5aXNpUkRpVllZU0dhZzFfNmhvSUdZS2xScFhGUXdtQzJ0UTJHcEUySGpqcFBRWnZaRG56TXVmU2dwa2ZoQ0tYZzM5Ukplb2ZyZzlFQkFNTjE2M2QwbXpyZktXeV9SQzBGczFYT1dsaERnMzB5anZEN041RkRLWm80NFlRc2tIbUF2bA?oc=5"
+     },
+     {
+      "label": "Armenia–Russia",
+      "change": "Note updated: Armenia rules out return to CSTO",
+      "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZFNlYTFiVTRNMW0xVktNSHpyV1ZrS3BySy1yNHRITk4tYmRQOWpYdXlhY3RHc1hkeUlTV1doMzhkZmM2QjNKRTBJZk9LZ0xqWm9nUTFzT2R3VU14TnBrMlRfUTA0cWUwR29SNUFMbWpxUENYNUxxMDhOOVR1b0pxUjRrUERNR2xtY0haT2w0enp5V2s?oc=5"
+     },
+     {
+      "label": "Canada–United Arab Emirates",
+      "change": "Note updated: Bilateral CEPA trade agreement signed to cut tariffs",
+      "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUmgwVGlTQmZPbk9OeVFZUXNwYm1vVm9jelpDWXNmMDRVZFd6NFl5aGx3MTFiX3hEU3lxR1Vkb3FpUlRYNmpjNUJ4N083RzlwSlRvcWhKVEx6X0tsMWRJUUNFcVhJMjJ3QmxmdFFrQ29adFdiR1NyVjJtUXgwRlVIaWVQM2tKR0xnSU5LQmJ1bi02S0dVR1F6X1liLWJyRXp6a2ww?oc=5"
+     },
+     {
+      "label": "Brazil",
+      "change": "Election logged: Lula da Silva re-elected president",
+      "source": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9LdWdDRU1sTTFuTHUteEFsMDlyWmtzNnEwS0JUams0bXUyTDY5RndiV1RTT1p1Z0hEQ2pLZ2w4ZGtDbEpTb09fMmI2UnRKYzNEb2pGZ3RxYUw?oc=5"
+     },
+     {
+      "label": "Israel",
+      "change": "Election logged: Legislative vote outcome inconclusive",
+      "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZlhqbzVQSTlhY3I2N01SQ3QwRWlGRGJTbGtrc3FCU1VEQ0ZjVjFudFJITU9OY3hXVy1zbktyQ2pDakN3cWVlWFc1cjQ1VjVBNDBxa3ZtZVVrY0w4dzk0YURyU1d4OW9RaEhKRkhXcGo4TDdBUnVNdDBocG9lU0x6bnF3cW1LbUFud1dXQUc5NC1EWGdGMF9SQjdjb0pKZnNsYkdDUUVkY0NuOUZNUkJ6VGlzanJNZw?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-27",
     "items": [
@@ -1801,59 +1831,9 @@
       "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPZW1oY256ZEFkUEh4YXQ5UFgxam12bjYyOUpfcTdLQXh2cEZWUmk3OXM2Vjk5bkNQMVhuTmQyQkpnWjJNSVZoMjNYYlg1MlY3MzdxSE0zOXA3aDNCSkZscGtOOXQyZFQtQkMycDJmM21RZnB6WHpBZVdTSUt0SEU1alEwX3BBaGV6TVFOZ1dkbmlVeGlFOU5FV1V3dWpmUzZ5aExtYXpxUGN1QjdDcWZOU1NrdUs5U3B3clo0QjY4d1pFZEh5a2piSGp1NkpQTzBwbk10ZmRR?oc=5"
      }
     ]
-   },
-   {
-    "date": "2026-09-28",
-    "items": [
-     {
-      "label": "Ethiopia–Sudan",
-      "change": "Note updated: Ethiopia accuses Sudan of supporting opposition fighters in Tigray",
-      "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUmVKUnd1OTNfNGFRTDZlWEhTSm55VGtTZ1p3U0wzZUwwckIwa1poRnVaMUUyTEYyMnk3TC0wS1daUW5RU1dVZzlvaTNxSEhmbkpEOFFKVllRalBvOGhsdW5nTVE3dDAzekFld0hWeGlkSGRCeWo3TEZJMHNNZkRGQXVLYndPNDc1QXAxdTJPUkFXN2VZYndIc0w4R1lEckZkTEE?oc=5"
-     },
-     {
-      "label": "Israel–United Arab Emirates",
-      "change": "Note updated: High-level talks on Iran held in Abu Dhabi",
-      "source": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE02QVdsMGFYWDlWZ3V4N2xLLVZ5eTQ4R0psMVZwc0wtYk1qUFhHaF9Cb2V0WDN4SDlPMm1vMExTTGR6Q3VxSUxXQlBPSld2N0lzbk9fSXNGbTA5ay05?oc=5"
-     },
-     {
-      "label": "Suwałki Gap",
-      "change": "POI stat updated: Joint evacuation plan drafted by Poland and Lithuania",
-      "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZTJmZ3BjWVlNckVkZ1N1Vjl5ZnpiQUo3V25HQ2JjdWJ3ZFpLcTlxS2U4dU5mbVRkMXNVNEh3Rks3bTNjdUd4YnJwSVV5Rm5RdC1kYTV4bHhWYkllak9ILVh2T0ltZ25EX1c1V0J5NzU2eXVGaUxwd1Z3NVFFYmVaVS1sbUtrQXg1eVdudVVfczlRejVJdGc?oc=5"
-     },
-     {
-      "label": "Serbia",
-      "change": "Politics updated: Snap parliamentary elections scheduled for October 2026",
-      "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOT3JsUjZTVG9uZ1pkU2FXbE9HcGllQXl1em9qY1M3NHlzaEc4am5pUl9TZTdLclJja1Nnd0JqQ1FuV1FMNGs0dG9PbGRNalQwUXhIcldrTHF0czdzZUtIUkt4OHNsdVRaaHlYU0x0SnpCdDRLQ2NtWVVWY0VwZmowNlRCcUU2TnZjbG5icTVsbzduNU9xbEc1aktqTmMzXzFrSHc0OXNR0gGmAUFVX3lxTE5PcmxSNlNUb25nWmRTYVdsT0dwaWVBeXV6b2pjUzc0eXNoRzhqbmlSX1NlN0tyUmNrU2d3QmpDUW5XUUw0azR0b09sZE1qVDBReEhyV2tMcXRzN3NlS0hSS3g4c2x1VFpoeVhTTHRKekJ0NEtDY21ZVVZjRXBmajA2VEJxRTZOdmNsbmJxNWxvN241T3FsRzVqS2pOYzNfMWtIdzQ5c1E?oc=5"
-     },
-     {
-      "label": "São Tomé and Príncipe",
-      "change": "Politics updated: Legislative elections held September 2026",
-      "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMmVHNDUwOXYwckhjdmREN2Nid2ZONGttMjU4TkFyTGNDdGRqRXNaSWd1LXRKNkE2cjVlb194QTBqRHlZVzNDWkJ1a0duMkYyU2Mza1NTWTJOZ0RZNHVoQVhKR0dIOWxMX09xMlEwUVV1Nk84dUgwV2dMVkxxSnJkT3JMVG1LOHRUWUhIUjZMa2p0T1pEdjFwRHA4S2JfdlpVNkh4bUgyb01VNFhObUhYbFZoaUhzQXc?oc=5"
-     },
-     {
-      "label": "Israel–Morocco",
-      "change": "Note updated: Israel and Morocco agree to upgrade reciprocal liaison offices to full embassies.",
-      "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRWZuajN5SVNxMjdZeXlickJ2WVJmX1U4U2NjeXhwLTdheU9PbjVITTZOMnNZTm1SUjNoZGJtTklKYy1QdGRZdzUyNW1nSzFVUVB1cWx1S2RtY0Q3dG5ZdTJaVWxxbFR6RTM2QUhLd3lrN0JCaUlVbVNjcXNRUjZ1UkprQ2I0MTZnQXkxb2ZJUWp4Wi13X3pVVDlSeWZwWi1LT3h0Zjd2bE02YTg?oc=5"
-     },
-     {
-      "label": "Poland–Russia",
-      "change": "Note updated: Poland readies defences after Russian drone impacts two kilometres from the border.",
-      "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1kMF83c2NsNzhsTXhGZ3VsYWlXY1A2VVZEanlLcVNESHJjZW9BWjFZcnM5bmloZGdmY24wYVhpdmhWbzd2U1g4MW5mSQ?oc=5"
-     },
-     {
-      "label": "Saudi Arabia–Yemen",
-      "change": "Note updated: Clashes and airstrikes intensify as Houthis threaten strikes on Saudi bridge infrastructure.",
-      "source": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE14OUMxZWp4Y3dLNmxLUVBJMXlfZnRQTnRJeTdBRUlxN2NIcUhKRFhBemV1U0syYnBkWVdmWUdmb2N3QWJ0UlpYdUpveWFmY21UVVFYcHBtcnRxUUlm?oc=5"
-     },
-     {
-      "label": "Bab-el-Mandeb",
-      "change": "Status updated: Saudi Arabia resumes Red Sea crude oil exports despite Houthi positions.",
-      "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOOFhDR243cDJLOUU1T1hPa3QxaEw3Tlpkang3T2pXMnQ5WkgzRjFnUmNOeU93alItNjZYQ0xMOXFoT19NUFJsQktkZWdhMTlUMXlHOU9MeDVlb2oyQUtwR00tei1yTW5DLTY4eWlqSm15TlNFQnNDeFpuakljZjRQM2FwT2hpZkFTSko4bE53S0RxUFBoLUIxQ3llUC1sSXJHc3BVMk85UmhxZU5LTXVQREhaWkVpTkp0QWRDUW9MNk9jX0hSamVJ?oc=5"
-     }
-    ]
    }
   ],
-  "summary": "Canada and the UAE sign a strategic defence and trade pact, Moldova and Ukraine sign a five-year defence agreement, El Salvador expands troop deployment to Haiti, and Serbia's opposition Student List wins snap elections."
+  "summary": "Updated Jordan–Syria and Armenia–Russia relations following border reopening and CSTO statements, updated Canada–UAE trade details, and recorded election developments in Brazil, Israel, and Serbia."
  },
  "relations": {
   "DNK-USA": {
@@ -2428,9 +2408,9 @@
    "a": "ARM",
    "b": "RUS",
    "s": "T",
-   "note": "Tensions persist as Russian official Dmitry Medvedev warns Armenia against turning West and becoming a 'new Ukraine'.",
-   "updated": "2026-10-06",
-   "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxORGZCZ3VNZS1UUjlpSFRwQ1dLR1h1dS1lUE5ncTZ6U1NXRWtYYmdaTXRpMTZXeGxiRTNSeFl6bl9LcGZyRE1GaXdaQU12cmxqLWQ4QzY2bmtmWkc0NTZCV3lWQVE4d2tWTEVzd3FMc1VNRGpUMEp2Vm4yNVBxcnZOSWE5eUFZRlpjSHVNQkx2Vk42aknSAZMBQVVfeXFMTkRmQmd1TWUtVFI5aUhUcENXS0dYdXUtZVBOZ3E2elNTV0VrWGJnWk10aTE2V3hsYkUzUnhZem5fS3BmckRNRml3WkFNdnJsai1kOEM2Nm5rZlpHNDU2Qld5VkFROHdrVkxFc3dxTHNVTURqVDBKdlZuMjVQcXJ2TklhOXlBWUZaY0h1TUJMdlZONmpJ?oc=5"
+   "note": "Tensions persist as Armenia formally rules out returning to the CSTO (Collective Security Treaty Organization).",
+   "updated": "2026-10-28",
+   "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZFNlYTFiVTRNMW0xVktNSHpyV1ZrS3BySy1yNHRITk4tYmRQOWpYdXlhY3RHc1hkeUlTV1doMzhkZmM2QjNKRTBJZk9LZ0xqWm9nUTFzT2R3VU14TnBrMlRfUTA0cWUwR29SNUFMbWpxUENYNUxxMDhOOVR1b0pxUjRrUERNR2xtY0haT2w0enp5V2s?oc=5"
   },
   "LTU-RUS": {
    "a": "LTU",
@@ -3267,18 +3247,18 @@
   "JOR-SYR": {
    "a": "JOR",
    "b": "SYR",
-   "s": "T",
-   "note": "Jordan conducts airstrikes against Islamic State (IS) targets in southern Syria, prompting Syria to close the Nasib border crossing.",
-   "updated": "2026-10-27",
-   "source": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1qZlNITU9ORlBHaWpKTUxPOW1zWlQ5ZXRTMFhDLUpzbUlWRzZMb01EYW81ejRGNVRvN1pBbDhMMi1mZWZZRnptT1BlSV82WmtadEltRQ?oc=5"
+   "s": "N",
+   "note": "Jordan and Syria reopen the Nasib border crossing and establish a joint security committee following recent airstrikes.",
+   "updated": "2026-10-28",
+   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPT0M2bWJTbUJ3ZzhJOWtjS0FneXhHWlNrTGZ5aXNpUkRpVllZU0dhZzFfNmhvSUdZS2xScFhGUXdtQzJ0UTJHcEUySGpqcFBRWnZaRG56TXVmU2dwa2ZoQ0tYZzM5Ukplb2ZyZzlFQkFNTjE2M2QwbXpyZktXeV9SQzBGczFYT1dsaERnMzB5anZEN041RkRLWm80NFlRc2tIbUF2bA?oc=5"
   },
   "ARE-CAN": {
    "a": "ARE",
    "b": "CAN",
    "s": "F",
-   "note": "Canada and the United Arab Emirates (UAE) sign defence, energy, and trade agreements to elevate bilateral ties.",
-   "updated": "2026-10-27",
-   "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPWVVnRFlYNkJrVUpJOE5wa2FEMGZPWVZuQ1E3M1cxUUdkZjJFRmtia1l0X05QNzNkeGJPbW5DRHY1ajdTcmJ5SUlGN1ZmZUJidE83SjZDUUpabjcyNEtpS2tVcTFveURvM3hxb0R4N2hKbndVamk3SXd2aVVIY2J1QWZZcnQwUFZnekFmNFd6MUNOWXl4bjZsTHBMTjZRc1BPN3F3dE8wdlBrSkFMYk5PTl9tU0FVaDdUNHcxd0tqSVhqdVV4aUlB?oc=5"
+   "note": "Canada and the UAE (United Arab Emirates) sign a CEPA (Comprehensive Economic Partnership Agreement) eliminating 99% of tariffs.",
+   "updated": "2026-10-28",
+   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUmgwVGlTQmZPbk9OeVFZUXNwYm1vVm9jelpDWXNmMDRVZFd6NFl5aGx3MTFiX3hEU3lxR1Vkb3FpUlRYNmpjNUJ4N083RzlwSlRvcWhKVEx6X0tsMWRJUUNFcVhJMjJ3QmxmdFFrQ29adFdiR1NyVjJtUXgwRlVIaWVQM2tKR0xnSU5LQmJ1bi02S0dVR1F6X1liLWJyRXp6a2ww?oc=5"
   },
   "MDA-UKR": {
    "a": "MDA",
@@ -3305,11 +3285,11 @@
     "SYR",
     "ARE"
    ],
-   "d": "Iran-backed Houthi forces target Saudi infrastructure as Egypt authorizes military support for Saudi Arabia, drawing Houthi retaliatory threats.",
+   "d": "Iran-backed Houthi forces target Saudi oil refineries and infrastructure, triggering global oil price surges and regional defense responses.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxON0ljU1VMRDd4djR4Zm5NU2Z0MTE0b2NaVktDM1RKS01oYnBKbWhVQlpodjRETko1MlhUY2o2eGFINEo3UzVtME4zckpYbDkwZnBMcENLZ2l2ckhuaG5LaGFfbzlNbHNaNVIzN3Fva3VkLUpFTzdFR2w5aUtHT2ltRnZ1UmxHNEJqUkgtb0pZaFBqMlphVVpwcTIyRWhvOW5Ga05KM3JlaTNKem9oem52NDJiRm1GN3RqOEIxSlY4RVhYalk?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNaVo0WW9Banh5andiaW1HaTNTbXRVc0dKV0pNM3BLTUpsQm8zVmt0VTFWNzZpdXM5S0Ezem1sN2ViLU4xMGNhQ1NkczhWamJUT1JMTGVYc2VETHNFWkhpdWtuVFZ3OEg1UzlRWE53N1Q4dDlGQ2xkYUoxVjhqOVVXaFRSTTN3Q2hYb2E1QlBhT25GZXNqbjdZZWdjdmVjTkRO?oc=5",
    "t": "security",
-   "updated": "2026-10-27"
+   "updated": "2026-10-28"
   },
   "afpak-jihad": {
    "t": "security",
@@ -3643,9 +3623,9 @@
    "lastelec": "presidential, October 2026, Luiz Inácio Lula da Silva",
    "nextelec": "presidential runoff Oct 2026",
    "ruling": "Workers' Party (PT)-led broad coalition",
-   "source": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMHA5R2xtNHZSNmdhNUgtUnp0QWhPVHFoUFVDOXNMSHJmVDZUdmlOY01lRDQxSGQyRVRXV1o4T3VsRkJpeGx2cUdxdXFKYzlOTHhuUGUwdFFoaTFWTm9GOW1ybl9ub0ZjV0RZeHRpZy1iak5fc2l6blNIZGJ0R2Y5Z0dwd2FzbTNJQWI4X0ZpN0xnVzJyMFpEZnl2ajJwTnhGX1IxLU5wTE5ZMjIyZ2hsYWYyNjhTdU1oVFVJX1dnRHJOQQ?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9LdWdDRU1sTTFuTHUteEFsMDlyWmtzNnEwS0JUams0bXUyTDY5RndiV1RTT1p1Z0hEQ2pLZ2w4ZGtDbEpTb09fMmI2UnRKYzNEb2pGZ3RxYUw?oc=5",
    "system": "Federal presidential republic",
-   "updated": "2026-10-26"
+   "updated": "2026-10-28"
   },
   "CAN": {
    "hog": "Mark Carney, Prime Minister",
@@ -3756,9 +3736,9 @@
   },
   "SRB": {
    "nextelec": "parliamentary election, Oct 2026",
-   "updated": "2026-10-27",
-   "source": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBJeDl4cDJsbkJSS1gxUnhFUmd1Z25hMmNIX3M2eC1rY1lmVG95YVk1RzFiOWxjM1JMcG9XM2FOYmF4U3lGSlBNWUticFdPYU9yUVN3SWJsdElSWmF3WXRFMHV4YVBiSl9La0dSYQ?oc=5",
-   "lastelec": "parliamentary, October 2026, Student List"
+   "updated": "2026-10-28",
+   "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQThBQjdCWWY2eWNGSnRSWHduSmNtdS0xcW9DZElsMXMtajYzNjdqZ0pPX0JYSlhXUHZIbm5mb0t1UV91d2FlcF9IZTJrTkxYaVlhcTdyd0FTUjFSNEN0bXpfRVlORWFjZllPOHZ6YmxkZVJWTUIyR3FzdTEyNTR4ek0xbEJ3RVBqZXhKY1Nscy1Ma0I3R0lyVHQ2d3lZd1pyNzFpVVpxMVp2dXpjRUYwNGJfbEtDTXRVS3hvSQ?oc=5",
+   "lastelec": "parliamentary, October 2026, Student Movement"
   },
   "CHE": {
    "lastelec": "referendum, Sep 2026, rejected stricter neutrality",
@@ -3853,9 +3833,9 @@
   },
   "ISR": {
    "nextelec": "general, 2026",
-   "updated": "2026-10-27",
-   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWXdkYmZFcGxyVVBUbXpWSnU5bHlHeDlELWYzMnZvWVIwb0xPQmNLSDJtRlpMb3ZodnFuY1d4QkV2SW51WG5ReGFhdEZ5WlRpSERYOE1ZQzI0ajVUN0ZQRS0tM3hraERWWWlHRHhNZlRkU3h4TU1sc1pSQVYxV0VCaV9EOElqdi1IcHdZek1zTV9adVVCLUctNUtfZkxRdGVYUkdJ?oc=5",
-   "lastelec": "legislative, Oct 2026"
+   "updated": "2026-10-28",
+   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZlhqbzVQSTlhY3I2N01SQ3QwRWlGRGJTbGtrc3FCU1VEQ0ZjVjFudFJITU9OY3hXVy1zbktyQ2pDakN3cWVlWFc1cjQ1VjVBNDBxa3ZtZVVrY0w4dzk0YURyU1d4OW9RaEhKRkhXcGo4TDdBUnVNdDBocG9lU0x6bnF3cW1LbUFud1dXQUc5NC1EWGdGMF9SQjdjb0pKZnNsYkdDUUVkY0NuOUZNUkJ6VGlzanJNZw?oc=5",
+   "lastelec": "legislative, October 2026, inconclusive"
   },
   "OMN": {
    "nextelec": "municipal, December 2026",
