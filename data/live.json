@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-28T11:06:50Z",
+  "lastRun": "2026-10-28T20:41:03Z",
   "log": [
    {
     "date": "2026-10-28",
@@ -21,14 +21,29 @@
       "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUmgwVGlTQmZPbk9OeVFZUXNwYm1vVm9jelpDWXNmMDRVZFd6NFl5aGx3MTFiX3hEU3lxR1Vkb3FpUlRYNmpjNUJ4N083RzlwSlRvcWhKVEx6X0tsMWRJUUNFcVhJMjJ3QmxmdFFrQ29adFdiR1NyVjJtUXgwRlVIaWVQM2tKR0xnSU5LQmJ1bi02S0dVR1F6X1liLWJyRXp6a2ww?oc=5"
      },
      {
-      "label": "Brazil",
-      "change": "Election logged: Lula da Silva re-elected president",
-      "source": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9LdWdDRU1sTTFuTHUteEFsMDlyWmtzNnEwS0JUams0bXUyTDY5RndiV1RTT1p1Z0hEQ2pLZ2w4ZGtDbEpTb09fMmI2UnRKYzNEb2pGZ3RxYUw?oc=5"
+      "label": "Rwanda–United States",
+      "change": "Normal → Tense: US sanctions Rwandan Defence Ministry over M23 rebel backing",
+      "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPakJHaHd4QVJONnU2a3oyTTFJVC1fUURVQ3NLMzFrenYzVDZfTWRsMnp6WkQ4SHNDX0tkMEhycmlGNzk3SWpNaGxpYzFudGNqQmFGVXpxdDhHdk9HY01ZUkdHeDhqV29rVVNPZk5sdjd5WF9tVi1PdnBzeEszeFRiRTJMN2RZX1YtTlFiX2xIYnU5WE5STFE?oc=5"
+     },
+     {
+      "label": "Ethiopia–Russia",
+      "change": "Normal → Partner: Ethiopia acquires Su-35 fighter jets and S-400 air defense systems",
+      "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdFpIcHZIaW8xMGt2RnJuNjRnRnJrX0llbHZuakJnN19VNGEtVndLSGU5MmR2cVJ5TFRLM1Y4WDFZd3pUbUNvYTVfRmpnODI5bXVaU3Y3WGx6dFFDNUhTVXFJbFdkZW9YejNNRlhWZnJaa2ZycW42akhXTXJBdDNmNm53cE9Ka05xZGxJMTRlMTFPMy0xQkxIbzA5WkVjVVpiOGg3c3pHTjJhVHZWVkxTS1FuVkxwZw?oc=5"
+     },
+     {
+      "label": "Syunik / TRIPP route",
+      "change": "Location updated: Armenia ratifies TRIPP framework agreement",
+      "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPby1rcHhhYkVLam5hcGVSVUFtOUc4S1NnaEtPWTFLM2g5Q2t3Smg4Qjl6Zy1SX1RsQ1dTR3MzWDYtcy1JWEhDSnlBck5jd3NzWllyQjNuaUhDQ05jNXVTcW1LZjBjbkVZNDl4RDJvSWE0TlZkYm1zOTU4VVRNb2tYbDItWi1FVFZCNV81ZTlsckU5SGkyTkpuUEFKLWpMN0ZD?oc=5"
      },
      {
       "label": "Israel",
-      "change": "Election logged: Legislative vote outcome inconclusive",
-      "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZlhqbzVQSTlhY3I2N01SQ3QwRWlGRGJTbGtrc3FCU1VEQ0ZjVjFudFJITU9OY3hXVy1zbktyQ2pDakN3cWVlWFc1cjQ1VjVBNDBxa3ZtZVVrY0w4dzk0YURyU1d4OW9RaEhKRkhXcGo4TDdBUnVNdDBocG9lU0x6bnF3cW1LbUFud1dXQUc5NC1EWGdGMF9SQjdjb0pKZnNsYkdDUUVkY0NuOUZNUkJ6VGlzanJNZw?oc=5"
+      "change": "Politics updated: parliamentary election in October 2026 ends in deadlock",
+      "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQd0FTVThQZXdVUkNNbTBCLVBETkM1OG05UndKajRIckllbWZyQmRjS3NMemFOSGREbThJSEVERjNuLUw0WWMwa0RMdTF3YzBRVWlFem5HcUFGb1kxZkVZWUlfc1JGLVg4QjBFaVRSblhaaVlvQUhhazNWVTZISUsxUFBDeEJTUQ?oc=5"
+     },
+     {
+      "label": "Brazil",
+      "change": "Politics updated: presidential election won by Luiz Inácio Lula da Silva",
+      "source": "https://news.google.com/rss/articles/CBMidEFVX3lxTE93TVNtRWNPQ0tkSzk3VkUzVlU0ejE2RUxTM1IzVHd6eWJDUDk1dlZlWnlicmtLNWFPS3F2RmwzMGNlVkxfWkcxQ2NVb0dqejhzR3lTRzVQNHNzaEtCenpZM0UzcF9Xd1BpTS1uUVRtRWlhSEVp?oc=5"
      }
     ]
    },
@@ -1833,7 +1848,7 @@
     ]
    }
   ],
-  "summary": "Updated Jordan–Syria and Armenia–Russia relations following border reopening and CSTO statements, updated Canada–UAE trade details, and recorded election developments in Brazil, Israel, and Serbia."
+  "summary": "The United States sanctioned Rwanda's defense ministry over M23 rebel support in DR Congo, Ethiopia expanded defense ties with Russia via major aircraft deliveries, and national elections took place in Israel and Brazil."
  },
  "relations": {
   "DNK-USA": {
@@ -3267,6 +3282,22 @@
    "note": "Moldova and Ukraine sign a five-year defense cooperation agreement to strengthen security against Russian threats.",
    "updated": "2026-10-27",
    "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWkNxX2lla0U5SHZyb3FTU2Z3U0J6c2U5cjdkUF9TTEMwRWZadXRZcktXdmk4NW10MzA3Y2tjV1lTYWNOZ1NHMFljT08tVHJnOE5ESFVsQlhVZzQ0Tkk0LWZncjBpS3p6TWNWM19yTWpNb1dOSUtFNHZaaVVZNXd0NGZFT2VlaFhqNG9ta01IdkV6SUpDVkN4Zi1RcmpkWHJ6R2JuRw?oc=5"
+  },
+  "RWA-USA": {
+   "a": "RWA",
+   "b": "USA",
+   "s": "T",
+   "note": "Relations strain as the United States (US) sanctions Rwanda's defence ministry over its alleged support for M23 rebels in eastern Congo.",
+   "updated": "2026-10-28",
+   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPakJHaHd4QVJONnU2a3oyTTFJVC1fUURVQ3NLMzFrenYzVDZfTWRsMnp6WkQ4SHNDX0tkMEhycmlGNzk3SWpNaGxpYzFudGNqQmFGVXpxdDhHdk9HY01ZUkdHeDhqV29rVVNPZk5sdjd5WF9tVi1PdnBzeEszeFRiRTJMN2RZX1YtTlFiX2xIYnU5WE5STFE?oc=5"
+  },
+  "ETH-RUS": {
+   "a": "ETH",
+   "b": "RUS",
+   "s": "F",
+   "note": "Ethiopia strengthens defence ties with Russia after acquiring 12 Su-35 fighter jets and agreeing to buy S-400 air defence systems.",
+   "updated": "2026-10-28",
+   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdFpIcHZIaW8xMGt2RnJuNjRnRnJrX0llbHZuakJnN19VNGEtVndLSGU5MmR2cVJ5TFRLM1Y4WDFZd3pUbUNvYTVfRmpnODI5bXVaU3Y3WGx6dFFDNUhTVXFJbFdkZW9YejNNRlhWZnJaa2ZycW42akhXTXJBdDNmNm53cE9Ka05xZGxJMTRlMTFPMy0xQkxIbzA5WkVjVVpiOGg3c3pHTjJhVHZWVkxTS1FuVkxwZw?oc=5"
   }
  },
  "threads": {
@@ -3614,6 +3645,13 @@
    ],
    "updated": "2026-10-23",
    "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOeVdEbWZxeUJTZlJ2TW4zeWNRRlVTLWNNOUJoY1lkY1lwUEhka2NiYmtYdU12T1dseHExYTJVdjhMcWRkODJIX1ZabDVTbUNZMDlUUi12Yng1c0VIazZzWW1oUUtwbmZIajc2d1o4Wi03T2ZzN3hrcUczSzRVOTJjdDJPclR4cUsz?oc=5"
+  },
+  "syunik-tripp-route": {
+   "n": "Syunik / TRIPP route",
+   "s": "Ratified framework agreement",
+   "d": "Transit corridor connecting Azerbaijan to Nakhchivan; Armenia's parliament ratified the TRIPP (Transit Route) framework agreement.",
+   "updated": "2026-10-28",
+   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPby1rcHhhYkVLam5hcGVSVUFtOUc4S1NnaEtPWTFLM2g5Q2t3Smg4Qjl6Zy1SX1RsQ1dTR3MzWDYtcy1JWEhDSnlBck5jd3NzWllyQjNuaUhDQ05jNXVTcW1LZjBjbkVZNDl4RDJvSWE0TlZkYm1zOTU4VVRNb2tYbDItWi1FVFZCNV81ZTlsckU5SGkyTkpuUEFKLWpMN0ZD?oc=5"
   }
  },
  "politics": {
@@ -3623,7 +3661,7 @@
    "lastelec": "presidential, October 2026, Luiz Inácio Lula da Silva",
    "nextelec": "presidential runoff Oct 2026",
    "ruling": "Workers' Party (PT)-led broad coalition",
-   "source": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9LdWdDRU1sTTFuTHUteEFsMDlyWmtzNnEwS0JUams0bXUyTDY5RndiV1RTT1p1Z0hEQ2pLZ2w4ZGtDbEpTb09fMmI2UnRKYzNEb2pGZ3RxYUw?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMidEFVX3lxTE93TVNtRWNPQ0tkSzk3VkUzVlU0ejE2RUxTM1IzVHd6eWJDUDk1dlZlWnlicmtLNWFPS3F2RmwzMGNlVkxfWkcxQ2NVb0dqejhzR3lTRzVQNHNzaEtCenpZM0UzcF9Xd1BpTS1uUVRtRWlhSEVp?oc=5",
    "system": "Federal presidential republic",
    "updated": "2026-10-28"
   },
@@ -3834,8 +3872,8 @@
   "ISR": {
    "nextelec": "general, 2026",
    "updated": "2026-10-28",
-   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZlhqbzVQSTlhY3I2N01SQ3QwRWlGRGJTbGtrc3FCU1VEQ0ZjVjFudFJITU9OY3hXVy1zbktyQ2pDakN3cWVlWFc1cjQ1VjVBNDBxa3ZtZVVrY0w4dzk0YURyU1d4OW9RaEhKRkhXcGo4TDdBUnVNdDBocG9lU0x6bnF3cW1LbUFud1dXQUc5NC1EWGdGMF9SQjdjb0pKZnNsYkdDUUVkY0NuOUZNUkJ6VGlzanJNZw?oc=5",
-   "lastelec": "legislative, October 2026, inconclusive"
+   "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQd0FTVThQZXdVUkNNbTBCLVBETkM1OG05UndKajRIckllbWZyQmRjS3NMemFOSGREbThJSEVERjNuLUw0WWMwa0RMdTF3YzBRVWlFem5HcUFGb1kxZkVZWUlfc1JGLVg4QjBFaVRSblhaaVlvQUhhazNWVTZISUsxUFBDeEJTUQ?oc=5",
+   "lastelec": "legislative, October 2026, deadlocked"
   },
   "OMN": {
    "nextelec": "municipal, December 2026",
