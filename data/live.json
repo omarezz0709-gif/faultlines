@@ -1,7 +1,27 @@
 {
  "meta": {
-  "lastRun": "2026-10-28T20:41:03Z",
+  "lastRun": "2026-10-29T17:10:40Z",
   "log": [
+   {
+    "date": "2026-10-29",
+    "items": [
+     {
+      "label": "France–Chad",
+      "change": "Normal → Partner: France sends fighter jets to Chad to rebuild military ties",
+      "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMXBFRHdVLWppRmI1ZTJqbjJHRVJBQkRfZEd4UXMxYjlSYU9VS0FIVnRBYzd3NTc1NE0yUDBCYVAxZDM2X0VIbWMzaTNzQ3VzSzlGMXhyc1c1MVh2dEU2RG1MZzd0ZmozYWNtM0U3a1YyRUVyTDdaNGFOQkp0Sl9VbjZNZDJnQl9rRS1BWU1XSDVxdmJpaFpnMA?oc=5"
+     },
+     {
+      "label": "Haiti–El Salvador",
+      "change": "Partner: El Salvador increases troop deployment in Haiti to over 2,000",
+      "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOM0VLZXFsWjZBVmNlcEtidVh2bDYwMXFIb3JJMkgyODJONS14c05DVy1MXzVjZkhyVXU4cGtXRnNvaVdUNU04RWo1akhES0hQMjNDdW5oQWlzMzdDSl9IWmZIaFVSVHQ0T1VnU0REZW1jZlZEMVM4WE1ZTlotZnVHY2VsYWtmcjI2eDNLeU9ENHhDWnlGUzhuWVNnZlQtdUVRSUdj0gGoAUFVX3lxTE1zOG5Pd1VIY1JNcjg1M29nYTVReTdqbm9FTkpaWkNSSHhtbjg3cG9uOTh5a1BueVNSZ3F2SHlFeUpuVnkwYnYxbmVYSjhrYzlmbnFwV2s5Z3piNkVyOEpWVzdKSzk5aVBOXy12NTVUMlZZenEtc1M3bGNwUDEzRFc5a0NwYWpWWXNsUnNpTFJrelZrZG1WZU1ZVFdSNEotVkgyd19mRDdkZg?oc=5"
+     },
+     {
+      "label": "Bangladesh–India",
+      "change": "Tense: Bangladesh presses India for talks ahead of Ganges treaty expiration",
+      "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOb1J1VC12SGJGZWhydURqMndrdThQSlRVcHFpQ3QwYUpORlM2VDd2enJvOXRFVXdlSTNGQW4yRU5CdnlwYkF0eHFXc0drMG5sVFFJcVBZZEFTd2RxbFdqUGdCcU5kTHFqb2VSRHVnR3lCbV8tOHRaU0IyUVZvUHNacjlfbENQa0psMFpsY1pDb0lBNmo0RF9tOGE2YjJRcVBrckRoN2g1bF92WHFSTEQ0Mjln0gG3AUFVX3lxTE4tb2d4M2NZekFheUlIdGxtRXI2YzdhLS01c0FWb3JZU015UFZKNGJuRmVZNlVvek0tZlF3NVV1Sjl0ZDF0cE1uODAyNFU4enhvSmd3d0tlRlpaM3NYRENnbkdNUnY1Y0tZdWdKVlpSVEJZd2VvWnNqMUptQ3owVHloSW5VN2xfQUNneFdCbk0tQ2F0UHhyeVQ1NkFLZnROVTY3cDZpeWg3WmpJM2pZTkl4Tmo2Nmp5cw?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-28",
     "items": [
@@ -1796,59 +1816,9 @@
       "source": "https://www.wikidata.org/wiki/Q884"
      }
     ]
-   },
-   {
-    "date": "2026-09-29",
-    "items": [
-     {
-      "label": "Israel–Morocco",
-      "change": "Normal → Partner: Embassy upgrade under Abraham Accords",
-      "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRWZuajN5SVNxMjdZeXlickJ2WVJmX1U4U2NjeXhwLTdheU9PbjVITTZOMnNZTm1SUjNoZGJtTklKYy1QdGRZdzUyNW1nSzFVUVB1cWx1S2RtY0Q3dG5ZdTJaVWxxbFR6RTM2QUhLd3lrN0JCaUlVbVNjcXNRUjZ1UkprQ2I0MTZnQXkxb2ZJUWp4Wi13X3pVVDlSeWZwWi1LT3h0Zjd2bE02YTg?oc=5"
-     },
-     {
-      "label": "North Korea–Russia",
-      "change": "Ally: Deployment of 10,000 troops to Ukraine theater",
-      "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOY1djOGZyenVjb09ZdTJzanFHdmFWYzJzYmgwQ094QTBXSmlmYUNCQlpUSUVLMHVtYTMwS0FOQ1BSc2xoajZHQUFDOHd6ZFFfWFZfMmlOZ0VjSTNSRXRCRFZMbFpmUXZod05VcU1vV0VldXl3TGktTGVldHViYS1ndjI0ZnVpWWdZRXphcmRXUXo1VF85LVM2MU1hRENBRE9HR2lj?oc=5"
-     },
-     {
-      "label": "Argentina–United Kingdom",
-      "change": "Tense: Legal threats over Falklands oil exploration",
-      "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUUZTdU1OTW1mWG9SRVVmbU5uUFRDcjdpbjg1RW1UQkV1bmktNi1UODlhbk52SUh2ME1VQWRRZUJjUUhaZ1JfTjJUTjFJOFFtNjhPWTk5OXlfS1QxSWplMGlTcVAyNnhlSjNLRW1tdVU4Ui1RMjFORm00a1RVTDAwR0hSZUhEaHhLWTFSbVl3WDNZMHRfUnFDWnFqcjMzcU5Bb0xUUTk2VG9kSXpOeWRObE00WnFCZ3Y1dEJYZg?oc=5"
-     },
-     {
-      "label": "Malaysia–Myanmar",
-      "change": "Normal → Tense: Forced repatriation of refugees",
-      "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTVdHMUJDVWtfc1JxYkZ2ZVN2YVlYS3ItMWxIVnp3c250V2wtMmxHdUR4bDBkTGJoX1E5QTUwa3A5WXo1b3pPNVJ1aXhjSnRpelN3T2JBQ25nR1Q5elhkTHIwcnJWZU1xOW92UDZONDlPUWd4V3hiMTZtYWVkTDhGRFpHOWI1cVZxYTJFVzdiRWhYR3JGaGY4U00xOG5sS0FUZFJfaTFJeUNUUG5MejdN?oc=5"
-     },
-     {
-      "label": "Vietnam–Cambodia",
-      "change": "Normal → Tense: Alleged abduction of activist on foreign soil",
-      "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNLWVrNUZVOGJmYW9Jck9sZDRzYXBaQndqSXBOZkstZ296cUs5Z3BMMmhlMW5MMUhXcmhYRWh3YmZURDk0T0tfaFFpcGRyRDRDb3BVMC1CSWpENGFIMFkxMFg2aWhiSE04N3Q4RWdQM2xrRzYyZjU5RGQ5MGdldERtbDJPQWg5RTk4dnhIRUNRd3dFSG40YnMxbWdqVkIyYXc2cjNZQ0cxWHVEYnY3SEx0bVNPREdidkZHVnpuMmYyeVgwbHo1SDF5V1ZlY0RLTS16UWpJaWNlcw?oc=5"
-     },
-     {
-      "label": "South Korea–North Korea",
-      "change": "Hostile → Armed conflict: Border landmine blasts injure troops and violate armistice.",
-      "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdGFmTEVaajZxWGlqN21ESjVuTDNtem5nWDlISTFQWDhIWDBLdVFqbUpQOERrSEJCazhWZkZIN0gtT1h4R1BSSThWdnJvZ2pOY1lqXzRjQzV0YnktWW51UlJoWmN0RjJVQ1ZRcVRxbDhaUm12U1RrUnk5ZnRYeGJBTnQtemF2SVVfYnA0WGtiOVhtVUxiNVNoeGZ4cmxLdFVoeDVHdmQwRzlsSVow?oc=5"
-     },
-     {
-      "label": "Serbia",
-      "change": "Ana Brnabić assumes acting presidential duties after Aleksandar Vučić's resignation.",
-      "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZU1US3dRcUp1cG1hY3V2Nzg2bzczeDZNQTBxNDV2T1BXWVNsOWNJMFNWYTh3a3R2STVFb09DSDhRTjV3RHhfa0xBZkk5ZUVxcGhBNEI0ejlMV01HSGpGbXAxMlg4VzEzNE9URzdqNXE3dHdRbm1GM05GaHRSVDNQZjQxWFRtSXNJd1JQS25EVEt6Zw?oc=5"
-     },
-     {
-      "label": "Estonia–Russia",
-      "change": "Normal → Hostile: Estonia accuses Russia of directing a sabotage arson attack on a defense supplier",
-      "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB3aXFTUEk1YVZhal9yVWM5MUlPRUdrWHNjN09yd3p6Z0ZkdlRxbm1mVjA3d3lNQXpoMzFuTWpvd3QyV2Zld2pjQXI0OA?oc=5"
-     },
-     {
-      "label": "Morocco",
-      "change": "Fatima Ezzahra El Mansouri appointed as first female prime minister",
-      "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPZW1oY256ZEFkUEh4YXQ5UFgxam12bjYyOUpfcTdLQXh2cEZWUmk3OXM2Vjk5bkNQMVhuTmQyQkpnWjJNSVZoMjNYYlg1MlY3MzdxSE0zOXA3aDNCSkZscGtOOXQyZFQtQkMycDJmM21RZnB6WHpBZVdTSUt0SEU1alEwX3BBaGV6TVFOZ1dkbmlVeGlFOU5FV1V3dWpmUzZ5aExtYXpxUGN1QjdDcWZOU1NrdUs5U3B3clo0QjY4d1pFZEh5a2piSGp1NkpQTzBwbk10ZmRR?oc=5"
-     }
-    ]
    }
   ],
-  "summary": "The United States sanctioned Rwanda's defense ministry over M23 rebel support in DR Congo, Ethiopia expanded defense ties with Russia via major aircraft deliveries, and national elections took place in Israel and Brazil."
+  "summary": "Updated international relations and political developments following Israeli elections, Salvadoran troop expansion in Haiti, and renewed French-Chadian military ties."
  },
  "relations": {
   "DNK-USA": {
@@ -2047,9 +2017,9 @@
    "a": "BGD",
    "b": "IND",
    "s": "T",
-   "note": "Tensions persist as ousted leader Sheikh Hasina criticizes Bangladesh from India over minority safety and skipping a summit.",
-   "updated": "2026-10-15",
-   "source": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQZ0wzejZmc3pNUi16VTB0WGtiQmVsSzFhemkwSjFTR3FOcHdCSWh2ZngzUWIySFBPWXhEbkxEdzVGRktzM0pzRTQ3UTdUa1M0Rkg0VEstSnVCVTAzdUNBQTdrT0dVaFRmZVpSZ2w2MkdndTVBU0JNYVAxNVhMcVFCbGY1NVpyNDZxU3dlZU9NTy1sVVF3OVk2NlBHQlFVOVZ6Tm5vV01IS0FkbWhRTXNrdG9rVHRSRkdwaGhVVjZBeEcyWm1RZHdrNU9BX01UZHRiMnQ3Sm1OQ2NnWko5N1RsaTZoMXJXNlMy0gHuAUFVX3lxTE92WlVrSlpsR2Nsc3F3ajJqX1NtdV8xakZvTFhncEk1S2FkWWtGdGpHUTNsNDN3MHBxVU5yclotbkt3MXRKeExXOTFWMVIxM3B2eEpMZWpYakZjLU9EN0tNYWRwdmNpV2JjQjZlMXhFWFN0NjUyOEl5WFRSdnFXMjJyTW5WaWZnTEViVFhPQVdKUWpxcGdua3ZId01IWGxIMW1RUXluazc0eU9oMmE5UnFiRGZ2VEJHRTl2R0xiM0Z2ZGhEMkFiWS1LOE15Zk1KcnRGSzFqdmg4eWwwMXRfSWR0SGd3MHhWNjAxeUljdFE?oc=5"
+   "note": "Tensions persist as Bangladesh presses India to negotiate a renewal of the expiring Ganges Water Sharing Treaty.",
+   "updated": "2026-10-29",
+   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOb1J1VC12SGJGZWhydURqMndrdThQSlRVcHFpQ3QwYUpORlM2VDd2enJvOXRFVXdlSTNGQW4yRU5CdnlwYkF0eHFXc0drMG5sVFFJcVBZZEFTd2RxbFdqUGdCcU5kTHFqb2VSRHVnR3lCbV8tOHRaU0IyUVZvUHNacjlfbENQa0psMFpsY1pDb0lBNmo0RF9tOGE2YjJRcVBrckRoN2g1bF92WHFSTEQ0Mjln0gG3AUFVX3lxTE4tb2d4M2NZekFheUlIdGxtRXI2YzdhLS01c0FWb3JZU015UFZKNGJuRmVZNlVvek0tZlF3NVV1Sjl0ZDF0cE1uODAyNFU4enhvSmd3d0tlRlpaM3NYRENnbkdNUnY1Y0tZdWdKVlpSVEJZd2VvWnNqMUptQ3owVHloSW5VN2xfQUNneFdCbk0tQ2F0UHhyeVQ1NkFLZnROVTY3cDZpeWg3WmpJM2pZTkl4Tmo2Nmp5cw?oc=5"
   },
   "MAR-SAU": {
    "a": "MAR",
@@ -2791,9 +2761,9 @@
    "a": "FRA",
    "b": "TCD",
    "s": "F",
-   "note": "France and Chad sign a renewed defence partnership for training and technology, restoring institutional military ties.",
-   "updated": "2026-10-15",
-   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRTNZbDdyWlZKbDNZNEVlcXl4UGVvWGhIOUphSjBtdUVNbVdFV3AzNzV4bjNXVHJULU40VEtWekl2Y2RNaTRka3lJcTE0UkYyd2tsSVZia3p1SWZuRjFPY29zcWtYbHd1VUJ2ZGxOZDVkZGc5aTNjUVBldEs1U01NY0ppQ0Y3M05SREJiLVZvamVUZWRMdUV2dlUyS2VqOFV4Q3lNRkFRdjRMZHZQRm1iY1Nn?oc=5"
+   "note": "France and Chad rebuild military ties as French fighter jets arrive in Chad for joint training exercises.",
+   "updated": "2026-10-29",
+   "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMXBFRHdVLWppRmI1ZTJqbjJHRVJBQkRfZEd4UXMxYjlSYU9VS0FIVnRBYzd3NTc1NE0yUDBCYVAxZDM2X0VIbWMzaTNzQ3VzSzlGMXhyc1c1MVh2dEU2RG1MZzd0ZmozYWNtM0U3a1YyRUVyTDdaNGFOQkp0Sl9VbjZNZDJnQl9rRS1BWU1XSDVxdmJpaFpnMA?oc=5"
   },
   "COL-ISR": {
    "a": "COL",
@@ -3143,9 +3113,9 @@
    "a": "HTI",
    "b": "SLV",
    "s": "F",
-   "note": "El Salvador deploys 1,000 soldiers to Haiti to assist international anti-gang security operations.",
-   "updated": "2026-10-27",
-   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQY1gtaGppZXZtMTh1N1dPcGJIaWNUV1NtYzRuUGRXdHh0NnNCb3dYYi1nbnY4MGtZMDh3ekRvX196WjZLZTByV1pfeGlFc1pSZHF0OWZHWUhyZDRFNG5IZDdHVG1oSTE1S3NnYzZ5RkpSR1RJSS1hWm5ZMjBYNnF4WllvdWR3dExyWUJhWXl6NWJtbFlqQ2xnbkFwa3FSUVl1Zy1zRktWbVFIZnc?oc=5"
+   "note": "El Salvador expands its security deployment in Haiti to over 2,000 troops to assist in combating armed gangs.",
+   "updated": "2026-10-29",
+   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOM0VLZXFsWjZBVmNlcEtidVh2bDYwMXFIb3JJMkgyODJONS14c05DVy1MXzVjZkhyVXU4cGtXRnNvaVdUNU04RWo1akhES0hQMjNDdW5oQWlzMzdDSl9IWmZIaFVSVHQ0T1VnU0REZW1jZlZEMVM4WE1ZTlotZnVHY2VsYWtmcjI2eDNLeU9ENHhDWnlGUzhuWVNnZlQtdUVRSUdj0gGoAUFVX3lxTE1zOG5Pd1VIY1JNcjg1M29nYTVReTdqbm9FTkpaWkNSSHhtbjg3cG9uOTh5a1BueVNSZ3F2SHlFeUpuVnkwYnYxbmVYSjhrYzlmbnFwV2s5Z3piNkVyOEpWVzdKSzk5aVBOXy12NTVUMlZZenEtc1M3bGNwUDEzRFc5a0NwYWpWWXNsUnNpTFJrelZrZG1WZU1ZVFdSNEotVkgyd19mRDdkZg?oc=5"
   },
   "IRN-IRQ": {
    "a": "IRN",
@@ -3658,12 +3628,12 @@
   "BRA": {
    "hog": "Luiz Inácio Lula da Silva, President",
    "hos": "Luiz Inácio Lula da Silva, President",
-   "lastelec": "presidential, October 2026, Luiz Inácio Lula da Silva",
+   "lastelec": "Presidential, October 2026, Luiz Inácio Lula da Silva",
    "nextelec": "presidential runoff Oct 2026",
    "ruling": "Workers' Party (PT)-led broad coalition",
    "source": "https://news.google.com/rss/articles/CBMidEFVX3lxTE93TVNtRWNPQ0tkSzk3VkUzVlU0ejE2RUxTM1IzVHd6eWJDUDk1dlZlWnlicmtLNWFPS3F2RmwzMGNlVkxfWkcxQ2NVb0dqejhzR3lTRzVQNHNzaEtCenpZM0UzcF9Xd1BpTS1uUVRtRWlhSEVp?oc=5",
    "system": "Federal presidential republic",
-   "updated": "2026-10-28"
+   "updated": "2026-10-29"
   },
   "CAN": {
    "hog": "Mark Carney, Prime Minister",
@@ -3854,9 +3824,9 @@
    "source": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5jQVIxRWZ1TFo5c3hLWUdfVkFfLUp5MzJDVmF6MDU0dXdEeDRlaF93Y3hYQkY3TUZGWFl0SWI1RU9XQQ?oc=5"
   },
   "HTI": {
-   "nextelec": "General election, December 2026",
-   "updated": "2026-10-11",
-   "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdkxxQXJURTVFaC1DSm53XzloeGV3MFo5bDlmdi1hVzBidXQyc0tYeVRZbHlUSkxpT0ZZLUZMX2J3RExGQzF6Z012V1JHd1FTcTVZR2otUHZXMF9QNHJBYVZVd1JFcHVvME1LUzdHajFGTmNRaGJzS3NhMXNnelhndThlMGtGd2JudHkyTGNpUFFzVmJYU0FkZlU3SmxvU2w4SWNFUVRmcXowWlhWTWc?oc=5"
+   "nextelec": "General elections, July 2027",
+   "updated": "2026-10-29",
+   "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZXVwWnVaUzBnNFYtSk8xNy1wT3NwLVhWSmRENElJZzRGb1B1OGYyb2Zzdy1ybm95UXRNQ1FBcVN3cWZSRGRBQ1VYRVpXekRnU3poLWNUeGZnbUhldGZ0RmpmemhkWHdFTnA4NW1zRi04TkRvN2p1akoteEljUHlFOUdBZDhzVW9TbFR0OTNEZzlUb2ZwTTZj?oc=5"
   },
   "SOM": {
    "nextelec": "parliamentary and presidential 2027",
@@ -3871,9 +3841,9 @@
   },
   "ISR": {
    "nextelec": "general, 2026",
-   "updated": "2026-10-28",
-   "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQd0FTVThQZXdVUkNNbTBCLVBETkM1OG05UndKajRIckllbWZyQmRjS3NMemFOSGREbThJSEVERjNuLUw0WWMwa0RMdTF3YzBRVWlFem5HcUFGb1kxZkVZWUlfc1JGLVg4QjBFaVRSblhaaVlvQUhhazNWVTZISUsxUFBDeEJTUQ?oc=5",
-   "lastelec": "legislative, October 2026, deadlocked"
+   "updated": "2026-10-29",
+   "source": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5XbHJZVUZfZjlzcFdjTnNuX0FybXJDWEtraC1EMXBTN3V4b19WNE43X0pXS0Rkd3JIbmdRR3pkRUdpa2xMRkpoY2Q1bXJmSnZERDlQYnMxTWFWYkdSY3VRbmtuOWM3SmY1TmtRbngxTU9Xd19TaXBiQW1HUlA5Zw?oc=5",
+   "lastelec": "Legislative, October 2026"
   },
   "OMN": {
    "nextelec": "municipal, December 2026",
