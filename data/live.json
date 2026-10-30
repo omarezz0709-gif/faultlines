@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-30T01:32:16Z",
+  "lastRun": "2026-10-30T11:15:44Z",
   "log": [
    {
     "date": "2026-10-30",
@@ -26,19 +26,39 @@
       "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOUjR4UnJoOWdCTjdzWVNxdTFnTE1JY1FaRWk1ZWExc053Y1lFNFJYZTFXYUFmSHVvYWlmdUJJTmlZYzVfejlhOU9EQU9aeEVNTUJoV1VobVpOcExWY2hXYXZUdi1LN0FmbkRQbENGRmhMVXVYSzl6Rmk3QU5HSTBGQmhIM0FyLWF2ZHdwd01jMlg?oc=5"
      },
      {
-      "label": "Israel",
-      "change": "Election recorded: legislative election ends without a governing majority",
-      "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObDI2alMwcHh1R3RuR19GVkFGLTdpX2RFZlgwRTN1TWRNNTJZcTN3LTFtdTdYeThHRjBhODFIMllYaTB5bUtQSFctc0VZd1ZtMDJTRmVkOU94UWtKZWhJang0OTJTVkxRTERORmRpWlVDSDZ2NWlPVkliMUMzMnd0cDVkNFZLTU5nUFRPUFBzQ1ZjMXFGazhPdUFOUmd0bVZRbzVPUTI2aFc4UXl5WE42Z3VwLXYyMHc20gG-AUFVX3lxTE9UNkllYU1mV0M3N0ZEZ0FSLXAxeHJLSU9GdkxLTzUwdEZndjBtdWRqc1RBclVTTk1RbVZZVUhwRGZVUHk4T2d5alRmZGhuUjB5cnlnOVdjY0p0NVYtcFZXRlhwSmJYemhnT2k2OGhmOEpwWjAxVTdzZmhZclpqbFdLdzYtT2VBbkkwX2hlTkdkVlRwRHRWWGtDOERoak5vYkhRSXpfVW5NNUFJdzBrZ0Njbl9jV3VsVUdhQjVvRlE?oc=5"
-     },
-     {
-      "label": "Serbia",
-      "change": "Election recorded: parliamentary election won by student movement",
-      "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaUd1S0pHUGFXQVNpc21uQ0VWTE9iWlQ0UWtpTjVDcDRvbFpuTkpETzNMWmpkMUR2ZVVWLWcwVEZkSHlKcF9PYWdfXy1GRVRUUTF4TUJ5YXpCaFlpekZzb2JybEFoVU5xN01rZ2d4ZHpoX3FoVkhLeURoeXZTcnhwMHZzaE55U0gySHBTQ2Q4RFF3a2stcGc?oc=5"
-     },
-     {
       "label": "Haiti",
       "change": "Election scheduled: general elections delayed to July 2027",
       "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZXVwWnVaUzBnNFYtSk8xNy1wT3NwLVhWSmRENElJZzRGb1B1OGYyb2Zzdy1ybm95UXRNQ1FBcVN3cWZSRGRBQ1VYRVpXekRnU3poLWNUeGZnbUhldGZ0RmpmemhkWHdFTnA4NW1zRi04TkRvN2p1akoteEljUHlFOUdBZDhzVW9TbFR0OTNEZzlUb2ZwTTZj?oc=5"
+     },
+     {
+      "label": "Brazil–United States",
+      "change": "Normal → Tense: Trump denounces Brazil's election results as allies facilitate Flávio Bolsonaro's flight to the US",
+      "source": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNNEZiTmhEMExkbnN1THA1QVA1TkJnLU0xQW5RRlgyV2RYVUV2LVRfQ3FQVkFfcFBtMHQxSnJXNUtRVEQ0enBfR0daTlBQdVlfOTcxQ2dIY0kzdXRHRThiZUM3RlE0cFpCSV9xZFBaaHFrZktmemJ0Rl8xSWNoZnRDMHpHUHgtckNhT3dtZ3VwNS1nMzd4MVFBelhkTXBKbTJLdzIweG54Y1BtdTluYVNkMkRBekNYdTBfdXFlUzlOei1ORG9DWVYwYW5jd3loTDY0bUHSAdcBQVVfeXFMUExfNFNGUnB4ekhmZzM0NWZHSEIzLVhfdmItMVE3OHJwek8yenJna3RMa2c3Y2h0amx6UjZJY09FYi01VjZCXzNmaWlwR1Y3Mmw0aWtrem9hdkx1dTNaVUgwLVR3X19vUzhtdXdlMmljeENIQUJJSTFiek1yM09FODhLazIzWEtTYXNQTkQwdklVN2RaNzJNR2JIVmRtbzFUWEhHTmdDRnRWNnYzT2xoVEpqcGJGQ2RJRFhMTG5hY1QyeEZoMTB2VE90VlBQZW9zb0FLeS1wMGs?oc=5"
+     },
+     {
+      "label": "Ethiopia–Kenya",
+      "change": "Note updated to reflect influx of over 50,000 refugees fleeing Moyale clashes into Kenya",
+      "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOR1ZGNXB0NUJDNm1ZOWlxUGlNVzQ3THVPSUctemtYVFVTVzU2alQ3SE5jbGh2Qlc4WVE4NDVSVDBmVFBzMm9KbXFVRWM3M1JDWUhCd3oyQkRhZmhwT1RBcDNNR3NPdTVWazNCa3FHdWlwZWZCSm50czlQS21CcnNlbjU1eHNtQ0hfSDNpSg?oc=5"
+     },
+     {
+      "label": "Al-Shabaab and the Horn of Africa",
+      "change": "Thread updated as Uganda begins troop withdrawal from Somalia after nearly two decades",
+      "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVEI2ZldGV0cxUl9QSWYwTFg5NUJ1d3ZFT0RRQ1ZCLTVVQnZjdE0yWGs4Z25qVHp1bTBKOWk3VnVlSnpiTWhxTExMR1poeHVVMEg4ci1qdndObHpDVThUSE50dVpVVWZzZVRJTmdqSHVlOUtuTmYtUF96cDB4cnZ6VkRXRFlNTUQ0NlEzNElBeW1sU3V3QWFpcTFtdGVCWHh2Tm1wQzdlNTVJYUNVQkp1SUZqYU1YZ1RVS21zLVFiaw?oc=5"
+     },
+     {
+      "label": "Israel",
+      "change": "Final parliamentary election results confirm deadlock with no immediate coalition majority",
+      "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbzRienByTkQ5U2pCV25Jd09FREVxd05VLTZRSTY1TGVTY2dsYl9zOFRucG1xN0pnOHhhLXRObUFNbGp1My1DYXB3UnByT0g0QTBMTlZqU3d6U0JrNm80bTBwSHh5N1hKcjk3MDhCaWNyNzdIaGlUZWxEWWpnUFFVNS01ZzcxUFp1MVRmdUd4YmNaRWZLdFg0R0dkTlp3TDFGX1Z3LUpZQ2I3ZDJwQlhvSFJNeEpPaHR6SlE?oc=5"
+     },
+     {
+      "label": "Serbia",
+      "change": "Student List wins parliamentary election following widespread institutional protests",
+      "source": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOSXNuMjhvQlFQYUJPdGM4MHJsdHZ4bkFyRHR6cUxFM0x5SHJreHdVWndseXZqejZjU3U0V05ENm11WEthZnpLV2tVczdVcWlkQ2ZmVjJjblNmNThoRWRQTEZ4TkNFNVl4ZW8wVXRoSFpKbFU4b1BMU0EtVi1RVkxHLWJYUm02UWJIeEprcEFWZzF6US1rR2pORkNWMlFLRUhIOTFDNlMtQ0ZPN2J2VlFOZmxWbElsc25lMWIzU0RLdW9walBiOWd4RlFXaUh6UQ?oc=5"
+     },
+     {
+      "label": "Somalia",
+      "change": "Somalia schedules national presidential election for May 2027",
+      "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1YTjBQaW96SWdjUXl2QUhBUkhmdHJZWVdYeG1rRk1xRVg0UTlPcEdZTmpocnV3elRhLWxDTFQ4WDdzWkNYSE9Od3ZkVmk5LVJiR1E?oc=5"
      }
     ]
    },
@@ -1783,7 +1803,7 @@
     ]
    }
   ],
-  "summary": "Washington expels a Cuban diplomat following an altercation at the United Nations, Sudan accuses Ethiopia of enabling drone attacks, and recent national election results solidify across Israel, Brazil, and Serbia."
+  "summary": "Updated Brazil–US ties to tense over election dispute and Bolsonaro asylum, refreshed Ethiopia–Kenya note on border displacement, updated the Al-Shabaab thread on Ugandan troop withdrawals, and recorded election milestones for Israel, Serbia, and Somalia."
  },
  "relations": {
   "DNK-USA": {
@@ -2189,10 +2209,10 @@
   "BRA-USA": {
    "a": "BRA",
    "b": "USA",
-   "s": "N",
-   "note": "Strained by tariffs and sanctions, though both nations maintain trade ties under President Luiz Inácio Lula da Silva.",
-   "updated": "2026-10-23",
-   "source": "https://www.wikidata.org/wiki/Q155"
+   "s": "T",
+   "note": "Ties fray as United States (US) President Trump rejects Brazil's election and US allies help fugitive Flávio Bolsonaro enter the country.",
+   "updated": "2026-10-30",
+   "source": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNNEZiTmhEMExkbnN1THA1QVA1TkJnLU0xQW5RRlgyV2RYVUV2LVRfQ3FQVkFfcFBtMHQxSnJXNUtRVEQ0enBfR0daTlBQdVlfOTcxQ2dIY0kzdXRHRThiZUM3RlE0cFpCSV9xZFBaaHFrZktmemJ0Rl8xSWNoZnRDMHpHUHgtckNhT3dtZ3VwNS1nMzd4MVFBelhkTXBKbTJLdzIweG54Y1BtdTluYVNkMkRBekNYdTBfdXFlUzlOei1ORG9DWVYwYW5jd3loTDY0bUHSAdcBQVVfeXFMUExfNFNGUnB4ekhmZzM0NWZHSEIzLVhfdmItMVE3OHJwek8yenJna3RMa2c3Y2h0amx6UjZJY09FYi01VjZCXzNmaWlwR1Y3Mmw0aWtrem9hdkx1dTNaVUgwLVR3X19vUzhtdXdlMmljeENIQUJJSTFiek1yM09FODhLazIzWEtTYXNQTkQwdklVN2RaNzJNR2JIVmRtbzFUWEhHTmdDRnRWNnYzT2xoVEpqcGJGQ2RJRFhMTG5hY1QyeEZoMTB2VE90VlBQZW9zb0FLeS1wMGs?oc=5"
   },
   "GBR-USA": {
    "a": "GBR",
@@ -3134,9 +3154,9 @@
    "a": "ETH",
    "b": "KEN",
    "s": "T",
-   "note": "Fighting in the border town of Moyale kills nine and forces thousands of Ethiopians to flee into Kenya.",
-   "updated": "2026-10-23",
-   "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPV3lRSFA5ZHhuRE1lZWN3VzFCcDJaUVhnbngtMDZFc0dQejI4TXY5b1ZKNUo3cjJnUlBLVTRRUVI3aWlISl9QV3ZtV1VCdGNUVVVnNk1jTUg5eXlXeVZTUG5OdmFhMGpKdFhoalUwTnBhQUh3ZlZwdVJNc1U5SEpieHhwTEZJczZYTVBnNzJ6N1RFSk9UM0J5QjFnd24xdmtDUGFiYTlkV1Z1bWozUDFyZDh3TTNYZGhlN0doUHRrZw?oc=5"
+   "note": "Relations strain as over 50,000 refugees cross into Kenya to escape heavy fighting around the southern Ethiopian border town of Moyale.",
+   "updated": "2026-10-30",
+   "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOR1ZGNXB0NUJDNm1ZOWlxUGlNVzQ3THVPSUctemtYVFVTVzU2alQ3SE5jbGh2Qlc4WVE4NDVSVDBmVFBzMm9KbXFVRWM3M1JDWUhCd3oyQkRhZmhwT1RBcDNNR3NPdTVWazNCa3FHdWlwZWZCSm50czlQS21CcnNlbjU1eHNtQ0hfSDNpSg?oc=5"
   },
   "EGY-LBY": {
    "a": "EGY",
@@ -3461,6 +3481,24 @@
    ],
    "updated": "2026-10-19",
    "source": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZF9vZnZYbGRtSFBIcWdKN2lCbmRsajdkRWdnN2ZablBCMnV5WUZickhWWWhkck1uNFJBZkx1bFhQZDV4Tzh1cFo4Wm91eFp5VG5JS1hpSF9jZU82UkJfWkZpaE9MNHlBUlFDb1VyT0NDcW9OQTNVTXpWc0haeXJ0c3lLck95SmxZak8yb0dPOG0ybzllR2d4LXhtUW44VGItaHYtS0dJTUFhMW54TnhfM2ZoczNuVXVCV2ZpZ1ozblJFdVI2RWVZRi1NaWJBWFkwSG5J0gHYAUFVX3lxTFBmU0gyUUIxeWFBWDd1QWtybWloMmU0LWhGLXFWY0xQWTlMUzY1WTh6N2xpRTB4eU83THVDMXpNTERpSmRvd2p4STlYLUppWDhzd1huZTRRY090T0xQNEpLdXRFSmJpT3gwREJySjFnV28wM0VwRUFzbUxaYVJZWVZkUVE0bmZhY1lyaEpRSE1SVlFnVnktODBlSzlhbnR4ZS1STV9kMEhzM3czU0kxTlFXRnM0UkJlM3ZsYXhwT0t6NTFDb1ZrQjN0d0QzRzRWVnBjSXdEX3E0Vg?oc=5"
+  },
+  "al-shabaab": {
+   "t": "security",
+   "n": "Al-Shabaab and the Horn of Africa",
+   "d": "Al-Shabaab militants stage deadly ambushes across southern Somalia as Uganda begins withdrawing its long-standing peacekeeping forces.",
+   "c": [
+    "SOM",
+    "KEN",
+    "ETH",
+    "DJI",
+    "UGA",
+    "BDI",
+    "EGY",
+    "TUR",
+    "ARE"
+   ],
+   "updated": "2026-10-30",
+   "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVEI2ZldGV0cxUl9QSWYwTFg5NUJ1d3ZFT0RRQ1ZCLTVVQnZjdE0yWGs4Z25qVHp1bTBKOWk3VnVlSnpiTWhxTExMR1poeHVVMEg4ci1qdndObHpDVThUSE50dVpVVWZzZVRJTmdqSHVlOUtuTmYtUF96cDB4cnZ6VkRXRFlNTUQ0NlEzNElBeW1sU3V3QWFpcTFtdGVCWHh2Tm1wQzdlNTVJYUNVQkp1SUZqYU1YZ1RVS21zLVFiaw?oc=5"
   }
  },
  "pois": {
@@ -3710,8 +3748,8 @@
   "SRB": {
    "nextelec": "parliamentary election, Oct 2026",
    "updated": "2026-10-30",
-   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaUd1S0pHUGFXQVNpc21uQ0VWTE9iWlQ0UWtpTjVDcDRvbFpuTkpETzNMWmpkMUR2ZVVWLWcwVEZkSHlKcF9PYWdfXy1GRVRUUTF4TUJ5YXpCaFlpekZzb2JybEFoVU5xN01rZ2d4ZHpoX3FoVkhLeURoeXZTcnhwMHZzaE55U0gySHBTQ2Q4RFF3a2stcGc?oc=5",
-   "lastelec": "parliamentary October 2026, Student List"
+   "source": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOSXNuMjhvQlFQYUJPdGM4MHJsdHZ4bkFyRHR6cUxFM0x5SHJreHdVWndseXZqejZjU3U0V05ENm11WEthZnpLV2tVczdVcWlkQ2ZmVjJjblNmNThoRWRQTEZ4TkNFNVl4ZW8wVXRoSFpKbFU4b1BMU0EtVi1RVkxHLWJYUm02UWJIeEprcEFWZzF6US1rR2pORkNWMlFLRUhIOTFDNlMtQ0ZPN2J2VlFOZmxWbElsc25lMWIzU0RLdW9walBiOWd4RlFXaUh6UQ?oc=5",
+   "lastelec": "parliamentary, October 2026, Student List"
   },
   "CHE": {
    "lastelec": "referendum, Sep 2026, rejected stricter neutrality",
@@ -3794,9 +3832,9 @@
    "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZXVwWnVaUzBnNFYtSk8xNy1wT3NwLVhWSmRENElJZzRGb1B1OGYyb2Zzdy1ybm95UXRNQ1FBcVN3cWZSRGRBQ1VYRVpXekRnU3poLWNUeGZnbUhldGZ0RmpmemhkWHdFTnA4NW1zRi04TkRvN2p1akoteEljUHlFOUdBZDhzVW9TbFR0OTNEZzlUb2ZwTTZj?oc=5"
   },
   "SOM": {
-   "nextelec": "parliamentary and presidential 2027",
-   "updated": "2026-10-20",
-   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWjNRSEsybno3ai1PWUlJMTFHcExzV1U2bUJVb1RNZUs2ZE5lWV9GMEM0cVJERTZ0YTB2WkNnUm96QmJrODdaUXNPNnAyX05RT09va2ZtQjRUa1Nid2xTeHVWWFFfeFlWTWNsXzJHenJCcnVEdTh2Vjg2Nl9kb3Yxa2ZCWkJHY0ExTGdBSWlXMEVzYXZHVzVFNTNiSS1wT1J3Nlg3aGZwVDBzVXVmaktZLXhyXzFuWGQ5YkE?oc=5",
+   "nextelec": "presidential, May 2027",
+   "updated": "2026-10-30",
+   "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1YTjBQaW96SWdjUXl2QUhBUkhmdHJZWVdYeG1rRk1xRVg0UTlPcEdZTmpocnV3elRhLWxDTFQ4WDdzWkNYSE9Od3ZkVmk5LVJiR1E?oc=5",
    "lastelec": "Presidential, May 2024"
   },
   "CZE": {
@@ -3807,8 +3845,8 @@
   "ISR": {
    "nextelec": "general, 2026",
    "updated": "2026-10-30",
-   "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObDI2alMwcHh1R3RuR19GVkFGLTdpX2RFZlgwRTN1TWRNNTJZcTN3LTFtdTdYeThHRjBhODFIMllYaTB5bUtQSFctc0VZd1ZtMDJTRmVkOU94UWtKZWhJang0OTJTVkxRTERORmRpWlVDSDZ2NWlPVkliMUMzMnd0cDVkNFZLTU5nUFRPUFBzQ1ZjMXFGazhPdUFOUmd0bVZRbzVPUTI2aFc4UXl5WE42Z3VwLXYyMHc20gG-AUFVX3lxTE9UNkllYU1mV0M3N0ZEZ0FSLXAxeHJLSU9GdkxLTzUwdEZndjBtdWRqc1RBclVTTk1RbVZZVUhwRGZVUHk4T2d5alRmZGhuUjB5cnlnOVdjY0p0NVYtcFZXRlhwSmJYemhnT2k2OGhmOEpwWjAxVTdzZmhZclpqbFdLdzYtT2VBbkkwX2hlTkdkVlRwRHRWWGtDOERoak5vYkhRSXpfVW5NNUFJdzBrZ0Njbl9jV3VsVUdhQjVvRlE?oc=5",
-   "lastelec": "legislative October 2026, inconclusive"
+   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbzRienByTkQ5U2pCV25Jd09FREVxd05VLTZRSTY1TGVTY2dsYl9zOFRucG1xN0pnOHhhLXRObUFNbGp1My1DYXB3UnByT0g0QTBMTlZqU3d6U0JrNm80bTBwSHh5N1hKcjk3MDhCaWNyNzdIaGlUZWxEWWpnUFFVNS01ZzcxUFp1MVRmdUd4YmNaRWZLdFg0R0dkTlp3TDFGX1Z3LUpZQ2I3ZDJwQlhvSFJNeEpPaHR6SlE?oc=5",
+   "lastelec": "parliamentary, October 2026, inconclusive"
   },
   "OMN": {
    "nextelec": "municipal, December 2026",
