@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-30T11:15:44Z",
+  "lastRun": "2026-10-30T20:17:12Z",
   "log": [
    {
     "date": "2026-10-30",
@@ -59,6 +59,11 @@
       "label": "Somalia",
       "change": "Somalia schedules national presidential election for May 2027",
       "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1YTjBQaW96SWdjUXl2QUhBUkhmdHJZWVdYeG1rRk1xRVg0UTlPcEdZTmpocnV3elRhLWxDTFQ4WDdzWkNYSE9Od3ZkVmk5LVJiR1E?oc=5"
+     },
+     {
+      "label": "El Salvador–Haiti",
+      "change": "Normal → Partner: Security deployment to Haiti",
+      "source": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNUXFYUWlBazM2N2paRUppYWU4QUNxMUVuVmR2aWlsbnN1NXd6aWZnNGtQNzdvazhQOHdJVVltT2cxRkl5YlJzZ0hGVXpuTUd5VURMdGczT2ZremxCUFhBSmNvLUNZbVZsRWFGMVYxY0x4djFTb3p5dXl1aFF5QS1ON05NRDU2Mlo3NkhCRGt5YkZsd1FISGs5eXlVVGw2eWh2M1NXcDFjQVEtdmdYTjFkQ04tWWt0QXc0dHZZQ0hiUWpXQXd2X1E4c29ZMDlHcU5j?oc=5"
      }
     ]
    },
@@ -1803,7 +1808,7 @@
     ]
    }
   ],
-  "summary": "Updated Brazil–US ties to tense over election dispute and Bolsonaro asylum, refreshed Ethiopia–Kenya note on border displacement, updated the Al-Shabaab thread on Ugandan troop withdrawals, and recorded election milestones for Israel, Serbia, and Somalia."
+  "summary": "Updates reflect regional security events in the Middle East and East Africa, cyber incidents, and diplomatic adjustments."
  },
  "relations": {
   "DNK-USA": {
@@ -3098,9 +3103,9 @@
    "a": "HTI",
    "b": "SLV",
    "s": "F",
-   "note": "El Salvador expands its security deployment in Haiti to over 2,000 troops to assist in combating armed gangs.",
-   "updated": "2026-10-29",
-   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOM0VLZXFsWjZBVmNlcEtidVh2bDYwMXFIb3JJMkgyODJONS14c05DVy1MXzVjZkhyVXU4cGtXRnNvaVdUNU04RWo1akhES0hQMjNDdW5oQWlzMzdDSl9IWmZIaFVSVHQ0T1VnU0REZW1jZlZEMVM4WE1ZTlotZnVHY2VsYWtmcjI2eDNLeU9ENHhDWnlGUzhuWVNnZlQtdUVRSUdj0gGoAUFVX3lxTE1zOG5Pd1VIY1JNcjg1M29nYTVReTdqbm9FTkpaWkNSSHhtbjg3cG9uOTh5a1BueVNSZ3F2SHlFeUpuVnkwYnYxbmVYSjhrYzlmbnFwV2s5Z3piNkVyOEpWVzdKSzk5aVBOXy12NTVUMlZZenEtc1M3bGNwUDEzRFc5a0NwYWpWWXNsUnNpTFJrelZrZG1WZU1ZVFdSNEotVkgyd19mRDdkZg?oc=5"
+   "note": "El Salvador deploys over 2,000 troops to Haiti to combat armed gangs and locate missing servicemen.",
+   "updated": "2026-10-30",
+   "source": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNUXFYUWlBazM2N2paRUppYWU4QUNxMUVuVmR2aWlsbnN1NXd6aWZnNGtQNzdvazhQOHdJVVltT2cxRkl5YlJzZ0hGVXpuTUd5VURMdGczT2ZremxCUFhBSmNvLUNZbVZsRWFGMVYxY0x4djFTb3p5dXl1aFF5QS1ON05NRDU2Mlo3NkhCRGt5YkZsd1FISGs5eXlVVGw2eWh2M1NXcDFjQVEtdmdYTjFkQ04tWWt0QXc0dHZZQ0hiUWpXQXd2X1E4c29ZMDlHcU5j?oc=5"
   },
   "IRN-IRQ": {
    "a": "IRN",
