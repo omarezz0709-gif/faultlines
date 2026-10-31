@@ -1,10 +1,10 @@
 name: Daily diagnostics
 
-# 12:30 and 18:30 Berlin time (after the 12:00 and 18:00 data refresh). GitHub cron is UTC, so each slot has a
-# summer and a winter trigger; the script skips whichever one is off-slot.
+# 12:30 and 18:30 Berlin time (after the 12:00 and 18:00 data refresh). GitHub cron is UTC, so each check has a
+# summer and a winter trigger, and GitHub may start them hours late; the script runs each check once.
 # Checks the live site, its data, the AI Worker, every news source and a real browser run (scripts/diagnose.py),
-# saves the report to data/health.json (shown in the admin panel), re-runs a stale refresh or a broken Worker
-# deploy by itself, and FAILS on real problems, so GitHub sends an email.
+# re-runs a stale refresh or a broken Worker deploy by itself and looks again once that's done, and saves the report
+# to data/health.json (shown in the admin panel). It only FAILS (and emails) on what is still broken after that.
 on:
   schedule:
     - cron: "30 10,11 * * *"   # 12:30 Berlin
@@ -27,7 +27,7 @@ concurrency:
 jobs:
   diagnose:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45          # the checks, plus waiting for a repair and checking again
     env:   # where the report email goes (and whether the Gmail way is set up)
       MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
       REPORT_EMAIL: ${{ secrets.REPORT_EMAIL }}

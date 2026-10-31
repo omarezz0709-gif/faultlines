@@ -17,7 +17,7 @@ import time
 import urllib.error
 import urllib.request
 
-from common import ROOT, iso_z, load_json, now_utc, ran_recently, save_json, scheduled
+from common import ROOT, hours_since_slot, iso_z, load_json, now_utc, ran_recently, save_json, scheduled
 
 API = "https://generativelanguage.googleapis.com/v1beta"
 STATUSES = {"A", "F", "N", "T", "H", "W", "none"}
@@ -348,10 +348,13 @@ def main() -> None:
     live = load_json("live.json", {})
     news = load_json("news.json", {})
     if scheduled():
-        if not ran_recently(news.get("generated"), t0, hours=1):
+        last = (live.get("meta") or {}).get("lastRun")
+        # normally right after new headlines; if an update failed, the next run catches up instead of waiting for
+        # the next new headlines (on 29 Oct one failure left it 20 hours old)
+        if not ran_recently(news.get("generated"), t0, hours=1) and ran_recently(last, t0, hours=hours_since_slot(t0)):
             print("Headlines weren't refreshed in this run; skipping the AI update.")
             return
-        if ran_recently((live.get("meta") or {}).get("lastRun"), t0, hours=3):
+        if ran_recently(last, t0, hours=3):
             print("AI update already ran in this slot; skipping.")
             return
     with open(os.path.join(ROOT, "index.html"), encoding="utf-8") as f:

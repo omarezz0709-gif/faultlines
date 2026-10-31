@@ -1,6 +1,7 @@
 """Daily diagnostics (GitHub Actions, 12:30 and 18:30 Berlin time): checks the live site, its data, the AI Worker,
-every news source and a real browser run, writes data/health.json (shown in the admin panel), repairs what it can
-(a stale refresh or a broken Worker deploy is re-run, a hanging refresh run is cancelled) and fails the job on real problems, so GitHub sends an email.
+every news source and a real browser run, repairs what it can (a stale refresh or a broken Worker deploy is re-run, a
+hanging refresh run is cancelled), looks again once the repairs are done, and writes data/health.json (shown in the
+admin panel). The owner only hears about what is still broken after that: see write_email.
 
 Statuses: ok, warn (worth a look, the site still works), fail (something visitors notice).
 Run by hand:  python scripts/diagnose.py            (add --no-browser to skip the browser test)
@@ -18,7 +19,7 @@ import time
 import urllib.error
 import urllib.request
 
-from common import BERLIN, ROOT, in_slot, iso_z, load_json, now_utc, ran_recently, save_json, scheduled
+from common import BERLIN, ROOT, iso_z, load_json, now_utc, save_json, scheduled
 
 SITE = "https://faultlines-1pw.pages.dev"
 MIRROR = "https://omarezz0709-gif.github.io/faultlines/"
@@ -26,6 +27,7 @@ WORKER = "https://faultlines-ai.omarezz0709.workers.dev"
 ORIGIN = SITE
 LANGS = ("en", "de", "fr", "es", "it", "ar")
 UA = "Mozilla/5.0 (compatible; Faultlines diagnostics)"
+LASTING_H = 20     # a warning this old (three checks in a row, about a day) needs the owner
 
 checks: list[dict] = []
 heal: list[str] = []
@@ -318,6 +320,25 @@ def trigger(workflow: str) -> None:
     print(f"repair: gh workflow run {workflow} -> {r.returncode}", flush=True)
 
 
+def wait_for(workflow: str, minutes: int = 12) -> None:
+    """Waits until a repair run has finished (a data refresh takes a few minutes)."""
+    if not os.environ.get("GH_TOKEN"):
+        return
+    repo = os.environ.get("GITHUB_REPOSITORY", "omarezz0709-gif/faultlines")
+    time.sleep(20)   # a new run takes a moment to show up
+    end = time.time() + minutes * 60
+    while time.time() < end:
+        r = subprocess.run(["gh", "run", "list", "--repo", repo, "--workflow", workflow, "--limit", "5", "--json", "status"],
+                           capture_output=True, text=True)
+        try:
+            if r.returncode == 0 and all(x.get("status") == "completed" for x in json.loads(r.stdout or "[]")):
+                return
+        except ValueError:
+            pass
+        time.sleep(20)
+    print(f"repair: {workflow} still running after {minutes} minutes", flush=True)
+
+
 def unstick_refresh() -> None:
     """Only one refresh runs at a time, so a run that hangs holds up every later one (on 7 Oct GitHub left one
     'waiting' for 30 hours and every refresh after it was cancelled). Cancel any that has been going for over an hour;
@@ -328,10 +349,11 @@ def unstick_refresh() -> None:
     r = subprocess.run(["gh", "run", "list", "--repo", repo, "--workflow", "refresh.yml", "--limit", "30",
                         "--json", "databaseId,status,createdAt"], capture_output=True, text=True)
     if r.returncode:
-        add("fresh", "Refresh runs", "warn", f"could not list them: {r.stderr.strip()[:150]}")
+        add("runs", "Refresh runs", "warn", f"could not list them: {r.stderr.strip()[:150]}")
         return
     stuck = [x for x in json.loads(r.stdout or "[]")
              if x.get("status") != "completed" and (age_hours(x.get("createdAt")) or 0) > 1]
+    refused = 0
     for x in stuck:
         run = str(x["databaseId"])
         c = subprocess.run(["gh", "run", "cancel", run, "--repo", repo], capture_output=True, text=True)
@@ -341,10 +363,67 @@ def unstick_refresh() -> None:
         heal.append(f"cancelled refresh run {run} ({x.get('status')} for {age_hours(x.get('createdAt')):.0f} h)"
                     + ("" if c.returncode == 0 else f" (failed: {c.stderr.strip()[:120]})"))
         print(f"repair: cancel stuck refresh run {run} -> {c.returncode}", flush=True)
-    add("fresh", "Refresh runs", "ok" if not stuck else "warn",
-        "none hanging" if not stuck else f"{len(stuck)} hanging run(s) cancelled")
+        refused += 1 if c.returncode else 0
+    add("runs", "Refresh runs", "warn" if refused else "ok",   # repaired = fine; only one that can't be cancelled is left to report
+        "none hanging" if not stuck else f"{len(stuck)} hanging run(s) found, {len(stuck) - refused} cancelled")
     if stuck:
         time.sleep(5)   # let GitHub release the queue before a new run is started
+
+
+def daily_check(t: dt.datetime) -> tuple | None:
+    """Which of the day's two checks a moment belongs to: the one from 12:00 or the one from 18:00 Berlin time."""
+    b = t.astimezone(BERLIN)
+    return (b.date(), 18 if b.hour >= 18 else 12) if b.hour >= 12 else None
+
+
+def is_due(t0: dt.datetime, prev: dict) -> bool:
+    """GitHub often starts scheduled runs hours late (since late October up to 5 hours), so any run after 12:00 or
+    18:00 counts for that check, as long as that check hasn't been done yet. After a whole missed day, any run does."""
+    h = age_hours(prev.get("generated"))
+    if h is None or h >= 20:
+        return True
+    return daily_check(t0) is not None and daily_check(t0 - dt.timedelta(hours=h)) != daily_check(t0)
+
+
+PARTS = {"site": ("site", "fresh"), "worker": ("worker", "security", "ai"), "sources": ("sources",), "browser": ("browser",)}
+
+
+def run_part(part: str) -> str | None:
+    """Runs one part of the checks. Returns the workflow that may repair what it found, if any."""
+    if part == "site":
+        return "refresh.yml" if "refresh" in check_fresh(check_site()) else None
+    if part == "worker":
+        return "worker.yml" if check_worker() else None
+    if part == "sources":
+        check_sources()
+    elif "--no-browser" not in sys.argv:
+        try:
+            check_browser()
+        except Exception as e:
+            add("browser", "Browser test", "warn", f"could not run: {str(e)[:160]}")
+    return None
+
+
+def second_look(repairs: set) -> None:
+    """Checks again whatever was repaired or looked broken, after the repairs have finished, so the report and the
+    email only show what is really still wrong. A warning without a repair isn't looked at again: warnings only
+    matter if they last (see write_email)."""
+    again = [p for p, groups in PARTS.items()
+             if any(c["g"] in groups and c["status"] == "fail" for c in checks)
+             or (p == "site" and "refresh.yml" in repairs) or (p == "worker" and "worker.yml" in repairs)]
+    if not again:
+        return
+    for w in repairs:
+        wait_for(w)
+    print(f"\nSecond look at: {', '.join(again)}", flush=True)
+    before = {c["name"] for c in checks if c["status"] != "ok"}
+    time.sleep(120)   # a repair's new data takes a minute or two to reach the site
+    checks[:] = [c for c in checks if not any(c["g"] in PARTS[p] for p in again)]
+    for p in again:
+        run_part(p)
+    back = before - {c["name"] for c in checks if c["status"] != "ok"}
+    if back:
+        heal.append("back to normal: " + ", ".join(sorted(back)))
 
 
 def main() -> None:
@@ -354,7 +433,7 @@ def main() -> None:
         pass
     t0 = now_utc()
     prev = load_json("health.json", {})
-    skip = scheduled() and (not in_slot(t0, hours=(12, 18)) or ran_recently(prev.get("generated"), t0, hours=2))
+    skip = scheduled() and not is_due(t0, prev)
     if "--slot" in sys.argv:   # the workflow asks first, so it doesn't install a browser for nothing
         with open(os.environ.get("GITHUB_OUTPUT", os.devnull), "a") as f:
             f.write(f"run={'false' if skip else 'true'}\n")
@@ -363,31 +442,21 @@ def main() -> None:
     if skip:
         print("Not a diagnostics slot (or already checked); skipping.")
         return
-    data = check_site()
-    stale = check_fresh(data)
-    worker_broken = check_worker()
-    check_sources()
-    if "--no-browser" not in sys.argv:
-        try:
-            check_browser()
-        except Exception as e:
-            add("browser", "Browser test", "warn", f"could not run: {str(e)[:160]}")
-    # repairs
+    repairs = {w for w in map(run_part, PARTS) if w}
     unstick_refresh()
-    if "refresh" in stale:
-        trigger("refresh.yml")
-    if worker_broken:
-        trigger("worker.yml")
+    for w in repairs:
+        trigger(w)
+    second_look(repairs)
     fails = [c for c in checks if c["status"] == "fail"]
     warns = [c for c in checks if c["status"] == "warn"]
     status = "fail" if fails else "warn" if warns else "ok"
     summary = ("All checks passed." if status == "ok" else
                f"{len(fails)} problem(s), {len(warns)} warning(s): " + "; ".join(f"{c['name']}: {c['detail']}" for c in (fails + warns)[:4]))
     print(f"\n{status.upper()}: {summary}")
-    emailed = write_email(t0, status, fails, warns, prev)
+    emailed, since = write_email(t0, status, fails, warns, prev)
     save_json("health.json", {"generated": iso_z(t0), "berlin": t0.astimezone(BERLIN).strftime("%Y-%m-%d %H:%M"),
                               "status": status, "summary": summary[:600], "repairs": heal, "checks": checks,
-                              "emailed": emailed, "ms": int((now_utc() - t0).total_seconds() * 1000)})
+                              "emailed": emailed, "warn_since": since, "ms": int((now_utc() - t0).total_seconds() * 1000)})
     if fails:
         sys.exit(1)   # the workflow fails (shown in red on GitHub)
 
@@ -397,40 +466,42 @@ def warn_keys(c: dict) -> list[str]:
     return [f"{c['name']}: {i}" for i in c.get("items") or []] or [c["name"]]
 
 
-def write_email(t0, status: str, fails: list, warns: list, prev: dict) -> list[str]:
-    """The report email (to the address in the REPORT_EMAIL secret), only when something is wrong:
-    - a problem (fail), or a locked admin login (only the owner can unlock it): every time;
-    - a warning that is still there at the next check (6 hours later): once. One-off hiccups that fix themselves
-      by the next check send nothing, and a lasting warning isn't repeated twice a day; if it goes away and comes
-      back later, it is reported again.
-    Returns the warnings reported so far (saved in health.json for the next check)."""
+def write_email(t0, status: str, fails: list, warns: list, prev: dict) -> tuple[list[str], dict]:
+    """The report email (to the address in the REPORT_EMAIL secret), only when the owner has to step in:
+    - a problem (fail) still there after the repairs and a second look: every time;
+    - a locked admin login (only the owner can unlock it): every time;
+    - a warning that has lasted about a day (LASTING_H) with no repair working: once. If it goes away and comes back
+      later, it counts from the start.
+    Anything repaired, or that fixes itself, sends nothing; it's listed in the admin panel.
+    Returns the warnings reported so far and when each was first seen (saved in health.json for the next check)."""
     now_keys = {k for c in warns for k in warn_keys(c)}
-    prev_keys = {k for c in prev.get("checks", []) if c.get("status") == "warn" for k in warn_keys(c)}
+    seen = prev.get("warn_since") or {}
+    since = {k: seen.get(k) or iso_z(t0) for k in sorted(now_keys)}
     reported = set(prev.get("emailed") or []) & now_keys          # still going, already in an earlier email
-    lasting = (now_keys & prev_keys) - reported                   # seen in two checks in a row, not reported yet
+    lasting = {k for k, iso in since.items() if (age_hours(iso) or 0) >= LASTING_H} - reported
     locked = any(c["name"] == "Admin login" for c in warns)
     send = bool(fails or locked or lasting)
     when = t0.astimezone(BERLIN).strftime("%d %b %Y, %H:%M")
-    subject = (f"Faultlines: {len(fails)} problem(s) found ({when})" if fails else
-               f"Faultlines: admin login locked ({when})" if locked else
-               f"Faultlines: {len(warns)} warning(s) that didn't fix themselves ({when})" if lasting else f"Faultlines: all good ({when})")
+    subject = (f"Faultlines needs you: {len(fails)} problem(s) the automatic repair couldn't fix ({when})" if fails else
+               f"Faultlines needs you: admin login locked ({when})" if locked else
+               f"Faultlines needs you: a warning has lasted a day ({when})" if lasting else f"Faultlines: all good ({when})")
     icon = {"ok": "OK  ", "warn": "WARN", "fail": "FAIL"}
     lines = [f"Faultlines system check, {when} Berlin time", "",
              "Everything works." if status == "ok" else f"{len(fails)} problem(s), {len(warns)} warning(s):", ""]
     for c in fails + warns:
         keys = set(warn_keys(c)) if c["status"] == "warn" else set()
         name = lambda ks: ", ".join(sorted(k.split(": ", 1)[-1] for k in ks)) if c.get("items") else ""
-        note = (f"   (since the last check too{': ' + name(keys & lasting) if name(keys & lasting) else ''})" if keys & lasting
+        note = (f"   (for about a day now{': ' + name(keys & lasting) if name(keys & lasting) else ''})" if keys & lasting
                 else "   (already reported)" if keys and keys <= reported
-                else "   (new; reported if it's still there at the next check)" if keys else "")
+                else "   (only reported if it lasts a day)" if keys else "")
         lines.append(f"  {icon[c['status']]}  {c['name']}: {c['detail']}" + note)
     if heal:
-        lines += ["", "Repaired automatically: " + "; ".join(heal)]
+        lines += ["", "Already tried automatically: " + "; ".join(heal)]
     lines += ["", f"{sum(c['status'] == 'ok' for c in checks)} of {len(checks)} checks passed.",
               "", f"Website: {SITE}", "Full report: open the site, ⚙ Usage & logs, System check",
               f"Run a check now: https://github.com/omarezz0709-gif/faultlines/actions/workflows/diagnose.yml",
-              "", "(Sent by the daily diagnostics at 12:30 and 18:30, only when something is wrong: problems every time,",
-              "warnings once, when they are still there at the next check.)"]
+              "", "(Sent by the daily diagnostics only when you need to step in: a problem the automatic repair couldn't",
+              "fix, a locked admin login, or a warning that has lasted a day. Anything repaired sends nothing.)"]
     with open(os.path.join(ROOT, "report-email.txt"), "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
     out = os.environ.get("GITHUB_OUTPUT")
@@ -448,7 +519,7 @@ def write_email(t0, status: str, fails: list, warns: list, prev: dict) -> list[s
                                             "subject": subject, "text": "\n".join(lines)}).encode())
         print(f"report email via Resend: HTTP {s}" + ("" if s in (200, 201) else f" {b[:200].decode('utf-8', 'replace')}"))
         delivered = send and s in (200, 201)
-    return sorted(reported | (lasting if delivered else set()))   # not delivered: tried again at the next check
+    return sorted(reported | (lasting if delivered else set())), since   # not delivered: tried again at the next check
 
 
 if __name__ == "__main__":

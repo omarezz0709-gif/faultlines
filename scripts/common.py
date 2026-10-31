@@ -86,6 +86,16 @@ def in_slot(t_utc: dt.datetime, hours=SLOTS) -> bool:
     return False
 
 
+def hours_since_slot(t_utc: dt.datetime, hours=SLOTS) -> float:
+    """How long ago the latest refresh slot started. An update older than this means that slot was missed, however
+    late GitHub starts the next run."""
+    b = t_utc.astimezone(BERLIN)
+    starts = [b.replace(hour=h, minute=0, second=0, microsecond=0) for h in hours]
+    past = [s for s in starts if s <= b]
+    latest = max(past) if past else max(starts) - dt.timedelta(days=1)
+    return (b - latest).total_seconds() / 3600
+
+
 def scheduled() -> bool:
     return os.environ.get("GITHUB_EVENT_NAME") == "schedule"
 

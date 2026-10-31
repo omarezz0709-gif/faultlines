@@ -3109,7 +3109,7 @@ async function loadHealth(){
     ${bad.length ? `<ul class="intro-list">${bad.map(line).join('')}</ul>` : ''}
     ${(h.repairs || []).length ? `<p class="note">🔧 Repaired automatically: ${esc(h.repairs.join('; '))}</p>` : ''}
     <details><summary class="faint" style="cursor:pointer">All ${(h.checks || []).length} checks</summary><ul class="intro-list">${(h.checks || []).map(line).join('')}</ul></details>
-    <p class="hidden-note">Runs every day at 12:30 and 18:30 Berlin time. Email: problems right away; warnings once, if they are still there at the next check (one-off hiccups that fix themselves send nothing). <a href="${run}" target="_blank" rel="noopener">Run a check now</a> (Run workflow).</p>`;
+    <p class="hidden-note">Runs every day around 12:30 and 18:30 Berlin time and repairs what it can. Email only when you need to step in: a problem the repair couldn't fix, a locked admin login, or a warning that has lasted a day. <a href="${run}" target="_blank" rel="noopener">Run a check now</a> (Run workflow).</p>`;
 }
 function renderAdmin(data){
   // data.viewDay set = an archived day (from the nightly backup); otherwise today since 00:00 Berlin

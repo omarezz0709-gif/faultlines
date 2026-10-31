@@ -21,7 +21,7 @@ import time
 import urllib.parse
 import xml.etree.ElementTree as ET
 
-from common import (NAMES, QUERIES, countries_in, http_get, in_slot, iso_z, load_json, now_utc,
+from common import (NAMES, QUERIES, countries_in, hours_since_slot, http_get, iso_z, load_json, now_utc,
                     ran_recently, save_json, scheduled)
 
 KEEP_PER_COUNTRY = 6
@@ -143,11 +143,9 @@ def one_per_story(items: list[dict]) -> list[dict]:
 def main() -> None:
     t0 = now_utc()
     prev = load_json("news.json", {})
-    # in each refresh slot; and if GitHub dropped a slot's run, any later run catches up once the headlines are
-    # more than 6.5 hours old (the longest regular gap is 7 hours, 00:00 → 07:00)
-    due = in_slot(t0) and not ran_recently(prev.get("generated"), t0)
-    overdue = not ran_recently(prev.get("generated"), t0, hours=6.5)
-    if scheduled() and not (due or overdue):
+    # once per refresh slot: if GitHub starts a run late or drops one, the next run catches up (a late run on
+    # 31 Oct found nothing due because of a fixed time window, and the headlines went 14.5 hours without an update)
+    if scheduled() and ran_recently(prev.get("generated"), t0, hours=hours_since_slot(t0)):
         print("Not a refresh slot (or already refreshed); skipping.")
         return
 
