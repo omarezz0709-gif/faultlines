@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-10-31T10:48:05Z",
+  "lastRun": "2026-10-31T19:39:09Z",
   "log": [
    {
     "date": "2026-10-31",
@@ -9,11 +9,6 @@
       "label": "Argentina–Brazil",
       "change": "Partner → Tense: Brazil summons Argentine envoy over Bolsonaro flight to US",
       "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOR3RSMTI1MU5UcUx0UDFvOTYyWk1YOE56NnFNZTN4UDZHZm5DR2NaT1M2LVYxWVFiS3l0N2hwZ3BWNHp6NlFyNVluVlcxYzJDV0NYWFhDNG01TDVycVRRS21taFJyQkJnb0dhSnQzOEhKelZOU0s5V3ZVOGZnNU9DS2NSc1U3QVo1amxGQjVxZGt6RWRvVlMxMC1Xc2ZkdS1udHNlZzdRUnBtcHJrS25tMWZXb1RPYXpHeE5iZw?oc=5"
-     },
-     {
-      "label": "Jordan–Syria",
-      "change": "Normal → Tense: Jordan launches airstrikes and clashes with armed border infiltrators",
-      "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObmNNNmZnOTYyOWlEVUQyRVJya3doNDh1eVFVR0NMbWZEWllaS2p4bU9NeGFaZ1VHOURsRFhScTVRYjZnVXJuZmNPTzJyNU43YlRrTWQ0cU9ldXQ1VGVadDhQbG5mcTZnX3JlZEFtWm9kbFZxVUNyQUVwQUZXRGd0bGJMNGtuQ0c1cnhiNzJ0RWloNGRJajZEZjN3al8zZDFINHJHeldUTWJOVUc2Qk1PVUVKU0hLNFBqYU83cEVR?oc=5"
      },
      {
       "label": "Algeria–Niger",
@@ -44,6 +39,11 @@
       "label": "Grenada",
       "change": "Election scheduled: general, 5 November 2026",
       "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxONkxBZXJ2VkpWajdlNUlsMEhEYUtZUFczOHh1VTRkc0FBMU9FVkdNc1FJcUs2TUFVTy05eWtiQzBjNDlseWp5TFZtS1lYSWg5Z3ZQX2RRdDJuQzFweDR3eFFHelVLRnM3bGhRb0NaOHJ5R0d5ZnpvUUczenRuMzJUV2JmTl9rdVhEeWtMNA?oc=5"
+     },
+     {
+      "label": "Jordan–Syria",
+      "change": "Normal/mixed → Tense: Border clashes with armed infiltrators",
+      "source": "https://news.google.com/rss/articles/CBMibEFVX3lxTE11Nks5RmRGU204aGFXZGUxR19NYU5NZl9uUHpvUE8xVzBZNGJtd2lseC1KRmZlZ0hiUXZzcFVMaERHSDhRVEZ2LThFcEotdEFEYlNiS09SdDZKdHVLelU2aEV2eG93TDFpc2JnZg?oc=5"
      }
     ]
    },
@@ -1823,7 +1823,7 @@
     ]
    }
   ],
-  "summary": "Tensions rise between Argentina and Brazil over Flávio Bolsonaro's flight, Jordan clashes with Syria along their border, Algerian troops deploy to Niger, and a tanker is struck by limpet mines in the Strait of Hormuz."
+  "summary": "Updates reflect regional tensions in Jordan and Syria, rising India-Bangladesh water friction, and recent electoral updates."
  },
  "relations": {
   "DNK-USA": {
@@ -2022,9 +2022,9 @@
    "a": "BGD",
    "b": "IND",
    "s": "T",
-   "note": "Tensions persist as Bangladesh presses India to negotiate a renewal of the expiring Ganges Water Sharing Treaty.",
-   "updated": "2026-10-29",
-   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOb1J1VC12SGJGZWhydURqMndrdThQSlRVcHFpQ3QwYUpORlM2VDd2enJvOXRFVXdlSTNGQW4yRU5CdnlwYkF0eHFXc0drMG5sVFFJcVBZZEFTd2RxbFdqUGdCcU5kTHFqb2VSRHVnR3lCbV8tOHRaU0IyUVZvUHNacjlfbENQa0psMFpsY1pDb0lBNmo0RF9tOGE2YjJRcVBrckRoN2g1bF92WHFSTEQ0Mjln0gG3AUFVX3lxTE4tb2d4M2NZekFheUlIdGxtRXI2YzdhLS01c0FWb3JZU015UFZKNGJuRmVZNlVvek0tZlF3NVV1Sjl0ZDF0cE1uODAyNFU4enhvSmd3d0tlRlpaM3NYRENnbkdNUnY1Y0tZdWdKVlpSVEJZd2VvWnNqMUptQ3owVHloSW5VN2xfQUNneFdCbk0tQ2F0UHhyeVQ1NkFLZnROVTY3cDZpeWg3WmpJM2pZTkl4Tmo2Nmp5cw?oc=5"
+   "note": "Tensions persist as Bangladesh opposition leaders warn against transit corridors and demand a fair Ganges water treaty.",
+   "updated": "2026-10-31",
+   "source": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNMlRna3pUYmhhdUVSbmxaTFE1dDZnNlMzU3JLUGZrRTFPV2U4SWtXNV9NZm1HUlUwTkRLTDNidVpKdi10YlBtd250ejd1Qjg2WXNEYnV4Q3I1OWNWak15SjJoRkpGelNWVnBsdjdYbExFRnNOUUI4cF9wcUZhY1Q3R2p0VG5iOUtPZkNwNGd3YVFSVWlRLXpSZVpPTlNZVE42eE1wbHZnYy12NzR5X1VMckwtV0xWX2Q2Zm5BTUFKN0dIYTYxbHVBWGRrNXBzVWdTYWFuc1BYb3g2SWo5RXV4SjFiMFBrOV9Ob1g3ei1QSdIB9gFBVV95cUxQaXd3TldLc0lCcmI5VU9iYTlnREE0dVhXazc3LV9WaG9adjF4Rm9zcDNTNDhTbkFjZ0VXZk0tNkYzS3lPMlJZTjN2Y19zNjVhcFZjbVJQcDR3WUt1WHA0bmdMMDY4M19YM3lNbHM0Tmk3N1VPU05OQjdYSkluX1R4bXRuOW1MQjd5eFUxY1prbHhzUndWWkk2Q2ctSll1VG1zT0xKTXlxMk84MWUxUTRhSUFhcE9MS0hzRHlnYXZRX29IcW1zeWZlQmk0cldQRUtVYUcwOE1kc0tHNE5mZDJmajNqeEdvZ3NEUFpCb2d6anB0eWNhcWc?oc=5"
   },
   "MAR-SAU": {
    "a": "MAR",
@@ -3238,9 +3238,9 @@
    "a": "JOR",
    "b": "SYR",
    "s": "T",
-   "note": "Tensions flare as Jordan strikes targets in Syria and clashes with armed infiltrators crossing the northern frontier.",
+   "note": "Tensions flare as Jordanian border guards clash with armed infiltrators crossing the Syrian frontier.",
    "updated": "2026-10-31",
-   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObmNNNmZnOTYyOWlEVUQyRVJya3doNDh1eVFVR0NMbWZEWllaS2p4bU9NeGFaZ1VHOURsRFhScTVRYjZnVXJuZmNPTzJyNU43YlRrTWQ0cU9ldXQ1VGVadDhQbG5mcTZnX3JlZEFtWm9kbFZxVUNyQUVwQUZXRGd0bGJMNGtuQ0c1cnhiNzJ0RWloNGRJajZEZjN3al8zZDFINHJHeldUTWJOVUc2Qk1PVUVKU0hLNFBqYU83cEVR?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMibEFVX3lxTE11Nks5RmRGU204aGFXZGUxR19NYU5NZl9uUHpvUE8xVzBZNGJtd2lseC1KRmZlZ0hiUXZzcFVMaERHSDhRVEZ2LThFcEotdEFEYlNiS09SdDZKdHVLelU2aEV2eG93TDFpc2JnZg?oc=5"
   },
   "ARE-CAN": {
    "a": "ARE",
