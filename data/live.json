@@ -1,7 +1,52 @@
 {
  "meta": {
-  "lastRun": "2026-10-30T20:17:12Z",
+  "lastRun": "2026-10-31T10:48:05Z",
   "log": [
+   {
+    "date": "2026-10-31",
+    "items": [
+     {
+      "label": "Argentina–Brazil",
+      "change": "Partner → Tense: Brazil summons Argentine envoy over Bolsonaro flight to US",
+      "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOR3RSMTI1MU5UcUx0UDFvOTYyWk1YOE56NnFNZTN4UDZHZm5DR2NaT1M2LVYxWVFiS3l0N2hwZ3BWNHp6NlFyNVluVlcxYzJDV0NYWFhDNG01TDVycVRRS21taFJyQkJnb0dhSnQzOEhKelZOU0s5V3ZVOGZnNU9DS2NSc1U3QVo1amxGQjVxZGt6RWRvVlMxMC1Xc2ZkdS1udHNlZzdRUnBtcHJrS25tMWZXb1RPYXpHeE5iZw?oc=5"
+     },
+     {
+      "label": "Jordan–Syria",
+      "change": "Normal → Tense: Jordan launches airstrikes and clashes with armed border infiltrators",
+      "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObmNNNmZnOTYyOWlEVUQyRVJya3doNDh1eVFVR0NMbWZEWllaS2p4bU9NeGFaZ1VHOURsRFhScTVRYjZnVXJuZmNPTzJyNU43YlRrTWQ0cU9ldXQ1VGVadDhQbG5mcTZnX3JlZEFtWm9kbFZxVUNyQUVwQUZXRGd0bGJMNGtuQ0c1cnhiNzJ0RWloNGRJajZEZjN3al8zZDFINHJHeldUTWJOVUc2Qk1PVUVKU0hLNFBqYU83cEVR?oc=5"
+     },
+     {
+      "label": "Algeria–Niger",
+      "change": "Note updated: First Algerian troops deploy to northern Niger to safeguard energy assets",
+      "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNM2hnSGszTm0teWJkams0T1J1Mkt2VGtqUFlSM0dXU21wRUlGeWNGMVdpcjFJdHZTcy1ZQVdiSGVlVzZpQ0Z4a3V2VFF4YmVKc3RmV1V0dXN4N2p1SzdFN2gtTnVJdjlMb1Z6eGFiSFd4MU83bjB3aWhiS2x6TGN0ZDJuN1NEVjBxdkxWV3d3?oc=5"
+     },
+     {
+      "label": "Sudan–United Arab Emirates",
+      "change": "Note updated: Abu Dhabi court sentences Sudanese army leaders to life over arms deals",
+      "source": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPeG9raU1zVlBGRzdCY01RNFZxaHAtX29OY2Z1R3lUTlRhNHNWWnd3Y2stdDhmNWthcWxmdHpEYWhZVVNrTUxwQ0ItZHJnOE1sVWFSSlhaaFQxbzkzVzYxS0hiLVpRTmpNVGljUTZibGl4eGpqVUE2WW85emN6N2pkZV9YbmVYQU9CY2s2ZTFlRnVwV0hHcERKWV9EaUtqanNJZGlnQzBjM1NVS09zaHNycXRxSDZwUndQOURZeGpxMWNRSFRhWFp4NnZQQ2dIRDJpMFhCMmNVQTZXbzBhNGdF?oc=5"
+     },
+     {
+      "label": "Strait of Hormuz",
+      "change": "Status updated: Panama-flagged tanker struck by limpet mines",
+      "source": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOUDJoRi1sQlI1SHZyakFZcjRRQ1E0NFB5VDVmLVRXZVdkV0ROd1pxZWR5c3VpRlZONDBySDdKSWdVWng4RGtFbWRIaF9JTnVpZmNYbmJ4WmtCQTRobDJTLW5zQ1VITDR0TFdQUUtiakdRV3RsME50WmRsdUxKRXV5R2Y3WHJKOVJ1WnUwNWdSQjc0UHFLTWtmZGs3NnhvVXp6R1lhbERvdl9MbjFnZTdKZXdpY3FJbVJXUnphc3ZlYVFLUnN4Wkx0dFlmbHpXT0ZNZ2VITzdIU3hLNmdsUmfSAeMBQVVfeXFMTTVhdmlKU2dLLVg2T1ZvX05lZGVRWE9nbFZneHFNTFlHU2pkV3lDVWdiLXZFNWp6MFNEaXhwOXhiczlSMmZiX1cwTDhlZkZUc0FZWjR3blBlQnJSaVdZZVE2a3pweVBEeUJpa0pUejhvWmhvWXNRWVd3UXRaWVF3QldmTUF2cnZTdnh1SjVwQzlLa2xnV0VMZHNoQkF4ZEdSSjFzXzJiUm9ZSWg1SldpbjkzWjRIeG93OEZfVkdGaHFzbVdqUnU0SXB1VG9wRGtvN19YWGRmRnNGZW5KQ29WWGF4Smc?oc=5"
+     },
+     {
+      "label": "Israel",
+      "change": "Election recorded: legislative, October 2026, hung parliament",
+      "source": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9MTENoZ1RkbkUzd2lBTWRrMU13dm5fWUs1M1dIOEZ2bWg2WmtYbmpBdllLQ0dGaEZETkcxRTR2UnJvSmYwQV9fRWREWGd2Sjd3ZmRoUGdR?oc=5"
+     },
+     {
+      "label": "Serbia",
+      "change": "Election recorded: parliamentary, October 2026, student-led movement",
+      "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOc2Q5OWc5QW5wNU9LTW15WHVzeV9fOWI3bUhGNzF0bUNSY3pPZ0JfSzZsNzdhYlFHYXVodVFFUVQ2WTBVWTJXVl9kWDcxUWkwaXNUemh5bFY5M3FGdk9yT2Y1T0YyMmRnZ1I0Q3FFaUczSHlZWm0zbnBNbHNFd3ZxOE9zR2piX1JjdTBvNw?oc=5"
+     },
+     {
+      "label": "Grenada",
+      "change": "Election scheduled: general, 5 November 2026",
+      "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxONkxBZXJ2VkpWajdlNUlsMEhEYUtZUFczOHh1VTRkc0FBMU9FVkdNc1FJcUs2TUFVTy05eWtiQzBjNDlseWp5TFZtS1lYSWg5Z3ZQX2RRdDJuQzFweDR3eFFHelVLRnM3bGhRb0NaOHJ5R0d5ZnpvUUczenRuMzJUV2JmTl9rdVhEeWtMNA?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-30",
     "items": [
@@ -1776,39 +1821,9 @@
       "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQd1NUQXQ5UGd5VHhQeUlMRS01X2ZQUjhtamJ3WkFjS280ZlotZlJJMkFHVENqRjU3UXNKR0JUa1c4LS1pdDRKVnNBZm1KUUZkc2drQ1BkSkM5Y2IzMFNJUDhCb2lOTWNzSk84eXh1REFlR19xSVNRM0dPMnhwVkIzd3RKMmNhM1BvVTJfdWtjckdpOTRHbU5iOTFzaG42eUVCYkpKX0F5aDRvVU5VQlpzOElCdzJ4c2g2TkN0R1JCaUtMcjIweVo2VHYyLVpKa2xBRHdaeW1tdHrSAd4BQVVfeXFMT2dVTllTR2pvNXFzdEtwb1dBeV9XUENDVG5UT0o3VjcwVE1pNGZxM1lwUlhodHdrV3o3WHo4NU1Sc2F2NUdoWHJXV1ZpNV9DNlA5ajNaeUREV0JON2oyMlQtVm5XVVI1SnlWdzJ6MVVrYWpCWUFwRDV4bUp3SFVwaC1wTDZNYUgyV3FBZTVsVElYSEdhZi00Mkdpci1sQ3BMbjdSSjlXUVd4ZWpfd0J0S3FEOXM5dGxOMTJ2c1Fyei04alV5VTNBUmJvSXpZQWVMYW11bk43YnVyOVpjN0pR?oc=5"
      }
     ]
-   },
-   {
-    "date": "2026-10-01",
-    "items": [
-     {
-      "label": "Afghanistan–Pakistan",
-      "change": "Tense → Armed conflict: Pakistani airstrikes inside Afghan territory",
-      "source": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFB1UjFvQ3JILUl0bm84Tmc4XzZwcmlDWWRDNEFDaDdjTUdNTWwxMzN5anhKeERrRUlLSEZCZ3pjdm9sajdYeDEwZjhR?oc=5"
-     },
-     {
-      "label": "Morocco",
-      "change": "Fatima El-Mansouri appointed as first female prime minister",
-      "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPT01lcWlTam4zYjdIQmRfYkswS3ktXzY5SXRPNjJ6ZFhtRFNMUDRobjV6MHVMMy1zeWdZUVB4YWxBZ0dLcUxSOHM0d0hxTjJwR0tQZUl5UGx3VDVuNDN3ZHRheVhpeDB0RmJGdTd0LVNKc2lCR194bG1PM25nNk9kYzM5REJ5Z2hxSG5wSGpza0dmNlV4cGwyTlhNU0FtQlRQaXhqR0RlTkxOa2pjS2JrVHVkQ1ZJRnFycWZmTUxfQW5ZZGFwd1BvWTRrMA?oc=5"
-     },
-     {
-      "label": "United States–Syria",
-      "change": "Normal: US lifts long-standing arms export ban on post-Assad Syria",
-      "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTWJya0JHWHhMSnFWSjFvVS0wSkUyazlqX2NhZ1dzOC1mVjZuZFVfc2JySU9oeFo4V1BSRjRIXzdKa2xIUnhhUkI1S2sxd2hoTFpTMXluMEM3WFlzYjY5RzE0dVl5OHhFWXFMaGlITHJwZHRJaGtEQXliR2ZEemFBMw?oc=5"
-     },
-     {
-      "label": "El Salvador",
-      "change": "Scheduled presidential election for 28 February 2027",
-      "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNeXdBSjRPQ01PM2lPbm54TU5leDVmNzdYa3hwMkFkd3pPY2hZN2k4TWpzbWJqSWtXM3JpTWl0cm5pb19wRi1WSFNPYUQ5MUg3akNhdmFGT0xnY25JZEp0ekNHbUlTZXdwdHAxRkhWU2EyQWxOVzdSMEpOY3pudkRva0xxUG9STXdGaGF1aUhqWlIyTWVXU0lYc252YmJtTDNWcnFLekNIbkZlZmlESzg2TG83OWpPb0tQaFBhbkFfdw?oc=5"
-     },
-     {
-      "label": "Eritrea–Ethiopia",
-      "change": "Tense → Armed conflict: Eritrea severs diplomatic ties and Ethiopia capital hit by drone strikes",
-      "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQeEVNU0ZlSFBNbXhPTXdaVEw5c1FCY2RORElXeERNVW5PN0I2ZkRmaVhFcTFKaTh0UkxiZ2gzZGVSU2I2dkxmdS1TVHoxaHQzbFl1V0ZSWXE0dzNNaWpJc3hXNHVvd3hjYUhOUjU5N0NCaVNxR00zZjBWOWs5eEtkdU8tSkJnMl9KbkJHdC14anduWldyX3V4aFppU2dTNTZtWWVTVjhsU0UwMFlHUzFYcQ?oc=5"
-     }
-    ]
    }
   ],
-  "summary": "Updates reflect regional security events in the Middle East and East Africa, cyber incidents, and diplomatic adjustments."
+  "summary": "Tensions rise between Argentina and Brazil over Flávio Bolsonaro's flight, Jordan clashes with Syria along their border, Algerian troops deploy to Niger, and a tanker is struck by limpet mines in the Strait of Hormuz."
  },
  "relations": {
   "DNK-USA": {
@@ -2311,9 +2326,9 @@
    "a": "DZA",
    "b": "NER",
    "s": "A",
-   "note": "Algeria's parliament and president approve deploying army units to protect energy assets and shared interests in Niger.",
-   "updated": "2026-10-26",
-   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWEFzMVJsdFFhYTRiQlZMRlczc3RYOHhVVXVFVHNFQmRxNzFZQ1M4dTgtcXAtb2JDZS1SdlpMWkJsT05UTVh2ZWJ6VzdIRGh6M3Vkd3ZrRlQyTmxTYV94eExvMER6WlhIakN2bm5oeFJLZzQtZDJNc09fZ05qR0daellWazBIeWNfRks0dW52UjJPcTlicFBxazAxcjB1blZQN19tMUdR?oc=5"
+   "note": "Algerian military units deploy to northern Niger to safeguard shared energy assets, marking their first overseas mission in decades.",
+   "updated": "2026-10-31",
+   "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNM2hnSGszTm0teWJkams0T1J1Mkt2VGtqUFlSM0dXU21wRUlGeWNGMVdpcjFJdHZTcy1ZQVdiSGVlVzZpQ0Z4a3V2VFF4YmVKc3RmV1V0dXN4N2p1SzdFN2gtTnVJdjlMb1Z6eGFiSFd4MU83bjB3aWhiS2x6TGN0ZDJuN1NEVjBxdkxWV3d3?oc=5"
   },
   "DOM-HTI": {
    "a": "DOM",
@@ -3222,10 +3237,10 @@
   "JOR-SYR": {
    "a": "JOR",
    "b": "SYR",
-   "s": "N",
-   "note": "Jordan and Syria reopen the Nasib border crossing and establish a joint security committee following recent airstrikes.",
-   "updated": "2026-10-28",
-   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPT0M2bWJTbUJ3ZzhJOWtjS0FneXhHWlNrTGZ5aXNpUkRpVllZU0dhZzFfNmhvSUdZS2xScFhGUXdtQzJ0UTJHcEUySGpqcFBRWnZaRG56TXVmU2dwa2ZoQ0tYZzM5Ukplb2ZyZzlFQkFNTjE2M2QwbXpyZktXeV9SQzBGczFYT1dsaERnMzB5anZEN041RkRLWm80NFlRc2tIbUF2bA?oc=5"
+   "s": "T",
+   "note": "Tensions flare as Jordan strikes targets in Syria and clashes with armed infiltrators crossing the northern frontier.",
+   "updated": "2026-10-31",
+   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObmNNNmZnOTYyOWlEVUQyRVJya3doNDh1eVFVR0NMbWZEWllaS2p4bU9NeGFaZ1VHOURsRFhScTVRYjZnVXJuZmNPTzJyNU43YlRrTWQ0cU9ldXQ1VGVadDhQbG5mcTZnX3JlZEFtWm9kbFZxVUNyQUVwQUZXRGd0bGJMNGtuQ0c1cnhiNzJ0RWloNGRJajZEZjN3al8zZDFINHJHeldUTWJOVUc2Qk1PVUVKU0hLNFBqYU83cEVR?oc=5"
   },
   "ARE-CAN": {
    "a": "ARE",
@@ -3258,6 +3273,22 @@
    "note": "Ethiopia strengthens defence ties with Russia after acquiring 12 Su-35 fighter jets and agreeing to buy S-400 air defence systems.",
    "updated": "2026-10-28",
    "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdFpIcHZIaW8xMGt2RnJuNjRnRnJrX0llbHZuakJnN19VNGEtVndLSGU5MmR2cVJ5TFRLM1Y4WDFZd3pUbUNvYTVfRmpnODI5bXVaU3Y3WGx6dFFDNUhTVXFJbFdkZW9YejNNRlhWZnJaa2ZycW42akhXTXJBdDNmNm53cE9Ka05xZGxJMTRlMTFPMy0xQkxIbzA5WkVjVVpiOGg3c3pHTjJhVHZWVkxTS1FuVkxwZw?oc=5"
+  },
+  "ARG-BRA": {
+   "a": "ARG",
+   "b": "BRA",
+   "s": "T",
+   "note": "Relations sour as Brazil summons the Argentine envoy over the departure of fugitive politician Flávio Bolsonaro to the United States.",
+   "updated": "2026-10-31",
+   "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOR3RSMTI1MU5UcUx0UDFvOTYyWk1YOE56NnFNZTN4UDZHZm5DR2NaT1M2LVYxWVFiS3l0N2hwZ3BWNHp6NlFyNVluVlcxYzJDV0NYWFhDNG01TDVycVRRS21taFJyQkJnb0dhSnQzOEhKelZOU0s5V3ZVOGZnNU9DS2NSc1U3QVo1amxGQjVxZGt6RWRvVlMxMC1Xc2ZkdS1udHNlZzdRUnBtcHJrS25tMWZXb1RPYXpHeE5iZw?oc=5"
+  },
+  "ARE-SDN": {
+   "a": "ARE",
+   "b": "SDN",
+   "s": "H",
+   "note": "Hostility deepens as an Abu Dhabi court sentences eight Sudanese nationals, including the army deputy chief, to life over arms deals.",
+   "updated": "2026-10-31",
+   "source": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPeG9raU1zVlBGRzdCY01RNFZxaHAtX29OY2Z1R3lUTlRhNHNWWnd3Y2stdDhmNWthcWxmdHpEYWhZVVNrTUxwQ0ItZHJnOE1sVWFSSlhaaFQxbzkzVzYxS0hiLVpRTmpNVGljUTZibGl4eGpqVUE2WW85emN6N2pkZV9YbmVYQU9CY2s2ZTFlRnVwV0hHcERKWV9EaUtqanNJZGlnQzBjM1NVS09zaHNycXRxSDZwUndQOURZeGpxMWNRSFRhWFp4NnZQQ2dIRDJpMFhCMmNVQTZXbzBhNGdF?oc=5"
   }
  },
  "threads": {
@@ -3537,11 +3568,11 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "Iran maintains closure threats while a commercial ship catches fire off Oman following an apparent attack near the waterway.",
+   "d": "A Panama-flagged tanker was struck by limpet mines near the strait, prompting the evacuation of 27 crew members by Oman as Iran halts tankers.",
    "n": "Strait of Hormuz",
-   "s": "Ship fire after attack",
-   "source": "https://news.google.com/rss/articles/CBMiugJBVV95cUxOckJDU2VJbFkwdU5fd3dIVWZBSHd0NnppaTZ2T3BHLUcyMlBSX0M5YUpVVzBONHo0T1hoX09SaWhQbkNWQ0NCMFI5WF95Vm1QRTRpT3lHUzRFN0FnakljYWdfMjlJVVp6b1dhYjZaaFlnanNqRWp5bEpnZGd0QU83VGQtbllONWxwaS1SMzM3ZDczUHlFLUc3cXN0czk4bEZZSWNkRU16djJRMWlsSGg2eXhINlZ4QW1Ua19wQjh1ZXF2c3dBMFRteGhmMGN1MmpiVjNrLUstTDNOLWpKNzkzdEM5Z1BoV3lpXzlyOG5za3cxWkRkdzh0dGxHd2JHenppb0prUm90MDJuUHFpejVLd2ktTlcxdm0xYWktMmRIRy0yZ2RZMERXVjRPWXBGNzFjVTJkOUp5QXRmZ9IBvwJBVV95cUxPZUlISzh5Y19USkhnVXBpZXZiTC11QW0xME1pSENOd0o4WDJaY2lHWUJnWGxiaDBOb0kyVk9YR2VZNXZqRlVXb3RrRlo1dENWVGFGOFktdmtpM1g5ZjNWSGJOa3hWNkRMdEs1bEVYTVVOWHV3R0FjcW81T0FzdGlaekxheDhzbktmN2JzUzVFVTFrVnJBRHVmVWhVeHNCT2Nmc0Znb2MyS1lsbjFoYlJjVlBnZ3JxVldmcUVoR0F4NmFWeDR6d01kQWprZGM5R1c3SWhfdjVJVUJ3MUN3TWJ5am92LUR2SzdCUkpURHdtMUF3ejFHVG43YXVHWWlnTHJ2M3FyRE9fZVhHNUZxQm5pZFdwb1FqY00tdFVHM1hXQU50TUdXRzk1d2NwZ0lMcXc0WmRTZ19ubDVIYll1QnZF?oc=5",
-   "updated": "2026-10-30",
+   "s": "Limpet mine attack on tanker",
+   "source": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOUDJoRi1sQlI1SHZyakFZcjRRQ1E0NFB5VDVmLVRXZVdkV0ROd1pxZWR5c3VpRlZONDBySDdKSWdVWng4RGtFbWRIaF9JTnVpZmNYbmJ4WmtCQTRobDJTLW5zQ1VITDR0TFdQUUtiakdRV3RsME50WmRsdUxKRXV5R2Y3WHJKOVJ1WnUwNWdSQjc0UHFLTWtmZGs3NnhvVXp6R1lhbERvdl9MbjFnZTdKZXdpY3FJbVJXUnphc3ZlYVFLUnN4Wkx0dFlmbHpXT0ZNZ2VITzdIU3hLNmdsUmfSAeMBQVVfeXFMTTVhdmlKU2dLLVg2T1ZvX05lZGVRWE9nbFZneHFNTFlHU2pkV3lDVWdiLXZFNWp6MFNEaXhwOXhiczlSMmZiX1cwTDhlZkZUc0FZWjR3blBlQnJSaVdZZVE2a3pweVBEeUJpa0pUejhvWmhvWXNRWVd3UXRaWVF3QldmTUF2cnZTdnh1SjVwQzlLa2xnV0VMZHNoQkF4ZEdSSjFzXzJiUm9ZSWg1SldpbjkzWjRIeG93OEZfVkdGaHFzbVdqUnU0SXB1VG9wRGtvN19YWGRmRnNGZW5KQ29WWGF4Smc?oc=5",
+   "updated": "2026-10-31",
    "t": "strait",
    "lat": 26.57,
    "lng": 56.25,
@@ -3752,9 +3783,9 @@
   },
   "SRB": {
    "nextelec": "parliamentary election, Oct 2026",
-   "updated": "2026-10-30",
-   "source": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOSXNuMjhvQlFQYUJPdGM4MHJsdHZ4bkFyRHR6cUxFM0x5SHJreHdVWndseXZqejZjU3U0V05ENm11WEthZnpLV2tVczdVcWlkQ2ZmVjJjblNmNThoRWRQTEZ4TkNFNVl4ZW8wVXRoSFpKbFU4b1BMU0EtVi1RVkxHLWJYUm02UWJIeEprcEFWZzF6US1rR2pORkNWMlFLRUhIOTFDNlMtQ0ZPN2J2VlFOZmxWbElsc25lMWIzU0RLdW9walBiOWd4RlFXaUh6UQ?oc=5",
-   "lastelec": "parliamentary, October 2026, Student List"
+   "updated": "2026-10-31",
+   "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOc2Q5OWc5QW5wNU9LTW15WHVzeV9fOWI3bUhGNzF0bUNSY3pPZ0JfSzZsNzdhYlFHYXVodVFFUVQ2WTBVWTJXVl9kWDcxUWkwaXNUemh5bFY5M3FGdk9yT2Y1T0YyMmRnZ1I0Q3FFaUczSHlZWm0zbnBNbHNFd3ZxOE9zR2piX1JjdTBvNw?oc=5",
+   "lastelec": "parliamentary, October 2026, student-led movement"
   },
   "CHE": {
    "lastelec": "referendum, Sep 2026, rejected stricter neutrality",
@@ -3789,9 +3820,9 @@
    "source": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE55OUdtMGl0TkJNTWtTa2tSSjI3TnMtTVdTOXZDVFhwZU9WRWFvLTJkYUJZM2pNMERtSDVGR3Q4UFgwTUczRTBoeUFNTF9Nem1Lalh0bFBZOFN1WHNDcjFZOXpB?oc=5"
   },
   "GRD": {
-   "nextelec": "general, November 2026",
-   "updated": "2026-10-27",
-   "source": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4xaEdLeG9RV1g2QzZWLTJqdmFTNElQMm1PazVsc0FCQnVTSGdlcnFpVjJIY3I3eXFCYkJqeGpHRE9iSXJhaGhuTkRkWU1KQkJmb0dDbmdzT3ROaHMwNXkxb0NCQW1wcEVhZWdZRTBNRElZTG9FMWZjdjBnbkNYWUk?oc=5"
+   "nextelec": "general, 5 November 2026",
+   "updated": "2026-10-31",
+   "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxONkxBZXJ2VkpWajdlNUlsMEhEYUtZUFczOHh1VTRkc0FBMU9FVkdNc1FJcUs2TUFVTy05eWtiQzBjNDlseWp5TFZtS1lYSWg5Z3ZQX2RRdDJuQzFweDR3eFFHelVLRnM3bGhRb0NaOHJ5R0d5ZnpvUUczenRuMzJUV2JmTl9rdVhEeWtMNA?oc=5"
   },
   "LVA": {
    "lastelec": "parliamentary, October 2026",
@@ -3849,9 +3880,9 @@
   },
   "ISR": {
    "nextelec": "general, 2026",
-   "updated": "2026-10-30",
-   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbzRienByTkQ5U2pCV25Jd09FREVxd05VLTZRSTY1TGVTY2dsYl9zOFRucG1xN0pnOHhhLXRObUFNbGp1My1DYXB3UnByT0g0QTBMTlZqU3d6U0JrNm80bTBwSHh5N1hKcjk3MDhCaWNyNzdIaGlUZWxEWWpnUFFVNS01ZzcxUFp1MVRmdUd4YmNaRWZLdFg0R0dkTlp3TDFGX1Z3LUpZQ2I3ZDJwQlhvSFJNeEpPaHR6SlE?oc=5",
-   "lastelec": "parliamentary, October 2026, inconclusive"
+   "updated": "2026-10-31",
+   "source": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9MTENoZ1RkbkUzd2lBTWRrMU13dm5fWUs1M1dIOEZ2bWg2WmtYbmpBdllLQ0dGaEZETkcxRTR2UnJvSmYwQV9fRWREWGd2Sjd3ZmRoUGdR?oc=5",
+   "lastelec": "legislative, October 2026, hung parliament"
   },
   "OMN": {
    "nextelec": "municipal, December 2026",
