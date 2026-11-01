@@ -1,7 +1,27 @@
 {
  "meta": {
-  "lastRun": "2026-10-31T19:39:09Z",
+  "lastRun": "2026-11-01T00:39:08Z",
   "log": [
+   {
+    "date": "2026-11-01",
+    "items": [
+     {
+      "label": "Ghana–Russia",
+      "change": "Normal → Partner: Russia agrees to support Ghana's 2,000 MW nuclear power plant project",
+      "source": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPMUFCOTdXRGl6LXQzOTk4UF9aYUFQcHJ6M091OTlsVlRDLVdDY0dGNWY3aU91UkZzSUoxMDZBSlBnVV9WSUN6T29wdW1SQl84NE1CT3E1T0ZVNFN5a08zWVdKbHRXSEFQVUkxa29xWDVTdjlsWjVSUE1YcnRqTlI5bDhn?oc=5"
+     },
+     {
+      "label": "Serbia",
+      "change": "Recorded October 2026 parliamentary election victory by Student List",
+      "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbm9scGV5WUx5YkNkQ1U4RXczUVhwTlpUQ0gzZzd6NEtBVGYyWEJTRzZXVXhNcWdQMkxyWFc3dTJNME5CRjBMcVQ5OTlKOEJzNUtXWUtOcXc2MDFpbmxtbXh6WWJPRlpUQ0lWRjZQZ2RMNDBoU2N5VGw5dHpncEYzUVBKQzdsRmZQYlBaejJKMXNMZHVPcFFDZVJqMFZrUU1vb01R?oc=5"
+     },
+     {
+      "label": "Albania",
+      "change": "Scheduled May 2027 local elections",
+      "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQnNfZmZ3dzNlX0g1cEhQNjRDS1pqUl9iVHI1bS1lNjRlY2w1cjdPaGRHbkJpRUpFQ21oLUNBeS1qNkppMGFPZ1NOQlNCUUc2bzU1elFSTGFVSEV1WjB5TGhSc3JlR19OUmdBcWY1QjBCMW1KNTVDWTdJZ0dpdlUwZWlFQ3lyMnJwSW5qMDJ3WV9YNnl3MTZEaTFn?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-10-31",
     "items": [
@@ -1761,69 +1781,9 @@
       "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPb1hwSU50eTEyejRKcV93MldTRVF5NHVOY1BBaDVFTVhIZGx6QnRidW9hQllEb29tazBtQ1EyaVBsQXRBT0syN2lyOXVXV1VGc19rbGpvZDNxX0dZSXZ5VHBKU2NYeldpMGlVVDJWSDN3Uk9BSy1sbkNKUzRGLTNIU0JhMjNkVnhpRU1oOFNvc2NIQThxSndfUjF1UlBEVDZ6ajVXWUF30gGrAUFVX3lxTE1Oam81eWlHT1pBT01SOUFBUVVhY1pUUkM1aVNEZWZSWTdJQk96ekcyeENmMC1VOUtJZUQ1MzZ1YTctWGNUalNyblNIaU56bEU2WkdtUF8yWUJoODJTVkJQNHZjYXppalJGYXlOVW8xdHlwV1dIeU1TMUFqb2FPYjk3eUNRSXQyZTIyOGlMdW5rN19NUGQ1dFZXZFowa0lEVnVVTGdOajlrWmRKaw?oc=5"
      }
     ]
-   },
-   {
-    "date": "2026-10-02",
-    "items": [
-     {
-      "label": "Eritrea–Ethiopia",
-      "change": "Tense → Armed conflict: Eritrea severs diplomatic ties as northern fighting escalates",
-      "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPVmRQeE0yUmJiQkRnMnlqS0pNZWRPcVZNWkxIS25CY0hELWxzbFRqUHl5cF8tYmZjOHpxOGVmc2ZxdXNCMmxFMUJSRkJ5NkU2MHhablJHb3pTdVJyNXVNUWVMTGwyb1lJdXdzek5yV2dGcHNzc0JndGFkdnN4bm5HMFJxdHRicWFHQVNTVUh5Q2RVbDVCbnIxR1dwN2d3ZzhQNVNERnc5dVNzZ1V5UkJtclFFRlYweERicGpLRTE3SXBHOE0?oc=5"
-     },
-     {
-      "label": "Hungary–Ukraine",
-      "change": "Tense → Normal: Agreement on steps to reopen EU accession talks",
-      "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNUzFBeHhjRWpuZ3A4OWFhbnIxazBmMjFlQ1BjdVpUWWlvRmJyUlA0Q2R3d0FYQ1p2UW1KZThKaFU4dFhNOWhCMm0ydmdsRzBQc2ZIVUhIcHFiS0tlUi1Zek13SVZUOHhlelFhdmItQnR3UmxQS0g0OGpOeFA0YUNNTWtpYk5PbzVCZjZEc3MwZWV4S0pleUE?oc=5"
-     },
-     {
-      "label": "South Korea–Ukraine",
-      "change": "Normal → Tense: Row over North Korean prisoners of war",
-      "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNY1p6ejV0Yk51eTZ2R1hTYktMNXhfaENlYm9jVzhWMzZfUmZ5TndicmtEM3FHdVlheUxvLVgtSEhDMzQtRDh0Q1pFdG05NlBlV3BhRHJjQTZDXzlVNHBIM0E1aDhCY2N0LTNWbkhxTVhGdTdTVFN5VzB4RU40V0VvZm9EdThYT0RRQWdjZmFJa3lIWFlhS3llUmRpYXVGVDRYS1JpTmtSM0xwdEI3LU9rME90SnVuQmRLVUh1TXB4SWg?oc=5"
-     },
-     {
-      "label": "Bolivia–United States",
-      "change": "Normal → Tense: Bolivia arrests its Attorney General following US drug accusations",
-      "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNYWg2eTM4MXBtX2hHR0VSTmxTb2lTZFVTYlVCZ3E3Vll0ZUh0V1J4QXJWMjlfalRqMGtQYzkzTE5tX1pLQUpqcWFscWFzYWt6bjVNcFZEblo0bEtxbGRPR1dxN0QybDNldHl5WVB4ZHY2WUlDZzk4aU82VFFsWm9nZXQzVkNXcXppU2g1WjF0R2VCdXVQaTVSbm9XdV83Z1FURkVnYjVTRXZ1bHlMODJhc1JpM3h2ZTdxTGh2MWdMS1c?oc=5"
-     },
-     {
-      "label": "Egypt–Ethiopia",
-      "change": "Tense: reciprocal expulsion of diplomats over dam and regional security disputes",
-      "source": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQanp2aHpWOGxWQjlyQ1NENkxjRkxndVEzODhBbVhPcVk1N3I4ZG9LNjNyYkFUM0xFN1FiQVRMSGZ1Q3gzVVRPZUVvSEJvUDFIRXFzd2dwQkdUdlQxNldlcGU2Y2dGWW9kNkR3S1VEc0ZhRHJTdGgtSnJHeUhHTDBfcW1wVFZCcVowM3BZ?oc=5"
-     },
-     {
-      "label": "Taiwan–United States",
-      "change": "Partner: delivery of first F-16V fighter jets reinforces bilateral defense ties",
-      "source": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPNkZJNTkxOGlXMnp4VTFROE1YRFcySjFWd0RlaHYyTEU0ZGVFQmRiZ2RTeHdCVkNiUHhtSnVFbDNPZUlWaTR2M0dZNVRHLUEwZ05HVXZiZjZpbHF4eHJBV0RnU29CTi00TXNTcXp0c3RsNmp2MGdHcXQ1S3RqYXpwXy1yV0ZVZFduM1hhd18yX1FWMXNOTVNxOFdBM0Z2dUdxYmRocWhrdUdDSzBkUmw5Qnc2OXJzYUkxNDZ3SHdoaUxGekZ5dUtfTThrbEFDRzl6aXh4WlRxM0o5NUhVbWNkVkJ0SmJlMXZ2Z2RBLXluYw?oc=5"
-     },
-     {
-      "label": "Hungary–Slovakia",
-      "change": "Partner: updated note to reflect Prime Minister Péter Magyar in office",
-      "source": "https://www.wikidata.org/wiki/Q28"
-     },
-     {
-      "label": "Cocaine via West Africa & the Sahel to Europe",
-      "change": "Thread updated: added Sierra Leone following EU aid freeze over drug trafficking",
-      "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdWVYVDVWcExtNGRTUl9tNVpiYllpbkJNdHVaUFlQS3paVVBBdFdGV2duNzlabktBTzNINzBCQlVfWUF0WnpyY0t3MjR3aklKbjEtZUxOelRoeF9XSHZTSHprRmNNdkFoa2pDV0h3aEtEM2VjTW9Rb2o3VGRabndTNE45RnhtaTdqVDZPQ1RaWkY?oc=5"
-     },
-     {
-      "label": "New Zealand",
-      "change": "Upcoming election announced for November 2026 following parliament dissolution",
-      "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQl9wRFE3aUtVbzRfM3FkUExlX2tLaDVIejVpQm80UnZQbmM0d01JdUhOcG96NkduT015Qm50UVM5Zjl5S3pxYTBMRnlPUlFQVUZ6QzZSSFZrdWtBZjNOdnlSWDdQLUlfb2VldGNfRUxxNWN1X0RDM202bllLUWtieENFdnBhQkZCSlJsM0V3QTFwcFBiTkJXaU5TM1IzdFZOcXJIdXRtTXpoc2s?oc=5"
-     },
-     {
-      "label": "Dominican Republic–Nicaragua",
-      "change": "Normal → Tense: Dominican Republic closes its embassy in Managua over opposition bans",
-      "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOTlJFVk9zS0w5UFZON1A3RFZEaXVOdkNJdTZFVnBldnNDcDhsYTktalA4OEpxU2JqSExnNE90UWg4SG9GOUl0dU5tYllTSngtQjNyUFJ1b2RBVXVjeTQydVhReHRXanc5QVBwQkhXaXZoM1NGS2Rna2pyQXZlTUNaN29ES2gtaE41VU1IQ0VRUElfWW1QYVBwUnpYeFQ3b3c0NDNWVDFvVlRGYVVrMFZ6VUYydThGZzdHR3Rscy1B0gG-AUFVX3lxTE5OUkVWT3NLTDlQVk43UDdEVkRpdU52Q0l1NkVWcGV2c0NwOGxhOS1qUDg4SnFTYmpITGc0T3RRaDhIb0Y5SXR1Tm1iWVNKeC1CM3JQUnVvZEFVdWN5NDJ1WFF4dFdqdzlBUHBCSFdpdmgzU0ZLZGdranJBdmVNQ1o3b0RLaC1oTjVVTUhDRVFQSV9ZbVBhUHBSelh4VDdvdzQ0M1ZUMW9WVEZhVWswVnpVRjJ1OEZnN0dHdGxzLUE?oc=5"
-     },
-     {
-      "label": "Saudi Arabia–Yemen",
-      "change": "Armed conflict: Saudi Arabia launches wave of airstrikes against Houthi forces",
-      "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQd1NUQXQ5UGd5VHhQeUlMRS01X2ZQUjhtamJ3WkFjS280ZlotZlJJMkFHVENqRjU3UXNKR0JUa1c4LS1pdDRKVnNBZm1KUUZkc2drQ1BkSkM5Y2IzMFNJUDhCb2lOTWNzSk84eXh1REFlR19xSVNRM0dPMnhwVkIzd3RKMmNhM1BvVTJfdWtjckdpOTRHbU5iOTFzaG42eUVCYkpKX0F5aDRvVU5VQlpzOElCdzJ4c2g2TkN0R1JCaUtMcjIweVo2VHYyLVpKa2xBRHdaeW1tdHrSAd4BQVVfeXFMT2dVTllTR2pvNXFzdEtwb1dBeV9XUENDVG5UT0o3VjcwVE1pNGZxM1lwUlhodHdrV3o3WHo4NU1Sc2F2NUdoWHJXV1ZpNV9DNlA5ajNaeUREV0JON2oyMlQtVm5XVVI1SnlWdzJ6MVVrYWpCWUFwRDV4bUp3SFVwaC1wTDZNYUgyV3FBZTVsVElYSEdhZi00Mkdpci1sQ3BMbjdSSjlXUVd4ZWpfd0J0S3FEOXM5dGxOMTJ2c1Fyei04alV5VTNBUmJvSXpZQWVMYW11bk43YnVyOVpjN0pR?oc=5"
-     }
-    ]
    }
   ],
-  "summary": "Updates reflect regional tensions in Jordan and Syria, rising India-Bangladesh water friction, and recent electoral updates."
+  "summary": "Updated parliamentary election results for Serbia, scheduled local elections for Albania, and added a Ghana–Russia energy partnership following nuclear agreement talks."
  },
  "relations": {
   "DNK-USA": {
@@ -3289,6 +3249,14 @@
    "note": "Hostility deepens as an Abu Dhabi court sentences eight Sudanese nationals, including the army deputy chief, to life over arms deals.",
    "updated": "2026-10-31",
    "source": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPeG9raU1zVlBGRzdCY01RNFZxaHAtX29OY2Z1R3lUTlRhNHNWWnd3Y2stdDhmNWthcWxmdHpEYWhZVVNrTUxwQ0ItZHJnOE1sVWFSSlhaaFQxbzkzVzYxS0hiLVpRTmpNVGljUTZibGl4eGpqVUE2WW85emN6N2pkZV9YbmVYQU9CY2s2ZTFlRnVwV0hHcERKWV9EaUtqanNJZGlnQzBjM1NVS09zaHNycXRxSDZwUndQOURZeGpxMWNRSFRhWFp4NnZQQ2dIRDJpMFhCMmNVQTZXbzBhNGdF?oc=5"
+  },
+  "GHA-RUS": {
+   "a": "GHA",
+   "b": "RUS",
+   "s": "F",
+   "note": "Ghana and Russia expand energy ties as Moscow agrees to back a 2,000 MW nuclear power plant project.",
+   "updated": "2026-11-01",
+   "source": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPMUFCOTdXRGl6LXQzOTk4UF9aYUFQcHJ6M091OTlsVlRDLVdDY0dGNWY3aU91UkZzSUoxMDZBSlBnVV9WSUN6T29wdW1SQl84NE1CT3E1T0ZVNFN5a08zWVdKbHRXSEFQVUkxa29xWDVTdjlsWjVSUE1YcnRqTlI5bDhn?oc=5"
   }
  },
  "threads": {
@@ -3783,9 +3751,9 @@
   },
   "SRB": {
    "nextelec": "parliamentary election, Oct 2026",
-   "updated": "2026-10-31",
-   "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOc2Q5OWc5QW5wNU9LTW15WHVzeV9fOWI3bUhGNzF0bUNSY3pPZ0JfSzZsNzdhYlFHYXVodVFFUVQ2WTBVWTJXVl9kWDcxUWkwaXNUemh5bFY5M3FGdk9yT2Y1T0YyMmRnZ1I0Q3FFaUczSHlZWm0zbnBNbHNFd3ZxOE9zR2piX1JjdTBvNw?oc=5",
-   "lastelec": "parliamentary, October 2026, student-led movement"
+   "updated": "2026-11-01",
+   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbm9scGV5WUx5YkNkQ1U4RXczUVhwTlpUQ0gzZzd6NEtBVGYyWEJTRzZXVXhNcWdQMkxyWFc3dTJNME5CRjBMcVQ5OTlKOEJzNUtXWUtOcXc2MDFpbmxtbXh6WWJPRlpUQ0lWRjZQZ2RMNDBoU2N5VGw5dHpncEYzUVBKQzdsRmZQYlBaejJKMXNMZHVPcFFDZVJqMFZrUU1vb01R?oc=5",
+   "lastelec": "parliamentary, October 2026, Student List"
   },
   "CHE": {
    "lastelec": "referendum, Sep 2026, rejected stricter neutrality",
@@ -3888,6 +3856,11 @@
    "nextelec": "municipal, December 2026",
    "updated": "2026-10-27",
    "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQY1VORGFWSDZ6MlBBakRqaXRkUnlGUWVmbkJnd21JRnRzejd2U3BYUG02WnR0enp4TmRsU01kQkpqaE1TekxjZ3BiaklDQkMxNFR6NTE3bjZsdVJhVFNQUGVGdjlrd2ItX3c2dXhGUUQ4Vm9JajJJY3hTd1VHUFl0WHdhcDNlT0RqRXl3a2doSWc5VERQLXE2MnpzVFFfZlp6S2FpaNIBugFBVV95cUxPclRYNUJtazBJRUFqSnB2T3BZM3hmdWQyUmZzQldjS1lLQ08zbGRlMk9CdnZZZlh3aWUtUTZucHBibG1fS0hYaExzeWVXYzVhTlQ4aml4UmxEWkRDMUlZTEowRUMtSV9pZmQzZENZdzBxNVllOTlNTUZWMUJKTFU0Yk1YaTJuSk5mRGU1bUZrbFYwX0lwYTdmOERHVXlGNmN0UEJfeGVZSW92NnNGbV9kTzVZRVdKTTZhREE?oc=5"
+  },
+  "ALB": {
+   "nextelec": "local, May 2027",
+   "updated": "2026-11-01",
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQnNfZmZ3dzNlX0g1cEhQNjRDS1pqUl9iVHI1bS1lNjRlY2w1cjdPaGRHbkJpRUpFQ21oLUNBeS1qNkppMGFPZ1NOQlNCUUc2bzU1elFSTGFVSEV1WjB5TGhSc3JlR19OUmdBcWY1QjBCMW1KNTVDWTdJZ0dpdlUwZWlFQ3lyMnJwSW5qMDJ3WV9YNnl3MTZEaTFn?oc=5"
   }
  }
 }
