@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-01T00:39:08Z",
+  "lastRun": "2026-11-01T11:45:57Z",
   "log": [
    {
     "date": "2026-11-01",
@@ -19,6 +19,31 @@
       "label": "Albania",
       "change": "Scheduled May 2027 local elections",
       "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQnNfZmZ3dzNlX0g1cEhQNjRDS1pqUl9iVHI1bS1lNjRlY2w1cjdPaGRHbkJpRUpFQ21oLUNBeS1qNkppMGFPZ1NOQlNCUUc2bzU1elFSTGFVSEV1WjB5TGhSc3JlR19OUmdBcWY1QjBCMW1KNTVDWTdJZ0dpdlUwZWlFQ3lyMnJwSW5qMDJ3WV9YNnl3MTZEaTFn?oc=5"
+     },
+     {
+      "label": "United Kingdom–Iran",
+      "change": "Hostile: Iran designates RAF, Royal Navy, and MI6 as terrorist entities",
+      "source": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNQU03cEViUlBtOW1GX09UNGZLbDVNRVFiTW5VNnU5TGlTemh1NnpqdHhwT0N1UXFMQUxpRktta0ZMZ1VIc09Da0tyTHhEVVdKaEdsWjlZM1M1cXNxdGwwWEhiVGNsYm1JanI4dV94OVdxQmRScVEzcE8ydjBuajNQdUVyZkVUWkMxRHIxMzN4OTZxa3NKNkxtTzhNVUdXRGxLN1VsRGk3N0twQlZ6c05ldTdkeV9rSXB5R21HREdjaDNXZlZFREhwaDdUWWNSZjJFOVRmUVRFRjROSXlVQUNYVlVCdm1jcXYzdDNsYURn0gHuAUFVX3lxTE1BTTdwRWJSUG05bUZfT1Q0ZktsNU1FUWJNblU2dTlMaVN6aHU2emp0eHBPQ3VRcUxBTGlGS21rRkxnVUhzT0NrS3JMeERVV0poR2xaOVkzUzVxc3F0bDBYSGJUY2xibUlqcjh1X3g5V3FCZFJxUTNwTzJ2MG5qM1B1RXJmRVRaQzFEcjEzM3g5NnFrc0o2TG1POE1VR1dEbEs3VWxEaTc3S3BCVnpzTmV1N2R5X2tJcHlHbUdER2NoM1dmVkVESHBoN1RZY1JmMkU5VGZRVEVGNE5JeVVBQ1hWVUJ2bWNxdjN0M2xhRGc?oc=5"
+     },
+     {
+      "label": "Israel–Somaliland",
+      "change": "Partner: Israeli ambassador presents credentials to advance diplomatic ties",
+      "source": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9lTHpRbjQxaXFYV0J6M0c0LXBlZHFmSVdyX1B1NVpXMHM5VTJMcE1jbkV5eEdrM1d4RUs2RWQxSE95bnJBei1UdmxDb1JoZy04V2JJcA?oc=5"
+     },
+     {
+      "label": "Strait of Hormuz",
+      "change": "Updated status to reflect LNG carrier strike and Qatari reopening talks",
+      "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNSFZLdUJOcWxrbEx3N1VFZlFvd1NaLW9PWndnbXUwXzlDLUtoUTRxY2tCelQyMllzQ3NXamo3RWs3T05uQzhtNzVLbXRxTmZpUmM3enZ3T3V1dTNLMWZNejJSeElsYnJsY0VyVW1WdUh5Z1Z1WE5OanNvMWJ0QjNSUHBqOERWeThsREZjZ2Nta1dfS3VYVWt3WnN4TjdzNHRRanZ4UVhvSExhdlhuVHFqUjVlQWE2b0dHcGl5Mm9lUUdSaUxNSTJUdk5CYUdLWlNDdE5mZ18yN2lLTFZWb3NlRGhUbWZEbzRNeVE?oc=5"
+     },
+     {
+      "label": "Bulgaria",
+      "change": "Recorded presidential runoff election held on November 1, 2026",
+      "source": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPQUxEWldDVEV5Yk9sR05zeWYtVkRoSXJEMDFtN2Q0bmZva0FOSXo0YnJJOXlHX0J1WlF6R2diSlEzQjlGY1pNWUxWNGZEOF9Ick9WM3dtVlJIQ29ORktVdnNSZDk5Qm5lbU9VNzFnQnZKRDdtTGZyTFNrSHJrTU5oREZNWC1LTXhwVHN1YkQ2Ty1YNHJDQm1DUDluQVpORE9aR3ZxLVFweEIwR0kySXE4N0RQMG5jcGhwY3kyNlU4Slk4QUY0bjl5Yw?oc=5"
+     },
+     {
+      "label": "New Zealand",
+      "change": "Recorded upcoming general election scheduled for November 7, 2026",
+      "source": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPS3hvd0FLZlJhT2R0aEpuaHhFdWJWQXdOVkpCbnpwOE1ocmVaYlF3aVZhSlZlUlJXWVdIWWNOMGw0aS12RUVzR2pmUk4zNVRDYzY0N2ZZSm1XZXNFQmgxQ1Z2aU52WmZFaGdsODl0ZmRhN3pBYkdjUTFOb0pCOXZiS2VjaDJac2JmUzJHWG5vTVBXZjJVUEdFT1RPZ21kV1Bfa0ZRZG56VFc0LTl2VGZ0aENNdzVVRjJOZjhjZVlMZUxRRWt1WHZET1FHRUpLRDJ1dzdBMlVwQldMbUxZejJYSVEwMURmS0Z2V1Z3UjR5WlZlempwZkNrRGNNWXZnNnPSAf8BQVVfeXFMT0t4b3dBS2ZSYU9kdGhKbmh4RXViVkF3TlZKQm56cDhNaHJlWmJRd2lWYUpWZVJSV1lXSFljTjBsNGktdkVFc0dqZlJOMzVUQ2M2NDdmWUptV2VzRUJoMUNWdmlOdlpmRWhnbDg5dGZkYTd6QWJHY1ExTm9KQjl2YktlY2gyWnNiZlMyR1hub01QV2YyVVBHRU9UT2dtZFdQX2tGUWRuelRXNC05dlRmdGhDTXc1VUYyTmY4Y2VZTGVMUUVrdVh2RE9RR0VKS0QydXc3QTJVcEJXTG1MWXoyWElRMDFEZktGdldWd1I0eVpWZXpqcGZDa0RjTVl2ZzZz?oc=5"
      }
     ]
    },
@@ -1783,7 +1808,7 @@
     ]
    }
   ],
-  "summary": "Updated parliamentary election results for Serbia, scheduled local elections for Albania, and added a Ghana–Russia energy partnership following nuclear agreement talks."
+  "summary": "Updated relations between Iran and the United Kingdom, Israeli diplomatic representation in Somaliland, and shipping security status in the Strait of Hormuz."
  },
  "relations": {
   "DNK-USA": {
@@ -2438,9 +2463,9 @@
    "a": "ISR",
    "b": "SOL",
    "s": "F",
-   "note": "Partners; Somaliland seeks Israeli military support to counter Turkey's expanding security footprint in Somalia.",
-   "updated": "2026-10-06",
-   "source": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBoa1E0TWpzc21GSlY0WnFIUHJDY1UwMGZnOHNtS0dlWk10VzNHTU1LOTFnTG93ZTgzckkxWHpibUFrTE1EWDdpdVpMRGNhSDhYSG84TUNTc0Z5UmhweFI0?oc=5"
+   "note": "Israel's ambassador presents credentials in Somaliland as both sides advance diplomatic relations and plans for a formal embassy.",
+   "updated": "2026-11-01",
+   "source": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9lTHpRbjQxaXFYV0J6M0c0LXBlZHFmSVdyX1B1NVpXMHM5VTJMcE1jbkV5eEdrM1d4RUs2RWQxSE95bnJBei1UdmxDb1JoZy04V2JJcA?oc=5"
   },
   "BLR-LVA": {
    "a": "BLR",
@@ -2662,9 +2687,9 @@
    "a": "GBR",
    "b": "IRN",
    "s": "H",
-   "note": "Relations remain hostile as the UK blames Iran's Islamic Revolutionary Guard Corps (IRGC) for security threats at RAF Fairford.",
-   "updated": "2026-10-12",
-   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWWJ0NVNWU296YXNLZ1BDNC11S1V3MW5uY1ViQ2M3VmZ4eVZVLWtTT2x4MG4zOGJncUVrOFFyZkcwekpYZXpWRWhvc0lxWkhveHU3MmV0VW03dEo1RmN4dzVhSVFWajBzMXlZVDFQWXRkQ3V3eFdVTDdadFpJNjFCVzVlQ05WMkYxZEpmelV6RDdBaWhSN19YVDJROXcySFo0anBOWTNQYk81TENDaUY4?oc=5"
+   "note": "Iran designates Britain's Royal Air Force (RAF), Royal Navy, and Secret Intelligence Service (MI6) as terrorist and hostile entities.",
+   "updated": "2026-11-01",
+   "source": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNQU03cEViUlBtOW1GX09UNGZLbDVNRVFiTW5VNnU5TGlTemh1NnpqdHhwT0N1UXFMQUxpRktta0ZMZ1VIc09Da0tyTHhEVVdKaEdsWjlZM1M1cXNxdGwwWEhiVGNsYm1JanI4dV94OVdxQmRScVEzcE8ydjBuajNQdUVyZkVUWkMxRHIxMzN4OTZxa3NKNkxtTzhNVUdXRGxLN1VsRGk3N0twQlZ6c05ldTdkeV9rSXB5R21HREdjaDNXZlZFREhwaDdUWWNSZjJFOVRmUVRFRjROSXlVQUNYVlVCdm1jcXYzdDNsYURn0gHuAUFVX3lxTE1BTTdwRWJSUG05bUZfT1Q0ZktsNU1FUWJNblU2dTlMaVN6aHU2emp0eHBPQ3VRcUxBTGlGS21rRkxnVUhzT0NrS3JMeERVV0poR2xaOVkzUzVxc3F0bDBYSGJUY2xibUlqcjh1X3g5V3FCZFJxUTNwTzJ2MG5qM1B1RXJmRVRaQzFEcjEzM3g5NnFrc0o2TG1POE1VR1dEbEs3VWxEaTc3S3BCVnpzTmV1N2R5X2tJcHlHbUdER2NoM1dmVkVESHBoN1RZY1JmMkU5VGZRVEVGNE5JeVVBQ1hWVUJ2bWNxdjN0M2xhRGc?oc=5"
   },
   "CHN-PRY": {
    "a": "CHN",
@@ -3536,11 +3561,11 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "A Panama-flagged tanker was struck by limpet mines near the strait, prompting the evacuation of 27 crew members by Oman as Iran halts tankers.",
+   "d": "An LNG (liquefied natural gas) carrier is struck near the strait as Iran engages Qatari mediators to reopen shipping.",
    "n": "Strait of Hormuz",
-   "s": "Limpet mine attack on tanker",
-   "source": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOUDJoRi1sQlI1SHZyakFZcjRRQ1E0NFB5VDVmLVRXZVdkV0ROd1pxZWR5c3VpRlZONDBySDdKSWdVWng4RGtFbWRIaF9JTnVpZmNYbmJ4WmtCQTRobDJTLW5zQ1VITDR0TFdQUUtiakdRV3RsME50WmRsdUxKRXV5R2Y3WHJKOVJ1WnUwNWdSQjc0UHFLTWtmZGs3NnhvVXp6R1lhbERvdl9MbjFnZTdKZXdpY3FJbVJXUnphc3ZlYVFLUnN4Wkx0dFlmbHpXT0ZNZ2VITzdIU3hLNmdsUmfSAeMBQVVfeXFMTTVhdmlKU2dLLVg2T1ZvX05lZGVRWE9nbFZneHFNTFlHU2pkV3lDVWdiLXZFNWp6MFNEaXhwOXhiczlSMmZiX1cwTDhlZkZUc0FZWjR3blBlQnJSaVdZZVE2a3pweVBEeUJpa0pUejhvWmhvWXNRWVd3UXRaWVF3QldmTUF2cnZTdnh1SjVwQzlLa2xnV0VMZHNoQkF4ZEdSSjFzXzJiUm9ZSWg1SldpbjkzWjRIeG93OEZfVkdGaHFzbVdqUnU0SXB1VG9wRGtvN19YWGRmRnNGZW5KQ29WWGF4Smc?oc=5",
-   "updated": "2026-10-31",
+   "s": "LNG carrier struck; Qatari mediation active",
+   "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNSFZLdUJOcWxrbEx3N1VFZlFvd1NaLW9PWndnbXUwXzlDLUtoUTRxY2tCelQyMllzQ3NXamo3RWs3T05uQzhtNzVLbXRxTmZpUmM3enZ3T3V1dTNLMWZNejJSeElsYnJsY0VyVW1WdUh5Z1Z1WE5OanNvMWJ0QjNSUHBqOERWeThsREZjZ2Nta1dfS3VYVWt3WnN4TjdzNHRRanZ4UVhvSExhdlhuVHFqUjVlQWE2b0dHcGl5Mm9lUUdSaUxNSTJUdk5CYUdLWlNDdE5mZ18yN2lLTFZWb3NlRGhUbWZEbzRNeVE?oc=5",
+   "updated": "2026-11-01",
    "t": "strait",
    "lat": 26.57,
    "lng": 56.25,
@@ -3740,9 +3765,9 @@
   },
   "BGR": {
    "nextelec": "presidential runoff, Nov 2026",
-   "updated": "2026-10-27",
-   "source": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUTBldlhSbUVyZEhKR3RIUlZRMUpWRTJnU0pWZm16UWxDX3NjMjVBVmNEanJqQVQ2ZFBfbEZ0di1NalVYaUJmZjh1N3BEU29jZFoxX2VWWU9hSUpTTlIwbGNJckNKWk1WeTh5b1VQMGIwR003Vm81NDdoNHFmYy1hbTY3c0hORm1FUzJRYkpxc284WVFWRDVUUWtNTnJoMHhSVXF6OVpVRWFzUkhraFQ2cXdhNTZvU2xKd0NIc3ZELVJvYmJFNnZaNWZsV1dsQ2o4MVRUU3BXR3AyY25tWE1pTFJ1UQ?oc=5",
-   "lastelec": "presidential (round 1), Oct 2026, Iliana Iotova"
+   "updated": "2026-11-01",
+   "source": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPQUxEWldDVEV5Yk9sR05zeWYtVkRoSXJEMDFtN2Q0bmZva0FOSXo0YnJJOXlHX0J1WlF6R2diSlEzQjlGY1pNWUxWNGZEOF9Ick9WM3dtVlJIQ29ORktVdnNSZDk5Qm5lbU9VNzFnQnZKRDdtTGZyTFNrSHJrTU5oREZNWC1LTXhwVHN1YkQ2Ty1YNHJDQm1DUDluQVpORE9aR3ZxLVFweEIwR0kySXE4N0RQMG5jcGhwY3kyNlU4Slk4QUY0bjl5Yw?oc=5",
+   "lastelec": "presidential runoff, November 2026, Iliana Iotova / Andrey Gyurov"
   },
   "SSD": {
    "nextelec": "general, December 2026",
@@ -3783,9 +3808,9 @@
    "source": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNXFXa1c5U05DZHNINV9rcExET0NiRnFoaEkyczUyUjNIUi1pa1psaVEyQ1hUR2JvYllsUkxPQnRJWTlxdnV0QmFQTjE3d3A3RXdQLTkxU0hWaVR1MW5vUlZJUmxSSHVLWUFWdlJVbk91X1I5NnVZaWZ6aXk0NmRxa1ZDdk92UnhxNFIxUFVLVkE1TVhhelU5SW9ueThycGJfZG1LZmZRVmhXQnlKMFl5cVBDa1BqblRMODYwZWV6UFZEaHF5aFRfVml6UUtJZzNp0gHWAUFVX3lxTE5XWVRjcFRCQXdGWEktQ3Y0Zi1ZeXgyQWo1bUdIVlFNTkdReU1jWEQ4MkhYNnRTNGM1MGxDWHJndjM0bUU2WThEWElkYUhER2tpUE1Za2sxWjVldkhkRllGWDlUcjlpVXUxSVFpaTFfOE8tTlpjamRJaUhNZnJqVDZ3bmlacF9iS2NqbWpZcGktT29ZbjJ2bHBETUlqZXJPVVhQNkhwNnZmdERQczl6dWw3MWctSDdfQ0R2VzlEV2VQSHdDYkx6Snh2cVYxM3gtLThOalNpX3c?oc=5"
   },
   "NZL": {
-   "nextelec": "general election, November 2026",
-   "updated": "2026-10-26",
-   "source": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE55OUdtMGl0TkJNTWtTa2tSSjI3TnMtTVdTOXZDVFhwZU9WRWFvLTJkYUJZM2pNMERtSDVGR3Q4UFgwTUczRTBoeUFNTF9Nem1Lalh0bFBZOFN1WHNDcjFZOXpB?oc=5"
+   "nextelec": "general, November 2026",
+   "updated": "2026-11-01",
+   "source": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPS3hvd0FLZlJhT2R0aEpuaHhFdWJWQXdOVkpCbnpwOE1ocmVaYlF3aVZhSlZlUlJXWVdIWWNOMGw0aS12RUVzR2pmUk4zNVRDYzY0N2ZZSm1XZXNFQmgxQ1Z2aU52WmZFaGdsODl0ZmRhN3pBYkdjUTFOb0pCOXZiS2VjaDJac2JmUzJHWG5vTVBXZjJVUEdFT1RPZ21kV1Bfa0ZRZG56VFc0LTl2VGZ0aENNdzVVRjJOZjhjZVlMZUxRRWt1WHZET1FHRUpLRDJ1dzdBMlVwQldMbUxZejJYSVEwMURmS0Z2V1Z3UjR5WlZlempwZkNrRGNNWXZnNnPSAf8BQVVfeXFMT0t4b3dBS2ZSYU9kdGhKbmh4RXViVkF3TlZKQm56cDhNaHJlWmJRd2lWYUpWZVJSV1lXSFljTjBsNGktdkVFc0dqZlJOMzVUQ2M2NDdmWUptV2VzRUJoMUNWdmlOdlpmRWhnbDg5dGZkYTd6QWJHY1ExTm9KQjl2YktlY2gyWnNiZlMyR1hub01QV2YyVVBHRU9UT2dtZFdQX2tGUWRuelRXNC05dlRmdGhDTXc1VUYyTmY4Y2VZTGVMUUVrdVh2RE9RR0VKS0QydXc3QTJVcEJXTG1MWXoyWElRMDFEZktGdldWd1I0eVpWZXpqcGZDa0RjTVl2ZzZz?oc=5"
   },
   "GRD": {
    "nextelec": "general, 5 November 2026",
