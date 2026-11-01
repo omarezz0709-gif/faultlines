@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-01T11:45:57Z",
+  "lastRun": "2026-11-01T19:58:49Z",
   "log": [
    {
     "date": "2026-11-01",
@@ -36,14 +36,24 @@
       "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNSFZLdUJOcWxrbEx3N1VFZlFvd1NaLW9PWndnbXUwXzlDLUtoUTRxY2tCelQyMllzQ3NXamo3RWs3T05uQzhtNzVLbXRxTmZpUmM3enZ3T3V1dTNLMWZNejJSeElsYnJsY0VyVW1WdUh5Z1Z1WE5OanNvMWJ0QjNSUHBqOERWeThsREZjZ2Nta1dfS3VYVWt3WnN4TjdzNHRRanZ4UVhvSExhdlhuVHFqUjVlQWE2b0dHcGl5Mm9lUUdSaUxNSTJUdk5CYUdLWlNDdE5mZ18yN2lLTFZWb3NlRGhUbWZEbzRNeVE?oc=5"
      },
      {
-      "label": "Bulgaria",
-      "change": "Recorded presidential runoff election held on November 1, 2026",
-      "source": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPQUxEWldDVEV5Yk9sR05zeWYtVkRoSXJEMDFtN2Q0bmZva0FOSXo0YnJJOXlHX0J1WlF6R2diSlEzQjlGY1pNWUxWNGZEOF9Ick9WM3dtVlJIQ29ORktVdnNSZDk5Qm5lbU9VNzFnQnZKRDdtTGZyTFNrSHJrTU5oREZNWC1LTXhwVHN1YkQ2Ty1YNHJDQm1DUDluQVpORE9aR3ZxLVFweEIwR0kySXE4N0RQMG5jcGhwY3kyNlU4Slk4QUY0bjl5Yw?oc=5"
-     },
-     {
       "label": "New Zealand",
       "change": "Recorded upcoming general election scheduled for November 7, 2026",
       "source": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPS3hvd0FLZlJhT2R0aEpuaHhFdWJWQXdOVkpCbnpwOE1ocmVaYlF3aVZhSlZlUlJXWVdIWWNOMGw0aS12RUVzR2pmUk4zNVRDYzY0N2ZZSm1XZXNFQmgxQ1Z2aU52WmZFaGdsODl0ZmRhN3pBYkdjUTFOb0pCOXZiS2VjaDJac2JmUzJHWG5vTVBXZjJVUEdFT1RPZ21kV1Bfa0ZRZG56VFc0LTl2VGZ0aENNdzVVRjJOZjhjZVlMZUxRRWt1WHZET1FHRUpLRDJ1dzdBMlVwQldMbUxZejJYSVEwMURmS0Z2V1Z3UjR5WlZlempwZkNrRGNNWXZnNnPSAf8BQVVfeXFMT0t4b3dBS2ZSYU9kdGhKbmh4RXViVkF3TlZKQm56cDhNaHJlWmJRd2lWYUpWZVJSV1lXSFljTjBsNGktdkVFc0dqZlJOMzVUQ2M2NDdmWUptV2VzRUJoMUNWdmlOdlpmRWhnbDg5dGZkYTd6QWJHY1ExTm9KQjl2YktlY2gyWnNiZlMyR1hub01QV2YyVVBHRU9UT2dtZFdQX2tGUWRuelRXNC05dlRmdGhDTXc1VUYyTmY4Y2VZTGVMUUVrdVh2RE9RR0VKS0QydXc3QTJVcEJXTG1MWXoyWElRMDFEZktGdldWd1I0eVpWZXpqcGZDa0RjTVl2ZzZz?oc=5"
+     },
+     {
+      "label": "Russia–Ukraine",
+      "change": "Armed conflict note refreshed: Oleshky ceasefire expires as strikes resume",
+      "source": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTXVzeUFMZWpCb2RqV0tLVGJ4NzZMUTlSRDdyaGVhLVBkNGdjXzdCQjNmN2NLWlM4cU95UWhLUnQtT3VqRnZua29lSGQtekxJU2FudWg4dGt2NmFOa1poNl9CQjBJY3dwX2VNWXlRY213NzAzWWw2bUpSVlRET20zMVZkMEdPR1ZvVGFF?oc=5"
+     },
+     {
+      "label": "Afghanistan–Pakistan",
+      "change": "Armed conflict note refreshed: Cross-border clashes flare as US offers mediation",
+      "source": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOdHBzalpKRmZpd0JzSkZma1BZT3BnNXJSNUh1MlZqRERJMjVFTnhDb0p1U3RIN0dyVGZob2QxdEk0YTdVWWtxOFBtOWx1ZXdpb3dLb3Rja05MZkJfckdvQ29qSVkxajJWVldRVFFBUW82MmtLUzdjSTM5YzVPTlp0aXl6NzdXU1hnTC1nY3RwSkl4N0sxQ0RZa3VuTlNkS0Z4U2tjeXFWeEhBUmpUak1UNmNxZEhSWHZSQzBoMjJyb1pFWnJhQTRCMXZLelFma1drSlVCdU02M0pXOU1KSnVuT1VUd0IxWms?oc=5"
+     },
+     {
+      "label": "Bulgaria",
+      "change": "Election recorded: Presidential runoff held with Iliana Iotova leading exit polls",
+      "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNMmIwY3p2SmVILTFvWXlKbHNkdHhLSnpqYk5jMXlkMHdKQzU0NEw2YXh6UlJ5TDhMSXY0Y3pVQjdUNTJSa1VtZG1jZ20wWEk2WXNEemNTSlJod1VzNE8zazUtSUM4eXR2UGpGLVlGR0M3TXhMLUNtSHp1a1NDbnBXNktZaGdzUVFhb1l6MHo4aWM4a18ySWJlclh1WlNhZGNJeS1oYVNn?oc=5"
      }
     ]
    },
@@ -1808,7 +1818,7 @@
     ]
    }
   ],
-  "summary": "Updated relations between Iran and the United Kingdom, Israeli diplomatic representation in Somaliland, and shipping security status in the Strait of Hormuz."
+  "summary": "The localized ceasefire in Oleshky expires as Russian forces resume strikes on Ukraine's energy grid, cross-border clashes flare along the Afghanistan-Pakistan border, and Bulgaria conducts its presidential election runoff."
  },
  "relations": {
   "DNK-USA": {
@@ -1999,9 +2009,9 @@
    "a": "AFG",
    "b": "PAK",
    "s": "W",
-   "note": "Clashes erupt along the Durand Line as Pakistani forces strike Taliban posts following cross-border infiltration attempts.",
-   "updated": "2026-10-18",
-   "source": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOS2VNY0dEVEgzSmY4Z05Ydzk4NkZkLVFWOS03WEJiYk41dHhWVXd3ajF2dmdLZjRlSGdpaXp2b1NCdERvYl9pTWdKTFZXTENtQkxoYmhnMThMNkgtcUxXZENRRDBlSGFoNmpSRFZ0cVl6c2Fyb2tjeGhmRXdmRXRpeHY0LWNyeXFCT1JROFR5VG84bUFWVnczT181aGxfQW1TSU05NV84YWNhZzlaRGt6TFhXS3BSNU9iZjF0TmlVaDFzWVViZjdyUVlOa3dINjhGOWRUWDhtTjlmMXFDSWxDYWlXbVEzUDdBNFk5alhobXo3Mi120gH0AUFVX3lxTE5LZU1jR0RUSDNKZjhnTlh3OTg2RmQtUVY5LTdYQmJiTjV0eFZVd3dqMXZ2Z0tmNGVIZ2lpenZvU0J0RG9iX2lNZ0pMVldMQ21CTGhiaGcxOEw2SC1xTFdkQ1FEMGVIYWg2alJEVnRxWXpzYXJva2N4aGZFd2ZFdGl4djQtY3J5cUJPUlE4VHlUbzhtQVZWdzNPXzVobF9BbVNJTTk1XzhhY2FnOVpEa3pMWFdLcFI1T2JmMXROaVVoMXNZVWJmN3JRWU5rd0g2OEY5ZFRYOG1OOWYxcUNJbENhaVdtUTNQN0E0WTlqWGhtejcyLXY?oc=5"
+   "note": "Pakistani forces exchange cross-border fire with Afghan Taliban posts along the Durand Line as the United States (US) offers mediation.",
+   "updated": "2026-11-01",
+   "source": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOdHBzalpKRmZpd0JzSkZma1BZT3BnNXJSNUh1MlZqRERJMjVFTnhDb0p1U3RIN0dyVGZob2QxdEk0YTdVWWtxOFBtOWx1ZXdpb3dLb3Rja05MZkJfckdvQ29qSVkxajJWVldRVFFBUW82MmtLUzdjSTM5YzVPTlp0aXl6NzdXU1hnTC1nY3RwSkl4N0sxQ0RZa3VuTlNkS0Z4U2tjeXFWeEhBUmpUak1UNmNxZEhSWHZSQzBoMjJyb1pFWnJhQTRCMXZLelFma1drSlVCdU02M0pXOU1KSnVuT1VUd0IxWms?oc=5"
   },
   "BGD-IND": {
    "a": "BGD",
@@ -3119,9 +3129,9 @@
    "a": "RUS",
    "b": "UKR",
    "s": "W",
-   "note": "Russia and Ukraine agree to a ceasefire in Oleshky, brokered by Melania Trump, amid a severe food crisis.",
-   "updated": "2026-10-23",
-   "source": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOTWxoMXh5MnZSZFdhUE5ybWFsOVFrR3pSc0pha0pyei1oUXFyZzEwWnc2U1ZobzNab3dxOWIxYXhfUXBNTVJhbnh4eGZkZ2RyZFRsOEljOUNTcDR4TG91QXp2MnUyVnZGc0pSVTNpVHEydVk2QjFqUXZwMXpsZHBuQUZJOTBSemtPVWdTazg5NjFEVGYxZ1F2bEFNUTViRTVmSTA5Rk9zRzRkc0RHSUpQX0FKOHhnQk5sVVRLWXRFaVNabTJfUmc?oc=5"
+   "note": "Localized ceasefire in Oleshky ends as Russian strikes cut power across Ukraine and Ukrainian drones hit Russian oil refineries.",
+   "updated": "2026-11-01",
+   "source": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTXVzeUFMZWpCb2RqV0tLVGJ4NzZMUTlSRDdyaGVhLVBkNGdjXzdCQjNmN2NLWlM4cU95UWhLUnQtT3VqRnZua29lSGQtekxJU2FudWg4dGt2NmFOa1poNl9CQjBJY3dwX2VNWXlRY213NzAzWWw2bUpSVlRET20zMVZkMEdPR1ZvVGFF?oc=5"
   },
   "CAN-TUR": {
    "a": "CAN",
@@ -3766,8 +3776,8 @@
   "BGR": {
    "nextelec": "presidential runoff, Nov 2026",
    "updated": "2026-11-01",
-   "source": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPQUxEWldDVEV5Yk9sR05zeWYtVkRoSXJEMDFtN2Q0bmZva0FOSXo0YnJJOXlHX0J1WlF6R2diSlEzQjlGY1pNWUxWNGZEOF9Ick9WM3dtVlJIQ29ORktVdnNSZDk5Qm5lbU9VNzFnQnZKRDdtTGZyTFNrSHJrTU5oREZNWC1LTXhwVHN1YkQ2Ty1YNHJDQm1DUDluQVpORE9aR3ZxLVFweEIwR0kySXE4N0RQMG5jcGhwY3kyNlU4Slk4QUY0bjl5Yw?oc=5",
-   "lastelec": "presidential runoff, November 2026, Iliana Iotova / Andrey Gyurov"
+   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNMmIwY3p2SmVILTFvWXlKbHNkdHhLSnpqYk5jMXlkMHdKQzU0NEw2YXh6UlJ5TDhMSXY0Y3pVQjdUNTJSa1VtZG1jZ20wWEk2WXNEemNTSlJod1VzNE8zazUtSUM4eXR2UGpGLVlGR0M3TXhMLUNtSHp1a1NDbnBXNktZaGdzUVFhb1l6MHo4aWM4a18ySWJlclh1WlNhZGNJeS1oYVNn?oc=5",
+   "lastelec": "presidential runoff, November 2026, Iliana Iotova"
   },
   "SSD": {
    "nextelec": "general, December 2026",
