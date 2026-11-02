@@ -1,14 +1,29 @@
 {
  "meta": {
-  "lastRun": "2026-11-02T01:12:47Z",
+  "lastRun": "2026-11-02T13:16:25Z",
   "log": [
    {
     "date": "2026-11-02",
     "items": [
      {
+      "label": "Colombia–Venezuela",
+      "change": "Normal → Tense: Venezuelan military strike on rebel camp near border kills 19",
+      "source": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPd0FBN1NMd1RrMm1NT2N6RWhHRzBBQWJfTFREUGcyV3RoQ2xRQUpRZHgtN283cFQtQVF3Wkl4QVozclpoZV83QTRkSHpWTTBsazNxRDA0bGRaSW5JYkZEcEVFVnVlN3c2Y2pVcFRxQkJVTVNwTzQtT2hpd1pReFlSaERILV93b0E5NWEyWGJEZUtpSXpSUVZsbFZjSUlaYjQ3NWRqcmdHS2dpbUkwdDhhZzJsMk1FVFZORjZHcmpiSVNVWjlJenBsONIBzwFBVV95cUxQUHVLQTdDM211V2EwbEZZUk9ybXhSQ3d1R2xrbkRJb3BBblB5M2o2MXJoZWxBUDdkMFBKSUlJZl9Ca0hGdzJvQTN5Ujgwb3BxQ3lDMVd1R3Y0b2p6Yk5WbzV2ejlNVEtrblhJelZsQTY1QTc0bHdZdVVPVlFaRE1OeE1hQXdTR3FmM0ZFRWpVX3liRHhYN3U4T0VwZDN2VWNDVWVvc0ZfUGF1MUxkMGtMQ0lsOVF6Y1FDRTF2d1o0VXQ1OHFuay0yd0hlVzFGQVk?oc=5"
+     },
+     {
+      "label": "Moldova–Romania",
+      "change": "Note updated: Signed first joint military procurement deal under EU SAFE program",
+      "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOV3pkQ1ZnTFVSbEVfbU1acTJ5b0NWX29yNlNHYmZ1TXpua3RxNDdBMGd2MDU5TW4xLUFCb3l1T09iNlhEdTZCd19DZjgwQ2NnNFZLNEV2SUlrSmVzSEF6bERNOVdwQ1c1MGRQeXR6TjhETWFmRzluLVMtRnVSN1Juc2NjZzlDY0ZhZjBzNGYtc3ZQb2VQdjU2YXl2R1Vuc2h3WGN5TA?oc=5"
+     },
+     {
       "label": "Bulgaria",
-      "change": "Presidential runoff election won by incumbent Iliana Iotova",
-      "source": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9oUzJ1eWFKbTNjZ3o0ejhfM2gtcFF1VF9kMVpqclVaOGZRajV1RmdRbWNFRTFjbEpoaE9tLThSMTNScGt3UnE4LV9NS3BidmlaWFNGOEp0VHNkM0ZmbURxSG1ibFpBRmw3TUE?oc=5"
+      "change": "Presidential runoff election won by Iliana Yotova",
+      "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQb3Vqb3hSYnByTHA3R2EzcUJ3d2dwVTBseFg2U3E3OTR2dElSS1Q4Z2RFY21tQWR0T255N2VDM0FEdS1QWjlLNTk0YzBuZ1g1dTM2YWJIS2R5R0xvWjRZQkZWWFgwR2VHY19ZSHp5OTBjRThncUJLYm9hc1VqM092UTBkT2tObXViMFZiSFFlVWc5ODJySFVsYWRxbWFOekFCRjBydzFvUnhtZ2RFNlJtMFhRZHljU2Nvcmc?oc=5"
+     },
+     {
+      "label": "New Zealand",
+      "change": "Early voting underway ahead of November 2026 parliamentary election",
+      "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQblpzVENyekNxMW1iVlpQQ0tXTDZsUHVLRkE1c2tGR21TRGxXMXUyUFV0MjVaeXJCTmRqM0c3V2ljM1FjdjN4S3N1eXpYVllnWTdrUHFVQUw0ZGdfbWlmX2hMejhjVENSaTNhRmJsXzExUDRQT2pZUVFicnJ1eWNQSWp6VGJmNzVjRFYtdnllTU1NaDh6RWRVc2liT2JLb3UyOHBMVEo4NDQySHZHVUZvbDNn?oc=5"
      }
     ]
    },
@@ -1783,7 +1798,7 @@
     ]
    }
   ],
-  "summary": "Bulgaria concludes its presidential election runoff with incumbent Iliana Iotova winning the vote."
+  "summary": "Bulgaria elects Iliana Yotova as president, Colombia and Venezuela experience heightened tensions over a border strike, and Romania and Moldova sign a joint defense procurement agreement."
  },
  "relations": {
   "DNK-USA": {
@@ -3257,6 +3272,22 @@
    "note": "Ghana and Russia expand energy ties as Moscow agrees to back a 2,000 MW nuclear power plant project.",
    "updated": "2026-11-01",
    "source": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPMUFCOTdXRGl6LXQzOTk4UF9aYUFQcHJ6M091OTlsVlRDLVdDY0dGNWY3aU91UkZzSUoxMDZBSlBnVV9WSUN6T29wdW1SQl84NE1CT3E1T0ZVNFN5a08zWVdKbHRXSEFQVUkxa29xWDVTdjlsWjVSUE1YcnRqTlI5bDhn?oc=5"
+  },
+  "COL-VEN": {
+   "a": "COL",
+   "b": "VEN",
+   "s": "T",
+   "note": "Tensions flare after a Venezuelan military strike on a rebel camp near the border kills 19 people.",
+   "updated": "2026-11-02",
+   "source": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPd0FBN1NMd1RrMm1NT2N6RWhHRzBBQWJfTFREUGcyV3RoQ2xRQUpRZHgtN283cFQtQVF3Wkl4QVozclpoZV83QTRkSHpWTTBsazNxRDA0bGRaSW5JYkZEcEVFVnVlN3c2Y2pVcFRxQkJVTVNwTzQtT2hpd1pReFlSaERILV93b0E5NWEyWGJEZUtpSXpSUVZsbFZjSUlaYjQ3NWRqcmdHS2dpbUkwdDhhZzJsMk1FVFZORjZHcmpiSVNVWjlJenBsONIBzwFBVV95cUxQUHVLQTdDM211V2EwbEZZUk9ybXhSQ3d1R2xrbkRJb3BBblB5M2o2MXJoZWxBUDdkMFBKSUlJZl9Ca0hGdzJvQTN5Ujgwb3BxQ3lDMVd1R3Y0b2p6Yk5WbzV2ejlNVEtrblhJelZsQTY1QTc0bHdZdVVPVlFaRE1OeE1hQXdTR3FmM0ZFRWpVX3liRHhYN3U4T0VwZDN2VWNDVWVvc0ZfUGF1MUxkMGtMQ0lsOVF6Y1FDRTF2d1o0VXQ1OHFuay0yd0hlVzFGQVk?oc=5"
+  },
+  "MDA-ROU": {
+   "a": "MDA",
+   "b": "ROU",
+   "s": "A",
+   "note": "Moldova and Romania seal a historic joint military procurement deal under the European Union (EU) SAFE program.",
+   "updated": "2026-11-02",
+   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOV3pkQ1ZnTFVSbEVfbU1acTJ5b0NWX29yNlNHYmZ1TXpua3RxNDdBMGd2MDU5TW4xLUFCb3l1T09iNlhEdTZCd19DZjgwQ2NnNFZLNEV2SUlrSmVzSEF6bERNOVdwQ1c1MGRQeXR6TjhETWFmRzluLVMtRnVSN1Juc2NjZzlDY0ZhZjBzNGYtc3ZQb2VQdjU2YXl2R1Vuc2h3WGN5TA?oc=5"
   }
  },
  "threads": {
@@ -3741,8 +3772,8 @@
   "BGR": {
    "nextelec": "presidential runoff, Nov 2026",
    "updated": "2026-11-02",
-   "source": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9oUzJ1eWFKbTNjZ3o0ejhfM2gtcFF1VF9kMVpqclVaOGZRajV1RmdRbWNFRTFjbEpoaE9tLThSMTNScGt3UnE4LV9NS3BidmlaWFNGOEp0VHNkM0ZmbURxSG1ibFpBRmw3TUE?oc=5",
-   "lastelec": "presidential runoff, November 2026, Iliana Iotova"
+   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQb3Vqb3hSYnByTHA3R2EzcUJ3d2dwVTBseFg2U3E3OTR2dElSS1Q4Z2RFY21tQWR0T255N2VDM0FEdS1QWjlLNTk0YzBuZ1g1dTM2YWJIS2R5R0xvWjRZQkZWWFgwR2VHY19ZSHp5OTBjRThncUJLYm9hc1VqM092UTBkT2tObXViMFZiSFFlVWc5ODJySFVsYWRxbWFOekFCRjBydzFvUnhtZ2RFNlJtMFhRZHljU2Nvcmc?oc=5",
+   "lastelec": "presidential, Nov 2026, Iliana Yotova"
   },
   "SSD": {
    "nextelec": "general, December 2026",
@@ -3783,9 +3814,9 @@
    "source": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNXFXa1c5U05DZHNINV9rcExET0NiRnFoaEkyczUyUjNIUi1pa1psaVEyQ1hUR2JvYllsUkxPQnRJWTlxdnV0QmFQTjE3d3A3RXdQLTkxU0hWaVR1MW5vUlZJUmxSSHVLWUFWdlJVbk91X1I5NnVZaWZ6aXk0NmRxa1ZDdk92UnhxNFIxUFVLVkE1TVhhelU5SW9ueThycGJfZG1LZmZRVmhXQnlKMFl5cVBDa1BqblRMODYwZWV6UFZEaHF5aFRfVml6UUtJZzNp0gHWAUFVX3lxTE5XWVRjcFRCQXdGWEktQ3Y0Zi1ZeXgyQWo1bUdIVlFNTkdReU1jWEQ4MkhYNnRTNGM1MGxDWHJndjM0bUU2WThEWElkYUhER2tpUE1Za2sxWjVldkhkRllGWDlUcjlpVXUxSVFpaTFfOE8tTlpjamRJaUhNZnJqVDZ3bmlacF9iS2NqbWpZcGktT29ZbjJ2bHBETUlqZXJPVVhQNkhwNnZmdERQczl6dWw3MWctSDdfQ0R2VzlEV2VQSHdDYkx6Snh2cVYxM3gtLThOalNpX3c?oc=5"
   },
   "NZL": {
-   "nextelec": "general, November 2026",
-   "updated": "2026-11-01",
-   "source": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPS3hvd0FLZlJhT2R0aEpuaHhFdWJWQXdOVkpCbnpwOE1ocmVaYlF3aVZhSlZlUlJXWVdIWWNOMGw0aS12RUVzR2pmUk4zNVRDYzY0N2ZZSm1XZXNFQmgxQ1Z2aU52WmZFaGdsODl0ZmRhN3pBYkdjUTFOb0pCOXZiS2VjaDJac2JmUzJHWG5vTVBXZjJVUEdFT1RPZ21kV1Bfa0ZRZG56VFc0LTl2VGZ0aENNdzVVRjJOZjhjZVlMZUxRRWt1WHZET1FHRUpLRDJ1dzdBMlVwQldMbUxZejJYSVEwMURmS0Z2V1Z3UjR5WlZlempwZkNrRGNNWXZnNnPSAf8BQVVfeXFMT0t4b3dBS2ZSYU9kdGhKbmh4RXViVkF3TlZKQm56cDhNaHJlWmJRd2lWYUpWZVJSV1lXSFljTjBsNGktdkVFc0dqZlJOMzVUQ2M2NDdmWUptV2VzRUJoMUNWdmlOdlpmRWhnbDg5dGZkYTd6QWJHY1ExTm9KQjl2YktlY2gyWnNiZlMyR1hub01QV2YyVVBHRU9UT2dtZFdQX2tGUWRuelRXNC05dlRmdGhDTXc1VUYyTmY4Y2VZTGVMUUVrdVh2RE9RR0VKS0QydXc3QTJVcEJXTG1MWXoyWElRMDFEZktGdldWd1I0eVpWZXpqcGZDa0RjTVl2ZzZz?oc=5"
+   "nextelec": "parliamentary, Nov 2026",
+   "updated": "2026-11-02",
+   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQblpzVENyekNxMW1iVlpQQ0tXTDZsUHVLRkE1c2tGR21TRGxXMXUyUFV0MjVaeXJCTmRqM0c3V2ljM1FjdjN4S3N1eXpYVllnWTdrUHFVQUw0ZGdfbWlmX2hMejhjVENSaTNhRmJsXzExUDRQT2pZUVFicnJ1eWNQSWp6VGJmNzVjRFYtdnllTU1NaDh6RWRVc2liT2JLb3UyOHBMVEo4NDQySHZHVUZvbDNn?oc=5"
   },
   "GRD": {
    "nextelec": "general, 5 November 2026",
