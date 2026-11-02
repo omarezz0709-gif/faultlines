@@ -4395,7 +4395,7 @@ async function loadTop(t){
       const own = cn ? newsItems(cn.i).filter(it => mentioned(it.t).ids.includes(t.id)) : [];
       stories = rankLocal(own, t.id).slice(0, 5).map(it => ({t: it.t, u: it.u, s: it.s, d: it.d, n: it.k, also: it.o}));
     }
-    else stories = (FEED.filter(f => f.imp).length ? FEED.filter(f => f.imp) : FEED).slice(0, 5).map(f => ({t: f.t, u: f.u, s: f.s, d: f.d}));
+    else if (t.key === 'world') stories = (FEED.filter(f => f.imp).length ? FEED.filter(f => f.imp) : FEED).slice(0, 5).map(f => ({t: f.t, u: f.u, s: f.s, d: f.d}));
   }
   if (stories.length) tvCache.set(ck, {at: Date.now(), stories});
   return stories;
@@ -4411,9 +4411,8 @@ function rankLocal(items, id){
       + Math.min(it.k || 1, 12) * 1.5   // more independent outlets = bigger story
       - Math.min(48, (Date.now() - new Date(it.d)) / 36e5 || 48) / 8; };
   const ranked = items.map(it => [score(it), it]).sort((a, b) => b[0] - a[0]);
-  // politics and foreign affairs first (political words or other countries named); the rest only if nothing else
-  const political = ranked.filter(([, it]) => !TV_SOFT.test(it.t) && (TV_POL.some(([re]) => re.test(it.t)) || mentioned(it.t).ids.some(x => x !== id)));
-  return (political.length ? political : ranked).map(x => x[1]);
+  // politics and foreign affairs only (political words or other countries named)
+  return ranked.filter(([, it]) => !TV_SOFT.test(it.t) && (TV_POL.some(([re]) => re.test(it.t)) || mentioned(it.t).ids.some(x => x !== id))).map(x => x[1]);
 }
 async function tvRefresh(force){
   const t = tvTarget(), key = LANG + '|' + t.key;

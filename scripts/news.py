@@ -42,6 +42,32 @@ POLITICS = re.compile(r"\b(coup|wins? (?:the )?(?:presidential |general |parliam
                       r"sworn in as (?:prime minister|president)|(?:prime minister|president|chancellor|government) (?:resigns|ousted|falls|collapses)|"
                       r"resigns as (?:prime minister|president)|new (?:prime minister|president|government)|snap election|"
                       r"no-confidence|impeach\w*)\b", re.I)
+# Strictly political: the same rule as isPolitical in worker/gemini-proxy.js (these headlines are all in English).
+# Sport, culture, people stories, accidents and ordinary crime stay out, whoever is named in them.
+SOFT = re.compile(r"\b(football\w*|soccer|tennis|nba|nfl|nhl|mlb|fifa|uefa|hockey|cricket\w*|rugby|golfer\w*|pga|baseball|basketball|boxing|"
+                  r"formula (?:one|1)|f1|grand prix|olympi\w+|world cup|champions league|premier league|la liga|serie a|bundesliga|"
+                  r"marathon(?! talks| negotiat| session)\w*|athletes?|world champions?|goalkeeper|box office|celebrit\w+|movies?|film (?:star|festival)|oscars?|"
+                  r"grammys?|emmys?|eurovision|pop star|rapper|(?<!state )(?<!bad )actor|actress|singer|recipes?|horoscope|lottery|zoo|adventurer|"
+                  r"mountaineer|royal (?:wedding|baby))\b", re.I)
+STATE_WORDS = re.compile(r"\b(govern\w*|parliament\w*|senat\w*|congress\w*|supreme court|constitution\w*|lawmakers?|legislat\w*|\w*minister\w*|"
+                         r"ministr\w*|president\w*|chancellor|governor|kremlin|white house|pentagon|downing street|election\w*|elected|"
+                         r"electoral\w*|midterms?|votes?|voters?|voting|ballot\w*|referendum\w*|coalition\w*|opposition\w*|coups?|democrats?|"
+                         r"republicans?|embass\w*|ambassador\w*|envoys?|diplomat\w*|summit|treaty|sanction\w*|ceasefire|truce|peace|"
+                         r"peacekeep\w*|negotiat\w*|wars?|warfare|invasion\w*|offensive|troops|soldiers?|military|army|navy|air ?strikes?|"
+                         r"missil\w*|drones?|shelling|bombing\w*|bombard\w*|insurgen\w*|rebels?|militias?|jihadist\w*|hostages?|nuclear\w*|"
+                         r"nato|united nations|european union|european commission|protest\w*|demonstrations?|demonstrators?|riots?|crackdown|"
+                         r"dissident\w*|asylum|refugee\w*|migrants?|deport\w*|immigration|borders?|blockade|annex\w*|occupation|occupied|"
+                         r"sovereignty|independence|regime|junta|dictator\w*|martial law|state of emergency|curfews?|human rights|tariffs?|"
+                         r"foreign (?:relations|policy|affairs)|far[- ]right|right-wing|left-wing|populis\w*|afd|arab league|african union|"
+                         r"asean|ecowas|g7|g20)\b", re.I)
+MISHAP = re.compile(r"\b(crash(?:es|ed)?|derail\w*|collision|capsiz\w*|shipwreck|wildfires?|blaze|earthquake|quake|floods?|flooding|hurricane|"
+                    r"typhoon|cyclone|tornado|landslide|avalanche|storms?|heatwave|murder\w*|stabb\w*|shooting|gunman|jailed|sentenced|"
+                    r"convicted|rape|robbery|burglary|kidnap\w*|abuse|exploitation)\b", re.I)
+LOOSE = re.compile(r"\b(attacks?|attacked|cyber-?attacks?|hack\w*|killed|kills?|dead|strikes?|deals?|talks|crisis|tensions?|conflict|threats?|"
+                   r"econom\w*|inflation|trade|budget|central bank|shipping|tankers?|forces|clash\w*|bomb\w*|policy|policies|laws?|bills?|reforms?|bans?|visas?|aid|"
+                   r"oil|energy)\b", re.I)
+LEADERS = re.compile(r"\b(trump|biden|vance|putin|xi jinping|netanyahu|zelensk\w*|macron|starmer|merz|meloni|erdo[gğ]an|modi|kim jong[ -]un|"
+                     r"khamenei|pezeshkian|lula|bolsonaro|milei|maduro|orb[aá]n|lukashenko|tusk)\b", re.I)
 # State-controlled propaganda outlets: dropped entirely and never counted as a confirming source
 STATE_MEDIA = re.compile(r"^(rt|rt news|rt\.com|russia today\b.*|sputnik\b.*|tass|tass\.com|ria novosti\b.*|ria\.ru|press ?tv\b.*|presstv\.ir|"
                          r"tasnim\b.*|fars news\b.*|farsnews\b.*|mehr news\b.*|irna\b.*|global ?times|globaltimes\.cn|cgtn\b.*|china daily\b.*|"
@@ -59,6 +85,17 @@ STOP = set("the a an and or of to in on for with at by from as is are was were b
 # keep results about politics, security and the economy rather than sport or culture
 TOPICS = ("(government OR minister OR president OR military OR army OR election OR sanctions OR war OR border "
           "OR talks OR economy OR protest OR diplomat OR attack OR treaty)")
+
+
+def political(title: str) -> bool:
+    if SOFT.search(title):
+        return False
+    if STATE_WORDS.search(title):
+        return True
+    if MISHAP.search(title):
+        return False
+    named = set(countries_in(title))
+    return bool(LEADERS.search(title)) or len(named) >= 2 or (bool(named) and bool(LOOSE.search(title)))
 
 
 def query_for(iso: str, name: str) -> str:
@@ -186,7 +223,7 @@ def main() -> None:
 
     for iso, items in fetched.items():
         hits = sum(1 for x in items if TENSION.search(x["t"]))
-        confirmed = [x for x in items if x["k"] >= MIN_SOURCES]
+        confirmed = [x for x in items if x["k"] >= MIN_SOURCES and political(x["t"])]
         # drop headlines about other countries that only mention this one in the article text; headlines naming
         # this country first, then ones naming no country (e.g. just the leader's name)
         named_in = {id(x): countries_in(x["t"]) for x in confirmed}
@@ -223,7 +260,7 @@ def main() -> None:
         title_key = re.sub(r"\W+", " ", a["t"].lower())[:80]
         if key is None or title_key in seen or a["d"] < cutoff:
             continue
-        if a.get("k", 0) < MIN_SOURCES or STATE_MEDIA.match(a.get("s", "")):   # older, unconfirmed alerts drop out
+        if a.get("k", 0) < MIN_SOURCES or STATE_MEDIA.match(a.get("s", "")) or not political(a["t"]):   # older ones drop out too
             continue
         seen.update((a["u"], title_key))
         alerts.append(a)

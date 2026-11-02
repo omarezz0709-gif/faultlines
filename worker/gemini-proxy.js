@@ -393,7 +393,7 @@ const NEWS_QUERIES = {
   it: ["guerra OR attacco OR missile OR drone OR raid", "sanzioni OR \"cessate il fuoco\" OR golpe OR colloqui OR vertice"],
 };
 const unxml = s => s.replace(/<!\[CDATA\[|\]\]>/g, "").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">")
-  .replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&#(\d+);/g, (_, n) => String.fromCharCode(+n)).trim();
+  .replace(/&quot;/g, '"').replace(/&apos;|&#39;/g, "'").replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(+n)).replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16))).trim();
 function parseRss(xml){
   const out = [];
   for (const m of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)){
@@ -468,7 +468,7 @@ async function liveFeed(lang, ctx){
   const pool = await newsPool(lang, ctx);
   // confirmed stories only (2+ independent outlets), newest first
   const recent = pool.items.filter(it => !it.d || Date.now() - Date.parse(it.d) < 2 * 864e5);
-  const items = scoreStories(recent, null).map(st => {
+  const items = scoreStories(recent, null).filter(st => st.political).map(st => {
     const lead = st.members.find(m => trusted(m.s)) || st.lead;
     return { t: lead.t || st.t, u: lead.u, s: lead.s, d: st.d, n: st.n, also: st.srcs.filter(x => x !== lead.s).slice(0, 4) };
   });
@@ -567,9 +567,38 @@ const POLITICAL = [
   [/\b(sanctions?|ceasefire|truce|peace talks?|talks|negotiations?|summit|treaty|deal|diplomat\w*|embassy|ambassador|foreign minister|un security council|nato|sanctions|cessez-le-feu|négociations?|sommet|accord|diplomat\w*|sanciones|alto el fuego|negociaciones|cumbre|acuerdo|sanktion\w*|waffenruhe|waffenstillstand|verhandlung\w*|gespräche|gipfel\w*|abkommen|botschaft\w*|außenminister\w*|sicherheitsrat|sanzioni|tregua|cessate il fuoco|negoziat\w*|colloqui|vertice|accordo|ambasciat\w*|ministro degli esteri)\b|عقوبات|وقف إطلاق النار|مفاوضات|قمة|اتفاق|دبلوماسي/i, 2],
   [/\b(president|prime minister|government|parliament|election|opposition|protests?|coup|minister|kremlin|white house|président|gouvernement|élection|manifestations?|presidente|gobierno|elecciones|protestas?|golpe|präsident\w*|regierung\w*|kanzler\w*|parlament\w*|wahl\w*|opposition|proteste?|putsch|minister\w*|kreml|governo|presidente del consiglio|premier|elezion\w*|parlamento|opposizione|protest\w*|golpe|ministr\w*|cremlino)\b|رئيس|حكومة|انتخابات|احتجاج|برلمان|انقلاب/i, 1],
 ];
-const SPORT = /\b(football|soccer|league|cup|match|tennis|nba|nfl|nhl|hockey|olympic|goal|coach|striker|forward|goalkeeper|player|players|season|transfer|box office|celebrity|actor|singer|concert|film|movie|recipe|weather|horoscope|lottery|fashion|bear|zoo|animal|fußball|bundesliga|trainer|spieler|wetter|rezept|promi\w*|sänger\w*|schauspieler\w*|lotto|calcio|serie a|allenatore|giocator\w*|meteo|ricetta|attore|attrice|cantante)\b|كرة|مباراة|دوري/i;
+/* Strictly political news: the state, politics, diplomacy and conflict. Sport, culture, people stories, accidents and
+   ordinary crime stay out, whoever is named in them. Checked on every outlet's headline of a story.
+   W = whole words in any language (\b only knows a-z); Arabic words take prefixes, so they have no word edges. */
+const W = (words, arabic = "", flags = "iu") => new RegExp(`(?<![\\p{L}\\p{N}])(?:${words})(?![\\p{L}\\p{N}])${arabic ? "|" + arabic : ""}`, flags);
+// never political, whoever is in the story
+const SOFT = W(String.raw`football\p{L}*|soccer|tennis|nba|nfl|nhl|mlb|fifa|uefa|hockey|cricket\p{L}*|rugby|golfer\p{L}*|pga|baseball|basketball|boxing|formula (?:one|1)|f1|grand prix|olympi\p{L}+|world cup|champions league|premier league|la liga(?! árabe)|serie a|bundesliga|ligue 1|marathon(?! talks| negotiat| session)\p{L}*|athletes?|world champions?|goalkeeper|box office|celebrit\p{L}+|movies?|film (?:star|festival)|oscars?|grammys?|emmys?|eurovision|pop star|rapper|(?<!state )(?<!bad )actor|actress|singer|horoscope|lottery|adventurer|mountaineer|royal (?:wedding|baby)|fußball\p{L}*|handball|eishockey|formel 1|weltmeister\p{L}*|olympia\p{L}*|schauspieler\p{L}*|sänger\p{L}*|promi|prominenten?|horoskop|lotto|ligue des champions|coupe du monde|cyclisme|tour de france|actrice|chanteu\p{L}+|fútbol|baloncesto|copa del mundo|actriz|calcio|coppa del mondo|mondiali di \p{L}+|olimpiad\p{L}+|attore|attrice|cantante`,
+  "كرة القدم|مباراة|الدوري|كأس العالم|مطرب|فنانة|فيلم|مسلسل");
+// the state, politics and war: political in itself
+const STATE = W(String.raw`govern\p{L}*|gouvern\p{L}*|gobier\p{L}*|regier\p{L}*|parliament\p{L}*|parlament\p{L}*|parlement\p{L}*|senat\p{L}*|sénat\p{L}*|senado\p{L}*|congress\p{L}*|congreso|kongress|bundestag|bundesrat|landtag|assemblée nationale|supreme court|verfassung\p{L}*|constitution\p{L}*|constitución|costituzion\p{L}*|lawmakers?|legislat\p{L}*|abgeordnete\p{L}*|\p{L}*minister\p{L}*|ministr\p{L}*|president\p{L}*|président\p{L}*|\p{L}*präsident\p{L}*|\p{L}*kanzler\p{L}*|chancellor|chancelier|canciller|cancelliere|rücktritt|governor|kremlin|kreml|cremlino|white house|weißes haus|maison[- ]blanche|casa blanca|casa bianca|pentagon|downing street|élysée|matignon|election\p{L}*|elected|electoral\p{L}*|élection\p{L}*|électora\p{L}*|elecci\p{L}*|electo\p{L}*|elezion\p{L}*|elettoral\p{L}*|\p{L}*wahl\p{L}*|wähler\p{L}*|midterms?|votes?|voters?|voting|votación|votaciones|voto|scrutin\p{L}*|ballot\p{L}*|referendum\p{L}*|référendum|referéndum|abstimmung\p{L}*|coalition\p{L}*|coalición|coalizione|koalition\p{L}*|opposition\p{L}*|oposición|opposizione|coups?(?! d)|coup d['’]état|putsch\p{L}*|golpe(?! de)|golpe de estado|staatsstreich|machtkampf|democrats?|republicans?|\p{L}*partei\p{L}*|partido\p{L}*|afd|cdu|csu|spd|embass\p{L}*|ambassad\p{L}*|embajad\p{L}*|ambasciat\p{L}*|botschaft\p{L}*|envoys?|diplomat\p{L}*|diplomacia|diplomazia|diplomát\p{L}*|summit|sommet|cumbre|vertice|gipfel\p{L}*|treaty|traité|tratado|trattato|abkommen|sanction\p{L}*|sanci\p{L}*|sanzion\p{L}*|sanktion\p{L}*|ceasefire|truce|cessez-le-feu|trêve|alto el fuego|tregua|cessate il fuoco|waffenruhe|waffenstillstand|peace|paix|paz|friedens\p{L}*|peacekeep\p{L}*|negotiat\p{L}*|négoci\p{L}*|negociaci\p{L}*|negociador\p{L}*|negoziat\p{L}*|verhandl\p{L}*|wars?|warfare|guerre\p{L}*|guerra\p{L}*|\p{L}*krieg\p{L}*|invasion\p{L}*|invasión|invasione|offensive|ofensiva|offensiva|troops|troupes|tropas|truppe\p{L}*|soldiers?|soldats?|soldados?|soldati?|soldat\p{L}*|military|militaire\p{L}*|militar\p{L}*|militär\p{L}*|army|armée\p{L}*|armee|ejército|esercito|bundeswehr|navy|air ?strikes?|luftangriff\p{L}*|frappes?|missil\p{L}*|\p{L}*rakete\p{L}*|drones?|droni|drohne\p{L}*|shelling|beschuss|bombing\p{L}*|bombard\p{L}*|insurgen\p{L}*|rebels?|rebellen|rebelles?|rebeldes?|ribelli|militias?|miliz\p{L}*|milice\p{L}*|milicia\p{L}*|milizi\p{L}*|jihadist\p{L}*|hostages?|geisel\p{L}*|otages?|rehenes|ostaggi?|nuclear\p{L}*|nucléaire\p{L}*|nucleare|atom\p{L}*|nato|otan|united nations|vereinte nationen|nations unies|naciones unidas|nazioni unite|european union|union européenne|unión europea|unione europea|europäische union|european commission|eu-\p{L}+|un-\p{L}+|protest\p{L}*|demonstrations?|demonstrators?|demonstrationen|demonstrant\p{L}*|manifest\p{L}*|riots?|émeutes?|crackdown|dissident\p{L}*|asylum|asyl\p{L}*|refugee\p{L}*|réfugié\p{L}*|refugiad\p{L}*|rifugiat\p{L}*|flüchtling\p{L}*|migrants?|migrant\p{L}*|deport\p{L}*|abschieb\p{L}*|immigration|border|borders|grenz(?:e|en|kontrolle\p{L}*|schutz)|frontière\p{L}*|frontera\p{L}*|frontier\p{L}*|blockade|annex\p{L}*|occupation|occupied|besatzung\p{L}*|sovereignty|independence|regime|régime|junta|dictator\p{L}*|diktat\p{L}*|martial law|state of emergency|curfews?|ausgangssperre\p{L}*|couvre-feu|toque de queda|coprifuoco|foreign (?:relations|policy|affairs)|far[- ]right|right-wing|left-wing|populis\p{L}*|rechtsextrem\p{L}*|extrême droite|extrema derecha|estrema destra|arab league|arabische liga|ligue arabe|liga árabe|lega araba|african union|asean|ecowas|g7|g20|human rights|menschenrechte|tariffs?|zölle|aranceles|dazi`,
+  "حكوم|برلمان|انتخاب|استفتاء|معارضة|انقلاب|وزير|وزارة|رئيس|الرئاسة|الكرملين|البيت الأبيض|سفير|سفارة|دبلوماس|قمة|معاهدة|عقوبات|وقف إطلاق النار|هدنة|مفاوضات|حرب|جيش|عسكري|صاروخ|صواريخ|مسيّرة|مسيرات|قصف|غارة|غارات|ضربات|ميليشيا|رهائن|نووي|الناتو|الأمم المتحدة|الاتحاد الأوروبي|احتجاج|مظاهرات|لاجئ|الحدود|جنود|القوات|الهجرة|الإقامة الدائمة");
+// an accident, a disaster or ordinary crime: political only if the state is in the story
+const MISHAP = W(String.raw`crash(?:es|ed)?|derail\p{L}*|collision|capsiz\p{L}*|shipwreck|wildfires?|blaze|earthquake|quake|floods?|flooding|hurricane|typhoon|cyclone|tornado|landslide|avalanche|storms?|heatwave|murder\p{L}*|stabb\p{L}*|shooting|gunman|jailed|sentenced|convicted|rape|robbery|burglary|kidnap\p{L}*|abuse|exploitation|\p{L}*absturz|abgestürzt|\p{L}*unglück\p{L}*|\p{L}*unfall|erdbeben|hochwasser|überschwemmung\p{L}*|waldbrand\p{L}*|sturm|unwetter|mord\p{L}*|amoklauf|vergewaltig\p{L}*|verurteilt|accident\p{L}*|naufrage|séisme|inondation\p{L}*|incendie\p{L}*|tempête|ouragan|meurtre\p{L}*|condamné\p{L}*|accidente\p{L}*|naufragio|terremoto|sismo|inundaci\p{L}*|incendio\p{L}*|huracán|tormenta|condenad\p{L}*|incidente\p{L}*|alluvione|incendi\p{L}*|uragano|omicidio|femminicidio|condannat\p{L}*|stupro|schiant\p{L}*|estrell\p{L}*`,
+  "تحطم|حادث|زلزال|فيضان|حريق|إعصار|جريمة قتل");
+// everyday words that often come up in conflicts and trade: they count only when a country is named too
+const LOOSE = W(String.raw`attacks?|attacked|cyber-?attacks?|hack\p{L}*|killed|kills?|dead|strikes?|deals?|talks|crisis|tensions?|conflict|threats?|econom\p{L}*|inflation|trade|budget|central bank|shipping|tankers?|forces|clash\p{L}*|bomb\p{L}*|policy|policies|laws?|bills?|reforms?|bans?|visas?|aid|oil|energy|attackiert\p{L}*|attaqué\p{L}*|atacad\p{L}*|attaccat\p{L}*|\p{L}*angriff\p{L}*|gespräch\p{L}*|wirtschaft\p{L}*|krise\p{L}*|konflikt\p{L}*|attaque\p{L}*|pourparlers|économ\p{L}*|crise|ataque\p{L}*|conversaciones|acuerdo\p{L}*|crisis|attacc\p{L}*|colloqui|accordo|crisi`,
+  "هجوم|اتفاق|اقتصاد|أزمة|توتر|محادثات");
+// leaders: a story about them is political (unless it's a mishap near them)
+const LEADERS = W(String.raw`trump|biden|vance|putin\p{L}*|xi jinping|netanyahu|netanjahu|zelensk\p{L}*|selenskyj|macron|starmer|merz|meloni|erdo[gğ]an|modi|kim jong[ -]un|khamenei|chamenei|pezeshkian|lula|bolsonaro|milei|maduro|orb[aá]n|lukashenko|lukaschenko|loukachenko|tusk`,
+  "ترامب|بوتين|نتنياهو|زيلينسكي|ماكرون|أردوغان");
 // other countries and blocs named in a story: the more foreign actors, the more "foreign policy" it is
-const ACTORS = /\b(united states|u\.s\.|us|america|washington|russia|moscow|kremlin|ukraine|kyiv|china|beijing|taiwan|iran|tehran|israel|gaza|palestin\w*|lebanon|hezbollah|syria|iraq|yemen|houthis?|saudi|emirates|uae|qatar|turkey|türkiye|egypt|libya|sudan|ethiopia|somalia|india|pakistan|afghanistan|north korea|south korea|japan|germany|france|britain|uk|poland|baltic|estonia|latvia|lithuania|finland|belarus|georgia|armenia|azerbaijan|venezuela|cuba|mexico|nato|european union|eu|united nations|un|g7|brics|sahel|mali|niger)\b|روسيا|أوكرانيا|الصين|إيران|إسرائيل|غزة|أمريكا|الولايات المتحدة|تركيا|السعودية|الناتو/gi;
+const ACTORS = W(String.raw`united states|u\.s\.|us|usa|america|washington|russia|moscow|kremlin|ukraine|kyiv|china|beijing|taiwan|iran|tehran|israel|gaza|palestin\p{L}*|lebanon|hezbollah|hamas|syria|iraq|yemen|houthis?|saudi|emirates|uae|qatar|turkey|türkiye|egypt|libya|sudan|ethiopia|somalia|india|pakistan|afghanistan|north korea|south korea|japan|germany|france|britain|uk|poland|baltic|estonia|latvia|lithuania|finland|belarus|georgia|armenia|azerbaijan|venezuela|cuba|mexico|nato|european union|eu|united nations|un|g7|brics|sahel|mali|niger|vereinigte staaten|russland|moskau|kiew|peking|teheran|libanon|syrien|irak|jemen|saudi-arabien|katar|türkei|ägypten|libyen|äthiopien|indien|nordkorea|südkorea|deutschland|frankreich|großbritannien|polen|mexiko|kuba|brasilien|uno|états-unis|russie|kiev|pékin|chine|téhéran|liban|syrie|yémen|arabie saoudite|turquie|égypte|libye|éthiopie|inde|corée du nord|corée du sud|japon|allemagne|royaume-uni|pologne|mexique|brésil|otan|onu|ue|estados unidos|ee\.? ?uu\.?|rusia|ucrania|pekín|irán|teherán|líbano|siria|arabia saudí|turquía|egipto|libia|etiopía|corea del norte|corea del sur|japón|alemania|francia|reino unido|polonia|méxico|brasil|nahost|nahen osten|naher osten|middle east|moyen-orient|proche-orient|oriente medio|medio oriente|persian gulf|persischen golf|persischer golf|golfe persique|golfo pérsico|golfo persico|hormuz|hormus|ormuz|stati uniti|mosca|ucraina|pechino|cina|israele|libano|arabia saudita|turchia|egitto|etiopia|corea del nord|giappone|germania|regno unito|messico|brasile`,
+  "روسيا|أوكرانيا|الصين|إيران|إسرائيل|غزة|أمريكا|الولايات المتحدة|تركيا|السعودية|الناتو", "giu");
+// the countries named in a text: "us" and "un" only in capitals and "usa" or "uno" with a capital, or every "tell us"
+// and every Italian "uno" would count as a country
+const actorsIn = text => (text.match(ACTORS) || []).filter(a => a.length > 3 || a === a.toUpperCase() || (a.length === 3 && a[0] !== a[0].toLowerCase())).map(a => a.toLowerCase());
+function isPolitical(text, extraPlaces = 0){
+  if (SOFT.test(text)) return false;
+  if (STATE.test(text)) return true;
+  if (MISHAP.test(text)) return false;
+  const places = new Set(actorsIn(text)).size + extraPlaces;
+  return LEADERS.test(text) || places >= 2 || (places >= 1 && LOOSE.test(text));
+}
 function relItems(descHtml){
   const out = [];
   for (const m of unxml(descHtml).matchAll(/<li><a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>(?:&nbsp;|\s)*<font[^>]*>([\s\S]*?)<\/font><\/li>/g))
@@ -619,10 +648,12 @@ function scoreStories(items, focus, minSources = MIN_SOURCES){
     const pol = POLITICAL.reduce((a, [re, w]) => a + (re.test(text) ? w : 0), 0);
     const hours = st.d ? (now - Date.parse(st.d)) / 36e5 : 48;
     const lead = st.members.find(x => trusted(x.s)) || st.members[0];
-    const actors = new Set((text.match(ACTORS) || []).filter(a => !focus || !focus.test(a)).map(a => a.toLowerCase()));   // other countries than the selected one
-    Object.assign(st, { lead, srcs, n: srcs.length, trustedN: trustedSrcs.length, political: pol + actors.size > 0 && !SPORT.test(text),
+    const actors = new Set(actorsIn(text).filter(a => !focus || !focus.test(a)));   // other countries than the selected one
+    // the selected country or place counts as one named, also if it isn't on the list of big countries
+    const political = isPolitical(text, focus && focus.test(text) ? 1 : 0);
+    Object.assign(st, { lead, srcs, n: srcs.length, trustedN: trustedSrcs.length, political,
       score: srcs.length * 2 + trustedSrcs.length * 3 + pol * 2 + Math.min(actors.size, 4) * 2.5
-        - Math.min(hours, 72) / 8 - (SPORT.test(text) ? 20 : 0)
+        - Math.min(hours, 72) / 8
         + (focus && !focus.test(text) ? -15 : 0) });
   }
   // confirmed stories only: several independent outlets, at least one of them trusted
@@ -638,8 +669,7 @@ async function topStories(lang, q, en, ctx){
   const focus = focusRegex(q, en);
   const recent = it => !it.d || Date.now() - Date.parse(it.d) < (focus ? 5 : 2) * 864e5;
   const items = pool.items.filter(it => recent(it) && (!focus || focus.test(it.t + " " + it.members.map(m => m.t + " " + (m.x || "")).join(" "))));
-  let ranked = scoreStories(items, focus);
-  if (focus) ranked = ranked.filter(st => st.political);   // a country: politics and foreign affairs only (else the site uses its own headlines)
+  const ranked = scoreStories(items, focus).filter(st => st.political);   // politics only (nothing left: the site falls back to the world's top stories)
   const stories = ranked.slice(0, 6).map(st => {
     const lead = st.members.find(m => trusted(m.s) && m.img) || st.lead;   // prefer a trusted outlet with a photo
     return { t: lead.t || st.t, u: lead.u, s: lead.s, d: st.d, n: st.n, img: (st.members.find(m => m.img) || {}).img || "",
@@ -736,7 +766,7 @@ async function topVideos(lang, q, en, ctx){
   const newsStories = scoreStories(newsItems, focus, 1);
   const topWords = scoreStories(newsItems, focus).slice(0, 8).map(st => st.nm);
   const overlap = (tw, st) => { let names = 0, ws = 0; st.nm.forEach(x => tw.has(x) && names++); st.w.forEach(x => tw.has(x) && ws++); return names >= 2 || ws >= 3; };
-  const stories = scoreStories(items, focus, 1).filter(st => {
+  const stories = scoreStories(items, focus, 1).filter(st => st.political).filter(st => {
     const tw = words(st.t + " " + st.members.map(m => m.t).join(" "));
     const orgs = new Set(st.srcs.map(org));
     newsStories.filter(ns => overlap(tw, ns)).forEach(ns => ns.srcs.forEach(s => orgs.add(org(s))));
