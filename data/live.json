@@ -1,7 +1,17 @@
 {
  "meta": {
-  "lastRun": "2026-11-01T19:58:49Z",
+  "lastRun": "2026-11-02T01:12:47Z",
   "log": [
+   {
+    "date": "2026-11-02",
+    "items": [
+     {
+      "label": "Bulgaria",
+      "change": "Presidential runoff election won by incumbent Iliana Iotova",
+      "source": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9oUzJ1eWFKbTNjZ3o0ejhfM2gtcFF1VF9kMVpqclVaOGZRajV1RmdRbWNFRTFjbEpoaE9tLThSMTNScGt3UnE4LV9NS3BidmlaWFNGOEp0VHNkM0ZmbURxSG1ibFpBRmw3TUE?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-11-01",
     "items": [
@@ -1771,54 +1781,9 @@
       "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOU0VvM25tTlJ0eTlDT2J0dTJURXBvSnIyUVAwQVRDdlN3aGZGT1g0b2JGcE5UTzY2U0VWRlpYT2xhQlVUVHhFYlRneEc0Z1lSdVlDd2xYRG9hcDViUnNkN2NjRExmNU9nTzZWcXVSanp5R3h5OFFrNkh1M3dWWEFxUUVucEVuQnAzLXlBNE1qam9vWkhickdUak1R?oc=5"
      }
     ]
-   },
-   {
-    "date": "2026-10-03",
-    "items": [
-     {
-      "label": "Saudi Arabia–Yemen",
-      "change": "Armed conflict: Note updated to reflect planned Saudi offensive to secure Bab-el-Mandeb",
-      "source": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1qelpTbU15U2R3T1hRR1hvUWxuZEV6MEV5d1BSejZFSnRJUml6SU1Yc1N6RG1yTWJSSnFiNUUwQWxrTW1VZzFuaXJmXzJqU2xybEpycVlWMUtsTHNZQTRFU2NWWUJURE0?oc=5"
-     },
-     {
-      "label": "Bab-el-Mandeb",
-      "change": "Location note updated for planned Saudi coalition campaign",
-      "source": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1qelpTbU15U2R3T1hRR1hvUWxuZEV6MEV5d1BSejZFSnRJUml6SU1Yc1N6RG1yTWJSSnFiNUUwQWxrTW1VZzFuaXJmXzJqU2xybEpycVlWMUtsTHNZQTRFU2NWWUJURE0?oc=5"
-     },
-     {
-      "label": "Strait of Hormuz",
-      "change": "Location note updated for projectile attacks on commercial shipping",
-      "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQVTE0M0VtS09OYmhZSmZOM2Q1SUM1R01pWl9JcF9TbDdwRzJENWozcGRkRWdQb19tbVc2Xy1UUWRQSHN6ejNtTmFMLW1JWnVYVTVfSGhzX2RpWFJBM0FkTURXamNHMWFSZmF5QW5mTnBsYmdQMUZ4elVsTXdIX2tHYl9HTjBNU1p4UVpsYTcxTURYazRWTjhGTGFtOExybHZkbkprVnpqTjhZWUhlWEFsUmw4bE5NSnlUSEdqTjVFQXVBclFKckpDUjVjZG1CcnplalFxTWZ30gHbAUFVX3lxTFBLb0ROQndHZ3dSOFpfREstdkFBMHpWa2x3Y3Y1Y1FSaEdfS2t3WFYyQllBVnpmVlRfbDYzYU5zSld3bEs1RGdFS0hsekRycFUyNGtpcE9YODRRQ0otS0dWY3lTaFdKMERibzNWVW9CNXdnZkVEZnFCeXhtbURJV25YaF9qOWR6a2J0MEJxZklJYmozNTFkS2ZPZTVyNWx4Q1JwSng4NGFKMGFVM3BqNEFBTWpzRnhaSERVZDN3NnlOX1M0VkFxUXZ0c2FrSFRhdE94ZXJ2X0xEWThNaw?oc=5"
-     },
-     {
-      "label": "Latvia",
-      "change": "Recorded October 2026 parliamentary election",
-      "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQOE93RGtrM183MlV0OGhZZVpmYkIyU2hHZzc3ZmQ4b3hRYkZHMWtUci1fLWpSWi1WNnp4cjg1dEJvbGJXRlFlQmJRblFGakpzeTdmNm93cWttVWJCejlVbHo3a1pKTXA0aU5jUWxJNW51VVYtd3dnNFI1VXBLYVZOR0pfMUVmZ09weTUxSzdIUWRXeUkyZV9SVFh6ME8yVGpGaE5NUlVsLVRxeWYwemFra19rRXlCYUhPVG9fcDJoS2Z4S25RaTlR?oc=5"
-     },
-     {
-      "label": "Brazil",
-      "change": "Recorded October 2026 presidential election",
-      "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPX2FnTWlaNko5MlBVdVJyRklOTmxSc3NDaXdtV2x2aEtZQ2tJaFhzVU42ZzlxYk1jX1JyWFg5NlJBRVRBN3hqdXJDdVJDT3hSYzJzVVdsYzdLQUhSc3hldFRTUEFNUk0xOElXYjIwdnJMcng1cjBsMnlRZk8tWUprc19WazloQQ?oc=5"
-     },
-     {
-      "label": "New Zealand",
-      "change": "Recorded upcoming November 2026 general election date",
-      "source": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxNbTVwT0QwalBBOWhseC0tWUdHX0cxek5fR3I3d0M1RWc3bGJ5VThrb3h0OHgtNXBXR2xxckVrdGt1X01vUHFUS0tVeHllNUFKVmhwRlFuVlRkNGFOYjV2Z1RJUzN0cE9zSF9JNkxIQXhyY1hHN0xhZHl3QUtfRUVDVnl4SDhLaEVkZFNwUmZVbWtZalZmSTNjcktKWXIzOGEzWmZhWTFTTDB1SHktaDRSaW00dFlWb3ZrdU1IS2ZsZzF5LVlIaE94ajFLX1BKcE41SW9mQlhkWGxUN3BLY1BsUDM1NmgxbGNqQm13ZFlILS15TXlnVXJaRlRLNGdOWjJ4M21iUWpDY2ZGc09rTXVyRl8zYVJ1WUdwekNqX09MOEZJZWlELW9pV1QtZEpwRVlMWmFWZXBPcDRSaXEzblhNd0xDYjZoZ2xJcXZmY2tnOGRVdm14U1NTUdIB2AJBVV95cUxNbTVwT0QwalBBOWhseC0tWUdHX0cxek5fR3I3d0M1RWc3bGJ5VThrb3h0OHgtNXBXR2xxckVrdGt1X01vUHFUS0tVeHllNUFKVmhwRlFuVlRkNGFOYjV2Z1RJUzN0cE9zSF9JNkxIQXhyY1hHN0xhZHl3QUtfRUVDVnl4SDhLaEVkZFNwUmZVbWtZalZmSTNjcktKWXIzOGEzWmZhWTFTTDB1SHktaDRSaW00dFlWb3ZrdU1IS2ZsZzF5LVlIaE94ajFLX1BKcE41SW9mQlhkWGxUN3BLY1BsUDM1NmgxbGNqQm13ZFlILS15TXlnVXJaRlRLNGdOWjJ4M21iUWpDY2ZGc09rTXVyRl8zYVJ1WUdwekNqX09MOEZJZWlELW9pV1QtZEpwRVlMWmFWZXBPcDRSaXEzblhNd0xDYjZoZ2xJcXZmY2tnOGRVdm14U1NTUQ?oc=5"
-     },
-     {
-      "label": "Grenada",
-      "change": "Recorded upcoming general election following parliamentary dissolution",
-      "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPY3haT1RtLTduVG5rbkMtcng3bkZUQWV1Ri1OZjdsa0FUUG5ZZmdOTEFHNVhZSXAwWFB3ZFdoYkJRbzN5R3BvZ3FyRDdSSGsxVFFCOW41VTFlSklwLUFMOWpWcmNxUmxRN3ZsNWR6VG9xVkRhMEVWV3lNUmdWYTItMEhnRWlKeVQ4WkdsdWZuNi02WE1HVEI0eHJQSQ?oc=5"
-     },
-     {
-      "label": "South Korea–North Korea",
-      "change": "Tense → Armed conflict: Border landmine blasts and missile launch",
-      "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPb1hwSU50eTEyejRKcV93MldTRVF5NHVOY1BBaDVFTVhIZGx6QnRidW9hQllEb29tazBtQ1EyaVBsQXRBT0syN2lyOXVXV1VGc19rbGpvZDNxX0dZSXZ5VHBKU2NYeldpMGlVVDJWSDN3Uk9BSy1sbkNKUzRGLTNIU0JhMjNkVnhpRU1oOFNvc2NIQThxSndfUjF1UlBEVDZ6ajVXWUF30gGrAUFVX3lxTE1Oam81eWlHT1pBT01SOUFBUVVhY1pUUkM1aVNEZWZSWTdJQk96ekcyeENmMC1VOUtJZUQ1MzZ1YTctWGNUalNyblNIaU56bEU2WkdtUF8yWUJoODJTVkJQNHZjYXppalJGYXlOVW8xdHlwV1dIeU1TMUFqb2FPYjk3eUNRSXQyZTIyOGlMdW5rN19NUGQ1dFZXZFowa0lEVnVVTGdOajlrWmRKaw?oc=5"
-     }
-    ]
    }
   ],
-  "summary": "The localized ceasefire in Oleshky expires as Russian forces resume strikes on Ukraine's energy grid, cross-border clashes flare along the Afghanistan-Pakistan border, and Bulgaria conducts its presidential election runoff."
+  "summary": "Bulgaria concludes its presidential election runoff with incumbent Iliana Iotova winning the vote."
  },
  "relations": {
   "DNK-USA": {
@@ -3775,8 +3740,8 @@
   },
   "BGR": {
    "nextelec": "presidential runoff, Nov 2026",
-   "updated": "2026-11-01",
-   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNMmIwY3p2SmVILTFvWXlKbHNkdHhLSnpqYk5jMXlkMHdKQzU0NEw2YXh6UlJ5TDhMSXY0Y3pVQjdUNTJSa1VtZG1jZ20wWEk2WXNEemNTSlJod1VzNE8zazUtSUM4eXR2UGpGLVlGR0M3TXhMLUNtSHp1a1NDbnBXNktZaGdzUVFhb1l6MHo4aWM4a18ySWJlclh1WlNhZGNJeS1oYVNn?oc=5",
+   "updated": "2026-11-02",
+   "source": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9oUzJ1eWFKbTNjZ3o0ejhfM2gtcFF1VF9kMVpqclVaOGZRajV1RmdRbWNFRTFjbEpoaE9tLThSMTNScGt3UnE4LV9NS3BidmlaWFNGOEp0VHNkM0ZmbURxSG1ibFpBRmw3TUE?oc=5",
    "lastelec": "presidential runoff, November 2026, Iliana Iotova"
   },
   "SSD": {
