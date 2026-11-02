@@ -662,7 +662,8 @@ function scoreStories(items, focus, minSources = MIN_SOURCES){
 }
 async function topStories(lang, q, en, ctx){
   if (!Object.hasOwn(NEWS_LANG, lang)) lang = "en";
-  const key = `https://faultlines-cache/top/${lang}/${encodeURIComponent(q.toLowerCase())}`;
+  // both names in the key: with q alone, one crafted request could fill "Germany" with another country's stories for everyone
+  const key = `https://faultlines-cache/top/${lang}/${encodeURIComponent(q.toLowerCase())}/${encodeURIComponent(en)}`;
   const cache = caches.default, hit = await cache.match(key);
   if (hit) return new Response(hit.body, { status: 200, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "hit" }) });
   const pool = await newsPool(lang, ctx);
@@ -749,7 +750,7 @@ async function videoPool(lang, ctx){
 }
 async function topVideos(lang, q, en, ctx){
   if (!Object.hasOwn(CHANNELS, lang)) lang = "en";
-  const key = `https://faultlines-cache/videos/${lang}/${encodeURIComponent(q.toLowerCase())}`;
+  const key = `https://faultlines-cache/videos/${lang}/${encodeURIComponent(q.toLowerCase())}/${encodeURIComponent(en)}`;
   const cache = caches.default, hit = await cache.match(key);
   if (hit) return new Response(hit.body, { status: 200, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "hit" }) });
   const pool = await videoPool(lang, ctx);
