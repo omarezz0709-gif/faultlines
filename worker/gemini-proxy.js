@@ -839,7 +839,8 @@ async function handle(request, env, ctx, origin) {
     // --- visit ping (one per browser session; a flood of pings is dropped before anything is stored) ---
     if (path === "hit") {
       if (!(await flooded(env, `hit:${ipKey(ip)}`, { max: 10, windowMs: 10 * 60_000 }))) ctx.waitUntil(logEvent(env, request, { kind: "visit", status: 200 }));
-      return new Response(null, { status: 204, headers: cors() });
+      let st = "none"; if (env.FLOOD) try { const r = await env.FLOOD.limit({ key: "probe" }); st = "on:" + JSON.stringify(r); } catch (e) { st = "err:" + String(e && e.message).slice(0, 80); }
+      return new Response(null, { status: 204, headers: cors({ "X-Faultlines-Probe": st }) });
     }
 
     // --- real-time search for the question bar's ⚡ mode (fair use: 20 searches per visitor per 5 minutes) ---
