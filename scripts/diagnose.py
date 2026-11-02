@@ -68,6 +68,12 @@ def age_hours(iso: str | None) -> float | None:
 def check_site() -> dict:
     s, b, _, ms = fetch(SITE + "/")
     add("site", "Website", "ok" if s == 200 and b"Faultlines" in b else "fail", f"HTTP {s}, {len(b) // 1024} KB", ms)
+    # the page's protections: its security rules, the checks on outside scripts, and the headers from the _headers file
+    s2, _, hd, _ = fetch(SITE + "/", method="HEAD")
+    head = {k.lower(): v for k, v in hd.items()}
+    missing = [n for n, ok in (("page rules", b"Content-Security-Policy" in b), ("script checks", b.count(b'integrity="sha384-') >= 3),
+                               ("no framing", "x-frame-options" in head), ("HTTPS only", "strict-transport-security" in head)) if not ok]
+    add("security", "Page protections", "warn" if missing else "ok", f"missing: {', '.join(missing)}" if missing else "all in place")
     s, _, _, ms = fetch(MIRROR)
     mirror_ok = s == 200
     add("site", "GitHub Pages copy", "ok" if mirror_ok else "warn", f"HTTP {s}", ms)
@@ -157,6 +163,12 @@ def check_worker() -> bool:
         add("security", "Admin login", "warn", "LOCKED after 5 wrong codes: open ⚙ and enter the backup code", ms)
     else:
         add("security", "Admin login", "ok" if s == 401 else "fail", f"HTTP {s} without a code (should be 401)", ms)
+    # odd requests get a normal answer, never a crash (these all crashed the Worker before 2 Nov 2026)
+    odd = [fetch(f"{WORKER}{p}", headers=h)[0] for p in ("/live?lang=constructor", "/top?lang=__proto__&q=&en=", "/top?lang=en&q=x&en=constructor", "/videos?lang=toString&q=&en=")]
+    ai_h = {**h, "Content-Type": "application/json", "X-Faultlines-Kind": "diag"}
+    odd += [fetch(f"{WORKER}/models/auto:streamGenerateContent", method="POST", body=b, headers=ai_h)[0] for b in (b"null", b'{"contents":5}', b'{"contents":[null]}')]
+    crashed = [s for s in odd if s >= 500 or s == 0]
+    add("security", "Odd requests are handled", "fail" if crashed else "ok", f"{len(odd) - len(crashed)}/{len(odd)} handled cleanly")
     # one tiny AI request (a new prompt each time, so it isn't answered from the cache). By evening the fast models'
     # free quota can be used up and the slow fallback (Gemma) answers: that can take 2 minutes, so wait up to 150 s,
     # and try a second time before calling it a problem (a single slow moment at Google isn't one)
@@ -296,7 +308,7 @@ def check_browser() -> None:
             f"{len(net)} missing images/files" + (f"; {'; '.join(other[:2])}" if other else ""))
         page.close()
         # phone and tablet: nothing wider than the screen
-        for label, w, hgt in (("Phone layout (375 px)", 375, 812), ("Small phone (320 px)", 320, 640), ("Tablet (820 px)", 820, 1180)):
+        for label, w, hgt in (("Phone layout (375 px)", 375, 812), ("Small phone (320 px)", 320, 640), ("Phone held sideways", 812, 375), ("Tablet (820 px)", 820, 1180)):
             pg = b.new_page(viewport={"width": w, "height": hgt}, is_mobile=w < 900, has_touch=w < 900)
             try:
                 pg.goto(SITE + "/?notour", wait_until="load", timeout=60000)

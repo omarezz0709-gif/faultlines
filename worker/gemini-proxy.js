@@ -25,6 +25,7 @@ const MAX_OUTPUT_TOKENS = 8192;
 const MAX_BODY_BYTES = 200_000;
 const CACHE_SECONDS = 24 * 3600;
 const VISITOR_LIMIT = { max: 12, windowMs: 5 * 60_000 };      // AI requests per visitor per 5 minutes
+const AI_FLOOD_LIMIT = { max: 60, windowMs: 5 * 60_000 };      // all AI requests per address, memory answers included (per Worker copy)
 const ADMIN_MAX_TRIES = 5;                                     // wrong admin codes in total before the login locks for everyone
 const ADMIN_IP_LIMIT = { max: 5, windowMs: 60 * 60_000 };     // wrong admin codes per visitor per hour
 const BACKUP_LIMIT = { max: 5, windowMs: 60 * 60_000 };       // wrong backup codes per visitor per hour
@@ -93,6 +94,7 @@ function cors(extra = {}) {
     "Access-Control-Expose-Headers": "X-Faultlines-Cache, X-Faultlines-Limit, X-Faultlines-Provider, X-Faultlines-Search, X-Faultlines-Locked, X-Faultlines-Tries",
     "Access-Control-Max-Age": "86400",
     "Vary": "Origin",
+    "X-Content-Type-Options": "nosniff",
     ...extra,
   };
 }
@@ -254,13 +256,23 @@ function plainPrompt(body) {
 }
 
 async function answerAuto(request, env, ctx, ip, kind) {
+  if (+request.headers.get("Content-Length") > MAX_BODY_BYTES) return deny(413, "Request too large.");
   const raw = await request.text();
   if (raw.length > MAX_BODY_BYTES) return deny(413, "Request too large.");
-  let body;
-  try { body = JSON.parse(raw); } catch { return deny(400, "Invalid JSON."); }
-  body.generationConfig = { ...(body.generationConfig || {}) };
-  body.generationConfig.maxOutputTokens = Math.min(body.generationConfig.maxOutputTokens || MAX_OUTPUT_TOKENS, MAX_OUTPUT_TOKENS);
-  delete body.tools; delete body.cachedContent;
+  let sent;
+  try { sent = JSON.parse(raw); } catch { return deny(400, "Invalid JSON."); }
+  // only the shape the site sends, rebuilt from the fields it needs: nothing else reaches the code below or Google
+  const isObj = x => !!x && typeof x === "object" && !Array.isArray(x);
+  const okParts = p => Array.isArray(p) && p.every(x => isObj(x) && typeof x.text === "string");
+  if (!isObj(sent) || !Array.isArray(sent.contents) || !sent.contents.length || !sent.contents.every(c => isObj(c) && okParts(c.parts))
+    || (sent.systemInstruction != null && !(isObj(sent.systemInstruction) && okParts(sent.systemInstruction.parts)))
+    || (sent.generationConfig != null && !isObj(sent.generationConfig))) return deny(400, "Unsupported request.");
+  const gc = sent.generationConfig || {};
+  const body = { contents: sent.contents.map(c => ({ role: c.role === "model" ? "model" : "user", parts: c.parts.map(x => ({ text: x.text })) })),
+    generationConfig: { maxOutputTokens: Math.min(Math.max(1, +gc.maxOutputTokens || MAX_OUTPUT_TOKENS), MAX_OUTPUT_TOKENS) } };
+  if (typeof gc.temperature === "number") body.generationConfig.temperature = Math.min(Math.max(0, gc.temperature), 2);
+  if (gc.responseMimeType === "application/json") body.generationConfig.responseMimeType = gc.responseMimeType;
+  if (sent.systemInstruction) body.systemInstruction = { parts: sent.systemInstruction.parts.map(x => ({ text: x.text })) };
   const wantsJson = body.generationConfig.responseMimeType === "application/json";
   const started = Date.now();
   // the visitor's own words, for the admin log: question box only (never the private chat, which keeps nothing)
@@ -394,17 +406,6 @@ const NEWS_QUERIES = {
 };
 const unxml = s => s.replace(/<!\[CDATA\[|\]\]>/g, "").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">")
   .replace(/&quot;/g, '"').replace(/&apos;|&#39;/g, "'").replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(+n)).replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16))).trim();
-function parseRss(xml){
-  const out = [];
-  for (const m of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)){
-    const b = m[1], g = tag => { const r = b.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`)); return r ? unxml(r[1]) : ""; };
-    let t = g("title"); const s = g("source");
-    if (s && t.endsWith(" - " + s)) t = t.slice(0, -(s.length + 3));
-    const d = new Date(g("pubDate"));
-    if (t) out.push({ t: t.slice(0, 300), u: g("link").slice(0, 2000), s: s.slice(0, 80), d: isNaN(d) ? null : d.toISOString() });
-  }
-  return out;
-}
 /* Trusted outlets' own world-news feeds. Google News blocks requests from Cloudflare, these don't; Google is still
    tried as a bonus. The combined pool is cached for 10 minutes per language and shared by /live and /top. */
 const OUTLETS = {
@@ -464,7 +465,7 @@ async function newsPool(lang, ctx){
   return pool;
 }
 async function liveFeed(lang, ctx){
-  if (!NEWS_LANG[lang]) lang = "en";
+  if (!Object.hasOwn(NEWS_LANG, lang)) lang = "en";
   const pool = await newsPool(lang, ctx);
   // confirmed stories only (2+ independent outlets), newest first
   const recent = pool.items.filter(it => !it.d || Date.now() - Date.parse(it.d) < 2 * 864e5);
@@ -502,7 +503,7 @@ function parseBing(xml){
   return out;
 }
 async function realtimeSearch(q, lang, ctx){
-  if (!NEWS_LANG[lang]) lang = "en";
+  if (!Object.hasOwn(NEWS_LANG, lang)) lang = "en";
   const kws = [...new Set(q.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, " ").split(/\s+/).filter(w => w.length > 1 && !RT_STOP.has(w)))].slice(0, 8);
   if (!kws.length) return json(200, { q, items: [], used: {} });
   const cache = caches.default, ck = new Request(`https://faultlines-cache/rt/${lang}/${encodeURIComponent(kws.join(" "))}`);
@@ -514,8 +515,8 @@ async function realtimeSearch(q, lang, ctx){
     signal: AbortSignal.timeout(3500) }).then(r => r.ok ? (type === "json" ? r.json() : r.text()) : null).catch(() => null);
   const query = kws.join(" ");
   const gdelt = [];
-  const [google, bing, pool] = await Promise.all([
-    get(`https://news.google.com/rss/search?q=${encodeURIComponent(query + " when:3d")}&${NEWS_LANG[lang]}`).then(x => x ? parseRss(x) : []),
+  // (Google News isn't asked: it blocks requests from Cloudflare, so every search just waited 3.5 seconds for it)
+  const [bing, pool] = await Promise.all([
     get(`https://www.bing.com/news/search?q=${encodeURIComponent(query)}&format=rss&qft=${encodeURIComponent('sortbydate="1"')}&setlang=${lang}`).then(x => x ? parseBing(x) : []),
     // the trusted outlets' feeds: stories whose title or summary has most of the question's key words. When the
     // pool isn't cached (every 10 min) it takes up to 5 s to load: wait 1.5 s at most; it keeps loading for the next search
@@ -524,7 +525,7 @@ async function realtimeSearch(q, lang, ctx){
       .filter(it => it && kws.filter(k => (it.t + " " + (it.x || "")).toLowerCase().includes(k)).length >= Math.min(2, kws.length))).catch(() => []),
   ]);
   const cutoff = Date.now() - 4 * 864e5;
-  const all = [...pool, ...google, ...bing, ...gdelt].filter(it => it.t && /^https?:\/\//.test(it.u || "") && !STATE_MEDIA.test((it.s || "").trim())
+  const all = [...pool, ...bing, ...gdelt].filter(it => it.t && /^https?:\/\//.test(it.u || "") && !STATE_MEDIA.test((it.s || "").trim())
     && (!it.d || Date.parse(it.d) > cutoff));
   // the same story from several outlets: keep the first (newest), count the others. The searched words themselves
   // don't count as shared (every result says "Strait of Hormuz"), or all the results would melt into one story.
@@ -537,7 +538,7 @@ async function realtimeSearch(q, lang, ctx){
   }
   const items = stories.slice(0, 15).map(({ w, srcs, ...it }) => ({ ...it, n: srcs.filter(s => !AGGREGATOR.test(s)).length || 1, also: srcs.slice(1, 4) }));
   const body = JSON.stringify({ q, lang, generated: new Date().toISOString(), items,
-    used: { outlets: pool.length, google: google.length, bing: bing.length, gdelt: gdelt.length } });
+    used: { outlets: pool.length, bing: bing.length } });
   if (items.length) ctx.waitUntil(cache.put(ck, new Response(body, { headers: { "Content-Type": "application/json", "Cache-Control": "max-age=300" } })));
   return new Response(body, { status: 200, headers: cors({ "Content-Type": "application/json" }) });
 }
@@ -660,7 +661,7 @@ function scoreStories(items, focus, minSources = MIN_SOURCES){
   return stories.filter(st => st.n >= minSources && st.trustedN >= 1).sort((a, b) => b.score - a.score);
 }
 async function topStories(lang, q, en, ctx){
-  if (!NEWS_LANG[lang]) lang = "en";
+  if (!Object.hasOwn(NEWS_LANG, lang)) lang = "en";
   const key = `https://faultlines-cache/top/${lang}/${encodeURIComponent(q.toLowerCase())}`;
   const cache = caches.default, hit = await cache.match(key);
   if (hit) return new Response(hit.body, { status: 200, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "hit" }) });
@@ -699,8 +700,9 @@ const COUNTRY_ALIASES = {
   "Poland": ["Polish", "Warsaw"], "Iraq": ["Iraqi", "Baghdad"], "Afghanistan": ["Afghan", "Kabul", "Taliban"],
 };
 function focusRegex(q, en){
-  const names = [q, en].filter(Boolean).map(x => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).concat(COUNTRY_ALIASES[en] || []);
-  return names.length ? new RegExp(`(^|[^\\p{L}])(${names.join("|")})(?![\\p{L}])`, (COUNTRY_ALIASES[en] ? "u" : "iu")) : null;   // aliases like "US" are case-sensitive
+  const aliases = Object.hasOwn(COUNTRY_ALIASES, en) ? COUNTRY_ALIASES[en] : null;
+  const names = [q, en].filter(Boolean).map(x => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).concat(aliases || []);
+  return names.length ? new RegExp(`(^|[^\\p{L}])(${names.join("|")})(?![\\p{L}])`, aliases ? "u" : "iu") : null;   // aliases like "US" are case-sensitive
 }
 
 /* ------------------------------------------------------------------ news videos
@@ -729,7 +731,7 @@ function parseYouTube(xml, channel){
   for (const m of xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)){
     const b = m[1], g = tag => { const r = b.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`)); return r ? unxml(r[1]) : ""; };
     const id = g("yt:videoId"), t = g("title"), d = new Date(g("published"));
-    if (!id || !t || /#shorts?\b/i.test(t)) continue;
+    if (!/^[\w-]{6,20}$/.test(id) || !t || /#shorts?\b/i.test(t)) continue;
     out.push({ t: t.slice(0, 300), d: isNaN(d) ? null : d.toISOString(),
       members: [{ u: `https://www.youtube.com/watch?v=${id}`, t: t.slice(0, 300), s: channel, id, d: isNaN(d) ? null : d.toISOString(), img: `https://i.ytimg.com/vi/${id}/hqdefault.jpg`, x: g("media:description").slice(0, 400) }] });
   }
@@ -746,7 +748,7 @@ async function videoPool(lang, ctx){
   return pool;
 }
 async function topVideos(lang, q, en, ctx){
-  if (!CHANNELS[lang]) lang = "en";
+  if (!Object.hasOwn(CHANNELS, lang)) lang = "en";
   const key = `https://faultlines-cache/videos/${lang}/${encodeURIComponent(q.toLowerCase())}`;
   const cache = caches.default, hit = await cache.match(key);
   if (hit) return new Response(hit.body, { status: 200, headers: cors({ "Content-Type": "application/json", "X-Faultlines-Cache": "hit" }) });
@@ -795,7 +797,10 @@ const allowedOrigin = o => ALLOWED_ORIGINS.some(re => re.test(o || ""));
 export default {
   async fetch(request, env, ctx) {
     const origin = request.headers.get("Origin") || "";
-    const res = await handle(request, env, ctx, origin);
+    // an unexpected error gets a normal answer, not Cloudflare's bare error page (which the site can't even read)
+    let res;
+    try { res = await handle(request, env, ctx, origin); }
+    catch (e) { console.error(e); res = deny(500, "Something went wrong here. Please try again."); }
     if (!allowedOrigin(origin)) return res;
     // answer with the caller's own address, so both site addresses work
     const out = new Response(res.body, res);
@@ -817,7 +822,11 @@ async function handle(request, env, ctx, origin) {
     const url = new URL(request.url);
     const path = url.pathname.replace(/^\/+/, "");
     const ip = request.headers.get("CF-Connecting-IP") || "?";
-    const kind = (request.headers.get("X-Faultlines-Kind") || "ai").slice(0, 20);
+    if (!["GET", "HEAD", "POST"].includes(request.method)) return deny(405, "Method not allowed.");
+    if (request.method === "POST" && ["live", "top", "videos", "search", "models"].includes(path)) return deny(405, "Method not allowed.");
+    // the site's own kinds of request only: nobody can write fake "admin" or "visit" entries into the log
+    const sentKind = request.headers.get("X-Faultlines-Kind") || "";
+    const kind = /^(ai|pair|country|poi|group|ask|diag|private|facts-[a-z0-9_-]{1,14})$/.test(sentKind) ? sentKind : "ai";
 
     // --- visit ping (one per browser session; a flood of pings is dropped before anything is stored) ---
     if (path === "hit") {
@@ -852,12 +861,16 @@ async function handle(request, env, ctx, origin) {
       if (!env.ADMIN_BACKUP_CODE) return deny(500, "ADMIN_BACKUP_CODE secret is not set on the Worker.");
       if (!g) return closed();
       try {
-        const [mine, all] = await Promise.all([g.count(`backupfail:${ipk}`, BACKUP_LIMIT.windowMs), g.count("backupfail:all", BACKUP_ALL_LIMIT.windowMs)]);
-        if (mine >= BACKUP_LIMIT.max || all >= BACKUP_ALL_LIMIT.max) return deny(429, "Too many wrong backup codes. Try again in an hour.");
-        if (await sameSecret(backup || "", env.ADMIN_BACKUP_CODE)) return null;
-        await Promise.all([g.take(`backupfail:${ipk}`, 1e9, BACKUP_LIMIT.windowMs), g.take("backupfail:all", 1e9, BACKUP_ALL_LIMIT.windowMs)]);
+        const mineKey = `backupfail:${ipk}`, tooMany = () => deny(429, "Too many wrong backup codes. Try again in an hour.");
+        if (!(await g.take(mineKey, BACKUP_LIMIT.max, BACKUP_LIMIT.windowMs))) return tooMany();
+        if (!(await g.take("backupfail:all", BACKUP_ALL_LIMIT.max, BACKUP_ALL_LIMIT.windowMs))) { await g.give(mineKey); return tooMany(); }
+        if (await sameSecret(backup || "", env.ADMIN_BACKUP_CODE)) {   // the right code doesn't use up a try
+          await Promise.all([g.give(mineKey), g.give("backupfail:all")]).catch(() => {});
+          return null;
+        }
         ctx.waitUntil(logEvent(env, request, { kind: path === "private/verify" ? "private" : "unlock", status: 401 }));
-        return deny(401, "Wrong backup code.", { "X-Faultlines-Tries": String(Math.max(0, BACKUP_LIMIT.max - mine - 1)) });
+        const left = Math.max(0, BACKUP_LIMIT.max - await g.count(mineKey, BACKUP_LIMIT.windowMs));
+        return deny(401, "Wrong backup code.", { "X-Faultlines-Tries": String(left) });
       } catch { return closed(); }
     };
     if (path === "private/verify") {
@@ -905,6 +918,8 @@ async function handle(request, env, ctx, origin) {
 
     // --- generate with automatic fallback: Gemini keys/models -> Groq -> Cloudflare Workers AI ---
     if (request.method === "POST" && path === "models/auto:streamGenerateContent") {
+      // a cheap first line: a flood from one address stops here, before it can fill the security store and the log
+      if (limited(`ai0:${ipk}`, AI_FLOOD_LIMIT)) return deny(429, "You've asked a lot in the last few minutes. Please wait a moment.", { "X-Faultlines-Limit": "visitor" });
       return answerAuto(request, env, ctx, ip, kind);
     }
 
@@ -952,7 +967,8 @@ export class Guard extends DurableObject {
     this.sql.exec("DELETE FROM log WHERE t < ?", now - LOG_KEEP_MS);
     this.sql.exec("DELETE FROM archive WHERE day < ?", new Date(now - ARCHIVE_KEEP_DAYS * 86400e3).toISOString().slice(0, 10));
   }
-  // counters: how many times a key was counted in the window; take() counts one more if still under the limit
+  // counters: how many times a key was counted in the window; take() counts one more if still under the limit, give() undoes it
+  give(key){ this.sql.exec("DELETE FROM hits WHERE rowid = (SELECT rowid FROM hits WHERE k = ? ORDER BY t DESC LIMIT 1)", key); }
   count(key, windowMs){ return this.sql.exec("SELECT COUNT(*) AS n FROM hits WHERE k = ? AND t > ?", key, Date.now() - windowMs).one().n; }
   take(key, max, windowMs){
     this.prune();

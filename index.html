@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob: https:; media-src 'self' blob: https:; connect-src 'self' https://faultlines-ai.omarezz0709.workers.dev https://*.wikipedia.org https://cdn.jsdelivr.net https://generativelanguage.googleapis.com https://api.anthropic.com; frame-src https://www.youtube-nocookie.com https://www.youtube.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
-<meta name="description" content="Interactive globe of international relations, chokepoints and flashpoints, refreshed from the news three times a day.">
+<meta name="description" content="Interactive globe of international relations, chokepoints and flashpoints, refreshed from the news four times a day.">
 <title>Faultlines Globe</title>
 <!-- light or dark before anything is drawn: the saved choice, otherwise the device setting -->
 <script>try { var th = localStorage.getItem('fl-theme'); document.documentElement.dataset.theme = th === 'light' || th === 'dark' ? th : (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'); } catch(e) { document.documentElement.dataset.theme = 'dark'; }</script>
@@ -162,6 +163,7 @@ button{font:inherit;color:inherit}
 .tour-langs small{display:block;margin-bottom:6px;font:600 10.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
 .tour-langs div{display:flex;flex-wrap:wrap;gap:5px}
 .tour-langs .tour-btn{padding:4px 9px;font-weight:500}
+.tour-card p.tour-note{margin-top:10px;font:11.5px/1.45 var(--body);color:var(--faint)}
 /* ⚡ real-time search mode: the bar glows red while it's on */
 .ask-rt{border:0;background:none;color:var(--muted);border-radius:4px;width:28px;height:28px;cursor:pointer;font-size:14px;filter:grayscale(1);opacity:.75}
 .ask-rt:hover{background:var(--raise);opacity:1}
@@ -534,6 +536,17 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
   .collapse{display:grid}
   .p-head h2{font-size:26px}
 }
+/* phones and tablets: no live blur over the moving globe (it is recalculated every frame, a main cause of lag) */
+@media (max-width:900px),(hover:none){
+  .search input,.chip,.ask,.ticker,.tv,.vid,.panel,.filters{backdrop-filter:none}
+  .panel,.filters,.ticker{background:var(--panel-solid,var(--panel))}
+}
+/* a phone held sideways: the panel beside the globe instead of over it */
+@media (max-width:900px) and (orientation:landscape) and (max-height:500px){
+  .panel{left:auto;right:6px;top:calc(6px + env(safe-area-inset-top,0px));width:min(46vw,380px);max-height:none}
+  .panel.min{top:auto}
+  .top{max-width:calc(54vw - 24px)}
+}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
@@ -654,9 +667,9 @@ sup.ind{font:600 9px var(--mono);color:var(--gold-hi);margin-left:2px;vertical-a
   <div class="p-body"><p class="lede">Building the globe…</p></div>
 </aside>
 
-<script src="https://cdn.jsdelivr.net/npm/globe.gl@2.46.2/dist/globe.gl.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/datamaps/0.5.9/datamaps.world.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/globe.gl@2.46.2/dist/globe.gl.min.js" integrity="sha384-1uolMBZ25k3zJcNwCLEv49+L+m2dZudqAzsoSAJfQTzDCSBxJzrMuZ2dkp/5JKiT" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datamaps/0.5.9/datamaps.world.min.js" integrity="sha384-qIeVkQUjqL4rVM5oRjgNeJYj4wvU1QnXwHf6F1ZAK91RBvSX8+XFH5dV8SGeIEiM" crossorigin="anonymous"></script>
 <script>
 /* ================================================================
    DATA — simplified editorial snapshot, mid-2026
@@ -1542,6 +1555,7 @@ globe.htmlElementVisibilityModifier((el,v)=>{ el.style.opacity = v ? 1 : 0; el.s
 
 const mat = globe.globeMaterial();
 mat.color.set(GT.sea); if (mat.emissive) mat.emissive.set(GT.glow); mat.shininess = 4;
+globe.renderer().setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));   // phones report up to 3: 9 times the pixels of 1, for nothing you can see
 const ctr = globe.controls();
 ctr.autoRotate = !reduceMotion; ctr.autoRotateSpeed = 0.35;
 globeEl.addEventListener('pointerdown', ()=>{ ctr.autoRotate = false; });
@@ -1918,6 +1932,8 @@ const MODELS = {'claude-opus-5':'Claude Opus 5 (best)', 'claude-sonnet-5':'Claud
 const EFFORT = {complex:'high', default:'medium', quick:'low'};
 const lsGet = k => { try { return localStorage.getItem(k); } catch(e){ return null; } };
 const lsSet = (k, v) => { try { if (v==null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch(e){} };
+try { for (let i = localStorage.length - 1; i >= 0; i--){ const k = localStorage.key(i); if (!k.startsWith('faultlines-ai:')) continue;
+  let t = 0; try { t = JSON.parse(localStorage.getItem(k)).t; } catch(e){} if (!(Date.now() - t < 864e5)) localStorage.removeItem(k); } } catch(e){}
 const hashStr = s => { let h = 0; for (let i=0; i<s.length; i++) h = (h*31 + s.charCodeAt(i))|0; return (h>>>0).toString(36) + s.length; };
 let sdkPromise = null;
 const loadSDK = () => sdkPromise || (sdkPromise = import(SDK_URL).then(m => m.default || m.Anthropic).catch(e => { sdkPromise = null; throw e; }));
@@ -2621,6 +2637,7 @@ function renderIntro(redraw = false){
       <li>${POIS.length} strategic locations across five categories</li>
       <li>${REL.size} annotated bilateral relationships, plus alliances and blocs</li></ul></section>
     <p class="foot">Headlines, leaders and figures refresh automatically; relationship statuses are an editorial baseline. Relations are editorial shorthand, not a substitute for analysis.</p>
+    <p class="foot">A private hobby project, made for me and my friends. Not a professional or official service: information and AI answers can be wrong, so please don't rely on them. Use at your own risk.</p>
     </div>`;
   const wasMin = panel.classList.contains('min');
   wirePanel(); panelMode = 'intro';
@@ -2833,7 +2850,7 @@ function onMeta(){
 let polSig = '';
 async function loadLive(){
   try {
-    const r = await fetch('data/live.json?t=' + Date.now(), {cache:'no-store'});
+    const r = await fetch('data/live.json', {cache:'no-cache'});
     if (!r.ok) return;
     const d = await r.json();
     liveRel = Object.values(d.relations || {});
@@ -2860,7 +2877,7 @@ function rebuildPOL(){
 }
 async function loadPolitics(){
   try {
-    const r = await fetch('data/politics.json?t=' + Math.floor(Date.now()/36e5), {cache:'no-store'});
+    const r = await fetch('data/politics.json', {cache:'no-cache'});
     if (!r.ok) return;
     const d = await r.json();
     WIKI = d.countries || {}; WIKI_AT = d.generated || null;
@@ -2872,7 +2889,7 @@ async function loadPolitics(){
 let NEWS = null;
 async function loadNews(){
   try {
-    const r = await fetch('data/news.json?t=' + Date.now(), {cache:'no-store'});
+    const r = await fetch('data/news.json', {cache:'no-cache'});
     if (!r.ok) return;
     const d = await r.json();
     if (NEWS && d.generated === NEWS.generated) return;
@@ -2957,12 +2974,15 @@ function onNews(){
 }
 async function loadWB(){
   try {
-    const r = await fetch('data/wb.json?t=' + Math.floor(Date.now()/36e5), {cache:'no-store'});
+    const r = await fetch('data/wb.json', {cache:'no-cache'});
     if (r.ok){ WB = await r.json(); document.querySelectorAll('.facets').forEach(refreshFacet); }
   } catch(e){}
 }
 loadWB(); loadLive(); loadNews(); loadPolitics();
-setInterval(() => { loadLive(); loadNews(); }, 10*60*1000);
+// every 10 minutes while someone is looking, and right away when they come back to the tab after longer
+let dataAt = Date.now();
+function refreshData(){ if (document.hidden || Date.now() - dataAt < 10*60*1000) return; dataAt = Date.now(); loadLive(); loadNews(); }
+setInterval(refreshData, 60*1000); document.addEventListener('visibilitychange', refreshData);
 
 /* AI runs through the shared Worker for everyone; keys saved by older versions of the site are forgotten */
 lsSet('faultlines-api-key', null);
@@ -3325,7 +3345,6 @@ const TR = {
   'Your earlier questions': ['Vos questions précédentes', 'Tus preguntas anteriores', 'أسئلتك السابقة'], '☰ Your earlier questions': ['☰ Vos questions précédentes', '☰ Tus preguntas anteriores', '☰ أسئلتك السابقة'],
   'Sources': ['Sources', 'Fuentes', 'المصادر'], 'Clear history': ['Effacer l’historique', 'Borrar historial', 'مسح السجل'], 'Sure? Clear all': ['Sûr ? Tout effacer', '¿Seguro? Borrar todo', 'متأكد؟ امسح الكل'],
   'No questions yet. Ask one in the question bar.': ['Aucune question pour l’instant. Posez-en une dans la barre de questions.', 'Aún no hay preguntas. Haz una en la barra de preguntas.', 'لا توجد أسئلة بعد. اطرح سؤالًا في شريط الأسئلة.'],
-  'Kept only in this browser, never sent anywhere.': ['Conservé uniquement dans ce navigateur, jamais envoyé.', 'Guardado solo en este navegador, nunca se envía.', 'محفوظ في هذا المتصفح فقط، ولا يُرسل إلى أي مكان.'],
   "Written by AI from the page's data, its own knowledge and, where listed, web sources; check recent events against the news.": ["Rédigé par une IA à partir des données du site, de ses connaissances et, le cas échéant, de sources web ; vérifiez les événements récents dans l’actualité.", "Escrito por IA a partir de los datos de la página, su propio conocimiento y, si se indican, fuentes web; contrasta los hechos recientes con las noticias.", "كتبه الذكاء الاصطناعي من بيانات الموقع ومعرفته ومصادر الويب المذكورة؛ تحقق من الأحداث الأخيرة في الأخبار."],
   'Live feed': ['Fil en direct', 'Noticias en vivo', 'البث المباشر'], 'World news': ['Actualité mondiale', 'Noticias del mundo', 'أخبار العالم'],
   'Latest headlines': ['Derniers titres', 'Últimos titulares', 'آخر العناوين'],
@@ -3402,6 +3421,18 @@ const TR = {
     'تُحفظ الأسئلة في سجل استخدام الموقع لمدة تصل إلى 90 يومًا، دون عنوان IP الخاص بك.',
     'Fragen werden bis zu 90 Tage im Nutzungsprotokoll der Seite gespeichert, ohne deine IP-Adresse.',
     'Le domande vengono conservate nel registro d’uso del sito fino a 90 giorni, senza il tuo indirizzo IP.'],
+  "This list is kept only in this browser. The questions themselves are also kept in the site's usage log for up to 90 days.": [
+    'Cette liste est conservée uniquement dans ce navigateur. Les questions sont aussi conservées dans le journal d’utilisation du site jusqu’à 90 jours.',
+    'Esta lista se guarda solo en este navegador. Las preguntas también se guardan en el registro de uso del sitio hasta 90 días.',
+    'تُحفظ هذه القائمة في هذا المتصفح فقط. كما تُحفظ الأسئلة نفسها في سجل استخدام الموقع لمدة تصل إلى 90 يومًا.',
+    'Diese Liste liegt nur in diesem Browser. Die Fragen selbst werden außerdem bis zu 90 Tage im Nutzungsprotokoll der Seite gespeichert.',
+    'Questo elenco resta solo in questo browser. Le domande vengono anche conservate nel registro d’uso del sito fino a 90 giorni.'],
+  "A private hobby project, made for me and my friends. Not a professional or official service: information and AI answers can be wrong, so please don't rely on them. Use at your own risk.": [
+    'Un projet personnel, fait pour moi et mes amis. Ce n’est pas un service professionnel ni officiel : les informations et les réponses de l’IA peuvent être fausses, ne vous y fiez donc pas. Utilisation à vos propres risques.',
+    'Un proyecto personal, hecho para mí y mis amigos. No es un servicio profesional ni oficial: la información y las respuestas de la IA pueden ser erróneas, así que no te fíes de ellas. Úsalo bajo tu propia responsabilidad.',
+    'مشروع شخصي للهواية، صُنع لي ولأصدقائي. ليس خدمة مهنية أو رسمية: قد تكون المعلومات وإجابات الذكاء الاصطناعي خاطئة، فلا تعتمد عليها. الاستخدام على مسؤوليتك الخاصة.',
+    'Ein privates Hobbyprojekt, gemacht für mich und meine Freunde. Kein professioneller oder offizieller Dienst: Informationen und KI-Antworten können falsch sein, verlass dich also nicht darauf. Nutzung auf eigene Gefahr.',
+    'Un progetto personale, fatto per me e i miei amici. Non è un servizio professionale o ufficiale: le informazioni e le risposte dell’IA possono essere sbagliate, quindi non farci affidamento. Uso a tuo rischio.'],
   // the first-visit tour  [French, Spanish, Arabic, German]
   'Welcome to Faultlines': ['Bienvenue sur Faultlines', 'Bienvenido a Faultlines', 'مرحبًا بك في Faultlines', 'Willkommen bei Faultlines'],
   'An interactive globe of world politics: who is allied with whom, where the tensions are, and what is happening right now. Take the 30-second tour?': [
@@ -3616,7 +3647,6 @@ const TR_DE = {
   'Your earlier questions': 'Deine früheren Fragen', '☰ Your earlier questions': '☰ Deine früheren Fragen',
   'Sources': 'Quellen', 'Clear history': 'Verlauf löschen', 'Sure? Clear all': 'Sicher? Alles löschen',
   'No questions yet. Ask one in the question bar.': 'Noch keine Fragen. Stell eine in der Fragenleiste.',
-  'Kept only in this browser, never sent anywhere.': 'Nur in diesem Browser gespeichert, wird nirgendwohin gesendet.',
   "Written by AI from the page's data, its own knowledge and, where listed, web sources; check recent events against the news.": 'Von KI geschrieben, aus den Daten der Seite, eigenem Wissen und, wo angegeben, Webquellen; prüf aktuelle Ereignisse in den Nachrichten.',
   'Live feed': 'Live-Nachrichten', 'World news': 'Weltnachrichten', 'Latest headlines': 'Neueste Schlagzeilen',
   'Google News world headlines, checked every few minutes. Headlines that name a country and words like war, strike or sanctions are marked.': 'Weltschlagzeilen von Google News, alle paar Minuten geprüft. Schlagzeilen mit einem Land und Wörtern wie Krieg, Angriff oder Sanktionen werden markiert.',
@@ -3733,7 +3763,6 @@ const TR_IT = {
   'Your earlier questions': 'Le tue domande precedenti', '☰ Your earlier questions': '☰ Le tue domande precedenti',
   'Sources': 'Fonti', 'Clear history': 'Cancella la cronologia', 'Sure? Clear all': 'Sicuro? Cancella tutto',
   'No questions yet. Ask one in the question bar.': 'Nessuna domanda per ora. Fanne una nella barra delle domande.',
-  'Kept only in this browser, never sent anywhere.': 'Conservato solo in questo browser, mai inviato altrove.',
   "Written by AI from the page's data, its own knowledge and, where listed, web sources; check recent events against the news.": 'Scritto dall’IA con i dati della pagina, le sue conoscenze e, se indicate, fonti web; verifica i fatti recenti nelle notizie.',
   'Live feed': 'Notizie in diretta', 'World news': 'Notizie dal mondo', 'Latest headlines': 'Ultimi titoli',
   'Google News world headlines, checked every few minutes. Headlines that name a country and words like war, strike or sanctions are marked.': 'Titoli dal mondo di Google News, controllati ogni pochi minuti. Sono evidenziati i titoli che citano un paese e parole come guerra, attacco o sanzioni.',
@@ -4148,7 +4177,7 @@ async function wikiContext(q, ids){
    in this browser (☰ in the question bar lists them), up to 30. */
 const ASK_HIST_KEY = 'fl-ask-hist', ASK_HIST_MAX = 30;
 let convo = null;   // {id, turns: [{q, a, ids, aIds, pois, src, at}]}
-function askHist(){ try { const h = JSON.parse(localStorage.getItem(ASK_HIST_KEY) || '[]'); return Array.isArray(h) ? h : []; } catch(e){ return []; } }
+function askHist(){ try { const h = JSON.parse(localStorage.getItem(ASK_HIST_KEY) || '[]'); return Array.isArray(h) ? h.filter(c => c && Array.isArray(c.turns) && c.turns[0] && typeof c.turns[0].q === 'string') : []; } catch(e){ return []; } }
 function saveConvo(){
   if (!convo || !convo.turns.some(t => t.a)) return;
   const h = askHist().filter(c => c.id !== convo.id);
@@ -4268,7 +4297,7 @@ function renderAskHistory(){
   panel.innerHTML = head('Question', 'Your earlier questions') + `<div class="p-body">
     ${h.length ? `<ul class="hist">${h.map((c, i) => `<li><button data-hi="${i}"><span dir="auto">${esc(c.turns[0].q)}</span><small>${esc(when(c.turns[c.turns.length - 1].at || c.id))}${c.turns.length > 1 ? ` · +${c.turns.length - 1} follow-up${c.turns.length > 2 ? 's' : ''}` : ''}</small></button></li>`).join('')}</ul>
       <button class="tag" id="hist-clear" style="align-self:flex-start">Clear history</button>` : '<p class="note muted">No questions yet. Ask one in the question bar.</p>'}
-    <p class="hidden-note">Kept only in this browser, never sent anywhere.</p></div>`;
+    <p class="hidden-note">This list is kept only in this browser. The questions themselves are also kept in the site's usage log for up to 90 days.</p></div>`;
   wirePanel(); panelMode = 'askhist';
   document.getElementById('ask-hist').setAttribute('aria-pressed', 'true');
   panel.querySelectorAll('[data-hi]').forEach(b => b.onclick = () => { convo = JSON.parse(JSON.stringify(h[+b.dataset.hi])); drawConvo(); flagConvo(true); });
@@ -4496,7 +4525,7 @@ document.getElementById('smodal-prev').onclick = () => tvNext(-1, true);
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && storyOpen) storyPop(false); });
 document.documentElement.style.setProperty('--tv-ms', TV_MS + 'ms');
 setInterval(() => tvRefresh(false), 600);                              // follow the selection
-setInterval(() => { tvCache.clear(); tvRefresh(true); }, 10 * 60e3);    // and refresh every 10 minutes
+setInterval(() => { if (document.hidden) return; tvCache.clear(); tvRefresh(true); }, 10 * 60e3);    // and refresh every 10 minutes
 
 /* ================================================================
    NEWS VIDEO under the top story: the day's top 5 stories as videos from trusted news channels (YouTube,
@@ -4512,7 +4541,7 @@ async function loadVideos(t){
   const ck = LANG + '|' + t.key, c = vidCache.get(ck);
   if (c && Date.now() - c.at < 10 * 60e3) return c.videos;
   let videos = [];
-  try { const r = await fetch(`${AI_PROXY}/videos?lang=${LANG}&q=${encodeURIComponent(t.q)}&en=${encodeURIComponent(t.en)}`); if (r.ok) videos = (await r.json()).videos || []; } catch(e){}
+  try { const r = await fetch(`${AI_PROXY}/videos?lang=${LANG}&q=${encodeURIComponent(t.q)}&en=${encodeURIComponent(t.en)}`); if (r.ok) videos = ((await r.json()).videos || []).filter(v => /^[\w-]{6,20}$/.test(v.id)); } catch(e){}
   videos = videos.filter(v => /^[\w-]{11}$/.test(v.id || ''));
   if (videos.length) vidCache.set(ck, {at: Date.now(), videos});
   return videos;
@@ -4614,7 +4643,7 @@ document.getElementById('vid-min').onclick = () => {
 };
 if (vidEl.classList.contains('min')) document.getElementById('vid-min').textContent = '▴';
 setInterval(() => vidRefresh(false), 700);
-setInterval(() => { vidCache.clear(); if (!vid.engaged) vidRefresh(true); }, 10 * 60e3);
+setInterval(() => { if (document.hidden) return; vidCache.clear(); if (!vid.engaged) vidRefresh(true); }, 10 * 60e3);
 
 /* LIGHT / DARK: follows the device setting until the viewer picks one with ☀ / ☾ (then remembered) */
 function applyTheme(t, save){
@@ -4633,7 +4662,7 @@ function applyTheme(t, save){
 }
 /* TERRAIN RELIEF: an elevation map turned into atlas-style hill shading in the theme's colours, drawn on the globe
    and shown through slightly see-through countries. If the maps can't load, the globe simply stays plain. */
-const RELIEF_SRC = 'https://cdn.jsdelivr.net/npm/three-globe@2/example/img/';
+const RELIEF_SRC = 'https://cdn.jsdelivr.net/npm/three-globe@2.45.6/example/img/';
 let reliefImgs = null, reliefOn = false, reliefJob = 0;
 const loadImg = u => new Promise((res, rej) => { const i = new Image(); i.crossOrigin = 'anonymous'; i.onload = () => res(i); i.onerror = rej; i.src = u; });
 const rgbOf = c => { const m = String(c).match(/\d+(\.\d+)?/g); if (m && !c.startsWith('#')) return m.slice(0, 3).map(Number); const n = parseInt(c.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; };
@@ -4739,7 +4768,8 @@ function startTour(){
   box.className = 'tour'; box.setAttribute('role', 'dialog'); box.setAttribute('aria-label', 'Tour');
   box.innerHTML = `<div class="tour-spot none"></div><div class="tour-card"><h4></h4><p></p>
     <div class="tour-langs"><small>Choose your language</small><div>${[['en', 'English'], ['de', 'Deutsch'], ['fr', 'Français'], ['es', 'Español'], ['it', 'Italiano'], ['ar', 'العربية']]
-      .map(([l, n]) => `<button class="tour-btn" data-lang="${l}" lang="${l}">${n}</button>`).join('')}</div></div>
+      .map(([l, n]) => `<button class="tour-btn" data-lang="${l}" lang="${l}">${n}</button>`).join('')}</div>
+      <p class="tour-note">A private hobby project, made for me and my friends. Not a professional or official service: information and AI answers can be wrong, so please don't rely on them. Use at your own risk.</p></div>
     <div class="tour-foot"><span class="tour-dots">${steps.map(() => '<i></i>').join('')}</span>
       <button class="tour-btn skip" data-t="skip">Skip</button><button class="tour-btn" data-t="back">‹ Back</button><button class="tour-btn go" data-t="next">Next ›</button></div></div>`;
   document.body.appendChild(box);

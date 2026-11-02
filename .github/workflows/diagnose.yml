@@ -78,7 +78,7 @@ jobs:
       # password", + REPORT_EMAIL). Without them nothing is sent.
       - name: Email the report
         if: (steps.diag.outputs.email == 'true' || inputs.test_email) && steps.slot.outputs.run == 'true' && env.MAIL_USERNAME != '' && env.REPORT_EMAIL != ''
-        uses: dawidd6/action-send-mail@v3
+        uses: dawidd6/action-send-mail@4226df7daafa6fc901a43789c49bf7ab309066e7   # v3, pinned: this step handles a password
         with:
           server_address: smtp.gmail.com
           server_port: 465

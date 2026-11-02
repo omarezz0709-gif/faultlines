@@ -8,6 +8,9 @@ on:
     paths: ["worker/**", ".github/workflows/worker.yml"]
   workflow_dispatch:          # "Run workflow" button for a manual deploy
 
+permissions:
+  contents: read              # a deploy only needs to read the code
+
 concurrency:
   group: worker-deploy
   cancel-in-progress: false
@@ -49,7 +52,7 @@ jobs:
 
       - name: Deploy to Cloudflare
         if: steps.token.outputs.ok == 'true'
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@9acf94ace14e7dc412b076f2c5c20b8ce93c79cd   # v3, pinned: this step handles the Cloudflare token
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           workingDirectory: worker
