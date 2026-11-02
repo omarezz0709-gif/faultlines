@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-02T20:09:29Z",
+  "lastRun": "2026-11-02T23:17:25Z",
   "log": [
    {
     "date": "2026-11-02",
@@ -16,16 +16,6 @@
       "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOV3pkQ1ZnTFVSbEVfbU1acTJ5b0NWX29yNlNHYmZ1TXpua3RxNDdBMGd2MDU5TW4xLUFCb3l1T09iNlhEdTZCd19DZjgwQ2NnNFZLNEV2SUlrSmVzSEF6bERNOVdwQ1c1MGRQeXR6TjhETWFmRzluLVMtRnVSN1Juc2NjZzlDY0ZhZjBzNGYtc3ZQb2VQdjU2YXl2R1Vuc2h3WGN5TA?oc=5"
      },
      {
-      "label": "Bulgaria",
-      "change": "Presidential runoff election won by Iliana Yotova",
-      "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQb3Vqb3hSYnByTHA3R2EzcUJ3d2dwVTBseFg2U3E3OTR2dElSS1Q4Z2RFY21tQWR0T255N2VDM0FEdS1QWjlLNTk0YzBuZ1g1dTM2YWJIS2R5R0xvWjRZQkZWWFgwR2VHY19ZSHp5OTBjRThncUJLYm9hc1VqM092UTBkT2tObXViMFZiSFFlVWc5ODJySFVsYWRxbWFOekFCRjBydzFvUnhtZ2RFNlJtMFhRZHljU2Nvcmc?oc=5"
-     },
-     {
-      "label": "New Zealand",
-      "change": "Early voting underway ahead of November 2026 parliamentary election",
-      "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQblpzVENyekNxMW1iVlpQQ0tXTDZsUHVLRkE1c2tGR21TRGxXMXUyUFV0MjVaeXJCTmRqM0c3V2ljM1FjdjN4S3N1eXpYVllnWTdrUHFVQUw0ZGdfbWlmX2hMejhjVENSaTNhRmJsXzExUDRQT2pZUVFicnJ1eWNQSWp6VGJmNzVjRFYtdnllTU1NaDh6RWRVc2liT2JLb3UyOHBMVEo4NDQySHZHVUZvbDNn?oc=5"
-     },
-     {
       "label": "Bulgaria–Russia",
       "change": "Tense → Normal: Pro-Russian candidate Iliana Iotova wins presidency and pledges reset",
       "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNcGdTX044LXQxbXY5UzExNEFscTJ4RE5UVkRoOUl4V0tJYmI2UEF6ZHlTeUZqS0tCM0Y3NFRwd291YXRNeVY3VnNsZTRIUkZ6QTZEa3hqdEs0Uk1ZakY2dTVXeWFRUVNlRW93NzJDYmtaWGJzd3JpaEI5MGRYMEw1QVpPVUVLUFRGTFlUMDdEMTFwZEZHc2g2aXQ2QlJYMEZMSTQ4LUN4UmU3MkhnVXpSR2V5ZTlveGh0dE5NOQ?oc=5"
@@ -39,6 +29,26 @@
       "label": "South Africa–United States",
       "change": "Tense → Tense: US officially kicks South Africa out of AGOA",
       "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTXBRdlBrbE5GVUt6UUhpRWFyUUNFTlBtSTAtdXgyaDA1OFl6ajZTQWg1SGlTakZXRXFNc0x4V1QtMHdmc1Vpb0ZWUGxlai1xR2xJTDd5YnVfZXBuY3ZyU1JDQk5tWU5PMEUwZlV2NGpGamg3SEZ0clF1NzA2R25McW52dzk0aGxLUkVnXzFwNlRpYlY3SlR2ckJnNHZPOUx6ZHNzNg?oc=5"
+     },
+     {
+      "label": "Argentina–United Kingdom",
+      "change": "Refreshed note: British vessel opens fire near Falkland Islands",
+      "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQc3plTk00cXlHU1h1b0F4OVF5UUxRQlhpNDF1N3hQR2NNVTRmdUdxbjVndFFKQWRfaGNwUFVGQlprQ2xQYy1ZbEZKVnMtc3ZxZlFUSzUzSjRkU0RJR2JQQTRFWjd1dC11d0NLdzRhNDdTQ1k4M2w3YUhyQkpPcXN3Rkt1UElTR0dmbC14QtIBkgFBVV95cUxOX0VOWW40dkxsV0dNdU5UT3dfX1l6OGJfenNyX3Z4amlnTVZJVVNObnNRZVZQS21OUlFHaF9HM2dneXJJZjFsRUFFZTFyd0dyYXpoUHFFc0stdkxZdjRDejJQSEpmZVVIZmltaUgwZDZvcHo2YWFKWU5TcXNkcXhCd1E1V1c5UGluREpRRjlzQ3Y0Zw?oc=5"
+     },
+     {
+      "label": "Al-Shabaab and the Horn of Africa",
+      "change": "Updated thread: Uganda begins withdrawing peacekeeping troops from Somalia",
+      "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPb1daUVZUcmFzSy1uSnB1elBxUkp5YlRjdlQ0d01RTGFPVk1teWhHWG8tT3BHaFdWMG1CaDJxcGgxUDBCMW5TVGxoTkxPcGw1b3k2N1FacEVReXBfeHRvOVVueHZzOWh6eXJDUVltVFZSSUJYbHNZSUVnYmkxVDhQLXdJVFFQa0JfZVhJRDlYcFI4RC11?oc=5"
+     },
+     {
+      "label": "Bulgaria",
+      "change": "Election recorded: Iliana Yotova wins presidential runoff",
+      "source": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPLXZQT3ItZ2tYdDVhQlNSd2F5ZFpXM194SlQyb2NxZjNBX0I1V1VFcUJlRjU3UFlWSm9FUzZzdmU0Q19kT2ZrV2NESGtaOU9aTXVkR3NBUW0tMEs4c0c5UU1reG9SejFZTmNlVHF4MExEaXRRdzhSaDdOMTI3YWFKOUVhUzBoM3RlTTl3d1ZNU3dPaTdoc2l6Tjk3Q3lLRnU2ZTdnSFBpNlNfTndXVEJZZWxzRUREMmdjUGZ4T3E5Y0VsdzJZTXZuNGNfS1E1WDh4RVpz0gHTAUFVX3lxTE8tdlBPci1na1h0NWFCU1J3YXlkWlczX3hKVDJvY3FmM0FfQjVXVUVxQmVGNTdQWVZKb0VTNnN2ZTRDX2RPZmtXY0RIa1o5T1pNdWRHc0FRbS0wSzhzRzlRTWt4b1J6MVlOY2VUcXgwTERpdFF3OFJoN04xMjdhYUo5RWFTMGgzdGVNOXd3Vk1Td09pN2hzaXpOOTdDeUtGdTZlN2dIUGk2U19Od1dUQlllbHNFREQyZ2NQZnhPcTljRWx3MllNdm40Y19LUTVYOHhFWnM?oc=5"
+     },
+     {
+      "label": "New Zealand",
+      "change": "Election scheduled: General election set for November 2026",
+      "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSUktVkZhbEhiTTF3V1hiVXpWMm1BNVVvY1RvSjJiVE03aE5TdFN6WElkdWdqRy0xV3NzT1dRalg0ZE1TYjNnU0d5YlY0d0M5QnV2cDlIX2EwMmtKemo3QzZGUGJiT1lMdG9rUGNQQzZJcEF1ZFoyNXlObUk4VjY4by0zVFhDeDRZMFJ1TGh4b09KYnZoQzI5b2JSTVE5MU9lNU8xbmIwV1prMnJjWmlJWlhESlVVQ05LU0Q0MWExZXdHS3FXMnZTaGdB?oc=5"
      }
     ]
    },
@@ -1813,7 +1823,7 @@
     ]
    }
   ],
-  "summary": "Iliana Iotova wins the Bulgarian presidential runoff, Trump removes South Africa and Rwanda from AGOA duty-free trade access, and Russian strikes on a Ukrainian humanitarian aid center kill 24."
+  "summary": "Updated regional dynamics following military friction near the Falkland Islands, Uganda's troop withdrawal from Somalia, and presidential election results in Bulgaria."
  },
  "relations": {
   "DNK-USA": {
@@ -2108,9 +2118,9 @@
    "a": "ARG",
    "b": "GBR",
    "s": "T",
-   "note": "Argentine President Milei rules out military force over the Falkland Islands, committing to pursue diplomatic channels.",
-   "updated": "2026-10-22",
-   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaE05bE1SaE9ieUFobXN4cXVnczRDeTdGbG1zQi1talFUV1Nnc2FScUYtSWJxQkpKaEhKUGl6bmZBcTRXR0M2OE10Uy1id1pORFlZOERQS2ZRUzNHVmJha2V3enJ1MkJxLWd0dmR4d2pjNUdIOEtTcnNUeVY2d2JWMll3aDZiTDhEck1MM1R3UHhQUHdwdnJnZUIyVm4zUWZGUkY5X2NqSDRWYkVw?oc=5"
+   "note": "Tensions escalate after a British vessel opens fire near the Falkland Islands (Islas Malvinas) amid maritime friction.",
+   "updated": "2026-11-02",
+   "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQc3plTk00cXlHU1h1b0F4OVF5UUxRQlhpNDF1N3hQR2NNVTRmdUdxbjVndFFKQWRfaGNwUFVGQlprQ2xQYy1ZbEZKVnMtc3ZxZlFUSzUzSjRkU0RJR2JQQTRFWjd1dC11d0NLdzRhNDdTQ1k4M2w3YUhyQkpPcXN3Rkt1UElTR0dmbC14QtIBkgFBVV95cUxOX0VOWW40dkxsV0dNdU5UT3dfX1l6OGJfenNyX3Z4amlnTVZJVVNObnNRZVZQS21OUlFHaF9HM2dneXJJZjFsRUFFZTFyd0dyYXpoUHFFc0stdkxZdjRDejJQSEpmZVVIZmltaUgwZDZvcHo2YWFKWU5TcXNkcXhCd1E1V1c5UGluREpRRjlzQ3Y0Zw?oc=5"
   },
   "MMR-MYS": {
    "a": "MMR",
@@ -3543,7 +3553,7 @@
   "al-shabaab": {
    "t": "security",
    "n": "Al-Shabaab and the Horn of Africa",
-   "d": "Al-Shabaab militants stage deadly ambushes across southern Somalia as Uganda begins withdrawing its long-standing peacekeeping forces.",
+   "d": "Al-Shabaab militants stage ambushes across southern Somalia as Uganda begins withdrawing its peacekeeping forces.",
    "c": [
     "SOM",
     "KEN",
@@ -3555,8 +3565,8 @@
     "TUR",
     "ARE"
    ],
-   "updated": "2026-10-30",
-   "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVEI2ZldGV0cxUl9QSWYwTFg5NUJ1d3ZFT0RRQ1ZCLTVVQnZjdE0yWGs4Z25qVHp1bTBKOWk3VnVlSnpiTWhxTExMR1poeHVVMEg4ci1qdndObHpDVThUSE50dVpVVWZzZVRJTmdqSHVlOUtuTmYtUF96cDB4cnZ6VkRXRFlNTUQ0NlEzNElBeW1sU3V3QWFpcTFtdGVCWHh2Tm1wQzdlNTVJYUNVQkp1SUZqYU1YZ1RVS21zLVFiaw?oc=5"
+   "updated": "2026-11-02",
+   "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPb1daUVZUcmFzSy1uSnB1elBxUkp5YlRjdlQ0d01RTGFPVk1teWhHWG8tT3BHaFdWMG1CaDJxcGgxUDBCMW5TVGxoTkxPcGw1b3k2N1FacEVReXBfeHRvOVVueHZzOWh6eXJDUVltVFZSSUJYbHNZSUVnYmkxVDhQLXdJVFFQa0JfZVhJRDlYcFI4RC11?oc=5"
   }
  },
  "pois": {
@@ -3795,8 +3805,8 @@
   "BGR": {
    "nextelec": "Presidential, 2031",
    "updated": "2026-11-02",
-   "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPMW5kbnllNkNqTkxlcjJzSm00SzctTkFqRl8yQnNtaGRySWJxbERCZDlaY282UkpsUTY1czQyUFRpRUxIUmxhd3E1X3FCdThheVZ4VlEwZG80bDJkdi1oSk9nSmFxR3BabWtvY1I0em1ubXpIMl9rekZNU0sxeFBRakhLR0xseEZ3cnZYQ2hvOXE2UkU3UDVJUm80QWRMcGpwR2RFbHplMkNzb0hPVGtCNUdIT3NfQXh6a210WjR2WWhTZlN6cXlVaXk3MlJGUXfSAc8BQVVfeXFMUHlFY0NYNmRlZmc3alBSS0lKWTlFM0FYN1I4RmlkRUtMMWcxcUtvT1o4VzBOb0RqSGN2RWtUb0RTS3A3QkNWbGZUSThMTjZxUFgxX1J2Z042U3NJaklYYVFLWmdQN2hUZVAwZm9HWEZuX0ZyZ0IzLWdFdE1wQ2Z3dXkwOEM2SllYeEpjeVRSSlVVLUdZeU9JRU5SQWctb0o0RHdsVURZd0h0UkNIUkEtQUNjQXlUdjhySVpDUU1RTTJJelFXbzF0WG0zOTZjaVVF?oc=5",
-   "lastelec": "Presidential runoff, November 2026, Iliana Iotova"
+   "source": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPLXZQT3ItZ2tYdDVhQlNSd2F5ZFpXM194SlQyb2NxZjNBX0I1V1VFcUJlRjU3UFlWSm9FUzZzdmU0Q19kT2ZrV2NESGtaOU9aTXVkR3NBUW0tMEs4c0c5UU1reG9SejFZTmNlVHF4MExEaXRRdzhSaDdOMTI3YWFKOUVhUzBoM3RlTTl3d1ZNU3dPaTdoc2l6Tjk3Q3lLRnU2ZTdnSFBpNlNfTndXVEJZZWxzRUREMmdjUGZ4T3E5Y0VsdzJZTXZuNGNfS1E1WDh4RVpz0gHTAUFVX3lxTE8tdlBPci1na1h0NWFCU1J3YXlkWlczX3hKVDJvY3FmM0FfQjVXVUVxQmVGNTdQWVZKb0VTNnN2ZTRDX2RPZmtXY0RIa1o5T1pNdWRHc0FRbS0wSzhzRzlRTWt4b1J6MVlOY2VUcXgwTERpdFF3OFJoN04xMjdhYUo5RWFTMGgzdGVNOXd3Vk1Td09pN2hzaXpOOTdDeUtGdTZlN2dIUGk2U19Od1dUQlllbHNFREQyZ2NQZnhPcTljRWx3MllNdm40Y19LUTVYOHhFWnM?oc=5",
+   "lastelec": "presidential, November 2026, Iliana Yotova"
   },
   "SSD": {
    "nextelec": "general, December 2026",
@@ -3837,9 +3847,9 @@
    "source": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNXFXa1c5U05DZHNINV9rcExET0NiRnFoaEkyczUyUjNIUi1pa1psaVEyQ1hUR2JvYllsUkxPQnRJWTlxdnV0QmFQTjE3d3A3RXdQLTkxU0hWaVR1MW5vUlZJUmxSSHVLWUFWdlJVbk91X1I5NnVZaWZ6aXk0NmRxa1ZDdk92UnhxNFIxUFVLVkE1TVhhelU5SW9ueThycGJfZG1LZmZRVmhXQnlKMFl5cVBDa1BqblRMODYwZWV6UFZEaHF5aFRfVml6UUtJZzNp0gHWAUFVX3lxTE5XWVRjcFRCQXdGWEktQ3Y0Zi1ZeXgyQWo1bUdIVlFNTkdReU1jWEQ4MkhYNnRTNGM1MGxDWHJndjM0bUU2WThEWElkYUhER2tpUE1Za2sxWjVldkhkRllGWDlUcjlpVXUxSVFpaTFfOE8tTlpjamRJaUhNZnJqVDZ3bmlacF9iS2NqbWpZcGktT29ZbjJ2bHBETUlqZXJPVVhQNkhwNnZmdERQczl6dWw3MWctSDdfQ0R2VzlEV2VQSHdDYkx6Snh2cVYxM3gtLThOalNpX3c?oc=5"
   },
   "NZL": {
-   "nextelec": "parliamentary, Nov 2026",
+   "nextelec": "general, November 2026",
    "updated": "2026-11-02",
-   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQblpzVENyekNxMW1iVlpQQ0tXTDZsUHVLRkE1c2tGR21TRGxXMXUyUFV0MjVaeXJCTmRqM0c3V2ljM1FjdjN4S3N1eXpYVllnWTdrUHFVQUw0ZGdfbWlmX2hMejhjVENSaTNhRmJsXzExUDRQT2pZUVFicnJ1eWNQSWp6VGJmNzVjRFYtdnllTU1NaDh6RWRVc2liT2JLb3UyOHBMVEo4NDQySHZHVUZvbDNn?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSUktVkZhbEhiTTF3V1hiVXpWMm1BNVVvY1RvSjJiVE03aE5TdFN6WElkdWdqRy0xV3NzT1dRalg0ZE1TYjNnU0d5YlY0d0M5QnV2cDlIX2EwMmtKemo3QzZGUGJiT1lMdG9rUGNQQzZJcEF1ZFoyNXlObUk4VjY4by0zVFhDeDRZMFJ1TGh4b09KYnZoQzI5b2JSTVE5MU9lNU8xbmIwV1prMnJjWmlJWlhESlVVQ05LU0Q0MWExZXdHS3FXMnZTaGdB?oc=5"
   },
   "GRD": {
    "nextelec": "general, 5 November 2026",
