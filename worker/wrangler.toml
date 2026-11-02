@@ -27,15 +27,6 @@ class_name = "Guard"
 tag = "v1"
 new_sqlite_classes = ["Guard"]
 
-# Cloudflare's own rate limiter: the first line against floods, before the security store (see flooded in gemini-proxy.js)
-[[ratelimits]]
-name = "FLOOD"
-namespace_id = "1001"
-
-  [ratelimits.simple]
-  limit = 30
-  period = 60
-
 # nightly log backup at 00:10 Berlin (22:10 UTC in summer, 23:10 UTC in winter; the Worker skips the wrong one)
 [triggers]
 crons = ["10 22,23 * * *"]

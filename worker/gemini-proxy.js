@@ -25,7 +25,6 @@ const MAX_OUTPUT_TOKENS = 8192;
 const MAX_BODY_BYTES = 200_000;
 const CACHE_SECONDS = 24 * 3600;
 const VISITOR_LIMIT = { max: 12, windowMs: 5 * 60_000 };      // AI requests per visitor per 5 minutes
-const AI_FLOOD_LIMIT = { max: 60, windowMs: 5 * 60_000 };      // used only if Cloudflare's rate limiter isn't available (see flooded)
 const ADMIN_MAX_TRIES = 5;                                     // wrong admin codes in total before the login locks for everyone
 const ADMIN_IP_LIMIT = { max: 5, windowMs: 60 * 60_000 };     // wrong admin codes per visitor per hour
 const BACKUP_LIMIT = { max: 5, windowMs: 60 * 60_000 };       // wrong backup codes per visitor per hour
@@ -68,8 +67,10 @@ async function sameSecret(given, real){
   return d === 0 && a.length === b.length;
 }
 
-// in-memory counters (per Worker copy): a cheap first line against floods, before anything is stored. When the map
-// gets big, only stale entries are dropped (never everything at once, so rotating addresses can't wipe the counters).
+// in-memory counters: only the fallback for when the security store can't be reached. They can't be the real limit:
+// Cloudflare spreads requests over many Worker copies, and 170 in a row from one address never reached any copy's limit
+// (its own rate-limiter binding let 200 of 200 through a limit of 30 too). When the map gets big, only stale entries are
+// dropped (never everything at once, so rotating addresses can't wipe the counters).
 const hits = new Map();
 function limited(key, { max, windowMs }) {
   const now = Date.now();
@@ -78,13 +79,6 @@ function limited(key, { max, windowMs }) {
   list.push(now); hits.set(key, list);
   if (hits.size > 5000) for (const [k, v] of hits) { if (!v.length || now - v[v.length - 1] > 3600e3) hits.delete(k); if (hits.size < 4000) break; }
   return false;
-}
-// the first line against floods: Cloudflare's own rate limiter (binding FLOOD in wrangler.toml, 30 per minute per key).
-// The in-memory counters above can't do this alone: Cloudflare spreads requests over many Worker copies, and 170 in a row
-// from one address never reached any copy's limit. It's cheap and stores nothing, so it comes before the security store.
-async function flooded(env, key, fallback){
-  if (env.FLOOD) try { return !(await env.FLOOD.limit({ key })).success; } catch {}
-  return limited(key, fallback);
 }
 // the shared limit (security store), falling back to the in-memory one if the store can't be reached
 async function limitedShared(env, key, lim){
@@ -306,7 +300,7 @@ async function answerAuto(request, env, ctx, ip, kind) {
 
   // 2. fair use per visitor (shared counter, so it holds across Cloudflare locations and restarts)
   if (await limitedShared(env, `ai:${ipKey(ip)}`, VISITOR_LIMIT)) {
-    log(429, "visitor-limit");
+    if (!limited(`vl:${ipKey(ip)}`, { max: 1, windowMs: VISITOR_LIMIT.windowMs })) log(429, "visitor-limit");   // a flood doesn't fill the log
     return deny(429, "You've asked a lot in the last few minutes. Please wait a moment.", { "X-Faultlines-Limit": "visitor" });
   }
   const remember = text => { if (keep) ctx.waitUntil(cache.put(ck, new Response(text, { headers: { "Content-Type": "text/event-stream", "Cache-Control": `max-age=${CACHE_SECONDS}` } }))); };
@@ -838,15 +832,13 @@ async function handle(request, env, ctx, origin) {
 
     // --- visit ping (one per browser session; a flood of pings is dropped before anything is stored) ---
     if (path === "hit") {
-      if (!(await flooded(env, `hit:${ipKey(ip)}`, { max: 10, windowMs: 10 * 60_000 }))) ctx.waitUntil(logEvent(env, request, { kind: "visit", status: 200 }));
-      let st = "none"; if (env.FLOOD) try { const r = await env.FLOOD.limit({ key: "probe" }); st = "on:" + JSON.stringify(r); } catch (e) { st = "err:" + String(e && e.message).slice(0, 80); }
-      return new Response(null, { status: 204, headers: cors({ "X-Faultlines-Probe": st }) });
+      if (!(await limitedShared(env, `hit:${ipKey(ip)}`, { max: 10, windowMs: 10 * 60_000 }))) ctx.waitUntil(logEvent(env, request, { kind: "visit", status: 200 }));
+      return new Response(null, { status: 204, headers: cors() });
     }
 
     // --- real-time search for the question bar's ⚡ mode (fair use: 20 searches per visitor per 5 minutes) ---
     if (path === "search") {
-      const rtLimit = { max: 20, windowMs: 5 * 60_000 };
-      if (await flooded(env, `rt:${ipKey(ip)}`, rtLimit) || await limitedShared(env, `rt:${ipKey(ip)}`, rtLimit)) return deny(429, "Too many searches in a few minutes. Please wait a moment.", { "X-Faultlines-Limit": "visitor" });
+      if (await limitedShared(env, `rt:${ipKey(ip)}`, { max: 20, windowMs: 5 * 60_000 })) return deny(429, "Too many searches in a few minutes. Please wait a moment.", { "X-Faultlines-Limit": "visitor" });
       return realtimeSearch((url.searchParams.get("q") || "").slice(0, 300), url.searchParams.get("lang") || "en", ctx);
     }
 
@@ -928,8 +920,6 @@ async function handle(request, env, ctx, origin) {
 
     // --- generate with automatic fallback: Gemini keys/models -> Groq -> Cloudflare Workers AI ---
     if (request.method === "POST" && path === "models/auto:streamGenerateContent") {
-      // a cheap first line: a flood from one address stops here, before it can fill the security store and the log
-      if (await flooded(env, `ai:${ipk}`, AI_FLOOD_LIMIT)) return deny(429, "You've asked a lot in the last few minutes. Please wait a moment.", { "X-Faultlines-Limit": "visitor" });
       return answerAuto(request, env, ctx, ip, kind);
     }
 
