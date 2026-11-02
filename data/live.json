@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-02T13:16:25Z",
+  "lastRun": "2026-11-02T20:09:29Z",
   "log": [
    {
     "date": "2026-11-02",
@@ -24,6 +24,21 @@
       "label": "New Zealand",
       "change": "Early voting underway ahead of November 2026 parliamentary election",
       "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQblpzVENyekNxMW1iVlpQQ0tXTDZsUHVLRkE1c2tGR21TRGxXMXUyUFV0MjVaeXJCTmRqM0c3V2ljM1FjdjN4S3N1eXpYVllnWTdrUHFVQUw0ZGdfbWlmX2hMejhjVENSaTNhRmJsXzExUDRQT2pZUVFicnJ1eWNQSWp6VGJmNzVjRFYtdnllTU1NaDh6RWRVc2liT2JLb3UyOHBMVEo4NDQySHZHVUZvbDNn?oc=5"
+     },
+     {
+      "label": "Bulgaria–Russia",
+      "change": "Tense → Normal: Pro-Russian candidate Iliana Iotova wins presidency and pledges reset",
+      "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNcGdTX044LXQxbXY5UzExNEFscTJ4RE5UVkRoOUl4V0tJYmI2UEF6ZHlTeUZqS0tCM0Y3NFRwd291YXRNeVY3VnNsZTRIUkZ6QTZEa3hqdEs0Uk1ZakY2dTVXeWFRUVNlRW93NzJDYmtaWGJzd3JpaEI5MGRYMEw1QVpPVUVLUFRGTFlUMDdEMTFwZEZHc2g2aXQ2QlJYMEZMSTQ4LUN4UmU3MkhnVXpSR2V5ZTlveGh0dE5NOQ?oc=5"
+     },
+     {
+      "label": "Rwanda–United States",
+      "change": "Normal → Tense: US removes Rwanda from AGOA trade preferences",
+      "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTFRqMVNkZnhKUEh5MFhnY3NwbDlqMWN2cXM1U2JuZzBYNWNQejFVb1VkVTB4M1BmQzJLOGUzZmNaLThZaV9QRXRwaGVqOUhQT1dxZnpiYnNzYXhRcHBja01jTTRkMzMyVWFzNEpnQTZPVlZsYUVvb2ZSblNWdjVCcnZmc3VYMHR1b1Fsd3gwZmhrOWpG?oc=5"
+     },
+     {
+      "label": "South Africa–United States",
+      "change": "Tense → Tense: US officially kicks South Africa out of AGOA",
+      "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTXBRdlBrbE5GVUt6UUhpRWFyUUNFTlBtSTAtdXgyaDA1OFl6ajZTQWg1SGlTakZXRXFNc0x4V1QtMHdmc1Vpb0ZWUGxlai1xR2xJTDd5YnVfZXBuY3ZyU1JDQk5tWU5PMEUwZlV2NGpGamg3SEZ0clF1NzA2R25McW52dzk0aGxLUkVnXzFwNlRpYlY3SlR2ckJnNHZPOUx6ZHNzNg?oc=5"
      }
     ]
    },
@@ -1798,7 +1813,7 @@
     ]
    }
   ],
-  "summary": "Bulgaria elects Iliana Yotova as president, Colombia and Venezuela experience heightened tensions over a border strike, and Romania and Moldova sign a joint defense procurement agreement."
+  "summary": "Iliana Iotova wins the Bulgarian presidential runoff, Trump removes South Africa and Rwanda from AGOA duty-free trade access, and Russian strikes on a Ukrainian humanitarian aid center kill 24."
  },
  "relations": {
   "DNK-USA": {
@@ -2484,10 +2499,10 @@
   "BGR-RUS": {
    "a": "BGR",
    "b": "RUS",
-   "s": "T",
-   "note": "Bulgaria summons the Russian ambassador after drone strikes sink a cargo ship in its Black Sea Exclusive Economic Zone.",
-   "updated": "2026-10-13",
-   "source": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBtOXhiczM5QnZQbVJGRVpuZm5UOXBfaFpVRFhOV2M1bk1YOGFoMVdKMjN1dm4zMEpqeE9ZUXFFU0Z1VkNwRTBpaE9JdXBjanBDUVA0dDlwS0tNT2c?oc=5"
+   "s": "N",
+   "note": "Iliana Iotova wins Bulgaria's presidential runoff, pledging a diplomatic reset with Russia amid Black Sea security tensions.",
+   "updated": "2026-11-02",
+   "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNcGdTX044LXQxbXY5UzExNEFscTJ4RE5UVkRoOUl4V0tJYmI2UEF6ZHlTeUZqS0tCM0Y3NFRwd291YXRNeVY3VnNsZTRIUkZ6QTZEa3hqdEs0Uk1ZakY2dTVXeWFRUVNlRW93NzJDYmtaWGJzd3JpaEI5MGRYMEw1QVpPVUVLUFRGTFlUMDdEMTFwZEZHc2g2aXQ2QlJYMEZMSTQ4LUN4UmU3MkhnVXpSR2V5ZTlveGh0dE5NOQ?oc=5"
   },
   "GRC-USA": {
    "a": "GRC",
@@ -3109,9 +3124,9 @@
    "a": "RUS",
    "b": "UKR",
    "s": "W",
-   "note": "Localized ceasefire in Oleshky ends as Russian strikes cut power across Ukraine and Ukrainian drones hit Russian oil refineries.",
-   "updated": "2026-11-01",
-   "source": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTXVzeUFMZWpCb2RqV0tLVGJ4NzZMUTlSRDdyaGVhLVBkNGdjXzdCQjNmN2NLWlM4cU95UWhLUnQtT3VqRnZua29lSGQtekxJU2FudWg4dGt2NmFOa1poNl9CQjBJY3dwX2VNWXlRY213NzAzWWw2bUpSVlRET20zMVZkMEdPR1ZvVGFF?oc=5"
+   "note": "Russian airstrikes on a humanitarian aid center and shelter in Zaporizhzhia kill at least 24 people.",
+   "updated": "2026-11-02",
+   "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOS0NaeUNiX1RvbVkzZGd0Sk1KWnNNeC03S1ZuaFlkX3pzU0hsbllVM0FaWDYxbV9sOFd6MjhudEhoYXBHZ09hLTRFbGMwSUppY2FkcDJyc2w0c09CMFZFOTJwbVEtZFRoNVhhUTg2RUpGWUE3eDZxVWkwWnUzMGh4YzdrVGhpMUdzczRsY1dMX3lKbnFuUWcwV05aTTFwY19JbWNhaml5SzJkc3BPOEppT3lfUkxrOXI3M2xRNllIUU1xdDFz?oc=5"
   },
   "CAN-TUR": {
    "a": "CAN",
@@ -3237,9 +3252,9 @@
    "a": "RWA",
    "b": "USA",
    "s": "T",
-   "note": "Relations strain as the United States (US) sanctions Rwanda's defence ministry over its alleged support for M23 rebels in eastern Congo.",
-   "updated": "2026-10-28",
-   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPakJHaHd4QVJONnU2a3oyTTFJVC1fUURVQ3NLMzFrenYzVDZfTWRsMnp6WkQ4SHNDX0tkMEhycmlGNzk3SWpNaGxpYzFudGNqQmFGVXpxdDhHdk9HY01ZUkdHeDhqV29rVVNPZk5sdjd5WF9tVi1PdnBzeEszeFRiRTJMN2RZX1YtTlFiX2xIYnU5WE5STFE?oc=5"
+   "note": "United States formally removes Rwanda from the AGOA preferential trade programme following ongoing diplomatic friction.",
+   "updated": "2026-11-02",
+   "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTFRqMVNkZnhKUEh5MFhnY3NwbDlqMWN2cXM1U2JuZzBYNWNQejFVb1VkVTB4M1BmQzJLOGUzZmNaLThZaV9QRXRwaGVqOUhQT1dxZnpiYnNzYXhRcHBja01jTTRkMzMyVWFzNEpnQTZPVlZsYUVvb2ZSblNWdjVCcnZmc3VYMHR1b1Fsd3gwZmhrOWpG?oc=5"
   },
   "ETH-RUS": {
    "a": "ETH",
@@ -3288,6 +3303,14 @@
    "note": "Moldova and Romania seal a historic joint military procurement deal under the European Union (EU) SAFE program.",
    "updated": "2026-11-02",
    "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOV3pkQ1ZnTFVSbEVfbU1acTJ5b0NWX29yNlNHYmZ1TXpua3RxNDdBMGd2MDU5TW4xLUFCb3l1T09iNlhEdTZCd19DZjgwQ2NnNFZLNEV2SUlrSmVzSEF6bERNOVdwQ1c1MGRQeXR6TjhETWFmRzluLVMtRnVSN1Juc2NjZzlDY0ZhZjBzNGYtc3ZQb2VQdjU2YXl2R1Vuc2h3WGN5TA?oc=5"
+  },
+  "USA-ZAF": {
+   "a": "USA",
+   "b": "ZAF",
+   "s": "T",
+   "note": "United States suspends South Africa from duty-free trade access under the AGOA programme.",
+   "updated": "2026-11-02",
+   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTXBRdlBrbE5GVUt6UUhpRWFyUUNFTlBtSTAtdXgyaDA1OFl6ajZTQWg1SGlTakZXRXFNc0x4V1QtMHdmc1Vpb0ZWUGxlai1xR2xJTDd5YnVfZXBuY3ZyU1JDQk5tWU5PMEUwZlV2NGpGamg3SEZ0clF1NzA2R25McW52dzk0aGxLUkVnXzFwNlRpYlY3SlR2ckJnNHZPOUx6ZHNzNg?oc=5"
   }
  },
  "threads": {
@@ -3770,10 +3793,10 @@
    "nextelec": "parliamentary 2031"
   },
   "BGR": {
-   "nextelec": "presidential runoff, Nov 2026",
+   "nextelec": "Presidential, 2031",
    "updated": "2026-11-02",
-   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQb3Vqb3hSYnByTHA3R2EzcUJ3d2dwVTBseFg2U3E3OTR2dElSS1Q4Z2RFY21tQWR0T255N2VDM0FEdS1QWjlLNTk0YzBuZ1g1dTM2YWJIS2R5R0xvWjRZQkZWWFgwR2VHY19ZSHp5OTBjRThncUJLYm9hc1VqM092UTBkT2tObXViMFZiSFFlVWc5ODJySFVsYWRxbWFOekFCRjBydzFvUnhtZ2RFNlJtMFhRZHljU2Nvcmc?oc=5",
-   "lastelec": "presidential, Nov 2026, Iliana Yotova"
+   "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPMW5kbnllNkNqTkxlcjJzSm00SzctTkFqRl8yQnNtaGRySWJxbERCZDlaY282UkpsUTY1czQyUFRpRUxIUmxhd3E1X3FCdThheVZ4VlEwZG80bDJkdi1oSk9nSmFxR3BabWtvY1I0em1ubXpIMl9rekZNU0sxeFBRakhLR0xseEZ3cnZYQ2hvOXE2UkU3UDVJUm80QWRMcGpwR2RFbHplMkNzb0hPVGtCNUdIT3NfQXh6a210WjR2WWhTZlN6cXlVaXk3MlJGUXfSAc8BQVVfeXFMUHlFY0NYNmRlZmc3alBSS0lKWTlFM0FYN1I4RmlkRUtMMWcxcUtvT1o4VzBOb0RqSGN2RWtUb0RTS3A3QkNWbGZUSThMTjZxUFgxX1J2Z042U3NJaklYYVFLWmdQN2hUZVAwZm9HWEZuX0ZyZ0IzLWdFdE1wQ2Z3dXkwOEM2SllYeEpjeVRSSlVVLUdZeU9JRU5SQWctb0o0RHdsVURZd0h0UkNIUkEtQUNjQXlUdjhySVpDUU1RTTJJelFXbzF0WG0zOTZjaVVF?oc=5",
+   "lastelec": "Presidential runoff, November 2026, Iliana Iotova"
   },
   "SSD": {
    "nextelec": "general, December 2026",
