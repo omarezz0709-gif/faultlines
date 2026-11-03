@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-03T12:42:08Z",
+  "lastRun": "2026-11-03T17:41:36Z",
   "log": [
    {
     "date": "2026-11-03",
@@ -19,6 +19,26 @@
       "label": "South Africa–United States",
       "change": "Tense: US suspends AGOA trade benefits",
       "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOdFI0R1Nac18yOHFKTnI2eU5PMXE1WkJRZEtHZGl2bVFVNDhFWC1KcXBwQlBuQXJRaFZfcmMyblFqb3RFN2UzQzA4ZWVTUTRza2FRNmx2NzBsSWt5QVpPZVhrX0pSU2FHVjdYMC1sRDcyMjgzSlFSbTV0RkpxYlFLajFuSlN4MXlnU21uT2tMQjlYZGc?oc=5"
+     },
+     {
+      "label": "United States–Israel",
+      "change": "Updated note: US announces plan to end annual military aid by year-end.",
+      "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSm9Na1Vzb1FkYzlmX1RnMkdfVUswaENBUHlwOUdQMzZhenFtWjNLQklad1BNOHFUSXQtU0tsMkZJZHVaeU1KQmdtWVJkY19xQ3ZBQXdmcEdPZktFV0JZamdVMWNnRWt2YTdOX2hCWGthbjV5WWI1bkxhWjRoTUYwN0RjYUdxQ2hvbFQ3dlVuOXN1Rlk5RGQ0VHl4NnRveV9jWko3bnEtdm5rR0Y3MFhsS2tyNm0?oc=5"
+     },
+     {
+      "label": "Ethiopia–Sudan",
+      "change": "Updated note: Sudan files UN complaint over drone attacks from Ethiopian territory.",
+      "source": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQWUdCeEVpazFmLURTclRlZ3d5TDVuQ2dRLWFERW1mSEoxNi1DdWItbXF3eVRQODhpbkpCT2RucHZwTE5NYlV4WEVUQ3RSV1QtejVLMnlzb2p2UDB6Yk1kZWw1WWNSa0dmanYzTDRmUzdrb0twdENLRU9OdzgxVXdVcXdJLTdQeFpWZDdZWEtIT29ZQTVMcjY3eVpIWkF6U2VIVDA2WGhEZWNQWFVhdm5YMVBPNEpEUkdCSWRiWlptQ3Q3RHU5RDhOanlLaW1OcnFwZTc3aHZKNzZvVjlVWGtORllDd3A1eHRhdmdzM2ZB0gHuAUFVX3lxTFBZR0J4RWlrMWYtRFNyVGVnd3lMNW5DZ1EtYURFbWZISjE2LUN1Yi1tcXd5VFA4OGluSkJPZG5wdnBMTk1iVXhYRVRDdFJXVC16NUsyeXNvanZQMHpiTWRlbDVZY1JrR2ZqdjNMNGZTN2tvS3B0Q0tFT053ODFVd1Vxd0ktN1B4WlZkN1lYS0hPb1lBNUxyNjd5WkhaQXpTZUhUMDZYaERlY1BYVWF2blgxUE80SkRSR0JJZGJaWm1DdDdEdTlEOE5qeUtpbU5ycXBlNzdodko3Nm9WOVVYa05GWUN3cDV4dGF2Z3MzZkE?oc=5"
+     },
+     {
+      "label": "Poland–Russia",
+      "change": "Updated note: Poland launches border operation near Kaliningrad amid provocation concerns.",
+      "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQb04yOUY3M0N4NGx0YlJTVkNnTzExdEpUZVBlbjB4TlYzSWNxRmcyQVZOYnIyanJNeF8tUUxDa3BOdWhaOWRLNWRCLWpqSnZmTkRRd0lvRUtMSEV3VDJVV2JEa3BKR25lZG9jRS1mTFpRaW8ybklDdDZxTGhVbnRUTVE1b2VxbW14Rzd4bzdyd0pmdjY0V0NUNGp2ZEpJT00?oc=5"
+     },
+     {
+      "label": "Bulgaria",
+      "change": "Election result: Iliana Yotova wins presidential election.",
+      "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQb2FNS1E5bVpxVGpIOFhWdmIwRkU3R21yc1A3R2pkd2toZk1pVGtORFBLQTYwYjJUU0o3dGZ1bjd6N09GMEdBMXdFdWdsY3M3bmEyVUI1UFNDajJDWldnOVdWMzBDV0hGbDlfQTlBbjZ6RWZ0UmNVMmotRkpHRVE1WURCd3VmVHlLNG81WVJ6Z3JtNFZFZE5WXzFDZjNlemhxekVmaQ?oc=5"
      }
     ]
    },
@@ -1778,7 +1798,7 @@
     ]
    }
   ],
-  "summary": "The United States conducts strikes on Iran's Qeshm Island amid ongoing diplomatic pushes, while South Africa and Rwanda are suspended from AGOA trade benefits."
+  "summary": "Poland boosts border security near Kaliningrad over Russian activity, Sudan files a UN complaint against Ethiopia over drone strikes, and the US announces plans to sunset annual military aid to Israel."
  },
  "relations": {
   "DNK-USA": {
@@ -2033,9 +2053,9 @@
    "a": "ETH",
    "b": "SDN",
    "s": "T",
-   "note": "Tensions rise as Sudan accuses Ethiopia of hosting launch platforms for over 160 drone strikes on Sudanese territory.",
-   "updated": "2026-10-30",
-   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMEFIdXViUDRzTWF2RUJHQkZZRldTY0JXdmJhNjRXN284VGhzNE5iekIwNXlTRFhULVV2aXdSVWloOUZoUV9sWUpSWkNIYVBOX0xXc0NyZVFiM0F4OUtYTjhXcWQ4SG5UdWdyTnFMTFY3Q1FJa3RXMkVOSC1lVlE5clNVMXR3Wmx2ZFNDRHphVlZnN1BISXJHUzhfWFIyclBJbXhVNzB4WThEMmRpN2ZzbUxvSS1JeHBmQVJFUnh3?oc=5"
+   "note": "Tensions escalate as Sudan files a United Nations (UN) complaint accusing Ethiopia of launching Rapid Support Forces (RSF) drone strikes.",
+   "updated": "2026-11-03",
+   "source": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQWUdCeEVpazFmLURTclRlZ3d5TDVuQ2dRLWFERW1mSEoxNi1DdWItbXF3eVRQODhpbkpCT2RucHZwTE5NYlV4WEVUQ3RSV1QtejVLMnlzb2p2UDB6Yk1kZWw1WWNSa0dmanYzTDRmUzdrb0twdENLRU9OdzgxVXdVcXdJLTdQeFpWZDdZWEtIT29ZQTVMcjY3eVpIWkF6U2VIVDA2WGhEZWNQWFVhdm5YMVBPNEpEUkdCSWRiWlptQ3Q3RHU5RDhOanlLaW1OcnFwZTc3aHZKNzZvVjlVWGtORllDd3A1eHRhdmdzM2ZB0gHuAUFVX3lxTFBZR0J4RWlrMWYtRFNyVGVnd3lMNW5DZ1EtYURFbWZISjE2LUN1Yi1tcXd5VFA4OGluSkJPZG5wdnBMTk1iVXhYRVRDdFJXVC16NUsyeXNvanZQMHpiTWRlbDVZY1JrR2ZqdjNMNGZTN2tvS3B0Q0tFT053ODFVd1Vxd0ktN1B4WlZkN1lYS0hPb1lBNUxyNjd5WkhaQXpTZUhUMDZYaERlY1BYVWF2blgxUE80SkRSR0JJZGJaWm1DdDdEdTlEOE5qeUtpbU5ycXBlNzdodko3Nm9WOVVYa05GWUN3cDV4dGF2Z3MzZkE?oc=5"
   },
   "ARE-ISR": {
    "a": "ARE",
@@ -2057,9 +2077,9 @@
    "a": "POL",
    "b": "RUS",
    "s": "H",
-   "note": "Poland readies air defences and scrambles fighters after a Russian drone strikes Ukraine two kilometres from the Polish border.",
-   "updated": "2026-09-28",
-   "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1kMF83c2NsNzhsTXhGZ3VsYWlXY1A2VVZEanlLcVNESHJjZW9BWjFZcnM5bmloZGdmY24wYVhpdmhWbzd2U1g4MW5mSQ?oc=5"
+   "note": "Poland deploys forces along the Kaliningrad border following suspicious night activity and fears of Russian provocations.",
+   "updated": "2026-11-03",
+   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQb04yOUY3M0N4NGx0YlJTVkNnTzExdEpUZVBlbjB4TlYzSWNxRmcyQVZOYnIyanJNeF8tUUxDa3BOdWhaOWRLNWRCLWpqSnZmTkRRd0lvRUtMSEV3VDJVV2JEa3BKR25lZG9jRS1mTFpRaW8ybklDdDZxTGhVbnRUTVE1b2VxbW14Rzd4bzdyd0pmdjY0V0NUNGp2ZEpJT00?oc=5"
   },
   "PRK-RUS": {
    "a": "PRK",
@@ -3276,6 +3296,14 @@
    "note": "United States suspends South Africa from duty-free trade access under the AGOA (African Growth and Opportunity Act) programme.",
    "updated": "2026-11-03",
    "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOdFI0R1Nac18yOHFKTnI2eU5PMXE1WkJRZEtHZGl2bVFVNDhFWC1KcXBwQlBuQXJRaFZfcmMyblFqb3RFN2UzQzA4ZWVTUTRza2FRNmx2NzBsSWt5QVpPZVhrX0pSU2FHVjdYMC1sRDcyMjgzSlFSbTV0RkpxYlFLajFuSlN4MXlnU21uT2tMQjlYZGc?oc=5"
+  },
+  "ISR-USA": {
+   "a": "ISR",
+   "b": "USA",
+   "s": "A",
+   "note": "Strategic allies; President Trump announces plans to end $4 billion in annual United States (US) military aid to Israel.",
+   "updated": "2026-11-03",
+   "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSm9Na1Vzb1FkYzlmX1RnMkdfVUswaENBUHlwOUdQMzZhenFtWjNLQklad1BNOHFUSXQtU0tsMkZJZHVaeU1KQmdtWVJkY19xQ3ZBQXdmcEdPZktFV0JZamdVMWNnRWt2YTdOX2hCWGthbjV5WWI1bkxhWjRoTUYwN0RjYUdxQ2hvbFQ3dlVuOXN1Rlk5RGQ0VHl4NnRveV9jWko3bnEtdm5rR0Y3MFhsS2tyNm0?oc=5"
   }
  },
  "threads": {
@@ -3760,8 +3788,8 @@
   "BGR": {
    "nextelec": "Presidential, 2031",
    "updated": "2026-11-03",
-   "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMU5PUndfQTJGcEM1RXhIQ0JOUVM0UTdWWGt0S2pkSHQtbm1NYlpuZFBVd3E4Z3FwazVHdUlNbHQ1dDJNSlp1QnNaREF3ZFVUMlhSdU5mYkZWU0o3UmpoaXN3QTFpNUlqRWl5YlgzZHFXYzQxM3RVOTlYSS1Qd2tKR0VRM0kya3Ji?oc=5",
-   "lastelec": "Presidential runoff, November 2026, Iliana Iotova"
+   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQb2FNS1E5bVpxVGpIOFhWdmIwRkU3R21yc1A3R2pkd2toZk1pVGtORFBLQTYwYjJUU0o3dGZ1bjd6N09GMEdBMXdFdWdsY3M3bmEyVUI1UFNDajJDWldnOVdWMzBDV0hGbDlfQTlBbjZ6RWZ0UmNVMmotRkpHRVE1WURCd3VmVHlLNG81WVJ6Z3JtNFZFZE5WXzFDZjNlemhxekVmaQ?oc=5",
+   "lastelec": "presidential, November 2026, Iliana Yotova"
   },
   "SSD": {
    "nextelec": "general, December 2026",
