@@ -1,7 +1,27 @@
 {
  "meta": {
-  "lastRun": "2026-11-03T17:41:36Z",
+  "lastRun": "2026-11-04T01:50:21Z",
   "log": [
+   {
+    "date": "2026-11-04",
+    "items": [
+     {
+      "label": "Brunei–Oman",
+      "change": "Normal → Partner: elevated bilateral relations to a Strategic Partnership",
+      "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTkw4X0dpMHpCZEVHR3NyS21OSGpWSkkwRGZDSjRPYjgyRGhUZXB2S3ZNeHYteUZkM25XZUNNbUExc1dDc1hkN1AybEFKUXFQR3huMnR6S2JnRDJ6RXRkVnF1bzh6bTVVR20zTWNmTUVZcVZydWFTSGFCMnJTWkxiTlA5OXVOT1c4ZlZSajdn?oc=5"
+     },
+     {
+      "label": "Bulgaria",
+      "change": "Election: Iliana Iotova wins presidential election",
+      "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUVlIMHlPbl9fNWFaRUtjQUtwVWtyZWI2MjVMYi1HdjB5WlBwb0ZtdXc5WGM5aDlJTkktQXJJb0dOTXEzb1NsVURJeWVvdGhBcVNNaDZDNTNRTTRHLVFqLTYzVFdmQjFEeXpZVGhOT2F1Q0Q5VzBXNWJudzlPUmVfRnNjVGt4TkVMUkJBbFVyQ3Npd1FERjFZdU5kYUxtQTJOd1JEdTFkMUtURmNscV9yTUd3QWM?oc=5"
+     },
+     {
+      "label": "New Zealand",
+      "change": "Election: general election scheduled for November 2026",
+      "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPa2Rud0RfLVhpSkV6Q3hBd2xjY1lDYi12ZUlLUVZFZ18zZGMtWF9mcWQ4amJTUWROeDlndEdtLWtqR3kwOWhEV0dpYXNjWWJTbHgwS2ttdFo0anZtaTJfVllXQjI3dnBGVUMwWS1rVFAySEpuVmhBc2ZDMXZ0aENKVC02QWx2ZjlZcW9WbFVQNGQ3eE9DUHdxT1pJekxRYXRwYVE?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-11-03",
     "items": [
@@ -1711,94 +1731,9 @@
       "source": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBoa1E0TWpzc21GSlY0WnFIUHJDY1UwMGZnOHNtS0dlWk10VzNHTU1LOTFnTG93ZTgzckkxWHpibUFrTE1EWDdpdVpMRGNhSDhYSG84TUNTc0Z5UmhweFI0?oc=5"
      }
     ]
-   },
-   {
-    "date": "2026-10-05",
-    "items": [
-     {
-      "label": "Dominican Republic–Haiti",
-      "change": "Note updated: Dominican Republic bans Haitian national football squad amid cross-border friction",
-      "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPM3lwQzFuQkRJbFdSY1RUcXJZdzMxOUtVN29mMVF0dDRiaFpyaTVBd3FhR1FUS3AzeFE4Q0hUMDdyZFVhenlrZUVxRW1rV0g5WnljLWRDczFiNkJVODEwb05CLTNnTUtRdFJ4TFZ2cllvLW1MQjByZ205QjNabzdpNmViWDVkeTg0TzhzV1F0dUN4cFE4aG5EV2pFMXVsVk83dXhtOGUyRzlzbGU5YUhpWXF3?oc=5"
-     },
-     {
-      "label": "United Kingdom–United States",
-      "change": "Note updated: US removes B-1 bombers from RAF Fairford following Iranian-linked terror threats",
-      "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPMkpxWlg0bUxwb0NsTllSWndLRnRSRk9tTmdhY2ZZc2MzNEFza0tZaDdLRnU3TGxUeWd4Q3VObTkyWHNFODVYTjN6cjlDOFI5VzBMM3BhUmh3eHRfQWJQQ1FySm5naTJMWUtLRUtPaTd4RVV0bFB1ZzdpVmlQUFdxUFktWU9oUWt5bHRQZXkwa3VoTVk3c18wcUxxZElWZkdmYUhpVkF3MXlBVnA0T3hTWVR0Zmptam8?oc=5"
-     },
-     {
-      "label": "Malaysia–Myanmar",
-      "change": "Note updated: Malaysia deports nearly 1,500 Myanmar nationals despite UN safety concerns",
-      "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbkxQVk5PRlNDYVZPRUpVOXYzWW1obEQyT0lxOGVjR21yRl94aWhub2JyRXlORWVZZUJwMWdzMFdJd3I0MG5qOXhCMjI1OEdJNjZ1YTRpSFpOeDZCRU5tVFN1LU55MEp1WjQtcGdLbDNKUmZsM1plWm9DamNoQ0pKbDJVX0hmOTlvaFc0aUVVQ2hiZWMzNFNnd0M0YUVZLUk4RXg1QlJNRzBNQWI5eDJ1b2tTb9IBuAFBVV95cUxPTFFYNGI2cmttQVo5NHgyX29iOWhRUi1fbXhQM29Pb0Y4SGt5TFdfWFF6LWpiVlJ2SnpJbzl5ZkpfcVhpcklmOE5JQkFxUUVzZGE3QzgyQU9GbmN5ZnBkUHE4NGgyWk5ReVd3N0FnTTR3NzJYSzNWLTB4N0VoQ3FPNlRXQkpyMkhZbHJOd1hnUVdhOGlyQUI4aVU5YUZCVE9vak9fV2dBd3ZqLU5vbE93M3J1SERIX1hB?oc=5"
-     },
-     {
-      "label": "Bab-el-Mandeb",
-      "change": "POI updated: Yemeni government initiates military offensive to retake Houthi-held territories",
-      "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPei1GRWxVZ0U1T1hGZTJ6YmxVVTJtd19DWENYaDRLUDhIQjFYUDVVNjA1VVp0U1g2VmhDbjBxRXYxcDRYMmloSmxqNDdkOVNEWG9hRGpxb2RKWEhSM0l3bnNrNHprMmh1QkhZUGVZRUg0QnppdHpOWkN2ZWNjdTlwQ0JZU3FZMEh0TE9zeG16cmNBM21UOV9LTnRqYkFEMUR0TldEVWtsY2NIY0RYZnlNeU81cGxSZ9IBuwFBVV95cUxQZE52dGFBalJDa01aMldXQWlUYVhZRnJHXzBZWThsRTZIZEE2LUtjM1NTSFdFTWhMZ1hqY01Pc0xyX1BqWi12RHhrSVBlNy1EMi1GU3pGVHhKNjVTUDZ2OWE5R2dkTzdhQ0xGR2d5NGFpUF9WaEtHd3VzSE5uamlxLWVUODdxb3RGeXlxb2k0aUZDNDFVV3gycGl5dEEzbDU4ZTlvYi12Wnd3bEROYnpRNW8wSUdoTTFmaWt3?oc=5"
-     },
-     {
-      "label": "Sudan's war and its outside backers",
-      "change": "Thread updated: Egypt, Eritrea, Somalia, and Sudan form quadrilateral front at El-Alamein",
-      "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNT2dPdzh3Zkk3b05fa25EenJialplVkZmSWJ2eExwZ3oxaWNGZ3ZveFRFakQ2Vzh6WHdieDNINE50Wm1rQmE1bUt1SS1rUWlZRGZZY0xNYl9mMGpJOTRteTJjRjRsR2hwaGxPNmp4bEhIb1VxQ3VmMXZxV2c1VDloeFNXT3VlRDB4N1hWUndWcFBHazZzSlBDRGxic0xnQlI4NlZJOA?oc=5"
-     },
-     {
-      "label": "Houthi Red Sea campaign",
-      "change": "Thread updated: Yemeni government declares counteroffensive against Houthis",
-      "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPei1GRWxVZ0U1T1hGZTJ6YmxVVTJtd19DWENYaDRLUDhIQjFYUDVVNjA1VVp0U1g2VmhDbjBxRXYxcDRYMmloSmxqNDdkOVNEWG9hRGpxb2RKWEhSM0l3bnNrNHprMmh1QkhZUGVZRUg0QnppdHpOWkN2ZWNjdTlwQ0JZU3FZMEh0TE9zeG16cmNBM21UOV9LTnRqYkFEMUR0TldEVWtsY2NIY0RYZnlNeU81cGxSZ9IBuwFBVV95cUxQZE52dGFBalJDa01aMldXQWlUYVhZRnJHXzBZWThsRTZIZEE2LUtjM1NTSFdFTWhMZ1hqY01Pc0xyX1BqWi12RHhrSVBlNy1EMi1GU3pGVHhKNjVTUDZ2OWE5R2dkTzdhQ0xGR2d5NGFpUF9WaEtHd3VzSE5uamlxLWVUODdxb3RGeXlxb2k0aUZDNDFVV3gycGl5dEEzbDU4ZTlvYi12Wnd3bEROYnpRNW8wSUdoTTFmaWt3?oc=5"
-     },
-     {
-      "label": "Brazil",
-      "change": "Politics recorded: First round results send Lula and Flávio Bolsonaro to runoff",
-      "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNaFFzTUpETjhUVDN0MFBFWDBOQ0dpeUZzZjZTdlNsSDZCNjA0aWluNkhLUndna0RwSHNtMTBEal9JOVpJWXMxMk5PUkZOVUlGTFo0OFlGdk9tN0MxSWlxX1RBUFhzYVZZVno3SXhVVHI4Tlo0RndvamZtekxTRjZIWHk0XzJXWG5zcXhYeV93?oc=5"
-     },
-     {
-      "label": "Bosnia and Herzegovina",
-      "change": "Politics recorded: General elections determine tripartite presidency seats",
-      "source": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQdXVPOU5iVUwtNTNIdWREaUNQRGJsRW1Qa21qQkVtclY4dDhiNVdyci15dV9JbkRMXzV4d0ZteTZCVzdXN3hQRHY2MG8tS09XSWxVeTBCSjV1Y0VqNHZ3MTVwMXRFaHZBcFV4QTRja0t0S0ZGTFBTaUFFMk1rby14SGg0MU5FRWxwT05SLUU4NGU4VjAwdFRyOFFhd1YtTU04NkhxaWtuc3dyOGpTZ1BUcnQwaFM5REJUY2NJQ0pNM29aMEU4T2Vkb0lXNFdtbWpWTUo4cWloTGNKTkl3RTZUbU4tdW12V0ZpVWFr?oc=5"
-     },
-     {
-      "label": "Grenada",
-      "change": "Politics scheduled: General election announced for 5 November 2026",
-      "source": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB2a1RMc3I0ZXZnQXJTWlpsVTM5Tk9uTXZGQUZoSDktRkdDazlybV80VUR0QWdZaVVvcUp4N29KUUo1N2ZiZ1FKUVZBQUh2TEFlelNUakVZUV9HV0F5OEYwREo3TW00SUk0ckFNNWFkUThraHpNRW40aVlB?oc=5"
-     },
-     {
-      "label": "Spain",
-      "change": "Snap election called for November 29, 2026",
-      "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQX1N2aHdSaGlfX0lnTUZJS3o1SFBzSGptRUFmUnJXWW5DRGRLRC1HVVJ5OFliTDNYaGZnSWM2NGU2WUhpb1BYWHFzZjhvcTFaSm5XcTZvRW5DMjBZd0R0MHkzSlpBS2NadV9sN2w2cm5mMEtEeGpKd2dPeEpZcTlaOHUtNktETGR3aWlFSFJzaG5jRkZEYllUY1psT2ZaNUp5QzVVTGZUMjd0UQ?oc=5"
-     },
-     {
-      "label": "Latvia",
-      "change": "Pro-Ukraine United List wins parliamentary election",
-      "source": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5JeHZzV0Noa1U5cmVQY01EczVxNDVNWlViZ0JrU0ZwVHotbzVValNsNTZFbVdGeS1QXzdOVGI3cWJsT3c1ZTNnSGt4R0EwSTNGYS1aMDhrNXRzbXZrZXZkcFFWcmxxLUE?oc=5"
-     },
-     {
-      "label": "Egypt–Somalia",
-      "change": "None → Ally: Formal alliance signed under the El Alamein Declaration to counter Ethiopian influence.",
-      "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSEI5YlFGaENFWHFmb1EzX2xyOHR5WGtLZkRQVEJ0MjNiUFR5ekZnc0JnZTJZSGtzdTEzX3UzRTVoakhIbDZoQ2dZNHRNYklnVkY5a01qUHBBZjlxblVOMG5veGx4ZDVObWlWSEZRTFhISGx5dDZUX1NhbXZtLUhJTWE3S2lYZ3N2NVdERlFmcEhXZFM0eFBULTZKby1OazROUU5RRXMxbWJFbXRXWS00UXhnZWtZTWVQcHFjcVVhY3BlbTVWRVUxUVhB?oc=5"
-     },
-     {
-      "label": "Egypt–Eritrea",
-      "change": "None → Ally: Formal alliance signed under the El Alamein Declaration to manage Red Sea governance.",
-      "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSEI5YlFGaENFWHFmb1EzX2xyOHR5WGtLZkRQVEJ0MjNiUFR5ekZnc0JnZTJZSGtzdTEzX3UzRTVoakhIbDZoQ2dZNHRNYklnVkY5a01qUHBBZjlxblVOMG5veGx4ZDVObWlWSEZRTFhISGx5dDZUX1NhbXZtLUhJTWE3S2lYZ3N2NVdERlFmcEhXZFM0eFBULTZKby1OazROUU5RRXMxbWJFbXRXWS00UXhnZWtZTWVQcHFjcVVhY3BlbTVWRVUxUVhB?oc=5"
-     },
-     {
-      "label": "Ethiopia–Somalia",
-      "change": "Normal → Tense: Somalia aligns with Egypt and Eritrea, opposing Ethiopian regional ambitions.",
-      "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZ3d3Q1ZtbjZMVVdRZ2NuZnZCZ0NTZzlWOVhSN09feDF3cFN0blFsUm40Rk5vaGx6aWYwUnlHaEpIRHhTY0NDNGFydzRXbVRRVTRPWThiWGRNVG55WGJxdGVMXzFxSWRiYVVlRGp1dnRIZjE4ZjljTGNUdXR3NjV4TlR4RDA1VHUwdFg3Z01IR2tlLV9BSFZtV2tEc0ZuMWNnUTBmTVJpV05ncThjZzhKVNIBtgFBVV95cUxQaVNpZ1pMT3NTWGQtRDhtZE1GUHZBSlRMeXVDanlLNktCU2ZWUWtlQ3A3V1E5VVJOdVJZR0E0YUZjemQwVnBFNFJ5dDhFaDVpZGNBd182Vmw2NHc2OG9NSzk0WXlicEc1M1JwUWVSWEFjaDNENmEzYUhVdGdFZk85dVdjQi0zY1p1emhZVXZrUkpJUHpmVEJRNVhRZG50bWdMLUItUnVnbzFqMzVSRTUtTGlXN0x2dw?oc=5"
-     },
-     {
-      "label": "United Kingdom–Israel",
-      "change": "Partner → Tense: UK threatens to expel 27 Israeli diplomats over Jerusalem consulate dispute.",
-      "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOeDFocHg1WnhnbXQ5RVlCUUcwdUlmX2tZYjRfRVRVdUNJQkdWUTVfeF9KWWtQWnN6NXB6czk5QmpJWUxpaGNrQktDeFFLU0tnRThMWjVmd1RGQjgwRml5dUxWRGF6X2lBQXFoaWJLS0x4d1Zfb2h3OHhRcmQ4UGRIWUljemRJYjBQMVNsQ1lUa0FadngxOUdpTGtlZFN1RHpULU5mZjk5czBHSExi0gGyAUFVX3lxTFBZVmJnR0dGTlJ3blRYa3l5YU1GMDRRa19SbnRhRnhOV204clNmdWxUclplMnBNeHp3SWp5SllZbC1mZ0RLam5kdzJvUDJEUHBOWXVBN2hxeW5jOHNqUWE5Z3FYMDBxNmp0Umo4S1FvRU80ZkxubGFGY2M5ZnRkZjhiVWtyRi1BVHF3TmtzZklOZFlEQWtTeUJCSUlhQW9OTHk3WnkzVzBFT1hlNWFvbkdWdEE?oc=5"
-     },
-     {
-      "label": "United States–Mexico",
-      "change": "Partner → Tense: Border gunfire incident prompts Mexican troop deployment and demands for evidence.",
-      "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPMUhEQ3owRGZHQzRnNjBrMEZKUkNESG5QTlZUanhzOWVDZ09aU3VWX2FHTG5odHNZbGVSdkM5YmxWZWp4dFdQc3NfWGJERG5Fc3pNYXczY2VJMGVxUEl1dlg0SXJtSmVrOEVKREtTLVhlVlFTM0hmbmZGTmdiXzlXbF9Qemh5ZVBEcjJ6ZzRpU2xKc1lDWEgxVnpPU2NNNFdDLThPRjJpckQ1T0VteWlHaVF3M2RKNjQ4T0E?oc=5"
-     }
-    ]
    }
   ],
-  "summary": "Poland boosts border security near Kaliningrad over Russian activity, Sudan files a UN complaint against Ethiopia over drone strikes, and the US announces plans to sunset annual military aid to Israel."
+  "summary": "Brunei and Oman elevate bilateral relations to a Strategic Partnership, while Bulgaria elects its first female president in runoff elections."
  },
  "relations": {
   "DNK-USA": {
@@ -3304,6 +3239,14 @@
    "note": "Strategic allies; President Trump announces plans to end $4 billion in annual United States (US) military aid to Israel.",
    "updated": "2026-11-03",
    "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSm9Na1Vzb1FkYzlmX1RnMkdfVUswaENBUHlwOUdQMzZhenFtWjNLQklad1BNOHFUSXQtU0tsMkZJZHVaeU1KQmdtWVJkY19xQ3ZBQXdmcEdPZktFV0JZamdVMWNnRWt2YTdOX2hCWGthbjV5WWI1bkxhWjRoTUYwN0RjYUdxQ2hvbFQ3dlVuOXN1Rlk5RGQ0VHl4NnRveV9jWko3bnEtdm5rR0Y3MFhsS2tyNm0?oc=5"
+  },
+  "BRN-OMN": {
+   "a": "BRN",
+   "b": "OMN",
+   "s": "F",
+   "note": "Brunei and Oman elevate bilateral relations to a Strategic Partnership to deepen economic and diplomatic ties.",
+   "updated": "2026-11-04",
+   "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTkw4X0dpMHpCZEVHR3NyS21OSGpWSkkwRGZDSjRPYjgyRGhUZXB2S3ZNeHYteUZkM25XZUNNbUExc1dDc1hkN1AybEFKUXFQR3huMnR6S2JnRDJ6RXRkVnF1bzh6bTVVR20zTWNmTUVZcVZydWFTSGFCMnJTWkxiTlA5OXVOT1c4ZlZSajdn?oc=5"
   }
  },
  "threads": {
@@ -3787,9 +3730,9 @@
   },
   "BGR": {
    "nextelec": "Presidential, 2031",
-   "updated": "2026-11-03",
-   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQb2FNS1E5bVpxVGpIOFhWdmIwRkU3R21yc1A3R2pkd2toZk1pVGtORFBLQTYwYjJUU0o3dGZ1bjd6N09GMEdBMXdFdWdsY3M3bmEyVUI1UFNDajJDWldnOVdWMzBDV0hGbDlfQTlBbjZ6RWZ0UmNVMmotRkpHRVE1WURCd3VmVHlLNG81WVJ6Z3JtNFZFZE5WXzFDZjNlemhxekVmaQ?oc=5",
-   "lastelec": "presidential, November 2026, Iliana Yotova"
+   "updated": "2026-11-04",
+   "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUVlIMHlPbl9fNWFaRUtjQUtwVWtyZWI2MjVMYi1HdjB5WlBwb0ZtdXc5WGM5aDlJTkktQXJJb0dOTXEzb1NsVURJeWVvdGhBcVNNaDZDNTNRTTRHLVFqLTYzVFdmQjFEeXpZVGhOT2F1Q0Q5VzBXNWJudzlPUmVfRnNjVGt4TkVMUkJBbFVyQ3Npd1FERjFZdU5kYUxtQTJOd1JEdTFkMUtURmNscV9yTUd3QWM?oc=5",
+   "lastelec": "presidential, November 2026, Iliana Iotova"
   },
   "SSD": {
    "nextelec": "general, December 2026",
@@ -3830,9 +3773,9 @@
    "source": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNXFXa1c5U05DZHNINV9rcExET0NiRnFoaEkyczUyUjNIUi1pa1psaVEyQ1hUR2JvYllsUkxPQnRJWTlxdnV0QmFQTjE3d3A3RXdQLTkxU0hWaVR1MW5vUlZJUmxSSHVLWUFWdlJVbk91X1I5NnVZaWZ6aXk0NmRxa1ZDdk92UnhxNFIxUFVLVkE1TVhhelU5SW9ueThycGJfZG1LZmZRVmhXQnlKMFl5cVBDa1BqblRMODYwZWV6UFZEaHF5aFRfVml6UUtJZzNp0gHWAUFVX3lxTE5XWVRjcFRCQXdGWEktQ3Y0Zi1ZeXgyQWo1bUdIVlFNTkdReU1jWEQ4MkhYNnRTNGM1MGxDWHJndjM0bUU2WThEWElkYUhER2tpUE1Za2sxWjVldkhkRllGWDlUcjlpVXUxSVFpaTFfOE8tTlpjamRJaUhNZnJqVDZ3bmlacF9iS2NqbWpZcGktT29ZbjJ2bHBETUlqZXJPVVhQNkhwNnZmdERQczl6dWw3MWctSDdfQ0R2VzlEV2VQSHdDYkx6Snh2cVYxM3gtLThOalNpX3c?oc=5"
   },
   "NZL": {
-   "nextelec": "general, November 2026",
-   "updated": "2026-11-02",
-   "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSUktVkZhbEhiTTF3V1hiVXpWMm1BNVVvY1RvSjJiVE03aE5TdFN6WElkdWdqRy0xV3NzT1dRalg0ZE1TYjNnU0d5YlY0d0M5QnV2cDlIX2EwMmtKemo3QzZGUGJiT1lMdG9rUGNQQzZJcEF1ZFoyNXlObUk4VjY4by0zVFhDeDRZMFJ1TGh4b09KYnZoQzI5b2JSTVE5MU9lNU8xbmIwV1prMnJjWmlJWlhESlVVQ05LU0Q0MWExZXdHS3FXMnZTaGdB?oc=5"
+   "nextelec": "general election, November 2026",
+   "updated": "2026-11-04",
+   "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPa2Rud0RfLVhpSkV6Q3hBd2xjY1lDYi12ZUlLUVZFZ18zZGMtWF9mcWQ4amJTUWROeDlndEdtLWtqR3kwOWhEV0dpYXNjWWJTbHgwS2ttdFo0anZtaTJfVllXQjI3dnBGVUMwWS1rVFAySEpuVmhBc2ZDMXZ0aENKVC02QWx2ZjlZcW9WbFVQNGQ3eE9DUHdxT1pJekxRYXRwYVE?oc=5"
   },
   "GRD": {
    "nextelec": "general, 5 November 2026",
