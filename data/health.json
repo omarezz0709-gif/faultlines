@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-03T17:57:53Z",
- "berlin": "2026-11-03 18:57",
+ "generated": "2026-11-04T18:09:19Z",
+ "berlin": "2026-11-04 19:09",
  "status": "warn",
- "summary": "0 problem(s), 1 warning(s): News outlet feeds: 56/57 working; not working: France 24 AR (403)",
+ "summary": "0 problem(s), 1 warning(s): AI answers: the first try failed, the second worked (gemini-3.6-flash)",
  "repairs": [],
  "checks": [
   {
@@ -10,7 +10,7 @@
    "name": "Website",
    "status": "ok",
    "detail": "HTTP 200, 427 KB",
-   "ms": 240
+   "ms": 178
   },
   {
    "g": "security",
@@ -23,49 +23,49 @@
    "name": "GitHub Pages copy",
    "status": "ok",
    "detail": "HTTP 200",
-   "ms": 153
+   "ms": 77
   },
   {
    "g": "site",
    "name": "data/news.json",
    "status": "ok",
-   "detail": "HTTP 200, 516 KB",
-   "ms": 356
+   "detail": "HTTP 200, 468 KB",
+   "ms": 240
   },
   {
    "g": "site",
    "name": "data/live.json",
    "status": "ok",
-   "detail": "HTTP 200, 283 KB",
-   "ms": 582
+   "detail": "HTTP 200, 279 KB",
+   "ms": 196
   },
   {
    "g": "site",
    "name": "data/politics.json",
    "status": "ok",
    "detail": "HTTP 200, 43 KB",
-   "ms": 145
+   "ms": 252
   },
   {
    "g": "site",
    "name": "data/wb.json",
    "status": "ok",
    "detail": "HTTP 200, 73 KB",
-   "ms": 245
+   "ms": 345
   },
   {
    "g": "site",
    "name": "data/geo.json",
    "status": "ok",
    "detail": "HTTP 200, 697 KB",
-   "ms": 152
+   "ms": 166
   },
   {
    "g": "site",
    "name": "data/cities.json",
    "status": "ok",
    "detail": "HTTP 200, 151 KB",
-   "ms": 181
+   "ms": 99
   },
   {
    "g": "site",
@@ -83,19 +83,19 @@
    "g": "fresh",
    "name": "AI relationship update (live.json)",
    "status": "ok",
-   "detail": "last update 0.3 h ago"
+   "detail": "last update 0.2 h ago"
   },
   {
    "g": "fresh",
    "name": "Leaders (politics.json)",
    "status": "ok",
-   "detail": "last update 21.8 h ago"
+   "detail": "last update 5.3 h ago"
   },
   {
    "g": "fresh",
    "name": "Countries with confirmed headlines",
    "status": "ok",
-   "detail": "180"
+   "detail": "171"
   },
   {
    "g": "fresh",
@@ -119,169 +119,169 @@
    "g": "worker",
    "name": "/live (en)",
    "status": "ok",
-   "detail": "23 items",
-   "ms": 530
+   "detail": "21 items",
+   "ms": 506
   },
   {
    "g": "worker",
    "name": "/top (en)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 112
+   "ms": 282
   },
   {
    "g": "worker",
    "name": "/videos (en)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 674
+   "ms": 667
   },
   {
    "g": "worker",
    "name": "/live (de)",
    "status": "ok",
-   "detail": "18 items",
-   "ms": 2137
+   "detail": "25 items",
+   "ms": 3427
   },
   {
    "g": "worker",
    "name": "/top (de)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 262
+   "ms": 1360
   },
   {
    "g": "worker",
    "name": "/videos (de)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 717
+   "ms": 524
   },
   {
    "g": "worker",
    "name": "/live (fr)",
    "status": "ok",
-   "detail": "25 items",
-   "ms": 1699
+   "detail": "39 items",
+   "ms": 2284
   },
   {
    "g": "worker",
    "name": "/top (fr)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 262
+   "ms": 782
   },
   {
    "g": "worker",
    "name": "/videos (fr)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 539
+   "ms": 373
   },
   {
    "g": "worker",
    "name": "/live (es)",
    "status": "ok",
-   "detail": "5 items",
-   "ms": 407
+   "detail": "10 items",
+   "ms": 270
   },
   {
    "g": "worker",
    "name": "/top (es)",
    "status": "ok",
-   "detail": "5 stories",
-   "ms": 81
+   "detail": "6 stories",
+   "ms": 1073
   },
   {
    "g": "worker",
    "name": "/videos (es)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 566
+   "ms": 2129
   },
   {
    "g": "worker",
    "name": "/live (it)",
    "status": "ok",
-   "detail": "15 items",
-   "ms": 1369
+   "detail": "21 items",
+   "ms": 1303
   },
   {
    "g": "worker",
    "name": "/top (it)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 89
+   "ms": 105
   },
   {
    "g": "worker",
    "name": "/videos (it)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 423
+   "ms": 4196
   },
   {
    "g": "worker",
    "name": "/live (ar)",
    "status": "ok",
-   "detail": "5 items",
-   "ms": 986
+   "detail": "9 items",
+   "ms": 1157
   },
   {
    "g": "worker",
    "name": "/top (ar)",
    "status": "ok",
-   "detail": "5 stories",
-   "ms": 218
+   "detail": "6 stories",
+   "ms": 112
   },
   {
    "g": "worker",
    "name": "/videos (ar)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 543
+   "ms": 441
   },
   {
    "g": "worker",
    "name": "Real-time search",
    "status": "ok",
-   "detail": "2 reports",
-   "ms": 977
+   "detail": "12 reports",
+   "ms": 2264
   },
   {
    "g": "security",
    "name": "Other websites are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 49
+   "ms": 384
   },
   {
    "g": "security",
    "name": "Look-alike Pages projects are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 40
+   "ms": 408
   },
   {
    "g": "security",
    "name": "Only the site's own prompts are answered",
    "status": "ok",
    "detail": "HTTP 400 (should be 400)",
-   "ms": 56
+   "ms": 42
   },
   {
    "g": "security",
    "name": "Private chat needs a valid pass",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 77
+   "ms": 66
   },
   {
    "g": "security",
    "name": "Admin login",
    "status": "ok",
    "detail": "HTTP 401 without a code (should be 401)",
-   "ms": 82
+   "ms": 74
   },
   {
    "g": "security",
@@ -292,18 +292,16 @@
   {
    "g": "ai",
    "name": "AI answers",
-   "status": "ok",
-   "detail": "answered by gemini-3.6-flash",
-   "ms": 14926
+   "status": "warn",
+   "detail": "the first try failed, the second worked (gemini-3.6-flash)",
+   "ms": 2333
   },
   {
    "g": "sources",
    "name": "News outlet feeds",
-   "status": "warn",
-   "detail": "56/57 working; not working: France 24 AR (403)",
-   "items": [
-    "France 24 AR"
-   ]
+   "status": "ok",
+   "detail": "57/57 working",
+   "items": []
   },
   {
    "g": "sources",
@@ -317,7 +315,7 @@
    "name": "Page loads and the globe starts",
    "status": "ok",
    "detail": "",
-   "ms": 2511
+   "ms": 2826
   },
   {
    "g": "browser",
@@ -370,7 +368,7 @@
  ],
  "emailed": [],
  "warn_since": {
-  "News outlet feeds: France 24 AR": "2026-11-03T17:57:53Z"
+  "AI answers": "2026-11-04T18:09:19Z"
  },
- "ms": 505873
+ "ms": 482063
 }
