@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-04T01:50:21Z",
+  "lastRun": "2026-11-04T12:51:51Z",
   "log": [
    {
     "date": "2026-11-04",
@@ -19,6 +19,26 @@
       "label": "New Zealand",
       "change": "Election: general election scheduled for November 2026",
       "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPa2Rud0RfLVhpSkV6Q3hBd2xjY1lDYi12ZUlLUVZFZ18zZGMtWF9mcWQ4amJTUWROeDlndEdtLWtqR3kwOWhEV0dpYXNjWWJTbHgwS2ttdFo0anZtaTJfVllXQjI3dnBGVUMwWS1rVFAySEpuVmhBc2ZDMXZ0aENKVC02QWx2ZjlZcW9WbFVQNGQ3eE9DUHdxT1pJekxRYXRwYVE?oc=5"
+     },
+     {
+      "label": "Ethiopia–Sudan",
+      "change": "Tense: Note refreshed for Ethiopia expelling six Sudanese diplomats",
+      "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTHVvZk0yZ1NQQ09lYzJ1UUFIREo2MU5oMEJ2Qlp0ZVJIUWl1UmZoMWIzZmhsN3h2bWh1NDVZODBWd1dqTVo5QVZROEFGNFhRa1U0cmd2a01xb0k2Z2ZVdE9LLTNlRVZVMHNXRE15czdLMkVweWJFdlA2OGlLMGZlN0QxWGlkZTU5UUFuZUVCRDYtQllVNW1CdU00b1lGY0xiMldXY25YTFVsQQ?oc=5"
+     },
+     {
+      "label": "Israel–Somalia",
+      "change": "Hostile: Note refreshed as Somalia rejects Israeli envoy to Somaliland",
+      "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxONDhwdjVhaTNQaFR2bllQMDdhUUJwZDY3NV9DSlNVajF0MGFYWWxOVUZ3cVB3c0FWODU2S3NJdDJGTHNOb2RieVc5NGVjQXh5Sm82QjZsNzdldjM1N0J3LXlmU3gwbFN5RUV5MDA1UWNsWENKQ1lxN0hmWVV1THNuempqZmxvUVNUSkl2T2lvYTVReTY2M0pyUVhPTjl0UQ?oc=5"
+     },
+     {
+      "label": "Denmark–United States",
+      "change": "Ally: Note refreshed as Greenland parliament ratifies security pact",
+      "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNaGVOUEZubGVNRlN3RkFfRWZZZ1ZXRzZDNkVGWmRqbVh1SUF3V3JlNENWUm92dHRxTWc5NEFCSjYxYUtqcHhBTFBlbnhEaGNHRUdSZENNSmlYaHlMNmJXZVdLRnFKcWNVQWFhNnktdmVSMVNYTWp1c0s1WHpnTGxlQmFkU0lzSGdVbzNZbmR6NWJKdDJBWHlMZVo5T0tUd0FwQUdIWg?oc=5"
+     },
+     {
+      "label": "United States",
+      "change": "Recorded Nov 2026 midterm election results with Democratic victories",
+      "source": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPbm1aMkx3RWVFNTBkOHpUSk5HZkZfLThzTkhST2toMHZhOHh4aEMxd2U2eGh1WVIxOUZCWWJSbU5EU0hhb1ozZGs0QU03eEExbXpKTzF4ZnI5UWNlT19pSTVSR3p6cFNqREhWcGFkSnF2dFk5M2MwZlVIMXp4eWk3VnE3bEdLU1F3NC0zcDVPb1hBY0N3M1dUbW82RDFPRWN6NnQ5eVl2NVJHbEQtRDlvVDNjY2tfT2tha1llYnRJeXBHb2VwV2g4ZlpwLWhUa1NKWjF1aUFaVzRxTHFKSnlnY1FEaThTWnltV3NTYUZUUdIB7wFBVV95cUxPbm1aMkx3RWVFNTBkOHpUSk5HZkZfLThzTkhST2toMHZhOHh4aEMxd2U2eGh1WVIxOUZCWWJSbU5EU0hhb1ozZGs0QU03eEExbXpKTzF4ZnI5UWNlT19pSTVSR3p6cFNqREhWcGFkSnF2dFk5M2MwZlVIMXp4eWk3VnE3bEdLU1F3NC0zcDVPb1hBY0N3M1dUbW82RDFPRWN6NnQ5eVl2NVJHbEQtRDlvVDNjY2tfT2tha1llYnRJeXBHb2VwV2g4ZlpwLWhUa1NKWjF1aUFaVzRxTHFKSnlnY1FEaThTWnltV3NTYUZUUQ?oc=5"
      }
     ]
    },
@@ -1733,16 +1753,16 @@
     ]
    }
   ],
-  "summary": "Brunei and Oman elevate bilateral relations to a Strategic Partnership, while Bulgaria elects its first female president in runoff elections."
+  "summary": "Updated relation notes for Ethiopia–Sudan, Israel–Somalia, and Denmark–United States following diplomatic expulsions, ambassador rejections, and parliamentary ratifications, alongside US midterm election results."
  },
  "relations": {
   "DNK-USA": {
    "a": "DNK",
    "b": "USA",
-   "note": "NATO allies; a Sept 22, 2026 deal grants the US new Arctic bases and broad access in Greenland, easing friction over earlier US annexation talk.",
    "s": "A",
-   "source": "https://www.aljazeera.com/news/2026/9/22/us-signs-tremendous-arctic-security-deal-with-denmark-greenland",
-   "updated": "2026-09-23"
+   "note": "NATO allies; Greenland's parliament ratifies a security deal granting the United States (US) expanded military access across the island.",
+   "updated": "2026-11-04",
+   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNaGVOUEZubGVNRlN3RkFfRWZZZ1ZXRzZDNkVGWmRqbVh1SUF3V3JlNENWUm92dHRxTWc5NEFCSjYxYUtqcHhBTFBlbnhEaGNHRUdSZENNSmlYaHlMNmJXZVdLRnFKcWNVQWFhNnktdmVSMVNYTWp1c0s1WHpnTGxlQmFkU0lzSGdVbzNZbmR6NWJKdDJBWHlMZVo5T0tUd0FwQUdIWg?oc=5"
   },
   "IRN-ISR": {
    "a": "IRN",
@@ -1988,9 +2008,9 @@
    "a": "ETH",
    "b": "SDN",
    "s": "T",
-   "note": "Tensions escalate as Sudan files a United Nations (UN) complaint accusing Ethiopia of launching Rapid Support Forces (RSF) drone strikes.",
-   "updated": "2026-11-03",
-   "source": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQWUdCeEVpazFmLURTclRlZ3d5TDVuQ2dRLWFERW1mSEoxNi1DdWItbXF3eVRQODhpbkpCT2RucHZwTE5NYlV4WEVUQ3RSV1QtejVLMnlzb2p2UDB6Yk1kZWw1WWNSa0dmanYzTDRmUzdrb0twdENLRU9OdzgxVXdVcXdJLTdQeFpWZDdZWEtIT29ZQTVMcjY3eVpIWkF6U2VIVDA2WGhEZWNQWFVhdm5YMVBPNEpEUkdCSWRiWlptQ3Q3RHU5RDhOanlLaW1OcnFwZTc3aHZKNzZvVjlVWGtORllDd3A1eHRhdmdzM2ZB0gHuAUFVX3lxTFBZR0J4RWlrMWYtRFNyVGVnd3lMNW5DZ1EtYURFbWZISjE2LUN1Yi1tcXd5VFA4OGluSkJPZG5wdnBMTk1iVXhYRVRDdFJXVC16NUsyeXNvanZQMHpiTWRlbDVZY1JrR2ZqdjNMNGZTN2tvS3B0Q0tFT053ODFVd1Vxd0ktN1B4WlZkN1lYS0hPb1lBNUxyNjd5WkhaQXpTZUhUMDZYaERlY1BYVWF2blgxUE80SkRSR0JJZGJaWm1DdDdEdTlEOE5qeUtpbU5ycXBlNzdodko3Nm9WOVVYa05GWUN3cDV4dGF2Z3MzZkE?oc=5"
+   "note": "Tensions escalate as Ethiopia expels six Sudanese diplomats amid allegations of Ethiopian support for the Rapid Support Forces (RSF).",
+   "updated": "2026-11-04",
+   "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTHVvZk0yZ1NQQ09lYzJ1UUFIREo2MU5oMEJ2Qlp0ZVJIUWl1UmZoMWIzZmhsN3h2bWh1NDVZODBWd1dqTVo5QVZROEFGNFhRa1U0cmd2a01xb0k2Z2ZVdE9LLTNlRVZVMHNXRE15czdLMkVweWJFdlA2OGlLMGZlN0QxWGlkZTU5UUFuZUVCRDYtQllVNW1CdU00b1lGY0xiMldXY25YTFVsQQ?oc=5"
   },
   "ARE-ISR": {
    "a": "ARE",
@@ -2228,9 +2248,9 @@
    "a": "ISR",
    "b": "SOM",
    "s": "H",
-   "note": "Somalia rejects any Israeli presence and accuses Israel of seeking a military base in breakaway Somaliland.",
-   "updated": "2026-10-04",
-   "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZFlMbWQ3cnotcTdwZ0ZJeXJFRXQxNDA1NlFha2ZORUtYMVZJM2VNaE40SWJGSzFZNVg5MG15OC10dWhCQjFXYlpuSUR4c2VYVlA5N1pEcWVMRXFnN19nN1ZUVWVudm9HcWN5WWJ2QjJmOEhtUmNFUWdCRTl1RmZqYUhybzJYWUxkLVlKRXFPOTZsb3ZTWldqUURMZ0lKNzdWR3VxSkNjRWEwbzRtUlE?oc=5"
+   "note": "Somalia formally condemns Israel's appointment of an ambassador to Somaliland (SOL), rejecting any Israeli diplomatic presence.",
+   "updated": "2026-11-04",
+   "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxONDhwdjVhaTNQaFR2bllQMDdhUUJwZDY3NV9DSlNVajF0MGFYWWxOVUZ3cVB3c0FWODU2S3NJdDJGTHNOb2RieVc5NGVjQXh5Sm82QjZsNzdldjM1N0J3LXlmU3gwbFN5RUV5MDA1UWNsWENKQ1lxN0hmWVV1THNuempqZmxvUVNUSkl2T2lvYTVReTY2M0pyUVhPTjl0UQ?oc=5"
   },
   "DZA-NER": {
    "a": "DZA",
@@ -3715,12 +3735,12 @@
   "USA": {
    "hog": "Donald Trump, President",
    "hos": "Donald Trump, President",
-   "lastelec": "Presidential and congressional, November 2024, won by Donald Trump (Republican)",
+   "lastelec": "legislative (midterm), Nov 2026, Democratic Party",
    "nextelec": "Midterm congressional elections, 3 November 2026",
    "ruling": "Republican Party (GOP)",
-   "source": "https://www.cnn.com/2026/09/22/world/live-news/un-general-assembly-trump",
+   "source": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPbm1aMkx3RWVFNTBkOHpUSk5HZkZfLThzTkhST2toMHZhOHh4aEMxd2U2eGh1WVIxOUZCWWJSbU5EU0hhb1ozZGs0QU03eEExbXpKTzF4ZnI5UWNlT19pSTVSR3p6cFNqREhWcGFkSnF2dFk5M2MwZlVIMXp4eWk3VnE3bEdLU1F3NC0zcDVPb1hBY0N3M1dUbW82RDFPRWN6NnQ5eVl2NVJHbEQtRDlvVDNjY2tfT2tha1llYnRJeXBHb2VwV2g4ZlpwLWhUa1NKWjF1aUFaVzRxTHFKSnlnY1FEaThTWnltV3NTYUZUUdIB7wFBVV95cUxPbm1aMkx3RWVFNTBkOHpUSk5HZkZfLThzTkhST2toMHZhOHh4aEMxd2U2eGh1WVIxOUZCWWJSbU5EU0hhb1ozZGs0QU03eEExbXpKTzF4ZnI5UWNlT19pSTVSR3p6cFNqREhWcGFkSnF2dFk5M2MwZlVIMXp4eWk3VnE3bEdLU1F3NC0zcDVPb1hBY0N3M1dUbW82RDFPRWN6NnQ5eVl2NVJHbEQtRDlvVDNjY2tfT2tha1llYnRJeXBHb2VwV2g4ZlpwLWhUa1NKWjF1aUFaVzRxTHFKSnlnY1FEaThTWnltV3NTYUZUUQ?oc=5",
    "system": "Federal presidential republic",
-   "updated": "2026-09-23"
+   "updated": "2026-11-04"
   },
   "MAR": {
    "lastelec": "appointment, October 2026, Fatima Ezzahra El Mansouri",
