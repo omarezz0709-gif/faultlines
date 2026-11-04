@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-04T12:51:51Z",
+  "lastRun": "2026-11-04T17:54:43Z",
   "log": [
    {
     "date": "2026-11-04",
@@ -21,11 +21,6 @@
       "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPa2Rud0RfLVhpSkV6Q3hBd2xjY1lDYi12ZUlLUVZFZ18zZGMtWF9mcWQ4amJTUWROeDlndEdtLWtqR3kwOWhEV0dpYXNjWWJTbHgwS2ttdFo0anZtaTJfVllXQjI3dnBGVUMwWS1rVFAySEpuVmhBc2ZDMXZ0aENKVC02QWx2ZjlZcW9WbFVQNGQ3eE9DUHdxT1pJekxRYXRwYVE?oc=5"
      },
      {
-      "label": "Ethiopia–Sudan",
-      "change": "Tense: Note refreshed for Ethiopia expelling six Sudanese diplomats",
-      "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTHVvZk0yZ1NQQ09lYzJ1UUFIREo2MU5oMEJ2Qlp0ZVJIUWl1UmZoMWIzZmhsN3h2bWh1NDVZODBWd1dqTVo5QVZROEFGNFhRa1U0cmd2a01xb0k2Z2ZVdE9LLTNlRVZVMHNXRE15czdLMkVweWJFdlA2OGlLMGZlN0QxWGlkZTU5UUFuZUVCRDYtQllVNW1CdU00b1lGY0xiMldXY25YTFVsQQ?oc=5"
-     },
-     {
       "label": "Israel–Somalia",
       "change": "Hostile: Note refreshed as Somalia rejects Israeli envoy to Somaliland",
       "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxONDhwdjVhaTNQaFR2bllQMDdhUUJwZDY3NV9DSlNVajF0MGFYWWxOVUZ3cVB3c0FWODU2S3NJdDJGTHNOb2RieVc5NGVjQXh5Sm82QjZsNzdldjM1N0J3LXlmU3gwbFN5RUV5MDA1UWNsWENKQ1lxN0hmWVV1THNuempqZmxvUVNUSkl2T2lvYTVReTY2M0pyUVhPTjl0UQ?oc=5"
@@ -39,6 +34,21 @@
       "label": "United States",
       "change": "Recorded Nov 2026 midterm election results with Democratic victories",
       "source": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPbm1aMkx3RWVFNTBkOHpUSk5HZkZfLThzTkhST2toMHZhOHh4aEMxd2U2eGh1WVIxOUZCWWJSbU5EU0hhb1ozZGs0QU03eEExbXpKTzF4ZnI5UWNlT19pSTVSR3p6cFNqREhWcGFkSnF2dFk5M2MwZlVIMXp4eWk3VnE3bEdLU1F3NC0zcDVPb1hBY0N3M1dUbW82RDFPRWN6NnQ5eVl2NVJHbEQtRDlvVDNjY2tfT2tha1llYnRJeXBHb2VwV2g4ZlpwLWhUa1NKWjF1aUFaVzRxTHFKSnlnY1FEaThTWnltV3NTYUZUUdIB7wFBVV95cUxPbm1aMkx3RWVFNTBkOHpUSk5HZkZfLThzTkhST2toMHZhOHh4aEMxd2U2eGh1WVIxOUZCWWJSbU5EU0hhb1ozZGs0QU03eEExbXpKTzF4ZnI5UWNlT19pSTVSR3p6cFNqREhWcGFkSnF2dFk5M2MwZlVIMXp4eWk3VnE3bEdLU1F3NC0zcDVPb1hBY0N3M1dUbW82RDFPRWN6NnQ5eVl2NVJHbEQtRDlvVDNjY2tfT2tha1llYnRJeXBHb2VwV2g4ZlpwLWhUa1NKWjF1aUFaVzRxTHFKSnlnY1FEaThTWnltV3NTYUZUUQ?oc=5"
+     },
+     {
+      "label": "Ethiopia–Sudan",
+      "change": "Tense → Hostile: Ethiopia expels Sudanese diplomats over RSF support",
+      "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNUGNqSTFsNUtLaVpwQ2FVUEVLNDM4eGl0dS02bXdwMGFXTnFxSnlvNmtxVnlTdHRheHpORl83N2RaRmhTSzRWZ08tQ2FTa1c0YkxyUGhiLWdjNkRNQUhOc0t2Si0ydFF6dUdkN3RjQ1RlNlhLWmNUZUhfRnZFUnFUMmNJbTJRSjkxdTM1RmJiUjEycDdHU2NDc242Z2RBdzg0VzJTcWFMYVdMd3FCZldoWXBWdGtGYm1UTFl6MTNn?oc=5"
+     },
+     {
+      "label": "Rwanda–United States",
+      "change": "Normal → Tense: US suspends Rwanda from AGOA trade program",
+      "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOTDRydzVjMTVIU291UmpwZ1AtajVHOVNuRTllQWVVMFR3X3p3QWg1ZzNGVXQ0QXVybjEtazdQVlhXV1hXRWc0NzcwMndPdG9HcEtkVUtkc0tUNC1nSkxGaG12WVlQWEdjc2c5Y0U0eFNBR2NFRVJNWVdzZjBjZlh0OVJxdnZQRG1nQ2RSYnluYndnR2lSX2FQMTBKQmpDT250NWt5NHByRGtrdw?oc=5"
+     },
+     {
+      "label": "South Africa–United States",
+      "change": "Tense → Tense: US drops South Africa from AGOA trade program",
+      "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOTDRydzVjMTVIU291UmpwZ1AtajVHOVNuRTllQWVVMFR3X3p3QWg1ZzNGVXQ0QXVybjEtazdQVlhXV1hXRWc0NzcwMndPdG9HcEtkVUtkc0tUNC1nSkxGaG12WVlQWEdjc2c5Y0U0eFNBR2NFRVJNWVdzZjBjZlh0OVJxdnZQRG1nQ2RSYnluYndnR2lSX2FQMTBKQmpDT250NWt5NHByRGtrdw?oc=5"
      }
     ]
    },
@@ -1753,7 +1763,7 @@
     ]
    }
   ],
-  "summary": "Updated relation notes for Ethiopia–Sudan, Israel–Somalia, and Denmark–United States following diplomatic expulsions, ambassador rejections, and parliamentary ratifications, alongside US midterm election results."
+  "summary": "The United States (US) carries out strikes on Iran's Qeshm Island following a Democratic sweep in the midterm elections, while Ethiopia expels Sudanese diplomats amid escalating regional tensions."
  },
  "relations": {
   "DNK-USA": {
@@ -2007,10 +2017,10 @@
   "ETH-SDN": {
    "a": "ETH",
    "b": "SDN",
-   "s": "T",
-   "note": "Tensions escalate as Ethiopia expels six Sudanese diplomats amid allegations of Ethiopian support for the Rapid Support Forces (RSF).",
+   "s": "H",
+   "note": "Relations plummet as Ethiopia expels six Sudanese diplomats over alleged backing for the Rapid Support Forces (RSF).",
    "updated": "2026-11-04",
-   "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTHVvZk0yZ1NQQ09lYzJ1UUFIREo2MU5oMEJ2Qlp0ZVJIUWl1UmZoMWIzZmhsN3h2bWh1NDVZODBWd1dqTVo5QVZROEFGNFhRa1U0cmd2a01xb0k2Z2ZVdE9LLTNlRVZVMHNXRE15czdLMkVweWJFdlA2OGlLMGZlN0QxWGlkZTU5UUFuZUVCRDYtQllVNW1CdU00b1lGY0xiMldXY25YTFVsQQ?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNUGNqSTFsNUtLaVpwQ2FVUEVLNDM4eGl0dS02bXdwMGFXTnFxSnlvNmtxVnlTdHRheHpORl83N2RaRmhTSzRWZ08tQ2FTa1c0YkxyUGhiLWdjNkRNQUhOc0t2Si0ydFF6dUdkN3RjQ1RlNlhLWmNUZUhfRnZFUnFUMmNJbTJRSjkxdTM1RmJiUjEycDdHU2NDc242Z2RBdzg0VzJTcWFMYVdMd3FCZldoWXBWdGtGYm1UTFl6MTNn?oc=5"
   },
   "ARE-ISR": {
    "a": "ARE",
@@ -3192,9 +3202,9 @@
    "a": "RWA",
    "b": "USA",
    "s": "T",
-   "note": "United States suspends Rwanda from duty-free trade access under the AGOA (African Growth and Opportunity Act) programme.",
-   "updated": "2026-11-03",
-   "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOdFI0R1Nac18yOHFKTnI2eU5PMXE1WkJRZEtHZGl2bVFVNDhFWC1KcXBwQlBuQXJRaFZfcmMyblFqb3RFN2UzQzA4ZWVTUTRza2FRNmx2NzBsSWt5QVpPZVhrX0pSU2FHVjdYMC1sRDcyMjgzSlFSbTV0RkpxYlFLajFuSlN4MXlnU21uT2tMQjlYZGc?oc=5"
+   "note": "United States suspends Rwanda from duty-free trade access under the African Growth and Opportunity Act (AGOA) programme.",
+   "updated": "2026-11-04",
+   "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOTDRydzVjMTVIU291UmpwZ1AtajVHOVNuRTllQWVVMFR3X3p3QWg1ZzNGVXQ0QXVybjEtazdQVlhXV1hXRWc0NzcwMndPdG9HcEtkVUtkc0tUNC1nSkxGaG12WVlQWEdjc2c5Y0U0eFNBR2NFRVJNWVdzZjBjZlh0OVJxdnZQRG1nQ2RSYnluYndnR2lSX2FQMTBKQmpDT250NWt5NHByRGtrdw?oc=5"
   },
   "ETH-RUS": {
    "a": "ETH",
@@ -3248,9 +3258,9 @@
    "a": "USA",
    "b": "ZAF",
    "s": "T",
-   "note": "United States suspends South Africa from duty-free trade access under the AGOA (African Growth and Opportunity Act) programme.",
-   "updated": "2026-11-03",
-   "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOdFI0R1Nac18yOHFKTnI2eU5PMXE1WkJRZEtHZGl2bVFVNDhFWC1KcXBwQlBuQXJRaFZfcmMyblFqb3RFN2UzQzA4ZWVTUTRza2FRNmx2NzBsSWt5QVpPZVhrX0pSU2FHVjdYMC1sRDcyMjgzSlFSbTV0RkpxYlFLajFuSlN4MXlnU21uT2tMQjlYZGc?oc=5"
+   "note": "United States suspends South Africa from duty-free trade access under the African Growth and Opportunity Act (AGOA) programme.",
+   "updated": "2026-11-04",
+   "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOTDRydzVjMTVIU291UmpwZ1AtajVHOVNuRTllQWVVMFR3X3p3QWg1ZzNGVXQ0QXVybjEtazdQVlhXV1hXRWc0NzcwMndPdG9HcEtkVUtkc0tUNC1nSkxGaG12WVlQWEdjc2c5Y0U0eFNBR2NFRVJNWVdzZjBjZlh0OVJxdnZQRG1nQ2RSYnluYndnR2lSX2FQMTBKQmpDT250NWt5NHByRGtrdw?oc=5"
   },
   "ISR-USA": {
    "a": "ISR",
