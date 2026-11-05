@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-05T01:58:27Z",
+  "lastRun": "2026-11-05T13:01:16Z",
   "log": [
    {
     "date": "2026-11-05",
@@ -14,6 +14,26 @@
       "label": "Denmark–United States",
       "change": "Ally: Greenland parliament approves expanded US-Denmark security agreement",
       "source": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxObWtTN0p2LWRMTHFVQkhqb2V4cmFLOFRXN2N2ZWFGY3FiLXlmclB4VkpDWEY2eHk0TGZULTlkZ0RoQ0k2V0tCNERTN0RtQTlGQkxlbjdxcWVLTjBJQlhDbGpfbVExNmNpQVRfYW1fVG5Eeks4WkJoR1NlSkw0YTdzOGFVVnhuYVI1U3BZY2hPaHliSU0xWnNjd25mZ3VudUp0TzItNkQwanhRVVNwcWxCdGFlNzB3eHJPZzBaWkdoS01NUk55cHBId3oxWGtTZXcxS3dsZGVHNVc3QQ?oc=5"
+     },
+     {
+      "label": "Saudi Arabia–Syria",
+      "change": "Partner → Ally: Signed a formal defense cooperation deal and loan agreement",
+      "source": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5mU0tsVUJ5bHZNbGNMVmpLZ3lBbnFYNmx6cUhSZk5IcGZVMkluVVVVZVBFczgwdHBFeWJUQU1JSWZHdl8zUnQtb0tMRS0wNUN5Nno1UTZZTXZUdWxD?oc=5"
+     },
+     {
+      "label": "Armenia–Türkiye",
+      "change": "Tense: Transitioned to direct customs clearance for mutual trade",
+      "source": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPLXRkR3FTUjhOcTJWNUNldDl3OEpMWC11dWZLS2FKYV90ZDNiQXVyWV9GMV9VdWFYcFBZX2Q4a25FY3E2WnJlUFczaTUta1dCTmJ1U0ZFMFlVMkVUak9NUE5DOU5oSGtnb2hSOW1rRmFBS1hDdDFLN0hYVTlMWTM5ejhncTJOaTE5MUF0M3JuSVVoaUpRQXYwXzM4R1R6SW1UU0wydy13UVFYU0pTR3oyc2lVcXliWU1PS2dUSHJCMUI1QQ?oc=5"
+     },
+     {
+      "label": "Guyana–India",
+      "change": "None → Partner: India extended a $500M line of credit for defense and infrastructure",
+      "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNamY2WTUyQTNGak1NSmtySnhYbmV4U2xZOWszRWd3N2M3cGI1MURReUpKSzhSMlZ1NnVtdmZPS21BLU9hLWpWRlZfUGV1TzhvbmVFOTFZdFpoRlpIYzdCN1ZQa0hKeDBRVEJDR09Ha2xwS0tVQlBuYjdXVlhtUXZoMDRWdXllR3hCck5QLWl2Y0ljUFp1cm80?oc=5"
+     },
+     {
+      "label": "Poland–Russia",
+      "change": "Hostile: Poland arrested six individuals suspected of smuggling military goods to Russia",
+      "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNYVZPb0g1WXZ1M1ZISDBKS3dqVHk2MVpUQUVsQ2ptTmFNNjBvWG5CNlhnalJTVV9UZzhWaFNTX1ROVnBhVHU0NnBMUXhwQ2t5Q25lTmlCUnpyQjVtc25wU01Ja1VKZFE1OFNQdmYwWkJqOUViTXNhT3AxSnpyTnoyQnhIWVBrd0M4VnNDczVuNXQyTFdZWGZaUmUySU9ob0FqakZJX3hGVjJEZndpUVA2alBWenlPaU12N0E?oc=5"
      }
     ]
    },
@@ -1678,7 +1698,7 @@
     ]
    }
   ],
-  "summary": "Updates reflect diplomatic expulsions between Ethiopia and Sudan, a new security pact approval in Greenland, and ongoing US midterm political fallout regarding foreign policy."
+  "summary": "Saudi Arabia and Syria sign a formal defense cooperation agreement, India extends a major credit line to Guyana, and Armenia and Türkiye expand direct trade arrangements."
  },
  "relations": {
   "DNK-USA": {
@@ -1957,9 +1977,9 @@
    "a": "POL",
    "b": "RUS",
    "s": "H",
-   "note": "Poland deploys forces along the Kaliningrad border following suspicious night activity and fears of Russian provocations.",
-   "updated": "2026-11-03",
-   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQb04yOUY3M0N4NGx0YlJTVkNnTzExdEpUZVBlbjB4TlYzSWNxRmcyQVZOYnIyanJNeF8tUUxDa3BOdWhaOWRLNWRCLWpqSnZmTkRRd0lvRUtMSEV3VDJVV2JEa3BKR25lZG9jRS1mTFpRaW8ybklDdDZxTGhVbnRUTVE1b2VxbW14Rzd4bzdyd0pmdjY0V0NUNGp2ZEpJT00?oc=5"
+   "note": "Poland detains six individuals suspected of espionage and illicitly exporting military components to Russia.",
+   "updated": "2026-11-05",
+   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNYVZPb0g1WXZ1M1ZISDBKS3dqVHk2MVpUQUVsQ2ptTmFNNjBvWG5CNlhnalJTVV9UZzhWaFNTX1ROVnBhVHU0NnBMUXhwQ2t5Q25lTmlCUnpyQjVtc25wU01Ja1VKZFE1OFNQdmYwWkJqOUViTXNhT3AxSnpyTnoyQnhIWVBrd0M4VnNDczVuNXQyTFdZWGZaUmUySU9ob0FqakZJX3hGVjJEZndpUVA2alBWenlPaU12N0E?oc=5"
   },
   "PRK-RUS": {
    "a": "PRK",
@@ -2396,10 +2416,10 @@
   "SAU-SYR": {
    "a": "SAU",
    "b": "SYR",
-   "s": "F",
-   "note": "Syria and Saudi Arabia restore diplomatic engagement as Syrian President Ahmed al-Sharaa meets Crown Prince Mohammed bin Salman (MBS) in Riyadh.",
-   "updated": "2026-10-07",
-   "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQRHY5TnRlRno3bXlhVURsRTFldGVrNDVCbnJKeGFfOWQyNWx6TEhQVldvWFU1eWJ1UFJ3SEJyTC0tbmNrbWZoaDNzVW8xdURCVzZFV2dHRWM2VW1RVzd2TXpXSG1fUnNQbEs5YlNHckhsRmdFcWdqWXNacnotQkprOEd3VUNZRWhySW5kdmVwaEUxc0d3NXNoaEJPQjN3RVI0dUZJdXNFMFdqdGwyUG1hZDhMM19LWmtzQWYxWWxqR2FzRzRTbHA0Snp2eVkzQkticWVmSHVrbllzX0xHU3NXakZkZ3RVbXZoOXc?oc=5"
+   "s": "A",
+   "note": "Saudi Arabia and Syria sign a defense cooperation pact and $403 million loan agreement to deepen military ties.",
+   "updated": "2026-11-05",
+   "source": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5mU0tsVUJ5bHZNbGNMVmpLZ3lBbnFYNmx6cUhSZk5IcGZVMkluVVVVZVBFczgwdHBFeWJUQU1JSWZHdl8zUnQtb0tMRS0wNUN5Nno1UTZZTXZUdWxD?oc=5"
   },
   "IRN-TJK": {
    "a": "IRN",
@@ -2637,9 +2657,9 @@
    "a": "ARM",
    "b": "TUR",
    "s": "T",
-   "note": "Armenia and Türkiye agree on student exchanges as negotiations to reopen their shared border continue.",
-   "updated": "2026-10-23",
-   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQY3V5WjFlS1ZydXVUc0o5ZEV2dm1FeUIwQ0VXZ2RMMHFucnltZXc0MHVGMEd5RjVDenV6NEJ0NnJkX2pfRDNxeWFjZFJqc3g2RG9kWi04VVNJM0p6cGI5bGVSVzVYcnJuWWI2TnI5YTZXTWRoWXhFYWxBbWowS2xsb0N4cmJybHM1RjA1QW94SjAxbkRrcVdkanV3?oc=5"
+   "note": "Armenia and Türkiye transition to direct customs clearance for mutual trade and plan to restore the Ani border bridge.",
+   "updated": "2026-11-05",
+   "source": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPLXRkR3FTUjhOcTJWNUNldDl3OEpMWC11dWZLS2FKYV90ZDNiQXVyWV9GMV9VdWFYcFBZX2Q4a25FY3E2WnJlUFczaTUta1dCTmJ1U0ZFMFlVMkVUak9NUE5DOU5oSGtnb2hSOW1rRmFBS1hDdDFLN0hYVTlMWTM5ejhncTJOaTE5MUF0M3JuSVVoaUpRQXYwXzM4R1R6SW1UU0wydy13UVFYU0pTR3oyc2lVcXliWU1PS2dUSHJCMUI1QQ?oc=5"
   },
   "CHN-PRK": {
    "a": "CHN",
@@ -3192,6 +3212,14 @@
    "note": "Brunei and Oman elevate bilateral relations to a Strategic Partnership to deepen economic and diplomatic ties.",
    "updated": "2026-11-04",
    "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTkw4X0dpMHpCZEVHR3NyS21OSGpWSkkwRGZDSjRPYjgyRGhUZXB2S3ZNeHYteUZkM25XZUNNbUExc1dDc1hkN1AybEFKUXFQR3huMnR6S2JnRDJ6RXRkVnF1bzh6bTVVR20zTWNmTUVZcVZydWFTSGFCMnJTWkxiTlA5OXVOT1c4ZlZSajdn?oc=5"
+  },
+  "GUY-IND": {
+   "a": "GUY",
+   "b": "IND",
+   "s": "F",
+   "note": "Guyana and India strengthen economic and defense ties as New Delhi extends a $500 million line of credit.",
+   "updated": "2026-11-05",
+   "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNamY2WTUyQTNGak1NSmtySnhYbmV4U2xZOWszRWd3N2M3cGI1MURReUpKSzhSMlZ1NnVtdmZPS21BLU9hLWpWRlZfUGV1TzhvbmVFOTFZdFpoRlpIYzdCN1ZQa0hKeDBRVEJDR09Ha2xwS0tVQlBuYjdXVlhtUXZoMDRWdXllR3hCck5QLWl2Y0ljUFp1cm80?oc=5"
   }
  },
  "threads": {
@@ -3660,12 +3688,12 @@
   "USA": {
    "hog": "Donald Trump, President",
    "hos": "Donald Trump, President",
-   "lastelec": "legislative (midterm), Nov 2026, Democratic Party",
+   "lastelec": "legislative, November 2026, Democratic Party majority in Congress",
    "nextelec": "Midterm congressional elections, 3 November 2026",
    "ruling": "Republican Party (GOP)",
-   "source": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPbm1aMkx3RWVFNTBkOHpUSk5HZkZfLThzTkhST2toMHZhOHh4aEMxd2U2eGh1WVIxOUZCWWJSbU5EU0hhb1ozZGs0QU03eEExbXpKTzF4ZnI5UWNlT19pSTVSR3p6cFNqREhWcGFkSnF2dFk5M2MwZlVIMXp4eWk3VnE3bEdLU1F3NC0zcDVPb1hBY0N3M1dUbW82RDFPRWN6NnQ5eVl2NVJHbEQtRDlvVDNjY2tfT2tha1llYnRJeXBHb2VwV2g4ZlpwLWhUa1NKWjF1aUFaVzRxTHFKSnlnY1FEaThTWnltV3NTYUZUUdIB7wFBVV95cUxPbm1aMkx3RWVFNTBkOHpUSk5HZkZfLThzTkhST2toMHZhOHh4aEMxd2U2eGh1WVIxOUZCWWJSbU5EU0hhb1ozZGs0QU03eEExbXpKTzF4ZnI5UWNlT19pSTVSR3p6cFNqREhWcGFkSnF2dFk5M2MwZlVIMXp4eWk3VnE3bEdLU1F3NC0zcDVPb1hBY0N3M1dUbW82RDFPRWN6NnQ5eVl2NVJHbEQtRDlvVDNjY2tfT2tha1llYnRJeXBHb2VwV2g4ZlpwLWhUa1NKWjF1aUFaVzRxTHFKSnlnY1FEaThTWnltV3NTYUZUUQ?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQZHdobkY4ekpvR1hWRzJneHN4VXpnQ0ZDbzZEV3kzSC1QY2JXZVJ2aVUtdHBxaXZPUmhOZUI4ZktyTzU4Z2p0emdlM3R0UWFwQkJjY1Z1ZHdMTkJFNzRYN0tXZUh3OVlCNF9xdm0yLXZGX1RUZjVoRUxpUXYxdTNmeDBQTTV1aUtidk1kem5ZdjhtRUUwUnFwNFhvQmZqbFNMOUctUld4eTA2RW5WeENxUmlYMFAxZ2tRa09MRjl0NEtSWFpNR3ctejZjTC0zRmRlZzRKSFNDTENSODgyTzVGSmQ3UHdTWXJQU0Frckt2cGJUS3JLTnhTbFAydTh3dw?oc=5",
    "system": "Federal presidential republic",
-   "updated": "2026-11-04"
+   "updated": "2026-11-05"
   },
   "MAR": {
    "lastelec": "appointment, October 2026, Fatima Ezzahra El Mansouri",
@@ -3796,6 +3824,11 @@
    "nextelec": "local, May 2027",
    "updated": "2026-11-01",
    "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQnNfZmZ3dzNlX0g1cEhQNjRDS1pqUl9iVHI1bS1lNjRlY2w1cjdPaGRHbkJpRUpFQ21oLUNBeS1qNkppMGFPZ1NOQlNCUUc2bzU1elFSTGFVSEV1WjB5TGhSc3JlR19OUmdBcWY1QjBCMW1KNTVDWTdJZ0dpdlUwZWlFQ3lyMnJwSW5qMDJ3WV9YNnl3MTZEaTFn?oc=5"
+  },
+  "ZAF": {
+   "lastelec": "general, November 2026, African National Congress (ANC)",
+   "updated": "2026-11-05",
+   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNa1pKNmVOMlVQZFl0UkRYT0pxVHlOUXVQVHdrRVVhYW1zTWpLLXJlWGxnMVQ0bm5WZkFHMm5FcWNGOF9BaTAwMkNEQ3U4N2EwMGFhU3VjYWtiR3J5VDNtVExIVnNtLTJkSE8zV3VXOFlkY0VWaDl6M0lqSm5mcTFHZlBDOWFIcHEtMGtESlg1TmtTWU5MOXc?oc=5"
   }
  }
 }
