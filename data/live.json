@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-05T13:01:16Z",
+  "lastRun": "2026-11-05T17:57:50Z",
   "log": [
    {
     "date": "2026-11-05",
@@ -34,6 +34,36 @@
       "label": "Poland–Russia",
       "change": "Hostile: Poland arrested six individuals suspected of smuggling military goods to Russia",
       "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNYVZPb0g1WXZ1M1ZISDBKS3dqVHk2MVpUQUVsQ2ptTmFNNjBvWG5CNlhnalJTVV9UZzhWaFNTX1ROVnBhVHU0NnBMUXhwQ2t5Q25lTmlCUnpyQjVtc25wU01Ja1VKZFE1OFNQdmYwWkJqOUViTXNhT3AxSnpyTnoyQnhIWVBrd0M4VnNDczVuNXQyTFdZWGZaUmUySU9ob0FqakZJX3hGVjJEZndpUVA2alBWenlPaU12N0E?oc=5"
+     },
+     {
+      "label": "Belize–Cuba",
+      "change": "Normal: Belize terminates 36-year medical agreement with Cuba",
+      "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVi1mQnV1WmMwVUQ4bGdQV3BSSDVfUnpHR09OV0YyNlJnZ3BTZ0dvRWRxNnlRTzNZTzZQRUxUMXNMUDFncndmMkxCeFY4eUZfLWVWOVE3ZTBQUUV3QkFIUHJ3VE5zSG1SbFZuUGg3S3JpdFVHQXR1dEVwLUpCc0hlYWIxUzhwV1NtQ21iMktTNGtPNmhscDlRcmZXVXFUM2dVNU04RDhZONIBrAFBVV95cUxPOElQWkhpc3hfWmtXazlhMG1BUlhSYk80UXprR0p3UnZsMm92bE9DWS1tWjFCbjFJQ0VZaEdiZThjNkRBelZ4dDVmVGxXd3ZsaGFyM0RfMWtuWUhkcmNRb21JWm9yMUlLYkFlUW5LNW5kRG1rdmI0dW1tRU9xaEpSeXpuXzZOeVRlTGNidFJQTG9HdUppT2RXM3hlUjRPSEZRLVpRTHBtRzV1UkM5?oc=5"
+     },
+     {
+      "label": "Slovakia–Ukraine",
+      "change": "Normal: Slovakia pledges non-lethal energy and medical aid package",
+      "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQT3VQME1LUm9MMkJhbnlrSUxFRUY0QUMxX1BNSWF1Vmo4M3hZRlhBNV9yWUZzZGZYdkdUdHpSX3JYTFR3ZkNUNkt6VEQyWE16UzFweko2M3NOTkwzU1U4cE05WE1idUMwWTZHOEpYR3JnZFdrbjNGWXBUR2h4eXZ5MFJic29MUEMtUjhJWHZ2U1pON19CWEx5bENYX1VRUHY3bjRhckN4SWZiVUh3NFMxMUxZQ3YxZ3Z4aFBTLURySzFfZkJU?oc=5"
+     },
+     {
+      "label": "Türkiye–Ukraine",
+      "change": "Partner: Ukraine and Türkiye agree to expand security cooperation",
+      "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQM2loV05wSkJuUWZSeThGZUpqcGthSm9UVE1RRW9DM3lRTWVWY1BFNlI3X3hFOXFSYzNPMzI2ZlhBNk1GYlFrNHJLYVhqVGxnZXQ5Zzc5aWU5dmVlWm1rZkN4ZjBkX0hOLWxuVFFRNG5GbEJIQU8tdlBGMmVpdXdXYVBuLXhPN0VOdUs5WTh1UXpXdE5hR19haWJ3?oc=5"
+     },
+     {
+      "label": "United States",
+      "change": "Midterm legislative elections held; Democrats take control of Congress",
+      "source": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQZHdobkY4ekpvR1hWRzJneHN4VXpnQ0ZDbzZEV3kzSC1QY2JXZVJ2aVUtdHBxaXZPUmhOZUI4ZktyTzU4Z2p0emdlM3R0UWFwQkJjY1Z1ZHdMTkJFNzRYN0tXZUh3OVlCNF9xdm0yLXZGX1RUZjVoRUxpUXYxdTNmeDBQTTV1aUtidk1kem5ZdjhtRUUwUnFwNFhvQmZqbFNMOUctUld4eTA2RW5WeENxUmlYMFAxZ2tRa09MRjl0NEtSWFpNR3ctejZjTC0zRmRlZzRKSFNDTENSODgyTzVGSmQ3UHdTWXJQU0Frckt2cGJUS3JLTnhTbFAydTh3dw?oc=5"
+     },
+     {
+      "label": "Israel",
+      "change": "Legislative election held; party consultations start to form government",
+      "source": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1CN25VOGU2aFhSN1VNd1h6Rk1mWWhjQjVhY01zbk5Pb2FfVktpX1lIYW80UnliUUdTajBVWWlCcjVkSHB5U2ttMnNqQzJyVXN4WXNSOTdSN082NHN0ZHpWLVhQblNSaWd6bm1HLVBxZWpsbXRMaW9xY2QyNmYyUQ?oc=5"
+     },
+     {
+      "label": "Al-Shabaab and the Horn of Africa",
+      "change": "AU peacekeepers prepare base handovers as Uganda withdraws troops",
+      "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPLW1SanQtaDZfS1R5aExVVFpaNW9weTZBVENXN0ZHUnFKcGdHNFNzNzdZXzdsYlBYbUk3dzJiTEpIcDJnN1Bxb1BhTHpHNkhFYzFQbk1UTlRHX3lqVnpBaGh2QkhidFBPU1dibW5UeURLS0pZM3RqZ1BjQmtmTElIOExJYTBlWHZwU09qeEFFdzQ?oc=5"
      }
     ]
    },
@@ -1698,7 +1728,7 @@
     ]
    }
   ],
-  "summary": "Saudi Arabia and Syria sign a formal defense cooperation agreement, India extends a major credit line to Guyana, and Armenia and Türkiye expand direct trade arrangements."
+  "summary": "Belize ends its long-standing medical agreement with Cuba, Slovakia and Türkiye bolster cooperation with Ukraine, and major elections take place in the US and Israel."
  },
  "relations": {
   "DNK-USA": {
@@ -3220,6 +3250,30 @@
    "note": "Guyana and India strengthen economic and defense ties as New Delhi extends a $500 million line of credit.",
    "updated": "2026-11-05",
    "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNamY2WTUyQTNGak1NSmtySnhYbmV4U2xZOWszRWd3N2M3cGI1MURReUpKSzhSMlZ1NnVtdmZPS21BLU9hLWpWRlZfUGV1TzhvbmVFOTFZdFpoRlpIYzdCN1ZQa0hKeDBRVEJDR09Ha2xwS0tVQlBuYjdXVlhtUXZoMDRWdXllR3hCck5QLWl2Y0ljUFp1cm80?oc=5"
+  },
+  "BLZ-CUB": {
+   "a": "BLZ",
+   "b": "CUB",
+   "s": "N",
+   "note": "Belize terminates its 36-year medical agreement with Cuba while retaining working health professionals.",
+   "updated": "2026-11-05",
+   "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVi1mQnV1WmMwVUQ4bGdQV3BSSDVfUnpHR09OV0YyNlJnZ3BTZ0dvRWRxNnlRTzNZTzZQRUxUMXNMUDFncndmMkxCeFY4eUZfLWVWOVE3ZTBQUUV3QkFIUHJ3VE5zSG1SbFZuUGg3S3JpdFVHQXR1dEVwLUpCc0hlYWIxUzhwV1NtQ21iMktTNGtPNmhscDlRcmZXVXFUM2dVNU04RDhZONIBrAFBVV95cUxPOElQWkhpc3hfWmtXazlhMG1BUlhSYk80UXprR0p3UnZsMm92bE9DWS1tWjFCbjFJQ0VZaEdiZThjNkRBelZ4dDVmVGxXd3ZsaGFyM0RfMWtuWUhkcmNRb21JWm9yMUlLYkFlUW5LNW5kRG1rdmI0dW1tRU9xaEpSeXpuXzZOeVRlTGNidFJQTG9HdUppT2RXM3hlUjRPSEZRLVpRTHBtRzV1UkM5?oc=5"
+  },
+  "SVK-UKR": {
+   "a": "SVK",
+   "b": "UKR",
+   "s": "N",
+   "note": "Slovakia pledges non-lethal infrastructure and energy aid to Ukraine, including 54 power generators.",
+   "updated": "2026-11-05",
+   "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQT3VQME1LUm9MMkJhbnlrSUxFRUY0QUMxX1BNSWF1Vmo4M3hZRlhBNV9yWUZzZGZYdkdUdHpSX3JYTFR3ZkNUNkt6VEQyWE16UzFweko2M3NOTkwzU1U4cE05WE1idUMwWTZHOEpYR3JnZFdrbjNGWXBUR2h4eXZ5MFJic29MUEMtUjhJWHZ2U1pON19CWEx5bENYX1VRUHY3bjRhckN4SWZiVUh3NFMxMUxZQ3YxZ3Z4aFBTLURySzFfZkJU?oc=5"
+  },
+  "TUR-UKR": {
+   "a": "TUR",
+   "b": "UKR",
+   "s": "F",
+   "note": "Ukraine and Türkiye agree to expand security cooperation and deepen defense industry ties.",
+   "updated": "2026-11-05",
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQM2loV05wSkJuUWZSeThGZUpqcGthSm9UVE1RRW9DM3lRTWVWY1BFNlI3X3hFOXFSYzNPMzI2ZlhBNk1GYlFrNHJLYVhqVGxnZXQ5Zzc5aWU5dmVlWm1rZkN4ZjBkX0hOLWxuVFFRNG5GbEJIQU8tdlBGMmVpdXdXYVBuLXhPN0VOdUs5WTh1UXpXdE5hR19haWJ3?oc=5"
   }
  },
  "threads": {
@@ -3452,7 +3506,7 @@
   "al-shabaab": {
    "t": "security",
    "n": "Al-Shabaab and the Horn of Africa",
-   "d": "Al-Shabaab militants stage ambushes across southern Somalia as Uganda begins withdrawing its peacekeeping forces.",
+   "d": "Al-Shabaab militants stage ambushes across southern Somalia as African Union (AU) forces begin handing over bases amid Ugandan troop withdrawals.",
    "c": [
     "SOM",
     "KEN",
@@ -3464,8 +3518,8 @@
     "TUR",
     "ARE"
    ],
-   "updated": "2026-11-02",
-   "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPb1daUVZUcmFzSy1uSnB1elBxUkp5YlRjdlQ0d01RTGFPVk1teWhHWG8tT3BHaFdWMG1CaDJxcGgxUDBCMW5TVGxoTkxPcGw1b3k2N1FacEVReXBfeHRvOVVueHZzOWh6eXJDUVltVFZSSUJYbHNZSUVnYmkxVDhQLXdJVFFQa0JfZVhJRDlYcFI4RC11?oc=5"
+   "updated": "2026-11-05",
+   "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPLW1SanQtaDZfS1R5aExVVFpaNW9weTZBVENXN0ZHUnFKcGdHNFNzNzdZXzdsYlBYbUk3dzJiTEpIcDJnN1Bxb1BhTHpHNkhFYzFQbk1UTlRHX3lqVnpBaGh2QkhidFBPU1dibW5UeURLS0pZM3RqZ1BjQmtmTElIOExJYTBlWHZwU09qeEFFdzQ?oc=5"
   }
  },
  "pois": {
@@ -3688,7 +3742,7 @@
   "USA": {
    "hog": "Donald Trump, President",
    "hos": "Donald Trump, President",
-   "lastelec": "legislative, November 2026, Democratic Party majority in Congress",
+   "lastelec": "legislative midterms, November 2026, Democratic Party wins Congress",
    "nextelec": "Midterm congressional elections, 3 November 2026",
    "ruling": "Republican Party (GOP)",
    "source": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQZHdobkY4ekpvR1hWRzJneHN4VXpnQ0ZDbzZEV3kzSC1QY2JXZVJ2aVUtdHBxaXZPUmhOZUI4ZktyTzU4Z2p0emdlM3R0UWFwQkJjY1Z1ZHdMTkJFNzRYN0tXZUh3OVlCNF9xdm0yLXZGX1RUZjVoRUxpUXYxdTNmeDBQTTV1aUtidk1kem5ZdjhtRUUwUnFwNFhvQmZqbFNMOUctUld4eTA2RW5WeENxUmlYMFAxZ2tRa09MRjl0NEtSWFpNR3ctejZjTC0zRmRlZzRKSFNDTENSODgyTzVGSmQ3UHdTWXJQU0Frckt2cGJUS3JLTnhTbFAydTh3dw?oc=5",
@@ -3811,9 +3865,9 @@
   },
   "ISR": {
    "nextelec": "general, 2026",
-   "updated": "2026-10-31",
-   "source": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9MTENoZ1RkbkUzd2lBTWRrMU13dm5fWUs1M1dIOEZ2bWg2WmtYbmpBdllLQ0dGaEZETkcxRTR2UnJvSmYwQV9fRWREWGd2Sjd3ZmRoUGdR?oc=5",
-   "lastelec": "legislative, October 2026, hung parliament"
+   "updated": "2026-11-05",
+   "source": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1CN25VOGU2aFhSN1VNd1h6Rk1mWWhjQjVhY01zbk5Pb2FfVktpX1lIYW80UnliUUdTajBVWWlCcjVkSHB5U2ttMnNqQzJyVXN4WXNSOTdSN082NHN0ZHpWLVhQblNSaWd6bm1HLVBxZWpsbXRMaW9xY2QyNmYyUQ?oc=5",
+   "lastelec": "legislative election, November 2026"
   },
   "OMN": {
    "nextelec": "municipal, December 2026",
