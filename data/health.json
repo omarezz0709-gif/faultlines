@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-05T18:10:09Z",
- "berlin": "2026-11-05 19:10",
+ "generated": "2026-11-06T17:37:16Z",
+ "berlin": "2026-11-06 18:37",
  "status": "ok",
  "summary": "All checks passed.",
  "repairs": [],
@@ -10,7 +10,7 @@
    "name": "Website",
    "status": "ok",
    "detail": "HTTP 200, 427 KB",
-   "ms": 240
+   "ms": 152
   },
   {
    "g": "security",
@@ -23,49 +23,49 @@
    "name": "GitHub Pages copy",
    "status": "ok",
    "detail": "HTTP 200",
-   "ms": 386
+   "ms": 183
   },
   {
    "g": "site",
    "name": "data/news.json",
    "status": "ok",
-   "detail": "HTTP 200, 471 KB",
-   "ms": 259
+   "detail": "HTTP 200, 474 KB",
+   "ms": 347
   },
   {
    "g": "site",
    "name": "data/live.json",
    "status": "ok",
-   "detail": "HTTP 200, 279 KB",
-   "ms": 208
+   "detail": "HTTP 200, 283 KB",
+   "ms": 310
   },
   {
    "g": "site",
    "name": "data/politics.json",
    "status": "ok",
    "detail": "HTTP 200, 43 KB",
-   "ms": 86
+   "ms": 214
   },
   {
    "g": "site",
    "name": "data/wb.json",
    "status": "ok",
    "detail": "HTTP 200, 73 KB",
-   "ms": 140
+   "ms": 136
   },
   {
    "g": "site",
    "name": "data/geo.json",
    "status": "ok",
    "detail": "HTTP 200, 697 KB",
-   "ms": 116
+   "ms": 239
   },
   {
    "g": "site",
    "name": "data/cities.json",
    "status": "ok",
    "detail": "HTTP 200, 151 KB",
-   "ms": 123
+   "ms": 159
   },
   {
    "g": "site",
@@ -77,25 +77,25 @@
    "g": "fresh",
    "name": "Headlines (news.json)",
    "status": "ok",
-   "detail": "last update 0.3 h ago"
+   "detail": "last update 0.4 h ago"
   },
   {
    "g": "fresh",
    "name": "AI relationship update (live.json)",
    "status": "ok",
-   "detail": "last update 0.2 h ago"
+   "detail": "last update 0.3 h ago"
   },
   {
    "g": "fresh",
    "name": "Leaders (politics.json)",
    "status": "ok",
-   "detail": "last update 29.3 h ago"
+   "detail": "last update 20.0 h ago"
   },
   {
    "g": "fresh",
    "name": "Countries with confirmed headlines",
    "status": "ok",
-   "detail": "183"
+   "detail": "176"
   },
   {
    "g": "fresh",
@@ -119,169 +119,169 @@
    "g": "worker",
    "name": "/live (en)",
    "status": "ok",
-   "detail": "17 items",
-   "ms": 790
+   "detail": "19 items",
+   "ms": 497
   },
   {
    "g": "worker",
    "name": "/top (en)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 312
+   "ms": 337
   },
   {
    "g": "worker",
    "name": "/videos (en)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 653
+   "ms": 584
   },
   {
    "g": "worker",
    "name": "/live (de)",
    "status": "ok",
-   "detail": "20 items",
-   "ms": 1575
+   "detail": "18 items",
+   "ms": 1914
   },
   {
    "g": "worker",
    "name": "/top (de)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 214
+   "ms": 106
   },
   {
    "g": "worker",
    "name": "/videos (de)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 419
+   "ms": 490
   },
   {
    "g": "worker",
    "name": "/live (fr)",
    "status": "ok",
-   "detail": "26 items",
-   "ms": 939
+   "detail": "15 items",
+   "ms": 872
   },
   {
    "g": "worker",
    "name": "/top (fr)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 240
+   "ms": 106
   },
   {
    "g": "worker",
    "name": "/videos (fr)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 448
+   "ms": 372
   },
   {
    "g": "worker",
    "name": "/live (es)",
    "status": "ok",
-   "detail": "6 items",
-   "ms": 638
+   "detail": "3 items",
+   "ms": 720
   },
   {
    "g": "worker",
    "name": "/top (es)",
    "status": "ok",
-   "detail": "6 stories",
-   "ms": 296
+   "detail": "3 stories",
+   "ms": 85
   },
   {
    "g": "worker",
    "name": "/videos (es)",
    "status": "ok",
-   "detail": "3 videos",
-   "ms": 371
+   "detail": "5 videos",
+   "ms": 570
   },
   {
    "g": "worker",
    "name": "/live (it)",
    "status": "ok",
-   "detail": "20 items",
-   "ms": 1505
+   "detail": "19 items",
+   "ms": 1564
   },
   {
    "g": "worker",
    "name": "/top (it)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 201
+   "ms": 102
   },
   {
    "g": "worker",
    "name": "/videos (it)",
    "status": "ok",
-   "detail": "2 videos",
-   "ms": 342
+   "detail": "5 videos",
+   "ms": 376
   },
   {
    "g": "worker",
    "name": "/live (ar)",
    "status": "ok",
-   "detail": "5 items",
-   "ms": 505
+   "detail": "7 items",
+   "ms": 334
   },
   {
    "g": "worker",
    "name": "/top (ar)",
    "status": "ok",
-   "detail": "5 stories",
-   "ms": 85
+   "detail": "6 stories",
+   "ms": 121
   },
   {
    "g": "worker",
    "name": "/videos (ar)",
    "status": "ok",
-   "detail": "5 videos",
-   "ms": 491
+   "detail": "2 videos",
+   "ms": 598
   },
   {
    "g": "worker",
    "name": "Real-time search",
    "status": "ok",
-   "detail": "14 reports",
-   "ms": 752
+   "detail": "13 reports",
+   "ms": 586
   },
   {
    "g": "security",
    "name": "Other websites are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 88
+   "ms": 55
   },
   {
    "g": "security",
    "name": "Look-alike Pages projects are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 70
+   "ms": 58
   },
   {
    "g": "security",
    "name": "Only the site's own prompts are answered",
    "status": "ok",
    "detail": "HTTP 400 (should be 400)",
-   "ms": 96
+   "ms": 29
   },
   {
    "g": "security",
    "name": "Private chat needs a valid pass",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 68
+   "ms": 56
   },
   {
    "g": "security",
    "name": "Admin login",
    "status": "ok",
    "detail": "HTTP 401 without a code (should be 401)",
-   "ms": 59
+   "ms": 67
   },
   {
    "g": "security",
@@ -294,7 +294,7 @@
    "name": "AI answers",
    "status": "ok",
    "detail": "answered by gemini-3.6-flash",
-   "ms": 2014
+   "ms": 5225
   },
   {
    "g": "sources",
@@ -315,7 +315,7 @@
    "name": "Page loads and the globe starts",
    "status": "ok",
    "detail": "",
-   "ms": 3838
+   "ms": 4342
   },
   {
    "g": "browser",
@@ -368,5 +368,5 @@
  ],
  "emailed": [],
  "warn_since": {},
- "ms": 422333
+ "ms": 478227
 }
