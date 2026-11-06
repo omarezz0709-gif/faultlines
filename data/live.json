@@ -1,7 +1,27 @@
 {
  "meta": {
-  "lastRun": "2026-11-05T17:57:50Z",
+  "lastRun": "2026-11-06T01:59:30Z",
   "log": [
+   {
+    "date": "2026-11-06",
+    "items": [
+     {
+      "label": "Syria–Saudi Arabia",
+      "change": "Normal → Ally: Defense pact signed",
+      "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxON241ZUgyQTFrdlVhY1VCejlyckVIRXlUajQtVVZEZFBnR01lOHVrNVNKenh6cG5nSkQ3LURkMDdNdTdPLUxDZHNoUGpkSk91U0FOcTdZQ180aVl2TWI2dFNuNUZYbVVVczJCMEZEc1lSRnhqWndsaURBQUR1WDhOdHNxM054aTFGa2pBbWpsOU9iV3IwaDlIaEtYNVUxdw?oc=5"
+     },
+     {
+      "label": "Ethiopia–Sudan",
+      "change": "Tense → Hostile: Diplomat expulsions",
+      "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQQ1lkNGRhSHVRcjF3cTc0ek5LUmUzMXJQUjYxM0FqZjU3UlI3MUNrd0RUdHhkUVhqM3ZUeHdNQ25Ya0Jua3Z5Q2ZHaDQyT2VXSlVYY1ZvYTZVU0xTNXhKZ1VJN2FwV0p5TERGQ1dmLTVFbTdPUG0zUkRFYXVTbFhMUEJhRTE0NUd2bjlHX1dORUloWXRBemNVcTAya3pHci1GeFVhSDl2SHpPLXl3dTVqMTQ1YkNycXNZQlJBUGZFVGZac01xMno4X1BpY0hYVkk?oc=5"
+     },
+     {
+      "label": "Serbia",
+      "change": "Government toppled by Student List victory",
+      "source": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcjNNNlIzY0ctRUxfV3hoVDBHYkUyUkFGU3hUWVc3MWpjOVRkNkpZSHVTZU9mMjFpcEsyeEtBVWotZ1ZNbUN6eEFCalJGYVVPOFd1cHQ3NmZrUWFzcFRGZ2pDNTVlVE1ZN1k2OVlfZER0dXZ0RkRvRzFaQ2I2YU1hRENpcTBOaFlDVDl6THMtakJIVzJkUEMwUjRUSk5LQldyQXBCaXpqRGtFZUlna2hTa1YxS05Qa0NNLWdkdnJLOFlnLTZKN2xYekNwRWlvdHVDdXR2ZHpiWjZ5dw?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-11-05",
     "items": [
@@ -1641,94 +1661,9 @@
       "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNcXNYdk0xcTVZR21jTUJwSWtNS1hlanhxSlVTMXpKQkw0SjlLbC1UOFRrRVVMSDB6dEpPTXFwd2lVMENRRzVlVkpIaXhqV3E5THBoSzhiWERZRnp2SnQxWWFLU18tSnJGUjJMZ1dvdEFRc2YxY2pTME82YTNLQ2RjNjZ0cjlzUQ?oc=5"
      }
     ]
-   },
-   {
-    "date": "2026-10-07",
-    "items": [
-     {
-      "label": "Latvia–Belarus",
-      "change": "Tense → Hostile: Armed smugglers cross border and threaten soldiers",
-      "source": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQVEFlaDVPV3VzT25sODdLeHJJSGQ2Zl9vZTJGSTIyNEJ3Y3QwNmM5MEMweElEQzBfMGdBelctZzRrY21mSG1WUURPZExSdHdpam5UNW1mcWpDQ3JpNEYtbkpLZHgxTXNuYUhFVXhUUUlqRGY4b1g1c3F1c1ZybHFmaW12OERydTVUcGRFamw3MmF1R2lWUmtMZ0FTR2ZMbmczRlBQWnZmZldkZlRGc0drakVYSHJFUUdUenpiZ184VFBTZ2RUVlFZOG1IbDgycFoxc1l5YVFfdjhxOWh2TE9McDhR?oc=5"
-     },
-     {
-      "label": "South Korea–Ukraine",
-      "change": "Tense: Ukraine accuses South Korea of oil shipments to Russia; Seoul demands POW apology",
-      "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNY3ExNDNMZllIeFY4LTh2TVpwYkZ4dVZ6M19fcm9WMmY3WWxYOFJvcjVuMWgyOXBmUGlWRDdQTmhMZVBQOHdJMi1HeW1IUWdLbVhyT3JoZ2RzVFZYV1QwZXNuQUg5RjEyQlIxakhzRERjS0hUaWp2dk1DSVN0S2VKakIycXI?oc=5"
-     },
-     {
-      "label": "Saudi Arabia–Turkey",
-      "change": "Ally: Turkey deploys troops under Mecca Joint Defense Agreement",
-      "source": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPdEltR052QUpLeFVyT1F6dVBGOE94bzJZVjhRMFBvUkdGQVM2T3lCRGlLUmd1RzZyemRXUHVzME9XUGNmSmxJTWcxNmhSdE5kdTBRWDJwU0oyWURHYmc0eGtjdjdyNzNNUFo5ZWdmNDhaSVNvT1RFeXpwU1k3dHBlb0RoZVpYSFdoNVhwcWNsR2x5akZnWElkVVY0OVJzZmZwV1NtV1Y5RklnV1BKLXgtbnRVd0pPWFpUSnY0R0hpRFlaa21FUzNaREtLRVRGZVIxaVVnV0poNEdUTTBQVGE1TQ?oc=5"
-     },
-     {
-      "label": "Pakistan–Saudi Arabia",
-      "change": "Ally: Pakistan deploys troops under Mecca Joint Defense Agreement",
-      "source": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPdEltR052QUpLeFVyT1F6dVBGOE94bzJZVjhRMFBvUkdGQVM2T3lCRGlLUmd1RzZyemRXUHVzME9XUGNmSmxJTWcxNmhSdE5kdTBRWDJwU0oyWURHYmc0eGtjdjdyNzNNUFo5ZWdmNDhaSVNvT1RFeXpwU1k3dHBlb0RoZVpYSFdoNVhwcWNsR2x5akZnWElkVVY0OVJzZmZwV1NtV1Y5RklnV1BKLXgtbnRVd0pPWFpUSnY0R0hpRFlaa21FUzNaREtLRVRGZVIxaVVnV0poNEdUTTBQVGE1TQ?oc=5"
-     },
-     {
-      "label": "Germany–Ukraine",
-      "change": "Note updated with Chancellor Friedrich Merz",
-      "source": "https://www.wikidata.org/wiki/Q183"
-     },
-     {
-      "label": "Japan–United States",
-      "change": "Note updated with Prime Minister Sanae Takaichi",
-      "source": "https://www.wikidata.org/wiki/Q17"
-     },
-     {
-      "label": "Iceland–United States",
-      "change": "Note updated with Prime Minister Kristrún Mjöll Frostadóttir",
-      "source": "https://www.wikidata.org/wiki/Q189"
-     },
-     {
-      "label": "India–Sri Lanka",
-      "change": "Note updated with Prime Minister Harini Amarasuriya",
-      "source": "https://www.wikidata.org/wiki/Q854"
-     },
-     {
-      "label": "Spain–Morocco",
-      "change": "Note updated with Prime Minister Pedro Sánchez",
-      "source": "https://www.wikidata.org/wiki/Q29"
-     },
-     {
-      "label": "Bulgaria–Russia",
-      "change": "Normal/mixed → Tense: Russian drone strikes hit commercial vessels in Bulgaria's EEZ",
-      "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWGIzbm82d1A0UUNFZUlMLXBMS3pVd1BXS0ZqMjlNTXBwc2ktaWJVMlpRSjNza3BDX1BwWE5pU1hkSUtnQTVrdG51RDVKalBLd3dJMjhsMWNlTy1vTW5LVmtWNXZUbFBMTzNZYXU5U0JpSHpkeXdOWEZTeTNNN2YyekN0Vktzc0lTMGUwSUpyMXRRcDVfZGl0eUtuMHItWHE3LW4zdkljM3IzTXRRMEtR?oc=5"
-     },
-     {
-      "label": "Greece–United States",
-      "change": "Normal/mixed → Ally: Deepening defense and energy ties during Senator Rubio's visit",
-      "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOWnVNVm44Nk5seWUtSzFrTXJ0MGtlaVpQcFJHWDFIRDBDNlAwaVBXbDJfMlJKTGg4R09uRzE3NE5aWjZoUElXclY5TktzcXA0ZFVZN01NejJDeGVlTEVjbmtqdVlUNm90TUN6U1U4YVNBMjhmdlhjb2RZZ2pDS1h0S182RDdPQ05mMGJsbm40MDNGN0ZUcUxPb25TQjFyQWc4UFZ0c2tWWFY3aG1zQ2wwT2kyRXgzQ3k1X0JtZlo3eFFNTXliUk5n?oc=5"
-     },
-     {
-      "label": "Bahrain–Pakistan",
-      "change": "Normal/mixed → Partner: Expanding trade and defense cooperation during FM visit",
-      "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUkZMZHZUNDJqbXFmWnk0djZJT0VFZ2lzWVA0VXlzY3NfUHhsMHZuTjNTc1hKMlFsczRHVkhJTFZ4QnppbkZWMFRQS21iZmpSdFkwTkwtZU4zODlvUE83aTlpSjN6ZWZ4dmFYVEswcmJ5NlBXTFo0Z0lQbDVYMXpHMTREM1ByMTktTTZWRUR6SkxiWUNaMkczSXF3dE8xMjlVMDBxRzNUTFdYbmQyZjdr?oc=5"
-     },
-     {
-      "label": "Sweden–Poland",
-      "change": "Normal/mixed → Partner: Sweden deploys Patriot air defense unit to Poland",
-      "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQWXE1RmVBTmt0a29NTk9qU0FOWkNLSXkwX0ozdnR3OTVzNTd4Mlp5ZGpFLWtEcks4eDhzaTNxa3lRMTFOdEJmaXBZTDJWTFdmcFAwQXZKYktpTFNFbVZ4U2FjVTMwdkdhUnNYRk1nazllOWpJWGJ3NzlzTnk1Wld3aDItUkNmN2xCN3pTMmdpNWZVSmhlaXRkYWtqblBSRGUwVkpZZG5icEJ3N0FWYWlr0gGvAUFVX3lxTFBZcTVGZUFOa3Rrb01OT2pTQU5aQ0tJeTBfSjN2dHc5NXM1N3gyWnlkakUta0RySzh4OHNpM3FreVExMU50QmZpcFlMMlZMV2ZwUDBBdkpiS2lMU0VtVnhTYWNVMzB2R2FSc1hGTWdrOWU5aklYYnc3OXNOeTVaV3doMi1SQ2Y3bEI3elMyZ2k1ZlVKaGVpdGRha2puUFJEZTBWSllkbmJwQnc3QVZhaWs?oc=5"
-     },
-     {
-      "label": "Syria–Saudi Arabia",
-      "change": "Normal/mixed → Partner: Diplomatic engagement restored as Sharaa meets MBS",
-      "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQRHY5TnRlRno3bXlhVURsRTFldGVrNDVCbnJKeGFfOWQyNWx6TEhQVldvWFU1eWJ1UFJ3SEJyTC0tbmNrbWZoaDNzVW8xdURCVzZFV2dHRWM2VW1RVzd2TXpXSG1fUnNQbEs5YlNHckhsRmdFcWdqWXNacnotQkprOEd3VUNZRWhySW5kdmVwaEUxc0d3NXNoaEJPQjN3RVI0dUZJdXNFMFdqdGwyUG1hZDhMM19LWmtzQWYxWWxqR2FzRzRTbHA0Snp2eVkzQkticWVmSHVrbllzX0xHU3NXakZkZ3RVbXZoOXc?oc=5"
-     },
-     {
-      "label": "Tajikistan–Iran",
-      "change": "Normal/mixed → Partner: Implementing full visa-free travel",
-      "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWkpsbVNYQ1UxWmJQazQ3MlBNSGJpUVRuQmM2czMwczVaWW55aE5fOUxBSklydEV3MG56NTdndEgzSF92SVBGSVB6SEQwdFVZbW1aMldycko4OXJ5UHdHc3ZLdjlrUG9TSXB4ZHVtbW1QdHlkWVBSR1ktT2d0N2R4QzYtNHNPaThHNlZLVERDNVV3d2s?oc=5"
-     },
-     {
-      "label": "United States–Colombia",
-      "change": "Normal/mixed → Partner: Aligning on counter-narcotics under President Abelardo de la Espriella",
-      "source": "https://www.wikidata.org/wiki/Q739"
-     }
-    ]
    }
   ],
-  "summary": "Belize ends its long-standing medical agreement with Cuba, Slovakia and Türkiye bolster cooperation with Ukraine, and major elections take place in the US and Israel."
+  "summary": "Peace talks for Ukraine gain momentum while Paraguay's president falls and Ethiopia-Sudan tensions escalate."
  },
  "relations": {
   "DNK-USA": {
@@ -1983,9 +1918,9 @@
    "a": "ETH",
    "b": "SDN",
    "s": "H",
-   "note": "Relations plummet as Ethiopia and Sudan trade tit-for-tat diplomat expulsions and close consulates over cross-border drone claims.",
-   "updated": "2026-11-05",
-   "source": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNaTEyRE1FSWVuOXQwd0hnVUVYZWdWUTJaS053NkRDYmZfb3JFaUtRNlF3M3ZIR3FJZ180N3BrYWVMS0d2Z2d3WFpiN1BvcHRmdXNQQno3enJ0dXljWGdSa1VCMjZUUHB2WkNKbm5LNGhFbTZ2YVJiOWNteXl6ckpCRjBoRl80Z3N5aFFhT1ZDZkRDX3JfYkhTbWthS1VWQU9lOUFRaHMxanRuUWZZU3JaOUdXdmRoSDRRMU5oWktUeENJbVZYRlBqTnh6b1Vfdw?oc=5"
+   "note": "Relations collapse as both nations expel diplomats and close consulates over drone warfare claims.",
+   "updated": "2026-11-06",
+   "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQQ1lkNGRhSHVRcjF3cTc0ek5LUmUzMXJQUjYxM0FqZjU3UlI3MUNrd0RUdHhkUVhqM3ZUeHdNQ25Ya0Jua3Z5Q2ZHaDQyT2VXSlVYY1ZvYTZVU0xTNXhKZ1VJN2FwV0p5TERGQ1dmLTVFbTdPUG0zUkRFYXVTbFhMUEJhRTE0NUd2bjlHX1dORUloWXRBemNVcTAya3pHci1GeFVhSDl2SHpPLXl3dTVqMTQ1YkNycXNZQlJBUGZFVGZac01xMno4X1BpY0hYVkk?oc=5"
   },
   "ARE-ISR": {
    "a": "ARE",
@@ -2111,9 +2046,9 @@
    "a": "CUB",
    "b": "USA",
    "s": "H",
-   "note": "The United States (US) expels a Cuban diplomat following a contentious confrontation at the United Nations General Assembly (UNGA).",
-   "updated": "2026-10-30",
-   "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOOXZ0TThBNGRPeEM3blJsZ2RZOERwTVk0N3BsM0IyU19QNFBxOHJEUXNmZUlSTFkwLVVmY3ZuT3lTb1FfR3d2WWV5eEVjdVBSR1kwZWRLU2ZrVEg5a0JmQWRqajQ2TVdwOEQyQWhUUDNrcnJUUldQZlpmeUJ4VnQyeg?oc=5"
+   "note": "US expands sanctions on Cuba, targeting shipping networks and Chinese military suppliers.",
+   "updated": "2026-11-06",
+   "source": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNM1FZMGpxdDZUT2Z4WEQ1RjEzREJDOUlrS1drSmlSLWxtX1JVWHgtOURNMmZqYUZRTEhXS2F4dWxoTzZrYjZDY1pndXlPTFZSc1RuOFcyamZyWENEb0QxSmYtZUxrV2JRaXZWdGh6RGFXeGF4WmpUN3ZxeFZycnA4UGx3YTJZR2tnaUVR0gGQAUFVX3lxTE5oeDlWUFlxZFdXc2duMDJKNDBCbUs0Ti1KY0FvY3R4SEJHdVQyT0QzWV82SU1kRDI5b0lJWk5rMTFvaHo2bEN5Q0pzTmRhbXpmMDNGTnIwd3lZM3ppWVoxSGhhZmxzcFVyM1lId0JrT2hLS2l4cXptQW15UUMtWW1oSHZfRnhvRjVZdHQxaGdTbw?oc=5"
   },
   "BDI-USA": {
    "a": "BDI",
@@ -2447,9 +2382,9 @@
    "a": "SAU",
    "b": "SYR",
    "s": "A",
-   "note": "Saudi Arabia and Syria sign a defense cooperation pact and $403 million loan agreement to deepen military ties.",
-   "updated": "2026-11-05",
-   "source": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5mU0tsVUJ5bHZNbGNMVmpLZ3lBbnFYNmx6cUhSZk5IcGZVMkluVVVVZVBFczgwdHBFeWJUQU1JSWZHdl8zUnQtb0tMRS0wNUN5Nno1UTZZTXZUdWxD?oc=5"
+   "note": "Syria and Saudi Arabia formalize a defense pact and a $403 million loan for reconstruction.",
+   "updated": "2026-11-06",
+   "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxON241ZUgyQTFrdlVhY1VCejlyckVIRXlUajQtVVZEZFBnR01lOHVrNVNKenh6cG5nSkQ3LURkMDdNdTdPLUxDZHNoUGpkSk91U0FOcTdZQ180aVl2TWI2dFNuNUZYbVVVczJCMEZEc1lSRnhqWndsaURBQUR1WDhOdHNxM054aTFGa2pBbWpsOU9iV3IwaDlIaEtYNVUxdw?oc=5"
   },
   "IRN-TJK": {
    "a": "IRN",
@@ -3274,13 +3209,29 @@
    "note": "Ukraine and Türkiye agree to expand security cooperation and deepen defense industry ties.",
    "updated": "2026-11-05",
    "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQM2loV05wSkJuUWZSeThGZUpqcGthSm9UVE1RRW9DM3lRTWVWY1BFNlI3X3hFOXFSYzNPMzI2ZlhBNk1GYlFrNHJLYVhqVGxnZXQ5Zzc5aWU5dmVlWm1rZkN4ZjBkX0hOLWxuVFFRNG5GbEJIQU8tdlBGMmVpdXdXYVBuLXhPN0VOdUs5WTh1UXpXdE5hR19haWJ3?oc=5"
+  },
+  "PRY-USA": {
+   "a": "PRY",
+   "b": "USA",
+   "s": "F",
+   "note": "Relations face uncertainty as President Santiago Pena resigns amid a major banking crisis.",
+   "updated": "2026-11-06",
+   "source": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPeVZoTGxSU0laUDdhZ2hEZHpBV0dQMUR1Y1dxZUpJX3R0alNmTkw5Vkk1NVJGVGVIdnZfZjhyejZNN1FyZnUwT2laN1RrTmNPMHQ5SEdSV3N0alBaMGZDdlI3aXE2dXZRak1sRVRwcW1NTXBYM0otVFlPMnFhWkV5TWtsSFBGUjRwVU02TXVYRFJLM2V4b1U5TzRzaHpucURMZHRmbGVjeEd0NVlZd2FnVzVxdmxGTXdqeGhtYV81WXR6ajhpVWZULUJjSDZweXg2WWRQN1pydGc1UEtjbEtyS0psUlk1dk0?oc=5"
+  },
+  "SRB-XKX": {
+   "a": "SRB",
+   "b": "XKX",
+   "s": "H",
+   "note": "Tensions persist as the Student List movement prepares to form a new government in Belgrade.",
+   "updated": "2026-11-06",
+   "source": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcjNNNlIzY0ctRUxfV3hoVDBHYkUyUkFGU3hUWVc3MWpjOVRkNkpZSHVTZU9mMjFpcEsyeEtBVWotZ1ZNbUN6eEFCalJGYVVPOFd1cHQ3NmZrUWFzcFRGZ2pDNTVlVE1ZN1k2OVlfZER0dXZ0RkRvRzFaQ2I2YU1hRENpcTBOaFlDVDl6THMtakJIVzJkUEMwUjRUSk5LQldyQXBCaXpqRGtFZUlna2hTa1YxS05Qa0NNLWdkdnJLOFlnLTZKN2xYekNwRWlvdHVDdXR2ZHpiWjZ5dw?oc=5"
   }
  },
  "threads": {
   "houthi-red-sea": {
    "c": [
-    "IRN",
     "YEM",
+    "IRN",
     "SAU",
     "ISR",
     "EGY",
@@ -3292,11 +3243,11 @@
     "SYR",
     "ARE"
    ],
-   "d": "Iran-backed Houthi forces target Saudi oil refineries and infrastructure, triggering global oil price surges and regional defense responses.",
+   "d": "Iran-backed Houthi forces demand $51 billion and recognition to halt strikes on Saudi infrastructure.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNaVo0WW9Banh5andiaW1HaTNTbXRVc0dKV0pNM3BLTUpsQm8zVmt0VTFWNzZpdXM5S0Ezem1sN2ViLU4xMGNhQ1NkczhWamJUT1JMTGVYc2VETHNFWkhpdWtuVFZ3OEg1UzlRWE53N1Q4dDlGQ2xkYUoxVjhqOVVXaFRSTTN3Q2hYb2E1QlBhT25GZXNqbjdZZWdjdmVjTkRO?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQLURwNWY1OHpfdTBvZXpqd202RUJ5WHdScEJZaDZRY0VZTEpwNGNsNkYzY1M2bWh1cFpDRFdUZXBIbFlMY21NWDdIclRpMVpwQnNyZEM3OTMyTTBEdy1PU044UzBjZ3dFRUxYaWRYVlNFQmlINzZkV2Z6d3hPQkc4UW4yTUNtcFBfUm1mLTNrZ0M1SGZxYi1xcTRRSTRoX3NucGlOekUwbXIwWVhIcm53Zg?oc=5",
    "t": "security",
-   "updated": "2026-10-28"
+   "updated": "2026-11-06"
   },
   "afpak-jihad": {
    "t": "security",
@@ -3506,7 +3457,7 @@
   "al-shabaab": {
    "t": "security",
    "n": "Al-Shabaab and the Horn of Africa",
-   "d": "Al-Shabaab militants stage ambushes across southern Somalia as African Union (AU) forces begin handing over bases amid Ugandan troop withdrawals.",
+   "d": "Al-Shabaab militants stage ambushes as African Union (AU) forces begin base handovers and Uganda withdraws troops.",
    "c": [
     "SOM",
     "KEN",
@@ -3518,7 +3469,7 @@
     "TUR",
     "ARE"
    ],
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPLW1SanQtaDZfS1R5aExVVFpaNW9weTZBVENXN0ZHUnFKcGdHNFNzNzdZXzdsYlBYbUk3dzJiTEpIcDJnN1Bxb1BhTHpHNkhFYzFQbk1UTlRHX3lqVnpBaGh2QkhidFBPU1dibW5UeURLS0pZM3RqZ1BjQmtmTElIOExJYTBlWHZwU09qeEFFdzQ?oc=5"
   }
  },
@@ -3553,11 +3504,11 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "An LNG (liquefied natural gas) carrier is struck near the strait as Iran engages Qatari mediators to reopen shipping.",
+   "d": "Iran and Oman call for security; tankers struck amid fears of new US attacks.",
    "n": "Strait of Hormuz",
    "s": "LNG carrier struck; Qatari mediation active",
-   "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNSFZLdUJOcWxrbEx3N1VFZlFvd1NaLW9PWndnbXUwXzlDLUtoUTRxY2tCelQyMllzQ3NXamo3RWs3T05uQzhtNzVLbXRxTmZpUmM3enZ3T3V1dTNLMWZNejJSeElsYnJsY0VyVW1WdUh5Z1Z1WE5OanNvMWJ0QjNSUHBqOERWeThsREZjZ2Nta1dfS3VYVWt3WnN4TjdzNHRRanZ4UVhvSExhdlhuVHFqUjVlQWE2b0dHcGl5Mm9lUUdSaUxNSTJUdk5CYUdLWlNDdE5mZ18yN2lLTFZWb3NlRGhUbWZEbzRNeVE?oc=5",
-   "updated": "2026-11-01",
+   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSndUR0pGRi1MMEthNENuNFlReHRUcGJUVjdxMm9mbEp0bnVncHFlX0ZyMTVXUkR0Ql9CR2lLRElpcnRvQU5mUVFuT2oyakMxaEdGeHZqMnd5dTJyN3hhaFoyX1Z6NS03eUpMTmlCSFd2NktOeU43b0hhRXFKY0tqWHhKYW9FRzNibFFTVHdjSGFTVDhzMnZwak1MMGhTY1N0X3hCZkV30gGrAUFVX3lxTE5jd3JPYU1KcGFXeEJsc0VoM1FsaklHcnVnMkkwTmpZbkNNM2owMDlIOFViMmxWaTlwSzFSX0lqd2FCTWhNejlPeWE1QWxpcFEtbHZ5eklHbXJhTW0yWWlwQ05PeU04OVFLamJvcjBvUHI4ZW9INDFILXVGUHZFQmUwd3hVeW1NUFVmdVZTMGJMSUJfeEtFZS16bTI1SkhKZ3pIVzZaWWd0VG13aw?oc=5",
+   "updated": "2026-11-06",
    "t": "strait",
    "lat": 26.57,
    "lng": 56.25,
@@ -3767,10 +3718,10 @@
    "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWUlwWEJ0R2JPeVl4TUNzYkNyMVZfaWlwU21SSF96Ui1hdXIyR0wyNkpwQlFjRmw3UGJya0NYZ25TQjVGWWdrWEdEdjBsaFlJdmtQNGdIYjVJcG5zUG02b3I3TFhPXzluNmQyZTh3ejJVRGtMMG42M21yZjc4RXBleU9RTzVZRURlZDJGdkFTRXF2QVNiSVdmN2VtMkdNRzIzQnE5SFdHMlQ5TXVoSGo0?oc=5"
   },
   "SRB": {
-   "nextelec": "parliamentary election, Oct 2026",
-   "updated": "2026-11-01",
-   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbm9scGV5WUx5YkNkQ1U4RXczUVhwTlpUQ0gzZzd6NEtBVGYyWEJTRzZXVXhNcWdQMkxyWFc3dTJNME5CRjBMcVQ5OTlKOEJzNUtXWUtOcXc2MDFpbmxtbXh6WWJPRlpUQ0lWRjZQZ2RMNDBoU2N5VGw5dHpncEYzUVBKQzdsRmZQYlBaejJKMXNMZHVPcFFDZVJqMFZrUU1vb01R?oc=5",
-   "lastelec": "parliamentary, October 2026, Student List"
+   "nextelec": "parliamentary, Nov 2030",
+   "updated": "2026-11-06",
+   "source": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcjNNNlIzY0ctRUxfV3hoVDBHYkUyUkFGU3hUWVc3MWpjOVRkNkpZSHVTZU9mMjFpcEsyeEtBVWotZ1ZNbUN6eEFCalJGYVVPOFd1cHQ3NmZrUWFzcFRGZ2pDNTVlVE1ZN1k2OVlfZER0dXZ0RkRvRzFaQ2I2YU1hRENpcTBOaFlDVDl6THMtakJIVzJkUEMwUjRUSk5LQldyQXBCaXpqRGtFZUlna2hTa1YxS05Qa0NNLWdkdnJLOFlnLTZKN2xYekNwRWlvdHVDdXR2ZHpiWjZ5dw?oc=5",
+   "lastelec": "parliamentary, Nov 2026, Student List"
   },
   "CHE": {
    "lastelec": "referendum, Sep 2026, rejected stricter neutrality",
@@ -3800,14 +3751,16 @@
    "source": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNXFXa1c5U05DZHNINV9rcExET0NiRnFoaEkyczUyUjNIUi1pa1psaVEyQ1hUR2JvYllsUkxPQnRJWTlxdnV0QmFQTjE3d3A3RXdQLTkxU0hWaVR1MW5vUlZJUmxSSHVLWUFWdlJVbk91X1I5NnVZaWZ6aXk0NmRxa1ZDdk92UnhxNFIxUFVLVkE1TVhhelU5SW9ueThycGJfZG1LZmZRVmhXQnlKMFl5cVBDa1BqblRMODYwZWV6UFZEaHF5aFRfVml6UUtJZzNp0gHWAUFVX3lxTE5XWVRjcFRCQXdGWEktQ3Y0Zi1ZeXgyQWo1bUdIVlFNTkdReU1jWEQ4MkhYNnRTNGM1MGxDWHJndjM0bUU2WThEWElkYUhER2tpUE1Za2sxWjVldkhkRllGWDlUcjlpVXUxSVFpaTFfOE8tTlpjamRJaUhNZnJqVDZ3bmlacF9iS2NqbWpZcGktT29ZbjJ2bHBETUlqZXJPVVhQNkhwNnZmdERQczl6dWw3MWctSDdfQ0R2VzlEV2VQSHdDYkx6Snh2cVYxM3gtLThOalNpX3c?oc=5"
   },
   "NZL": {
-   "nextelec": "general election, November 2026",
-   "updated": "2026-11-04",
-   "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPa2Rud0RfLVhpSkV6Q3hBd2xjY1lDYi12ZUlLUVZFZ18zZGMtWF9mcWQ4amJTUWROeDlndEdtLWtqR3kwOWhEV0dpYXNjWWJTbHgwS2ttdFo0anZtaTJfVllXQjI3dnBGVUMwWS1rVFAySEpuVmhBc2ZDMXZ0aENKVC02QWx2ZjlZcW9WbFVQNGQ3eE9DUHdxT1pJekxRYXRwYVE?oc=5"
+   "nextelec": "general, Nov 2029",
+   "updated": "2026-11-06",
+   "source": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPU1hqNUNiby1DVmpGZmtSdTloUzVSTjNZTXNRcjNsVElKa19LMGUtamRjSmo3OVhzSnM4bDJiYVE1QXVWXzR2aVowN1BSVHBxYzRmVmNHY3F1azJ2cm1LNWdPdjNHZW5hQ05PUHBFeUdoSHRTREpWQVM2dVdiQnQtN3ZMSnlWOUZXMUQyRndmRWl4Sk5QRWRmckNQM2J6ZDNNeEtmUzhuNTBVSFF6alNHR0hzaGJ0RmVNc29Tclppcnc0MDJnUENBVVdBcXVxemI2NnpheEhuNHNLcnZlN1JDOVRR?oc=5",
+   "lastelec": "general, Nov 2026, too close to call"
   },
   "GRD": {
-   "nextelec": "general, 5 November 2026",
-   "updated": "2026-10-31",
-   "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxONkxBZXJ2VkpWajdlNUlsMEhEYUtZUFczOHh1VTRkc0FBMU9FVkdNc1FJcUs2TUFVTy05eWtiQzBjNDlseWp5TFZtS1lYSWg5Z3ZQX2RRdDJuQzFweDR3eFFHelVLRnM3bGhRb0NaOHJ5R0d5ZnpvUUczenRuMzJUV2JmTl9rdVhEeWtMNA?oc=5"
+   "nextelec": "general, Nov 2031",
+   "updated": "2026-11-06",
+   "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOandDSTNIUms0OGplM0FJOUE0OUlnNVhDMEVXMXB2ZXVkeDVNZ0tNS1BUeU5nRUx4eTEzc1EwblN5UE0yRHBvV1F6cVdEdHhZUXZwa1N1Wk1FT3dWT2FnUUVOOVFkY0ctQVZOVllsUnNMYVpIU1ltQnNlT1ZxNXRVbWJtc2hrcjhmM3lNZWNn?oc=5",
+   "lastelec": "general, Nov 2026, Dickon Mitchell"
   },
   "LVA": {
    "lastelec": "parliamentary, October 2026",
@@ -3853,10 +3806,10 @@
    "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZXVwWnVaUzBnNFYtSk8xNy1wT3NwLVhWSmRENElJZzRGb1B1OGYyb2Zzdy1ybm95UXRNQ1FBcVN3cWZSRGRBQ1VYRVpXekRnU3poLWNUeGZnbUhldGZ0RmpmemhkWHdFTnA4NW1zRi04TkRvN2p1akoteEljUHlFOUdBZDhzVW9TbFR0OTNEZzlUb2ZwTTZj?oc=5"
   },
   "SOM": {
-   "nextelec": "presidential, May 2027",
-   "updated": "2026-10-30",
-   "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1YTjBQaW96SWdjUXl2QUhBUkhmdHJZWVdYeG1rRk1xRVg0UTlPcEdZTmpocnV3elRhLWxDTFQ4WDdzWkNYSE9Od3ZkVmk5LVJiR1E?oc=5",
-   "lastelec": "Presidential, May 2024"
+   "nextelec": "general, Feb 2027",
+   "updated": "2026-11-06",
+   "source": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOV3lhNF81NFhkQnEyRWdGalpZYXR4WUVBRmxka3BGZ05UNjFBRHBWWHpCTk1wSTFoNnlKQWRsSkQ2NVFYZGFPaFRZMWZKeW52cUhjQlNuWXV4d19jeUFHR0VNZllaVTF2ekU5VjFZam9EWnFFT0ZYRHpzTUtYRWVxRWVOZEdUWFpyMTZlbXBSNDZoYy1GcTAzNFhPWTZNY2wzcU5JNF9GemlKUDdkbndKSTA4bEt2T2tIYWFkX1RSeS1XNjBuVzVfNkVaLUg?oc=5",
+   "lastelec": "indirect, May 2022, Hassan Sheikh Mohamud"
   },
   "CZE": {
    "lastelec": "Senate, October 2026",
@@ -3880,9 +3833,10 @@
    "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQnNfZmZ3dzNlX0g1cEhQNjRDS1pqUl9iVHI1bS1lNjRlY2w1cjdPaGRHbkJpRUpFQ21oLUNBeS1qNkppMGFPZ1NOQlNCUUc2bzU1elFSTGFVSEV1WjB5TGhSc3JlR19OUmdBcWY1QjBCMW1KNTVDWTdJZ0dpdlUwZWlFQ3lyMnJwSW5qMDJ3WV9YNnl3MTZEaTFn?oc=5"
   },
   "ZAF": {
-   "lastelec": "general, November 2026, African National Congress (ANC)",
-   "updated": "2026-11-05",
-   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNa1pKNmVOMlVQZFl0UkRYT0pxVHlOUXVQVHdrRVVhYW1zTWpLLXJlWGxnMVQ0bm5WZkFHMm5FcWNGOF9BaTAwMkNEQ3U4N2EwMGFhU3VjYWtiR3J5VDNtVExIVnNtLTJkSE8zV3VXOFlkY0VWaDl6M0lqSm5mcTFHZlBDOWFIcHEtMGtESlg1TmtTWU5MOXc?oc=5"
+   "lastelec": "local, Nov 2026, ANC leading",
+   "updated": "2026-11-06",
+   "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRnRXZk1ta3IteTdkUzM3ZVBpV19qTUg1YmFlS2pCVUFEekxWb2ZQMzNPSGtEVjRDc3NTaUtjVmRmZXJzVDg3Y1U1TGRxa0o0S25aSDd2Mk5tN2tuSG9mamw4YTBCbVh4TTlKVXpSODhKYnpJR2pHRGJycVVQYzZiREp3RV96OGp2QnkwV0VFeE8zQU5QTjc3akhxVmdEQlVZSUE?oc=5",
+   "nextelec": "general, May 2029"
   }
  }
 }
