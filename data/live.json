@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-06T12:47:43Z",
+  "lastRun": "2026-11-06T17:18:43Z",
   "log": [
    {
     "date": "2026-11-06",
@@ -14,11 +14,6 @@
       "label": "Ethiopia–Sudan",
       "change": "Tense → Hostile: Diplomat expulsions",
       "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQQ1lkNGRhSHVRcjF3cTc0ek5LUmUzMXJQUjYxM0FqZjU3UlI3MUNrd0RUdHhkUVhqM3ZUeHdNQ25Ya0Jua3Z5Q2ZHaDQyT2VXSlVYY1ZvYTZVU0xTNXhKZ1VJN2FwV0p5TERGQ1dmLTVFbTdPUG0zUkRFYXVTbFhMUEJhRTE0NUd2bjlHX1dORUloWXRBemNVcTAya3pHci1GeFVhSDl2SHpPLXl3dTVqMTQ1YkNycXNZQlJBUGZFVGZac01xMno4X1BpY0hYVkk?oc=5"
-     },
-     {
-      "label": "Serbia",
-      "change": "Government toppled by Student List victory",
-      "source": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcjNNNlIzY0ctRUxfV3hoVDBHYkUyUkFGU3hUWVc3MWpjOVRkNkpZSHVTZU9mMjFpcEsyeEtBVWotZ1ZNbUN6eEFCalJGYVVPOFd1cHQ3NmZrUWFzcFRGZ2pDNTVlVE1ZN1k2OVlfZER0dXZ0RkRvRzFaQ2I2YU1hRENpcTBOaFlDVDl6THMtakJIVzJkUEMwUjRUSk5LQldyQXBCaXpqRGtFZUlna2hTa1YxS05Qa0NNLWdkdnJLOFlnLTZKN2xYekNwRWlvdHVDdXR2ZHpiWjZ5dw?oc=5"
      },
      {
       "label": "Japan–Russia",
@@ -46,11 +41,6 @@
       "source": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOdUE0dVZMaHNPQm5CLXE1cTFYV2JhUVVqOW5qekVXeUNHNEVUWHRSSWhZVEhCZVpIQzU0dGU1Y3FubFBwTlhtMmxKZS1mUzhFZlRmNGR4SU5Od3VVaEVLODZuOEpsaWVxMFVqakJJWG5RRDNXdWZGUC0zdzhxcTNLS1ppOC1vNDF6ZnBKVEJsMUxIY0hYTVJVMW5KZ01zUnpOQ3h3Mkx1Y3dPbk5zTF9PRFBjYUNadUFwUkZmdG1vdzdseFJkMkE?oc=5"
      },
      {
-      "label": "Grenada",
-      "change": "Updated politics entry: Prime Minister Dickon Mitchell wins second term in landslide election.",
-      "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOcDg5SER6TzJtSW1UalBLMmlSMGFrcHMwSVluWWszUmlOaXhEMzg3cXg4VGl4SS1oOGV4eDk4N1FibnBabUR2LTRqMHZMN05PUzhRYTFNVmN1eU56VDhVMXNyMUczUUpSWFBXQ09WZDUxRUNoUlFiRU5UX29YazFUSlFCNUxoc0dEd1V5c0tNZk9NN1VhYV9zY3NFUlRRY3VMOTVKSFpsR0FkMTF3UUxuZjdKUzRRdkNnTTRRMU02bUhSbmVNSEc4?oc=5"
-     },
-     {
       "label": "Somalia",
       "change": "Updated politics entry: Supreme Court strikes down presidential term extension, ordering elections within 90 days.",
       "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOV2VBY213dkJjcnh5d2tKYlpHQkxTN2NNUEVGOXMzOF94eFlGeF9jT3c4ODRsMUVpVTJWdVhvTXFQY3FqcTdVNm80WGd2NnFqTjFKT0phdl83TC1UbzBfMVhIS1lfbWRDczd2Zzhlb0g5NUVwbGxDU0NzYkhLTkFRSnZueEdoZFhlOC1SbG9WOTlFUmQwYkRtcTVzNTA4ZmxCWGFJc1A4c2F6SWtjRmRpOGp3?oc=5"
@@ -59,6 +49,21 @@
       "label": "Myanmar",
       "change": "Updated politics entry: Junta schedules parliamentary by-elections for April 2027.",
       "source": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQSW1iMF9NUE00dy1CRUxvdTczY3VpRV9uVDdVRE9wdkU4WkQ4MnZaTVY4d2cyb1NlMmZHdEloYl96a0t2VWJ3U1Fyb2xCSEdDY1YzeWtKMTNSMnE4S2JVc1I3RVdiYXJMTTlobjNIRTV3TGJIeC05RVQ0SURRbjE0T0tlNFN6WnlrNEVhamprLW45MERVMG5XaGtKZThuUkF1eWZKWW1oY2E3YWhjV1AtRUFBeHJzM3YxZlRickY3Z2VzR0tkT3duZzVNQ2NWWEN4ZlVvTHFZbUg1WXlJZy1SR0tnUDNFLWhyY2E0X0htcW0zUWF0MHA4OF9lSXpwUnB3QTJNajJWel9pRlHSAYsCQVVfeXFMUEltYjBfTVBNNHctQkVMb3U3M2N1aUVfblQ3VURPcHZFOFpEODJ2Wk1WOHdnMm9TZTJmR3RJaGJfemtLdlVid1NRcm9sQkhHQ2NWM3lrSjEzUjJxOEtiVXNSN0VXYmFyTE05aG4zSEU1d0xiSHgtOUVUNElEUW4xNE9LZTRTelp5azRFYWpqay1uOTBEVTBuV2hrSmU4blJBdXlmSlltaGNhN2FoY1dQLUVBQXhyczN2MWZUYnJGN2dlc0dLZE93bmc1TUNjVlhDeGZVb0xxWW1INVl5SWctUkdLZ1AzRS1ocmNhNF9IbXFtM1FhdDBwODhfZUl6cFJwd0EyTWoyVnpfaUZR?oc=5"
+     },
+     {
+      "label": "Papua New Guinea–Taiwan",
+      "change": "Normal → Tense: Taiwan closes representative office and halts LNG (liquefied natural gas) imports due to Chinese pressure",
+      "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMmx6OTU0QkxEQ1doYzVzVTM2dDZiZVNpVW5MVkZWQWpZM2lTYnJNQjhCbzVGUGg5aWZpNkc1MUp5OWJScTM3cnpEWkpUMXB6WjB6UHNnX3hhNHphSlFqVFFLUUdUN3pYMjA0eDJnd3Jhcm0wSF9XZnNpZ0gxY3k5SThNQU4yRlhVRWpHR0U1YnI2MmlaZ3JtdURGUVBhOHRtNlM0Zkp6RzFaUmtNM0t1NtIBtgFBVV95cUxNQW9mS1dVQ3dHZG9JZGpUUFhKdGNvV2FuaEFjV0VuMUhRRGxWclFjTDBSMUh2bnlydkJfU2dyQmwtRjk2X3FVQUw4ald5YWxqSDRlRU16WThSVkVrbXBzQ3NtaEQ0TXowdEVTSE9xNy1JUkpZekZ2ekZZMXFfcHNaRHBzYWxIdFJqVHc3Z3ZRSXczMG9yWmV2bEFfU1k2VmNJeWRQLUJLREJfMzVsZlhVN2x2SFZOUQ?oc=5"
+     },
+     {
+      "label": "Grenada",
+      "change": "Election updated: National Democratic Congress wins 14 of 15 seats in snap vote",
+      "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNS0pEZFJyblBVNGdrZUVoTzZMV2pfV24wTENySDBTTUNFT0thUGJsVW5FenJNTzkyQ2JZbVozeEh1LUNnaUNwNVJfQ3pKVDFvaXNlakEySTlPSkZpRDdHcWR2MzNxcDlFWmk3Q0xxY0RnMmtIRVg5TkZIcm05UnJCcXlsME1LWlZ6V0g4RXAzTFJIWlFtTHEwRjAyZ2puQllyalN3LXgxRmpvODQ4QTA1bw?oc=5"
+     },
+     {
+      "label": "Serbia",
+      "change": "Election updated: Student List wins snap parliamentary election with 53% of vote",
+      "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdjhDdUJZbWdUdWM4ZndIemVoeWN0aW96R1NQM09BVnRXVl9PU0JtUUlyU1FsbWI1MzJQaHcwdEJnYmZPN3BOQ2hMQlBjVGxIQUlaYW9fbFltUXdWdUFCNGFkcEpCazlkMFp0LUhxQ3prTTdpeW9MMmpyY01WQ1VYeV9WX0F0QlhMZFJQWFBWdmlZZDNvSm9nMWpMN3Z4N2llMk1J?oc=5"
      }
     ]
    },
@@ -1703,7 +1708,7 @@
     ]
    }
   ],
-  "summary": "Japan protests Russian takeover of corporate assets, Taiwan reaffirms Paraguay ties after presidential resignation, the UK seeks to recast the Chagos deal, Salvadoran troops begin operations in Haiti, and election schedules are updated for Grenada, Somalia, and Myanmar."
+  "summary": "Taiwan closes its representative office in Papua New Guinea following Chinese pressure, while parliamentary elections conclude in Grenada and Serbia."
  },
  "relations": {
   "DNK-USA": {
@@ -3273,6 +3278,14 @@
    "note": "Paraguay maintains formal diplomatic recognition of Taiwan, which states ties remain unaffected by President Peña's resignation.",
    "updated": "2026-11-06",
    "source": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE81Y1NkbWxLanc0ZXVyWjdxZ21xaWxDSFZuSl9kbUd5ejBrcHBHYmE2a2d6Q0FLUlJTaW1Xc25TVFV0LVBiVlc3eGtwZGNmUFhXT2FIRTR1dw?oc=5"
+  },
+  "PNG-TWN": {
+   "a": "PNG",
+   "b": "TWN",
+   "s": "T",
+   "note": "Taiwan closes its representative office in Papua New Guinea and halts LNG (liquefied natural gas) imports, citing pressure from China.",
+   "updated": "2026-11-06",
+   "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMmx6OTU0QkxEQ1doYzVzVTM2dDZiZVNpVW5MVkZWQWpZM2lTYnJNQjhCbzVGUGg5aWZpNkc1MUp5OWJScTM3cnpEWkpUMXB6WjB6UHNnX3hhNHphSlFqVFFLUUdUN3pYMjA0eDJnd3Jhcm0wSF9XZnNpZ0gxY3k5SThNQU4yRlhVRWpHR0U1YnI2MmlaZ3JtdURGUVBhOHRtNlM0Zkp6RzFaUmtNM0t1NtIBtgFBVV95cUxNQW9mS1dVQ3dHZG9JZGpUUFhKdGNvV2FuaEFjV0VuMUhRRGxWclFjTDBSMUh2bnlydkJfU2dyQmwtRjk2X3FVQUw4ald5YWxqSDRlRU16WThSVkVrbXBzQ3NtaEQ0TXowdEVTSE9xNy1JUkpZekZ2ekZZMXFfcHNaRHBzYWxIdFJqVHc3Z3ZRSXczMG9yWmV2bEFfU1k2VmNJeWRQLUJLREJfMzVsZlhVN2x2SFZOUQ?oc=5"
   }
  },
  "threads": {
@@ -3768,8 +3781,8 @@
   "SRB": {
    "nextelec": "parliamentary, Nov 2030",
    "updated": "2026-11-06",
-   "source": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcjNNNlIzY0ctRUxfV3hoVDBHYkUyUkFGU3hUWVc3MWpjOVRkNkpZSHVTZU9mMjFpcEsyeEtBVWotZ1ZNbUN6eEFCalJGYVVPOFd1cHQ3NmZrUWFzcFRGZ2pDNTVlVE1ZN1k2OVlfZER0dXZ0RkRvRzFaQ2I2YU1hRENpcTBOaFlDVDl6THMtakJIVzJkUEMwUjRUSk5LQldyQXBCaXpqRGtFZUlna2hTa1YxS05Qa0NNLWdkdnJLOFlnLTZKN2xYekNwRWlvdHVDdXR2ZHpiWjZ5dw?oc=5",
-   "lastelec": "parliamentary, Nov 2026, Student List"
+   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdjhDdUJZbWdUdWM4ZndIemVoeWN0aW96R1NQM09BVnRXVl9PU0JtUUlyU1FsbWI1MzJQaHcwdEJnYmZPN3BOQ2hMQlBjVGxIQUlaYW9fbFltUXdWdUFCNGFkcEpCazlkMFp0LUhxQ3prTTdpeW9MMmpyY01WQ1VYeV9WX0F0QlhMZFJQWFBWdmlZZDNvSm9nMWpMN3Z4N2llMk1J?oc=5",
+   "lastelec": "parliamentary, November 2026, Student List"
   },
   "CHE": {
    "lastelec": "referendum, Sep 2026, rejected stricter neutrality",
@@ -3807,8 +3820,8 @@
   "GRD": {
    "nextelec": "general, Nov 2031",
    "updated": "2026-11-06",
-   "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOcDg5SER6TzJtSW1UalBLMmlSMGFrcHMwSVluWWszUmlOaXhEMzg3cXg4VGl4SS1oOGV4eDk4N1FibnBabUR2LTRqMHZMN05PUzhRYTFNVmN1eU56VDhVMXNyMUczUUpSWFBXQ09WZDUxRUNoUlFiRU5UX29YazFUSlFCNUxoc0dEd1V5c0tNZk9NN1VhYV9zY3NFUlRRY3VMOTVKSFpsR0FkMTF3UUxuZjdKUzRRdkNnTTRRMU02bUhSbmVNSEc4?oc=5",
-   "lastelec": "general, November 2026, Prime Minister Dickon Mitchell (National Democratic Congress / NDC)"
+   "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNS0pEZFJyblBVNGdrZUVoTzZMV2pfV24wTENySDBTTUNFT0thUGJsVW5FenJNTzkyQ2JZbVozeEh1LUNnaUNwNVJfQ3pKVDFvaXNlakEySTlPSkZpRDdHcWR2MzNxcDlFWmk3Q0xxY0RnMmtIRVg5TkZIcm05UnJCcXlsME1LWlZ6V0g4RXAzTFJIWlFtTHEwRjAyZ2puQllyalN3LXgxRmpvODQ4QTA1bw?oc=5",
+   "lastelec": "parliamentary, November 2026, National Democratic Congress"
   },
   "LVA": {
    "lastelec": "parliamentary, October 2026",
