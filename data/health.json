@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-07T16:34:08Z",
- "berlin": "2026-11-07 17:34",
- "status": "warn",
- "summary": "0 problem(s), 1 warning(s): News outlet feeds: 56/57 working; not working: Sky TG24 IT (200)",
+ "generated": "2026-11-07T20:21:27Z",
+ "berlin": "2026-11-07 21:21",
+ "status": "ok",
+ "summary": "All checks passed.",
  "repairs": [],
  "checks": [
   {
@@ -10,7 +10,7 @@
    "name": "Website",
    "status": "ok",
    "detail": "HTTP 200, 427 KB",
-   "ms": 281
+   "ms": 114
   },
   {
    "g": "security",
@@ -23,49 +23,49 @@
    "name": "GitHub Pages copy",
    "status": "ok",
    "detail": "HTTP 200",
-   "ms": 409
+   "ms": 136
   },
   {
    "g": "site",
    "name": "data/news.json",
    "status": "ok",
-   "detail": "HTTP 200, 464 KB",
-   "ms": 275
+   "detail": "HTTP 200, 448 KB",
+   "ms": 179
   },
   {
    "g": "site",
    "name": "data/live.json",
    "status": "ok",
-   "detail": "HTTP 200, 284 KB",
-   "ms": 301
+   "detail": "HTTP 200, 285 KB",
+   "ms": 189
   },
   {
    "g": "site",
    "name": "data/politics.json",
    "status": "ok",
    "detail": "HTTP 200, 42 KB",
-   "ms": 161
+   "ms": 118
   },
   {
    "g": "site",
    "name": "data/wb.json",
    "status": "ok",
    "detail": "HTTP 200, 73 KB",
-   "ms": 308
+   "ms": 119
   },
   {
    "g": "site",
    "name": "data/geo.json",
    "status": "ok",
    "detail": "HTTP 200, 697 KB",
-   "ms": 158
+   "ms": 100
   },
   {
    "g": "site",
    "name": "data/cities.json",
    "status": "ok",
    "detail": "HTTP 200, 151 KB",
-   "ms": 164
+   "ms": 89
   },
   {
    "g": "site",
@@ -77,25 +77,25 @@
    "g": "fresh",
    "name": "Headlines (news.json)",
    "status": "ok",
-   "detail": "last update 5.0 h ago"
+   "detail": "last update 0.7 h ago"
   },
   {
    "g": "fresh",
    "name": "AI relationship update (live.json)",
    "status": "ok",
-   "detail": "last update 5.0 h ago"
+   "detail": "last update 0.6 h ago"
   },
   {
    "g": "fresh",
    "name": "Leaders (politics.json)",
    "status": "ok",
-   "detail": "last update 5.0 h ago"
+   "detail": "last update 8.7 h ago"
   },
   {
    "g": "fresh",
    "name": "Countries with confirmed headlines",
    "status": "ok",
-   "detail": "175"
+   "detail": "167"
   },
   {
    "g": "fresh",
@@ -119,169 +119,169 @@
    "g": "worker",
    "name": "/live (en)",
    "status": "ok",
-   "detail": "21 items",
-   "ms": 787
+   "detail": "23 items",
+   "ms": 312
   },
   {
    "g": "worker",
    "name": "/top (en)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 103
+   "ms": 93
   },
   {
    "g": "worker",
    "name": "/videos (en)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 468
+   "ms": 561
   },
   {
    "g": "worker",
    "name": "/live (de)",
    "status": "ok",
-   "detail": "19 items",
-   "ms": 1963
+   "detail": "21 items",
+   "ms": 1658
   },
   {
    "g": "worker",
    "name": "/top (de)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 395
+   "ms": 95
   },
   {
    "g": "worker",
    "name": "/videos (de)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 503
+   "ms": 269
   },
   {
    "g": "worker",
    "name": "/live (fr)",
    "status": "ok",
    "detail": "22 items",
-   "ms": 1497
+   "ms": 1171
   },
   {
    "g": "worker",
    "name": "/top (fr)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 140
+   "ms": 300
   },
   {
    "g": "worker",
    "name": "/videos (fr)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 467
+   "ms": 255
   },
   {
    "g": "worker",
    "name": "/live (es)",
    "status": "ok",
-   "detail": "3 items",
-   "ms": 899
+   "detail": "4 items",
+   "ms": 397
   },
   {
    "g": "worker",
    "name": "/top (es)",
    "status": "ok",
-   "detail": "3 stories",
-   "ms": 91
+   "detail": "4 stories",
+   "ms": 187
   },
   {
    "g": "worker",
    "name": "/videos (es)",
    "status": "ok",
-   "detail": "3 videos",
-   "ms": 333
+   "detail": "4 videos",
+   "ms": 515
   },
   {
    "g": "worker",
    "name": "/live (it)",
    "status": "ok",
-   "detail": "11 items",
-   "ms": 1315
+   "detail": "21 items",
+   "ms": 1056
   },
   {
    "g": "worker",
    "name": "/top (it)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 109
+   "ms": 70
   },
   {
    "g": "worker",
    "name": "/videos (it)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 303
+   "ms": 284
   },
   {
    "g": "worker",
    "name": "/live (ar)",
    "status": "ok",
-   "detail": "5 items",
-   "ms": 594
+   "detail": "8 items",
+   "ms": 720
   },
   {
    "g": "worker",
    "name": "/top (ar)",
    "status": "ok",
-   "detail": "5 stories",
-   "ms": 99
+   "detail": "6 stories",
+   "ms": 63
   },
   {
    "g": "worker",
    "name": "/videos (ar)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 341
+   "ms": 381
   },
   {
    "g": "worker",
    "name": "Real-time search",
    "status": "ok",
    "detail": "11 reports",
-   "ms": 621
+   "ms": 660
   },
   {
    "g": "security",
    "name": "Other websites are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 81
+   "ms": 38
   },
   {
    "g": "security",
    "name": "Look-alike Pages projects are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 45
+   "ms": 43
   },
   {
    "g": "security",
    "name": "Only the site's own prompts are answered",
    "status": "ok",
    "detail": "HTTP 400 (should be 400)",
-   "ms": 48
+   "ms": 55
   },
   {
    "g": "security",
    "name": "Private chat needs a valid pass",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 74
+   "ms": 55
   },
   {
    "g": "security",
    "name": "Admin login",
    "status": "ok",
    "detail": "HTTP 401 without a code (should be 401)",
-   "ms": 77
+   "ms": 91
   },
   {
    "g": "security",
@@ -294,16 +294,14 @@
    "name": "AI answers",
    "status": "ok",
    "detail": "answered by gemini-3.6-flash",
-   "ms": 2135
+   "ms": 2095
   },
   {
    "g": "sources",
    "name": "News outlet feeds",
-   "status": "warn",
-   "detail": "56/57 working; not working: Sky TG24 IT (200)",
-   "items": [
-    "Sky TG24 IT"
-   ]
+   "status": "ok",
+   "detail": "57/57 working",
+   "items": []
   },
   {
    "g": "sources",
@@ -317,7 +315,7 @@
    "name": "Page loads and the globe starts",
    "status": "ok",
    "detail": "",
-   "ms": 2868
+   "ms": 3427
   },
   {
    "g": "browser",
@@ -369,8 +367,6 @@
   }
  ],
  "emailed": [],
- "warn_since": {
-  "News outlet feeds: Sky TG24 IT": "2026-11-07T16:34:08Z"
- },
- "ms": 372194
+ "warn_since": {},
+ "ms": 482985
 }
