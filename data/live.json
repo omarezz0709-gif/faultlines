@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-07T01:31:59Z",
+  "lastRun": "2026-11-07T11:36:07Z",
   "log": [
    {
     "date": "2026-11-07",
@@ -16,9 +16,24 @@
       "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOaVh1eHBzNWhtZUVsV2lPdlhuU3lMaWE2UUJ5c3B5Z0phbll1R1IwVXhhZEZwVEF3aGJLTnVKN0J4MGtseVNHcHFROE9jOGEwRTVvMktLRkEwS3BGcHBCMXZCRU5INHZvZW9ZbTNQakgxUHNGTk5QV2xXQ2VQdjRIb05mNkZrdzJYbmJDQzk3Mkd1NjQ0NlRsRVdQaVpiRU84bXFxeXg0d0NyRlRkMTNV?oc=5"
      },
      {
+      "label": "Armenia–Azerbaijan",
+      "change": "Updated relation note: trilateral working groups launched for TRIPP corridor",
+      "source": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9vVnVUNm5wYVlNQkhvUDJQNV9nVU4tSmVodDRZWDJDM1drMElJZThxQlVRUmtNTHJxWmdNT3Z3TUpGbFh5Q2VzSTFCSjQwSlBwWlpoaXZsWQ?oc=5"
+     },
+     {
       "label": "Grenada",
-      "change": "Politics updated: PM Dickon Mitchell wins second term in general election",
+      "change": "Added election result: NDC wins general election",
       "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVzdNc1l3MFlkYW5nNUFyY0ctUkZ4LVRYNHdGWlF2eTBNMlVQY1VudERDbFppZGx1RG4tQ0lVNkFnR1Jzekg1aTZhN1gycHk5ZHB1N1JRbUczMjFrcnRlbjRhOV9ZdVlzVDBHQmdoNlBnU3QydFhtOFMyWWM1S25GRGxaaEtDTjc1bmc3RWEtUTJibGJLdGtMNmxhNEc4NGtHSmRCMFE3OWNON1VwOGQybW42eHVIbzN4RGcw?oc=5"
+     },
+     {
+      "label": "New Zealand",
+      "change": "Added election update: general election vote count underway",
+      "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOX2hMNnJzc0FnY1gxajR2R0ZiMjg0a2tjMVY1S3hNejZMOENUNExrdTRRcGdCY2FfLVlDcWJHYlVuTV9rcnVMQklublJubmhDNmExV2s3MHB2WHBEQjByb1JHNVlIN0tEaUZOZzNVQzdWMjZTdHlGV0dVVWtqSXJVdHFEUGt4M0xzbWRGeFpMR2syczVYSXpHWW1R?oc=5"
+     },
+     {
+      "label": "Somalia",
+      "change": "Added upcoming election: Supreme Court orders vote within 90 days",
+      "source": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNaXlGa0hiZ0dzSndGeUs4Uko4amQzXzhZaFlPX2ROLVpfNkc5NS1zRUp3S0hRVjQ3d2dpV29nb3RsMnNrWVprSjBselhoT2NFbzlSRmF3T1dJUXFvV3g0ZEhKNWJ1VUhGYWprQUtuY3NSVzYyR2dFdFh1amthZUU4NUVSY1NOMHRDYU5sZjMxOFNkalZNVnpqMkg0bTc4SjNPenk2MG41bFNyRUFFVlRpdFRZZkFOWWR0RTA5ZXM0OFI3dkphcUVLWDVDWWhSWmRQOWdoYVlvNmpRblNjWXNPZGlJeTl3MEUwN1dFXzRDWnlHd3NqTWxsRW9aYVFkM3RtVjRxSjFxZw?oc=5"
      }
     ]
    },
@@ -1698,7 +1713,7 @@
     ]
    }
   ],
-  "summary": "Paraguayan President Santiago Peña is impeached and arrested following a banking scandal, Grenada holds general elections returning Prime Minister Dickon Mitchell to office, and UN reporting details UAE-funded mercenaries in Sudan."
+  "summary": "Updated Armenia–Azerbaijan relation note following TRIPP corridor working group launch and logged election developments in Grenada, New Zealand, and Somalia."
  },
  "relations": {
   "DNK-USA": {
@@ -2433,9 +2448,9 @@
    "a": "ARM",
    "b": "AZE",
    "s": "T",
-   "note": "Tensions remain high as Armenia prepares to vacate a disputed border village to Azerbaijan amid local protests.",
-   "updated": "2026-10-07",
-   "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTDlDZkgtcTc1aUs0WUh4dEotbVlVMnBvc2x6cGZuUkU5UmZmSEtBWUhXUWIwRndzSm4tYWxMb1RaTzZzNk5OZlFaZ2FVemItWU5HNW9UbVZhMWQ2YTg5OHhpbDduUldYNS1yQ1pzR2h2YjQwNzNJM2JMQWp2eWRMZlRMQjBkdUtxX1BpZ0ZYNVJWbms?oc=5"
+   "note": "Armenia and Azerbaijan launch trilateral working groups with the US (United States) to advance the TRIPP (Transit Route) corridor.",
+   "updated": "2026-11-07",
+   "source": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9vVnVUNm5wYVlNQkhvUDJQNV9nVU4tSmVodDRZWDJDM1drMElJZThxQlVRUmtNTHJxWmdNT3Z3TUpGbFh5Q2VzSTFCSjQwSlBwWlpoaXZsWQ?oc=5"
   },
   "ISR-SYR": {
    "a": "ISR",
@@ -3804,15 +3819,15 @@
   },
   "NZL": {
    "nextelec": "general, Nov 2029",
-   "updated": "2026-11-06",
-   "source": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPU1hqNUNiby1DVmpGZmtSdTloUzVSTjNZTXNRcjNsVElKa19LMGUtamRjSmo3OVhzSnM4bDJiYVE1QXVWXzR2aVowN1BSVHBxYzRmVmNHY3F1azJ2cm1LNWdPdjNHZW5hQ05PUHBFeUdoSHRTREpWQVM2dVdiQnQtN3ZMSnlWOUZXMUQyRndmRWl4Sk5QRWRmckNQM2J6ZDNNeEtmUzhuNTBVSFF6alNHR0hzaGJ0RmVNc29Tclppcnc0MDJnUENBVVdBcXVxemI2NnpheEhuNHNLcnZlN1JDOVRR?oc=5",
-   "lastelec": "general, Nov 2026, too close to call"
+   "updated": "2026-11-07",
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOX2hMNnJzc0FnY1gxajR2R0ZiMjg0a2tjMVY1S3hNejZMOENUNExrdTRRcGdCY2FfLVlDcWJHYlVuTV9rcnVMQklublJubmhDNmExV2s3MHB2WHBEQjByb1JHNVlIN0tEaUZOZzNVQzdWMjZTdHlGV0dVVWtqSXJVdHFEUGt4M0xzbWRGeFpMR2syczVYSXpHWW1R?oc=5",
+   "lastelec": "general, Nov 2026, conservative bloc leading"
   },
   "GRD": {
    "nextelec": "general, Nov 2031",
    "updated": "2026-11-07",
    "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVzdNc1l3MFlkYW5nNUFyY0ctUkZ4LVRYNHdGWlF2eTBNMlVQY1VudERDbFppZGx1RG4tQ0lVNkFnR1Jzekg1aTZhN1gycHk5ZHB1N1JRbUczMjFrcnRlbjRhOV9ZdVlzVDBHQmdoNlBnU3QydFhtOFMyWWM1S25GRGxaaEtDTjc1bmc3RWEtUTJibGJLdGtMNmxhNEc4NGtHSmRCMFE3OWNON1VwOGQybW42eHVIbzN4RGcw?oc=5",
-   "lastelec": "general, November 2026, Dickon Mitchell"
+   "lastelec": "general, Nov 2026, Dickon Mitchell (NDC)"
   },
   "LVA": {
    "lastelec": "parliamentary, October 2026",
@@ -3858,9 +3873,9 @@
    "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZXVwWnVaUzBnNFYtSk8xNy1wT3NwLVhWSmRENElJZzRGb1B1OGYyb2Zzdy1ybm95UXRNQ1FBcVN3cWZSRGRBQ1VYRVpXekRnU3poLWNUeGZnbUhldGZ0RmpmemhkWHdFTnA4NW1zRi04TkRvN2p1akoteEljUHlFOUdBZDhzVW9TbFR0OTNEZzlUb2ZwTTZj?oc=5"
   },
   "SOM": {
-   "nextelec": "presidential, February 2027",
-   "updated": "2026-11-06",
-   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOV2VBY213dkJjcnh5d2tKYlpHQkxTN2NNUEVGOXMzOF94eFlGeF9jT3c4ODRsMUVpVTJWdVhvTXFQY3FqcTdVNm80WGd2NnFqTjFKT0phdl83TC1UbzBfMVhIS1lfbWRDczd2Zzhlb0g5NUVwbGxDU0NzYkhLTkFRSnZueEdoZFhlOC1SbG9WOTlFUmQwYkRtcTVzNTA4ZmxCWGFJc1A4c2F6SWtjRmRpOGp3?oc=5",
+   "nextelec": "presidential, within 90 days",
+   "updated": "2026-11-07",
+   "source": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNaXlGa0hiZ0dzSndGeUs4Uko4amQzXzhZaFlPX2ROLVpfNkc5NS1zRUp3S0hRVjQ3d2dpV29nb3RsMnNrWVprSjBselhoT2NFbzlSRmF3T1dJUXFvV3g0ZEhKNWJ1VUhGYWprQUtuY3NSVzYyR2dFdFh1amthZUU4NUVSY1NOMHRDYU5sZjMxOFNkalZNVnpqMkg0bTc4SjNPenk2MG41bFNyRUFFVlRpdFRZZkFOWWR0RTA5ZXM0OFI3dkphcUVLWDVDWWhSWmRQOWdoYVlvNmpRblNjWXNPZGlJeTl3MEUwN1dFXzRDWnlHd3NqTWxsRW9aYVFkM3RtVjRxSjFxZw?oc=5",
    "lastelec": "indirect, May 2022, Hassan Sheikh Mohamud"
   },
   "CZE": {
