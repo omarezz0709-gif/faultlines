@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-07T11:36:07Z",
+  "lastRun": "2026-11-07T19:44:50Z",
   "log": [
    {
     "date": "2026-11-07",
@@ -21,19 +21,24 @@
       "source": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9vVnVUNm5wYVlNQkhvUDJQNV9nVU4tSmVodDRZWDJDM1drMElJZThxQlVRUmtNTHJxWmdNT3Z3TUpGbFh5Q2VzSTFCSjQwSlBwWlpoaXZsWQ?oc=5"
      },
      {
-      "label": "Grenada",
-      "change": "Added election result: NDC wins general election",
-      "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVzdNc1l3MFlkYW5nNUFyY0ctUkZ4LVRYNHdGWlF2eTBNMlVQY1VudERDbFppZGx1RG4tQ0lVNkFnR1Jzekg1aTZhN1gycHk5ZHB1N1JRbUczMjFrcnRlbjRhOV9ZdVlzVDBHQmdoNlBnU3QydFhtOFMyWWM1S25GRGxaaEtDTjc1bmc3RWEtUTJibGJLdGtMNmxhNEc4NGtHSmRCMFE3OWNON1VwOGQybW42eHVIbzN4RGcw?oc=5"
-     },
-     {
-      "label": "New Zealand",
-      "change": "Added election update: general election vote count underway",
-      "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOX2hMNnJzc0FnY1gxajR2R0ZiMjg0a2tjMVY1S3hNejZMOENUNExrdTRRcGdCY2FfLVlDcWJHYlVuTV9rcnVMQklublJubmhDNmExV2s3MHB2WHBEQjByb1JHNVlIN0tEaUZOZzNVQzdWMjZTdHlGV0dVVWtqSXJVdHFEUGt4M0xzbWRGeFpMR2syczVYSXpHWW1R?oc=5"
-     },
-     {
       "label": "Somalia",
       "change": "Added upcoming election: Supreme Court orders vote within 90 days",
       "source": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNaXlGa0hiZ0dzSndGeUs4Uko4amQzXzhZaFlPX2ROLVpfNkc5NS1zRUp3S0hRVjQ3d2dpV29nb3RsMnNrWVprSjBselhoT2NFbzlSRmF3T1dJUXFvV3g0ZEhKNWJ1VUhGYWprQUtuY3NSVzYyR2dFdFh1amthZUU4NUVSY1NOMHRDYU5sZjMxOFNkalZNVnpqMkg0bTc4SjNPenk2MG41bFNyRUFFVlRpdFRZZkFOWWR0RTA5ZXM0OFI3dkphcUVLWDVDWWhSWmRQOWdoYVlvNmpRblNjWXNPZGlJeTl3MEUwN1dFXzRDWnlHd3NqTWxsRW9aYVFkM3RtVjRxSjFxZw?oc=5"
+     },
+     {
+      "label": "Pakistan–Sudan",
+      "change": "Normal → Partner: sign visa-free travel deal for diplomats and expand security cooperation",
+      "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPV1lFWVBQaG5ZRlRWY2xCUGtnaG1yU18zbktKTVpqX1pUeUNJQmw5UVVpcWU3dTNuZGlLVmpLYkVRRV9ubGRyRUZPVFpqdUJscm1YWTIzMlJkRzM0Rkpkam1wM3hnQTRiUHJISVhjZnFyUnZEV0pfR1JMUHBYc0IwRnRtRmVleW9xM2Vac0Vrc2t6eGw4Z1RuLWtmSTFBbFZtbnVhS0ZaU0RBdw?oc=5"
+     },
+     {
+      "label": "Grenada",
+      "change": "Election recorded: National Democratic Congress (NDC) wins second term under Dickon Mitchell",
+      "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUlFsb0tKcUp4NjQ4X1BTaWk5b1QzNFFiTmdFTTJ3QUxrOWVaUzBsaWtMT3hTY3p4Nl9qTUV4dGxxMVRmbGRSZGZJNW9aUmFja2NOb2VRdTBuU3dndl95UnpidVlJT2hhZjNuRnY1NnBrcEJ5MVVHd1ZKenBEZTZMUWlxRlRSUjYxaE02Z0RVXzB1aGtuUjN3Y3hjSkpzOFo2VE52TWhaa0cwMjNaRTFLUU1wSERxUFlDWEE4?oc=5"
+     },
+     {
+      "label": "New Zealand",
+      "change": "Election recorded: general election result too close to call pending special votes",
+      "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSTJja18wY0QwT2N1eVlYSUxLaHg5bkxadjEwdXQxM016SG9kR1BSc2hIbGxYMy1ZMUZUdlJ3eGN3dGhTNGIzb1FCUDFSektURGszUDlrZzhjQUpuRzRSSnhrc2JfbXExaG1PMjNXRVkxYnlhUjNlNHBQQUVmTkl5LXVhOXNJYWpCNzJ5OG5ncEQxOXNneGFmWFRYaUhGZw?oc=5"
      }
     ]
    },
@@ -1713,7 +1718,7 @@
     ]
    }
   ],
-  "summary": "Updated Armenia–Azerbaijan relation note following TRIPP corridor working group launch and logged election developments in Grenada, New Zealand, and Somalia."
+  "summary": "Pakistan and Sudan sign security and visa-free travel agreements for diplomats, while elections take place in Grenada, New Zealand, and South Africa."
  },
  "relations": {
   "DNK-USA": {
@@ -3291,6 +3296,14 @@
    "note": "Taiwan closes its representative office in Papua New Guinea and halts LNG (liquefied natural gas) imports, citing pressure from China.",
    "updated": "2026-11-06",
    "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMmx6OTU0QkxEQ1doYzVzVTM2dDZiZVNpVW5MVkZWQWpZM2lTYnJNQjhCbzVGUGg5aWZpNkc1MUp5OWJScTM3cnpEWkpUMXB6WjB6UHNnX3hhNHphSlFqVFFLUUdUN3pYMjA0eDJnd3Jhcm0wSF9XZnNpZ0gxY3k5SThNQU4yRlhVRWpHR0U1YnI2MmlaZ3JtdURGUVBhOHRtNlM0Zkp6RzFaUmtNM0t1NtIBtgFBVV95cUxNQW9mS1dVQ3dHZG9JZGpUUFhKdGNvV2FuaEFjV0VuMUhRRGxWclFjTDBSMUh2bnlydkJfU2dyQmwtRjk2X3FVQUw4ald5YWxqSDRlRU16WThSVkVrbXBzQ3NtaEQ0TXowdEVTSE9xNy1JUkpZekZ2ekZZMXFfcHNaRHBzYWxIdFJqVHc3Z3ZRSXczMG9yWmV2bEFfU1k2VmNJeWRQLUJLREJfMzVsZlhVN2x2SFZOUQ?oc=5"
+  },
+  "PAK-SDN": {
+   "a": "PAK",
+   "b": "SDN",
+   "s": "F",
+   "note": "Pakistan and Sudan sign a visa-free travel deal for diplomats and expand security and police cooperation.",
+   "updated": "2026-11-07",
+   "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPV1lFWVBQaG5ZRlRWY2xCUGtnaG1yU18zbktKTVpqX1pUeUNJQmw5UVVpcWU3dTNuZGlLVmpLYkVRRV9ubGRyRUZPVFpqdUJscm1YWTIzMlJkRzM0Rkpkam1wM3hnQTRiUHJISVhjZnFyUnZEV0pfR1JMUHBYc0IwRnRtRmVleW9xM2Vac0Vrc2t6eGw4Z1RuLWtmSTFBbFZtbnVhS0ZaU0RBdw?oc=5"
   }
  },
  "threads": {
@@ -3820,13 +3833,13 @@
   "NZL": {
    "nextelec": "general, Nov 2029",
    "updated": "2026-11-07",
-   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOX2hMNnJzc0FnY1gxajR2R0ZiMjg0a2tjMVY1S3hNejZMOENUNExrdTRRcGdCY2FfLVlDcWJHYlVuTV9rcnVMQklublJubmhDNmExV2s3MHB2WHBEQjByb1JHNVlIN0tEaUZOZzNVQzdWMjZTdHlGV0dVVWtqSXJVdHFEUGt4M0xzbWRGeFpMR2syczVYSXpHWW1R?oc=5",
-   "lastelec": "general, Nov 2026, conservative bloc leading"
+   "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSTJja18wY0QwT2N1eVlYSUxLaHg5bkxadjEwdXQxM016SG9kR1BSc2hIbGxYMy1ZMUZUdlJ3eGN3dGhTNGIzb1FCUDFSektURGszUDlrZzhjQUpuRzRSSnhrc2JfbXExaG1PMjNXRVkxYnlhUjNlNHBQQUVmTkl5LXVhOXNJYWpCNzJ5OG5ncEQxOXNneGFmWFRYaUhGZw?oc=5",
+   "lastelec": "general, Nov 2026, too close to call"
   },
   "GRD": {
    "nextelec": "general, Nov 2031",
    "updated": "2026-11-07",
-   "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVzdNc1l3MFlkYW5nNUFyY0ctUkZ4LVRYNHdGWlF2eTBNMlVQY1VudERDbFppZGx1RG4tQ0lVNkFnR1Jzekg1aTZhN1gycHk5ZHB1N1JRbUczMjFrcnRlbjRhOV9ZdVlzVDBHQmdoNlBnU3QydFhtOFMyWWM1S25GRGxaaEtDTjc1bmc3RWEtUTJibGJLdGtMNmxhNEc4NGtHSmRCMFE3OWNON1VwOGQybW42eHVIbzN4RGcw?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUlFsb0tKcUp4NjQ4X1BTaWk5b1QzNFFiTmdFTTJ3QUxrOWVaUzBsaWtMT3hTY3p4Nl9qTUV4dGxxMVRmbGRSZGZJNW9aUmFja2NOb2VRdTBuU3dndl95UnpidVlJT2hhZjNuRnY1NnBrcEJ5MVVHd1ZKenBEZTZMUWlxRlRSUjYxaE02Z0RVXzB1aGtuUjN3Y3hjSkpzOFo2VE52TWhaa0cwMjNaRTFLUU1wSERxUFlDWEE4?oc=5",
    "lastelec": "general, Nov 2026, Dickon Mitchell (NDC)"
   },
   "LVA": {
@@ -3900,9 +3913,9 @@
    "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQnNfZmZ3dzNlX0g1cEhQNjRDS1pqUl9iVHI1bS1lNjRlY2w1cjdPaGRHbkJpRUpFQ21oLUNBeS1qNkppMGFPZ1NOQlNCUUc2bzU1elFSTGFVSEV1WjB5TGhSc3JlR19OUmdBcWY1QjBCMW1KNTVDWTdJZ0dpdlUwZWlFQ3lyMnJwSW5qMDJ3WV9YNnl3MTZEaTFn?oc=5"
   },
   "ZAF": {
-   "lastelec": "local, Nov 2026, ANC leading",
-   "updated": "2026-11-06",
-   "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRnRXZk1ta3IteTdkUzM3ZVBpV19qTUg1YmFlS2pCVUFEekxWb2ZQMzNPSGtEVjRDc3NTaUtjVmRmZXJzVDg3Y1U1TGRxa0o0S25aSDd2Mk5tN2tuSG9mamw4YTBCbVh4TTlKVXpSODhKYnpJR2pHRGJycVVQYzZiREp3RV96OGp2QnkwV0VFeE8zQU5QTjc3akhxVmdEQlVZSUE?oc=5",
+   "lastelec": "local, Nov 2026, ANC historic low",
+   "updated": "2026-11-07",
+   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOa2s2SDZWT3FaYXpQYmc3MDk3R1JuajMyYkMteGNJNTVvdVRFY1Nmc1QxMFVZU0lBTU50RmdQRkdrYnBWcTZGRmpIN3BHREhsUndpVHRuSEppYjdMdXkzUnJ3ajJlOGdqcjZtZnZmN1J0LTJpSHlEM1BXeGoyRUxSdWFyRmRxdnU2cFZhdmRrdElxVUNuT3M2eFpSakFVbG4t0gGgAUFVX3lxTE9hWUEyWDh0TTFSWlUtRXRBZWV5S0ZBdnU1bUdvYVlzTGtXOGV6YmFOTDk0TUpYclU5ZWY2VzU5WmtuRVlUWGFOMFUtWkZ2RTdJR29NVk9GVUt3TVJNc1RDeFBGaW9YMENHLVJlRTZ0VXpQVVlYTmFPVVBOa1pET0l5V1dzeWNOdjE0R2gwTGFybHJwSnl0aXZxX0gteHpBVzU?oc=5",
    "nextelec": "general, May 2029"
   },
   "MMR": {
