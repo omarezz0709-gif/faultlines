@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-08T01:01:53Z",
+  "lastRun": "2026-11-08T11:48:28Z",
   "log": [
    {
     "date": "2026-11-08",
@@ -16,14 +16,29 @@
       "source": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBfQnNJVENNajhzcVliVE1ud2dMSzI0a1NNT0I5R2t3T19YWTBGaU12TjFVTUFwUU11N2RmbnJZUHNGUWxEeGp3UFdxcGprTm10bVVJc2lfeUE0dlFjRVozZ3J3?oc=5"
      },
      {
-      "label": "New Zealand",
-      "change": "Politics updated: general election result recorded",
-      "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOaG5IckpSU0pKMzd1TGJpLVNPTEdwZFJBZjRaTDFVc0hHNXptUUs3Nml6bmhGeE5hNGx6cjZKM2xmWVFrcFVJT2VWTU9YbGVYZlAyZVlWazN0QzVjbk1vX2JDTGc5OEU1OVJrZmZha2N0Mm9ZeUZJQnlKNGVkWXNNWklQaTVNbUprVWdRRU5jWkRDRllfTF9UODZKTE1ESjZFT1UtMGdySWtNV1pJ0gGyAUFVX3lxTE5ucGdMYnFfM0toX1BkOEFMYzVmWnU4RnRZdjFUYktRdnVWQ1NWVlVkTk0yZ0lPYjlSYlViSGR4VGRreUdnVHh5d2hIM080TDJna3prZV9UeTl3SmFfUlBUSG12UFdKMnRObjlnaTlnZmFHbTM5bWVtejI2NnBGYldmMkU4OU9uV3VfOEhseHU2emctV1gzdXVVOHhXMWhRYUFGQTFXT0dmOUctM2J2eEM1cEE?oc=5"
-     },
-     {
       "label": "Grenada",
       "change": "Politics updated: general election result recorded",
       "source": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBFLW1HaTNGbmVtdlFRMkNNOWx4dnl0a0lQOWp3emd0aTJPd2tYNmpWQk13UHhNS1hTQXlPVTRmWjR4U3RrQmVyTXhZN2hrUXlVNkttOWFVemc5YlFseUFuUjhVcGl4N1FaWjRlU0c1M3BoRkxVR0hZSzlCNA?oc=5"
+     },
+     {
+      "label": "Egypt–Libya",
+      "change": "Normal → Partner: Egypt reopens embassy in Tripoli after 12-year closure",
+      "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNM1B1TUI3TU16V3VxMjBKTTJEaE16WF9IQ0w3WlZ4OVlNdlJTbkI5UDZrcWpvME50aDgwSjdUQ2ZGcW40aUxneW1DdWdoZ1hVUExzZEVkbmFnTU1fcWZLbHdld0Q4TnRUNHRJbkVHa2E4blo5S1pxNnJ3VmJSUEwxcm1Ca28yVjZvODJBRVUtQVRMbGNDajFnWWhqREExeDRZMFE?oc=5"
+     },
+     {
+      "label": "Houthi Red Sea campaign",
+      "change": "Updated thread description following missile strikes targeting Riyadh financial district",
+      "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQV1hQVkgzdVlhV1dZdnplV0FqMGY1TXQ0cmNDMWhpTHpqdTVQTklkOUlNWDduV3VWT3FsVkp5SjJ3d0VvVUhyN2xQMU10V1RBRS1GWFoxRmJPazRQOW1zOFM1XzZDZWgzdUdlSzVKeU8tbXJXUzRjSDRZb2hyWVJHRVlja0NGZklaaERrN1FYc2p3OUhJZENGMWVYdFU5ZW5id2x1RQ?oc=5"
+     },
+     {
+      "label": "New Zealand",
+      "change": "General election yields narrow coalition majority",
+      "source": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBUYUhmOHRhVklaV0hSZkVLajU3MDRpbzNIRjB0b0tYNUVieWxCYTVqZmpVVDdqdWpQcHFCdHhGLUhBdEdULWZWTENHcElvNHN3dnBOckV3YnVKbzlOSHFrMHV3?oc=5"
+     },
+     {
+      "label": "Serbia",
+      "change": "Student-led movement wins parliamentary election",
+      "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQY2tLc0Y0a3FFRnJhLVh5QnY4WW81SjgtU0dtYUcxeXFwSXlHZjVUWmhwRUJlcWVrNFBOdmQyMG5sZlB0aC14MmQyT2JxWXRhTU1LZmc1NUxiN3BldnR1dUlURENXR20tNzB5dG1IaHlTYTkzMmNGTE9JSUVpTUVPeUxIem02eXZGemZDdDQwRjNKaWt4QjYwU3B6b0RrOFVvcFNv?oc=5"
      }
     ]
    },
@@ -1683,7 +1698,7 @@
     ]
    }
   ],
-  "summary": "Updated relationship notes for US-Iran conflict escalation in the Gulf of Oman and US-Mexico military sales, alongside election results in New Zealand and Grenada."
+  "summary": "Egypt reopens its embassy in Tripoli after a 12-year closure, Houthi strikes hit Riyadh's financial district, and elections take place in New Zealand and Serbia."
  },
  "relations": {
   "DNK-USA": {
@@ -3041,10 +3056,10 @@
   "EGY-LBY": {
    "a": "EGY",
    "b": "LBY",
-   "s": "T",
-   "note": "Egypt rejects the maritime boundary deal between Libya and Türkiye, calling it null and void.",
-   "updated": "2026-10-23",
-   "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9xUXoyRUNiRUVRczAtOE00U2pYQXlTbDl4OEdvSGNoNEg3SjI3bkgzd0pXVDJRS2tVbjFVOXRDa2ZIc3VrVmRpNE03X1ZUZFo0OVE?oc=5"
+   "s": "F",
+   "note": "Egypt reopens its embassy in Tripoli after a 12-year closure, strengthening diplomatic and economic cooperation with Libya.",
+   "updated": "2026-11-08",
+   "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNM1B1TUI3TU16V3VxMjBKTTJEaE16WF9IQ0w3WlZ4OVlNdlJTbkI5UDZrcWpvME50aDgwSjdUQ2ZGcW40aUxneW1DdWdoZ1hVUExzZEVkbmFnTU1fcWZLbHdld0Q4TnRUNHRJbkVHa2E4blo5S1pxNnJ3VmJSUEwxcm1Ca28yVjZvODJBRVUtQVRMbGNDajFnWWhqREExeDRZMFE?oc=5"
   },
   "GRC-LBY": {
    "a": "GRC",
@@ -3287,11 +3302,11 @@
     "SYR",
     "ARE"
    ],
-   "d": "Iran-backed Houthi forces demand $51 billion and recognition to halt strikes on Saudi infrastructure.",
+   "d": "Iran-backed Houthi forces target Saudi capital Riyadh and energy infrastructure while demanding $51 billion and recognition to halt strikes.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQLURwNWY1OHpfdTBvZXpqd202RUJ5WHdScEJZaDZRY0VZTEpwNGNsNkYzY1M2bWh1cFpDRFdUZXBIbFlMY21NWDdIclRpMVpwQnNyZEM3OTMyTTBEdy1PU044UzBjZ3dFRUxYaWRYVlNFQmlINzZkV2Z6d3hPQkc4UW4yTUNtcFBfUm1mLTNrZ0M1SGZxYi1xcTRRSTRoX3NucGlOekUwbXIwWVhIcm53Zg?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQV1hQVkgzdVlhV1dZdnplV0FqMGY1TXQ0cmNDMWhpTHpqdTVQTklkOUlNWDduV3VWT3FsVkp5SjJ3d0VvVUhyN2xQMU10V1RBRS1GWFoxRmJPazRQOW1zOFM1XzZDZWgzdUdlSzVKeU8tbXJXUzRjSDRZb2hyWVJHRVlja0NGZklaaERrN1FYc2p3OUhJZENGMWVYdFU5ZW5id2x1RQ?oc=5",
    "t": "security",
-   "updated": "2026-11-06"
+   "updated": "2026-11-08"
   },
   "afpak-jihad": {
    "t": "security",
@@ -3764,9 +3779,9 @@
   },
   "SRB": {
    "nextelec": "parliamentary, Nov 2030",
-   "updated": "2026-11-06",
-   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdjhDdUJZbWdUdWM4ZndIemVoeWN0aW96R1NQM09BVnRXVl9PU0JtUUlyU1FsbWI1MzJQaHcwdEJnYmZPN3BOQ2hMQlBjVGxIQUlaYW9fbFltUXdWdUFCNGFkcEpCazlkMFp0LUhxQ3prTTdpeW9MMmpyY01WQ1VYeV9WX0F0QlhMZFJQWFBWdmlZZDNvSm9nMWpMN3Z4N2llMk1J?oc=5",
-   "lastelec": "parliamentary, November 2026, Student List"
+   "updated": "2026-11-08",
+   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQY2tLc0Y0a3FFRnJhLVh5QnY4WW81SjgtU0dtYUcxeXFwSXlHZjVUWmhwRUJlcWVrNFBOdmQyMG5sZlB0aC14MmQyT2JxWXRhTU1LZmc1NUxiN3BldnR1dUlURENXR20tNzB5dG1IaHlTYTkzMmNGTE9JSUVpTUVPeUxIem02eXZGemZDdDQwRjNKaWt4QjYwU3B6b0RrOFVvcFNv?oc=5",
+   "lastelec": "parliamentary, Nov 2026, Student List movement"
   },
   "CHE": {
    "lastelec": "referendum, Sep 2026, rejected stricter neutrality",
@@ -3798,8 +3813,8 @@
   "NZL": {
    "nextelec": "general, Nov 2029",
    "updated": "2026-11-08",
-   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOaG5IckpSU0pKMzd1TGJpLVNPTEdwZFJBZjRaTDFVc0hHNXptUUs3Nml6bmhGeE5hNGx6cjZKM2xmWVFrcFVJT2VWTU9YbGVYZlAyZVlWazN0QzVjbk1vX2JDTGc5OEU1OVJrZmZha2N0Mm9ZeUZJQnlKNGVkWXNNWklQaTVNbUprVWdRRU5jWkRDRllfTF9UODZKTE1ESjZFT1UtMGdySWtNV1pJ0gGyAUFVX3lxTE5ucGdMYnFfM0toX1BkOEFMYzVmWnU4RnRZdjFUYktRdnVWQ1NWVlVkTk0yZ0lPYjlSYlViSGR4VGRreUdnVHh5d2hIM080TDJna3prZV9UeTl3SmFfUlBUSG12UFdKMnRObjlnaTlnZmFHbTM5bWVtejI2NnBGYldmMkU4OU9uV3VfOEhseHU2emctV1gzdXVVOHhXMWhRYUFGQTFXT0dmOUctM2J2eEM1cEE?oc=5",
-   "lastelec": "general election, November 2026, Prime Minister Christopher Luxon (National coalition)"
+   "source": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBUYUhmOHRhVklaV0hSZkVLajU3MDRpbzNIRjB0b0tYNUVieWxCYTVqZmpVVDdqdWpQcHFCdHhGLUhBdEdULWZWTENHcElvNHN3dnBOckV3YnVKbzlOSHFrMHV3?oc=5",
+   "lastelec": "general, Nov 2026, ruling coalition"
   },
   "GRD": {
    "nextelec": "general, Nov 2031",
