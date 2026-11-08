@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-08T11:48:28Z",
+  "lastRun": "2026-11-08T20:03:08Z",
   "log": [
    {
     "date": "2026-11-08",
@@ -31,14 +31,29 @@
       "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQV1hQVkgzdVlhV1dZdnplV0FqMGY1TXQ0cmNDMWhpTHpqdTVQTklkOUlNWDduV3VWT3FsVkp5SjJ3d0VvVUhyN2xQMU10V1RBRS1GWFoxRmJPazRQOW1zOFM1XzZDZWgzdUdlSzVKeU8tbXJXUzRjSDRZb2hyWVJHRVlja0NGZklaaERrN1FYc2p3OUhJZENGMWVYdFU5ZW5id2x1RQ?oc=5"
      },
      {
-      "label": "New Zealand",
-      "change": "General election yields narrow coalition majority",
-      "source": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBUYUhmOHRhVklaV0hSZkVLajU3MDRpbzNIRjB0b0tYNUVieWxCYTVqZmpVVDdqdWpQcHFCdHhGLUhBdEdULWZWTENHcElvNHN3dnBOckV3YnVKbzlOSHFrMHV3?oc=5"
-     },
-     {
       "label": "Serbia",
       "change": "Student-led movement wins parliamentary election",
       "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQY2tLc0Y0a3FFRnJhLVh5QnY4WW81SjgtU0dtYUcxeXFwSXlHZjVUWmhwRUJlcWVrNFBOdmQyMG5sZlB0aC14MmQyT2JxWXRhTU1LZmc1NUxiN3BldnR1dUlURENXR20tNzB5dG1IaHlTYTkzMmNGTE9JSUVpTUVPeUxIem02eXZGemZDdDQwRjNKaWt4QjYwU3B6b0RrOFVvcFNv?oc=5"
+     },
+     {
+      "label": "Bahrain–Iraq",
+      "change": "Normal: Bahrain returns ambassador to Iraq to restore full representation",
+      "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbVMtcmhHQ3IyVEJlUlh2VnFaZjVVUlUzY0VrbDBsbHJMSnYyYWNjTXZYLWIyWGhHZjFKTENQdWJGdVNtdjNWaGlKckM1a0V0S2dLVllvekwxWVBqbmhpVzY1SGZYVlN5akFXUU0wbGI0RmJjSHhwNDgyamdGYk8zSDloRWZHbHVTbklwQVdNbkxHczlNZmQ3MFRnbFE4UQ?oc=5"
+     },
+     {
+      "label": "Cyprus–Sweden",
+      "change": "Normal → Partner: Joint anti-tank missile procurement agreement signed",
+      "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQV05TRE4wa0Z1WFF3UnVtdm9zSGVXbUpHNTdrelozTzdEV3N0SG5oM3pYZExpRkM4M3c1dmk0dGY2SVlXRTFqZ2xTZ1NrN2VhOXI0dWRUdzI2czhUZnYtdXFtdTRJMXdYazV1VDVFT2VCUDVTYzQtT1hXRElEUDh2bmx4b3h6ZXVnQXByUk5QbTJ4cGZuNjZNUllHeGdwVlNmOV9TYVhJREVmdFl0M29fdmpBZURDc040b3pyNnZXZkg0Mkpla0JGNXgwbUh5LXIyVjhxc2hR?oc=5"
+     },
+     {
+      "label": "New Zealand",
+      "change": "General election held with tight result and coalition negotiations required",
+      "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOY3o2eFZkekpBRXNYdktqb2JoT2N5MklUYS1KakpENWdUWUxqaWpSMVRXM3NodXA1aG1JY3JTbDBfTHhleUd4aV9Rd1NiMTJFNmtnRjBYWkpJLUthMGN5aGk3Sk1lanNHY2Fwc2Q2THlvZ0hlbTBxdTVxTEVNa0NaLUEtTVR3cHNZQmhBS0hSTTNnaU1pUkE2QXU5dFUzbHB5bjZhZ1Jha0dXX0JPY3VQbTdTZEJVY3RwcExyczJ5NA?oc=5"
+     },
+     {
+      "label": "South Africa",
+      "change": "African National Congress (ANC) suffers historic defeat in local elections",
+      "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUU01MGtPM0MzMnRNSkVzSWRRYlRqcF9sMkpHSlZoOUxLTUtLY0hGLUp0RkR1a2xoT0NRb092cDZ3c2prM1I5NnNpZ1F5NG1fZUJXTF9xNjY3U08wdFIyTUVDRlpjMy1FakhnQXhyX0RWYmhOemtveHFsODRoOUhGeS1lSlBxdXVLUjB0LVNlTlJ3X0otSWfSAZsBQVVfeXFMTkx2MkRVWnR6VW43OEJMRmdYVmhqWk0ySlJrTmw0Y2FOTHpuQU0tcUFRMzdsS0dsQ3JYU3pIM1JKeGsxNUVjeXh4YzBzSzBIWmhCbllZejZtb3ZKZjdVR29tME9OLTZ1bloyZm5CVFNPZUJ6a2tmSjFOanRPV3NqdVdzYWlKcHJYakpUczdSQkczZVZXWWI2eWhhMTA?oc=5"
      }
     ]
    },
@@ -1698,7 +1713,7 @@
     ]
    }
   ],
-  "summary": "Egypt reopens its embassy in Tripoli after a 12-year closure, Houthi strikes hit Riyadh's financial district, and elections take place in New Zealand and Serbia."
+  "summary": "Bahrain restores ambassadorial ties with Iraq, Cyprus signs a joint missile procurement deal with France and Sweden, and election results shake politics in New Zealand and South Africa."
  },
  "relations": {
   "DNK-USA": {
@@ -2057,9 +2072,9 @@
    "a": "IRQ",
    "b": "USA",
    "s": "F",
-   "note": "United States forces complete their military withdrawal from Iraq, ending the anti-ISIS combat mission.",
-   "updated": "2026-09-30",
-   "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZ3lldi1rTjB2TzNYazIwNkV4ekpOeDJ3ZGFhY2N0T3dMeXBMLXVCbjl4Y21ua3puUkt2M3M5N0RxUDNncFFXNjZZdEJLVUo4MzhSZDh4REkyS1ZWRHA4VHMxelNfZ3UySUFzanZfN2VnMTFqQk5JVjIxQmJ5cmpmekNJdFQ?oc=5"
+   "note": "The United States (US) presses Iraq to close most border crossings with Iran to enforce restrictions on Iranian land commerce.",
+   "updated": "2026-11-08",
+   "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQN3lDNkttbWtHdm9mSkZ5dVNIcGRJbm5IZElpaEpCaElvQmNWS3JKM1BYdU5sb1ZJd3dLdWl3ajZkQUJ4Y1l5X04xa08ySHZtRFc1UkU1RlJQQjV3WEx1ZVVhbUVoRllQS3VqQ3NEckIwUHJTNHZWRmlJRzV5Sl9ib3BxQ2RNTkVkd19qMkt1VXNkNWkzYTYyZUNuRWZVbzBPcjNQQmRIc04xYkRXZVlVZ2M5RG5Kcmx0MHBJQTI0TEJuRkZGUW5sZ0hqSQ?oc=5"
   },
   "KEN-RWA": {
    "a": "KEN",
@@ -3284,6 +3299,22 @@
    "note": "Pakistan and Sudan sign a visa-free travel deal for diplomats and expand security and police cooperation.",
    "updated": "2026-11-07",
    "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPV1lFWVBQaG5ZRlRWY2xCUGtnaG1yU18zbktKTVpqX1pUeUNJQmw5UVVpcWU3dTNuZGlLVmpLYkVRRV9ubGRyRUZPVFpqdUJscm1YWTIzMlJkRzM0Rkpkam1wM3hnQTRiUHJISVhjZnFyUnZEV0pfR1JMUHBYc0IwRnRtRmVleW9xM2Vac0Vrc2t6eGw4Z1RuLWtmSTFBbFZtbnVhS0ZaU0RBdw?oc=5"
+  },
+  "BHR-IRQ": {
+   "a": "BHR",
+   "b": "IRQ",
+   "s": "N",
+   "note": "Bahrain restores full diplomatic representation by returning its ambassador to Iraq following high-level bilateral talks.",
+   "updated": "2026-11-08",
+   "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbVMtcmhHQ3IyVEJlUlh2VnFaZjVVUlUzY0VrbDBsbHJMSnYyYWNjTXZYLWIyWGhHZjFKTENQdWJGdVNtdjNWaGlKckM1a0V0S2dLVllvekwxWVBqbmhpVzY1SGZYVlN5akFXUU0wbGI0RmJjSHhwNDgyamdGYk8zSDloRWZHbHVTbklwQVdNbkxHczlNZmQ3MFRnbFE4UQ?oc=5"
+  },
+  "CYP-SWE": {
+   "a": "CYP",
+   "b": "SWE",
+   "s": "F",
+   "note": "Cyprus, France, and Sweden sign a framework agreement for joint purchases of Akeron MP (Medium Range) anti-tank missiles.",
+   "updated": "2026-11-08",
+   "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQV05TRE4wa0Z1WFF3UnVtdm9zSGVXbUpHNTdrelozTzdEV3N0SG5oM3pYZExpRkM4M3c1dmk0dGY2SVlXRTFqZ2xTZ1NrN2VhOXI0dWRUdzI2czhUZnYtdXFtdTRJMXdYazV1VDVFT2VCUDVTYzQtT1hXRElEUDh2bmx4b3h6ZXVnQXByUk5QbTJ4cGZuNjZNUllHeGdwVlNmOV9TYVhJREVmdFl0M29fdmpBZURDc040b3pyNnZXZkg0Mkpla0JGNXgwbUh5LXIyVjhxc2hR?oc=5"
   }
  },
  "threads": {
@@ -3813,8 +3844,8 @@
   "NZL": {
    "nextelec": "general, Nov 2029",
    "updated": "2026-11-08",
-   "source": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBUYUhmOHRhVklaV0hSZkVLajU3MDRpbzNIRjB0b0tYNUVieWxCYTVqZmpVVDdqdWpQcHFCdHhGLUhBdEdULWZWTENHcElvNHN3dnBOckV3YnVKbzlOSHFrMHV3?oc=5",
-   "lastelec": "general, Nov 2026, ruling coalition"
+   "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOY3o2eFZkekpBRXNYdktqb2JoT2N5MklUYS1KakpENWdUWUxqaWpSMVRXM3NodXA1aG1JY3JTbDBfTHhleUd4aV9Rd1NiMTJFNmtnRjBYWkpJLUthMGN5aGk3Sk1lanNHY2Fwc2Q2THlvZ0hlbTBxdTVxTEVNa0NaLUEtTVR3cHNZQmhBS0hSTTNnaU1pUkE2QXU5dFUzbHB5bjZhZ1Jha0dXX0JPY3VQbTdTZEJVY3RwcExyczJ5NA?oc=5",
+   "lastelec": "general election, November 2026, tight outcome requiring coalition negotiations"
   },
   "GRD": {
    "nextelec": "general, Nov 2031",
@@ -3893,9 +3924,9 @@
    "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQnNfZmZ3dzNlX0g1cEhQNjRDS1pqUl9iVHI1bS1lNjRlY2w1cjdPaGRHbkJpRUpFQ21oLUNBeS1qNkppMGFPZ1NOQlNCUUc2bzU1elFSTGFVSEV1WjB5TGhSc3JlR19OUmdBcWY1QjBCMW1KNTVDWTdJZ0dpdlUwZWlFQ3lyMnJwSW5qMDJ3WV9YNnl3MTZEaTFn?oc=5"
   },
   "ZAF": {
-   "lastelec": "local, Nov 2026, ANC historic low",
-   "updated": "2026-11-07",
-   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOa2s2SDZWT3FaYXpQYmc3MDk3R1JuajMyYkMteGNJNTVvdVRFY1Nmc1QxMFVZU0lBTU50RmdQRkdrYnBWcTZGRmpIN3BHREhsUndpVHRuSEppYjdMdXkzUnJ3ajJlOGdqcjZtZnZmN1J0LTJpSHlEM1BXeGoyRUxSdWFyRmRxdnU2cFZhdmRrdElxVUNuT3M2eFpSakFVbG4t0gGgAUFVX3lxTE9hWUEyWDh0TTFSWlUtRXRBZWV5S0ZBdnU1bUdvYVlzTGtXOGV6YmFOTDk0TUpYclU5ZWY2VzU5WmtuRVlUWGFOMFUtWkZ2RTdJR29NVk9GVUt3TVJNc1RDeFBGaW9YMENHLVJlRTZ0VXpQVVlYTmFPVVBOa1pET0l5V1dzeWNOdjE0R2gwTGFybHJwSnl0aXZxX0gteHpBVzU?oc=5",
+   "lastelec": "local elections, November 2026, African National Congress (ANC) historic defeat",
+   "updated": "2026-11-08",
+   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUU01MGtPM0MzMnRNSkVzSWRRYlRqcF9sMkpHSlZoOUxLTUtLY0hGLUp0RkR1a2xoT0NRb092cDZ3c2prM1I5NnNpZ1F5NG1fZUJXTF9xNjY3U08wdFIyTUVDRlpjMy1FakhnQXhyX0RWYmhOemtveHFsODRoOUhGeS1lSlBxdXVLUjB0LVNlTlJ3X0otSWfSAZsBQVVfeXFMTkx2MkRVWnR6VW43OEJMRmdYVmhqWk0ySlJrTmw0Y2FOTHpuQU0tcUFRMzdsS0dsQ3JYU3pIM1JKeGsxNUVjeXh4YzBzSzBIWmhCbllZejZtb3ZKZjdVR29tME9OLTZ1bloyZm5CVFNPZUJ6a2tmSjFOanRPV3NqdVdzYWlKcHJYakpUczdSQkczZVZXWWI2eWhhMTA?oc=5",
    "nextelec": "general, May 2029"
   },
   "MMR": {
