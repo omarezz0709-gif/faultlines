@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-09T20:34:34Z",
+  "lastRun": "2026-11-09T23:55:19Z",
   "log": [
    {
     "date": "2026-11-09",
@@ -44,6 +44,16 @@
       "label": "Jordan–Syria",
       "change": "Tense → Normal: signed 11 cooperation pacts in Damascus to restore ties after border strikes",
       "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdkdRX3ZKb0hFX0EtM25yamlZYWJ3dVh4UlZJelZWMmpSOVlSR3dzdVg1TEFoNmJoZFM4Q2dDeUtkQ1RCYWs1cFNsRlctRl9XeEF2VzM0N29BRzBMMlVhUVBEQmdHV0hwand0N0xGQ2JKZE0tR0NYaS1yRzBqN1JxcDg1ckxhRm96SThIeGVYcUlOY1ZLWVl3UG9senBxOGtOdk11TlMwT2haVEdoa1hvYXIwZjhZZXJCZkVmYUtfay1oS3lnOFJR?oc=5"
+     },
+     {
+      "label": "France–Iran",
+      "change": "Normal → Tense: France blames Iran for supermarket cyberattack and seeks EU sanctions",
+      "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPU1VQX0phYUZkeTBfX3FnaDN5d29ha2tvSTlYeGZCUG52ZVFrNGNDTGdMMHpqSmU2a3FYZ1BIa1dXN0Q2c1pJVmlyUUh6UVN4aEdQNzJRMEtGd0NwLU1qcDdYcmdmOFplbXFhUFAzZkQzbmVCN3FObmt6NW9NZldHdFdnc1UtS2lobHAtMVpuTjdlWUJ2cDA4dENlRTZLYVJUU0FONmRERE1EY3NpUVhKblNXcUxJZVF5ODhmWVN5WDV6SHZjWHNremtlRmQ1TXRRdjg0eXRiQU4zUzN2Y1F4VEUxMjliSXZXRFE?oc=5"
+     },
+     {
+      "label": "Japan–Vietnam",
+      "change": "Normal → Partner: Bilateral agreement signed to expand critical minerals cooperation",
+      "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPQnRwa2cyejJFQVYxWTdPY18xTFVDajk2Z3paNXc5YmdYdnAtUWJhX1l4S00zTWRXTVU0NVV1TE5RazUwNzBKRk16MF85eGtrejVGcjNFR2ZsbkRucnRvN1Q2MVpKSFc0M19Ya2h2SC1JNEh1SEduSXJhdXoyV2I3TllBMjIwVnhDLU0tVTdnb1d3UG40MUFIM3p3?oc=5"
      }
     ]
    },
@@ -1723,7 +1733,7 @@
     ]
    }
   ],
-  "summary": "Jordan and Syria sign bilateral agreements to mend relations, New Zealand completes a general election, and Cypriot leaders agree to open new border crossings."
+  "summary": "France accuses Iran of cyber sabotage on supermarket refrigeration, Japan and Vietnam expand critical minerals cooperation, and elections advance in New Zealand, Spain, and South Africa."
  },
  "relations": {
   "DNK-USA": {
@@ -3325,6 +3335,22 @@
    "note": "Cyprus, France, and Sweden sign a framework agreement for joint purchases of Akeron MP (Medium Range) anti-tank missiles.",
    "updated": "2026-11-08",
    "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQV05TRE4wa0Z1WFF3UnVtdm9zSGVXbUpHNTdrelozTzdEV3N0SG5oM3pYZExpRkM4M3c1dmk0dGY2SVlXRTFqZ2xTZ1NrN2VhOXI0dWRUdzI2czhUZnYtdXFtdTRJMXdYazV1VDVFT2VCUDVTYzQtT1hXRElEUDh2bmx4b3h6ZXVnQXByUk5QbTJ4cGZuNjZNUllHeGdwVlNmOV9TYVhJREVmdFl0M29fdmpBZURDc040b3pyNnZXZkg0Mkpla0JGNXgwbUh5LXIyVjhxc2hR?oc=5"
+  },
+  "FRA-IRN": {
+   "a": "FRA",
+   "b": "IRN",
+   "s": "T",
+   "note": "France accuses Iran-linked hackers of cyber sabotage targeting supermarket fridges and demands European Union (EU) sanctions.",
+   "updated": "2026-11-09",
+   "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPU1VQX0phYUZkeTBfX3FnaDN5d29ha2tvSTlYeGZCUG52ZVFrNGNDTGdMMHpqSmU2a3FYZ1BIa1dXN0Q2c1pJVmlyUUh6UVN4aEdQNzJRMEtGd0NwLU1qcDdYcmdmOFplbXFhUFAzZkQzbmVCN3FObmt6NW9NZldHdFdnc1UtS2lobHAtMVpuTjdlWUJ2cDA4dENlRTZLYVJUU0FONmRERE1EY3NpUVhKblNXcUxJZVF5ODhmWVN5WDV6SHZjWHNremtlRmQ1TXRRdjg0eXRiQU4zUzN2Y1F4VEUxMjliSXZXRFE?oc=5"
+  },
+  "JPN-VNM": {
+   "a": "JPN",
+   "b": "VNM",
+   "s": "F",
+   "note": "Japan and Vietnam agree to deepen strategic partnership ties and boost cooperation on critical minerals.",
+   "updated": "2026-11-09",
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPQnRwa2cyejJFQVYxWTdPY18xTFVDajk2Z3paNXc5YmdYdnAtUWJhX1l4S00zTWRXTVU0NVV1TE5RazUwNzBKRk16MF85eGtrejVGcjNFR2ZsbkRucnRvN1Q2MVpKSFc0M19Ya2h2SC1JNEh1SEduSXJhdXoyV2I3TllBMjIwVnhDLU0tVTdnb1d3UG40MUFIM3p3?oc=5"
   }
  },
  "threads": {
@@ -3576,7 +3602,7 @@
   "atlantic-route": {
    "t": "migration",
    "n": "Atlantic route to the Canary Islands",
-   "d": "Migrants from West Africa travel via hazardous Atlantic maritime routes toward Spain's Canary Islands, causing frequent lethal shipwrecks.",
+   "d": "Migrants travel via hazardous Atlantic routes to Spain's Canary Islands; a ship wreck off Senegal kills at least 39 people.",
    "c": [
     "SEN",
     "GMB",
@@ -3586,7 +3612,7 @@
     "ESP"
    ],
    "updated": "2026-11-09",
-   "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNUldvM0VyYWhjUkwzUUZvdVh0TGdmNGVERHNlMUVKQ19DVTdXZkJjLW1EVmZFM3dMbnRYMm5WbjdlZkNmbmFXd0N0QnVNeEozUHoxNXZCcjVsOTV5R0FGTFNRTG1ta2J3SnB4Wk5PWXVMdlMxYmdFTnE0QjU5N0g5SUhmTnVJWnVxUWdmSVZ4aEc0Vms4S1lGc3BqUQ?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQeEItYnpBajlIWWQ4dkhqVzRJdVVkXzhZLTFpTU03ZmtfYm5RVWdTQ1IzRVZiMmFvemx0NUJKV3l4VHdITVotM25CbGhXRXA3Um9hUVh6UFRtTnBJYWcyRElHRnZRNXUzRFJfd2hRVW1tcTlFQ29OUnViek1TWUowc3hMeHhOdUhUUlJhangwTkFkTGVBVUhDaWZB?oc=5"
   }
  },
  "pois": {
@@ -3876,8 +3902,8 @@
   "NZL": {
    "nextelec": "general, Nov 2029",
    "updated": "2026-11-09",
-   "source": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPaWJrVkRuM1c3WXMydmtvYXlOaFVBd3V5bHJWS2lsSVpoZzk3SUhtYlFxbXNOTndvOE5FazFMTG1kbHhtLWxBYkJDcVczMVFjRWdsS3FGcEJ2Y0tNV3FhY2dDYjJtODdFdkJHd1lZYXpFRDFoYUNWMGtUUE5feGNjZlBrY241dlZHNnZNaDVZdEdhTnc5NDJBckpGeXAyUWRPWllycHV4d0VtMzFqSU42TFRncUd4SXdDeldBeWZLdklReUxmZ2pIN01LcWZyNk9WdVBTYkRIckUwRlFFNWFKMUZR0gHiAUFVX3lxTE9pYmtWRG4zVzdZczJ2a29heU5oVUF3dXlsclZLaWxJWmhnOTdJSG1iUXFtc05Od284TkVrMUxMbWRseG0tbEFiQkNxVzMxUWNFZ2xLcUZwQnZjS01XcWFjZ0NiMm04N0V2Qkd3WVlhekVEMWhhQ1Ywa1RQTl94Y2NmUGtjbjV2Vkc2dk1oNVl0R2FOdzk0MkFySkZ5cDJRZE9aWXJwdXh3RW0zMWpJTjZMVGdxR3hJd0N6V0F5Zkt2SVF5TGZnakg3TUtxZnI2T1Z1UFNiREhyRTBGUUU1YUoxRlE?oc=5",
-   "lastelec": "general election, November 2026, Christopher Luxon"
+   "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSm5fRkVZd0JCb0RTa2dablRyVDdMVlZBc0F0aWFyckFyWHhRSUxYYTdDekpJbzU5b19tNkYyOVpVb19HN05JNG9SMTBna1JFZGp4Y1diRTNEMTVUdEJGc1JZc2l3c2ZvYWNKWWpwcHM3Mk9CU1dLUmpOVlFWMUFfTnZNSExvRGg2dEhlaS1MWjladVN2X2Z4cm5GdDUwdHBVbk5jckFHMjVnbUxsNW9zb3dqaXc2NmNSRUFn?oc=5",
+   "lastelec": "general election, November 2026, National Party (Christopher Luxon)"
   },
   "GRD": {
    "nextelec": "general, Nov 2031",
@@ -3897,7 +3923,7 @@
    "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSGtaN0YzYTJnMjB2WGU1X1Z0Q0hwYmNjel9ZOXdiLU1yQmpNOXdTdlIwYnRlazZLXy1vQ05EUWsxbkhGUlpVYWhwR2x2a1FNcUpFaktWZXBOc2dfSDh6aEtFbGRDY3RsRDRnNHZwMGRGdUlfM050VkhZXy1SNXBfSXJvNmRpejdyS3c?oc=5"
   },
   "ESP": {
-   "nextelec": "general election 29 November 2026",
+   "nextelec": "general election, November 2026",
    "updated": "2026-11-09",
    "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOX2ZnOS03ZS1sUXY0U05GTEpCZDNTdlkyZjd6TEFzYW1qQnhQdE00U2xmWFhKd2FlYlBIS0JCempGVjRmUjJIRVNRa19ZWjN3MEdZNDMzVDlja2ZXQXl6TFhSc1p1T0dadDZ1bXlEbTl5a1JlQi1pUTlhSW14YXRyMzg1bzFTaWZSOHpoeUtnRkI3eW4xU3ZZaw?oc=5",
    "lastelec": "general, July 2023, Pedro Sánchez"
@@ -3956,9 +3982,9 @@
    "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQnNfZmZ3dzNlX0g1cEhQNjRDS1pqUl9iVHI1bS1lNjRlY2w1cjdPaGRHbkJpRUpFQ21oLUNBeS1qNkppMGFPZ1NOQlNCUUc2bzU1elFSTGFVSEV1WjB5TGhSc3JlR19OUmdBcWY1QjBCMW1KNTVDWTdJZ0dpdlUwZWlFQ3lyMnJwSW5qMDJ3WV9YNnl3MTZEaTFn?oc=5"
   },
   "ZAF": {
-   "lastelec": "municipal, November 2026, African National Congress",
+   "lastelec": "local elections, November 2026, African National Congress (ANC)",
    "updated": "2026-11-09",
-   "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxObUdvTzhWT240bTRoaTNsdFB3MlFhMTlPUHV3cmVsdmJsUDFDdjN3eUZnbGhvczFPS0piLTNUYUtsSEJkQ1FJc3BXamtyMmQtYzBBM3ZyZVVGZjI2X2ZrLW9ESkNJRTF4eVlrQ1VHMDF4NFRUVm5ZbXhhYWljeE55bXBDZ2xQcHM1MHhERmtaaHFlX2MxRGlpSmt6Yi1zTC12d0l1ZmhsUGxPdw?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVUhRZDh6OG5ZVzJhQkFaWGI0MVpKRWwzaTV2U3lEV1V0dGZRNlIwaW9DbDFvNnk2RHdhNVRxVy1jRG5mcTk5VTFPcDRqRnFlSjdfQTJIN09tSGZ4VXpCTy02MlBuRDhXLVdVdVhUUHJXSXZaT2NncXEtNk5TNUtrSmpB?oc=5",
    "nextelec": "general, May 2029"
   },
   "MMR": {
