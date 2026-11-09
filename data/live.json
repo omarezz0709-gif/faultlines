@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-09T13:42:46Z",
+  "lastRun": "2026-11-09T20:34:34Z",
   "log": [
    {
     "date": "2026-11-09",
@@ -39,6 +39,11 @@
       "label": "South Africa",
       "change": "Recorded November 2026 municipal election results",
       "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxObUdvTzhWT240bTRoaTNsdFB3MlFhMTlPUHV3cmVsdmJsUDFDdjN3eUZnbGhvczFPS0piLTNUYUtsSEJkQ1FJc3BXamtyMmQtYzBBM3ZyZVVGZjI2X2ZrLW9ESkNJRTF4eVlrQ1VHMDF4NFRUVm5ZbXhhYWljeE55bXBDZ2xQcHM1MHhERmtaaHFlX2MxRGlpSmt6Yi1zTC12d0l1ZmhsUGxPdw?oc=5"
+     },
+     {
+      "label": "Jordan–Syria",
+      "change": "Tense → Normal: signed 11 cooperation pacts in Damascus to restore ties after border strikes",
+      "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdkdRX3ZKb0hFX0EtM25yamlZYWJ3dVh4UlZJelZWMmpSOVlSR3dzdVg1TEFoNmJoZFM4Q2dDeUtkQ1RCYWs1cFNsRlctRl9XeEF2VzM0N29BRzBMMlVhUVBEQmdHV0hwand0N0xGQ2JKZE0tR0NYaS1yRzBqN1JxcDg1ckxhRm96SThIeGVYcUlOY1ZLWVl3UG9senBxOGtOdk11TlMwT2haVEdoa1hvYXIwZjhZZXJCZkVmYUtfay1oS3lnOFJR?oc=5"
      }
     ]
    },
@@ -1718,7 +1723,7 @@
     ]
    }
   ],
-  "summary": "Moldova completely halts Russian natural gas imports after connecting to Romania's power grid, while New Zealand and South Africa conclude national and municipal elections."
+  "summary": "Jordan and Syria sign bilateral agreements to mend relations, New Zealand completes a general election, and Cypriot leaders agree to open new border crossings."
  },
  "relations": {
   "DNK-USA": {
@@ -3132,10 +3137,10 @@
   "JOR-SYR": {
    "a": "JOR",
    "b": "SYR",
-   "s": "T",
-   "note": "Tensions flare as Jordanian border guards clash with armed infiltrators crossing the Syrian frontier.",
-   "updated": "2026-10-31",
-   "source": "https://news.google.com/rss/articles/CBMibEFVX3lxTE11Nks5RmRGU204aGFXZGUxR19NYU5NZl9uUHpvUE8xVzBZNGJtd2lseC1KRmZlZ0hiUXZzcFVMaERHSDhRVEZ2LThFcEotdEFEYlNiS09SdDZKdHVLelU2aEV2eG93TDFpc2JnZg?oc=5"
+   "s": "N",
+   "note": "Jordan and Syria sign 11 cooperation agreements in Damascus to mend ties following deadly cross-border strikes.",
+   "updated": "2026-11-09",
+   "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdkdRX3ZKb0hFX0EtM25yamlZYWJ3dVh4UlZJelZWMmpSOVlSR3dzdVg1TEFoNmJoZFM4Q2dDeUtkQ1RCYWs1cFNsRlctRl9XeEF2VzM0N29BRzBMMlVhUVBEQmdHV0hwand0N0xGQ2JKZE0tR0NYaS1yRzBqN1JxcDg1ckxhRm96SThIeGVYcUlOY1ZLWVl3UG9senBxOGtOdk11TlMwT2haVEdoa1hvYXIwZjhZZXJCZkVmYUtfay1oS3lnOFJR?oc=5"
   },
   "ARE-CAN": {
    "a": "ARE",
@@ -3338,11 +3343,11 @@
     "SYR",
     "ARE"
    ],
-   "d": "Iran-backed Houthi forces target Saudi capital Riyadh and energy infrastructure while demanding $51 billion and recognition to halt strikes.",
+   "d": "Iran-backed Houthi forces strike Saudi Arabia's East-West pipeline and Riyadh targets, threatening regional energy infrastructure.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQV1hQVkgzdVlhV1dZdnplV0FqMGY1TXQ0cmNDMWhpTHpqdTVQTklkOUlNWDduV3VWT3FsVkp5SjJ3d0VvVUhyN2xQMU10V1RBRS1GWFoxRmJPazRQOW1zOFM1XzZDZWgzdUdlSzVKeU8tbXJXUzRjSDRZb2hyWVJHRVlja0NGZklaaERrN1FYc2p3OUhJZENGMWVYdFU5ZW5id2x1RQ?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQeEtKMGZOdkpGT0I4d1dsaUtDQjlLSlhyV1o4M0Rqcm5KZHV4ZHhXeEdnTUwwV0x5eU1Ldmo1cFk0RG16SnFCMlZ0SkNlQzBmdkxPU2pmdmNqWmYwNEcwWGVVeEVNQVhqTnduTnZYNnVqZ3padlFRRkpGNGpYWHRRYVJsX0h3SXN6OFVaTWI2TGFfUVV2LVpLUGtydXppb0VFaDBNZy1YZ2pXWS1XSUxOTng3ZVpkZ18xd1E?oc=5",
    "t": "security",
-   "updated": "2026-11-08"
+   "updated": "2026-11-09"
   },
   "afpak-jihad": {
    "t": "security",
@@ -3708,6 +3713,13 @@
    "d": "Transit corridor connecting Azerbaijan to Nakhchivan; Armenia's parliament ratified the TRIPP (Transit Route) framework agreement.",
    "updated": "2026-10-28",
    "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPby1rcHhhYkVLam5hcGVSVUFtOUc4S1NnaEtPWTFLM2g5Q2t3Smg4Qjl6Zy1SX1RsQ1dTR3MzWDYtcy1JWEhDSnlBck5jd3NzWllyQjNuaUhDQ05jNXVTcW1LZjBjbkVZNDl4RDJvSWE0TlZkYm1zOTU4VVRNb2tYbDItWi1FVFZCNV81ZTlsckU5SGkyTkpuUEFKLWpMN0ZD?oc=5"
+  },
+  "cyprus-green-line": {
+   "n": "Cyprus Green Line",
+   "s": "New crossings agreed",
+   "d": "Greek Cypriot and Turkish Cypriot leaders agree under UN auspices to open two new border crossings and resume formal talks.",
+   "updated": "2026-11-09",
+   "source": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNQ3FXUHdJdTlsV3VYLXY5TURDb3VCaUNfZU9oSlhDczlCV3J2cWl4cFZ6b0YyVjNrN3pIbFdtTkhYdG1zanVXdkNIWVNqQkN6NW5pUWlzZl8zenQwZWVDanpiZ1Ftb1IxSmNIZDN5cUNXZkJYR3FFdWZuTnNJMzA5ZU5wTXlRSW1tRFVxZTVINTJOMDI5VE40M0tSRmRYQ3EtV3R6MC1mV2ZITFBjT2p4UHV6MUpRWjlOSlBGQVROU241Vzc3b2hEQ3pEMlN2akYyWU02MUJDYWNmSzd0dF9SVjlTOFJDNzg?oc=5"
   }
  },
  "politics": {
@@ -3864,8 +3876,8 @@
   "NZL": {
    "nextelec": "general, Nov 2029",
    "updated": "2026-11-09",
-   "source": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5fN1JONFRXLV85ZzF5U1M1Q0s2MnA0Tlc3U3Zqay02T0Nfem44TE50eG1hRmo5TjNWVUtmbkRXMklQTUlGazBualRQSWhJelotb3ZPZDJWdGNSQXdHNnkzRzV0cnJfUHM?oc=5",
-   "lastelec": "general, November 2026, National Party"
+   "source": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPaWJrVkRuM1c3WXMydmtvYXlOaFVBd3V5bHJWS2lsSVpoZzk3SUhtYlFxbXNOTndvOE5FazFMTG1kbHhtLWxBYkJDcVczMVFjRWdsS3FGcEJ2Y0tNV3FhY2dDYjJtODdFdkJHd1lZYXpFRDFoYUNWMGtUUE5feGNjZlBrY241dlZHNnZNaDVZdEdhTnc5NDJBckpGeXAyUWRPWllycHV4d0VtMzFqSU42TFRncUd4SXdDeldBeWZLdklReUxmZ2pIN01LcWZyNk9WdVBTYkRIckUwRlFFNWFKMUZR0gHiAUFVX3lxTE9pYmtWRG4zVzdZczJ2a29heU5oVUF3dXlsclZLaWxJWmhnOTdJSG1iUXFtc05Od284TkVrMUxMbWRseG0tbEFiQkNxVzMxUWNFZ2xLcUZwQnZjS01XcWFjZ0NiMm04N0V2Qkd3WVlhekVEMWhhQ1Ywa1RQTl94Y2NmUGtjbjV2Vkc2dk1oNVl0R2FOdzk0MkFySkZ5cDJRZE9aWXJwdXh3RW0zMWpJTjZMVGdxR3hJd0N6V0F5Zkt2SVF5TGZnakg3TUtxZnI2T1Z1UFNiREhyRTBGUUU1YUoxRlE?oc=5",
+   "lastelec": "general election, November 2026, Christopher Luxon"
   },
   "GRD": {
    "nextelec": "general, Nov 2031",
@@ -3885,9 +3897,9 @@
    "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSGtaN0YzYTJnMjB2WGU1X1Z0Q0hwYmNjel9ZOXdiLU1yQmpNOXdTdlIwYnRlazZLXy1vQ05EUWsxbkhGUlpVYWhwR2x2a1FNcUpFaktWZXBOc2dfSDh6aEtFbGRDY3RsRDRnNHZwMGRGdUlfM050VkhZXy1SNXBfSXJvNmRpejdyS3c?oc=5"
   },
   "ESP": {
-   "nextelec": "general, November 2026",
+   "nextelec": "general election 29 November 2026",
    "updated": "2026-11-09",
-   "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNWExNMHQzTjJNZWN1dmtSYjlkTDl0dUNJdWlwbmhQQkFNX3BKRTdtWEMwWmdJcVQyN0tYZ0Fpb05lWHRnS3NLOGpnSkZVSmRtRUNWbXM3ME9BRmFCWUVhM2hjUHRGc1gxa1lpZ19vaFBiN2doQ1BQUk1TU2JNOGFIRVRQUjhFN2lSeElPaGVSREliV0tST09j?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOX2ZnOS03ZS1sUXY0U05GTEpCZDNTdlkyZjd6TEFzYW1qQnhQdE00U2xmWFhKd2FlYlBIS0JCempGVjRmUjJIRVNRa19ZWjN3MEdZNDMzVDlja2ZXQXl6TFhSc1p1T0dadDZ1bXlEbTl5a1JlQi1pUTlhSW14YXRyMzg1bzFTaWZSOHpoeUtnRkI3eW4xU3ZZaw?oc=5",
    "lastelec": "general, July 2023, Pedro Sánchez"
   },
   "XKX": {
