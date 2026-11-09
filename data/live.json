@@ -1,7 +1,22 @@
 {
  "meta": {
-  "lastRun": "2026-11-08T20:03:08Z",
+  "lastRun": "2026-11-09T01:23:04Z",
   "log": [
+   {
+    "date": "2026-11-09",
+    "items": [
+     {
+      "label": "Paraguay–United States",
+      "change": "Note updated: Senate removes President Santiago Peña over bank collapse",
+      "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOanJFYlhkcm1XSjlGT1hVZ28zMGx4UGFNa1BkYS0wNm1UdDh4WDN3U2Z4MEhNWlpUdjFIaVo4dU5KOGNMbnFqQlBuRFFLT2M0RS1ES3lVZnpCSXFKSExhOGdIY2Z3YWVyd2VxWk82WE4xSmg1dl9fWC1KTklzdlpPdHpIUERxSUJuVnNqb192d2FaRjFXSXM2b1NYQTl4TFl2alZGRFZR?oc=5"
+     },
+     {
+      "label": "Saudi Arabia–Yemen",
+      "change": "Note updated: Houthi strikes hit Riyadh financial district and Aramco tower",
+      "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNMEtlVXdnWC14Y0FkMjlRS3JfeFVyQ0tnZGFYVXZERE5zRHVpQThKd291TlRzUWxpZjdpdjdPcjNjY09zakNObTcwbV9nOXhzLVNDbFUtaXlyNmpTZ1NNelZjWFEtVHp4Um8tOTRDSXFOS2J4bmNoa3hELVhRWGZDSkd6bklyQmZJaGo5VUdpWVhjMFZHNzViczVfT3VWenlISS1EZ2pLcDM?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-11-08",
     "items": [
@@ -1676,44 +1691,9 @@
       "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdkxxQXJURTVFaC1DSm53XzloeGV3MFo5bDlmdi1hVzBidXQyc0tYeVRZbHlUSkxpT0ZZLUZMX2J3RExGQzF6Z012V1JHd1FTcTVZR2otUHZXMF9QNHJBYVZVd1JFcHVvME1LUzdHajFGTmNRaGJzS3NhMXNnelhndThlMGtGd2JudHkyTGNpUFFzVmJYU0FkZlU3SmxvU2w4SWNFUVRmcXowWlhWTWc?oc=5"
      }
     ]
-   },
-   {
-    "date": "2026-10-10",
-    "items": [
-     {
-      "label": "Lebanon–United States",
-      "change": "Note refreshed: US moves to lift 41-year air travel ban",
-      "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWkg0Q3lZbkxhMThrcGVNTWtDdnNSSEl2M1ctMFo3a2pIenhxbnUxS014Qm1MVlE5TXF3aWlpYjZsbGRvQnByTlFmdDhxVmhQZlI3aURHVXdjSmhOaW5OaW95cjVLSUk4STJxZzRqZHByc21RckRId2JNRGJud2k1Rk5SNDNNbzRpRDZ2QzEzcDZqQzh4cl9PMEo4ODNNa19xZmJxS3FQNzN4WVdwR3FF?oc=5"
-     },
-     {
-      "label": "Russia–Slovakia",
-      "change": "Hostile → Normal: Slovakia restores military contacts with Russia",
-      "source": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9lbXFEcGJyeGlrajMwOEtMOWZTeE1wN1RuSlZwVmpZRUhVdldXUkxUMlduR1lfOURtaWl1OGpPTWUxcC1Mc2k1TGhJaEp5dHdhVFcxNW13TmlnRm9EQWxaQndWUFBvM1ItemZSODZzSVNSVERDaEE?oc=5"
-     },
-     {
-      "label": "Russia–United States",
-      "change": "Note refreshed: US signs diesel import agreement with Russia",
-      "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPOWNiWXFjdDVDWlJVSnNhZjNfT0lRcHdldENiRnk5NDVFeGczWXlnRXU2bEhieTl6TWM1Q0dCS0dnVG5fd2dFSXdaY2xRcGVqV1U5U245MHdPWnpsTlc1Y1BQOUdpZ0JoQkNsUUQ1MHlBQ0tNbW9PNzZsVzFoRW4xRG1sNzNZc0FPd0I5LUszVmhmM1JkVW1Sb2VSVlNOTXZaSk9kUjNaOFRPbTY0djhKYmcyUnFlWkh1bzdvcndBZGxOTTZFb1Z6THNVdE4tTGROUFZVUw?oc=5"
-     },
-     {
-      "label": "Spain",
-      "change": "Next election set: snap general election announced",
-      "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPc2hEMmViQkNJWmlmZ0x2cmFrTUNVWHhxNHAwUDcwM0ZlZmhjVUNiU2FuYkNTdVdpUGRQbXRXVEw1VnNQSnotNllzQjdYNUxYRDVHX2ZqLTVXMnFLMlg3Q0F0Vmd0eWY5RHFtZWFPT0VaU1Znd0h0bVhtbVkzN1BHNGlRZUVuZXpya0phVy1RRzEwY3ZCRVUwZmdDNUVLc1B6ZzZzQ2drdmR2aDZyTjg5WXg1VdIBtwFBVV95cUxQVTRqeFp5Q2tzUnBiczdvNnZsei1JZWhwT3c4NnI0bnFxNVIyejg4cXRkMWpIb0VmdmlrUHpDV0Y4WF81Vk5uYkptR19xUW5COXd5em4xMTlxT3BtU05fUUVGMDZibVd4RWFwRDNSNU56bm5TbjlIODlwNnB4aXkxVlJ2OEgzVnM4bHNUWDZYM2hRSkRjeEJvcUFMYnlpMndCYUdLbDFKSTlhelJrelg0em9BUy1RMW8?oc=5"
-     },
-     {
-      "label": "United States–Ukraine",
-      "change": "Partner → Tense: US signs Russian diesel deal and calls for Ukrainian leadership change",
-      "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVzQyclJRckNHd2JzSkhSY2FPSmR4anpVRzljNUkxVFRlN3JNSnRvTWNqRDJ5dS1HTXJ4R3RlLWNZNW1rRkdZLTVjU0UyM2YzcmRnTHVETXpMYlktam5KR21GLWc5RXBxN2dWWVFjdmxROC0xTFpraEdLQ2dDWER2NW8tV3owVjdBdXJidFpLbUFKR1NKQmFVbXVEVjYwWWRpTnZDX0xyVl9HUC1oVmRiZmp0Z0hSdmZzQWhMOTZubjI?oc=5"
-     },
-     {
-      "label": "Germany–Russia",
-      "change": "Note refreshed: Germany maintains sanctions despite US-Russia diesel deal",
-      "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNmJQM3NXMWRLZVUzQTBVYU9sc2xpdzRRR044OU15anFzS0ZKNlhDVjVnSjJvUHRGRjUyV2JBMGRvTU9CU1paZm1XTjV6b0NESW92NUVwb29pdm16NDNURW5HdGJtblBCbmtTbkRYQnEtUU5LWnlwOHh2VVZxOWhMelFzczAxOEE1cERnZzdsVlBMcFg0R2RnMjBmdUw0Z0JtbkpkYlJHMjMwOGw5Q2pUWg?oc=5"
-     }
-    ]
    }
   ],
-  "summary": "Bahrain restores ambassadorial ties with Iraq, Cyprus signs a joint missile procurement deal with France and Sweden, and election results shake politics in New Zealand and South Africa."
+  "summary": "Updates capture the Senate removal of Paraguay's president, Houthi strikes on Riyadh's financial district, and election developments in New Zealand and Somalia."
  },
  "relations": {
   "DNK-USA": {
@@ -1752,9 +1732,9 @@
    "a": "SAU",
    "b": "YEM",
    "s": "W",
-   "note": "War escalates sharply as Houthi missiles strike the Saudi-led coalition headquarters at the presidential palace in Aden.",
-   "updated": "2026-10-15",
-   "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPbkFOY3lPYnZzY2JhR0RfeEUtQU1lZDVLU1N4a254d1Z6ZmlLM25LUm12Q2tudk1VOU9oR0xSaW92aUJEUlgyWWJ5NVQzVEJNb0dzU21MWWlXcU5JNkVKWlE5eVBteEItT3RXSHRvY2djQTFkOGNIUFVuVXRERUItcnMtSl9hdw?oc=5"
+   "note": "War escalates as Houthi missile and drone strikes hit Riyadh's financial district and damage an Aramco facility.",
+   "updated": "2026-11-09",
+   "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNMEtlVXdnWC14Y0FkMjlRS3JfeFVyQ0tnZGFYVXZERE5zRHVpQThKd291TlRzUWxpZjdpdjdPcjNjY09zakNObTcwbV9nOXhzLVNDbFUtaXlyNmpTZ1NNelZjWFEtVHp4Um8tOTRDSXFOS2J4bmNoa3hELVhRWGZDSkd6bklyQmZJaGo5VUdpWVhjMFZHNzViczVfT3VWenlISS1EZ2pLcDM?oc=5"
   },
   "BEL-RWA": {
    "a": "BEL",
@@ -3264,9 +3244,9 @@
    "a": "PRY",
    "b": "USA",
    "s": "F",
-   "note": "Ties face uncertainty after President Santiago Peña is impeached and arrested, with Vice President Pedro Alliana sworn in.",
-   "updated": "2026-11-07",
-   "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOblZZWERZN1ZWN1E4SG9oci1BSGdyZG8xVEJGbHdfNlZBTEFBUkthT2ppUlo0Szdkb2NMcENRaW5GNFJFQTVwQVNVRHliTGVmY3FOdVNhckk3OFV3U3RRaWJwb1MzaWJMdUxrRkpjbzBic2lLVUkxTEtndTlya3BrMl93UGpwTGttRHJKeDBqWUE5dmYyZWdiQ0FVcjdjXzVCZGNYVnNSRE01Z2FPaEt3Zm81amjSAboBQVVfeXFMTy1ZaVJKcWIydkdaVWZSaXQ5SEhvNW1MMXlIY0dnUDBBVEFUQXoyVDFMNzU4VjE5UjRjdC0xYUVaMTEzQXNNOHZaS040T1lLVE45aThRMzl3aUNweHU2S0w5V0dQRE9nVTNXSGVLMUw4TnJzOGxGbm51NkNnVEEzazAxdVFZQVk2U3FxSHU3LUc4T1NKMHNyc25GXzY4cGlWX2k2NU1OWWVDdXRoOTU1VEd4ellEbDZEZkpn?oc=5"
+   "note": "Ties face uncertainty as the Senate removes President Santiago Peña over a bank collapse and Pedro Alliana assumes office.",
+   "updated": "2026-11-09",
+   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOanJFYlhkcm1XSjlGT1hVZ28zMGx4UGFNa1BkYS0wNm1UdDh4WDN3U2Z4MEhNWlpUdjFIaVo4dU5KOGNMbnFqQlBuRFFLT2M0RS1ES3lVZnpCSXFKSExhOGdIY2Z3YWVyd2VxWk82WE4xSmg1dl9fWC1KTklzdlpPdHpIUERxSUJuVnNqb192d2FaRjFXSXM2b1NYQTl4TFl2alZGRFZR?oc=5"
   },
   "SRB-XKX": {
    "a": "SRB",
@@ -3843,9 +3823,9 @@
   },
   "NZL": {
    "nextelec": "general, Nov 2029",
-   "updated": "2026-11-08",
-   "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOY3o2eFZkekpBRXNYdktqb2JoT2N5MklUYS1KakpENWdUWUxqaWpSMVRXM3NodXA1aG1JY3JTbDBfTHhleUd4aV9Rd1NiMTJFNmtnRjBYWkpJLUthMGN5aGk3Sk1lanNHY2Fwc2Q2THlvZ0hlbTBxdTVxTEVNa0NaLUEtTVR3cHNZQmhBS0hSTTNnaU1pUkE2QXU5dFUzbHB5bjZhZ1Jha0dXX0JPY3VQbTdTZEJVY3RwcExyczJ5NA?oc=5",
-   "lastelec": "general election, November 2026, tight outcome requiring coalition negotiations"
+   "updated": "2026-11-09",
+   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZGZQTS1sTG9iNHloc1FrN1N0RUdTSlc5M2ZwYTFyUEZsQlR3OXJtZjdSNFpoUU53ckZaWnJRazRyQXZ1VDBURGpnWXdKdVZNR0hjUWQ1Q0syMTJYNXFETDZmZkZyaFV5Ml9rYmQ5eHhyR0o1YVZrYUFIRFdUc3NobUFPQVJFeWFEb3pBZDh0X2IxTlplSUdTMTVBZnVBM19LMkVn?oc=5",
+   "lastelec": "general, Nov 2026, hung parliament"
   },
   "GRD": {
    "nextelec": "general, Nov 2031",
@@ -3897,9 +3877,9 @@
    "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZXVwWnVaUzBnNFYtSk8xNy1wT3NwLVhWSmRENElJZzRGb1B1OGYyb2Zzdy1ybm95UXRNQ1FBcVN3cWZSRGRBQ1VYRVpXekRnU3poLWNUeGZnbUhldGZ0RmpmemhkWHdFTnA4NW1zRi04TkRvN2p1akoteEljUHlFOUdBZDhzVW9TbFR0OTNEZzlUb2ZwTTZj?oc=5"
   },
   "SOM": {
-   "nextelec": "presidential, within 90 days",
-   "updated": "2026-11-07",
-   "source": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNaXlGa0hiZ0dzSndGeUs4Uko4amQzXzhZaFlPX2ROLVpfNkc5NS1zRUp3S0hRVjQ3d2dpV29nb3RsMnNrWVprSjBselhoT2NFbzlSRmF3T1dJUXFvV3g0ZEhKNWJ1VUhGYWprQUtuY3NSVzYyR2dFdFh1amthZUU4NUVSY1NOMHRDYU5sZjMxOFNkalZNVnpqMkg0bTc4SjNPenk2MG41bFNyRUFFVlRpdFRZZkFOWWR0RTA5ZXM0OFI3dkphcUVLWDVDWWhSWmRQOWdoYVlvNmpRblNjWXNPZGlJeTl3MEUwN1dFXzRDWnlHd3NqTWxsRW9aYVFkM3RtVjRxSjFxZw?oc=5",
+   "nextelec": "presidential, Feb 2027",
+   "updated": "2026-11-09",
+   "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNdXBfMm1aLW5KeEtvZUhYX1FmMU1ZMXdVcjVsMEZPemlSdDd6ZXFtZjR3V2NhV3VvQVFYUHd1UHh4Z3JRVG1MVi1FZFoxUnhrRE1VMXVyOXIzd0F3WHNpb21GaVdFUTctblp1T1o4MENXZWt4SHA4aUhUZVU2OXZib25oNDRrZ3Y2Yk85OWlVTHhMZHQ4Rzg0QlpIMXAwNkdTNTl2ZGZOdEh3eUd2RXhveW9QeWtZTFZoZ2c2Mw?oc=5",
    "lastelec": "indirect, May 2022, Hassan Sheikh Mohamud"
   },
   "CZE": {
