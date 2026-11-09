@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-09T01:23:04Z",
+  "lastRun": "2026-11-09T13:42:46Z",
   "log": [
    {
     "date": "2026-11-09",
@@ -14,6 +14,31 @@
       "label": "Saudi Arabia–Yemen",
       "change": "Note updated: Houthi strikes hit Riyadh financial district and Aramco tower",
       "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNMEtlVXdnWC14Y0FkMjlRS3JfeFVyQ0tnZGFYVXZERE5zRHVpQThKd291TlRzUWxpZjdpdjdPcjNjY09zakNObTcwbV9nOXhzLVNDbFUtaXlyNmpTZ1NNelZjWFEtVHp4Um8tOTRDSXFOS2J4bmNoa3hELVhRWGZDSkd6bklyQmZJaGo5VUdpWVhjMFZHNzViczVfT3VWenlISS1EZ2pLcDM?oc=5"
+     },
+     {
+      "label": "Moldova–Russia",
+      "change": "Hostile: note updated to reflect total end of Russian gas imports and new power link with Romania",
+      "source": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOaUVVUjZTQVpZeldSOEx6bmFQcEg2ZGdzNVloXy05YmpweF9QdWQwWEtqUDFKY0VhNmZmOVdhcm5ueVdxMmtWZDdjQnNuY19RTmd0azVCLUNUczg5OXBvUHFwZTI5bHZuVGZ6aS1RZ24yQjl4RjBKM2ViTW8xUFRDbXRmNWVCR3Yta0JzT1Mtb3QzekFSZHFCVmQ1VDlaT0tlbGtLam9JZEJiMDdQUlVJSXhFZHhUTFYtSU1jOGZNS1NDZXY2dm9DQjlqaTJJZFN2Q1BKZFFzSV9MMWdBWGcxdUtfVlJhWHFiOWZUMlpZblc?oc=5"
+     },
+     {
+      "label": "Atlantic route to the Canary Islands",
+      "change": "Updated description following deadly migrant vessel capsizing off Senegal",
+      "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNUldvM0VyYWhjUkwzUUZvdVh0TGdmNGVERHNlMUVKQ19DVTdXZkJjLW1EVmZFM3dMbnRYMm5WbjdlZkNmbmFXd0N0QnVNeEozUHoxNXZCcjVsOTV5R0FGTFNRTG1ta2J3SnB4Wk5PWXVMdlMxYmdFTnE0QjU5N0g5SUhmTnVJWnVxUWdmSVZ4aEc0Vms4S1lGc3BqUQ?oc=5"
+     },
+     {
+      "label": "New Zealand",
+      "change": "Recorded November 2026 general election result with Prime Minister Luxon securing second term",
+      "source": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5fN1JONFRXLV85ZzF5U1M1Q0s2MnA0Tlc3U3Zqay02T0Nfem44TE50eG1hRmo5TjNWVUtmbkRXMklQTUlGazBualRQSWhJelotb3ZPZDJWdGNSQXdHNnkzRzV0cnJfUHM?oc=5"
+     },
+     {
+      "label": "Spain",
+      "change": "Added upcoming November 2026 general election schedule",
+      "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNWExNMHQzTjJNZWN1dmtSYjlkTDl0dUNJdWlwbmhQQkFNX3BKRTdtWEMwWmdJcVQyN0tYZ0Fpb05lWHRnS3NLOGpnSkZVSmRtRUNWbXM3ME9BRmFCWUVhM2hjUHRGc1gxa1lpZ19vaFBiN2doQ1BQUk1TU2JNOGFIRVRQUjhFN2lSeElPaGVSREliV0tST09j?oc=5"
+     },
+     {
+      "label": "South Africa",
+      "change": "Recorded November 2026 municipal election results",
+      "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxObUdvTzhWT240bTRoaTNsdFB3MlFhMTlPUHV3cmVsdmJsUDFDdjN3eUZnbGhvczFPS0piLTNUYUtsSEJkQ1FJc3BXamtyMmQtYzBBM3ZyZVVGZjI2X2ZrLW9ESkNJRTF4eVlrQ1VHMDF4NFRUVm5ZbXhhYWljeE55bXBDZ2xQcHM1MHhERmtaaHFlX2MxRGlpSmt6Yi1zTC12d0l1ZmhsUGxPdw?oc=5"
      }
     ]
    },
@@ -1693,7 +1718,7 @@
     ]
    }
   ],
-  "summary": "Updates capture the Senate removal of Paraguay's president, Houthi strikes on Riyadh's financial district, and election developments in New Zealand and Somalia."
+  "summary": "Moldova completely halts Russian natural gas imports after connecting to Romania's power grid, while New Zealand and South Africa conclude national and municipal elections."
  },
  "relations": {
   "DNK-USA": {
@@ -1916,9 +1941,9 @@
    "a": "MDA",
    "b": "RUS",
    "s": "H",
-   "note": "Moldova expels a Russian diplomat after a Russian drone crashes near residential homes and energy infrastructure.",
-   "updated": "2026-10-23",
-   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNeW83MkVlcGRLbXBTV1F6Yy1rbkttdEEwZ2NhTUt2QU5oQkZzV0RGX0RvOG9acHdRQjRzZDMxcUh2NDJLS0VrLXVCLVBZVGQ3b2ZScGxyY2NoQk5BMVNUMmQzU3ZCQ3l3Z21SQW9iWXE3anZNUFc2V3hfV1FlaWpZdjdyNlBSWWhFZ2hkMzJQUnlPNmZlWFREd1lHcUE3Vjc0amJuTU52dWt3aGhDZ3Zz?oc=5"
+   "note": "Moldova halts all Russian natural gas imports and connects to Romania's power grid to eliminate energy dependence on Moscow.",
+   "updated": "2026-11-09",
+   "source": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOaUVVUjZTQVpZeldSOEx6bmFQcEg2ZGdzNVloXy05YmpweF9QdWQwWEtqUDFKY0VhNmZmOVdhcm5ueVdxMmtWZDdjQnNuY19RTmd0azVCLUNUczg5OXBvUHFwZTI5bHZuVGZ6aS1RZ24yQjl4RjBKM2ViTW8xUFRDbXRmNWVCR3Yta0JzT1Mtb3QzekFSZHFCVmQ1VDlaT0tlbGtLam9JZEJiMDdQUlVJSXhFZHhUTFYtSU1jOGZNS1NDZXY2dm9DQjlqaTJJZFN2Q1BKZFFzSV9MMWdBWGcxdUtfVlJhWHFiOWZUMlpZblc?oc=5"
   },
   "JPN-USA": {
    "a": "JPN",
@@ -3542,6 +3567,21 @@
    ],
    "updated": "2026-11-06",
    "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPLW1SanQtaDZfS1R5aExVVFpaNW9weTZBVENXN0ZHUnFKcGdHNFNzNzdZXzdsYlBYbUk3dzJiTEpIcDJnN1Bxb1BhTHpHNkhFYzFQbk1UTlRHX3lqVnpBaGh2QkhidFBPU1dibW5UeURLS0pZM3RqZ1BjQmtmTElIOExJYTBlWHZwU09qeEFFdzQ?oc=5"
+  },
+  "atlantic-route": {
+   "t": "migration",
+   "n": "Atlantic route to the Canary Islands",
+   "d": "Migrants from West Africa travel via hazardous Atlantic maritime routes toward Spain's Canary Islands, causing frequent lethal shipwrecks.",
+   "c": [
+    "SEN",
+    "GMB",
+    "MRT",
+    "MLI",
+    "MAR",
+    "ESP"
+   ],
+   "updated": "2026-11-09",
+   "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNUldvM0VyYWhjUkwzUUZvdVh0TGdmNGVERHNlMUVKQ19DVTdXZkJjLW1EVmZFM3dMbnRYMm5WbjdlZkNmbmFXd0N0QnVNeEozUHoxNXZCcjVsOTV5R0FGTFNRTG1ta2J3SnB4Wk5PWXVMdlMxYmdFTnE0QjU5N0g5SUhmTnVJWnVxUWdmSVZ4aEc0Vms4S1lGc3BqUQ?oc=5"
   }
  },
  "pois": {
@@ -3824,8 +3864,8 @@
   "NZL": {
    "nextelec": "general, Nov 2029",
    "updated": "2026-11-09",
-   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZGZQTS1sTG9iNHloc1FrN1N0RUdTSlc5M2ZwYTFyUEZsQlR3OXJtZjdSNFpoUU53ckZaWnJRazRyQXZ1VDBURGpnWXdKdVZNR0hjUWQ1Q0syMTJYNXFETDZmZkZyaFV5Ml9rYmQ5eHhyR0o1YVZrYUFIRFdUc3NobUFPQVJFeWFEb3pBZDh0X2IxTlplSUdTMTVBZnVBM19LMkVn?oc=5",
-   "lastelec": "general, Nov 2026, hung parliament"
+   "source": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5fN1JONFRXLV85ZzF5U1M1Q0s2MnA0Tlc3U3Zqay02T0Nfem44TE50eG1hRmo5TjNWVUtmbkRXMklQTUlGazBualRQSWhJelotb3ZPZDJWdGNSQXdHNnkzRzV0cnJfUHM?oc=5",
+   "lastelec": "general, November 2026, National Party"
   },
   "GRD": {
    "nextelec": "general, Nov 2031",
@@ -3846,8 +3886,8 @@
   },
   "ESP": {
    "nextelec": "general, November 2026",
-   "updated": "2026-10-23",
-   "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxObmpWRk05RHhFbkMtWHJSTXdiZjhZcWtFdXhkWlVVQ3JpR1RJdExmMXdEamg4aG10cU0wUmdFUC1JV05fTUVSZUxvZEdXQkktUlU2VXk0TUxHQTI4a3M5SS14UVFJVTI4SWhJaGVSSDl4UkJXM2Ntcms0OFQyWHBKbnhSd1RsWnQwNUwtdC1UMEpvQUFBcld1LW1jRGJiV0FFQ2Z1VTEzbnpwaTRvQzNVTkV2Y0x3Zmc1NDZKdVpyQmQ?oc=5",
+   "updated": "2026-11-09",
+   "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNWExNMHQzTjJNZWN1dmtSYjlkTDl0dUNJdWlwbmhQQkFNX3BKRTdtWEMwWmdJcVQyN0tYZ0Fpb05lWHRnS3NLOGpnSkZVSmRtRUNWbXM3ME9BRmFCWUVhM2hjUHRGc1gxa1lpZ19vaFBiN2doQ1BQUk1TU2JNOGFIRVRQUjhFN2lSeElPaGVSREliV0tST09j?oc=5",
    "lastelec": "general, July 2023, Pedro Sánchez"
   },
   "XKX": {
@@ -3904,9 +3944,9 @@
    "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQnNfZmZ3dzNlX0g1cEhQNjRDS1pqUl9iVHI1bS1lNjRlY2w1cjdPaGRHbkJpRUpFQ21oLUNBeS1qNkppMGFPZ1NOQlNCUUc2bzU1elFSTGFVSEV1WjB5TGhSc3JlR19OUmdBcWY1QjBCMW1KNTVDWTdJZ0dpdlUwZWlFQ3lyMnJwSW5qMDJ3WV9YNnl3MTZEaTFn?oc=5"
   },
   "ZAF": {
-   "lastelec": "local elections, November 2026, African National Congress (ANC) historic defeat",
-   "updated": "2026-11-08",
-   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUU01MGtPM0MzMnRNSkVzSWRRYlRqcF9sMkpHSlZoOUxLTUtLY0hGLUp0RkR1a2xoT0NRb092cDZ3c2prM1I5NnNpZ1F5NG1fZUJXTF9xNjY3U08wdFIyTUVDRlpjMy1FakhnQXhyX0RWYmhOemtveHFsODRoOUhGeS1lSlBxdXVLUjB0LVNlTlJ3X0otSWfSAZsBQVVfeXFMTkx2MkRVWnR6VW43OEJMRmdYVmhqWk0ySlJrTmw0Y2FOTHpuQU0tcUFRMzdsS0dsQ3JYU3pIM1JKeGsxNUVjeXh4YzBzSzBIWmhCbllZejZtb3ZKZjdVR29tME9OLTZ1bloyZm5CVFNPZUJ6a2tmSjFOanRPV3NqdVdzYWlKcHJYakpUczdSQkczZVZXWWI2eWhhMTA?oc=5",
+   "lastelec": "municipal, November 2026, African National Congress",
+   "updated": "2026-11-09",
+   "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxObUdvTzhWT240bTRoaTNsdFB3MlFhMTlPUHV3cmVsdmJsUDFDdjN3eUZnbGhvczFPS0piLTNUYUtsSEJkQ1FJc3BXamtyMmQtYzBBM3ZyZVVGZjI2X2ZrLW9ESkNJRTF4eVlrQ1VHMDF4NFRUVm5ZbXhhYWljeE55bXBDZ2xQcHM1MHhERmtaaHFlX2MxRGlpSmt6Yi1zTC12d0l1ZmhsUGxPdw?oc=5",
    "nextelec": "general, May 2029"
   },
   "MMR": {
