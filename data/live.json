@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-10T13:20:12Z",
+  "lastRun": "2026-11-10T17:37:58Z",
   "log": [
    {
     "date": "2026-11-10",
@@ -16,11 +16,6 @@
       "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdW91QVd2enhlcEJGWHlhajFDY3RRYm8xbTdQSkpFRmVaWlNHS3M1dGtlaGI0ZWFzU3V3N0lKRVVLZVhtcTlmSzE1RW01M2VzQzI2aUlxaHBndlJmUC1ueEtxSm9aQ3lrSXJDNU5iTEZacmZjdktEc0NmUWtPcmIxSWZmSEFaSF8tQVAyTEdoVnVReXBseUEwRWsxZXNoVVFtVlRFcVhPNEJuQzA?oc=5"
      },
      {
-      "label": "Israel–Morocco",
-      "change": "Partner note updated: Israel opens permanent military attaché office in Rabat",
-      "source": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQSF9nNFpaejBxZFFIY05vUW14eU9CMnRaMkRZVWotb21PREpfdnl2RFV2VWNNeGZ4VHJsOEl6UmpBTlBaWmZNdXB2SHdkZnVaUGZFckVkTFRncjBJazY2VlM4SUUtRHYyb1VlenhqZUdoYzFPdWZlcTB0Ukt6RWtfRjN3RmNZemlReDM5dUliRkdrZFpLN2JKRTNzQk5mSWZ0NUcxMkxnYVFyNkc5azN3Y296NmVpOTE0VjRDNENLVWNaczhTajhCTA?oc=5"
-     },
-     {
       "label": "United States–Venezuela",
       "change": "Hostile note updated: ExxonMobil signs preliminary deal with state oil firm PDVSA",
       "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQVVBxNnRQNzFQWDFsaFJIMTAxV184OV9FdFY0TmlETVFoT3FHZ3oxcmtVNXl5Zm92ZDVROFNzN09kME5nRGlXSzFJQzVQaTFBWXd1RFB1NDlubGM0alNnQklRdFdBXzhGLUkxOUJQcmhWTjRSOFFnNHRUTHRLWTd3eUpmVGpESERWZFlVWklVZXlzbmgwdlRuYmJCVWswZ21tZUstQV9qNmEzWFk5RlE?oc=5"
@@ -29,6 +24,16 @@
       "label": "Al-Shabaab and the Horn of Africa",
       "change": "Thread updated: Al-Shabaab kills at least eight in northeast Kenya ambush",
       "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQS0d4VXlUZ1Z3ZElnSXVhSkNqc0t2Y3AxU0NyaGhMM2EtS2JmTFRLODJ4aEVmS0VSemVSMXdQMDd0Vzk2NExEZHpHNXdWVWZVRmQyTlFqS0thQ1BaYnRQUk5jTXItRFQxV1loZ3J3MUFRemJ5RXhrNUxoRjFEdy1HWWhaUmN0MDU3akVReXNxVUw3V3Y1djZBRFlxd3M4OV9IVFVwaGFNYnJ2NWFXRHFsMGx5cHc?oc=5"
+     },
+     {
+      "label": "Israel–Morocco",
+      "change": "Partner → Ally: Permanent military attaché office inaugurated in Rabat",
+      "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPX1FjdmpvcEdCdTJoc09sVjJmRXFfQXdTSy1CYjRDUW5DRFlXR1ZVUHBXTkxyMWRqWk5lYUNPRTZhVTdHMElIaGhaMWZFcXpiUlBNd3JhMnluVEVNZVFpVEVlWWV4NUVfaXZOSFdqWHhaVEl6THBQa1B4b1JkTU5FalJ6VnBURU55SFpTeEFBSTZvN2VwOUExdGpaOXRFRmdXb2VyRDZ6QUhCMlRYTEw5eHJ0TVkxdVU?oc=5"
+     },
+     {
+      "label": "Paraguay–United States",
+      "change": "Partner → Tense: Presidential transition following bank collapse and ouster",
+      "source": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9WbUl6VWVBdklmOEpRdkJkNzJVWFhSMWhmcmFaNWxRRkUxVVF3ejdVOGtDU2k1VFRaa2E0R0lOXzZRa2JFaklDdExUaDdLb1VNTGFsWVJiYk1mVnI5TEM3WEZJQ0NiUQ?oc=5"
      }
     ]
    },
@@ -1683,7 +1688,7 @@
     ]
    }
   ],
-  "summary": "Canada reimposes sanctions on Iran while Denmark pledges a major military aid package to Ukraine, and Israel expands military ties with Morocco."
+  "summary": "Updated regional relations, threads, and POIs based on latest developments including Abu Dhabi peace talks, GCC defense coordination, and African politics."
  },
  "relations": {
   "DNK-USA": {
@@ -1897,10 +1902,10 @@
   "KOR-UKR": {
    "a": "KOR",
    "b": "UKR",
-   "s": "T",
-   "note": "South Korea recalls its ambassador to Ukraine over a diplomatic dispute regarding North Korean prisoners of war.",
-   "updated": "2026-10-16",
-   "source": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBnOHhaMTcxcThZMzRQRDYyRkRqd0pueXhfdEQ5bXZaX0pkUGZrSHQyN2E0MS1sNVRoenY5LVdnOUN1SDViTHVNMnN1cVo5UkRzQkhJanh1QdIBV0FVX3lxTFBnOHhaMTcxcThZMzRQRDYyRkRqd0pueXhfdEQ5bXZaX0pkUGZrSHQyN2E0MS1sNVRoenY5LVdnOUN1SDViTHVNMnN1cVo5UkRzQkhJanh1QQ?oc=5"
+   "s": "F",
+   "note": "South Korea-Ukraine relations begin to thaw after a high-level Paris meeting and earmarked budgetary aid.",
+   "updated": "2026-11-10",
+   "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPOHVOOWJCVTQtTnFISHpSeHlFM0N3LXBDV2d6N2ZaZzlHaUROallmY2tpam1MYmJORmNKWjVDQ29vcTZibGNQa3MzWWw3cXR3cTBIdDE3TTdoUGo5WTVqMnFoOFZBMk1iNGlJTnM1X1F0X0NSS3BiVHlSNjM5WVkyc3dDUUptQ3RGR1RyNVFxSk1qUGhfWmpB?oc=5"
   },
   "MDA-RUS": {
    "a": "MDA",
@@ -1953,10 +1958,10 @@
   "ISR-MAR": {
    "a": "ISR",
    "b": "MAR",
-   "s": "F",
+   "s": "A",
    "note": "Israel and Morocco deepen defense cooperation as Israeli officials open a permanent military attaché office in Rabat.",
    "updated": "2026-11-10",
-   "source": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQSF9nNFpaejBxZFFIY05vUW14eU9CMnRaMkRZVWotb21PREpfdnl2RFV2VWNNeGZ4VHJsOEl6UmpBTlBaWmZNdXB2SHdkZnVaUGZFckVkTFRncjBJazY2VlM4SUUtRHYyb1VlenhqZUdoYzFPdWZlcTB0Ukt6RWtfRjN3RmNZemlReDM5dUliRkdrZFpLN2JKRTNzQk5mSWZ0NUcxMkxnYVFyNkc5azN3Y296NmVpOTE0VjRDNENLVWNaczhTajhCTA?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPX1FjdmpvcEdCdTJoc09sVjJmRXFfQXdTSy1CYjRDUW5DRFlXR1ZVUHBXTkxyMWRqWk5lYUNPRTZhVTdHMElIaGhaMWZFcXpiUlBNd3JhMnluVEVNZVFpVEVlWWV4NUVfaXZOSFdqWHhaVEl6THBQa1B4b1JkTU5FalJ6VnBURU55SFpTeEFBSTZvN2VwOUExdGpaOXRFRmdXb2VyRDZ6QUhCMlRYTEw5eHJ0TVkxdVU?oc=5"
   },
   "POL-RUS": {
    "a": "POL",
@@ -3233,10 +3238,10 @@
   "PRY-USA": {
    "a": "PRY",
    "b": "USA",
-   "s": "F",
-   "note": "Ties face uncertainty as the Senate removes President Santiago Peña over a bank collapse and Pedro Alliana assumes office.",
-   "updated": "2026-11-09",
-   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOanJFYlhkcm1XSjlGT1hVZ28zMGx4UGFNa1BkYS0wNm1UdDh4WDN3U2Z4MEhNWlpUdjFIaVo4dU5KOGNMbnFqQlBuRFFLT2M0RS1ES3lVZnpCSXFKSExhOGdIY2Z3YWVyd2VxWk82WE4xSmg1dl9fWC1KTklzdlpPdHpIUERxSUJuVnNqb192d2FaRjFXSXM2b1NYQTl4TFl2alZGRFZR?oc=5"
+   "s": "T",
+   "note": "Ties face uncertainty as Paraguay's interim president Pedro Alliana assumes power following a banking crisis and ouster.",
+   "updated": "2026-11-10",
+   "source": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9WbUl6VWVBdklmOEpRdkJkNzJVWFhSMWhmcmFaNWxRRkUxVVF3ejdVOGtDU2k1VFRaa2E0R0lOXzZRa2JFaklDdExUaDdLb1VNTGFsWVJiYk1mVnI5TEM3WEZJQ0NiUQ?oc=5"
   },
   "SRB-XKX": {
    "a": "SRB",
@@ -3313,10 +3318,18 @@
   "DNK-UKR": {
    "a": "DNK",
    "b": "UKR",
-   "s": "F",
-   "note": "Denmark pledges its 32nd military aid package worth $718 million to Ukraine, focusing primarily on air defense systems.",
+   "s": "A",
+   "note": "Denmark pledges a major military aid package and strike drones to support Ukraine's defense.",
    "updated": "2026-11-10",
-   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdW91QVd2enhlcEJGWHlhajFDY3RRYm8xbTdQSkpFRmVaWlNHS3M1dGtlaGI0ZWFzU3V3N0lKRVVLZVhtcTlmSzE1RW01M2VzQzI2aUlxaHBndlJmUC1ueEtxSm9aQ3lrSXJDNU5iTEZacmZjdktEc0NmUWtPcmIxSWZmSEFaSF8tQVAyTEdoVnVReXBseUEwRWsxZXNoVVFtVlRFcVhPNEJuQzA?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMHR5akhPWndubU9iMWg3dC1pUFNLU0xycUNUVE9iUzhqR3g3MUMyemsyTERFTzEwUWQyNmlyc29vRkZRSk91OHMzQUIwTGFka1NlYlBNYjUtREUxRjJENGxqR2VaZGpmdk9Wdkd6d05BRVRTdk5KempUcFFTNUhleEpOUzBwX2FuVlNUdE5URDlKSm1uNE5VLXJxZE5wNkRTSWc?oc=5"
+  },
+  "ARE-KWT": {
+   "a": "ARE",
+   "b": "KWT",
+   "s": "A",
+   "note": "GCC states approve a new advanced military command headquarters in Kuwait to strengthen regional defense cooperation.",
+   "updated": "2026-11-10",
+   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNNmlCOU1IWGVwOFpyTUNhU3Rod01sYjdOYkRSdnNVdVl1NTZBU2UwcjlXS181M185MThqNWJYVjd4TXlzVFBjeGhFTHFvQVVLRE9zMlhrZGZYaEFvR3NMZWl5ZjRBVFVrS1JQekdsSkVFMGgzMFVEUW9welJLY3FIS1hVSi0tbXB1VUVhQ0Z3UWJLeUVJOS1aRDJfWVhBaHZGN3JR?oc=5"
   }
  },
  "threads": {
@@ -3335,11 +3348,11 @@
     "SYR",
     "ARE"
    ],
-   "d": "Iran-backed Houthi forces strike Saudi Arabia's East-West pipeline and Riyadh targets, threatening regional energy infrastructure.",
+   "d": "Iran-backed Houthi forces continue missile and drone attacks targeting Saudi and regional infrastructure, prompting defensive measures.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQeEtKMGZOdkpGT0I4d1dsaUtDQjlLSlhyV1o4M0Rqcm5KZHV4ZHhXeEdnTUwwV0x5eU1Ldmo1cFk0RG16SnFCMlZ0SkNlQzBmdkxPU2pmdmNqWmYwNEcwWGVVeEVNQVhqTnduTnZYNnVqZ3padlFRRkpGNGpYWHRRYVJsX0h3SXN6OFVaTWI2TGFfUVV2LVpLUGtydXppb0VFaDBNZy1YZ2pXWS1XSUxOTng3ZVpkZ18xd1E?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5sOFFON05yVjBWWnNYLUNuSVBFc3BDMHFGdFdCd1JDTkFQU0xzdE5hY0VCazR2cXREMG0xT0tXMVFVOVd5WUE2alFZVUtBRXNUTXpqVGpPWngyUQ?oc=5",
    "t": "security",
-   "updated": "2026-11-09"
+   "updated": "2026-11-10"
   },
   "afpak-jihad": {
    "t": "security",
@@ -3612,19 +3625,18 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "Iran and Oman call for security; tankers struck amid fears of new US attacks.",
+   "d": "Hormuz LNG traffic reaches its highest level since the Iran war began, even as tensions persist.",
    "n": "Strait of Hormuz",
-   "s": "LNG carrier struck; Qatari mediation active",
-   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSndUR0pGRi1MMEthNENuNFlReHRUcGJUVjdxMm9mbEp0bnVncHFlX0ZyMTVXUkR0Ql9CR2lLRElpcnRvQU5mUVFuT2oyakMxaEdGeHZqMnd5dTJyN3hhaFoyX1Z6NS03eUpMTmlCSFd2NktOeU43b0hhRXFKY0tqWHhKYW9FRzNibFFTVHdjSGFTVDhzMnZwak1MMGhTY1N0X3hCZkV30gGrAUFVX3lxTE5jd3JPYU1KcGFXeEJsc0VoM1FsaklHcnVnMkkwTmpZbkNNM2owMDlIOFViMmxWaTlwSzFSX0lqd2FCTWhNejlPeWE1QWxpcFEtbHZ5eklHbXJhTW0yWWlwQ05PeU04OVFLamJvcjBvUHI4ZW9INDFILXVGUHZFQmUwd3hVeW1NUFVmdVZTMGJMSUJfeEtFZS16bTI1SkhKZ3pIVzZaWWd0VG13aw?oc=5",
-   "updated": "2026-11-06",
+   "s": "LNG traffic hits high",
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWjB3ZVJPOG0wd2JESVpFVlpCbS0ydC04OFhaZGVXN0dLVHpDMGpHUWhCZ1U1UnJVY2x5U2Jvb09LRXpDY1pqcHViOUhFdUNfZTlHSlVXM1BKMVYxZVBDM2pvQjlERjZ2cHpXek81VndjQ1A1bzB3Uzh1dTdiUWlvMVE4Zkg2MHdPVzdOOWZ6ajAwWUZCbDBjakZn?oc=5",
+   "updated": "2026-11-10",
    "t": "strait",
    "lat": 26.57,
    "lng": 56.25,
    "p": [
     "IRN",
     "OMN",
-    "ARE",
-    "QAT"
+    "ARE"
    ]
   },
   "suwa-ki-gap": {
@@ -3957,6 +3969,16 @@
    "nextelec": "by-elections, April 2027",
    "updated": "2026-11-06",
    "source": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQSW1iMF9NUE00dy1CRUxvdTczY3VpRV9uVDdVRE9wdkU4WkQ4MnZaTVY4d2cyb1NlMmZHdEloYl96a0t2VWJ3U1Fyb2xCSEdDY1YzeWtKMTNSMnE4S2JVc1I3RVdiYXJMTTlobjNIRTV3TGJIeC05RVQ0SURRbjE0T0tlNFN6WnlrNEVhamprLW45MERVMG5XaGtKZThuUkF1eWZKWW1oY2E3YWhjV1AtRUFBeHJzM3YxZlRickY3Z2VzR0tkT3duZzVNQ2NWWEN4ZlVvTHFZbUg1WXlJZy1SR0tnUDNFLWhyY2E0X0htcW0zUWF0MHA4OF9lSXpwUnB3QTJNajJWel9pRlHSAYsCQVVfeXFMUEltYjBfTVBNNHctQkVMb3U3M2N1aUVfblQ3VURPcHZFOFpEODJ2Wk1WOHdnMm9TZTJmR3RJaGJfemtLdlVid1NRcm9sQkhHQ2NWM3lrSjEzUjJxOEtiVXNSN0VXYmFyTE05aG4zSEU1d0xiSHgtOUVUNElEUW4xNE9LZTRTelp5azRFYWpqay1uOTBEVTBuV2hrSmU4blJBdXlmSlltaGNhN2FoY1dQLUVBQXhyczN2MWZUYnJGN2dlc0dLZE93bmc1TUNjVlhDeGZVb0xxWW1INVl5SWctUkdLZ1AzRS1ocmNhNF9IbXFtM1FhdDBwODhfZUl6cFJwd0EyTWoyVnpfaUZR?oc=5"
+  },
+  "KGZ": {
+   "nextelec": "Presidential, January 2027",
+   "updated": "2026-11-10",
+   "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNU2tnOXRQelB5bHdwc1d2Tkt3SzhGY0VNXzYwYUhOODdodmR1dkVjRWtETmFiS2VmWGdLejlXYm93Q1VxVmVPdXNCdUdYZmVGLUwzeTZDVU1zWDVEcXlnNnlXTXZEd2tKLTRhSTVwNXJ4VUdzX2J3TnhyT1h0cnROUnBvMmZQOUFJN1F4dQ?oc=5"
+  },
+  "CMR": {
+   "nextelec": "Legislative and municipal, February 7, 2027",
+   "updated": "2026-11-10",
+   "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQcjVMV1FuQUpNb3J2eHpQQ2tMYzZNcko4WXRzVVVuZG01a3JfbFF0OVV0b2hVc204c3JtblU4N1FxRVZUZ1pFVjVSOE1CajhtMDVXVUJkMTdkUTBQVTNGOWVkTTZ0ZXZ5bXZRNXlXNm53U0hFZ194cmNnZ3g3ZWl4N19sSHNnVS1YWXdwMEdmNF9lQzhjUW9qMVVvejRnSWxBNVBPMDZETUplUXVyaVE4SEVPNXhlOTBKT2pEMFVpdkhGd2xfaEh4TGpmcjVoNjjSAc8BQVVfeXFMUHI1TFdRbkFKTW9ydnh6UENrTGM2TXJKOFl0c1VVbmRtNWtyX2xRdDlVdG9oVXNtOHNybW5VODdRcUVWVGdaRVY1UjhNQmo4bTA1V1VCZDE3ZFEwUFUzRjllZE02dGV2eW12UTV5VzZud1NIRWdfeHJjZ2d4N2VpeDdfbEhzZ1UtWFl3cDBHZjRfZUM4Y1FvajFVb3o0Z0lsQTVQTzA2RE1KZVF1cmlROEhFTzV4ZTkwSk9qRDBVaXZIRndsX2hIeExqZnI1aDY4?oc=5"
   }
  }
 }
