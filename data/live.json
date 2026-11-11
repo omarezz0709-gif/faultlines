@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-11T01:41:00Z",
+  "lastRun": "2026-11-11T12:32:00Z",
   "log": [
    {
     "date": "2026-11-11",
@@ -19,6 +19,26 @@
       "label": "Egypt–Saudi Arabia",
       "change": "Note updated: Egypt confirms defensive military deployment in Saudi Arabia",
       "source": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPMGcwNXlQVVpXcnhOTVQ3QmRIT0UwNXdxbVBrMTVhbkoxSlNaVjY4bnBWMkRUNDlfS241STVZS1J4OXdFeEUtRU9XQkhCcU9MNm9mWlFrYnFfUDQ4UG1uZWhxTDdOYS1iWlZqUnBWMkd3cl81OFVrWXQtV1RRN1dMZXcxeVhPQ052aS05d0UzdXY1QWNGQVNNMXVVZjdRWVQ4N2g5WWl1Nk1qamcxeGxPTDlOd1ZzODZIb19VZzR5bWxBaV8td01USk5hTG8?oc=5"
+     },
+     {
+      "label": "Argentina–Iran",
+      "change": "Normal → Hostile: Iran designates Argentine military branches as terrorist groups",
+      "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1SRVc3R0Z3SXhBMDVNTk5EZmpXMFJKM3lTN0hCU3NMN2tQcHd6bFFVMkVKakd0dzNoTTdzODBKWHB6MEtlSXNyQ3FEeV82aUwxSkE?oc=5"
+     },
+     {
+      "label": "Moldova–Russia",
+      "change": "Note refreshed: Moldova joins EU sanctions following airspace violations by Russian missiles",
+      "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNREsxRm5aM3RuQmtTNm1FbDNsR3RnVGNaSmhabmlNdU5sWHBCNVVCaVE4QUNfQmNQR2IzSl9oYTJIbmxKdXRzZFBadnBDbUM2blNWU3ItLWVBbEhSR25jSmRTOGU3cUwzdTQzYnFsdEVOMFNxQll1LWJWTEZ6NEpRekZXVS1zT1ZreEROUmNxS2QySTIxbnc?oc=5"
+     },
+     {
+      "label": "China–Germany",
+      "change": "Note refreshed: Germany bans Chinese drones and vehicles at military facilities over security concerns",
+      "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNc0hCM2FKaWR5TV9wMWVQZWEtZV9Ia205bUxjUzVJbkNMRmRjUVdFdVlYal84QWVIbHdfNXVTamMzSVRhNUJqeHZMaHpnVXdLMllFaGtTcXVYMXRzOFFHWUFhTHI2eWx0VU9XUndPY09FZ0t5X0RkcVBZOXVWdk1HcEtmbFl0OUdibmg5anViVFVSMm1LaVRmTm1uWGxjdTlpY1R5WGlnZlB3SlNKUVBHR3ZISVc3R29yM2VTYURmRGRERnZB?oc=5"
+     },
+     {
+      "label": "Belize–Guatemala",
+      "change": "Note refreshed: Belize condemns Guatemalan military aggression along the border",
+      "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxORjhpREJSVUVvbzl5TUlfdFRVeGtiT01kNHVIbWc3cGtvQ1dMYU9kcFVGUWZETXRycWw2TjZRS0N6dER3M1laMVozbkVjZ2RGSVVSWTlEUy1ZQWF5Z2hTY2F6VjA1Q2lJLXRhaE5Tb2Q3ZnFBNDJFTEd1RzlZekpGSDRIRlJjOHFEcmJrV1J2bFdoeVF4NVpoLWhOMEk?oc=5"
      }
     ]
    },
@@ -1628,7 +1648,7 @@
     ]
    }
   ],
-  "summary": "Formal establishment of Liberia–Oman diplomatic ties, Poland–Ukraine MiG-29 technology exchange agreement, and confirmation of Egyptian military deployments in Saudi Arabia."
+  "summary": "Iran designates Argentina's military branches as terrorist groups, Moldova aligns with European Union sanctions against Russia after missile airspace violations, and Germany bans Chinese drones from military facilities."
  },
  "relations": {
   "DNK-USA": {
@@ -1755,9 +1775,9 @@
    "a": "BLZ",
    "b": "GTM",
    "s": "T",
-   "note": "Tensions rise as Belize accuses Guatemala of violating its airspace with military aircraft and seeks international monitoring.",
-   "updated": "2026-09-26",
-   "source": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPMkNRSDF4ZmtNaEZWbmxmZm1XNUhxZWh6QVJON1Vyak1kUU1aeWt6OVo1VjVlMFk3ZHNYSWU0MUFaakw0QzlHLWROTEx3NXBvd2RuYUFIQzhWTVlZWVNaalg1S3QtNlZDaGlXclVldHdrbHNMTE4taEJWcnJkV2ZVbENWcWlaLXlyd3pKdGprVkdPaUVOQ01RT2c2QmlhNmRoMVFTcXdFVkxMMDNXcDR3NUprdXVXSjMtV2FvWTNoTVlEM3FjQk1PbjlpdGU3T25nTTFOMnFtc1lqbVFnNHpOZjNLaW9CTWdxMHQ5RGhadw?oc=5"
+   "note": "Belize condemns Guatemalan military incursions along the Sarstoon River border as territorial tensions persist.",
+   "updated": "2026-11-11",
+   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxORjhpREJSVUVvbzl5TUlfdFRVeGtiT01kNHVIbWc3cGtvQ1dMYU9kcFVGUWZETXRycWw2TjZRS0N6dER3M1laMVozbkVjZ2RGSVVSWTlEUy1ZQWF5Z2hTY2F6VjA1Q2lJLXRhaE5Tb2Q3ZnFBNDJFTEd1RzlZekpGSDRIRlJjOHFEcmJrV1J2bFdoeVF4NVpoLWhOMEk?oc=5"
   },
   "DEU-HUN": {
    "a": "DEU",
@@ -1851,9 +1871,9 @@
    "a": "MDA",
    "b": "RUS",
    "s": "H",
-   "note": "Moldova halts all Russian natural gas imports and connects to Romania's power grid to eliminate energy dependence on Moscow.",
-   "updated": "2026-11-09",
-   "source": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOaUVVUjZTQVpZeldSOEx6bmFQcEg2ZGdzNVloXy05YmpweF9QdWQwWEtqUDFKY0VhNmZmOVdhcm5ueVdxMmtWZDdjQnNuY19RTmd0azVCLUNUczg5OXBvUHFwZTI5bHZuVGZ6aS1RZ24yQjl4RjBKM2ViTW8xUFRDbXRmNWVCR3Yta0JzT1Mtb3QzekFSZHFCVmQ1VDlaT0tlbGtLam9JZEJiMDdQUlVJSXhFZHhUTFYtSU1jOGZNS1NDZXY2dm9DQjlqaTJJZFN2Q1BKZFFzSV9MMWdBWGcxdUtfVlJhWHFiOWZUMlpZblc?oc=5"
+   "note": "Moldova aligns with European Union (EU) sanctions against Russia as Russian missiles breach Moldovan airspace during strikes on Ukraine.",
+   "updated": "2026-11-11",
+   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNREsxRm5aM3RuQmtTNm1FbDNsR3RnVGNaSmhabmlNdU5sWHBCNVVCaVE4QUNfQmNQR2IzSl9oYTJIbmxKdXRzZFBadnBDbUM2blNWU3ItLWVBbEhSR25jSmRTOGU3cUwzdTQzYnFsdEVOMFNxQll1LWJWTEZ6NEpRekZXVS1zT1ZreEROUmNxS2QySTIxbnc?oc=5"
   },
   "JPN-USA": {
    "a": "JPN",
@@ -3278,6 +3298,22 @@
    "note": "Liberia and Oman establish formal diplomatic relations to strengthen bilateral and economic cooperation.",
    "updated": "2026-11-11",
    "source": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOeGd0UjdEZXh6ekdtOTQwRGRGVVN6UHA1ci1Delctd1RZaUFGZnlfdWIxbXJjSDRhRXZOdklhVW5OUmxTVmo5SWtidzFTWWgyZUdfMklMeGpxM2VTeFd3eDVJMjZJTkh3dzNhbDR6VkhoVEJudjhUdGhGOVhMejdvYnRyUEtSQkdIekNBRXVCaFJjczRtQk84bnZ0YXY2Ny1HMmRDc2JfT2dCSGYzRXdQVlZTeWEyT2VjQVViaF9rd2JsOC1Edms5U1dfNXRhdHBQYXQ3S2NUeS1ZWGNnclE1OTd3?oc=5"
+  },
+  "ARG-IRN": {
+   "a": "ARG",
+   "b": "IRN",
+   "s": "H",
+   "note": "Iran designates Argentina's navy and air force as terrorist organizations following legal and diplomatic confrontation.",
+   "updated": "2026-11-11",
+   "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1SRVc3R0Z3SXhBMDVNTk5EZmpXMFJKM3lTN0hCU3NMN2tQcHd6bFFVMkVKakd0dzNoTTdzODBKWHB6MEtlSXNyQ3FEeV82aUwxSkE?oc=5"
+  },
+  "CHN-DEU": {
+   "a": "CHN",
+   "b": "DEU",
+   "s": "N",
+   "note": "Germany bans Chinese-made drones and vehicles from military sites over security concerns, deepening supply chain de-risking.",
+   "updated": "2026-11-11",
+   "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNc0hCM2FKaWR5TV9wMWVQZWEtZV9Ia205bUxjUzVJbkNMRmRjUVdFdVlYal84QWVIbHdfNXVTamMzSVRhNUJqeHZMaHpnVXdLMllFaGtTcXVYMXRzOFFHWUFhTHI2eWx0VU9XUndPY09FZ0t5X0RkcVBZOXVWdk1HcEtmbFl0OUdibmg5anViVFVSMm1LaVRmTm1uWGxjdTlpY1R5WGlnZlB3SlNKUVBHR3ZISVc3R29yM2VTYURmRGRERnZB?oc=5"
   }
  },
  "threads": {
@@ -3618,10 +3654,10 @@
   },
   "eastern-dr-congo": {
    "n": "Eastern DR Congo",
-   "s": "M23 rebrands as FRN under Kabila",
-   "d": "The M23-led AFC (Alliance Fleuve Congo) rebrands as the FRN with former DR Congo president Joseph Kabila heading Doha peace talks.",
-   "updated": "2026-10-16",
-   "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOY1l3VHE1di1Wa0h6U2lwT0NpSmc0UlA2SFN4WWd5VzItMkdvQk5ockhqQ3pvMTJObS0weDRfbHY0aWI5ODZRWWdnWXFJTUNrTDk5RFlvczlBX2VVYXNfLWFoZ3lnQWlMeW5oMW1jd1JTcElsVTUza1IyMzhWd2ZCdW4tZjRJVDViY0U3dTc1aDFLNW8?oc=5"
+   "s": "66 soldiers sentenced to death",
+   "d": "DR Congo military court sentences 66 soldiers to death for cowardice after fleeing rebel advances in the eastern region.",
+   "updated": "2026-11-11",
+   "source": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPSjVOS0xsWkJOSG44NjhUVnlmVjBuTXRUb05wOEtGZ2w5Tnh4VXhaV3MtYURnVnlHaFpQSVZIeVB4ZDdPcllnTW52VXFabkRFaVFveF9YbkhhT1huUi13SUtCV0VNcVQzd0gyWmtqa0x1N1RaWENoOUpFZUlHRm1ZTjgzZklNbV9hYjk0?oc=5"
   },
   "falkland-islands": {
    "n": "Falkland Islands",
@@ -3924,9 +3960,9 @@
    "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNU2tnOXRQelB5bHdwc1d2Tkt3SzhGY0VNXzYwYUhOODdodmR1dkVjRWtETmFiS2VmWGdLejlXYm93Q1VxVmVPdXNCdUdYZmVGLUwzeTZDVU1zWDVEcXlnNnlXTXZEd2tKLTRhSTVwNXJ4VUdzX2J3TnhyT1h0cnROUnBvMmZQOUFJN1F4dQ?oc=5"
   },
   "CMR": {
-   "nextelec": "legislative and municipal, 7 February 2027",
+   "nextelec": "parliamentary and municipal, February 2027",
    "updated": "2026-11-11",
-   "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQcjVMV1FuQUpNb3J2eHpQQ2tMYzZNcko4WXRzVVVuZG01a3JfbFF0OVV0b2hVc204c3JtblU4N1FxRVZUZ1pFVjVSOE1CajhtMDVXVUJkMTdkUTBQVTNGOWVkTTZ0ZXZ5bXZRNXlXNm53U0hFZ194cmNnZ3g3ZWl4N19sSHNnVS1YWXdwMEdmNF9lQzhjUW9qMVVvejRnSWxBNVBPMDZETUplUXVyaVE4SEVPNXhlOTBKT2pEMFVpdkhGd2xfaEh4TGpmcjVoNjjSAc8BQVVfeXFMUHI1TFdRbkFKTW9ydnh6UENrTGM2TXJKOFl0c1VVbmRtNWtyX2xRdDlVdG9oVXNtOHNybW5VODdRcUVWVGdaRVY1UjhNQmo4bTA1V1VCZDE3ZFEwUFUzRjllZE02dGV2eW12UTV5VzZud1NIRWdfeHJjZ2d4N2VpeDdfbEhzZ1UtWFl3cDBHZjRfZUM4Y1FvajFVb3o0Z0lsQTVQTzA2RE1KZVF1cmlROEhFTzV4ZTkwSk9qRDBVaXZIRndsX2hIeExqZnI1aDY4?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdFdwbWM5X1pOWVZfa1BHZXFJUUhwUmE4MmZjcm5ieEl1ZGtoZlM4SXFuX1pVbTVaTmJ1Q0pCdm41RFNjSDljSHpPSktqOFpxam1ITnlzM0xDYzRyTHc3Q0t6c2t4NGE0b3hVa2RJNk5XWlUtRmRldTVJcG9tLUhHYV9TN09yZHdMOWRFd3FXRDNJanJqTVJXRlpFSDFWdWRSbGl5bktHM0pPS05WWWdVeHhhWF9zd2c?oc=5"
   }
  }
 }
