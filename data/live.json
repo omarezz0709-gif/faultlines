@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-12T13:37:07Z",
+  "lastRun": "2026-11-12T18:03:06Z",
   "log": [
    {
     "date": "2026-11-12",
@@ -29,6 +29,21 @@
       "label": "Mexico–United States",
       "change": "Tense: US threatens doubled tariffs over migrant caravans",
       "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVy13ZGVKM2ZhcXZDaWFRZ25GbzFHd2JJXzIzTkt2eURhMGNRUnRhTVlOeTc2a1d6UUlWWEE4RjFvcERQTktReHhuajhuZTVOc2JOTjd4VzFBbmpXNDNIQW1nTDBDUEhkWW8tTV9YNWNNc1pYSk9MblFwdktLNDIzdmdJZEMyNVU5cy1PX1U2Zmk3U0l2bUR1LVdubkhRT040QUZPSkV4YVBwX2M?oc=5"
+     },
+     {
+      "label": "United Kingdom–Russia",
+      "change": "Hostile: refreshed note to record UK sanctions on Russia's ten largest oil producers and shadow fleet",
+      "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ25NN0h0bl9mOVg4WVg0U2lraXA1RS1zM2xkR0s4bFotMmhpVUEyX3d5UmUwVXhIb3BSNmRleTB0b1U4dmRaYUdCWDQ5QjRMQzZWdFR0LXgtWk9YTS1SZkdORFpraDdLX0EwV1dZNXdjTHFDRG1Ma1d3cGUxVm9lVW9Bc21wTUR3MDVfU1JyWkRuSnBTT2FBMERIZ0pUQ1kwZFkwNw?oc=5"
+     },
+     {
+      "label": "United States–Iran",
+      "change": "Armed conflict: refreshed note to record US cancellation of peace negotiations with Tehran",
+      "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPYnhHOUZCeEwzbmN5alpPZm1fbjRvQ2ltdmYydUE0VE02ZnMtYzhOLUp3eWotVXQ5aTYwSFlpYXZyWmRsRjhBRi1iS08zMWJFYUNVQnZLNXY5TnRsN0p4cVF1eVppQ0hsa1I5Y0hLaWlOMmRzZWV0Q09hdlpOal9YSVJOdXNPZFVyYlZQemhFeVRGUUUwOE1CcEZIRHR1Ul9wckU5WVBVeTh0TTBKaGtDN091X0hxM1BYUjNz?oc=5"
+     },
+     {
+      "label": "Strait of Hormuz",
+      "change": "Updated status to note four tankers hit by explosions in the waterway",
+      "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQcDQ2cWxyeTFpazFaX1ZNM2RoS0t2ZVpEa0JpMElTZVFMUElROEF5c20tMlU0dEszWFlEdkhfR2VOb3hEQmo3MjRtdVlSaEhkZnpKXzExbE5QcXItQ3Z6REoyY1Fpak9IUUplYWp6NTQ2UjBiNVk1WDN0MmJjaFRkOHNLdDYxMU9xOWhuMnVaTlNiVXJNTlhLYV9EZEpnd1oxYmF0cG82b2VkMURkYnkzZkZBX0hhWHM?oc=5"
      }
     ]
    },
@@ -1648,7 +1663,7 @@
     ]
    }
   ],
-  "summary": "Tensions rise between Iran and Oman following an attack on Didamar Island navigation systems, while the US threatens Mexico with tariff hikes over migrant caravans."
+  "summary": "Britain sanctions Russia's ten largest oil producers and shadow fleet vessels, the US calls off peace negotiations with Iran, and tanker explosions strike the Strait of Hormuz."
  },
  "relations": {
   "DNK-USA": {
@@ -1679,9 +1694,9 @@
    "a": "IRN",
    "b": "USA",
    "s": "W",
-   "note": "Active conflict continues as the United States (US) military disables a cargo vessel in the Gulf of Oman to enforce its blockade.",
-   "updated": "2026-11-08",
-   "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNb1JYcVdzZ3hZXzAxOUkzRnVaZVZWXzVCTC1pa1g5c0JxRVJHckQ2aDBKOWtkbWt2WjBOa2tfbllGWVo5T2RXYmFubW9nOXotdWlKblplQjREdG5sa2VJanZxUDVUZ3VNLUNwUGxFMFotVl8xZ2R2ODBtS3hobHVMbFVmQnNYQUxIN2JvUDM5by1vQTU5YmlKVFZDamlyRUhKZFB2UEN2Y0hsYUpKQkxqTnZLbVE5eWxta0p0Rl9nYjg3Y0Y10gHEAUFVX3lxTE1vUlhxV3NneFlfMDE5STNGdVplVlZfNUJMLWlrWDlzQnFFUkdyRDZoMEo5a2Rta3ZaME5ra19uWUZZWjlPZFdiYW5tb2c5ei11aUpuWmVCNER0bmxrZUlqdnFQNVRndU0tQ3BQbEUwWi1WXzFnZHY4MG1LeGhsdUxsVWZCc1hBTEg3Ym9QMzlvLW9BNTliaUpUVkNqaXJFSEpkUHZQQ3ZjSGxhSkpCTGpOdkttUTl5bG1rSnRGX2diODdjRjU?oc=5"
+   "note": "United States (US) President Trump cancels peace negotiations with Iran, maintaining an active military conflict and blockade.",
+   "updated": "2026-11-12",
+   "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPYnhHOUZCeEwzbmN5alpPZm1fbjRvQ2ltdmYydUE0VE02ZnMtYzhOLUp3eWotVXQ5aTYwSFlpYXZyWmRsRjhBRi1iS08zMWJFYUNVQnZLNXY5TnRsN0p4cVF1eVppQ0hsa1I5Y0hLaWlOMmRzZWV0Q09hdlpOal9YSVJOdXNPZFVyYlZQemhFeVRGUUUwOE1CcEZIRHR1Ul9wckU5WVBVeTh0TTBKaGtDN091X0hxM1BYUjNz?oc=5"
   },
   "SAU-YEM": {
    "a": "SAU",
@@ -2479,9 +2494,9 @@
    "a": "GBR",
    "b": "RUS",
    "s": "H",
-   "note": "Relations remain hostile as Prime Minister Andy Burnham states Russia interfered in the 2016 Brexit referendum.",
-   "updated": "2026-10-11",
-   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWHJJdG9NWWZzeFA5ZlZ4ZU4tMVlOTzc1aGxiUHFlYkJkbUtpVDl3YzBJYXVfX2VCWUpUVnZfRnRXS1VzSHc0UDhpWVJ6X2dwZU9LRlU1Y1ZSM2FTS0FlVXRFcEZBWUh0VE1rdUt5UUdjZGgySU0xdFZWNXM5d1BYSWRmeHVRYXJqLXV3UEFNeU9MTVhKWHVJQ2dUOXJiNUE?oc=5"
+   "note": "Britain imposes sanctions on Russia's ten largest oil producers and shadow fleet vessels amid active wartime hostility.",
+   "updated": "2026-11-12",
+   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ25NN0h0bl9mOVg4WVg0U2lraXA1RS1zM2xkR0s4bFotMmhpVUEyX3d5UmUwVXhIb3BSNmRleTB0b1U4dmRaYUdCWDQ5QjRMQzZWdFR0LXgtWk9YTS1SZkdORFpraDdLX0EwV1dZNXdjTHFDRG1Ma1d3cGUxVm9lVW9Bc21wTUR3MDVfU1JyWkRuSnBTT2FBMERIZ0pUQ1kwZFkwNw?oc=5"
   },
   "GBR-MUS": {
    "a": "GBR",
@@ -3625,10 +3640,10 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "Maritime risks spike after strikes on commercial tankers and an Iranian attack targeting navigation systems on Oman's Didamar Island.",
+   "d": "Maritime risks intensify after explosions hit four commercial tankers in the strategic waterway amid regional conflict.",
    "n": "Strait of Hormuz",
-   "s": "Tankers and navigation hit",
-   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNEZSZGVZTGhrUjBTbGdEUUNGbVUwWkw5RHVtRG1fc2hEbkVhZ3EtSUhZbDltYXIyY0ZaMEJzUmhOM19GUmdNdE84d0FTNHJZT21DemlIY3BYQnNyeW9iQ1VnLWg5OElDQ1VjZkZESF9LT2U3SnBWRjZCenhxdHh4WTA0dTdhNUhWSExxR3poNUxPZVRqbVI5T21Ia0x5dFlnVC0tTFVLbTZJTmo3TDBXSUlhX2NZU1Jvamk2MkRR?oc=5",
+   "s": "Four tankers hit by explosions",
+   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQcDQ2cWxyeTFpazFaX1ZNM2RoS0t2ZVpEa0JpMElTZVFMUElROEF5c20tMlU0dEszWFlEdkhfR2VOb3hEQmo3MjRtdVlSaEhkZnpKXzExbE5QcXItQ3Z6REoyY1Fpak9IUUplYWp6NTQ2UjBiNVk1WDN0MmJjaFRkOHNLdDYxMU9xOWhuMnVaTlNiVXJNTlhLYV9EZEpnd1oxYmF0cG82b2VkMURkYnkzZkZBX0hhWHM?oc=5",
    "updated": "2026-11-12",
    "t": "strait",
    "lat": 26.57,
@@ -3976,12 +3991,12 @@
    "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObGx6Ukt1OHZJX3hXZ1ZxUWpVekpjMzE5MXNCd3k0V0pXUGZlUlp5VnJLRWE1N0dSWWZuSUxkZWZtaUR6cDk3NkYwWmNTMjNSRGNZUUN2QllTUWdJS2FQNXdkSThZbWNPRTVWUGhJM01DdXg2aUVObHJXeUlTMGRtV3BrVFF5Nlc5b21HTENxRHFPdWozVTdsS3gyaGgtdG1MSWZmb2EyVHR4NWc?oc=5"
   },
   "CMR": {
-   "nextelec": "parliamentary and local, February 2027",
+   "nextelec": "parliamentary February 2027",
    "updated": "2026-11-12",
-   "source": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5heGp2azhQX1ZmYzNGeV9HbU1oQzIwaFN5ZUxrd3VDMXJXNHdHQTQ5My1laTFwcXNTLVFHX296cko2azAxUzkybFB6a1p5MUVpVWd4ejcwTU11X0dDM0xHZ3E0RHJRelU5UDdOM3kzWHYtcXY4Ync?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOMzFiZjk2VWd1eFdEako0amJEcTdvWnhyXzUwZ1RNdVpkYWhSSmxfN3lYOXF1Z3VlaHZJMUpUMnVrUjdET29ESl9IOEFEbkZPNDNWazdYRmZ6ZlNCSnI2T1Q1U3RpMHFNSkxPdzhGM3BKQmQ1YkUwemtLd3FYWEVaeUdQcmxpZjE2OFVyNHpZN19DN1Y5TXZ4WHY3THRDY0I3MXhqeEZ2b3k3Mjl3LVVSNWdKaDFjT1g2azhQRDlOSS0yRlk2NEN0ZEVDcjZQM3Z1NEE5UWZQZWgxZkVwd0hv?oc=5"
   },
   "CPV": {
-   "nextelec": "presidential, 15 November 2026",
+   "nextelec": "presidential November 2026",
    "updated": "2026-11-12",
    "source": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPY2tTSGJsYXBsY2pRczRzWldyaU1BRXZTY1NzT3gtRkRWa0s3MVN3aUFnd28yNklNMmlDRDlDZzlyMjR4NGNaNHJkcnNrODhyQ3dqRDZ6OERCMnh6LW9LaTY3MlluSzA1RVh4enZ5S1NVNW9tajhvYlN2U1luNURJeEVXWHl1UmRZdDVpS1VfaXdKMWNyYmlIY1VXZEpNYV9JWncxV1N6WXJHX1J3TFlzOEpkaHRld0M0QzlTeElOODBpZ0d5UjJPTjI5bFNEUGQwSVJQXzdxTlJCYV9ydU1KcHlVWGFnTGQwZUtxajZwc3pmY0NBRzYwWkIzOUhpYXZoWm5lYzBOZ0xLcEJ1a0IxSkZfS002Q2s?oc=5"
   }
