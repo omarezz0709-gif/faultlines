@@ -1,7 +1,27 @@
 {
  "meta": {
-  "lastRun": "2026-11-11T22:20:27Z",
+  "lastRun": "2026-11-12T02:40:54Z",
   "log": [
+   {
+    "date": "2026-11-12",
+    "items": [
+     {
+      "label": "Malaysia–Taiwan",
+      "change": "Normal → Tense: Taiwan freezes trade talks over AI chip espionage scandal",
+      "source": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQY2lqWVNtbE5UMUlncUh2SUZsMlczd1JIZHFRTDdFb2M0Y2tUcWdheGFZcTNacnJkLUpucGhfN2VZTjRDWWtPWWdNWVkxY2kyNnVSWWRPUExzXzA3MzJhUEJleThWMThUQThlQzlmUlBFR3MtNE96TGctU21KUmlRdFE4SW5HWHNlN0ZjbDlreFYzM0s5Y1hmbGJ6YjdzeHZsQUwyUmEyOVRrSWhaLUNQTW9ZSXV6YkJFaVVHMnZFSmwwR0doZEZvTW9pTzR0Nlg3SzQtQXNMUHF6X3ZSR0JkRUtsVmFZYjVWME1Kc05wUl82YTQzQmVfT0l5M3N1U1o0anJn?oc=5"
+     },
+     {
+      "label": "Armenia–Russia",
+      "change": "Note refreshed: CSTO strips Armenia of voting rights over unpaid obligations",
+      "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQaVQ1bW5CVTl6Uzd4aDRqdnZzcy1QNEZ4SUZaOWI0UG1ob0EycVd0ejBoR3QycGI0eHdidkMyTnlVNlJPc3ZNZ3djS1FjQlVDZ3ZyY3NrNk1ONGQ5T2FyR01VaERYaGVNM0ZhNWxDOF9nbXJyMHZtUlJ2dmZ3WnNXNEJxVm1PUkhfNWZiN1NwaXlTc3ZiRjVMaWxhTW5YZXY4?oc=5"
+     },
+     {
+      "label": "Hungary–Ukraine",
+      "change": "Normal → Tense: Hungary blocks opening of EU accession clusters for Ukraine",
+      "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBGSXdEQ18wY1BKNUx4dlczN196VW02N1Zub2p2ZDJMMDk3R2JlUkkwUVZqSEVXeVFOR29aWmJ4dHZBY3NGZ0xXZ3dCR2tENmsyNU4ya0FVclpJeTNiMzlJUzF0dUHSAXBBVV95cUxNdVNKSlkzdEJzX0J6MGdYdkpaSV80YVRocks3VmRRWUdsU1BFZENRdW5XUDZYZG1iNFB3aHdBN0hGSVVYcmVhNXFfLUo0d28tMmN1OEwzbXdDU2c4ZTBDRTRndlM1Y1JMV2Mxa2NCTzQ4?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-11-11",
     "items": [
@@ -1616,64 +1636,9 @@
       "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNVg0eWh4OTZ1NG5IR1M1ZWJJejUxUncyYVVWeHB3QTdHaHYzUnRDOHBpaFpEZldsb0RNZG5SNVZDMWJIVUV6U0JZRVhLSmdtWEZfSnpGSDlXWVU1UlRRSF9wT0JSbktPRTRWT2dkazNCSmJoWDBaUl9wZEI3bjVpLUNZS2ZDWW9IQk9oUndRNU1qYUpHclhnUzhVYVU1RE0?oc=5"
      }
     ]
-   },
-   {
-    "date": "2026-10-13",
-    "items": [
-     {
-      "label": "Cyprus–Saudi Arabia",
-      "change": "Normal → Partner: Signed energy cooperation MoU",
-      "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQS1haDV5SjFWZTNfSWY3TldrTngyX2tkdy1vTHJhbzh4NEJ5aHdVNzdCdno5S1BTcUxPSG5qTGlUUDFwVDRvY1hZY2NEU04wOXBQRUFveGZJUmRIN052UFhneldHTG9wUVF4cjVWcjJyandSMzJwZDJ4RUZ3bzFPYTZkZHR3MlVoNzVLbW5NRkM3Y09JdlJV?oc=5"
-     },
-     {
-      "label": "Egypt–Malaysia",
-      "change": "Normal → Ally: Upgraded to strategic partnership",
-      "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQYm1OTy1uc2pCM1pGX0htVFF1cXNVT1JoZXhTZkt1amtENUVlSno0WDhhbVFuSkYzdWVWS053X2U0NUNsTUlnendCX0I2QmVROUZJT1JGMTBUMGxIVVc5bzlOdnVuYU5WVWY4cklYTlYwN0toQWhuWGdvNi1xS3RRWm1UZG9rMENGWDYtTXBB?oc=5"
-     },
-     {
-      "label": "Bulgaria–Russia",
-      "change": "Normal → Tense: drone attack on ships in Black Sea",
-      "source": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBtOXhiczM5QnZQbVJGRVpuZm5UOXBfaFpVRFhOV2M1bk1YOGFoMVdKMjN1dm4zMEpqeE9ZUXFFU0Z1VkNwRTBpaE9JdXBjanBDUVA0dDlwS0tNT2c?oc=5"
-     },
-     {
-      "label": "South Korea–Ukraine",
-      "change": "Normal → Tense: diplomatic dispute over North Korean POWs",
-      "source": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9jUldnOHp0Vi1aLTdtUUpEak43T1dnbGxvV0RXLWVpSElFcUMxLUNqdTZqMmI4ZV9ZalNHXzdiVFluZXE2cS1qZkY4dlJEaUhBS3JDOC1jUTMzeUR5M2pVTnJlZTktQQ?oc=5"
-     },
-     {
-      "label": "Israel–Saudi Arabia",
-      "change": "Normal → Normal: normalization remains stalled despite Houthi attacks",
-      "source": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPMHQta2VOcnJWc0Q1VE16TUR3Zy10Nm5leFYzQkEzMzFlbDRlX1RnMkhjUHphOTFFV0RDN3pOcXRzTlNWMFFaRzd0T1VSVktjNWxyOThRNDBIdW1Gc1pHX1l3VUlsck9URUhsb3NCelBSb1hON0g1cUNMNXh2bkZheFFBSm1YRjVZR2ZBaDZLQmFQNkJkX0JkRE0yckI2YS1kTThWSndVVmR5R3JDcG5laUp0bXB4SjBrZDQ1WV9PcnVCQXgzSUhodWRMWkpoelBJR19GOGRGMVFlbHh4UXVrenFZdGHSAeoBQVVfeXFMUHhXb0Z5b0p0T2Q1eENmOUgySVh0ejI5TV9iNmd5Sm1TOGp1TlIzN0t6V0gzMkJmTVlHekFwWnlpUnJsRlNRU3pPXzNKNUtZWEFIc2wtN1BwVGVuT0twdDhIaW01RGRNXzhfUlJMUlMyMWRyalFENHlEcWVHWlhuTC15NG00ZWQtNEJkN3BibmpvQ3pBeHdtNnFpN0gtaG5zeW5sR3ZiOERheDFJaEhneW5zeUlET2VQS2FVSWY5OWxwbm9UX1pVazN3VEdtX1FqVXA1WXkwN2NfQmY5S2tNcVA5RDI5QXBKVzZB?oc=5"
-     },
-     {
-      "label": "Argentina–United Kingdom",
-      "change": "Note updated: Argentina challenges Falklands oil drilling at international tribunal",
-      "source": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNRmpHQjlPZHBQMURST1ptX2JCV1BDa2JJN25aMENGS0RnV01PWlJwckY0XzJsWUJ4UkFpY3BIWk9va1JOSEVXazBGMUptdWJPZUpXVVREb3RzbnZBRTR2dmdEX0YwcmsxcGIxYU0yN05qNU1hZnFqV0pfN2xtMFVvZm9mYkhMMVZmVjBoUlZPTWVxdnRnSmprT2tSVGNMNXdWRmd2Um5nbS1GT2M4MVZUNlI5YUxjOVZqS0FlUWd5ZnFKaFlMWkd3VG5peHNtV0x0MG5vVWZkQWFGbUQ4SEc1R2xXck9YLU9NZ3l2RnVUczJ6NXQ5cm1F?oc=5"
-     },
-     {
-      "label": "Nicaragua–United States",
-      "change": "Note updated: US withdraws envoy after diplomatic rejection and asset seizures",
-      "source": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPczlTaGlVRzB6QmcybzI4OEJ4bjhXWEhubkxwNVYxdVkwT2NHaEN2cjJKTzNtLUF4cFhMY1FXdDEtX1hkZWJyZzRnNGFWOTdVUmFEVEsyZ3Q0d09LeGpXWHNjWjktRGJQUEktVzFIT2hCcHEwZVhxSzlzbUkzRm1lSDN3?oc=5"
-     },
-     {
-      "label": "Saudi Arabia–Yemen",
-      "change": "Note updated: Houthi missile strikes hit Saudi Aramco headquarters",
-      "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUHZtMnk3dUVFWmVkT2FmZVRqNWNrUUc5YkNkWVJMOEhWMmo1dnc2S3FlUlExbjFscTdlY3NQcExPejdxUlF1clZ5S1BKQ1JLdjhzaFdXT2l1YVBmN2VVSkFOSlJNNmlTR2w5d082MDR2b3RkY1VrTTlwWFhuclBteVRaTmtMRUczY0VPaWxBeVV1RE9vUE9kRFZaUlZEX0NnOXZqVnNtNlJIcFU3cnE2VVFTNzhfNVZ0TzZiQWFtSUJCdXJXYU5rU0JB?oc=5"
-     },
-     {
-      "label": "Houthi Red Sea & regional missile campaign",
-      "change": "Thread updated: strikes target Saudi Aramco headquarters",
-      "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUHZtMnk3dUVFWmVkT2FmZVRqNWNrUUc5YkNkWVJMOEhWMmo1dnc2S3FlUlExbjFscTdlY3NQcExPejdxUlF1clZ5S1BKQ1JLdjhzaFdXT2l1YVBmN2VVSkFOSlJNNmlTR2w5d082MDR2b3RkY1VrTTlwWFhuclBteVRaTmtMRUczY0VPaWxBeVV1RE9vUE9kRFZaUlZEX0NnOXZqVnNtNlJIcFU3cnE2VVFTNzhfNVZ0TzZiQWFtSUJCdXJXYU5rU0JB?oc=5"
-     },
-     {
-      "label": "Falkland Islands",
-      "change": "POI updated: drilling dispute submitted to international tribunal",
-      "source": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNRmpHQjlPZHBQMURST1ptX2JCV1BDa2JJN25aMENGS0RnV01PWlJwckY0XzJsWUJ4UkFpY3BIWk9va1JOSEVXazBGMUptdWJPZUpXVVREb3RzbnZBRTR2dmdEX0YwcmsxcGIxYU0yN05qNU1hZnFqV0pfN2xtMFVvZm9mYkhMMVZmVjBoUlZPTWVxdnRnSmprT2tSVGNMNXdWRmd2Um5nbS1GT2M4MVZUNlI5YUxjOVZqS0FlUWd5ZnFKaFlMWkd3VG5peHNtV0x0MG5vVWZkQWFGbUQ4SEc1R2xXck9YLU9NZ3l2RnVUczJ6NXQ5cm1F?oc=5"
-     }
-    ]
    }
   ],
-  "summary": "Russia and Ukraine agree to a major prisoner swap at peace talks in Abu Dhabi, while North Korea officially abandons its goal of reunification with the South."
+  "summary": "Taiwan freezes trade talks with Malaysia over an AI chip scandal, CSTO suspends Armenia's voting rights, and Hungary blocks Ukraine's EU accession steps."
  },
  "relations": {
   "DNK-USA": {
@@ -1815,10 +1780,10 @@
   "HUN-UKR": {
    "a": "HUN",
    "b": "UKR",
-   "s": "N",
-   "note": "Ties improve as Hungary lifts its veto, enabling the European Union (EU) to open new accession negotiation clusters with Ukraine.",
-   "updated": "2026-10-14",
-   "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNMlY5S0NfVnFPYTVOWjQ4dGE1S3FFX3F3QXdQSzhXSy1HbEVhYlFIMEN5WmwyZ1NsTWVUUjVSbU9sbkh6eGZqbllPc2h1Zy0wV3BFbGplbG4yUWlpTXVyLUVqSTcteThvNFBRd3FTSUZEdURvOFEtZTZKbGZTMVlMT0FVbUF5akwzYlE?oc=5"
+   "s": "T",
+   "note": "Tensions persist as Hungary stalls European Union (EU) accession talks for Ukraine, refusing to open new negotiation clusters.",
+   "updated": "2026-11-12",
+   "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBGSXdEQ18wY1BKNUx4dlczN196VW02N1Zub2p2ZDJMMDk3R2JlUkkwUVZqSEVXeVFOR29aWmJ4dHZBY3NGZ0xXZ3dCR2tENmsyNU4ya0FVclpJeTNiMzlJUzF0dUHSAXBBVV95cUxNdVNKSlkzdEJzX0J6MGdYdkpaSV80YVRocks3VmRRWUdsU1BFZENRdW5XUDZYZG1iNFB3aHdBN0hGSVVYcmVhNXFfLUo0d28tMmN1OEwzbXdDU2c4ZTBDRTRndlM1Y1JMV2Mxa2NCTzQ4?oc=5"
   },
   "USA-ZWE": {
    "a": "USA",
@@ -2248,9 +2213,9 @@
    "a": "ARM",
    "b": "RUS",
    "s": "T",
-   "note": "Tensions persist as Armenia formally rules out returning to the CSTO (Collective Security Treaty Organization).",
-   "updated": "2026-10-28",
-   "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZFNlYTFiVTRNMW0xVktNSHpyV1ZrS3BySy1yNHRITk4tYmRQOWpYdXlhY3RHc1hkeUlTV1doMzhkZmM2QjNKRTBJZk9LZ0xqWm9nUTFzT2R3VU14TnBrMlRfUTA0cWUwR29SNUFMbWpxUENYNUxxMDhOOVR1b0pxUjRrUERNR2xtY0haT2w0enp5V2s?oc=5"
+   "note": "Tensions persist as the Collective Security Treaty Organization (CSTO) strips Armenia of voting rights over unfulfilled obligations.",
+   "updated": "2026-11-12",
+   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQaVQ1bW5CVTl6Uzd4aDRqdnZzcy1QNEZ4SUZaOWI0UG1ob0EycVd0ejBoR3QycGI0eHdidkMyTnlVNlJPc3ZNZ3djS1FjQlVDZ3ZyY3NrNk1ONGQ5T2FyR01VaERYaGVNM0ZhNWxDOF9nbXJyMHZtUlJ2dmZ3WnNXNEJxVm1PUkhfNWZiN1NwaXlTc3ZiRjVMaWxhTW5YZXY4?oc=5"
   },
   "LTU-RUS": {
    "a": "LTU",
@@ -3339,6 +3304,14 @@
    "note": "Germany bans Chinese-made drones and vehicles from military sites over security concerns, deepening supply chain de-risking.",
    "updated": "2026-11-11",
    "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNc0hCM2FKaWR5TV9wMWVQZWEtZV9Ia205bUxjUzVJbkNMRmRjUVdFdVlYal84QWVIbHdfNXVTamMzSVRhNUJqeHZMaHpnVXdLMllFaGtTcXVYMXRzOFFHWUFhTHI2eWx0VU9XUndPY09FZ0t5X0RkcVBZOXVWdk1HcEtmbFl0OUdibmg5anViVFVSMm1LaVRmTm1uWGxjdTlpY1R5WGlnZlB3SlNKUVBHR3ZISVc3R29yM2VTYURmRGRERnZB?oc=5"
+  },
+  "MYS-TWN": {
+   "a": "MYS",
+   "b": "TWN",
+   "s": "T",
+   "note": "Taiwan freezes investment and trade talks with Malaysia following an espionage scandal involving artificial intelligence (AI) chips.",
+   "updated": "2026-11-12",
+   "source": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQY2lqWVNtbE5UMUlncUh2SUZsMlczd1JIZHFRTDdFb2M0Y2tUcWdheGFZcTNacnJkLUpucGhfN2VZTjRDWWtPWWdNWVkxY2kyNnVSWWRPUExzXzA3MzJhUEJleThWMThUQThlQzlmUlBFR3MtNE96TGctU21KUmlRdFE4SW5HWHNlN0ZjbDlreFYzM0s5Y1hmbGJ6YjdzeHZsQUwyUmEyOVRrSWhaLUNQTW9ZSXV6YkJFaVVHMnZFSmwwR0doZEZvTW9pTzR0Nlg3SzQtQXNMUHF6X3ZSR0JkRUtsVmFZYjVWME1Kc05wUl82YTQzQmVfT0l5M3N1U1o0anJn?oc=5"
   }
  },
  "threads": {
@@ -3980,14 +3953,14 @@
    "source": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQSW1iMF9NUE00dy1CRUxvdTczY3VpRV9uVDdVRE9wdkU4WkQ4MnZaTVY4d2cyb1NlMmZHdEloYl96a0t2VWJ3U1Fyb2xCSEdDY1YzeWtKMTNSMnE4S2JVc1I3RVdiYXJMTTlobjNIRTV3TGJIeC05RVQ0SURRbjE0T0tlNFN6WnlrNEVhamprLW45MERVMG5XaGtKZThuUkF1eWZKWW1oY2E3YWhjV1AtRUFBeHJzM3YxZlRickY3Z2VzR0tkT3duZzVNQ2NWWEN4ZlVvTHFZbUg1WXlJZy1SR0tnUDNFLWhyY2E0X0htcW0zUWF0MHA4OF9lSXpwUnB3QTJNajJWel9pRlHSAYsCQVVfeXFMUEltYjBfTVBNNHctQkVMb3U3M2N1aUVfblQ3VURPcHZFOFpEODJ2Wk1WOHdnMm9TZTJmR3RJaGJfemtLdlVid1NRcm9sQkhHQ2NWM3lrSjEzUjJxOEtiVXNSN0VXYmFyTE05aG4zSEU1d0xiSHgtOUVUNElEUW4xNE9LZTRTelp5azRFYWpqay1uOTBEVTBuV2hrSmU4blJBdXlmSlltaGNhN2FoY1dQLUVBQXhyczN2MWZUYnJGN2dlc0dLZE93bmc1TUNjVlhDeGZVb0xxWW1INVl5SWctUkdLZ1AzRS1ocmNhNF9IbXFtM1FhdDBwODhfZUl6cFJwd0EyTWoyVnpfaUZR?oc=5"
   },
   "KGZ": {
-   "nextelec": "presidential, January 2027",
-   "updated": "2026-11-11",
-   "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNU2tnOXRQelB5bHdwc1d2Tkt3SzhGY0VNXzYwYUhOODdodmR1dkVjRWtETmFiS2VmWGdLejlXYm93Q1VxVmVPdXNCdUdYZmVGLUwzeTZDVU1zWDVEcXlnNnlXTXZEd2tKLTRhSTVwNXJ4VUdzX2J3TnhyT1h0cnROUnBvMmZQOUFJN1F4dQ?oc=5"
+   "nextelec": "presidential, 2027",
+   "updated": "2026-11-12",
+   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObGx6Ukt1OHZJX3hXZ1ZxUWpVekpjMzE5MXNCd3k0V0pXUGZlUlp5VnJLRWE1N0dSWWZuSUxkZWZtaUR6cDk3NkYwWmNTMjNSRGNZUUN2QllTUWdJS2FQNXdkSThZbWNPRTVWUGhJM01DdXg2aUVObHJXeUlTMGRtV3BrVFF5Nlc5b21HTENxRHFPdWozVTdsS3gyaGgtdG1MSWZmb2EyVHR4NWc?oc=5"
   },
   "CMR": {
-   "nextelec": "presidential, February 2027",
-   "updated": "2026-11-11",
-   "source": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5heGp2azhQX1ZmYzNGeV9HbU1oQzIwaFN5ZUxrd3VDMXJXNHdHQTQ5My1laTFwcXNTLVFHX296cko2azAxUzkybFB6a1p5MUVpVWd4ejcwTU11X0dDM0xHZ3E0RHJRelU5UDdOM3kzWHYtcXY4Ync?oc=5"
+   "nextelec": "parliamentary and local, February 2027",
+   "updated": "2026-11-12",
+   "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdDNTeEktSzVfVGphbmxfdlpaQUlLd21wM19VUjlablF2WjllTmpwUE1sV1Y4WGJ6Z0xIekNabHR5bDRacjFseWZJbmhQa3ZnNUoybjV6ZTA1dmhxVjdpLWxYUDRGLVNPNEkzUjBmR1FveHFsa1ZFazhuS0UzOFl1TzRYX2tuNTd3ZVVHMmY4cjdJNFoxaXprWEtGaFVSNFpGTkFIc0sxSTAwZG01U0cyTkhjcHBiTEdmVUtmSEhnRW82R1BwdkpN?oc=5"
   }
  }
 }
