@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-12T02:40:54Z",
+  "lastRun": "2026-11-12T13:37:07Z",
   "log": [
    {
     "date": "2026-11-12",
@@ -19,6 +19,16 @@
       "label": "Hungary–Ukraine",
       "change": "Normal → Tense: Hungary blocks opening of EU accession clusters for Ukraine",
       "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBGSXdEQ18wY1BKNUx4dlczN196VW02N1Zub2p2ZDJMMDk3R2JlUkkwUVZqSEVXeVFOR29aWmJ4dHZBY3NGZ0xXZ3dCR2tENmsyNU4ya0FVclpJeTNiMzlJUzF0dUHSAXBBVV95cUxNdVNKSlkzdEJzX0J6MGdYdkpaSV80YVRocks3VmRRWUdsU1BFZENRdW5XUDZYZG1iNFB3aHdBN0hGSVVYcmVhNXFfLUo0d28tMmN1OEwzbXdDU2c4ZTBDRTRndlM1Y1JMV2Mxa2NCTzQ4?oc=5"
+     },
+     {
+      "label": "Iran–Oman",
+      "change": "Partner → Tense: Iranian strike on Didamar Island navigation systems",
+      "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNEZSZGVZTGhrUjBTbGdEUUNGbVUwWkw5RHVtRG1fc2hEbkVhZ3EtSUhZbDltYXIyY0ZaMEJzUmhOM19GUmdNdE84d0FTNHJZT21DemlIY3BYQnNyeW9iQ1VnLWg5OElDQ1VjZkZESF9LT2U3SnBWRjZCenhxdHh4WTA0dTdhNUhWSExxR3poNUxPZVRqbVI5T21Ia0x5dFlnVC0tTFVLbTZJTmo3TDBXSUlhX2NZU1Jvamk2MkRR?oc=5"
+     },
+     {
+      "label": "Mexico–United States",
+      "change": "Tense: US threatens doubled tariffs over migrant caravans",
+      "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVy13ZGVKM2ZhcXZDaWFRZ25GbzFHd2JJXzIzTkt2eURhMGNRUnRhTVlOeTc2a1d6UUlWWEE4RjFvcERQTktReHhuajhuZTVOc2JOTjd4VzFBbmpXNDNIQW1nTDBDUEhkWW8tTV9YNWNNc1pYSk9MblFwdktLNDIzdmdJZEMyNVU5cy1PX1U2Zmk3U0l2bUR1LVdubkhRT040QUZPSkV4YVBwX2M?oc=5"
      }
     ]
    },
@@ -1638,7 +1648,7 @@
     ]
    }
   ],
-  "summary": "Taiwan freezes trade talks with Malaysia over an AI chip scandal, CSTO suspends Armenia's voting rights, and Hungary blocks Ukraine's EU accession steps."
+  "summary": "Tensions rise between Iran and Oman following an attack on Didamar Island navigation systems, while the US threatens Mexico with tariff hikes over migrant caravans."
  },
  "relations": {
   "DNK-USA": {
@@ -2181,9 +2191,9 @@
    "a": "MEX",
    "b": "USA",
    "s": "T",
-   "note": "Security partners despite frictions; the United States (US) approves selling Black Hawk helicopters to Mexico for counter-narcotics.",
-   "updated": "2026-11-08",
-   "source": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBfQnNJVENNajhzcVliVE1ud2dMSzI0a1NNT0I5R2t3T19YWTBGaU12TjFVTUFwUU11N2RmbnJZUHNGUWxEeGp3UFdxcGprTm10bVVJc2lfeUE0dlFjRVozZ3J3?oc=5"
+   "note": "Ties strain as the United States (US) threatens to double tariffs on Mexico unless authorities halt northbound migrant caravans.",
+   "updated": "2026-11-12",
+   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVy13ZGVKM2ZhcXZDaWFRZ25GbzFHd2JJXzIzTkt2eURhMGNRUnRhTVlOeTc2a1d6UUlWWEE4RjFvcERQTktReHhuajhuZTVOc2JOTjd4VzFBbmpXNDNIQW1nTDBDUEhkWW8tTV9YNWNNc1pYSk9MblFwdktLNDIzdmdJZEMyNVU5cy1PX1U2Zmk3U0l2bUR1LVdubkhRT040QUZPSkV4YVBwX2M?oc=5"
   },
   "EGY-ISR": {
    "a": "EGY",
@@ -3312,6 +3322,14 @@
    "note": "Taiwan freezes investment and trade talks with Malaysia following an espionage scandal involving artificial intelligence (AI) chips.",
    "updated": "2026-11-12",
    "source": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQY2lqWVNtbE5UMUlncUh2SUZsMlczd1JIZHFRTDdFb2M0Y2tUcWdheGFZcTNacnJkLUpucGhfN2VZTjRDWWtPWWdNWVkxY2kyNnVSWWRPUExzXzA3MzJhUEJleThWMThUQThlQzlmUlBFR3MtNE96TGctU21KUmlRdFE4SW5HWHNlN0ZjbDlreFYzM0s5Y1hmbGJ6YjdzeHZsQUwyUmEyOVRrSWhaLUNQTW9ZSXV6YkJFaVVHMnZFSmwwR0doZEZvTW9pTzR0Nlg3SzQtQXNMUHF6X3ZSR0JkRUtsVmFZYjVWME1Kc05wUl82YTQzQmVfT0l5M3N1U1o0anJn?oc=5"
+  },
+  "IRN-OMN": {
+   "a": "IRN",
+   "b": "OMN",
+   "s": "T",
+   "note": "Iran strikes maritime navigation systems on Oman's Didamar Island, straining ties and escalating Persian Gulf security risks.",
+   "updated": "2026-11-12",
+   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNEZSZGVZTGhrUjBTbGdEUUNGbVUwWkw5RHVtRG1fc2hEbkVhZ3EtSUhZbDltYXIyY0ZaMEJzUmhOM19GUmdNdE84d0FTNHJZT21DemlIY3BYQnNyeW9iQ1VnLWg5OElDQ1VjZkZESF9LT2U3SnBWRjZCenhxdHh4WTA0dTdhNUhWSExxR3poNUxPZVRqbVI5T21Ia0x5dFlnVC0tTFVLbTZJTmo3TDBXSUlhX2NZU1Jvamk2MkRR?oc=5"
   }
  },
  "threads": {
@@ -3607,11 +3625,11 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "Friction remains high after a projectile strikes a Saudi oil tanker transiting the strategic waterway.",
+   "d": "Maritime risks spike after strikes on commercial tankers and an Iranian attack targeting navigation systems on Oman's Didamar Island.",
    "n": "Strait of Hormuz",
-   "s": "Saudi tanker attacked",
-   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMndWOG1QdUZZaEpKWmQ0ZElQZU9VVm9yeE5uSm94QlExV1NEX1AwN1c3c3MwSUdPVnZwM3hpTkRTcTBDbkptVkRqZlREQS1TUXowcFVxUExpX21zM2JMSWg5WW1DTWo2UlY5UGhwLUFoZmRHMWNwa2tvZTVRX1JLbGxBQTdIVnJxTm53ZW5ONHZyV2wtMTFoZHdIa05JMjJ0allHUWlEeVptREpY0gGvAUFVX3lxTE5NNTRpNVl1cnR5RWlEVGRWX3JJMFpscWdTVzhlM1o2UlpQdFdhNHM1Ri1MM3F5b1BBRVZBYl8wRDl0TDJ1WlBpbHJTQ3Jia1hFUG5FTTRvLXhJUzJrZDJuOTNuV2N4cXBoVG1WQW51WTFkWGRvZzFRcGlxcm9ld0FTeHNMUWJjYXFjdjBfVmVrRTBhNXdxamw3UUxCY2hwcHNTXzlSRG9uYzBSSWdLSFE?oc=5",
-   "updated": "2026-11-11",
+   "s": "Tankers and navigation hit",
+   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNEZSZGVZTGhrUjBTbGdEUUNGbVUwWkw5RHVtRG1fc2hEbkVhZ3EtSUhZbDltYXIyY0ZaMEJzUmhOM19GUmdNdE84d0FTNHJZT21DemlIY3BYQnNyeW9iQ1VnLWg5OElDQ1VjZkZESF9LT2U3SnBWRjZCenhxdHh4WTA0dTdhNUhWSExxR3poNUxPZVRqbVI5T21Ia0x5dFlnVC0tTFVLbTZJTmo3TDBXSUlhX2NZU1Jvamk2MkRR?oc=5",
+   "updated": "2026-11-12",
    "t": "strait",
    "lat": 26.57,
    "lng": 56.25,
@@ -3960,7 +3978,12 @@
   "CMR": {
    "nextelec": "parliamentary and local, February 2027",
    "updated": "2026-11-12",
-   "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdDNTeEktSzVfVGphbmxfdlpaQUlLd21wM19VUjlablF2WjllTmpwUE1sV1Y4WGJ6Z0xIekNabHR5bDRacjFseWZJbmhQa3ZnNUoybjV6ZTA1dmhxVjdpLWxYUDRGLVNPNEkzUjBmR1FveHFsa1ZFazhuS0UzOFl1TzRYX2tuNTd3ZVVHMmY4cjdJNFoxaXprWEtGaFVSNFpGTkFIc0sxSTAwZG01U0cyTkhjcHBiTEdmVUtmSEhnRW82R1BwdkpN?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5heGp2azhQX1ZmYzNGeV9HbU1oQzIwaFN5ZUxrd3VDMXJXNHdHQTQ5My1laTFwcXNTLVFHX296cko2azAxUzkybFB6a1p5MUVpVWd4ejcwTU11X0dDM0xHZ3E0RHJRelU5UDdOM3kzWHYtcXY4Ync?oc=5"
+  },
+  "CPV": {
+   "nextelec": "presidential, 15 November 2026",
+   "updated": "2026-11-12",
+   "source": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPY2tTSGJsYXBsY2pRczRzWldyaU1BRXZTY1NzT3gtRkRWa0s3MVN3aUFnd28yNklNMmlDRDlDZzlyMjR4NGNaNHJkcnNrODhyQ3dqRDZ6OERCMnh6LW9LaTY3MlluSzA1RVh4enZ5S1NVNW9tajhvYlN2U1luNURJeEVXWHl1UmRZdDVpS1VfaXdKMWNyYmlIY1VXZEpNYV9JWncxV1N6WXJHX1J3TFlzOEpkaHRld0M0QzlTeElOODBpZ0d5UjJPTjI5bFNEUGQwSVJQXzdxTlJCYV9ydU1KcHlVWGFnTGQwZUtxajZwc3pmY0NBRzYwWkIzOUhpYXZoWm5lYzBOZ0xLcEJ1a0IxSkZfS002Q2s?oc=5"
   }
  }
 }
