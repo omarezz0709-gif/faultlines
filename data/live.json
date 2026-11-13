@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-13T12:56:29Z",
+  "lastRun": "2026-11-13T17:38:17Z",
   "log": [
    {
     "date": "2026-11-13",
@@ -49,6 +49,21 @@
       "label": "USA–Poland",
       "change": "Note refresh: Pentagon approves permanent US base",
       "source": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPSUVhTm5hRGJQQ25ra0JFWjMwcmxhNV9WOEZvNUQ3ZWQweFJuVER4R00xc0FXQlJZdmMtVDNJNnZBSlJMQ2xEVzlZWV8zVlF4ZVA1X1V4V2JfQ2haWnViM3k3OTZoWC04aHFPTnpNSmJqRi1BZDRlR0o3dVh4S0RYYUtuSG1JR3JrcUtQdDZuTEdvTUVaQVpUVC1TYnRkdHc1LTNuRzhub0RTeEVhMzdBRTRzQklXbUVfOEJ4OG8wTnZoQlJpVW44a0lFbFZaaFRXZzVRemZ0ME1wUTV3enBoYjVCUEFmQm5XV0p0VXFVcFAtSXPSAfgBQVVfeXFMUDNsOE5sM1V2SEhDVDc3Y0FldnhSMURZQThQOFZVMDFOcTJLSVFjMks3alJ5TnBuX2p1R2pTLTBGYmRZd3RLWU54bDVQYnFNTnpfNzJibjUteEJtS3prRExuOUNvWXVxTUxxTWRzTUJRTkloTmdlbEFjMWRJWm1HV3kweFl6VnpOZHdZNXV3N2lHWkJWdmM3YV95d3QwTVpPc3RYTjV1dnBmaEp2T1lOT0I2ZUw2LUkySjhZWWlSbFMwMXNQTk1WQ18yYjFyU0JSQXpUd0k5ZWVTSkdsdGhDdEdQLVpuTmNWMG9jNHVocF9ndW5NaTdYYXc?oc=5"
+     },
+     {
+      "label": "Qatar–Türkiye",
+      "change": "Alliance strengthened: Mutual defense agreement signed",
+      "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbkdDRWlnRlh2YkV3TE5aWVJsZzRBVUlHNzh0dDNvNjhwMWJKcmVOZDE4Sloxa3NIckZlOEpMcW1UdzA1cktrMDAyMG94SWN6SzRCdEszYWhwRjVEZVVyN3lyNHpsZ0t6cE1FSzRSYVZ4eUhDZmt5amU0VU5Tc1ZuN2NMUFo3MV9TYVpCWmJkRk1WdzBIRW9aaGIxcGptUQ?oc=5"
+     },
+     {
+      "label": "Gambia",
+      "change": "Election scheduled: Presidential vote set for December 2026",
+      "source": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBBNjZMSVNIMmp1U2loRm9hRXNEY1QwWjlpMy1hYkZoNGMwaUdBaVpWTG1DR1VVSHRWWWNIemo2ZGRQaFVmQXkzYUFDZmNNM2kzdEpkRUZ0QnA?oc=5"
+     },
+     {
+      "label": "Kyrgyzstan",
+      "change": "Election scheduled: Candidate nomination period concludes for presidential vote",
+      "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaWczcm1fREJIdHRYVTFMN3VWUkZLZElIblgwTnZQT2p2X1FuZGxJbmNtblpBZlRUbDItekxsMEpuMF9ZU244d3VsOGk5UnlUSzlGY0hjUGxBakdmVEdaRmVaRTV0cmtPYU1MaVNxVFBBZ2pvQjByWlNnaTNXQTBRclZ6RU4yUzUzUE1ONnE5Sll3cFotWVZVS1FsOVU5MWdjUmNZ?oc=5"
      }
     ]
    },
@@ -1653,7 +1668,7 @@
     ]
    }
   ],
-  "summary": "Iran strikes a US radar base in Bahrain, El Salvador launches military operations in Haiti, and Armenia loses its CSTO voting rights."
+  "summary": "Türkiye and Qatar sign a landmark mutual defense pact in Istanbul, while upcoming presidential elections take shape in Gambia and Kyrgyzstan."
  },
  "relations": {
   "DNK-USA": {
@@ -3375,6 +3390,14 @@
    "note": "The Pentagon approves a permanent US military base in Poland near the Russian border, planned to host 5,000 troops.",
    "updated": "2026-11-13",
    "source": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPSUVhTm5hRGJQQ25ra0JFWjMwcmxhNV9WOEZvNUQ3ZWQweFJuVER4R00xc0FXQlJZdmMtVDNJNnZBSlJMQ2xEVzlZWV8zVlF4ZVA1X1V4V2JfQ2haWnViM3k3OTZoWC04aHFPTnpNSmJqRi1BZDRlR0o3dVh4S0RYYUtuSG1JR3JrcUtQdDZuTEdvTUVaQVpUVC1TYnRkdHc1LTNuRzhub0RTeEVhMzdBRTRzQklXbUVfOEJ4OG8wTnZoQlJpVW44a0lFbFZaaFRXZzVRemZ0ME1wUTV3enBoYjVCUEFmQm5XV0p0VXFVcFAtSXPSAfgBQVVfeXFMUDNsOE5sM1V2SEhDVDc3Y0FldnhSMURZQThQOFZVMDFOcTJLSVFjMks3alJ5TnBuX2p1R2pTLTBGYmRZd3RLWU54bDVQYnFNTnpfNzJibjUteEJtS3prRExuOUNvWXVxTUxxTWRzTUJRTkloTmdlbEFjMWRJWm1HV3kweFl6VnpOZHdZNXV3N2lHWkJWdmM3YV95d3QwTVpPc3RYTjV1dnBmaEp2T1lOT0I2ZUw2LUkySjhZWWlSbFMwMXNQTk1WQ18yYjFyU0JSQXpUd0k5ZWVTSkdsdGhDdEdQLVpuTmNWMG9jNHVocF9ndW5NaTdYYXc?oc=5"
+  },
+  "QAT-TUR": {
+   "a": "QAT",
+   "b": "TUR",
+   "s": "A",
+   "note": "Qatar and Türkiye sign a mutual defense agreement to deepen bilateral security and strategic cooperation.",
+   "updated": "2026-11-13",
+   "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbkdDRWlnRlh2YkV3TE5aWVJsZzRBVUlHNzh0dDNvNjhwMWJKcmVOZDE4Sloxa3NIckZlOEpMcW1UdzA1cktrMDAyMG94SWN6SzRCdEszYWhwRjVEZVVyN3lyNHpsZ0t6cE1FSzRSYVZ4eUhDZmt5amU0VU5Tc1ZuN2NMUFo3MV9TYVpCWmJkRk1WdzBIRW9aaGIxcGptUQ?oc=5"
   }
  },
  "threads": {
@@ -3393,9 +3416,9 @@
     "SYR",
     "ARE"
    ],
-   "d": "Iran-backed Houthi forces target Saudi pipelines and Aramco facilities with drones and missiles as the UNSC extends sanctions.",
+   "d": "Iran-backed Houthi forces advance on Aden and launch missile strikes targeting Saudi Arabia and Red Sea shipping.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQS0gxX0RuRGV6ZmRDeTVFWWpSNHBYOFFUeVZ3M2JWbDY3NzU4ZFdGSHlyWlNxeFE0c0ppRXRTbzhpd3Mya2tOV19FNWpILTNTcndGY1MtbWUtTFZidlZTSVA2Z3NzeEF3NXZPSlFQV3NUeHpyVjE1VGdmLUVPZ1FWa3NacXNtVmIxR2UwRzdPM2JjNENMdG5xX19rbjB6Tk0?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQ2dneEw3Rm1VSkNOMUhxbVdZNjNzRHhpQ2xmLURYazVIMkFfck5rTE1neExRdzQwVXpzdVdtU1duTXpfQmsxcEtQaWtQZlZZM1VSVURTQlJHSnVnbWNuVlVlZzE2N0kxNURoT2JiSVp0SWU1aGZMTF9rWEpIR1JCenhLWE5kaEVqTkh0Qw?oc=5",
    "t": "security",
    "updated": "2026-11-13"
   },
@@ -4025,9 +4048,9 @@
    "source": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQSW1iMF9NUE00dy1CRUxvdTczY3VpRV9uVDdVRE9wdkU4WkQ4MnZaTVY4d2cyb1NlMmZHdEloYl96a0t2VWJ3U1Fyb2xCSEdDY1YzeWtKMTNSMnE4S2JVc1I3RVdiYXJMTTlobjNIRTV3TGJIeC05RVQ0SURRbjE0T0tlNFN6WnlrNEVhamprLW45MERVMG5XaGtKZThuUkF1eWZKWW1oY2E3YWhjV1AtRUFBeHJzM3YxZlRickY3Z2VzR0tkT3duZzVNQ2NWWEN4ZlVvTHFZbUg1WXlJZy1SR0tnUDNFLWhyY2E0X0htcW0zUWF0MHA4OF9lSXpwUnB3QTJNajJWel9pRlHSAYsCQVVfeXFMUEltYjBfTVBNNHctQkVMb3U3M2N1aUVfblQ3VURPcHZFOFpEODJ2Wk1WOHdnMm9TZTJmR3RJaGJfemtLdlVid1NRcm9sQkhHQ2NWM3lrSjEzUjJxOEtiVXNSN0VXYmFyTE05aG4zSEU1d0xiSHgtOUVUNElEUW4xNE9LZTRTelp5azRFYWpqay1uOTBEVTBuV2hrSmU4blJBdXlmSlltaGNhN2FoY1dQLUVBQXhyczN2MWZUYnJGN2dlc0dLZE93bmc1TUNjVlhDeGZVb0xxWW1INVl5SWctUkdLZ1AzRS1ocmNhNF9IbXFtM1FhdDBwODhfZUl6cFJwd0EyTWoyVnpfaUZR?oc=5"
   },
   "KGZ": {
-   "nextelec": "presidential, Jan 2027",
+   "nextelec": "presidential, late 2026",
    "updated": "2026-11-13",
-   "source": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5lN0VsMnAxdHJSQ1lORVQtQXV4LThxVWdua1RvbU9aRHY1ZDJvR2pjZWpQRkVaSkdjX1JpMHVMSm1FeEpiOVoxeHo4alBnT1liNDYwNVBUZVFsa3JSQVk4VWFlUERTcmxOOWczM0lIeC1TbUhjOGoyVg?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaWczcm1fREJIdHRYVTFMN3VWUkZLZElIblgwTnZQT2p2X1FuZGxJbmNtblpBZlRUbDItekxsMEpuMF9ZU244d3VsOGk5UnlUSzlGY0hjUGxBakdmVEdaRmVaRTV0cmtPYU1MaVNxVFBBZ2pvQjByWlNnaTNXQTBRclZ6RU4yUzUzUE1ONnE5Sll3cFotWVZVS1FsOVU5MWdjUmNZ?oc=5",
    "lastelec": "presidential, Jan 2021, Sadyr Japarov"
   },
   "CMR": {
@@ -4048,9 +4071,9 @@
   },
   "GMB": {
    "lastelec": "presidential, Dec 2021, Adama Barrow",
-   "nextelec": "presidential, Dec 2026",
+   "nextelec": "presidential, December 2026",
    "updated": "2026-11-13",
-   "source": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBBM0psQ3A4ZkE1S01PWVhwV3M2VkZkN043ZmY4ZEpQUkdkYkNrUUxfNTYtN1JvTWFra2k0VHI4U2hjMGRWOFJ1dnpEYVFZdXpsdnV0YUtSSU03U3NBR1dJcUxRRGNzZ29CZXNjang0MFpRLW5QeW1kbDVuQWcydk0?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBBNjZMSVNIMmp1U2loRm9hRXNEY1QwWjlpMy1hYkZoNGMwaUdBaVpWTG1DR1VVSHRWWWNIemo2ZGRQaFVmQXkzYUFDZmNNM2kzdEpkRUZ0QnA?oc=5"
   },
   "COD": {
    "lastelec": "presidential, Dec 2023, Félix Tshisekedi",
