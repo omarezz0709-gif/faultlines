@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-12T18:29:35Z",
- "berlin": "2026-11-12 19:29",
- "status": "warn",
- "summary": "0 problem(s), 1 warning(s): AI answers: the first try failed, the second worked (gemini-3.6-flash)",
+ "generated": "2026-11-13T17:56:58Z",
+ "berlin": "2026-11-13 18:56",
+ "status": "ok",
+ "summary": "All checks passed.",
  "repairs": [],
  "checks": [
   {
@@ -10,7 +10,7 @@
    "name": "Website",
    "status": "ok",
    "detail": "HTTP 200, 427 KB",
-   "ms": 259
+   "ms": 228
   },
   {
    "g": "security",
@@ -23,49 +23,49 @@
    "name": "GitHub Pages copy",
    "status": "ok",
    "detail": "HTTP 200",
-   "ms": 248
+   "ms": 196
   },
   {
    "g": "site",
    "name": "data/news.json",
    "status": "ok",
-   "detail": "HTTP 200, 492 KB",
-   "ms": 393
+   "detail": "HTTP 200, 479 KB",
+   "ms": 329
   },
   {
    "g": "site",
    "name": "data/live.json",
    "status": "ok",
-   "detail": "HTTP 200, 290 KB",
-   "ms": 318
+   "detail": "HTTP 200, 295 KB",
+   "ms": 268
   },
   {
    "g": "site",
    "name": "data/politics.json",
    "status": "ok",
    "detail": "HTTP 200, 42 KB",
-   "ms": 103
+   "ms": 267
   },
   {
    "g": "site",
    "name": "data/wb.json",
    "status": "ok",
    "detail": "HTTP 200, 83 KB",
-   "ms": 137
+   "ms": 100
   },
   {
    "g": "site",
    "name": "data/geo.json",
    "status": "ok",
    "detail": "HTTP 200, 697 KB",
-   "ms": 262
+   "ms": 175
   },
   {
    "g": "site",
    "name": "data/cities.json",
    "status": "ok",
    "detail": "HTTP 200, 151 KB",
-   "ms": 126
+   "ms": 116
   },
   {
    "g": "site",
@@ -77,25 +77,25 @@
    "g": "fresh",
    "name": "Headlines (news.json)",
    "status": "ok",
-   "detail": "last update 0.5 h ago"
+   "detail": "last update 0.4 h ago"
   },
   {
    "g": "fresh",
    "name": "AI relationship update (live.json)",
    "status": "ok",
-   "detail": "last update 0.4 h ago"
+   "detail": "last update 0.3 h ago"
   },
   {
    "g": "fresh",
    "name": "Leaders (politics.json)",
    "status": "ok",
-   "detail": "last update 30.0 h ago"
+   "detail": "last update 20.0 h ago"
   },
   {
    "g": "fresh",
    "name": "Countries with confirmed headlines",
    "status": "ok",
-   "detail": "174"
+   "detail": "172"
   },
   {
    "g": "fresh",
@@ -119,155 +119,155 @@
    "g": "worker",
    "name": "/live (en)",
    "status": "ok",
-   "detail": "24 items",
-   "ms": 1138
+   "detail": "18 items",
+   "ms": 754
   },
   {
    "g": "worker",
    "name": "/top (en)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 109
+   "ms": 118
   },
   {
    "g": "worker",
    "name": "/videos (en)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 601
+   "ms": 631
   },
   {
    "g": "worker",
    "name": "/live (de)",
    "status": "ok",
-   "detail": "22 items",
-   "ms": 4735
+   "detail": "20 items",
+   "ms": 1778
   },
   {
    "g": "worker",
    "name": "/top (de)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 121
+   "ms": 98
   },
   {
    "g": "worker",
    "name": "/videos (de)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 280
+   "ms": 473
   },
   {
    "g": "worker",
    "name": "/live (fr)",
    "status": "ok",
-   "detail": "26 items",
-   "ms": 985
+   "detail": "20 items",
+   "ms": 1165
   },
   {
    "g": "worker",
    "name": "/top (fr)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 134
+   "ms": 114
   },
   {
    "g": "worker",
    "name": "/videos (fr)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 404
+   "ms": 502
   },
   {
    "g": "worker",
    "name": "/live (es)",
    "status": "ok",
    "detail": "5 items",
-   "ms": 585
+   "ms": 498
   },
   {
    "g": "worker",
    "name": "/top (es)",
    "status": "ok",
    "detail": "5 stories",
-   "ms": 110
+   "ms": 80
   },
   {
    "g": "worker",
    "name": "/videos (es)",
    "status": "ok",
-   "detail": "4 videos",
-   "ms": 382
+   "detail": "3 videos",
+   "ms": 305
   },
   {
    "g": "worker",
    "name": "/live (it)",
    "status": "ok",
-   "detail": "16 items",
-   "ms": 1619
+   "detail": "14 items",
+   "ms": 1317
   },
   {
    "g": "worker",
    "name": "/top (it)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 99
+   "ms": 104
   },
   {
    "g": "worker",
    "name": "/videos (it)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 411
+   "ms": 418
   },
   {
    "g": "worker",
    "name": "/live (ar)",
    "status": "ok",
-   "detail": "6 items",
-   "ms": 3361
+   "detail": "4 items",
+   "ms": 752
   },
   {
    "g": "worker",
    "name": "/top (ar)",
    "status": "ok",
-   "detail": "6 stories",
-   "ms": 129
+   "detail": "4 stories",
+   "ms": 102
   },
   {
    "g": "worker",
    "name": "/videos (ar)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 489
+   "ms": 418
   },
   {
    "g": "worker",
    "name": "Real-time search",
    "status": "ok",
-   "detail": "9 reports",
-   "ms": 917
+   "detail": "4 reports",
+   "ms": 631
   },
   {
    "g": "security",
    "name": "Other websites are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 83
+   "ms": 94
   },
   {
    "g": "security",
    "name": "Look-alike Pages projects are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 76
+   "ms": 79
   },
   {
    "g": "security",
    "name": "Only the site's own prompts are answered",
    "status": "ok",
    "detail": "HTTP 400 (should be 400)",
-   "ms": 63
+   "ms": 85
   },
   {
    "g": "security",
@@ -281,7 +281,7 @@
    "name": "Admin login",
    "status": "ok",
    "detail": "HTTP 401 without a code (should be 401)",
-   "ms": 76
+   "ms": 83
   },
   {
    "g": "security",
@@ -292,9 +292,9 @@
   {
    "g": "ai",
    "name": "AI answers",
-   "status": "warn",
-   "detail": "the first try failed, the second worked (gemini-3.6-flash)",
-   "ms": 1459
+   "status": "ok",
+   "detail": "answered by gemini-3.6-flash",
+   "ms": 11310
   },
   {
    "g": "sources",
@@ -315,7 +315,7 @@
    "name": "Page loads and the globe starts",
    "status": "ok",
    "detail": "",
-   "ms": 4365
+   "ms": 2687
   },
   {
    "g": "browser",
@@ -367,8 +367,6 @@
   }
  ],
  "emailed": [],
- "warn_since": {
-  "AI answers": "2026-11-12T18:29:35Z"
- },
- "ms": 481773
+ "warn_since": {},
+ "ms": 412073
 }
