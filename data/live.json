@@ -1,7 +1,17 @@
 {
  "meta": {
-  "lastRun": "2026-11-13T17:38:17Z",
+  "lastRun": "2026-11-14T01:58:10Z",
   "log": [
+   {
+    "date": "2026-11-14",
+    "items": [
+     {
+      "label": "China–Lithuania",
+      "change": "Note updated: Chinese diplomats visit Lithuania in initial step toward restoring ties",
+      "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORkJBZkE2UDNfQ3RoWWhHT0JMSWp4MGM2dEo0SXhZZjNMcGM5bWM2Uzh5SGtoOHJyTkNZUEp4ZVhSNGFlLXdna3NrZ0dUVEZ5UjlHQVFsVUdtbk92YURLRzFLM2ZnTmk4cTVpZ3ljUzNRRDFnTGU4NGpHWTRYVTBaTWhnQlFYTTludGdCamQ0UmpCcU0tUDdjZXN5QWRwLVpWazJPbjNhRTlBNDVFTkI0WEV2aHJkdTA?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-11-13",
     "items": [
@@ -1606,69 +1616,9 @@
       "source": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNZFRmY3F6XzBWUTVlelpfUjgtaERYZEFLSV8tQURNb0RlNVhMak5JUGZ6blgzR1ZpaXBkOGx2el9pdFFPaTNIN0kzaVpPQWZTRS1LRks1UEdsenMtSWlOcGZwdTlnRTg0OE90QTFvbmpaLXJjNDJaRnY0ZzNNekhyRFdLOW54OUZQWDZoU2NaQlJvczdxd2NXYmc2S3FvVmRvVzhqWmZvQnVYNDYxbUl5TV9EUXc2X1JEOXF5RjR3R05DVGplTWoyYk9SaXNPNGxPWVhn?oc=5"
      }
     ]
-   },
-   {
-    "date": "2026-10-15",
-    "items": [
-     {
-      "label": "France–Chad",
-      "change": "Normal → Partner: signed renewed defence partnership",
-      "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRTNZbDdyWlZKbDNZNEVlcXl4UGVvWGhIOUphSjBtdUVNbVdFV3AzNzV4bjNXVHJULU40VEtWekl2Y2RNaTRka3lJcTE0UkYyd2tsSVZia3p1SWZuRjFPY29zcWtYbHd1VUJ2ZGxOZDVkZGc5aTNjUVBldEs1U01NY0ppQ0Y3M05SREJiLVZvamVUZWRMdUV2dlUyS2VqOFV4Q3lNRkFRdjRMZHZQRm1iY1Nn?oc=5"
-     },
-     {
-      "label": "Cambodia–Vietnam",
-      "change": "note: defence and border security agreements",
-      "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQY1dHQS1HeUlpeG5Ha2dLUDJiejdZdzlZQ2c0OWVlbnJTRk5SY2RJeFRiODU4MjlsaTg2SGpsbEd6YWpZUXIwNXlTRUlSSFJpQ1lqUXZHMHhsV0FXUG50TF91aGFMX005SUhsd240X01LT3A1UGl3cVpFMnZMbDhPM3cwTnRtdnZ0cDZSZU5CdUxGeVJPVTJiSDV6XzMwRjM3b3FfcQ?oc=5"
-     },
-     {
-      "label": "North Korea–South Korea",
-      "change": "note: submarine cruise missile tests",
-      "source": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQaFNaRnJhenlNaF9Ga3RlQXMwZUl6LVhxaE5Ia2toV3hxYUd1cEw2WGpqN1dHY2V2V0ZneGFnQnF1cHNERTJDSVFKQWd3eldxYUlJU2Z4dGhoRkJqeHdZSmpRdG44MktLdWYwQmgyeU1zdzFJamlITFZxWjlIQ0Zla2pnY1hjTFN6MDNndE5rc2VjalJncWpEQVBPU3h2TnhfczAwOUk1NFlETkE0cFkyeHloLXNCcHkzQm9zMmNIdW1uS1ZqU0Q3WWRkNUxRci0taTYyQ3VOMlRBQdIB2gFBVV95cUxQaFNaRnJhenlNaF9Ga3RlQXMwZUl6LVhxaE5Ia2toV3hxYUd1cEw2WGpqN1dHY2V2V0ZneGFnQnF1cHNERTJDSVFKQWd3eldxYUlJU2Z4dGhoRkJqeHdZSmpRdG44MktLdWYwQmgyeU1zdzFJamlITFZxWjlIQ0Zla2pnY1hjTFN6MDNndE5rc2VjalJncWpEQVBPU3h2TnhfczAwOUk1NFlETkE0cFkyeHloLXNCcHkzQm9zMmNIdW1uS1ZqU0Q3WWRkNUxRci0taTYyQ3VOMlRBQQ?oc=5"
-     },
-     {
-      "label": "Central Mediterranean migration route",
-      "change": "updated route to include Greece and eastern Libya funding",
-      "source": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQWTNQOFBrc2txLUdiLWdRSEM1QU5FZi1iRWxVeVZIeGJvemt4bDVTNk5PeUI2TXNhQlRIeHowcURhQ2V5d3psU25JdGNsdXVDWFBDZ2M3eDFNcmhGRXBKdlAtMERVWHJIcjlZVFZMVE5WRVljamhNZDdsRDBXSkZ5SHNkb294bTFaSDl2MER5S3p6NVpXNFhGd3FkZUplUTJRemtJM3Q0NnYzVllfQ2VzOXdoZnNSU1ZnaVJSa0dRdjVmQks3djU2ek45WDZkWFNTUGtHUFJfXzZWUkc3SXpaR1Y1TFdCS1drRVdIdDlDQW9jM2hJc0w1VTJyTm80VXIwT0NYLW9HUXFUdFk0Skw0N3R3TjJpU2Vq?oc=5"
-     },
-     {
-      "label": "Brazil",
-      "change": "presidential runoff election noted",
-      "source": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBWLWw3a2JfdmRKRzF4dXlsb2Q0QllmSTE2bTl4Z2lRbzZhLW9oYnA1d2RPZFBFa05pNGpZVjMwcHVkTDRvUjdEbTg0NFU2RnhfcGlvdDlqLUtHb0JLYWk2MXBsN2xndnha?oc=5"
-     },
-     {
-      "label": "Bangladesh–India",
-      "change": "Tense: Sheikh Hasina criticizes Bangladesh government from India over minority safety",
-      "source": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQZ0wzejZmc3pNUi16VTB0WGtiQmVsSzFhemkwSjFTR3FOcHdCSWh2ZngzUWIySFBPWXhEbkxEdzVGRktzM0pzRTQ3UTdUa1M0Rkg0VEstSnVCVTAzdUNBQTdrT0dVaFRmZVpSZ2w2MkdndTVBU0JNYVAxNVhMcVFCbGY1NVpyNDZxU3dlZU9NTy1sVVF3OVk2NlBHQlFVOVZ6Tm5vV01IS0FkbWhRTXNrdG9rVHRSRkdwaGhVVjZBeEcyWm1RZHdrNU9BX01UZHRiMnQ3Sm1OQ2NnWko5N1RsaTZoMXJXNlMy0gHuAUFVX3lxTE92WlVrSlpsR2Nsc3F3ajJqX1NtdV8xakZvTFhncEk1S2FkWWtGdGpHUTNsNDN3MHBxVU5yclotbkt3MXRKeExXOTFWMVIxM3B2eEpMZWpYakZjLU9EN0tNYWRwdmNpV2JjQjZlMXhFWFN0NjUyOEl5WFRSdnFXMjJyTW5WaWZnTEViVFhPQVdKUWpxcGdua3ZId01IWGxIMW1RUXluazc0eU9oMmE5UnFiRGZ2VEJHRTl2R0xiM0Z2ZGhEMkFiWS1LOE15Zk1KcnRGSzFqdmg4eWwwMXRfSWR0SGd3MHhWNjAxeUljdFE?oc=5"
-     },
-     {
-      "label": "Lesotho–Oman",
-      "change": "Normal: Established formal diplomatic relations",
-      "source": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1qYjBGWWJBN2J2bWZIX0FvS0M4UnpHUmtTNHdzenA1TThkNERxN1BidXNDVnllWW1ubFhUN0M4MHdWTWpzdE93NXNoZDZLeEdhdnVHSWIzOHc3OG9l?oc=5"
-     },
-     {
-      "label": "Croatia–Serbia",
-      "change": "Tense: Serbia sends protest note over alleged election interference",
-      "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeWxsSEN1U0VRWlcyMFFsbmpOSGJ1MzZiZ0labmYwR2lkRkN6bFFNSEJ1amJRdjBVbXVsa2pQWjI5LXNINHNVVWl1aHJjdUFxWGE5M3AwWk9RUHpOd0c0VzAxeS14bjFtaFFtbjdPX19OakhFeHN3dEVKV2h4ckRqWVNmMk9Ybmh6WjVaWTJpejdJbVdneVduMVVBZFdxQjVZMVR5QjdtbHdzdTg?oc=5"
-     },
-     {
-      "label": "Eastern DR Congo",
-      "change": "Updated details: Former president Kabila joins M23-led AFC alliance",
-      "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOY1l3VHE1di1Wa0h6U2lwT0NpSmc0UlA2SFN4WWd5VzItMkdvQk5ockhqQ3pvMTJObS0weDRfbHY0aWI5ODZRWWdnWXFJTUNrTDk5RFlvczlBX2VVYXNfLWFoZ3lnQWlMeW5oMW1jd1JTcElsVTUza1IyMzhWd2ZCdW4tZjRJVDViY0U3dTc1aDFLNW8?oc=5"
-     },
-     {
-      "label": "Ukraine–United States",
-      "change": "Friendly → Tense: Ukraine resumes oil refinery strikes over US energy truce disagreements",
-      "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOanVvOXBrUl9qVzlNb3ljaFNMclJtU0JkcGMwOHg3WngxQnJhSUc4VzZGV0hvRDBBek9DejBaaTNwWVVSd0thaUt4dXJWZGVEVHdaeXNHQXVpV3pmZVJwN2o2ZDFrTXNGTVdaLTcwY1haLXBlWTRRNnpZSXFFSmllQ0xEdTZHLVRhREJCU3Q3WHlycGhCcEdTSXpjX0VDb1BXYXFiaGp5VjBXQQ?oc=5"
-     },
-     {
-      "label": "Somalia",
-      "change": "Added May 2027 presidential election schedule",
-      "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSUxQOENvNy1CZFN6ZV9tN09odU5UbVpHTkZnT3hkM2F3WkwzdXNUdGFQX1Z2X1MwTGJRU3ZXOEVQOXo3ZC1JTTZzQkYyZUZRM1dQS2MtME9JTWFuZ09ZSi0tLXpMUGRJVXdQZE1rd1RQTklLeERhT0huR24xTE9QM2lmMWN0LWgzaHp5ZFdrLUI?oc=5"
-     }
-    ]
    }
   ],
-  "summary": "Türkiye and Qatar sign a landmark mutual defense pact in Istanbul, while upcoming presidential elections take shape in Gambia and Kyrgyzstan."
+  "summary": "Chinese diplomats visit Lithuania to initiate talks on restoring ties, while regional security discussions continue across Europe and the Middle East."
  },
  "relations": {
   "DNK-USA": {
@@ -3398,6 +3348,14 @@
    "note": "Qatar and Türkiye sign a mutual defense agreement to deepen bilateral security and strategic cooperation.",
    "updated": "2026-11-13",
    "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbkdDRWlnRlh2YkV3TE5aWVJsZzRBVUlHNzh0dDNvNjhwMWJKcmVOZDE4Sloxa3NIckZlOEpMcW1UdzA1cktrMDAyMG94SWN6SzRCdEszYWhwRjVEZVVyN3lyNHpsZ0t6cE1FSzRSYVZ4eUhDZmt5amU0VU5Tc1ZuN2NMUFo3MV9TYVpCWmJkRk1WdzBIRW9aaGIxcGptUQ?oc=5"
+  },
+  "CHN-LTU": {
+   "a": "CHN",
+   "b": "LTU",
+   "s": "T",
+   "note": "Diplomatic contact resumes as Chinese diplomats visit Lithuania in an initial step toward restoring ties strained over Taiwan.",
+   "updated": "2026-11-14",
+   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORkJBZkE2UDNfQ3RoWWhHT0JMSWp4MGM2dEo0SXhZZjNMcGM5bWM2Uzh5SGtoOHJyTkNZUEp4ZVhSNGFlLXdna3NrZ0dUVEZ5UjlHQVFsVUdtbk92YURLRzFLM2ZnTmk4cTVpZ3ljUzNRRDFnTGU4NGpHWTRYVTBaTWhnQlFYTTludGdCamQ0UmpCcU0tUDdjZXN5QWRwLVpWazJPbjNhRTlBNDVFTkI0WEV2aHJkdTA?oc=5"
   }
  },
  "threads": {
