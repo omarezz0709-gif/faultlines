@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-14T01:58:10Z",
+  "lastRun": "2026-11-14T12:00:19Z",
   "log": [
    {
     "date": "2026-11-14",
@@ -9,6 +9,31 @@
       "label": "China–Lithuania",
       "change": "Note updated: Chinese diplomats visit Lithuania in initial step toward restoring ties",
       "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORkJBZkE2UDNfQ3RoWWhHT0JMSWp4MGM2dEo0SXhZZjNMcGM5bWM2Uzh5SGtoOHJyTkNZUEp4ZVhSNGFlLXdna3NrZ0dUVEZ5UjlHQVFsVUdtbk92YURLRzFLM2ZnTmk4cTVpZ3ljUzNRRDFnTGU4NGpHWTRYVTBaTWhnQlFYTTludGdCamQ0UmpCcU0tUDdjZXN5QWRwLVpWazJPbjNhRTlBNDVFTkI0WEV2aHJkdTA?oc=5"
+     },
+     {
+      "label": "Canada–Philippines",
+      "change": "None → Partner: Concluded negotiations for a bilateral free trade agreement",
+      "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOcFFpaU9MdGJDMlFkSGV3ZXpHUDhrSVcxSkRyS2lNRlBEa0JlZkFhSGEtd2FCenNvTGxJTXB2MjQ1V1FWbHpkZUJ4Y29jU1ZNWGpaN256SjRtM1RUempnbC1aemlsZUlmdmFKb2QtcDBrMXVmQzl0bTVVQmg0VGRSTTJaTzRPdHVTNjVJU0s2dG44RlZROWI1WDZ3YmlNRmdjd01DU1Jlc3NpWTA4RUJyeUpMZTJ4TExD?oc=5"
+     },
+     {
+      "label": "Bangladesh–India",
+      "change": "Tense: Note refreshed on Sheikh Hasina extradition request and postponed consular dialogue",
+      "source": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxPejMxN004blBJSjBNZ0NjR3N4RkVma2hGeXA5Qmdab0xvelJFOU96RkdrV012WXdsX2lhd3RQTmJYSUZ3OHlsTEg3X3lvSXNfLWlKZm96Z0NNOWktQ3dUSUVwVDQwNWxKM2g0all6a3J2YkNHQW8xNjJfQnZZY1hGblF3bWlpb1dVYlBpVzh1R01HdVdNUGRWbFZ0NWhjT3hzaXZVX29yMVVXZWM0ZEp0eG5tNHFtd19wcUN0bExjbmVpbU1ZQWU5Y0oxaTRFMXJkQS1UdlZ2R3dqN2ZLQXE5NEVtS3lzZjAxbGFlQVpkR0NEYmxneGFTb2RWWlQxbTYwREJEVHpwQ1NUaGtFeEZ1UldfUG1TWmIwTFNZMnhKYW44TkphaVl5QmFJUDlCVUZMNUFyQ1hCazVpaFh3b29CSDNkUEtVSE9pa1Q3OXQ0Nm52dkoxZzFVTVp6STQzZ9IB-gFBVV95cUxQalB0WjhNTG00NXQ2Z3ZOM0dSQnotVDRrTHQ5LWFfSUJlb0dmQzJpcmM0SDEtTE1KdzRoTGtyQ2NvR0V6YW13WXVLTHNlNlVRTmk0MTRQQ3k2bk5aclB5bVR4ZUtTbDZHenZsSDduUHJfT1Axa0ZkUDBrN3lsQXVhOS00Q29TamxuRTJ4UkpBcDlyXzZoeFJvbExvbEE0Z1JHV2ZTQlNaOERHUXl2Nk9lN2VrbEhfR2JDdExIU0NfTk1vdndORmRUVUF1a0xfNGxlLXVwdlktX3BWMS00SzBEVFJLcnQzLWwwNlVZMG4xMVJYLTZFVGhGUV93?oc=5"
+     },
+     {
+      "label": "India–Nepal",
+      "change": "Normal: Note refreshed on approval of Janakpur-Ayodhya cross-border passenger train service",
+      "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZUdIbEs4U1hJX2lqVUM5ZGJGRUpRUzNxZ1B5WXI1THFJZFljR3NGRWlsZHMxbm1KOHBvdV9oNXM3ZnNhSDlyN0hBOEdLWUtleVdRVGhkNW4tUlcyZTRNMjFmeDJxbDVVaFNfcWtVcDN4akJLekZMR0RnZEdmOFNUOGJLTkJLMERKeWFINDdZR0Zsb1JnR0x6MDBrc1Z2S1JCWFViN3o3cFVRbVk2cE1zZmNiaUxBNnlHS1lPMA?oc=5"
+     },
+     {
+      "label": "Sahel & Sudan gold flows",
+      "change": "Updated thread routing to reflect Ethiopian transit corridor for smuggled Sudanese gold to the UAE",
+      "source": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNcFBGYjNlak1yVHRDRzl5WW1MZVdmWE1rR0plMXFmQ3RuakxYSGdsNFZxRTV3aWZOQThRUVgzMlE1cV9NMWdOMDI2VG9fWWdrWHdCOHpEeWZwb2tSYnA3QTFnMzRRNmRfZnR6NlhNc0pjZEI0YlgyV2RFVmNrQlkyMXVqOTRjb1VjNXlVUDd6Wm0wUUxXS210aE5YTDBEWDJBOTYtY1Uwc2MzTGJRVUxmaU1yZEhTWE9yOEtKYk1RSGdmT00wQzk2QlhscUJEenNVdUpQNHZXTzZvOUdHd2NB?oc=5"
+     },
+     {
+      "label": "South Sudan",
+      "change": "Elections postponed to February 2027",
+      "source": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9HM3RuaTNMTEdwMjliSzZBOWRQZ0NhT3pNWWpLT1pGMm04OHNiR2dicDN3RGw0eWsxVUtocVN4WVdtYzZrNHBjZHVVa3VIeWQyMzNFZlhEY2g?oc=5"
      }
     ]
    },
@@ -1618,7 +1643,7 @@
     ]
    }
   ],
-  "summary": "Chinese diplomats visit Lithuania to initiate talks on restoring ties, while regional security discussions continue across Europe and the Middle East."
+  "summary": "South Sudan postpones general elections to February 2027, Canada and the Philippines conclude free trade agreement negotiations, and new cross-border transport and trade initiatives advance across Asia and Africa."
  },
  "relations": {
   "DNK-USA": {
@@ -1817,9 +1842,9 @@
    "a": "BGD",
    "b": "IND",
    "s": "T",
-   "note": "Tensions persist as Bangladesh opposition leaders warn against transit corridors and demand a fair Ganges water treaty.",
-   "updated": "2026-10-31",
-   "source": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNMlRna3pUYmhhdUVSbmxaTFE1dDZnNlMzU3JLUGZrRTFPV2U4SWtXNV9NZm1HUlUwTkRLTDNidVpKdi10YlBtd250ejd1Qjg2WXNEYnV4Q3I1OWNWak15SjJoRkpGelNWVnBsdjdYbExFRnNOUUI4cF9wcUZhY1Q3R2p0VG5iOUtPZkNwNGd3YVFSVWlRLXpSZVpPTlNZVE42eE1wbHZnYy12NzR5X1VMckwtV0xWX2Q2Zm5BTUFKN0dIYTYxbHVBWGRrNXBzVWdTYWFuc1BYb3g2SWo5RXV4SjFiMFBrOV9Ob1g3ei1QSdIB9gFBVV95cUxQaXd3TldLc0lCcmI5VU9iYTlnREE0dVhXazc3LV9WaG9adjF4Rm9zcDNTNDhTbkFjZ0VXZk0tNkYzS3lPMlJZTjN2Y19zNjVhcFZjbVJQcDR3WUt1WHA0bmdMMDY4M19YM3lNbHM0Tmk3N1VPU05OQjdYSkluX1R4bXRuOW1MQjd5eFUxY1prbHhzUndWWkk2Q2ctSll1VG1zT0xKTXlxMk84MWUxUTRhSUFhcE9MS0hzRHlnYXZRX29IcW1zeWZlQmk0cldQRUtVYUcwOE1kc0tHNE5mZDJmajNqeEdvZ3NEUFpCb2d6anB0eWNhcWc?oc=5"
+   "note": "Tensions persist as Bangladesh completes legal requests for the return of Sheikh Hasina while consular talks are postponed.",
+   "updated": "2026-11-14",
+   "source": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxPejMxN004blBJSjBNZ0NjR3N4RkVma2hGeXA5Qmdab0xvelJFOU96RkdrV012WXdsX2lhd3RQTmJYSUZ3OHlsTEg3X3lvSXNfLWlKZm96Z0NNOWktQ3dUSUVwVDQwNWxKM2g0all6a3J2YkNHQW8xNjJfQnZZY1hGblF3bWlpb1dVYlBpVzh1R01HdVdNUGRWbFZ0NWhjT3hzaXZVX29yMVVXZWM0ZEp0eG5tNHFtd19wcUN0bExjbmVpbU1ZQWU5Y0oxaTRFMXJkQS1UdlZ2R3dqN2ZLQXE5NEVtS3lzZjAxbGFlQVpkR0NEYmxneGFTb2RWWlQxbTYwREJEVHpwQ1NUaGtFeEZ1UldfUG1TWmIwTFNZMnhKYW44TkphaVl5QmFJUDlCVUZMNUFyQ1hCazVpaFh3b29CSDNkUEtVSE9pa1Q3OXQ0Nm52dkoxZzFVTVp6STQzZ9IB-gFBVV95cUxQalB0WjhNTG00NXQ2Z3ZOM0dSQnotVDRrTHQ5LWFfSUJlb0dmQzJpcmM0SDEtTE1KdzRoTGtyQ2NvR0V6YW13WXVLTHNlNlVRTmk0MTRQQ3k2bk5aclB5bVR4ZUtTbDZHenZsSDduUHJfT1Axa0ZkUDBrN3lsQXVhOS00Q29TamxuRTJ4UkpBcDlyXzZoeFJvbExvbEE0Z1JHV2ZTQlNaOERHUXl2Nk9lN2VrbEhfR2JDdExIU0NfTk1vdndORmRUVUF1a0xfNGxlLXVwdlktX3BWMS00SzBEVFJLcnQzLWwwNlVZMG4xMVJYLTZFVGhGUV93?oc=5"
   },
   "MAR-SAU": {
    "a": "MAR",
@@ -3356,6 +3381,22 @@
    "note": "Diplomatic contact resumes as Chinese diplomats visit Lithuania in an initial step toward restoring ties strained over Taiwan.",
    "updated": "2026-11-14",
    "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORkJBZkE2UDNfQ3RoWWhHT0JMSWp4MGM2dEo0SXhZZjNMcGM5bWM2Uzh5SGtoOHJyTkNZUEp4ZVhSNGFlLXdna3NrZ0dUVEZ5UjlHQVFsVUdtbk92YURLRzFLM2ZnTmk4cTVpZ3ljUzNRRDFnTGU4NGpHWTRYVTBaTWhnQlFYTTludGdCamQ0UmpCcU0tUDdjZXN5QWRwLVpWazJPbjNhRTlBNDVFTkI0WEV2aHJkdTA?oc=5"
+  },
+  "CAN-PHL": {
+   "a": "CAN",
+   "b": "PHL",
+   "s": "F",
+   "note": "Canada and the Philippines conclude negotiations for a bilateral free trade agreement targeting implementation in 2027.",
+   "updated": "2026-11-14",
+   "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOcFFpaU9MdGJDMlFkSGV3ZXpHUDhrSVcxSkRyS2lNRlBEa0JlZkFhSGEtd2FCenNvTGxJTXB2MjQ1V1FWbHpkZUJ4Y29jU1ZNWGpaN256SjRtM1RUempnbC1aemlsZUlmdmFKb2QtcDBrMXVmQzl0bTVVQmg0VGRSTTJaTzRPdHVTNjVJU0s2dG44RlZROWI1WDZ3YmlNRmdjd01DU1Jlc3NpWTA4RUJyeUpMZTJ4TExD?oc=5"
+  },
+  "IND-NPL": {
+   "a": "IND",
+   "b": "NPL",
+   "s": "N",
+   "note": "India and Nepal approve a new cross-border train service between Janakpur Dham and Ayodhya to enhance connectivity.",
+   "updated": "2026-11-14",
+   "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZUdIbEs4U1hJX2lqVUM5ZGJGRUpRUzNxZ1B5WXI1THFJZFljR3NGRWlsZHMxbm1KOHBvdV9oNXM3ZnNhSDlyN0hBOEdLWUtleVdRVGhkNW4tUlcyZTRNMjFmeDJxbDVVaFNfcWtVcDN4akJLekZMR0RnZEdmOFNUOGJLTkJLMERKeWFINDdZR0Zsb1JnR0x6MDBrc1Z2S1JCWFViN3o3cFVRbVk2cE1zZmNiaUxBNnlHS1lPMA?oc=5"
   }
  },
  "threads": {
@@ -3523,7 +3564,7 @@
   "sahel-gold": {
    "t": "economy",
    "n": "Sahel & Sudan gold flows",
-   "d": "Artisanal gold from the Sahel and Egypt-Sudan border is smuggled to the United Arab Emirates (UAE) and Switzerland; Egyptian crackdowns on border mining spark lethal clashes.",
+   "d": "Artisanal gold from the Sahel and Sudan is smuggled through Ethiopia and neighbouring states to the United Arab Emirates (UAE) and Switzerland.",
    "c": [
     "MLI",
     "BFA",
@@ -3531,12 +3572,13 @@
     "SDN",
     "TCD",
     "EGY",
+    "ETH",
     "ARE",
     "RUS",
     "CHE"
    ],
-   "updated": "2026-11-06",
-   "source": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOdUE0dVZMaHNPQm5CLXE1cTFYV2JhUVVqOW5qekVXeUNHNEVUWHRSSWhZVEhCZVpIQzU0dGU1Y3FubFBwTlhtMmxKZS1mUzhFZlRmNGR4SU5Od3VVaEVLODZuOEpsaWVxMFVqakJJWG5RRDNXdWZGUC0zdzhxcTNLS1ppOC1vNDF6ZnBKVEJsMUxIY0hYTVJVMW5KZ01zUnpOQ3h3Mkx1Y3dPbk5zTF9PRFBjYUNadUFwUkZmdG1vdzdseFJkMkE?oc=5"
+   "updated": "2026-11-14",
+   "source": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNcFBGYjNlak1yVHRDRzl5WW1MZVdmWE1rR0plMXFmQ3RuakxYSGdsNFZxRTV3aWZOQThRUVgzMlE1cV9NMWdOMDI2VG9fWWdrWHdCOHpEeWZwb2tSYnA3QTFnMzRRNmRfZnR6NlhNc0pjZEI0YlgyV2RFVmNrQlkyMXVqOTRjb1VjNXlVUDd6Wm0wUUxXS210aE5YTDBEWDJBOTYtY1Uwc2MzTGJRVUxmaU1yZEhTWE9yOEtKYk1RSGdmT00wQzk2QlhscUJEenNVdUpQNHZXTzZvOUdHd2NB?oc=5"
   },
   "golden-triangle": {
    "t": "trafficking",
@@ -3875,9 +3917,9 @@
    "lastelec": "presidential, November 2026, Iliana Iotova"
   },
   "SSD": {
-   "nextelec": "general, December 2026",
-   "updated": "2026-09-27",
-   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWUlwWEJ0R2JPeVl4TUNzYkNyMVZfaWlwU21SSF96Ui1hdXIyR0wyNkpwQlFjRmw3UGJya0NYZ25TQjVGWWdrWEdEdjBsaFlJdmtQNGdIYjVJcG5zUG02b3I3TFhPXzluNmQyZTh3ejJVRGtMMG42M21yZjc4RXBleU9RTzVZRURlZDJGdkFTRXF2QVNiSVdmN2VtMkdNRzIzQnE5SFdHMlQ5TXVoSGo0?oc=5"
+   "nextelec": "general, February 2027",
+   "updated": "2026-11-14",
+   "source": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9HM3RuaTNMTEdwMjliSzZBOWRQZ0NhT3pNWWpLT1pGMm04OHNiR2dicDN3RGw0eWsxVUtocVN4WVdtYzZrNHBjZHVVa3VIeWQyMzNFZlhEY2g?oc=5"
   },
   "SRB": {
    "nextelec": "parliamentary, Nov 2030",
@@ -4030,7 +4072,7 @@
   "GMB": {
    "lastelec": "presidential, Dec 2021, Adama Barrow",
    "nextelec": "presidential, December 2026",
-   "updated": "2026-11-13",
+   "updated": "2026-11-14",
    "source": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBBNjZMSVNIMmp1U2loRm9hRXNEY1QwWjlpMy1hYkZoNGMwaUdBaVpWTG1DR1VVSHRWWWNIemo2ZGRQaFVmQXkzYUFDZmNNM2kzdEpkRUZ0QnA?oc=5"
   },
   "COD": {
