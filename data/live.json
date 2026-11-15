@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-15T12:35:12Z",
+  "lastRun": "2026-11-15T20:41:23Z",
   "log": [
    {
     "date": "2026-11-15",
@@ -26,14 +26,19 @@
       "source": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQOUJCZ19BWTQ0N3VCZnpWWTlJVVQxVTFWQ2VIQUNDaTNPTHY1Tm5ERElDbTNaOGdHVjZUQmMzRUJKc1Z0cTVjcUFnQkQ2aV9ZTWtGR291S0Q4a2tlR3ZwaTJuSm9MNkV6TTdRVzNXejYwUm9UM0Njb3ZrRjY5MVM2UFVKdmRuOG93S2lKUFJzN3FlNXRoRjl6aV96X0VYcmo0aElwemRaNUtjZDMwYmdCY3JuZ0Q0Ulgzb2VBVkViUGFvQ0paRk9mNmhJNkw4WWtUNnU5VDFlQmJCMU00NTZj?oc=5"
      },
      {
-      "label": "Cape Verde",
-      "change": "Election status updated: presidential election held in November 2026",
-      "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPOGdneTdRU3FfYTc1cmE0ckpQWi1OT0lWb0UyMF9jM1lZSEJkZWFmYzBrWjdPeXlsdmFtZVFNWi1GTGFzT1ZxM3E2ZEp1OUlYUnIyUGJKQW5wdkNUV1BXM2FzMU03aUFXVk5vQTg0OFNBdnJ0Sm1CSE55U1REUUYxZWZ5ZXh1MFJQOHJPWFEyaXRmbVd2?oc=5"
+      "label": "Estonia–Russia",
+      "change": "Hostile: Estonia closes border following sabotage attempt on drone manufacturer",
+      "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOSmx1V0tZVHZNSEt4WVJUYW9fbnJEMXUzemVPbWNtTXFYNzlCTEZJZ1lsdlEzbEpMWTFCZ2VYdEI5TFpwQmNEYmxqMjE3SlRSSkFNWXVSaHgyd3BDM2VWY0ppNUtKdnE0WklZMldmbE9DTXJ0OUtKTjZ5WU5tV0NHa0dadzJHZjdOcnJCQnNBczlYRjlaYXd1dFc2ak9xeFREZlY2V3preHdjWWRGMTI4SmJiejM0VTA?oc=5"
      },
      {
       "label": "South Sudan",
-      "change": "Election status updated: national elections postponed again",
-      "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNaVhSRkU3dTdiT0hjRkVmMDhJVXNpR0NDeVd6WDNEWkNIWS11TGJCZEh2MEJUWEFQdjE1cGNVMndBRjJTZ05kdzBrSWU1dUNldHBBbnZ5d2w0d2pFZnM0Q0VHQndfYXVrTjNmV3RzalhpWEdYNklhUE56NnIyLW00NElOekpSWVFE?oc=5"
+      "change": "Next election postponed to February 2027",
+      "source": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9mVV8xWms1eTBESWU5RktjOGxrRTVMNkJhTE5MTzVSYXVRT20wZWJqQXAxYVBOQlJtVEJxVFUtb0Mtd041dmloN0JUMkRpUUd0Ry1UZkpPRXEwZFhMZFhxRTlnZG9ULVAy?oc=5"
+     },
+     {
+      "label": "Cape Verde",
+      "change": "Presidential election held in November 2026",
+      "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5tcFNDQUlVU1B3Ry1ETV85UW9XMEEyWVZMNjFYWUt0dnhVQmZPbnAyUnlnLU9QcXV5OWtzeV9XWXBqNWctRkFpcXFGenVkTXlqeEctdFJJc2xmck9VRHlTWjBPQ2g?oc=5"
      }
     ]
    },
@@ -1643,7 +1648,7 @@
     ]
    }
   ],
-  "summary": "Australia and the Philippines sign an updated defense agreement, Houthi forces take control of key areas around the Bab-el-Mandeb Strait following Yemeni troop withdrawal, and election developments occur in Cape Verde and South Sudan."
+  "summary": "Estonia announces the closure of its border with Russia following a suspected GRU-linked sabotage attempt on a defense drone manufacturer, while Houthi militants advance toward Aden in Yemen."
  },
  "relations": {
   "DNK-USA": {
@@ -1970,9 +1975,9 @@
    "a": "EST",
    "b": "RUS",
    "s": "H",
-   "note": "Estonia accuses Russian special services of ordering an arson attack on a local defense-robotics manufacturer.",
-   "updated": "2026-09-29",
-   "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB3aXFTUEk1YVZhal9yVWM5MUlPRUdrWHNjN09yd3p6Z0ZkdlRxbm1mVjA3d3lNQXpoMzFuTWpvd3QyV2Zld2pjQXI0OA?oc=5"
+   "note": "Estonia closes its border with Russia following a suspected Russian-linked sabotage attempt on a military drone manufacturer.",
+   "updated": "2026-11-15",
+   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOSmx1V0tZVHZNSEt4WVJUYW9fbnJEMXUzemVPbWNtTXFYNzlCTEZJZ1lsdlEzbEpMWTFCZ2VYdEI5TFpwQmNEYmxqMjE3SlRSSkFNWXVSaHgyd3BDM2VWY0ppNUtKdnE0WklZMldmbE9DTXJ0OUtKTjZ5WU5tV0NHa0dadzJHZjdOcnJCQnNBczlYRjlaYXd1dFc2ak9xeFREZlY2V3preHdjWWRGMTI4SmJiejM0VTA?oc=5"
   },
   "KOR-PRK": {
    "a": "KOR",
@@ -3431,11 +3436,11 @@
     "SYR",
     "ARE"
    ],
-   "d": "Iran-backed Houthi forces advance on Aden and launch missile strikes targeting Saudi Arabia and Red Sea shipping.",
+   "d": "Iran-backed Houthi forces advance toward Aden as Yemeni government troops retreat, while continuing missile strikes against Saudi Arabia.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQ2dneEw3Rm1VSkNOMUhxbVdZNjNzRHhpQ2xmLURYazVIMkFfck5rTE1neExRdzQwVXpzdVdtU1duTXpfQmsxcEtQaWtQZlZZM1VSVURTQlJHSnVnbWNuVlVlZzE2N0kxNURoT2JiSVp0SWU1aGZMTF9rWEpIR1JCenhLWE5kaEVqTkh0Qw?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNN0Z5MVFGc2trSE1PTDgyNm0tQWY4SmtiNk9JblhJS3FNNHJPSm1KelZvTFYzaG9US1RCZ21YS3dTc2Zpd2wxN0toVHh2dFJCVTlkMVlhdjBxSWt6TDd6SmJSV2lldmZJdnZ0cTdTdVV2R3h5N3VRQnhScVhsRENLV3JXOVBuRERQTDI0Tnpfc0kyVHR1cDZHbGl3TdIBmgFBVV95cUxOdXo1d0Jnc2VtRWhTX1F4TGFVX1JtUm02b0RQX2NrR01QQ2p2WWVkVEdwYUhGZ2o1T3NKcHo3bkFwQ005bkNLRUhDbUIwSUNtWVNnR2U5cTlxcUtGdHZpMWFibVQ0TUR3SUJYTDBsSmp2X2pHS2F5VmVOXzVBSjNMaDlsNnpZb05rMmVBTnN2TEhyRnVZRElSMEZ3?oc=5",
    "t": "security",
-   "updated": "2026-11-13"
+   "updated": "2026-11-15"
   },
   "afpak-jihad": {
    "t": "security",
@@ -3680,10 +3685,10 @@
  },
  "pois": {
   "bab-el-mandeb": {
-   "d": "Houthi forces secure strategic positions around the strait following the withdrawal of Yemeni government troops.",
+   "d": "Houthi forces advance to within 60km of Aden following the retreat of Yemeni government troops around the strategic waterway.",
    "n": "Bab-el-Mandeb",
-   "s": "Houthi forces take control",
-   "source": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQOUJCZ19BWTQ0N3VCZnpWWTlJVVQxVTFWQ2VIQUNDaTNPTHY1Tm5ERElDbTNaOGdHVjZUQmMzRUJKc1Z0cTVjcUFnQkQ2aV9ZTWtGR291S0Q4a2tlR3ZwaTJuSm9MNkV6TTdRVzNXejYwUm9UM0Njb3ZrRjY5MVM2UFVKdmRuOG93S2lKUFJzN3FlNXRoRjl6aV96X0VYcmo0aElwemRaNUtjZDMwYmdCY3JuZ0Q0Ulgzb2VBVkViUGFvQ0paRk9mNmhJNkw4WWtUNnU5VDFlQmJCMU00NTZj?oc=5",
+   "s": "Houthi forces advance near Aden",
+   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSTBtNjBCZTVGUmt6Wm5rZzNTckNJVU95WXlUaXY2aV9rdzhXRnIyYVdjNThOZnFuU2N1ZEhDRG1TaDM5LU4zbDZwenlhcTNoR3Vib01hTnJFSnMzMm1OTUN0bDNSRDJ5ZVM5ampuUnY0QkNlOXo2NGQ0c01PSHZFams0ZGRHQ29EVXVUZVdYX3FvQV9aTEkwbEFGWXNxX0liMkVDajFmbWxLUlo3R0F6TUdKOEI4RkRETnhPNGJn?oc=5",
    "updated": "2026-11-15",
    "t": "strait",
    "lat": 12.6,
@@ -3933,9 +3938,9 @@
    "lastelec": "presidential, November 2026, Iliana Iotova"
   },
   "SSD": {
-   "nextelec": "presidential (postponed)",
+   "nextelec": "general, February 2027",
    "updated": "2026-11-15",
-   "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNaVhSRkU3dTdiT0hjRkVmMDhJVXNpR0NDeVd6WDNEWkNIWS11TGJCZEh2MEJUWEFQdjE1cGNVMndBRjJTZ05kdzBrSWU1dUNldHBBbnZ5d2w0d2pFZnM0Q0VHQndfYXVrTjNmV3RzalhpWEdYNklhUE56NnIyLW00NElOekpSWVFE?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9mVV8xWms1eTBESWU5RktjOGxrRTVMNkJhTE5MTzVSYXVRT20wZWJqQXAxYVBOQlJtVEJxVFUtb0Mtd041dmloN0JUMkRpUUd0Ry1UZkpPRXEwZFhMZFhxRTlnZG9ULVAy?oc=5"
   },
   "SRB": {
    "nextelec": "parliamentary, Nov 2030",
@@ -4077,7 +4082,7 @@
   "CPV": {
    "nextelec": "presidential November 2026",
    "updated": "2026-11-15",
-   "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPOGdneTdRU3FfYTc1cmE0ckpQWi1OT0lWb0UyMF9jM1lZSEJkZWFmYzBrWjdPeXlsdmFtZVFNWi1GTGFzT1ZxM3E2ZEp1OUlYUnIyUGJKQW5wdkNUV1BXM2FzMU03aUFXVk5vQTg0OFNBdnJ0Sm1CSE55U1REUUYxZWZ5ZXh1MFJQOHJPWFEyaXRmbVd2?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5tcFNDQUlVU1B3Ry1ETV85UW9XMEEyWVZMNjFYWUt0dnhVQmZPbnAyUnlnLU9QcXV5OWtzeV9XWXBqNWctRkFpcXFGenVkTXlqeEctdFJJc2xmck9VRHlTWjBPQ2g?oc=5",
    "lastelec": "presidential, November 2026"
   },
   "IDN": {
