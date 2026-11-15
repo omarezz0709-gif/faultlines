@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-15T01:30:25Z",
+  "lastRun": "2026-11-15T12:35:12Z",
   "log": [
    {
     "date": "2026-11-15",
@@ -16,9 +16,24 @@
       "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVjBtNHZ0TnFlUUw4bGhzUi1hemxtWUZTRUk2d3NsQzdQTnBPUlJqdDYyNDQ5MFdweTZtUExvSjh5b3pWanRPemQwUkFmd1Y0aHphQjJwNVFiWEFnUm95SFZBVzg2bmkyMExFU0lGVVJ3azVNZ21TekRVbHpJLVBRVVpSTndja1lTSk5CVXAxbElaZXd2ZDhqS3llVdIBlwFBVV95cUxQNUliWkxZNW1xTUlqWUEzYnR0YnNVTWNlM0VrMDJQMzhtN05RUTNiakloNVlPNFNnRTJYU29sbUQ1RlZHamJvR0ZsRTNjZnFIZHFOV2Vvd0s3SmFsX3JWYjhibjJaRVRxeHVYbUFHY1pMRWdVaVcwZHVpb3VlUmlLeEtFNEFQZWluampGb2plWDg2S2pCTUg0?oc=5"
      },
      {
+      "label": "Australia–Philippines",
+      "change": "Partner → Ally: bilateral defence agreement signed to expand military and naval cooperation",
+      "source": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOclBZRFZNUW95MXV1SzMycnR0UW9IVWVsNWxZREhoQl96dW9WWlZZTjhtZE5iWFVEUjFZU0czYkNVTE84OEFBWjJ0SDkxR3IxLTBJdDlpX21iMngtQ2tfUVpPRlpHcGRCQ0RZWXhVTmxRN3NtaGQyQmVCNWktWFlXdWFvajd4ZVl6YzFfQU1WeDl2QnhOdEQyOGVBbGlpajZ2TGdSUy1hbGh6dzYwWGluOW1ESURwcDhsdW9SVGZHeW1Md2ZOWHd1VUpIM1RpM0VXLWZCMXY4N3l1cnJVOS12VFlJbm_SAeoBQVVfeXFMTXVoWnNGQ1NJeG5UdnZodVhod0dDemNsRXdkRnRBRzhyejE3aXJTcUs3YnRrc2RueTl3SmIxMkU1eTZMcHY3MDh1MmRlYXFFMmFCbG0wUnREZGtlekZSVWw1ZjFncjdWWnJDdkU4bmNiM1g0VzI2U3V3c2dUdW5zWFE4M1pzTTlBNi1HNlhIYlZiMzFBMjg2emtCM1Z4T2tqNzhIMExPZldQbm16T25yY1F4NDVlRG5fSzl6U0tyUDhZLXZVOHZXS05fRVVhMGczSmx3WnoxVHRQTVlzZkJ3bHNsY25hZDV0RjlR?oc=5"
+     },
+     {
+      "label": "Bab-el-Mandeb",
+      "change": "Government forces claim control → Houthi forces take control: Yemeni troops withdraw toward Aden",
+      "source": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQOUJCZ19BWTQ0N3VCZnpWWTlJVVQxVTFWQ2VIQUNDaTNPTHY1Tm5ERElDbTNaOGdHVjZUQmMzRUJKc1Z0cTVjcUFnQkQ2aV9ZTWtGR291S0Q4a2tlR3ZwaTJuSm9MNkV6TTdRVzNXejYwUm9UM0Njb3ZrRjY5MVM2UFVKdmRuOG93S2lKUFJzN3FlNXRoRjl6aV96X0VYcmo0aElwemRaNUtjZDMwYmdCY3JuZ0Q0Ulgzb2VBVkViUGFvQ0paRk9mNmhJNkw4WWtUNnU5VDFlQmJCMU00NTZj?oc=5"
+     },
+     {
+      "label": "Cape Verde",
+      "change": "Election status updated: presidential election held in November 2026",
+      "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPOGdneTdRU3FfYTc1cmE0ckpQWi1OT0lWb0UyMF9jM1lZSEJkZWFmYzBrWjdPeXlsdmFtZVFNWi1GTGFzT1ZxM3E2ZEp1OUlYUnIyUGJKQW5wdkNUV1BXM2FzMU03aUFXVk5vQTg0OFNBdnJ0Sm1CSE55U1REUUYxZWZ5ZXh1MFJQOHJPWFEyaXRmbVd2?oc=5"
+     },
+     {
       "label": "South Sudan",
-      "change": "Next election set for February 2027 following postponement",
-      "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdS1OT25MVkVLMTV5UG5hM1lRczZCV01sY2Q5RUJtV1l6V1NsN0hiLVo3VXNTWVF6UzY5MTJhUm9PMTExZUhKaUlRRDRXOEJJUm92YnhOOUZmS3hBMkJoUjRpWFZnbEl1Y0pvcnZBY2swQVV1TlROaWdHNFdOV0o4aEZnLXozTVByMW56R1FJWmZteEnSAZMBQVVfeXFMTXd2bHg2UnFFMXZzcWN0YktGWXlhVHZWR2RJdzNUWjRpS18xMDVhc0kyQWw3UnA1QnkxXzFIR2xIbTZhWG0yS3VGSmFoU053WEE4Smo2MUFnUDk2enRETDdaLVB4U3o3RkhvcUxNSXRUcUZTWm9UcWQ1QlhRUHpUckEwXzJyRVhXN3d0Nk1oMmw5ZFBv?oc=5"
+      "change": "Election status updated: national elections postponed again",
+      "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNaVhSRkU3dTdiT0hjRkVmMDhJVXNpR0NDeVd6WDNEWkNIWS11TGJCZEh2MEJUWEFQdjE1cGNVMndBRjJTZ05kdzBrSWU1dUNldHBBbnZ5d2w0d2pFZnM0Q0VHQndfYXVrTjNmV3RzalhpWEdYNklhUE56NnIyLW00NElOekpSWVFE?oc=5"
      }
     ]
    },
@@ -1628,7 +1643,7 @@
     ]
    }
   ],
-  "summary": "Qatar and Türkiye sign a landmark mutual defense agreement, Bulgaria halts arms transfers to Ukraine, and South Sudan postpones its general election to February 2027."
+  "summary": "Australia and the Philippines sign an updated defense agreement, Houthi forces take control of key areas around the Bab-el-Mandeb Strait following Yemeni troop withdrawal, and election developments occur in Cape Verde and South Sudan."
  },
  "relations": {
   "DNK-USA": {
@@ -3390,6 +3405,14 @@
    "note": "Bulgaria halts military arms transfers and financial assistance to Ukraine from its military stockpiles.",
    "updated": "2026-11-15",
    "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVjBtNHZ0TnFlUUw4bGhzUi1hemxtWUZTRUk2d3NsQzdQTnBPUlJqdDYyNDQ5MFdweTZtUExvSjh5b3pWanRPemQwUkFmd1Y0aHphQjJwNVFiWEFnUm95SFZBVzg2bmkyMExFU0lGVVJ3azVNZ21TekRVbHpJLVBRVVpSTndja1lTSk5CVXAxbElaZXd2ZDhqS3llVdIBlwFBVV95cUxQNUliWkxZNW1xTUlqWUEzYnR0YnNVTWNlM0VrMDJQMzhtN05RUTNiakloNVlPNFNnRTJYU29sbUQ1RlZHamJvR0ZsRTNjZnFIZHFOV2Vvd0s3SmFsX3JWYjhibjJaRVRxeHVYbUFHY1pMRWdVaVcwZHVpb3VlUmlLeEtFNEFQZWluampGb2plWDg2S2pCTUg0?oc=5"
+  },
+  "AUS-PHL": {
+   "a": "AUS",
+   "b": "PHL",
+   "s": "A",
+   "note": "Australia and the Philippines sign an updated defence agreement to enhance military deterrence in the South China Sea.",
+   "updated": "2026-11-15",
+   "source": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOclBZRFZNUW95MXV1SzMycnR0UW9IVWVsNWxZREhoQl96dW9WWlZZTjhtZE5iWFVEUjFZU0czYkNVTE84OEFBWjJ0SDkxR3IxLTBJdDlpX21iMngtQ2tfUVpPRlpHcGRCQ0RZWXhVTmxRN3NtaGQyQmVCNWktWFlXdWFvajd4ZVl6YzFfQU1WeDl2QnhOdEQyOGVBbGlpajZ2TGdSUy1hbGh6dzYwWGluOW1ESURwcDhsdW9SVGZHeW1Md2ZOWHd1VUpIM1RpM0VXLWZCMXY4N3l1cnJVOS12VFlJbm_SAeoBQVVfeXFMTXVoWnNGQ1NJeG5UdnZodVhod0dDemNsRXdkRnRBRzhyejE3aXJTcUs3YnRrc2RueTl3SmIxMkU1eTZMcHY3MDh1MmRlYXFFMmFCbG0wUnREZGtlekZSVWw1ZjFncjdWWnJDdkU4bmNiM1g0VzI2U3V3c2dUdW5zWFE4M1pzTTlBNi1HNlhIYlZiMzFBMjg2emtCM1Z4T2tqNzhIMExPZldQbm16T25yY1F4NDVlRG5fSzl6U0tyUDhZLXZVOHZXS05fRVVhMGczSmx3WnoxVHRQTVlzZkJ3bHNsY25hZDV0RjlR?oc=5"
   }
  },
  "threads": {
@@ -3657,11 +3680,11 @@
  },
  "pois": {
   "bab-el-mandeb": {
-   "d": "The strategic strait remains highly volatile as Saudi-backed Yemeni government forces claim control of the area following a major offensive against Houthis.",
+   "d": "Houthi forces secure strategic positions around the strait following the withdrawal of Yemeni government troops.",
    "n": "Bab-el-Mandeb",
-   "s": "Government forces claim control",
-   "source": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOUHZGLVRldkRVb0JWeExXeUN6UmZPdGpOcWFvckdfV2hLR2hla1VKdXZsb092ZlJObEVqTkN0NmtmUURudU5rOS04eDJQQlVFNll6VDVfV3lINHdaSjdkNFRsUVg0cG1QVWNwLUFLYlIxYVVkRzYxQXFfUDRseWhlU0NGbHVhVXozMHFWcUxOUU9qSE5mcnZNWGFmbmxEb2FsWldxY0YtS1BFa0QtLUYxSE5EREhnUW92M1BEUkozenFEcFYtVlRLYUh1M0poTDhzX3pCVTdLbDVXT09fRHFmRm0tSk9WSERKck1wSWZoaw?oc=5",
-   "updated": "2026-10-06",
+   "s": "Houthi forces take control",
+   "source": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQOUJCZ19BWTQ0N3VCZnpWWTlJVVQxVTFWQ2VIQUNDaTNPTHY1Tm5ERElDbTNaOGdHVjZUQmMzRUJKc1Z0cTVjcUFnQkQ2aV9ZTWtGR291S0Q4a2tlR3ZwaTJuSm9MNkV6TTdRVzNXejYwUm9UM0Njb3ZrRjY5MVM2UFVKdmRuOG93S2lKUFJzN3FlNXRoRjl6aV96X0VYcmo0aElwemRaNUtjZDMwYmdCY3JuZ0Q0Ulgzb2VBVkViUGFvQ0paRk9mNmhJNkw4WWtUNnU5VDFlQmJCMU00NTZj?oc=5",
+   "updated": "2026-11-15",
    "t": "strait",
    "lat": 12.6,
    "lng": 43.3,
@@ -3910,9 +3933,9 @@
    "lastelec": "presidential, November 2026, Iliana Iotova"
   },
   "SSD": {
-   "nextelec": "general election, February 2027",
+   "nextelec": "presidential (postponed)",
    "updated": "2026-11-15",
-   "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdS1OT25MVkVLMTV5UG5hM1lRczZCV01sY2Q5RUJtV1l6V1NsN0hiLVo3VXNTWVF6UzY5MTJhUm9PMTExZUhKaUlRRDRXOEJJUm92YnhOOUZmS3hBMkJoUjRpWFZnbEl1Y0pvcnZBY2swQVV1TlROaWdHNFdOV0o4aEZnLXozTVByMW56R1FJWmZteEnSAZMBQVVfeXFMTXd2bHg2UnFFMXZzcWN0YktGWXlhVHZWR2RJdzNUWjRpS18xMDVhc0kyQWw3UnA1QnkxXzFIR2xIbTZhWG0yS3VGSmFoU053WEE4Smo2MUFnUDk2enRETDdaLVB4U3o3RkhvcUxNSXRUcUZTWm9UcWQ1QlhRUHpUckEwXzJyRVhXN3d0Nk1oMmw5ZFBv?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNaVhSRkU3dTdiT0hjRkVmMDhJVXNpR0NDeVd6WDNEWkNIWS11TGJCZEh2MEJUWEFQdjE1cGNVMndBRjJTZ05kdzBrSWU1dUNldHBBbnZ5d2w0d2pFZnM0Q0VHQndfYXVrTjNmV3RzalhpWEdYNklhUE56NnIyLW00NElOekpSWVFE?oc=5"
   },
   "SRB": {
    "nextelec": "parliamentary, Nov 2030",
@@ -4053,8 +4076,9 @@
   },
   "CPV": {
    "nextelec": "presidential November 2026",
-   "updated": "2026-11-12",
-   "source": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPY2tTSGJsYXBsY2pRczRzWldyaU1BRXZTY1NzT3gtRkRWa0s3MVN3aUFnd28yNklNMmlDRDlDZzlyMjR4NGNaNHJkcnNrODhyQ3dqRDZ6OERCMnh6LW9LaTY3MlluSzA1RVh4enZ5S1NVNW9tajhvYlN2U1luNURJeEVXWHl1UmRZdDVpS1VfaXdKMWNyYmlIY1VXZEpNYV9JWncxV1N6WXJHX1J3TFlzOEpkaHRld0M0QzlTeElOODBpZ0d5UjJPTjI5bFNEUGQwSVJQXzdxTlJCYV9ydU1KcHlVWGFnTGQwZUtxajZwc3pmY0NBRzYwWkIzOUhpYXZoWm5lYzBOZ0xLcEJ1a0IxSkZfS002Q2s?oc=5"
+   "updated": "2026-11-15",
+   "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPOGdneTdRU3FfYTc1cmE0ckpQWi1OT0lWb0UyMF9jM1lZSEJkZWFmYzBrWjdPeXlsdmFtZVFNWi1GTGFzT1ZxM3E2ZEp1OUlYUnIyUGJKQW5wdkNUV1BXM2FzMU03aUFXVk5vQTg0OFNBdnJ0Sm1CSE55U1REUUYxZWZ5ZXh1MFJQOHJPWFEyaXRmbVd2?oc=5",
+   "lastelec": "presidential, November 2026"
   },
   "IDN": {
    "lastelec": "presidential, Feb 2024, Prabowo Subianto",
