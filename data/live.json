@@ -1,7 +1,27 @@
 {
  "meta": {
-  "lastRun": "2026-11-14T12:00:19Z",
+  "lastRun": "2026-11-15T01:30:25Z",
   "log": [
+   {
+    "date": "2026-11-15",
+    "items": [
+     {
+      "label": "Qatar–Turkey",
+      "change": "Note refreshed: Signed landmark mutual defense agreement",
+      "source": "https://news.google.com/rss/articles/CBMifkFVX3lxTE04ay1Rc0hodHh6U3hzWjFaMG9QYTVmeFUzaG5OaWc0TUk3bzNHbnJ6TVpFaHRxSTVrUWxJWFNjQTFkUTZYZ2ZQRnB0VXhqeWhNcVhjMlU5VFpYTW9TM016cVRzYzdzZDFzMjJyMktRdHJ5alI1QnZwMjhHWmxiZw?oc=5"
+     },
+     {
+      "label": "Bulgaria–Ukraine",
+      "change": "Normal/mixed: Bulgaria halts military arms supplies to Ukraine",
+      "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVjBtNHZ0TnFlUUw4bGhzUi1hemxtWUZTRUk2d3NsQzdQTnBPUlJqdDYyNDQ5MFdweTZtUExvSjh5b3pWanRPemQwUkFmd1Y0aHphQjJwNVFiWEFnUm95SFZBVzg2bmkyMExFU0lGVVJ3azVNZ21TekRVbHpJLVBRVVpSTndja1lTSk5CVXAxbElaZXd2ZDhqS3llVdIBlwFBVV95cUxQNUliWkxZNW1xTUlqWUEzYnR0YnNVTWNlM0VrMDJQMzhtN05RUTNiakloNVlPNFNnRTJYU29sbUQ1RlZHamJvR0ZsRTNjZnFIZHFOV2Vvd0s3SmFsX3JWYjhibjJaRVRxeHVYbUFHY1pMRWdVaVcwZHVpb3VlUmlLeEtFNEFQZWluampGb2plWDg2S2pCTUg0?oc=5"
+     },
+     {
+      "label": "South Sudan",
+      "change": "Next election set for February 2027 following postponement",
+      "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdS1OT25MVkVLMTV5UG5hM1lRczZCV01sY2Q5RUJtV1l6V1NsN0hiLVo3VXNTWVF6UzY5MTJhUm9PMTExZUhKaUlRRDRXOEJJUm92YnhOOUZmS3hBMkJoUjRpWFZnbEl1Y0pvcnZBY2swQVV1TlROaWdHNFdOV0o4aEZnLXozTVByMW56R1FJWmZteEnSAZMBQVVfeXFMTXd2bHg2UnFFMXZzcWN0YktGWXlhVHZWR2RJdzNUWjRpS18xMDVhc0kyQWw3UnA1QnkxXzFIR2xIbTZhWG0yS3VGSmFoU053WEE4Smo2MUFnUDk2enRETDdaLVB4U3o3RkhvcUxNSXRUcUZTWm9UcWQ1QlhRUHpUckEwXzJyRVhXN3d0Nk1oMmw5ZFBv?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-11-14",
     "items": [
@@ -1606,44 +1626,9 @@
       "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWUVkcXJkaTJFVUxqZW5BLXJLd1FVTmF5aWNYekIwVmpzRW9fcjZjMDJDWW1xSW54SVhMRUNBVVZhU0VVV25rVkNfd0hSM1FrUzJJdTVnYUtpbE13QVRsU0M4SDdlaXd5U0FuQUlyQ3VUZWNSbWdXdHVvRTBTc2tRc3FodjFBV3lJYTlfanNFRnBxWTJPdUdGMWF3?oc=5"
      }
     ]
-   },
-   {
-    "date": "2026-10-16",
-    "items": [
-     {
-      "label": "Russia–Syria",
-      "change": "Normal → Tense: Moscow refuses to extradite ousted president Bashar al-Assad to Damascus",
-      "source": "https://news.google.com/rss/articles/CBMizAFBVV95cUxObGRELVhSclc3V2VRbXhGQ2JtbmkwYW45cWJic0pRajJ5Nl9GSXJwZDJmb3daQmpxS2tGcElSekg0b0k5V1JwMkY1VDdaY3htNHBGWXp0T0hMTERvbmE5YUpLUVY1UUNrLTB0dERPckY3WU45MjEwLUVOQ2NISVJOeGRMSDhUeDlQUXVLWVZjbUY3R3FVMEtzNHZXSFJWZmEtalluMHpkMDY2U1MzWEtmb3loUEpGT3VNZndTQXFfOWU5ZU8zSE9MTGl0OHfSAdIBQVVfeXFMTmdUeHd2Z1ExdU1uVnZiOXhINU5WNVZWU3dBYkVveThCSVFOTkQ2eFlKNlZWMmw4X0VjQU4xM0tuS2JvWTFiR1A1NkF0VjVFR1BWOUVSaUEwSFU1bUxRZU9yekRWc280ZWtfM0xDSmdyWG9DUGZMLXprUVNVSDdtTzVLVnlhNjVRVzVVRkJKWTlscUF1ZzNMWk1IOHZvZmhjbG1IbVVENkV5ZHhVdEhSNlExZGxoNWdTU1hCUmFtMVYyMjdxbzBwVnU2ZWlaa3BULVZB?oc=5"
-     },
-     {
-      "label": "Eastern DR Congo",
-      "change": "M23 coalition rebrands as FRN with Joseph Kabila leading Doha talks",
-      "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOY1l3VHE1di1Wa0h6U2lwT0NpSmc0UlA2SFN4WWd5VzItMkdvQk5ockhqQ3pvMTJObS0weDRfbHY0aWI5ODZRWWdnWXFJTUNrTDk5RFlvczlBX2VVYXNfLWFoZ3lnQWlMeW5oMW1jd1JTcElsVTUza1IyMzhWd2ZCdW4tZjRJVDViY0U3dTc1aDFLNW8?oc=5"
-     },
-     {
-      "label": "Israel–Lebanon",
-      "change": "Normal/mixed → Hostile: heightened tensions over seized Hezbollah explosives and border threats",
-      "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQYW80NDlmTUYyWTNQY1M1N25GOTNFNjlZTi1EazN6emtOMjdvT0k5bFBMWFh4eWFnRVhoS3hUMi1EOE9pd2lFZVAxcGtVRUNob3hSd1k5ZFdFOFMyalljOC1OdHNRLXNWQWRuMllaX0ZGYVFqN1JmeGJtM3E0WEpLZl9mMm1lX2V3SDF5QjZCRG8?oc=5"
-     },
-     {
-      "label": "Somalia Politics",
-      "change": "Added May 2027 presidential and parliamentary election timetable",
-      "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNS3NxWkc0aGRNLUJWMkZYaWcxOHg2R0tZekFOU1ZqTUZ4TTZNcndCODUyOWVoUEtESGl1ekExUWtPZ3lVVG5GeHlZOUV4VVhBdjZTZ19wSHFHcXE4TE1MNURtVnhLTVowaDVlRTJnVVVwbVBhR1dsa01BZmhoX09fVjFiaVJZY2Ruc1VjZ09GUVc4M1ZCbXVJSHNlSzcyRTZOS3NaMHZQcmdkandRN0ZnWlpqXy14NzhoUEE?oc=5"
-     },
-     {
-      "label": "Colombia–Israel",
-      "change": "Tense → Partner: Colombia opens Jerusalem embassy and restores free trade",
-      "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSVBhWHpxQlZXQVYwVkdrSEZiZEZzd1U5RVNveWhHRWpmMHRDUld0bmNsWEtGeGZpNUV2dmV5N0c0R2tDeWhYZVA3SkRtSEgzWnVlbjZ1UDdMM2llZjZnWFhOWW1WZ2Nqc3dUV0RJUXpqRm9SdXppT3hsZnd1VzZtRTRoMWdUVG8?oc=5"
-     },
-     {
-      "label": "Bolivia–Chile",
-      "change": "Tense → Normal: Chilean President Kast makes the first state visit to Bolivia in 71 years to improve bilateral ties.",
-      "source": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNZFRmY3F6XzBWUTVlelpfUjgtaERYZEFLSV8tQURNb0RlNVhMak5JUGZ6blgzR1ZpaXBkOGx2el9pdFFPaTNIN0kzaVpPQWZTRS1LRks1UEdsenMtSWlOcGZwdTlnRTg0OE90QTFvbmpaLXJjNDJaRnY0ZzNNekhyRFdLOW54OUZQWDZoU2NaQlJvczdxd2NXYmc2S3FvVmRvVzhqWmZvQnVYNDYxbUl5TV9EUXc2X1JEOXF5RjR3R05DVGplTWoyYk9SaXNPNGxPWVhn?oc=5"
-     }
-    ]
    }
   ],
-  "summary": "South Sudan postpones general elections to February 2027, Canada and the Philippines conclude free trade agreement negotiations, and new cross-border transport and trade initiatives advance across Asia and Africa."
+  "summary": "Qatar and Türkiye sign a landmark mutual defense agreement, Bulgaria halts arms transfers to Ukraine, and South Sudan postpones its general election to February 2027."
  },
  "relations": {
   "DNK-USA": {
@@ -3370,9 +3355,9 @@
    "a": "QAT",
    "b": "TUR",
    "s": "A",
-   "note": "Qatar and Türkiye sign a mutual defense agreement to deepen bilateral security and strategic cooperation.",
-   "updated": "2026-11-13",
-   "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbkdDRWlnRlh2YkV3TE5aWVJsZzRBVUlHNzh0dDNvNjhwMWJKcmVOZDE4Sloxa3NIckZlOEpMcW1UdzA1cktrMDAyMG94SWN6SzRCdEszYWhwRjVEZVVyN3lyNHpsZ0t6cE1FSzRSYVZ4eUhDZmt5amU0VU5Tc1ZuN2NMUFo3MV9TYVpCWmJkRk1WdzBIRW9aaGIxcGptUQ?oc=5"
+   "note": "Qatar and Türkiye (Turkey) sign a landmark mutual defense agreement to elevate bilateral military cooperation.",
+   "updated": "2026-11-15",
+   "source": "https://news.google.com/rss/articles/CBMifkFVX3lxTE04ay1Rc0hodHh6U3hzWjFaMG9QYTVmeFUzaG5OaWc0TUk3bzNHbnJ6TVpFaHRxSTVrUWxJWFNjQTFkUTZYZ2ZQRnB0VXhqeWhNcVhjMlU5VFpYTW9TM016cVRzYzdzZDFzMjJyMktRdHJ5alI1QnZwMjhHWmxiZw?oc=5"
   },
   "CHN-LTU": {
    "a": "CHN",
@@ -3397,6 +3382,14 @@
    "note": "India and Nepal approve a new cross-border train service between Janakpur Dham and Ayodhya to enhance connectivity.",
    "updated": "2026-11-14",
    "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZUdIbEs4U1hJX2lqVUM5ZGJGRUpRUzNxZ1B5WXI1THFJZFljR3NGRWlsZHMxbm1KOHBvdV9oNXM3ZnNhSDlyN0hBOEdLWUtleVdRVGhkNW4tUlcyZTRNMjFmeDJxbDVVaFNfcWtVcDN4akJLekZMR0RnZEdmOFNUOGJLTkJLMERKeWFINDdZR0Zsb1JnR0x6MDBrc1Z2S1JCWFViN3o3cFVRbVk2cE1zZmNiaUxBNnlHS1lPMA?oc=5"
+  },
+  "BGR-UKR": {
+   "a": "BGR",
+   "b": "UKR",
+   "s": "N",
+   "note": "Bulgaria halts military arms transfers and financial assistance to Ukraine from its military stockpiles.",
+   "updated": "2026-11-15",
+   "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVjBtNHZ0TnFlUUw4bGhzUi1hemxtWUZTRUk2d3NsQzdQTnBPUlJqdDYyNDQ5MFdweTZtUExvSjh5b3pWanRPemQwUkFmd1Y0aHphQjJwNVFiWEFnUm95SFZBVzg2bmkyMExFU0lGVVJ3azVNZ21TekRVbHpJLVBRVVpSTndja1lTSk5CVXAxbElaZXd2ZDhqS3llVdIBlwFBVV95cUxQNUliWkxZNW1xTUlqWUEzYnR0YnNVTWNlM0VrMDJQMzhtN05RUTNiakloNVlPNFNnRTJYU29sbUQ1RlZHamJvR0ZsRTNjZnFIZHFOV2Vvd0s3SmFsX3JWYjhibjJaRVRxeHVYbUFHY1pMRWdVaVcwZHVpb3VlUmlLeEtFNEFQZWluampGb2plWDg2S2pCTUg0?oc=5"
   }
  },
  "threads": {
@@ -3917,9 +3910,9 @@
    "lastelec": "presidential, November 2026, Iliana Iotova"
   },
   "SSD": {
-   "nextelec": "general, February 2027",
-   "updated": "2026-11-14",
-   "source": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9HM3RuaTNMTEdwMjliSzZBOWRQZ0NhT3pNWWpLT1pGMm04OHNiR2dicDN3RGw0eWsxVUtocVN4WVdtYzZrNHBjZHVVa3VIeWQyMzNFZlhEY2g?oc=5"
+   "nextelec": "general election, February 2027",
+   "updated": "2026-11-15",
+   "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdS1OT25MVkVLMTV5UG5hM1lRczZCV01sY2Q5RUJtV1l6V1NsN0hiLVo3VXNTWVF6UzY5MTJhUm9PMTExZUhKaUlRRDRXOEJJUm92YnhOOUZmS3hBMkJoUjRpWFZnbEl1Y0pvcnZBY2swQVV1TlROaWdHNFdOV0o4aEZnLXozTVByMW56R1FJWmZteEnSAZMBQVVfeXFMTXd2bHg2UnFFMXZzcWN0YktGWXlhVHZWR2RJdzNUWjRpS18xMDVhc0kyQWw3UnA1QnkxXzFIR2xIbTZhWG0yS3VGSmFoU053WEE4Smo2MUFnUDk2enRETDdaLVB4U3o3RkhvcUxNSXRUcUZTWm9UcWQ1QlhRUHpUckEwXzJyRVhXN3d0Nk1oMmw5ZFBv?oc=5"
   },
   "SRB": {
    "nextelec": "parliamentary, Nov 2030",
