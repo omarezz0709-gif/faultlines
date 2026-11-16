@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-16T20:12:27Z",
+  "lastRun": "2026-11-16T23:56:52Z",
   "log": [
    {
     "date": "2026-11-16",
@@ -26,11 +26,6 @@
       "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFAzMW5uVE5zVUw2RzB4S0N0TVVrSEhEeWJoTlA0M1hUV3dURDFiTTNQUlVORkpUQWZ5RERzVV9vQTFVTWU3ZEVxWlAzbw?oc=5"
      },
      {
-      "label": "Cabo Verde",
-      "change": "Presidential election won by incumbent José Maria Neves",
-      "source": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNU1B4b2RrVVE5UU8wbDFxLVNvRXNFaEJHdzhVel9OdXpHQVUtcG9hUW1qb1k0ZmI2MlZCNmtPMWgtRE4zRE1CN0J5cDZqZHhwZEk3Y0Iwb01uZ1JqaVlwU0ZNNlNZZGEzMmh2cnBoTVVVZ1VKTjByemFEb1pCd0hLWC1ia1Jsc0F4dlZ3b0tzakY5U1dHTDJFNkgtMEdMY3NoMVplS3BZNVhjUUZKWXlWNm1OMVd4amtFeVA4X2tCUjQtZE5pTEwweVRPSVZ6ZEptbE5BNFpMOU81WmRvUGlyTFlsSEFxaW8?oc=5"
-     },
-     {
       "label": "South Sudan",
       "change": "General elections postponed to February 2027",
       "source": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5aLTBfRFE4eG5TMGlCdENpQkRoWlAtNlNCY29DNGNGUmVkb2hfUnZQeFJsSWczWnlBZTNubjR4Qm84TTRWZGlNaS1GM3JUaWk2UDhZVTVOY1RsQTJEOHRGVDhTWHFpM3ZKWkVGRDRxNTRwWkhKT0Rz?oc=5"
@@ -54,6 +49,21 @@
       "label": "Estonia–Russia",
       "change": "Hostile: Border closed following GRU-linked sabotage attempt on drone manufacturer.",
       "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB1S0ZkeDZOQy0xSGx3ZWpHX0R0cGwtblQ5RjkycThUV1FTWkdKaGhMYXZfSFBrWHR2aGZOMGJCa3dUUkR6VkhRcGpqNA?oc=5"
+     },
+     {
+      "label": "Thailand–United States",
+      "change": "Refreshed relation note: signed bilateral trade agreement",
+      "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQS2YzdUU0dmwyZmJGRXRiUGRYRjVWSHN0ajdvUkpYYTFPcGZmd2RmeERZckc5ZXZFWVJVUjI1YmR3MjRKeHpZTHVLdVQ3WFdSZ3NJdzdrM2ZqZjRMYnhiazJ4SGhQLTcxTWdxUE5SZ0lpbkp3OTFMUFRGcHBaeWZKQWR3UEVlaERIOEZ2TzdZRGdHT3V5aHFkaWhNZFJGSXpUaVE?oc=5"
+     },
+     {
+      "label": "Cabo Verde",
+      "change": "Recorded election result: President José Maria Neves re-elected",
+      "source": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNU1B4b2RrVVE5UU8wbDFxLVNvRXNFaEJHdzhVel9OdXpHQVUtcG9hUW1qb1k0ZmI2MlZCNmtPMWgtRE4zRE1CN0J5cDZqZHhwZEk3Y0Iwb01uZ1JqaVlwU0ZNNlNZZGEzMmh2cnBoTVVVZ1VKTjByemFEb1pCd0hLWC1ia1Jsc0F4dlZ3b0tzakY5U1dHTDJFNkgtMEdMY3NoMVplS3BZNVhjUUZKWXlWNm1OMVd4amtFeVA4X2tCUjQtZE5pTEwweVRPSVZ6ZEptbE5BNFpMOU81WmRvUGlyTFlsSEFxaW8?oc=5"
+     },
+     {
+      "label": "The Gambia",
+      "change": "Recorded upcoming election: presidential election cleared for December 2026",
+      "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBzLW1rVnREdjVoSVNIWmdNNTRELVFvVDZZUDUwU1p6M05RMTF4U19ENVBzV2phX0JQWThJT0M3cVo3RFI0dFlyUUhiZFdRNjRmRFhyNjUybExSeHRYWTFTZHFfZHI?oc=5"
      }
     ]
    },
@@ -1628,7 +1638,7 @@
     ]
    }
   ],
-  "summary": "Direct Iranian strikes on a US base in Bahrain and the revelation of French covert operations in Ukraine mark a significant escalation in global tensions."
+  "summary": "Updated Thailand–United States relationship details following a signed trade deal, and added election updates for Cabo Verde and The Gambia."
  },
  "relations": {
   "DNK-USA": {
@@ -3430,6 +3440,14 @@
    "note": "Prime Minister Andrej Babiš visits Israel to discuss the Iranian threat and public media reforms amid massive protests in Prague.",
    "updated": "2026-11-16",
    "source": "https://www.wikidata.org/wiki/Q213"
+  },
+  "THA-USA": {
+   "a": "THA",
+   "b": "USA",
+   "s": "A",
+   "note": "Thailand and the United States (US) sign a bilateral trade agreement to expand economic ties.",
+   "updated": "2026-11-16",
+   "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQS2YzdUU0dmwyZmJGRXRiUGRYRjVWSHN0ajdvUkpYYTFPcGZmd2RmeERZckc5ZXZFWVJVUjI1YmR3MjRKeHpZTHVLdVQ3WFdSZ3NJdzdrM2ZqZjRMYnhiazJ4SGhQLTcxTWdxUE5SZ0lpbkp3OTFMUFRGcHBaeWZKQWR3UEVlaERIOEZ2TzdZRGdHT3V5aHFkaWhNZFJGSXpUaVE?oc=5"
   }
  },
  "threads": {
@@ -4110,8 +4128,8 @@
   "CPV": {
    "nextelec": "presidential November 2026",
    "updated": "2026-11-16",
-   "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9vd3hncEhkY2dkejJUMVpybkl6X3FVZzVzaTZrVTRDVklTRjFZc1Q0Y3pvU01aUUxEcEY0Qkc5RHFxdnlXZXJjMUpLajctMjE2U2x5TXFwODlEeTdOeGZQT0dvUGw?oc=5",
-   "lastelec": "Presidential, November 2026, José Maria Neves"
+   "source": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNU1B4b2RrVVE5UU8wbDFxLVNvRXNFaEJHdzhVel9OdXpHQVUtcG9hUW1qb1k0ZmI2MlZCNmtPMWgtRE4zRE1CN0J5cDZqZHhwZEk3Y0Iwb01uZ1JqaVlwU0ZNNlNZZGEzMmh2cnBoTVVVZ1VKTjByemFEb1pCd0hLWC1ia1Jsc0F4dlZ3b0tzakY5U1dHTDJFNkgtMEdMY3NoMVplS3BZNVhjUUZKWXlWNm1OMVd4amtFeVA4X2tCUjQtZE5pTEwweVRPSVZ6ZEptbE5BNFpMOU81WmRvUGlyTFlsSEFxaW8?oc=5",
+   "lastelec": "presidential, November 2026, José Maria Neves"
   },
   "IDN": {
    "lastelec": "presidential, Feb 2024, Prabowo Subianto",
@@ -4121,7 +4139,7 @@
   },
   "GMB": {
    "lastelec": "presidential, Dec 2021, Adama Barrow",
-   "nextelec": "Presidential, December 2026",
+   "nextelec": "presidential, December 2026",
    "updated": "2026-11-16",
    "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBzLW1rVnREdjVoSVNIWmdNNTRELVFvVDZZUDUwU1p6M05RMTF4U19ENVBzV2phX0JQWThJT0M3cVo3RFI0dFlyUUhiZFdRNjRmRFhyNjUybExSeHRYWTFTZHFfZHI?oc=5"
   },
