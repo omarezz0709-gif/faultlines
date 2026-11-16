@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-16T13:27:21Z",
+  "lastRun": "2026-11-16T20:12:27Z",
   "log": [
    {
     "date": "2026-11-16",
@@ -14,11 +14,6 @@
       "label": "Qatar–Türkiye",
       "change": "Ally: Qatar and Türkiye sign mutual defence agreement",
       "source": "https://news.google.com/rss/articles/CBMifkFVX3lxTE04ay1Rc0hodHh6U3hzWjFaMG9QYTVmeFUzaG5OaWc0TUk3bzNHbnJ6TVpFaHRxSTVrUWxJWFNjQTFkUTZYZ2ZQRnB0VXhqeWhNcVhjMlU5VFpYTW9TM016cVRzYzdzZDFzMjJyMktRdHJ5alI1QnZwMjhHWmxiZw?oc=5"
-     },
-     {
-      "label": "Chile–Vietnam",
-      "change": "None → Partner: elevated to Strategic Partnership",
-      "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPSGFZS1IzMUhKaHludjJUQlZ2M0FPSEJQLXFuc05GVlBtYUxmRG0xaVBrQ1JUcnpnN0tfTlZLOFRSdjZtMlNYQ1ZkZm5qR0QxaG8tS251SHNfWndaMDgyeXZMUV9vbW1sUDNmemI5Yl9HVTBqSmx2Nl9OVDVQcEFrZy0ycDdoUQ?oc=5"
      },
      {
       "label": "DR Congo–Rwanda",
@@ -39,6 +34,26 @@
       "label": "South Sudan",
       "change": "General elections postponed to February 2027",
       "source": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5aLTBfRFE4eG5TMGlCdENpQkRoWlAtNlNCY29DNGNGUmVkb2hfUnZQeFJsSWczWnlBZTNubjR4Qm84TTRWZGlNaS1GM3JUaWk2UDhZVTVOY1RsQTJEOHRGVDhTWHFpM3ZKWkVGRDRxNTRwWkhKT0Rz?oc=5"
+     },
+     {
+      "label": "Bahrain–Iran",
+      "change": "Hostile → Armed conflict: Direct drone and missile strikes on US base in Bahrain.",
+      "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQS1B4WFV1cTRjX180WmZyUlBEdDBQSGFqN1JjRm10QXZXemMxMk00X0VBdl9UR1hZcGJkajlXQmJiZXRpUUdSclJQWVptMzFSM1VBaWh5TjJJQjVNdXUxQ0pBZm5pQU9HSzJ2SVZENnY3MzJLek02bzBKNW9RczhackFkLTM5T1o3NWlHT09IXzVkZlJKMUpRSzFxWE5rVlNlSnh6UEJMZnFqRTA?oc=5"
+     },
+     {
+      "label": "Chile–Vietnam",
+      "change": "Normal → Partner: Relationship upgraded to Strategic Partnership.",
+      "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZkJkalFOQVVqdnlWYTlYcFNCdjE3T0lLSGYwT040SU12YmtVbXhoY0NRcGtoM1ZTR3hvZUJldVNiU3BHSUxsODJURUlTZlFWRUEzei1LdldyZDFMeTFOaXYyQmtuMkNKN0x2MVhOenUwaGZELVI0bm03SWVXUEltNlg0dVNTYXREUlc2RkV6bnNWRU0xUEE?oc=5"
+     },
+     {
+      "label": "Haiti–El Salvador",
+      "change": "Normal → Partner: Deployment of Salvadoran troops and equipment to combat gangs.",
+      "source": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1zd3NITW5ST0VnRDc3LVFFSk5hTFpuSEtSZGJDX010OXN2dTF4RlZNUllsSC00QU5Qc3ZGWFRJaFBqWFl2MDg3WlF4UGEwY1lnQUZkUm00ZzIxMGNQc3FycUNpZzJVTC0yWWVBS2N1eUZXQXFJRlVXUUpGeGhqNkE?oc=5"
+     },
+     {
+      "label": "Estonia–Russia",
+      "change": "Hostile: Border closed following GRU-linked sabotage attempt on drone manufacturer.",
+      "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB1S0ZkeDZOQy0xSGx3ZWpHX0R0cGwtblQ5RjkycThUV1FTWkdKaGhMYXZfSFBrWHR2aGZOMGJCa3dUUkR6VkhRcGpqNA?oc=5"
      }
     ]
    },
@@ -1613,7 +1628,7 @@
     ]
    }
   ],
-  "summary": "Updated Chile–Vietnam ties to Partner following a Strategic Partnership agreement, noted DR Congo–Rwanda diplomatic friction at the Francophonie summit, logged Crimean Bridge closure at Kerch Strait, and recorded election updates for Cabo Verde and South Sudan."
+  "summary": "Direct Iranian strikes on a US base in Bahrain and the revelation of French covert operations in Ukraine mark a significant escalation in global tensions."
  },
  "relations": {
   "DNK-USA": {
@@ -1868,9 +1883,9 @@
    "a": "ETH",
    "b": "SDN",
    "s": "H",
-   "note": "Relations collapse as both nations expel diplomats and close consulates over drone warfare claims.",
-   "updated": "2026-11-06",
-   "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQQ1lkNGRhSHVRcjF3cTc0ek5LUmUzMXJQUjYxM0FqZjU3UlI3MUNrd0RUdHhkUVhqM3ZUeHdNQ25Ya0Jua3Z5Q2ZHaDQyT2VXSlVYY1ZvYTZVU0xTNXhKZ1VJN2FwV0p5TERGQ1dmLTVFbTdPUG0zUkRFYXVTbFhMUEJhRTE0NUd2bjlHX1dORUloWXRBemNVcTAya3pHci1GeFVhSDl2SHpPLXl3dTVqMTQ1YkNycXNZQlJBUGZFVGZac01xMno4X1BpY0hYVkk?oc=5"
+   "note": "Relations collapse as Ethiopia accuses Sudan and Egypt of providing military and logistical support to TPLF (Tigray People's Liberation Front).",
+   "updated": "2026-11-16",
+   "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTHlpR3QyZmZiSDlNM3NXLTF1TE9qMkVycE1BVWVBX2pIQ1hpX1dfZnJORW9Nbi1Gb2VmWi1nam8xOU5zZHZuN0tPUldJb201clhBc3l3TGlqTEFia0Z2aU93bjlGMlAxZDE0MzUtUzAzanN4ajJFUHdkbDhucXBFY0hLMWhUUUZjUVVjaTZWai1OdjZGT09sT3NXMmo5NHd0aUE?oc=5"
   },
   "ARE-ISR": {
    "a": "ARE",
@@ -1940,9 +1955,9 @@
    "a": "EST",
    "b": "RUS",
    "s": "H",
-   "note": "Estonia closes its border with Russia following a suspected Russian-linked sabotage attempt on a military drone manufacturer.",
-   "updated": "2026-11-15",
-   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOSmx1V0tZVHZNSEt4WVJUYW9fbnJEMXUzemVPbWNtTXFYNzlCTEZJZ1lsdlEzbEpMWTFCZ2VYdEI5TFpwQmNEYmxqMjE3SlRSSkFNWXVSaHgyd3BDM2VWY0ppNUtKdnE0WklZMldmbE9DTXJ0OUtKTjZ5WU5tV0NHa0dadzJHZjdOcnJCQnNBczlYRjlaYXd1dFc2ak9xeFREZlY2V3preHdjWWRGMTI4SmJiejM0VTA?oc=5"
+   "note": "Estonia closes all border crossings with Russia following a suspected GRU (Main Intelligence Directorate) sabotage plot.",
+   "updated": "2026-11-16",
+   "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB1S0ZkeDZOQy0xSGx3ZWpHX0R0cGwtblQ5RjkycThUV1FTWkdKaGhMYXZfSFBrWHR2aGZOMGJCa3dUUkR6VkhRcGpqNA?oc=5"
   },
   "KOR-PRK": {
    "a": "KOR",
@@ -2020,25 +2035,25 @@
    "a": "BRA",
    "b": "USA",
    "s": "T",
-   "note": "Ties fray as United States (US) President Trump rejects Brazil's election and US allies help fugitive Flávio Bolsonaro enter the country.",
-   "updated": "2026-10-30",
-   "source": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNNEZiTmhEMExkbnN1THA1QVA1TkJnLU0xQW5RRlgyV2RYVUV2LVRfQ3FQVkFfcFBtMHQxSnJXNUtRVEQ0enBfR0daTlBQdVlfOTcxQ2dIY0kzdXRHRThiZUM3RlE0cFpCSV9xZFBaaHFrZktmemJ0Rl8xSWNoZnRDMHpHUHgtckNhT3dtZ3VwNS1nMzd4MVFBelhkTXBKbTJLdzIweG54Y1BtdTluYVNkMkRBekNYdTBfdXFlUzlOei1ORG9DWVYwYW5jd3loTDY0bUHSAdcBQVVfeXFMUExfNFNGUnB4ekhmZzM0NWZHSEIzLVhfdmItMVE3OHJwek8yenJna3RMa2c3Y2h0amx6UjZJY09FYi01VjZCXzNmaWlwR1Y3Mmw0aWtrem9hdkx1dTNaVUgwLVR3X19vUzhtdXdlMmljeENIQUJJSTFiek1yM09FODhLazIzWEtTYXNQTkQwdklVN2RaNzJNR2JIVmRtbzFUWEhHTmdDRnRWNnYzT2xoVEpqcGJGQ2RJRFhMTG5hY1QyeEZoMTB2VE90VlBQZW9zb0FLeS1wMGs?oc=5"
+   "note": "Tensions persist as President Luiz Inácio Lula da Silva begins a fourth term amid friction with the Trump administration.",
+   "updated": "2026-11-16",
+   "source": "https://www.wikidata.org/wiki/Q155"
   },
   "GBR-USA": {
    "a": "GBR",
    "b": "USA",
    "s": "A",
-   "note": "Close NATO and Five Eyes allies coordinate as the US withdraws B-1 bombers from RAF Fairford over Iranian-backed security threats.",
-   "updated": "2026-10-05",
-   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPMkpxWlg0bUxwb0NsTllSWndLRnRSRk9tTmdhY2ZZc2MzNEFza0tZaDdLRnU3TGxUeWd4Q3VObTkyWHNFODVYTjN6cjlDOFI5VzBMM3BhUmh3eHRfQWJQQ1FySm5naTJMWUtLRUtPaTd4RVV0bFB1ZzdpVmlQUFdxUFktWU9oUWt5bHRQZXkwa3VoTVk3c18wcUxxZElWZkdmYUhpVkF3MXlBVnA0T3hTWVR0Zmptam8?oc=5"
+   "note": "Close NATO and Five Eyes allies coordinate under Prime Minister Andy Burnham as the US adjusts its regional military footprint.",
+   "updated": "2026-11-16",
+   "source": "https://www.wikidata.org/wiki/Q145"
   },
   "KOR-USA": {
    "a": "KOR",
    "b": "USA",
    "s": "A",
-   "note": "Allies clash after USFK (US Forces Korea) commander remarks prompt South Korean officials to defend DMZ (Demilitarized Zone) sovereignty.",
-   "updated": "2026-10-19",
-   "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBTam1jVEM2TXhrVmpKNk1zaDkxd1lIM0pCUjhXeWduRm5xY1dhMlFQZm15RDh5d1Q2VzBVQ3pxMm5BenEwVG9nLUlXTjhVYkJ1MnpRbDVYUm8tSHYxeW9BTl9wNDRjenBILW9FWkVn?oc=5"
+   "note": "Allies coordinate on AI and cultural initiatives under President Lee Jae Myung despite friction over USFK (US Forces Korea) sovereignty.",
+   "updated": "2026-11-16",
+   "source": "https://www.wikidata.org/wiki/Q884"
   },
   "GBR-ISR": {
    "a": "GBR",
@@ -2908,9 +2923,9 @@
    "a": "HTI",
    "b": "SLV",
    "s": "F",
-   "note": "El Salvador deploys attack helicopters and troops to Haiti to conduct military operations against gang strongholds.",
-   "updated": "2026-11-13",
-   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQRkNkbFZTcGdZRUpaVy1qSXljLXFoZWVvNnV5UWRmeHVqWWFYVlYxdTJSSXpJMkVsYWNjVUlBSnVOVXFSenR6bEYzdmxENnMyTzFMMWEtcUhYbU9abDhEOXctMnotQkJlRTJ5OGhmbUhEamF0a0xUSndUSklTcE13N2RQVG9IcEQ0cnI5MGp1QW5FNXdXa2Ytbl9vcU4ycWw5?oc=5"
+   "note": "El Salvador deploys troops and robot dogs to Haiti to support the Transitional Presidential Council in operations against gangs.",
+   "updated": "2026-11-16",
+   "source": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1zd3NITW5ST0VnRDc3LVFFSk5hTFpuSEtSZGJDX010OXN2dTF4RlZNUllsSC00QU5Qc3ZGWFRJaFBqWFl2MDg3WlF4UGEwY1lnQUZkUm00ZzIxMGNQc3FycUNpZzJVTC0yWWVBS2N1eUZXQXFJRlVXUUpGeGhqNkE?oc=5"
   },
   "IRN-IRQ": {
    "a": "IRN",
@@ -3307,10 +3322,10 @@
   "BHR-IRN": {
    "a": "BHR",
    "b": "IRN",
-   "s": "H",
-   "note": "Iran's Revolutionary Guard (IRGC) claims a missile strike on a US early-warning radar in Bahrain in retaliation for maritime attacks.",
-   "updated": "2026-11-13",
-   "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOejhqODA1c1hwY0NTYTVMYzJleE56MnNCSlkyb09lcDRkcUZEXzRRbmtReWJjLWlrUDlNak94OXZIUjYwZ21YMS1OZlJ2ZzFIeUNYRWJLMk93RUVYV3ltMnBGcVFlNzJGRDhOMHZ5cnZ0eTV1VUlFdHlBMnUwN0FwX2FFdkpCVFE?oc=5"
+   "s": "W",
+   "note": "Iran's Revolutionary Guard Corps (IRGC) launches direct drone and missile strikes on a United States (US) radar facility in Bahrain.",
+   "updated": "2026-11-16",
+   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQS1B4WFV1cTRjX180WmZyUlBEdDBQSGFqN1JjRm10QXZXemMxMk00X0VBdl9UR1hZcGJkajlXQmJiZXRpUUdSclJQWVptMzFSM1VBaWh5TjJJQjVNdXUxQ0pBZm5pQU9HSzJ2SVZENnY3MzJLek02bzBKNW9RczhackFkLTM5T1o3NWlHT09IXzVkZlJKMUpRSzFxWE5rVlNlSnh6UEJMZnFqRTA?oc=5"
   },
   "ARM-IRN": {
    "a": "ARM",
@@ -3388,9 +3403,9 @@
    "a": "CHL",
    "b": "VNM",
    "s": "F",
-   "note": "Chile and Vietnam elevate bilateral ties to a Strategic Partnership to expand trade, investment, and multilateral cooperation.",
+   "note": "Chile and Vietnam officially upgrade their bilateral relationship to a Strategic Partnership to boost trade and investment.",
    "updated": "2026-11-16",
-   "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPSGFZS1IzMUhKaHludjJUQlZ2M0FPSEJQLXFuc05GVlBtYUxmRG0xaVBrQ1JUcnpnN0tfTlZLOFRSdjZtMlNYQ1ZkZm5qR0QxaG8tS251SHNfWndaMDgyeXZMUV9vbW1sUDNmemI5Yl9HVTBqSmx2Nl9OVDVQcEFrZy0ycDdoUQ?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZkJkalFOQVVqdnlWYTlYcFNCdjE3T0lLSGYwT040SU12YmtVbXhoY0NRcGtoM1ZTR3hvZUJldVNiU3BHSUxsODJURUlTZlFWRUEzei1LdldyZDFMeTFOaXYyQmtuMkNKN0x2MVhOenUwaGZELVI0bm03SWVXUEltNlg0dVNTYXREUlc2RkV6bnNWRU0xUEE?oc=5"
   },
   "COD-RWA": {
    "a": "COD",
@@ -3399,6 +3414,22 @@
    "note": "Tensions between DR Congo and Rwanda disrupt leadership voting at the OIF (Organisation internationale de la Francophonie) summit.",
    "updated": "2026-11-16",
    "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOMFlERG9Gem5WcDJQbGdLZXdiNUN4RHN6c3JiM01DclFscVRrQ2Vhc3RydkxmN2NFYXB5STNCYnl6YWp6ZWVYQ1otSUJXZzJyNnlBT201emhFMzdKRXRRbHZma0FKTzgtZVdhYkh2aDMyMlRuTWRHV3k5dmVQMF9JTHlWZ2xRaEliR1VMbF9MekxoY2dUejRfM0VoUHZXV0JtS1RCaFNNWUVBOGUtT1ZCM2h0Sng5RXpCS0xQWjRhQlM1Wms?oc=5"
+  },
+  "FRA-UKR": {
+   "a": "FRA",
+   "b": "UKR",
+   "s": "F",
+   "note": "Investigations reveal a covert French military mission in Ukraine involving trainers and technicians deployed to the front lines.",
+   "updated": "2026-11-16",
+   "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSkJsVy1hT2x6c2NGY0h6a1plSmtqd3FGdXJKZkhJVElRaUJMeWtJM2g4LUZNN1FVeGpNX3JLZEcwNEltdFY0aWp3Wkx1NXNCd0NPekdsQU1vS3NLbkE4RkZuZ3hxSjlfaXE3QmV1ejZuc1YxQnFXU0tHZzM1a0NVVXRGUEltZW14ZWs0RXQyN3cwX1RCUTNUVUR4Vk1FTnE0WkE?oc=5"
+  },
+  "CZE-ISR": {
+   "a": "CZE",
+   "b": "ISR",
+   "s": "F",
+   "note": "Prime Minister Andrej Babiš visits Israel to discuss the Iranian threat and public media reforms amid massive protests in Prague.",
+   "updated": "2026-11-16",
+   "source": "https://www.wikidata.org/wiki/Q213"
   }
  },
  "threads": {
@@ -3419,9 +3450,9 @@
    ],
    "d": "Iran-backed Houthi forces advance toward Aden as Yemeni government troops retreat, while continuing missile strikes against Saudi Arabia.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNN0Z5MVFGc2trSE1PTDgyNm0tQWY4SmtiNk9JblhJS3FNNHJPSm1KelZvTFYzaG9US1RCZ21YS3dTc2Zpd2wxN0toVHh2dFJCVTlkMVlhdjBxSWt6TDd6SmJSV2lldmZJdnZ0cTdTdVV2R3h5N3VRQnhScVhsRENLV3JXOVBuRERQTDI0Tnpfc0kyVHR1cDZHbGl3TdIBmgFBVV95cUxOdXo1d0Jnc2VtRWhTX1F4TGFVX1JtUm02b0RQX2NrR01QQ2p2WWVkVEdwYUhGZ2o1T3NKcHo3bkFwQ005bkNLRUhDbUIwSUNtWVNnR2U5cTlxcUtGdHZpMWFibVQ0TUR3SUJYTDBsSmp2X2pHS2F5VmVOXzVBSjNMaDlsNnpZb05rMmVBTnN2TEhyRnVZRElSMEZ3?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5ZRjhiVXY3UGJRcnllVGtMUk1rWWMyei1TSENpX1d0ZjNfUWpvTk84NVBBUVBrSDNHdlpMLUFPZGs0QXBLT1NTb1M0TmFtdFpNd0Zqb1d3VVJYVW5DVWY5T0lBaW1uOGvSAVxBVV95cUxNUDlSNjZaYVl2cGVEdzhDbGF3LUwxZU1fc1RtV00zU2pEeEJJVklycWhOT0JzREprYnV0bHpmeEpoaGpXREplYVFZbk1YZy1HZTZEcFctYk5kTWhfcA?oc=5",
    "t": "security",
-   "updated": "2026-11-15"
+   "updated": "2026-11-16"
   },
   "afpak-jihad": {
    "t": "security",
@@ -3456,7 +3487,7 @@
   "sudan-war": {
    "t": "proxy",
    "n": "Sudan's war and its outside backers",
-   "d": "Sudan's civil war escalates with United Nations (UN) reports linking United Arab Emirates (UAE)-hired Colombian mercenaries to active combat.",
+   "d": "Sudan's civil war escalates with drone strikes in Abyei and accusations of Egyptian and Eritrean support for TPLF (Tigray People's Liberation Front).",
    "c": [
     "SDN",
     "ARE",
@@ -3472,8 +3503,8 @@
     "SOM",
     "COL"
    ],
-   "updated": "2026-11-07",
-   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOaVh1eHBzNWhtZUVsV2lPdlhuU3lMaWE2UUJ5c3B5Z0phbll1R1IwVXhhZEZwVEF3aGJLTnVKN0J4MGtseVNHcHFROE9jOGEwRTVvMktLRkEwS3BGcHBCMXZCRU5INHZvZW9ZbTNQakgxUHNGTk5QV2xXQ2VQdjRIb05mNkZrdzJYbmJDQzk3Mkd1NjQ0NlRsRVdQaVpiRU84bXFxeXg0d0NyRlRkMTNV?oc=5"
+   "updated": "2026-11-16",
+   "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTHlpR3QyZmZiSDlNM3NXLTF1TE9qMkVycE1BVWVBX2pIQ1hpX1dfZnJORW9Nbi1Gb2VmWi1nam8xOU5zZHZuN0tPUldJb201clhBc3l3TGlqTEFia0Z2aU93bjlGMlAxZDE0MzUtUzAzanN4ajJFUHdkbDhucXBFY0hLMWhUUUZjUVVjaTZWai1OdjZGT09sT3NXMmo5NHd0aUE?oc=5"
   },
   "cocaine-europe": {
    "t": "trafficking",
@@ -3520,7 +3551,7 @@
   "africa-corps": {
    "t": "proxy",
    "n": "Russia's security footprint in Africa",
-   "d": "Russia's Africa Corps backs Sahel juntas; Malian forces successfully reclaim the rebel stronghold of Kidal with Russian military support.",
+   "d": "Russia's Africa Corps expands its influence, with reports linking African women from Ghana and DRC to the production of attack drones.",
    "c": [
     "RUS",
     "MLI",
@@ -3529,10 +3560,12 @@
     "CAF",
     "LBY",
     "SDN",
-    "FRA"
+    "FRA",
+    "GHA",
+    "COD"
    ],
-   "updated": "2026-10-07",
-   "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVmRpRzJzamxqdHVMU2RhM1pLRjZjdFhKRGJzMGF2TkxFNV9md2ZyUUVVX1VyekFhRlJUZzRGYlNzQTN5LW9HQlZ5RkVOdmt3ejZJMzdReURVXzJRS3FkV0lOTG1CSDJpUi1GdE43QXZzZzVvSUlDQm1jWVBLc3JyVXFjcUl5ME95WnpkOWFQSE0xWXlUT2E0UmEyRlFFUQ?oc=5"
+   "updated": "2026-11-16",
+   "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQdlUtb0N0LTY5OTdiLTJkSEZJX1RMUWZrdFZUX001c3A4dlNfUTdRWG5CaWRabTdtV1UyRHJTYUExLWhfWHRMSFNaV0xCU0dKMmdXN2s5ZEVVSDJPblpoTGNHSjAwNWhQSFVhSC1WRlN2bDZURUcwTDVKVDZ3MTRoQ1pEZUxwT19tTmtFTE5KczVQcmhzcTZ5TWVlcG1Oa05xc1RDTFdKM25GeFVvNUNiVm94TjZDOWtwVlRYOFFrTW1hTVMwUFY4SnBmRFZCTndKa2FXbWE5bU4?oc=5"
   },
   "captagon": {
    "t": "trafficking",
@@ -3669,8 +3702,8 @@
    "d": "Houthi forces advance to within 60km of Aden following the retreat of Yemeni government troops around the strategic waterway.",
    "n": "Bab-el-Mandeb",
    "s": "Houthi forces advance near Aden",
-   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSTBtNjBCZTVGUmt6Wm5rZzNTckNJVU95WXlUaXY2aV9rdzhXRnIyYVdjNThOZnFuU2N1ZEhDRG1TaDM5LU4zbDZwenlhcTNoR3Vib01hTnJFSnMzMm1OTUN0bDNSRDJ5ZVM5ampuUnY0QkNlOXo2NGQ0c01PSHZFams0ZGRHQ29EVXVUZVdYX3FvQV9aTEkwbEFGWXNxX0liMkVDajFmbWxLUlo3R0F6TUdKOEI4RkRETnhPNGJn?oc=5",
-   "updated": "2026-11-15",
+   "source": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1wRUVhLVE0UzYxZkF5LV85UTFkcXowWUZheU01aGVqRjVpMEYzeGU0dVhKSE81bS0wYm4wdnRBdmg4eXpNUE9uZDFCZHBaV09hUU5DZHVDbHNSOWZt?oc=5",
+   "updated": "2026-11-16",
    "t": "strait",
    "lat": 12.6,
    "lng": 43.3,
@@ -3765,8 +3798,8 @@
    "n": "Abyei",
    "s": "Over 150 killed in drone strike",
    "d": "Contested border region between Sudan and South Sudan; a Sudanese army drone strike on an Abyei market killed over 150 people.",
-   "updated": "2026-10-23",
-   "source": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE93M2kzMGhfSlJPeU5hOHFUYXM4UndfZ0tLTFBrUFdpaFVJVjJOMkFtR2RYN3VlNXp3T3lwQ09UaUFkYzZzWjNGcS1OOF9TNUhM?oc=5",
+   "updated": "2026-11-16",
+   "source": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQcnBxZ0FHZUM1TUZjWTZlc3V0WXFmWHd3YkpIRm1lVnRENC1tRXdnZkJybEw5MGh1RWMzZzhqTHVJQ0lXSnhoZWYxYXBwMUJTVlJSNUtna0Ezd2FkZHFGRkJXUU9HVE80S0JmbW13bGo0SWpnR3dNU3pJQ0lTN1YwWmlpZEg2U3FMVVVhYmFiRnZYUlZ4b0RDcWxUa3ZYTE5xcmZPWlVUbWNSeEpBWldkaktQMm9kaWxudnNWY1ZseDRpcUVzNEN6alRfVXk0Z3NOWm130gHYAUFVX3lxTE9RbEpRdVhsbkI2dnhtWVJIcjlESkM0NHpDSzZFTWNvLTlUaF9lR3c1MkVLVWdKUFFqOXJ2cFdSeU55STRmQlFOTGx3U1NQY2xIcmhHdUNGNWUwb3ZDQUJ3bTNNT2Q3bHNMZ1BrUm5FVlozTFZnM3RPVjhkWlRId0ZsNmxYSjlvZ3RfYlQwa25MazNuTEMwdDhXeGFhNDBxU0huZXlfQXlUcENjWVRoNVQxOV9QYkhEZmpoTWF5ZW9OOVYxNWxEdjhRMHFqU1FFVlBteTFQMTFtWA?oc=5",
    "t": "flash",
    "lat": 9.6,
    "lng": 28.4,
@@ -3809,7 +3842,14 @@
    "s": "Bridge shut after strike",
    "d": "Traffic across the Crimean Bridge is halted following a Ukrainian strike amid a record drone assault on Russian territory.",
    "updated": "2026-11-16",
-   "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFAzMW5uVE5zVUw2RzB4S0N0TVVrSEhEeWJoTlA0M1hUV3dURDFiTTNQUlVORkpUQWZ5RERzVV9vQTFVTWU3ZEVxWlAzbw?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPLUtIRFZsaGdCd0pLRGpfamlzbGRKUUFiTkp0bmUwLTh5V0RuYWtMSVp2Q2tJakJ3VUpmSHRoVXJMVmJLN1VJOURhYi1BUUVtb2hMU2lSOS1NYW1qbndOUzNQLUh0QVdVQkFjbGlSSEdqVUh1YnBkTXQ3MjlLc1lKQVdTVTEzdkFNQ29YWXJBUXNQQ3FmQTNBTFN0U0wzT24tTXpHc1BtcWpwQdIBrwFBVV95cUxOR3d5NEZVRVEzMGh5OU5IaW5oN1hFZXhlWHJYeUNtVzAwYzRwNzVabG11Mzd5d29pemhMYmlUOGRJeEZSbTIxazdIREpta1pleHdlTlpkVUxzTzQxUU5waVVZcG12UXBfbDktWUlQemdWWFBSVzJXSWFwWWlBem9zY3ZfQTJOdzRhdy1Uek9OSUtSNWhTVV9INjA3S2w5SlZqazlialY4TllWWVBtXzRF?oc=5",
+   "t": "strait",
+   "lat": 45.3,
+   "lng": 36.5,
+   "p": [
+    "RUS",
+    "UKR"
+   ]
   }
  },
  "politics": {
@@ -3926,9 +3966,9 @@
    "lastelec": "presidential, November 2026, Iliana Iotova"
   },
   "SSD": {
-   "nextelec": "general, Feb 2027",
+   "nextelec": "General, February 2027",
    "updated": "2026-11-16",
-   "source": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5aLTBfRFE4eG5TMGlCdENpQkRoWlAtNlNCY29DNGNGUmVkb2hfUnZQeFJsSWczWnlBZTNubjR4Qm84TTRWZGlNaS1GM3JUaWk2UDhZVTVOY1RsQTJEOHRGVDhTWHFpM3ZKWkVGRDRxNTRwWkhKT0Rz?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQYk8wSTJNSU5jTGItWUxYdGxDbHJMRHJJTUdMMmhrTTdoNFAxcU1aM1F6UDd0OHRLX1Zuc2ZyRV9MQUpORVJBRENldXpGSlRsdENRdDdqUVdJa3VJRzBkVjBrWmdBU3VoRmdPRWNvNVVqOThqUGh4VVgwZTgxMVQzQnVDX2ZmQjVJR0JLdTFmLVZTd0k?oc=5"
   },
   "SRB": {
    "nextelec": "parliamentary, Nov 2030",
@@ -3976,9 +4016,9 @@
    "lastelec": "general election, November 2026, Prime Minister Dickon Mitchell (National Democratic Congress)"
   },
   "LVA": {
-   "lastelec": "parliamentary, October 2026",
-   "updated": "2026-10-16",
-   "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQW04MXpWZ3hFY0t6T2pubnJtdE9FOTQ4aXFFb3lXb3I1aEp2bXEyYzdJNlduWVctSEJWQmVUVGFSb2ZSaXhvcTNwQ3g2MjBLMi03M2ZRa3Rnckp4MG1USUpHemhBQnhWcmstQTBYRFdsdy1pZzFsMmhtUzd3NWNkOU1UckJjNXVOREFZd1VyeTZGTHVOVDR4Yw?oc=5",
+   "lastelec": "Government formation, November 2026, Andris Kulbergs",
+   "updated": "2026-11-16",
+   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOdk9aMzRMUkRtQWdUS1JwYlJrbDhWUjVMUFIyaldIUzRnNUliSzQwUExUVHY0dm5lQlFyZ1I3Q0U5dGRWX2V5UGM0dGUxcmZ5SFQwT0w4czlXT0x0NzhWV0lPMFE4c05LVWc5a3pvYjBPb0tuRDJsUUNBMlExcU1Vdi1UY0JvcDA0d1BtZnpnZW1jRjFLcGNydzI3R1ctRVo1NXVySXU3bHFtbnhISTc4dHVCM1I4dzTSAbYBQVVfeXFMTVVHZkgtb295WVNjSHVCU3ptYUJhc1N1YUczUm81ZWdOZUk0TUFNcHFiODBacHh0ZWZXYm1RdFI1WVdHdFJvTGdMbFh2NjBaUjFRQmt4UzFocnVndDJ3RS1Dazl1OEs1WUVUM0hra0sxdl91RzFPb2d6R3hUVUFsb01oTUkzTWF1UEdMMExDUEltTDJXMEk5cWtVTVotY1Vmc2pyWE1QOGh6Y0F1bE5UVC1seENhOWc?oc=5",
    "nextelec": "Parliamentary (Saeima), October 2026"
   },
   "BIH": {
@@ -3987,9 +4027,9 @@
    "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSGtaN0YzYTJnMjB2WGU1X1Z0Q0hwYmNjel9ZOXdiLU1yQmpNOXdTdlIwYnRlazZLXy1vQ05EUWsxbkhGUlpVYWhwR2x2a1FNcUpFaktWZXBOc2dfSDh6aEtFbGRDY3RsRDRnNHZwMGRGdUlfM050VkhZXy1SNXBfSXJvNmRpejdyS3c?oc=5"
   },
   "ESP": {
-   "nextelec": "general, Nov 2026",
-   "updated": "2026-11-13",
-   "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZThNVWFyYm1BQ0N1ZUF1bE1nVk5CZWlKc2piOFBILXlUbUF5UXhERG14UFFYZjN4dVV2VFRwVUVBSUdSQTVHNjdhMWZWSEVJN1hNekNZa2tUaFBkdUpDS2pVbzJmX3dtcWZ0bGJCVC1CdnR5ajBlTUpjOHIwRnZ4Y0c5NU5uNXFrLXI4TzEwVQ?oc=5",
+   "nextelec": "General, November 2026",
+   "updated": "2026-11-16",
+   "source": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPX0t4Q1kwZWFPc1NfX3dFYmdLcFF6dGZsTWFJcjNkZ1JpRlRZVXR6TXJaYnZYR1NlamM2eTlzWGtvOThqSHBJeW40YXd1UGk0WHVpN0h3R3MzbTJVLVI0d3NrR0UtYnNMM1ZzeXItQTVKMGN2TVoybnVtWldUOVo3YnZHQ0NLWDlFTFg2SGcyNmhwdUM4TDhiSXBQTllVbzRzOWxSdzV5QkpvZFZCRjNnQlZxRU9rRE85alp5dmt5U0d0Vmk0THBlWdIBzgFBVV95cUxNRHJRNUdQSGstN0Z6NzdDVlRMUHVLVFRRcENPSm0tSHptQXVrd3lWOExTREVsZUVXb3BhLWxrRXNnVERVeGF0N28zQVhvN3BqVFBxekRZWnNwOXFfR0c5VGRmSXFnSl9udWR6cHNKN0NGbER1bWFiVG03cFEtRUd3cjZJTjB5bkI5ZnFnVDNmMjhKUUc5cHJtdFFkNlJaNTlVYTl3TVNWVFVmRUZvYWNGMXVsUXNyMy1oRjctTkZTNXNJSGVkNTR3WEoxZDdNUQ?oc=5",
    "lastelec": "general, July 2023, Pedro Sánchez"
   },
   "XKX": {
@@ -4014,9 +4054,9 @@
    "source": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5jQVIxRWZ1TFo5c3hLWUdfVkFfLUp5MzJDVmF6MDU0dXdEeDRlaF93Y3hYQkY3TUZGWFl0SWI1RU9XQQ?oc=5"
   },
   "HTI": {
-   "nextelec": "general July 2027",
-   "updated": "2026-10-30",
-   "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZXVwWnVaUzBnNFYtSk8xNy1wT3NwLVhWSmRENElJZzRGb1B1OGYyb2Zzdy1ybm95UXRNQ1FBcVN3cWZSRGRBQ1VYRVpXekRnU3poLWNUeGZnbUhldGZ0RmpmemhkWHdFTnA4NW1zRi04TkRvN2p1akoteEljUHlFOUdBZDhzVW9TbFR0OTNEZzlUb2ZwTTZj?oc=5"
+   "nextelec": "Presidential, 2027",
+   "updated": "2026-11-16",
+   "source": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNQzNjTGJNZU0xR1FuMGZPb2lWemQzVVBid1pRQVN2eDZUWTBXU2cwRjQxUWhHR0xUNm5adG1aU0dvb2d4MnBXa1BUNDJnd2pBcmRFODJLdFBUeV81eFVIb0dCeVBDTWFWTnZYQzlnRDRWRVpGSWpyMEpLNEd3U2hLd3J4RWF6a2IxdlZuVTNDM2NWYlUxODU4enBJLTd0dXpGMTdsaUt5QjRpVll0bktvYWhWZ2h0UnJlalZNSkZCZ0dDdw?oc=5"
   },
   "SOM": {
    "nextelec": "presidential, Feb 2027",
@@ -4030,9 +4070,9 @@
    "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTFhmT1NGRTRCTkVtTW9sQmlBVllYR0lseWp2bVl5NkRDVjhGQ3FYMFJSVXp0N2tvMmxWeWs1X0loV0VCVUNzZFRaN2N2RlZqa1Y2NlVpVVRFZlVNb0lXWmVXUUsxQWtqS1hGR0lHWkVNcXVCU1FwcGRXc0kxLTJ2SG1mTEUzR3dXVUhQS0tqZGNRd2V6ODl6ZDhIWDl3cUJVSGpQUXNMTTQ3Rld4dFV0M3JJcFY?oc=5"
   },
   "ISR": {
-   "nextelec": "general, 2026",
-   "updated": "2026-11-05",
-   "source": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1CN25VOGU2aFhSN1VNd1h6Rk1mWWhjQjVhY01zbk5Pb2FfVktpX1lIYW80UnliUUdTajBVWWlCcjVkSHB5U2ttMnNqQzJyVXN4WXNSOTdSN082NHN0ZHpWLVhQblNSaWd6bm1HLVBxZWpsbXRMaW9xY2QyNmYyUQ?oc=5",
+   "nextelec": "General, 2026",
+   "updated": "2026-11-16",
+   "source": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBLWC1JUDhXX3lvaVA2bG1ncjBvb2h3dERIWmxIWkdlR0VJbEFrUV9UZk9LejgxdW4zdmlXc1BHTk9ITFliM2hWWEZBOGJWTDJQWi1YMWw4am56S2czRk1ZeUMtNVB3V25Zd2tDdDBCdU53cXNrM1NaX1FlNXZSdw?oc=5",
    "lastelec": "legislative election, November 2026"
   },
   "OMN": {
@@ -4070,8 +4110,8 @@
   "CPV": {
    "nextelec": "presidential November 2026",
    "updated": "2026-11-16",
-   "source": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNU1B4b2RrVVE5UU8wbDFxLVNvRXNFaEJHdzhVel9OdXpHQVUtcG9hUW1qb1k0ZmI2MlZCNmtPMWgtRE4zRE1CN0J5cDZqZHhwZEk3Y0Iwb01uZ1JqaVlwU0ZNNlNZZGEzMmh2cnBoTVVVZ1VKTjByemFEb1pCd0hLWC1ia1Jsc0F4dlZ3b0tzakY5U1dHTDJFNkgtMEdMY3NoMVplS3BZNVhjUUZKWXlWNm1OMVd4amtFeVA4X2tCUjQtZE5pTEwweVRPSVZ6ZEptbE5BNFpMOU81WmRvUGlyTFlsSEFxaW8?oc=5",
-   "lastelec": "presidential, Nov 2026, José Maria Neves"
+   "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9vd3hncEhkY2dkejJUMVpybkl6X3FVZzVzaTZrVTRDVklTRjFZc1Q0Y3pvU01aUUxEcEY0Qkc5RHFxdnlXZXJjMUpLajctMjE2U2x5TXFwODlEeTdOeGZQT0dvUGw?oc=5",
+   "lastelec": "Presidential, November 2026, José Maria Neves"
   },
   "IDN": {
    "lastelec": "presidential, Feb 2024, Prabowo Subianto",
@@ -4081,9 +4121,9 @@
   },
   "GMB": {
    "lastelec": "presidential, Dec 2021, Adama Barrow",
-   "nextelec": "presidential, December 2026",
-   "updated": "2026-11-14",
-   "source": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBBNjZMSVNIMmp1U2loRm9hRXNEY1QwWjlpMy1hYkZoNGMwaUdBaVpWTG1DR1VVSHRWWWNIemo2ZGRQaFVmQXkzYUFDZmNNM2kzdEpkRUZ0QnA?oc=5"
+   "nextelec": "Presidential, December 2026",
+   "updated": "2026-11-16",
+   "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBzLW1rVnREdjVoSVNIWmdNNTRELVFvVDZZUDUwU1p6M05RMTF4U19ENVBzV2phX0JQWThJT0M3cVo3RFI0dFlyUUhiZFdRNjRmRFhyNjUybExSeHRYWTFTZHFfZHI?oc=5"
   },
   "COD": {
    "lastelec": "presidential, Dec 2023, Félix Tshisekedi",
