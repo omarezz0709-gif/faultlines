@@ -1,7 +1,32 @@
 {
  "meta": {
-  "lastRun": "2026-11-15T20:41:23Z",
+  "lastRun": "2026-11-16T01:32:23Z",
   "log": [
+   {
+    "date": "2026-11-16",
+    "items": [
+     {
+      "label": "Algeria–Morocco",
+      "change": "Hostile: Algeria warns of military strikes against drug sources in Morocco",
+      "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQQnJZOVA3U0RXRjJkTlU5dnhBZ3loSEc2Q3FuaDRzNEdoQVBlbHo5RnpQWUVyMnBkYkxhRGdRZjVqU3VfSDNBRE9jYTAxVlZNLVRxUGRiS09VQTNLMHVqRGZaY0NDeXR0Z09rdWw3N3ZmTU1CdUx3NGwxUVp2ODZpSG9zLXNzTVp6QkFYc0htbGlPbW1OM2dGT25RQmM0UnlfeTh2Z0ZSZGVJQklTWmtUc041ZV9tRDd4R3BPQTFveUd0bGhvMnVaRVVXS2tRV0U?oc=5"
+     },
+     {
+      "label": "Qatar–Türkiye",
+      "change": "Ally: Qatar and Türkiye sign mutual defence agreement",
+      "source": "https://news.google.com/rss/articles/CBMifkFVX3lxTE04ay1Rc0hodHh6U3hzWjFaMG9QYTVmeFUzaG5OaWc0TUk3bzNHbnJ6TVpFaHRxSTVrUWxJWFNjQTFkUTZYZ2ZQRnB0VXhqeWhNcVhjMlU5VFpYTW9TM016cVRzYzdzZDFzMjJyMktRdHJ5alI1QnZwMjhHWmxiZw?oc=5"
+     },
+     {
+      "label": "Cabo Verde",
+      "change": "Elections: presidential election held in November 2026",
+      "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5tcFNDQUlVU1B3Ry1ETV85UW9XMEEyWVZMNjFYWUt0dnhVQmZPbnAyUnlnLU9QcXV5OWtzeV9XWXBqNWctRkFpcXFGenVkTXlqeEctdFJJc2xmck9VRHlTWjBPQ2g?oc=5"
+     },
+     {
+      "label": "South Sudan",
+      "change": "Elections: first general election postponed to February 2027",
+      "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPOWhJczg0Q0tWSUdBQkhlbkV1Y0d2VHd0YWZLQ2o1ak1fVlV1dzljSFJlb1g5TWExcWFBRHhRUVVvUkpSNk0xeXJhZXNwR2o2aDh3ZjlZWHp2U05HRHFwWHVDSUZnSWg3a24xUjdueDRkU0V4Qm5va1p4bDdpR0ZQY05UYmE5eTBEcmZsRmQ1QUc3WEM4bXkxLUN3?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-11-15",
     "items": [
@@ -1571,84 +1596,9 @@
       "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOM1ZKbTY3QU1rTWxKeGVfZDMzVll4a2xzRU4zMnFMd0hiMFdFbl83Mm1aVUJsdjYwUzI1aGtTQ0pVeHNoM1FaT3JORlF4WHpub05IVnM1VVc4RXNNMzFDSnRIUDcyNWdNbjNNS0FNUGE0T2FwUmFXR1JaSkFNRUlFejNSRFM3MkRubnpxanVQTU9DZmNCeFNwUHRNZmN0S216MTJ4LVBrRFhmclNKZ2p0ZkpBN1Q2UXZpYmtydTVDaW9US09EdjE0ZGpRN3ZEUGc?oc=5"
      }
     ]
-   },
-   {
-    "date": "2026-10-17",
-    "items": [
-     {
-      "label": "United Kingdom–Eritrea",
-      "change": "Normal → Tense: UK threatens visa ban over migrant repatriation dispute",
-      "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQbVM5djI5aUpPMHZZbkNPNDkyYktoSzY1QnFrZ2JfYk90UHJOb2pzMTMtN3U0bzVWM2t3UE02NVR6dm9zTXJmNGdYVTY0UE91dG82UGwzWGc1b2gweVdxbGNDTXRWMlFmeDNaSTRyMDJoeXktUWMzSlpUdXB4cTJaU2Z3aklaTXEwcDFGWmVJV1NSckF5bmotTjJwN3MtS0xuT0E?oc=5"
-     },
-     {
-      "label": "Cambodia–Türkiye",
-      "change": "Normal → Partner: Nations sign defense agreement",
-      "source": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPT0dVZU5reDY3ODVNTThaQjhpSVFjV1pSNzVMR1JPQmJFYjEtbXJVWW10aDdPSXNNbDN0c1Z1NkdJTzZ6VlhhdW5xRWFtT3VscDRuS1A4WEIyWjNEanU2OWZ3eHhJT3BEQUZjMEc0X2xZb0JKNHE1OHZva3pnbExSRmF4OFhWS1psMlF3czdtSlFvOEQ0dW5fRVJFV0ZiUTZvS08xMno0eHV5bEJzMjlHOW1DaUFjU0Q1T1FiMFQxcG9ERlAyell1TmhqVVlJb2JCYzE3REVMcXVFdEdaM2hlZg?oc=5"
-     },
-     {
-      "label": "Ukraine–United States",
-      "change": "Tense: Note updated as US waives Russia sanctions while criticizing Ukrainian refinery strikes",
-      "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOX2luakxEaEVyTXo5MTktaTdoVzd4Zk1EX1NoYk8zZGE4bDNoYVpBS3FZeXJnMU1jazRhVkVfT2hSZ3pPY1JmSlotWVY3LWFjcDdGeDV2eU12bHhMM2E3QWI1aVczdmxiYjhBNlhGU1RCeE9hakdKN3hmTlZvTEgwSmxQam1lNVdJOUVFemlueXNwcFVUS3hYckNfb0UwbVJrZ0ticnctYmlueFR0MHRBR0cwZ1ZJc3VlNVFNcGw5SndCczR4VVhrNndabWptMGcwMF9aVQ?oc=5"
-     },
-     {
-      "label": "Belarus–North Korea",
-      "change": "None → Normal: Belarus opens a resident embassy in North Korea to deepen diplomatic ties",
-      "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1oaXFwZlgydXVMb0VqZEdMNVFHNWFUVmpNQlcxazNlUlFpaFJfYWxZUVZldWpOVEpqM1IwZm00Mkowb29idEhpeG9MaDJxLVRzZXZQeGtwLU4wZ29GM0RZQUhUOG1QcVM4VmpORklB?oc=5"
-     },
-     {
-      "label": "Houthi Red Sea campaign",
-      "change": "Updated description to highlight Iranian intelligence provision and Aden airport strikes",
-      "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9JVi1mYUoxZ0daQzVaeUF2bTZMR19mOXVvSFVMRTZkaVg0dC15dG94YW5KSGlPQS1SVm01X29XR1N1MmZYLU5ZcGVqQW0tN0dHUGc?oc=5"
-     },
-     {
-      "label": "Grenada",
-      "change": "Upcoming election set for November 2026",
-      "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWWJzLVhYTGJobjVoa1BSMXBPY1VMc29GMC1BdlVrUWpQSXJiUUxUQzZTNy1oQ1EtSDdlVllPekhSaXNRX0VZWl9hWkp4U3BOQUhvTVNnQk9aXzJIMjFOdWt4c09IY0lZNFZDdWV0czFwSlBHT2d1eVNpSmF4SlpwazYxSU1PNUlLWlB5bzlkSWpJdDlPZGlNUC15cGotNHplNFNjaTNlWG03OGVudjBYZA?oc=5"
-     },
-     {
-      "label": "Egypt–Saudi Arabia",
-      "change": "Partner: Egypt prepares military defense support for Saudi Arabia against Houthis",
-      "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTkVLVENIYzdsY2JjNmJFcVlaREdiSUdQSUU4T1dNOGdqdWE4ZElqaTZQMzNkQXNJamVqaDd6Nk0wYjgzUEJpZjlSS2RjLTYwaDZGeDVqYU5QOUh4UHJlLTJVR3dQeTBWTWpJZk56QXNNaThZbk5YWEo0S1VaMzdQbWJUTXR4UnpPejlZWnM5VWtIemhIMUhIQUh1cG9EdDc5RUY5eHRSVlR5MndpbXRTMUVrQmtPM09scFdRYms1S1I?oc=5"
-     },
-     {
-      "label": "United Arab Emirates–Saudi Arabia",
-      "change": "Partner: UAE agrees to re-enter Yemen conflict alongside Saudi Arabia",
-      "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWXhkalJBQ2xwVFhIUExTLWw3UTRGbHdXVlhIQ0ZLaEVOREFzNUQ3MkJqSlMtOWQ1aDRwazFhaVA3ajdqNTREZFN1andxLV9QaE4yUWk4T0ZGeXJfZDIwb0JhMDRwOHN4Qlowbl9ET0x4cVMtZU1zdjBXY3J4bEp3VHAtdDItcUhzM3FfWmNaVFljamJ4enBhb1I3dTZUWVl5Z3c?oc=5"
-     },
-     {
-      "label": "India–Maldives",
-      "change": "Normal → Partner: India rolls over currency swap facility for Maldives",
-      "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQT3ZvYmo4cEFidDY4RTBjWUhrMWxNbVVGMWk4eUxzblFaMUpVeEpQQU1BRWFTSVZuS2F6VFpLV0laekowWEI2ZHlieDNrZmtZZ0FhTHRKNzFHaXpCZXkxdTYyend6YnpIWE8zZDY4MVY4clZUaGkwQW9RczVoSjRSMG01Z2Rra0t4T3A0QnRTTWZ1V1ZURHRZMWlQckFIczJaajVScGJFMGRDNzhnWUM2Q2hKRUhHVm8zei1LZVJfWV8tbVd0aVE00gHHAUFVX3lxTFBPdm9iajhwQWJ0NjhFMGNZSGsxbE1tVUYxaTh5THNuUVoxSlV4SlBBTUFFYVNJVm5LYXpUWktXSVp6SjBYQjZkeWJ4M2tma1lnQWFMdEo3MUdpekJleTF1NjJ6d3piekhYTzNkNjgxVjhyVlRoaTBBb1FzNWhKNFIwbTVnZGtrS3hPcDRCdFNNZnVXVlREdFkxaVByQUhzMlpqNVJwYkUwZEM3OGdZQzZDaEpFSEdWbzN6LUtlUl9ZXy1tV3RpUTQ?oc=5"
-     },
-     {
-      "label": "Iran–Lebanon",
-      "change": "Partner → Tense: Lebanon revokes Iranian bank license under US pressure",
-      "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQLTV2UTh1SXBqOTdQY2MwSkpqLWljaGJTcnQ1T3N4aE1Dd1pTTE1yRllVNGtYR1Z1cS16czFLU1o1TzZDaURudEhTZjBXTjJVRnJyYldFN2ppdkY2UVVsVzJEVF9RRG0yX25LQU1FMTZjUWdmYUFfSW94ZURzbDRFNlZQOFp5RmduTFpXYlcwS2YzOVJPM2ZnQWZtNnZrTzhqdVhtWi0xZmtqVkhNcy1HZlZtVHhJQnVYR0FHdU9maTNLcnZjOWFLNXdYNA?oc=5"
-     },
-     {
-      "label": "Costa Rica–El Salvador",
-      "change": "Normal → Partner: CRI and SLV sign bilateral agreement to combat organized crime",
-      "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWmpDUmRUekd1Y01reWhMNHlVQlpoV3Vrdm1GcHhhbVM3OU9ZTXlKOTFQaWpGWnBjd1dVYVZub0JZT0tFTHUyZ3JwQjJYUWxUVEszZEFWRDNudlo3SWlBR3VHY2s2NDFrQXR1WVdFeGlFUjR5aEZ6T2x4N2R3dTc0R0JKUVB0ZHdhTnJhUnctRW5qS0oy?oc=5"
-     },
-     {
-      "label": "Romania–Russia",
-      "change": "Tense → Hostile: Romanian jets shoot down Russian drones over the Black Sea",
-      "source": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNX1RuY0xJQ1ZSakMxQlR0NmV5MTdiMHJDMHQ3cmFWelp5MnY4cWV2LTBkSnU4WnVQejc3U1NXd1FvblhYYnRCNGpGWURnb0JVU2ljdWVqYlN2ZXh3S2kxR3VGSFdXUUMtWkcyRzJJOGxFSUxYTFJGNGdVYzgxSURUVjZYNNIBggFBVV95cUxNeTZxVldLclBnWmlCdDEtVDJ3aktDN0d2N0VtcHB2M2lDemFlcnR3ekVnVUpWd2UyR0l5dGhaMFlKcGxrcWpkcUsyV0FVb05ZLWI0YlVBbG9wTlE1dWRZWGhBUDVxaU9CTmxjR20zWUlVOG0wcG42RW90Mmx0X01ueUZ3?oc=5"
-     },
-     {
-      "label": "Strait of Hormuz",
-      "change": "Vessel attacks reach record high of 12 ships targeted in one week",
-      "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5sMGFNWTJVdHF1WTVvZFhiaGk1aU1qTE8xenJ6R3RmaXVhZ3Zkb1hMRjlrQmxOVTlCaTJxUjFnaS1uTGJ3bmlUbEw2bnFSTkZUNHlGYlltdVVGYmZ6NDNkN1NyVUVMLW5ZOGplamhB?oc=5"
-     },
-     {
-      "label": "Czechia",
-      "change": "Senate election runoff completed in October 2026",
-      "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWUVkcXJkaTJFVUxqZW5BLXJLd1FVTmF5aWNYekIwVmpzRW9fcjZjMDJDWW1xSW54SVhMRUNBVVZhU0VVV25rVkNfd0hSM1FrUzJJdTVnYUtpbE13QVRsU0M4SDdlaXd5U0FuQUlyQ3VUZWNSbWdXdHVvRTBTc2tRc3FodjFBV3lJYTlfanNFRnBxWTJPdUdGMWF3?oc=5"
-     }
-    ]
    }
   ],
-  "summary": "Estonia announces the closure of its border with Russia following a suspected GRU-linked sabotage attempt on a defense drone manufacturer, while Houthi militants advance toward Aden in Yemen."
+  "summary": "Updated election developments in South Sudan and Cabo Verde, alongside refreshed relation notes for Algeria–Morocco and Qatar–Türkiye following recent security statements and agreements."
  },
  "relations": {
   "DNK-USA": {
@@ -2503,9 +2453,9 @@
    "a": "DZA",
    "b": "MAR",
    "s": "H",
-   "note": "Relations remain hostile as Algerian authorities arrest 61 Moroccans accused of plotting acts of sabotage.",
-   "updated": "2026-10-11",
-   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRFNVc01iZ18zeHNxMkVkUEVtVlZQSHZodjFsdDBlaUVEbWhMZzRZWmJqSVZQbjZKWDhfSHU5NUo5M2xkMFJ0djhpcVpBcEJBNVI3eWQxT3hwSmFTQUJoUWZuLWJnNG1NWDRYMWNQN1lILTFFV3lsTjBkX0Z4WDI4OG1WU3g3MmFUdHpNZ2dsQVU4TVZPQXlkbV9ZenFVNGNBYk94S1ktUHk3NTFJbEVJ?oc=5"
+   "note": "Tensions escalate as Algerian President Abdelmadjid Tebboune warns of military strikes against drug trafficking sources in Morocco.",
+   "updated": "2026-11-16",
+   "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQQnJZOVA3U0RXRjJkTlU5dnhBZ3loSEc2Q3FuaDRzNEdoQVBlbHo5RnpQWUVyMnBkYkxhRGdRZjVqU3VfSDNBRE9jYTAxVlZNLVRxUGRiS09VQTNLMHVqRGZaY0NDeXR0Z09rdWw3N3ZmTU1CdUx3NGwxUVp2ODZpSG9zLXNzTVp6QkFYc0htbGlPbW1OM2dGT25RQmM0UnlfeTh2Z0ZSZGVJQklTWmtUc041ZV9tRDd4R3BPQTFveUd0bGhvMnVaRVVXS2tRV0U?oc=5"
   },
   "IRN-YEM": {
    "a": "IRN",
@@ -3375,8 +3325,8 @@
    "a": "QAT",
    "b": "TUR",
    "s": "A",
-   "note": "Qatar and Türkiye (Turkey) sign a landmark mutual defense agreement to elevate bilateral military cooperation.",
-   "updated": "2026-11-15",
+   "note": "Qatar and Türkiye sign a mutual defence pact in Istanbul to deepen bilateral military and security ties.",
+   "updated": "2026-11-16",
    "source": "https://news.google.com/rss/articles/CBMifkFVX3lxTE04ay1Rc0hodHh6U3hzWjFaMG9QYTVmeFUzaG5OaWc0TUk3bzNHbnJ6TVpFaHRxSTVrUWxJWFNjQTFkUTZYZ2ZQRnB0VXhqeWhNcVhjMlU5VFpYTW9TM016cVRzYzdzZDFzMjJyMktRdHJ5alI1QnZwMjhHWmxiZw?oc=5"
   },
   "CHN-LTU": {
@@ -3938,9 +3888,9 @@
    "lastelec": "presidential, November 2026, Iliana Iotova"
   },
   "SSD": {
-   "nextelec": "general, February 2027",
-   "updated": "2026-11-15",
-   "source": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9mVV8xWms1eTBESWU5RktjOGxrRTVMNkJhTE5MTzVSYXVRT20wZWJqQXAxYVBOQlJtVEJxVFUtb0Mtd041dmloN0JUMkRpUUd0Ry1UZkpPRXEwZFhMZFhxRTlnZG9ULVAy?oc=5"
+   "nextelec": "Presidential and parliamentary, February 2027",
+   "updated": "2026-11-16",
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPOWhJczg0Q0tWSUdBQkhlbkV1Y0d2VHd0YWZLQ2o1ak1fVlV1dzljSFJlb1g5TWExcWFBRHhRUVVvUkpSNk0xeXJhZXNwR2o2aDh3ZjlZWHp2U05HRHFwWHVDSUZnSWg3a24xUjdueDRkU0V4Qm5va1p4bDdpR0ZQY05UYmE5eTBEcmZsRmQ1QUc3WEM4bXkxLUN3?oc=5"
   },
   "SRB": {
    "nextelec": "parliamentary, Nov 2030",
@@ -4081,9 +4031,9 @@
   },
   "CPV": {
    "nextelec": "presidential November 2026",
-   "updated": "2026-11-15",
+   "updated": "2026-11-16",
    "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5tcFNDQUlVU1B3Ry1ETV85UW9XMEEyWVZMNjFYWUt0dnhVQmZPbnAyUnlnLU9QcXV5OWtzeV9XWXBqNWctRkFpcXFGenVkTXlqeEctdFJJc2xmck9VRHlTWjBPQ2g?oc=5",
-   "lastelec": "presidential, November 2026"
+   "lastelec": "Presidential, November 2026"
   },
   "IDN": {
    "lastelec": "presidential, Feb 2024, Prabowo Subianto",
