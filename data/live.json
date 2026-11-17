@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-17T19:03:12Z",
+  "lastRun": "2026-11-17T23:15:28Z",
   "log": [
    {
     "date": "2026-11-17",
@@ -19,6 +19,21 @@
       "label": "United Kingdom–Israel",
       "change": "Normal/mixed → Tense: UK sanctions Israeli settlement firms",
       "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxObEVDWHBSU1REbnl0MmstS0F0ejN5em05UkgxbjctNmVoWjZZZU1WbHhGbE02OXRWS3RVandocHQwTnpYQkxhRE1jNzFmUXpndF9uam5iYmRJLWVHZU4tajh6cmZnTV96OFJMWEhVbGVrZERJenJUaGhhMHhBVjZVYVJLTVRhVFJZbTc4NGcyb3k0NGladGxwX0FVd2xTdW41dTVhVU5tZ0lsX2RWdGxYMdIBtgFBVV95cUxOeHYya19iX3BIbGYyMUhUVzFwaXljdmxQNi1mQkxSeGk0bjFGZWlSQkV0NkZpR2ozXzJFZmtDZS02V3RaR1k4SVZYYkR2UUkwWmhTcFZ3VjcyMm5hR3dNb0lLZEFuVDI0ODBnOERQeGY0dE0yU0YwLTBmaTV6UXQ3eTFZbDc3NXN0UVlRVzZLR1pqdVl2czJfbnhoMzRGa2hiaVZrcUNld000NjhBdWQ1R1AyaFBtUQ?oc=5"
+     },
+     {
+      "label": "Australia–Israel",
+      "change": "Normal/mixed → Tense: Australia sanctions West Bank settlement figures and construction firm",
+      "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNdFgyMWpHWnlNVXd6N2E1amFnOC1sTHJfb0hJRVBOS0h3Yi1rNy1pWTl4X21BbVNSTjhmVVdDU25DMzBMendrd1NvVzJGN2pwM1ZWeXBsZm1wZVY4Q09yYjdiT2ozeWNXdDJBQVRhUlRBSTFMdmN3c3RvcFJPWkhZX0R2T3BBVDNPczlURzREWU5OSnctUlUwaGNTZWE5Q28?oc=5"
+     },
+     {
+      "label": "Bahrain–United States",
+      "change": "Ally note refreshed: US jets strike Iran's Qeshm Island after Bahrain radar base attacked",
+      "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQMjRBalJpV1NPaXc5a2lhUVJWcktUdExFSXdOcTRqX18zU0xnZ3RyOEFVWkNLUVBqM1dFR2VmaFlfaUNNMHEzX2NuU0dneV9MZHJDQzhLbVB1Y25MMW4weXI1aWltSWMzMlRic2xkWUdTeV9XMHl4M0NBU3d1SW9ub1dZcWZWVmFEM21OX3poekVuLWhMdU5sTi1YbjVNREFaUFJFcGd1ekcxdVU1cmpiT1dIWExzS3poTlA4OUZHZVpFRUJtTmNsUHgydk80QlZEc01USQ?oc=5"
+     },
+     {
+      "label": "Moldova–Russia",
+      "change": "Hostile note updated: Russian drones breach Moldovan airspace and force border closures",
+      "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPU2JlZko4MXVtLWZPMnc2R25mdkFfaUYzYTZtSHNQRW16TVJoMFF2MDU0eGlNWldXQkZUMnEteHNQMDZmX1NjbTY2YVRLaUM0LW5KNWRScVFEUWh3UXNwZWgtOUR0T0QybXlDNFBBT0dVMXFfZFRCakREVUNFaUlMNkkxY0ZsRFlMNVN2b19rNEt1Qk12VXY4aWtMMWdoRV9QVjZ5VmctZXgwNENvaDlsV0VHMzFvM2tMOWF1SXVDNA?oc=5"
      }
     ]
    },
@@ -1583,7 +1598,7 @@
     ]
    }
   ],
-  "summary": "Iran attacks a US radar base in Bahrain, while the UK sanctions Israeli settlement companies and Ukraine strikes the Crimean bridge."
+  "summary": "United States air strikes target Iran's Qeshm Island following drone attacks on Bahrain, while the Kerch Bridge comes under renewed Ukrainian strikes and Cabo Verde President Neves wins re-election."
  },
  "relations": {
   "DNK-USA": {
@@ -1806,9 +1821,9 @@
    "a": "MDA",
    "b": "RUS",
    "s": "H",
-   "note": "Moldova aligns with European Union (EU) sanctions against Russia as Russian missiles breach Moldovan airspace during strikes on Ukraine.",
-   "updated": "2026-11-11",
-   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNREsxRm5aM3RuQmtTNm1FbDNsR3RnVGNaSmhabmlNdU5sWHBCNVVCaVE4QUNfQmNQR2IzSl9oYTJIbmxKdXRzZFBadnBDbUM2blNWU3ItLWVBbEhSR25jSmRTOGU3cUwzdTQzYnFsdEVOMFNxQll1LWJWTEZ6NEpRekZXVS1zT1ZreEROUmNxS2QySTIxbnc?oc=5"
+   "note": "Moldova closes airspace and border checkpoints after multiple Russian drones cross into its territory during strikes on Ukraine.",
+   "updated": "2026-11-17",
+   "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPU2JlZko4MXVtLWZPMnc2R25mdkFfaUYzYTZtSHNQRW16TVJoMFF2MDU0eGlNWldXQkZUMnEteHNQMDZmX1NjbTY2YVRLaUM0LW5KNWRScVFEUWh3UXNwZWgtOUR0T0QybXlDNFBBT0dVMXFfZFRCakREVUNFaUlMNkkxY0ZsRFlMNVN2b19rNEt1Qk12VXY4aWtMMWdoRV9QVjZ5VmctZXgwNENvaDlsV0VHMzFvM2tMOWF1SXVDNA?oc=5"
   },
   "JPN-USA": {
    "a": "JPN",
@@ -3393,6 +3408,22 @@
    "note": "Thailand and the United States (US) sign a bilateral trade agreement to expand economic ties.",
    "updated": "2026-11-16",
    "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQS2YzdUU0dmwyZmJGRXRiUGRYRjVWSHN0ajdvUkpYYTFPcGZmd2RmeERZckc5ZXZFWVJVUjI1YmR3MjRKeHpZTHVLdVQ3WFdSZ3NJdzdrM2ZqZjRMYnhiazJ4SGhQLTcxTWdxUE5SZ0lpbkp3OTFMUFRGcHBaeWZKQWR3UEVlaERIOEZ2TzdZRGdHT3V5aHFkaWhNZFJGSXpUaVE?oc=5"
+  },
+  "BHR-USA": {
+   "a": "BHR",
+   "b": "USA",
+   "s": "A",
+   "note": "US conducts strikes on Iranian sites on Qeshm Island after drone attacks target US military facilities in Bahrain.",
+   "updated": "2026-11-17",
+   "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQMjRBalJpV1NPaXc5a2lhUVJWcktUdExFSXdOcTRqX18zU0xnZ3RyOEFVWkNLUVBqM1dFR2VmaFlfaUNNMHEzX2NuU0dneV9MZHJDQzhLbVB1Y25MMW4weXI1aWltSWMzMlRic2xkWUdTeV9XMHl4M0NBU3d1SW9ub1dZcWZWVmFEM21OX3poekVuLWhMdU5sTi1YbjVNREFaUFJFcGd1ekcxdVU1cmpiT1dIWExzS3poTlA4OUZHZVpFRUJtTmNsUHgydk80QlZEc01USQ?oc=5"
+  },
+  "AUS-ISR": {
+   "a": "AUS",
+   "b": "ISR",
+   "s": "T",
+   "note": "Australia imposes sanctions on Israeli individuals and a construction firm involved in West Bank settlement expansion.",
+   "updated": "2026-11-17",
+   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNdFgyMWpHWnlNVXd6N2E1amFnOC1sTHJfb0hJRVBOS0h3Yi1rNy1pWTl4X21BbVNSTjhmVVdDU25DMzBMendrd1NvVzJGN2pwM1ZWeXBsZm1wZVY4Q09yYjdiT2ozeWNXdDJBQVRhUlRBSTFMdmN3c3RvcFJPWkhZX0R2T3BBVDNPczlURzREWU5OSnctUlUwaGNTZWE5Q28?oc=5"
   }
  },
  "threads": {
@@ -3411,11 +3442,11 @@
     "SYR",
     "ARE"
    ],
-   "d": "Iran-backed Houthi forces advance toward Aden as Yemeni government troops retreat, while continuing missile strikes against Saudi Arabia.",
+   "d": "Houthi forces claim control of districts near Aden and launch renewed attacks against Saudi oil infrastructure and Red Sea shipping.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5ZRjhiVXY3UGJRcnllVGtMUk1rWWMyei1TSENpX1d0ZjNfUWpvTk84NVBBUVBrSDNHdlpMLUFPZGs0QXBLT1NTb1M0TmFtdFpNd0Zqb1d3VVJYVW5DVWY5T0lBaW1uOGvSAVxBVV95cUxNUDlSNjZaYVl2cGVEdzhDbGF3LUwxZU1fc1RtV00zU2pEeEJJVklycWhOT0JzREprYnV0bHpmeEpoaGpXREplYVFZbk1YZy1HZTZEcFctYk5kTWhfcA?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBRQ2J3c0ZPT3pMRXVyV0w2QmQzczh2NGVCUktnSzhPbjVhVktmczluTlVna3VRQno3Y092amtxcFhlVWEtNWs2RUZCNk9DYzdneFZqNWVjR1lBOEd2QUd2UHkzY04wX2l0YzZEd3VB?oc=5",
    "t": "security",
-   "updated": "2026-11-16"
+   "updated": "2026-11-17"
   },
   "afpak-jihad": {
    "t": "security",
@@ -3691,11 +3722,11 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "Iran strikes a US radar base in Bahrain and mines a Cyprus-flagged tanker in the strait, escalating maritime security risks.",
+   "d": "Multiple commercial tankers catch fire after attacks near the strait as US jets hit an IRGC missile site on Qeshm Island.",
    "n": "Strait of Hormuz",
-   "s": "High risk",
-   "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOejhqODA1c1hwY0NTYTVMYzJleE56MnNCSlkyb09lcDRkcUZEXzRRbmtReWJjLWlrUDlNak94OXZIUjYwZ21YMS1OZlJ2ZzFIeUNYRWJLMk93RUVYV3ltMnBGcVFlNzJGRDhOMHZ5cnZ0eTV1VUlFdHlBMnUwN0FwX2FFdkpCVFE?oc=5",
-   "updated": "2026-11-13",
+   "s": "Tankers attacked and US air strikes",
+   "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQMjRBalJpV1NPaXc5a2lhUVJWcktUdExFSXdOcTRqX18zU0xnZ3RyOEFVWkNLUVBqM1dFR2VmaFlfaUNNMHEzX2NuU0dneV9MZHJDQzhLbVB1Y25MMW4weXI1aWltSWMzMlRic2xkWUdTeV9XMHl4M0NBU3d1SW9ub1dZcWZWVmFEM21OX3poekVuLWhMdU5sTi1YbjVNREFaUFJFcGd1ekcxdVU1cmpiT1dIWExzS3poTlA4OUZHZVpFRUJtTmNsUHgydk80QlZEc01USQ?oc=5",
+   "updated": "2026-11-17",
    "t": "strait",
    "lat": 26.57,
    "lng": 56.25,
@@ -3802,10 +3833,10 @@
   },
   "kerch-strait": {
    "n": "Kerch Strait",
-   "s": "Bridge shut after strike",
-   "d": "Traffic across the Crimean Bridge is halted following a Ukrainian strike amid a record drone assault on Russian territory.",
-   "updated": "2026-11-16",
-   "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPLUtIRFZsaGdCd0pLRGpfamlzbGRKUUFiTkp0bmUwLTh5V0RuYWtMSVp2Q2tJakJ3VUpmSHRoVXJMVmJLN1VJOURhYi1BUUVtb2hMU2lSOS1NYW1qbndOUzNQLUh0QVdVQkFjbGlSSEdqVUh1YnBkTXQ3MjlLc1lKQVdTVTEzdkFNQ29YWXJBUXNQQ3FmQTNBTFN0U0wzT24tTXpHc1BtcWpwQdIBrwFBVV95cUxOR3d5NEZVRVEzMGh5OU5IaW5oN1hFZXhlWHJYeUNtVzAwYzRwNzVabG11Mzd5d29pemhMYmlUOGRJeEZSbTIxazdIREpta1pleHdlTlpkVUxzTzQxUU5waVVZcG12UXBfbDktWUlQemdWWFBSVzJXSWFwWWlBem9zY3ZfQTJOdzRhdy1Uek9OSUtSNWhTVV9INjA3S2w5SlZqazlialY4TllWWVBtXzRF?oc=5",
+   "s": "Bridge struck by Ukraine",
+   "d": "Ukrainian forces carry out a major strike targeting the Crimean Bridge, damaging infrastructure and interrupting transit.",
+   "updated": "2026-11-17",
+   "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQdjNhMGVOTE02V053cGdfdFh5a2lBU2hFT1VjTkNDQ2NhRXFDd0ljRm9YQXhkRkhfWFNlTW84LTBRTzFzVThHR3JOYzVmUTZ4dUFTeU93Um1oTi1HV0MwRXlPWG1kVGdtb2hXM0dUX0NqZmZhRkhlMmEyX1I1WXNPdm4ySlE4a1RYTzJtckVuX3dqZ25MTno1NzZFZW0tbWpnQnBxNlRxVFUta1liYVZDVU9vQ09XQXlPWEFlcnJqQW9ybVVLSGpHNzc0WXVMc1luUS0zcw?oc=5",
    "t": "strait",
    "lat": 45.3,
    "lng": 36.5,
@@ -4071,10 +4102,10 @@
    "source": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOMzFiZjk2VWd1eFdEako0amJEcTdvWnhyXzUwZ1RNdVpkYWhSSmxfN3lYOXF1Z3VlaHZJMUpUMnVrUjdET29ESl9IOEFEbkZPNDNWazdYRmZ6ZlNCSnI2T1Q1U3RpMHFNSkxPdzhGM3BKQmQ1YkUwemtLd3FYWEVaeUdQcmxpZjE2OFVyNHpZN19DN1Y5TXZ4WHY3THRDY0I3MXhqeEZ2b3k3Mjl3LVVSNWdKaDFjT1g2azhQRDlOSS0yRlk2NEN0ZEVDcjZQM3Z1NEE5UWZQZWgxZkVwd0hv?oc=5"
   },
   "CPV": {
-   "nextelec": "presidential November 2026",
+   "nextelec": "presidential, Oct 2031",
    "updated": "2026-11-17",
-   "source": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNU1B4b2RrVVE5UU8wbDFxLVNvRXNFaEJHdzhVel9OdXpHQVUtcG9hUW1qb1k0ZmI2MlZCNmtPMWgtRE4zRE1CN0J5cDZqZHhwZEk3Y0Iwb01uZ1JqaVlwU0ZNNlNZZGEzMmh2cnBoTVVVZ1VKTjByemFEb1pCd0hLWC1ia1Jsc0F4dlZ3b0tzakY5U1dHTDJFNkgtMEdMY3NoMVplS3BZNVhjUUZKWXlWNm1OMVd4amtFeVA4X2tCUjQtZE5pTEwweVRPSVZ6ZEptbE5BNFpMOU81WmRvUGlyTFlsSEFxaW8?oc=5",
-   "lastelec": "Presidential, November 2026, José Maria Neves"
+   "source": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4zRDg4b3BPQml2aW5vc3BMM010bmdhQXlkY2VXcmp0MmEyZ2RqdnZxQUN5dWZxZ1lic19NLUZBOHlHem1xU0FaQ3c3QXRnb2JaSzBIQ3QwV0cycDJnNGRTVXA0REc0UnFnZlZYSEFpa2RwZjZYTXlZdWNfTDNoTXM?oc=5",
+   "lastelec": "presidential, Nov 2026, José Maria Neves"
   },
   "IDN": {
    "lastelec": "presidential, Feb 2024, Prabowo Subianto",
@@ -4084,8 +4115,8 @@
   },
   "GMB": {
    "lastelec": "presidential, Dec 2021, Adama Barrow",
-   "nextelec": "presidential, December 2026",
-   "updated": "2026-11-16",
+   "nextelec": "presidential, Dec 2026",
+   "updated": "2026-11-17",
    "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBzLW1rVnREdjVoSVNIWmdNNTRELVFvVDZZUDUwU1p6M05RMTF4U19ENVBzV2phX0JQWThJT0M3cVo3RFI0dFlyUUhiZFdRNjRmRFhyNjUybExSeHRYWTFTZHFfZHI?oc=5"
   },
   "COD": {
