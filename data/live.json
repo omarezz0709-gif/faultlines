@@ -1,24 +1,24 @@
 {
  "meta": {
-  "lastRun": "2026-11-17T14:12:55Z",
+  "lastRun": "2026-11-17T19:03:12Z",
   "log": [
    {
     "date": "2026-11-17",
     "items": [
-     {
-      "label": "Bahrain–Iran",
-      "change": "Tense → Armed conflict: Direct drone and missile strikes on Bahraini soil",
-      "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZlBLeFprTEY4Y0cwT3dRcHZsazZGSzdRRTlUN3J6akpHMktuU1piXzZ5TXV2b2FiWHdqTUw3TG9iY1F5QkFKRV9IamxtTmJMVFlwaFM1MHFoc0YyQ1p2VHNRcGdyTndOLVIxZFk0V3NPX3V1VjBEUTREb2lzUlJ6MU1IWkJ0WkV2aC1zVEFkc0RhTmJvN0MtdGNZaTdZYmstTUxr?oc=5"
-     },
      {
       "label": "Estonia–Russia",
       "change": "Tense → Hostile: Complete border closure following sabotage attack",
       "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbTlWdUZsZElwMnUzUGVPdUtFQnNyVGhhTUlIeXN6SXZLc3otb2lQY0JkWFhEdFlVcmVES3JibGdlTTB3ZG1GRlhtbWRJbFdDbmVUaWNid19MOFg5bmpQbFZrUWZEdkh2YjFJdE03QURJeko2eEh1UTVpQllrdER4V2JUeDhpOHpKVkJOR25R?oc=5"
      },
      {
+      "label": "Bahrain–Iran",
+      "change": "Tense → Armed conflict: IRGC launches drone strikes on US radar in Bahrain",
+      "source": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOTVpjODRHQjFUd3QtZTg2Yk9xSG9KaThHREpsM1JVYVdoOXowbk11MjZXcHY4QnZwd0tXejd5Zlh4SkFJODlud0NTNURPQ19GOEMwU0N0cmpRZXdhOTh5R2Fyd1lfbmprNTc3RXhKemRpT0tzWVQyZ2V4ZmlCQWYzaVpmTXUxOWI3S0xwNDJ0Wmg1cFpWamRuRFJScjFWN21iTm9sSnAwRzhHX2t2Z3RTOXRkVmluQ21zc2owSGIwZE1pX0NUdUpnS2REQ0tzcGlmVkxr?oc=5"
+     },
+     {
       "label": "United Kingdom–Israel",
-      "change": "Normal/mixed → Tense: New UK sanctions targeting West Bank settlements",
-      "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTzNMTlR0MHlybjYya2ttSHNIOXA2cXEtOFNXNzB6Z2d3dWZQei1DYmxvYUVtUHVzdGNvUjMyTElmclFOSlVoMERFUkk3RHAtUm5fM3lGd0xINEowOTFKTzhsSGxjMlpQZXZFU3NPWjhTbjMzZnFNRGg4NTkxREVia3pVeEtuOGhrM1hINF9qT3ktZ2xC?oc=5"
+      "change": "Normal/mixed → Tense: UK sanctions Israeli settlement firms",
+      "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxObEVDWHBSU1REbnl0MmstS0F0ejN5em05UkgxbjctNmVoWjZZZU1WbHhGbE02OXRWS3RVandocHQwTnpYQkxhRE1jNzFmUXpndF9uam5iYmRJLWVHZU4tajh6cmZnTV96OFJMWEhVbGVrZERJenJUaGhhMHhBVjZVYVJLTVRhVFJZbTc4NGcyb3k0NGladGxwX0FVd2xTdW41dTVhVU5tZ0lsX2RWdGxYMdIBtgFBVV95cUxOeHYya19iX3BIbGYyMUhUVzFwaXljdmxQNi1mQkxSeGk0bjFGZWlSQkV0NkZpR2ozXzJFZmtDZS02V3RaR1k4SVZYYkR2UUkwWmhTcFZ3VjcyMm5hR3dNb0lLZEFuVDI0ODBnOERQeGY0dE0yU0YwLTBmaTV6UXQ3eTFZbDc3NXN0UVlRVzZLR1pqdVl2czJfbnhoMzRGa2hiaVZrcUNld000NjhBdWQ1R1AyaFBtUQ?oc=5"
      }
     ]
    },
@@ -1583,7 +1583,7 @@
     ]
    }
   ],
-  "summary": "Tensions mount in the Persian Gulf as Iran launches a third drone strike on US radar in Bahrain, while Panama initiates talks on the Cobre Panama mine and regional summits unfold."
+  "summary": "Iran attacks a US radar base in Bahrain, while the UK sanctions Israeli settlement companies and Ukraine strikes the Crimean bridge."
  },
  "relations": {
   "DNK-USA": {
@@ -2016,7 +2016,7 @@
    "s": "T",
    "note": "Britain imposes sanctions on Israeli companies and entities involved in West Bank settlement construction.",
    "updated": "2026-11-17",
-   "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTzNMTlR0MHlybjYya2ttSHNIOXA2cXEtOFNXNzB6Z2d3dWZQei1DYmxvYUVtUHVzdGNvUjMyTElmclFOSlVoMERFUkk3RHAtUm5fM3lGd0xINEowOTFKTzhsSGxjMlpQZXZFU3NPWjhTbjMzZnFNRGg4NTkxREVia3pVeEtuOGhrM1hINF9qT3ktZ2xC?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxObEVDWHBSU1REbnl0MmstS0F0ejN5em05UkgxbjctNmVoWjZZZU1WbHhGbE02OXRWS3RVandocHQwTnpYQkxhRE1jNzFmUXpndF9uam5iYmRJLWVHZU4tajh6cmZnTV96OFJMWEhVbGVrZERJenJUaGhhMHhBVjZVYVJLTVRhVFJZbTc4NGcyb3k0NGladGxwX0FVd2xTdW41dTVhVU5tZ0lsX2RWdGxYMdIBtgFBVV95cUxOeHYya19iX3BIbGYyMUhUVzFwaXljdmxQNi1mQkxSeGk0bjFGZWlSQkV0NkZpR2ozXzJFZmtDZS02V3RaR1k4SVZYYkR2UUkwWmhTcFZ3VjcyMm5hR3dNb0lLZEFuVDI0ODBnOERQeGY0dE0yU0YwLTBmaTV6UXQ3eTFZbDc3NXN0UVlRVzZLR1pqdVl2czJfbnhoMzRGa2hiaVZrcUNld000NjhBdWQ1R1AyaFBtUQ?oc=5"
   },
   "SYR-USA": {
    "a": "SYR",
@@ -3280,7 +3280,7 @@
    "s": "W",
    "note": "Islamic Revolutionary Guard Corps (IRGC) launches direct drone and missile strikes on a United States (US) radar facility in Bahrain.",
    "updated": "2026-11-17",
-   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZlBLeFprTEY4Y0cwT3dRcHZsazZGSzdRRTlUN3J6akpHMktuU1piXzZ5TXV2b2FiWHdqTUw3TG9iY1F5QkFKRV9IamxtTmJMVFlwaFM1MHFoc0YyQ1p2VHNRcGdyTndOLVIxZFk0V3NPX3V1VjBEUTREb2lzUlJ6MU1IWkJ0WkV2aC1zVEFkc0RhTmJvN0MtdGNZaTdZYmstTUxr?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOTVpjODRHQjFUd3QtZTg2Yk9xSG9KaThHREpsM1JVYVdoOXowbk11MjZXcHY4QnZwd0tXejd5Zlh4SkFJODlud0NTNURPQ19GOEMwU0N0cmpRZXdhOTh5R2Fyd1lfbmprNTc3RXhKemRpT0tzWVQyZ2V4ZmlCQWYzaVpmTXUxOWI3S0xwNDJ0Wmg1cFpWamRuRFJScjFWN21iTm9sSnAwRzhHX2t2Z3RTOXRkVmluQ21zc2owSGIwZE1pX0NUdUpnS2REQ0tzcGlmVkxr?oc=5"
   },
   "ARM-IRN": {
    "a": "ARM",
