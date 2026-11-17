@@ -1,7 +1,27 @@
 {
  "meta": {
-  "lastRun": "2026-11-16T23:56:52Z",
+  "lastRun": "2026-11-17T14:12:55Z",
   "log": [
+   {
+    "date": "2026-11-17",
+    "items": [
+     {
+      "label": "Bahrain–Iran",
+      "change": "Tense → Armed conflict: Direct drone and missile strikes on Bahraini soil",
+      "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZlBLeFprTEY4Y0cwT3dRcHZsazZGSzdRRTlUN3J6akpHMktuU1piXzZ5TXV2b2FiWHdqTUw3TG9iY1F5QkFKRV9IamxtTmJMVFlwaFM1MHFoc0YyQ1p2VHNRcGdyTndOLVIxZFk0V3NPX3V1VjBEUTREb2lzUlJ6MU1IWkJ0WkV2aC1zVEFkc0RhTmJvN0MtdGNZaTdZYmstTUxr?oc=5"
+     },
+     {
+      "label": "Estonia–Russia",
+      "change": "Tense → Hostile: Complete border closure following sabotage attack",
+      "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbTlWdUZsZElwMnUzUGVPdUtFQnNyVGhhTUlIeXN6SXZLc3otb2lQY0JkWFhEdFlVcmVES3JibGdlTTB3ZG1GRlhtbWRJbFdDbmVUaWNid19MOFg5bmpQbFZrUWZEdkh2YjFJdE03QURJeko2eEh1UTVpQllrdER4V2JUeDhpOHpKVkJOR25R?oc=5"
+     },
+     {
+      "label": "United Kingdom–Israel",
+      "change": "Normal/mixed → Tense: New UK sanctions targeting West Bank settlements",
+      "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTzNMTlR0MHlybjYya2ttSHNIOXA2cXEtOFNXNzB6Z2d3dWZQei1DYmxvYUVtUHVzdGNvUjMyTElmclFOSlVoMERFUkk3RHAtUm5fM3lGd0xINEowOTFKTzhsSGxjMlpQZXZFU3NPWjhTbjMzZnFNRGg4NTkxREVia3pVeEtuOGhrM1hINF9qT3ktZ2xC?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-11-16",
     "items": [
@@ -1561,84 +1581,9 @@
       "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPX2hQUVZ1RlRmZnd1NS0wZ1lYWXFLZnNNN2RYRE1GMklBNU9PbkZMU2o5TEhabWV3S3Nwai1KMk9zWmdDVWk0bFBqMGZDS3U5OG01Y3VNQXNLTmJCUjJkYThmd0tZVDNWbTFMamFDcWd0R1pSRHFmc2JvVEFXczVOYkxhcDBYT2tqaUdyN3BiSkrSAZYBQVVfeXFMTjVqU2NZQnJvYTZXWmVhdkx1WkdPdEFKU0k4aUE0VXRsT01LbDF1OHZZNzkxd09GR0dmekpISk9ybThNOTRjd2VXOHNYbzFnUjd2Wnh4S1AzZmItUnEyRnJHdkJLVFY0WExOWWNEYmxheV9yXzBwUnVpYlliM3FfQ3lVMGZhVllVaWEyZWJMNmZwQ2lraF9B?oc=5"
      }
     ]
-   },
-   {
-    "date": "2026-10-18",
-    "items": [
-     {
-      "label": "Iran–Pakistan",
-      "change": "Normal → Tense: border trade and passenger movement suspended over security and sanctions",
-      "source": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPTTJpWmwxSE9DQWlTQ1NhTTJJcE1yYV9aS0dZdXRuQTBtTmZfaXVxRHRQZHZnRnpHTUVRdHNrdUdEMXBkX0VVVlVQbm9wcm84WFEzM3FldjVjV3ItUUExa1BiWEVKaVR3LWJGbndzcHRaQjRzdDZEN09fT0g5Nk55Uk5RMFdTbHhrQ3M3TWlySHlmYUZZU3pEcHpZQmtxVllUMlMtc3VSZURMeDV0bnhncWRtZUVrR0o5eUNWb3lOc0pBLXJCa2IzOEs4VzZYbF9LbXZaYVRvOWhUV2dDc0NGeG8zN3NqVU9fdDN3aDhzOVJfM1NxOGEwYzFMWG9TUGJfS0h4MzlxOG9JRmPSAZACQVVfeXFMTng1Z3lDcDF6Y0JGZWlUOXN4NDFjaHFQS1NFU3JJUFJET2FWMXBqMWVvYWRMenhyRklxVUNXVHJTSFE3UmU4RGpmdDRadnFzc1pBV0ljakQxWjRqMW9aUHdmbmtQNmhKaF9TZGlzLWs5a1l1MnBrZnJIV2VRdHVLOE9sLTYxdl9WbkFrZm5laWVndElrbVFkM05SbDlLVmZvTlpwazhNXy1ucGRBNUhia1FYRjFPb3FwcTlBenVsT243M3V4QmlRTEVJbmhJam9WekNtcWFhdHdpaHdZMDhNZGNSOTRMa1pxLXhhQjRIcE9iLTRqelY4N0hKa2VIdjFsVnJGM1JIYlQ1dUlYTzRZSkE?oc=5"
-     },
-     {
-      "label": "Afghanistan–Pakistan",
-      "change": "Armed conflict note updated on fatal Durand Line skirmishes",
-      "source": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOS2VNY0dEVEgzSmY4Z05Ydzk4NkZkLVFWOS03WEJiYk41dHhWVXd3ajF2dmdLZjRlSGdpaXp2b1NCdERvYl9pTWdKTFZXTENtQkxoYmhnMThMNkgtcUxXZENRRDBlSGFoNmpSRFZ0cVl6c2Fyb2tjeGhmRXdmRXRpeHY0LWNyeXFCT1JROFR5VG84bUFWVnczT181aGxfQW1TSU05NV84YWNhZzlaRGt6TFhXS3BSNU9iZjF0TmlVaDFzWVViZjdyUVlOa3dINjhGOWRUWDhtTjlmMXFDSWxDYWlXbVEzUDdBNFk5alhobXo3Mi120gH0AUFVX3lxTE5LZU1jR0RUSDNKZjhnTlh3OTg2RmQtUVY5LTdYQmJiTjV0eFZVd3dqMXZ2Z0tmNGVIZ2lpenZvU0J0RG9iX2lNZ0pMVldMQ21CTGhiaGcxOEw2SC1xTFdkQ1FEMGVIYWg2alJEVnRxWXpzYXJva2N4aGZFd2ZFdGl4djQtY3J5cUJPUlE4VHlUbzhtQVZWdzNPXzVobF9BbVNJTTk1XzhhY2FnOVpEa3pMWFdLcFI1T2JmMXROaVVoMXNZVWJmN3JRWU5rd0g2OEY5ZFRYOG1OOWYxcUNJbENhaVdtUTNQN0E0WTlqWGhtejcyLXY?oc=5"
-     },
-     {
-      "label": "India–United States",
-      "change": "Partner note updated on tariff pause and Russia sanctions waiver",
-      "source": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNcUZFaERHNm4xdGd0Nkc4eDV1cThCRG8yUTJMTE94ZVpJbHllR3hMVE9IaVdjcTdNWktlR2dMN2x0d3UxUHhabWljbHhIUkZxUVczaVBDZjl1Uy1UQWs5dzRwOUFCYmxnN2ZNLVVoYXhNYXhvTVN5TDdQNHFPR2kyMk9yV3RMWXVza0xBZ0hxQ1k0ZzJia3BwRG1idkhIZDRIME5ycWVCUUpVbmlVaTdOZmNkWjNPVTZvcWM4bTVOSEFLdnVFU0lOcjQzSjhDZnExd25wMUMxemxFVDJROWRYTGpWU3Z2RGd0X1BwOXRtUzlMcUlMcVh0cQ?oc=5"
-     },
-     {
-      "label": "Strait of Hormuz",
-      "change": "Location updated with tanker mine strikes and sunken vessels",
-      "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcEhpeXZhQ20xWmZjb3p1eUJRVEFVSi1QbWJnUFZpRE05QmJUd0hhMU9OQmlqMmxPemhUTGN3ZmF5YlU0LUxkaF85M2JEVEpRT1FaMVAzaV8xNTBNeGk1YUlIRVNzRFNQVkpfY3FwWllQeWU3Mmk0NEpVaV90Tkp2ZnRzQ2xaZzQ2OGRLbUp1dUVNenlPUFVuQUVGRUVKSUZRbDVVR3hjZElfSFNONWhieWF5S0_SAboBQVVfeXFMT2UzSjBRSnAybzdRcU9NRWpyV0V5SU4xT1g2LWlTNWlraWJDeFBMSDlSbGVNc093MmJCOTROSjQ5bE50Uk1WSVVMNDZGN2VRWVkyRjdFdmV3QzliaGtBci1FcjRTbll0UmZQZmJTT0tXR05oVGdjRlU3Z1FvcTNUWXVPY0drS1BvamFZdWkyU0w0QU5oSjAwTnFBU0hNc2Z6dC1yUk1ma0dDNGpZX2RuVmxEZzhrUUI4bHhn?oc=5"
-     },
-     {
-      "label": "China–Japan",
-      "change": "Note updated: China condemns Prime Minister Takaichi's ritual offering to the Yasukuni Shrine",
-      "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxORVdVa2sxTFV3WktjN0F4TkQwdmpWdWtIWkMxTUJuajRiRXFNSXBDYndVdEl5czlTblNYY0VfWnBCbDNSSkNCZGY5YXNGY3YtMFdya09Ob0IyWnpRVDlYN1YtQjIxN1F6NXNfT3dZd21zYkpTTGhsQm50eUpIMkVwSnEyNEVObEhrWFBHYmMwa2VIT0U4QjNTU01UbmRRcU13VzZQM2l6QnpwSHdBbEE2U3lPZEJNa2dlQ3ZNUHBnX0hMc1hsV09oa2xQYTMwQ0d5Z1Q3MNIB1AFBVV95cUxNTFpXMmVFbDQwcjUtM0loMzJSb0d3MnV5YzE4VzAxcTQxbXJRNDZyYi1JSm44b091VnBSWEdXSDdnWEsyYmluTFp2c3AyU0NGaUNvLVdBd2toSTkxNEpRYzZXWmpQelJSUVpRX005X05BTm9zLS1WeUFYRHVYUExtZHBEMUQyTGx4N1htUHVIZjlNSmV3cTJ5YmFKZ01SS2hYOG0yeEVwYkowTktmV290VWl6ZDFvdF9ETnM1QmcxTGNtMEZjcndnVmVQUEhCV2RYZmh3aQ?oc=5"
-     },
-     {
-      "label": "Belarus–Ukraine",
-      "change": "Note updated: Ukraine warns Belarus may deploy Russian ballistic missiles against western regions",
-      "source": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPVHd6MXNWckpKYlRmWmdBVTY4X2Nmc1g1WTFsbTkwQlFkdnZkTGNSazlveGYxQzFXMFJsblJNS3AtcXBUTkhRb3dJV0hpODBoejBOWE1Hc3N0RUMwckZQZ1lvd2ZlU1B4VWRQNzhsNTBVVTRvMVVMWndoeVA1eldyaHFqZkxCVDZqUzV6WEVKUUVCOU81WjFmdFZGQ01JYUNlZVBPZHhDMXFtZDFjbE43QVFYN2Zld1NKZDhqVUM1OE9scnpsaDJPb0lGOVE3LXlVbTF5YUlER0ZOVHczVzYyUl9HX0pLTDQ?oc=5"
-     },
-     {
-      "label": "Ethiopia–Somaliland",
-      "change": "Note updated: Somaliland backs Ethiopia on sea access and holds bilateral defense discussions",
-      "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSFRDOHlCSXAyY3g5ZUtvZXROd1BLQkRJdllDZDdPU2l4ek5Ndkc4eVh2TksxbEFBZkRoX251bEs2T2JrdEJIM3V0czRVLXh4OGZmejFzOEZCN3VxeHUzZFZtVG1CdldUV2dZYU5JUEo5SjQtcjVhNEZkV3kyVEM3WHNSb0MxUlgtUHNnbkk5dXlHTEZ4X2xpUTl3a0x6Snd0N3pXSnROOEJ2aURxa3FZUGdtU18wR3JVRGlVYkJtS1JHbkxp?oc=5"
-     },
-     {
-      "label": "Grenada",
-      "change": "Politics updated: general election scheduled for November 5, 2026",
-      "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWWJzLVhYTGJobjVoa1BSMXBPY1VMc29GMC1BdlVrUWpQSXJiUUxUQzZTNy1oQ1EtSDdlVllPekhSaXNRX0VZWl9hWkp4U3BOQUhvTVNnQk9aXzJIMjFOdWt4c09IY0lZNFZDdWV0czFwSlBHT2d1eVNpSmF4SlpwazYxSU1PNUlLWlB5bzlkSWpJdDlPZGlNUC15cGotNHplNFNjaTNlWG03OGVudjBYZA?oc=5"
-     },
-     {
-      "label": "Ukraine–United States",
-      "change": "Note refreshed: US resumes missile launch intelligence sharing with Ukraine despite ongoing sanctions friction",
-      "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZ0hNc2Z5RFdaU2l6OTlIQ3l3eFI4ZEZpVmZRX2h5RjYtenRaM3ZxN0QzRklyTnBRU3lEN2Y0eUFHZUdkY0RZWkxEc18zOEE4eG5YYzBHQnFnanlXb0JCckp6X0NlbmhMLW1wcnN3TW9ELWxWTFpsUjQxeWp0RkJ4Q0lleDZIMUdTalp4cEJOcEVFcmFSdkNLenZ6U19CWHY0SXZfZ0szTHFWbHVR?oc=5"
-     },
-     {
-      "label": "Lithuania–Russia",
-      "change": "Note refreshed: Lithuania accuses Russian intelligence of arson attack on Starlink facility",
-      "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdVAzWDFBRkRQdWgyMVU4YURPR1B4MFBYWmgyVVNuR1ZtOEVEdl84YXlvczBKdmlMTWRsUl9CTXprODVRU293X1hGSHltY2xKeHNkYm9NR3N0MjFnMlpzekZnX2NhZld4bHlQTFVSc2wySWdZTUtxVXNNMkFCQi1rcHJNN2tMZGJBYUM5dDQwWFJuQnZmaTBka1R3?oc=5"
-     },
-     {
-      "label": "Belgium–Democratic Republic of the Congo",
-      "change": "Normal → Tense: Kinshasa freezes official contacts following Belgian police raids",
-      "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNcndlUTFJbWNTaEphaE8yZURxUlYwSm8zUzM3blFpTl9wRE9NRElhazgtNHN5aVJWZGQ3a0N0aXFnTVpXaDZ6cEt6cEI2TXJRemVtZmlKLVVFcVdyWkZKVE83NEMwdHl6ZEU2b2JJVnVWQjhLLTE5V3dhM2JXZFJJQVk1U3ZhTE9wRTBkaDF0Sm5HeEJTSE9RalBzZFZXT0F5MzljQzRnTnRoVU02ZVJ6bWo2eFpwbzlTZU1nWDRsakdhQ1BlYmhDNWlXY0xENDh1ZU15N1BR?oc=5"
-     },
-     {
-      "label": "Niger–Nigeria",
-      "change": "Tense → Normal: ECOWAS and breakaway Sahel states reopen talks on a cooperation deal",
-      "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNLXFNdWttS0xsSjZmWTE1dVpOX3hOM215SzVQdVpUclMzdm5aVURvMy14My12UFVuZlJla2tTaDNxRDMxR3pTYnRYN3pxbmVZdFZvSW1tWDFrMkVKM1BLQTVQTERhWnlSZDUxV2ZxZXQ1d2ZscmRsWG93Uzc3bkdENlhSVXZrdTREOWdxNTFjRjNqV3FDRVd3VFZoeFhVczN0N25mTmpmUGctV2c2WlVzNURVdFQ1Y2hJNkN2S3RmMmNndFF3Tjl3dWxGYkFkRDY5ZFdybDBramI?oc=5"
-     },
-     {
-      "label": "Russia–United States",
-      "change": "Note updated: US suspends sanctions for 60 days to facilitate peace negotiations",
-      "source": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5jTzFvVzZoMldNWlJEVTc2bUg5OEh5dmxlWEJvLVA2LWQxVks4c0pNVzBQVTFmZGhKYTFDZHZ5MGZIT1laODhMMHhNWV9qd3VXajRiU1Z0U2MzaDQ?oc=5"
-     },
-     {
-      "label": "Egypt–Saudi Arabia",
-      "change": "Note updated: Egypt's National Defense Council pledges military support against Houthi attacks",
-      "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOM1ZKbTY3QU1rTWxKeGVfZDMzVll4a2xzRU4zMnFMd0hiMFdFbl83Mm1aVUJsdjYwUzI1aGtTQ0pVeHNoM1FaT3JORlF4WHpub05IVnM1VVc4RXNNMzFDSnRIUDcyNWdNbjNNS0FNUGE0T2FwUmFXR1JaSkFNRUlFejNSRFM3MkRubnpxanVQTU9DZmNCeFNwUHRNZmN0S216MTJ4LVBrRFhmclNKZ2p0ZkpBN1Q2UXZpYmtydTVDaW9US09EdjE0ZGpRN3ZEUGc?oc=5"
-     }
-    ]
    }
   ],
-  "summary": "Updated Thailand–United States relationship details following a signed trade deal, and added election updates for Cabo Verde and The Gambia."
+  "summary": "Tensions mount in the Persian Gulf as Iran launches a third drone strike on US radar in Bahrain, while Panama initiates talks on the Cobre Panama mine and regional summits unfold."
  },
  "relations": {
   "DNK-USA": {
@@ -1709,9 +1654,9 @@
    "a": "COL",
    "b": "IRN",
    "s": "H",
-   "note": "Colombia cuts diplomatic ties with Iran and designates the Islamic Revolutionary Guard Corps (IRGC) as a terrorist organization.",
-   "updated": "2026-09-25",
-   "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbkhxNjNTQUY5YjRPN0xRT3RSTG85b1BiZ3NqakR6SDJLYXBsV1VFTlVtODhyMGQ5ZlktZEFwb1ptNTdiVFRodmhxZ3EyT3JDLUtkd3RjbHE2SUV4WVdIWnR0UlQ5NWxweTIyeVBKNlBWcTM0RkhwT2g5XzUwUFloTHVBNWN5am1mMVVvNi02UEd5dG9WNVB3Tg?oc=5"
+   "note": "Colombia maintains hostile ties with Iran after cutting diplomatic relations and designating the IRGC as a terrorist organisation.",
+   "updated": "2026-11-17",
+   "source": "https://www.wikidata.org/wiki/Q739"
   },
   "CAN-VNM": {
    "a": "CAN",
@@ -1965,9 +1910,9 @@
    "a": "EST",
    "b": "RUS",
    "s": "H",
-   "note": "Estonia closes all border crossings with Russia following a suspected GRU (Main Intelligence Directorate) sabotage plot.",
-   "updated": "2026-11-16",
-   "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB1S0ZkeDZOQy0xSGx3ZWpHX0R0cGwtblQ5RjkycThUV1FTWkdKaGhMYXZfSFBrWHR2aGZOMGJCa3dUUkR6VkhRcGpqNA?oc=5"
+   "note": "Estonia closes all border crossings with Russia following a foiled drone-factory sabotage attack linked to the GRU.",
+   "updated": "2026-11-17",
+   "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbTlWdUZsZElwMnUzUGVPdUtFQnNyVGhhTUlIeXN6SXZLc3otb2lQY0JkWFhEdFlVcmVES3JibGdlTTB3ZG1GRlhtbWRJbFdDbmVUaWNid19MOFg5bmpQbFZrUWZEdkh2YjFJdE03QURJeko2eEh1UTVpQllrdER4V2JUeDhpOHpKVkJOR25R?oc=5"
   },
   "KOR-PRK": {
    "a": "KOR",
@@ -2069,9 +2014,9 @@
    "a": "GBR",
    "b": "ISR",
    "s": "T",
-   "note": "Israel downgrades the United Kingdom's consulate in Jerusalem to a mission over sanctions targeting West Bank settlements.",
-   "updated": "2026-10-08",
-   "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNV1hIX05LQ28yZlZuaTJFYzJyQXY4NmhmX21lSW0xOFJPZ052dHJ0TE83ck4xQ1YyUkJ3bUgwdHMwMGltVDI3VFF6ZW5FRUdaQ0xpX2ZKdFgzZHpwbzRrRnd5cHl6V3hnRHFMRGNvc1pWM2xya3UyWTZUU3dNWkRrUV9ld2NMdmRTZFhCYXhPUGVMaXdfcU4zSzViSjV6T3EzM01RX2ZteE9vc0t6Z2tLcFF6ZTNRMWN0?oc=5"
+   "note": "Britain imposes sanctions on Israeli companies and entities involved in West Bank settlement construction.",
+   "updated": "2026-11-17",
+   "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTzNMTlR0MHlybjYya2ttSHNIOXA2cXEtOFNXNzB6Z2d3dWZQei1DYmxvYUVtUHVzdGNvUjMyTElmclFOSlVoMERFUkk3RHAtUm5fM3lGd0xINEowOTFKTzhsSGxjMlpQZXZFU3NPWjhTbjMzZnFNRGg4NTkxREVia3pVeEtuOGhrM1hINF9qT3ktZ2xC?oc=5"
   },
   "SYR-USA": {
    "a": "SYR",
@@ -3333,9 +3278,9 @@
    "a": "BHR",
    "b": "IRN",
    "s": "W",
-   "note": "Iran's Revolutionary Guard Corps (IRGC) launches direct drone and missile strikes on a United States (US) radar facility in Bahrain.",
-   "updated": "2026-11-16",
-   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQS1B4WFV1cTRjX180WmZyUlBEdDBQSGFqN1JjRm10QXZXemMxMk00X0VBdl9UR1hZcGJkajlXQmJiZXRpUUdSclJQWVptMzFSM1VBaWh5TjJJQjVNdXUxQ0pBZm5pQU9HSzJ2SVZENnY3MzJLek02bzBKNW9RczhackFkLTM5T1o3NWlHT09IXzVkZlJKMUpRSzFxWE5rVlNlSnh6UEJMZnFqRTA?oc=5"
+   "note": "Islamic Revolutionary Guard Corps (IRGC) launches direct drone and missile strikes on a United States (US) radar facility in Bahrain.",
+   "updated": "2026-11-17",
+   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZlBLeFprTEY4Y0cwT3dRcHZsazZGSzdRRTlUN3J6akpHMktuU1piXzZ5TXV2b2FiWHdqTUw3TG9iY1F5QkFKRV9IamxtTmJMVFlwaFM1MHFoc0YyQ1p2VHNRcGdyTndOLVIxZFk0V3NPX3V1VjBEUTREb2lzUlJ6MU1IWkJ0WkV2aC1zVEFkc0RhTmJvN0MtdGNZaTdZYmstTUxr?oc=5"
   },
   "ARM-IRN": {
    "a": "ARM",
@@ -4127,9 +4072,9 @@
   },
   "CPV": {
    "nextelec": "presidential November 2026",
-   "updated": "2026-11-16",
+   "updated": "2026-11-17",
    "source": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNU1B4b2RrVVE5UU8wbDFxLVNvRXNFaEJHdzhVel9OdXpHQVUtcG9hUW1qb1k0ZmI2MlZCNmtPMWgtRE4zRE1CN0J5cDZqZHhwZEk3Y0Iwb01uZ1JqaVlwU0ZNNlNZZGEzMmh2cnBoTVVVZ1VKTjByemFEb1pCd0hLWC1ia1Jsc0F4dlZ3b0tzakY5U1dHTDJFNkgtMEdMY3NoMVplS3BZNVhjUUZKWXlWNm1OMVd4amtFeVA4X2tCUjQtZE5pTEwweVRPSVZ6ZEptbE5BNFpMOU81WmRvUGlyTFlsSEFxaW8?oc=5",
-   "lastelec": "presidential, November 2026, José Maria Neves"
+   "lastelec": "Presidential, November 2026, José Maria Neves"
   },
   "IDN": {
    "lastelec": "presidential, Feb 2024, Prabowo Subianto",
