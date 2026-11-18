@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-18T13:44:19Z",
+  "lastRun": "2026-11-18T18:47:22Z",
   "log": [
    {
     "date": "2026-11-18",
@@ -9,6 +9,21 @@
       "label": "Australia–Israel",
       "change": "Normal → Tense: sanctions imposed over West Bank settlement expansion",
       "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQkJmLU9rUkxyNm9QWWVkdzMxcHdNQjk5X294R2FEU3BubXctLXpwUkFwVnRlUXdJQ2owRUtjRV84LVZVb3NBMUIxTVA2aUpsalFsRnVLV20yOGZuY1BXR2pqM2JzeUh3R2o3WDkwVTd1WWo3d2N5RFQ5RVZkTlRTVUFreHh0NklKVmxFeURpT09naXVhMjV6RE1kT2VTWm1fNEZDVTdaRmdsZnp4Xy1QRFl3SEczSGs?oc=5"
+     },
+     {
+      "label": "United States–Venezuela",
+      "change": "Hostile → Partner: US and Venezuela sign a military cooperation agreement during a visit to Caracas",
+      "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObXFkV0ZKb3F4WWpRSDg3R2VOckRhdTFGYjB2UllyOGtlakhZMFJZQkQ2UEw5Qk5MdWFIbkhrcU1RYVREU0wzb0RWR0ZTaTViT1NxeXhrWWo4dUNGVkVLLWllZmJSMGx6dUo4dGoydTNmNFItaC1LSDZmZTdoMS16XzNhNEU3TVpmQ056RXpEUTNka3VPdXc1MA?oc=5"
+     },
+     {
+      "label": "Iran–Kuwait",
+      "change": "Normal → Tense: Iran conducts drone strikes targeting US air base in Kuwait",
+      "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPdGl0X3ZfazlwMHhRbE1KOFlmRFhKQkV6eDJ1a2pKWU5fZFlXOFBRTVdTUE5fc2tVMlgxd01NQnhUUkEyMVJzTHdVOThnV2NBYk4teWRnV0pwN2Vsd1N5OFU3blhDWEQ1SWl5amtPVllGR1YtcFJmalcwdmh2R0ZxRXg1WU4wSU5qRWZuaXl6d2I5ZDMyX1d3WXc5WTRPSUxVQXVuRGtNWDdXRkwtTDA5TEpsdVhvZkcxR3ZLcHhPT1lZUUJlY3NpSDlMQk1PYzdxS1NwTXFXVTN6R3lNM3Z6MHZqT3Z0RnZIR1E?oc=5"
+     },
+     {
+      "label": "Dominica",
+      "change": "General election set for December 16, 2026",
+      "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQYW9oY2tXcm9BNlJmS1JheVQxMTUxZ3JYRl9oZmg3eGVhR0pod3pXOTVQNVp4ZVhHWU0wMUlac0xkQXZFcEYxeEM5MTlfMWs0TjJVVW93WXJnM1JNdlZnUWpvYUY4ZEtkWlFIcU5ZSldLTzJ3a0Y5LU5ILWUzYW45dGxZZjJHY01XdE1YYktB?oc=5"
      }
     ]
    },
@@ -1528,7 +1543,7 @@
     ]
    }
   ],
-  "summary": "Australia and Britain impose sanctions on Israeli settlement builders, regional Mideast tensions escalate with strikes in the Persian Gulf, and Mongolia's president resigns amid corruption allegations."
+  "summary": "The United States signed a military cooperation agreement with Venezuela's interim government, while Iran targeted a US air base in Kuwait with drone strikes amid escalating Persian Gulf tensions."
  },
  "relations": {
   "DNK-USA": {
@@ -1590,10 +1605,10 @@
   "USA-VEN": {
    "a": "USA",
    "b": "VEN",
-   "s": "H",
-   "note": "United States (US) oil firm ExxonMobil signs a preliminary deal with Venezuela's state energy company to explore oil opportunities.",
-   "updated": "2026-11-10",
-   "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQVVBxNnRQNzFQWDFsaFJIMTAxV184OV9FdFY0TmlETVFoT3FHZ3oxcmtVNXl5Zm92ZDVROFNzN09kME5nRGlXSzFJQzVQaTFBWXd1RFB1NDlubGM0alNnQklRdFdBXzhGLUkxOUJQcmhWTjRSOFFnNHRUTHRLWTd3eUpmVGpESERWZFlVWklVZXlzbmgwdlRuYmJCVWswZ21tZUstQV9qNmEzWFk5RlE?oc=5"
+   "s": "F",
+   "note": "The United States (US) and Venezuela sign a military cooperation deal following Defense Secretary Hegseth's visit to Caracas.",
+   "updated": "2026-11-18",
+   "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObXFkV0ZKb3F4WWpRSDg3R2VOckRhdTFGYjB2UllyOGtlakhZMFJZQkQ2UEw5Qk5MdWFIbkhrcU1RYVREU0wzb0RWR0ZTaTViT1NxeXhrWWo4dUNGVkVLLWllZmJSMGx6dUo4dGoydTNmNFItaC1LSDZmZTdoMS16XzNhNEU3TVpmQ056RXpEUTNka3VPdXc1MA?oc=5"
   },
   "COL-IRN": {
    "a": "COL",
@@ -1711,9 +1726,9 @@
    "a": "ERI",
    "b": "ETH",
    "s": "W",
-   "note": "Border tensions escalate as Eritrean troops reportedly cross into Ethiopia following severe warnings from Addis Ababa.",
-   "updated": "2026-10-21",
-   "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQX2xfekhCUmdPQkYxSXpobHl2d25RUnRmVUZsRUk2NUt6bzFUN2xRVVN3bXdSaGRpcUNDNFZLUld2MWlxQXhoT1lqb1BnNC1tREVMOENhamVlS01YNkRlV1NpUmdhbnctUElEZlNabUhscWpFTHpjWlhya3NLcjh6Q054OWpnMTdyWlV2eWZpazhFZlUxZWtDV2tpRTBTMGJIb0E1Z251b2ZlUV9jNVFERGx5d3RUQlN1Z1RB?oc=5"
+   "note": "War fears escalate as Ethiopia and Eritrea mass military forces and exchange warnings along their shared border.",
+   "updated": "2026-11-18",
+   "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNeEJBNVB0dkdmX1h1VU1fRTJkVGdQN3oyWWZlOTBqaFVPOHBIcWk2YlJ1M2poeFpLcWxlNV9rOHBQYTRwdzRaN2ZKbkNveGgyMkFBRmY1b2t4REJSampnVjdaZnlmYVA3Vm1oU0o5T093T0t0QjNQZU8xeHRzWGZRaERvVXJpUFNqZDhQcjZfSVFHSktmVGZ5anIzZWpxMXlfU0VqR2VybTFlSzl1R0M1R01IY1BEanRJSFJQQU5pLWFXMGs?oc=5"
   },
   "AFG-PAK": {
    "a": "AFG",
@@ -2823,9 +2838,9 @@
    "a": "HTI",
    "b": "SLV",
    "s": "F",
-   "note": "El Salvador deploys troops and robot dogs to Haiti to support the Transitional Presidential Council in operations against gangs.",
-   "updated": "2026-11-16",
-   "source": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1zd3NITW5ST0VnRDc3LVFFSk5hTFpuSEtSZGJDX010OXN2dTF4RlZNUllsSC00QU5Qc3ZGWFRJaFBqWFl2MDg3WlF4UGEwY1lnQUZkUm00ZzIxMGNQc3FycUNpZzJVTC0yWWVBS2N1eUZXQXFJRlVXUUpGeGhqNkE?oc=5"
+   "note": "Haiti formalizes a security deal with El Salvador after the deployment of Salvadoran troops targeting gang strongholds.",
+   "updated": "2026-11-18",
+   "source": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XZEJJR21GbUZZWjRDNlBOaFI3SzlyUjlzcElGTllvV2xyTHF2YmpISVdmYXhGZXNSdTc5MHdMR2M0d3BfWlRLa2xqUjdNcFpjTnhjdW5SVnYyamlxMmt1SWtsTGpnVV8yV1BVU19ZMU92MmNmbndrYQ?oc=5"
   },
   "IRN-IRQ": {
    "a": "IRN",
@@ -3354,6 +3369,14 @@
    "note": "Australia imposes sanctions on Israeli individuals and organizations over West Bank settlement expansion.",
    "updated": "2026-11-18",
    "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQkJmLU9rUkxyNm9QWWVkdzMxcHdNQjk5X294R2FEU3BubXctLXpwUkFwVnRlUXdJQ2owRUtjRV84LVZVb3NBMUIxTVA2aUpsalFsRnVLV20yOGZuY1BXR2pqM2JzeUh3R2o3WDkwVTd1WWo3d2N5RFQ5RVZkTlRTVUFreHh0NklKVmxFeURpT09naXVhMjV6RE1kT2VTWm1fNEZDVTdaRmdsZnp4Xy1QRFl3SEczSGs?oc=5"
+  },
+  "IRN-KWT": {
+   "a": "IRN",
+   "b": "KWT",
+   "s": "T",
+   "note": "Iran launches drone strikes targeting a United States (US) air base in Kuwait, shattering a two-month lull in Gulf fighting.",
+   "updated": "2026-11-18",
+   "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPdGl0X3ZfazlwMHhRbE1KOFlmRFhKQkV6eDJ1a2pKWU5fZFlXOFBRTVdTUE5fc2tVMlgxd01NQnhUUkEyMVJzTHdVOThnV2NBYk4teWRnV0pwN2Vsd1N5OFU3blhDWEQ1SWl5amtPVllGR1YtcFJmalcwdmh2R0ZxRXg1WU4wSU5qRWZuaXl6d2I5ZDMyX1d3WXc5WTRPSUxVQXVuRGtNWDdXRkwtTDA5TEpsdVhvZkcxR3ZLcHhPT1lZUUJlY3NpSDlMQk1PYzdxS1NwTXFXVTN6R3lNM3Z6MHZqT3Z0RnZIR1E?oc=5"
   }
  },
  "threads": {
@@ -3652,11 +3675,11 @@
    "updated": "2026-09-23"
   },
   "strait-of-hormuz": {
-   "d": "Multiple commercial tankers catch fire after attacks near the strait as US jets hit an IRGC missile site on Qeshm Island.",
+   "d": "Multiple commercial tankers are hit by projectiles off Hormuz and Musandam as Iranian strikes and US countermeasures intensify.",
    "n": "Strait of Hormuz",
-   "s": "Tankers attacked and US air strikes",
-   "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQMjRBalJpV1NPaXc5a2lhUVJWcktUdExFSXdOcTRqX18zU0xnZ3RyOEFVWkNLUVBqM1dFR2VmaFlfaUNNMHEzX2NuU0dneV9MZHJDQzhLbVB1Y25MMW4weXI1aWltSWMzMlRic2xkWUdTeV9XMHl4M0NBU3d1SW9ub1dZcWZWVmFEM21OX3poekVuLWhMdU5sTi1YbjVNREFaUFJFcGd1ekcxdVU1cmpiT1dIWExzS3poTlA4OUZHZVpFRUJtTmNsUHgydk80QlZEc01USQ?oc=5",
-   "updated": "2026-11-17",
+   "s": "Tankers struck during escalation",
+   "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPdGl0X3ZfazlwMHhRbE1KOFlmRFhKQkV6eDJ1a2pKWU5fZFlXOFBRTVdTUE5fc2tVMlgxd01NQnhUUkEyMVJzTHdVOThnV2NBYk4teWRnV0pwN2Vsd1N5OFU3blhDWEQ1SWl5amtPVllGR1YtcFJmalcwdmh2R0ZxRXg1WU4wSU5qRWZuaXl6d2I5ZDMyX1d3WXc5WTRPSUxVQXVuRGtNWDdXRkwtTDA5TEpsdVhvZkcxR3ZLcHhPT1lZUUJlY3NpSDlMQk1PYzdxS1NwTXFXVTN6R3lNM3Z6MHZqT3Z0RnZIR1E?oc=5",
+   "updated": "2026-11-18",
    "t": "strait",
    "lat": 26.57,
    "lng": 56.25,
@@ -4059,6 +4082,11 @@
    "lastelec": "Presidential, June 2021, Khurelsukh Ukhnaa",
    "updated": "2026-11-18",
    "source": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPYTN2V0M4MVhEeU5kVDJvVnhVMllLamMzLWpRNjVXb2pnM3h2ZG9uZTFEM3hURmFBYVFVMnZ5MzBISzVOQjBKbDhfaWxrWFBPMmkwYnVhQUdFUVNWMzBfWWx6R3BQLUVYelpSR2E5MEw3MGZEeGU3LVpaT1JrMTl4XzJmVlFoZ013Z0JFVmFoU0luY0NfNWxZQV9tTVEtclRuWGdGQ0NZQWZlOFNJTFhOLWl2LXZmMmdyUkV5dWZ1TEEza0oxalRiNEljRzExLVpKWUk3dnlQeDZhdVhX?oc=5"
+  },
+  "DMA": {
+   "nextelec": "general election, December 2026",
+   "updated": "2026-11-18",
+   "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQYW9oY2tXcm9BNlJmS1JheVQxMTUxZ3JYRl9oZmg3eGVhR0pod3pXOTVQNVp4ZVhHWU0wMUlac0xkQXZFcEYxeEM5MTlfMWs0TjJVVW93WXJnM1JNdlZnUWpvYUY4ZEtkWlFIcU5ZSldLTzJ3a0Y5LU5ILWUzYW45dGxZZjJHY01XdE1YYktB?oc=5"
   }
  }
 }
