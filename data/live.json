@@ -1,7 +1,17 @@
 {
  "meta": {
-  "lastRun": "2026-11-17T23:15:28Z",
+  "lastRun": "2026-11-18T13:44:19Z",
   "log": [
+   {
+    "date": "2026-11-18",
+    "items": [
+     {
+      "label": "Australia–Israel",
+      "change": "Normal → Tense: sanctions imposed over West Bank settlement expansion",
+      "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQkJmLU9rUkxyNm9QWWVkdzMxcHdNQjk5X294R2FEU3BubXctLXpwUkFwVnRlUXdJQ2owRUtjRV84LVZVb3NBMUIxTVA2aUpsalFsRnVLV20yOGZuY1BXR2pqM2JzeUh3R2o3WDkwVTd1WWo3d2N5RFQ5RVZkTlRTVUFreHh0NklKVmxFeURpT09naXVhMjV6RE1kT2VTWm1fNEZDVTdaRmdsZnp4Xy1QRFl3SEczSGs?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-11-17",
     "items": [
@@ -1516,89 +1526,9 @@
       "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWjNRSEsybno3ai1PWUlJMTFHcExzV1U2bUJVb1RNZUs2ZE5lWV9GMEM0cVJERTZ0YTB2WkNnUm96QmJrODdaUXNPNnAyX05RT09va2ZtQjRUa1Nid2xTeHVWWFFfeFlWTWNsXzJHenJCcnVEdTh2Vjg2Nl9kb3Yxa2ZCWkJHY0ExTGdBSWlXMEVzYXZHVzVFNTNiSS1wT1J3Nlg3aGZwVDBzVXVmaktZLXhyXzFuWGQ5YkE?oc=5"
      }
     ]
-   },
-   {
-    "date": "2026-10-19",
-    "items": [
-     {
-      "label": "Switzerland–Vietnam",
-      "change": "None → Partner: EFTA free trade agreement signed to boost bilateral economic ties",
-      "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVWVjSElyTW1HM2VxR0hPQV9KN3dORllzTGZmXzNnQ1RpTzFpYmtPV2w5aE95MWdFbFkwOWVTbHNpSHlzelRYaDVWQTU4LW9PdU9tQlJSaXcwc2RxbnRWd1NQNXNzZVl1RU5vTmtmeGl2XzM4Z2dQSHptaDZqdkRRU29idURKa3U3WDRqa3EycU42enVzRDcxTkZXaHJnalJZYTNKTTI3ZXN2dWN4RmVfMEZqMFZpQmZTVC1mSTdxNA?oc=5"
-     },
-     {
-      "label": "South Korea–United States",
-      "change": "Ally note updated: sovereignty dispute sparked by USFK commander remarks on the DMZ",
-      "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBTam1jVEM2TXhrVmpKNk1zaDkxd1lIM0pCUjhXeWduRm5xY1dhMlFQZm15RDh5d1Q2VzBVQ3pxMm5BenEwVG9nLUlXTjhVYkJ1MnpRbDVYUm8tSHYxeW9BTl9wNDRjenBILW9FWkVn?oc=5"
-     },
-     {
-      "label": "China–Philippines",
-      "change": "Note updated: Manila summons Chinese envoy over threatening remarks",
-      "source": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNV1AzYlBYYVI0SUFFS2JYbVZQc3g2b3ZJaG5IQ0hhUi1BSkQ5NnREZWZlZklTVkF1RUNZNmt2T3NnckhadmU1X3FRSXpWTHJ5c2QtZEktOGNWZnhtQ0FZR0YwbTYxTzFZZ0Z0VUg0THNCR1U4MjY1WncyUHVUOGtpSXpvcGJvNGRxdVM5MzZONnQ3a2UzMlo3VjVldlRGTW1Ba3pOQ3FfLWZPekRmUWFrTkR1YThjVHY0c2dYWm1uR0Zsd2Fkbk5Lb3FBc1JCMW9rVE1URS1vekFrQ3hnOEY4R1NGb1pBTWFnUzN6UzdqbXgtNUM0VVJoMXNnYVp2d21HZkE?oc=5"
-     },
-     {
-      "label": "Cambodia–Thailand",
-      "change": "Note updated: trust-building measures agreed in maritime border talks",
-      "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTFpBM0lPYXA2eWFrRUhJVWpQTEFEbUppSmt1RENVLW85WDVKZ1VzMFd0UDUtQXYzVHEtSTl2TmdraWhrdUVDMk1NOWkyVzR2V0lOQTV5TWpXbTR3a1VxMVpTbHRuSHVTQ3UxWUlLWkotSHJGRS1wMDlfME4zVkZGVzhMRG96aC03WFpnVXNQQmtXM0lWT19QVEJPZk5YcDdjR09fU096ZGk?oc=5"
-     },
-     {
-      "label": "North Korea–South Korea",
-      "change": "Note updated: Pyongyang threatens loudspeaker broadcasts and strike asset deployment",
-      "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0xSnhIZDhMLTQyU1dWWXBBeFJYMDh0bW9DclhJT0lkNTNDUVhscEpkZTh0bG5oZkRlVVBoTkVabXpNaUR3NlloLXliVzNlcFBGVkdRMlZoRGpwWnd2WEx6eHYyY3A?oc=5"
-     },
-     {
-      "label": "Baloch insurgency",
-      "change": "Thread updated: BLA claims deadly IED strike on army convoy in Gwadar",
-      "source": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZF9vZnZYbGRtSFBIcWdKN2lCbmRsajdkRWdnN2ZablBCMnV5WUZickhWWWhkck1uNFJBZkx1bFhQZDV4Tzh1cFo4Wm91eFp5VG5JS1hpSF9jZU82UkJfWkZpaE9MNHlBUlFDb1VyT0NDcW9OQTNVTXpWc0haeXJ0c3lLck95SmxZak8yb0dPOG0ybzllR2d4LXhtUW44VGItaHYtS0dJTUFhMW54TnhfM2ZoczNuVXVCV2ZpZ1ozblJFdVI2RWVZRi1NaWJBWFkwSG5J0gHYAUFVX3lxTFBmU0gyUUIxeWFBWDd1QWtybWloMmU0LWhGLXFWY0xQWTlMUzY1WTh6N2xpRTB4eU83THVDMXpNTERpSmRvd2p4STlYLUppWDhzd1huZTRRY090T0xQNEpLdXRFSmJpT3gwREJySjFnV28wM0VwRUFzbUxaYVJZWVZkUVE0bmZhY1lyaEpRSE1SVlFnVnktODBlSzlhbnR4ZS1STV9kMEhzM3czU0kxTlFXRnM0UkJlM3ZsYXhwT0t6NTFDb1ZrQjN0d0QzRzRWVnBjSXdEX3E0Vg?oc=5"
-     },
-     {
-      "label": "Strait of Hormuz",
-      "change": "Location updated: record tanker attacks reported as Iran proposes 7-day talks",
-      "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOYUVkZE15VE5jYTQ3YjVDbF9kT2lUaVlWb1VIWnNyUkhUZkJNN1BMWFBPY05oTVowRnNOSjRoaW96ZXpXRnA4T3RHSkVqRnZqVnF0WDRBVVplTHA3MHBZeVBvRm9QNVh0QWg0a3VSVGNaWk1kMUVhTUluQWNoWkJDdWVOMTVGc1RwdEtURUVRTy1SbWtYclB2MTZ3ZzdkVU1wMHZDVU42VkxTTzRncFJVcC1aQnpIOHPSAbcBQVVfeXFMTmFFZGRNeVROY2E0N2I1Q2xfZE9pVGlZVm9VSFpzclJIVGZCTTdQTFhQT2NOaE1aMEZzTko0aGlvemV6V0ZwOE90R0pFakZ2alZxdFg0QVVaZUxwNzBwWXlQb0ZvUDVYdEFoNGt1UlRjWlpNZDFFYU1JbkFjaFpCQ3VlTjE1RnNUcHRLVEVFUU8tUm1rWHJQdjE2d2c3ZFVNcDB2Q1VONlZMU080Z3BSVXAtWkJ6SDhz?oc=5"
-     },
-     {
-      "label": "Grenada",
-      "change": "General election scheduled for 5 November 2026",
-      "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPSTFvRlloTllOc3ljX2FTaEhTN1l4MTU4MnNOak9qMUJ0dld5MkU0bnplWHoydkRGazlkUjVKenZTS2hra2VjZWJfTzZXTjMzUXlfRE9iWC1LX08xS0ljQzFTMFBCNXBHXzVXd003VjJsRjY3RVlYRDNudHB5ekd4VUtuODNGSmE4MzAzSkFDMlNDY2RnVFZBOTdn?oc=5"
-     },
-     {
-      "label": "United States–Russia",
-      "change": "Adversary → Hostile: 60-day sanctions waiver sparks friction",
-      "source": "https://news.google.com/rss/articles/CBMic0FVX3lxTE53QzBwWmRMY0dQaFpPMV95c1NENDVhZ3Atd0xtTUQ5ekg5T2JwYVBJMmJaXzRDY3EzazlscnVGb3FzT1ZBNUVGYVNzdjNqRXNGS3NsbEhWNG4tVndOcXZXLXdiZlh1dklUOWxxZ2RGdW9NY2s?oc=5"
-     },
-     {
-      "label": "South Korea–North Korea",
-      "change": "Hostile → Armed conflict: Border threats and loudspeaker plans",
-      "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQY0lVSDdlczdaNmZncnpJM2t4QWt3VWl2WktIWTRMZHgxbWJHVU1BZjFKSkU2QjVaOTNJenQwYjJoNHFSZF90bHhhZHlLenF0TGZXc19vMzZZWE5RRTlTWDd3N21iOFAwYUZKM0dqd0JGSXc4TndWMElxYlA3ZXRzVnBHUzI2VVVRaTl3R0ZCN29wSWlwN21XY2lPYXBON0RDOTV3b0x3?oc=5"
-     },
-     {
-      "label": "Ukraine–United States",
-      "change": "Partner → Tense: Clashes over deep strikes and sanctions pause",
-      "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdVpzZGxhQzRyZnpMQk5qVVpVdWJWd2tGbWp2UFk3b21KODhCMlpieUxGUEFFRTEwNmVacldMcG9zRUZEbDE2dWRRY2I1cndHZlFBVkVqSDdnNXJBaktWbGtQcVRmY2QxajQ3UDZ3S3NfRDBQSUJ3TGtUQUZWa1IyemJ1ejhHRy1N?oc=5"
-     },
-     {
-      "label": "Egypt–Saudi Arabia",
-      "change": "Note updated: Egypt postpones parliamentary vote on deploying troops against Houthis",
-      "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQRTJaMWtfcktqVHJTb3hZaThjZDZYYmZXN3RmaEJHZzZPcl9KUXZ0amQyaWEyMDBzSFFxQkp6VjBrUmF3clRkYUw0Y1V3cGkxQVNiLXptS2tIcFhYeGJTTzZzaUMtRkhtbWwxMXU1YktIamJ6TFRNWlN4aWJHT0Y4SmVCaTRMYUJjWFp5YnhiQ0N5d0xnRURVem1BblNqM2FmQi1CNnJlS2VBc1NVc19v0gG0AUFVX3lxTE9mdVU5YmNHdUFFNnkxaVdEM3JuY1loWGFHdmd3V3V2b3A1NnlkdERBRFFEbVNreTAtSjMyR1M5NWpiUV9qZTFQVVFXdklsQUx5TnNwOFJWQ3owS0FZVjdQQkNhYzFrMXRRMHV0ZHp2cTF0WnlfQjdJQVNzbGJCRnZVaHNyYWUzRl9YYXdtTWd5TUJlTF9Bd0lDeUoxbS0xblc2UHpDVE1hMldFMHpLWnpNNXRPSQ?oc=5"
-     },
-     {
-      "label": "Rwanda–Uganda",
-      "change": "Normal → Tense: Exiled Rwandan dissident found beheaded in Uganda",
-      "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZUtTd1g4SkJVZ0syYTZuVHBsYlZob3NENXRNTTJKcHJDQUlVRWJmQmZmcEJhWDdwcXhNU0U1ZWFZSlh4MGlQQWYxVnJnNkxPeHNqT3dLRVBwR1VxN00xTjN0WjhRZnE1Vnlpa0pvc0VydHR4U2FNbE9abUdEUzJPSXBPTXV0UUxGaEZ6QXVuWE1oclnSAZgBQVVfeXFMUEJ6YWp5aG5aRXRfUEhZeGtkc2gySTBCT0xUbDloVGt6cTZGeldTWGE5SEZyOWV5SnQ3X29EODhiSFlvbTlJa0IzNm9JeGJ3bm56ajF5d1FFZUxuNW45X00tdldDdlpyMVNIWlE3Sjc2MFZSVEVsSE5tNUxSZG52dDdiRkxIOFhOY05NSnY4RzF3SVhVWm1uaFA?oc=5"
-     },
-     {
-      "label": "Australia–Vanuatu",
-      "change": "Normal → Partner: Bilateral security treaty prompts phaseout of Chinese police",
-      "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRFh0UnVWOFNBNU5pOGk4aFJhakxIQXZIZ25XQTQySHQzWXZCWTJiVTBxVUtUSnU4c2lKdGFnUThMYUhTUG1pTExDWmMycWVGVzBOX2xEQzFsVTdkdFZFWnoxbVQwTnVjb1I4NXNIOVlFS2hZREwxb3h2VktVOFl5MWFoRGd4Y1VMTnpxbnRITzIycHZkUGlMazlRYl9mdGhCQndhWjEza0otRXc3ZzdhMEkwbw?oc=5"
-     },
-     {
-      "label": "India–New Zealand",
-      "change": "Normal → Partner: Bilateral Free Trade Agreement (FTA) enters into force",
-      "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPX2hQUVZ1RlRmZnd1NS0wZ1lYWXFLZnNNN2RYRE1GMklBNU9PbkZMU2o5TEhabWV3S3Nwai1KMk9zWmdDVWk0bFBqMGZDS3U5OG01Y3VNQXNLTmJCUjJkYThmd0tZVDNWbTFMamFDcWd0R1pSRHFmc2JvVEFXczVOYkxhcDBYT2tqaUdyN3BiSkrSAZYBQVVfeXFMTjVqU2NZQnJvYTZXWmVhdkx1WkdPdEFKU0k4aUE0VXRsT01LbDF1OHZZNzkxd09GR0dmekpISk9ybThNOTRjd2VXOHNYbzFnUjd2Wnh4S1AzZmItUnEyRnJHdkJLVFY0WExOWWNEYmxheV9yXzBwUnVpYlliM3FfQ3lVMGZhVllVaWEyZWJMNmZwQ2lraF9B?oc=5"
-     }
-    ]
    }
   ],
-  "summary": "United States air strikes target Iran's Qeshm Island following drone attacks on Bahrain, while the Kerch Bridge comes under renewed Ukrainian strikes and Cabo Verde President Neves wins re-election."
+  "summary": "Australia and Britain impose sanctions on Israeli settlement builders, regional Mideast tensions escalate with strikes in the Persian Gulf, and Mongolia's president resigns amid corruption allegations."
  },
  "relations": {
   "DNK-USA": {
@@ -1925,9 +1855,9 @@
    "a": "EST",
    "b": "RUS",
    "s": "H",
-   "note": "Estonia closes all border crossings with Russia following a foiled drone-factory sabotage attack linked to the GRU.",
-   "updated": "2026-11-17",
-   "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbTlWdUZsZElwMnUzUGVPdUtFQnNyVGhhTUlIeXN6SXZLc3otb2lQY0JkWFhEdFlVcmVES3JibGdlTTB3ZG1GRlhtbWRJbFdDbmVUaWNid19MOFg5bmpQbFZrUWZEdkh2YjFJdE03QURJeko2eEh1UTVpQllrdER4V2JUeDhpOHpKVkJOR25R?oc=5"
+   "note": "Estonia announces the complete closure of all border crossings with Russia starting December 1.",
+   "updated": "2026-11-18",
+   "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSW9vdDhqOFJVQjZoTXVVbk52cGVkcU40WG1HcUxJc2tERk5OUndqc1hXdXEtdGZXVHRhQmJtbGdhZjdQZWJWYmhqMEVMZ1M2N3JHSzNsMm56SDBKZE12b3dWXzVYcXZNSmhTYmRRV0Qwdy1GQkZsbGZ3SWQ5cjBWNWNYUTZtYkpYWnUwUEtveHZlVkJfNTRTV2pJek96d3pxZVVkRGpoZktvWndCdWN1YVBxVFZHTjRu?oc=5"
   },
   "KOR-PRK": {
    "a": "KOR",
@@ -3421,9 +3351,9 @@
    "a": "AUS",
    "b": "ISR",
    "s": "T",
-   "note": "Australia imposes sanctions on Israeli individuals and a construction firm involved in West Bank settlement expansion.",
-   "updated": "2026-11-17",
-   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNdFgyMWpHWnlNVXd6N2E1amFnOC1sTHJfb0hJRVBOS0h3Yi1rNy1pWTl4X21BbVNSTjhmVVdDU25DMzBMendrd1NvVzJGN2pwM1ZWeXBsZm1wZVY4Q09yYjdiT2ozeWNXdDJBQVRhUlRBSTFMdmN3c3RvcFJPWkhZX0R2T3BBVDNPczlURzREWU5OSnctUlUwaGNTZWE5Q28?oc=5"
+   "note": "Australia imposes sanctions on Israeli individuals and organizations over West Bank settlement expansion.",
+   "updated": "2026-11-18",
+   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQkJmLU9rUkxyNm9QWWVkdzMxcHdNQjk5X294R2FEU3BubXctLXpwUkFwVnRlUXdJQ2owRUtjRV84LVZVb3NBMUIxTVA2aUpsalFsRnVLV20yOGZuY1BXR2pqM2JzeUh3R2o3WDkwVTd1WWo3d2N5RFQ5RVZkTlRTVUFreHh0NklKVmxFeURpT09naXVhMjV6RE1kT2VTWm1fNEZDVTdaRmdsZnp4Xy1QRFl3SEczSGs?oc=5"
   }
  },
  "threads": {
@@ -4124,6 +4054,11 @@
    "nextelec": "constitutional referendum, 2027",
    "updated": "2026-11-13",
    "source": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9EZVdkeWpSM1JndndmU0NmaFdjMGZ6Tkc0a0M1SExBemRRR3F1MEpxUU5PekxuUXMzZnR5R1BMSEk1RlRsbTVaTU4yUlNNZnYyQjNMQlZoM2EweExmV19CcXBRa244eDI3Rl9r?oc=5"
+  },
+  "MNG": {
+   "lastelec": "Presidential, June 2021, Khurelsukh Ukhnaa",
+   "updated": "2026-11-18",
+   "source": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPYTN2V0M4MVhEeU5kVDJvVnhVMllLamMzLWpRNjVXb2pnM3h2ZG9uZTFEM3hURmFBYVFVMnZ5MzBISzVOQjBKbDhfaWxrWFBPMmkwYnVhQUdFUVNWMzBfWWx6R3BQLUVYelpSR2E5MEw3MGZEeGU3LVpaT1JrMTl4XzJmVlFoZ013Z0JFVmFoU0luY0NfNWxZQV9tTVEtclRuWGdGQ0NZQWZlOFNJTFhOLWl2LXZmMmdyUkV5dWZ1TEEza0oxalRiNEljRzExLVpKWUk3dnlQeDZhdVhX?oc=5"
   }
  }
 }
