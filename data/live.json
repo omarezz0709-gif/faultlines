@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-19T14:13:04Z",
+  "lastRun": "2026-11-19T22:47:56Z",
   "log": [
    {
     "date": "2026-11-19",
@@ -9,6 +9,26 @@
       "label": "Somalia–United Arab Emirates",
       "change": "Normal → Hostile: Somalia expels UAE ambassador over alleged interference",
       "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVEVXeUcwb29TTkxoU05OVG02MzV4cVBrX2dQVEp3Q1lPY2xJM1Z4U0l3aFRxck84NWR2eDZncXRsbGhDSkdwdmRVUWlzdGUzLURwUGpKOGN0bjd2NlV4X1BRdE9pZnZKZHo3Zmxwd0JTeVk1b293eHpHcDRnTFJwSFRyOE9IUFhUdU84TnlZOVBjakJHZVFmeHZn?oc=5"
+     },
+     {
+      "label": "Chile–Philippines",
+      "change": "None → Partner: Chile and the Philippines sign a landmark Free Trade Agreement (FTA)",
+      "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ2J4Z1A2ZE5LcmtGR0I1N0gzYVMyVnpGSzA1dUlmazlXaThEWHhjMUtYUkVfZk53LTRJbG5kVFIzV3dSZHdQZ2dnYnBwVzZSN25SZHJ3OUc1VUhEcGYyWkZiYWptd2NxLUg3MlZDdTJpYjhtTnJISlhCdDRsX2NNMzcwckxDeG1YdmZaQ3RBUl92X3JaT3JVQ3JPNTU2UEpvc1ZmNdIBqwFBVV95cUxNTUp1UHBBYUpaQzRsS19qczNCSncwNDJmdHFQRTN0Q2Y2dWtReXFLeVRoZjU1LUZPZ2F4NUNOcVh6TG1PLU1CdWMwc05xZHNQWEVNZC16ZzFRWTEwQ3JLOXZhOUVQWElFaUsxdm9tS3Q5QV9uXzdDTnA1ZWhDM1VtYzc4QkNDU2tsT3dwWFdyYzJvSUNUc29KWXpVUV9MQ0doWU9qa3J3NVh4Nkk?oc=5"
+     },
+     {
+      "label": "Hungary–Ukraine",
+      "change": "Tense → Normal: Hungary lifts block on Ukraine's European Union (EU) accession negotiating clusters",
+      "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZUNrNTVTUkl3NkZiVXpNZmFWNTFfVW52RHNLTFVDSUZFVm1DV1dJWXpuWG8yaTZYSDUyUXhTUVB3TlJjUFFWb1h0MldySGZNajlnaHdEalNrcU5ZY1RoUDFnazllYU1QQ3JXLVR4Um9JaGNqZWJwOGtNTDBQRVVlaTE5TU5wSERaMHNZM25ueVNQMWtkb1psTTRvRXlJUURoNXBWR09tdFMtLTA?oc=5"
+     },
+     {
+      "label": "Dominica",
+      "change": "Election scheduled: Prime Minister Skerrit calls early general election for December 16, 2026",
+      "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNT05DSWRMU2o0VjUxOXNRbkF3S0RPdGF6QUg3ellnZnBqbHAxOUVOZjNodkl2Z2xFRGpEZjA3ZVFLd0hJRDZaR3NnRS1EdFB5VW54Q1VBX18wNFRmdkNmUHhPSno2UTFLVEVlek5fS3k3YkJhbDlhS2FvZVpxY3lPeDk2SXM2bS1FQlo3cmZxUmdnZGdwcnNta3VRNlFYNF8wSW15c1pkeDJqdGNRSjh0eWtFbVlPdUQwOGdvRw?oc=5"
+     },
+     {
+      "label": "Kerch Strait",
+      "change": "Status refreshed: Crimean Bridge traffic halted after renewed Ukrainian strikes",
+      "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNa2xkNVVELTN0S3V5dEFLcVBOb2hOV3cxSVNjdFZMc2tHVGQ4RWVFY2hSTnlsSFBrTjkxSFdlZHVEZmVkLUxhMHBjRkc1ZWdiTURGUnhITm4zTHpkSExWaXQ4ZkZQNWtyLTZHUVRyZkRIek9iZGRyS2l0Q0ZXMEdmQzNIQTZ0OExZMUtxdFpkS1BabHQtSzRXS0Y2bEtoNzVOZzVNVGh6QlZQVW8wbkpYc1cybHNWaF9IYXBn?oc=5"
      }
     ]
    },
@@ -1483,16 +1503,16 @@
     ]
    }
   ],
-  "summary": "Updates reflect US-Venezuela military cooperation, Houthi strikes on Riyadh, continuing Kerch Bridge attacks, and new diplomatic missions."
+  "summary": "Hungary unblocks Ukraine's EU accession negotiations, Chile and the Philippines seal a free trade agreement, Denmark ratifies the US-Greenland security pact, and Dominica schedules early elections."
  },
  "relations": {
   "DNK-USA": {
    "a": "DNK",
    "b": "USA",
    "s": "A",
-   "note": "NATO allies; Greenland's parliament officially approves a security deal ensuring an expanded American presence in the Arctic.",
-   "updated": "2026-11-05",
-   "source": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxObWtTN0p2LWRMTHFVQkhqb2V4cmFLOFRXN2N2ZWFGY3FiLXlmclB4VkpDWEY2eHk0TGZULTlkZ0RoQ0k2V0tCNERTN0RtQTlGQkxlbjdxcWVLTjBJQlhDbGpfbVExNmNpQVRfYW1fVG5Eeks4WkJoR1NlSkw0YTdzOGFVVnhuYVI1U3BZY2hPaHliSU0xWnNjd25mZ3VudUp0TzItNkQwanhRVVNwcWxCdGFlNzB3eHJPZzBaWkdoS01NUk55cHBId3oxWGtTZXcxS3dsZGVHNVc3QQ?oc=5"
+   "note": "NATO (North Atlantic Treaty Organization) allies; Denmark's parliament ratifies the Greenland security agreement with the US.",
+   "updated": "2026-11-19",
+   "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOV0tzdmV3UFR4enE2M3Z6aFpUeGxYWFpSYmpnTGhieXVjbzVBTnZJZHFjdTI5XzRYVWFhOUNoVDFSTzFESDNvVkVQMFk0U2ZhZnlJaDBPTEdSeGd3SlRWUTdrbHFfc3VudE94Q2hSUW9WaERnbjhyV3d5STQ5elc2MlhzUFZ2Wi0zM1dRZWducjZFNV81YTFza2FGYkhKMklqX20zRHRfTEc?oc=5"
   },
   "IRN-ISR": {
    "a": "IRN",
@@ -1625,10 +1645,10 @@
   "HUN-UKR": {
    "a": "HUN",
    "b": "UKR",
-   "s": "T",
-   "note": "Tensions persist as Hungary stalls European Union (EU) accession talks for Ukraine, refusing to open new negotiation clusters.",
-   "updated": "2026-11-12",
-   "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBGSXdEQ18wY1BKNUx4dlczN196VW02N1Zub2p2ZDJMMDk3R2JlUkkwUVZqSEVXeVFOR29aWmJ4dHZBY3NGZ0xXZ3dCR2tENmsyNU4ya0FVclpJeTNiMzlJUzF0dUHSAXBBVV95cUxNdVNKSlkzdEJzX0J6MGdYdkpaSV80YVRocks3VmRRWUdsU1BFZENRdW5XUDZYZG1iNFB3aHdBN0hGSVVYcmVhNXFfLUo0d28tMmN1OEwzbXdDU2c4ZTBDRTRndlM1Y1JMV2Mxa2NCTzQ4?oc=5"
+   "s": "N",
+   "note": "Hungary lifts its block on European Union (EU) accession negotiating clusters for Ukraine, easing bilateral tensions.",
+   "updated": "2026-11-19",
+   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZUNrNTVTUkl3NkZiVXpNZmFWNTFfVW52RHNLTFVDSUZFVm1DV1dJWXpuWG8yaTZYSDUyUXhTUVB3TlJjUFFWb1h0MldySGZNajlnaHdEalNrcU5ZY1RoUDFnazllYU1QQ3JXLVR4Um9JaGNqZWJwOGtNTDBQRVVlaTE5TU5wSERaMHNZM25ueVNQMWtkb1psTTRvRXlJUURoNXBWR09tdFMtLTA?oc=5"
   },
   "USA-ZWE": {
    "a": "USA",
@@ -3317,6 +3337,14 @@
    "note": "Iran launches drone strikes targeting a United States (US) air base in Kuwait, shattering a two-month lull in Gulf fighting.",
    "updated": "2026-11-18",
    "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPdGl0X3ZfazlwMHhRbE1KOFlmRFhKQkV6eDJ1a2pKWU5fZFlXOFBRTVdTUE5fc2tVMlgxd01NQnhUUkEyMVJzTHdVOThnV2NBYk4teWRnV0pwN2Vsd1N5OFU3blhDWEQ1SWl5amtPVllGR1YtcFJmalcwdmh2R0ZxRXg1WU4wSU5qRWZuaXl6d2I5ZDMyX1d3WXc5WTRPSUxVQXVuRGtNWDdXRkwtTDA5TEpsdVhvZkcxR3ZLcHhPT1lZUUJlY3NpSDlMQk1PYzdxS1NwTXFXVTN6R3lNM3Z6MHZqT3Z0RnZIR1E?oc=5"
+  },
+  "CHL-PHL": {
+   "a": "CHL",
+   "b": "PHL",
+   "s": "F",
+   "note": "Chile and the Philippines sign a landmark Free Trade Agreement (FTA) to expand economic cooperation.",
+   "updated": "2026-11-19",
+   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ2J4Z1A2ZE5LcmtGR0I1N0gzYVMyVnpGSzA1dUlmazlXaThEWHhjMUtYUkVfZk53LTRJbG5kVFIzV3dSZHdQZ2dnYnBwVzZSN25SZHJ3OUc1VUhEcGYyWkZiYWptd2NxLUg3MlZDdTJpYjhtTnJISlhCdDRsX2NNMzcwckxDeG1YdmZaQ3RBUl92X3JaT3JVQ3JPNTU2UEpvc1ZmNdIBqwFBVV95cUxNTUp1UHBBYUpaQzRsS19qczNCSncwNDJmdHFQRTN0Q2Y2dWtReXFLeVRoZjU1LUZPZ2F4NUNOcVh6TG1PLU1CdWMwc05xZHNQWEVNZC16ZzFRWTEwQ3JLOXZhOUVQWElFaUsxdm9tS3Q5QV9uXzdDTnA1ZWhDM1VtYzc4QkNDU2tsT3dwWFdyYzJvSUNUc29KWXpVUV9MQ0doWU9qa3J3NVh4Nkk?oc=5"
   }
  },
  "threads": {
@@ -3601,7 +3629,7 @@
    ]
   },
   "pituffik-space-base": {
-   "d": "Missile-warning radar in Greenland. A Sept 22, 2026 US-Denmark agreement added two further US sites, at Narsarsuaq and Mestersvig, with broad air and undersea access, easing friction from Trump's earlier annexation talk.",
+   "d": "Denmark's parliament officially ratifies the security pact expanding United States (US) military access and base rights across Greenland.",
    "lat": 76.53,
    "lng": -68.7,
    "n": "Pituffik Space Base",
@@ -3609,10 +3637,10 @@
     "DNK",
     "USA"
    ],
-   "s": "Northernmost US base; 2 more Greenland sites added Sept 2026",
-   "source": "https://www.aljazeera.com/news/2026/9/22/us-signs-tremendous-arctic-security-deal-with-denmark-greenland",
+   "s": "Danish parliament ratifies US Arctic expansion pact",
+   "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOV0tzdmV3UFR4enE2M3Z6aFpUeGxYWFpSYmpnTGhieXVjbzVBTnZJZHFjdTI5XzRYVWFhOUNoVDFSTzFESDNvVkVQMFk0U2ZhZnlJaDBPTEdSeGd3SlRWUTdrbHFfc3VudE94Q2hSUW9WaERnbjhyV3d5STQ5elc2MlhzUFZ2Wi0zM1dRZWducjZFNV81YTFza2FGYkhKMklqX20zRHRfTEc?oc=5",
    "t": "base",
-   "updated": "2026-09-23"
+   "updated": "2026-11-19"
   },
   "strait-of-hormuz": {
    "d": "Multiple commercial tankers are hit by projectiles off Hormuz and Musandam as Iranian strikes and US countermeasures intensify.",
@@ -3726,10 +3754,10 @@
   },
   "kerch-strait": {
    "n": "Kerch Strait",
-   "s": "Bridge struck by Ukraine",
-   "d": "Ukrainian forces carry out a major strike targeting the Crimean Bridge, damaging infrastructure and interrupting transit.",
-   "updated": "2026-11-17",
-   "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQdjNhMGVOTE02V053cGdfdFh5a2lBU2hFT1VjTkNDQ2NhRXFDd0ljRm9YQXhkRkhfWFNlTW84LTBRTzFzVThHR3JOYzVmUTZ4dUFTeU93Um1oTi1HV0MwRXlPWG1kVGdtb2hXM0dUX0NqZmZhRkhlMmEyX1I1WXNPdm4ySlE4a1RYTzJtckVuX3dqZ25MTno1NzZFZW0tbWpnQnBxNlRxVFUta1liYVZDVU9vQ09XQXlPWEFlcnJqQW9ybVVLSGpHNzc0WXVMc1luUS0zcw?oc=5",
+   "s": "Bridge traffic halted after repeated Ukrainian strikes",
+   "d": "Repeated Ukrainian strikes hit the Crimean Bridge across the Kerch Strait, interrupting rail and road transit between Russia and Crimea.",
+   "updated": "2026-11-19",
+   "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNa2xkNVVELTN0S3V5dEFLcVBOb2hOV3cxSVNjdFZMc2tHVGQ4RWVFY2hSTnlsSFBrTjkxSFdlZHVEZmVkLUxhMHBjRkc1ZWdiTURGUnhITm4zTHpkSExWaXQ4ZkZQNWtyLTZHUVRyZkRIek9iZGRyS2l0Q0ZXMEdmQzNIQTZ0OExZMUtxdFpkS1BabHQtSzRXS0Y2bEtoNzVOZzVNVGh6QlZQVW8wbkpYc1cybHNWaF9IYXBn?oc=5",
    "t": "strait",
    "lat": 45.3,
    "lng": 36.5,
@@ -4025,8 +4053,8 @@
   },
   "DMA": {
    "nextelec": "general election, December 2026",
-   "updated": "2026-11-18",
-   "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQYW9oY2tXcm9BNlJmS1JheVQxMTUxZ3JYRl9oZmg3eGVhR0pod3pXOTVQNVp4ZVhHWU0wMUlac0xkQXZFcEYxeEM5MTlfMWs0TjJVVW93WXJnM1JNdlZnUWpvYUY4ZEtkWlFIcU5ZSldLTzJ3a0Y5LU5ILWUzYW45dGxZZjJHY01XdE1YYktB?oc=5"
+   "updated": "2026-11-19",
+   "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNT05DSWRMU2o0VjUxOXNRbkF3S0RPdGF6QUg3ellnZnBqbHAxOUVOZjNodkl2Z2xFRGpEZjA3ZVFLd0hJRDZaR3NnRS1EdFB5VW54Q1VBX18wNFRmdkNmUHhPSno2UTFLVEVlek5fS3k3YkJhbDlhS2FvZVpxY3lPeDk2SXM2bS1FQlo3cmZxUmdnZGdwcnNta3VRNlFYNF8wSW15c1pkeDJqdGNRSjh0eWtFbVlPdUQwOGdvRw?oc=5"
   }
  }
 }
