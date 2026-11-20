@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-19T19:05:13Z",
- "berlin": "2026-11-19 20:05",
- "status": "ok",
- "summary": "All checks passed.",
+ "generated": "2026-11-20T18:42:10Z",
+ "berlin": "2026-11-20 19:42",
+ "status": "warn",
+ "summary": "0 problem(s), 1 warning(s): AI answers: answered by gemini-3.6-flash, but slowly (50 s): the fast models' free quota is probably used up for today",
  "repairs": [],
  "checks": [
   {
@@ -10,7 +10,7 @@
    "name": "Website",
    "status": "ok",
    "detail": "HTTP 200, 427 KB",
-   "ms": 240
+   "ms": 209
   },
   {
    "g": "security",
@@ -23,49 +23,49 @@
    "name": "GitHub Pages copy",
    "status": "ok",
    "detail": "HTTP 200",
-   "ms": 181
+   "ms": 274
   },
   {
    "g": "site",
    "name": "data/news.json",
    "status": "ok",
-   "detail": "HTTP 200, 507 KB",
-   "ms": 385
+   "detail": "HTTP 200, 490 KB",
+   "ms": 301
   },
   {
    "g": "site",
    "name": "data/live.json",
    "status": "ok",
-   "detail": "HTTP 200, 284 KB",
-   "ms": 361
+   "detail": "HTTP 200, 285 KB",
+   "ms": 325
   },
   {
    "g": "site",
    "name": "data/politics.json",
    "status": "ok",
    "detail": "HTTP 200, 42 KB",
-   "ms": 243
+   "ms": 107
   },
   {
    "g": "site",
    "name": "data/wb.json",
    "status": "ok",
    "detail": "HTTP 200, 65 KB",
-   "ms": 169
+   "ms": 92
   },
   {
    "g": "site",
    "name": "data/geo.json",
    "status": "ok",
    "detail": "HTTP 200, 697 KB",
-   "ms": 180
+   "ms": 134
   },
   {
    "g": "site",
    "name": "data/cities.json",
    "status": "ok",
    "detail": "HTTP 200, 151 KB",
-   "ms": 183
+   "ms": 126
   },
   {
    "g": "site",
@@ -77,25 +77,25 @@
    "g": "fresh",
    "name": "Headlines (news.json)",
    "status": "ok",
-   "detail": "last update 0.2 h ago"
+   "detail": "last update 0.3 h ago"
   },
   {
    "g": "fresh",
    "name": "AI relationship update (live.json)",
    "status": "ok",
-   "detail": "last update 4.9 h ago"
+   "detail": "last update 0.2 h ago"
   },
   {
    "g": "fresh",
    "name": "Leaders (politics.json)",
    "status": "ok",
-   "detail": "last update 4.8 h ago"
+   "detail": "last update 28.5 h ago"
   },
   {
    "g": "fresh",
    "name": "Countries with confirmed headlines",
    "status": "ok",
-   "detail": "178"
+   "detail": "173"
   },
   {
    "g": "fresh",
@@ -119,169 +119,169 @@
    "g": "worker",
    "name": "/live (en)",
    "status": "ok",
-   "detail": "22 items",
-   "ms": 588
+   "detail": "20 items",
+   "ms": 1084
   },
   {
    "g": "worker",
    "name": "/top (en)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 729
+   "ms": 182
   },
   {
    "g": "worker",
    "name": "/videos (en)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 807
+   "ms": 587
   },
   {
    "g": "worker",
    "name": "/live (de)",
    "status": "ok",
-   "detail": "23 items",
-   "ms": 1515
+   "detail": "21 items",
+   "ms": 1789
   },
   {
    "g": "worker",
    "name": "/top (de)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 246
+   "ms": 160
   },
   {
    "g": "worker",
    "name": "/videos (de)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 5533
+   "ms": 386
   },
   {
    "g": "worker",
    "name": "/live (fr)",
    "status": "ok",
-   "detail": "26 items",
-   "ms": 972
+   "detail": "33 items",
+   "ms": 1212
   },
   {
    "g": "worker",
    "name": "/top (fr)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 1343
+   "ms": 168
   },
   {
    "g": "worker",
    "name": "/videos (fr)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 509
+   "ms": 481
   },
   {
    "g": "worker",
    "name": "/live (es)",
    "status": "ok",
-   "detail": "3 items",
-   "ms": 792
+   "detail": "7 items",
+   "ms": 348
   },
   {
    "g": "worker",
    "name": "/top (es)",
    "status": "ok",
-   "detail": "3 stories",
-   "ms": 733
+   "detail": "6 stories",
+   "ms": 139
   },
   {
    "g": "worker",
    "name": "/videos (es)",
    "status": "ok",
-   "detail": "4 videos",
-   "ms": 195
+   "detail": "5 videos",
+   "ms": 368
   },
   {
    "g": "worker",
    "name": "/live (it)",
    "status": "ok",
-   "detail": "17 items",
-   "ms": 1092
+   "detail": "13 items",
+   "ms": 890
   },
   {
    "g": "worker",
    "name": "/top (it)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 488
+   "ms": 129
   },
   {
    "g": "worker",
    "name": "/videos (it)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 537
+   "ms": 439
   },
   {
    "g": "worker",
    "name": "/live (ar)",
    "status": "ok",
-   "detail": "4 items",
-   "ms": 342
+   "detail": "7 items",
+   "ms": 752
   },
   {
    "g": "worker",
    "name": "/top (ar)",
    "status": "ok",
-   "detail": "4 stories",
-   "ms": 725
+   "detail": "6 stories",
+   "ms": 220
   },
   {
    "g": "worker",
    "name": "/videos (ar)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 569
+   "ms": 444
   },
   {
    "g": "worker",
    "name": "Real-time search",
    "status": "ok",
-   "detail": "12 reports",
-   "ms": 871
+   "detail": "13 reports",
+   "ms": 694
   },
   {
    "g": "security",
    "name": "Other websites are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 72
+   "ms": 121
   },
   {
    "g": "security",
    "name": "Look-alike Pages projects are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 71
+   "ms": 122
   },
   {
    "g": "security",
    "name": "Only the site's own prompts are answered",
    "status": "ok",
    "detail": "HTTP 400 (should be 400)",
-   "ms": 90
+   "ms": 122
   },
   {
    "g": "security",
    "name": "Private chat needs a valid pass",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 134
+   "ms": 96
   },
   {
    "g": "security",
    "name": "Admin login",
    "status": "ok",
    "detail": "HTTP 401 without a code (should be 401)",
-   "ms": 228
+   "ms": 107
   },
   {
    "g": "security",
@@ -292,9 +292,9 @@
   {
    "g": "ai",
    "name": "AI answers",
-   "status": "ok",
-   "detail": "answered by gemini-3-flash-preview",
-   "ms": 16591
+   "status": "warn",
+   "detail": "answered by gemini-3.6-flash, but slowly (50 s): the fast models' free quota is probably used up for today",
+   "ms": 50014
   },
   {
    "g": "sources",
@@ -315,7 +315,7 @@
    "name": "Page loads and the globe starts",
    "status": "ok",
    "detail": "",
-   "ms": 2890
+   "ms": 2782
   },
   {
    "g": "browser",
@@ -367,6 +367,8 @@
   }
  ],
  "emailed": [],
- "warn_since": {},
- "ms": 487477
+ "warn_since": {
+  "AI answers": "2026-11-20T18:42:10Z"
+ },
+ "ms": 434075
 }
