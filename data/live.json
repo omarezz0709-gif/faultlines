@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-20T02:49:36Z",
+  "lastRun": "2026-11-20T18:28:42Z",
   "log": [
    {
     "date": "2026-11-20",
@@ -11,8 +11,23 @@
       "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPbTJvWU1BWS1PYVc4VzAzS1FxdWF2QUNfSXJzbFEwWGRIM0wwZGpqSnQxZDg2Q1oyaUo5RkZLUDhZNEhxUWxxemxXZTc0bkdseE5aV19aRUNKZFpjckRORl9vaEF1V3JhWXlSUDVaZGFWTXdiOGxPdVBDYVo4UFVYWnN1cEw3RmxrOWpvcmdITzVkSkVRVUF3VTZzWkpxLTBTejE5TVd3S2JhNUxPOGI2c3Iyd0kta0FlVWlxdENCcDA4YjdrS2hHTE5R?oc=5"
      },
      {
+      "label": "Denmark–Russia",
+      "change": "Normal → Hostile: Denmark expels Russian military attaché over alleged murder plot",
+      "source": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNSG9fUGR3V3dUQ3lMUlRKWG1oRTJMclNoMVRkeVNQZTVwdFRCWWY3WHUyU2h5dnRJMlgzLWM4OS1zamtqMXVoR2U4U256MTZYVjljLWVlZmh5V21YdDFHaUEzZ19ELWJXemFfaDFHSm42WThENUR0NDBCYXlMR3djTS1lQmt0R0JUTUc2anFDWUhlNllBVzNCNFM3SVFXVHJ5a3ozNEJzd1RnVEFVNDV6Z0YxS1pKajZFNW5tMXFmVFBHbW9SdHVMNFZZWHBrRGJN?oc=5"
+     },
+     {
+      "label": "Germany–Qatar",
+      "change": "Normal → Partner: Bilateral security and military pacts signed in Berlin",
+      "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdVFURHROT01oZWJoOFpBeTduS2tTMHN1ZjZTekZ3Vk0ybzB3YTNsYWVJVVpnWFJlSkRDQjF4ZGZaa1FLM01nVFJKMHVKXzlGaF9nc0Q2ZlBRM0VkV1AteHZTLU5FUkR1YWlzQ3ZjS2x5Qjl2RHNsaWxjRVpiQUVuekE2TnFCdHFmeTF2MU0tYzcwS1d4ZlRSaHd0X0ZFVEtsSS00bmdWQ1lZbUZPal8xbWJ0a0xjc2Nf?oc=5"
+     },
+     {
+      "label": "Poland–Russia",
+      "change": "Hostile: Poland condemns Russian missile incursions into its airspace as deliberate provocation",
+      "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPUjgyUzVNS2p0cXlUZXFVbWUwcXhfSjRPcXNBc0MtQy1OVktwTEV0WHNIaU1Kd0ZfQ3ZETXB6RlZ1RS1Mc085TFdSVUljbzNJN2R2a2ZIcVA1ZHFaRTlja0NxUDJPZVhqR0ppa2VUOGFrQ3JUbEtROFRlR3BiXzYwZ2VQTV84dWZpTmxxNHNES0c1VHE0VnJZY0tubHk?oc=5"
+     },
+     {
       "label": "Dominica",
-      "change": "Next election scheduled: general, December 2026",
+      "change": "Next election scheduled for December 2026",
       "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNT05DSWRMU2o0VjUxOXNRbkF3S0RPdGF6QUg3ellnZnBqbHAxOUVOZjNodkl2Z2xFRGpEZjA3ZVFLd0hJRDZaR3NnRS1EdFB5VW54Q1VBX18wNFRmdkNmUHhPSno2UTFLVEVlek5fS3k3YkJhbDlhS2FvZVpxY3lPeDk2SXM2bS1FQlo3cmZxUmdnZGdwcnNta3VRNlFYNF8wSW15c1pkeDJqdGNRSjh0eWtFbVlPdUQwOGdvRw?oc=5"
      }
     ]
@@ -1453,7 +1468,7 @@
     ]
    }
   ],
-  "summary": "Monitored global developments; recorded Dominica's newly announced general election and updated India–Japan defense cooperation notes."
+  "summary": "Denmark expels a Russian military attaché over an alleged plot, Germany and Qatar sign a bilateral security pact, and Poland condemns Russian missile incursions into its airspace."
  },
  "relations": {
   "DNK-USA": {
@@ -1732,9 +1747,9 @@
    "a": "POL",
    "b": "RUS",
    "s": "H",
-   "note": "Poland detains six individuals suspected of espionage and illicitly exporting military components to Russia.",
-   "updated": "2026-11-05",
-   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNYVZPb0g1WXZ1M1ZISDBKS3dqVHk2MVpUQUVsQ2ptTmFNNjBvWG5CNlhnalJTVV9UZzhWaFNTX1ROVnBhVHU0NnBMUXhwQ2t5Q25lTmlCUnpyQjVtc25wU01Ja1VKZFE1OFNQdmYwWkJqOUViTXNhT3AxSnpyTnoyQnhIWVBrd0M4VnNDczVuNXQyTFdZWGZaUmUySU9ob0FqakZJX3hGVjJEZndpUVA2alBWenlPaU12N0E?oc=5"
+   "note": "Poland condemns Russian missile incursions into its airspace as an intentional provocation during strikes on Ukraine.",
+   "updated": "2026-11-20",
+   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPUjgyUzVNS2p0cXlUZXFVbWUwcXhfSjRPcXNBc0MtQy1OVktwTEV0WHNIaU1Kd0ZfQ3ZETXB6RlZ1RS1Mc085TFdSVUljbzNJN2R2a2ZIcVA1ZHFaRTlja0NxUDJPZVhqR0ppa2VUOGFrQ3JUbEtROFRlR3BiXzYwZ2VQTV84dWZpTmxxNHNES0c1VHE0VnJZY0tubHk?oc=5"
   },
   "PRK-RUS": {
    "a": "PRK",
@@ -3303,6 +3318,22 @@
    "note": "India and Japan agree to enhance military and defense industry cooperation following bilateral delegation talks.",
    "updated": "2026-11-20",
    "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPbTJvWU1BWS1PYVc4VzAzS1FxdWF2QUNfSXJzbFEwWGRIM0wwZGpqSnQxZDg2Q1oyaUo5RkZLUDhZNEhxUWxxemxXZTc0bkdseE5aV19aRUNKZFpjckRORl9vaEF1V3JhWXlSUDVaZGFWTXdiOGxPdVBDYVo4UFVYWnN1cEw3RmxrOWpvcmdITzVkSkVRVUF3VTZzWkpxLTBTejE5TVd3S2JhNUxPOGI2c3Iyd0kta0FlVWlxdENCcDA4YjdrS2hHTE5R?oc=5"
+  },
+  "DNK-RUS": {
+   "a": "DNK",
+   "b": "RUS",
+   "s": "H",
+   "note": "Denmark expels Russia's military attaché and restricts visas following an alleged murder plot.",
+   "updated": "2026-11-20",
+   "source": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNSG9fUGR3V3dUQ3lMUlRKWG1oRTJMclNoMVRkeVNQZTVwdFRCWWY3WHUyU2h5dnRJMlgzLWM4OS1zamtqMXVoR2U4U256MTZYVjljLWVlZmh5V21YdDFHaUEzZ19ELWJXemFfaDFHSm42WThENUR0NDBCYXlMR3djTS1lQmt0R0JUTUc2anFDWUhlNllBVzNCNFM3SVFXVHJ5a3ozNEJzd1RnVEFVNDV6Z0YxS1pKajZFNW5tMXFmVFBHbW9SdHVMNFZZWHBrRGJN?oc=5"
+  },
+  "DEU-QAT": {
+   "a": "DEU",
+   "b": "QAT",
+   "s": "F",
+   "note": "Germany and Qatar sign major security and military cooperation agreements during the Emir's visit to Berlin.",
+   "updated": "2026-11-20",
+   "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdVFURHROT01oZWJoOFpBeTduS2tTMHN1ZjZTekZ3Vk0ybzB3YTNsYWVJVVpnWFJlSkRDQjF4ZGZaa1FLM01nVFJKMHVKXzlGaF9nc0Q2ZlBRM0VkV1AteHZTLU5FUkR1YWlzQ3ZjS2x5Qjl2RHNsaWxjRVpiQUVuekE2TnFCdHFmeTF2MU0tYzcwS1d4ZlRSaHd0X0ZFVEtsSS00bmdWQ1lZbUZPal8xbWJ0a0xjc2Nf?oc=5"
   }
  },
  "threads": {
@@ -4010,7 +4041,7 @@
    "source": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPYTN2V0M4MVhEeU5kVDJvVnhVMllLamMzLWpRNjVXb2pnM3h2ZG9uZTFEM3hURmFBYVFVMnZ5MzBISzVOQjBKbDhfaWxrWFBPMmkwYnVhQUdFUVNWMzBfWWx6R3BQLUVYelpSR2E5MEw3MGZEeGU3LVpaT1JrMTl4XzJmVlFoZ013Z0JFVmFoU0luY0NfNWxZQV9tTVEtclRuWGdGQ0NZQWZlOFNJTFhOLWl2LXZmMmdyUkV5dWZ1TEEza0oxalRiNEljRzExLVpKWUk3dnlQeDZhdVhX?oc=5"
   },
   "DMA": {
-   "nextelec": "general, December 2026",
+   "nextelec": "General election, December 2026",
    "updated": "2026-11-20",
    "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNT05DSWRMU2o0VjUxOXNRbkF3S0RPdGF6QUg3ellnZnBqbHAxOUVOZjNodkl2Z2xFRGpEZjA3ZVFLd0hJRDZaR3NnRS1EdFB5VW54Q1VBX18wNFRmdkNmUHhPSno2UTFLVEVlek5fS3k3YkJhbDlhS2FvZVpxY3lPeDk2SXM2bS1FQlo3cmZxUmdnZGdwcnNta3VRNlFYNF8wSW15c1pkeDJqdGNRSjh0eWtFbVlPdUQwOGdvRw?oc=5"
   }
