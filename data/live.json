@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-21T13:18:36Z",
+  "lastRun": "2026-11-21T21:15:10Z",
   "log": [
    {
     "date": "2026-11-21",
@@ -41,8 +41,23 @@
       "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZEtjYXhpSXAyVXNudUMxcmlZZGxFV3J4QXRBaThKWklnbTQ0TjBTTzNhak50QzFwTEstdDlMMHRrMW9xZFg1QlBKOVBSM1AtaTFrRnY5b1gtVFdXUHQxcWVLZDdJcldRbkc4Z2pkdnFJYnk5UXZTdk0wS2NxVWRReGJkWlMtdmFXalppdXowUm93ZUo2R1J4eHVER2NzNW8?oc=5"
      },
      {
+      "label": "Peru–Thailand",
+      "change": "Normal → Partner: Signed a bilateral Free Trade Agreement (FTA) to eliminate tariffs",
+      "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMVJrTTN2QWFDajYwN1ZidTFGdHpJYnhtbFBwVGZqWHpiRWg2V3piYmszdVRlcHJVMEdZOTcyeks3ZWd6UDlKSGF5WDB2UF9TUDNpa1VYNk8zUXFtNkU4SVpVTkVXVWYxNFdhaDVxTDdqRF9IVlFTQkdnMW80MWdVRENJVnU?oc=5"
+     },
+     {
+      "label": "Egypt–Democratic Republic of the Congo",
+      "change": "Normal → Partner: Signed a bilateral disarmament cooperation deal",
+      "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZnEwd0ZhMUl1WmVUMVdMeW9HVmNYeHpoNGpLdXhvY3dDM1dhNEVGN1F5UjhLendqakxSLU82dzJtOVZWYXFPb1pwQkRMUTZkaEpfdm5WOUdLTWh6ZkZ5MjE1WmhCQ2dpX0xVZmlhbVB1X2sydjE4TXBiRTJRVGFPLWtDUEd2ZUpOY01fam93?oc=5"
+     },
+     {
+      "label": "Algeria–Morocco",
+      "change": "Hostile: Algerian forces kill two Moroccans near the border over drug smuggling allegations",
+      "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRTNvc1dRS1JndlRvMGpFcURiWTdNM21EeE9RU2FxSEZKbXJFQXNRYXB0MU5qV3FzSWRzdFJxaWYxRVhVVWlGdlNzbThFV3Z3S1ZPXzJETUpvUTd3RFU1ZUR1Y2JtQ2xPRWQ5VDhqM3h0aUJTQWYxMXpFR2E4cHB4QWhicFhnOEtXaVhZLUF1N29jQzJ5aXp4a1JzeDBmcDFjaEx4QnJ0VExpdTdlRlg1YWNnSEJodElkbFE?oc=5"
+     },
+     {
       "label": "Dominica",
-      "change": "Scheduled general election for December 2026",
+      "change": "Upcoming general election announced for December 16, 2026",
       "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNT05DSWRMU2o0VjUxOXNRbkF3S0RPdGF6QUg3ellnZnBqbHAxOUVOZjNodkl2Z2xFRGpEZjA3ZVFLd0hJRDZaR3NnRS1EdFB5VW54Q1VBX18wNFRmdkNmUHhPSno2UTFLVEVlek5fS3k3YkJhbDlhS2FvZVpxY3lPeDk2SXM2bS1FQlo3cmZxUmdnZGdwcnNta3VRNlFYNF8wSW15c1pkeDJqdGNRSjh0eWtFbVlPdUQwOGdvRw?oc=5"
      }
     ]
@@ -1458,7 +1473,7 @@
     ]
    }
   ],
-  "summary": "Tensions remain high in the Gulf of Finland following a drone strike on a Russian vessel, two oil tankers were attacked near the Strait of Hormuz, Japan and Saudi Arabia expanded crude storage agreements, and Guyana reaffirmed its refusal to negotiate border claims with Venezuela."
+  "summary": "Peru and Thailand sign a landmark free trade agreement, Egypt and the Democratic Republic of the Congo sign a disarmament deal, and Dominica schedules a general election for December 2026."
  },
  "relations": {
   "DNK-USA": {
@@ -2313,9 +2328,9 @@
    "a": "DZA",
    "b": "MAR",
    "s": "H",
-   "note": "Tensions escalate as Algerian President Abdelmadjid Tebboune warns of military strikes against drug trafficking sources in Morocco.",
-   "updated": "2026-11-16",
-   "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQQnJZOVA3U0RXRjJkTlU5dnhBZ3loSEc2Q3FuaDRzNEdoQVBlbHo5RnpQWUVyMnBkYkxhRGdRZjVqU3VfSDNBRE9jYTAxVlZNLVRxUGRiS09VQTNLMHVqRGZaY0NDeXR0Z09rdWw3N3ZmTU1CdUx3NGwxUVp2ODZpSG9zLXNzTVp6QkFYc0htbGlPbW1OM2dGT25RQmM0UnlfeTh2Z0ZSZGVJQklTWmtUc041ZV9tRDd4R3BPQTFveUd0bGhvMnVaRVVXS2tRV0U?oc=5"
+   "note": "Tensions persist as the Algerian army kills two Moroccans near the border over alleged drug smuggling.",
+   "updated": "2026-11-21",
+   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRTNvc1dRS1JndlRvMGpFcURiWTdNM21EeE9RU2FxSEZKbXJFQXNRYXB0MU5qV3FzSWRzdFJxaWYxRVhVVWlGdlNzbThFV3Z3S1ZPXzJETUpvUTd3RFU1ZUR1Y2JtQ2xPRWQ5VDhqM3h0aUJTQWYxMXpFR2E4cHB4QWhicFhnOEtXaVhZLUF1N29jQzJ5aXp4a1JzeDBmcDFjaEx4QnJ0VExpdTdlRlg1YWNnSEJodElkbFE?oc=5"
   },
   "IRN-YEM": {
    "a": "IRN",
@@ -3356,6 +3371,22 @@
    "note": "Guyana rejects bilateral border negotiations with Venezuela over the Essequibo territory following the 1899 Arbitral Award.",
    "updated": "2026-11-21",
    "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZEtjYXhpSXAyVXNudUMxcmlZZGxFV3J4QXRBaThKWklnbTQ0TjBTTzNhak50QzFwTEstdDlMMHRrMW9xZFg1QlBKOVBSM1AtaTFrRnY5b1gtVFdXUHQxcWVLZDdJcldRbkc4Z2pkdnFJYnk5UXZTdk0wS2NxVWRReGJkWlMtdmFXalppdXowUm93ZUo2R1J4eHVER2NzNW8?oc=5"
+  },
+  "PER-THA": {
+   "a": "PER",
+   "b": "THA",
+   "s": "F",
+   "note": "Peru and Thailand sign a Free Trade Agreement (FTA) to expand bilateral trade and eliminate tariffs.",
+   "updated": "2026-11-21",
+   "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMVJrTTN2QWFDajYwN1ZidTFGdHpJYnhtbFBwVGZqWHpiRWg2V3piYmszdVRlcHJVMEdZOTcyeks3ZWd6UDlKSGF5WDB2UF9TUDNpa1VYNk8zUXFtNkU4SVpVTkVXVWYxNFdhaDVxTDdqRF9IVlFTQkdnMW80MWdVRENJVnU?oc=5"
+  },
+  "COD-EGY": {
+   "a": "COD",
+   "b": "EGY",
+   "s": "F",
+   "note": "Egypt and the Democratic Republic of the Congo (DRC) sign a disarmament cooperation deal to enhance regional security.",
+   "updated": "2026-11-21",
+   "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZnEwd0ZhMUl1WmVUMVdMeW9HVmNYeHpoNGpLdXhvY3dDM1dhNEVGN1F5UjhLendqakxSLU82dzJtOVZWYXFPb1pwQkRMUTZkaEpfdm5WOUdLTWh6ZkZ5MjE1WmhCQ2dpX0xVZmlhbVB1X2sydjE4TXBiRTJRVGFPLWtDUEd2ZUpOY01fam93?oc=5"
   }
  },
  "threads": {
