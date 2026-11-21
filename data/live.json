@@ -1,7 +1,32 @@
 {
  "meta": {
-  "lastRun": "2026-11-20T18:28:42Z",
+  "lastRun": "2026-11-21T02:59:01Z",
   "log": [
+   {
+    "date": "2026-11-21",
+    "items": [
+     {
+      "label": "Canada–United States",
+      "change": "Note updated: US Defense Secretary restricts military cooperation with Canada",
+      "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPLThpNHAzbEIyTzc1LWo2X29EZ2Z2bXk0NUZRMXJJVkVCazVaSVFnNmlkLUFJeG9IRWYwaUhvTUZ1TGNoM2p0RE5wMEVpcEdpVkhnWFVtblVMMFRrbmdGLXZxOFU1M2FHbTJiM1ZadUhIeHhtbGpMWFNiTjU1MF9tYnVOclJ3NFFUcXY0OW5mNFNUckxmMW9fQjBveHZUTExLU1g1a2Raa19FVkhkWDJhSDN1WDJIeVJnTC1uNTl3?oc=5"
+     },
+     {
+      "label": "Cambodia–Rwanda",
+      "change": "Normal → Partner: Signed three cooperation agreements on trade, tourism, and aviation",
+      "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdkxwLUdHaG55UXlCVnV6NS1Ia0V1bUExazVqMWR2dy1hYWNKY2ZTSndMMnR3LV9lVGJoZTRrN2FteW92WUpvUnZpZFpCbkRQZnNQLWRVT3R5VUdXaXZ5VDlKNll1WHAwM01QSUo2U19JME53d3BlM21uT1EwV2gySjBOUS1MclAtcjZHT3hwempCYUZnRnhuSC1kRkl5Vkdta2xnd1ZUcE9EMDBQc3hPcXlpMUltUmdlR29Hc0llSTdjTXFBemd4ZkhR?oc=5"
+     },
+     {
+      "label": "Germany–Qatar",
+      "change": "Note updated: Qatar pledges €15B investment in Germany during Berlin summit",
+      "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQMmlPNUNYemJEVlkyLU13RnBGNjNsOW0wY1UtaGhtdG9YZ05zcU9JNnBrRTg2dUlJR1NkeWlER2F2cnJSdXVSVWZKaGZVOU16STY3MUVOeXZjY2NmV1NiWEZYVllhMFdyMnpuQVZZekpSQkdGVUJBM19wTGdOUlN0M0gteUd5WEk?oc=5"
+     },
+     {
+      "label": "El Salvador",
+      "change": "Nayib Bukele launches campaign for third presidential term",
+      "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSDFfeUhtM0QzNk9jaXljUFB0YXpXcjBfWl83WWdMMGJJMGFvRDFEak5iTkJlM1ZtVE8tZDZMOWZvN3M2ZnN4cjZ3YXZvVUVjenBYQzlYOTI3QzRfNWFXWWFiZU1nRnI4QlFGNjRyb0pBczE2N0x6SDhpRGk5bzAxNGNOdVJWaXhfSXNHekxBUnl6bGtZaXY4QWx4SjY4b2tvenV3c2x2SWpFU201dzlxWG12dw?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-11-20",
     "items": [
@@ -1411,64 +1436,9 @@
       "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMWJjRHNmZGV2b3ZXTmVubklGd1liVVBlc2xzR3RCUWZJcXJ4UGo2QzFPcVhFSmZGTVA0V05kWnp4bEJTWVJYYWVjXzFqRVNXaENzbUprNUlxSHVmTWs0WGlMOVNrWVJ1Mno4ZXdGUXEwcDhjdEljXzh2bTFmVXh5WjdxZHVkaWIzcXAzeHBhNTBHWGlaaHZsZVEydnZhVXk3SUxVc2x4eUZpZm1K?oc=5"
      }
     ]
-   },
-   {
-    "date": "2026-10-22",
-    "items": [
-     {
-      "label": "Australia–East Timor",
-      "change": "Partner: new defence and cybersecurity agreement signed",
-      "source": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOdzM1WWluOFNJMTV2WmN4TVhJc0dQOXFkaGNpYk9hVEtMUTdQRUNuaU9DZU9Ed0xQcUVwQXk2WldMemxYWjh4clh0STJTZDZpYmVSbE10ZUxxdEpPUy05eFdwSjVyTU05ZU9HQjJlMnNwR3VlbHJTdWNnNy1uQzN5Mk8yUktqN1BnczQ4UWJiMmkzV2FuUjhFbVNlWjdWYWhjb3F0Q3ZmcDVPOElyS1Fzbi1GQkZlc1VwRDZYeHpCVVhpTUFwb24zZ05wMjQ5UnFFMVBpelQ2VW0zN3NQYktyeDU5ZUlEWFF6SGJkNlczVUhLci1BQ1E?oc=5"
-     },
-     {
-      "label": "El Salvador–Haiti",
-      "change": "Normal: El Salvador launches military operation following gang attack",
-      "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaFlEUDZDeTkwaUxqVFFsUHZvQkJDd3U3R2NqZDY0bmE1ZDg1dE9EVUgzV3g5ZHlkcWs2UXRETmxERkd5dEZxM0ZoWk5JUWJJNGZmNUlNcUNTbllpdW1jS1RFVDdYVk4xajNuTUtZaWFLNUZzeWdFNVdpeVFkdHplZGxFVkJvNUZmR2JqS3NHeTFGQmI3aUlONmVITVJURG4yODdRMUVndzAzUlI0N1ljVFNidWN5SzEwd0RERGdkQXJBLWlh?oc=5"
-     },
-     {
-      "label": "Argentina–United Kingdom",
-      "change": "Note refreshed: Argentina rules out military force over Falkland Islands",
-      "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaE05bE1SaE9ieUFobXN4cXVnczRDeTdGbG1zQi1talFUV1Nnc2FScUYtSWJxQkpKaEhKUGl6bmZBcTRXR0M2OE10Uy1id1pORFlZOERQS2ZRUzNHVmJha2V3enJ1MkJxLWd0dmR4d2pjNUdIOEtTcnNUeVY2d2JWMll3aDZiTDhEck1MM1R3UHhQUHdwdnJnZUIyVm4zUWZGUkY5X2NqSDRWYkVw?oc=5"
-     },
-     {
-      "label": "Iran–Iraq",
-      "change": "Note refreshed: Iraq closes Al-Shib border crossing under US pressure",
-      "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUkJYZEdfa295eTZMRUJYTUFDQzJlbHJUcDc1Y0NydmNZQU1oQjhzWFBEVDNoWWxyeG5CZVJVOWx4OE5JMWZDZlotdF9CeDlnVjEwVWwtZ24tSWNrSVdSWExYdHpPNGxuZnVGajhkUFgyU3JxQUlSa053d1FORzliR1hmdkpMOHN6b3JxWDhRQ0VYcDBGaXZRc29CMmNhNEplQjFJUGpYSG5leU1KTFRpaQ?oc=5"
-     },
-     {
-      "label": "Russia–Ukraine",
-      "change": "Note refreshed: Russia strikes Kyiv while agreeing to November peace talks",
-      "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPS2Nuc1BSZVdvcEtQZFowTktxemJJMEptN3ZhWmVLMnhaSllnZTNIcE9qeEYyZ0c2SURtY254SUJvUEJiUXFiSExkSkJBRVpSY0Z6NFFnM3QweDBfTklYNEMzWWRkc21YYnNqalozSTBTaTFNZVQtRkRhalBOOER0Y2VQUnpTZk1aaTNwU252X01qMkw5Ym5sMA?oc=5"
-     },
-     {
-      "label": "North Korea–South Korea",
-      "change": "Note refreshed: North Korea readies border loudspeakers after DMZ incidents",
-      "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUVlxNzM2bHM2ako0T2ZZdHlxSy1LUnJIWTFXYlY4eUpCaHpKdkZRbFQ4WnB2VXJ6QWxIdUZGSVJISGFYZDUyaE1DN1FLVEV3OVB5V0RYRTI1MjlRQnpOcmNQUXlid213OEF4QW00YlRTSVNhY2dJcktPUWNOaXZZRUpTYlNoRXBYRU9NcVo2V19KeE5xQUVrdHM0dWYxZGRtdmVNdHJWa3Zzblc5eExmLWlkbVIxUQ?oc=5"
-     },
-     {
-      "label": "Bulgaria",
-      "change": "Upcoming election logged: presidential election in October 2026",
-      "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQOUp6SnhKcDJmT0FZVmNzR0FQcUlhZk5CdEZGS2VGbGE2cXFCQk5GbEE5czh0OEpQWGM0YmpvbmdTR3l5MXV5cnpPVWxzQzRwOUQ4eGxEeXJLT2o3NHdraXFpLWE4UDM5X0lnN2doeWxZTnJOdS15SXNtbE1iNzhCeHg5alBuQW1KeDVya1RPRElEUDE3?oc=5"
-     },
-     {
-      "label": "Saudi Arabia–United States",
-      "change": "Partner → Tense: US orders partial diplomatic withdrawal amid Houthi attacks",
-      "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQOGZ2VEpSaUZoaWQwZHVVek1fYUJpT25DU2RIaU5mWWFVTkJZa3p1bTRXZHE1SlRTb2pMS3pOZEVKQU10MkpSeHNfY0h1Ul9PdGYxdFNvTzBWQWVidnJfTTJYUC12NjM3S01namtXWmVjcll5elY5ODVIVXlKejNKbWZ1d2xPS0YxOG9EcUdFb0hxYlBhWHBRSkJkWkhTU2pqT3ZPdFNyT3dYMTBsRm83d2Rn?oc=5"
-     },
-     {
-      "label": "Canada–Turkey",
-      "change": "Normal → Ally: Elevated to strategic partnership",
-      "source": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxONl9TbDhKQ3NjZU1wQVZSamFHbmstN0VjOEFqUFBMZ2daTTg0WEt3WEFJRVRMQnNHV1VFTm41MVoza05CNkZPX3NMcTFxVld4LTFyd1ZEN1BHdGQ3SDJ1eEdDb3NoekJodHRCV3FDVEtXaE1ra2dCYUZmSThrVUZicmR3N3Q2YTJMeFFmTEtfR3YyWVVySVlSNVVWXzRJM3BGTDBxV3N5NWJHQkc4RFNCMGhmNGs2Y2J4OUNGYUJGWnplUU5MYk1SVHFmVkREMnJ6OEZMMlZhaGdTdEtmWDFOX19EaTdneGhJMXY0?oc=5"
-     },
-     {
-      "label": "Spain–Italy",
-      "change": "Tense → Partner: Resolve border dispute and reinstate full Schengen travel",
-      "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQR0ZYSk1ZUUVtU1F0RFhMb243YWZ2VFJSVGs4bHZnVEUyeENFWUZQU0JNQ09Ea1dqb1JPWmIwa2xQN3d1SjVDc2NQQVkwM0xGYnA0RVNNZmw1bURRMWFPc3hwUkZRX2dLSk9SQnBvU2RadjhaZkVhOFY4OXBfRW44MUxGYmZUbWt5TVJhazFPcS04SHEy?oc=5"
-     }
-    ]
    }
   ],
-  "summary": "Denmark expels a Russian military attaché over an alleged plot, Germany and Qatar sign a bilateral security pact, and Poland condemns Russian missile incursions into its airspace."
+  "summary": "The United States restricted defense ties with Canada, while Cambodia signed trade agreements with Rwanda, and Qatar pledged major investments in Germany."
  },
  "relations": {
   "DNK-USA": {
@@ -1819,9 +1789,9 @@
    "a": "CAN",
    "b": "USA",
    "s": "T",
-   "note": "NATO, NORAD and USMCA partners; tensions persist over tariffs under Prime Minister Mark Carney.",
-   "updated": "2026-10-23",
-   "source": "https://www.wikidata.org/wiki/Q16"
+   "note": "United States (US) Defense Secretary restricts military cooperation with Canada amid ongoing tariff and trade friction.",
+   "updated": "2026-11-21",
+   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPLThpNHAzbEIyTzc1LWo2X29EZ2Z2bXk0NUZRMXJJVkVCazVaSVFnNmlkLUFJeG9IRWYwaUhvTUZ1TGNoM2p0RE5wMEVpcEdpVkhnWFVtblVMMFRrbmdGLXZxOFU1M2FHbTJiM1ZadUhIeHhtbGpMWFNiTjU1MF9tYnVOclJ3NFFUcXY0OW5mNFNUckxmMW9fQjBveHZUTExLU1g1a2Raa19FVkhkWDJhSDN1WDJIeVJnTC1uNTl3?oc=5"
   },
   "IRQ-USA": {
    "a": "IRQ",
@@ -3331,9 +3301,17 @@
    "a": "DEU",
    "b": "QAT",
    "s": "F",
-   "note": "Germany and Qatar sign major security and military cooperation agreements during the Emir's visit to Berlin.",
-   "updated": "2026-11-20",
-   "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdVFURHROT01oZWJoOFpBeTduS2tTMHN1ZjZTekZ3Vk0ybzB3YTNsYWVJVVpnWFJlSkRDQjF4ZGZaa1FLM01nVFJKMHVKXzlGaF9nc0Q2ZlBRM0VkV1AteHZTLU5FUkR1YWlzQ3ZjS2x5Qjl2RHNsaWxjRVpiQUVuekE2TnFCdHFmeTF2MU0tYzcwS1d4ZlRSaHd0X0ZFVEtsSS00bmdWQ1lZbUZPal8xbWJ0a0xjc2Nf?oc=5"
+   "note": "Germany and Qatar deepen strategic partnership as Qatar pledges 15 billion euros in investments during the Emir's Berlin visit.",
+   "updated": "2026-11-21",
+   "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQMmlPNUNYemJEVlkyLU13RnBGNjNsOW0wY1UtaGhtdG9YZ05zcU9JNnBrRTg2dUlJR1NkeWlER2F2cnJSdXVSVWZKaGZVOU16STY3MUVOeXZjY2NmV1NiWEZYVllhMFdyMnpuQVZZekpSQkdGVUJBM19wTGdOUlN0M0gteUd5WEk?oc=5"
+  },
+  "KHM-RWA": {
+   "a": "KHM",
+   "b": "RWA",
+   "s": "F",
+   "note": "Cambodia and Rwanda sign three bilateral agreements to expand trade, tourism, and aviation cooperation.",
+   "updated": "2026-11-21",
+   "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdkxwLUdHaG55UXlCVnV6NS1Ia0V1bUExazVqMWR2dy1hYWNKY2ZTSndMMnR3LV9lVGJoZTRrN2FteW92WUpvUnZpZFpCbkRQZnNQLWRVT3R5VUdXaXZ5VDlKNll1WHAwM01QSUo2U19JME53d3BlM21uT1EwV2gySjBOUS1MclAtcjZHT3hwempCYUZnRnhuSC1kRkl5Vkdta2xnd1ZUcE9EMDBQc3hPcXlpMUltUmdlR29Hc0llSTdjTXFBemd4ZkhR?oc=5"
   }
  },
  "threads": {
@@ -3352,11 +3330,11 @@
     "SYR",
     "ARE"
    ],
-   "d": "Houthi forces claim control of districts near Aden and launch renewed attacks against Saudi oil infrastructure and Red Sea shipping.",
+   "d": "Houthi forces launch ballistic missiles at Riyadh, prompting Saudi coalition air strikes on weapons smuggling targets in Hodeidah.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBRQ2J3c0ZPT3pMRXVyV0w2QmQzczh2NGVCUktnSzhPbjVhVktmczluTlVna3VRQno3Y092amtxcFhlVWEtNWs2RUZCNk9DYzdneFZqNWVjR1lBOEd2QUd2UHkzY04wX2l0YzZEd3VB?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPV2s2d2xVNlpZamM1RXpfRURTUFM4eFhHeFBkQVp6TTlLTXZWMjB5WFEwcF8wQ2dqR3U5SDd2VUNKdm1uV2RfV256RHUzUS1ZQWZJdnNlRmJtemxFeUZLR2tLWXhza2EwOVBWUEVPeUJ2VG9aV0R0RjVSWU1wVG8zU3p4RWJQMmhDcjdKOF9XZXBMQQ?oc=5",
    "t": "security",
-   "updated": "2026-11-17"
+   "updated": "2026-11-21"
   },
   "afpak-jihad": {
    "t": "security",
@@ -3903,9 +3881,9 @@
   },
   "SLV": {
    "lastelec": "presidential, February 2024, Nayib Bukele",
-   "nextelec": "Presidential, February 28, 2027",
-   "updated": "2026-10-01",
-   "source": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNXFXa1c5U05DZHNINV9rcExET0NiRnFoaEkyczUyUjNIUi1pa1psaVEyQ1hUR2JvYllsUkxPQnRJWTlxdnV0QmFQTjE3d3A3RXdQLTkxU0hWaVR1MW5vUlZJUmxSSHVLWUFWdlJVbk91X1I5NnVZaWZ6aXk0NmRxa1ZDdk92UnhxNFIxUFVLVkE1TVhhelU5SW9ueThycGJfZG1LZmZRVmhXQnlKMFl5cVBDa1BqblRMODYwZWV6UFZEaHF5aFRfVml6UUtJZzNp0gHWAUFVX3lxTE5XWVRjcFRCQXdGWEktQ3Y0Zi1ZeXgyQWo1bUdIVlFNTkdReU1jWEQ4MkhYNnRTNGM1MGxDWHJndjM0bUU2WThEWElkYUhER2tpUE1Za2sxWjVldkhkRllGWDlUcjlpVXUxSVFpaTFfOE8tTlpjamRJaUhNZnJqVDZ3bmlacF9iS2NqbWpZcGktT29ZbjJ2bHBETUlqZXJPVVhQNkhwNnZmdERQczl6dWw3MWctSDdfQ0R2VzlEV2VQSHdDYkx6Snh2cVYxM3gtLThOalNpX3c?oc=5"
+   "nextelec": "presidential February 2027",
+   "updated": "2026-11-21",
+   "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSDFfeUhtM0QzNk9jaXljUFB0YXpXcjBfWl83WWdMMGJJMGFvRDFEak5iTkJlM1ZtVE8tZDZMOWZvN3M2ZnN4cjZ3YXZvVUVjenBYQzlYOTI3QzRfNWFXWWFiZU1nRnI4QlFGNjRyb0pBczE2N0x6SDhpRGk5bzAxNGNOdVJWaXhfSXNHekxBUnl6bGtZaXY4QWx4SjY4b2tvenV3c2x2SWpFU201dzlxWG12dw?oc=5"
   },
   "NZL": {
    "nextelec": "general, Nov 2029",
