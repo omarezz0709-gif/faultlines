@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-21T02:59:01Z",
+  "lastRun": "2026-11-21T13:18:36Z",
   "log": [
    {
     "date": "2026-11-21",
@@ -24,6 +24,26 @@
       "label": "El Salvador",
       "change": "Nayib Bukele launches campaign for third presidential term",
       "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSDFfeUhtM0QzNk9jaXljUFB0YXpXcjBfWl83WWdMMGJJMGFvRDFEak5iTkJlM1ZtVE8tZDZMOWZvN3M2ZnN4cjZ3YXZvVUVjenBYQzlYOTI3QzRfNWFXWWFiZU1nRnI4QlFGNjRyb0pBczE2N0x6SDhpRGk5bzAxNGNOdVJWaXhfSXNHekxBUnl6bGtZaXY4QWx4SjY4b2tvenV3c2x2SWpFU201dzlxWG12dw?oc=5"
+     },
+     {
+      "label": "Finland–Russia",
+      "change": "Hostile: refreshed note on Gulf of Finland drone attack and maritime traffic restrictions",
+      "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNckdVWS12SlNybjQyM09OeDRpY1pUN042NHpYMWNtS1BFNjRGM21ZRGVrdkRuZl9lNHlPZi01Um1ZS0xHZ1dwcUNGQ09mOUs5elIwaXpVZnFqWUc0RUNBcG0wRlE2bWVfcXUyQm0xVlRTaEVEVmJUU05RSmgwMkYwSGM2aDI5ekE3dktId0N4UHpjYjR6?oc=5"
+     },
+     {
+      "label": "Japan–Saudi Arabia",
+      "change": "Partner: added pair following deal to store 16 million barrels of crude oil in Japan",
+      "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQV3daVXZJZUs4X2l0RHd0S1RMdVBjaVRqSGlOOU5EcTlqdktWVUVCSXBaR0sxazNwTmxUTWlsbFAzbjFBcWtPcl8tTk1uSUtGcjNvUDNYSGh3ZDM4anFCVl9RZWhaUi0tclBFMHRodUl2aUdmZjhkM2NJWTI0eGd0Z21OX2xwR0lSeGlTWWZKU1VVZEY5b1lPRVpXcFl4OG5FWjdUbmVQMmRaSXRpdm9wSw?oc=5"
+     },
+     {
+      "label": "Guyana–Venezuela",
+      "change": "Hostile: refreshed note on Guyana refusing bilateral border talks over Essequibo",
+      "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZEtjYXhpSXAyVXNudUMxcmlZZGxFV3J4QXRBaThKWklnbTQ0TjBTTzNhak50QzFwTEstdDlMMHRrMW9xZFg1QlBKOVBSM1AtaTFrRnY5b1gtVFdXUHQxcWVLZDdJcldRbkc4Z2pkdnFJYnk5UXZTdk0wS2NxVWRReGJkWlMtdmFXalppdXowUm93ZUo2R1J4eHVER2NzNW8?oc=5"
+     },
+     {
+      "label": "Dominica",
+      "change": "Scheduled general election for December 2026",
+      "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNT05DSWRMU2o0VjUxOXNRbkF3S0RPdGF6QUg3ellnZnBqbHAxOUVOZjNodkl2Z2xFRGpEZjA3ZVFLd0hJRDZaR3NnRS1EdFB5VW54Q1VBX18wNFRmdkNmUHhPSno2UTFLVEVlek5fS3k3YkJhbDlhS2FvZVpxY3lPeDk2SXM2bS1FQlo3cmZxUmdnZGdwcnNta3VRNlFYNF8wSW15c1pkeDJqdGNRSjh0eWtFbVlPdUQwOGdvRw?oc=5"
      }
     ]
    },
@@ -1438,7 +1458,7 @@
     ]
    }
   ],
-  "summary": "The United States restricted defense ties with Canada, while Cambodia signed trade agreements with Rwanda, and Qatar pledged major investments in Germany."
+  "summary": "Tensions remain high in the Gulf of Finland following a drone strike on a Russian vessel, two oil tankers were attacked near the Strait of Hormuz, Japan and Saudi Arabia expanded crude storage agreements, and Guyana reaffirmed its refusal to negotiate border claims with Venezuela."
  },
  "relations": {
   "DNK-USA": {
@@ -3312,6 +3332,30 @@
    "note": "Cambodia and Rwanda sign three bilateral agreements to expand trade, tourism, and aviation cooperation.",
    "updated": "2026-11-21",
    "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdkxwLUdHaG55UXlCVnV6NS1Ia0V1bUExazVqMWR2dy1hYWNKY2ZTSndMMnR3LV9lVGJoZTRrN2FteW92WUpvUnZpZFpCbkRQZnNQLWRVT3R5VUdXaXZ5VDlKNll1WHAwM01QSUo2U19JME53d3BlM21uT1EwV2gySjBOUS1MclAtcjZHT3hwempCYUZnRnhuSC1kRkl5Vkdta2xnd1ZUcE9EMDBQc3hPcXlpMUltUmdlR29Hc0llSTdjTXFBemd4ZkhR?oc=5"
+  },
+  "FIN-RUS": {
+   "a": "FIN",
+   "b": "RUS",
+   "s": "H",
+   "note": "Finland restricts maritime traffic in the Gulf of Finland after a Russian cargo ship catches fire following a drone strike.",
+   "updated": "2026-11-21",
+   "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNckdVWS12SlNybjQyM09OeDRpY1pUN042NHpYMWNtS1BFNjRGM21ZRGVrdkRuZl9lNHlPZi01Um1ZS0xHZ1dwcUNGQ09mOUs5elIwaXpVZnFqWUc0RUNBcG0wRlE2bWVfcXUyQm0xVlRTaEVEVmJUU05RSmgwMkYwSGM2aDI5ekE3dktId0N4UHpjYjR6?oc=5"
+  },
+  "JPN-SAU": {
+   "a": "JPN",
+   "b": "SAU",
+   "s": "F",
+   "note": "Japan and Saudi Arabia expand energy cooperation, agreeing to store 16 million barrels of crude oil in Japanese facilities.",
+   "updated": "2026-11-21",
+   "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQV3daVXZJZUs4X2l0RHd0S1RMdVBjaVRqSGlOOU5EcTlqdktWVUVCSXBaR0sxazNwTmxUTWlsbFAzbjFBcWtPcl8tTk1uSUtGcjNvUDNYSGh3ZDM4anFCVl9RZWhaUi0tclBFMHRodUl2aUdmZjhkM2NJWTI0eGd0Z21OX2xwR0lSeGlTWWZKU1VVZEY5b1lPRVpXcFl4OG5FWjdUbmVQMmRaSXRpdm9wSw?oc=5"
+  },
+  "GUY-VEN": {
+   "a": "GUY",
+   "b": "VEN",
+   "s": "H",
+   "note": "Guyana rejects bilateral border negotiations with Venezuela over the Essequibo territory following the 1899 Arbitral Award.",
+   "updated": "2026-11-21",
+   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZEtjYXhpSXAyVXNudUMxcmlZZGxFV3J4QXRBaThKWklnbTQ0TjBTTzNhak50QzFwTEstdDlMMHRrMW9xZFg1QlBKOVBSM1AtaTFrRnY5b1gtVFdXUHQxcWVLZDdJcldRbkc4Z2pkdnFJYnk5UXZTdk0wS2NxVWRReGJkWlMtdmFXalppdXowUm93ZUo2R1J4eHVER2NzNW8?oc=5"
   }
  },
  "threads": {
@@ -3610,11 +3654,11 @@
    "updated": "2026-11-19"
   },
   "strait-of-hormuz": {
-   "d": "Multiple commercial tankers are hit by projectiles off Hormuz and Musandam as Iranian strikes and US countermeasures intensify.",
+   "d": "Two oil tankers are attacked near Oman's Khasab port, with Iran reporting naval mine explosions in the strategic chokepoint.",
    "n": "Strait of Hormuz",
-   "s": "Tankers struck during escalation",
-   "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPdGl0X3ZfazlwMHhRbE1KOFlmRFhKQkV6eDJ1a2pKWU5fZFlXOFBRTVdTUE5fc2tVMlgxd01NQnhUUkEyMVJzTHdVOThnV2NBYk4teWRnV0pwN2Vsd1N5OFU3blhDWEQ1SWl5amtPVllGR1YtcFJmalcwdmh2R0ZxRXg1WU4wSU5qRWZuaXl6d2I5ZDMyX1d3WXc5WTRPSUxVQXVuRGtNWDdXRkwtTDA5TEpsdVhvZkcxR3ZLcHhPT1lZUUJlY3NpSDlMQk1PYzdxS1NwTXFXVTN6R3lNM3Z6MHZqT3Z0RnZIR1E?oc=5",
-   "updated": "2026-11-18",
+   "s": "Tankers struck near Khasab",
+   "source": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPMTVjbF9zUV9GY09EVWllbmJGVjJMbVZibTFjMWt6d01iUFhUMVZkNFNuVkFrX2FYQ1V2cC1XOGMyUmFWcTF3cUl3dnEtd3EzT3JkbEo0VzdNVUlWNjczQ2ZPd0Y4ZzVqaTRwTm44UTZVek9FMXZsbEZsVVpHRmk4ckEtUURKRzFNWF91eVprUXlpM00zbEUzUXgwdC1qWXRuZE0wUkxkeG81Y2hQdGpjcm1MUUp3WkJBMkRwR2g3cklNam5GZl8yX0tXNk5oTFFwaEFmd25GVHNkbXMyTlZBdmRSR3QwZHhk?oc=5",
+   "updated": "2026-11-21",
    "t": "strait",
    "lat": 26.57,
    "lng": 56.25,
@@ -4019,8 +4063,8 @@
    "source": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPYTN2V0M4MVhEeU5kVDJvVnhVMllLamMzLWpRNjVXb2pnM3h2ZG9uZTFEM3hURmFBYVFVMnZ5MzBISzVOQjBKbDhfaWxrWFBPMmkwYnVhQUdFUVNWMzBfWWx6R3BQLUVYelpSR2E5MEw3MGZEeGU3LVpaT1JrMTl4XzJmVlFoZ013Z0JFVmFoU0luY0NfNWxZQV9tTVEtclRuWGdGQ0NZQWZlOFNJTFhOLWl2LXZmMmdyUkV5dWZ1TEEza0oxalRiNEljRzExLVpKWUk3dnlQeDZhdVhX?oc=5"
   },
   "DMA": {
-   "nextelec": "General election, December 2026",
-   "updated": "2026-11-20",
+   "nextelec": "general election, December 2026",
+   "updated": "2026-11-21",
    "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNT05DSWRMU2o0VjUxOXNRbkF3S0RPdGF6QUg3ellnZnBqbHAxOUVOZjNodkl2Z2xFRGpEZjA3ZVFLd0hJRDZaR3NnRS1EdFB5VW54Q1VBX18wNFRmdkNmUHhPSno2UTFLVEVlek5fS3k3YkJhbDlhS2FvZVpxY3lPeDk2SXM2bS1FQlo3cmZxUmdnZGdwcnNta3VRNlFYNF8wSW15c1pkeDJqdGNRSjh0eWtFbVlPdUQwOGdvRw?oc=5"
   }
  }
