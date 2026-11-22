@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-22T13:10:21Z",
+  "lastRun": "2026-11-22T17:44:42Z",
   "log": [
    {
     "date": "2026-11-22",
@@ -24,6 +24,21 @@
       "label": "Bahrain–Iran",
       "change": "Tense → Armed conflict: Iranian strikes hit civilian industrial facilities and military sites in Bahrain",
       "source": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQM0xncmZ2aFVIVXNBc05rTnNlVFoxNHVIQjNVU1k5bzhoX2JPRHRnNWJiMkJ0SmNmTjJkLTVkU3Mxc3VCSkpiRzZtUGx6SE92MTVKU01VWWsxY1RjZDl3MWZ5amZCZkxjNEFnYkxYNXVBUjFfdWNrN2I2ckhmVWk0TnFHSnk3WW5fcmxqZnhoeGV0cW1Dc0JhNkYxQmc2SV9ZbnZQLW1EYkw4WXRpZW5OLVZxTkc5dWJMM1BMVUdONmNPNVJCX0VxcdIBzgFBVV95cUxOMDRQWC1ObFE1WHJLY0EzNGpBai1UZ3dKTEFCYWhwODVLeXhmdUtfVV9tZEgwOVp6T3pSMThEOHNhWHBrZzJFbVVJajFqU09ZdWxsTUNkZWhZNE9IR1lxSXh5QUJIdXdNaDEyMGdrbW9ZU0E4QTRaeERpYjJKY3ZIbnVsM2JpX0VUM3A2OWxiT2dGa2VWZThhZHpBV0VVaTF6NFZBdWdjQnFNRjZyVE95MFJ5MzU2TVk4ME9BUFdJUElqU1RYdEFlR1NkcXc5UQ?oc=5"
+     },
+     {
+      "label": "Poland–Russia",
+      "change": "Hostile: Tensions rise as Russian missiles breach Polish airspace",
+      "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPN0xjLUozN25XMXlnUGgwLWNYcy1DTDIxaW1MOUstRGd6d2pOVHV3Y09MNFo0YVE2emR3cktkWE5YOWk5VkxaUEtBZ01KWWowY29EdFlQR1EyMUR0LWVkVkJlcEk5dFEyYWVOTFRfZVNXYzZ2eTZPS1hfYk5KX1V2OFdzV2hWaGdqenVOSzlpN1pFb3R0cjg3cllzN1Bnek5rWkliS2tmNnZzQUF5TllQQUhlNUXSAbABQVVfeXFMTnZDam9DM0VITDdSeWxLdlFORG5EcEFuZzh0STlyLWE1MnB6Y3ZjRHhrbTNxb1o0Qm9sbWNaZXhnT293dVQ5OTdsNzlxUE9uNjhXZkp0Y2ducURUckZmRVpsSDNJU1VUZ1FnN2ljQ1l3Q1VKYWVpRDU4R05HS251X3RXZjJ6aXIwTGQ4RzFlU05hVzZJZFdZMVlRNldBWHBrRHFabkxlaTJQczBralVXRVk?oc=5"
+     },
+     {
+      "label": "Cyprus–Russia",
+      "change": "Normal → Tense: Cyprus expels Russian diplomats over espionage suspicions",
+      "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZkI0SjRaOHVEZVJzX1pqNWFFYzdvb2NzMnlvb3J1c3BGQjctNVRzS2FsSWREX1RKcDZVNGxFd014TUl2STVSQ3B1bG9DSkRXcktNM3hQc3MzZ1dySDdjSHpodlVHTG5KblpGME1TYk8tYkZQLVJGTVMyWFBaVUVMMUdySDdJcVg4WUt2Vjl2YW5pNXhT?oc=5"
+     },
+     {
+      "label": "Kenya–Democratic Republic of the Congo",
+      "change": "Tense → Normal: Leaders agree to restore diplomatic ties after years of friction",
+      "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQWjltRW4ydkd0UDMyTFg5T19aMnFxSDc0QUtqQlJfSDJIcXo3MFJ4TUpMWFJUbnBzQ1lUYWtWb2hKREVqajlIZm14UW5rYlZMT1JDeWQxdnVwSGNKY1paRTBfNm9ueDVjWVl2dXNEam95a1VIUTBtVkZqd2swT3JSM3d6RWZFVWVBWmdBVlpKaEo0RXpqWmY2amtNRE0?oc=5"
      }
     ]
    },
@@ -1383,7 +1398,7 @@
     ]
    }
   ],
-  "summary": "Iranian strikes hit a civilian industrial facility in Bahrain, while regional diplomacy advances with European trade deals and bilateral visits."
+  "summary": "Cyprus expels Russian diplomats over espionage suspicions, Poland calls emergency NATO talks after Russian missiles breach its airspace, and Kenya and DR Congo move to restore diplomatic ties."
  },
  "relations": {
   "DNK-USA": {
@@ -1662,9 +1677,9 @@
    "a": "POL",
    "b": "RUS",
    "s": "H",
-   "note": "Poland condemns Russian missile incursions into its airspace as an intentional provocation during strikes on Ukraine.",
-   "updated": "2026-11-20",
-   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPUjgyUzVNS2p0cXlUZXFVbWUwcXhfSjRPcXNBc0MtQy1OVktwTEV0WHNIaU1Kd0ZfQ3ZETXB6RlZ1RS1Mc085TFdSVUljbzNJN2R2a2ZIcVA1ZHFaRTlja0NxUDJPZVhqR0ppa2VUOGFrQ3JUbEtROFRlR3BiXzYwZ2VQTV84dWZpTmxxNHNES0c1VHE0VnJZY0tubHk?oc=5"
+   "note": "Tensions rise as three Russian missiles breach Polish airspace, prompting emergency NATO (North Atlantic Treaty Organization) talks.",
+   "updated": "2026-11-22",
+   "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPN0xjLUozN25XMXlnUGgwLWNYcy1DTDIxaW1MOUstRGd6d2pOVHV3Y09MNFo0YVE2emR3cktkWE5YOWk5VkxaUEtBZ01KWWowY29EdFlQR1EyMUR0LWVkVkJlcEk5dFEyYWVOTFRfZVNXYzZ2eTZPS1hfYk5KX1V2OFdzV2hWaGdqenVOSzlpN1pFb3R0cjg3cllzN1Bnek5rWkliS2tmNnZzQUF5TllQQUhlNUXSAbABQVVfeXFMTnZDam9DM0VITDdSeWxLdlFORG5EcEFuZzh0STlyLWE1MnB6Y3ZjRHhrbTNxb1o0Qm9sbWNaZXhnT293dVQ5OTdsNzlxUE9uNjhXZkp0Y2ducURUckZmRVpsSDNJU1VUZ1FnN2ljQ1l3Q1VKYWVpRDU4R05HS251X3RXZjJ6aXIwTGQ4RzFlU05hVzZJZFdZMVlRNldBWHBrRHFabkxlaTJQczBralVXRVk?oc=5"
   },
   "PRK-RUS": {
    "a": "PRK",
@@ -3313,6 +3328,22 @@
    "note": "Somalia and Türkiye break ground on a new joint naval base in Mogadishu as part of their bilateral defense agreement.",
    "updated": "2026-11-22",
    "source": "https://news.google.com/rss/articles/CBMibEFVX3lxTE93dGhTYzJSWFdXTVlnVnJwdWRyWlhhWm9sMHp5MUdYLTk2blhpUGR4eUxVYUc4Y3A5ZnRZbXZXSnRRS1FtcDJJR0ZxcmFuNE5FaDFMRHYtWHg1WHNoMHA2aXlEeHJMMS1WWkhkdw?oc=5"
+  },
+  "CYP-RUS": {
+   "a": "CYP",
+   "b": "RUS",
+   "s": "T",
+   "note": "Cyprus expels Russian diplomats over espionage allegations, escalating bilateral diplomatic friction.",
+   "updated": "2026-11-22",
+   "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZkI0SjRaOHVEZVJzX1pqNWFFYzdvb2NzMnlvb3J1c3BGQjctNVRzS2FsSWREX1RKcDZVNGxFd014TUl2STVSQ3B1bG9DSkRXcktNM3hQc3MzZ1dySDdjSHpodlVHTG5KblpGME1TYk8tYkZQLVJGTVMyWFBaVUVMMUdySDdJcVg4WUt2Vjl2YW5pNXhT?oc=5"
+  },
+  "COD-KEN": {
+   "a": "COD",
+   "b": "KEN",
+   "s": "N",
+   "note": "Kenya and the Democratic Republic of the Congo (DRC) move to restore diplomatic ties after high-level talks.",
+   "updated": "2026-11-22",
+   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQWjltRW4ydkd0UDMyTFg5T19aMnFxSDc0QUtqQlJfSDJIcXo3MFJ4TUpMWFJUbnBzQ1lUYWtWb2hKREVqajlIZm14UW5rYlZMT1JDeWQxdnVwSGNKY1paRTBfNm9ueDVjWVl2dXNEam95a1VIUTBtVkZqd2swT3JSM3d6RWZFVWVBWmdBVlpKaEo0RXpqWmY2amtNRE0?oc=5"
   }
  },
  "threads": {
@@ -3370,7 +3401,7 @@
   "sudan-war": {
    "t": "proxy",
    "n": "Sudan's war and its outside backers",
-   "d": "Sudan's civil war escalates with drone strikes in Abyei and accusations of Egyptian and Eritrean support for TPLF (Tigray People's Liberation Front).",
+   "d": "Sudan's civil war expands as drone attacks strike residential areas in Khartoum and UN (United Nations) premises, with Khartoum intercepting drones from Ethiopia.",
    "c": [
     "SDN",
     "ARE",
@@ -3386,8 +3417,8 @@
     "SOM",
     "COL"
    ],
-   "updated": "2026-11-16",
-   "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTHlpR3QyZmZiSDlNM3NXLTF1TE9qMkVycE1BVWVBX2pIQ1hpX1dfZnJORW9Nbi1Gb2VmWi1nam8xOU5zZHZuN0tPUldJb201clhBc3l3TGlqTEFia0Z2aU93bjlGMlAxZDE0MzUtUzAzanN4ajJFUHdkbDhucXBFY0hLMWhUUUZjUVVjaTZWai1OdjZGT09sT3NXMmo5NHd0aUE?oc=5"
+   "updated": "2026-11-22",
+   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPcGZtZUhiQV9TODQ2cExWb1JmZXZZNGVITUl6YVZrR21rSzA3UkQ4WnZzbFJ1Q0RTUXdFbzNoWVd4ZFdHZ24tZGdJWmdsYnNudGxpcGdxX1czR2IyeWVkRVo0blRVNHJlZ1NvcWNRQ003TXh0aW5rWDhkNkxjWU1UTFJST3dXeXE3bG9zV3V4SlJfMWY2M1I4X3g0dkM1LUhxbmQ3WHR5MDREV3M1?oc=5"
   },
   "cocaine-europe": {
    "t": "trafficking",
@@ -4016,11 +4047,12 @@
   },
   "MNG": {
    "lastelec": "Presidential, June 2021, Khurelsukh Ukhnaa",
-   "updated": "2026-11-18",
-   "source": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPYTN2V0M4MVhEeU5kVDJvVnhVMllLamMzLWpRNjVXb2pnM3h2ZG9uZTFEM3hURmFBYVFVMnZ5MzBISzVOQjBKbDhfaWxrWFBPMmkwYnVhQUdFUVNWMzBfWWx6R3BQLUVYelpSR2E5MEw3MGZEeGU3LVpaT1JrMTl4XzJmVlFoZ013Z0JFVmFoU0luY0NfNWxZQV9tTVEtclRuWGdGQ0NZQWZlOFNJTFhOLWl2LXZmMmdyUkV5dWZ1TEEza0oxalRiNEljRzExLVpKWUk3dnlQeDZhdVhX?oc=5"
+   "updated": "2026-11-22",
+   "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOUXVyUGZpelg3ZTAySGNNRmhERGpFM2c5Q0JGaWo2MzR1aHhwTGFlZV9JVHV2UkZBZUQzcWw2TDFYUmxJVG1mR3FmSkRQQjVHakZzN3Nva3hPVXFwZ2dVeDRycDk3Njc1US05Q2lOWHpTTFE0bzNVbmxleFVEZVVJSWJLeUp4eGdhUEVNaDdLYmZNSFZyVklVQ2JUUzVvaGptVy1SZWZBREV4ZDgxWnk1em83Zjd1YXEtQjNOc2JRQS1sZFJiWEVlTWk0Zw?oc=5",
+   "nextelec": "snap presidential, December 2026"
   },
   "DMA": {
-   "nextelec": "general election, December 2026",
+   "nextelec": "general, December 16 2026",
    "updated": "2026-11-22",
    "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNT05DSWRMU2o0VjUxOXNRbkF3S0RPdGF6QUg3ellnZnBqbHAxOUVOZjNodkl2Z2xFRGpEZjA3ZVFLd0hJRDZaR3NnRS1EdFB5VW54Q1VBX18wNFRmdkNmUHhPSno2UTFLVEVlek5fS3k3YkJhbDlhS2FvZVpxY3lPeDk2SXM2bS1FQlo3cmZxUmdnZGdwcnNta3VRNlFYNF8wSW15c1pkeDJqdGNRSjh0eWtFbVlPdUQwOGdvRw?oc=5"
   }
