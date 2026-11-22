@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-22T01:53:41Z",
+  "lastRun": "2026-11-22T13:10:21Z",
   "log": [
    {
     "date": "2026-11-22",
@@ -11,11 +11,6 @@
       "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTHAxQ0pGeTVRejVMNGNibS1aMndJdUZ1Q2UxeFlGd1c5VmFHZS1FZkhLVnZOMnY5M2VvSnBiQmRYSWxnbnhUZFJmZ3Z6QWJoTTlIZXRPb3JWN2IyRWw0ejdzZGFwN0ZQd1oxVW02Rk5zZ3NuSXdYVUFoOXNheklNQnQ5UGRpMGpOSldhNjBvRWxnZ0dKa0E?oc=5"
      },
      {
-      "label": "Bahrain–Iran",
-      "change": "Armed conflict: IRGC strikes hit US bases and industrial sites in Bahrain",
-      "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQV1ZQTlpObjFaWTFwVFNIQzU1b0FQU0t3b3FMdm51TVVtaDB5b0pVelM5WHFwa3FORXNWZHpUUDE0d2Q3TEdYc04xRnNVY1UzaEozR0xrSEFBdjlJb2dXRFVmN2E5dXl4dTBneWRKNVd0NF9VQTlsVTlya3dRUDhDN1BEQUhIVkZqaG5neW9yVXgweHQybWlMd1lxZ2dZbGpFVDM1ZlFVN09QYWhwMl94SmFPU0ZRZkxxTTVhVWJnSmpxdE1wXzlhS1pXQ2pOOU5ObGoyQg?oc=5"
-     },
-     {
       "label": "United Kingdom–Ukraine",
       "change": "Partner: UK agrees to produce long-range strike drones for Ukraine",
       "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxORERiWGZBNllzemVxWFBOZFoxQXBDeVFmUUE5ZEcyQWJjbC1qTC1fb0lha012WEg2ejJrY0VHNWg1TndPemlIVmZqamFGYlpuTW5YNHdMVGlNMHE2ZHFFcmM2akFOdTJxSEVXdVUxRm1WcDdLVTdYQmRBLVp3LXA5STZibjZ3dHd1ZFVzRUtreDJWZGFGaUpEeVVBUkNKdw?oc=5"
@@ -24,6 +19,11 @@
       "label": "Somalia–Turkey",
       "change": "Ally: break ground on new joint naval facility in Mogadishu",
       "source": "https://news.google.com/rss/articles/CBMibEFVX3lxTE93dGhTYzJSWFdXTVlnVnJwdWRyWlhhWm9sMHp5MUdYLTk2blhpUGR4eUxVYUc4Y3A5ZnRZbXZXSnRRS1FtcDJJR0ZxcmFuNE5FaDFMRHYtWHg1WHNoMHA2aXlEeHJMMS1WWkhkdw?oc=5"
+     },
+     {
+      "label": "Bahrain–Iran",
+      "change": "Tense → Armed conflict: Iranian strikes hit civilian industrial facilities and military sites in Bahrain",
+      "source": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQM0xncmZ2aFVIVXNBc05rTnNlVFoxNHVIQjNVU1k5bzhoX2JPRHRnNWJiMkJ0SmNmTjJkLTVkU3Mxc3VCSkpiRzZtUGx6SE92MTVKU01VWWsxY1RjZDl3MWZ5amZCZkxjNEFnYkxYNXVBUjFfdWNrN2I2ckhmVWk0TnFHSnk3WW5fcmxqZnhoeGV0cW1Dc0JhNkYxQmc2SV9ZbnZQLW1EYkw4WXRpZW5OLVZxTkc5dWJMM1BMVUdONmNPNVJCX0VxcdIBzgFBVV95cUxOMDRQWC1ObFE1WHJLY0EzNGpBai1UZ3dKTEFCYWhwODVLeXhmdUtfVV9tZEgwOVp6T3pSMThEOHNhWHBrZzJFbVVJajFqU09ZdWxsTUNkZWhZNE9IR1lxSXh5QUJIdXdNaDEyMGdrbW9ZU0E4QTRaeERpYjJKY3ZIbnVsM2JpX0VUM3A2OWxiT2dGa2VWZThhZHpBV0VVaTF6NFZBdWdjQnFNRjZyVE95MFJ5MzU2TVk4ME9BUFdJUElqU1RYdEFlR1NkcXc5UQ?oc=5"
      }
     ]
    },
@@ -1383,7 +1383,7 @@
     ]
    }
   ],
-  "summary": "Nepal and India enhance connectivity during PM Shah's state visit, Britain agrees to manufacture long-range drones for Ukraine, and Somalia and Turkey begin construction of a joint naval base in Mogadishu."
+  "summary": "Iranian strikes hit a civilian industrial facility in Bahrain, while regional diplomacy advances with European trade deals and bilateral visits."
  },
  "relations": {
   "DNK-USA": {
@@ -3078,9 +3078,9 @@
    "a": "BHR",
    "b": "IRN",
    "s": "W",
-   "note": "Iran's Islamic Revolutionary Guard Corps (IRGC) targets United States (US) bases and industrial facilities in Bahrain with missiles.",
+   "note": "Iran's Islamic Revolutionary Guard Corps (IRGC) launches missile and drone strikes targeting civilian industrial facilities and US installations in Bahrain.",
    "updated": "2026-11-22",
-   "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQV1ZQTlpObjFaWTFwVFNIQzU1b0FQU0t3b3FMdm51TVVtaDB5b0pVelM5WHFwa3FORXNWZHpUUDE0d2Q3TEdYc04xRnNVY1UzaEozR0xrSEFBdjlJb2dXRFVmN2E5dXl4dTBneWRKNVd0NF9VQTlsVTlya3dRUDhDN1BEQUhIVkZqaG5neW9yVXgweHQybWlMd1lxZ2dZbGpFVDM1ZlFVN09QYWhwMl94SmFPU0ZRZkxxTTVhVWJnSmpxdE1wXzlhS1pXQ2pOOU5ObGoyQg?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQM0xncmZ2aFVIVXNBc05rTnNlVFoxNHVIQjNVU1k5bzhoX2JPRHRnNWJiMkJ0SmNmTjJkLTVkU3Mxc3VCSkpiRzZtUGx6SE92MTVKU01VWWsxY1RjZDl3MWZ5amZCZkxjNEFnYkxYNXVBUjFfdWNrN2I2ckhmVWk0TnFHSnk3WW5fcmxqZnhoeGV0cW1Dc0JhNkYxQmc2SV9ZbnZQLW1EYkw4WXRpZW5OLVZxTkc5dWJMM1BMVUdONmNPNVJCX0VxcdIBzgFBVV95cUxOMDRQWC1ObFE1WHJLY0EzNGpBai1UZ3dKTEFCYWhwODVLeXhmdUtfVV9tZEgwOVp6T3pSMThEOHNhWHBrZzJFbVVJajFqU09ZdWxsTUNkZWhZNE9IR1lxSXh5QUJIdXdNaDEyMGdrbW9ZU0E4QTRaeERpYjJKY3ZIbnVsM2JpX0VUM3A2OWxiT2dGa2VWZThhZHpBV0VVaTF6NFZBdWdjQnFNRjZyVE95MFJ5MzU2TVk4ME9BUFdJUElqU1RYdEFlR1NkcXc5UQ?oc=5"
   },
   "ARM-IRN": {
    "a": "ARM",
