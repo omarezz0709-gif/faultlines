@@ -1,7 +1,32 @@
 {
  "meta": {
-  "lastRun": "2026-11-21T21:15:10Z",
+  "lastRun": "2026-11-22T01:53:41Z",
   "log": [
+   {
+    "date": "2026-11-22",
+    "items": [
+     {
+      "label": "India–Nepal",
+      "change": "Normal: launch Ayodhya-Janakpur express train during PM visit",
+      "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTHAxQ0pGeTVRejVMNGNibS1aMndJdUZ1Q2UxeFlGd1c5VmFHZS1FZkhLVnZOMnY5M2VvSnBiQmRYSWxnbnhUZFJmZ3Z6QWJoTTlIZXRPb3JWN2IyRWw0ejdzZGFwN0ZQd1oxVW02Rk5zZ3NuSXdYVUFoOXNheklNQnQ5UGRpMGpOSldhNjBvRWxnZ0dKa0E?oc=5"
+     },
+     {
+      "label": "Bahrain–Iran",
+      "change": "Armed conflict: IRGC strikes hit US bases and industrial sites in Bahrain",
+      "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQV1ZQTlpObjFaWTFwVFNIQzU1b0FQU0t3b3FMdm51TVVtaDB5b0pVelM5WHFwa3FORXNWZHpUUDE0d2Q3TEdYc04xRnNVY1UzaEozR0xrSEFBdjlJb2dXRFVmN2E5dXl4dTBneWRKNVd0NF9VQTlsVTlya3dRUDhDN1BEQUhIVkZqaG5neW9yVXgweHQybWlMd1lxZ2dZbGpFVDM1ZlFVN09QYWhwMl94SmFPU0ZRZkxxTTVhVWJnSmpxdE1wXzlhS1pXQ2pOOU5ObGoyQg?oc=5"
+     },
+     {
+      "label": "United Kingdom–Ukraine",
+      "change": "Partner: UK agrees to produce long-range strike drones for Ukraine",
+      "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxORERiWGZBNllzemVxWFBOZFoxQXBDeVFmUUE5ZEcyQWJjbC1qTC1fb0lha012WEg2ejJrY0VHNWg1TndPemlIVmZqamFGYlpuTW5YNHdMVGlNMHE2ZHFFcmM2akFOdTJxSEVXdVUxRm1WcDdLVTdYQmRBLVp3LXA5STZibjZ3dHd1ZFVzRUtreDJWZGFGaUpEeVVBUkNKdw?oc=5"
+     },
+     {
+      "label": "Somalia–Turkey",
+      "change": "Ally: break ground on new joint naval facility in Mogadishu",
+      "source": "https://news.google.com/rss/articles/CBMibEFVX3lxTE93dGhTYzJSWFdXTVlnVnJwdWRyWlhhWm9sMHp5MUdYLTk2blhpUGR4eUxVYUc4Y3A5ZnRZbXZXSnRRS1FtcDJJR0ZxcmFuNE5FaDFMRHYtWHg1WHNoMHA2aXlEeHJMMS1WWkhkdw?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-11-21",
     "items": [
@@ -1356,124 +1381,9 @@
       "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPRVZYSUFYOG1OcHl3OGRwNmgzc1EweTJjejAxQTBNU2hqVFpkWEIxelpEak5FMjR3TkVmRGNpWlA1U20tYnpBUlVFbVlnZ0RBeGVPY0cwU1AtaE1YYjNJRnZZUWJoNHEybnd2X1RHZ1RiTy1ocGM5OTlhVkpEQV9vb012MXh5aV8wYWF2Q3hrZ0FsS1hsY1FNTG0xSmh2c0ZOOHV2OE8xS3lVeEdjejhRNHRTQUEwU1JudnRXcA?oc=5"
      }
     ]
-   },
-   {
-    "date": "2026-10-23",
-    "items": [
-     {
-      "label": "India–Poland",
-      "change": "Added Partner: Agreed to boost defence, space, and nuclear energy cooperation",
-      "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOLUowMElMQmd0SFBnRTZNQkVUWVQ0bDgzTnMwMzExMmRQdXhGSF9UMm9DeHJwZmh1NmxjcE5oTTM1Vmtub1dTbUlNd0pWOGJJY19aZF9BTGZIWW1vckVFNlgxaEtqZk9JMDBkWlJRV2x0LUtmOUJkSTNsMnpFbzlBdk0tRHB4SnNMSkJfVEtxaWtPNnNNVEVEVFAwamwyZE5GdHMzenlxSTNVd1BKS2hiWl91RENvNVJiWWljdkUyOFdhNVFzZWVHcWd3?oc=5"
-     },
-     {
-      "label": "Armenia–Turkey",
-      "change": "Note refreshed: Agreed on student exchanges amid border reopening talks",
-      "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQY3V5WjFlS1ZydXVUc0o5ZEV2dm1FeUIwQ0VXZ2RMMHFucnltZXc0MHVGMEd5RjVDenV6NEJ0NnJkX2pfRDNxeWFjZFJqc3g2RG9kWi04VVNJM0p6cGI5bGVSVzVYcnJuWWI2TnI5YTZXTWRoWXhFYWxBbWowS2xsb0N4cmJybHM1RjA1QW94SjAxbkRrcVdkanV3?oc=5"
-     },
-     {
-      "label": "Canada–Türkiye",
-      "change": "Normal → Ally: Strategic Partnership launched",
-      "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNQVVEeWMzSmdlcTR6WEFUUzNyNkg2akdoZGVyS0NGaHM3RDhuZWt2M004WG05WmRXa1NYMFZYcERxU212QWdQbEZXLWFsUS1PWlBncEtHSmZtTUNNenNFMGg4bWw2NzFfbXJ6S00tand3WUJwaThSSnJscHNueDJVbUVoXzVVUTVYYW9fV2ZUZ21fRGRPYzNETGNmcXZKcG9FT1dWdDZHWmhYaWZXWWhTM2Rrb21wakw2dUYwdW5aVQ?oc=5"
-     },
-     {
-      "label": "USA–Guyana",
-      "change": "Partner → Ally: Enhanced Defense Agreement signed",
-      "source": "https://news.google.com/rss/articles/CBMicEFVX3lxTE55cnBDczIwUF9JMzkzUGpUSEtWVmxJSmV5N3FKVFVDVkpVaXQ0Q2M3WmVMUmJBLVVOa2kxSkNJZ0pCeDB2YnppYVhNblFrRUJSRE9CQ3NleFc1T25yOGF0Mmpvc196ZWJYQ2dnUW5EbXjSAXZBVV95cUxNMEs3bkYwcDkwQVZOV1ZfMzdvOXF4dkZtTkZmQV9lV1dQQXBXNWxleU9pZi1pbC10T0pmNEhncGgtRUM0OUM4LWIzQzNReXk0NllMdTdoOVFxdUVyaHZxUDd5aE1iTmtPMHctYWhwNnNoSDBLSWxn?oc=5"
-     },
-     {
-      "label": "Austria–Russia",
-      "change": "Normal → Tense: Expulsion of diplomats for spying",
-      "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOcHdZWGlXcVRsLWZUUXc1c3F5WUY0eTVQb21uX045WXFMYTVLX3p0Z2FaMm5PZlh1NndJT1FLQjZqU1BjU0ZobXdWZ3lVcWhLY1pRQktLbXBjUU04V1hMc2VxU0doSWdxY3E0N3pVbkNmcWd2VlM3a0Y5TGx1SzJnZEZ0UHBFUTIyLXdHMTI1NnAwY0FDVmdpcldkRGQwZUFjbFhyQ0lqS1NOOUFha0ZNUVVQYzNnMV9JSjVKRTZDQlJVVFE?oc=5"
-     },
-     {
-      "label": "Algeria–Niger",
-      "change": "Partner → Ally: Defense pact signed",
-      "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQblNiUFZFb0lQZ1RLQTBwV0JWVDBuWGpNVHVOQW5TSGVQSjJ4MXRPUTJsUDUtaW5aVjlSbTlGMUVnb3hDanRpdjhnTllMczF2cjVZYXB1NmVWMWRiS0J5RUVDdEpqc0ItNV9hX1pMdVhYeFZ5MWp4bG40ZUJkYlNaVnJxcWhTYU0wWXZBd3c3aVdwRmdZU053UWJOdzlDWk1tbEhjOURkNGhhNVc3ZWo4RGFPX3lLYzZZ?oc=5"
-     },
-     {
-      "label": "Pakistan–Maldives",
-      "change": "Partner → Ally: 20 MoUs signed including defense",
-      "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOV2xTa0xZN3ljSjVmNVc3THVWYjBrR2ZJeUlnQUFWZm9XcTlDYXgwa2NzZWYwQ3FDTDNaZzh0bEpZalMwSmFKMWg0WkVoU1pZdzBzUkIyakZXZHlQSndiWjIyVm1teElmRWh0OGI5cWxDNUxhTktEeEpmcWFXbmJyWmtydXhyZzNuU3VpWndaU096MU9rR2w1U0JwYw?oc=5"
-     },
-     {
-      "label": "Australia–Timor-Leste",
-      "change": "Partner → Ally: Security agreement signed",
-      "source": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWTNIQkhfbFVBUGlJRm9TX0Y0Y1ZRajluZzNLcFJxb2UyZ29XLVBsX2JGSmRyT3R0bTAxbmRBVzM0QWRyV1FZYk9uZy11eGRoVTd6STg4T292V0JaVDdRRDhpSFdGQVpOQXQyT0FZRlhqQlZmS2JmVjRpOHJMSlY4SUVXdzhmR2RlOElrYmcxM1VrWV83TGxBOEJOcWJqR0dJQzBxYndkV3RPWnVWN2xIb21TbzB2Yjh2LXFQUnVIRGFuREE1TFRjQ05BM3pkOWtsaEE?oc=5"
-     },
-     {
-      "label": "Haiti–El Salvador",
-      "change": "Normal → Partner: Security deployment to Haiti",
-      "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQ202dHdUU3ViV0c5Um5fdEZrcHVuUjlfOTZZdk1oeHluT3JpbHNZWVJzcW43WDF6N01wSGRNOGlDSDc2YmU4WEJkb3J3STloOW9VdmVtRFFnSUlHRHp1YzA0cTlObXpZLXFQY2NrWkktejV1Qm9femlEZUpfVFVfMnZBODBPQXREYjg2WUVwSW02eWltM2hhdW1JTHRMVEtYVTZpVjFnZ1loNFNHdEtvcEw0dERqNHdyV3FTdQ?oc=5"
-     },
-     {
-      "label": "Ethiopia–Kenya",
-      "change": "Partner → Tense: Border fighting and refugee influx",
-      "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPV3lRSFA5ZHhuRE1lZWN3VzFCcDJaUVhnbngtMDZFc0dQejI4TXY5b1ZKNUo3cjJnUlBLVTRRUVI3aWlISl9QV3ZtV1VCdGNUVVVnNk1jTUg5eXlXeVZTUG5OdmFhMGpKdFhoalUwTnBhQUh3ZlZwdVJNc1U5SEpieHhwTEZJczZYTVBnNzJ6N1RFSk9UM0J5QjFnd24xdmtDUGFiYTlkV1Z1bWozUDFyZDh3TTNYZGhlN0doUHRrZw?oc=5"
-     },
-     {
-      "label": "Iran–Pakistan",
-      "change": "Normal → Tense: Border closure threat",
-      "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYmZFVHMwV3hGS0JNVVhqdGtzN3d4elpidFU3aTREd1pfblpaVnhJYnZXMjlrQm55TjhObGhXa2ZUZkVIaGFtdDF5eFRRT2xIVXdsMllmcktvc2tpa0Y0Z3JBcm9ITFIxakQ0T19LZ1dtM0JaMi1vSFFGazNKYzMybDNZbkxBM19LTWNWTk9KRkFKekduRTBIaHEySV81WE8yTXF2ejhETQ?oc=5"
-     },
-     {
-      "label": "Egypt–Libya",
-      "change": "Normal → Tense: Rejection of Turkey maritime deal",
-      "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9xUXoyRUNiRUVRczAtOE00U2pYQXlTbDl4OEdvSGNoNEg3SjI3bkgzd0pXVDJRS2tVbjFVOXRDa2ZIc3VrVmRpNE03X1ZUZFo0OVE?oc=5"
-     },
-     {
-      "label": "Greece–Libya",
-      "change": "Normal → Tense: Rejection of Turkey maritime deal",
-      "source": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9xUXoyRUNiRUVRczAtOE00U2pYQXlTbDl4OEdvSGNoNEg3SjI3bkgzd0pXVDJRS2tVbjFVOXRDa2ZIc3VrVmRpNE03X1ZUZFo0OVE?oc=5"
-     },
-     {
-      "label": "India–Azerbaijan",
-      "change": "Tense → Normal: Ties reset after high-level talks",
-      "source": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPSVlRbjVIWDZYQVdaMEZaX3BOU3hpcEdSbWNSenJSVlhkRGpqOUlIQzZCNW5IOFdaY0hvOU1wbENNMW5UUEc4akxSR3ZOa3FoeDRQWE0wczlSTnZFTHk5bTk3VEJYYk8ydmM5aTZLUHg0bkJKVzNna1RSblp2RWdvaFN2Z2Q5Z2t1NGJpZUdSTHp6dnJXRkpxRkY2SFNzTlJsQW5RcUlXV251ek9YWEJvWDVmVEU0ZjdYZmlTcWZ0Nnh3ODdiY1FxbHVlYUVpbk1SeUJWQVA3eER4YnRGMURwSURJakdVTFN2MFpWR0lodEtlUXlhWGh1UTV0Y9IBgAJBVV95cUxQdDQtenpRV01LWlg1S1JKX3ZrbjNRb1Z6bHJWYmVVR3c1VlVLWXhPNkJrX05NSU1uNzFRZmZOak45LW5zRExRSkpmLVowalVfWWtsblkycE04OHBwanFmTmdhRFBkVEQzQlpzblh1cDkzRlR5ME1od0RFLXRwU2drSVF2U1YyT3hkNm82Skl5cVZtQ0xISFpQOXlzSGxsX2hndXhZaDJQWHNpSDJqZVhwd2ZHYUJpWWQ3U0ZLaFJlcUkxbEpoUVdxMDU4amhsOGkyUzdGa3N3MUlWS014b3RCd3pYdlZTN2w0UDgxUTVEUW1TZjk5cTRFXzQzS0xFT1kz?oc=5"
-     },
-     {
-      "label": "Spain–Italy",
-      "change": "Tense → Partner: Border restrictions ended",
-      "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZ0NyX2RSM2J6eUJQek93N1I3U0JlOGJUNnFFZmgxbkNIXzY1Y3E0eEUteTBvbU1nS2xfajlvWGdEUmNzY3hPVlRRRVBJMTN6QnJXdS1fTzZkY2Z5bjlybVF0ekJ0UTVUbkdEZjdLUkU0YXphdnBsZF8wMWFrRnRPVkFWV3hNY2lxQzk0NDlyT2tQSmFCeDBFdkR0SDZuMGpfamJRcjluSmRiTkVyRnVUS2pn?oc=5"
-     },
-     {
-      "label": "Colombia",
-      "change": "Note update: Correcting leader to Abelardo de la Espriella",
-      "source": "https://www.wikidata.org/wiki/Q739"
-     },
-     {
-      "label": "Brazil",
-      "change": "Note update: Correcting leader to Lula da Silva",
-      "source": "https://www.wikidata.org/wiki/Q155"
-     },
-     {
-      "label": "Canada",
-      "change": "Note update: Correcting leader to Mark Carney",
-      "source": "https://www.wikidata.org/wiki/Q16"
-     },
-     {
-      "label": "Moldova–Russia",
-      "change": "Updated note: Moldova expels Russian diplomat after drone crash near residential area",
-      "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNeW83MkVlcGRLbXBTV1F6Yy1rbkttdEEwZ2NhTUt2QU5oQkZzV0RGX0RvOG9acHdRQjRzZDMxcUh2NDJLS0VrLXVCLVBZVGQ3b2ZScGxyY2NoQk5BMVNUMmQzU3ZCQ3l3Z21SQW9iWXE3anZNUFc2V3hfV1FlaWpZdjdyNlBSWWhFZ2hkMzJQUnlPNmZlWFREd1lHcUE3Vjc0amJuTU52dWt3aGhDZ3Zz?oc=5"
-     },
-     {
-      "label": "Romania–Russia",
-      "change": "Updated note: Romania condemns Russian drone strike sinking merchant ship off its coast",
-      "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPd1ZiemtqMmtaVjdOdVlwcUwtMGZzWUg4MmJiNUN6dXRLR1J2LUR4OXdjaDVaYkM5Mlo1RGRkQnR2WjNFQkw5cG1fTl9pWUZodmFtMFRkV09tcURJbHgxOU1oUzN1LTZuSVJ6RmlIUi1MOXVCX0NSMV9BVkhfOExkR205V054OF8tUFFYTUs0ZHRKTncxVVp4WWpCSkQ4QzJqR1NiT1hBTXc?oc=5"
-     },
-     {
-      "label": "Serbia",
-      "change": "Next election: snap parliamentary election scheduled for October 2026",
-      "source": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1XdnhVcUJXeFJpV04xU25XR3pYTnVzNk1pS1BuVzNPRGtiMEV5Z3RCT0dacFo1cmhkREFiQXN2V1ZwbTJtbzctRC1vVElKSXVWT0RVRklR?oc=5"
-     },
-     {
-      "label": "Bulgaria",
-      "change": "Next election: presidential election scheduled for October 2026",
-      "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMWJjRHNmZGV2b3ZXTmVubklGd1liVVBlc2xzR3RCUWZJcXJ4UGo2QzFPcVhFSmZGTVA0V05kWnp4bEJTWVJYYWVjXzFqRVNXaENzbUprNUlxSHVmTWs0WGlMOVNrWVJ1Mno4ZXdGUXEwcDhjdEljXzh2bTFmVXh5WjdxZHVkaWIzcXAzeHBhNTBHWGlaaHZsZVEydnZhVXk3SUxVc2x4eUZpZm1K?oc=5"
-     }
-    ]
    }
   ],
-  "summary": "Peru and Thailand sign a landmark free trade agreement, Egypt and the Democratic Republic of the Congo sign a disarmament deal, and Dominica schedules a general election for December 2026."
+  "summary": "Nepal and India enhance connectivity during PM Shah's state visit, Britain agrees to manufacture long-range drones for Ukraine, and Somalia and Turkey begin construction of a joint naval base in Mogadishu."
  },
  "relations": {
   "DNK-USA": {
@@ -3168,9 +3078,9 @@
    "a": "BHR",
    "b": "IRN",
    "s": "W",
-   "note": "Islamic Revolutionary Guard Corps (IRGC) launches direct drone and missile strikes on a United States (US) radar facility in Bahrain.",
-   "updated": "2026-11-17",
-   "source": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOTVpjODRHQjFUd3QtZTg2Yk9xSG9KaThHREpsM1JVYVdoOXowbk11MjZXcHY4QnZwd0tXejd5Zlh4SkFJODlud0NTNURPQ19GOEMwU0N0cmpRZXdhOTh5R2Fyd1lfbmprNTc3RXhKemRpT0tzWVQyZ2V4ZmlCQWYzaVpmTXUxOWI3S0xwNDJ0Wmg1cFpWamRuRFJScjFWN21iTm9sSnAwRzhHX2t2Z3RTOXRkVmluQ21zc2owSGIwZE1pX0NUdUpnS2REQ0tzcGlmVkxr?oc=5"
+   "note": "Iran's Islamic Revolutionary Guard Corps (IRGC) targets United States (US) bases and industrial facilities in Bahrain with missiles.",
+   "updated": "2026-11-22",
+   "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQV1ZQTlpObjFaWTFwVFNIQzU1b0FQU0t3b3FMdm51TVVtaDB5b0pVelM5WHFwa3FORXNWZHpUUDE0d2Q3TEdYc04xRnNVY1UzaEozR0xrSEFBdjlJb2dXRFVmN2E5dXl4dTBneWRKNVd0NF9VQTlsVTlya3dRUDhDN1BEQUhIVkZqaG5neW9yVXgweHQybWlMd1lxZ2dZbGpFVDM1ZlFVN09QYWhwMl94SmFPU0ZRZkxxTTVhVWJnSmpxdE1wXzlhS1pXQ2pOOU5ObGoyQg?oc=5"
   },
   "ARM-IRN": {
    "a": "ARM",
@@ -3224,9 +3134,9 @@
    "a": "IND",
    "b": "NPL",
    "s": "N",
-   "note": "India and Nepal approve a new cross-border train service between Janakpur Dham and Ayodhya to enhance connectivity.",
-   "updated": "2026-11-14",
-   "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZUdIbEs4U1hJX2lqVUM5ZGJGRUpRUzNxZ1B5WXI1THFJZFljR3NGRWlsZHMxbm1KOHBvdV9oNXM3ZnNhSDlyN0hBOEdLWUtleVdRVGhkNW4tUlcyZTRNMjFmeDJxbDVVaFNfcWtVcDN4akJLekZMR0RnZEdmOFNUOGJLTkJLMERKeWFINDdZR0Zsb1JnR0x6MDBrc1Z2S1JCWFViN3o3cFVRbVk2cE1zZmNiaUxBNnlHS1lPMA?oc=5"
+   "note": "India and Nepal exchange MoUs and launch the Ayodhya-Janakpur express train during Prime Minister Balen Shah's state visit.",
+   "updated": "2026-11-22",
+   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTHAxQ0pGeTVRejVMNGNibS1aMndJdUZ1Q2UxeFlGd1c5VmFHZS1FZkhLVnZOMnY5M2VvSnBiQmRYSWxnbnhUZFJmZ3Z6QWJoTTlIZXRPb3JWN2IyRWw0ejdzZGFwN0ZQd1oxVW02Rk5zZ3NuSXdYVUFoOXNheklNQnQ5UGRpMGpOSldhNjBvRWxnZ0dKa0E?oc=5"
   },
   "BGR-UKR": {
    "a": "BGR",
@@ -3387,6 +3297,22 @@
    "note": "Egypt and the Democratic Republic of the Congo (DRC) sign a disarmament cooperation deal to enhance regional security.",
    "updated": "2026-11-21",
    "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZnEwd0ZhMUl1WmVUMVdMeW9HVmNYeHpoNGpLdXhvY3dDM1dhNEVGN1F5UjhLendqakxSLU82dzJtOVZWYXFPb1pwQkRMUTZkaEpfdm5WOUdLTWh6ZkZ5MjE1WmhCQ2dpX0xVZmlhbVB1X2sydjE4TXBiRTJRVGFPLWtDUEd2ZUpOY01fam93?oc=5"
+  },
+  "GBR-UKR": {
+   "a": "GBR",
+   "b": "UKR",
+   "s": "F",
+   "note": "Britain agrees to manufacture middle-strike and deep-strike long-range drones in the United Kingdom (UK) for Ukrainian forces.",
+   "updated": "2026-11-22",
+   "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxORERiWGZBNllzemVxWFBOZFoxQXBDeVFmUUE5ZEcyQWJjbC1qTC1fb0lha012WEg2ejJrY0VHNWg1TndPemlIVmZqamFGYlpuTW5YNHdMVGlNMHE2ZHFFcmM2akFOdTJxSEVXdVUxRm1WcDdLVTdYQmRBLVp3LXA5STZibjZ3dHd1ZFVzRUtreDJWZGFGaUpEeVVBUkNKdw?oc=5"
+  },
+  "SOM-TUR": {
+   "a": "SOM",
+   "b": "TUR",
+   "s": "A",
+   "note": "Somalia and Türkiye break ground on a new joint naval base in Mogadishu as part of their bilateral defense agreement.",
+   "updated": "2026-11-22",
+   "source": "https://news.google.com/rss/articles/CBMibEFVX3lxTE93dGhTYzJSWFdXTVlnVnJwdWRyWlhhWm9sMHp5MUdYLTk2blhpUGR4eUxVYUc4Y3A5ZnRZbXZXSnRRS1FtcDJJR0ZxcmFuNE5FaDFMRHYtWHg1WHNoMHA2aXlEeHJMMS1WWkhkdw?oc=5"
   }
  },
  "threads": {
@@ -4066,9 +3992,9 @@
   },
   "CPV": {
    "nextelec": "presidential, Oct 2031",
-   "updated": "2026-11-17",
-   "source": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4zRDg4b3BPQml2aW5vc3BMM010bmdhQXlkY2VXcmp0MmEyZ2RqdnZxQUN5dWZxZ1lic19NLUZBOHlHem1xU0FaQ3c3QXRnb2JaSzBIQ3QwV0cycDJnNGRTVXA0REc0UnFnZlZYSEFpa2RwZjZYTXlZdWNfTDNoTXM?oc=5",
-   "lastelec": "presidential, Nov 2026, José Maria Neves"
+   "updated": "2026-11-22",
+   "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNSkQyMWd3alZWSGtYQWlLbXN0ZjJRTUotR1h6aC15UjdpTXhqOW1vMjFjZW5jbGRlNEZiT1RRNUJRd0E5WUlFM2s1bi1zbE4wMW81TXQxZy01TkU4aS1pQ3NOSzVtYk9IRmZJR0xJQ21mSGNMd3lwV3VUcngyc1hzaEtHeDRCNEtLOXlUM3BNUFNRd0d4bVM0?oc=5",
+   "lastelec": "presidential election, November 2026"
   },
   "IDN": {
    "lastelec": "presidential, Feb 2024, Prabowo Subianto",
@@ -4095,7 +4021,7 @@
   },
   "DMA": {
    "nextelec": "general election, December 2026",
-   "updated": "2026-11-21",
+   "updated": "2026-11-22",
    "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNT05DSWRMU2o0VjUxOXNRbkF3S0RPdGF6QUg3ellnZnBqbHAxOUVOZjNodkl2Z2xFRGpEZjA3ZVFLd0hJRDZaR3NnRS1EdFB5VW54Q1VBX18wNFRmdkNmUHhPSno2UTFLVEVlek5fS3k3YkJhbDlhS2FvZVpxY3lPeDk2SXM2bS1FQlo3cmZxUmdnZGdwcnNta3VRNlFYNF8wSW15c1pkeDJqdGNRSjh0eWtFbVlPdUQwOGdvRw?oc=5"
   }
  }
