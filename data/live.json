@@ -1,7 +1,27 @@
 {
  "meta": {
-  "lastRun": "2026-11-22T17:44:42Z",
+  "lastRun": "2026-11-23T02:09:16Z",
   "log": [
+   {
+    "date": "2026-11-23",
+    "items": [
+     {
+      "label": "Oman–Pakistan",
+      "change": "Normal → Partner: $200 million energy credit facility signed",
+      "source": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9XbWRhTXc2azFRWHZ3NW1WbTg5RF9UY3FHTVIyLW5Kb0ZmR1FHcFdzTWZJYVB6VGpldV9Bb2k3eWh1S0ZGcWs3RThxaUZ5S2RvNFg3azF4ZlpkMjB3dXhfbG10aGprVVVxOVNFU1N2a0w4LXNiQnRZWjJDUWfSAYQBQVVfeXFMTWFCc2RpQnNQY1hsVE1lUGFpeWRrdnNkaDJhQWtMcnlNd2RUcDBOS053WW9wa2J0TlNpYXZOVjFSUDlINllsWGVCR19iTmxoSGViaU41MjZpU3p2MElQWmJNbTNyWjFoN2F4ZzdpbVRlQ2oxLTBUYU1EX0E0QTFaZW8wUDFE?oc=5"
+     },
+     {
+      "label": "Sri Lanka–Thailand",
+      "change": "Normal → Partner: visa-free travel agreement signed for ordinary passport holders",
+      "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQXUyV1lhSFZVMUppU2VUSDJWbmVHX0swSUZOMnlkQ0tLU3FJNE5YR0tlOUZHa0ZKVldrVFlMMjROS3NaaXgtZFlLRXlydUdUQ3JickdkNVVaVzZjdXdEUEw3ckhSV3hUM2xETUV2eGI3ejcwMFFRT2hKRjZLcG1uZHJqV1dOS1l3bXEyLVhkVnIxMll5UGx1Q0NTOHllMjFaVEdsWjgxajFqQXZBTi16dzJaNGw4QQ?oc=5"
+     },
+     {
+      "label": "India–Netherlands",
+      "change": "Normal → Partner: strategic partnership reviewed to expand defense and semiconductor ties",
+      "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQblNsakhqQ2tjZ0pHSUhQVEtBTkduUlBIeklHV1FjSG4zODJEWVJEak83MVp5SS1uakQ4SF9mallkU055MzYybTdfSV85Tk9XWmU0V3ItZHhfVFFjUXZFcDdkeURKQmhMOGF3Z0ltQXN5Nlk0aHhicGtLSTBhVEFrVWFfa1JCdUFLN1ljZzZGc1gxaDVJaWJkTjdIcENENFBDb0FpZVNzdHlwUFc4ZlNoc0RONlk?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-11-22",
     "items": [
@@ -1346,59 +1366,9 @@
       "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNMXRpZS1uTGVpTUhoY3RLTFA5NXBTcDFtQjF6a01Ld19JR3A4TXVkZllNWW4zQlBhWmZ3WEJRT3RfVmdOaXUzcUtSWFlsY3JWSEpPX1drZk54VktFVVFIMGhuSE0teHp2RVRuVlU0QldYdFh0aGR5N3F0SGZaOXFGbF9tZ1FWZWprX0lpdzVybVI5MTZ2VjVpVkwyM3M2TGpfb2dUMG95dW9tdw?oc=5"
      }
     ]
-   },
-   {
-    "date": "2026-10-24",
-    "items": [
-     {
-      "label": "Austria–Russia",
-      "change": "Normal → Tense: Austria expels four Russian diplomats",
-      "source": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQemp6bnJlODBmeHpGaFhBeXFnWHRIMjFtR05nUThHSWdaS1BqbDFHT2huSFU2U2JKWjVNTVlhOUN1N2V1S1FpdkNGNk0wOVhfZktIWUQzYmtmS2ViaUJST0xMZE9vei1TbktRelU2NnpSUThUd0FCVTN6NVRuMDZrQXRSdWZDcG9PNG1VVWhFdHVaVDJkNjRSeUVDR0hCWEhEaGdLWldWeEM0WFBFME54cWxGaTBQeVhFaVp4bzE4ME0wM29wQVhsbkl1eE5jUTBhSzNSZTlpWUJONkgyVEVOc0hWdmRha0lVUnJJ?oc=5"
-     },
-     {
-      "label": "Indonesia–Singapore",
-      "change": "Partner → Tense: Indonesia cuts natural gas exports to Singapore",
-      "source": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1jOTR2Q2JzeERDcHBXMnlGd0JCLUYwV2RueWdXWUU2aGtORnMxaGZFRnVVNU9MWEcxOFY1c3ZIdGVxcFJRZVRiSUw3TDltV0ZPWHZTa3RUUlgyeDEwVzR0OFRfZ0ZzaktVMVpv?oc=5"
-     },
-     {
-      "label": "Argentina–Israel",
-      "change": "Israel shifts stance to back Argentina's claim over the Falkland Islands",
-      "source": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPeGpfX0l0QVpiaUk5bzBQRVdyS1EzdDRiSzkxRnlTMi14ZE9ZdE1iVGhKb2R3Q3E2cXl2Ukl1OWx5Mk1tZFE2MjlpY09oWld1SC1vMThVeUpuYjNPV2tBd18yOFIzTmxwQldaNWhkRDJ3QWZrV1VFT3lack5WRk4yTlcwUVhmNW5DNl9JRjJEd1ozUnNYZm9GbXRTdXlGX1YwU240NEdianFaekV6SWdybDd6YXJSc2NZRWhrX0NDTHNERzYwdUFVQXhra2w0N0NuQ2ZoV2pEWENNajZTZG1HN2NybFk2NUhPUnpxaGRncl9LNTlTQjZFREE1eFNMZw?oc=5"
-     },
-     {
-      "label": "China–North Korea",
-      "change": "Kim Jong Un visits China via the Dandong border bridge for high-level talks",
-      "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQOEh3cHAwTkFieTJ1dFVabU9DM283WGxaUGxHaGdvNUlaRzRlNThGM3hGcGt6RnZWbmItcDdjQXpYRENXTFByRGVNRC00R1F3WlZsd2xhdzdMU3gzWVFLeUo3RWNUZzV4NFR6RGZXSmZFWDM0NjNPSl9BUmZKUEhQcjFEeHJWRUs5N2xTbXZ2ZG10UU9pd3BxdGNSbWp1a0tnMUtOdk1WQlJxdXE5cXVIVHR5ajhqVDZPRG9fMw?oc=5"
-     },
-     {
-      "label": "Serbia",
-      "change": "Snap parliamentary election held amid student-led opposition movement",
-      "source": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1XdnhVcUJXeFJpV04xU25XR3pYTnVzNk1pS1BuVzNPRGtiMEV5Z3RCT0dacFo1cmhkREFiQXN2V1ZwbTJtbzctRC1vVElKSXVWT0RVRklR?oc=5"
-     },
-     {
-      "label": "Russia–Uganda",
-      "change": "Normal → Partner: Russia provides $53 million military support package and opens joint facilities",
-      "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUll5SGlSSjdyTFl3YXVCOUU4V3RFbVd5WmprUzZnSC13LXBJalBuY0lQTmxYYlJESENCb1lPRXM1UXpnT0hlSTA5SVJHWEJ4alhtWi1BQXdQYlNJVlQ2bWdIZWcwc1Z4Uk1RTW11cVB0Si02cC0xRTVLMmZ2akxZNmhsVHVIVlFjT3JxR2pNMXBia2NHM3pxUjdzRHQtUVFLaGQ3SkJYaWJhdDVjT3FFYld3ZnVFa28?oc=5"
-     },
-     {
-      "label": "Britain–Saudi Arabia",
-      "change": "Partner: Britain expands military assistance to defend Saudi Arabia against Houthi attacks",
-      "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORmdfZGJSalpfcXF6NmxGcm1PU25mbV9GelZvLXUxUnV4eHA1dGRVUTQzT0lVRzB4cGZXQThpTVRiYmVwUm5RM0VxbWZldEdSSkdLN0VPNi0xY2JpbXAyQWtUTmZlNU51dEI1VFk2THBEWEpsZDduSzc5N213UV90aXN5eXEyNFhVVUVYUURoTXdWcUhWNVpvOTJuU2hRazhoWDdtT2MzWjNDSVFON0J5U1hTdDQ3MmhIT3NzODlLMGxERWxS?oc=5"
-     },
-     {
-      "label": "Brazil",
-      "change": "Politics: scheduled presidential runoff election",
-      "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNM2dDQW5yVDVVYnk1ZzNMcVhCZEMxYUNyYkJxbE1vbkRuU20xVXRZVE9GdDRYQnBSY0Z3T3VIcDNmUFhub05LWS16LU9xdXdVc083b2ExNmJ0UXVCVzNLNzctOEMtUzYxX0xSVW1rMkNRWGVBMjEyRmVxTm13SXlmZDJoS3NlcG9uRHBzamVOZGl6STE4bW5vS1FUQjJSQ2hfN2Y5WXZyR1E4ZkN2ZWJ0djJrVDRnRXVhNWhnY0FKeUJVelBr?oc=5"
-     },
-     {
-      "label": "Bulgaria",
-      "change": "Politics: scheduled presidential election",
-      "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPRVZYSUFYOG1OcHl3OGRwNmgzc1EweTJjejAxQTBNU2hqVFpkWEIxelpEak5FMjR3TkVmRGNpWlA1U20tYnpBUlVFbVlnZ0RBeGVPY0cwU1AtaE1YYjNJRnZZUWJoNHEybnd2X1RHZ1RiTy1ocGM5OTlhVkpEQV9vb012MXh5aV8wYWF2Q3hrZ0FsS1hsY1FNTG0xSmh2c0ZOOHV2OE8xS3lVeEdjejhRNHRTQUEwU1JudnRXcA?oc=5"
-     }
-    ]
    }
   ],
-  "summary": "Cyprus expels Russian diplomats over espionage suspicions, Poland calls emergency NATO talks after Russian missiles breach its airspace, and Kenya and DR Congo move to restore diplomatic ties."
+  "summary": "Oman and Pakistan seal a $200m petroleum credit facility, Sri Lanka and Thailand sign a visa-free agreement, India and the Netherlands expand strategic ties, and Mongolia prepares for a snap presidential election."
  },
  "relations": {
   "DNK-USA": {
@@ -3344,6 +3314,30 @@
    "note": "Kenya and the Democratic Republic of the Congo (DRC) move to restore diplomatic ties after high-level talks.",
    "updated": "2026-11-22",
    "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQWjltRW4ydkd0UDMyTFg5T19aMnFxSDc0QUtqQlJfSDJIcXo3MFJ4TUpMWFJUbnBzQ1lUYWtWb2hKREVqajlIZm14UW5rYlZMT1JDeWQxdnVwSGNKY1paRTBfNm9ueDVjWVl2dXNEam95a1VIUTBtVkZqd2swT3JSM3d6RWZFVWVBWmdBVlpKaEo0RXpqWmY2amtNRE0?oc=5"
+  },
+  "OMN-PAK": {
+   "a": "OMN",
+   "b": "PAK",
+   "s": "F",
+   "note": "Oman and Pakistan sign a $200 million credit facility for Oman to supply petroleum products to Pakistan.",
+   "updated": "2026-11-23",
+   "source": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9XbWRhTXc2azFRWHZ3NW1WbTg5RF9UY3FHTVIyLW5Kb0ZmR1FHcFdzTWZJYVB6VGpldV9Bb2k3eWh1S0ZGcWs3RThxaUZ5S2RvNFg3azF4ZlpkMjB3dXhfbG10aGprVVVxOVNFU1N2a0w4LXNiQnRZWjJDUWfSAYQBQVVfeXFMTWFCc2RpQnNQY1hsVE1lUGFpeWRrdnNkaDJhQWtMcnlNd2RUcDBOS053WW9wa2J0TlNpYXZOVjFSUDlINllsWGVCR19iTmxoSGViaU41MjZpU3p2MElQWmJNbTNyWjFoN2F4ZzdpbVRlQ2oxLTBUYU1EX0E0QTFaZW8wUDFE?oc=5"
+  },
+  "LKA-THA": {
+   "a": "LKA",
+   "b": "THA",
+   "s": "F",
+   "note": "Sri Lanka and Thailand sign a visa-free travel agreement for ordinary passport holders to boost tourism and trade.",
+   "updated": "2026-11-23",
+   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQXUyV1lhSFZVMUppU2VUSDJWbmVHX0swSUZOMnlkQ0tLU3FJNE5YR0tlOUZHa0ZKVldrVFlMMjROS3NaaXgtZFlLRXlydUdUQ3JickdkNVVaVzZjdXdEUEw3ckhSV3hUM2xETUV2eGI3ejcwMFFRT2hKRjZLcG1uZHJqV1dOS1l3bXEyLVhkVnIxMll5UGx1Q0NTOHllMjFaVEdsWjgxajFqQXZBTi16dzJaNGw4QQ?oc=5"
+  },
+  "IND-NLD": {
+   "a": "IND",
+   "b": "NLD",
+   "s": "F",
+   "note": "India and the Netherlands review their strategic partnership, seeking to expand cooperation in semiconductors, defense, and energy.",
+   "updated": "2026-11-23",
+   "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQblNsakhqQ2tjZ0pHSUhQVEtBTkduUlBIeklHV1FjSG4zODJEWVJEak83MVp5SS1uakQ4SF9mallkU055MzYybTdfSV85Tk9XWmU0V3ItZHhfVFFjUXZFcDdkeURKQmhMOGF3Z0ltQXN5Nlk0aHhicGtLSTBhVEFrVWFfa1JCdUFLN1ljZzZGc1gxaDVJaWJkTjdIcENENFBDb0FpZVNzdHlwUFc4ZlNoc0RONlk?oc=5"
   }
  },
  "threads": {
@@ -4047,7 +4041,7 @@
   },
   "MNG": {
    "lastelec": "Presidential, June 2021, Khurelsukh Ukhnaa",
-   "updated": "2026-11-22",
+   "updated": "2026-11-23",
    "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOUXVyUGZpelg3ZTAySGNNRmhERGpFM2c5Q0JGaWo2MzR1aHhwTGFlZV9JVHV2UkZBZUQzcWw2TDFYUmxJVG1mR3FmSkRQQjVHakZzN3Nva3hPVXFwZ2dVeDRycDk3Njc1US05Q2lOWHpTTFE0bzNVbmxleFVEZVVJSWJLeUp4eGdhUEVNaDdLYmZNSFZyVklVQ2JUUzVvaGptVy1SZWZBREV4ZDgxWnk1em83Zjd1YXEtQjNOc2JRQS1sZFJiWEVlTWk0Zw?oc=5",
    "nextelec": "snap presidential, December 2026"
   },
