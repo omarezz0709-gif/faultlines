@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-23T15:46:54Z",
+  "lastRun": "2026-11-23T21:59:49Z",
   "log": [
    {
     "date": "2026-11-23",
@@ -24,6 +24,11 @@
       "label": "Oman–Pakistan",
       "change": "Normal → Partner: fuel supply deal and trade agreements signed",
       "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQU0NGLUJjQ3lNbHdqWFNrVTFTcTUzVVRJZkdjSXlXRC1FbkFkVjY0LUZsdXBRbFBZeFNDNU1SSGh6WEd6Q0xfZFVVb21mNThpSGdpanl2T2RmLVdsNk11Q0htWVN2bWxrTXNXMkloWDNiMHYyQXRYRVFSTmdwWGJ6aTl5MFhZQ2NIYi1MREJR?oc=5"
+     },
+     {
+      "label": "Estonia–Russia",
+      "change": "Tense → Hostile: Complete border closure and mutual escalation over airspace and security",
+      "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUGRpc084TlZaVFlGNkhyWGF1TEpuUXg2elNYQ1VJMFVSckJVNnVyaGN5RF9vSklDZzhDbmNWNF8wak1uUFBUeDM5c09PWk1RZWZyckhFTDYwaDJTUFZoVFpnS1JxUExjSVUtU25VbHhfVEpxdnFwTnYxWDh6TVpyWGZrZlJuYmRIQmotUnBlSVFOOU8tcHZkb2RkaFZ3X2dEbXNxYWloMnJSWjlOYk5TQ1RIV2c?oc=5"
      }
     ]
    },
@@ -1373,7 +1378,7 @@
     ]
    }
   ],
-  "summary": "Ukraine targets Russian naval assets in Libya while Baltic Sea tensions mount, and regional maritime friction intensifies in the Middle East."
+  "summary": "Ukraine claims responsibility for naval drone strikes hitting Russian vessels off Libya, while Estonia announces a complete border closure with Russia."
  },
  "relations": {
   "DNK-USA": {
@@ -1700,9 +1705,9 @@
    "a": "EST",
    "b": "RUS",
    "s": "H",
-   "note": "Estonia announces the complete closure of all border crossings with Russia starting December 1.",
-   "updated": "2026-11-18",
-   "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSW9vdDhqOFJVQjZoTXVVbk52cGVkcU40WG1HcUxJc2tERk5OUndqc1hXdXEtdGZXVHRhQmJtbGdhZjdQZWJWYmhqMEVMZ1M2N3JHSzNsMm56SDBKZE12b3dWXzVYcXZNSmhTYmRRV0Qwdy1GQkZsbGZ3SWQ5cjBWNWNYUTZtYkpYWnUwUEtveHZlVkJfNTRTV2pJek96d3pxZVVkRGpoZktvWndCdWN1YVBxVFZHTjRu?oc=5"
+   "note": "Estonia closes all border crossings with Russia, drawing warnings from Moscow of actions on the verge of open war.",
+   "updated": "2026-11-23",
+   "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUGRpc084TlZaVFlGNkhyWGF1TEpuUXg2elNYQ1VJMFVSckJVNnVyaGN5RF9vSklDZzhDbmNWNF8wak1uUFBUeDM5c09PWk1RZWZyckhFTDYwaDJTUFZoVFpnS1JxUExjSVUtU25VbHhfVEpxdnFwTnYxWDh6TVpyWGZrZlJuYmRIQmotUnBlSVFOOU8tcHZkb2RkaFZ3X2dEbXNxYWloMnJSWjlOYk5TQ1RIV2c?oc=5"
   },
   "KOR-PRK": {
    "a": "KOR",
