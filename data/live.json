@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-24T02:42:20Z",
+  "lastRun": "2026-11-24T20:36:20Z",
   "log": [
    {
     "date": "2026-11-24",
@@ -21,8 +21,23 @@
       "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPV20xUGlHSnVvUEZleTFMQlpfeEctdDFYZ2d2LXppQ0RqWndqWGpvMVVsSzhXeEdscVZCa3U1NmdCUEt2bzdWdGFmTHVhdkFMdFZMSk5MbVdIWjlhX0thSGlqSTlNVklUbGhjRWJDdHY5WHJFa3JGRmJYWm8za0JyQTJKRUtSYTVkanlHTnNSLVFUTFhmdFlJXzZZcjR4UTJleHJfMGlJU0xkbE1hNXNteGQzMWJRUlE?oc=5"
      },
      {
+      "label": "Democratic Republic of the Congo–Kenya",
+      "change": "Normal → Partner: full diplomatic relations restored",
+      "source": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPb1NaT2xkWkRjVl9EdzdDWG1HRzZJVjJNY09Lek5acjloZ1BFcnVQUlFDcTY4WVJpaGZETGEzTGo2QU5wYUZic0lQMDlxb2FCbE1LUFRUQnN6al90OHZUaWhvMVZtSG54VTlHejZfemM1NGtkM1V4cFo4ZGlJNkZiSlNld1pQdl9YYjhF?oc=5"
+     },
+     {
+      "label": "Armenia–Romania",
+      "change": "New relationship: Strategic partnership signed",
+      "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPc0htLW5vRElsV2djaUhWV0JBMlI1ZG9PRTFFSWJQRXJpa2dXcHk0XzFTQV9SWG9VSl92eEtQZHdnc0xXQnhHczdLdHpMd3VYdDVRU2NWQVZ6ODREXzdJX1VHdkxvXy1QSXQ4NC14SElFaEhLdEhoR0t4VmU3M2JVQ0dYTE00Ylp4YXRkaW5Yc1hOME0xVTRqV3FPTjd3M3FhRUHSAacBQVVfeXFMTzRwbWp0T3AxaVo3OHFWNXh6c2d6Y05JQmliNGplUkhuc2wtYmhvZTZWRENVZ1RBTDJhX284cHZFSHpoQTk1ZWRtbDJNejREUUdTejZmQjA1SWg2OGQ1RWNoZVBLcjBKbmZwQmhBMU1nWEpSOVg3SklOMzl5XzJGdTNhZDR5OHVLWjFNWExKbE9OenR5d21hcDhEdXlKTlktZG51bzl3LU0?oc=5"
+     },
+     {
+      "label": "Jordan–Uzbekistan",
+      "change": "New relationship: Strategic partnership established",
+      "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOX05mSll2RmVZcDJnZDB5aEpFTGdCM2E3Ul9yRXVpSXh0eFlkbTZjV3V1U1RscHgtWHRVa3E5ZXdQU0NBdEV5TnFkcWJhNG9fQlduUGx0UGpPQmFiQUgxc3k0eWEtdWE5clYtUm5iUlFvT1puVENNZ2ZIcDB0SWNGaFItTTh3QXg3RVFXSw?oc=5"
+     },
+     {
       "label": "Dominica",
-      "change": "Next election set: general election, December 2026",
+      "change": "General election scheduled for December 2026",
       "source": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1tc3VZTjY4VFZQd1hTWkF0MzI3SzZzT0lCbER5TGZlVDYxb09sbWd0LWZmT3daSEowNW5KdFZMQXFQbEh2OWU0Z2QwOUF1MmF6blUwSlp1LU0zY1FiTlhISXB2SWcwVXltMjZxcHBmdmk4OFp2QUtWVjlsSzNiQQ?oc=5"
      }
     ]
@@ -1353,7 +1368,7 @@
     ]
    }
   ],
-  "summary": "Egypt and Iraq establish a partner relationship through broad economic and visa agreements, while Ukrainian naval drone strikes on Russian ships in Benghazi extend Black Sea warfare into the Mediterranean."
+  "summary": "Armenia–Romania and Jordan–Uzbekistan establish strategic partnerships, the Democratic Republic of the Congo and Kenya restore full diplomatic ties, and Dominica schedules its general election for December 2026."
  },
  "relations": {
   "DNK-USA": {
@@ -1448,8 +1463,8 @@
    "a": "COL",
    "b": "USA",
    "s": "F",
-   "note": "Long-time security partner; relations stabilize under the government of Abelardo de la Espriella.",
-   "updated": "2026-10-23",
+   "note": "Long-standing security partners, maintaining strategic cooperation under the government of Abelardo de la Espriella.",
+   "updated": "2026-11-24",
    "source": "https://www.wikidata.org/wiki/Q739"
   },
   "FRA-SAU": {
@@ -1496,9 +1511,9 @@
    "a": "HUN",
    "b": "UKR",
    "s": "F",
-   "note": "Hungary and Ukraine signal improving ties as Péter Magyar announces an upcoming visit to Kyiv.",
-   "updated": "2026-11-23",
-   "source": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPOTBFUXBXN0xKallMS2ZPMHd0SWtmZy1HVkJzYVFwRFZVdXFzYTdkbFRUZkVHNWdsZHBBVGZDSEtSLXNHNEZQNmF4d2twbF9ORHpTSFlwVEVYQVhRYlM1QzdXY1ljRlpxenY1MTZNTHplbzFmbGx5cEVnd0I1czZ1RERpVTJIbUd6dEYzOWQyVXUzN1RxbExDQTU0Tk5VVE40RzZoQzVkU1BSOVZiLXRGdEJfY1BOMi04VF90Nlk1ZHJzUQ?oc=5"
+   "note": "Hungary and Ukraine deepen energy and trade cooperation following talks between Péter Magyar and Volodymyr Zelenskyy.",
+   "updated": "2026-11-24",
+   "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNazRlNm9YUy1WVldOWmZQSGhJd29OTFYzUm4wbzVEQXpHZ3dIS2U0d0V1dVg4dWxpY3hyWGU4RHYxU21aZnNaSWl5RlRxY2pUWHRSZjVFRzhVSXIxQVhUb0xaaEhUY2dZazNxLWhid0RzV0dnaWhhQUJWRXQycXFPVmhFSGNibUxlVENIOS1xSGVGZ2tSb3c0MW45RkxSSTc4UWNqWW50TjdSSWxJcmFKUGdGcUtsVnZyTWc3alZPNkhTVFdQNnRROG51b3F3QVdVNVZzOTNR?oc=5"
   },
   "USA-ZWE": {
    "a": "USA",
@@ -3295,10 +3310,10 @@
   "COD-KEN": {
    "a": "COD",
    "b": "KEN",
-   "s": "N",
-   "note": "Kenya and the Democratic Republic of the Congo (DRC) move to restore diplomatic ties after high-level talks.",
-   "updated": "2026-11-22",
-   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQWjltRW4ydkd0UDMyTFg5T19aMnFxSDc0QUtqQlJfSDJIcXo3MFJ4TUpMWFJUbnBzQ1lUYWtWb2hKREVqajlIZm14UW5rYlZMT1JDeWQxdnVwSGNKY1paRTBfNm9ueDVjWVl2dXNEam95a1VIUTBtVkZqd2swT3JSM3d6RWZFVWVBWmdBVlpKaEo0RXpqWmY2amtNRE0?oc=5"
+   "s": "F",
+   "note": "The Democratic Republic of the Congo (DRC) and Kenya agree to restore full diplomatic relations and ambassadors.",
+   "updated": "2026-11-24",
+   "source": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPb1NaT2xkWkRjVl9EdzdDWG1HRzZJVjJNY09Lek5acjloZ1BFcnVQUlFDcTY4WVJpaGZETGEzTGo2QU5wYUZic0lQMDlxb2FCbE1LUFRUQnN6al90OHZUaWhvMVZtSG54VTlHejZfemM1NGtkM1V4cFo4ZGlJNkZiSlNld1pQdl9YYjhF?oc=5"
   },
   "OMN-PAK": {
    "a": "OMN",
@@ -3339,6 +3354,22 @@
    "note": "Egypt and Iraq sign 11 cooperation agreements, scrap visa requirements, and deepen bilateral trade and energy ties.",
    "updated": "2026-11-24",
    "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVm83T0VDbDczSmpYcE9WS3ZXZjZmSVdRWno3dEtHNzQ3ZzZjSDJaR0pJWkFxLXVhMEtvRkF3bFhyRDVPUWUzcjgtNUp2U3RhM0FvMHRGWl9GTUxHbWYydlJxeDRURGxpUzA0cWtMdGVtMl9XSzdUZDE5bTRSUHBnSUt0X0ZKZGEtdWhhUWs3c205RWdVR0J4UW1Zb253WTJPeGZDd3BIcXY1ZGtza0Nqd2RSeG5EM21PZFE?oc=5"
+  },
+  "ARM-ROU": {
+   "a": "ARM",
+   "b": "ROU",
+   "s": "F",
+   "note": "Armenia and Romania sign a strategic partnership declaration to expand trade, economic, and security ties.",
+   "updated": "2026-11-24",
+   "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPc0htLW5vRElsV2djaUhWV0JBMlI1ZG9PRTFFSWJQRXJpa2dXcHk0XzFTQV9SWG9VSl92eEtQZHdnc0xXQnhHczdLdHpMd3VYdDVRU2NWQVZ6ODREXzdJX1VHdkxvXy1QSXQ4NC14SElFaEhLdEhoR0t4VmU3M2JVQ0dYTE00Ylp4YXRkaW5Yc1hOME0xVTRqV3FPTjd3M3FhRUHSAacBQVVfeXFMTzRwbWp0T3AxaVo3OHFWNXh6c2d6Y05JQmliNGplUkhuc2wtYmhvZTZWRENVZ1RBTDJhX284cHZFSHpoQTk1ZWRtbDJNejREUUdTejZmQjA1SWg2OGQ1RWNoZVBLcjBKbmZwQmhBMU1nWEpSOVg3SklOMzl5XzJGdTNhZDR5OHVLWjFNWExKbE9OenR5d21hcDhEdXlKTlktZG51bzl3LU0?oc=5"
+  },
+  "JOR-UZB": {
+   "a": "JOR",
+   "b": "UZB",
+   "s": "F",
+   "note": "Jordan and Uzbekistan establish a strategic partnership to boost bilateral trade and economic cooperation.",
+   "updated": "2026-11-24",
+   "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOX05mSll2RmVZcDJnZDB5aEpFTGdCM2E3Ul9yRXVpSXh0eFlkbTZjV3V1U1RscHgtWHRVa3E5ZXdQU0NBdEV5TnFkcWJhNG9fQlduUGx0UGpPQmFiQUgxc3k0eWEtdWE5clYtUm5iUlFvT1puVENNZ2ZIcDB0SWNGaFItTTh3QXg3RVFXSw?oc=5"
   }
  },
  "threads": {
@@ -4068,7 +4099,7 @@
    "nextelec": "snap presidential, December 2026"
   },
   "DMA": {
-   "nextelec": "general election, December 2026",
+   "nextelec": "General election, December 2026",
    "updated": "2026-11-24",
    "source": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1tc3VZTjY4VFZQd1hTWkF0MzI3SzZzT0lCbER5TGZlVDYxb09sbWd0LWZmT3daSEowNW5KdFZMQXFQbEh2OWU0Z2QwOUF1MmF6blUwSlp1LU0zY1FiTlhISXB2SWcwVXltMjZxcHBmdmk4OFp2QUtWVjlsSzNiQQ?oc=5"
   }
