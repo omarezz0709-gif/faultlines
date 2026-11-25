@@ -1,7 +1,32 @@
 {
  "meta": {
-  "lastRun": "2026-11-24T20:36:20Z",
+  "lastRun": "2026-11-25T00:14:01Z",
   "log": [
+   {
+    "date": "2026-11-25",
+    "items": [
+     {
+      "label": "Australia–Solomon Islands",
+      "change": "Normal → Ally: Australia and Solomon Islands sign a bilateral security treaty",
+      "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNY1ByVmR6NElYOWdiQlZTZVVhZTdia3dYdm44RUxWRGR6cFg5S0dqSE1qREtMekxPVHRyb2JyYVBsalFodktKa2N1Sm1Pa0dXM0lFeUw3R3pUOTNJX3gxaVRYUlpRRmE5aS1scUlyM05HVmRQUGh5Rk5vdWNudEI5aHVacUlFZGpEd2c?oc=5"
+     },
+     {
+      "label": "China–Solomon Islands",
+      "change": "Partner → Normal: Solomon Islands scraps security pact with China in favour of Australian treaty",
+      "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbkxDYnJOVDNDakFTT0JVQ2ctMHJpWmQtUUtiOEFValpyWDFsc0FfekE3ZnR2QjVMLXphMjkwR0JVWVdtWUNrbzh3SlprVzZXWTNqVEdibUlERTJESDM1SXdzdXhVREE4RkVCU1JjZmRKNFNMNW5ucUV6X2hENW1yRUdqSFhhbDRWZWEzcm05RWVqa0cyMk9XWUw5cEhhVUJLWEN2ZnYtVEZWVHdVTzhQYjdJRGRQQQ?oc=5"
+     },
+     {
+      "label": "Libya's divided state and its backers",
+      "change": "Updated description to reflect Ukrainian naval drone strikes on Russian ships off Benghazi",
+      "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPYXZOSVl5SDg3TnZrMGhLWkNZb29lcXVzSlh6TkJfbkZXalZwbjh1ZU0xdWZHR1NsUWpnWG0zY2dGb2VSYmowN0dJa3JnYWdrSl9MUl9XTGtXbDdLZ18tMElEbmZ1bERETTBkNlJ3d1YxdW5nSS16WnBtcjZkZmV5c0pmWXZ2dEFRdTRoMmFIOXY2SkJ4VEdXUEtITzhPTEotVW0zSnJ0ekM5N1lQZVBnT2hn?oc=5"
+     },
+     {
+      "label": "Dominica",
+      "change": "Scheduled general election for December 2026",
+      "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQOE1YSDh1UnliOEZYNDVYUW9wbFhVaEhpdXVoamVveFFTWFBZOWN6dmFPT2ROVlViZEJuMmQ3eF9YNzBIQU9zNV8xRTNsR1VhS0NZRURKV3l4VnpqcG9ZRlRiblVMRDdnbXhuNXNWczlRM2xvdjBqVnhadkFvMzkzdGVpLXZSWS1GeGR5RG1MWm9Ielk0ZEQ2aUZXMU9YZ01BUVd2YnFoclpiZHBweklfcFNWczBsWFVxNnc?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-11-24",
     "items": [
@@ -1341,34 +1366,9 @@
       "source": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBJeDl4cDJsbkJSS1gxUnhFUmd1Z25hMmNIX3M2eC1rY1lmVG95YVk1RzFiOWxjM1JMcG9XM2FOYmF4U3lGSlBNWUticFdPYU9yUVN3SWJsdElSWmF3WXRFMHV4YVBiSl9La0dSYQ?oc=5"
      }
     ]
-   },
-   {
-    "date": "2026-10-26",
-    "items": [
-     {
-      "label": "Poland–Vietnam",
-      "change": "Normal → Partner: Established a Strategic Partnership to deepen trade and defense cooperation.",
-      "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNUXlvVHplYzRyTkhXUWJmT3I1WmxsUmlLOW9ROUpfajRJUWRaWXhBd3paWE1GdUMzLWY2SWFJaG5GS2tRNWtFWXQ2d00yb0dwRUxQUEdtT204SVkwRl83aHRuM2ZoNEZLd3dKRFVrcHBlVlBuMEhYNVpPelk1NVFXbUlVOVpiX3d2NnkxZWZhcUhTUQ?oc=5"
-     },
-     {
-      "label": "Brazil",
-      "change": "Recorded presidential election victory for Luiz Inácio Lula da Silva.",
-      "source": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMHA5R2xtNHZSNmdhNUgtUnp0QWhPVHFoUFVDOXNMSHJmVDZUdmlOY01lRDQxSGQyRVRXV1o4T3VsRkJpeGx2cUdxdXFKYzlOTHhuUGUwdFFoaTFWTm9GOW1ybl9ub0ZjV0RZeHRpZy1iak5fc2l6blNIZGJ0R2Y5Z0dwd2FzbTNJQWI4X0ZpN0xnVzJyMFpEZnl2ajJwTnhGX1IxLU5wTE5ZMjIyZ2hsYWYyNjhTdU1oVFVJX1dnRHJOQQ?oc=5"
-     },
-     {
-      "label": "Serbia",
-      "change": "Recorded opposition Student List victory in snap parliamentary election.",
-      "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOU8wdDJ4b2FwTm9HNXNJNGxhX1hDUGpHWk84TjM0elM5cDlEQmF5UVpBLWN0S1p6TTFXQ0dYTGxIRDhlQVNPZjlRM2hQS3BxRkVpZS1DcEY1akYtQWlkQjJVWFRGcl9kaEFlUXpISi1LLUE3RGxxcFJfbERjNG9lbTVhVTRrSUpNVjB2YW1mM3NvUQ?oc=5"
-     },
-     {
-      "label": "Algeria–Niger",
-      "change": "Normal → Ally: Algeria authorizes first foreign troop deployment to Niger to protect energy interests.",
-      "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWEFzMVJsdFFhYTRiQlZMRlczc3RYOHhVVXVFVHNFQmRxNzFZQ1M4dTgtcXAtb2JDZS1SdlpMWkJsT05UTVh2ZWJ6VzdIRGh6M3Vkd3ZrRlQyTmxTYV94eExvMER6WlhIakN2bm5oeFJLZzQtZDJNc09fZ05qR0daellWazBIeWNfRks0dW52UjJPcTlicFBxazAxcjB1blZQN19tMUdR?oc=5"
-     }
-    ]
    }
   ],
-  "summary": "Armenia–Romania and Jordan–Uzbekistan establish strategic partnerships, the Democratic Republic of the Congo and Kenya restore full diplomatic ties, and Dominica schedules its general election for December 2026."
+  "summary": "Australia and Solomon Islands sign a security treaty as Honiara cancels its security pact with China, while Ukrainian naval drones strike Russian naval assets off the coast of Libya."
  },
  "relations": {
   "DNK-USA": {
@@ -3370,6 +3370,22 @@
    "note": "Jordan and Uzbekistan establish a strategic partnership to boost bilateral trade and economic cooperation.",
    "updated": "2026-11-24",
    "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOX05mSll2RmVZcDJnZDB5aEpFTGdCM2E3Ul9yRXVpSXh0eFlkbTZjV3V1U1RscHgtWHRVa3E5ZXdQU0NBdEV5TnFkcWJhNG9fQlduUGx0UGpPQmFiQUgxc3k0eWEtdWE5clYtUm5iUlFvT1puVENNZ2ZIcDB0SWNGaFItTTh3QXg3RVFXSw?oc=5"
+  },
+  "AUS-SLB": {
+   "a": "AUS",
+   "b": "SLB",
+   "s": "A",
+   "note": "Australia and Solomon Islands sign a bilateral security treaty as Honiara replaces its former security pact with China.",
+   "updated": "2026-11-25",
+   "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNY1ByVmR6NElYOWdiQlZTZVVhZTdia3dYdm44RUxWRGR6cFg5S0dqSE1qREtMekxPVHRyb2JyYVBsalFodktKa2N1Sm1Pa0dXM0lFeUw3R3pUOTNJX3gxaVRYUlpRRmE5aS1scUlyM05HVmRQUGh5Rk5vdWNudEI5aHVacUlFZGpEd2c?oc=5"
+  },
+  "CHN-SLB": {
+   "a": "CHN",
+   "b": "SLB",
+   "s": "N",
+   "note": "Solomon Islands scraps its security pact with China as it inks a new defence treaty with Australia.",
+   "updated": "2026-11-25",
+   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbkxDYnJOVDNDakFTT0JVQ2ctMHJpWmQtUUtiOEFValpyWDFsc0FfekE3ZnR2QjVMLXphMjkwR0JVWVdtWUNrbzh3SlprVzZXWTNqVEdibUlERTJESDM1SXdzdXhVREE4RkVCU1JjZmRKNFNMNW5ucUV6X2hENW1yRUdqSFhhbDRWZWEzcm05RWVqa0cyMk9XWUw5cEhhVUJLWEN2ZnYtVEZWVHdVTzhQYjdJRGRQQQ?oc=5"
   }
  },
  "threads": {
@@ -3639,7 +3655,7 @@
   "libya-war": {
    "t": "proxy",
    "n": "Libya's divided state and its backers",
-   "d": "Russian logistics and mercenary networks in eastern Libya come under attack from Ukrainian uncrewed surface vessels (USVs) in Benghazi, extending Black Sea combat into the Mediterranean.",
+   "d": "Russian logistics and mercenary networks in eastern Libya come under attack from Ukrainian naval drones in Benghazi, extending Black Sea combat to North Africa.",
    "c": [
     "LBY",
     "EGY",
@@ -3654,8 +3670,8 @@
     "SDN",
     "UKR"
    ],
-   "updated": "2026-11-24",
-   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPV20xUGlHSnVvUEZleTFMQlpfeEctdDFYZ2d2LXppQ0RqWndqWGpvMVVsSzhXeEdscVZCa3U1NmdCUEt2bzdWdGFmTHVhdkFMdFZMSk5MbVdIWjlhX0thSGlqSTlNVklUbGhjRWJDdHY5WHJFa3JGRmJYWm8za0JyQTJKRUtSYTVkanlHTnNSLVFUTFhmdFlJXzZZcjR4UTJleHJfMGlJU0xkbE1hNXNteGQzMWJRUlE?oc=5"
+   "updated": "2026-11-25",
+   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPYXZOSVl5SDg3TnZrMGhLWkNZb29lcXVzSlh6TkJfbkZXalZwbjh1ZU0xdWZHR1NsUWpnWG0zY2dGb2VSYmowN0dJa3JnYWdrSl9MUl9XTGtXbDdLZ18tMElEbmZ1bERETTBkNlJ3d1YxdW5nSS16WnBtcjZkZmV5c0pmWXZ2dEFRdTRoMmFIOXY2SkJ4VEdXUEtITzhPTEotVW0zSnJ0ekM5N1lQZVBnT2hn?oc=5"
   }
  },
  "pois": {
@@ -4099,9 +4115,9 @@
    "nextelec": "snap presidential, December 2026"
   },
   "DMA": {
-   "nextelec": "General election, December 2026",
-   "updated": "2026-11-24",
-   "source": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1tc3VZTjY4VFZQd1hTWkF0MzI3SzZzT0lCbER5TGZlVDYxb09sbWd0LWZmT3daSEowNW5KdFZMQXFQbEh2OWU0Z2QwOUF1MmF6blUwSlp1LU0zY1FiTlhISXB2SWcwVXltMjZxcHBmdmk4OFp2QUtWVjlsSzNiQQ?oc=5"
+   "nextelec": "General, December 2026",
+   "updated": "2026-11-25",
+   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQOE1YSDh1UnliOEZYNDVYUW9wbFhVaEhpdXVoamVveFFTWFBZOWN6dmFPT2ROVlViZEJuMmQ3eF9YNzBIQU9zNV8xRTNsR1VhS0NZRURKV3l4VnpqcG9ZRlRiblVMRDdnbXhuNXNWczlRM2xvdjBqVnhadkFvMzkzdGVpLXZSWS1GeGR5RG1MWm9Ielk0ZEQ2aUZXMU9YZ01BUVd2YnFoclpiZHBweklfcFNWczBsWFVxNnc?oc=5"
   }
  }
 }
