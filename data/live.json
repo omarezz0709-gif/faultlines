@@ -1,20 +1,10 @@
 {
  "meta": {
-  "lastRun": "2026-11-25T00:14:01Z",
+  "lastRun": "2026-11-25T15:23:32Z",
   "log": [
    {
     "date": "2026-11-25",
     "items": [
-     {
-      "label": "Australia–Solomon Islands",
-      "change": "Normal → Ally: Australia and Solomon Islands sign a bilateral security treaty",
-      "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNY1ByVmR6NElYOWdiQlZTZVVhZTdia3dYdm44RUxWRGR6cFg5S0dqSE1qREtMekxPVHRyb2JyYVBsalFodktKa2N1Sm1Pa0dXM0lFeUw3R3pUOTNJX3gxaVRYUlpRRmE5aS1scUlyM05HVmRQUGh5Rk5vdWNudEI5aHVacUlFZGpEd2c?oc=5"
-     },
-     {
-      "label": "China–Solomon Islands",
-      "change": "Partner → Normal: Solomon Islands scraps security pact with China in favour of Australian treaty",
-      "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbkxDYnJOVDNDakFTT0JVQ2ctMHJpWmQtUUtiOEFValpyWDFsc0FfekE3ZnR2QjVMLXphMjkwR0JVWVdtWUNrbzh3SlprVzZXWTNqVEdibUlERTJESDM1SXdzdXhVREE4RkVCU1JjZmRKNFNMNW5ucUV6X2hENW1yRUdqSFhhbDRWZWEzcm05RWVqa0cyMk9XWUw5cEhhVUJLWEN2ZnYtVEZWVHdVTzhQYjdJRGRQQQ?oc=5"
-     },
      {
       "label": "Libya's divided state and its backers",
       "change": "Updated description to reflect Ukrainian naval drone strikes on Russian ships off Benghazi",
@@ -24,6 +14,21 @@
       "label": "Dominica",
       "change": "Scheduled general election for December 2026",
       "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQOE1YSDh1UnliOEZYNDVYUW9wbFhVaEhpdXVoamVveFFTWFBZOWN6dmFPT2ROVlViZEJuMmQ3eF9YNzBIQU9zNV8xRTNsR1VhS0NZRURKV3l4VnpqcG9ZRlRiblVMRDdnbXhuNXNWczlRM2xvdjBqVnhadkFvMzkzdGVpLXZSWS1GeGR5RG1MWm9Ielk0ZEQ2aUZXMU9YZ01BUVd2YnFoclpiZHBweklfcFNWczBsWFVxNnc?oc=5"
+     },
+     {
+      "label": "Australia–Solomon Islands",
+      "change": "Normal → Ally: Signed new security treaty",
+      "source": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9KZkJ3YnIwNGdXNkVVTmFCbVhYdEE5ZTBsWFhoLVBOMmFGZTdnSjdaR0hHejRfVjdBWjlsS2JkTzR5X0tmRWR1ZkFRNng2UGtRcnNpXzhiZDlnUQ?oc=5"
+     },
+     {
+      "label": "China–Solomon Islands",
+      "change": "Partner → Normal: Scrapped security pact",
+      "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNeDI4MlptOE5LblFyWUtaZ0kwajlveURHR29XcVVtT2FqeDJKUDBheWJjNmVua3NZNEFNVDRIX2lzRjVlcnBRZ0xDTGtlZXRTS29fa19CbGZKdG5uVmdkQkhxLUY2TWRXSnN2UXNJaEo4UUc4cl9VOWdCQmRJVjNUNHdvVWxmdjRlOENWcXpvUXNYTGlxNUU5akxR?oc=5"
+     },
+     {
+      "label": "United Arab Emirates–Somalia",
+      "change": "Partner → Hostile: Expelled ambassador",
+      "source": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOSVJ4Ul9nWXc2WnBkTE1GanUtT0Nqd2ktdGxNY2w0NVF0VmFVRnF6RHZOUFg0dmIxLTBZZzh0R0RQTm4xOVd0QWptWDRreC1wOFFNZEVlZmdBQ25VMkN4Zk9XMlFWZHplMlQtUmhCMWVYRjVOX1ZGN19NbVBFZGZGdTZDbU52TUhyX2RhZTV1X2p0WmY0OEljV1BjNko0REhsbmxEZ1pVRnBmU3NiQ3JzUTBrWmxxNWthWmdFaWktTzVGU05SMlY4aFZNRzI1QQ?oc=5"
      }
     ]
    },
@@ -1368,7 +1373,7 @@
     ]
    }
   ],
-  "summary": "Australia and Solomon Islands sign a security treaty as Honiara cancels its security pact with China, while Ukrainian naval drones strike Russian naval assets off the coast of Libya."
+  "summary": "The update reflects the Solomon Islands' security treaty with Australia, the deepening diplomatic rift between Somalia and the UAE, and ongoing regional conflicts in Libya and the Red Sea."
  },
  "relations": {
   "DNK-USA": {
@@ -1928,8 +1933,8 @@
    "b": "SOM",
    "s": "H",
    "note": "Somalia expels the United Arab Emirates ambassador, accusing the UAE of funding armed groups and undermining national unity.",
-   "updated": "2026-11-19",
-   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVEVXeUcwb29TTkxoU05OVG02MzV4cVBrX2dQVEp3Q1lPY2xJM1Z4U0l3aFRxck84NWR2eDZncXRsbGhDSkdwdmRVUWlzdGUzLURwUGpKOGN0bjd2NlV4X1BRdE9pZnZKZHo3Zmxwd0JTeVk1b293eHpHcDRnTFJwSFRyOE9IUFhUdU84TnlZOVBjakJHZVFmeHZn?oc=5"
+   "updated": "2026-11-25",
+   "source": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOSVJ4Ul9nWXc2WnBkTE1GanUtT0Nqd2ktdGxNY2w0NVF0VmFVRnF6RHZOUFg0dmIxLTBZZzh0R0RQTm4xOVd0QWptWDRreC1wOFFNZEVlZmdBQ25VMkN4Zk9XMlFWZHplMlQtUmhCMWVYRjVOX1ZGN19NbVBFZGZGdTZDbU52TUhyX2RhZTV1X2p0WmY0OEljV1BjNko0REhsbmxEZ1pVRnBmU3NiQ3JzUTBrWmxxNWthWmdFaWktTzVGU05SMlY4aFZNRzI1QQ?oc=5"
   },
   "PAK-TUR": {
    "a": "PAK",
@@ -3377,7 +3382,7 @@
    "s": "A",
    "note": "Australia and Solomon Islands sign a bilateral security treaty as Honiara replaces its former security pact with China.",
    "updated": "2026-11-25",
-   "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNY1ByVmR6NElYOWdiQlZTZVVhZTdia3dYdm44RUxWRGR6cFg5S0dqSE1qREtMekxPVHRyb2JyYVBsalFodktKa2N1Sm1Pa0dXM0lFeUw3R3pUOTNJX3gxaVRYUlpRRmE5aS1scUlyM05HVmRQUGh5Rk5vdWNudEI5aHVacUlFZGpEd2c?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9KZkJ3YnIwNGdXNkVVTmFCbVhYdEE5ZTBsWFhoLVBOMmFGZTdnSjdaR0hHejRfVjdBWjlsS2JkTzR5X0tmRWR1ZkFRNng2UGtRcnNpXzhiZDlnUQ?oc=5"
   },
   "CHN-SLB": {
    "a": "CHN",
@@ -3385,7 +3390,7 @@
    "s": "N",
    "note": "Solomon Islands scraps its security pact with China as it inks a new defence treaty with Australia.",
    "updated": "2026-11-25",
-   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbkxDYnJOVDNDakFTT0JVQ2ctMHJpWmQtUUtiOEFValpyWDFsc0FfekE3ZnR2QjVMLXphMjkwR0JVWVdtWUNrbzh3SlprVzZXWTNqVEdibUlERTJESDM1SXdzdXhVREE4RkVCU1JjZmRKNFNMNW5ucUV6X2hENW1yRUdqSFhhbDRWZWEzcm05RWVqa0cyMk9XWUw5cEhhVUJLWEN2ZnYtVEZWVHdVTzhQYjdJRGRQQQ?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNeDI4MlptOE5LblFyWUtaZ0kwajlveURHR29XcVVtT2FqeDJKUDBheWJjNmVua3NZNEFNVDRIX2lzRjVlcnBRZ0xDTGtlZXRTS29fa19CbGZKdG5uVmdkQkhxLUY2TWRXSnN2UXNJaEo4UUc4cl9VOWdCQmRJVjNUNHdvVWxmdjRlOENWcXpvUXNYTGlxNUU5akxR?oc=5"
   }
  },
  "threads": {
@@ -3671,7 +3676,7 @@
     "UKR"
    ],
    "updated": "2026-11-25",
-   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPYXZOSVl5SDg3TnZrMGhLWkNZb29lcXVzSlh6TkJfbkZXalZwbjh1ZU0xdWZHR1NsUWpnWG0zY2dGb2VSYmowN0dJa3JnYWdrSl9MUl9XTGtXbDdLZ18tMElEbmZ1bERETTBkNlJ3d1YxdW5nSS16WnBtcjZkZmV5c0pmWXZ2dEFRdTRoMmFIOXY2SkJ4VEdXUEtITzhPTEotVW0zSnJ0ekM5N1lQZVBnT2hn?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSW0yMkJLQl9wbmtlSlNOeHNHaFBnZ21VdEQwUXlGZzd2bUJLRWdyeUVwLWc1R3doWE84Uy1neThuSUdtZ25fQzlOaktraW5mUlpvVWcyUnJVMmlEeVlCUzhzNmNmNC1DUUVyVTh1YlNZeHpuSmVkM2dQX3U3ZmtNVnBoeUR6V1FRSnNidkVn?oc=5"
   }
  },
  "pois": {
@@ -4118,6 +4123,16 @@
    "nextelec": "General, December 2026",
    "updated": "2026-11-25",
    "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQOE1YSDh1UnliOEZYNDVYUW9wbFhVaEhpdXVoamVveFFTWFBZOWN6dmFPT2ROVlViZEJuMmQ3eF9YNzBIQU9zNV8xRTNsR1VhS0NZRURKV3l4VnpqcG9ZRlRiblVMRDdnbXhuNXNWczlRM2xvdjBqVnhadkFvMzkzdGVpLXZSWS1GeGR5RG1MWm9Ielk0ZEQ2aUZXMU9YZ01BUVd2YnFoclpiZHBweklfcFNWczBsWFVxNnc?oc=5"
+  },
+  "PHL": {
+   "lastelec": "parliamentary, November 2026",
+   "updated": "2026-11-25",
+   "source": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNdk5UMXRXa3RhcW9ocDhYV05NTWhqRkxmOG53cDBnYVl3X0s4SmUya0N6QTdCblVLcy0waXNOTUpBYy1URzZjaVhmQVFtaWJ2cktucUwxajFUWUhCeUJrR21MQjJUSndUTkxWV0x0NEIzTzV3dFBuRlpnYUxFS0ItVmpNMFd4SldOOEN2MWJPUlIwbkxSMzVXMktJRWJ5VnNjd1Z4SXpBX2U5aHBpZ3Q0V2FoVlAxbTF2NTh5WFVIbTNwa0RocEVyQVlmMmhFa2hKdWNIUHlZczEzanVJQ1hnU2dSNk1XQQ?oc=5"
+  },
+  "MDV": {
+   "nextelec": "presidential, September 2027",
+   "updated": "2026-11-25",
+   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTkk3NkdtMjlpWExJWXZyV3RUSlMzMWFnbkMxVGFiQlBhaWd5bEVUQVpfcnlBQzBTb2tFcjJQbGlUOWtVWkxhVGNQbmxITEY3bW5nNGRDb25HRGVLRUdDb0RYd0hWdmFlYllJdkJibmlhZ1JyY3F1anVaZWxvc0dHVWNZa1didlVhX0VBalE0cWJEc0ZiTnhyYjQxT0x3b0tqcjFvZA?oc=5"
   }
  }
 }
