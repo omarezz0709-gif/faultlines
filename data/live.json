@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-25T19:53:01Z",
+  "lastRun": "2026-11-25T23:52:58Z",
   "log": [
    {
     "date": "2026-11-25",
@@ -9,11 +9,6 @@
       "label": "Libya's divided state and its backers",
       "change": "Updated description to reflect Ukrainian naval drone strikes on Russian ships off Benghazi",
       "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPYXZOSVl5SDg3TnZrMGhLWkNZb29lcXVzSlh6TkJfbkZXalZwbjh1ZU0xdWZHR1NsUWpnWG0zY2dGb2VSYmowN0dJa3JnYWdrSl9MUl9XTGtXbDdLZ18tMElEbmZ1bERETTBkNlJ3d1YxdW5nSS16WnBtcjZkZmV5c0pmWXZ2dEFRdTRoMmFIOXY2SkJ4VEdXUEtITzhPTEotVW0zSnJ0ekM5N1lQZVBnT2hn?oc=5"
-     },
-     {
-      "label": "Dominica",
-      "change": "Scheduled general election for December 2026",
-      "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQOE1YSDh1UnliOEZYNDVYUW9wbFhVaEhpdXVoamVveFFTWFBZOWN6dmFPT2ROVlViZEJuMmQ3eF9YNzBIQU9zNV8xRTNsR1VhS0NZRURKV3l4VnpqcG9ZRlRiblVMRDdnbXhuNXNWczlRM2xvdjBqVnhadkFvMzkzdGVpLXZSWS1GeGR5RG1MWm9Ielk0ZEQ2aUZXMU9YZ01BUVd2YnFoclpiZHBweklfcFNWczBsWFVxNnc?oc=5"
      },
      {
       "label": "Australia–Solomon Islands",
@@ -44,6 +39,31 @@
       "label": "Brunei–Russia",
       "change": "Normal → Partner: bilateral declaration elevating ties to strategic partnership",
       "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQWTItZkdLT2M1Wm1hU0h1LUxEdmlad2hXNzRSbHU0d0lxckk5MWxOejRFeG53VFNESUxLUHU2QjVRc0FlQkpkd2tHS1ZGRDM0OUNwcjBCeDZYT053aU11UnVjSG1GaXRmUDZVQ2RXZTdqX2RmcnNjYVNmcm5XZGdfc2V4aklFMEN6X19XSWtDLXY0RVh5LWZpRk45R2xudWl6Tk52T01IS0FaSGMtb1AzZFE5V3FKSG81d3JKSA?oc=5"
+     },
+     {
+      "label": "Egypt–Sudan",
+      "change": "Tense → Partner: Egypt commits to defend Sudan under joint defence pact",
+      "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNTVRBWVdtVHEySlhEUUtIUmFuUVFkZDRtdFNvaFV4cUJPQXo5TXNyaWR4UnZOQ0RxUDBKMTlQaWctcHd1VmcxQzNOSFlpU0R0SjR6Zll2TVAxYXlsLU8wbEFkc1lPUUtvRGNodzFpUFQ4cV9IM0dKMkFxdDRUN0xzTE9jYXl3TGw1QVBEdVpabF9YUEhqejhxTEtmVmlEcFBCVG1VSFdFUDg?oc=5"
+     },
+     {
+      "label": "Sudan's war and its outside backers",
+      "change": "Updated: RSF drone strikes hit Blue Nile as Egypt reaffirms defence pact",
+      "source": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNUEtVMTB0cTBqMEVyaVJCOGs3SmxSSWQzdjZDZlN6X2dYN0VVWVpqLUIyNGpLSTJoN1E4MC1Jc0NCam5fQ2NfekNYSzJnbGw0MGt2Y1hPc1YxNGVwb040TTFQcFd1cTZMQmI4a2FHZ1VGYVFoUUZORmNyS0k1Q185VWtkbVFwVElVZU1CQjFhS3ZvSmRkTjRiUU84THpMQjVmUTMwWU54cTk1WDVGMXY1NWY4WTBJMDJTTEhLX3ZWYmEzdmdZNzJJbllQV085SkNyaHVwVnpDRkp3U3RsSHFJbUk4MDA?oc=5"
+     },
+     {
+      "label": "Strait of Hormuz",
+      "change": "Updated: Tanker catches fire following mine strike in the waterway",
+      "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQd25oRzVVWnZ6VTFNd1N6VHZvN2RfN3VjTW5PZ2VYcUw0eDBQM2RhNkcyOTZkOVJHZGJIdGYyNDZkZWN2T0FXeHpJVk5XODFrNEFTWS1vdU96SkZET2VpOEtPWWV0WW9nLURORmIySWtFUnZmZmp5YWhaTDZYVUNLeEhtVl95UE5xa0hDMVNfYUJDcUFZd01xY3FnZ2pDVDZJNnZSZE5n?oc=5"
+     },
+     {
+      "label": "Thailand",
+      "change": "Election scheduled: General election set for 24 February 2027",
+      "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZ05Jek5Ya0RnUEJQbjR0NVQ3bjU1bjdaOUZjYUk2RWhYU0FUaERVVFZEYXpFdTc2dllrOHJjUmRNZVFScDkxVmNNSnpsVWVrUDBON0x6RkxONzBodmxVUDFwSmdMZHJBR0xwUk9tV1Q5U1ppOEs5RW5adnZBRHRINFV3c0Z0QjZVdXRGeFZwdWhMWlB0N3ZnVnBB?oc=5"
+     },
+     {
+      "label": "Dominica",
+      "change": "Election scheduled: General election set for 16 December 2026",
+      "source": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1tc3VZTjY4VFZQd1hTWkF0MzI3SzZzT0lCbER5TGZlVDYxb09sbWd0LWZmT3daSEowNW5KdFZMQXFQbEh2OWU0Z2QwOUF1MmF6blUwSlp1LU0zY1FiTlhISXB2SWcwVXltMjZxcHBmdmk4OFp2QUtWVjlsSzNiQQ?oc=5"
      }
     ]
    },
@@ -1388,7 +1408,7 @@
     ]
    }
   ],
-  "summary": "North Korea expels Swiss diplomats over sanctions leading Switzerland to shutter its Pyongyang office; Brunei and Russia, and Azerbaijan and Lithuania sign strategic partnership pacts."
+  "summary": "Egypt reaffirms its joint defence pact with Sudan amid escalating regional fighting, while newly scheduled elections are announced for Thailand and Dominica."
  },
  "relations": {
   "DNK-USA": {
@@ -2290,10 +2310,10 @@
   "EGY-SDN": {
    "a": "EGY",
    "b": "SDN",
-   "s": "T",
-   "note": "Tensions flare after an Egyptian airstrike kills 72 artisanal gold miners along the border, prompting an official Sudanese military probe.",
-   "updated": "2026-10-12",
-   "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdUNTTXZadFFkTDZQNEc0UzZjbUxYTkt2eXNkNGthZHdPTXZWNFJxVGJadUhyRXh3OWpHV1dDemwzeThXZk9BLVhjejI2MUtnblJDMlRnbzZ0bjhBQU9BSTFKQ1lwOWxTQk9tblFWMlk5dVZ5TlduWEs3TFdNbUVDd0ZjWUdRR3M?oc=5"
+   "s": "F",
+   "note": "Egypt reaffirms its commitment to defend Sudan under their 1976 Joint Defence Agreement to safeguard regional red lines.",
+   "updated": "2026-11-25",
+   "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNTVRBWVdtVHEySlhEUUtIUmFuUVFkZDRtdFNvaFV4cUJPQXo5TXNyaWR4UnZOQ0RxUDBKMTlQaWctcHd1VmcxQzNOSFlpU0R0SjR6Zll2TVAxYXlsLU8wbEFkc1lPUUtvRGNodzFpUFQ4cV9IM0dKMkFxdDRUN0xzTE9jYXl3TGw1QVBEdVpabF9YUEhqejhxTEtmVmlEcFBCVG1VSFdFUDg?oc=5"
   },
   "CYP-SAU": {
    "a": "CYP",
@@ -3487,7 +3507,7 @@
   "sudan-war": {
    "t": "proxy",
    "n": "Sudan's war and its outside backers",
-   "d": "Sudan's civil war expands as drone attacks strike residential areas in Khartoum and UN (United Nations) premises, with Khartoum intercepting drones from Ethiopia.",
+   "d": "Sudan's war intensifies as RSF (Rapid Support Forces) drones strike Blue Nile, while Khartoum rejects Ethiopian mediation and Egypt pledges defence support.",
    "c": [
     "SDN",
     "ARE",
@@ -3503,8 +3523,8 @@
     "SOM",
     "COL"
    ],
-   "updated": "2026-11-22",
-   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPcGZtZUhiQV9TODQ2cExWb1JmZXZZNGVITUl6YVZrR21rSzA3UkQ4WnZzbFJ1Q0RTUXdFbzNoWVd4ZFdHZ24tZGdJWmdsYnNudGxpcGdxX1czR2IyeWVkRVo0blRVNHJlZ1NvcWNRQ003TXh0aW5rWDhkNkxjWU1UTFJST3dXeXE3bG9zV3V4SlJfMWY2M1I4X3g0dkM1LUhxbmQ3WHR5MDREV3M1?oc=5"
+   "updated": "2026-11-25",
+   "source": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNUEtVMTB0cTBqMEVyaVJCOGs3SmxSSWQzdjZDZlN6X2dYN0VVWVpqLUIyNGpLSTJoN1E4MC1Jc0NCam5fQ2NfekNYSzJnbGw0MGt2Y1hPc1YxNGVwb040TTFQcFd1cTZMQmI4a2FHZ1VGYVFoUUZORmNyS0k1Q185VWtkbVFwVElVZU1CQjFhS3ZvSmRkTjRiUU84THpMQjVmUTMwWU54cTk1WDVGMXY1NWY4WTBJMDJTTEhLX3ZWYmEzdmdZNzJJbllQV085SkNyaHVwVnpDRkp3U3RsSHFJbUk4MDA?oc=5"
   },
   "cocaine-europe": {
    "t": "trafficking",
@@ -3749,11 +3769,11 @@
    "updated": "2026-11-19"
   },
   "strait-of-hormuz": {
-   "d": "Two oil tankers are attacked near Oman's Khasab port, with Iran reporting naval mine explosions in the strategic chokepoint.",
+   "d": "Vessels face heightened danger in the Strait of Hormuz after an LNG (liquefied natural gas) tanker catches fire from naval mines near Oman.",
    "n": "Strait of Hormuz",
-   "s": "Tankers struck near Khasab",
-   "source": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPMTVjbF9zUV9GY09EVWllbmJGVjJMbVZibTFjMWt6d01iUFhUMVZkNFNuVkFrX2FYQ1V2cC1XOGMyUmFWcTF3cUl3dnEtd3EzT3JkbEo0VzdNVUlWNjczQ2ZPd0Y4ZzVqaTRwTm44UTZVek9FMXZsbEZsVVpHRmk4ckEtUURKRzFNWF91eVprUXlpM00zbEUzUXgwdC1qWXRuZE0wUkxkeG81Y2hQdGpjcm1MUUp3WkJBMkRwR2g3cklNam5GZl8yX0tXNk5oTFFwaEFmd25GVHNkbXMyTlZBdmRSR3QwZHhk?oc=5",
-   "updated": "2026-11-21",
+   "s": "Mine attacks strike tankers",
+   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQd25oRzVVWnZ6VTFNd1N6VHZvN2RfN3VjTW5PZ2VYcUw0eDBQM2RhNkcyOTZkOVJHZGJIdGYyNDZkZWN2T0FXeHpJVk5XODFrNEFTWS1vdU96SkZET2VpOEtPWWV0WW9nLURORmIySWtFUnZmZmp5YWhaTDZYVUNLeEhtVl95UE5xa0hDMVNfYUJDcUFZd01xY3FnZ2pDVDZJNnZSZE5n?oc=5",
+   "updated": "2026-11-25",
    "t": "strait",
    "lat": 26.57,
    "lng": 56.25,
@@ -4159,9 +4179,9 @@
    "nextelec": "snap presidential, December 2026"
   },
   "DMA": {
-   "nextelec": "general, 16 Dec 2026",
+   "nextelec": "General election, 16 December 2026",
    "updated": "2026-11-25",
-   "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVXVQVkR2M3Joc3J1c01TNkp3eFNzQ3p0M25ISVhsOVVERVFPd295U01lTzhWb3lVWXFzdFphbUZKUjVBV1JoMHNzQ3ZwNkdKYjlFSGdrZ244bGhIZUk0SXNCVHVDXzlMYjNlRlZneHFDTVNTbHFvNkNDMy1wRkJEZ2pMZmJsTnhnTFZSTnh0b1hiMmdIUGd0cE5aTm56YkxZRmZ5eERMWQ?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1tc3VZTjY4VFZQd1hTWkF0MzI3SzZzT0lCbER5TGZlVDYxb09sbWd0LWZmT3daSEowNW5KdFZMQXFQbEh2OWU0Z2QwOUF1MmF6blUwSlp1LU0zY1FiTlhISXB2SWcwVXltMjZxcHBmdmk4OFp2QUtWVjlsSzNiQQ?oc=5"
   },
   "PHL": {
    "lastelec": "parliamentary, November 2026",
@@ -4172,6 +4192,11 @@
    "nextelec": "presidential, September 2027",
    "updated": "2026-11-25",
    "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTkk3NkdtMjlpWExJWXZyV3RUSlMzMWFnbkMxVGFiQlBhaWd5bEVUQVpfcnlBQzBTb2tFcjJQbGlUOWtVWkxhVGNQbmxITEY3bW5nNGRDb25HRGVLRUdDb0RYd0hWdmFlYllJdkJibmlhZ1JyY3F1anVaZWxvc0dHVWNZa1didlVhX0VBalE0cWJEc0ZiTnhyYjQxT0x3b0tqcjFvZA?oc=5"
+  },
+  "THA": {
+   "nextelec": "General election, 24 February 2027",
+   "updated": "2026-11-25",
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZ05Jek5Ya0RnUEJQbjR0NVQ3bjU1bjdaOUZjYUk2RWhYU0FUaERVVFZEYXpFdTc2dllrOHJjUmRNZVFScDkxVmNNSnpsVWVrUDBON0x6RkxONzBodmxVUDFwSmdMZHJBR0xwUk9tV1Q5U1ppOEs5RW5adnZBRHRINFV3c0Z0QjZVdXRGeFZwdWhMWlB0N3ZnVnBB?oc=5"
   }
  }
 }
