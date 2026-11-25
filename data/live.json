@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-25T15:23:32Z",
+  "lastRun": "2026-11-25T19:53:01Z",
   "log": [
    {
     "date": "2026-11-25",
@@ -29,6 +29,21 @@
       "label": "United Arab Emirates–Somalia",
       "change": "Partner → Hostile: Expelled ambassador",
       "source": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOSVJ4Ul9nWXc2WnBkTE1GanUtT0Nqd2ktdGxNY2w0NVF0VmFVRnF6RHZOUFg0dmIxLTBZZzh0R0RQTm4xOVd0QWptWDRreC1wOFFNZEVlZmdBQ25VMkN4Zk9XMlFWZHplMlQtUmhCMWVYRjVOX1ZGN19NbVBFZGZGdTZDbU52TUhyX2RhZTV1X2p0WmY0OEljV1BjNko0REhsbmxEZ1pVRnBmU3NiQ3JzUTBrWmxxNWthWmdFaWktTzVGU05SMlY4aFZNRzI1QQ?oc=5"
+     },
+     {
+      "label": "North Korea–Switzerland",
+      "change": "Normal → Tense: North Korea expels Swiss diplomats; Switzerland closes its Pyongyang office",
+      "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNalMxMlZZU2NURmZlZF80eXM2TzFzWjRReFctZjJ1SU9WdjhoeUhIbmgxTkdpNXpnYURfSVhYMFRVR3pOdTg3VUVXd0NhWVlrb2hkYm1RdW9MQTcycm5SdGVuSmE5V25INGN5UGFSNk9JaTBkbWpMYUxwcWN6V05tZmZGUnc5UEE5ZjBScg?oc=5"
+     },
+     {
+      "label": "Azerbaijan–Lithuania",
+      "change": "Normal → Partner: Joint Declaration on Strategic Partnership signed",
+      "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOUzUxVFJiaEd4V21sUjRJVHFoRzdoTFBmdENzTWNsNXYtZlAzeG1mOXFuWHBFbjVxOGtTZk5VNU5meGxUa2dyZGFGVW54aVJ1VnIzVkM2RmhiQjAtcU15ZGp0dThKbTdXdEtKSnJ4Y2pjZ0hIU1VBM3NxSzYwVjlDOW10SVBreU15NnlNdWpDUV9wWDVBeE82T1EzckkzWGQ3QXVrTjhQQ1ZwMWtRVVZsaVFR?oc=5"
+     },
+     {
+      "label": "Brunei–Russia",
+      "change": "Normal → Partner: bilateral declaration elevating ties to strategic partnership",
+      "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQWTItZkdLT2M1Wm1hU0h1LUxEdmlad2hXNzRSbHU0d0lxckk5MWxOejRFeG53VFNESUxLUHU2QjVRc0FlQkpkd2tHS1ZGRDM0OUNwcjBCeDZYT053aU11UnVjSG1GaXRmUDZVQ2RXZTdqX2RmcnNjYVNmcm5XZGdfc2V4aklFMEN6X19XSWtDLXY0RVh5LWZpRk45R2xudWl6Tk52T01IS0FaSGMtb1AzZFE5V3FKSG81d3JKSA?oc=5"
      }
     ]
    },
@@ -1373,7 +1388,7 @@
     ]
    }
   ],
-  "summary": "The update reflects the Solomon Islands' security treaty with Australia, the deepening diplomatic rift between Somalia and the UAE, and ongoing regional conflicts in Libya and the Red Sea."
+  "summary": "North Korea expels Swiss diplomats over sanctions leading Switzerland to shutter its Pyongyang office; Brunei and Russia, and Azerbaijan and Lithuania sign strategic partnership pacts."
  },
  "relations": {
   "DNK-USA": {
@@ -3391,6 +3406,30 @@
    "note": "Solomon Islands scraps its security pact with China as it inks a new defence treaty with Australia.",
    "updated": "2026-11-25",
    "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNeDI4MlptOE5LblFyWUtaZ0kwajlveURHR29XcVVtT2FqeDJKUDBheWJjNmVua3NZNEFNVDRIX2lzRjVlcnBRZ0xDTGtlZXRTS29fa19CbGZKdG5uVmdkQkhxLUY2TWRXSnN2UXNJaEo4UUc4cl9VOWdCQmRJVjNUNHdvVWxmdjRlOENWcXpvUXNYTGlxNUU5akxR?oc=5"
+  },
+  "CHE-PRK": {
+   "a": "CHE",
+   "b": "PRK",
+   "s": "T",
+   "note": "Switzerland closes its Pyongyang office after North Korea expels Swiss diplomats in a feud over sanctions on a youth camp.",
+   "updated": "2026-11-25",
+   "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNalMxMlZZU2NURmZlZF80eXM2TzFzWjRReFctZjJ1SU9WdjhoeUhIbmgxTkdpNXpnYURfSVhYMFRVR3pOdTg3VUVXd0NhWVlrb2hkYm1RdW9MQTcycm5SdGVuSmE5V25INGN5UGFSNk9JaTBkbWpMYUxwcWN6V05tZmZGUnc5UEE5ZjBScg?oc=5"
+  },
+  "AZE-LTU": {
+   "a": "AZE",
+   "b": "LTU",
+   "s": "F",
+   "note": "Azerbaijan and Lithuania elevate bilateral ties by signing a Joint Declaration on Strategic Partnership.",
+   "updated": "2026-11-25",
+   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOUzUxVFJiaEd4V21sUjRJVHFoRzdoTFBmdENzTWNsNXYtZlAzeG1mOXFuWHBFbjVxOGtTZk5VNU5meGxUa2dyZGFGVW54aVJ1VnIzVkM2RmhiQjAtcU15ZGp0dThKbTdXdEtKSnJ4Y2pjZ0hIU1VBM3NxSzYwVjlDOW10SVBreU15NnlNdWpDUV9wWDVBeE82T1EzckkzWGQ3QXVrTjhQQ1ZwMWtRVVZsaVFR?oc=5"
+  },
+  "BRN-RUS": {
+   "a": "BRN",
+   "b": "RUS",
+   "s": "F",
+   "note": "Brunei and Russia elevate bilateral relations to a strategic partnership following summit talks between their heads of state.",
+   "updated": "2026-11-25",
+   "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQWTItZkdLT2M1Wm1hU0h1LUxEdmlad2hXNzRSbHU0d0lxckk5MWxOejRFeG53VFNESUxLUHU2QjVRc0FlQkpkd2tHS1ZGRDM0OUNwcjBCeDZYT053aU11UnVjSG1GaXRmUDZVQ2RXZTdqX2RmcnNjYVNmcm5XZGdfc2V4aklFMEN6X19XSWtDLXY0RVh5LWZpRk45R2xudWl6Tk52T01IS0FaSGMtb1AzZFE5V3FKSG81d3JKSA?oc=5"
   }
  },
  "threads": {
@@ -3409,11 +3448,11 @@
     "SYR",
     "ARE"
    ],
-   "d": "Houthi forces launch ballistic missiles at Riyadh, prompting Saudi coalition air strikes on weapons smuggling targets in Hodeidah.",
+   "d": "Houthi drones and missiles strike Riyadh's financial district and Ras Tanura refinery, triggering Saudi air raids on Hodeidah and UK sanctions.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPV2s2d2xVNlpZamM1RXpfRURTUFM4eFhHeFBkQVp6TTlLTXZWMjB5WFEwcF8wQ2dqR3U5SDd2VUNKdm1uV2RfV256RHUzUS1ZQWZJdnNlRmJtemxFeUZLR2tLWXhza2EwOVBWUEVPeUJ2VG9aV0R0RjVSWU1wVG8zU3p4RWJQMmhDcjdKOF9XZXBMQQ?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZUwwR09ZMlJFdFJSWUpZaHZULTR6QVRpZnRZV1Y2TU5TOWlJTFpUTzdrdVJZWmhZN3NuQ2twNThaMi1kbjV1WlpObXplMXhFMUg4MzZtUlZOUEp1MGNtWk8tQmtybVVYWkFDVUhlXzZINVcwbVVnd1d6eGRpV0NWakx6R05fakFNX0FKU3VDSGxUbXVQTkM4R0ZJUTFUZ0JYWFBlSFVaZklkTFRUc1pxdTJn?oc=5",
    "t": "security",
-   "updated": "2026-11-21"
+   "updated": "2026-11-25"
   },
   "afpak-jihad": {
    "t": "security",
@@ -3660,7 +3699,7 @@
   "libya-war": {
    "t": "proxy",
    "n": "Libya's divided state and its backers",
-   "d": "Russian logistics and mercenary networks in eastern Libya come under attack from Ukrainian naval drones in Benghazi, extending Black Sea combat to North Africa.",
+   "d": "Ukrainian drone strikes on Russian warships in Benghazi kill Libyan personnel, prompting retaliation threats while Haftar pursues talks in Ankara.",
    "c": [
     "LBY",
     "EGY",
@@ -3676,7 +3715,7 @@
     "UKR"
    ],
    "updated": "2026-11-25",
-   "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSW0yMkJLQl9wbmtlSlNOeHNHaFBnZ21VdEQwUXlGZzd2bUJLRWdyeUVwLWc1R3doWE84Uy1neThuSUdtZ25fQzlOaktraW5mUlpvVWcyUnJVMmlEeVlCUzhzNmNmNC1DUUVyVTh1YlNZeHpuSmVkM2dQX3U3ZmtNVnBoeUR6V1FRSnNidkVn?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPOTZQWFlWdDVhYWoyOU9sSUhxWDF3QzhHOHhTa2d0T3VvN2ZUenE1ZlNWdUhhZEk2NzBCeUpwR3JlRGdMS29vcjk2dURGVDBvbjJlTXNFb1NjVUdURjJQeV9ZeGQ5c0dvZlhPNTNYWGV5cUJoRlp2S1R4cWJhY1JKM2pfUk50N2RqTjBkX0RJanM3NV9kSmphdks0NTdWMEx1Z2ppbWFWNlZybDlPbmFTcGFrakxJZVBKMEVCWUNIZw?oc=5"
   }
  },
  "pois": {
@@ -4053,9 +4092,9 @@
   },
   "ISR": {
    "nextelec": "General, 2026",
-   "updated": "2026-11-16",
-   "source": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBLWC1JUDhXX3lvaVA2bG1ncjBvb2h3dERIWmxIWkdlR0VJbEFrUV9UZk9LejgxdW4zdmlXc1BHTk9ITFliM2hWWEZBOGJWTDJQWi1YMWw4am56S2czRk1ZeUMtNVB3V25Zd2tDdDBCdU53cXNrM1NaX1FlNXZSdw?oc=5",
-   "lastelec": "legislative election, November 2026"
+   "updated": "2026-11-25",
+   "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPSUQ4bGZQZV9SNTdSSWQ4R2dyRzRkVVpnQWJOSWhXakdFVFQxWnB3X3BvMWJxQk9aeURmd0dCMW9raWkyY1NUbGZXLXZJSzR0LWdkbEVIUUlzMzRsT3J3aXlvREp2TmVVcEY5QlNNdHE1c293SzJObzFOZEM2TnFxWGhlcGRQY3ZvRnlsazRaeHJqdVl5alczUUtHdW11SUZ1UElveWZURldYdjFvc3ZoZnZXMkZNQzJuMk9MYWI3NWlMdWpaRkxnNlg3VmVQZG1DZWt4Z3FnTTN6WUN6dVJtTXEtT0l0S1pVU0E?oc=5",
+   "lastelec": "legislative, Oct 2026, deadlock"
   },
   "OMN": {
    "nextelec": "municipal, December 2026",
@@ -4120,9 +4159,9 @@
    "nextelec": "snap presidential, December 2026"
   },
   "DMA": {
-   "nextelec": "General, December 2026",
+   "nextelec": "general, 16 Dec 2026",
    "updated": "2026-11-25",
-   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQOE1YSDh1UnliOEZYNDVYUW9wbFhVaEhpdXVoamVveFFTWFBZOWN6dmFPT2ROVlViZEJuMmQ3eF9YNzBIQU9zNV8xRTNsR1VhS0NZRURKV3l4VnpqcG9ZRlRiblVMRDdnbXhuNXNWczlRM2xvdjBqVnhadkFvMzkzdGVpLXZSWS1GeGR5RG1MWm9Ielk0ZEQ2aUZXMU9YZ01BUVd2YnFoclpiZHBweklfcFNWczBsWFVxNnc?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVXVQVkR2M3Joc3J1c01TNkp3eFNzQ3p0M25ISVhsOVVERVFPd295U01lTzhWb3lVWXFzdFphbUZKUjVBV1JoMHNzQ3ZwNkdKYjlFSGdrZ244bGhIZUk0SXNCVHVDXzlMYjNlRlZneHFDTVNTbHFvNkNDMy1wRkJEZ2pMZmJsTnhnTFZSTnh0b1hiMmdIUGd0cE5aTm56YkxZRmZ5eERMWQ?oc=5"
   },
   "PHL": {
    "lastelec": "parliamentary, November 2026",
