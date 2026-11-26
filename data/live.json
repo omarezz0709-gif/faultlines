@@ -1,7 +1,22 @@
 {
  "meta": {
-  "lastRun": "2026-11-25T23:52:58Z",
+  "lastRun": "2026-11-26T19:57:45Z",
   "log": [
+   {
+    "date": "2026-11-26",
+    "items": [
+     {
+      "label": "Iran–Kuwait",
+      "change": "Tense → Hostile: Iranian drone attack in Kuwait kills two Italian technicians.",
+      "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNaFA1eHM2MXluV05sMGhwVFMtb0xxRXVkLWlsZF9lM2duOE5KdmhpSlZJeHFmOE5saXBzdWxMX1ppSUZyZDYxNjBVamFzZW9DYnFYOWRrU2VJQklQcXZyd1dmWjlqb09pNlJybnhaYnNxT1BGT1loQWxQTWg2LUM4azZpOWtEazhoa0pJcG1oV1R3TUpSTXk5VUln?oc=5"
+     },
+     {
+      "label": "Armenia–Russia",
+      "change": "Note updated: Armenia announces full removal of Russian border guards from its frontiers.",
+      "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZUtXLU5EMWhfczRiMlNiRWdzU0Q4NEpqQWtCbm41S0Q2bTBqelJ5NXVYZFhZc2RwTEZYelYtRTYtcFFPWHp2S0tLQXVIQ1RRcVhhamM1MHo3YXdub3ZvT0c1SDlKQVlwZVpuS09zZm5CRjM0OWxHN0pXQlF1RzRENjQ1S1p1Y0lhVFBIRDM5YzZKYmpYbW5r?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-11-25",
     "items": [
@@ -1356,59 +1371,9 @@
       "source": "https://news.google.com/rss/articles/CBMidEFVX3lxTE93TVNtRWNPQ0tkSzk3VkUzVlU0ejE2RUxTM1IzVHd6eWJDUDk1dlZlWnlicmtLNWFPS3F2RmwzMGNlVkxfWkcxQ2NVb0dqejhzR3lTRzVQNHNzaEtCenpZM0UzcF9Xd1BpTS1uUVRtRWlhSEVp?oc=5"
      }
     ]
-   },
-   {
-    "date": "2026-10-27",
-    "items": [
-     {
-      "label": "Jordan–Syria",
-      "change": "Normal → Tense: Jordanian airstrikes in Syria prompt closure of the Nasib border crossing",
-      "source": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1qZlNITU9ORlBHaWpKTUxPOW1zWlQ5ZXRTMFhDLUpzbUlWRzZMb01EYW81ejRGNVRvN1pBbDhMMi1mZWZZRnptT1BlSV82WmtadEltRQ?oc=5"
-     },
-     {
-      "label": "Egypt–Saudi Arabia",
-      "change": "Partner: Egyptian parliament approves military support to defend Saudi Arabia",
-      "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQTmpuQ2V4QVNiVnVLTlMyUjROY3VacGdhMXVRNmlRZ1JWT3h1U0M3SGdwRDdJc2JSaGZSRnI1dU9qcjJZemVTa0ZJR05jbVBGbXBPNFQyb1dtbEN4dHhpU0t1V0t2UDJGMUNuRzlaZ1k0Mm52amZfekU1YVNDUWNpNF81dVpXYjd6NFJGWjlpZWVPeHU3RmVYM0xn?oc=5"
-     },
-     {
-      "label": "Houthi Red Sea campaign",
-      "change": "Thread updated: Egypt authorizes defense of Saudi Arabia amid Houthi escalation",
-      "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxON0ljU1VMRDd4djR4Zm5NU2Z0MTE0b2NaVktDM1RKS01oYnBKbWhVQlpodjRETko1MlhUY2o2eGFINEo3UzVtME4zckpYbDkwZnBMcENLZ2l2ckhuaG5LaGFfbzlNbHNaNVIzN3Fva3VkLUpFTzdFR2w5aUtHT2ltRnZ1UmxHNEJqUkgtb0pZaFBqMlphVVpwcTIyRWhvOW5Ga05KM3JlaTNKem9oem52NDJiRm1GN3RqOEIxSlY4RVhYalk?oc=5"
-     },
-     {
-      "label": "Israel",
-      "change": "Election: Voters head to polls in national parliamentary election",
-      "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWXdkYmZFcGxyVVBUbXpWSnU5bHlHeDlELWYzMnZvWVIwb0xPQmNLSDJtRlpMb3ZodnFuY1d4QkV2SW51WG5ReGFhdEZ5WlRpSERYOE1ZQzI0ajVUN0ZQRS0tM3hraERWWWlHRHhNZlRkU3h4TU1sc1pSQVYxV0VCaV9EOElqdi1IcHdZek1zTV9adVVCLUctNUtfZkxRdGVYUkdJ?oc=5"
-     },
-     {
-      "label": "Bulgaria",
-      "change": "Election: First round of presidential election sends Yotova to November runoff",
-      "source": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUTBldlhSbUVyZEhKR3RIUlZRMUpWRTJnU0pWZm16UWxDX3NjMjVBVmNEanJqQVQ2ZFBfbEZ0di1NalVYaUJmZjh1N3BEU29jZFoxX2VWWU9hSUpTTlIwbGNJckNKWk1WeTh5b1VQMGIwR003Vm81NDdoNHFmYy1hbTY3c0hORm1FUzJRYkpxc284WVFWRDVUUWtNTnJoMHhSVXF6OVpVRWFzUkhraFQ2cXdhNTZvU2xKd0NIc3ZELVJvYmJFNnZaNWZsV1dsQ2o4MVRUU3BXR3AyY25tWE1pTFJ1UQ?oc=5"
-     },
-     {
-      "label": "Canada–United Arab Emirates",
-      "change": "Normal → Partner: signed defence, energy, and trade agreements",
-      "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPWVVnRFlYNkJrVUpJOE5wa2FEMGZPWVZuQ1E3M1cxUUdkZjJFRmtia1l0X05QNzNkeGJPbW5DRHY1ajdTcmJ5SUlGN1ZmZUJidE83SjZDUUpabjcyNEtpS2tVcTFveURvM3hxb0R4N2hKbndVamk3SXd2aVVIY2J1QWZZcnQwUFZnekFmNFd6MUNOWXl4bjZsTHBMTjZRc1BPN3F3dE8wdlBrSkFMYk5PTl9tU0FVaDdUNHcxd0tqSVhqdVV4aUlB?oc=5"
-     },
-     {
-      "label": "Moldova–Ukraine",
-      "change": "Partner: updated note for new five-year defence cooperation agreement",
-      "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWkNxX2lla0U5SHZyb3FTU2Z3U0J6c2U5cjdkUF9TTEMwRWZadXRZcktXdmk4NW10MzA3Y2tjV1lTYWNOZ1NHMFljT08tVHJnOE5ESFVsQlhVZzQ0Tkk0LWZncjBpS3p6TWNWM19yTWpNb1dOSUtFNHZaaVVZNXd0NGZFT2VlaFhqNG9ta01IdkV6SUpDVkN4Zi1RcmpkWHJ6R2JuRw?oc=5"
-     },
-     {
-      "label": "El Salvador–Haiti",
-      "change": "Partner: updated note for deployment of 1,000 Salvadoran troops",
-      "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQY1gtaGppZXZtMTh1N1dPcGJIaWNUV1NtYzRuUGRXdHh0NnNCb3dYYi1nbnY4MGtZMDh3ekRvX196WjZLZTByV1pfeGlFc1pSZHF0OWZHWUhyZDRFNG5IZDdHVG1oSTE1S3NnYzZ5RkpSR1RJSS1hWm5ZMjBYNnF4WllvdWR3dExyWUJhWXl6NWJtbFlqQ2xnbkFwa3FSUVl1Zy1zRktWbVFIZnc?oc=5"
-     },
-     {
-      "label": "Serbia",
-      "change": "Politics: Student List wins snap parliamentary election",
-      "source": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBJeDl4cDJsbkJSS1gxUnhFUmd1Z25hMmNIX3M2eC1rY1lmVG95YVk1RzFiOWxjM1JMcG9XM2FOYmF4U3lGSlBNWUticFdPYU9yUVN3SWJsdElSWmF3WXRFMHV4YVBiSl9La0dSYQ?oc=5"
-     }
-    ]
    }
   ],
-  "summary": "Egypt reaffirms its joint defence pact with Sudan amid escalating regional fighting, while newly scheduled elections are announced for Thailand and Dominica."
+  "summary": "An Iranian drone attack in Kuwait kills two Italian technicians, driving IRN–KWT relations to Hostile, while Armenia announces the complete removal of Russian border troops."
  },
  "relations": {
   "DNK-USA": {
@@ -1983,9 +1948,9 @@
    "a": "ARM",
    "b": "RUS",
    "s": "T",
-   "note": "Armenia is stripped of its voting rights in the Russia-led Collective Security Treaty Organization (CSTO) over unpaid dues.",
-   "updated": "2026-11-13",
-   "source": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFAtSTRzQkRDZm9XTmgyakdkWHg3U1czYzZWMWZlR081aHE4d0FUdG5DTW5pZ2djSkc0Z2EwaG9fcW5qaDdYRk5FZDRuMA?oc=5"
+   "note": "Armenia announces the complete withdrawal of Russian border guards from its frontiers with Türkiye and Iran.",
+   "updated": "2026-11-26",
+   "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZUtXLU5EMWhfczRiMlNiRWdzU0Q4NEpqQWtCbm41S0Q2bTBqelJ5NXVYZFhZc2RwTEZYelYtRTYtcFFPWHp2S0tLQXVIQ1RRcVhhamM1MHo3YXdub3ZvT0c1SDlKQVlwZVpuS09zZm5CRjM0OWxHN0pXQlF1RzRENjQ1S1p1Y0lhVFBIRDM5YzZKYmpYbW5r?oc=5"
   },
   "LTU-RUS": {
    "a": "LTU",
@@ -3238,10 +3203,10 @@
   "IRN-KWT": {
    "a": "IRN",
    "b": "KWT",
-   "s": "T",
-   "note": "Iran launches drone strikes targeting a United States (US) air base in Kuwait, shattering a two-month lull in Gulf fighting.",
-   "updated": "2026-11-18",
-   "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPdGl0X3ZfazlwMHhRbE1KOFlmRFhKQkV6eDJ1a2pKWU5fZFlXOFBRTVdTUE5fc2tVMlgxd01NQnhUUkEyMVJzTHdVOThnV2NBYk4teWRnV0pwN2Vsd1N5OFU3blhDWEQ1SWl5amtPVllGR1YtcFJmalcwdmh2R0ZxRXg1WU4wSU5qRWZuaXl6d2I5ZDMyX1d3WXc5WTRPSUxVQXVuRGtNWDdXRkwtTDA5TEpsdVhvZkcxR3ZLcHhPT1lZUUJlY3NpSDlMQk1PYzdxS1NwTXFXVTN6R3lNM3Z6MHZqT3Z0RnZIR1E?oc=5"
+   "s": "H",
+   "note": "Tensions turn hostile after an Iranian drone attack in Kuwait kills two Italian technicians, drawing Gulf condemnation.",
+   "updated": "2026-11-26",
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNaFA1eHM2MXluV05sMGhwVFMtb0xxRXVkLWlsZF9lM2duOE5KdmhpSlZJeHFmOE5saXBzdWxMX1ppSUZyZDYxNjBVamFzZW9DYnFYOWRrU2VJQklQcXZyd1dmWjlqb09pNlJybnhaYnNxT1BGT1loQWxQTWg2LUM4azZpOWtEazhoa0pJcG1oV1R3TUpSTXk5VUln?oc=5"
   },
   "CHL-PHL": {
    "a": "CHL",
@@ -3468,11 +3433,11 @@
     "SYR",
     "ARE"
    ],
-   "d": "Houthi drones and missiles strike Riyadh's financial district and Ras Tanura refinery, triggering Saudi air raids on Hodeidah and UK sanctions.",
+   "d": "Houthi drones and missiles strike Saudi Arabia's Jazan refinery, killing a worker and prompting Coalition retaliatory strikes on Sanaa.",
    "n": "Houthi Red Sea campaign",
-   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZUwwR09ZMlJFdFJSWUpZaHZULTR6QVRpZnRZV1Y2TU5TOWlJTFpUTzdrdVJZWmhZN3NuQ2twNThaMi1kbjV1WlpObXplMXhFMUg4MzZtUlZOUEp1MGNtWk8tQmtybVVYWkFDVUhlXzZINVcwbVVnd1d6eGRpV0NWakx6R05fakFNX0FKU3VDSGxUbXVQTkM4R0ZJUTFUZ0JYWFBlSFVaZklkTFRUc1pxdTJn?oc=5",
+   "source": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5xZWZmV09LZnpGcm5xTkZRTlBJSUUyQThGd0lTcGNndW5aeURBTzlPTHZtUXUtV0FXQjR6SjFqemNEZGFseW45RA?oc=5",
    "t": "security",
-   "updated": "2026-11-25"
+   "updated": "2026-11-26"
   },
   "afpak-jihad": {
    "t": "security",
@@ -3719,7 +3684,7 @@
   "libya-war": {
    "t": "proxy",
    "n": "Libya's divided state and its backers",
-   "d": "Ukrainian drone strikes on Russian warships in Benghazi kill Libyan personnel, prompting retaliation threats while Haftar pursues talks in Ankara.",
+   "d": "Ukrainian drone strikes on Russian warships off Libya kill Libyan personnel, drawing Italian rebukes and escalating Mediterranean tensions.",
    "c": [
     "LBY",
     "EGY",
@@ -3734,8 +3699,8 @@
     "SDN",
     "UKR"
    ],
-   "updated": "2026-11-25",
-   "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPOTZQWFlWdDVhYWoyOU9sSUhxWDF3QzhHOHhTa2d0T3VvN2ZUenE1ZlNWdUhhZEk2NzBCeUpwR3JlRGdMS29vcjk2dURGVDBvbjJlTXNFb1NjVUdURjJQeV9ZeGQ5c0dvZlhPNTNYWGV5cUJoRlp2S1R4cWJhY1JKM2pfUk50N2RqTjBkX0RJanM3NV9kSmphdks0NTdWMEx1Z2ppbWFWNlZybDlPbmFTcGFrakxJZVBKMEVCWUNIZw?oc=5"
+   "updated": "2026-11-26",
+   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdk1SakpTcUdjdkJJV0R5NzRFTGVHRkhIUEJIMWNzV0o1OU5wUlVMOS1vTWtERGFya3h6WU50dVg2TzRUbUhaRVZoeFVOZXRJRUduVVh5ZzRIMWttZ3FKd19VeC1SNDJuZnlHdThrMFpWcVd4V0R1Wnd2bXdkZXI1SkFNSTNHamFFcFpwZDJHOTBIbWZHRklYc3hKU1hOSzFWajBXdWR2OXBtVTZLdWdF0gG0AUFVX3lxTE10UU1wMlZzQmowbGd1ZUhYSDhpTlFSVnhxZ3EtRUtoMHJDMzJmOXNubGJ2WTNENk1oV2FMWG5URm5OclA2cldhR182VUluVWdXdkZsZGwxbUcxYnNfZWZfc1FORFBFRlA2d0hONlRrNDBkS3FISmpJdFB0LTBsVURqdGE1eWlSbnhwUlFBc0ZPNk1oUElZeEFQVDVOWVhIUE9FZEpHMDR1elE4cGhUNGExVzY5VA?oc=5"
   }
  },
  "pois": {
@@ -4012,9 +3977,9 @@
    "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQYk8wSTJNSU5jTGItWUxYdGxDbHJMRHJJTUdMMmhrTTdoNFAxcU1aM1F6UDd0OHRLX1Zuc2ZyRV9MQUpORVJBRENldXpGSlRsdENRdDdqUVdJa3VJRzBkVjBrWmdBU3VoRmdPRWNvNVVqOThqUGh4VVgwZTgxMVQzQnVDX2ZmQjVJR0JLdTFmLVZTd0k?oc=5"
   },
   "SRB": {
-   "nextelec": "parliamentary, Nov 2030",
-   "updated": "2026-11-08",
-   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQY2tLc0Y0a3FFRnJhLVh5QnY4WW81SjgtU0dtYUcxeXFwSXlHZjVUWmhwRUJlcWVrNFBOdmQyMG5sZlB0aC14MmQyT2JxWXRhTU1LZmc1NUxiN3BldnR1dUlURENXR20tNzB5dG1IaHlTYTkzMmNGTE9JSUVpTUVPeUxIem02eXZGemZDdDQwRjNKaWt4QjYwU3B6b0RrOFVvcFNv?oc=5",
+   "nextelec": "presidential, December 2026",
+   "updated": "2026-11-26",
+   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOYmlhZE1sSEJnd1o0VjczcmctOXZkVnpOemVIRTEtWTJ5cy1mdlpPYlFlMFVpRHNTMWJnN0pMZ0ZRMUtvamlVcFBnVTFDN29rblN6T3FIcUN2UlVQU1FHcHJaMzQxSVdpTmZrMXRfQVRLUDI2MG9vOU9ERVFfcTFpQXgxS3ZkY2QxS29Odm50ZlJxRnNBXzdfY1R5NVNTSGhENnJJSVhUUVo1TE93VEln?oc=5",
    "lastelec": "parliamentary, Nov 2026, Student List movement"
   },
   "CHE": {
@@ -4085,9 +4050,9 @@
    "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPN2tPN2FYN25QYkwweTJiaV8yY3hTQlZDRlFkWXFONGlkdDhiSzh6a0N2ZFVCUmdta2xhaE1pUDl2M3RzQl9BazZYR0o0bjVZaFFpX1hveDJiT0ZvRy0tdkI3OHdab2k1bDBLWXEtTG9GY2JmR1N0dTRuQ1A4dEFhWlo1TmNuVnpKOHpPYU1pYVMxLVQwQ2dSVFRRUVktX05Bd0otemNrcnl2MkdpNS1fMUhCVzc3T08xbnMxVm1Od3dyUE1RQUs0Nk5wcDh6OTBURGd0SWVMSQ?oc=5"
   },
   "GNB": {
-   "nextelec": "General elections postponed",
-   "updated": "2026-10-10",
-   "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeWpPV0VtSUdjN3h4dEJ3OUJ1Y0EtWWNvb3VUX2FMNHk3ZDBJRHB2Y29JX2J6ZXlKeUxFMkZpcDVHZjlmaE44YnQ5UTdNYlFiSTlFRnYzdUZOX3BsdFk3blVVUU1WU3hTNXo5MUhBaWZOdnM4ek9ZTThpR2VxbWI1Ni1VemxDcEpIdHdzTlI3VQ?oc=5"
+   "nextelec": "presidential, 2028",
+   "updated": "2026-11-26",
+   "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5vS0dYXzU3bjhZOWZXVVl5YVJfdVFjMHIycUVPOTQwYVlsZ0pENklCbVpxQjk3c3BkRGRxVUhhWG5LaXlnSmYxVER0UVZaWWVkMWQtSU44cWxEclpPZ3FLNEJBWDY?oc=5"
   },
   "PSE": {
    "nextelec": "Legislative election, September 2027",
@@ -4162,9 +4127,9 @@
   },
   "GMB": {
    "lastelec": "presidential, Dec 2021, Adama Barrow",
-   "nextelec": "presidential, Dec 2026",
-   "updated": "2026-11-17",
-   "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBzLW1rVnREdjVoSVNIWmdNNTRELVFvVDZZUDUwU1p6M05RMTF4U19ENVBzV2phX0JQWThJT0M3cVo3RFI0dFlyUUhiZFdRNjRmRFhyNjUybExSeHRYWTFTZHFfZHI?oc=5"
+   "nextelec": "presidential, December 2026",
+   "updated": "2026-11-26",
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQQVNIS3Bpd0NxeXlfR3ViNDJWdmtBSHhVb1I5NVl0bmNKcHhQVm5LYVk4NVJ1RG54TGdSd3VfdVp6N3lJN3NMekJpcXl3ZVBSaHdFaVRIMzhVVnIxQ1VIM2dMbk56N2ZONUZtX1Ridklfa2VNZExDY2xpOUpuX1ozbkVLWV81UkhvX2FBWFQ4UTFnNmxQWnZnR3N30gGYAUFVX3lxTE5TMUFYckdZOVhKTmZKYWNLb2ZRZ2ZqUGU2ZjlHdVg0bXhMZENleHdGdEtoQlVxa01xMGlfZGc4Slo5R01uSUxjdFhaMW12NHlHTzRMOHczdzZwWjRMN2s3R1o5QTJtTUx5ak9JUnhRaGpEbGdWSFBnVjd6VXRYYmExcTVqUVY5SGxfb0FkSnNxUksyYVRBT1RI?oc=5"
   },
   "COD": {
    "lastelec": "presidential, Dec 2023, Félix Tshisekedi",
