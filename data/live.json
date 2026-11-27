@@ -1,7 +1,27 @@
 {
  "meta": {
-  "lastRun": "2026-11-26T19:57:45Z",
+  "lastRun": "2026-11-27T00:10:49Z",
   "log": [
+   {
+    "date": "2026-11-27",
+    "items": [
+     {
+      "label": "North Korea–Russia",
+      "change": "Note updated: Pyongyang temporarily suspends missile deliveries to Moscow",
+      "source": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB3LXU1R1ZPNVBYMk9PVGg3VHJFMU5RQ2syeTNGbDlfTnNkZnJFdVpnN0s0RlJ2Ri1NNEs5U29TMUx3S1dPd2p4eUpEdUczZXZNR1l3Mkg0dW44UEc4Q3RHNGxCeFdrRnZkcHFoWHNCQQ?oc=5"
+     },
+     {
+      "label": "Eritrea–Ethiopia",
+      "change": "Note updated: Prime Minister Abiy warns Asmara against arming rebels",
+      "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORGxaMXFSNHFIVGVyMnFHdlZTNjBqSkVFT01FYjc4OUtkRjlkUmt0eHMwMXBjZ0pDVW9waEp4VnZWS3A0S3JiTlg5SjRqTEVCNTY2aHN4YUNSRm1VYmlfRHlTSWNnUFJQVEZ0c3ptTkt5SzhnUHFRZS12WVRId0NXMElDeUMydDd2N3FkQ0M3N25GcVRpQW9kRlVWWXRoSWtCdGFfd3IzRWZ1a2M?oc=5"
+     },
+     {
+      "label": "Democratic Republic of the Congo–Uganda",
+      "change": "Note updated: Kinshasa summons Kampala envoy over military chief's online threats",
+      "source": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1PTHB6Y1hIUGlydGU0M1VIWVlHcDZtdXJtMFhlcl9qTVgySmswdVJqZzJpamI2MDhtRThrb2U3TEdhUDBYTmtsVWxVSkZGV2dScWJ6aDFkeGR4d2FPa2xnZ1h3bTlWQnRvQkE?oc=5"
+     }
+    ]
+   },
    {
     "date": "2026-11-26",
     "items": [
@@ -1326,54 +1346,9 @@
       "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOb1J1VC12SGJGZWhydURqMndrdThQSlRVcHFpQ3QwYUpORlM2VDd2enJvOXRFVXdlSTNGQW4yRU5CdnlwYkF0eHFXc0drMG5sVFFJcVBZZEFTd2RxbFdqUGdCcU5kTHFqb2VSRHVnR3lCbV8tOHRaU0IyUVZvUHNacjlfbENQa0psMFpsY1pDb0lBNmo0RF9tOGE2YjJRcVBrckRoN2g1bF92WHFSTEQ0Mjln0gG3AUFVX3lxTE4tb2d4M2NZekFheUlIdGxtRXI2YzdhLS01c0FWb3JZU015UFZKNGJuRmVZNlVvek0tZlF3NVV1Sjl0ZDF0cE1uODAyNFU4enhvSmd3d0tlRlpaM3NYRENnbkdNUnY1Y0tZdWdKVlpSVEJZd2VvWnNqMUptQ3owVHloSW5VN2xfQUNneFdCbk0tQ2F0UHhyeVQ1NkFLZnROVTY3cDZpeWg3WmpJM2pZTkl4Tmo2Nmp5cw?oc=5"
      }
     ]
-   },
-   {
-    "date": "2026-10-28",
-    "items": [
-     {
-      "label": "Jordan–Syria",
-      "change": "Tense → Normal: Border crossing reopened and joint security committee formed following airstrikes",
-      "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPT0M2bWJTbUJ3ZzhJOWtjS0FneXhHWlNrTGZ5aXNpUkRpVllZU0dhZzFfNmhvSUdZS2xScFhGUXdtQzJ0UTJHcEUySGpqcFBRWnZaRG56TXVmU2dwa2ZoQ0tYZzM5Ukplb2ZyZzlFQkFNTjE2M2QwbXpyZktXeV9SQzBGczFYT1dsaERnMzB5anZEN041RkRLWm80NFlRc2tIbUF2bA?oc=5"
-     },
-     {
-      "label": "Armenia–Russia",
-      "change": "Note updated: Armenia rules out return to CSTO",
-      "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZFNlYTFiVTRNMW0xVktNSHpyV1ZrS3BySy1yNHRITk4tYmRQOWpYdXlhY3RHc1hkeUlTV1doMzhkZmM2QjNKRTBJZk9LZ0xqWm9nUTFzT2R3VU14TnBrMlRfUTA0cWUwR29SNUFMbWpxUENYNUxxMDhOOVR1b0pxUjRrUERNR2xtY0haT2w0enp5V2s?oc=5"
-     },
-     {
-      "label": "Canada–United Arab Emirates",
-      "change": "Note updated: Bilateral CEPA trade agreement signed to cut tariffs",
-      "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUmgwVGlTQmZPbk9OeVFZUXNwYm1vVm9jelpDWXNmMDRVZFd6NFl5aGx3MTFiX3hEU3lxR1Vkb3FpUlRYNmpjNUJ4N083RzlwSlRvcWhKVEx6X0tsMWRJUUNFcVhJMjJ3QmxmdFFrQ29adFdiR1NyVjJtUXgwRlVIaWVQM2tKR0xnSU5LQmJ1bi02S0dVR1F6X1liLWJyRXp6a2ww?oc=5"
-     },
-     {
-      "label": "Rwanda–United States",
-      "change": "Normal → Tense: US sanctions Rwandan Defence Ministry over M23 rebel backing",
-      "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPakJHaHd4QVJONnU2a3oyTTFJVC1fUURVQ3NLMzFrenYzVDZfTWRsMnp6WkQ4SHNDX0tkMEhycmlGNzk3SWpNaGxpYzFudGNqQmFGVXpxdDhHdk9HY01ZUkdHeDhqV29rVVNPZk5sdjd5WF9tVi1PdnBzeEszeFRiRTJMN2RZX1YtTlFiX2xIYnU5WE5STFE?oc=5"
-     },
-     {
-      "label": "Ethiopia–Russia",
-      "change": "Normal → Partner: Ethiopia acquires Su-35 fighter jets and S-400 air defense systems",
-      "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdFpIcHZIaW8xMGt2RnJuNjRnRnJrX0llbHZuakJnN19VNGEtVndLSGU5MmR2cVJ5TFRLM1Y4WDFZd3pUbUNvYTVfRmpnODI5bXVaU3Y3WGx6dFFDNUhTVXFJbFdkZW9YejNNRlhWZnJaa2ZycW42akhXTXJBdDNmNm53cE9Ka05xZGxJMTRlMTFPMy0xQkxIbzA5WkVjVVpiOGg3c3pHTjJhVHZWVkxTS1FuVkxwZw?oc=5"
-     },
-     {
-      "label": "Syunik / TRIPP route",
-      "change": "Location updated: Armenia ratifies TRIPP framework agreement",
-      "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPby1rcHhhYkVLam5hcGVSVUFtOUc4S1NnaEtPWTFLM2g5Q2t3Smg4Qjl6Zy1SX1RsQ1dTR3MzWDYtcy1JWEhDSnlBck5jd3NzWllyQjNuaUhDQ05jNXVTcW1LZjBjbkVZNDl4RDJvSWE0TlZkYm1zOTU4VVRNb2tYbDItWi1FVFZCNV81ZTlsckU5SGkyTkpuUEFKLWpMN0ZD?oc=5"
-     },
-     {
-      "label": "Israel",
-      "change": "Politics updated: parliamentary election in October 2026 ends in deadlock",
-      "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQd0FTVThQZXdVUkNNbTBCLVBETkM1OG05UndKajRIckllbWZyQmRjS3NMemFOSGREbThJSEVERjNuLUw0WWMwa0RMdTF3YzBRVWlFem5HcUFGb1kxZkVZWUlfc1JGLVg4QjBFaVRSblhaaVlvQUhhazNWVTZISUsxUFBDeEJTUQ?oc=5"
-     },
-     {
-      "label": "Brazil",
-      "change": "Politics updated: presidential election won by Luiz Inácio Lula da Silva",
-      "source": "https://news.google.com/rss/articles/CBMidEFVX3lxTE93TVNtRWNPQ0tkSzk3VkUzVlU0ejE2RUxTM1IzVHd6eWJDUDk1dlZlWnlicmtLNWFPS3F2RmwzMGNlVkxfWkcxQ2NVb0dqejhzR3lTRzVQNHNzaEtCenpZM0UzcF9Xd1BpTS1uUVRtRWlhSEVp?oc=5"
-     }
-    ]
    }
   ],
-  "summary": "An Iranian drone attack in Kuwait kills two Italian technicians, driving IRN–KWT relations to Hostile, while Armenia announces the complete removal of Russian border troops."
+  "summary": "Updated relationship notes for North Korea–Russia, Eritrea–Ethiopia, and DR Congo–Uganda, and recorded election schedules for Guinea-Bissau, Serbia, The Gambia, New Zealand, and Dominica."
  },
  "relations": {
   "DNK-USA": {
@@ -1556,9 +1531,9 @@
    "a": "ERI",
    "b": "ETH",
    "s": "W",
-   "note": "War fears escalate as Ethiopia and Eritrea mass military forces and exchange warnings along their shared border.",
-   "updated": "2026-11-18",
-   "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNeEJBNVB0dkdmX1h1VU1fRTJkVGdQN3oyWWZlOTBqaFVPOHBIcWk2YlJ1M2poeFpLcWxlNV9rOHBQYTRwdzRaN2ZKbkNveGgyMkFBRmY1b2t4REJSampnVjdaZnlmYVA3Vm1oU0o5T093T0t0QjNQZU8xeHRzWGZRaERvVXJpUFNqZDhQcjZfSVFHSktmVGZ5anIzZWpxMXlfU0VqR2VybTFlSzl1R0M1R01IY1BEanRJSFJQQU5pLWFXMGs?oc=5"
+   "note": "Ethiopian Prime Minister Abiy Ahmed warns Eritrea against arming rebel groups while denying plans for a military invasion.",
+   "updated": "2026-11-27",
+   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORGxaMXFSNHFIVGVyMnFHdlZTNjBqSkVFT01FYjc4OUtkRjlkUmt0eHMwMXBjZ0pDVW9waEp4VnZWS3A0S3JiTlg5SjRqTEVCNTY2aHN4YUNSRm1VYmlfRHlTSWNnUFJQVEZ0c3ptTkt5SzhnUHFRZS12WVRId0NXMElDeUMydDd2N3FkQ0M3N25GcVRpQW9kRlVWWXRoSWtCdGFfd3IzRWZ1a2M?oc=5"
   },
   "AFG-PAK": {
    "a": "AFG",
@@ -1660,9 +1635,9 @@
    "a": "PRK",
    "b": "RUS",
    "s": "A",
-   "note": "North Korea prepares to deploy 10,000 additional troops to support Russian operations in Ukraine.",
-   "updated": "2026-09-30",
-   "source": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE05eHJqc0EyZ0VrLUMwbnJwNlBOVWVmTkY5b2JFNG1DWFJxdzZrU3I4WnF0REh2RzRYeTBaRkdVRmE3b1JwS3puS2pjOFpwVUE?oc=5"
+   "note": "North Korea temporarily suspends missile deliveries to Russia following diplomatic friction over Moscow's stance on South Korea.",
+   "updated": "2026-11-27",
+   "source": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB3LXU1R1ZPNVBYMk9PVGg3VHJFMU5RQ2syeTNGbDlfTnNkZnJFdVpnN0s0RlJ2Ri1NNEs5U29TMUx3S1dPd2p4eUpEdUczZXZNR1l3Mkg0dW44UEc4Q3RHNGxCeFdrRnZkcHFoWHNCQQ?oc=5"
   },
   "ARG-GBR": {
    "a": "ARG",
@@ -3415,6 +3390,14 @@
    "note": "Brunei and Russia elevate bilateral relations to a strategic partnership following summit talks between their heads of state.",
    "updated": "2026-11-25",
    "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQWTItZkdLT2M1Wm1hU0h1LUxEdmlad2hXNzRSbHU0d0lxckk5MWxOejRFeG53VFNESUxLUHU2QjVRc0FlQkpkd2tHS1ZGRDM0OUNwcjBCeDZYT053aU11UnVjSG1GaXRmUDZVQ2RXZTdqX2RmcnNjYVNmcm5XZGdfc2V4aklFMEN6X19XSWtDLXY0RVh5LWZpRk45R2xudWl6Tk52T01IS0FaSGMtb1AzZFE5V3FKSG81d3JKSA?oc=5"
+  },
+  "COD-UGA": {
+   "a": "COD",
+   "b": "UGA",
+   "s": "N",
+   "note": "DR Congo (Democratic Republic of the Congo) summons Uganda's envoy over online threats by Kampala's military commander.",
+   "updated": "2026-11-27",
+   "source": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1PTHB6Y1hIUGlydGU0M1VIWVlHcDZtdXJtMFhlcl9qTVgySmswdVJqZzJpamI2MDhtRThrb2U3TEdhUDBYTmtsVWxVSkZGV2dScWJ6aDFkeGR4d2FPa2xnZ1h3bTlWQnRvQkE?oc=5"
   }
  },
  "threads": {
@@ -3977,8 +3960,8 @@
    "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQYk8wSTJNSU5jTGItWUxYdGxDbHJMRHJJTUdMMmhrTTdoNFAxcU1aM1F6UDd0OHRLX1Zuc2ZyRV9MQUpORVJBRENldXpGSlRsdENRdDdqUVdJa3VJRzBkVjBrWmdBU3VoRmdPRWNvNVVqOThqUGh4VVgwZTgxMVQzQnVDX2ZmQjVJR0JLdTFmLVZTd0k?oc=5"
   },
   "SRB": {
-   "nextelec": "presidential, December 2026",
-   "updated": "2026-11-26",
+   "nextelec": "presidential election, December 2026",
+   "updated": "2026-11-27",
    "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOYmlhZE1sSEJnd1o0VjczcmctOXZkVnpOemVIRTEtWTJ5cy1mdlpPYlFlMFVpRHNTMWJnN0pMZ0ZRMUtvamlVcFBnVTFDN29rblN6T3FIcUN2UlVQU1FHcHJaMzQxSVdpTmZrMXRfQVRLUDI2MG9vOU9ERVFfcTFpQXgxS3ZkY2QxS29Odm50ZlJxRnNBXzdfY1R5NVNTSGhENnJJSVhUUVo1TE93VEln?oc=5",
    "lastelec": "parliamentary, Nov 2026, Student List movement"
   },
@@ -4011,9 +3994,9 @@
   },
   "NZL": {
    "nextelec": "general, Nov 2029",
-   "updated": "2026-11-09",
-   "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSm5fRkVZd0JCb0RTa2dablRyVDdMVlZBc0F0aWFyckFyWHhRSUxYYTdDekpJbzU5b19tNkYyOVpVb19HN05JNG9SMTBna1JFZGp4Y1diRTNEMTVUdEJGc1JZc2l3c2ZvYWNKWWpwcHM3Mk9CU1dLUmpOVlFWMUFfTnZNSExvRGg2dEhlaS1MWjladVN2X2Z4cm5GdDUwdHBVbk5jckFHMjVnbUxsNW9zb3dqaXc2NmNSRUFn?oc=5",
-   "lastelec": "general election, November 2026, National Party (Christopher Luxon)"
+   "updated": "2026-11-27",
+   "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcFJqbEVQNWVCSWlBVEdnUXJlWHgwV3pmUjRGZ254NjNIcGgtSHU0NkVsemlWUnFjZWlJa3BLY01sTDN3djdCS0ZYU2dvcGV0U0I5NUh4MDV2NU5ya0V1WS1BUkJRSGRtNnIxUlRqc3ZFOXBycWJITFh5cnB3WEtsa1B1REFtMDlkMmFYdlBLTEFKSjNvWGZ4SmtEMl9RMzRNbFdCS25kbHF4eVhGeGs5OW1Rb2FGcUhWcVJV?oc=5",
+   "lastelec": "general election, November 2026"
   },
   "GRD": {
    "nextelec": "general, Nov 2031",
@@ -4050,9 +4033,9 @@
    "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPN2tPN2FYN25QYkwweTJiaV8yY3hTQlZDRlFkWXFONGlkdDhiSzh6a0N2ZFVCUmdta2xhaE1pUDl2M3RzQl9BazZYR0o0bjVZaFFpX1hveDJiT0ZvRy0tdkI3OHdab2k1bDBLWXEtTG9GY2JmR1N0dTRuQ1A4dEFhWlo1TmNuVnpKOHpPYU1pYVMxLVQwQ2dSVFRRUVktX05Bd0otemNrcnl2MkdpNS1fMUhCVzc3T08xbnMxVm1Od3dyUE1RQUs0Nk5wcDh6OTBURGd0SWVMSQ?oc=5"
   },
   "GNB": {
-   "nextelec": "presidential, 2028",
-   "updated": "2026-11-26",
-   "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5vS0dYXzU3bjhZOWZXVVl5YVJfdVFjMHIycUVPOTQwYVlsZ0pENklCbVpxQjk3c3BkRGRxVUhhWG5LaXlnSmYxVER0UVZaWWVkMWQtSU44cWxEclpPZ3FLNEJBWDY?oc=5"
+   "nextelec": "presidential election, November 2028",
+   "updated": "2026-11-27",
+   "source": "https://news.google.com/rss/articles/CBMiakFVX3lxTE56UURqLURZOFotY2NueXZZRGtvNEtkckkwS2Vrc0NEUTVKSml4RW1HbE1JMElnSmNEX2tRUHdMV3h2S0RXb1I4V21nOGFSdVI3RWxQYUtENnJMUmVEaXN4ZVpTWjNEZGlNckE?oc=5"
   },
   "PSE": {
    "nextelec": "Legislative election, September 2027",
@@ -4127,8 +4110,8 @@
   },
   "GMB": {
    "lastelec": "presidential, Dec 2021, Adama Barrow",
-   "nextelec": "presidential, December 2026",
-   "updated": "2026-11-26",
+   "nextelec": "presidential election, December 2026",
+   "updated": "2026-11-27",
    "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQQVNIS3Bpd0NxeXlfR3ViNDJWdmtBSHhVb1I5NVl0bmNKcHhQVm5LYVk4NVJ1RG54TGdSd3VfdVp6N3lJN3NMekJpcXl3ZVBSaHdFaVRIMzhVVnIxQ1VIM2dMbk56N2ZONUZtX1Ridklfa2VNZExDY2xpOUpuX1ozbkVLWV81UkhvX2FBWFQ4UTFnNmxQWnZnR3N30gGYAUFVX3lxTE5TMUFYckdZOVhKTmZKYWNLb2ZRZ2ZqUGU2ZjlHdVg0bXhMZENleHdGdEtoQlVxa01xMGlfZGc4Slo5R01uSUxjdFhaMW12NHlHTzRMOHczdzZwWjRMN2s3R1o5QTJtTUx5ak9JUnhRaGpEbGdWSFBnVjd6VXRYYmExcTVqUVY5SGxfb0FkSnNxUksyYVRBT1RI?oc=5"
   },
   "COD": {
@@ -4144,9 +4127,9 @@
    "nextelec": "snap presidential, December 2026"
   },
   "DMA": {
-   "nextelec": "General election, 16 December 2026",
-   "updated": "2026-11-25",
-   "source": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1tc3VZTjY4VFZQd1hTWkF0MzI3SzZzT0lCbER5TGZlVDYxb09sbWd0LWZmT3daSEowNW5KdFZMQXFQbEh2OWU0Z2QwOUF1MmF6blUwSlp1LU0zY1FiTlhISXB2SWcwVXltMjZxcHBmdmk4OFp2QUtWVjlsSzNiQQ?oc=5"
+   "nextelec": "general election, December 2026",
+   "updated": "2026-11-27",
+   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQOE1YSDh1UnliOEZYNDVYUW9wbFhVaEhpdXVoamVveFFTWFBZOWN6dmFPT2ROVlViZEJuMmQ3eF9YNzBIQU9zNV8xRTNsR1VhS0NZRURKV3l4VnpqcG9ZRlRiblVMRDdnbXhuNXNWczlRM2xvdjBqVnhadkFvMzkzdGVpLXZSWS1GeGR5RG1MWm9Ielk0ZEQ2aUZXMU9YZ01BUVd2YnFoclpiZHBweklfcFNWczBsWFVxNnc?oc=5"
   },
   "PHL": {
    "lastelec": "parliamentary, November 2026",
