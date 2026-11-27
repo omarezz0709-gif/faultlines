@@ -1,13 +1,17 @@
 {
- "generated": "2026-11-26T19:44:09Z",
- "berlin": "2026-11-26 20:44",
- "status": "warn",
- "summary": "0 problem(s), 1 warning(s): AI answers: answered by gemini-3-flash-preview, but slowly (133 s): the fast models' free quota is probably used up for today",
- "repairs": [
-  "re-ran refresh.yml",
-  "back to normal: AI relationship update (live.json)"
- ],
+ "generated": "2026-11-27T19:33:35Z",
+ "berlin": "2026-11-27 20:33",
+ "status": "ok",
+ "summary": "All checks passed.",
+ "repairs": [],
  "checks": [
+  {
+   "g": "site",
+   "name": "Website",
+   "status": "ok",
+   "detail": "HTTP 200, 427 KB",
+   "ms": 212
+  },
   {
    "g": "security",
    "name": "Page protections",
@@ -15,172 +19,269 @@
    "detail": "all in place"
   },
   {
+   "g": "site",
+   "name": "GitHub Pages copy",
+   "status": "ok",
+   "detail": "HTTP 200",
+   "ms": 171
+  },
+  {
+   "g": "site",
+   "name": "data/news.json",
+   "status": "ok",
+   "detail": "HTTP 200, 531 KB",
+   "ms": 299
+  },
+  {
+   "g": "site",
+   "name": "data/live.json",
+   "status": "ok",
+   "detail": "HTTP 200, 293 KB",
+   "ms": 294
+  },
+  {
+   "g": "site",
+   "name": "data/politics.json",
+   "status": "ok",
+   "detail": "HTTP 200, 42 KB",
+   "ms": 117
+  },
+  {
+   "g": "site",
+   "name": "data/wb.json",
+   "status": "ok",
+   "detail": "HTTP 200, 84 KB",
+   "ms": 126
+  },
+  {
+   "g": "site",
+   "name": "data/geo.json",
+   "status": "ok",
+   "detail": "HTTP 200, 697 KB",
+   "ms": 168
+  },
+  {
+   "g": "site",
+   "name": "data/cities.json",
+   "status": "ok",
+   "detail": "HTTP 200, 151 KB",
+   "ms": 131
+  },
+  {
+   "g": "site",
+   "name": "GitHub Pages copy is up to date",
+   "status": "ok",
+   "detail": "same data as the main site"
+  },
+  {
+   "g": "fresh",
+   "name": "Headlines (news.json)",
+   "status": "ok",
+   "detail": "last update 0.2 h ago"
+  },
+  {
+   "g": "fresh",
+   "name": "AI relationship update (live.json)",
+   "status": "ok",
+   "detail": "last update 0.1 h ago"
+  },
+  {
+   "g": "fresh",
+   "name": "Leaders (politics.json)",
+   "status": "ok",
+   "detail": "last update 23.6 h ago"
+  },
+  {
+   "g": "fresh",
+   "name": "Countries with confirmed headlines",
+   "status": "ok",
+   "detail": "179"
+  },
+  {
+   "g": "fresh",
+   "name": "Headlines to watch",
+   "status": "ok",
+   "detail": "80"
+  },
+  {
+   "g": "fresh",
+   "name": "Leaders known",
+   "status": "ok",
+   "detail": "199 countries"
+  },
+  {
+   "g": "fresh",
+   "name": "World Bank figures",
+   "status": "ok",
+   "detail": "261 countries and regions"
+  },
+  {
    "g": "worker",
    "name": "/live (en)",
    "status": "ok",
-   "detail": "20 items",
-   "ms": 458
+   "detail": "15 items",
+   "ms": 589
   },
   {
    "g": "worker",
    "name": "/top (en)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 203
+   "ms": 289
   },
   {
    "g": "worker",
    "name": "/videos (en)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 1102
+   "ms": 539
   },
   {
    "g": "worker",
    "name": "/live (de)",
    "status": "ok",
-   "detail": "17 items",
-   "ms": 1828
+   "detail": "13 items",
+   "ms": 1283
   },
   {
    "g": "worker",
    "name": "/top (de)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 84
+   "ms": 400
   },
   {
    "g": "worker",
    "name": "/videos (de)",
    "status": "ok",
-   "detail": "5 videos",
-   "ms": 385
+   "detail": "4 videos",
+   "ms": 693
   },
   {
    "g": "worker",
    "name": "/live (fr)",
    "status": "ok",
-   "detail": "28 items",
-   "ms": 1190
+   "detail": "29 items",
+   "ms": 902
   },
   {
    "g": "worker",
    "name": "/top (fr)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 108
+   "ms": 283
   },
   {
    "g": "worker",
    "name": "/videos (fr)",
    "status": "ok",
-   "detail": "5 videos",
-   "ms": 671
+   "detail": "4 videos",
+   "ms": 465
   },
   {
    "g": "worker",
    "name": "/live (es)",
    "status": "ok",
-   "detail": "6 items",
-   "ms": 324
+   "detail": "3 items",
+   "ms": 1002
   },
   {
    "g": "worker",
    "name": "/top (es)",
    "status": "ok",
-   "detail": "6 stories",
-   "ms": 76
+   "detail": "3 stories",
+   "ms": 68
   },
   {
    "g": "worker",
    "name": "/videos (es)",
    "status": "ok",
-   "detail": "5 videos",
-   "ms": 118
+   "detail": "4 videos",
+   "ms": 290
   },
   {
    "g": "worker",
    "name": "/live (it)",
    "status": "ok",
-   "detail": "12 items",
-   "ms": 1281
+   "detail": "14 items",
+   "ms": 1428
   },
   {
    "g": "worker",
    "name": "/top (it)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 305
+   "ms": 142
   },
   {
    "g": "worker",
    "name": "/videos (it)",
    "status": "ok",
    "detail": "5 videos",
-   "ms": 1015
+   "ms": 351
   },
   {
    "g": "worker",
    "name": "/live (ar)",
    "status": "ok",
-   "detail": "6 items",
-   "ms": 453
+   "detail": "7 items",
+   "ms": 461
   },
   {
    "g": "worker",
    "name": "/top (ar)",
    "status": "ok",
    "detail": "6 stories",
-   "ms": 104
+   "ms": 143
   },
   {
    "g": "worker",
    "name": "/videos (ar)",
    "status": "ok",
-   "detail": "5 videos",
-   "ms": 1077
+   "detail": "4 videos",
+   "ms": 380
   },
   {
    "g": "worker",
    "name": "Real-time search",
    "status": "ok",
-   "detail": "10 reports",
-   "ms": 908
+   "detail": "8 reports",
+   "ms": 781
   },
   {
    "g": "security",
    "name": "Other websites are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 61
+   "ms": 57
   },
   {
    "g": "security",
    "name": "Look-alike Pages projects are blocked",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 59
+   "ms": 97
   },
   {
    "g": "security",
    "name": "Only the site's own prompts are answered",
    "status": "ok",
    "detail": "HTTP 400 (should be 400)",
-   "ms": 75
+   "ms": 68
   },
   {
    "g": "security",
    "name": "Private chat needs a valid pass",
    "status": "ok",
    "detail": "HTTP 403 (should be 403)",
-   "ms": 158
+   "ms": 81
   },
   {
    "g": "security",
    "name": "Admin login",
    "status": "ok",
    "detail": "HTTP 401 without a code (should be 401)",
-   "ms": 61
+   "ms": 84
   },
   {
    "g": "security",
@@ -191,9 +292,9 @@
   {
    "g": "ai",
    "name": "AI answers",
-   "status": "warn",
-   "detail": "answered by gemini-3-flash-preview, but slowly (133 s): the fast models' free quota is probably used up for today",
-   "ms": 133761
+   "status": "ok",
+   "detail": "answered by gemini-3.6-flash",
+   "ms": 10960
   },
   {
    "g": "sources",
@@ -214,7 +315,7 @@
    "name": "Page loads and the globe starts",
    "status": "ok",
    "detail": "",
-   "ms": 3638
+   "ms": 2217
   },
   {
    "g": "browser",
@@ -263,121 +364,9 @@
    "name": "Refresh runs",
    "status": "ok",
    "detail": "none hanging"
-  },
-  {
-   "g": "site",
-   "name": "Website",
-   "status": "ok",
-   "detail": "HTTP 200, 427 KB",
-   "ms": 164
-  },
-  {
-   "g": "security",
-   "name": "Page protections",
-   "status": "ok",
-   "detail": "all in place"
-  },
-  {
-   "g": "site",
-   "name": "GitHub Pages copy",
-   "status": "ok",
-   "detail": "HTTP 200",
-   "ms": 157
-  },
-  {
-   "g": "site",
-   "name": "data/news.json",
-   "status": "ok",
-   "detail": "HTTP 200, 532 KB",
-   "ms": 275
-  },
-  {
-   "g": "site",
-   "name": "data/live.json",
-   "status": "ok",
-   "detail": "HTTP 200, 292 KB",
-   "ms": 334
-  },
-  {
-   "g": "site",
-   "name": "data/politics.json",
-   "status": "ok",
-   "detail": "HTTP 200, 42 KB",
-   "ms": 212
-  },
-  {
-   "g": "site",
-   "name": "data/wb.json",
-   "status": "ok",
-   "detail": "HTTP 200, 84 KB",
-   "ms": 157
-  },
-  {
-   "g": "site",
-   "name": "data/geo.json",
-   "status": "ok",
-   "detail": "HTTP 200, 697 KB",
-   "ms": 112
-  },
-  {
-   "g": "site",
-   "name": "data/cities.json",
-   "status": "ok",
-   "detail": "HTTP 200, 151 KB",
-   "ms": 154
-  },
-  {
-   "g": "site",
-   "name": "GitHub Pages copy is up to date",
-   "status": "ok",
-   "detail": "same data as the main site"
-  },
-  {
-   "g": "fresh",
-   "name": "Headlines (news.json)",
-   "status": "ok",
-   "detail": "last update 0.1 h ago"
-  },
-  {
-   "g": "fresh",
-   "name": "AI relationship update (live.json)",
-   "status": "ok",
-   "detail": "last update 0.1 h ago"
-  },
-  {
-   "g": "fresh",
-   "name": "Leaders (politics.json)",
-   "status": "ok",
-   "detail": "last update 0.0 h ago"
-  },
-  {
-   "g": "fresh",
-   "name": "Countries with confirmed headlines",
-   "status": "ok",
-   "detail": "178"
-  },
-  {
-   "g": "fresh",
-   "name": "Headlines to watch",
-   "status": "ok",
-   "detail": "80"
-  },
-  {
-   "g": "fresh",
-   "name": "Leaders known",
-   "status": "ok",
-   "detail": "199 countries"
-  },
-  {
-   "g": "fresh",
-   "name": "World Bank figures",
-   "status": "ok",
-   "detail": "261 countries and regions"
   }
  ],
  "emailed": [],
- "warn_since": {
-  "AI answers": "2026-11-26T19:44:09Z"
- },
- "ms": 1051325
+ "warn_since": {},
+ "ms": 351783
 }
