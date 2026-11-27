@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-27T19:26:44Z",
+  "lastRun": "2026-11-27T23:49:53Z",
   "log": [
    {
     "date": "2026-11-27",
@@ -31,14 +31,39 @@
       "source": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE85OWwxUlNIWElMeEtqelV1cjhWczRNTUkxVmp3Qm5uRTdkendGM3RWXzdFMVJWTmhZSWU2Y2V5d2pTTE9WN3VPTWFsN3JBZVZENjlF?oc=5"
      },
      {
-      "label": "Guinea-Bissau",
-      "change": "Elections postponed to late 2028 by transitional government",
-      "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUDhBd3IwcjM2djRuUTB2bndYZzlGM2wyRTMzRDNhbU1wN05TLXF1ZW5vcTFSMTFFbGVCMFRwZHE3aHE0UXdSeXZldzQ1amhpdW9URFRZOWFpakZWU0hsYVFnWXRpVUlMWjFDMmJTNGQ1NV9DbHZCZzlxU2hwTGNXQlo2Ym14V3ZLcGFKcGRQM21nZ0tQQlU0T21OYnA4NkJkNUVSSHl3Skt5RFE3cDlNb0lBMkswd3FCRk1aT3BTdFrSAcYBQVVfeXFMTXQ4WHp3WlQ1a1YwWEh6Y3huOVJkWUVyV2RjZlJRNVpjNHcxQURBUllvUzlpaTFRcl9YSUJDSjZ6MGk1bEFIMGUtOGFjUldUb2VtbHB5VF9NY3dnc0dRaDRRNjZYeU9XTWRKNkpMRjFuaXJialdlcUwyNXNTXzBwSXIyTEJKNjk2aEt3enJvZXQ2Mk1zX3VqWEpiQnRqRzZRVXBlMk1Zbm9BM2d6UXB5WlIzY2FCVGl6NmxWX0MzMWg2bVBmNFp3?oc=5"
-     },
-     {
       "label": "Libya's divided state and its backers",
       "change": "Thread update: Russian flotilla turns back following Ukrainian strikes in Libyan waters",
       "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOYmlHdGhKd3RFRUNYajhTdlVqdUdrckt5RmtIZEltNjE0OTVPMDhaSS1DTFlGQTU5Z19LRFpLRmpXdVJkcVpRY19iLU40eXpEWUhYdDNjMXhfRkJqckxleW8tY25rOVJFTzlGeGVaUTlwb1M1NVBXSzQwSG9hX2VQR1JiMVhXYk1mdG01ei1nR1ZmOFY5RWpnejVHRkJSa2RVTHRLeURHS3hCSHJMcGluWG1fQWNjS19wTy1RejVTWE5BMW8?oc=5"
+     },
+     {
+      "label": "Argentina–Brazil",
+      "change": "Tense → Hostile: Brazil permanently recalls ambassador and excludes Milei from inauguration",
+      "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUF9OQ1ZuNHctU0U5V2c5di1KbFZxSEJCa3hkVzNTSkszYm5kQTdvSzRHcGN6Umdyd2lCeDJSMXhkZ0lGb3A1bDVUQndYbUJRNG9iT3hZbVdUX3UyU20wcEhLM2p1MmdzdVc5S2N5VjN3YV9NS3hoRlJvNlNub1ZBckwyUVozTk5Sc05FYlBiSF8?oc=5"
+     },
+     {
+      "label": "Ethiopia–Kenya",
+      "change": "Tense → Normal: Ceasefire reported in Moyale as federal forces escort Kenyan trucks",
+      "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPaURqMks0ZUxKX2lrYXNvdjI2WjJKRkNGcWlnX29janhtVTMtTGhlMmFIMDliNmxhY2dXUWcyRkZPT0Zrek9fLWdhQ1VtWHNydktjd1liR1A3NjJMZjhvQkcxU1dMVUsxTi0zUmxIWF9qZURFWGhXUGY5TWxuMmlqYlBqZFZuamh2X0NOc3hlTldnSU9vcEtrWENRcWZ1X053SFpMbE1NQk5VQS1PdEc1N3VEaGJkQQ?oc=5"
+     },
+     {
+      "label": "Eastern DR Congo",
+      "change": "Updated status: Uganda announces troop withdrawal from Lubero within two weeks",
+      "source": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9zbXFMYVRRWG90VG05SURqbUl1TXVJeWZla2JSbEVfMHFhWGVBOWtBTTd6Y0N0ZEloM3BfeUY1QXZqaHFjenFqVEFQaUFHelZRNENaTmxoVFBPRTJmckRtSXVXUEJXVTI3Yi1N?oc=5"
+     },
+     {
+      "label": "New Zealand",
+      "change": "Election result: Deadlocked final election result leaves centrist newcomer as kingmaker",
+      "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTUQ1YzJiOVpUQWczN2lmR3E0aGRNSXFuMWtkVUY2c2NrQWo5ai1XX3B4M2hLazYyaWJhLUl0V1pqRTNHaW5JUm9vU3YtMjJwdjNlV1pGZURab0ZsRjlfbUhMOV9kemw4eVBFUkxuNjNBcjczQWE0X3N3Y3JSbDUteEx6djZWUWhGalNXOENKRmdwN3RxSkNmdngtUFhaRzk2STNPV2NNYlZReVc5Y0M2X19ONmd1dw?oc=5"
+     },
+     {
+      "label": "Guinea-Bissau",
+      "change": "Election update: Military government postpones national elections until 2028",
+      "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTDlrTm5nMWF0Q3hadklIOE5GbldORWRoTUVZdDlSNXZMVUlLSkdxNGhnUHcyMXVSVldsVnlWUVFHUlkybkhFb1NmSkQ5VW1GOWViSWV0eGZGTW1BU1gxZHZIVTNPNzFRaFpFZk5Nd0lEa2pNcDJOclcwMXRWY2Nubm5XaEZZX2cw?oc=5"
+     },
+     {
+      "label": "Taiwan",
+      "change": "Election update: Holds local elections for municipal leaders amid Beijing pressure",
+      "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVUduRW5ITzI3ckVPczhybk12bGFQY3Z2NWYyYUZiamY3UjFibEZnajF2ajR0ZmpndGlwdHhZem5rVEV3NUplQ0U4VlFuVVJ0YkVIa0RvS3BPdG9JWFVRWHZXMDFzbTBjR1JLUS04ZVFHMTQzcmVBdS1YUURINy1RaFRzeUZ5bmVEakhsc09hS2VxMjF1UDVJeV9XeXZzRUtiWEppSVh1RHJrY3lLajI0?oc=5"
      }
     ]
    },
@@ -1368,7 +1393,7 @@
     ]
    }
   ],
-  "summary": "The United States disabled a vessel enforcing its Iranian blockade in the Gulf of Oman, Mexico formally protested a US DEA tip line, and Guinea-Bissau's junta postponed elections to 2028."
+  "summary": "Updated diplomatic relations between Brazil and Argentina following ambassador recall, noted a ceasefire on the Ethiopia–Kenya border, and tracked election developments in New Zealand, Guinea-Bissau, and Taiwan."
  },
  "relations": {
   "DNK-USA": {
@@ -2718,10 +2743,10 @@
   "ETH-KEN": {
    "a": "ETH",
    "b": "KEN",
-   "s": "T",
-   "note": "Relations strain as over 50,000 refugees cross into Kenya to escape heavy fighting around the southern Ethiopian border town of Moyale.",
-   "updated": "2026-10-30",
-   "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOR1ZGNXB0NUJDNm1ZOWlxUGlNVzQ3THVPSUctemtYVFVTVzU2alQ3SE5jbGh2Qlc4WVE4NDVSVDBmVFBzMm9KbXFVRWM3M1JDWUhCd3oyQkRhZmhwT1RBcDNNR3NPdTVWazNCa3FHdWlwZWZCSm50czlQS21CcnNlbjU1eHNtQ0hfSDNpSg?oc=5"
+   "s": "N",
+   "note": "Tensions ease as a ceasefire is reported in Moyale and federal forces escort 300 Kenyan trucks across the border.",
+   "updated": "2026-11-27",
+   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPaURqMks0ZUxKX2lrYXNvdjI2WjJKRkNGcWlnX29janhtVTMtTGhlMmFIMDliNmxhY2dXUWcyRkZPT0Zrek9fLWdhQ1VtWHNydktjd1liR1A3NjJMZjhvQkcxU1dMVUsxTi0zUmxIWF9qZURFWGhXUGY5TWxuMmlqYlBqZFZuamh2X0NOc3hlTldnSU9vcEtrWENRcWZ1X053SFpMbE1NQk5VQS1PdEc1N3VEaGJkQQ?oc=5"
   },
   "EGY-LBY": {
    "a": "EGY",
@@ -2822,10 +2847,10 @@
   "ARG-BRA": {
    "a": "ARG",
    "b": "BRA",
-   "s": "T",
-   "note": "Relations sour as Brazil summons the Argentine envoy over the departure of fugitive politician Flávio Bolsonaro to the United States.",
-   "updated": "2026-10-31",
-   "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOR3RSMTI1MU5UcUx0UDFvOTYyWk1YOE56NnFNZTN4UDZHZm5DR2NaT1M2LVYxWVFiS3l0N2hwZ3BWNHp6NlFyNVluVlcxYzJDV0NYWFhDNG01TDVycVRRS21taFJyQkJnb0dhSnQzOEhKelZOU0s5V3ZVOGZnNU9DS2NSc1U3QVo1amxGQjVxZGt6RWRvVlMxMC1Xc2ZkdS1udHNlZzdRUnBtcHJrS25tMWZXb1RPYXpHeE5iZw?oc=5"
+   "s": "H",
+   "note": "Brazil permanently recalls its ambassador to Argentina and excludes President Javier Milei from Lula's inauguration.",
+   "updated": "2026-11-27",
+   "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUF9OQ1ZuNHctU0U5V2c5di1KbFZxSEJCa3hkVzNTSkszYm5kQTdvSzRHcGN6Umdyd2lCeDJSMXhkZ0lGb3A1bDVUQndYbUJRNG9iT3hZbVdUX3UyU20wcEhLM2p1MmdzdVc5S2N5VjN3YV9NS3hoRlJvNlNub1ZBckwyUVozTk5Sc05FYlBiSF8?oc=5"
   },
   "ARE-SDN": {
    "a": "ARE",
@@ -3783,10 +3808,10 @@
   },
   "eastern-dr-congo": {
    "n": "Eastern DR Congo",
-   "s": "66 soldiers sentenced",
-   "d": "A military court sentences 66 soldiers to death for cowardice after they fled rebel advances in the conflict-torn east.",
-   "updated": "2026-11-13",
-   "source": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPSjVOS0xsWkJOSG44NjhUVnlmVjBuTXRUb05wOEtGZ2w5Tnh4VXhaV3MtYURnVnlHaFpQSVZIeVB4ZDdPcllnTW52VXFabkRFaVFveF9YbkhhT1huUi13SUtCV0VNcVQzd0gyWmtqa0x1N1RaWENoOUpFZUlHRm1ZTjgzZklNbV9hYjk0?oc=5",
+   "s": "Ugandan troop withdrawal announced",
+   "d": "Uganda announces it will withdraw its forces from Lubero in eastern DR Congo within two weeks.",
+   "updated": "2026-11-27",
+   "source": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9zbXFMYVRRWG90VG05SURqbUl1TXVJeWZla2JSbEVfMHFhWGVBOWtBTTd6Y0N0ZEloM3BfeUY1QXZqaHFjenFqVEFQaUFHelZRNENaTmxoVFBPRTJmckRtSXVXUEJXVTI3Yi1N?oc=5",
    "t": "flash",
    "lat": -1.68,
    "lng": 29.22,
@@ -4016,8 +4041,8 @@
   "NZL": {
    "nextelec": "general, Nov 2029",
    "updated": "2026-11-27",
-   "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcFJqbEVQNWVCSWlBVEdnUXJlWHgwV3pmUjRGZ254NjNIcGgtSHU0NkVsemlWUnFjZWlJa3BLY01sTDN3djdCS0ZYU2dvcGV0U0I5NUh4MDV2NU5ya0V1WS1BUkJRSGRtNnIxUlRqc3ZFOXBycWJITFh5cnB3WEtsa1B1REFtMDlkMmFYdlBLTEFKSjNvWGZ4SmtEMl9RMzRNbFdCS25kbHF4eVhGeGs5OW1Rb2FGcUhWcVJV?oc=5",
-   "lastelec": "general election, November 2026"
+   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTUQ1YzJiOVpUQWczN2lmR3E0aGRNSXFuMWtkVUY2c2NrQWo5ai1XX3B4M2hLazYyaWJhLUl0V1pqRTNHaW5JUm9vU3YtMjJwdjNlV1pGZURab0ZsRjlfbUhMOV9kemw4eVBFUkxuNjNBcjczQWE0X3N3Y3JSbDUteEx6djZWUWhGalNXOENKRmdwN3RxSkNmdngtUFhaRzk2STNPV2NNYlZReVc5Y0M2X19ONmd1dw?oc=5",
+   "lastelec": "general, Nov 2026, deadlocked"
   },
   "GRD": {
    "nextelec": "general, Nov 2031",
@@ -4054,9 +4079,9 @@
    "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPN2tPN2FYN25QYkwweTJiaV8yY3hTQlZDRlFkWXFONGlkdDhiSzh6a0N2ZFVCUmdta2xhaE1pUDl2M3RzQl9BazZYR0o0bjVZaFFpX1hveDJiT0ZvRy0tdkI3OHdab2k1bDBLWXEtTG9GY2JmR1N0dTRuQ1A4dEFhWlo1TmNuVnpKOHpPYU1pYVMxLVQwQ2dSVFRRUVktX05Bd0otemNrcnl2MkdpNS1fMUhCVzc3T08xbnMxVm1Od3dyUE1RQUs0Nk5wcDh6OTBURGd0SWVMSQ?oc=5"
   },
   "GNB": {
-   "nextelec": "general election late 2028",
+   "nextelec": "presidential and legislative 2028",
    "updated": "2026-11-27",
-   "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUDhBd3IwcjM2djRuUTB2bndYZzlGM2wyRTMzRDNhbU1wN05TLXF1ZW5vcTFSMTFFbGVCMFRwZHE3aHE0UXdSeXZldzQ1amhpdW9URFRZOWFpakZWU0hsYVFnWXRpVUlMWjFDMmJTNGQ1NV9DbHZCZzlxU2hwTGNXQlo2Ym14V3ZLcGFKcGRQM21nZ0tQQlU0T21OYnA4NkJkNUVSSHl3Skt5RFE3cDlNb0lBMkswd3FCRk1aT3BTdFrSAcYBQVVfeXFMTXQ4WHp3WlQ1a1YwWEh6Y3huOVJkWUVyV2RjZlJRNVpjNHcxQURBUllvUzlpaTFRcl9YSUJDSjZ6MGk1bEFIMGUtOGFjUldUb2VtbHB5VF9NY3dnc0dRaDRRNjZYeU9XTWRKNkpMRjFuaXJialdlcUwyNXNTXzBwSXIyTEJKNjk2aEt3enJvZXQ2Mk1zX3VqWEpiQnRqRzZRVXBlMk1Zbm9BM2d6UXB5WlIzY2FCVGl6NmxWX0MzMWg2bVBmNFp3?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTDlrTm5nMWF0Q3hadklIOE5GbldORWRoTUVZdDlSNXZMVUlLSkdxNGhnUHcyMXVSVldsVnlWUVFHUlkybkhFb1NmSkQ5VW1GOWViSWV0eGZGTW1BU1gxZHZIVTNPNzFRaFpFZk5Nd0lEa2pNcDJOclcwMXRWY2Nubm5XaEZZX2cw?oc=5"
   },
   "PSE": {
    "nextelec": "Legislative election, September 2027",
@@ -4166,6 +4191,11 @@
    "nextelec": "General election, 24 February 2027",
    "updated": "2026-11-25",
    "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZ05Jek5Ya0RnUEJQbjR0NVQ3bjU1bjdaOUZjYUk2RWhYU0FUaERVVFZEYXpFdTc2dllrOHJjUmRNZVFScDkxVmNNSnpsVWVrUDBON0x6RkxONzBodmxVUDFwSmdMZHJBR0xwUk9tV1Q5U1ppOEs5RW5adnZBRHRINFV3c0Z0QjZVdXRGeFZwdWhMWlB0N3ZnVnBB?oc=5"
+  },
+  "TWN": {
+   "lastelec": "local, Nov 2026",
+   "updated": "2026-11-27",
+   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVUduRW5ITzI3ckVPczhybk12bGFQY3Z2NWYyYUZiamY3UjFibEZnajF2ajR0ZmpndGlwdHhZem5rVEV3NUplQ0U4VlFuVVJ0YkVIa0RvS3BPdG9JWFVRWHZXMDFzbTBjR1JLUS04ZVFHMTQzcmVBdS1YUURINy1RaFRzeUZ5bmVEakhsc09hS2VxMjF1UDVJeV9XeXZzRUtiWEppSVh1RHJrY3lLajI0?oc=5"
   }
  }
 }
