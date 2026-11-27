@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-27T00:10:49Z",
+  "lastRun": "2026-11-27T19:26:44Z",
   "log": [
    {
     "date": "2026-11-27",
@@ -19,6 +19,26 @@
       "label": "Democratic Republic of the Congo–Uganda",
       "change": "Note updated: Kinshasa summons Kampala envoy over military chief's online threats",
       "source": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1PTHB6Y1hIUGlydGU0M1VIWVlHcDZtdXJtMFhlcl9qTVgySmswdVJqZzJpamI2MDhtRThrb2U3TEdhUDBYTmtsVWxVSkZGV2dScWJ6aDFkeGR4d2FPa2xnZ1h3bTlWQnRvQkE?oc=5"
+     },
+     {
+      "label": "Iran–United States",
+      "change": "Wartime update: US military disables vessel attempting to run Iranian port blockade",
+      "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNdDBSR3hPZmVmT3ZRdm1LVTR2YmV3X0h2X3hmZk80MVZ0bUhZaXNheU91WmZBcWNqN0J4NDVLVEg0QlR6Qm1QaGVveEtiYW0xT2VuSUpMdEp0Vm0xaFdJVUtjZG13VnpiQzRQeVcwNkRmWFlKWWU3dWM3dU9RNWkxREpwVk9mWUotUVl3c1BFVjJRNmUxR2J6aVpQNGlWbWs5?oc=5"
+     },
+     {
+      "label": "Mexico–United States",
+      "change": "Tense: Mexico files formal complaint over US DEA tip line",
+      "source": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE85OWwxUlNIWElMeEtqelV1cjhWczRNTUkxVmp3Qm5uRTdkendGM3RWXzdFMVJWTmhZSWU2Y2V5d2pTTE9WN3VPTWFsN3JBZVZENjlF?oc=5"
+     },
+     {
+      "label": "Guinea-Bissau",
+      "change": "Elections postponed to late 2028 by transitional government",
+      "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUDhBd3IwcjM2djRuUTB2bndYZzlGM2wyRTMzRDNhbU1wN05TLXF1ZW5vcTFSMTFFbGVCMFRwZHE3aHE0UXdSeXZldzQ1amhpdW9URFRZOWFpakZWU0hsYVFnWXRpVUlMWjFDMmJTNGQ1NV9DbHZCZzlxU2hwTGNXQlo2Ym14V3ZLcGFKcGRQM21nZ0tQQlU0T21OYnA4NkJkNUVSSHl3Skt5RFE3cDlNb0lBMkswd3FCRk1aT3BTdFrSAcYBQVVfeXFMTXQ4WHp3WlQ1a1YwWEh6Y3huOVJkWUVyV2RjZlJRNVpjNHcxQURBUllvUzlpaTFRcl9YSUJDSjZ6MGk1bEFIMGUtOGFjUldUb2VtbHB5VF9NY3dnc0dRaDRRNjZYeU9XTWRKNkpMRjFuaXJialdlcUwyNXNTXzBwSXIyTEJKNjk2aEt3enJvZXQ2Mk1zX3VqWEpiQnRqRzZRVXBlMk1Zbm9BM2d6UXB5WlIzY2FCVGl6NmxWX0MzMWg2bVBmNFp3?oc=5"
+     },
+     {
+      "label": "Libya's divided state and its backers",
+      "change": "Thread update: Russian flotilla turns back following Ukrainian strikes in Libyan waters",
+      "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOYmlHdGhKd3RFRUNYajhTdlVqdUdrckt5RmtIZEltNjE0OTVPMDhaSS1DTFlGQTU5Z19LRFpLRmpXdVJkcVpRY19iLU40eXpEWUhYdDNjMXhfRkJqckxleW8tY25rOVJFTzlGeGVaUTlwb1M1NVBXSzQwSG9hX2VQR1JiMVhXYk1mdG01ei1nR1ZmOFY5RWpnejVHRkJSa2RVTHRLeURHS3hCSHJMcGluWG1fQWNjS19wTy1RejVTWE5BMW8?oc=5"
      }
     ]
    },
@@ -1348,7 +1368,7 @@
     ]
    }
   ],
-  "summary": "Updated relationship notes for North Korea–Russia, Eritrea–Ethiopia, and DR Congo–Uganda, and recorded election schedules for Guinea-Bissau, Serbia, The Gambia, New Zealand, and Dominica."
+  "summary": "The United States disabled a vessel enforcing its Iranian blockade in the Gulf of Oman, Mexico formally protested a US DEA tip line, and Guinea-Bissau's junta postponed elections to 2028."
  },
  "relations": {
   "DNK-USA": {
@@ -1379,9 +1399,9 @@
    "a": "IRN",
    "b": "USA",
    "s": "W",
-   "note": "United States (US) President Trump cancels peace negotiations with Iran, maintaining an active military conflict and blockade.",
-   "updated": "2026-11-12",
-   "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPYnhHOUZCeEwzbmN5alpPZm1fbjRvQ2ltdmYydUE0VE02ZnMtYzhOLUp3eWotVXQ5aTYwSFlpYXZyWmRsRjhBRi1iS08zMWJFYUNVQnZLNXY5TnRsN0p4cVF1eVppQ0hsa1I5Y0hLaWlOMmRzZWV0Q09hdlpOal9YSVJOdXNPZFVyYlZQemhFeVRGUUUwOE1CcEZIRHR1Ul9wckU5WVBVeTh0TTBKaGtDN091X0hxM1BYUjNz?oc=5"
+   "note": "The United States (US) military disables a vessel in the Gulf of Oman attempting to run the blockade against Iranian ports.",
+   "updated": "2026-11-27",
+   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNdDBSR3hPZmVmT3ZRdm1LVTR2YmV3X0h2X3hmZk80MVZ0bUhZaXNheU91WmZBcWNqN0J4NDVLVEg0QlR6Qm1QaGVveEtiYW0xT2VuSUpMdEp0Vm0xaFdJVUtjZG13VnpiQzRQeVcwNkRmWFlKWWU3dWM3dU9RNWkxREpwVk9mWUotUVl3c1BFVjJRNmUxR2J6aVpQNGlWbWs5?oc=5"
   },
   "SAU-YEM": {
    "a": "SAU",
@@ -1891,9 +1911,9 @@
    "a": "MEX",
    "b": "USA",
    "s": "T",
-   "note": "President Sheinbaum rejects US President Trump's threat of 100% tariffs over northbound migrant caravans.",
-   "updated": "2026-11-13",
-   "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNYTdkNDEzM3F2OS0yMlJXZUhsaDFVa0thcTR3Q2x0RGpfMHdSajBQdnhrMDgtQl9RRG9HaXRfeFUyS3FZU0lUTnpmc3NXNUdLR0Z4eTFmT0NyejRkUXpENnZxRTcwZGRvZkJ0ZHpQcWhtcTYxY0tfb0tmeXk5aFotOHJSZU5aaGtlM0tBRA?oc=5"
+   "note": "Tensions rise as Mexico files a formal complaint to the United States (US) over a Drug Enforcement Administration (DEA) tip line.",
+   "updated": "2026-11-27",
+   "source": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE85OWwxUlNIWElMeEtqelV1cjhWczRNTUkxVmp3Qm5uRTdkendGM3RWXzdFMVJWTmhZSWU2Y2V5d2pTTE9WN3VPTWFsN3JBZVZENjlF?oc=5"
   },
   "EGY-ISR": {
    "a": "EGY",
@@ -3667,7 +3687,7 @@
   "libya-war": {
    "t": "proxy",
    "n": "Libya's divided state and its backers",
-   "d": "Ukrainian drone strikes on Russian warships off Libya kill Libyan personnel, drawing Italian rebukes and escalating Mediterranean tensions.",
+   "d": "A Russian military flotilla bound for Libya turns back after Ukrainian naval strikes sink a warship off Benghazi, while Italy denies attack coordination.",
    "c": [
     "LBY",
     "EGY",
@@ -3680,10 +3700,11 @@
     "TCD",
     "NER",
     "SDN",
-    "UKR"
+    "UKR",
+    "ITA"
    ],
-   "updated": "2026-11-26",
-   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdk1SakpTcUdjdkJJV0R5NzRFTGVHRkhIUEJIMWNzV0o1OU5wUlVMOS1vTWtERGFya3h6WU50dVg2TzRUbUhaRVZoeFVOZXRJRUduVVh5ZzRIMWttZ3FKd19VeC1SNDJuZnlHdThrMFpWcVd4V0R1Wnd2bXdkZXI1SkFNSTNHamFFcFpwZDJHOTBIbWZHRklYc3hKU1hOSzFWajBXdWR2OXBtVTZLdWdF0gG0AUFVX3lxTE10UU1wMlZzQmowbGd1ZUhYSDhpTlFSVnhxZ3EtRUtoMHJDMzJmOXNubGJ2WTNENk1oV2FMWG5URm5OclA2cldhR182VUluVWdXdkZsZGwxbUcxYnNfZWZfc1FORFBFRlA2d0hONlRrNDBkS3FISmpJdFB0LTBsVURqdGE1eWlSbnhwUlFBc0ZPNk1oUElZeEFQVDVOWVhIUE9FZEpHMDR1elE4cGhUNGExVzY5VA?oc=5"
+   "updated": "2026-11-27",
+   "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOYmlHdGhKd3RFRUNYajhTdlVqdUdrckt5RmtIZEltNjE0OTVPMDhaSS1DTFlGQTU5Z19LRFpLRmpXdVJkcVpRY19iLU40eXpEWUhYdDNjMXhfRkJqckxleW8tY25rOVJFTzlGeGVaUTlwb1M1NVBXSzQwSG9hX2VQR1JiMVhXYk1mdG01ei1nR1ZmOFY5RWpnejVHRkJSa2RVTHRLeURHS3hCSHJMcGluWG1fQWNjS19wTy1RejVTWE5BMW8?oc=5"
   }
  },
  "pois": {
@@ -4033,9 +4054,9 @@
    "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPN2tPN2FYN25QYkwweTJiaV8yY3hTQlZDRlFkWXFONGlkdDhiSzh6a0N2ZFVCUmdta2xhaE1pUDl2M3RzQl9BazZYR0o0bjVZaFFpX1hveDJiT0ZvRy0tdkI3OHdab2k1bDBLWXEtTG9GY2JmR1N0dTRuQ1A4dEFhWlo1TmNuVnpKOHpPYU1pYVMxLVQwQ2dSVFRRUVktX05Bd0otemNrcnl2MkdpNS1fMUhCVzc3T08xbnMxVm1Od3dyUE1RQUs0Nk5wcDh6OTBURGd0SWVMSQ?oc=5"
   },
   "GNB": {
-   "nextelec": "presidential election, November 2028",
+   "nextelec": "general election late 2028",
    "updated": "2026-11-27",
-   "source": "https://news.google.com/rss/articles/CBMiakFVX3lxTE56UURqLURZOFotY2NueXZZRGtvNEtkckkwS2Vrc0NEUTVKSml4RW1HbE1JMElnSmNEX2tRUHdMV3h2S0RXb1I4V21nOGFSdVI3RWxQYUtENnJMUmVEaXN4ZVpTWjNEZGlNckE?oc=5"
+   "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUDhBd3IwcjM2djRuUTB2bndYZzlGM2wyRTMzRDNhbU1wN05TLXF1ZW5vcTFSMTFFbGVCMFRwZHE3aHE0UXdSeXZldzQ1amhpdW9URFRZOWFpakZWU0hsYVFnWXRpVUlMWjFDMmJTNGQ1NV9DbHZCZzlxU2hwTGNXQlo2Ym14V3ZLcGFKcGRQM21nZ0tQQlU0T21OYnA4NkJkNUVSSHl3Skt5RFE3cDlNb0lBMkswd3FCRk1aT3BTdFrSAcYBQVVfeXFMTXQ4WHp3WlQ1a1YwWEh6Y3huOVJkWUVyV2RjZlJRNVpjNHcxQURBUllvUzlpaTFRcl9YSUJDSjZ6MGk1bEFIMGUtOGFjUldUb2VtbHB5VF9NY3dnc0dRaDRRNjZYeU9XTWRKNkpMRjFuaXJialdlcUwyNXNTXzBwSXIyTEJKNjk2aEt3enJvZXQ2Mk1zX3VqWEpiQnRqRzZRVXBlMk1Zbm9BM2d6UXB5WlIzY2FCVGl6NmxWX0MzMWg2bVBmNFp3?oc=5"
   },
   "PSE": {
    "nextelec": "Legislative election, September 2027",
