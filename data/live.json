@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastRun": "2026-11-28T13:59:46Z",
+  "lastRun": "2026-11-28T18:04:33Z",
   "log": [
    {
     "date": "2026-11-28",
@@ -16,14 +16,34 @@
       "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOVkJNRlY2d2VTeFVIR0QxSnZPRGlYSTl1ZmpiamVlWkFqaHJmclFVdEQ0OXRhNUJWcDRlNlNiUWgxNWdQemhGNmdQU012RlQ4cElvV3FkM3ZRaEp6aThfeFRqZUpwUnM1aFlnZThXUXY5YjlocjZtWWtUWTlqUHlKRGpjdVJ4MDQtaEhmNzgzREozWF9wb3pxdm1Ka1lhVFR1elo1MHM4QnFxRXNKTFAtZ29nd3JsV01GR19xeUpjbF9zSjZ6Q01WY3VGYkg2a3M?oc=5"
      },
      {
-      "label": "Guinea-Bissau",
-      "change": "Next presidential election postponed to 2028",
-      "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNel9ESDV1SEJPNk9kV3V5eHdVZW1RaENUS0VaRmVmM1NXMzlyZ0FRdnZOUGJRMm5Bdk94WV9CNzRRUVFIckhYTzZ6M3NzYmRzS3Y5V2NuYkF1cDZXMEItazgtSl8zd29vcmZoYUxCY1gwYkNQbUZFbmhqb0lURVJnalF0NEMzWmtJOGRkYU1faVN4dHZ5N25KVTJfQzllejBId2Vic0FEczdRY0k2cm00?oc=5"
-     },
-     {
       "label": "Taiwan",
       "change": "Local election results: Kuomintang wins Taipei mayoral race",
       "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbWtxY0xzeFZUYi1CaTR4ajJHalY2ZTRjYlU3c01yLVNQVFdkMkJ5RXJqYi1rSXJvM05KeDM3N0V0OUdRTm15TDh1X2JKbGVPUVVKLVFYV2ktamJUdWdwWkJqbm1SazRPaG5DSWpjZ3A2Rk9TdHZnb2lxWFRRWFNLeHEtdHpYMUZ6d0xUbVJVaTh0Z1cwLWszQWpROUpSQVdycWEzS2YxQUjSAa4BQVVfeXFMTUtISzhUbEprTGxfcWJkbEJzbC1Hd2JsOXh4MGcwUzhkMGhsMXdfTVZ5d3hPcGNYSkNsZ3BzLWxDaFAtc0hIUHpaak9NVVM0Y3BzeGM4NFpJTGpEU21YcklmTkFkeWtqQ0ljU3RQVXBaWmJCR3BQcnlLUngxVWlNS3I3cEJpbFJqVjhYZE41NllMUW1qY0NJa21pUG50VHBZQi0xTG9GNU5wTktqUzN3?oc=5"
+     },
+     {
+      "label": "Rwanda–Uganda",
+      "change": "Tense → Partner: military commanders pledge enhanced border security cooperation",
+      "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQlREQTdiYk1SVEhQMi1rQnNrWVJwS21rMUg5WS1FZHRDckppS2E2b2lPUnJlVlBhOVM0QWRaQ3pYeVVDaE1GY3g0Y05feWM2V01Ob3NuQTcyR1pxOHF5VVFubnlpNTJuUExhOXZScmwyX0dxQ2NpZVdNRlROYVpYWWFEMnoxWTF6LXlTb2l3?oc=5"
+     },
+     {
+      "label": "Iran–Iraq",
+      "change": "Note updated: Iran warns Baghdad over US-pressured border closures",
+      "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPUVBwNThzZDBlTWhpb3g4NlFsMGhaV0FzMmxXTHN0Ylpka1hzWDNkR2tieXI0aEpCMkNSeV9acWUwVXc3bGdlZTJSSDRBXzREYmxfZ1p3ZFdDVGhxZTlycUdMb2d0bzZsRWZtRVVLLVVSZURnS0s4YWFxTWxlLTFqcVRtVHVmajZ2UnNOTTB5aWRKQ2tCdlAzYVhBWkZMV3ZON1pZcmswaXA5NzFJNU1tUk92b0FxOXY5OVVQdWlsRGNxYmpKSmtQQlRHclZ4WkFsVHpVUW1GemlTNlE0VDJSNkVBMmVEQklSYXc?oc=5"
+     },
+     {
+      "label": "New Zealand",
+      "change": "Recorded November 2026 general election result (hung parliament)",
+      "source": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNbHRnLUhzVlBpTHdPOTdvS1VSdDVBSGh1bjU4SHV2WTVqcUxDQUZybWh4MXpobmMtMWp6aHRYOGw1M19kZlNlYnZyNG1iOUpvbnJkQ2ExdlpoSy1FSUVuTWZYN1JVVzItdEJOcEJBM0p0N1JWbTlTUGNPS3hzYkF3UjhWc3VZS2FETTR6S3VBS3hwQVljNnVlTjVhZmh1dnl5bnlmVnpCc3lVWUlfOEhudXdOWDBLVnBXTnBPYllhenhmc1JtSlJIYXhtS2xhVEd4bVFzMTVGc2tDdWljS0t0RGI3QWtQMWdUWk8zanp5dk5admxmOEE?oc=5"
+     },
+     {
+      "label": "Guinea-Bissau",
+      "change": "Recorded postponed presidential and parliamentary election year (2028)",
+      "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNel9ESDV1SEJPNk9kV3V5eHdVZW1RaENUS0VaRmVmM1NXMzlyZ0FRdnZOUGJRMm5Bdk94WV9CNzRRUVFIckhYTzZ6M3NzYmRzS3Y5V2NuYkF1cDZXMEItazgtSl8zd29vcmZoYUxCY1gwYkNQbUZFbmhqb0lURVJnalF0NEMzWmtJOGRkYU1faVN4dHZ5N25KVTJfQzllejBId2Vic0FEczdRY0k2cm00?oc=5"
+     },
+     {
+      "label": "Burundi",
+      "change": "Recorded scheduled presidential election year (2027)",
+      "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBueU0xSDhjcVlVS21GY2tpenZxM0dvT1AwbnBQcGdPWmUxMVpTckZGeFEtSWFCV3hPMzlCLUVqN0lNT1RWSWZOazRPQldybk4zMnFacmlaZUtTV1NFc2ZqM25aX3E?oc=5"
      }
     ]
    },
@@ -1398,7 +1418,7 @@
     ]
    }
   ],
-  "summary": "Kenya and Zimbabwe sign seven bilateral agreements, India and Denmark adopt a five-year green strategic plan, and an international tribunal rejects Argentina's bid to halt Falkland Islands oil drilling."
+  "summary": "Updated political election schedules for New Zealand, Guinea-Bissau, and Burundi, while mending Rwanda–Uganda military cooperation and noting Iranian border pressure on Iraq."
  },
  "relations": {
   "DNK-USA": {
@@ -2564,10 +2584,10 @@
   "RWA-UGA": {
    "a": "RWA",
    "b": "UGA",
-   "s": "T",
-   "note": "Tensions mount after an exiled critic of Rwandan President Paul Kagame is found decapitated in Uganda.",
-   "updated": "2026-10-19",
-   "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZUtTd1g4SkJVZ0syYTZuVHBsYlZob3NENXRNTTJKcHJDQUlVRWJmQmZmcEJhWDdwcXhNU0U1ZWFZSlh4MGlQQWYxVnJnNkxPeHNqT3dLRVBwR1VxN00xTjN0WjhRZnE1Vnlpa0pvc0VydHR4U2FNbE9abUdEUzJPSXBPTXV0UUxGaEZ6QXVuWE1oclnSAZgBQVVfeXFMUEJ6YWp5aG5aRXRfUEhZeGtkc2gySTBCT0xUbDloVGt6cTZGeldTWGE5SEZyOWV5SnQ3X29EODhiSFlvbTlJa0IzNm9JeGJ3bm56ajF5d1FFZUxuNW45X00tdldDdlpyMVNIWlE3Sjc2MFZSVEVsSE5tNUxSZG52dDdiRkxIOFhOY05NSnY4RzF3SVhVWm1uaFA?oc=5"
+   "s": "F",
+   "note": "Rwanda and Uganda deepen defence cooperation as military leaders pledge enhanced border security.",
+   "updated": "2026-11-28",
+   "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQlREQTdiYk1SVEhQMi1rQnNrWVJwS21rMUg5WS1FZHRDckppS2E2b2lPUnJlVlBhOVM0QWRaQ3pYeVVDaE1GY3g0Y05feWM2V01Ob3NuQTcyR1pxOHF5VVFubnlpNTJuUExhOXZScmwyX0dxQ2NpZVdNRlROYVpYWWFEMnoxWTF6LXlTb2l3?oc=5"
   },
   "AUS-VUT": {
    "a": "AUS",
@@ -2701,9 +2721,9 @@
    "a": "IRN",
    "b": "IRQ",
    "s": "F",
-   "note": "Iraq suspends operations at the Al-Shib border crossing with Iran following United States (US) security pressure.",
-   "updated": "2026-10-22",
-   "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUkJYZEdfa295eTZMRUJYTUFDQzJlbHJUcDc1Y0NydmNZQU1oQjhzWFBEVDNoWWxyeG5CZVJVOWx4OE5JMWZDZlotdF9CeDlnVjEwVWwtZ24tSWNrSVdSWExYdHpPNGxuZnVGajhkUFgyU3JxQUlSa053d1FORzliR1hmdkpMOHN6b3JxWDhRQ0VYcDBGaXZRc29CMmNhNEplQjFJUGpYSG5leU1KTFRpaQ?oc=5"
+   "note": "Iran warns Iraq against closing border crossings under United States (US) pressure.",
+   "updated": "2026-11-28",
+   "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPUVBwNThzZDBlTWhpb3g4NlFsMGhaV0FzMmxXTHN0Ylpka1hzWDNkR2tieXI0aEpCMkNSeV9acWUwVXc3bGdlZTJSSDRBXzREYmxfZ1p3ZFdDVGhxZTlycUdMb2d0bzZsRWZtRVVLLVVSZURnS0s4YWFxTWxlLTFqcVRtVHVmajZ2UnNOTTB5aWRKQ2tCdlAzYVhBWkZMV3ZON1pZcmswaXA5NzFJNU1tUk92b0FxOXY5OVVQdWlsRGNxYmpKSmtQQlRHclZ4WkFsVHpVUW1GemlTNlE0VDJSNkVBMmVEQklSYXc?oc=5"
   },
   "RUS-UKR": {
    "a": "RUS",
@@ -4061,9 +4081,9 @@
   },
   "NZL": {
    "nextelec": "general, Nov 2029",
-   "updated": "2026-11-27",
-   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTUQ1YzJiOVpUQWczN2lmR3E0aGRNSXFuMWtkVUY2c2NrQWo5ai1XX3B4M2hLazYyaWJhLUl0V1pqRTNHaW5JUm9vU3YtMjJwdjNlV1pGZURab0ZsRjlfbUhMOV9kemw4eVBFUkxuNjNBcjczQWE0X3N3Y3JSbDUteEx6djZWUWhGalNXOENKRmdwN3RxSkNmdngtUFhaRzk2STNPV2NNYlZReVc5Y0M2X19ONmd1dw?oc=5",
-   "lastelec": "general, Nov 2026, deadlocked"
+   "updated": "2026-11-28",
+   "source": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNbHRnLUhzVlBpTHdPOTdvS1VSdDVBSGh1bjU4SHV2WTVqcUxDQUZybWh4MXpobmMtMWp6aHRYOGw1M19kZlNlYnZyNG1iOUpvbnJkQ2ExdlpoSy1FSUVuTWZYN1JVVzItdEJOcEJBM0p0N1JWbTlTUGNPS3hzYkF3UjhWc3VZS2FETTR6S3VBS3hwQVljNnVlTjVhZmh1dnl5bnlmVnpCc3lVWUlfOEhudXdOWDBLVnBXTnBPYllhenhmc1JtSlJIYXhtS2xhVEd4bVFzMTVGc2tDdWljS0t0RGI3QWtQMWdUWk8zanp5dk5admxmOEE?oc=5",
+   "lastelec": "general, November 2026, hung parliament"
   },
   "GRD": {
    "nextelec": "general, Nov 2031",
@@ -4100,7 +4120,7 @@
    "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPN2tPN2FYN25QYkwweTJiaV8yY3hTQlZDRlFkWXFONGlkdDhiSzh6a0N2ZFVCUmdta2xhaE1pUDl2M3RzQl9BazZYR0o0bjVZaFFpX1hveDJiT0ZvRy0tdkI3OHdab2k1bDBLWXEtTG9GY2JmR1N0dTRuQ1A4dEFhWlo1TmNuVnpKOHpPYU1pYVMxLVQwQ2dSVFRRUVktX05Bd0otemNrcnl2MkdpNS1fMUhCVzc3T08xbnMxVm1Od3dyUE1RQUs0Nk5wcDh6OTBURGd0SWVMSQ?oc=5"
   },
   "GNB": {
-   "nextelec": "presidential 2028",
+   "nextelec": "presidential and parliamentary, 2028",
    "updated": "2026-11-28",
    "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNel9ESDV1SEJPNk9kV3V5eHdVZW1RaENUS0VaRmVmM1NXMzlyZ0FRdnZOUGJRMm5Bdk94WV9CNzRRUVFIckhYTzZ6M3NzYmRzS3Y5V2NuYkF1cDZXMEItazgtSl8zd29vcmZoYUxCY1gwYkNQbUZFbmhqb0lURVJnalF0NEMzWmtJOGRkYU1faVN4dHZ5N25KVTJfQzllejBId2Vic0FEczdRY0k2cm00?oc=5"
   },
@@ -4217,6 +4237,11 @@
    "lastelec": "local, November 2026, Kuomintang",
    "updated": "2026-11-28",
    "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbWtxY0xzeFZUYi1CaTR4ajJHalY2ZTRjYlU3c01yLVNQVFdkMkJ5RXJqYi1rSXJvM05KeDM3N0V0OUdRTm15TDh1X2JKbGVPUVVKLVFYV2ktamJUdWdwWkJqbm1SazRPaG5DSWpjZ3A2Rk9TdHZnb2lxWFRRWFNLeHEtdHpYMUZ6d0xUbVJVaTh0Z1cwLWszQWpROUpSQVdycWEzS2YxQUjSAa4BQVVfeXFMTUtISzhUbEprTGxfcWJkbEJzbC1Hd2JsOXh4MGcwUzhkMGhsMXdfTVZ5d3hPcGNYSkNsZ3BzLWxDaFAtc0hIUHpaak9NVVM0Y3BzeGM4NFpJTGpEU21YcklmTkFkeWtqQ0ljU3RQVXBaWmJCR3BQcnlLUngxVWlNS3I3cEJpbFJqVjhYZE41NllMUW1qY0NJa21pUG50VHBZQi0xTG9GNU5wTktqUzN3?oc=5"
+  },
+  "BDI": {
+   "nextelec": "presidential, 2027",
+   "updated": "2026-11-28",
+   "source": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBueU0xSDhjcVlVS21GY2tpenZxM0dvT1AwbnBQcGdPWmUxMVpTckZGeFEtSWFCV3hPMzlCLUVqN0lNT1RWSWZOazRPQldybk4zMnFacmlaZUtTV1NFc2ZqM25aX3E?oc=5"
   }
  }
 }
